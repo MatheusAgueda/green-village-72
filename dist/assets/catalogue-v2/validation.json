@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "checks": {
+    "stableUniqueIds": 71,
+    "originalFiles": 71,
+    "exactUnchangedSourceCrops": 71,
+    "originalDimensionsVerified": [
+      480,
+      300
+    ],
+    "printedCatalogCodes": 27,
+    "editorialMaterialLabels": 8,
+    "appliedOriginalCropTextures": 63,
+    "sampledColourReferences": 8,
+    "inventedRalOrNcsCodes": 0,
+    "generatedPbrMaps": 0
+  },
+  "visualInspection": {
+    "pdfPages": [
+      1,
+      2,
+      7,
+      8,
+      9,
+      10,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "originalAndCurrentContactSheetGroups": 6,
+    "preparedContactSheetGroups": 6,
+    "repeatStressGroupsVisuallyReviewed": [
+      "exterior-3d-textures",
+      "exterior-3d-gm"
+    ],
+    "limitations": [
+      "Repeat stress tests retain visible source periodicity. These are not certified seamless assets.",
+      "All exact pixel checks concern digital fidelity to PDF originals, not physical material colour accuracy.",
+      "Site checkout was not modified by this agent."
+    ]
+  }
+}

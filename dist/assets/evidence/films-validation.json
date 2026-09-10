@@ -1,0 +1,74 @@
+{
+  "status": "PASS",
+  "films": [
+    {
+      "film": "tour",
+      "frames": 528,
+      "durationSeconds": 22,
+      "resolution": [
+        1280,
+        720
+      ],
+      "fps": 24,
+      "fullDecode": "PASS",
+      "faststart": true,
+      "captionVisuallyInspected": true,
+      "decodedContactSheetVisuallyInspected": true,
+      "finalCaptureSessionPageErrors": [],
+      "materialsReadyBeforeCapture": true
+    },
+    {
+      "film": "assembly",
+      "frames": 384,
+      "durationSeconds": 16,
+      "resolution": [
+        1280,
+        720
+      ],
+      "fps": 24,
+      "fullDecode": "PASS",
+      "faststart": true,
+      "captionVisuallyInspected": true,
+      "decodedContactSheetVisuallyInspected": true,
+      "finalCaptureSessionPageErrors": [],
+      "materialsReadyBeforeCapture": true
+    }
+  ],
+  "totalFrames": 912,
+  "sameAppearanceConfigurationKeys": [
+    "layout",
+    "exteriorId",
+    "floorId",
+    "interior",
+    "interiorName",
+    "kitchen",
+    "kitchenRef",
+    "bathroom",
+    "bathroomRef",
+    "bathroomUV",
+    "roof",
+    "porch",
+    "lighting"
+  ],
+  "sameConfiguration": true,
+  "noPhotoMotion": true,
+  "noImageGeneration": true,
+  "tourCaptureSegments": {
+    "initialFramesPreserved": 520,
+    "resumedFinalFrames": 8,
+    "reason": "Avoid starting assembly before its independent clearance verification. Complete PNGs reused only after IEND validation."
+  },
+  "sourceSceneEdits": "Copies isolated in /private/tmp; no Site checkout edits by film agent.",
+  "sourceGeometryQaReportedByRoot": {
+    "poses": 101,
+    "mobilePanelsVsFloorAndRoofCollisions": 0,
+    "minimumTrimClearanceMm": 3.5,
+    "status": "Provided by independent geometry QA; not inferred from video pixels."
+  },
+  "limits": [
+    "Illustrative maquette, not a manufacturer assembly instruction.",
+    "Transport state and floor unfolding omitted as undocumented.",
+    "Interior shot is an explicitly labelled horizontal cutaway; the physical roof does not disappear in an installed house.",
+    "Material colours remain approximations from the supplied catalogue; lossy video conversion adds small digital differences."
+  ]
+}

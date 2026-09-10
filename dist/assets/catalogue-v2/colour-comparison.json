@@ -1,0 +1,4839 @@
+{
+  "methodology": {
+    "originalsRetained": true,
+    "imageEditing": "Crop only, lossless PNG output; no synthesis, recolouring, upscaling or seam cloning.",
+    "colourMetrics": "Mean encoded sRGB plus CIE76 difference of those mean colours under assumed D65. Measures digital image difference, not physical colour accuracy.",
+    "physicalScale": "All repeat sizes are explicit low-confidence visualisation estimates, never manufacturer dimensions.",
+    "seamMetrics": "Mean absolute RGB edge difference in 0–255 units. Useful for repeat diagnostics; does not prove texture periodicity."
+  },
+  "comparisons": [
+    {
+      "id": "exterior-3d-textures-tijolo-cinza",
+      "original": {
+        "meanSrgb8": [
+          113.919,
+          119.732,
+          124.165
+        ],
+        "medianSrgb8": [
+          112.0,
+          117.0,
+          121.0
+        ],
+        "meanHexApprox": "#72787c",
+        "pixelStdSrgb8": [
+          17.113,
+          17.819,
+          18.76
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          112.901,
+          118.714,
+          122.975
+        ],
+        "medianSrgb8": [
+          111.0,
+          117.0,
+          121.0
+        ],
+        "meanHexApprox": "#71777b",
+        "pixelStdSrgb8": [
+          16.726,
+          17.367,
+          18.057
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          112.62,
+          118.463,
+          122.675
+        ],
+        "medianSrgb8": [
+          111.0,
+          117.0,
+          120.0
+        ],
+        "meanHexApprox": "#71767b",
+        "pixelStdSrgb8": [
+          16.79,
+          17.496,
+          18.198
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 0.529,
+      "currentToPreparedMeanDeltaE76": 0.108,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 8.664,
+        "topBottomMeanAbsSrgb8": 42.49
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 6.85,
+        "topBottomMeanAbsSrgb8": 7.299
+      }
+    },
+    {
+      "id": "exterior-3d-textures-tijolo-bordo",
+      "original": {
+        "meanSrgb8": [
+          114.299,
+          92.774,
+          96.473
+        ],
+        "medianSrgb8": [
+          113.0,
+          92.0,
+          95.0
+        ],
+        "meanHexApprox": "#725d60",
+        "pixelStdSrgb8": [
+          21.141,
+          21.074,
+          21.848
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          114.362,
+          93.061,
+          96.556
+        ],
+        "medianSrgb8": [
+          114.0,
+          92.0,
+          95.0
+        ],
+        "meanHexApprox": "#725d61",
+        "pixelStdSrgb8": [
+          21.39,
+          21.24,
+          21.908
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          114.101,
+          93.707,
+          96.908
+        ],
+        "medianSrgb8": [
+          113.0,
+          93.0,
+          96.0
+        ],
+        "meanHexApprox": "#725e61",
+        "pixelStdSrgb8": [
+          21.406,
+          20.552,
+          21.157
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 0.625,
+      "currentToPreparedMeanDeltaE76": 0.462,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 20.698,
+        "topBottomMeanAbsSrgb8": 24.558
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 8.715,
+        "topBottomMeanAbsSrgb8": 9.049
+      }
+    },
+    {
+      "id": "exterior-3d-textures-tijolo-creme",
+      "original": {
+        "meanSrgb8": [
+          184.126,
+          158.133,
+          99.827
+        ],
+        "medianSrgb8": [
+          184.0,
+          158.0,
+          99.0
+        ],
+        "meanHexApprox": "#b89e64",
+        "pixelStdSrgb8": [
+          17.931,
+          18.041,
+          17.11
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          183.588,
+          157.664,
+          99.24
+        ],
+        "medianSrgb8": [
+          184.0,
+          158.0,
+          99.0
+        ],
+        "meanHexApprox": "#b89e63",
+        "pixelStdSrgb8": [
+          17.634,
+          17.645,
+          16.455
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          184.832,
+          159.397,
+          102.136
+        ],
+        "medianSrgb8": [
+          186.0,
+          160.0,
+          102.0
+        ],
+        "meanHexApprox": "#b99f66",
+        "pixelStdSrgb8": [
+          17.986,
+          17.902,
+          16.476
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 0.801,
+      "currentToPreparedMeanDeltaE76": 0.959,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 8.86,
+        "topBottomMeanAbsSrgb8": 30.173
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 6.579,
+        "topBottomMeanAbsSrgb8": 10.639
+      }
+    },
+    {
+      "id": "exterior-3d-textures-tijolo-vermelho",
+      "original": {
+        "meanSrgb8": [
+          151.687,
+          66.149,
+          55.752
+        ],
+        "medianSrgb8": [
+          150.0,
+          64.0,
+          53.0
+        ],
+        "meanHexApprox": "#984238",
+        "pixelStdSrgb8": [
+          19.348,
+          16.255,
+          16.314
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          150.513,
+          65.384,
+          54.829
+        ],
+        "medianSrgb8": [
+          150.0,
+          64.0,
+          53.0
+        ],
+        "meanHexApprox": "#974137",
+        "pixelStdSrgb8": [
+          18.604,
+          15.619,
+          15.242
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          148.648,
+          64.043,
+          52.921
+        ],
+        "medianSrgb8": [
+          148.0,
+          63.0,
+          51.0
+        ],
+        "meanHexApprox": "#954035",
+        "pixelStdSrgb8": [
+          19.71,
+          15.211,
+          14.307
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 1.086,
+      "currentToPreparedMeanDeltaE76": 0.712,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 18.308,
+        "topBottomMeanAbsSrgb8": 25.875
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 11.568,
+        "topBottomMeanAbsSrgb8": 7.005
+      }
+    },
+    {
+      "id": "exterior-3d-textures-pedra-areia",
+      "original": {
+        "meanSrgb8": [
+          183.815,
+          169.107,
+          162.664
+        ],
+        "medianSrgb8": [
+          185.0,
+          170.0,
+          164.0
+        ],
+        "meanHexApprox": "#b8a9a3",
+        "pixelStdSrgb8": [
+          16.405,
+          17.39,
+          17.545
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          182.92,
+          168.023,
+          161.492
+        ],
+        "medianSrgb8": [
+          185.0,
+          170.0,
+          164.0
+        ],
+        "meanHexApprox": "#b7a8a1",
+        "pixelStdSrgb8": [
+          16.316,
+          17.082,
+          17.19
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          183.078,
+          167.96,
+          161.417
+        ],
+        "medianSrgb8": [
+          185.0,
+          170.0,
+          164.0
+        ],
+        "meanHexApprox": "#b7a8a1",
+        "pixelStdSrgb8": [
+          17.032,
+          17.821,
+          17.926
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 0.433,
+      "currentToPreparedMeanDeltaE76": 0.088,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 8.184,
+        "topBottomMeanAbsSrgb8": 8.506
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 5.909,
+        "topBottomMeanAbsSrgb8": 6.206
+      }
+    },
+    {
+      "id": "exterior-3d-textures-bloco-cinza",
+      "original": {
+        "meanSrgb8": [
+          111.461,
+          125.663,
+          134.631
+        ],
+        "medianSrgb8": [
+          112.0,
+          127.0,
+          136.0
+        ],
+        "meanHexApprox": "#6f7e87",
+        "pixelStdSrgb8": [
+          19.646,
+          20.464,
+          21.065
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          111.462,
+          125.721,
+          134.65
+        ],
+        "medianSrgb8": [
+          112.0,
+          126.0,
+          136.0
+        ],
+        "meanHexApprox": "#6f7e87",
+        "pixelStdSrgb8": [
+          19.659,
+          20.329,
+          20.881
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          112.952,
+          127.521,
+          136.737
+        ],
+        "medianSrgb8": [
+          114.0,
+          129.0,
+          138.0
+        ],
+        "meanHexApprox": "#718089",
+        "pixelStdSrgb8": [
+          19.266,
+          19.899,
+          20.405
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 0.732,
+      "currentToPreparedMeanDeltaE76": 0.717,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 20.758,
+        "topBottomMeanAbsSrgb8": 26.604
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 9.315,
+        "topBottomMeanAbsSrgb8": 17.924
+      }
+    },
+    {
+      "id": "exterior-3d-textures-tijolo-castanho",
+      "original": {
+        "meanSrgb8": [
+          92.621,
+          66.11,
+          66.024
+        ],
+        "medianSrgb8": [
+          87.0,
+          60.0,
+          60.0
+        ],
+        "meanHexApprox": "#5d4242",
+        "pixelStdSrgb8": [
+          26.369,
+          25.411,
+          25.317
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          90.954,
+          64.476,
+          64.269
+        ],
+        "medianSrgb8": [
+          86.0,
+          59.0,
+          59.0
+        ],
+        "meanHexApprox": "#5b4040",
+        "pixelStdSrgb8": [
+          25.022,
+          24.078,
+          24.039
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          89.148,
+          62.615,
+          62.45
+        ],
+        "medianSrgb8": [
+          84.0,
+          57.0,
+          58.0
+        ],
+        "meanHexApprox": "#593f3e",
+        "pixelStdSrgb8": [
+          23.831,
+          22.506,
+          22.407
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 1.508,
+      "currentToPreparedMeanDeltaE76": 0.797,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 29.327,
+        "topBottomMeanAbsSrgb8": 78.502
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 15.18,
+        "topBottomMeanAbsSrgb8": 17.707
+      }
+    },
+    {
+      "id": "exterior-3d-textures-pedra-bege",
+      "original": {
+        "meanSrgb8": [
+          171.37,
+          152.932,
+          145.756
+        ],
+        "medianSrgb8": [
+          173.0,
+          154.0,
+          147.0
+        ],
+        "meanHexApprox": "#ab9992",
+        "pixelStdSrgb8": [
+          20.262,
+          20.101,
+          19.88
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          171.66,
+          153.318,
+          145.976
+        ],
+        "medianSrgb8": [
+          173.0,
+          155.0,
+          148.0
+        ],
+        "meanHexApprox": "#ac9992",
+        "pixelStdSrgb8": [
+          20.519,
+          20.416,
+          20.218
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          172.654,
+          153.931,
+          146.328
+        ],
+        "medianSrgb8": [
+          174.0,
+          155.0,
+          148.0
+        ],
+        "meanHexApprox": "#ad9a92",
+        "pixelStdSrgb8": [
+          20.743,
+          20.663,
+          20.488
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 0.469,
+      "currentToPreparedMeanDeltaE76": 0.333,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 20.116,
+        "topBottomMeanAbsSrgb8": 20.956
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 14.507,
+        "topBottomMeanAbsSrgb8": 16.828
+      }
+    },
+    {
+      "id": "exterior-3d-textures-tijolo-multicor",
+      "original": {
+        "meanSrgb8": [
+          145.778,
+          110.32,
+          114.1
+        ],
+        "medianSrgb8": [
+          144.0,
+          100.0,
+          107.0
+        ],
+        "meanHexApprox": "#926e72",
+        "pixelStdSrgb8": [
+          37.267,
+          34.761,
+          32.465
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          145.598,
+          110.354,
+          114.064
+        ],
+        "medianSrgb8": [
+          144.0,
+          100.0,
+          107.0
+        ],
+        "meanHexApprox": "#926e72",
+        "pixelStdSrgb8": [
+          36.994,
+          34.181,
+          31.903
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          151.571,
+          115.971,
+          118.157
+        ],
+        "medianSrgb8": [
+          148.0,
+          106.0,
+          112.0
+        ],
+        "meanHexApprox": "#987476",
+        "pixelStdSrgb8": [
+          36.583,
+          34.371,
+          32.315
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 2.368,
+      "currentToPreparedMeanDeltaE76": 2.367,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 46.425,
+        "topBottomMeanAbsSrgb8": 20.921
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 19.448,
+        "topBottomMeanAbsSrgb8": 14.014
+      }
+    },
+    {
+      "id": "exterior-3d-textures-tijolo-ardosia",
+      "original": {
+        "meanSrgb8": [
+          93.125,
+          111.462,
+          125.425
+        ],
+        "medianSrgb8": [
+          72.0,
+          91.0,
+          107.0
+        ],
+        "meanHexApprox": "#5d6f7d",
+        "pixelStdSrgb8": [
+          50.328,
+          47.767,
+          44.862
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          93.281,
+          111.794,
+          125.817
+        ],
+        "medianSrgb8": [
+          71.0,
+          91.0,
+          107.0
+        ],
+        "meanHexApprox": "#5d707e",
+        "pixelStdSrgb8": [
+          50.382,
+          47.924,
+          44.994
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          90.743,
+          109.323,
+          123.603
+        ],
+        "medianSrgb8": [
+          71.0,
+          90.0,
+          107.0
+        ],
+        "meanHexApprox": "#5b6d7c",
+        "pixelStdSrgb8": [
+          47.54,
+          45.428,
+          42.601
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 0.897,
+      "currentToPreparedMeanDeltaE76": 1.008,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 11.296,
+        "topBottomMeanAbsSrgb8": 119.176
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 9.303,
+        "topBottomMeanAbsSrgb8": 10.6
+      }
+    },
+    {
+      "id": "exterior-3d-textures-tijolo-rustico",
+      "original": {
+        "meanSrgb8": [
+          131.905,
+          79.14,
+          80.929
+        ],
+        "medianSrgb8": [
+          115.0,
+          53.0,
+          55.0
+        ],
+        "meanHexApprox": "#844f51",
+        "pixelStdSrgb8": [
+          40.363,
+          57.693,
+          57.347
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          128.812,
+          74.193,
+          75.833
+        ],
+        "medianSrgb8": [
+          114.0,
+          52.0,
+          54.0
+        ],
+        "meanHexApprox": "#814a4c",
+        "pixelStdSrgb8": [
+          37.657,
+          51.454,
+          50.712
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          126.212,
+          71.241,
+          72.796
+        ],
+        "medianSrgb8": [
+          110.0,
+          49.0,
+          51.0
+        ],
+        "meanHexApprox": "#7e4749",
+        "pixelStdSrgb8": [
+          38.964,
+          52.059,
+          51.007
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 3.268,
+      "currentToPreparedMeanDeltaE76": 1.202,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 10.88,
+        "topBottomMeanAbsSrgb8": 143.726
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 5.287,
+        "topBottomMeanAbsSrgb8": 8.082
+      }
+    },
+    {
+      "id": "exterior-3d-textures-granito-cinza",
+      "original": {
+        "meanSrgb8": [
+          166.077,
+          160.712,
+          152.192
+        ],
+        "medianSrgb8": [
+          167.0,
+          161.0,
+          153.0
+        ],
+        "meanHexApprox": "#a6a198",
+        "pixelStdSrgb8": [
+          21.378,
+          21.738,
+          22.377
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          165.903,
+          160.703,
+          152.015
+        ],
+        "medianSrgb8": [
+          166.0,
+          161.0,
+          152.0
+        ],
+        "meanHexApprox": "#a6a198",
+        "pixelStdSrgb8": [
+          21.302,
+          21.603,
+          22.179
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          165.904,
+          160.684,
+          152.048
+        ],
+        "medianSrgb8": [
+          166.0,
+          161.0,
+          152.0
+        ],
+        "meanHexApprox": "#a6a198",
+        "pixelStdSrgb8": [
+          21.296,
+          21.591,
+          22.16
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 0.089,
+      "currentToPreparedMeanDeltaE76": 0.03,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 23.257,
+        "topBottomMeanAbsSrgb8": 26.163
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 23.268,
+        "topBottomMeanAbsSrgb8": 26.192
+      }
+    },
+    {
+      "id": "exterior-3d-gm-gm-16",
+      "original": {
+        "meanSrgb8": [
+          199.241,
+          164.594,
+          96.069
+        ],
+        "medianSrgb8": [
+          203.0,
+          168.0,
+          99.0
+        ],
+        "meanHexApprox": "#c7a560",
+        "pixelStdSrgb8": [
+          23.794,
+          24.532,
+          23.599
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          200.377,
+          164.713,
+          95.065
+        ],
+        "medianSrgb8": [
+          204.0,
+          168.0,
+          98.0
+        ],
+        "meanHexApprox": "#c8a55f",
+        "pixelStdSrgb8": [
+          21.427,
+          22.705,
+          21.999
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          200.664,
+          165.812,
+          96.86
+        ],
+        "medianSrgb8": [
+          204.0,
+          169.0,
+          100.0
+        ],
+        "meanHexApprox": "#c9a661",
+        "pixelStdSrgb8": [
+          23.179,
+          24.511,
+          24.657
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 0.502,
+      "currentToPreparedMeanDeltaE76": 0.679,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 22.437,
+        "topBottomMeanAbsSrgb8": 19.245
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 21.239,
+        "topBottomMeanAbsSrgb8": 28.112
+      }
+    },
+    {
+      "id": "exterior-3d-gm-gm-17",
+      "original": {
+        "meanSrgb8": [
+          131.44,
+          102.806,
+          61.41
+        ],
+        "medianSrgb8": [
+          132.0,
+          104.0,
+          63.0
+        ],
+        "meanHexApprox": "#83673d",
+        "pixelStdSrgb8": [
+          18.465,
+          17.208,
+          15.735
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          136.715,
+          107.048,
+          63.489
+        ],
+        "medianSrgb8": [
+          137.0,
+          108.0,
+          64.0
+        ],
+        "meanHexApprox": "#896b3f",
+        "pixelStdSrgb8": [
+          15.436,
+          15.125,
+          14.513
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          135.157,
+          104.965,
+          60.207
+        ],
+        "medianSrgb8": [
+          136.0,
+          106.0,
+          61.0
+        ],
+        "meanHexApprox": "#87693c",
+        "pixelStdSrgb8": [
+          17.045,
+          16.921,
+          16.129
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 2.228,
+      "currentToPreparedMeanDeltaE76": 1.154,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 17.87,
+        "topBottomMeanAbsSrgb8": 16.611
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 21.62,
+        "topBottomMeanAbsSrgb8": 24.762
+      }
+    },
+    {
+      "id": "exterior-3d-gm-gm-18",
+      "original": {
+        "meanSrgb8": [
+          164.901,
+          102.999,
+          52.299
+        ],
+        "medianSrgb8": [
+          166.0,
+          103.0,
+          50.0
+        ],
+        "meanHexApprox": "#a56734",
+        "pixelStdSrgb8": [
+          17.996,
+          16.451,
+          18.099
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          167.205,
+          104.424,
+          52.176
+        ],
+        "medianSrgb8": [
+          167.0,
+          104.0,
+          50.0
+        ],
+        "meanHexApprox": "#a76834",
+        "pixelStdSrgb8": [
+          15.726,
+          15.51,
+          18.165
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          167.1,
+          104.844,
+          54.311
+        ],
+        "medianSrgb8": [
+          167.0,
+          104.0,
+          52.0
+        ],
+        "meanHexApprox": "#a76936",
+        "pixelStdSrgb8": [
+          15.526,
+          15.482,
+          18.306
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 0.765,
+      "currentToPreparedMeanDeltaE76": 1.003,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 30.713,
+        "topBottomMeanAbsSrgb8": 13.214
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 30.359,
+        "topBottomMeanAbsSrgb8": 13.681
+      }
+    },
+    {
+      "id": "exterior-3d-gm-gm-19",
+      "original": {
+        "meanSrgb8": [
+          171.91,
+          125.946,
+          82.892
+        ],
+        "medianSrgb8": [
+          176.0,
+          130.0,
+          86.0
+        ],
+        "meanHexApprox": "#ac7e53",
+        "pixelStdSrgb8": [
+          29.236,
+          26.399,
+          21.658
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          172.663,
+          126.291,
+          82.494
+        ],
+        "medianSrgb8": [
+          178.0,
+          131.0,
+          86.0
+        ],
+        "meanHexApprox": "#ad7e52",
+        "pixelStdSrgb8": [
+          29.429,
+          26.696,
+          21.722
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          174.364,
+          128.043,
+          84.287
+        ],
+        "medianSrgb8": [
+          180.0,
+          133.0,
+          88.0
+        ],
+        "meanHexApprox": "#ae8054",
+        "pixelStdSrgb8": [
+          30.256,
+          27.362,
+          22.209
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 0.895,
+      "currentToPreparedMeanDeltaE76": 0.677,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 26.244,
+        "topBottomMeanAbsSrgb8": 27.804
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 26.743,
+        "topBottomMeanAbsSrgb8": 30.309
+      }
+    },
+    {
+      "id": "exterior-3d-gm-gm-20",
+      "original": {
+        "meanSrgb8": [
+          165.283,
+          95.327,
+          36.331
+        ],
+        "medianSrgb8": [
+          168.0,
+          96.0,
+          37.0
+        ],
+        "meanHexApprox": "#a55f24",
+        "pixelStdSrgb8": [
+          16.543,
+          14.683,
+          18.02
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          169.449,
+          97.801,
+          35.807
+        ],
+        "medianSrgb8": [
+          171.0,
+          99.0,
+          37.0
+        ],
+        "meanHexApprox": "#a96224",
+        "pixelStdSrgb8": [
+          12.186,
+          12.266,
+          16.881
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          171.453,
+          99.506,
+          36.222
+        ],
+        "medianSrgb8": [
+          172.0,
+          100.0,
+          37.0
+        ],
+        "meanHexApprox": "#ab6424",
+        "pixelStdSrgb8": [
+          10.537,
+          11.663,
+          18.652
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 2.817,
+      "currentToPreparedMeanDeltaE76": 0.882,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 24.822,
+        "topBottomMeanAbsSrgb8": 18.171
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 31.102,
+        "topBottomMeanAbsSrgb8": 10.249
+      }
+    },
+    {
+      "id": "exterior-3d-gm-gm-21",
+      "original": {
+        "meanSrgb8": [
+          93.98,
+          71.747,
+          52.982
+        ],
+        "medianSrgb8": [
+          95.0,
+          73.0,
+          54.0
+        ],
+        "meanHexApprox": "#5e4835",
+        "pixelStdSrgb8": [
+          15.466,
+          15.074,
+          15.333
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          95.676,
+          72.381,
+          52.565
+        ],
+        "medianSrgb8": [
+          97.0,
+          74.0,
+          53.0
+        ],
+        "meanHexApprox": "#604835",
+        "pixelStdSrgb8": [
+          15.236,
+          14.87,
+          15.13
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          94.405,
+          71.435,
+          52.024
+        ],
+        "medianSrgb8": [
+          96.0,
+          73.0,
+          53.0
+        ],
+        "meanHexApprox": "#5e4734",
+        "pixelStdSrgb8": [
+          14.976,
+          14.931,
+          15.355
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 0.597,
+      "currentToPreparedMeanDeltaE76": 0.51,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 17.35,
+        "topBottomMeanAbsSrgb8": 12.564
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 19.442,
+        "topBottomMeanAbsSrgb8": 16.389
+      }
+    },
+    {
+      "id": "exterior-3d-gm-gm-22",
+      "original": {
+        "meanSrgb8": [
+          187.322,
+          165.677,
+          129.014
+        ],
+        "medianSrgb8": [
+          187.0,
+          164.0,
+          128.0
+        ],
+        "meanHexApprox": "#bba681",
+        "pixelStdSrgb8": [
+          17.727,
+          17.65,
+          15.758
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          190.112,
+          167.622,
+          129.958
+        ],
+        "medianSrgb8": [
+          189.0,
+          166.0,
+          129.0
+        ],
+        "meanHexApprox": "#bea882",
+        "pixelStdSrgb8": [
+          11.886,
+          13.107,
+          12.622
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          191.135,
+          169.08,
+          131.635
+        ],
+        "medianSrgb8": [
+          191.0,
+          168.0,
+          132.0
+        ],
+        "meanHexApprox": "#bfa984",
+        "pixelStdSrgb8": [
+          12.92,
+          14.03,
+          13.358
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 1.338,
+      "currentToPreparedMeanDeltaE76": 0.569,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 20.713,
+        "topBottomMeanAbsSrgb8": 22.839
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 24.528,
+        "topBottomMeanAbsSrgb8": 25.146
+      }
+    },
+    {
+      "id": "exterior-3d-gm-gm-23",
+      "original": {
+        "meanSrgb8": [
+          158.283,
+          136.975,
+          75.755
+        ],
+        "medianSrgb8": [
+          161.0,
+          140.0,
+          78.0
+        ],
+        "meanHexApprox": "#9e894c",
+        "pixelStdSrgb8": [
+          13.669,
+          13.306,
+          12.444
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          160.446,
+          138.622,
+          76.457
+        ],
+        "medianSrgb8": [
+          161.0,
+          139.0,
+          77.0
+        ],
+        "meanHexApprox": "#a08b4c",
+        "pixelStdSrgb8": [
+          7.79,
+          7.948,
+          8.303
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          158.596,
+          136.781,
+          74.668
+        ],
+        "medianSrgb8": [
+          159.0,
+          138.0,
+          76.0
+        ],
+        "meanHexApprox": "#9f894b",
+        "pixelStdSrgb8": [
+          8.686,
+          8.739,
+          8.892
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 0.553,
+      "currentToPreparedMeanDeltaE76": 0.706,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 7.662,
+        "topBottomMeanAbsSrgb8": 17.015
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 6.814,
+        "topBottomMeanAbsSrgb8": 18.106
+      }
+    },
+    {
+      "id": "exterior-3d-gm-gm-24",
+      "original": {
+        "meanSrgb8": [
+          165.112,
+          111.99,
+          53.764
+        ],
+        "medianSrgb8": [
+          168.0,
+          114.0,
+          56.0
+        ],
+        "meanHexApprox": "#a57036",
+        "pixelStdSrgb8": [
+          17.764,
+          15.674,
+          17.184
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          169.297,
+          114.658,
+          54.042
+        ],
+        "medianSrgb8": [
+          171.0,
+          116.0,
+          56.0
+        ],
+        "meanHexApprox": "#a97336",
+        "pixelStdSrgb8": [
+          15.376,
+          14.029,
+          15.57
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          169.886,
+          115.659,
+          56.781
+        ],
+        "medianSrgb8": [
+          172.0,
+          117.0,
+          58.0
+        ],
+        "meanHexApprox": "#aa7439",
+        "pixelStdSrgb8": [
+          14.218,
+          13.268,
+          15.1
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 1.583,
+      "currentToPreparedMeanDeltaE76": 1.04,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 20.729,
+        "topBottomMeanAbsSrgb8": 24.554
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 22.257,
+        "topBottomMeanAbsSrgb8": 13.429
+      }
+    },
+    {
+      "id": "exterior-3d-gm-gm-25",
+      "original": {
+        "meanSrgb8": [
+          113.086,
+          92.27,
+          92.777
+        ],
+        "medianSrgb8": [
+          112.0,
+          90.0,
+          91.0
+        ],
+        "meanHexApprox": "#715c5d",
+        "pixelStdSrgb8": [
+          15.354,
+          15.717,
+          15.915
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          114.729,
+          93.16,
+          93.78
+        ],
+        "medianSrgb8": [
+          113.0,
+          91.0,
+          92.0
+        ],
+        "meanHexApprox": "#735d5e",
+        "pixelStdSrgb8": [
+          12.953,
+          13.534,
+          13.741
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          115.463,
+          94.453,
+          94.912
+        ],
+        "medianSrgb8": [
+          113.0,
+          92.0,
+          92.0
+        ],
+        "meanHexApprox": "#735e5f",
+        "pixelStdSrgb8": [
+          13.337,
+          14.089,
+          14.334
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 0.914,
+      "currentToPreparedMeanDeltaE76": 0.543,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 22.394,
+        "topBottomMeanAbsSrgb8": 20.867
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 19.115,
+        "topBottomMeanAbsSrgb8": 12.557
+      }
+    },
+    {
+      "id": "exterior-3d-gm-gm-26",
+      "original": {
+        "meanSrgb8": [
+          92.95,
+          97.002,
+          99.097
+        ],
+        "medianSrgb8": [
+          92.0,
+          96.0,
+          98.0
+        ],
+        "meanHexApprox": "#5d6163",
+        "pixelStdSrgb8": [
+          10.623,
+          10.853,
+          10.978
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          92.671,
+          96.818,
+          99.104
+        ],
+        "medianSrgb8": [
+          92.0,
+          96.0,
+          98.0
+        ],
+        "meanHexApprox": "#5d6163",
+        "pixelStdSrgb8": [
+          7.831,
+          8.099,
+          8.094
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          92.628,
+          96.563,
+          98.419
+        ],
+        "medianSrgb8": [
+          92.0,
+          96.0,
+          97.0
+        ],
+        "meanHexApprox": "#5d6162",
+        "pixelStdSrgb8": [
+          7.574,
+          7.88,
+          7.894
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 0.233,
+      "currentToPreparedMeanDeltaE76": 0.29,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 13.098,
+        "topBottomMeanAbsSrgb8": 9.417
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 9.984,
+        "topBottomMeanAbsSrgb8": 6.457
+      }
+    },
+    {
+      "id": "exterior-3d-gm-gm-27",
+      "original": {
+        "meanSrgb8": [
+          191.502,
+          197.747,
+          203.937
+        ],
+        "medianSrgb8": [
+          194.0,
+          200.0,
+          206.0
+        ],
+        "meanHexApprox": "#c0c6cc",
+        "pixelStdSrgb8": [
+          21.086,
+          21.298,
+          21.798
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          193.651,
+          199.895,
+          206.351
+        ],
+        "medianSrgb8": [
+          195.0,
+          201.0,
+          208.0
+        ],
+        "meanHexApprox": "#c2c8ce",
+        "pixelStdSrgb8": [
+          17.001,
+          17.072,
+          17.31
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          194.393,
+          200.975,
+          207.88
+        ],
+        "medianSrgb8": [
+          196.0,
+          202.0,
+          209.0
+        ],
+        "meanHexApprox": "#c2c9d0",
+        "pixelStdSrgb8": [
+          16.967,
+          17.009,
+          17.142
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 1.223,
+      "currentToPreparedMeanDeltaE76": 0.458,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 14.536,
+        "topBottomMeanAbsSrgb8": 15.859
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 17.528,
+        "topBottomMeanAbsSrgb8": 18.86
+      }
+    },
+    {
+      "id": "exterior-3d-gm-gm-28",
+      "original": {
+        "meanSrgb8": [
+          93.762,
+          97.742,
+          99.525
+        ],
+        "medianSrgb8": [
+          92.0,
+          96.0,
+          98.0
+        ],
+        "meanHexApprox": "#5e6264",
+        "pixelStdSrgb8": [
+          17.985,
+          18.076,
+          17.865
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          95.874,
+          99.833,
+          101.432
+        ],
+        "medianSrgb8": [
+          94.0,
+          98.0,
+          99.0
+        ],
+        "meanHexApprox": "#606465",
+        "pixelStdSrgb8": [
+          17.304,
+          17.332,
+          17.19
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          96.238,
+          100.143,
+          101.662
+        ],
+        "medianSrgb8": [
+          94.0,
+          98.0,
+          100.0
+        ],
+        "meanHexApprox": "#606466",
+        "pixelStdSrgb8": [
+          17.986,
+          18.034,
+          17.917
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 0.999,
+      "currentToPreparedMeanDeltaE76": 0.14,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 18.15,
+        "topBottomMeanAbsSrgb8": 16.691
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 21.799,
+        "topBottomMeanAbsSrgb8": 16.827
+      }
+    },
+    {
+      "id": "exterior-3d-gm-gm-29",
+      "original": {
+        "meanSrgb8": [
+          212.883,
+          182.133,
+          131.987
+        ],
+        "medianSrgb8": [
+          214.0,
+          183.0,
+          133.0
+        ],
+        "meanHexApprox": "#d5b684",
+        "pixelStdSrgb8": [
+          13.748,
+          12.566,
+          11.447
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          216.268,
+          185.379,
+          135.366
+        ],
+        "medianSrgb8": [
+          216.0,
+          185.0,
+          136.0
+        ],
+        "meanHexApprox": "#d8b987",
+        "pixelStdSrgb8": [
+          6.832,
+          6.739,
+          7.392
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          216.688,
+          185.512,
+          135.335
+        ],
+        "medianSrgb8": [
+          217.0,
+          185.0,
+          135.0
+        ],
+        "meanHexApprox": "#d9ba87",
+        "pixelStdSrgb8": [
+          6.515,
+          6.562,
+          7.317
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 1.27,
+      "currentToPreparedMeanDeltaE76": 0.167,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 5.658,
+        "topBottomMeanAbsSrgb8": 8.888
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 4.686,
+        "topBottomMeanAbsSrgb8": 12.512
+      }
+    },
+    {
+      "id": "exterior-3d-gm-gm-30",
+      "original": {
+        "meanSrgb8": [
+          206.895,
+          206.792,
+          207.168
+        ],
+        "medianSrgb8": [
+          209.0,
+          209.0,
+          209.0
+        ],
+        "meanHexApprox": "#cfcfcf",
+        "pixelStdSrgb8": [
+          14.915,
+          14.908,
+          14.842
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          209.367,
+          209.32,
+          209.361
+        ],
+        "medianSrgb8": [
+          211.0,
+          211.0,
+          211.0
+        ],
+        "meanHexApprox": "#d1d1d1",
+        "pixelStdSrgb8": [
+          11.456,
+          11.443,
+          11.447
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          210.321,
+          210.258,
+          210.294
+        ],
+        "medianSrgb8": [
+          211.0,
+          211.0,
+          211.0
+        ],
+        "meanHexApprox": "#d2d2d2",
+        "pixelStdSrgb8": [
+          4.033,
+          4.003,
+          4.012
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 1.243,
+      "currentToPreparedMeanDeltaE76": 0.337,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 24.366,
+        "topBottomMeanAbsSrgb8": 13.749
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 7.023,
+        "topBottomMeanAbsSrgb8": 4.787
+      }
+    },
+    {
+      "id": "exterior-finishes-madeira-mel",
+      "original": {
+        "meanSrgb8": [
+          189.388,
+          113.555,
+          93.495
+        ],
+        "medianSrgb8": [
+          192.0,
+          116.0,
+          97.0
+        ],
+        "meanHexApprox": "#bd725d",
+        "pixelStdSrgb8": [
+          22.022,
+          19.452,
+          21.601
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          190.387,
+          114.301,
+          93.896
+        ],
+        "medianSrgb8": [
+          193.0,
+          117.0,
+          98.0
+        ],
+        "meanHexApprox": "#be725e",
+        "pixelStdSrgb8": [
+          21.698,
+          19.109,
+          21.14
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          190.393,
+          114.285,
+          93.923
+        ],
+        "medianSrgb8": [
+          193.0,
+          117.0,
+          98.0
+        ],
+        "meanHexApprox": "#be725e",
+        "pixelStdSrgb8": [
+          21.68,
+          19.071,
+          21.103
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 0.357,
+      "currentToPreparedMeanDeltaE76": 0.023,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 18.936,
+        "topBottomMeanAbsSrgb8": 45.244
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 18.9,
+        "topBottomMeanAbsSrgb8": 45.331
+      }
+    },
+    {
+      "id": "exterior-finishes-lamela-branca",
+      "original": {
+        "meanSrgb8": [
+          205.32,
+          204.432,
+          202.8
+        ],
+        "medianSrgb8": [
+          206.0,
+          205.0,
+          204.0
+        ],
+        "meanHexApprox": "#cdcccb",
+        "pixelStdSrgb8": [
+          9.521,
+          9.733,
+          10.053
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          204.707,
+          203.745,
+          202.068
+        ],
+        "medianSrgb8": [
+          205.0,
+          205.0,
+          203.0
+        ],
+        "meanHexApprox": "#cdccca",
+        "pixelStdSrgb8": [
+          9.49,
+          9.658,
+          10.002
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          204.708,
+          203.738,
+          202.087
+        ],
+        "medianSrgb8": [
+          205.0,
+          205.0,
+          203.0
+        ],
+        "meanHexApprox": "#cdccca",
+        "pixelStdSrgb8": [
+          9.466,
+          9.654,
+          9.982
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 0.246,
+      "currentToPreparedMeanDeltaE76": 0.014,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 7.374,
+        "topBottomMeanAbsSrgb8": 9.987
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 7.223,
+        "topBottomMeanAbsSrgb8": 9.782
+      }
+    },
+    {
+      "id": "exterior-finishes-lamela-bege",
+      "original": {
+        "meanSrgb8": [
+          187.806,
+          176.665,
+          162.668
+        ],
+        "medianSrgb8": [
+          189.0,
+          178.0,
+          164.0
+        ],
+        "meanHexApprox": "#bcb1a3",
+        "pixelStdSrgb8": [
+          11.672,
+          12.471,
+          13.365
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          187.719,
+          176.607,
+          162.377
+        ],
+        "medianSrgb8": [
+          189.0,
+          178.0,
+          164.0
+        ],
+        "meanHexApprox": "#bcb1a2",
+        "pixelStdSrgb8": [
+          11.642,
+          12.502,
+          13.374
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          187.696,
+          176.6,
+          162.407
+        ],
+        "medianSrgb8": [
+          189.0,
+          178.0,
+          164.0
+        ],
+        "meanHexApprox": "#bcb1a2",
+        "pixelStdSrgb8": [
+          11.623,
+          12.479,
+          13.362
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 0.112,
+      "currentToPreparedMeanDeltaE76": 0.021,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 11.818,
+        "topBottomMeanAbsSrgb8": 17.169
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 11.708,
+        "topBottomMeanAbsSrgb8": 17.073
+      }
+    },
+    {
+      "id": "exterior-finishes-lamela-creme",
+      "original": {
+        "meanSrgb8": [
+          198.108,
+          181.426,
+          144.926
+        ],
+        "medianSrgb8": [
+          198.0,
+          182.0,
+          146.0
+        ],
+        "meanHexApprox": "#c6b591",
+        "pixelStdSrgb8": [
+          9.451,
+          9.399,
+          10.061
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          197.872,
+          181.125,
+          144.586
+        ],
+        "medianSrgb8": [
+          198.0,
+          182.0,
+          145.0
+        ],
+        "meanHexApprox": "#c6b591",
+        "pixelStdSrgb8": [
+          9.575,
+          9.498,
+          10.163
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          197.872,
+          181.117,
+          144.599
+        ],
+        "medianSrgb8": [
+          198.0,
+          182.0,
+          145.0
+        ],
+        "meanHexApprox": "#c6b591",
+        "pixelStdSrgb8": [
+          9.556,
+          9.489,
+          10.141
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 0.114,
+      "currentToPreparedMeanDeltaE76": 0.011,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 9.32,
+        "topBottomMeanAbsSrgb8": 11.984
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 9.156,
+        "topBottomMeanAbsSrgb8": 11.887
+      }
+    },
+    {
+      "id": "exterior-finishes-lamela-dourada",
+      "original": {
+        "meanSrgb8": [
+          200.603,
+          182.517,
+          124.762
+        ],
+        "medianSrgb8": [
+          201.0,
+          183.0,
+          124.0
+        ],
+        "meanHexApprox": "#c9b77d",
+        "pixelStdSrgb8": [
+          19.905,
+          20.29,
+          19.591
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          200.202,
+          182.071,
+          124.735
+        ],
+        "medianSrgb8": [
+          201.0,
+          183.0,
+          124.0
+        ],
+        "meanHexApprox": "#c8b67d",
+        "pixelStdSrgb8": [
+          20.341,
+          20.7,
+          20.048
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          200.199,
+          182.054,
+          124.761
+        ],
+        "medianSrgb8": [
+          201.0,
+          182.0,
+          124.0
+        ],
+        "meanHexApprox": "#c8b67d",
+        "pixelStdSrgb8": [
+          20.337,
+          20.679,
+          20.001
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 0.275,
+      "currentToPreparedMeanDeltaE76": 0.023,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 12.626,
+        "topBottomMeanAbsSrgb8": 26.649
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 12.658,
+        "topBottomMeanAbsSrgb8": 26.525
+      }
+    },
+    {
+      "id": "exterior-finishes-lamela-cinza",
+      "original": {
+        "meanSrgb8": [
+          114.74,
+          126.32,
+          137.17
+        ],
+        "medianSrgb8": [
+          115.0,
+          128.0,
+          139.0
+        ],
+        "meanHexApprox": "#737e89",
+        "pixelStdSrgb8": [
+          11.08,
+          12.055,
+          12.578
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          114.795,
+          126.468,
+          137.251
+        ],
+        "medianSrgb8": [
+          116.0,
+          128.0,
+          139.0
+        ],
+        "meanHexApprox": "#737e89",
+        "pixelStdSrgb8": [
+          11.33,
+          12.278,
+          12.815
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          114.825,
+          126.456,
+          137.249
+        ],
+        "medianSrgb8": [
+          116.0,
+          128.0,
+          139.0
+        ],
+        "meanHexApprox": "#737e89",
+        "pixelStdSrgb8": [
+          11.29,
+          12.256,
+          12.788
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 0.062,
+      "currentToPreparedMeanDeltaE76": 0.017,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 10.554,
+        "topBottomMeanAbsSrgb8": 18.126
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 10.541,
+        "topBottomMeanAbsSrgb8": 18.14
+      }
+    },
+    {
+      "id": "exterior-finishes-lamela-bordo",
+      "original": {
+        "meanSrgb8": [
+          97.335,
+          71.746,
+          73.273
+        ],
+        "medianSrgb8": [
+          96.0,
+          70.0,
+          72.0
+        ],
+        "meanHexApprox": "#614849",
+        "pixelStdSrgb8": [
+          16.72,
+          15.512,
+          16.043
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          97.057,
+          71.371,
+          72.84
+        ],
+        "medianSrgb8": [
+          96.0,
+          70.0,
+          72.0
+        ],
+        "meanHexApprox": "#614749",
+        "pixelStdSrgb8": [
+          16.947,
+          15.595,
+          16.09
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          97.07,
+          71.375,
+          72.872
+        ],
+        "medianSrgb8": [
+          96.0,
+          70.0,
+          72.0
+        ],
+        "meanHexApprox": "#614749",
+        "pixelStdSrgb8": [
+          16.919,
+          15.565,
+          16.076
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 0.16,
+      "currentToPreparedMeanDeltaE76": 0.018,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 13.295,
+        "topBottomMeanAbsSrgb8": 29.122
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 13.296,
+        "topBottomMeanAbsSrgb8": 29.122
+      }
+    },
+    {
+      "id": "exterior-finishes-grafite",
+      "original": {
+        "meanSrgb8": [
+          116.178,
+          124.204,
+          132.493
+        ],
+        "medianSrgb8": [
+          112.0,
+          120.0,
+          128.0
+        ],
+        "meanHexApprox": "#747c84",
+        "pixelStdSrgb8": [
+          21.393,
+          21.417,
+          21.463
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          116.157,
+          124.33,
+          132.584
+        ],
+        "medianSrgb8": [
+          112.0,
+          120.0,
+          129.0
+        ],
+        "meanHexApprox": "#747c85",
+        "pixelStdSrgb8": [
+          21.492,
+          21.522,
+          21.562
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          116.186,
+          124.315,
+          132.576
+        ],
+        "medianSrgb8": [
+          112.0,
+          120.0,
+          129.0
+        ],
+        "meanHexApprox": "#747c85",
+        "pixelStdSrgb8": [
+          21.44,
+          21.465,
+          21.516
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 0.055,
+      "currentToPreparedMeanDeltaE76": 0.017,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 24.21,
+        "topBottomMeanAbsSrgb8": 20.376
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 24.211,
+        "topBottomMeanAbsSrgb8": 20.226
+      }
+    },
+    {
+      "id": "exterior-finishes-preto",
+      "original": {
+        "meanSrgb8": [
+          69.745,
+          70.209,
+          70.484
+        ],
+        "medianSrgb8": [
+          68.0,
+          68.0,
+          69.0
+        ],
+        "meanHexApprox": "#464646",
+        "pixelStdSrgb8": [
+          17.159,
+          17.448,
+          17.745
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          69.276,
+          69.588,
+          69.811
+        ],
+        "medianSrgb8": [
+          68.0,
+          68.0,
+          68.0
+        ],
+        "meanHexApprox": "#454646",
+        "pixelStdSrgb8": [
+          16.663,
+          16.78,
+          16.928
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          69.291,
+          69.593,
+          69.82
+        ],
+        "medianSrgb8": [
+          68.0,
+          68.0,
+          68.0
+        ],
+        "meanHexApprox": "#454646",
+        "pixelStdSrgb8": [
+          16.618,
+          16.73,
+          16.876
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 0.266,
+      "currentToPreparedMeanDeltaE76": 0.006,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 20.145,
+        "topBottomMeanAbsSrgb8": 15.294
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 19.993,
+        "topBottomMeanAbsSrgb8": 15.277
+      }
+    },
+    {
+      "id": "exterior-finishes-vermelho",
+      "original": {
+        "meanSrgb8": [
+          160.525,
+          73.177,
+          69.385
+        ],
+        "medianSrgb8": [
+          161.0,
+          73.0,
+          69.0
+        ],
+        "meanHexApprox": "#a14945",
+        "pixelStdSrgb8": [
+          17.97,
+          15.505,
+          15.553
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          162.042,
+          73.947,
+          70.028
+        ],
+        "medianSrgb8": [
+          162.0,
+          74.0,
+          70.0
+        ],
+        "meanHexApprox": "#a24a46",
+        "pixelStdSrgb8": [
+          16.875,
+          15.362,
+          15.439
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          162.053,
+          73.954,
+          70.067
+        ],
+        "medianSrgb8": [
+          162.0,
+          74.0,
+          70.0
+        ],
+        "meanHexApprox": "#a24a46",
+        "pixelStdSrgb8": [
+          16.925,
+          15.297,
+          15.374
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 0.505,
+      "currentToPreparedMeanDeltaE76": 0.019,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 16.774,
+        "topBottomMeanAbsSrgb8": 71.022
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 16.624,
+        "topBottomMeanAbsSrgb8": 71.094
+      }
+    },
+    {
+      "id": "exterior-finishes-areia",
+      "original": {
+        "meanSrgb8": [
+          192.892,
+          176.706,
+          164.154
+        ],
+        "medianSrgb8": [
+          192.0,
+          176.0,
+          164.0
+        ],
+        "meanHexApprox": "#c1b1a4",
+        "pixelStdSrgb8": [
+          7.594,
+          7.372,
+          7.434
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          192.273,
+          176.135,
+          163.517
+        ],
+        "medianSrgb8": [
+          192.0,
+          176.0,
+          163.0
+        ],
+        "meanHexApprox": "#c0b0a4",
+        "pixelStdSrgb8": [
+          6.76,
+          6.636,
+          6.712
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          192.258,
+          176.124,
+          163.521
+        ],
+        "medianSrgb8": [
+          192.0,
+          176.0,
+          163.0
+        ],
+        "meanHexApprox": "#c0b0a4",
+        "pixelStdSrgb8": [
+          6.745,
+          6.62,
+          6.7
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 0.223,
+      "currentToPreparedMeanDeltaE76": 0.009,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 7.558,
+        "topBottomMeanAbsSrgb8": 14.394
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 7.464,
+        "topBottomMeanAbsSrgb8": 14.379
+      }
+    },
+    {
+      "id": "exterior-finishes-granito-branco",
+      "original": {
+        "meanSrgb8": [
+          176.835,
+          194.706,
+          203.898
+        ],
+        "medianSrgb8": [
+          192.0,
+          210.0,
+          220.0
+        ],
+        "meanHexApprox": "#b1c3cc",
+        "pixelStdSrgb8": [
+          42.186,
+          42.617,
+          43.2
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          176.512,
+          194.46,
+          203.636
+        ],
+        "medianSrgb8": [
+          192.0,
+          210.0,
+          219.0
+        ],
+        "meanHexApprox": "#b1c2cc",
+        "pixelStdSrgb8": [
+          42.381,
+          42.78,
+          43.321
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          176.523,
+          194.437,
+          203.655
+        ],
+        "medianSrgb8": [
+          192.0,
+          210.0,
+          219.0
+        ],
+        "meanHexApprox": "#b1c2cc",
+        "pixelStdSrgb8": [
+          42.295,
+          42.726,
+          43.322
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 0.102,
+      "currentToPreparedMeanDeltaE76": 0.027,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 43.316,
+        "topBottomMeanAbsSrgb8": 43.144
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 43.187,
+        "topBottomMeanAbsSrgb8": 43.05
+      }
+    },
+    {
+      "id": "exterior-standard-pedra-cinza",
+      "original": {
+        "meanSrgb8": [
+          107.459,
+          106.401,
+          106.601
+        ],
+        "medianSrgb8": [
+          105.0,
+          103.0,
+          103.0
+        ],
+        "meanHexApprox": "#6b6a6b",
+        "pixelStdSrgb8": [
+          28.155,
+          29.172,
+          31.093
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          107.757,
+          106.812,
+          107.02
+        ],
+        "medianSrgb8": [
+          105.0,
+          103.0,
+          104.0
+        ],
+        "meanHexApprox": "#6c6b6b",
+        "pixelStdSrgb8": [
+          28.324,
+          29.358,
+          31.315
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          107.781,
+          106.797,
+          107.057
+        ],
+        "medianSrgb8": [
+          105.0,
+          103.0,
+          104.0
+        ],
+        "meanHexApprox": "#6c6b6b",
+        "pixelStdSrgb8": [
+          28.309,
+          29.35,
+          31.298
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 0.163,
+      "currentToPreparedMeanDeltaE76": 0.035,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 35.766,
+        "topBottomMeanAbsSrgb8": 35.834
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 35.723,
+        "topBottomMeanAbsSrgb8": 35.927
+      }
+    },
+    {
+      "id": "exterior-standard-cinza-metalico",
+      "original": {
+        "meanSrgb8": [
+          145.614,
+          144.902,
+          144.743
+        ],
+        "medianSrgb8": [
+          136.0,
+          135.0,
+          136.0
+        ],
+        "meanHexApprox": "#929191",
+        "pixelStdSrgb8": [
+          28.569,
+          29.02,
+          29.098
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          145.794,
+          145.15,
+          144.998
+        ],
+        "medianSrgb8": [
+          136.0,
+          135.0,
+          136.0
+        ],
+        "meanHexApprox": "#929191",
+        "pixelStdSrgb8": [
+          28.58,
+          29.04,
+          29.126
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          131.807,
+          131.992,
+          132.05
+        ],
+        "medianSrgb8": [
+          132.0,
+          132.0,
+          132.0
+        ],
+        "meanHexApprox": "#848484",
+        "pixelStdSrgb8": [
+          3.2,
+          3.36,
+          3.413
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 5.07,
+      "currentToPreparedMeanDeltaE76": 5.158,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 39.208,
+        "topBottomMeanAbsSrgb8": 26.283
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 3.219,
+        "topBottomMeanAbsSrgb8": 5.094
+      }
+    },
+    {
+      "id": "exterior-standard-prata",
+      "original": {
+        "meanSrgb8": [
+          167.367,
+          170.297,
+          171.042
+        ],
+        "medianSrgb8": [
+          165.0,
+          169.0,
+          170.0
+        ],
+        "meanHexApprox": "#a7aaab",
+        "pixelStdSrgb8": [
+          18.101,
+          17.347,
+          16.887
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          167.63,
+          170.617,
+          171.331
+        ],
+        "medianSrgb8": [
+          165.0,
+          169.0,
+          170.0
+        ],
+        "meanHexApprox": "#a8abab",
+        "pixelStdSrgb8": [
+          18.546,
+          17.779,
+          17.084
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          166.809,
+          169.206,
+          170.422
+        ],
+        "medianSrgb8": [
+          166.0,
+          170.0,
+          171.0
+        ],
+        "meanHexApprox": "#a7a9aa",
+        "pixelStdSrgb8": [
+          3.502,
+          2.605,
+          3.729
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 0.482,
+      "currentToPreparedMeanDeltaE76": 0.586,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 23.699,
+        "topBottomMeanAbsSrgb8": 5.628
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 1.79,
+        "topBottomMeanAbsSrgb8": 2.543
+      }
+    },
+    {
+      "id": "exterior-standard-madeira-castanho",
+      "original": {
+        "meanSrgb8": [
+          180.529,
+          151.58,
+          145.138
+        ],
+        "medianSrgb8": [
+          179.0,
+          147.0,
+          138.0
+        ],
+        "meanHexApprox": "#b59891",
+        "pixelStdSrgb8": [
+          17.31,
+          25.074,
+          32.056
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          180.596,
+          152.284,
+          146.41
+        ],
+        "medianSrgb8": [
+          179.0,
+          148.0,
+          139.0
+        ],
+        "meanHexApprox": "#b59892",
+        "pixelStdSrgb8": [
+          17.536,
+          25.06,
+          31.547
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          176.238,
+          145.345,
+          136.324
+        ],
+        "medianSrgb8": [
+          176.0,
+          144.0,
+          133.0
+        ],
+        "meanHexApprox": "#b09188",
+        "pixelStdSrgb8": [
+          13.87,
+          17.282,
+          21.614
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 2.855,
+      "currentToPreparedMeanDeltaE76": 3.3,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 37.918,
+        "topBottomMeanAbsSrgb8": 22.464
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 29.527,
+        "topBottomMeanAbsSrgb8": 27.72
+      }
+    },
+    {
+      "id": "exterior-standard-cinza-perola",
+      "original": {
+        "meanSrgb8": [
+          132.176,
+          129.228,
+          130.725
+        ],
+        "medianSrgb8": [
+          131.0,
+          128.0,
+          131.0
+        ],
+        "meanHexApprox": "#848183",
+        "pixelStdSrgb8": [
+          21.261,
+          25.212,
+          24.798
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          131.225,
+          129.119,
+          130.68
+        ],
+        "medianSrgb8": [
+          131.0,
+          128.0,
+          130.0
+        ],
+        "meanHexApprox": "#838183",
+        "pixelStdSrgb8": [
+          19.575,
+          22.012,
+          21.552
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          139.256,
+          139.288,
+          140.829
+        ],
+        "medianSrgb8": [
+          141.0,
+          141.0,
+          142.0
+        ],
+        "meanHexApprox": "#8b8b8d",
+        "pixelStdSrgb8": [
+          10.448,
+          10.544,
+          10.351
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 3.845,
+      "currentToPreparedMeanDeltaE76": 3.865,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 47.219,
+        "topBottomMeanAbsSrgb8": 32.287
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 25.208,
+        "topBottomMeanAbsSrgb8": 10.722
+      }
+    },
+    {
+      "id": "exterior-standard-madeira-mel",
+      "original": {
+        "meanSrgb8": [
+          199.668,
+          132.043,
+          74.696
+        ],
+        "medianSrgb8": [
+          203.0,
+          136.0,
+          76.0
+        ],
+        "meanHexApprox": "#c8844b",
+        "pixelStdSrgb8": [
+          16.157,
+          17.991,
+          16.451
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          199.867,
+          131.832,
+          74.02
+        ],
+        "medianSrgb8": [
+          203.0,
+          135.0,
+          76.0
+        ],
+        "meanHexApprox": "#c8844a",
+        "pixelStdSrgb8": [
+          15.693,
+          17.368,
+          15.378
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          199.87,
+          131.808,
+          74.066
+        ],
+        "medianSrgb8": [
+          203.0,
+          135.0,
+          76.0
+        ],
+        "meanHexApprox": "#c8844a",
+        "pixelStdSrgb8": [
+          15.676,
+          17.354,
+          15.356
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 0.335,
+      "currentToPreparedMeanDeltaE76": 0.034,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 18.658,
+        "topBottomMeanAbsSrgb8": 22.242
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 18.71,
+        "topBottomMeanAbsSrgb8": 22.129
+      }
+    },
+    {
+      "id": "exterior-standard-madeira-cerejeira",
+      "original": {
+        "meanSrgb8": [
+          231.411,
+          126.713,
+          86.732
+        ],
+        "medianSrgb8": [
+          233.0,
+          126.0,
+          85.0
+        ],
+        "meanHexApprox": "#e77f57",
+        "pixelStdSrgb8": [
+          14.804,
+          22.2,
+          23.506
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          231.865,
+          127.627,
+          87.7
+        ],
+        "medianSrgb8": [
+          233.0,
+          127.0,
+          86.0
+        ],
+        "meanHexApprox": "#e88058",
+        "pixelStdSrgb8": [
+          14.903,
+          22.68,
+          24.139
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          230.46,
+          124.059,
+          85.177
+        ],
+        "medianSrgb8": [
+          232.0,
+          125.0,
+          85.0
+        ],
+        "meanHexApprox": "#e67c55",
+        "pixelStdSrgb8": [
+          15.356,
+          20.884,
+          20.025
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 1.138,
+      "currentToPreparedMeanDeltaE76": 1.489,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 21.029,
+        "topBottomMeanAbsSrgb8": 23.559
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 24.959,
+        "topBottomMeanAbsSrgb8": 22.26
+      }
+    },
+    {
+      "id": "exterior-standard-cinza-quente",
+      "original": {
+        "meanSrgb8": [
+          173.505,
+          171.678,
+          163.515
+        ],
+        "medianSrgb8": [
+          189.0,
+          188.0,
+          181.0
+        ],
+        "meanHexApprox": "#aeaca4",
+        "pixelStdSrgb8": [
+          28.479,
+          30.8,
+          32.631
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          172.943,
+          171.117,
+          162.858
+        ],
+        "medianSrgb8": [
+          189.0,
+          189.0,
+          181.0
+        ],
+        "meanHexApprox": "#adaba3",
+        "pixelStdSrgb8": [
+          28.3,
+          30.801,
+          32.803
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          192.208,
+          192.81,
+          186.392
+        ],
+        "medianSrgb8": [
+          190.0,
+          193.0,
+          188.0
+        ],
+        "meanHexApprox": "#c0c1ba",
+        "pixelStdSrgb8": [
+          4.177,
+          3.697,
+          3.485
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 7.744,
+      "currentToPreparedMeanDeltaE76": 7.959,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 20.51,
+        "topBottomMeanAbsSrgb8": 14.291
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 4.73,
+        "topBottomMeanAbsSrgb8": 5.316
+      }
+    },
+    {
+      "id": "exterior-standard-grafite",
+      "original": {
+        "meanSrgb8": [
+          102.154,
+          103.059,
+          98.699
+        ],
+        "medianSrgb8": [
+          107.0,
+          108.0,
+          102.0
+        ],
+        "meanHexApprox": "#666763",
+        "pixelStdSrgb8": [
+          29.197,
+          30.319,
+          33.881
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          102.988,
+          104.042,
+          99.517
+        ],
+        "medianSrgb8": [
+          108.0,
+          109.0,
+          104.0
+        ],
+        "meanHexApprox": "#676864",
+        "pixelStdSrgb8": [
+          27.93,
+          29.051,
+          32.583
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          100.233,
+          100.108,
+          93.506
+        ],
+        "medianSrgb8": [
+          105.0,
+          102.0,
+          97.0
+        ],
+        "meanHexApprox": "#64645e",
+        "pixelStdSrgb8": [
+          16.958,
+          16.834,
+          17.791
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 1.851,
+      "currentToPreparedMeanDeltaE76": 2.07,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 83.661,
+        "topBottomMeanAbsSrgb8": 21.483
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 42.708,
+        "topBottomMeanAbsSrgb8": 15.113
+      }
+    },
+    {
+      "id": "exterior-standard-branco-glacial",
+      "original": {
+        "meanSrgb8": [
+          221.915,
+          221.635,
+          219.374
+        ],
+        "medianSrgb8": [
+          221.0,
+          221.0,
+          219.0
+        ],
+        "meanHexApprox": "#dededb",
+        "pixelStdSrgb8": [
+          4.569,
+          4.69,
+          5.077
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          221.905,
+          221.604,
+          219.226
+        ],
+        "medianSrgb8": [
+          221.0,
+          221.0,
+          219.0
+        ],
+        "meanHexApprox": "#dededb",
+        "pixelStdSrgb8": [
+          4.577,
+          4.701,
+          5.128
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          221.096,
+          220.634,
+          217.595
+        ],
+        "medianSrgb8": [
+          220.0,
+          220.0,
+          216.0
+        ],
+        "meanHexApprox": "#ddddda",
+        "pixelStdSrgb8": [
+          4.063,
+          4.168,
+          4.617
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 0.547,
+      "currentToPreparedMeanDeltaE76": 0.494,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 4.915,
+        "topBottomMeanAbsSrgb8": 6.224
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 6.11,
+        "topBottomMeanAbsSrgb8": 4.084
+      }
+    },
+    {
+      "id": "exterior-standard-bege-marfim",
+      "original": {
+        "meanSrgb8": [
+          240.531,
+          228.728,
+          210.481
+        ],
+        "medianSrgb8": [
+          246.0,
+          233.0,
+          215.0
+        ],
+        "meanHexApprox": "#f1e5d2",
+        "pixelStdSrgb8": [
+          17.735,
+          20.329,
+          24.411
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          241.891,
+          229.907,
+          211.511
+        ],
+        "medianSrgb8": [
+          246.0,
+          233.0,
+          215.0
+        ],
+        "meanHexApprox": "#f2e6d4",
+        "pixelStdSrgb8": [
+          14.212,
+          16.359,
+          19.774
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          245.623,
+          232.515,
+          214.023
+        ],
+        "medianSrgb8": [
+          246.0,
+          233.0,
+          214.0
+        ],
+        "meanHexApprox": "#f6e9d6",
+        "pixelStdSrgb8": [
+          3.487,
+          3.536,
+          4.583
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 1.506,
+      "currentToPreparedMeanDeltaE76": 1.082,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 47.127,
+        "topBottomMeanAbsSrgb8": 22.467
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 9.525,
+        "topBottomMeanAbsSrgb8": 4.164
+      }
+    },
+    {
+      "id": "exterior-standard-vermelho-borgonha",
+      "original": {
+        "meanSrgb8": [
+          151.412,
+          44.474,
+          45.458
+        ],
+        "medianSrgb8": [
+          153.0,
+          43.0,
+          43.0
+        ],
+        "meanHexApprox": "#972c2d",
+        "pixelStdSrgb8": [
+          18.802,
+          7.951,
+          7.927
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          151.838,
+          43.818,
+          44.721
+        ],
+        "medianSrgb8": [
+          152.0,
+          42.0,
+          43.0
+        ],
+        "meanHexApprox": "#982c2d",
+        "pixelStdSrgb8": [
+          17.569,
+          6.712,
+          6.596
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          149.216,
+          42.97,
+          43.386
+        ],
+        "medianSrgb8": [
+          149.0,
+          42.0,
+          42.0
+        ],
+        "meanHexApprox": "#952b2b",
+        "pixelStdSrgb8": [
+          13.886,
+          4.641,
+          4.177
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 0.808,
+      "currentToPreparedMeanDeltaE76": 0.895,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 21.528,
+        "topBottomMeanAbsSrgb8": 18.206
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 14.782,
+        "topBottomMeanAbsSrgb8": 14.919
+      }
+    },
+    {
+      "id": "floor-spc-kx7005",
+      "original": {
+        "meanSrgb8": [
+          169.926,
+          146.366,
+          107.489
+        ],
+        "medianSrgb8": [
+          171.0,
+          147.0,
+          107.0
+        ],
+        "meanHexApprox": "#aa926b",
+        "pixelStdSrgb8": [
+          19.551,
+          19.682,
+          20.448
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          168.42,
+          144.574,
+          105.69
+        ],
+        "medianSrgb8": [
+          169.0,
+          145.0,
+          106.0
+        ],
+        "meanHexApprox": "#a8916a",
+        "pixelStdSrgb8": [
+          16.305,
+          16.851,
+          17.407
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          168.846,
+          145.112,
+          106.317
+        ],
+        "medianSrgb8": [
+          169.0,
+          145.0,
+          107.0
+        ],
+        "meanHexApprox": "#a9916a",
+        "pixelStdSrgb8": [
+          16.707,
+          17.013,
+          17.66
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 0.469,
+      "currentToPreparedMeanDeltaE76": 0.215,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 19.591,
+        "topBottomMeanAbsSrgb8": 25.567
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 14.046,
+        "topBottomMeanAbsSrgb8": 26.069
+      }
+    },
+    {
+      "id": "floor-spc-kx7006",
+      "original": {
+        "meanSrgb8": [
+          149.048,
+          134.685,
+          111.114
+        ],
+        "medianSrgb8": [
+          146.0,
+          132.0,
+          108.0
+        ],
+        "meanHexApprox": "#95876f",
+        "pixelStdSrgb8": [
+          24.668,
+          26.65,
+          28.745
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          146.112,
+          131.65,
+          107.723
+        ],
+        "medianSrgb8": [
+          144.0,
+          130.0,
+          106.0
+        ],
+        "meanHexApprox": "#92846c",
+        "pixelStdSrgb8": [
+          19.129,
+          20.267,
+          21.045
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          146.419,
+          132.062,
+          108.179
+        ],
+        "medianSrgb8": [
+          145.0,
+          131.0,
+          107.0
+        ],
+        "meanHexApprox": "#92846c",
+        "pixelStdSrgb8": [
+          19.545,
+          20.63,
+          21.365
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 1.047,
+      "currentToPreparedMeanDeltaE76": 0.163,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 22.021,
+        "topBottomMeanAbsSrgb8": 27.026
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 34.625,
+        "topBottomMeanAbsSrgb8": 27.27
+      }
+    },
+    {
+      "id": "floor-spc-kx7007",
+      "original": {
+        "meanSrgb8": [
+          176.087,
+          144.7,
+          91.755
+        ],
+        "medianSrgb8": [
+          178.0,
+          145.0,
+          89.0
+        ],
+        "meanHexApprox": "#b0915c",
+        "pixelStdSrgb8": [
+          25.56,
+          29.477,
+          33.648
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          170.001,
+          137.85,
+          84.752
+        ],
+        "medianSrgb8": [
+          172.0,
+          139.0,
+          85.0
+        ],
+        "meanHexApprox": "#aa8a55",
+        "pixelStdSrgb8": [
+          21.414,
+          22.806,
+          23.095
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          170.861,
+          138.563,
+          84.83
+        ],
+        "medianSrgb8": [
+          173.0,
+          140.0,
+          85.0
+        ],
+        "meanHexApprox": "#ab8b55",
+        "pixelStdSrgb8": [
+          21.503,
+          22.886,
+          23.081
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 2.423,
+      "currentToPreparedMeanDeltaE76": 0.426,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 19.822,
+        "topBottomMeanAbsSrgb8": 42.892
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 22.029,
+        "topBottomMeanAbsSrgb8": 43.217
+      }
+    },
+    {
+      "id": "floor-spc-kx7008",
+      "original": {
+        "meanSrgb8": [
+          162.76,
+          140.207,
+          113.118
+        ],
+        "medianSrgb8": [
+          163.0,
+          140.0,
+          113.0
+        ],
+        "meanHexApprox": "#a38c71",
+        "pixelStdSrgb8": [
+          18.719,
+          19.599,
+          20.155
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          159.138,
+          136.432,
+          109.161
+        ],
+        "medianSrgb8": [
+          159.0,
+          137.0,
+          109.0
+        ],
+        "meanHexApprox": "#9f886d",
+        "pixelStdSrgb8": [
+          15.211,
+          15.399,
+          15.263
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          160.532,
+          137.802,
+          110.442
+        ],
+        "medianSrgb8": [
+          161.0,
+          138.0,
+          110.0
+        ],
+        "meanHexApprox": "#a18a6e",
+        "pixelStdSrgb8": [
+          15.468,
+          15.655,
+          15.475
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 0.94,
+      "currentToPreparedMeanDeltaE76": 0.527,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 11.63,
+        "topBottomMeanAbsSrgb8": 18.21
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 11.671,
+        "topBottomMeanAbsSrgb8": 19.542
+      }
+    },
+    {
+      "id": "floor-spc-kx7009",
+      "original": {
+        "meanSrgb8": [
+          169.965,
+          150.932,
+          129.835
+        ],
+        "medianSrgb8": [
+          173.0,
+          153.0,
+          131.0
+        ],
+        "meanHexApprox": "#aa9782",
+        "pixelStdSrgb8": [
+          26.712,
+          28.363,
+          29.228
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          167.466,
+          148.093,
+          127.079
+        ],
+        "medianSrgb8": [
+          171.0,
+          151.0,
+          129.0
+        ],
+        "meanHexApprox": "#a7947f",
+        "pixelStdSrgb8": [
+          24.598,
+          25.28,
+          25.587
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          167.982,
+          148.477,
+          127.146
+        ],
+        "medianSrgb8": [
+          172.0,
+          151.0,
+          129.0
+        ],
+        "meanHexApprox": "#a8947f",
+        "pixelStdSrgb8": [
+          24.622,
+          25.421,
+          25.784
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 0.938,
+      "currentToPreparedMeanDeltaE76": 0.235,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 35.194,
+        "topBottomMeanAbsSrgb8": 30.587
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 34.106,
+        "topBottomMeanAbsSrgb8": 30.19
+      }
+    },
+    {
+      "id": "floor-spc-kx7010",
+      "original": {
+        "meanSrgb8": [
+          168.986,
+          126.569,
+          84.116
+        ],
+        "medianSrgb8": [
+          168.0,
+          125.0,
+          81.0
+        ],
+        "meanHexApprox": "#a97f54",
+        "pixelStdSrgb8": [
+          23.914,
+          26.41,
+          30.153
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          166.733,
+          123.405,
+          81.776
+        ],
+        "medianSrgb8": [
+          167.0,
+          123.0,
+          82.0
+        ],
+        "meanHexApprox": "#a77b52",
+        "pixelStdSrgb8": [
+          20.892,
+          20.678,
+          18.546
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          166.533,
+          123.391,
+          81.54
+        ],
+        "medianSrgb8": [
+          166.0,
+          123.0,
+          81.0
+        ],
+        "meanHexApprox": "#a77b52",
+        "pixelStdSrgb8": [
+          20.412,
+          20.188,
+          18.634
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 1.23,
+      "currentToPreparedMeanDeltaE76": 0.137,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 26.527,
+        "topBottomMeanAbsSrgb8": 29.978
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 14.778,
+        "topBottomMeanAbsSrgb8": 30.887
+      }
+    },
+    {
+      "id": "floor-spc-kx8005",
+      "original": {
+        "meanSrgb8": [
+          159.432,
+          99.281,
+          56.559
+        ],
+        "medianSrgb8": [
+          159.0,
+          97.0,
+          54.0
+        ],
+        "meanHexApprox": "#9f6339",
+        "pixelStdSrgb8": [
+          18.815,
+          24.014,
+          27.392
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          159.806,
+          98.346,
+          53.884
+        ],
+        "medianSrgb8": [
+          160.0,
+          98.0,
+          54.0
+        ],
+        "meanHexApprox": "#a06236",
+        "pixelStdSrgb8": [
+          13.092,
+          13.622,
+          11.39
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          159.88,
+          98.654,
+          54.304
+        ],
+        "medianSrgb8": [
+          160.0,
+          98.0,
+          55.0
+        ],
+        "meanHexApprox": "#a06336",
+        "pixelStdSrgb8": [
+          13.515,
+          14.102,
+          11.718
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 1.17,
+      "currentToPreparedMeanDeltaE76": 0.189,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 23.569,
+        "topBottomMeanAbsSrgb8": 21.261
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 19.847,
+        "topBottomMeanAbsSrgb8": 21.448
+      }
+    },
+    {
+      "id": "floor-spc-kx8006",
+      "original": {
+        "meanSrgb8": [
+          144.847,
+          149.457,
+          152.525
+        ],
+        "medianSrgb8": [
+          146.0,
+          151.0,
+          154.0
+        ],
+        "meanHexApprox": "#919599",
+        "pixelStdSrgb8": [
+          22.76,
+          23.018,
+          22.534
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          142.424,
+          146.963,
+          149.996
+        ],
+        "medianSrgb8": [
+          144.0,
+          149.0,
+          151.0
+        ],
+        "meanHexApprox": "#8e9396",
+        "pixelStdSrgb8": [
+          20.427,
+          20.633,
+          20.284
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          143.583,
+          148.139,
+          151.149
+        ],
+        "medianSrgb8": [
+          145.0,
+          150.0,
+          153.0
+        ],
+        "meanHexApprox": "#909497",
+        "pixelStdSrgb8": [
+          20.558,
+          20.754,
+          20.369
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 0.502,
+      "currentToPreparedMeanDeltaE76": 0.448,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 21.631,
+        "topBottomMeanAbsSrgb8": 27.356
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 20.378,
+        "topBottomMeanAbsSrgb8": 28.48
+      }
+    },
+    {
+      "id": "floor-spc-kx8007",
+      "original": {
+        "meanSrgb8": [
+          216.406,
+          191.02,
+          152.633
+        ],
+        "medianSrgb8": [
+          217.0,
+          190.0,
+          152.0
+        ],
+        "meanHexApprox": "#d8bf99",
+        "pixelStdSrgb8": [
+          15.806,
+          17.71,
+          19.871
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          217.187,
+          190.899,
+          152.039
+        ],
+        "medianSrgb8": [
+          217.0,
+          190.0,
+          151.0
+        ],
+        "meanHexApprox": "#d9bf98",
+        "pixelStdSrgb8": [
+          10.25,
+          12.337,
+          15.194
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          217.779,
+          191.787,
+          153.169
+        ],
+        "medianSrgb8": [
+          218.0,
+          191.0,
+          152.0
+        ],
+        "meanHexApprox": "#dac099",
+        "pixelStdSrgb8": [
+          10.548,
+          12.89,
+          15.878
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 0.422,
+      "currentToPreparedMeanDeltaE76": 0.363,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 8.604,
+        "topBottomMeanAbsSrgb8": 35.524
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 8.526,
+        "topBottomMeanAbsSrgb8": 35.625
+      }
+    },
+    {
+      "id": "floor-spc-kx8008",
+      "original": {
+        "meanSrgb8": [
+          155.419,
+          149.482,
+          131.588
+        ],
+        "medianSrgb8": [
+          155.0,
+          149.0,
+          131.0
+        ],
+        "meanHexApprox": "#9b9584",
+        "pixelStdSrgb8": [
+          18.221,
+          18.545,
+          19.548
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          154.064,
+          148.217,
+          130.372
+        ],
+        "medianSrgb8": [
+          153.0,
+          147.0,
+          129.0
+        ],
+        "meanHexApprox": "#9a9482",
+        "pixelStdSrgb8": [
+          16.246,
+          16.499,
+          17.531
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          154.918,
+          149.118,
+          131.4
+        ],
+        "medianSrgb8": [
+          154.0,
+          148.0,
+          131.0
+        ],
+        "meanHexApprox": "#9b9583",
+        "pixelStdSrgb8": [
+          16.36,
+          16.655,
+          17.743
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 0.183,
+      "currentToPreparedMeanDeltaE76": 0.353,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 20.479,
+        "topBottomMeanAbsSrgb8": 25.246
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 22.405,
+        "topBottomMeanAbsSrgb8": 25.608
+      }
+    },
+    {
+      "id": "floor-spc-kx8009",
+      "original": {
+        "meanSrgb8": [
+          179.149,
+          134.883,
+          78.005
+        ],
+        "medianSrgb8": [
+          179.0,
+          134.0,
+          76.0
+        ],
+        "meanHexApprox": "#b3874e",
+        "pixelStdSrgb8": [
+          22.871,
+          26.846,
+          33.048
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          175.439,
+          130.429,
+          72.828
+        ],
+        "medianSrgb8": [
+          176.0,
+          131.0,
+          74.0
+        ],
+        "meanHexApprox": "#af8249",
+        "pixelStdSrgb8": [
+          18.502,
+          19.078,
+          20.179
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          176.168,
+          131.238,
+          73.427
+        ],
+        "medianSrgb8": [
+          177.0,
+          132.0,
+          74.0
+        ],
+        "meanHexApprox": "#b08349",
+        "pixelStdSrgb8": [
+          18.428,
+          18.902,
+          19.884
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 1.556,
+      "currentToPreparedMeanDeltaE76": 0.313,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 19.724,
+        "topBottomMeanAbsSrgb8": 25.706
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 14.554,
+        "topBottomMeanAbsSrgb8": 24.977
+      }
+    },
+    {
+      "id": "floor-spc-kx9005",
+      "original": {
+        "meanSrgb8": [
+          170.195,
+          148.57,
+          116.977
+        ],
+        "medianSrgb8": [
+          170.0,
+          148.0,
+          115.0
+        ],
+        "meanHexApprox": "#aa9575",
+        "pixelStdSrgb8": [
+          23.174,
+          25.233,
+          27.838
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          166.708,
+          144.749,
+          112.723
+        ],
+        "medianSrgb8": [
+          167.0,
+          145.0,
+          113.0
+        ],
+        "meanHexApprox": "#a79171",
+        "pixelStdSrgb8": [
+          19.263,
+          20.203,
+          20.73
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          167.669,
+          145.688,
+          113.631
+        ],
+        "medianSrgb8": [
+          168.0,
+          146.0,
+          114.0
+        ],
+        "meanHexApprox": "#a89272",
+        "pixelStdSrgb8": [
+          19.203,
+          20.064,
+          20.624
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 1.137,
+      "currentToPreparedMeanDeltaE76": 0.358,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 12.107,
+        "topBottomMeanAbsSrgb8": 23.649
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 19.289,
+        "topBottomMeanAbsSrgb8": 24.418
+      }
+    },
+    {
+      "id": "bathroom-uv-amostra-1",
+      "original": {
+        "meanSrgb8": [
+          236.927,
+          235.955,
+          241.598
+        ],
+        "medianSrgb8": [
+          240.0,
+          239.0,
+          244.0
+        ],
+        "meanHexApprox": "#edecf2",
+        "pixelStdSrgb8": [
+          11.081,
+          10.966,
+          12.034
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          237.247,
+          236.275,
+          241.962
+        ],
+        "medianSrgb8": [
+          240.0,
+          239.0,
+          244.0
+        ],
+        "meanHexApprox": "#edecf2",
+        "pixelStdSrgb8": [
+          10.566,
+          10.467,
+          11.474
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          237.242,
+          236.264,
+          241.963
+        ],
+        "medianSrgb8": [
+          240.0,
+          239.0,
+          244.0
+        ],
+        "meanHexApprox": "#edecf2",
+        "pixelStdSrgb8": [
+          10.565,
+          10.463,
+          11.496
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 0.114,
+      "currentToPreparedMeanDeltaE76": 0.007,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 12.062,
+        "topBottomMeanAbsSrgb8": 10.958
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 12.005,
+        "topBottomMeanAbsSrgb8": 10.948
+      }
+    },
+    {
+      "id": "bathroom-uv-amostra-2",
+      "original": {
+        "meanSrgb8": [
+          240.565,
+          238.204,
+          243.854
+        ],
+        "medianSrgb8": [
+          246.0,
+          243.0,
+          249.0
+        ],
+        "meanHexApprox": "#f1eef4",
+        "pixelStdSrgb8": [
+          17.172,
+          16.631,
+          17.298
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          240.104,
+          237.814,
+          243.416
+        ],
+        "medianSrgb8": [
+          245.0,
+          243.0,
+          249.0
+        ],
+        "meanHexApprox": "#f0eef3",
+        "pixelStdSrgb8": [
+          17.851,
+          17.309,
+          18.013
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          240.127,
+          237.786,
+          243.434
+        ],
+        "medianSrgb8": [
+          246.0,
+          243.0,
+          249.0
+        ],
+        "meanHexApprox": "#f0eef3",
+        "pixelStdSrgb8": [
+          17.861,
+          17.304,
+          18.025
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 0.148,
+      "currentToPreparedMeanDeltaE76": 0.03,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 7.359,
+        "topBottomMeanAbsSrgb8": 9.271
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 7.258,
+        "topBottomMeanAbsSrgb8": 9.201
+      }
+    },
+    {
+      "id": "bathroom-uv-amostra-3",
+      "original": {
+        "meanSrgb8": [
+          58.386,
+          57.388,
+          53.385
+        ],
+        "medianSrgb8": [
+          58.0,
+          57.0,
+          53.0
+        ],
+        "meanHexApprox": "#3a3935",
+        "pixelStdSrgb8": [
+          6.156,
+          6.157,
+          6.146
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          58.329,
+          57.331,
+          53.324
+        ],
+        "medianSrgb8": [
+          58.0,
+          57.0,
+          53.0
+        ],
+        "meanHexApprox": "#3a3935",
+        "pixelStdSrgb8": [
+          6.431,
+          6.431,
+          6.421
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          58.333,
+          57.336,
+          53.33
+        ],
+        "medianSrgb8": [
+          58.0,
+          57.0,
+          53.0
+        ],
+        "meanHexApprox": "#3a3935",
+        "pixelStdSrgb8": [
+          6.421,
+          6.422,
+          6.41
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 0.024,
+      "currentToPreparedMeanDeltaE76": 0.002,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 3.097,
+        "topBottomMeanAbsSrgb8": 4.066
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 3.112,
+        "topBottomMeanAbsSrgb8": 4.093
+      }
+    },
+    {
+      "id": "bathroom-uv-amostra-4",
+      "original": {
+        "meanSrgb8": [
+          163.414,
+          161.428,
+          162.634
+        ],
+        "medianSrgb8": [
+          162.0,
+          160.0,
+          161.0
+        ],
+        "meanHexApprox": "#a3a1a3",
+        "pixelStdSrgb8": [
+          9.277,
+          9.192,
+          9.545
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          163.41,
+          161.428,
+          162.648
+        ],
+        "medianSrgb8": [
+          162.0,
+          160.0,
+          161.0
+        ],
+        "meanHexApprox": "#a3a1a3",
+        "pixelStdSrgb8": [
+          9.381,
+          9.302,
+          9.68
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          163.404,
+          161.417,
+          162.638
+        ],
+        "medianSrgb8": [
+          162.0,
+          160.0,
+          161.0
+        ],
+        "meanHexApprox": "#a3a1a3",
+        "pixelStdSrgb8": [
+          9.383,
+          9.284,
+          9.674
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 0.009,
+      "currentToPreparedMeanDeltaE76": 0.004,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 10.291,
+        "topBottomMeanAbsSrgb8": 9.353
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 10.293,
+        "topBottomMeanAbsSrgb8": 9.292
+      }
+    },
+    {
+      "id": "bathroom-uv-amostra-5",
+      "original": {
+        "meanSrgb8": [
+          25.348,
+          25.086,
+          28.305
+        ],
+        "medianSrgb8": [
+          17.0,
+          17.0,
+          20.0
+        ],
+        "meanHexApprox": "#19191c",
+        "pixelStdSrgb8": [
+          33.152,
+          33.643,
+          34.022
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          24.835,
+          24.611,
+          27.699
+        ],
+        "medianSrgb8": [
+          17.0,
+          17.0,
+          20.0
+        ],
+        "meanHexApprox": "#19191c",
+        "pixelStdSrgb8": [
+          31.885,
+          32.331,
+          32.664
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          24.842,
+          24.584,
+          27.77
+        ],
+        "medianSrgb8": [
+          17.0,
+          17.0,
+          20.0
+        ],
+        "meanHexApprox": "#19191c",
+        "pixelStdSrgb8": [
+          31.864,
+          32.333,
+          32.676
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 0.257,
+      "currentToPreparedMeanDeltaE76": 0.076,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 32.728,
+        "topBottomMeanAbsSrgb8": 16.312
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 32.713,
+        "topBottomMeanAbsSrgb8": 16.253
+      }
+    },
+    {
+      "id": "bathroom-uv-amostra-6",
+      "original": {
+        "meanSrgb8": [
+          118.178,
+          117.244,
+          113.02
+        ],
+        "medianSrgb8": [
+          118.0,
+          117.0,
+          113.0
+        ],
+        "meanHexApprox": "#767571",
+        "pixelStdSrgb8": [
+          7.188,
+          7.191,
+          7.367
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          118.105,
+          117.182,
+          112.931
+        ],
+        "medianSrgb8": [
+          118.0,
+          117.0,
+          113.0
+        ],
+        "meanHexApprox": "#767571",
+        "pixelStdSrgb8": [
+          7.281,
+          7.284,
+          7.451
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          118.115,
+          117.19,
+          112.958
+        ],
+        "medianSrgb8": [
+          118.0,
+          117.0,
+          113.0
+        ],
+        "meanHexApprox": "#767571",
+        "pixelStdSrgb8": [
+          7.264,
+          7.269,
+          7.448
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 0.023,
+      "currentToPreparedMeanDeltaE76": 0.012,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 6.158,
+        "topBottomMeanAbsSrgb8": 6.396
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 6.077,
+        "topBottomMeanAbsSrgb8": 6.339
+      }
+    },
+    {
+      "id": "bathroom-uv-amostra-7",
+      "original": {
+        "meanSrgb8": [
+          9.058,
+          9.176,
+          9.28
+        ],
+        "medianSrgb8": [
+          4.0,
+          4.0,
+          4.0
+        ],
+        "meanHexApprox": "#090909",
+        "pixelStdSrgb8": [
+          25.677,
+          26.158,
+          26.538
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          8.013,
+          8.119,
+          8.181
+        ],
+        "medianSrgb8": [
+          4.0,
+          4.0,
+          4.0
+        ],
+        "meanHexApprox": "#080808",
+        "pixelStdSrgb8": [
+          22.996,
+          23.479,
+          23.732
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          8.021,
+          8.123,
+          8.19
+        ],
+        "medianSrgb8": [
+          4.0,
+          4.0,
+          4.0
+        ],
+        "meanHexApprox": "#080808",
+        "pixelStdSrgb8": [
+          23.006,
+          23.474,
+          23.757
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 0.289,
+      "currentToPreparedMeanDeltaE76": 0.003,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 35.715,
+        "topBottomMeanAbsSrgb8": 10.917
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 35.702,
+        "topBottomMeanAbsSrgb8": 10.949
+      }
+    },
+    {
+      "id": "bathroom-uv-amostra-8",
+      "original": {
+        "meanSrgb8": [
+          231.241,
+          229.94,
+          235.899
+        ],
+        "medianSrgb8": [
+          236.0,
+          235.0,
+          240.0
+        ],
+        "meanHexApprox": "#e7e6ec",
+        "pixelStdSrgb8": [
+          11.548,
+          11.309,
+          11.839
+        ]
+      },
+      "current": {
+        "meanSrgb8": [
+          230.709,
+          229.482,
+          235.394
+        ],
+        "medianSrgb8": [
+          236.0,
+          235.0,
+          240.0
+        ],
+        "meanHexApprox": "#e7e5eb",
+        "pixelStdSrgb8": [
+          11.792,
+          11.587,
+          12.088
+        ]
+      },
+      "prepared": {
+        "meanSrgb8": [
+          230.71,
+          229.469,
+          235.397
+        ],
+        "medianSrgb8": [
+          236.0,
+          235.0,
+          240.0
+        ],
+        "meanHexApprox": "#e7e5eb",
+        "pixelStdSrgb8": [
+          11.789,
+          11.579,
+          12.091
+        ]
+      },
+      "originalToPreparedMeanDeltaE76": 0.173,
+      "currentToPreparedMeanDeltaE76": 0.01,
+      "preparedVsExactSourceCropMaxChannelError": 0,
+      "currentSeam": {
+        "leftRightMeanAbsSrgb8": 4.309,
+        "topBottomMeanAbsSrgb8": 16.675
+      },
+      "preparedSeam": {
+        "leftRightMeanAbsSrgb8": 4.333,
+        "topBottomMeanAbsSrgb8": 16.634
+      }
+    }
+  ]
+}

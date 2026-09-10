@@ -1,0 +1,44 @@
+{
+  "method": "Compare native render frame216 (9s) with lossless PNG decoded from final H264; explicit RGB full to YUV limited BT.709 conversion.",
+  "tour": {
+    "footer": {
+      "sourceMeanRgb8": [
+        34,
+        61,
+        49
+      ],
+      "decodedMeanRgb8": [
+        33,
+        60,
+        46
+      ],
+      "meanAbsoluteChannelError": 1.667
+    },
+    "background": {
+      "sourceMeanRgb8": [
+        240,
+        244,
+        234
+      ],
+      "decodedMeanRgb8": [
+        238,
+        242,
+        231
+      ],
+      "meanAbsoluteChannelError": 2.333
+    },
+    "wholeFrame": {
+      "sourceMeanRgb8": [
+        202.9,
+        208.73,
+        198.13
+      ],
+      "decodedMeanRgb8": [
+        201.07,
+        206.9,
+        195.46
+      ],
+      "meanAbsoluteChannelError": 2.309
+    }
+  }
+}

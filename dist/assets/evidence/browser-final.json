@@ -1,0 +1,814 @@
+{
+  "status": "PASS",
+  "checkedAt": "2026-09-10T12:41:15.683053+00:00",
+  "scope": {
+    "environment": "Local Chromium via installed Google Chrome, headless",
+    "url": "http://127.0.0.1:4174",
+    "baselineUrl": "http://127.0.0.1:4181",
+    "desktop": [
+      1440,
+      1000
+    ],
+    "mobileViewport": [
+      390,
+      844
+    ],
+    "deviceScaleFactor": 1,
+    "hardware": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4, Unspecified Version)",
+    "realMobileHardwareTested": false,
+    "productionTested": false,
+    "siteEditedByAudit": false
+  },
+  "coverage": {
+    "materialsApplied": 71,
+    "layoutsSelectedByUI": 7,
+    "sceneViews": 7,
+    "cameraPresets": 6,
+    "floorCacheCycles": 3,
+    "floorMaterialsPerCycle": 12,
+    "comparatorOpenCloseFinal": 20,
+    "jsonInvalidCases": [
+      "corrupt syntax",
+      "missing field",
+      "invalid layout",
+      "over 100000 characters"
+    ],
+    "exportsDownloadedAndOpened": [
+      "PDF",
+      "PNG",
+      "SVG",
+      "JSON"
+    ],
+    "webglDisabled": true,
+    "webglContextLossAndRestore": true,
+    "autoManualPersistence": true,
+    "keyboardAndMobileControls": true
+  },
+  "resolvedFindings": [
+    {
+      "id": "local-server-module-resets",
+      "status": "RESOLVED",
+      "evidence": "initial-probe.json; successful current 4174 runs"
+    },
+    {
+      "id": "explode-input-desync",
+      "status": "RESOLVED",
+      "evidence": "fixes-perf.json"
+    },
+    {
+      "id": "reset-controls-desync",
+      "status": "RESOLVED",
+      "evidence": "fixes-perf.json"
+    },
+    {
+      "id": "top-label-overlap",
+      "status": "RESOLVED",
+      "evidence": "desktop-top-final-viewport.png"
+    }
+  ],
+  "harnessCorrection": "Original aria-disabled kitchen click timeout was a test issue; validated UI variants and rejected configuration passed in fixes-perf.json.",
+  "performance": {
+    "idleSamples": [
+      {
+        "label": "desktop",
+        "view": "exterior",
+        "idleMs": 1500,
+        "idleFrames": 0,
+        "revision": "GV72-R2-2026-09-10",
+        "frames": 5,
+        "materials": {
+          "pending": 0,
+          "failures": [],
+          "cachedTextures": 1,
+          "leases": 1
+        },
+        "render": {
+          "calls": 295,
+          "triangles": 108136,
+          "memory": {
+            "geometries": 158,
+            "textures": 4
+          },
+          "camera": [
+            15.500000000000002,
+            11.500000000000002,
+            18.499999999999996
+          ],
+          "target": [
+            0,
+            0.65,
+            0.25
+          ]
+        }
+      },
+      {
+        "label": "desktop",
+        "view": "interior",
+        "idleMs": 1500,
+        "idleFrames": 0,
+        "revision": "GV72-R2-2026-09-10",
+        "frames": 7,
+        "materials": {
+          "pending": 0,
+          "failures": [],
+          "cachedTextures": 1,
+          "leases": 1
+        },
+        "render": {
+          "calls": 277,
+          "triangles": 104752,
+          "memory": {
+            "geometries": 149,
+            "textures": 4
+          },
+          "camera": [
+            9.999999999999998,
+            16,
+            15
+          ],
+          "target": [
+            0,
+            0.1,
+            0
+          ]
+        }
+      },
+      {
+        "label": "desktop",
+        "view": "structure",
+        "idleMs": 1500,
+        "idleFrames": 0,
+        "revision": "GV72-R2-2026-09-10",
+        "frames": 9,
+        "materials": {
+          "pending": 0,
+          "failures": [],
+          "cachedTextures": 1,
+          "leases": 1
+        },
+        "render": {
+          "calls": 4,
+          "triangles": 7058,
+          "memory": {
+            "geometries": 4,
+            "textures": 4
+          },
+          "camera": [
+            15.500000000000002,
+            11.500000000000002,
+            18.499999999999996
+          ],
+          "target": [
+            0,
+            0.65,
+            0.25
+          ]
+        }
+      },
+      {
+        "label": "mobile",
+        "view": "exterior",
+        "idleMs": 1500,
+        "idleFrames": 0,
+        "revision": "GV72-R2-2026-09-10",
+        "frames": 5,
+        "materials": {
+          "pending": 0,
+          "failures": [],
+          "cachedTextures": 1,
+          "leases": 1
+        },
+        "render": {
+          "calls": 295,
+          "triangles": 108136,
+          "memory": {
+            "geometries": 158,
+            "textures": 4
+          },
+          "camera": [
+            15.500000000000002,
+            11.500000000000002,
+            18.499999999999996
+          ],
+          "target": [
+            0,
+            0.65,
+            0.25
+          ]
+        }
+      },
+      {
+        "label": "mobile",
+        "view": "interior",
+        "idleMs": 1500,
+        "idleFrames": 0,
+        "revision": "GV72-R2-2026-09-10",
+        "frames": 7,
+        "materials": {
+          "pending": 0,
+          "failures": [],
+          "cachedTextures": 1,
+          "leases": 1
+        },
+        "render": {
+          "calls": 277,
+          "triangles": 104752,
+          "memory": {
+            "geometries": 149,
+            "textures": 4
+          },
+          "camera": [
+            9.999999999999998,
+            16,
+            15
+          ],
+          "target": [
+            0,
+            0.1,
+            0
+          ]
+        }
+      },
+      {
+        "label": "mobile",
+        "view": "structure",
+        "idleMs": 1500,
+        "idleFrames": 0,
+        "revision": "GV72-R2-2026-09-10",
+        "frames": 9,
+        "materials": {
+          "pending": 0,
+          "failures": [],
+          "cachedTextures": 1,
+          "leases": 1
+        },
+        "render": {
+          "calls": 4,
+          "triangles": 7058,
+          "memory": {
+            "geometries": 4,
+            "textures": 4
+          },
+          "camera": [
+            15.500000000000002,
+            11.500000000000002,
+            18.499999999999996
+          ],
+          "target": [
+            0,
+            0.65,
+            0.25
+          ]
+        }
+      }
+    ],
+    "rotation": {
+      "action": "72 real pointer moves while held, >=35ms between moves",
+      "durationMs": 3631.599999964237,
+      "renders": 218,
+      "renderFps": 60.02863751573598,
+      "raf": {
+        "frames": 218,
+        "medianMs": 16.699999999999818,
+        "p95Ms": 16.800000000000182
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 4
+        },
+        "camera": [
+          -3.349955100278819,
+          18.869835055219998,
+          8.33780707668617
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      },
+      "framesWhenIdle": 2
+    },
+    "animation": {
+      "fps": 59.966019255993224,
+      "frames": 180,
+      "durationMs": 3001.699999988079,
+      "paused": 0.21637142857313146,
+      "stopped": 0.028307142860548733,
+      "render": {
+        "calls": 206,
+        "triangles": 75772,
+        "memory": {
+          "geometries": 113,
+          "textures": 21
+        },
+        "camera": [
+          16.140375250725917,
+          13.694492695566217,
+          20.17546906340739
+        ],
+        "target": [
+          0,
+          1.105,
+          0
+        ]
+      }
+    },
+    "cacheCycles": [
+      {
+        "revision": "GV72-R2-2026-09-10",
+        "frames": 169,
+        "materials": {
+          "pending": 0,
+          "failures": [],
+          "cachedTextures": 18,
+          "leases": 2
+        },
+        "render": {
+          "calls": 277,
+          "triangles": 104752,
+          "memory": {
+            "geometries": 149,
+            "textures": 21
+          },
+          "camera": [
+            8.299999999999999,
+            13.3,
+            13.699999999999996
+          ],
+          "target": [
+            0,
+            0.3,
+            0
+          ]
+        }
+      },
+      {
+        "revision": "GV72-R2-2026-09-10",
+        "frames": 181,
+        "materials": {
+          "pending": 0,
+          "failures": [],
+          "cachedTextures": 18,
+          "leases": 2
+        },
+        "render": {
+          "calls": 277,
+          "triangles": 104752,
+          "memory": {
+            "geometries": 149,
+            "textures": 21
+          },
+          "camera": [
+            8.299999999999999,
+            13.3,
+            13.699999999999996
+          ],
+          "target": [
+            0,
+            0.3,
+            0
+          ]
+        }
+      },
+      {
+        "revision": "GV72-R2-2026-09-10",
+        "frames": 193,
+        "materials": {
+          "pending": 0,
+          "failures": [],
+          "cachedTextures": 18,
+          "leases": 2
+        },
+        "render": {
+          "calls": 277,
+          "triangles": 104752,
+          "memory": {
+            "geometries": 149,
+            "textures": 21
+          },
+          "camera": [
+            8.299999999999999,
+            13.3,
+            13.699999999999996
+          ],
+          "target": [
+            0,
+            0.3,
+            0
+          ]
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "meta": {
+        "src": "http://127.0.0.1:4174/assets/presentation-v2.mp4",
+        "duration": 22,
+        "width": 1280,
+        "height": 720,
+        "poster": "http://127.0.0.1:4174/assets/presentation-v2-poster.jpg",
+        "error": null
+      },
+      "seeks": [
+        {
+          "label": "start",
+          "target": 0,
+          "time": 0,
+          "readyState": 4,
+          "error": null
+        },
+        {
+          "label": "middle",
+          "target": 11,
+          "time": 11,
+          "readyState": 4,
+          "error": null
+        },
+        {
+          "label": "end",
+          "target": 21.88,
+          "time": 21.88,
+          "readyState": 4,
+          "error": null
+        }
+      ],
+      "playback": {
+        "before": {
+          "t": 2882.899999976158,
+          "quality": {}
+        },
+        "after": {
+          "t": 4988.699999988079,
+          "time": 2.111952,
+          "quality": {}
+        }
+      },
+      "download": {
+        "suggested": "presentation-v2.mp4",
+        "path": "presentation-v2.mp4",
+        "bytes": 3302851,
+        "sha256": "3d4b0d91406bf56875ca666e09e0b8b8cf0bafee9171f48c18cab580d01991d9"
+      },
+      "range": {
+        "status": 206,
+        "contentRange": "bytes 0-1023/3302851"
+      }
+    },
+    {
+      "meta": {
+        "src": "http://127.0.0.1:4174/assets/expansion-v2.mp4",
+        "duration": 16,
+        "width": 1280,
+        "height": 720,
+        "poster": "http://127.0.0.1:4174/assets/expansion-v2-poster.jpg",
+        "error": null
+      },
+      "seeks": [
+        {
+          "label": "start",
+          "target": 0,
+          "time": 0,
+          "readyState": 4,
+          "error": null
+        },
+        {
+          "label": "middle",
+          "target": 8,
+          "time": 8,
+          "readyState": 4,
+          "error": null
+        },
+        {
+          "label": "end",
+          "target": 15.88,
+          "time": 15.88,
+          "readyState": 4,
+          "error": null
+        }
+      ],
+      "playback": {
+        "before": {
+          "t": 5347.199999988079,
+          "quality": {}
+        },
+        "after": {
+          "t": 7452.899999976158,
+          "time": 2.108863,
+          "quality": {}
+        }
+      },
+      "download": {
+        "suggested": "expansion-v2.mp4",
+        "path": "expansion-v2.mp4",
+        "bytes": 1976509,
+        "sha256": "f533953a1771fbc81100958e5a98e25e1e8511e612d7220bc9b88c46aeea2a14"
+      },
+      "range": {
+        "status": 206,
+        "contentRange": "bytes 0-1023/1976509"
+      }
+    }
+  ],
+  "mp4Metadata": [
+    {
+      "file": "presentation-v2.mp4",
+      "bytes": 3302851,
+      "videoTracks": [
+        {
+          "codec": "avc1",
+          "width": 1280,
+          "height": 720,
+          "frames": 528,
+          "timescale": 12288,
+          "durationTicks": 270336,
+          "durationSeconds": 22,
+          "sampleDurationSeconds": 22,
+          "fps": 24,
+          "sampleTimeEntries": [
+            [
+              528,
+              512
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "file": "expansion-v2.mp4",
+      "bytes": 1976509,
+      "videoTracks": [
+        {
+          "codec": "avc1",
+          "width": 1280,
+          "height": 720,
+          "frames": 384,
+          "timescale": 12288,
+          "durationTicks": 196608,
+          "durationSeconds": 16,
+          "sampleDurationSeconds": 16,
+          "fps": 24,
+          "sampleTimeEntries": [
+            [
+              384,
+              512
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "pdf": {
+    "pages": 2,
+    "metadata": {
+      "/Producer": "pdf-lib (https://github.com/Hopding/pdf-lib)",
+      "/ModDate": "D:20260910122653Z",
+      "/Creator": "pdf-lib (https://github.com/Hopding/pdf-lib)",
+      "/CreationDate": "D:20260910122653Z",
+      "/Title": "Green Village 72 — T3 · distribuição · B",
+      "/Subject": "Configuracao GV72-R2-2026-09-10"
+    },
+    "text": [
+      "GREEN VILLAGE\nEXPANDIVEL 72 / CONFIGURACAO\nModelo\nExpandível 72 · 40 pés\nPlanta\nT3 · distribuição · B\nExterior\nBranco Glacial\nParedes interiores\nTerracota\nPavimento SPC\nKX8006\nCozinha\nLinear\nReferência de cozinha\n01 · inspiração fotográfica, sem cotas\nCasa de banho\nDistribuição da planta (aproximada)\nRevestimento UV\nPor definir\nAmbiente de banho\n01 · referência visual\nTelhado adicional\nNão seleccionado\nAlpendre\nNão seleccionado\nCotas exteriores confirmadas: 11,80 x 6,22 m. Designacao comercial: 72 m2.\nValores opcionais de catalogo com IVA 23%; compatibilidade e total por confirmar.\nMaquete ilustrativa. Medidas interiores, detalhes e redes nao certificados.\n",
+      "PLANTA T3 · distribuição · B\nCotas exteriores confirmadas; areas interiores aproximadas com espessuras assumidas.\n"
+    ]
+  },
+  "knownWarnings": [
+    "PMREM sigmaRadians 0.08 requests 39 samples above maximum 20; no unhandled exception observed.",
+    "MP4 ERR_ABORTED appears during preload cancellation/seeking; both videos played and seeked without media error."
+  ],
+  "limitations": [
+    "Mobile tests use desktop GPU and viewport emulation, not a physical phone.",
+    "Short performance samples on one device while other local work ran.",
+    "Photographic floor texture retains baked lighting/repetition; not certified seamless/PBR/RAL/NCS.",
+    "Interior geometry/fabrication/engineering measures not certified by browser QA.",
+    "Mobile choices and viewport require scrolling."
+  ],
+  "publicEvidenceLinks": {
+    "logs": [
+      {
+        "label": "final-report-links",
+        "kind": "requestfailed",
+        "url": "http://127.0.0.1:4174/assets/presentation-v2.mp4",
+        "error": {
+          "errorText": "net::ERR_ABORTED"
+        }
+      },
+      {
+        "label": "final-report-links",
+        "kind": "requestfailed",
+        "url": "http://127.0.0.1:4174/assets/expansion-v2.mp4",
+        "error": {
+          "errorText": "net::ERR_ABORTED"
+        }
+      },
+      {
+        "label": "final-report-links",
+        "kind": "warning",
+        "message": "sigmaRadians, 0.08, is too large and will clip, as it requested 39 samples when the maximum is set to 20"
+      },
+      {
+        "label": "final-report-links",
+        "kind": "warning",
+        "message": "sigmaRadians, 0.08, is too large and will clip, as it requested 39 samples when the maximum is set to 20"
+      },
+      {
+        "label": "final-report-links",
+        "kind": "requestfailed",
+        "url": "http://127.0.0.1:4174/assets/presentation-v2.mp4",
+        "error": {
+          "errorText": "net::ERR_ABORTED"
+        }
+      },
+      {
+        "label": "final-report-links",
+        "kind": "requestfailed",
+        "url": "http://127.0.0.1:4174/assets/expansion-v2.mp4",
+        "error": {
+          "errorText": "net::ERR_ABORTED"
+        }
+      },
+      {
+        "label": "final-report-links",
+        "kind": "error",
+        "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      }
+    ],
+    "pages": [
+      {
+        "route": "/assets/evidence/audit-report.html",
+        "status": 200,
+        "title": "Revisão R2 — Green Village 72",
+        "images": 7,
+        "brokenImages": [],
+        "bodyTextLength": 8917,
+        "overflow": false
+      },
+      {
+        "route": "/assets/evidence/materials.html",
+        "status": 200,
+        "title": "71 materiais — Green Village",
+        "images": 142,
+        "brokenImages": [],
+        "bodyTextLength": 21164,
+        "overflow": false
+      }
+    ],
+    "links": [
+      {
+        "text": "Abrir o configurador ↗",
+        "url": "http://127.0.0.1:4174/index.html",
+        "status": 200,
+        "bytes": 13907
+      },
+      {
+        "text": "Consultar os 71 materiais ↗",
+        "url": "http://127.0.0.1:4174/assets/evidence/materials.html",
+        "status": 200,
+        "bytes": 62889
+      },
+      {
+        "text": "Mapa de materiais JSON ↓",
+        "url": "http://127.0.0.1:4174/assets/catalogue-v2/material-ledger.json",
+        "status": 200,
+        "bytes": 367397
+      },
+      {
+        "text": "Métricas cromáticas ↓",
+        "url": "http://127.0.0.1:4174/assets/catalogue-v2/colour-comparison.json",
+        "status": 200,
+        "bytes": 100573
+      },
+      {
+        "text": "Descarregar MP4",
+        "url": "http://127.0.0.1:4174/assets/presentation-v2.mp4",
+        "status": 200,
+        "bytes": 3302851
+      },
+      {
+        "text": "Descarregar MP4",
+        "url": "http://127.0.0.1:4174/assets/expansion-v2.mp4",
+        "status": 200,
+        "bytes": 1976509
+      },
+      {
+        "text": "Medidas, áreas e fontes ↓",
+        "url": "http://127.0.0.1:4174/assets/evidence/dimensions.json",
+        "status": 200,
+        "bytes": 93178
+      },
+      {
+        "text": "Verificação geométrica ↓",
+        "url": "http://127.0.0.1:4174/assets/evidence/geometry-validation.json",
+        "status": 200,
+        "bytes": 8056
+      },
+      {
+        "text": "Referências independentes ↓",
+        "url": "http://127.0.0.1:4174/assets/evidence/source-regression-fixtures.json",
+        "status": 200,
+        "bytes": 954
+      },
+      {
+        "text": "Verificação final no navegador ↓",
+        "url": "http://127.0.0.1:4174/assets/evidence/browser-final.json",
+        "status": 200,
+        "bytes": 15855,
+        "verifiedBy": "closing.json"
+      },
+      {
+        "text": "Validação dos filmes ↓",
+        "url": "http://127.0.0.1:4174/assets/evidence/films-validation.json",
+        "status": 200,
+        "bytes": 2150
+      },
+      {
+        "text": "Hashes dos vídeos ↓",
+        "url": "http://127.0.0.1:4174/assets/evidence/delivered-media.json",
+        "status": 200,
+        "bytes": 701
+      },
+      {
+        "text": "PDF original ↗",
+        "url": "http://127.0.0.1:4174/assets/opcionais-2026.pdf",
+        "status": 200,
+        "bytes": 6075632
+      },
+      {
+        "text": "Plantas originais ↓",
+        "url": "http://127.0.0.1:4174/assets/plantas-40-pes.xlsx",
+        "status": 200,
+        "bytes": 199798
+      },
+      {
+        "text": "← Voltar ao relatório",
+        "url": "http://127.0.0.1:4174/assets/evidence/audit-report.html",
+        "status": 200,
+        "bytes": 14901
+      }
+    ],
+    "finalRecheck": {
+      "search": {
+        "query": "KX8006",
+        "visible": 1,
+        "text": "KX8006\n\nSPC · Piso interior · p. 14\n\nOriginal · 480 × 300 px\nRecorte · 440 × 233 px\nCódigo publicado\nKX8006\nAplicação\nTextura do recorte original\nCor aproximada\n#909497\nRepetição estimada\n0.458 × 0.243 m\nRugosidade / metalicidade\n0.52 / 0 · hipóteses\nfloor-spc-kx8006"
+      },
+      "finalJson": {
+        "status": 200,
+        "bytes": 15855,
+        "schemaKeys": [
+          "status",
+          "checkedAt",
+          "scope",
+          "coverage",
+          "resolvedFindings",
+          "harnessCorrection",
+          "performance",
+          "videos",
+          "mp4Metadata",
+          "pdf",
+          "knownWarnings",
+          "limitations",
+          "publicEvidenceLinks",
+          "artifacts",
+          "sourceSha256AtFinalReview"
+        ]
+      },
+      "mobileReport": {
+        "status": 200,
+        "overflow": false
+      }
+    },
+    "allCurrentLinks200": true,
+    "historical404Resolved": true,
+    "note": "Logs retain the earlier 404 while browser-final.json was being produced; closing.json confirms final HTTP200."
+  },
+  "artifacts": {
+    "narrative": "FINAL-REPORT.md",
+    "capturesPrefix": "assets/evidence/",
+    "raw": [
+      "quick.json",
+      "flows.json",
+      "fixes-perf.json",
+      "robust-mobile.json",
+      "remaining.json",
+      "final-media.json"
+    ]
+  },
+  "sourceSha256AtFinalReview": {
+    "index.html": "91a748ac3bc5037042640b67219ec6d9ed4bace66ee2cbfb6bf7b20478de91e1",
+    "app.js": "03524c09a04c78da72a5b1c4e3145046719625a1838206f6f4872a7a3bea0f86",
+    "model.js": "dc7ecc601fb91cfa9acbc4b861fe7e690ce3f0bd39f1028cabfaf77ca238426e",
+    "configuration.js": "323424bb2c18d8313e7592f3e0ba41fc34ab684bd43a71ff9a7da108046e86aa",
+    "stage.js": "84ac50ea7be233c8674a1a1e5cd08e5af70d99702ebc9d99d29eb258a303735f",
+    "specification.js": "27c0de54ba7828c46ec54f85a9a472b1c2e3f856173f06aee2c13b5f9fd69a1b",
+    "material-library.js": "1560d080cd52162439255816b50e60098627d77f80c2902c5e32f691209f8efa",
+    "plan-svg.js": "5f9f58639958148b4296db55b86d7e382a8173b09f94cd063063c078f9809dba",
+    "style.css": "50612c879180893524cc05006759fff3fbfee7675d2f0e9beabfdb54b1b7e5e4"
+  },
+  "pendingLinks": []
+}

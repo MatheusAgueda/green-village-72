@@ -1,0 +1,234 @@
+{
+  "logs": [
+    {
+      "label": "fixes-perf",
+      "kind": "http",
+      "status": 404,
+      "url": "http://127.0.0.1:4174/assets/presentation-v2-poster.jpg"
+    },
+    {
+      "label": "fixes-perf",
+      "kind": "error",
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "label": "fixes-perf",
+      "kind": "http",
+      "status": 404,
+      "url": "http://127.0.0.1:4174/assets/expansion-v2-poster.jpg"
+    },
+    {
+      "label": "fixes-perf",
+      "kind": "error",
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "label": "fixes-perf",
+      "kind": "http",
+      "status": 404,
+      "url": "http://127.0.0.1:4174/assets/presentation-v2.mp4"
+    },
+    {
+      "label": "fixes-perf",
+      "kind": "error",
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "label": "fixes-perf",
+      "kind": "http",
+      "status": 404,
+      "url": "http://127.0.0.1:4174/assets/expansion-v2.mp4"
+    },
+    {
+      "label": "fixes-perf",
+      "kind": "error",
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "label": "fixes-perf",
+      "kind": "warning",
+      "message": "sigmaRadians, 0.08, is too large and will clip, as it requested 39 samples when the maximum is set to 20"
+    },
+    {
+      "label": "fixes-perf",
+      "kind": "warning",
+      "message": "sigmaRadians, 0.08, is too large and will clip, as it requested 39 samples when the maximum is set to 20"
+    }
+  ],
+  "checks": [
+    {
+      "name": "first explode movement sync",
+      "status": "PASS",
+      "result": {
+        "v": {
+          "view": "finishes",
+          "expansion": 1,
+          "cut": 1.1,
+          "exploded": 0.5,
+          "roofVisible": true,
+          "wallsVisible": true,
+          "furnitureVisible": true,
+          "doorsOpen": true
+        },
+        "input": 0.5
+      }
+    },
+    {
+      "name": "reset control synchronisation fixed",
+      "status": "PASS",
+      "result": {
+        "v": {
+          "view": "exterior",
+          "expansion": 1,
+          "cut": 1.1,
+          "exploded": 0,
+          "roofVisible": true,
+          "wallsVisible": true,
+          "furnitureVisible": true,
+          "doorsOpen": true
+        },
+        "ui": {
+          "doorsOpen": true,
+          "wallsVisible": true,
+          "furnitureVisible": true,
+          "cut": 1.1,
+          "exploded": 0
+        }
+      }
+    },
+    {
+      "name": "kitchen variants UI and validated rejection",
+      "status": "PASS",
+      "result": {
+        "variants": [
+          {
+            "k": "linear",
+            "render": {
+              "calls": 245,
+              "triangles": 95968,
+              "memory": {
+                "geometries": 133,
+                "textures": 4
+              },
+              "camera": [
+                8.299999999999999,
+                13.3,
+                13.699999999999996
+              ],
+              "target": [
+                0,
+                0.3,
+                0
+              ]
+            }
+          },
+          {
+            "k": "l",
+            "render": {
+              "calls": 255,
+              "triangles": 98416,
+              "memory": {
+                "geometries": 138,
+                "textures": 4
+              },
+              "camera": [
+                8.299999999999999,
+                13.3,
+                13.699999999999996
+              ],
+              "target": [
+                0,
+                0.3,
+                0
+              ]
+            }
+          },
+          {
+            "k": "island",
+            "render": {
+              "calls": 255,
+              "triangles": 99040,
+              "memory": {
+                "geometries": 138,
+                "textures": 4
+              },
+              "camera": [
+                8.299999999999999,
+                13.3,
+                13.699999999999996
+              ],
+              "target": [
+                0,
+                0.3,
+                0
+              ]
+            }
+          },
+          {
+            "k": "none",
+            "render": {
+              "calls": 231,
+              "triangles": 84160,
+              "memory": {
+                "geometries": 126,
+                "textures": 4
+              },
+              "camera": [
+                8.299999999999999,
+                13.3,
+                13.699999999999996
+              ],
+              "target": [
+                0,
+                0.3,
+                0
+              ]
+            }
+          }
+        ],
+        "rejection": "O T4 A só admite a proposta de cozinha linear: a faixa central não comporta uma ilha ou bancada em L."
+      }
+    },
+    {
+      "name": "rotation performance actual mouse drag",
+      "status": "PASS",
+      "result": {
+        "action": "72 real pointer moves while held, >=35ms between moves",
+        "durationMs": 3631.599999964237,
+        "renders": 218,
+        "renderFps": 60.02863751573598,
+        "raf": {
+          "frames": 218,
+          "medianMs": 16.699999999999818,
+          "p95Ms": 16.800000000000182
+        },
+        "render": {
+          "calls": 277,
+          "triangles": 104752,
+          "memory": {
+            "geometries": 149,
+            "textures": 4
+          },
+          "camera": [
+            -3.349955100278819,
+            18.869835055219998,
+            8.33780707668617
+          ],
+          "target": [
+            0,
+            0.3,
+            0
+          ]
+        },
+        "framesWhenIdle": 2
+      }
+    },
+    {
+      "name": "sampled colour comparator opens",
+      "status": "PASS",
+      "result": {
+        "note": "A aplicação usa cor aproximada do recorte: a fotografia contém reflexos ou cenário que não devem ser repetidos. Escala de repetição e rugosidade são hipóteses de visualização; sem RAL/NCS ou medição física. O comparador aplica iluminação branca, sem luz ambiente colorida."
+      }
+    }
+  ]
+}

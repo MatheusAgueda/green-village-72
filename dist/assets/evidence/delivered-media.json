@@ -1,0 +1,25 @@
+{
+  "revision": "GV72-R2-2026-09-10",
+  "assets": [
+    {
+      "file": "../presentation-v2.mp4",
+      "bytes": 3302851,
+      "sha256": "3d4b0d91406bf56875ca666e09e0b8b8cf0bafee9171f48c18cab580d01991d9"
+    },
+    {
+      "file": "../expansion-v2.mp4",
+      "bytes": 1976509,
+      "sha256": "f533953a1771fbc81100958e5a98e25e1e8511e612d7220bc9b88c46aeea2a14"
+    },
+    {
+      "file": "../presentation-v2-poster.jpg",
+      "bytes": 78283,
+      "sha256": "73738dc7e167da811dabfc9e62e93cbdde3dfeec6580fba6b41e184bd9cd36ce"
+    },
+    {
+      "file": "../expansion-v2-poster.jpg",
+      "bytes": 69861,
+      "sha256": "1cd51ed41379e52ec3d18c26c8c628ca2c6a87cc82460e9764285a86eb7bf9a8"
+    }
+  ]
+}

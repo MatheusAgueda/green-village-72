@@ -1,0 +1,434 @@
+{
+  "started": "2026-09-10T12:28:38.252Z",
+  "logs": [
+    {
+      "label": "no-webgl",
+      "kind": "http",
+      "status": 404,
+      "url": "http://127.0.0.1:4174/assets/presentation-v2-poster.jpg"
+    },
+    {
+      "label": "no-webgl",
+      "kind": "error",
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "label": "no-webgl",
+      "kind": "http",
+      "status": 404,
+      "url": "http://127.0.0.1:4174/assets/expansion-v2-poster.jpg"
+    },
+    {
+      "label": "no-webgl",
+      "kind": "error",
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "label": "no-webgl",
+      "kind": "http",
+      "status": 404,
+      "url": "http://127.0.0.1:4174/assets/presentation-v2.mp4"
+    },
+    {
+      "label": "no-webgl",
+      "kind": "error",
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "label": "no-webgl",
+      "kind": "http",
+      "status": 404,
+      "url": "http://127.0.0.1:4174/assets/expansion-v2.mp4"
+    },
+    {
+      "label": "no-webgl",
+      "kind": "error",
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "label": "no-webgl",
+      "kind": "error",
+      "message": "THREE.WebGLRenderer: A WebGL context could not be created. Reason:  disabled by enterprise policy or commandline switch"
+    },
+    {
+      "label": "no-webgl",
+      "kind": "error",
+      "message": "THREE.WebGLRenderer: A WebGL context could not be created. Reason:  disabled by enterprise policy or commandline switch"
+    },
+    {
+      "label": "no-webgl",
+      "kind": "error",
+      "message": "THREE.WebGLRenderer: Error creating WebGL context."
+    },
+    {
+      "label": "no-webgl",
+      "kind": "error",
+      "message": "GV72: falha ao preparar a cena Error: Error creating WebGL context.\n    at new WebGLRenderer (http://127.0.0.1:4174/vendor/three.module.js:15217:13)\n    at createStage (http://127.0.0.1:4174/stage.js:4:17)\n    at init (http://127.0.0.1:4174/app.js:27:50)\n    at http://127.0.0.1:4174/app.js:99:51"
+    },
+    {
+      "label": "no-webgl",
+      "kind": "error",
+      "message": "THREE.WebGLRenderer: A WebGL context could not be created. Reason:  disabled by enterprise policy or commandline switch"
+    },
+    {
+      "label": "no-webgl",
+      "kind": "error",
+      "message": "THREE.WebGLRenderer: A WebGL context could not be created. Reason:  disabled by enterprise policy or commandline switch"
+    },
+    {
+      "label": "no-webgl",
+      "kind": "error",
+      "message": "THREE.WebGLRenderer: Error creating WebGL context."
+    },
+    {
+      "label": "context-loss",
+      "kind": "http",
+      "status": 404,
+      "url": "http://127.0.0.1:4174/assets/presentation-v2-poster.jpg"
+    },
+    {
+      "label": "context-loss",
+      "kind": "error",
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "label": "context-loss",
+      "kind": "http",
+      "status": 404,
+      "url": "http://127.0.0.1:4174/assets/expansion-v2-poster.jpg"
+    },
+    {
+      "label": "context-loss",
+      "kind": "error",
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "label": "context-loss",
+      "kind": "http",
+      "status": 404,
+      "url": "http://127.0.0.1:4174/assets/presentation-v2.mp4"
+    },
+    {
+      "label": "context-loss",
+      "kind": "error",
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "label": "context-loss",
+      "kind": "http",
+      "status": 404,
+      "url": "http://127.0.0.1:4174/assets/expansion-v2.mp4"
+    },
+    {
+      "label": "context-loss",
+      "kind": "error",
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "label": "context-loss",
+      "kind": "warning",
+      "message": "sigmaRadians, 0.08, is too large and will clip, as it requested 39 samples when the maximum is set to 20"
+    },
+    {
+      "label": "context-loss",
+      "kind": "warning",
+      "message": "sigmaRadians, 0.08, is too large and will clip, as it requested 39 samples when the maximum is set to 20"
+    },
+    {
+      "label": "context-loss",
+      "kind": "http",
+      "status": 404,
+      "url": "http://127.0.0.1:4174/assets/presentation-v2-poster.jpg"
+    },
+    {
+      "label": "context-loss",
+      "kind": "error",
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "label": "context-loss",
+      "kind": "http",
+      "status": 404,
+      "url": "http://127.0.0.1:4174/assets/expansion-v2-poster.jpg"
+    },
+    {
+      "label": "context-loss",
+      "kind": "error",
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "label": "context-loss",
+      "kind": "http",
+      "status": 404,
+      "url": "http://127.0.0.1:4174/assets/presentation-v2.mp4"
+    },
+    {
+      "label": "context-loss",
+      "kind": "error",
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "label": "context-loss",
+      "kind": "http",
+      "status": 404,
+      "url": "http://127.0.0.1:4174/assets/expansion-v2.mp4"
+    },
+    {
+      "label": "context-loss",
+      "kind": "error",
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "label": "context-loss",
+      "kind": "warning",
+      "message": "sigmaRadians, 0.08, is too large and will clip, as it requested 39 samples when the maximum is set to 20"
+    },
+    {
+      "label": "context-loss",
+      "kind": "warning",
+      "message": "sigmaRadians, 0.08, is too large and will clip, as it requested 39 samples when the maximum is set to 20"
+    },
+    {
+      "label": "mobile-controls",
+      "kind": "http",
+      "status": 404,
+      "url": "http://127.0.0.1:4174/assets/presentation-v2-poster.jpg"
+    },
+    {
+      "label": "mobile-controls",
+      "kind": "error",
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "label": "mobile-controls",
+      "kind": "http",
+      "status": 404,
+      "url": "http://127.0.0.1:4174/assets/expansion-v2-poster.jpg"
+    },
+    {
+      "label": "mobile-controls",
+      "kind": "error",
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "label": "mobile-controls",
+      "kind": "http",
+      "status": 404,
+      "url": "http://127.0.0.1:4174/assets/presentation-v2.mp4"
+    },
+    {
+      "label": "mobile-controls",
+      "kind": "error",
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "label": "mobile-controls",
+      "kind": "http",
+      "status": 404,
+      "url": "http://127.0.0.1:4174/assets/expansion-v2.mp4"
+    },
+    {
+      "label": "mobile-controls",
+      "kind": "error",
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "label": "mobile-controls",
+      "kind": "warning",
+      "message": "sigmaRadians, 0.08, is too large and will clip, as it requested 39 samples when the maximum is set to 20"
+    },
+    {
+      "label": "mobile-controls",
+      "kind": "warning",
+      "message": "sigmaRadians, 0.08, is too large and will clip, as it requested 39 samples when the maximum is set to 20"
+    },
+    {
+      "label": "mobile-controls",
+      "kind": "http",
+      "status": 404,
+      "url": "http://127.0.0.1:4174/assets/presentation-v2-poster.jpg"
+    },
+    {
+      "label": "mobile-controls",
+      "kind": "error",
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "label": "mobile-controls",
+      "kind": "http",
+      "status": 404,
+      "url": "http://127.0.0.1:4174/assets/expansion-v2-poster.jpg"
+    },
+    {
+      "label": "mobile-controls",
+      "kind": "error",
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "label": "mobile-controls",
+      "kind": "http",
+      "status": 404,
+      "url": "http://127.0.0.1:4174/assets/presentation-v2.mp4"
+    },
+    {
+      "label": "mobile-controls",
+      "kind": "error",
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "label": "mobile-controls",
+      "kind": "http",
+      "status": 404,
+      "url": "http://127.0.0.1:4174/assets/expansion-v2.mp4"
+    },
+    {
+      "label": "mobile-controls",
+      "kind": "error",
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "label": "mobile-controls",
+      "kind": "warning",
+      "message": "sigmaRadians, 0.08, is too large and will clip, as it requested 39 samples when the maximum is set to 20"
+    },
+    {
+      "label": "mobile-controls",
+      "kind": "warning",
+      "message": "sigmaRadians, 0.08, is too large and will clip, as it requested 39 samples when the maximum is set to 20"
+    }
+  ],
+  "checks": [
+    {
+      "name": "WebGL unavailable fallback real browser flag",
+      "status": "PASS",
+      "result": {
+        "v": {
+          "webgl": false,
+          "loading": "Este navegador não disponibilizou WebGL.\n\nAs plantas, materiais, configurações e vídeos continuam disponíveis.\n\nTentar novamente ↻\nAbrir plantas",
+          "state": {
+            "schemaVersion": 2,
+            "layout": "t2",
+            "exteriorId": "exterior-standard-branco-glacial",
+            "exterior": "#ddddda",
+            "floorId": "floor-spc-kx7006",
+            "floor": "#92846c",
+            "interior": "#eeede8",
+            "interiorName": "Branco natural",
+            "kitchen": "linear",
+            "kitchenRef": "kitchen-01",
+            "bathroom": "standard",
+            "bathroomRef": "bathroom-01",
+            "bathroomUV": null,
+            "roof": false,
+            "porch": false,
+            "lighting": "neutral"
+          }
+        },
+        "pdf": {
+          "suggested": "green-village-72-t1.pdf",
+          "path": "fallback-configuration.pdf",
+          "bytes": 57886
+        }
+      }
+    },
+    {
+      "name": "WebGL context loss preserves configuration and restores",
+      "status": "PASS",
+      "result": {
+        "supported": true,
+        "before": {
+          "schemaVersion": 2,
+          "layout": "t3-b",
+          "exteriorId": "exterior-standard-branco-glacial",
+          "exterior": "#ddddda",
+          "floorId": "floor-spc-kx7006",
+          "floor": "#92846c",
+          "interior": "#ba8970",
+          "interiorName": "Terracota",
+          "kitchen": "linear",
+          "kitchenRef": "kitchen-01",
+          "bathroom": "standard",
+          "bathroomRef": "bathroom-01",
+          "bathroomUV": null,
+          "roof": false,
+          "porch": false,
+          "lighting": "neutral"
+        },
+        "restored": {
+          "revision": "GV72-R2-2026-09-10",
+          "frames": 2,
+          "materials": {
+            "pending": 0,
+            "failures": [],
+            "cachedTextures": 1,
+            "leases": 1
+          },
+          "render": {
+            "calls": 315,
+            "triangles": 122608,
+            "memory": {
+              "geometries": 170,
+              "textures": 4
+            },
+            "camera": [
+              12.657602184004823,
+              10.977929703523765,
+              15.822002730006027
+            ],
+            "target": [
+              0,
+              1.105,
+              0
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "mobile real controls and viewport",
+      "status": "PASS",
+      "result": {
+        "initial": {
+          "width": 390,
+          "scrollWidth": 390,
+          "viewport": {
+            "x": 15,
+            "y": 464.953125,
+            "width": 360,
+            "height": 430,
+            "top": 464.953125,
+            "right": 375,
+            "bottom": 894.953125,
+            "left": 15
+          }
+        },
+        "state": {
+          "schemaVersion": 2,
+          "layout": "t4-a",
+          "exteriorId": "exterior-standard-branco-glacial",
+          "exterior": "#ddddda",
+          "floorId": "floor-spc-kx8006",
+          "floor": "#909497",
+          "interior": "#eeede8",
+          "interiorName": "Branco natural",
+          "kitchen": "none",
+          "kitchenRef": "kitchen-01",
+          "bathroom": "standard",
+          "bathroomRef": "bathroom-01",
+          "bathroomUV": null,
+          "roof": false,
+          "porch": false,
+          "lighting": "neutral"
+        },
+        "overflowFinal": false
+      }
+    },
+    {
+      "name": "keyboard modal focus return",
+      "status": "PASS",
+      "result": {
+        "focusInside": true
+      }
+    }
+  ]
+}

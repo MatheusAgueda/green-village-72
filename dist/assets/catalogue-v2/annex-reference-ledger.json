@@ -1,0 +1,651 @@
+{
+  "count": 32,
+  "references": [
+    {
+      "id": "kitchen-01",
+      "asset": "reference/kitchen-01.jpg",
+      "label": "Cozinha 01",
+      "labelIsEditorial": true,
+      "catalogueCode": null,
+      "page": 16,
+      "sourceImage": "i565ed0e337810e34a85e96eedb77cc381",
+      "embeddedDimensionsPx": [
+        720,
+        450
+      ],
+      "currentAssetDimensionsPx": [
+        720,
+        450
+      ],
+      "usage": "Reference photograph only; not a surface texture, measured layout, or finish code.",
+      "colourWarning": "Whole-room average colour cannot identify cabinet finish or bathroom wall colour.",
+      "specific72m2ModelVerified": false
+    },
+    {
+      "id": "kitchen-02",
+      "asset": "reference/kitchen-02.jpg",
+      "label": "Cozinha 02",
+      "labelIsEditorial": true,
+      "catalogueCode": null,
+      "page": 16,
+      "sourceImage": "ic9c4f4f6beeffc4dc1e35af5773f8fc11",
+      "embeddedDimensionsPx": [
+        720,
+        450
+      ],
+      "currentAssetDimensionsPx": [
+        720,
+        450
+      ],
+      "usage": "Reference photograph only; not a surface texture, measured layout, or finish code.",
+      "colourWarning": "Whole-room average colour cannot identify cabinet finish or bathroom wall colour.",
+      "specific72m2ModelVerified": false
+    },
+    {
+      "id": "kitchen-03",
+      "asset": "reference/kitchen-03.jpg",
+      "label": "Cozinha 03",
+      "labelIsEditorial": true,
+      "catalogueCode": null,
+      "page": 16,
+      "sourceImage": "i3e8a145061dac2cf88f6c9f8928007f31",
+      "embeddedDimensionsPx": [
+        720,
+        450
+      ],
+      "currentAssetDimensionsPx": [
+        720,
+        450
+      ],
+      "usage": "Reference photograph only; not a surface texture, measured layout, or finish code.",
+      "colourWarning": "Whole-room average colour cannot identify cabinet finish or bathroom wall colour.",
+      "specific72m2ModelVerified": false
+    },
+    {
+      "id": "kitchen-04",
+      "asset": "reference/kitchen-04.jpg",
+      "label": "Cozinha 04",
+      "labelIsEditorial": true,
+      "catalogueCode": null,
+      "page": 16,
+      "sourceImage": "i36c81b7517c39e77bc43fad968b84f861",
+      "embeddedDimensionsPx": [
+        720,
+        450
+      ],
+      "currentAssetDimensionsPx": [
+        720,
+        450
+      ],
+      "usage": "Reference photograph only; not a surface texture, measured layout, or finish code.",
+      "colourWarning": "Whole-room average colour cannot identify cabinet finish or bathroom wall colour.",
+      "specific72m2ModelVerified": false
+    },
+    {
+      "id": "kitchen-05",
+      "asset": "reference/kitchen-05.jpg",
+      "label": "Cozinha 05",
+      "labelIsEditorial": true,
+      "catalogueCode": null,
+      "page": 16,
+      "sourceImage": "i7f5ea4c368654847410b10626ba56c731",
+      "embeddedDimensionsPx": [
+        720,
+        450
+      ],
+      "currentAssetDimensionsPx": [
+        720,
+        450
+      ],
+      "usage": "Reference photograph only; not a surface texture, measured layout, or finish code.",
+      "colourWarning": "Whole-room average colour cannot identify cabinet finish or bathroom wall colour.",
+      "specific72m2ModelVerified": false
+    },
+    {
+      "id": "kitchen-06",
+      "asset": "reference/kitchen-06.jpg",
+      "label": "Cozinha 06",
+      "labelIsEditorial": true,
+      "catalogueCode": null,
+      "page": 16,
+      "sourceImage": "i2217ecdefc3c0e5eedac468a6ab116711",
+      "embeddedDimensionsPx": [
+        720,
+        450
+      ],
+      "currentAssetDimensionsPx": [
+        720,
+        450
+      ],
+      "usage": "Reference photograph only; not a surface texture, measured layout, or finish code.",
+      "colourWarning": "Whole-room average colour cannot identify cabinet finish or bathroom wall colour.",
+      "specific72m2ModelVerified": false
+    },
+    {
+      "id": "kitchen-07",
+      "asset": "reference/kitchen-07.jpg",
+      "label": "Cozinha 07",
+      "labelIsEditorial": true,
+      "catalogueCode": null,
+      "page": 16,
+      "sourceImage": "if89f00deffc9b834b77f0450da4c88161",
+      "embeddedDimensionsPx": [
+        720,
+        450
+      ],
+      "currentAssetDimensionsPx": [
+        720,
+        450
+      ],
+      "usage": "Reference photograph only; not a surface texture, measured layout, or finish code.",
+      "colourWarning": "Whole-room average colour cannot identify cabinet finish or bathroom wall colour.",
+      "specific72m2ModelVerified": false
+    },
+    {
+      "id": "kitchen-08",
+      "asset": "reference/kitchen-08.jpg",
+      "label": "Cozinha 08",
+      "labelIsEditorial": true,
+      "catalogueCode": null,
+      "page": 16,
+      "sourceImage": "if4f9e724d39afbc9c497c4622d339bc51",
+      "embeddedDimensionsPx": [
+        720,
+        450
+      ],
+      "currentAssetDimensionsPx": [
+        720,
+        450
+      ],
+      "usage": "Reference photograph only; not a surface texture, measured layout, or finish code.",
+      "colourWarning": "Whole-room average colour cannot identify cabinet finish or bathroom wall colour.",
+      "specific72m2ModelVerified": false
+    },
+    {
+      "id": "kitchen-09",
+      "asset": "reference/kitchen-09.jpg",
+      "label": "Cozinha 09",
+      "labelIsEditorial": true,
+      "catalogueCode": null,
+      "page": 16,
+      "sourceImage": "i015dbceb45ab97cd23b5ac6aa0b323d71",
+      "embeddedDimensionsPx": [
+        720,
+        450
+      ],
+      "currentAssetDimensionsPx": [
+        720,
+        450
+      ],
+      "usage": "Reference photograph only; not a surface texture, measured layout, or finish code.",
+      "colourWarning": "Whole-room average colour cannot identify cabinet finish or bathroom wall colour.",
+      "specific72m2ModelVerified": false
+    },
+    {
+      "id": "kitchen-10",
+      "asset": "reference/kitchen-10.jpg",
+      "label": "Cozinha 10",
+      "labelIsEditorial": true,
+      "catalogueCode": null,
+      "page": 16,
+      "sourceImage": "id90d6de8d4a51d262b3a0d15184e464b1",
+      "embeddedDimensionsPx": [
+        720,
+        450
+      ],
+      "currentAssetDimensionsPx": [
+        720,
+        450
+      ],
+      "usage": "Reference photograph only; not a surface texture, measured layout, or finish code.",
+      "colourWarning": "Whole-room average colour cannot identify cabinet finish or bathroom wall colour.",
+      "specific72m2ModelVerified": false
+    },
+    {
+      "id": "kitchen-11",
+      "asset": "reference/kitchen-11.jpg",
+      "label": "Cozinha 11",
+      "labelIsEditorial": true,
+      "catalogueCode": null,
+      "page": 16,
+      "sourceImage": "i737dd48ebe590d8a0b6c4ba3594639261",
+      "embeddedDimensionsPx": [
+        720,
+        450
+      ],
+      "currentAssetDimensionsPx": [
+        720,
+        450
+      ],
+      "usage": "Reference photograph only; not a surface texture, measured layout, or finish code.",
+      "colourWarning": "Whole-room average colour cannot identify cabinet finish or bathroom wall colour.",
+      "specific72m2ModelVerified": false
+    },
+    {
+      "id": "kitchen-12",
+      "asset": "reference/kitchen-12.jpg",
+      "label": "Cozinha 12",
+      "labelIsEditorial": true,
+      "catalogueCode": null,
+      "page": 16,
+      "sourceImage": "i261159f2ac5e778a27a8bfca26226f381",
+      "embeddedDimensionsPx": [
+        720,
+        450
+      ],
+      "currentAssetDimensionsPx": [
+        720,
+        450
+      ],
+      "usage": "Reference photograph only; not a surface texture, measured layout, or finish code.",
+      "colourWarning": "Whole-room average colour cannot identify cabinet finish or bathroom wall colour.",
+      "specific72m2ModelVerified": false
+    },
+    {
+      "id": "kitchen-13",
+      "asset": "reference/kitchen-13.jpg",
+      "label": "Cozinha 13",
+      "labelIsEditorial": true,
+      "catalogueCode": null,
+      "page": 16,
+      "sourceImage": "iab215f1f953f271705327fc95c2e18a81",
+      "embeddedDimensionsPx": [
+        720,
+        450
+      ],
+      "currentAssetDimensionsPx": [
+        720,
+        450
+      ],
+      "usage": "Reference photograph only; not a surface texture, measured layout, or finish code.",
+      "colourWarning": "Whole-room average colour cannot identify cabinet finish or bathroom wall colour.",
+      "specific72m2ModelVerified": false
+    },
+    {
+      "id": "kitchen-14",
+      "asset": "reference/kitchen-14.jpg",
+      "label": "Cozinha 14",
+      "labelIsEditorial": true,
+      "catalogueCode": null,
+      "page": 16,
+      "sourceImage": "i10a8e46aee505ea0203b1de8367cd02b1",
+      "embeddedDimensionsPx": [
+        720,
+        450
+      ],
+      "currentAssetDimensionsPx": [
+        720,
+        450
+      ],
+      "usage": "Reference photograph only; not a surface texture, measured layout, or finish code.",
+      "colourWarning": "Whole-room average colour cannot identify cabinet finish or bathroom wall colour.",
+      "specific72m2ModelVerified": false
+    },
+    {
+      "id": "kitchen-15",
+      "asset": "reference/kitchen-15.jpg",
+      "label": "Cozinha 15",
+      "labelIsEditorial": true,
+      "catalogueCode": null,
+      "page": 16,
+      "sourceImage": "ia89b5865ee8e3b6fa4e9035c533b02971",
+      "embeddedDimensionsPx": [
+        720,
+        450
+      ],
+      "currentAssetDimensionsPx": [
+        720,
+        450
+      ],
+      "usage": "Reference photograph only; not a surface texture, measured layout, or finish code.",
+      "colourWarning": "Whole-room average colour cannot identify cabinet finish or bathroom wall colour.",
+      "specific72m2ModelVerified": false
+    },
+    {
+      "id": "bathroom-01",
+      "asset": "reference/bathroom-01.jpg",
+      "label": "Ambiente 01",
+      "labelIsEditorial": true,
+      "catalogueCode": null,
+      "page": 17,
+      "sourceImage": "i6a6bfceca5d3fd7f73f5dc25b7e85b801",
+      "embeddedDimensionsPx": [
+        450,
+        600
+      ],
+      "currentAssetDimensionsPx": [
+        450,
+        600
+      ],
+      "usage": "Reference photograph only; not a surface texture, measured layout, or finish code.",
+      "colourWarning": "Whole-room average colour cannot identify cabinet finish or bathroom wall colour.",
+      "specific72m2ModelVerified": false
+    },
+    {
+      "id": "bathroom-02",
+      "asset": "reference/bathroom-02.jpg",
+      "label": "Ambiente 02",
+      "labelIsEditorial": true,
+      "catalogueCode": null,
+      "page": 17,
+      "sourceImage": "i4a01a2c51c46f48104ccc587eaad0d611",
+      "embeddedDimensionsPx": [
+        450,
+        600
+      ],
+      "currentAssetDimensionsPx": [
+        450,
+        600
+      ],
+      "usage": "Reference photograph only; not a surface texture, measured layout, or finish code.",
+      "colourWarning": "Whole-room average colour cannot identify cabinet finish or bathroom wall colour.",
+      "specific72m2ModelVerified": false
+    },
+    {
+      "id": "bathroom-03",
+      "asset": "reference/bathroom-03.jpg",
+      "label": "Ambiente 03",
+      "labelIsEditorial": true,
+      "catalogueCode": null,
+      "page": 17,
+      "sourceImage": "i099fc837bf2777d3333e5a1a341b00b11",
+      "embeddedDimensionsPx": [
+        450,
+        600
+      ],
+      "currentAssetDimensionsPx": [
+        450,
+        600
+      ],
+      "usage": "Reference photograph only; not a surface texture, measured layout, or finish code.",
+      "colourWarning": "Whole-room average colour cannot identify cabinet finish or bathroom wall colour.",
+      "specific72m2ModelVerified": false
+    },
+    {
+      "id": "bathroom-04",
+      "asset": "reference/bathroom-04.jpg",
+      "label": "Ambiente 04",
+      "labelIsEditorial": true,
+      "catalogueCode": null,
+      "page": 17,
+      "sourceImage": "i9ebb5787efa01185aa255ee2dfaf18381",
+      "embeddedDimensionsPx": [
+        450,
+        600
+      ],
+      "currentAssetDimensionsPx": [
+        450,
+        600
+      ],
+      "usage": "Reference photograph only; not a surface texture, measured layout, or finish code.",
+      "colourWarning": "Whole-room average colour cannot identify cabinet finish or bathroom wall colour.",
+      "specific72m2ModelVerified": false
+    },
+    {
+      "id": "bathroom-05",
+      "asset": "reference/bathroom-05.jpg",
+      "label": "Ambiente 05",
+      "labelIsEditorial": true,
+      "catalogueCode": null,
+      "page": 18,
+      "sourceImage": "i2924552afea725e444ee18911c61bc571",
+      "embeddedDimensionsPx": [
+        450,
+        600
+      ],
+      "currentAssetDimensionsPx": [
+        450,
+        600
+      ],
+      "usage": "Reference photograph only; not a surface texture, measured layout, or finish code.",
+      "colourWarning": "Whole-room average colour cannot identify cabinet finish or bathroom wall colour.",
+      "specific72m2ModelVerified": false
+    },
+    {
+      "id": "bathroom-06",
+      "asset": "reference/bathroom-06.jpg",
+      "label": "Ambiente 06",
+      "labelIsEditorial": true,
+      "catalogueCode": null,
+      "page": 18,
+      "sourceImage": "id16262eec15a5dfcb32c1f16906e81471",
+      "embeddedDimensionsPx": [
+        450,
+        600
+      ],
+      "currentAssetDimensionsPx": [
+        450,
+        600
+      ],
+      "usage": "Reference photograph only; not a surface texture, measured layout, or finish code.",
+      "colourWarning": "Whole-room average colour cannot identify cabinet finish or bathroom wall colour.",
+      "specific72m2ModelVerified": false
+    },
+    {
+      "id": "bathroom-07",
+      "asset": "reference/bathroom-07.jpg",
+      "label": "Ambiente 07",
+      "labelIsEditorial": true,
+      "catalogueCode": null,
+      "page": 18,
+      "sourceImage": "i87dd42e0911c667c222d0e0ff5aad26a1",
+      "embeddedDimensionsPx": [
+        450,
+        600
+      ],
+      "currentAssetDimensionsPx": [
+        450,
+        600
+      ],
+      "usage": "Reference photograph only; not a surface texture, measured layout, or finish code.",
+      "colourWarning": "Whole-room average colour cannot identify cabinet finish or bathroom wall colour.",
+      "specific72m2ModelVerified": false
+    },
+    {
+      "id": "bathroom-08",
+      "asset": "reference/bathroom-08.jpg",
+      "label": "Ambiente 08",
+      "labelIsEditorial": true,
+      "catalogueCode": null,
+      "page": 18,
+      "sourceImage": "i4927255263f0cbbf8b171a384a9da71f1",
+      "embeddedDimensionsPx": [
+        450,
+        600
+      ],
+      "currentAssetDimensionsPx": [
+        450,
+        600
+      ],
+      "usage": "Reference photograph only; not a surface texture, measured layout, or finish code.",
+      "colourWarning": "Whole-room average colour cannot identify cabinet finish or bathroom wall colour.",
+      "specific72m2ModelVerified": false
+    },
+    {
+      "id": "bathroom-09",
+      "asset": "reference/bathroom-09.jpg",
+      "label": "Ambiente 09",
+      "labelIsEditorial": true,
+      "catalogueCode": null,
+      "page": 18,
+      "sourceImage": "ib7d31153e8c3864c3e5be9121c28c8951",
+      "embeddedDimensionsPx": [
+        450,
+        600
+      ],
+      "currentAssetDimensionsPx": [
+        450,
+        600
+      ],
+      "usage": "Reference photograph only; not a surface texture, measured layout, or finish code.",
+      "colourWarning": "Whole-room average colour cannot identify cabinet finish or bathroom wall colour.",
+      "specific72m2ModelVerified": false
+    },
+    {
+      "id": "bathroom-10",
+      "asset": "reference/bathroom-10.jpg",
+      "label": "Ambiente 10",
+      "labelIsEditorial": true,
+      "catalogueCode": null,
+      "page": 18,
+      "sourceImage": "ie9935648b1cb4cc6396762b1dbdfb4391",
+      "embeddedDimensionsPx": [
+        450,
+        600
+      ],
+      "currentAssetDimensionsPx": [
+        450,
+        600
+      ],
+      "usage": "Reference photograph only; not a surface texture, measured layout, or finish code.",
+      "colourWarning": "Whole-room average colour cannot identify cabinet finish or bathroom wall colour.",
+      "specific72m2ModelVerified": false
+    },
+    {
+      "id": "bathroom-11",
+      "asset": "reference/bathroom-11.jpg",
+      "label": "Ambiente 11",
+      "labelIsEditorial": true,
+      "catalogueCode": null,
+      "page": 18,
+      "sourceImage": "i67bccf322c1f8f9c0bd56b8b8f149f9f1",
+      "embeddedDimensionsPx": [
+        450,
+        600
+      ],
+      "currentAssetDimensionsPx": [
+        450,
+        600
+      ],
+      "usage": "Reference photograph only; not a surface texture, measured layout, or finish code.",
+      "colourWarning": "Whole-room average colour cannot identify cabinet finish or bathroom wall colour.",
+      "specific72m2ModelVerified": false
+    },
+    {
+      "id": "bathroom-12",
+      "asset": "reference/bathroom-12.jpg",
+      "label": "Ambiente 12",
+      "labelIsEditorial": true,
+      "catalogueCode": null,
+      "page": 18,
+      "sourceImage": "i674132c365eec274cd04420dc1b281911",
+      "embeddedDimensionsPx": [
+        450,
+        600
+      ],
+      "currentAssetDimensionsPx": [
+        450,
+        600
+      ],
+      "usage": "Reference photograph only; not a surface texture, measured layout, or finish code.",
+      "colourWarning": "Whole-room average colour cannot identify cabinet finish or bathroom wall colour.",
+      "specific72m2ModelVerified": false
+    },
+    {
+      "id": "bathroom-13",
+      "asset": "reference/bathroom-13.jpg",
+      "label": "Ambiente 13",
+      "labelIsEditorial": true,
+      "catalogueCode": null,
+      "page": 18,
+      "sourceImage": "iebde26360d52c00d4ca2e5f5769b84ba1",
+      "embeddedDimensionsPx": [
+        450,
+        600
+      ],
+      "currentAssetDimensionsPx": [
+        450,
+        600
+      ],
+      "usage": "Reference photograph only; not a surface texture, measured layout, or finish code.",
+      "colourWarning": "Whole-room average colour cannot identify cabinet finish or bathroom wall colour.",
+      "specific72m2ModelVerified": false
+    },
+    {
+      "id": "bathroom-14",
+      "asset": "reference/bathroom-14.jpg",
+      "label": "Ambiente 14",
+      "labelIsEditorial": true,
+      "catalogueCode": null,
+      "page": 18,
+      "sourceImage": "if7dc13bb5ef97be238694a78e2a3b1bc1",
+      "embeddedDimensionsPx": [
+        450,
+        600
+      ],
+      "currentAssetDimensionsPx": [
+        450,
+        600
+      ],
+      "usage": "Reference photograph only; not a surface texture, measured layout, or finish code.",
+      "colourWarning": "Whole-room average colour cannot identify cabinet finish or bathroom wall colour.",
+      "specific72m2ModelVerified": false
+    },
+    {
+      "id": "bathroom-15",
+      "asset": "reference/bathroom-15.jpg",
+      "label": "Ambiente 15",
+      "labelIsEditorial": true,
+      "catalogueCode": null,
+      "page": 18,
+      "sourceImage": "i692c5740efa45b5e73da9e48fb51215f1",
+      "embeddedDimensionsPx": [
+        450,
+        600
+      ],
+      "currentAssetDimensionsPx": [
+        450,
+        600
+      ],
+      "usage": "Reference photograph only; not a surface texture, measured layout, or finish code.",
+      "colourWarning": "Whole-room average colour cannot identify cabinet finish or bathroom wall colour.",
+      "specific72m2ModelVerified": false
+    },
+    {
+      "id": "bathroom-16",
+      "asset": "reference/bathroom-16.jpg",
+      "label": "Ambiente 16",
+      "labelIsEditorial": true,
+      "catalogueCode": null,
+      "page": 18,
+      "sourceImage": "i22971d3f68a163bcf02907477cc2996b1",
+      "embeddedDimensionsPx": [
+        450,
+        600
+      ],
+      "currentAssetDimensionsPx": [
+        450,
+        600
+      ],
+      "usage": "Reference photograph only; not a surface texture, measured layout, or finish code.",
+      "colourWarning": "Whole-room average colour cannot identify cabinet finish or bathroom wall colour.",
+      "specific72m2ModelVerified": false
+    },
+    {
+      "id": "bathroom-17",
+      "asset": "reference/bathroom-17.jpg",
+      "label": "Ambiente 17",
+      "labelIsEditorial": true,
+      "catalogueCode": null,
+      "page": 18,
+      "sourceImage": "if9c9ca430e0303707f172b0d4f2b3d611",
+      "embeddedDimensionsPx": [
+        450,
+        600
+      ],
+      "currentAssetDimensionsPx": [
+        450,
+        600
+      ],
+      "usage": "Reference photograph only; not a surface texture, measured layout, or finish code.",
+      "colourWarning": "Whole-room average colour cannot identify cabinet finish or bathroom wall colour.",
+      "specific72m2ModelVerified": false
+    }
+  ],
+  "findings": [
+    "15 kitchen references on page 16; numbering is editorial.",
+    "17 real bathroom photographs on pages 17–18; numbering is editorial.",
+    "No nominal mapping to the eight UV samples, no physical layout measurements and no 72 m² compatibility mapping.",
+    "The whole-image average presently used to recolour kitchen cabinetry blends walls, windows, flooring, light and furniture. Remove this automatic mapping; show the selected photograph as reference."
+  ]
+}

@@ -1,0 +1,3241 @@
+{
+  "started": "2026-09-10T12:25:44.710Z",
+  "checks": [
+    {
+      "name": "initialisation",
+      "status": "PASS",
+      "result": {
+        "revision": "GV72-R2-2026-09-10",
+        "frames": 3,
+        "materials": {
+          "pending": 0,
+          "failures": [],
+          "cachedTextures": 1,
+          "leases": 1
+        },
+        "render": {
+          "calls": 295,
+          "triangles": 108136,
+          "memory": {
+            "geometries": 158,
+            "textures": 4
+          },
+          "camera": [
+            12.657602184004823,
+            10.977929703523765,
+            15.822002730006027
+          ],
+          "target": [
+            0,
+            1.105,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "name": "all views through UI",
+      "status": "PASS",
+      "result": [
+        {
+          "view": "exterior",
+          "diagnostics": {
+            "revision": "GV72-R2-2026-09-10",
+            "frames": 4,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 1,
+              "leases": 1
+            },
+            "render": {
+              "calls": 295,
+              "triangles": 108136,
+              "memory": {
+                "geometries": 158,
+                "textures": 4
+              },
+              "camera": [
+                12.657602184004823,
+                10.977929703523765,
+                15.822002730006027
+              ],
+              "target": [
+                0,
+                1.105,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "view": "interior",
+          "diagnostics": {
+            "revision": "GV72-R2-2026-09-10",
+            "frames": 5,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 1,
+              "leases": 1
+            },
+            "render": {
+              "calls": 277,
+              "triangles": 104752,
+              "memory": {
+                "geometries": 149,
+                "textures": 4
+              },
+              "camera": [
+                8.299999999999999,
+                13.3,
+                13.699999999999996
+              ],
+              "target": [
+                0,
+                0.3,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "view": "structure",
+          "diagnostics": {
+            "revision": "GV72-R2-2026-09-10",
+            "frames": 6,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 1,
+              "leases": 1
+            },
+            "render": {
+              "calls": 4,
+              "triangles": 7058,
+              "memory": {
+                "geometries": 4,
+                "textures": 4
+              },
+              "camera": [
+                12.657602184004823,
+                10.977929703523765,
+                15.822002730006027
+              ],
+              "target": [
+                0,
+                1.105,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "view": "finishes",
+          "diagnostics": {
+            "revision": "GV72-R2-2026-09-10",
+            "frames": 7,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 1,
+              "leases": 1
+            },
+            "render": {
+              "calls": 295,
+              "triangles": 108136,
+              "memory": {
+                "geometries": 158,
+                "textures": 4
+              },
+              "camera": [
+                13.291205731627521,
+                11.252140470669469,
+                16.6140071645344
+              ],
+              "target": [
+                0,
+                0.8849999999999998,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "view": "plumbing",
+          "diagnostics": {
+            "revision": "GV72-R2-2026-09-10",
+            "frames": 8,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 1,
+              "leases": 1
+            },
+            "render": {
+              "calls": 265,
+              "triangles": 98920,
+              "memory": {
+                "geometries": 143,
+                "textures": 4
+              },
+              "camera": [
+                8.299999999999999,
+                13.3,
+                13.699999999999996
+              ],
+              "target": [
+                0,
+                0.3,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "view": "electrical",
+          "diagnostics": {
+            "revision": "GV72-R2-2026-09-10",
+            "frames": 9,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 1,
+              "leases": 1
+            },
+            "render": {
+              "calls": 265,
+              "triangles": 99544,
+              "memory": {
+                "geometries": 143,
+                "textures": 4
+              },
+              "camera": [
+                8.299999999999999,
+                13.3,
+                13.699999999999996
+              ],
+              "target": [
+                0,
+                0.3,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "view": "expansion",
+          "diagnostics": {
+            "revision": "GV72-R2-2026-09-10",
+            "frames": 11,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 1,
+              "leases": 1
+            },
+            "render": {
+              "calls": 206,
+              "triangles": 75772,
+              "memory": {
+                "geometries": 113,
+                "textures": 4
+              },
+              "camera": [
+                16.140375250725917,
+                13.694492695566217,
+                20.17546906340739
+              ],
+              "target": [
+                0,
+                1.105,
+                0
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "71 materials validated browser application",
+      "status": "PASS",
+      "result": {
+        "count": 71,
+        "final": {
+          "revision": "GV72-R2-2026-09-10",
+          "frames": 146,
+          "materials": {
+            "pending": 0,
+            "failures": [],
+            "cachedTextures": 18,
+            "leases": 2
+          },
+          "render": {
+            "calls": 277,
+            "triangles": 104752,
+            "memory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "camera": [
+              8.299999999999999,
+              13.3,
+              13.699999999999996
+            ],
+            "target": [
+              0,
+              0.3,
+              0
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "material texture cache repeated cycles",
+      "status": "PASS",
+      "result": [
+        {
+          "revision": "GV72-R2-2026-09-10",
+          "frames": 169,
+          "materials": {
+            "pending": 0,
+            "failures": [],
+            "cachedTextures": 18,
+            "leases": 2
+          },
+          "render": {
+            "calls": 277,
+            "triangles": 104752,
+            "memory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "camera": [
+              8.299999999999999,
+              13.3,
+              13.699999999999996
+            ],
+            "target": [
+              0,
+              0.3,
+              0
+            ]
+          }
+        },
+        {
+          "revision": "GV72-R2-2026-09-10",
+          "frames": 181,
+          "materials": {
+            "pending": 0,
+            "failures": [],
+            "cachedTextures": 18,
+            "leases": 2
+          },
+          "render": {
+            "calls": 277,
+            "triangles": 104752,
+            "memory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "camera": [
+              8.299999999999999,
+              13.3,
+              13.699999999999996
+            ],
+            "target": [
+              0,
+              0.3,
+              0
+            ]
+          }
+        },
+        {
+          "revision": "GV72-R2-2026-09-10",
+          "frames": 193,
+          "materials": {
+            "pending": 0,
+            "failures": [],
+            "cachedTextures": 18,
+            "leases": 2
+          },
+          "render": {
+            "calls": 277,
+            "triangles": 104752,
+            "memory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "camera": [
+              8.299999999999999,
+              13.3,
+              13.699999999999996
+            ],
+            "target": [
+              0,
+              0.3,
+              0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "material comparison real controls",
+      "status": "PASS",
+      "result": {
+        "revision": "GV72-R2-2026-09-10",
+        "frames": 195,
+        "materials": {
+          "pending": 0,
+          "failures": [],
+          "cachedTextures": 18,
+          "leases": 3
+        },
+        "render": {
+          "calls": 277,
+          "triangles": 104752,
+          "memory": {
+            "geometries": 149,
+            "textures": 21
+          },
+          "camera": [
+            8.299999999999999,
+            13.3,
+            13.699999999999996
+          ],
+          "target": [
+            0,
+            0.3,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "name": "all seven layouts and top camera",
+      "status": "PASS",
+      "result": [
+        "t0",
+        "t1",
+        "t2",
+        "t3-a",
+        "t3-b",
+        "t4-a",
+        "t4-b"
+      ]
+    },
+    {
+      "name": "kitchen variants and incompatibility",
+      "status": "FAIL",
+      "error": "locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-kitchen=\"island\"]')\u001b[22m\n\u001b[2m    - locator resolved to <button aria-pressed=\"false\" aria-disabled=\"true\" data-kitchen=\"island\" class=\"choice-card  incompatible\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    29 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not enabled\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n    at /private/tmp/gv72-v2-audit/final-browser/flows.mjs:16:565\n    at async check (/private/tmp/gv72-v2-audit/final-browser/flows.mjs:9:48)\n    at async file:///private/tmp/gv72-v2-audit/final-browser/flows.mjs:16:1"
+    },
+    {
+      "name": "doors walls furniture cut exploded controls",
+      "status": "FAIL",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n1 !== 0.5\n\n    at file:///private/tmp/gv72-v2-audit/final-browser/flows.mjs:17:811\n    at async check (file:///private/tmp/gv72-v2-audit/final-browser/flows.mjs:9:48)\n    at async file:///private/tmp/gv72-v2-audit/final-browser/flows.mjs:17:1"
+    },
+    {
+      "name": "reset synchronises visible controls",
+      "status": "FAIL",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\nfalse !== true\n\n    at file:///private/tmp/gv72-v2-audit/final-browser/flows.mjs:18:492\n    at async check (file:///private/tmp/gv72-v2-audit/final-browser/flows.mjs:9:48)\n    at async file:///private/tmp/gv72-v2-audit/final-browser/flows.mjs:18:1"
+    },
+    {
+      "name": "animation play pause restart and mutation",
+      "status": "PASS",
+      "result": {
+        "fps": 59.966019255993224,
+        "frames": 180,
+        "durationMs": 3001.699999988079,
+        "paused": 0.21637142857313146,
+        "stopped": 0.028307142860548733,
+        "render": {
+          "calls": 206,
+          "triangles": 75772,
+          "memory": {
+            "geometries": 113,
+            "textures": 21
+          },
+          "camera": [
+            16.140375250725917,
+            13.694492695566217,
+            20.17546906340739
+          ],
+          "target": [
+            0,
+            1.105,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "name": "keyboard camera zoom and tab focus",
+      "status": "PASS",
+      "result": {
+        "cameraBefore": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "cameraAfter": [
+          9.880368917445283,
+          13.3,
+          12.607866990699932
+        ],
+        "focus": "roof"
+      }
+    },
+    {
+      "name": "autosave manual recover reset persistence",
+      "status": "PASS",
+      "result": {
+        "schemaVersion": 2,
+        "layout": "t3-b",
+        "exteriorId": "exterior-standard-branco-glacial",
+        "exterior": "#ddddda",
+        "floorId": "floor-spc-kx8006",
+        "floor": "#909497",
+        "interior": "#ba8970",
+        "interiorName": "Terracota",
+        "kitchen": "linear",
+        "kitchenRef": "kitchen-01",
+        "bathroom": "standard",
+        "bathroomRef": "bathroom-01",
+        "bathroomUV": null,
+        "roof": false,
+        "porch": false,
+        "lighting": "neutral"
+      }
+    },
+    {
+      "name": "JSON export import valid and reject invalid",
+      "status": "PASS",
+      "result": {
+        "file": {
+          "suggested": "green-village-72-t3-b.json",
+          "path": "configuration-valid.json",
+          "bytes": 6100
+        },
+        "results": [
+          {
+            "name": "corrupt",
+            "toast": "Não foi possível ler este ficheiro JSON."
+          },
+          {
+            "name": "missing",
+            "toast": "Falta o campo floorId."
+          },
+          {
+            "name": "invalid",
+            "toast": "Opção inválida: layout."
+          },
+          {
+            "name": "oversize",
+            "toast": "Ficheiro demasiado grande ou inválido."
+          }
+        ]
+      }
+    },
+    {
+      "name": "PDF PNG SVG downloads and browser open",
+      "status": "PASS",
+      "result": {
+        "png": {
+          "suggested": "green-village-72-t3-b.png",
+          "path": "configuration.png",
+          "bytes": 245204
+        },
+        "pdf": {
+          "suggested": "green-village-72-t3-b.pdf",
+          "path": "configuration.pdf",
+          "bytes": 247322
+        },
+        "svg": {
+          "suggested": "green-village-72-planta-t3-b.svg",
+          "path": "configuration.svg",
+          "bytes": 11008
+        },
+        "opened": [
+          {
+            "path": "configuration.png",
+            "contentType": "image/png"
+          },
+          {
+            "path": "configuration.svg",
+            "contentType": "image/svg+xml"
+          }
+        ]
+      }
+    },
+    {
+      "name": "corrupt saved session recovery",
+      "status": "PASS",
+      "result": {
+        "toast": "Não foi possível ler este ficheiro JSON."
+      }
+    },
+    {
+      "name": "missing saved configuration",
+      "status": "PASS",
+      "result": "Ainda não existe uma configuração guardada."
+    }
+  ],
+  "logs": [
+    {
+      "label": "functional",
+      "kind": "http",
+      "status": 404,
+      "url": "http://127.0.0.1:4174/assets/presentation-v2-poster.jpg"
+    },
+    {
+      "label": "functional",
+      "kind": "error",
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "label": "functional",
+      "kind": "http",
+      "status": 404,
+      "url": "http://127.0.0.1:4174/assets/expansion-v2-poster.jpg"
+    },
+    {
+      "label": "functional",
+      "kind": "error",
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "label": "functional",
+      "kind": "http",
+      "status": 404,
+      "url": "http://127.0.0.1:4174/assets/presentation-v2.mp4"
+    },
+    {
+      "label": "functional",
+      "kind": "error",
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "label": "functional",
+      "kind": "http",
+      "status": 404,
+      "url": "http://127.0.0.1:4174/assets/expansion-v2.mp4"
+    },
+    {
+      "label": "functional",
+      "kind": "error",
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "label": "functional",
+      "kind": "warning",
+      "message": "sigmaRadians, 0.08, is too large and will clip, as it requested 39 samples when the maximum is set to 20"
+    },
+    {
+      "label": "functional",
+      "kind": "warning",
+      "message": "sigmaRadians, 0.08, is too large and will clip, as it requested 39 samples when the maximum is set to 20"
+    },
+    {
+      "label": "functional",
+      "kind": "http",
+      "status": 404,
+      "url": "http://127.0.0.1:4174/assets/presentation-v2-poster.jpg"
+    },
+    {
+      "label": "functional",
+      "kind": "error",
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "label": "functional",
+      "kind": "http",
+      "status": 404,
+      "url": "http://127.0.0.1:4174/assets/expansion-v2-poster.jpg"
+    },
+    {
+      "label": "functional",
+      "kind": "error",
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "label": "functional",
+      "kind": "http",
+      "status": 404,
+      "url": "http://127.0.0.1:4174/assets/presentation-v2.mp4"
+    },
+    {
+      "label": "functional",
+      "kind": "error",
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "label": "functional",
+      "kind": "http",
+      "status": 404,
+      "url": "http://127.0.0.1:4174/assets/expansion-v2.mp4"
+    },
+    {
+      "label": "functional",
+      "kind": "error",
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "label": "functional",
+      "kind": "warning",
+      "message": "sigmaRadians, 0.08, is too large and will clip, as it requested 39 samples when the maximum is set to 20"
+    },
+    {
+      "label": "functional",
+      "kind": "warning",
+      "message": "sigmaRadians, 0.08, is too large and will clip, as it requested 39 samples when the maximum is set to 20"
+    },
+    {
+      "label": "functional",
+      "kind": "http",
+      "status": 404,
+      "url": "http://127.0.0.1:4174/assets/presentation-v2-poster.jpg"
+    },
+    {
+      "label": "functional",
+      "kind": "error",
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "label": "functional",
+      "kind": "http",
+      "status": 404,
+      "url": "http://127.0.0.1:4174/assets/expansion-v2-poster.jpg"
+    },
+    {
+      "label": "functional",
+      "kind": "error",
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "label": "functional",
+      "kind": "http",
+      "status": 404,
+      "url": "http://127.0.0.1:4174/assets/presentation-v2.mp4"
+    },
+    {
+      "label": "functional",
+      "kind": "error",
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "label": "functional",
+      "kind": "http",
+      "status": 404,
+      "url": "http://127.0.0.1:4174/assets/expansion-v2.mp4"
+    },
+    {
+      "label": "functional",
+      "kind": "error",
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "label": "functional",
+      "kind": "warning",
+      "message": "sigmaRadians, 0.08, is too large and will clip, as it requested 39 samples when the maximum is set to 20"
+    },
+    {
+      "label": "functional",
+      "kind": "warning",
+      "message": "sigmaRadians, 0.08, is too large and will clip, as it requested 39 samples when the maximum is set to 20"
+    }
+  ],
+  "materials": [
+    {
+      "id": "exterior-3d-textures-tijolo-cinza",
+      "kind": "exterior",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 15,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 2,
+        "leases": 2
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 5
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "exterior-3d-textures-tijolo-bordo",
+      "kind": "exterior",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 17,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 3,
+        "leases": 2
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 6
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "exterior-3d-textures-tijolo-creme",
+      "kind": "exterior",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 19,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 4,
+        "leases": 2
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 7
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "exterior-3d-textures-tijolo-vermelho",
+      "kind": "exterior",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 21,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 5,
+        "leases": 2
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 8
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "exterior-3d-textures-pedra-areia",
+      "kind": "exterior",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 23,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 6,
+        "leases": 2
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 9
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "exterior-3d-textures-bloco-cinza",
+      "kind": "exterior",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 25,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 7,
+        "leases": 2
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 10
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "exterior-3d-textures-tijolo-castanho",
+      "kind": "exterior",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 27,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 8,
+        "leases": 2
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 11
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "exterior-3d-textures-pedra-bege",
+      "kind": "exterior",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 29,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 9,
+        "leases": 2
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 12
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "exterior-3d-textures-tijolo-multicor",
+      "kind": "exterior",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 31,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 10,
+        "leases": 2
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 13
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "exterior-3d-textures-tijolo-ardosia",
+      "kind": "exterior",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 33,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 11,
+        "leases": 2
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 14
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "exterior-3d-textures-tijolo-rustico",
+      "kind": "exterior",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 35,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 12,
+        "leases": 2
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 15
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "exterior-3d-textures-granito-cinza",
+      "kind": "exterior",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 37,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 13,
+        "leases": 2
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 16
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "exterior-3d-gm-gm-16",
+      "kind": "exterior",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 39,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 14,
+        "leases": 2
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 17
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "exterior-3d-gm-gm-17",
+      "kind": "exterior",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 41,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 15,
+        "leases": 2
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 18
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "exterior-3d-gm-gm-18",
+      "kind": "exterior",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 43,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 16,
+        "leases": 2
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 19
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "exterior-3d-gm-gm-19",
+      "kind": "exterior",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 45,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 17,
+        "leases": 2
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 20
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "exterior-3d-gm-gm-20",
+      "kind": "exterior",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 47,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 18,
+        "leases": 2
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 21
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "exterior-3d-gm-gm-21",
+      "kind": "exterior",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 49,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 18,
+        "leases": 2
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 21
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "exterior-3d-gm-gm-22",
+      "kind": "exterior",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 51,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 18,
+        "leases": 2
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 21
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "exterior-3d-gm-gm-23",
+      "kind": "exterior",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 53,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 18,
+        "leases": 2
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 21
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "exterior-3d-gm-gm-24",
+      "kind": "exterior",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 55,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 18,
+        "leases": 2
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 21
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "exterior-3d-gm-gm-25",
+      "kind": "exterior",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 57,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 18,
+        "leases": 2
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 21
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "exterior-3d-gm-gm-26",
+      "kind": "exterior",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 59,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 18,
+        "leases": 2
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 21
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "exterior-3d-gm-gm-27",
+      "kind": "exterior",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 61,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 18,
+        "leases": 2
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 21
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "exterior-3d-gm-gm-28",
+      "kind": "exterior",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 63,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 18,
+        "leases": 2
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 21
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "exterior-3d-gm-gm-29",
+      "kind": "exterior",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 65,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 18,
+        "leases": 2
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 21
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "exterior-3d-gm-gm-30",
+      "kind": "exterior",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 67,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 18,
+        "leases": 2
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 21
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "exterior-finishes-madeira-mel",
+      "kind": "exterior",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 69,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 18,
+        "leases": 2
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 21
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "exterior-finishes-lamela-branca",
+      "kind": "exterior",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 71,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 18,
+        "leases": 2
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 21
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "exterior-finishes-lamela-bege",
+      "kind": "exterior",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 73,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 18,
+        "leases": 2
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 21
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "exterior-finishes-lamela-creme",
+      "kind": "exterior",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 75,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 18,
+        "leases": 2
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 21
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "exterior-finishes-lamela-dourada",
+      "kind": "exterior",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 77,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 18,
+        "leases": 2
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 21
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "exterior-finishes-lamela-cinza",
+      "kind": "exterior",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 79,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 18,
+        "leases": 2
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 21
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "exterior-finishes-lamela-bordo",
+      "kind": "exterior",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 81,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 18,
+        "leases": 2
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 21
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "exterior-finishes-grafite",
+      "kind": "exterior",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 83,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 18,
+        "leases": 2
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 21
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "exterior-finishes-preto",
+      "kind": "exterior",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 85,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 18,
+        "leases": 2
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 21
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "exterior-finishes-vermelho",
+      "kind": "exterior",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 87,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 18,
+        "leases": 2
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 21
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "exterior-finishes-areia",
+      "kind": "exterior",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 89,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 18,
+        "leases": 2
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 21
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "exterior-finishes-granito-branco",
+      "kind": "exterior",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 91,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 18,
+        "leases": 2
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 21
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "exterior-standard-pedra-cinza",
+      "kind": "exterior",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 93,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 18,
+        "leases": 2
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 21
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "exterior-standard-cinza-metalico",
+      "kind": "exterior",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 94,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 18,
+        "leases": 1
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 21
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "exterior-standard-prata",
+      "kind": "exterior",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 95,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 18,
+        "leases": 1
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 21
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "exterior-standard-madeira-castanho",
+      "kind": "exterior",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 97,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 18,
+        "leases": 2
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 21
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "exterior-standard-cinza-perola",
+      "kind": "exterior",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 98,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 18,
+        "leases": 1
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 21
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "exterior-standard-madeira-mel",
+      "kind": "exterior",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 100,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 18,
+        "leases": 2
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 21
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "exterior-standard-madeira-cerejeira",
+      "kind": "exterior",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 102,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 18,
+        "leases": 2
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 21
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "exterior-standard-cinza-quente",
+      "kind": "exterior",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 103,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 18,
+        "leases": 1
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 21
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "exterior-standard-grafite",
+      "kind": "exterior",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 104,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 18,
+        "leases": 1
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 21
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "exterior-standard-branco-glacial",
+      "kind": "exterior",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 105,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 18,
+        "leases": 1
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 21
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "exterior-standard-bege-marfim",
+      "kind": "exterior",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 106,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 18,
+        "leases": 1
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 21
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "exterior-standard-vermelho-borgonha",
+      "kind": "exterior",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 107,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 18,
+        "leases": 1
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 21
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "floor-spc-kx7005",
+      "kind": "floor",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 109,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 18,
+        "leases": 1
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 21
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "floor-spc-kx7006",
+      "kind": "floor",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 110,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 18,
+        "leases": 1
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 21
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "floor-spc-kx7007",
+      "kind": "floor",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 112,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 18,
+        "leases": 1
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 21
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "floor-spc-kx7008",
+      "kind": "floor",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 114,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 18,
+        "leases": 1
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 21
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "floor-spc-kx7009",
+      "kind": "floor",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 116,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 18,
+        "leases": 1
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 21
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "floor-spc-kx7010",
+      "kind": "floor",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 118,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 18,
+        "leases": 1
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 21
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "floor-spc-kx8005",
+      "kind": "floor",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 120,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 18,
+        "leases": 1
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 21
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "floor-spc-kx8006",
+      "kind": "floor",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 122,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 18,
+        "leases": 1
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 21
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "floor-spc-kx8007",
+      "kind": "floor",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 124,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 18,
+        "leases": 1
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 21
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "floor-spc-kx8008",
+      "kind": "floor",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 126,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 18,
+        "leases": 1
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 21
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "floor-spc-kx8009",
+      "kind": "floor",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 128,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 18,
+        "leases": 1
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 21
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "floor-spc-kx9005",
+      "kind": "floor",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 130,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 18,
+        "leases": 1
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 21
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "bathroom-uv-amostra-1",
+      "kind": "uv",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 132,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 18,
+        "leases": 2
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 21
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "bathroom-uv-amostra-2",
+      "kind": "uv",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 134,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 18,
+        "leases": 2
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 21
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "bathroom-uv-amostra-3",
+      "kind": "uv",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 136,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 18,
+        "leases": 2
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 21
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "bathroom-uv-amostra-4",
+      "kind": "uv",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 138,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 18,
+        "leases": 2
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 21
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "bathroom-uv-amostra-5",
+      "kind": "uv",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 140,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 18,
+        "leases": 2
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 21
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "bathroom-uv-amostra-6",
+      "kind": "uv",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 142,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 18,
+        "leases": 2
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 21
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "bathroom-uv-amostra-7",
+      "kind": "uv",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 144,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 18,
+        "leases": 2
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 21
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    },
+    {
+      "id": "bathroom-uv-amostra-8",
+      "kind": "uv",
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 146,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 18,
+        "leases": 2
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 21
+        },
+        "camera": [
+          8.299999999999999,
+          13.3,
+          13.699999999999996
+        ],
+        "target": [
+          0,
+          0.3,
+          0
+        ]
+      }
+    }
+  ],
+  "layouts": [
+    {
+      "id": "t0",
+      "area": {
+        "commercial": 72,
+        "exterior": 73.396,
+        "internalEnvelope": 69.83200000000001,
+        "partitions": 0.47366400000000053,
+        "estimatedNet": 69.35833600000001,
+        "common": 65.72178880000001,
+        "roomTotal": 3.6365472000000008,
+        "status": "estimated",
+        "note": "Áreas calculadas com paredes de 100 mm e divisórias de 80 mm assumidas; não são um mapa de áreas certificado."
+      },
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "label": "Casa de banho",
+          "area": 3.6365472000000008
+        }
+      ],
+      "camera": {
+        "calls": 231,
+        "triangles": 84160,
+        "memory": {
+          "geometries": 126,
+          "textures": 21
+        },
+        "camera": [
+          0,
+          21.426832785803406,
+          0.000021427785193600704
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "t1",
+      "area": {
+        "commercial": 72,
+        "exterior": 73.396,
+        "internalEnvelope": 69.83200000000001,
+        "partitions": 0.8456320000000008,
+        "estimatedNet": 68.98636800000001,
+        "common": 52.54188480000001,
+        "roomTotal": 16.4444832,
+        "status": "estimated",
+        "note": "Áreas calculadas com paredes de 100 mm e divisórias de 80 mm assumidas; não são um mapa de áreas certificado."
+      },
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "label": "Casa de banho",
+          "area": 3.6365472000000008
+        },
+        {
+          "id": "bedroom-1",
+          "label": "Quarto 1",
+          "area": 12.807936
+        }
+      ],
+      "camera": {
+        "calls": 247,
+        "triangles": 88552,
+        "memory": {
+          "geometries": 134,
+          "textures": 21
+        },
+        "camera": [
+          0,
+          21.426832785803406,
+          0.000021427785193600704
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "t2",
+      "area": {
+        "commercial": 72,
+        "exterior": 73.396,
+        "internalEnvelope": 69.83200000000001,
+        "partitions": 1.2472320000000012,
+        "estimatedNet": 68.58476800000001,
+        "common": 39.33234880000001,
+        "roomTotal": 29.2524192,
+        "status": "estimated",
+        "note": "Áreas calculadas com paredes de 100 mm e divisórias de 80 mm assumidas; não são um mapa de áreas certificado."
+      },
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "label": "Casa de banho",
+          "area": 3.6365472000000008
+        },
+        {
+          "id": "bedroom-1",
+          "label": "Quarto 1",
+          "area": 12.807936
+        },
+        {
+          "id": "bedroom-2",
+          "label": "Quarto 2",
+          "area": 12.807936
+        }
+      ],
+      "camera": {
+        "calls": 263,
+        "triangles": 92944,
+        "memory": {
+          "geometries": 142,
+          "textures": 21
+        },
+        "camera": [
+          0,
+          21.426832785803406,
+          0.000021427785193600704
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "t3-a",
+      "area": {
+        "commercial": 72,
+        "exterior": 73.396,
+        "internalEnvelope": 69.83200000000001,
+        "partitions": 1.6192000000000013,
+        "estimatedNet": 68.2128,
+        "common": 26.152444800000005,
+        "roomTotal": 42.0603552,
+        "status": "estimated",
+        "note": "Áreas calculadas com paredes de 100 mm e divisórias de 80 mm assumidas; não são um mapa de áreas certificado."
+      },
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "label": "Casa de banho",
+          "area": 3.6365472000000008
+        },
+        {
+          "id": "bedroom-1",
+          "label": "Quarto 1",
+          "area": 12.807936
+        },
+        {
+          "id": "bedroom-2",
+          "label": "Quarto 2",
+          "area": 12.807936
+        },
+        {
+          "id": "bedroom-3",
+          "label": "Quarto 3",
+          "area": 12.807936
+        }
+      ],
+      "camera": {
+        "calls": 279,
+        "triangles": 97336,
+        "memory": {
+          "geometries": 150,
+          "textures": 21
+        },
+        "camera": [
+          0,
+          21.426832785803406,
+          0.000021427785193600704
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "t3-b",
+      "area": {
+        "commercial": 72,
+        "exterior": 73.396,
+        "internalEnvelope": 69.83200000000001,
+        "partitions": 1.3643200000000015,
+        "estimatedNet": 68.46768,
+        "common": 39.3931488,
+        "roomTotal": 29.074531200000003,
+        "status": "estimated",
+        "note": "Áreas calculadas com paredes de 100 mm e divisórias de 80 mm assumidas; não são um mapa de áreas certificado."
+      },
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "label": "Casa de banho",
+          "area": 3.6365472000000008
+        },
+        {
+          "id": "bedroom-1",
+          "label": "Quarto 1",
+          "area": 8.426109840000002
+        },
+        {
+          "id": "bedroom-2",
+          "label": "Quarto 2",
+          "area": 8.874387599999999
+        },
+        {
+          "id": "bedroom-3",
+          "label": "Quarto 3",
+          "area": 8.13748656
+        }
+      ],
+      "camera": {
+        "calls": 283,
+        "triangles": 107416,
+        "memory": {
+          "geometries": 154,
+          "textures": 21
+        },
+        "camera": [
+          0,
+          21.426832785803406,
+          0.000021427785193600704
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "t4-a",
+      "area": {
+        "commercial": 72,
+        "exterior": 73.396,
+        "internalEnvelope": 69.83200000000001,
+        "partitions": 2.0208000000000017,
+        "estimatedNet": 67.8112,
+        "common": 12.942908800000005,
+        "roomTotal": 54.868291199999994,
+        "status": "estimated",
+        "note": "Áreas calculadas com paredes de 100 mm e divisórias de 80 mm assumidas; não são um mapa de áreas certificado."
+      },
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "label": "Casa de banho",
+          "area": 3.6365472000000008
+        },
+        {
+          "id": "bedroom-1",
+          "label": "Quarto 1",
+          "area": 12.807936
+        },
+        {
+          "id": "bedroom-2",
+          "label": "Quarto 2",
+          "area": 12.807936
+        },
+        {
+          "id": "bedroom-3",
+          "label": "Quarto 3",
+          "area": 12.807936
+        },
+        {
+          "id": "bedroom-4",
+          "label": "Quarto 4",
+          "area": 12.807936
+        }
+      ],
+      "camera": {
+        "calls": 287,
+        "triangles": 96632,
+        "memory": {
+          "geometries": 154,
+          "textures": 21
+        },
+        "camera": [
+          0,
+          21.426832785803406,
+          0.000021427785193600704
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "t4-b",
+      "area": {
+        "commercial": 72,
+        "exterior": 73.396,
+        "internalEnvelope": 69.83200000000001,
+        "partitions": 1.5786400000000016,
+        "estimatedNet": 68.25336,
+        "common": 30.752718959999996,
+        "roomTotal": 37.500641040000005,
+        "status": "estimated",
+        "note": "Áreas calculadas com paredes de 100 mm e divisórias de 80 mm assumidas; não são um mapa de áreas certificado."
+      },
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "label": "Casa de banho",
+          "area": 3.6365472000000008
+        },
+        {
+          "id": "bedroom-1",
+          "label": "Quarto 1",
+          "area": 8.426109840000002
+        },
+        {
+          "id": "bedroom-2",
+          "label": "Quarto 2",
+          "area": 8.426109840000002
+        },
+        {
+          "id": "bedroom-3",
+          "label": "Quarto 3",
+          "area": 8.874387599999999
+        },
+        {
+          "id": "bedroom-4",
+          "label": "Quarto 4",
+          "area": 8.13748656
+        }
+      ],
+      "camera": {
+        "calls": 299,
+        "triangles": 111808,
+        "memory": {
+          "geometries": 162,
+          "textures": 21
+        },
+        "camera": [
+          0,
+          21.426832785803406,
+          0.000021427785193600704
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  ]
+}

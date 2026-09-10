@@ -1,0 +1,81 @@
+{
+  "t0": {
+    "sideWindows": [
+      2,
+      2
+    ],
+    "rearWindows": 3,
+    "doors": []
+  },
+  "t1": {
+    "sideWindows": [
+      2,
+      2
+    ],
+    "rearWindows": 3,
+    "doors": [
+      "end"
+    ]
+  },
+  "t2": {
+    "sideWindows": [
+      2,
+      2
+    ],
+    "rearWindows": 3,
+    "doors": [
+      "end",
+      "start"
+    ]
+  },
+  "t3-a": {
+    "sideWindows": [
+      2,
+      2
+    ],
+    "rearWindows": 3,
+    "doors": [
+      "end",
+      "end",
+      "start"
+    ]
+  },
+  "t3-b": {
+    "sideWindows": [
+      3,
+      3
+    ],
+    "rearWindows": 3,
+    "doors": [
+      "end",
+      "end",
+      "start"
+    ]
+  },
+  "t4-a": {
+    "sideWindows": [
+      2,
+      2
+    ],
+    "rearWindows": 3,
+    "doors": [
+      "end",
+      "end",
+      "start",
+      "start"
+    ]
+  },
+  "t4-b": {
+    "sideWindows": [
+      3,
+      3
+    ],
+    "rearWindows": 3,
+    "doors": [
+      "end",
+      "end",
+      "end",
+      "start"
+    ]
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "scope": "Only the two explicitly authorised attachment directories, recursive filenames plus matching supplied source-image hashes; no client PDFs/content opened.",
+  "directories": [
+    "/Users/claraazevedo/Downloads/EXPANSIVEIS",
+    "/Users/claraazevedo/Downloads/drive-download-20260625T154848Z-3-001"
+  ],
+  "extensions_by_directory": [
+    {
+      "/Users/claraazevedo/Downloads/EXPANSIVEIS": {
+        ".webp": 70,
+        ".jpg": 86,
+        "": 15,
+        ".jpeg": 20,
+        ".png": 10,
+        ".avif": 5,
+        ".pdf": 2,
+        ".html": 4,
+        ".txt": 7,
+        ".svg": 2,
+        ".css": 62,
+        ".js": 34,
+        ".gif": 2
+      }
+    },
+    {
+      "/Users/claraazevedo/Downloads/drive-download-20260625T154848Z-3-001": {
+        ".jpg": 16,
+        ".webp": 20,
+        ".jpeg": 2,
+        ".png": 2,
+        ".avif": 1
+      }
+    }
+  ],
+  "manufacturer_original_video_files_found": [],
+  "all_video_extension_files_found": [],
+  "cad_or_3d_files_found": [],
+  "archives_found": [],
+  "related_named_attachments": [
+    "/Users/claraazevedo/Downloads/EXPANSIVEIS/40ft-Expandable-Container-House-steel-frame-3.jpg.webp",
+    "/Users/claraazevedo/Downloads/EXPANSIVEIS/40ft-Expandable-Container-House-steel-frame-2.jpg.webp",
+    "/Users/claraazevedo/Downloads/EXPANSIVEIS/gs-housing-40ft-expandable-container-house-1.webp",
+    "/Users/claraazevedo/Downloads/EXPANSIVEIS/40ft-Expandable-Container-House-with-glass-wall.jpg.webp",
+    "/Users/claraazevedo/Downloads/EXPANSIVEIS/30ft-expandable-container-house-1-4-bedrooms-1-2bathroom-for-granny-flat-adu-3042190.webp",
+    "/Users/claraazevedo/Downloads/EXPANSIVEIS/4-40ft-expandable-container-house-living-room-e1777515653676.jpg",
+    "/Users/claraazevedo/Downloads/EXPANSIVEIS/2-30ft-expandable-container-house-layout.png",
+    "/Users/claraazevedo/Downloads/EXPANSIVEIS/20ft-expandable-container-house-v0-thtsee6a38cg1.webp",
+    "/Users/claraazevedo/Downloads/EXPANSIVEIS/30ft-expandable-container-house-1-4-bedrooms-1-2bathroom-for-granny-flat-adu-2298322.webp",
+    "/Users/claraazevedo/Downloads/EXPANSIVEIS/40ft-container-house-modern-design.png-1.jpg",
+    "/Users/claraazevedo/Downloads/EXPANSIVEIS/40ft-expandable-family-modular-home-side-view.jpg",
+    "/Users/claraazevedo/Downloads/EXPANSIVEIS/40ft-Expandable-Container-House-steel-frame-4.jpg.webp",
+    "/Users/claraazevedo/Downloads/EXPANSIVEIS/5-40ft-expandable-container-house-kitchen.jpg",
+    "/Users/claraazevedo/Downloads/EXPANSIVEIS/4-bedrooms-layout.png",
+    "/Users/claraazevedo/Downloads/EXPANSIVEIS/40ft-expandable-container-house-1-4-bedrooms-1-2bathroom-for-granny-flat-adu-9197902.webp",
+    "/Users/claraazevedo/Downloads/EXPANSIVEIS/gs-housing-20ft-expandable-container-house.webp",
+    "/Users/claraazevedo/Downloads/EXPANSIVEIS/Luxury-40ft-Expandable-Container-House-.jpg.webp",
+    "/Users/claraazevedo/Downloads/EXPANSIVEIS/Expandable-Container-House-Wood-Grain-House-with-Bathroom-Two-Bedrooms.avif",
+    "/Users/claraazevedo/Downloads/EXPANSIVEIS/40ft-expandable-family-modular-home-side-view (1).jpg",
+    "/Users/claraazevedo/Downloads/EXPANSIVEIS/expandable-container-home6.jpg",
+    "/Users/claraazevedo/Downloads/EXPANSIVEIS/30ft-expandable-container-house-1-4-bedrooms-1-2bathroom-for-granny-flat-adu-5151006.webp",
+    "/Users/claraazevedo/Downloads/EXPANSIVEIS/40ft-expandable-container-house-1-4-bedrooms-1-2bathroom-for-granny-flat-adu-2901538.webp",
+    "/Users/claraazevedo/Downloads/EXPANSIVEIS/20ft-expandable-container-house-v0-xvi2kj6a38cg1.webp",
+    "/Users/claraazevedo/Downloads/EXPANSIVEIS/40ft-Expandable-Container-House-steel-frame-1.jpg.webp",
+    "/Users/claraazevedo/Downloads/EXPANSIVEIS/1-40ft-expandable-homes.jpg",
+    "/Users/claraazevedo/Downloads/EXPANSIVEIS/20ft-expandable-container-house-v0-j1566f6a38cg1.webp",
+    "/Users/claraazevedo/Downloads/EXPANSIVEIS/6-20ft-expandable-container-house-F20-2.8m-ceiling.png",
+    "/Users/claraazevedo/Downloads/EXPANSIVEIS/30ft-expandable-container-house-1-4-bedrooms-1-2bathroom-for-granny-flat-adu-5973523.webp",
+    "/Users/claraazevedo/Downloads/EXPANSIVEIS/6-40ft-expandable-container-house-bedroom.jpg",
+    "/Users/claraazevedo/Downloads/EXPANSIVEIS/40ft-expandable-container-house-1-4-bedrooms-1-2bathroom-for-granny-flat-adu-1179871.webp",
+    "/Users/claraazevedo/Downloads/EXPANSIVEIS/40ft-expandable-container-house-1-4-bedrooms-1-2bathroom-for-granny-flat-adu-1404363.webp",
+    "/Users/claraazevedo/Downloads/EXPANSIVEIS/30ft-expandable-container-house-1-4-bedrooms-1-2bathroom-for-granny-flat-adu-3308272.webp",
+    "/Users/claraazevedo/Downloads/EXPANSIVEIS/30ft-expandable-container-house-1-4-bedrooms-1-2bathroom-for-granny-flat-adu-2700750.webp",
+    "/Users/claraazevedo/Downloads/drive-download-20260625T154848Z-3-001/40ft-Expandable-Container-House-steel-frame-3.jpg.webp",
+    "/Users/claraazevedo/Downloads/drive-download-20260625T154848Z-3-001/40ft-Expandable-Container-House-steel-frame-2.jpg.webp",
+    "/Users/claraazevedo/Downloads/drive-download-20260625T154848Z-3-001/20ft 40ft New Design Prefabricated Luxury Villa Expandable Container House Prefab Portable Mobile Home With Bathroom And Kitchen - Buy Anti-seismic 40 Ft 20 Ft Prefab Container Expandable House Insulated Folding Prefabricated Home 5 Bedroo.jpeg",
+    "/Users/claraazevedo/Downloads/drive-download-20260625T154848Z-3-001/4-40ft-expandable-container-house-living-room-e1777515653676.jpg",
+    "/Users/claraazevedo/Downloads/drive-download-20260625T154848Z-3-001/7-40ft-expandable-container-house-floor-plan-5.png",
+    "/Users/claraazevedo/Downloads/drive-download-20260625T154848Z-3-001/40ft-container-house-modern-design.png-1.jpg",
+    "/Users/claraazevedo/Downloads/drive-download-20260625T154848Z-3-001/40ft-Expandable-Container-House-steel-frame-4.jpg.webp",
+    "/Users/claraazevedo/Downloads/drive-download-20260625T154848Z-3-001/5-40ft-expandable-container-house-kitchen.jpg",
+    "/Users/claraazevedo/Downloads/drive-download-20260625T154848Z-3-001/3-40ft-expandable-container-house-layout.png",
+    "/Users/claraazevedo/Downloads/drive-download-20260625T154848Z-3-001/40ft-expandable-container-house-1-4-bedrooms-1-2bathroom-for-granny-flat-adu-9197902.webp",
+    "/Users/claraazevedo/Downloads/drive-download-20260625T154848Z-3-001/Expandable-Container-House-Wood-Grain-House-with-Bathroom-Two-Bedrooms.avif",
+    "/Users/claraazevedo/Downloads/drive-download-20260625T154848Z-3-001/40ft-expandable-family-modular-home-side-view (1).jpg",
+    "/Users/claraazevedo/Downloads/drive-download-20260625T154848Z-3-001/40ft-expandable-container-house-1-4-bedrooms-1-2bathroom-for-granny-flat-adu-2901538.webp",
+    "/Users/claraazevedo/Downloads/drive-download-20260625T154848Z-3-001/40ft-Expandable-Container-House-steel-frame-1.jpg.webp",
+    "/Users/claraazevedo/Downloads/drive-download-20260625T154848Z-3-001/1-40ft-expandable-homes.jpg",
+    "/Users/claraazevedo/Downloads/drive-download-20260625T154848Z-3-001/6-40ft-expandable-container-house-bedroom.jpg",
+    "/Users/claraazevedo/Downloads/drive-download-20260625T154848Z-3-001/40ft-expandable-container-house-1-4-bedrooms-1-2bathroom-for-granny-flat-adu-1179871.webp",
+    "/Users/claraazevedo/Downloads/drive-download-20260625T154848Z-3-001/40ft-expandable-container-house-1-4-bedrooms-1-2bathroom-for-granny-flat-adu-1404363.webp"
+  ],
+  "source_asset_exact_byte_matches": [
+    {
+      "site_asset": "/Users/claraazevedo/Documents/global-lead-scraper/green-village-72/dist/assets/expansao.png",
+      "original_paths_with_identical_bytes": []
+    },
+    {
+      "site_asset": "/Users/claraazevedo/Documents/global-lead-scraper/green-village-72/dist/assets/estrutura.png",
+      "original_paths_with_identical_bytes": []
+    },
+    {
+      "site_asset": "/Users/claraazevedo/Documents/global-lead-scraper/green-village-72/dist/assets/estruturas.png",
+      "original_paths_with_identical_bytes": []
+    },
+    {
+      "site_asset": "/Users/claraazevedo/Documents/global-lead-scraper/green-village-72/dist/assets/alpendre.jpg",
+      "original_paths_with_identical_bytes": [
+        "/Users/claraazevedo/Downloads/EXPANSIVEIS/f01ccd99c0326ae1c02daa28851cceeb.jpg",
+        "/Users/claraazevedo/Downloads/drive-download-20260625T154848Z-3-001/f01ccd99c0326ae1c02daa28851cceeb.jpg"
+      ]
+    },
+    {
+      "site_asset": "/Users/claraazevedo/Documents/global-lead-scraper/green-village-72/dist/assets/exterior-branco.jpg",
+      "original_paths_with_identical_bytes": [
+        "/Users/claraazevedo/Downloads/EXPANSIVEIS/202303291821551-9d7d-scaled.jpg",
+        "/Users/claraazevedo/Downloads/drive-download-20260625T154848Z-3-001/202303291821551-9d7d-scaled.jpg"
+      ]
+    },
+    {
+      "site_asset": "/Users/claraazevedo/Documents/global-lead-scraper/green-village-72/dist/assets/exterior-creme.jpg",
+      "original_paths_with_identical_bytes": [
+        "/Users/claraazevedo/Downloads/EXPANSIVEIS/40ft-expandable-family-modular-home-side-view.jpg",
+        "/Users/claraazevedo/Downloads/EXPANSIVEIS/40ft-expandable-family-modular-home-side-view (1).jpg",
+        "/Users/claraazevedo/Downloads/drive-download-20260625T154848Z-3-001/40ft-expandable-family-modular-home-side-view (1).jpg"
+      ]
+    },
+    {
+      "site_asset": "/Users/claraazevedo/Documents/global-lead-scraper/green-village-72/dist/assets/exterior-madeira.jpg",
+      "original_paths_with_identical_bytes": [
+        "/Users/claraazevedo/Downloads/EXPANSIVEIS/40ft-container-house-modern-design.png-1.jpg",
+        "/Users/claraazevedo/Downloads/drive-download-20260625T154848Z-3-001/40ft-container-house-modern-design.png-1.jpg"
+      ]
+    },
+    {
+      "site_asset": "/Users/claraazevedo/Documents/global-lead-scraper/green-village-72/dist/assets/frente-envidracada.jpg",
+      "original_paths_with_identical_bytes": [
+        "/Users/claraazevedo/Downloads/drive-download-20260625T154848Z-3-001/20ft 40ft New Design Prefabricated Luxury Villa Expandable Container House Prefab Portable Mobile Home With Bathroom And Kitchen - Buy Anti-seismic 40 Ft 20 Ft Prefab Container Expandable House Insulated Folding Prefabricated Home 5 Bedroo.jpeg"
+      ]
+    }
+  ],
+  "unrelated_client_contract_pdfs_skipped": 2,
+  "source_verification_limits": "No original manufacturer video file exists with the common video extensions in these directories. Saved webpages for10ft/two-storey units are different products and were not used to infer72m² mechanism. No external video links searched."
+}

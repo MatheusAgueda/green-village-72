@@ -1,0 +1,45 @@
+{
+  "revision": "GV72-R2-2026-09-10",
+  "files": [
+    {
+      "file": "specification.js",
+      "sha256": "27c0de54ba7828c46ec54f85a9a472b1c2e3f856173f06aee2c13b5f9fd69a1b"
+    },
+    {
+      "file": "configuration.js",
+      "sha256": "323424bb2c18d8313e7592f3e0ba41fc34ab684bd43a71ff9a7da108046e86aa"
+    },
+    {
+      "file": "model.js",
+      "sha256": "dc7ecc601fb91cfa9acbc4b861fe7e690ce3f0bd39f1028cabfaf77ca238426e"
+    },
+    {
+      "file": "material-library.js",
+      "sha256": "1560d080cd52162439255816b50e60098627d77f80c2902c5e32f691209f8efa"
+    },
+    {
+      "file": "material-data.js",
+      "sha256": "e55563fc9cb5f75514eb545f6e9a4e056847b3579556fd5a614da88bc381f011"
+    },
+    {
+      "file": "stage.js",
+      "sha256": "84ac50ea7be233c8674a1a1e5cd08e5af70d99702ebc9d99d29eb258a303735f"
+    },
+    {
+      "file": "app.js",
+      "sha256": "03524c09a04c78da72a5b1c4e3145046719625a1838206f6f4872a7a3bea0f86"
+    },
+    {
+      "file": "plan-svg.js",
+      "sha256": "5f9f58639958148b4296db55b86d7e382a8173b09f94cd063063c078f9809dba"
+    },
+    {
+      "file": "style.css",
+      "sha256": "50612c879180893524cc05006759fff3fbfee7675d2f0e9beabfdb54b1b7e5e4"
+    },
+    {
+      "file": "index.html",
+      "sha256": "91a748ac3bc5037042640b67219ec6d9ed4bace66ee2cbfb6bf7b20478de91e1"
+    }
+  ]
+}

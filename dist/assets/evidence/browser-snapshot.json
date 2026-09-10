@@ -1,0 +1,442 @@
+{
+  "logs": [
+    {
+      "label": "desktop",
+      "kind": "http",
+      "status": 404,
+      "url": "http://127.0.0.1:4174/assets/presentation-v2-poster.jpg"
+    },
+    {
+      "label": "desktop",
+      "kind": "error",
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "label": "desktop",
+      "kind": "http",
+      "status": 404,
+      "url": "http://127.0.0.1:4174/assets/expansion-v2-poster.jpg"
+    },
+    {
+      "label": "desktop",
+      "kind": "error",
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "label": "desktop",
+      "kind": "http",
+      "status": 404,
+      "url": "http://127.0.0.1:4174/assets/presentation-v2.mp4"
+    },
+    {
+      "label": "desktop",
+      "kind": "error",
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "label": "desktop",
+      "kind": "http",
+      "status": 404,
+      "url": "http://127.0.0.1:4174/assets/expansion-v2.mp4"
+    },
+    {
+      "label": "desktop",
+      "kind": "error",
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "label": "desktop",
+      "kind": "warning",
+      "message": "sigmaRadians, 0.08, is too large and will clip, as it requested 39 samples when the maximum is set to 20"
+    },
+    {
+      "label": "desktop",
+      "kind": "warning",
+      "message": "sigmaRadians, 0.08, is too large and will clip, as it requested 39 samples when the maximum is set to 20"
+    },
+    {
+      "label": "mobile",
+      "kind": "http",
+      "status": 404,
+      "url": "http://127.0.0.1:4174/assets/presentation-v2-poster.jpg"
+    },
+    {
+      "label": "mobile",
+      "kind": "error",
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "label": "mobile",
+      "kind": "http",
+      "status": 404,
+      "url": "http://127.0.0.1:4174/assets/expansion-v2-poster.jpg"
+    },
+    {
+      "label": "mobile",
+      "kind": "error",
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "label": "mobile",
+      "kind": "http",
+      "status": 404,
+      "url": "http://127.0.0.1:4174/assets/presentation-v2.mp4"
+    },
+    {
+      "label": "mobile",
+      "kind": "error",
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "label": "mobile",
+      "kind": "http",
+      "status": 404,
+      "url": "http://127.0.0.1:4174/assets/expansion-v2.mp4"
+    },
+    {
+      "label": "mobile",
+      "kind": "error",
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "label": "mobile",
+      "kind": "warning",
+      "message": "sigmaRadians, 0.08, is too large and will clip, as it requested 39 samples when the maximum is set to 20"
+    },
+    {
+      "label": "mobile",
+      "kind": "warning",
+      "message": "sigmaRadians, 0.08, is too large and will clip, as it requested 39 samples when the maximum is set to 20"
+    }
+  ],
+  "scenes": [
+    {
+      "label": "desktop",
+      "initial": {
+        "state": {
+          "schemaVersion": 2,
+          "layout": "t2",
+          "exteriorId": "exterior-standard-branco-glacial",
+          "exterior": "#ddddda",
+          "floorId": "floor-spc-kx7006",
+          "floor": "#92846c",
+          "interior": "#eeede8",
+          "interiorName": "Branco natural",
+          "kitchen": "linear",
+          "kitchenRef": "kitchen-01",
+          "bathroom": "standard",
+          "bathroomRef": "bathroom-01",
+          "bathroomUV": null,
+          "roof": false,
+          "porch": false,
+          "lighting": "neutral"
+        },
+        "visual": {
+          "view": "exterior",
+          "expansion": 1,
+          "cut": 1.1,
+          "exploded": 0,
+          "roofVisible": true,
+          "wallsVisible": true,
+          "furnitureVisible": true,
+          "doorsOpen": true
+        },
+        "loadingHidden": true,
+        "overflow": false,
+        "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4, Unspecified Version)"
+      }
+    },
+    {
+      "label": "desktop",
+      "top": {
+        "revision": "GV72-R2-2026-09-10",
+        "frames": 10,
+        "materials": {
+          "pending": 0,
+          "failures": [],
+          "cachedTextures": 1,
+          "leases": 1
+        },
+        "render": {
+          "calls": 277,
+          "triangles": 104752,
+          "memory": {
+            "geometries": 149,
+            "textures": 4
+          },
+          "camera": [
+            0,
+            22.7716759298752,
+            0.000022772688115013803
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "label": "mobile",
+      "initial": {
+        "state": {
+          "schemaVersion": 2,
+          "layout": "t2",
+          "exteriorId": "exterior-standard-branco-glacial",
+          "exterior": "#ddddda",
+          "floorId": "floor-spc-kx7006",
+          "floor": "#92846c",
+          "interior": "#eeede8",
+          "interiorName": "Branco natural",
+          "kitchen": "linear",
+          "kitchenRef": "kitchen-01",
+          "bathroom": "standard",
+          "bathroomRef": "bathroom-01",
+          "bathroomUV": null,
+          "roof": false,
+          "porch": false,
+          "lighting": "neutral"
+        },
+        "visual": {
+          "view": "exterior",
+          "expansion": 1,
+          "cut": 1.1,
+          "exploded": 0,
+          "roofVisible": true,
+          "wallsVisible": true,
+          "furnitureVisible": true,
+          "doorsOpen": true
+        },
+        "loadingHidden": true,
+        "overflow": false,
+        "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4, Unspecified Version)"
+      }
+    },
+    {
+      "label": "mobile",
+      "top": {
+        "revision": "GV72-R2-2026-09-10",
+        "frames": 10,
+        "materials": {
+          "pending": 0,
+          "failures": [],
+          "cachedTextures": 1,
+          "leases": 1
+        },
+        "render": {
+          "calls": 277,
+          "triangles": 104752,
+          "memory": {
+            "geometries": 149,
+            "textures": 4
+          },
+          "camera": [
+            0,
+            22.7716759298752,
+            0.000022772688115013803
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    }
+  ],
+  "metrics": [
+    {
+      "label": "desktop",
+      "view": "exterior",
+      "idleMs": 1500,
+      "idleFrames": 0,
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 5,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 1,
+        "leases": 1
+      },
+      "render": {
+        "calls": 295,
+        "triangles": 108136,
+        "memory": {
+          "geometries": 158,
+          "textures": 4
+        },
+        "camera": [
+          15.500000000000002,
+          11.500000000000002,
+          18.499999999999996
+        ],
+        "target": [
+          0,
+          0.65,
+          0.25
+        ]
+      }
+    },
+    {
+      "label": "desktop",
+      "view": "interior",
+      "idleMs": 1500,
+      "idleFrames": 0,
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 7,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 1,
+        "leases": 1
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 4
+        },
+        "camera": [
+          9.999999999999998,
+          16,
+          15
+        ],
+        "target": [
+          0,
+          0.1,
+          0
+        ]
+      }
+    },
+    {
+      "label": "desktop",
+      "view": "structure",
+      "idleMs": 1500,
+      "idleFrames": 0,
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 9,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 1,
+        "leases": 1
+      },
+      "render": {
+        "calls": 4,
+        "triangles": 7058,
+        "memory": {
+          "geometries": 4,
+          "textures": 4
+        },
+        "camera": [
+          15.500000000000002,
+          11.500000000000002,
+          18.499999999999996
+        ],
+        "target": [
+          0,
+          0.65,
+          0.25
+        ]
+      }
+    },
+    {
+      "label": "mobile",
+      "view": "exterior",
+      "idleMs": 1500,
+      "idleFrames": 0,
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 5,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 1,
+        "leases": 1
+      },
+      "render": {
+        "calls": 295,
+        "triangles": 108136,
+        "memory": {
+          "geometries": 158,
+          "textures": 4
+        },
+        "camera": [
+          15.500000000000002,
+          11.500000000000002,
+          18.499999999999996
+        ],
+        "target": [
+          0,
+          0.65,
+          0.25
+        ]
+      }
+    },
+    {
+      "label": "mobile",
+      "view": "interior",
+      "idleMs": 1500,
+      "idleFrames": 0,
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 7,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 1,
+        "leases": 1
+      },
+      "render": {
+        "calls": 277,
+        "triangles": 104752,
+        "memory": {
+          "geometries": 149,
+          "textures": 4
+        },
+        "camera": [
+          9.999999999999998,
+          16,
+          15
+        ],
+        "target": [
+          0,
+          0.1,
+          0
+        ]
+      }
+    },
+    {
+      "label": "mobile",
+      "view": "structure",
+      "idleMs": 1500,
+      "idleFrames": 0,
+      "revision": "GV72-R2-2026-09-10",
+      "frames": 9,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 1,
+        "leases": 1
+      },
+      "render": {
+        "calls": 4,
+        "triangles": 7058,
+        "memory": {
+          "geometries": 4,
+          "textures": 4
+        },
+        "camera": [
+          15.500000000000002,
+          11.500000000000002,
+          18.499999999999996
+        ],
+        "target": [
+          0,
+          0.65,
+          0.25
+        ]
+      }
+    }
+  ]
+}

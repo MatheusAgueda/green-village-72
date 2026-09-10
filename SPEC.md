@@ -9,3 +9,19 @@ A experiência abre directamente num modelo 3D interactivo. PT-PT. Direcção vi
 - Fotografias originais, filme MP4 das fotos e filme da animação 3D; controlos de vídeo.
 - Geometria reconstruída identificada como ilustrativa; redes sem alegação de projecto certificado. Nenhuma dimensão inferida apresentada como medida de fabrico.
 - Validar sintaxe, recursos locais, invariantes da geometria e estados/opções; servir e confirmar HTTP antes de publicar em acesso privado.
+
+# Revisão documental e funcional — 10/09/2026
+
+Pedido integral: auditoria e correcção do portefólio existente; manter identidade, publicar revisão privada verificável. Base anterior guardada na etiqueta `recovery/gv72-before-audit-20260910`.
+
+## Ordem e aceitação
+1. Fontes: inventário com página/fotograma, âmbito da variante e lacunas; cotejar independentemente PDF/XLSX/fotografias. Não usar screenshot como fonte dimensional.
+2. Dados: unidades metros, X largura, Y altura, Z comprimento; frente +Z, origem centro do piso. Exterior confirmado 11,80 × 6,22; áreas interiores calculadas com hipóteses identificadas. Fonte única gera 2D/3D/resumo.
+3. Geometria: sete plantas documentadas, vãos/portas/equipamentos ligados aos mesmos dados; espessuras e medidas estimadas explicitadas. Corrigir intersecções e circulação verificáveis.
+4. Materiais: códigos originais, cores separadas, UVs em metros, texturas sem texto, iluminação neutra e comparação referência/aplicação. Sem fingir detalhe superior à imagem de origem.
+5. Configuração: validar incompatibilidades sem alterações silenciosas, guardar/recuperar/repor, exportar JSON/SVG/PNG/PDF coerentes. Perspectivas/corte/explodido/camadas, navegação acessível.
+6. Expansão: peças rígidas, estados intermédios verificados; montagem de equipamento/coberturas separada da cinemática, incertezas do mecanismo claras. Sem representar uma solução inferida como desenho de fabricante.
+7. Verificação: testes Node de dados/áreas/UVs/regras/expansão; browser QA de sete plantas, todas as 71 amostras, persistência e exportações, desktop/mobile, erros e WebGL indisponível. Desempenho reportado com ambiente identificado e limites.
+8. Entrega: relatório de fontes/medidas/materiais, antes/depois, dois vídeos do modelo corrigido (exterior/interior e expansão) e versão publicada verificada.
+
+A falta de desenhos de fabrico não bloqueia as correcções verificáveis. Dimensões livres estimadas, perfis, ligações, alturas e diâmetros ilustrativos nunca são apresentados como certificados.

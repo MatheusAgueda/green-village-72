@@ -1,0 +1,47 @@
+{
+  "method": "Actual transformed electrical triangles tested with THREE.Box3.intersectsTriangle against independently split interior-wall solids, shrunk1mm to exclude boundary-only contact.",
+  "reports": [
+    {
+      "layout": "t0",
+      "meshCount": 5,
+      "electricalMeshesWithClipping": 0,
+      "solidWallTriangleIntersections": []
+    },
+    {
+      "layout": "t1",
+      "meshCount": 5,
+      "electricalMeshesWithClipping": 0,
+      "solidWallTriangleIntersections": []
+    },
+    {
+      "layout": "t2",
+      "meshCount": 3,
+      "electricalMeshesWithClipping": 0,
+      "solidWallTriangleIntersections": []
+    },
+    {
+      "layout": "t3-a",
+      "meshCount": 3,
+      "electricalMeshesWithClipping": 0,
+      "solidWallTriangleIntersections": []
+    },
+    {
+      "layout": "t3-b",
+      "meshCount": 3,
+      "electricalMeshesWithClipping": 0,
+      "solidWallTriangleIntersections": []
+    },
+    {
+      "layout": "t4-a",
+      "meshCount": 3,
+      "electricalMeshesWithClipping": 0,
+      "solidWallTriangleIntersections": []
+    },
+    {
+      "layout": "t4-b",
+      "meshCount": 3,
+      "electricalMeshesWithClipping": 0,
+      "solidWallTriangleIntersections": []
+    }
+  ]
+}

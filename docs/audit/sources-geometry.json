@@ -1,0 +1,1238 @@
+{
+  "schema_version": 1,
+  "audit_date": "2026-09-10",
+  "scope": "Read-only independent source/geometry audit. All generated outputs restricted to /private/tmp/gv72-v2-audit/geometry. Site unmodified.",
+  "source_status_semantics": {
+    "confirmed": "Directly legible in supplied source, or arithmetic explicitly marked as derived. Does not certify an as-built product.",
+    "estimated": "Visual trace or authored display assumption; do not present as manufacturer dimension.",
+    "missing": "Not evidenced by inspected sources; null is intentional."
+  },
+  "sources": [
+    {
+      "id": "workbook",
+      "path": "/Users/claraazevedo/Documents/global-lead-scraper/green-village-72/dist/assets/plantas-40-pes.xlsx",
+      "sha256": "a9d340041331089744a6b2b879d4892b40ac21cc6a2530c1780d9dbc3b058962",
+      "type": "original OOXML workbook",
+      "sheet": "40ft Standard Double-Wing Unit",
+      "cells": [
+        {
+          "cell": "A1",
+          "value": "一厅一卫"
+        },
+        {
+          "cell": "F1",
+          "value": "一室一厅一卫"
+        },
+        {
+          "cell": "K1",
+          "value": "两室一厅一卫"
+        },
+        {
+          "cell": "A25",
+          "value": "三室一厅一卫"
+        },
+        {
+          "cell": "F25",
+          "value": "三室一厅一卫"
+        },
+        {
+          "cell": "K25",
+          "value": "四室一厅一卫"
+        },
+        {
+          "cell": "A49",
+          "value": "四室一厅一卫"
+        }
+      ],
+      "embedded_media": [
+        {
+          "member": "xl/media/image1.png",
+          "sha256": "b467df5198a8aef1d4b8aa9eff56f181324b5d943fa2c8f6ec72edc37f852e14",
+          "identical_to_workbook": true
+        },
+        {
+          "member": "xl/media/image2.png",
+          "sha256": "fdd7e143613af962e75b372c7a7ed7636094dc817a5c3998e2e0de963bf31797",
+          "identical_to_workbook": true
+        },
+        {
+          "member": "xl/media/image3.png",
+          "sha256": "2d9fc7d6005b049cc2edcfccf878c1319a6f1eeaee0145de0dfd3d59108e20c2",
+          "identical_to_workbook": true
+        },
+        {
+          "member": "xl/media/image4.png",
+          "sha256": "93c5b49261c159c5abb9323dde5c891d0d0b8b5d52072ab91e407df60abf1956",
+          "identical_to_workbook": true
+        },
+        {
+          "member": "xl/media/image5.png",
+          "sha256": "8a140dca7167381ecb870b5d9f5e5ab48d9789da89306099b13fbd372d44f1a1",
+          "identical_to_workbook": true
+        },
+        {
+          "member": "xl/media/image6.png",
+          "sha256": "ea2b29b65ca10e034531a5f1fe1e8adcca4d14b89e39f5cacbb34ac3ef7b3d92",
+          "identical_to_workbook": true
+        },
+        {
+          "member": "xl/media/image7.png",
+          "sha256": "bcd6cc01ace2d9f2c99047aeebe449f69ceb02c17b5ad1f0243695372fbd6f85",
+          "identical_to_workbook": true
+        }
+      ],
+      "cad_or_ole_embeddings": [],
+      "finding_pt": "Uma folha, sete títulos de tipologia e sete plantas raster. Não contém uma tabela numérica de áreas/cotas de divisões, fórmulas geométricas ou CAD embutido."
+    },
+    {
+      "id": "expansao",
+      "path": "/Users/claraazevedo/Documents/global-lead-scraper/green-village-72/dist/assets/expansao.png",
+      "sha256": "36bbfd47243074c675aed831ccdc8b68b1253a214c0d45ec5945501a03172b69",
+      "type": "supplied raster, directly visually inspected",
+      "dimensions_available": false
+    },
+    {
+      "id": "estrutura",
+      "path": "/Users/claraazevedo/Documents/global-lead-scraper/green-village-72/dist/assets/estrutura.png",
+      "sha256": "840da8db510d16a257226a06eb04ee83f8dd114c008797056a96459d3ba3e4f3",
+      "type": "supplied raster, directly visually inspected",
+      "dimensions_available": false
+    },
+    {
+      "id": "estruturas",
+      "path": "/Users/claraazevedo/Documents/global-lead-scraper/green-village-72/dist/assets/estruturas.png",
+      "sha256": "47ecfc64e20e8386d0dc1d9f238ebe2878f3a9527822fc875fd17089868878d7",
+      "type": "supplied raster, directly visually inspected",
+      "dimensions_available": false
+    },
+    {
+      "id": "alpendre",
+      "path": "/Users/claraazevedo/Documents/global-lead-scraper/green-village-72/dist/assets/alpendre.jpg",
+      "sha256": "824c372947baf4369d027b628a46398ecc578211dc10526a64acf417a04c82eb",
+      "type": "supplied raster, directly visually inspected",
+      "dimensions_available": false
+    },
+    {
+      "id": "exterior-branco",
+      "path": "/Users/claraazevedo/Documents/global-lead-scraper/green-village-72/dist/assets/exterior-branco.jpg",
+      "sha256": "4682d4fdb95795008dd3d9fe2631692152afdc1f060895638eab71ac8e5b7932",
+      "type": "supplied raster, directly visually inspected",
+      "dimensions_available": false
+    },
+    {
+      "id": "exterior-creme",
+      "path": "/Users/claraazevedo/Documents/global-lead-scraper/green-village-72/dist/assets/exterior-creme.jpg",
+      "sha256": "c255898956a7de88170e6b7008881f96d23097e0ef3775e534614c7ac23ed310",
+      "type": "supplied raster, directly visually inspected",
+      "dimensions_available": false
+    },
+    {
+      "id": "exterior-madeira",
+      "path": "/Users/claraazevedo/Documents/global-lead-scraper/green-village-72/dist/assets/exterior-madeira.jpg",
+      "sha256": "7921c524af7ea64148724b6d77c1bc78e8d18fe1d6ea401e8f4fd9dd3125ff10",
+      "type": "supplied raster, directly visually inspected",
+      "dimensions_available": false
+    },
+    {
+      "id": "frente-envidracada",
+      "path": "/Users/claraazevedo/Documents/global-lead-scraper/green-village-72/dist/assets/frente-envidracada.jpg",
+      "sha256": "757de8779b0fc78e9114ccbe873b9dc8465105d5be7f5503aa4d0e5e0177b79f",
+      "type": "supplied raster, directly visually inspected",
+      "dimensions_available": false
+    },
+    {
+      "id": "other-t3-6300",
+      "path": "/Users/claraazevedo/Downloads/drive-download-20260625T154848Z-3-001/7-40ft-expandable-container-house-floor-plan-5.png",
+      "sha256": "b02656f9c9943512b4d1cabe18b7ec14133349ef98b36f2b4292706b495ebd08",
+      "type": "related dimensioned raster, distinct variant",
+      "directly_read_dimensions_mm": {
+        "width": 6300,
+        "length": 11800,
+        "width_bands": [
+          2050,
+          2200,
+          2050
+        ],
+        "bathroom": [
+          1270,
+          2645
+        ],
+        "right_bays": [
+          3630,
+          3880,
+          3650
+        ],
+        "side_entry_width": 1500,
+        "rear_shower_depth": 900,
+        "end_offsets": 220
+      },
+      "do_not_transfer_to_workbook": true,
+      "reason_pt": "A largura, a porta lateral, a cozinha e a distribuição das cotas diferem das sete plantas do XLSX."
+    }
+  ],
+  "dimensions_ledger": [
+    {
+      "key": "outer_length",
+      "value": 11800,
+      "unit": "mm",
+      "status": "confirmed",
+      "source": "workbook / all seven raster plans",
+      "meaning_pt": "Cota total escrita, não medição da unidade construída.",
+      "tolerance_mm": null
+    },
+    {
+      "key": "outer_width",
+      "value": 6220,
+      "unit": "mm",
+      "status": "confirmed",
+      "source": "workbook / all seven raster plans",
+      "meaning_pt": "Cota total escrita, não medição da unidade construída.",
+      "tolerance_mm": null
+    },
+    {
+      "key": "width_bands",
+      "value": [
+        2010,
+        2200,
+        2010
+      ],
+      "unit": "mm",
+      "status": "confirmed",
+      "source": "workbook / all seven plans / top chain",
+      "meaning_pt": "Bandas cotadas no topo. Não demonstram larguras úteis dos quartos nem largura de transporte."
+    },
+    {
+      "key": "window_width_mark",
+      "value": 920,
+      "unit": "mm",
+      "status": "confirmed",
+      "source": "workbook / side and end windows",
+      "meaning_pt": "A cota 920 acompanha as janelas comuns. Não há altura/peitoril cotados nem largura cotada da janela da casa de banho."
+    },
+    {
+      "key": "two_bay_side_chain",
+      "value": [
+        5690,
+        5690
+      ],
+      "unit": "mm",
+      "status": "confirmed",
+      "source": "image1,image2,image3,image4,image6",
+      "meaning_pt": "Total parcial 11380; diferença de 420 face a 11800. Não distribuir essa diferença por paredes ou folgas sem secção técnica."
+    },
+    {
+      "key": "three_bay_right_chain",
+      "value": [
+        4000,
+        3900,
+        3900
+      ],
+      "unit": "mm",
+      "status": "confirmed",
+      "source": "image5,image7",
+      "meaning_pt": "Cadeia cotada soma 11800. Não chamar áreas ou comprimentos úteis interiores de cada quarto."
+    },
+    {
+      "key": "three_bay_end_marks",
+      "value": 210,
+      "unit": "mm",
+      "status": "confirmed",
+      "source": "image5,image7 / top and bottom",
+      "meaning_pt": "Marca 210 nas extremidades. A cadeia longitudinal não deve receber mais 210+210 sobre 11800."
+    },
+    {
+      "key": "computed_outer_rectangle_area",
+      "value": 73.396,
+      "unit": "m²",
+      "status": "confirmed",
+      "source": "arithmetic from written exterior dimensions",
+      "meaning_pt": "Área do rectângulo exterior por cálculo: 73,396 m². Não equivale a área útil."
+    },
+    {
+      "key": "market_name_area",
+      "value": 72,
+      "unit": "m²",
+      "status": "estimated",
+      "source": "site marketing designation; absent from workbook",
+      "meaning_pt": "Designação comercial, não resultado exacto das cotas e não área útil certificada."
+    },
+    {
+      "key": "bathroom_plan_width",
+      "value": 1.49,
+      "unit": "m",
+      "status": "estimated",
+      "source": "raster normalized visual trace, about 24% of width",
+      "meaning_pt": "Estimativa para visualização a partir das proporções, incluindo linhas de parede.",
+      "source_uncertainty_interval_m": [
+        1.36,
+        1.62
+      ]
+    },
+    {
+      "key": "bathroom_plan_depth",
+      "value": 2.6,
+      "unit": "m",
+      "status": "estimated",
+      "source": "raster visual trace with full envelope including projecting core ends",
+      "meaning_pt": "Estimativa para visualização, não dimensão interior cotada. O traçado antigo normalizado à caixa lateral produzia2,71 m por usar11800 para um trecho mais curto.",
+      "source_uncertainty_interval_m": [
+        2.4,
+        2.8
+      ]
+    },
+    {
+      "key": "side_room_band_width",
+      "value": 2.36,
+      "unit": "m",
+      "status": "estimated",
+      "source": "raster trace, about 38% of envelope",
+      "meaning_pt": "A posição desenhada das paredes interiores difere das bandas estruturais2010/2200/2010.",
+      "source_uncertainty_interval_m": [
+        2.24,
+        2.49
+      ]
+    },
+    {
+      "key": "two_bay_partition_fraction",
+      "value": 0.5,
+      "unit": "fraction of plan length",
+      "status": "estimated",
+      "source": "image3,image4,image6",
+      "meaning_pt": "Divisória transversal aproximadamente a meio.",
+      "source_uncertainty_interval": [
+        0.48,
+        0.52
+      ]
+    },
+    {
+      "key": "three_bay_partition_fractions",
+      "value": [
+        0.33,
+        0.67
+      ],
+      "unit": "fraction of plan length",
+      "status": "estimated",
+      "source": "image5,image7",
+      "meaning_pt": "Proporções visuais arredondadas. Preferir conservar o traço e apresentar separadamente as cotas escritas.",
+      "source_uncertainty_intervals": [
+        [
+          0.31,
+          0.35
+        ],
+        [
+          0.65,
+          0.69
+        ]
+      ]
+    },
+    {
+      "key": "height",
+      "value": null,
+      "unit": "m",
+      "status": "missing",
+      "source": "no height dimension in inspected workbook or visual references",
+      "meaning_pt": "O modelo usa painéis de 2,55 m, estrutura de 2,70 m e cobertura até 2,76/2,77 m. Estes valores não são cotas de origem.",
+      "current_model_assumption_m": 2.55,
+      "source_uncertainty_interval_m": null
+    },
+    {
+      "key": "closed_transport_envelope",
+      "value": null,
+      "unit": "m",
+      "status": "missing",
+      "source": "no transport elevation/section",
+      "meaning_pt": "2200 escrito na banda central não confirma largura fechada com painéis/caixilhos empilhados.",
+      "source_uncertainty_interval_m": null
+    },
+    {
+      "key": "door_clear_widths_and_heights",
+      "value": null,
+      "unit": "m",
+      "status": "missing",
+      "source": "door arcs have no dimension labels",
+      "meaning_pt": "Porta exterior de duas folhas e sentidos de abertura interiores são desenhados. Vãos de 0,80 m e 1,70 m no modelo são escolhas, não cotas."
+    },
+    {
+      "key": "window_heights_sills_and_frame_depths",
+      "value": null,
+      "unit": "m",
+      "status": "missing",
+      "source": "no elevation/window schedule",
+      "meaning_pt": "O modelo usa janelas laterais 1,15×1,20 m com peitoril0,85 m, sem confirmação nas plantas."
+    },
+    {
+      "key": "wall_panel_and_structure_thicknesses",
+      "value": null,
+      "unit": "m",
+      "status": "missing",
+      "source": "no dimensioned section or fabrication drawing",
+      "meaning_pt": "Espessuras de75/80/120/140 mm e espaçamentos estruturais do modelo são genéricos."
+    },
+    {
+      "key": "net_room_areas_and_clearances",
+      "value": null,
+      "unit": "m or m²",
+      "status": "missing",
+      "source": "no dimensioned internal room schedule",
+      "meaning_pt": "Não certificar áreas úteis, folgas à cama, acessibilidade, folgas das portas nem instalações com o raster."
+    },
+    {
+      "key": "roof_porch_geometry",
+      "value": null,
+      "unit": "m",
+      "status": "missing",
+      "source": "reference images only",
+      "meaning_pt": "As fotos sustentam a aparência de cobertura/alpendre; inclinação, beirado, pilares e profundidade não são cotados."
+    },
+    {
+      "key": "manufacturer_hinge_axes_actuators_and_sequence",
+      "value": null,
+      "unit": "technical specification",
+      "status": "missing",
+      "source": "four-state promotional picture only",
+      "meaning_pt": "Não há pormenores de dobradiças, ferragens, apoios, velocidade, tolerâncias ou procedimento de montagem."
+    }
+  ],
+  "layouts": [
+    {
+      "id": "t0",
+      "label": "T0",
+      "bedrooms": 0,
+      "source_image": "/Users/claraazevedo/Documents/global-lead-scraper/green-village-72/dist/assets/layouts/image1.png",
+      "source_heading_cell": "A1",
+      "source_heading": "一厅一卫",
+      "source_anchor": "A2:E24",
+      "source_media": "xl/media/image1.png",
+      "cotas_mm": {
+        "outer": [
+          6220,
+          11800
+        ],
+        "top_bands": [
+          2010,
+          2200,
+          2010
+        ],
+        "common_windows_width": 920,
+        "side_longitudinal": [
+          5690,
+          5690
+        ],
+        "end_marks": null
+      },
+      "window_count_visible": {
+        "left_long_side": 2,
+        "right_long_side": 2,
+        "front_end_common": 2,
+        "rear_end_common": 2,
+        "rear_bathroom_window_uncoted": 1
+      },
+      "room_trace_estimated": [
+        {
+          "label": "Casa de banho",
+          "kind": "bathroom",
+          "bounds": [
+            0.38,
+            0.0,
+            0.62,
+            0.23
+          ]
+        }
+      ],
+      "source_full_envelope_rect_pixels": [
+        159,
+        90,
+        388,
+        525
+      ],
+      "manual_edge_reading_uncertainty_pixels": 2,
+      "approx_mm_per_pixel_x": 27.16,
+      "approx_mm_per_pixel_y": 27.13,
+      "anisotropy_percent": -0.13,
+      "scale_finding_pt": "Escala técnica não declarada. Comparação do envelope completo aproximadamente consistente com as cotas, com pequenas diferenças de raster/leitura. Não é correcto afirmar que todas as plantas estão fora de escala. Não recuperar cotas interiores milimétricas por contagem de pixels. As cotas escritas prevalecem.",
+      "entry_pt": "Duas folhas, ao centro da frente (parte inferior da imagem).",
+      "bathroom_pt": "Ao fundo ao centro: duche no fundo, sanita à esquerda, pequeno lavatório junto à entrada; abertura para o espaço comum.",
+      "kitchen_in_this_plan": false,
+      "room_dimensions_specific_confirmed": null,
+      "note_pt": "São confirmadas as cotas da imagem acima; faltam cotas úteis específicas de largura/comprimento dos quartos, cozinha e casa de banho. Não inventar números por tipologia."
+    },
+    {
+      "id": "t1",
+      "label": "T1",
+      "bedrooms": 1,
+      "source_image": "/Users/claraazevedo/Documents/global-lead-scraper/green-village-72/dist/assets/layouts/image2.png",
+      "source_heading_cell": "F1",
+      "source_heading": "一室一厅一卫",
+      "source_anchor": "F2:J24",
+      "source_media": "xl/media/image2.png",
+      "cotas_mm": {
+        "outer": [
+          6220,
+          11800
+        ],
+        "top_bands": [
+          2010,
+          2200,
+          2010
+        ],
+        "common_windows_width": 920,
+        "side_longitudinal": [
+          5690,
+          5690
+        ],
+        "end_marks": null
+      },
+      "window_count_visible": {
+        "left_long_side": 2,
+        "right_long_side": 2,
+        "front_end_common": 2,
+        "rear_end_common": 2,
+        "rear_bathroom_window_uncoted": 1
+      },
+      "room_trace_estimated": [
+        {
+          "label": "Casa de banho",
+          "kind": "bathroom",
+          "bounds": [
+            0.38,
+            0.0,
+            0.62,
+            0.23
+          ]
+        },
+        {
+          "label": "Quarto 1",
+          "kind": "bedroom",
+          "bounds": [
+            0.62,
+            0,
+            1,
+            0.5
+          ]
+        }
+      ],
+      "source_full_envelope_rect_pixels": [
+        85,
+        58,
+        285,
+        437
+      ],
+      "manual_edge_reading_uncertainty_pixels": 2,
+      "approx_mm_per_pixel_x": 31.1,
+      "approx_mm_per_pixel_y": 31.13,
+      "anisotropy_percent": 0.11,
+      "scale_finding_pt": "Escala técnica não declarada. Comparação do envelope completo aproximadamente consistente com as cotas, com pequenas diferenças de raster/leitura. Não é correcto afirmar que todas as plantas estão fora de escala. Não recuperar cotas interiores milimétricas por contagem de pixels. As cotas escritas prevalecem.",
+      "entry_pt": "Duas folhas, ao centro da frente (parte inferior da imagem).",
+      "bathroom_pt": "Ao fundo ao centro: duche no fundo, sanita à esquerda, pequeno lavatório junto à entrada; abertura para o espaço comum.",
+      "kitchen_in_this_plan": false,
+      "room_dimensions_specific_confirmed": null,
+      "note_pt": "São confirmadas as cotas da imagem acima; faltam cotas úteis específicas de largura/comprimento dos quartos, cozinha e casa de banho. Não inventar números por tipologia."
+    },
+    {
+      "id": "t2",
+      "label": "T2",
+      "bedrooms": 2,
+      "source_image": "/Users/claraazevedo/Documents/global-lead-scraper/green-village-72/dist/assets/layouts/image3.png",
+      "source_heading_cell": "K1",
+      "source_heading": "两室一厅一卫",
+      "source_anchor": "K2:O24",
+      "source_media": "xl/media/image3.png",
+      "cotas_mm": {
+        "outer": [
+          6220,
+          11800
+        ],
+        "top_bands": [
+          2010,
+          2200,
+          2010
+        ],
+        "common_windows_width": 920,
+        "side_longitudinal": [
+          5690,
+          5690
+        ],
+        "end_marks": null
+      },
+      "window_count_visible": {
+        "left_long_side": 2,
+        "right_long_side": 2,
+        "front_end_common": 2,
+        "rear_end_common": 2,
+        "rear_bathroom_window_uncoted": 1
+      },
+      "room_trace_estimated": [
+        {
+          "label": "Casa de banho",
+          "kind": "bathroom",
+          "bounds": [
+            0.38,
+            0.0,
+            0.62,
+            0.23
+          ]
+        },
+        {
+          "label": "Quarto 1",
+          "kind": "bedroom",
+          "bounds": [
+            0.62,
+            0,
+            1,
+            0.5
+          ]
+        },
+        {
+          "label": "Quarto 2",
+          "kind": "bedroom",
+          "bounds": [
+            0.62,
+            0.5,
+            1,
+            1
+          ]
+        }
+      ],
+      "source_full_envelope_rect_pixels": [
+        130,
+        59,
+        354,
+        484
+      ],
+      "manual_edge_reading_uncertainty_pixels": 2,
+      "approx_mm_per_pixel_x": 27.77,
+      "approx_mm_per_pixel_y": 27.76,
+      "anisotropy_percent": -0.01,
+      "scale_finding_pt": "Escala técnica não declarada. Comparação do envelope completo aproximadamente consistente com as cotas, com pequenas diferenças de raster/leitura. Não é correcto afirmar que todas as plantas estão fora de escala. Não recuperar cotas interiores milimétricas por contagem de pixels. As cotas escritas prevalecem.",
+      "entry_pt": "Duas folhas, ao centro da frente (parte inferior da imagem).",
+      "bathroom_pt": "Ao fundo ao centro: duche no fundo, sanita à esquerda, pequeno lavatório junto à entrada; abertura para o espaço comum.",
+      "kitchen_in_this_plan": false,
+      "room_dimensions_specific_confirmed": null,
+      "note_pt": "São confirmadas as cotas da imagem acima; faltam cotas úteis específicas de largura/comprimento dos quartos, cozinha e casa de banho. Não inventar números por tipologia."
+    },
+    {
+      "id": "t3-a",
+      "label": "T3 · distribuição A",
+      "bedrooms": 3,
+      "source_image": "/Users/claraazevedo/Documents/global-lead-scraper/green-village-72/dist/assets/layouts/image4.png",
+      "source_heading_cell": "A25",
+      "source_heading": "三室一厅一卫",
+      "source_anchor": "A26:E48",
+      "source_media": "xl/media/image4.png",
+      "cotas_mm": {
+        "outer": [
+          6220,
+          11800
+        ],
+        "top_bands": [
+          2010,
+          2200,
+          2010
+        ],
+        "common_windows_width": 920,
+        "side_longitudinal": [
+          5690,
+          5690
+        ],
+        "end_marks": null
+      },
+      "window_count_visible": {
+        "left_long_side": 2,
+        "right_long_side": 2,
+        "front_end_common": 2,
+        "rear_end_common": 2,
+        "rear_bathroom_window_uncoted": 1
+      },
+      "room_trace_estimated": [
+        {
+          "label": "Casa de banho",
+          "kind": "bathroom",
+          "bounds": [
+            0.38,
+            0.0,
+            0.62,
+            0.23
+          ]
+        },
+        {
+          "label": "Quarto 1",
+          "kind": "bedroom",
+          "bounds": [
+            0,
+            0,
+            0.38,
+            0.5
+          ]
+        },
+        {
+          "label": "Quarto 2",
+          "kind": "bedroom",
+          "bounds": [
+            0.62,
+            0,
+            1,
+            0.5
+          ]
+        },
+        {
+          "label": "Quarto 3",
+          "kind": "bedroom",
+          "bounds": [
+            0.62,
+            0.5,
+            1,
+            1
+          ]
+        }
+      ],
+      "source_full_envelope_rect_pixels": [
+        107,
+        50,
+        328,
+        467
+      ],
+      "manual_edge_reading_uncertainty_pixels": 2,
+      "approx_mm_per_pixel_x": 28.14,
+      "approx_mm_per_pixel_y": 28.3,
+      "anisotropy_percent": 0.54,
+      "scale_finding_pt": "Escala técnica não declarada. Comparação do envelope completo aproximadamente consistente com as cotas, com pequenas diferenças de raster/leitura. Não é correcto afirmar que todas as plantas estão fora de escala. Não recuperar cotas interiores milimétricas por contagem de pixels. As cotas escritas prevalecem.",
+      "entry_pt": "Duas folhas, ao centro da frente (parte inferior da imagem).",
+      "bathroom_pt": "Ao fundo ao centro: duche no fundo, sanita à esquerda, pequeno lavatório junto à entrada; abertura para o espaço comum.",
+      "kitchen_in_this_plan": false,
+      "room_dimensions_specific_confirmed": null,
+      "note_pt": "São confirmadas as cotas da imagem acima; faltam cotas úteis específicas de largura/comprimento dos quartos, cozinha e casa de banho. Não inventar números por tipologia."
+    },
+    {
+      "id": "t3-b",
+      "label": "T3 · distribuição B",
+      "bedrooms": 3,
+      "source_image": "/Users/claraazevedo/Documents/global-lead-scraper/green-village-72/dist/assets/layouts/image5.png",
+      "source_heading_cell": "F25",
+      "source_heading": "三室一厅一卫",
+      "source_anchor": "F26:J48",
+      "source_media": "xl/media/image5.png",
+      "cotas_mm": {
+        "outer": [
+          6220,
+          11800
+        ],
+        "top_bands": [
+          2010,
+          2200,
+          2010
+        ],
+        "common_windows_width": 920,
+        "side_longitudinal": [
+          4000,
+          3900,
+          3900
+        ],
+        "end_marks": 210
+      },
+      "window_count_visible": {
+        "left_long_side": 3,
+        "right_long_side": 3,
+        "front_end_common": 2,
+        "rear_end_common": 2,
+        "rear_bathroom_window_uncoted": 1
+      },
+      "room_trace_estimated": [
+        {
+          "label": "Casa de banho",
+          "kind": "bathroom",
+          "bounds": [
+            0.38,
+            0.0,
+            0.62,
+            0.23
+          ]
+        },
+        {
+          "label": "Quarto 1",
+          "kind": "bedroom",
+          "bounds": [
+            0.62,
+            0,
+            1,
+            0.333
+          ]
+        },
+        {
+          "label": "Quarto 2",
+          "kind": "bedroom",
+          "bounds": [
+            0.62,
+            0.333,
+            1,
+            0.678
+          ]
+        },
+        {
+          "label": "Quarto 3",
+          "kind": "bedroom",
+          "bounds": [
+            0.62,
+            0.678,
+            1,
+            1
+          ]
+        }
+      ],
+      "source_full_envelope_rect_pixels": [
+        111,
+        61,
+        332,
+        472
+      ],
+      "manual_edge_reading_uncertainty_pixels": 2,
+      "approx_mm_per_pixel_x": 28.14,
+      "approx_mm_per_pixel_y": 28.71,
+      "anisotropy_percent": 2.01,
+      "scale_finding_pt": "Escala técnica não declarada. Comparação do envelope completo aproximadamente consistente com as cotas, com pequenas diferenças de raster/leitura. Não é correcto afirmar que todas as plantas estão fora de escala. Não recuperar cotas interiores milimétricas por contagem de pixels. As cotas escritas prevalecem.",
+      "entry_pt": "Duas folhas, ao centro da frente (parte inferior da imagem).",
+      "bathroom_pt": "Ao fundo ao centro: duche no fundo, sanita à esquerda, pequeno lavatório junto à entrada; abertura para o espaço comum.",
+      "kitchen_in_this_plan": false,
+      "room_dimensions_specific_confirmed": null,
+      "note_pt": "São confirmadas as cotas da imagem acima; faltam cotas úteis específicas de largura/comprimento dos quartos, cozinha e casa de banho. Não inventar números por tipologia."
+    },
+    {
+      "id": "t4-a",
+      "label": "T4 · distribuição A",
+      "bedrooms": 4,
+      "source_image": "/Users/claraazevedo/Documents/global-lead-scraper/green-village-72/dist/assets/layouts/image6.png",
+      "source_heading_cell": "K25",
+      "source_heading": "四室一厅一卫",
+      "source_anchor": "K26:O48",
+      "source_media": "xl/media/image6.png",
+      "cotas_mm": {
+        "outer": [
+          6220,
+          11800
+        ],
+        "top_bands": [
+          2010,
+          2200,
+          2010
+        ],
+        "common_windows_width": 920,
+        "side_longitudinal": [
+          5690,
+          5690
+        ],
+        "end_marks": null
+      },
+      "window_count_visible": {
+        "left_long_side": 2,
+        "right_long_side": 2,
+        "front_end_common": 2,
+        "rear_end_common": 2,
+        "rear_bathroom_window_uncoted": 1
+      },
+      "room_trace_estimated": [
+        {
+          "label": "Casa de banho",
+          "kind": "bathroom",
+          "bounds": [
+            0.38,
+            0.0,
+            0.62,
+            0.23
+          ]
+        },
+        {
+          "label": "Quarto 1",
+          "kind": "bedroom",
+          "bounds": [
+            0,
+            0,
+            0.38,
+            0.5
+          ]
+        },
+        {
+          "label": "Quarto 2",
+          "kind": "bedroom",
+          "bounds": [
+            0.62,
+            0,
+            1,
+            0.5
+          ]
+        },
+        {
+          "label": "Quarto 3",
+          "kind": "bedroom",
+          "bounds": [
+            0,
+            0.5,
+            0.38,
+            1
+          ]
+        },
+        {
+          "label": "Quarto 4",
+          "kind": "bedroom",
+          "bounds": [
+            0.62,
+            0.5,
+            1,
+            1
+          ]
+        }
+      ],
+      "source_full_envelope_rect_pixels": [
+        91,
+        56,
+        302,
+        455
+      ],
+      "manual_edge_reading_uncertainty_pixels": 2,
+      "approx_mm_per_pixel_x": 29.48,
+      "approx_mm_per_pixel_y": 29.57,
+      "anisotropy_percent": 0.32,
+      "scale_finding_pt": "Escala técnica não declarada. Comparação do envelope completo aproximadamente consistente com as cotas, com pequenas diferenças de raster/leitura. Não é correcto afirmar que todas as plantas estão fora de escala. Não recuperar cotas interiores milimétricas por contagem de pixels. As cotas escritas prevalecem.",
+      "entry_pt": "Duas folhas, ao centro da frente (parte inferior da imagem).",
+      "bathroom_pt": "Ao fundo ao centro: duche no fundo, sanita à esquerda, pequeno lavatório junto à entrada; abertura para o espaço comum.",
+      "kitchen_in_this_plan": false,
+      "room_dimensions_specific_confirmed": null,
+      "note_pt": "São confirmadas as cotas da imagem acima; faltam cotas úteis específicas de largura/comprimento dos quartos, cozinha e casa de banho. Não inventar números por tipologia."
+    },
+    {
+      "id": "t4-b",
+      "label": "T4 · distribuição B",
+      "bedrooms": 4,
+      "source_image": "/Users/claraazevedo/Documents/global-lead-scraper/green-village-72/dist/assets/layouts/image7.png",
+      "source_heading_cell": "A49",
+      "source_heading": "四室一厅一卫",
+      "source_anchor": "A50:E74",
+      "source_media": "xl/media/image7.png",
+      "cotas_mm": {
+        "outer": [
+          6220,
+          11800
+        ],
+        "top_bands": [
+          2010,
+          2200,
+          2010
+        ],
+        "common_windows_width": 920,
+        "side_longitudinal": [
+          4000,
+          3900,
+          3900
+        ],
+        "end_marks": 210
+      },
+      "window_count_visible": {
+        "left_long_side": 3,
+        "right_long_side": 3,
+        "front_end_common": 2,
+        "rear_end_common": 2,
+        "rear_bathroom_window_uncoted": 1
+      },
+      "room_trace_estimated": [
+        {
+          "label": "Casa de banho",
+          "kind": "bathroom",
+          "bounds": [
+            0.38,
+            0.0,
+            0.62,
+            0.23
+          ]
+        },
+        {
+          "label": "Quarto 1",
+          "kind": "bedroom",
+          "bounds": [
+            0,
+            0,
+            0.38,
+            0.333
+          ]
+        },
+        {
+          "label": "Quarto 2",
+          "kind": "bedroom",
+          "bounds": [
+            0.62,
+            0,
+            1,
+            0.333
+          ]
+        },
+        {
+          "label": "Quarto 3",
+          "kind": "bedroom",
+          "bounds": [
+            0.62,
+            0.333,
+            1,
+            0.678
+          ]
+        },
+        {
+          "label": "Quarto 4",
+          "kind": "bedroom",
+          "bounds": [
+            0.62,
+            0.678,
+            1,
+            1
+          ]
+        }
+      ],
+      "source_full_envelope_rect_pixels": [
+        83,
+        63,
+        293,
+        451
+      ],
+      "manual_edge_reading_uncertainty_pixels": 2,
+      "approx_mm_per_pixel_x": 29.62,
+      "approx_mm_per_pixel_y": 30.41,
+      "anisotropy_percent": 2.68,
+      "scale_finding_pt": "Escala técnica não declarada. Comparação do envelope completo aproximadamente consistente com as cotas, com pequenas diferenças de raster/leitura. Não é correcto afirmar que todas as plantas estão fora de escala. Não recuperar cotas interiores milimétricas por contagem de pixels. As cotas escritas prevalecem.",
+      "entry_pt": "Duas folhas, ao centro da frente (parte inferior da imagem).",
+      "bathroom_pt": "Ao fundo ao centro: duche no fundo, sanita à esquerda, pequeno lavatório junto à entrada; abertura para o espaço comum.",
+      "kitchen_in_this_plan": false,
+      "room_dimensions_specific_confirmed": null,
+      "note_pt": "São confirmadas as cotas da imagem acima; faltam cotas úteis específicas de largura/comprimento dos quartos, cozinha e casa de banho. Não inventar números por tipologia."
+    }
+  ],
+  "uncertainty_policy": {
+    "nature": "Conservative editorial visual-tracing intervals, not probability/confidence intervals or manufacturing tolerances.",
+    "pixel_edge_reading": "+/-2 pixels for outline comparison",
+    "normalized_wall_positions": "approximately +/-0.02 of each envelope axis: +/-0.1244 m transverse and +/-0.236 m longitudinal",
+    "door_window_positions": "uncoted centre placement generally +/-0.02..0.03 axis fraction; printed920 overrides measured raster width",
+    "heights_thicknesses_hinges": "No source-backed numerical interval; keep null. Existing assumed values are not confidence bounds.",
+    "warning": "Do not add uncertain segment chains or solve apparent contradictions by inventing joint/wall thicknesses."
+  },
+  "scale_diagnosis": {
+    "drawing_scale_declared": false,
+    "all_seven_proven_not_to_scale": false,
+    "cad_available_in_authorized_attachments": false,
+    "millimetre_precision_from_pixels_allowed": false,
+    "rationale_pt": "O envelope completo inclui as projecções do núcleo nas extremidades. Usando as linhas da cota total, as plantas1/2/3/4/6 são aproximadamente proporcionais a6220/11800;5/7 apresentam diferenças maiores mas ainda pequenas face à resolução. Comparar só o rectângulo das alas com11800 produz uma falsa distorção de4–7%. Não se demonstrou que todas estejam fora de escala. A ausência de CAD/escala declarada e as referências dimensionais incompletas impedem precisão técnica a partir do raster."
+  },
+  "reference_photo_findings_pt": {
+    "exterior-branco": "Fachada central envidraçada e porta lateral numa fachada longa; janelas e entrada diferem das sete plantas.",
+    "exterior-creme": "Acabamento horizontal e porta lateral; serve como variante visual.",
+    "exterior-madeira": "Acabamento vertical, três janelas laterais visíveis e entrada central envidraçada.",
+    "frente-envidracada": "Fachada com grandes caixilhos diferente dos vãos de920 das plantas.",
+    "alpendre": "Foto confirma alpendre frontal com cobertura inclinada, pilares e guarda. Não fornece medidas nem compatibilidade com as sete plantas.",
+    "estrutura": "Esqueleto central longitudinal, duas alas e travessas. Perfil, espessura, espaçamentos, fundações e articulações não são cotados.",
+    "estruturas": "Várias configurações e comprimentos no mesmo quadro:40ft expansível,20ft e40ft de cobertura plana, e coberturas inclinadas. Não misturar todas num único sistema certificado."
+  },
+  "model_critique": [
+    {
+      "severity": "P1",
+      "component": "folding kinematics",
+      "source": "model.js updateExpansion()",
+      "finding_pt": "A montagem fechada interpenetra piso, parede e cobertura. A parede rígida de2,55 m dobrada sobre uma ala de2 m ultrapassa o piso em0,55 m. SAT executado em101 posições confirma colisões; JSON e secção SVG anexos.",
+      "remedy_pt": "Reformular o empilhamento e eixos, ou usar uma sequência conceptual explodida com folgas e rótulo explícito. Não chamar transporte fiel ao estado0 actual."
+    },
+    {
+      "severity": "P1",
+      "component": "bedroom doors",
+      "source": "model.js partition call inside bedRooms loop",
+      "finding_pt": "A porta é sempre colocada em z+len/2−0,65. Nos quartos da frente deT2/T3-A/T3-B/T4-A/T4-B, a fonte põe a porta junto à divisória central/superior; o 3D coloca-a junto à fachada da frente.",
+      "remedy_pt": "Adicionar doorEdge/top-or-bottom e centro por quarto, respeitar os arcos desenhados. Modelar folha/batente sem bloquear o vão e rever varrimento de abertura."
+    },
+    {
+      "severity": "P1",
+      "component": "window positions and widths",
+      "source": "model.js side panel holes and wing end panel holes",
+      "finding_pt": "Todas as alas têm3 janelas laterais de1,15 m e janelas de topo de0,90 m. Cinco plantas têm2 janelas laterais por lado e cotas920. As variantesT3-B/T4-B têm3.",
+      "remedy_pt": "Por tipologia:2 ou3 janelas conforme planta, 0,92 m para as janelas comuns cotadas; manter alturas/peitoris como suposições visíveis. Não copiar portas laterais de fotos para as sete plantas sem opção separada."
+    },
+    {
+      "severity": "P2",
+      "component": "module bands",
+      "source": "DIM/core/wing and hard-coded geometry",
+      "finding_pt": "A estrutura adopta2220+2000+2000 mm. A fonte escreve2200+2010+2010. O contorno total6220 está correcto; os eixos internos diferem10 mm por lado.",
+      "remedy_pt": "Centralizar dimensões em dados de origem; a banda estrutural é2200, alas2010. Manter traçado interior independente destas bandas."
+    },
+    {
+      "severity": "P2",
+      "component": "stepped footprint and source trace",
+      "source": "equal core/wing length11.8 in model.js",
+      "finding_pt": "O modelo coloca as fachadas do núcleo e das alas no mesmo plano. As plantas e fotos mostram o núcleo projectado nas extremidades; as plantas5/7 marcam210 nas extremidades. A caixa lateral mais curta não é o envelope total11800.",
+      "remedy_pt": "Conservar o recuo visível das fachadas das alas, sem converter210 automaticamente numa parede ou folga útil. Normalizar a planta pelo envelope completo e manter offsets explícitos como interpretação enquanto faltarem secções."
+    },
+    {
+      "severity": "P2",
+      "component": "bathroom placement and door",
+      "source": "bathroom.scale + partition()",
+      "finding_pt": "A escala do bloco da casa de banho é independente da porta/parede frontal, que é adicionada no grupo exterior ao bloco. Espelhamento altera aparelhos, mas não o vão/arco. A origem não confirma uma variante espelhada.",
+      "remedy_pt": "Uma única definição coerente da casa de banho com porta, paredes e aparelhos subordinados; estado espelhado identificado como proposta. Validar colisões entre aparelhos e abertura."
+    },
+    {
+      "severity": "P2",
+      "component": "interior and circulation",
+      "source": "kitchen groups and fixed living furniture",
+      "finding_pt": "Não há cozinha desenhada nas sete plantas. O modelo acrescenta bancada, L/ilha e mobiliário genérico; emT4-A coloca cozinha no corredor central estreito. Não existem folgas cotadas.",
+      "remedy_pt": "Identificar cozinha/mobiliário como proposta, rever afastamentos por intersecção e percurso livre no modelo escolhido; não alegar área útil ou conformidade."
+    },
+    {
+      "severity": "P2",
+      "component": "height and canopy",
+      "source": "DIM.height vs frame()/roof/cover",
+      "finding_pt": "2,55 m designa painéis, não altura total; a estrutura mede2,70 e a cobertura sobe até2,76/2,77 m. Cobertura inclinada/alpendre têm cotas inventadas para visualização.",
+      "remedy_pt": "Usar termos correctos: altura de painel assumida/altura total conceptual. Fotoalpendre serve de referência visual, não geometria cotada."
+    },
+    {
+      "severity": "P2",
+      "component": "technical layers",
+      "source": "plumbing/electrical groups",
+      "finding_pt": "Redes, diâmetros, quadro, pontos e percursos são linhas genéricas sem fonte técnica. Tubos rígidos atravessam articulações das alas.",
+      "remedy_pt": "Mostrar percursos conceptuais, terminações/conexões desmontáveis e indicação da incerteza; não apresentar como projecto executável nem animar como ligação rígida."
+    },
+    {
+      "severity": "P3",
+      "component": "raster proportions",
+      "source": "DATA layouts room.bounds",
+      "finding_pt": "Os limites0,38/0,62 são estimativas visuais coerentes com o desenho, não cotas de largura de quarto. Converter directamente em medidas exactas ou áreas transmite precisão inexistente.",
+      "remedy_pt": "Conservar imagem original acessível; marcar métricas derivadas como aproximadas e não expor precisão milimétrica."
+    }
+  ],
+  "expansion_sequence": {
+    "source": "assets/expansao.png, four pictures read in arrow order: top-left, top-right, bottom-left, bottom-right",
+    "source_limits_pt": "A primeira imagem já mostra as coberturas abertas. Não mostra o estado de transporte totalmente fechado nem a manobra inicial das coberturas. É uma ilustração de outro volume/porta, sem cotas ou comprovação de fabrico.",
+    "four_source_states": [
+      {
+        "step": 1,
+        "label_pt": "Coberturas laterais abertas",
+        "observed_pt": "Painéis superiores abertos e corpo central ainda compacto nas laterais.",
+        "inference_pt": "Há uma articulação longitudinal próxima da aresta superior. Eixo exacto, empilhamento fechado e ordem anterior desconhecidos."
+      },
+      {
+        "step": 2,
+        "label_pt": "Piso/parede lateral em posição horizontal",
+        "observed_pt": "Conjunto lateral está rebatido; o painel com duas janelas está na horizontal.",
+        "inference_pt": "A imagem sugere a parede deitada sobre/junto ao piso, mas não resolve a pilha ou ferragem de cada painel."
+      },
+      {
+        "step": 3,
+        "label_pt": "Parede lateral levantada",
+        "observed_pt": "Parede com janelas vertical; piso exposto; fechos de extremidade ainda abertos.",
+        "inference_pt": "Rotação conceptual da parede em torno da sua base exterior, com apoio do conjunto; geometria exacta não fornecida."
+      },
+      {
+        "step": 4,
+        "label_pt": "Extremidades fechadas",
+        "observed_pt": "Painéis de topo completam o contorno.",
+        "inference_pt": "As dobradiças, travas, vedações, apoios e ligações de redes não são visíveis; finalização apenas esquemática."
+      }
+    ],
+    "non_interpenetration_concept_pt": [
+      "Para fidelidade estrita às fontes, iniciar no estado1 da imagem e fornecer quatro estados discretos, sem alegar um transporte fechado real. Uma animação entre estados pode ser descrita como montagem conceptual.",
+      "Separar rigidamente piso, parede lateral, cobertura e fechos como corpos distintos. Não vincular uma parede de2,55 m a uma ala de2,01 m num fecho duplo a90° sem mecanismo adicional: faltam cerca de0,54 m de armazenamento.",
+      "Na representação explodida, manter a cobertura levantada acima do volume varrido; posicionar o piso com parede deitada em camada própria, com espaço entre superfícies maior que as semi-espessuras e folga escolhida. A parede de2,55 m deitada para dentro invade0,54 m do núcleo; isso deve ser reservado e mostrado, não escondido.",
+      "Após assentar o piso, rodar a parede em torno da base exterior da horizontal voltada para dentro até vertical. O seu arco ocupa todo o intervalo lateral entre x_exterior−H e x_exterior, y0..H. Libertar essa faixa de cobertura, divisórias, móveis, caixilhos e redes antes de mover.",
+      "Manter fechos de topo afastados longitudinalmente em suportes de apresentação até a parede lateral estar vertical. Depois deslocar/rodar em percurso exterior livre e assentar com juntas. Isto é uma solução de apresentação explodida, não uma reivindicação de ferragem real.",
+      "Se for obrigatório mostrar um estado compacto, só um pack esquemático: painéis independentes empilhados em planos com offsets e trajectos de apresentação, explicitamente não articulados como produto. Uma alternativa de fabrico com parede bipartida/telescópica exigiria nova fonte; não deve ser inventada como existente."
+    ],
+    "clearance_rule": "For independent bodies A/B on parallel layers: centreline separation >= thickness_A/2 + thickness_B/2 + g. g is an authored visual clearance, never a manufacturer tolerance. Use swept OBB/SAT checks and exclude only explicit designed contacts; no hidden mesh scaling or opacity used to disguise collisions.",
+    "validation_required": "Dense path sampling plus conservative swept-volume checks at phase transitions; meshes, frames and glazing included; verify all layouts and last-frame end panels. Selected-panel existing-model test is not proof of an alternative mechanism.",
+    "manufacturer_mechanism_claim_allowed": false,
+    "new_collision_free_animation_implemented": false
+  },
+  "related_attachment_search": {
+    "directories": [
+      "/Users/claraazevedo/Downloads/EXPANSIVEIS",
+      "/Users/claraazevedo/Downloads/drive-download-20260625T154848Z-3-001"
+    ],
+    "cad_files_found": [],
+    "source_video_files_found": [],
+    "pdfs_found_count": 2,
+    "pdfs_read": [],
+    "reason_pdf_not_read": "The two PDFs are named client contracts/proformas, not relevant technical drawings; no private client content inspected.",
+    "other_relevant_rasters_visually_inspected": [
+      "3-40ft-expandable-container-house-layout.png",
+      "7-40ft-expandable-container-house-floor-plan-5.png",
+      "4-bedrooms-layout.png"
+    ],
+    "other_rasters_use": "Inspirational layout/furniture comparisons only;6300-wide plan is a distinct variant.",
+    "video_extensions_checked": [
+      ".3gp",
+      ".avi",
+      ".flv",
+      ".hevc",
+      ".m2ts",
+      ".m4v",
+      ".mkv",
+      ".mov",
+      ".mp4",
+      ".mpeg",
+      ".mpg",
+      ".mts",
+      ".webm",
+      ".wmv"
+    ],
+    "exact_byte_source_matches": [
+      {
+        "site_asset": "/Users/claraazevedo/Documents/global-lead-scraper/green-village-72/dist/assets/expansao.png",
+        "original_paths_with_identical_bytes": []
+      },
+      {
+        "site_asset": "/Users/claraazevedo/Documents/global-lead-scraper/green-village-72/dist/assets/estrutura.png",
+        "original_paths_with_identical_bytes": []
+      },
+      {
+        "site_asset": "/Users/claraazevedo/Documents/global-lead-scraper/green-village-72/dist/assets/estruturas.png",
+        "original_paths_with_identical_bytes": []
+      },
+      {
+        "site_asset": "/Users/claraazevedo/Documents/global-lead-scraper/green-village-72/dist/assets/alpendre.jpg",
+        "original_paths_with_identical_bytes": [
+          "/Users/claraazevedo/Downloads/EXPANSIVEIS/f01ccd99c0326ae1c02daa28851cceeb.jpg",
+          "/Users/claraazevedo/Downloads/drive-download-20260625T154848Z-3-001/f01ccd99c0326ae1c02daa28851cceeb.jpg"
+        ]
+      },
+      {
+        "site_asset": "/Users/claraazevedo/Documents/global-lead-scraper/green-village-72/dist/assets/exterior-branco.jpg",
+        "original_paths_with_identical_bytes": [
+          "/Users/claraazevedo/Downloads/EXPANSIVEIS/202303291821551-9d7d-scaled.jpg",
+          "/Users/claraazevedo/Downloads/drive-download-20260625T154848Z-3-001/202303291821551-9d7d-scaled.jpg"
+        ]
+      },
+      {
+        "site_asset": "/Users/claraazevedo/Documents/global-lead-scraper/green-village-72/dist/assets/exterior-creme.jpg",
+        "original_paths_with_identical_bytes": [
+          "/Users/claraazevedo/Downloads/EXPANSIVEIS/40ft-expandable-family-modular-home-side-view.jpg",
+          "/Users/claraazevedo/Downloads/EXPANSIVEIS/40ft-expandable-family-modular-home-side-view (1).jpg",
+          "/Users/claraazevedo/Downloads/drive-download-20260625T154848Z-3-001/40ft-expandable-family-modular-home-side-view (1).jpg"
+        ]
+      },
+      {
+        "site_asset": "/Users/claraazevedo/Documents/global-lead-scraper/green-village-72/dist/assets/exterior-madeira.jpg",
+        "original_paths_with_identical_bytes": [
+          "/Users/claraazevedo/Downloads/EXPANSIVEIS/40ft-container-house-modern-design.png-1.jpg",
+          "/Users/claraazevedo/Downloads/drive-download-20260625T154848Z-3-001/40ft-container-house-modern-design.png-1.jpg"
+        ]
+      },
+      {
+        "site_asset": "/Users/claraazevedo/Documents/global-lead-scraper/green-village-72/dist/assets/frente-envidracada.jpg",
+        "original_paths_with_identical_bytes": [
+          "/Users/claraazevedo/Downloads/drive-download-20260625T154848Z-3-001/20ft 40ft New Design Prefabricated Luxury Villa Expandable Container House Prefab Portable Mobile Home With Bathroom And Kitchen - Buy Anti-seismic 40 Ft 20 Ft Prefab Container Expandable House Insulated Folding Prefabricated Home 5 Bedroo.jpeg"
+        ]
+      }
+    ]
+  },
+  "executed_validation": {
+    "workbook_sha256_matches_prior_manifest": true,
+    "all_seven_site_pngs_identical_to_workbook": true,
+    "all_seven_original_plans_visually_inspected": true,
+    "existing_model_panels_test": "model-collision-check.json",
+    "diagram": "expansion-collision-cross-section.svg",
+    "new_geometry_or_site_changes": false
+  },
+  "assets": {
+    "report": "/private/tmp/gv72-v2-audit/geometry/sources-geometry.json",
+    "model_collision_test": "/private/tmp/gv72-v2-audit/geometry/model-collision-check.json",
+    "collision_cross_section": "/private/tmp/gv72-v2-audit/geometry/expansion-collision-cross-section.svg",
+    "related_attachments_inventory": "/private/tmp/gv72-v2-audit/geometry/related-attachments-inventory.json"
+  }
+}
