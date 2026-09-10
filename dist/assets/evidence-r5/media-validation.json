@@ -1,0 +1,289 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "films native play and seek 15s/29s through Blob transport",
+      "pass": true
+    },
+    {
+      "name": "Original MP4 download matches approved film SHA256",
+      "pass": true
+    },
+    {
+      "name": "One original chapter seeks to selected time and leaving Films pauses all players",
+      "pass": true
+    },
+    {
+      "name": "audit-report native play and seek 15s/29s through Blob transport",
+      "pass": true
+    },
+    {
+      "name": "Report images, favicon, evidence and download links resolve",
+      "pass": true
+    },
+    {
+      "name": "No HTTP errors, browser JavaScript errors or console warnings",
+      "pass": true
+    }
+  ],
+  "logs": [],
+  "media": {
+    "films": {
+      "first": {
+        "src": "blob:http://127.0.0.1:4174/ec743feb-b9aa-472c-817f-5f0c3bfd8c33",
+        "currentSrc": "blob:http://127.0.0.1:4174/ec743feb-b9aa-472c-817f-5f0c3bfd8c33",
+        "time": 0.062581,
+        "duration": 30,
+        "width": 1920,
+        "height": 1080,
+        "paused": false,
+        "ready": 4,
+        "error": null,
+        "seekable": [
+          [
+            0,
+            30
+          ]
+        ]
+      },
+      "seeks": [
+        {
+          "requested": 15,
+          "src": "blob:http://127.0.0.1:4174/ec743feb-b9aa-472c-817f-5f0c3bfd8c33",
+          "currentSrc": "blob:http://127.0.0.1:4174/ec743feb-b9aa-472c-817f-5f0c3bfd8c33",
+          "time": 15.155616,
+          "duration": 30,
+          "width": 1920,
+          "height": 1080,
+          "paused": false,
+          "ready": 4,
+          "error": null,
+          "seekable": [
+            [
+              0,
+              30
+            ]
+          ]
+        },
+        {
+          "requested": 29,
+          "src": "blob:http://127.0.0.1:4174/ec743feb-b9aa-472c-817f-5f0c3bfd8c33",
+          "currentSrc": "blob:http://127.0.0.1:4174/ec743feb-b9aa-472c-817f-5f0c3bfd8c33",
+          "time": 29.155455,
+          "duration": 30,
+          "width": 1920,
+          "height": 1080,
+          "paused": false,
+          "ready": 4,
+          "error": null,
+          "seekable": [
+            [
+              0,
+              30
+            ]
+          ]
+        }
+      ]
+    },
+    "audit-report": {
+      "first": {
+        "src": "blob:http://127.0.0.1:4174/171cdbd0-84fd-447b-9d1b-264125253895",
+        "currentSrc": "blob:http://127.0.0.1:4174/171cdbd0-84fd-447b-9d1b-264125253895",
+        "time": 0.054421,
+        "duration": 30,
+        "width": 1920,
+        "height": 1080,
+        "paused": false,
+        "ready": 4,
+        "error": null,
+        "seekable": [
+          [
+            0,
+            30
+          ]
+        ]
+      },
+      "seeks": [
+        {
+          "requested": 15,
+          "src": "blob:http://127.0.0.1:4174/171cdbd0-84fd-447b-9d1b-264125253895",
+          "currentSrc": "blob:http://127.0.0.1:4174/171cdbd0-84fd-447b-9d1b-264125253895",
+          "time": 15.152737,
+          "duration": 30,
+          "width": 1920,
+          "height": 1080,
+          "paused": false,
+          "ready": 4,
+          "error": null,
+          "seekable": [
+            [
+              0,
+              30
+            ]
+          ]
+        },
+        {
+          "requested": 29,
+          "src": "blob:http://127.0.0.1:4174/171cdbd0-84fd-447b-9d1b-264125253895",
+          "currentSrc": "blob:http://127.0.0.1:4174/171cdbd0-84fd-447b-9d1b-264125253895",
+          "time": 29.155026,
+          "duration": 30,
+          "width": 1920,
+          "height": 1080,
+          "paused": false,
+          "ready": 4,
+          "error": null,
+          "seekable": [
+            [
+              0,
+              30
+            ]
+          ]
+        }
+      ]
+    }
+  },
+  "links": [
+    {
+      "url": "http://127.0.0.1:4174/assets/favicon.svg",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4174/index.html",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4174/assets/evidence-r5/before-kitchen-default-model.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4174/assets/evidence-r5/final-kitchen-frame-corrected-model.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4174/assets/evidence-r5/before-bathroom-default-model.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4174/assets/evidence-r5/final-1440-bathroom-02-model.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4174/assets/evidence-r5/gpu-colour-contact-sheet.jpg",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4174/assets/evidence-r5/kitchen12-bath16.pdf",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4174/assets/evidence-r5/kitchen12-bath16.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4174/assets/evidence-r5/kitchen12-bath16.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4174/assets/evidence-r5/export-validation.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4174/assets/presentation-v5-poster.jpg",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4174/assets/interior-r5/source-inventory.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4174/assets/evidence-r5/source-hashes.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4174/assets/evidence-r5/browser-audit.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4174/assets/evidence-r5/mobile-audit.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4174/assets/evidence-r5/colour-audit.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4174/assets/evidence-r5/comparison-audit.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4174/assets/evidence-r5/retry-audit.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4174/assets/evidence-r4/audit-report.html",
+      "status": 200
+    }
+  ],
+  "download": {
+    "name": "presentation-v5.mp4",
+    "size": 3985081,
+    "SHA256": "7bc61fa93094e6323f0bfdcaa665b8088881d849f9c81c4df6e41ede04c192b7"
+  },
+  "chapter": {
+    "requested": {
+      "video": "v1-spacious",
+      "time": 8,
+      "label": "00:08 · piso"
+    },
+    "actual": {
+      "src": "blob:http://127.0.0.1:4174/1053d2a6-8b18-41e5-977e-56f314d2b9f2",
+      "currentSrc": "blob:http://127.0.0.1:4174/1053d2a6-8b18-41e5-977e-56f314d2b9f2",
+      "time": 8,
+      "duration": 118.233333,
+      "width": 576,
+      "height": 1024,
+      "paused": false,
+      "ready": 4,
+      "error": null,
+      "seekable": [
+        [
+          0,
+          118.233333
+        ]
+      ]
+    }
+  },
+  "reportImages": [
+    {
+      "src": "http://127.0.0.1:4174/assets/evidence-r5/before-kitchen-default-model.png",
+      "loaded": true,
+      "width": 982,
+      "height": 629
+    },
+    {
+      "src": "http://127.0.0.1:4174/assets/evidence-r5/final-kitchen-frame-corrected-model.png",
+      "loaded": true,
+      "width": 982,
+      "height": 629
+    },
+    {
+      "src": "http://127.0.0.1:4174/assets/evidence-r5/before-bathroom-default-model.png",
+      "loaded": true,
+      "width": 982,
+      "height": 629
+    },
+    {
+      "src": "http://127.0.0.1:4174/assets/evidence-r5/final-1440-bathroom-02-model.png",
+      "loaded": true,
+      "width": 982,
+      "height": 629
+    },
+    {
+      "src": "http://127.0.0.1:4174/assets/evidence-r5/gpu-colour-contact-sheet.jpg",
+      "loaded": true,
+      "width": 1600,
+      "height": 1550
+    }
+  ]
+}

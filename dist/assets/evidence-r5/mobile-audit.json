@@ -1,0 +1,1077 @@
+{
+  "tests": [
+    {
+      "name": "portrait detail stays unobscured after orbit kitchen",
+      "pass": true,
+      "result": {
+        "focus": "kitchen",
+        "dataDetail": "kitchen",
+        "canvas": {
+          "x": 11,
+          "y": 305.046875,
+          "width": 353,
+          "height": 225.625,
+          "top": 305.046875,
+          "right": 364,
+          "bottom": 530.671875,
+          "left": 11
+        },
+        "label": {
+          "x": 23,
+          "y": 277.046875,
+          "width": 143.78125,
+          "height": 18.390625,
+          "top": 277.046875,
+          "right": 166.78125,
+          "bottom": 295.4375,
+          "left": 23
+        },
+        "peekImageVisible": false
+      }
+    },
+    {
+      "name": "portrait detail stays unobscured after orbit bathroom",
+      "pass": true,
+      "result": {
+        "focus": "bathroom",
+        "dataDetail": "bathroom",
+        "canvas": {
+          "x": 11,
+          "y": 305.046875,
+          "width": 353,
+          "height": 225.625,
+          "top": 305.046875,
+          "right": 364,
+          "bottom": 530.671875,
+          "left": 11
+        },
+        "label": {
+          "x": 23,
+          "y": 277.046875,
+          "width": 180.875,
+          "height": 18.390625,
+          "top": 277.046875,
+          "right": 203.875,
+          "bottom": 295.4375,
+          "left": 23
+        },
+        "peekImageVisible": false
+      }
+    }
+  ],
+  "screens": [
+    {
+      "name": "final-375-kitchen-02",
+      "state": {
+        "S": {
+          "schemaVersion": 2,
+          "layout": "t2",
+          "exteriorId": "exterior-standard-branco-glacial",
+          "exterior": "#ddddda",
+          "floorId": "floor-spc-kx7006",
+          "floor": "#92846c",
+          "interior": "#eeede8",
+          "interiorName": "Branco natural",
+          "kitchen": "l",
+          "kitchenRef": "kitchen-02",
+          "bathroom": "standard",
+          "bathroomRef": "bathroom-01",
+          "bathroomUV": null,
+          "roof": false,
+          "porch": false,
+          "lighting": "neutral",
+          "textureMode": "source"
+        },
+        "V": {
+          "view": "interior",
+          "expansion": 1,
+          "cut": 1.1,
+          "exploded": 0,
+          "roofVisible": true,
+          "wallsVisible": true,
+          "furnitureVisible": true,
+          "doorsOpen": true
+        },
+        "detail": {
+          "focus": "kitchen",
+          "kitchen": "kitchen-02",
+          "bathroom": "bathroom-01",
+          "motions": 11
+        },
+        "camera": [
+          1.8005004314082815,
+          3.2827402933576315,
+          -0.9312748058662732
+        ],
+        "target": [
+          -2.13,
+          0.61,
+          -2.7
+        ],
+        "stats": {
+          "revision": "GV72-R5-2026-09-10",
+          "frames": 5,
+          "materials": {
+            "pending": 0,
+            "failures": [],
+            "cachedTextures": 3,
+            "leases": 3
+          },
+          "render": {
+            "calls": 204,
+            "triangles": 75404,
+            "memory": {
+              "geometries": 166,
+              "textures": 6
+            },
+            "camera": [
+              1.8005004314082815,
+              3.2827402933576315,
+              -0.9312748058662732
+            ],
+            "target": [
+              -2.13,
+              0.61,
+              -2.7
+            ]
+          }
+        },
+        "animation": false,
+        "activeElement": {
+          "tag": "BUTTON",
+          "id": "",
+          "dataset": {
+            "kitchenRef": "kitchen-02"
+          }
+        },
+        "lightbox": false,
+        "referencePeek": {
+          "hidden": false,
+          "src": "http://127.0.0.1:4174/assets/catalogue/reference/kitchen-02.jpg"
+        },
+        "motions": [
+          {
+            "label": "Porta de correr do duche",
+            "opened": false,
+            "position": [
+              -0.33569999999999994,
+              0,
+              0.39949999999999963
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "label": "Gaveta de banho",
+            "opened": false,
+            "position": [
+              0,
+              0.275,
+              0.20999999999999996
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "label": "Gaveta de banho",
+            "opened": false,
+            "position": [
+              0,
+              0.56,
+              0.20999999999999996
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "label": "Porta do armário",
+            "opened": false,
+            "position": [
+              -1.188,
+              0.12,
+              0.28200000000000003
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "label": "Gaveta 1",
+            "opened": false,
+            "position": [
+              -0.30000000000000004,
+              0.23833333333333334,
+              0.28200000000000003
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "label": "Gaveta 2",
+            "opened": false,
+            "position": [
+              -0.30000000000000004,
+              0.475,
+              0.28200000000000003
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "label": "Gaveta 3",
+            "opened": false,
+            "position": [
+              -0.30000000000000004,
+              0.7116666666666667,
+              0.28200000000000003
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "label": "Porta do armário",
+            "opened": false,
+            "position": [
+              0.012000000000000066,
+              0.12,
+              0.28200000000000003
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "label": "Porta do armário",
+            "opened": false,
+            "position": [
+              0.6120000000000001,
+              0.12,
+              0.28200000000000003
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "label": "Porta do armário",
+            "opened": false,
+            "position": [
+              -0.5379999999999999,
+              0.12,
+              0.28200000000000003
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "label": "Porta do armário",
+            "opened": false,
+            "position": [
+              0.012000000000000066,
+              0.12,
+              0.28200000000000003
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          }
+        ],
+        "fittings": false,
+        "toast": ""
+      }
+    },
+    {
+      "name": "final-375-kitchen-orbit",
+      "state": {
+        "S": {
+          "schemaVersion": 2,
+          "layout": "t2",
+          "exteriorId": "exterior-standard-branco-glacial",
+          "exterior": "#ddddda",
+          "floorId": "floor-spc-kx7006",
+          "floor": "#92846c",
+          "interior": "#eeede8",
+          "interiorName": "Branco natural",
+          "kitchen": "l",
+          "kitchenRef": "kitchen-02",
+          "bathroom": "standard",
+          "bathroomRef": "bathroom-01",
+          "bathroomUV": null,
+          "roof": false,
+          "porch": false,
+          "lighting": "neutral",
+          "textureMode": "source"
+        },
+        "V": {
+          "view": "interior",
+          "expansion": 1,
+          "cut": 1.1,
+          "exploded": 0,
+          "roofVisible": true,
+          "wallsVisible": true,
+          "furnitureVisible": true,
+          "doorsOpen": true
+        },
+        "detail": {
+          "focus": "kitchen",
+          "kitchen": "kitchen-02",
+          "bathroom": "bathroom-01",
+          "motions": 11
+        },
+        "camera": [
+          -1.5061312639148197,
+          4.457510183353214,
+          0.5447213005942948
+        ],
+        "target": [
+          -2.13,
+          0.61,
+          -2.7
+        ],
+        "stats": {
+          "revision": "GV72-R5-2026-09-10",
+          "frames": 42,
+          "materials": {
+            "pending": 0,
+            "failures": [],
+            "cachedTextures": 3,
+            "leases": 3
+          },
+          "render": {
+            "calls": 220,
+            "triangles": 76508,
+            "memory": {
+              "geometries": 166,
+              "textures": 6
+            },
+            "camera": [
+              -1.5061312639148197,
+              4.457510183353214,
+              0.5447213005942948
+            ],
+            "target": [
+              -2.13,
+              0.61,
+              -2.7
+            ]
+          }
+        },
+        "animation": false,
+        "activeElement": {
+          "tag": "DIV",
+          "id": "viewport",
+          "dataset": {
+            "detail": "kitchen",
+            "camera": "perspective"
+          }
+        },
+        "lightbox": false,
+        "referencePeek": {
+          "hidden": false,
+          "src": "http://127.0.0.1:4174/assets/catalogue/reference/kitchen-02.jpg"
+        },
+        "motions": [
+          {
+            "label": "Porta de correr do duche",
+            "opened": false,
+            "position": [
+              -0.33569999999999994,
+              0,
+              0.39949999999999963
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "label": "Gaveta de banho",
+            "opened": false,
+            "position": [
+              0,
+              0.275,
+              0.20999999999999996
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "label": "Gaveta de banho",
+            "opened": false,
+            "position": [
+              0,
+              0.56,
+              0.20999999999999996
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "label": "Porta do armário",
+            "opened": false,
+            "position": [
+              -1.188,
+              0.12,
+              0.28200000000000003
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "label": "Gaveta 1",
+            "opened": false,
+            "position": [
+              -0.30000000000000004,
+              0.23833333333333334,
+              0.28200000000000003
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "label": "Gaveta 2",
+            "opened": false,
+            "position": [
+              -0.30000000000000004,
+              0.475,
+              0.28200000000000003
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "label": "Gaveta 3",
+            "opened": false,
+            "position": [
+              -0.30000000000000004,
+              0.7116666666666667,
+              0.28200000000000003
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "label": "Porta do armário",
+            "opened": false,
+            "position": [
+              0.012000000000000066,
+              0.12,
+              0.28200000000000003
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "label": "Porta do armário",
+            "opened": false,
+            "position": [
+              0.6120000000000001,
+              0.12,
+              0.28200000000000003
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "label": "Porta do armário",
+            "opened": false,
+            "position": [
+              -0.5379999999999999,
+              0.12,
+              0.28200000000000003
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "label": "Porta do armário",
+            "opened": false,
+            "position": [
+              0.012000000000000066,
+              0.12,
+              0.28200000000000003
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          }
+        ],
+        "fittings": false,
+        "toast": ""
+      }
+    },
+    {
+      "name": "final-375-bathroom-02",
+      "state": {
+        "S": {
+          "schemaVersion": 2,
+          "layout": "t2",
+          "exteriorId": "exterior-standard-branco-glacial",
+          "exterior": "#ddddda",
+          "floorId": "floor-spc-kx7006",
+          "floor": "#92846c",
+          "interior": "#eeede8",
+          "interiorName": "Branco natural",
+          "kitchen": "l",
+          "kitchenRef": "kitchen-02",
+          "bathroom": "standard",
+          "bathroomRef": "bathroom-02",
+          "bathroomUV": null,
+          "roof": false,
+          "porch": false,
+          "lighting": "neutral",
+          "textureMode": "source"
+        },
+        "V": {
+          "view": "interior",
+          "expansion": 1,
+          "cut": 1.1,
+          "exploded": 0,
+          "roofVisible": true,
+          "wallsVisible": true,
+          "furnitureVisible": true,
+          "doorsOpen": true
+        },
+        "detail": {
+          "focus": "bathroom",
+          "kitchen": "kitchen-02",
+          "bathroom": "bathroom-02",
+          "motions": 10
+        },
+        "camera": [
+          -3.0785573616525865,
+          4.134390247715126,
+          0.1224178472636206
+        ],
+        "target": [
+          0.012500000000000015,
+          1.06,
+          -4.5605
+        ],
+        "stats": {
+          "revision": "GV72-R5-2026-09-10",
+          "frames": 65,
+          "materials": {
+            "pending": 0,
+            "failures": [],
+            "cachedTextures": 4,
+            "leases": 3
+          },
+          "render": {
+            "calls": 228,
+            "triangles": 81876,
+            "memory": {
+              "geometries": 157,
+              "textures": 7
+            },
+            "camera": [
+              -3.0785573616525865,
+              4.134390247715126,
+              0.1224178472636206
+            ],
+            "target": [
+              0.012500000000000015,
+              1.06,
+              -4.5605
+            ]
+          }
+        },
+        "animation": false,
+        "activeElement": {
+          "tag": "BUTTON",
+          "id": "",
+          "dataset": {
+            "bathroomRef": "bathroom-02"
+          }
+        },
+        "lightbox": false,
+        "referencePeek": {
+          "hidden": false,
+          "src": "http://127.0.0.1:4174/assets/catalogue/reference/bathroom-02.jpg"
+        },
+        "motions": [
+          {
+            "label": "Porta do móvel de banho",
+            "opened": false,
+            "position": [
+              -0.35599999999999987,
+              0.12999999999999995,
+              0.20999999999999996
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "label": "Porta do móvel de banho",
+            "opened": false,
+            "position": [
+              0.0040000000000000036,
+              0.12999999999999995,
+              0.20999999999999996
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "label": "Porta do armário",
+            "opened": false,
+            "position": [
+              -1.188,
+              0.12,
+              0.28200000000000003
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "label": "Gaveta 1",
+            "opened": false,
+            "position": [
+              -0.30000000000000004,
+              0.23833333333333334,
+              0.28200000000000003
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "label": "Gaveta 2",
+            "opened": false,
+            "position": [
+              -0.30000000000000004,
+              0.475,
+              0.28200000000000003
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "label": "Gaveta 3",
+            "opened": false,
+            "position": [
+              -0.30000000000000004,
+              0.7116666666666667,
+              0.28200000000000003
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "label": "Porta do armário",
+            "opened": false,
+            "position": [
+              0.012000000000000066,
+              0.12,
+              0.28200000000000003
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "label": "Porta do armário",
+            "opened": false,
+            "position": [
+              0.6120000000000001,
+              0.12,
+              0.28200000000000003
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "label": "Porta do armário",
+            "opened": false,
+            "position": [
+              -0.5379999999999999,
+              0.12,
+              0.28200000000000003
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "label": "Porta do armário",
+            "opened": false,
+            "position": [
+              0.012000000000000066,
+              0.12,
+              0.28200000000000003
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          }
+        ],
+        "fittings": false,
+        "toast": ""
+      }
+    },
+    {
+      "name": "final-375-bathroom-orbit",
+      "state": {
+        "S": {
+          "schemaVersion": 2,
+          "layout": "t2",
+          "exteriorId": "exterior-standard-branco-glacial",
+          "exterior": "#ddddda",
+          "floorId": "floor-spc-kx7006",
+          "floor": "#92846c",
+          "interior": "#eeede8",
+          "interiorName": "Branco natural",
+          "kitchen": "l",
+          "kitchenRef": "kitchen-02",
+          "bathroom": "standard",
+          "bathroomRef": "bathroom-02",
+          "bathroomUV": null,
+          "roof": false,
+          "porch": false,
+          "lighting": "neutral",
+          "textureMode": "source"
+        },
+        "V": {
+          "view": "interior",
+          "expansion": 1,
+          "cut": 1.1,
+          "exploded": 0,
+          "roofVisible": true,
+          "wallsVisible": true,
+          "furnitureVisible": true,
+          "doorsOpen": true
+        },
+        "detail": {
+          "focus": "bathroom",
+          "kitchen": "kitchen-02",
+          "bathroom": "bathroom-02",
+          "motions": 10
+        },
+        "camera": [
+          -4.410361586400409,
+          5.681317464307297,
+          -4.4265192024033935
+        ],
+        "target": [
+          0.012500000000000015,
+          1.06,
+          -4.5605
+        ],
+        "stats": {
+          "revision": "GV72-R5-2026-09-10",
+          "frames": 101,
+          "materials": {
+            "pending": 0,
+            "failures": [],
+            "cachedTextures": 4,
+            "leases": 3
+          },
+          "render": {
+            "calls": 228,
+            "triangles": 81300,
+            "memory": {
+              "geometries": 157,
+              "textures": 7
+            },
+            "camera": [
+              -4.410361586400409,
+              5.681317464307297,
+              -4.4265192024033935
+            ],
+            "target": [
+              0.012500000000000015,
+              1.06,
+              -4.5605
+            ]
+          }
+        },
+        "animation": false,
+        "activeElement": {
+          "tag": "DIV",
+          "id": "viewport",
+          "dataset": {
+            "detail": "bathroom",
+            "camera": "perspective"
+          }
+        },
+        "lightbox": false,
+        "referencePeek": {
+          "hidden": false,
+          "src": "http://127.0.0.1:4174/assets/catalogue/reference/bathroom-02.jpg"
+        },
+        "motions": [
+          {
+            "label": "Porta do móvel de banho",
+            "opened": false,
+            "position": [
+              -0.35599999999999987,
+              0.12999999999999995,
+              0.20999999999999996
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "label": "Porta do móvel de banho",
+            "opened": false,
+            "position": [
+              0.0040000000000000036,
+              0.12999999999999995,
+              0.20999999999999996
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "label": "Porta do armário",
+            "opened": false,
+            "position": [
+              -1.188,
+              0.12,
+              0.28200000000000003
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "label": "Gaveta 1",
+            "opened": false,
+            "position": [
+              -0.30000000000000004,
+              0.23833333333333334,
+              0.28200000000000003
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "label": "Gaveta 2",
+            "opened": false,
+            "position": [
+              -0.30000000000000004,
+              0.475,
+              0.28200000000000003
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "label": "Gaveta 3",
+            "opened": false,
+            "position": [
+              -0.30000000000000004,
+              0.7116666666666667,
+              0.28200000000000003
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "label": "Porta do armário",
+            "opened": false,
+            "position": [
+              0.012000000000000066,
+              0.12,
+              0.28200000000000003
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "label": "Porta do armário",
+            "opened": false,
+            "position": [
+              0.6120000000000001,
+              0.12,
+              0.28200000000000003
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "label": "Porta do armário",
+            "opened": false,
+            "position": [
+              -0.5379999999999999,
+              0.12,
+              0.28200000000000003
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "label": "Porta do armário",
+            "opened": false,
+            "position": [
+              0.012000000000000066,
+              0.12,
+              0.28200000000000003
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          }
+        ],
+        "fittings": false,
+        "toast": ""
+      }
+    }
+  ],
+  "logs": []
+}

@@ -1,0 +1,198 @@
+{
+  "status": "PASS",
+  "configuration": {
+    "schemaVersion": 2,
+    "layout": "t2",
+    "exteriorId": "exterior-standard-branco-glacial",
+    "exterior": "#ddddda",
+    "floorId": "floor-spc-kx7006",
+    "floor": "#92846c",
+    "interior": "#eeede8",
+    "interiorName": "Branco natural",
+    "kitchen": "l",
+    "kitchenRef": "kitchen-12",
+    "bathroom": "standard",
+    "bathroomRef": "bathroom-16",
+    "bathroomUV": null,
+    "roof": false,
+    "porch": false,
+    "lighting": "catalogue",
+    "textureMode": "source"
+  },
+  "downloads": [
+    {
+      "name": "kitchen12-bath16.png",
+      "suggestedFilename": "green-village-72-t2.png",
+      "size": 428243,
+      "SHA256": "0ebd17ba953b460bb5bdd84fc6826efb0d6e0383412add930a461dd545a3f10d"
+    },
+    {
+      "name": "kitchen12-bath16.json",
+      "suggestedFilename": "green-village-72-t2.json",
+      "size": 7879,
+      "SHA256": "0046df51462a7fb00d669b8a79bf6334dd2232d85dc825fffac99827942699b9"
+    },
+    {
+      "name": "kitchen12-bath16.pdf",
+      "suggestedFilename": "green-village-72-t2.pdf",
+      "size": 428972,
+      "SHA256": "60705800702aaa7f1627b7e22b5ba968cb338a221d094180d72d165dfb708dea"
+    }
+  ],
+  "checks": [
+    {
+      "name": "Actual UI downloads PNG, JSON, PDF",
+      "pass": true
+    },
+    {
+      "name": "JSON selected state and all 14 summary rows match browser",
+      "pass": true
+    },
+    {
+      "name": "PDF text includes all 14 labels and values",
+      "pass": true
+    },
+    {
+      "name": "PDF embedded 3D image pixels identical to downloaded PNG",
+      "pass": true,
+      "size": [
+        981,
+        628
+      ]
+    },
+    {
+      "name": "Both A4 PDF pages visually inspected; no text overlap or clipping",
+      "pass": true
+    }
+  ],
+  "summaryRows": [
+    {
+      "label": "Modelo",
+      "value": "Expandível 72 · 40 pés",
+      "labelPresent": true,
+      "valuePresent": true
+    },
+    {
+      "label": "Planta",
+      "value": "T2",
+      "labelPresent": true,
+      "valuePresent": true
+    },
+    {
+      "label": "Exterior",
+      "value": "Branco Glacial",
+      "labelPresent": true,
+      "valuePresent": true
+    },
+    {
+      "label": "Paredes interiores",
+      "value": "Branco natural",
+      "labelPresent": true,
+      "valuePresent": true
+    },
+    {
+      "label": "Pavimento SPC",
+      "value": "KX7006",
+      "labelPresent": true,
+      "valuePresent": true
+    },
+    {
+      "label": "Cozinha",
+      "value": "Em L",
+      "labelPresent": true,
+      "valuePresent": true
+    },
+    {
+      "label": "Referência de cozinha",
+      "value": "12 · acabamento e elementos aplicados ao 3D",
+      "labelPresent": true,
+      "valuePresent": true
+    },
+    {
+      "label": "Casa de banho",
+      "value": "Distribuição da planta (aproximada)",
+      "labelPresent": true,
+      "valuePresent": true
+    },
+    {
+      "label": "Revestimento do banho",
+      "value": "Da fotografia seleccionada",
+      "labelPresent": true,
+      "valuePresent": true
+    },
+    {
+      "label": "Ambiente de banho",
+      "value": "16 · acabamento e equipamentos no 3D",
+      "labelPresent": true,
+      "valuePresent": true
+    },
+    {
+      "label": "Texturas",
+      "value": "Recorte original, sem tratamento de cor",
+      "labelPresent": true,
+      "valuePresent": true
+    },
+    {
+      "label": "Luz",
+      "value": "Cor digital da amostra",
+      "labelPresent": true,
+      "valuePresent": true
+    },
+    {
+      "label": "Telhado adicional",
+      "value": "Não seleccionado",
+      "labelPresent": true,
+      "valuePresent": true
+    },
+    {
+      "label": "Alpendre",
+      "value": "Não seleccionado",
+      "labelPresent": true,
+      "valuePresent": true
+    }
+  ],
+  "pdf": {
+    "pages": 2,
+    "pageSize": "595 x 842 pt",
+    "renderedPages": [
+      "pdf-page-1.png",
+      "pdf-page-2.png"
+    ],
+    "extractedText": "pdf-text.txt",
+    "embeddedImage": "pdf-image-000.png"
+  },
+  "logs": [
+    {
+      "kind": "http",
+      "url": "http://127.0.0.1:4174/assets/presentation-v5-poster.jpg",
+      "status": 404
+    },
+    {
+      "kind": "error",
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "kind": "http",
+      "url": "http://127.0.0.1:4174/assets/presentation-v5.mp4",
+      "status": 404
+    },
+    {
+      "kind": "error",
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    }
+  ],
+  "sourceSHA256": {
+    "app.js": "eaa2a37b20ea349eb3f784e7fba2a8861e5458917fd8aa7b426316ddf6ed0167",
+    "configuration.js": "ca78e1fdaddf504f6be43c8b4ec3c45ec92d07bdea1f35094ca967408316fdf1",
+    "model.js": "476260c030edfa18a476f82adc6b80008ca3ae7915e1dd3fefde0e117eccb1e9",
+    "interior-detail.js": "3c58dcac9ce363d05c37c1495ec8b5b667595aba607fd0900afd779bfb7a4ea2",
+    "interior-references.js": "41cdd74bdd7d79740372ae090aa38278b62eadfa05261a4952b2295f0ec369ac",
+    "specification.js": "7f674db3d949536d2e4253fc7cca5af5be7410e0292bd53c95ef0d6f69ed69af",
+    "plan-svg.js": "058d4ebc43ed2895d0e9d383e0f51cc3d819c466065b607c1c4e42e9faa86328",
+    "stage.js": "f267d8ced81973011e8f55f28a75458bbe4b4ca77597149e17120ffede83bef4"
+  },
+  "limitations": [
+    "This is one nondefault detailed configuration, not an exhaustive export matrix.",
+    "Known R5 film and poster HTTP404 remain outside this export test."
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "urls": [
+    "assets/catalogue-v2/textures/floor-spc-kx7006.png",
+    "assets/catalogue-r3/derived/floor-spc-kx7006.png",
+    "assets/test-photo.png",
+    "assets/catalogue-v2/textures/floor-spc-kx7006.png",
+    "assets/test-photo.png"
+  ],
+  "afterFailure": {
+    "pending": 0,
+    "failures": [
+      "floor-spc-kx7006:source",
+      "test-reference/wall"
+    ],
+    "cachedTextures": 3,
+    "leases": 3
+  },
+  "recovered": {
+    "pending": 0,
+    "failures": [],
+    "cachedTextures": 3,
+    "leases": 3
+  },
+  "sourceTextureIdentityPreserved": true,
+  "retryResizedTextureDisposeEvents": 1,
+  "totalTextureDisposeEventsIncludingLibraryDisposal": 2,
+  "released": {
+    "pending": 0,
+    "failures": [],
+    "cachedTextures": 3,
+    "leases": 0
+  },
+  "afterDispose": {
+    "pending": 0,
+    "failures": [],
+    "cachedTextures": 0,
+    "leases": 0
+  }
+}

@@ -1,6 +1,6 @@
 import { DATA } from './data.js';
 // Coordinates: metres; +X right, +Y up, +Z entrance. Origin: floor centre.
-export const REVISION='GV72-R4-2026-09-10';
+export const REVISION='GV72-R5-2026-09-10';
 // Deployment offsets are presentation assumptions, never transport or fabrication dimensions.
 export const EXPANSION_RIG=Object.freeze({status:'estimated',floorLift:.55,floorOffset:.45,wallPivotInset:.126,wallPivotHeight:.14,roofOffset:.8,roofLift:.3,endOffset:.15,endAxialOffset:.30,postClearance:.18,postLateralClearance:.02});
 export const EPSILON=1e-7; // Numerical tolerance only, not a manufacturing tolerance.
@@ -65,17 +65,18 @@ export function getPlan(config){
  const mirrored=config.bathroom==='mirrored';
  const toiletX=mirrored?bc.x1-.29:bc.x0+.29,basinX=mirrored?bc.x0+.23:bc.x1-.23;
  item('toilet','toilet',{x0:toiletX-.22,x1:toiletX+.22,z0:bc.z0+1.03,z1:bc.z0+1.69},{height:.78});
- item('basin','basin',{x0:basinX-.21,x1:basinX+.21,z0:bc.z1-.56,z1:bc.z1-.12},{height:.85});
+ item('basin','basin',{x0:basinX-.21,x1:basinX+.21,z0:bc.z1-.84,z1:bc.z1-.12},{height:.85});
  servicePoints.push({id:'shower',x:(bc.x0+bc.x1)/2,z:bc.z0+.1,y:1.05,hot:true},{id:'toilet',x:toiletX,z:bc.z0+1.15,y:.45,hot:false},{id:'basin',x:basinX,z:bc.z1-.33,y:.83,hot:true});
  const leftRooms=rooms.filter(r=>r.kind==='bedroom'&&r.outline.x0<0),lastLeft=leftRooms.length?Math.max(...leftRooms.map(r=>r.outline.z1)):-L/2;
  const compact=config.layout==='t4-a';
- const kitchenZ=compact?b.z1+.84:Math.max(lastLeft+.24,-3.9),kitchenX=compact?b.x0+t/2+.02:-W/2+edge+.025;
+ const kitchenZ=compact?b.z1+.84:Math.max(lastLeft+.24,-3.9,config.kitchen==='u'?b.z1+.24:-Infinity),kitchenX=compact?b.x0+t/2+.02:-W/2+edge+.025;
  const length=compact?1.8:2.4,depth=.6;
  if(config.kitchen!=='none'){
   item('kitchen-main','kitchen',{x0:kitchenX,x1:kitchenX+depth,z0:kitchenZ,z1:kitchenZ+length},{height:.91});
-  if(config.kitchen==='l')item('kitchen-return','kitchen-return',{x0:kitchenX+depth,x1:kitchenX+1.7,z0:kitchenZ,z1:kitchenZ+depth},{height:.91});
+  if(['l','u'].includes(config.kitchen))item('kitchen-return','kitchen-return',{x0:kitchenX+depth,x1:kitchenX+(config.kitchen==='u'?2.5:1.7),z0:kitchenZ,z1:kitchenZ+depth},{height:.91});
+  if(config.kitchen==='u')item('kitchen-opposite','kitchen',{x0:kitchenX+1.9,x1:kitchenX+2.5,z0:kitchenZ+depth,z1:kitchenZ+length},{height:.91});
   if(config.kitchen==='island')item('kitchen-island','island',{x0:kitchenX+depth+1,x1:kitchenX+depth+1+.7,z0:Math.max(kitchenZ+.28,b.z1+.94),z1:Math.max(kitchenZ+.28,b.z1+.94)+1.3},{height:.91});
-  servicePoints.push({id:'kitchen-sink',x:kitchenX+.3,z:kitchenZ+.46,y:.91,hot:true});
+  servicePoints.push({id:'kitchen-sink',x:kitchenX+.3,z:kitchenZ+.3,y:.91,hot:true});
  }
  if(!compact){item('sofa','sofa',{x0:-2.65,x1:-.82,z0:3.78,z1:4.6},{height:.8});item('table','table',{x0:-2.29,x1:-1.15,z0:4.91,z1:5.48},{height:.4});}
  const inner={x0:-W/2+edge,x1:W/2-edge,z0:-L/2+edge,z1:L/2-edge};
@@ -90,7 +91,7 @@ export function getPlan(config){
 export function compatibility(state){
  const reasons=[];if(!LAYOUTS.some(l=>l.id===state.layout))return ['Planta desconhecida.'];
  if(state.layout==='t4-a'&&!['linear','none'].includes(state.kitchen))reasons.push('O T4 A só admite a proposta de cozinha linear: a faixa central não comporta uma ilha ou bancada em L.');
- if(state.kitchen==='island'&&['t3-a','t4-b'].includes(state.layout))reasons.push('A ilha interfere com a passagem nesta planta. Escolha uma cozinha linear ou em L.');
+ if(['island','u'].includes(state.kitchen)&&['t3-a','t4-b'].includes(state.layout))reasons.push('A ilha ou cozinha em U interfere com a passagem nesta planta. Escolha uma cozinha linear ou em L.');
  return reasons;
 }
 export function expansionState(value){

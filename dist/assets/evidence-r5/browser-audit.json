@@ -1,0 +1,464 @@
+{
+  "status": "PASS_FOR_REQUESTED_R5_BROWSER_SCOPE",
+  "generatedAtUTC": "2026-09-10T17:44:45.361009+00:00",
+  "url": "http://127.0.0.1:4174",
+  "environment": {
+    "browser": "Google Chrome, Playwright headless on macOS",
+    "viewports": [
+      [
+        1440,
+        1000
+      ],
+      [
+        768,
+        1000
+      ],
+      [
+        375,
+        844
+      ]
+    ],
+    "realMobileHardware": false,
+    "siteReadOnly": true,
+    "sourceRouting": "Frozen local module snapshots; real localhost assets"
+  },
+  "checks": [
+    {
+      "name": "all kitchen references change rendered image and select without modal",
+      "pass": true,
+      "evidence": "post-final-progress.json"
+    },
+    {
+      "name": "all bathroom references change rendered image and select without modal",
+      "pass": true,
+      "evidence": "post-final-progress.json"
+    },
+    {
+      "name": "reference keyboard focus and separate preview",
+      "pass": true,
+      "evidence": "post-final-progress.json"
+    },
+    {
+      "name": "open furnishings moves actual geometry and keyboard focus",
+      "pass": true,
+      "evidence": "post-final-progress.json"
+    },
+    {
+      "name": "detail target survives settings and resize",
+      "pass": true,
+      "evidence": "post-final-progress.json"
+    },
+    {
+      "name": "U layout allowed T2 and blocked T4A; incompatible photo adapts without invalid state",
+      "pass": true,
+      "evidence": "post-final-progress.json"
+    },
+    {
+      "name": "source/prepared textures and catalogue light update while expansion preserved",
+      "pass": true,
+      "evidence": "post-final-progress.json"
+    },
+    {
+      "name": "new category resets panel scroll and shows heading",
+      "pass": true,
+      "evidence": "post-final-progress.json"
+    },
+    {
+      "name": "portrait detail stays unobscured after orbit kitchen",
+      "pass": true,
+      "evidence": "mobile-final.json"
+    },
+    {
+      "name": "portrait detail stays unobscured after orbit bathroom",
+      "pass": true,
+      "evidence": "mobile-final.json"
+    },
+    {
+      "name": "open fittings remain coherent after view change and reset",
+      "pass": true,
+      "evidence": "fittings-lifecycle-fixed.json"
+    },
+    {
+      "name": "final kitchen frame and detail heading after overall view",
+      "pass": true,
+      "evidence": "fittings-lifecycle-fixed.json"
+    },
+    {
+      "name": "latest catalogue light renders inner wall colour without shader errors",
+      "pass": true,
+      "evidence": "fittings-lifecycle-fixed.json"
+    }
+  ],
+  "profiles": {
+    "kitchen": {
+      "count": 15,
+      "uniqueRenderedImages": [
+        "a51fbe72cf51f8cad5c5599798ea3750255c3141c9cf4c971e66713b5216aca8",
+        "7f8f9e38299be176f8f757626b6d1911285d9045f1cee4a894df8c37a5c47c16",
+        "a9cf68b81e7e1bc531a2abf5aa9f61648c57a4ed689b56dc96f38ecb50084c44",
+        "ec27f136120d406bc756998e0d4b5bea1dcb493f4407c011ec7c354caeb38c44",
+        "110fe0a22028e8fe3c69be2e96b42ba2097d72c124d998577f56c4e9a2d0b52a",
+        "26b88e3c2e143773563f6803e30cf172e943ea21253d44b9138316e2fc4d217d",
+        "41fdd159be234bdc36dc7251d429e9b40825da44ed63150c0f5b8b022274719d",
+        "100f179ecb8dc6a4be801c7c86a5a08de57fac4aa30bd8e48466ec3489feac76",
+        "a499f4f2cb31b84c47fd78bf4879c1beee6ea15ee77b369fbefa5f5fa91b9192",
+        "148bcd2b8d26d79b492ed0216bf04e830d562a3ce626b3a122ddecbdfa25aa31",
+        "ebf788ba833c95a48d2f81a921cc8eb2977ad733d9ee601aaad8d39a46e92486",
+        "fef50257973b51f1f4e291e937f0d9d368544c985df72a6cb8ccb6c0089a82a7",
+        "3b30520bf1cfccf86b6a4c4e212e8258d0304e09fb17d4d52ea00fcfa24bac0b",
+        "d267ac06cfb8196c48f939d9ef57640662c8f6641ffa2650ab20ccc38213fce5",
+        "cbb159fee059210c827c7c16f83584f8a4216ac6a039fad067e08e0f40df421b"
+      ],
+      "eachRealSelectorClicked": true,
+      "eachWaitedForMaterialReady": true,
+      "selectedIdAndFocusVerified": true,
+      "sourcePreviewVerified": true,
+      "noSelectionModal": true,
+      "rows": [
+        {
+          "id": "kitchen-01",
+          "canvasPNG_SHA256": "a51fbe72cf51f8cad5c5599798ea3750255c3141c9cf4c971e66713b5216aca8",
+          "image": "final-refs/kitchen-01.png"
+        },
+        {
+          "id": "kitchen-02",
+          "canvasPNG_SHA256": "7f8f9e38299be176f8f757626b6d1911285d9045f1cee4a894df8c37a5c47c16",
+          "image": "final-refs/kitchen-02.png"
+        },
+        {
+          "id": "kitchen-03",
+          "canvasPNG_SHA256": "a9cf68b81e7e1bc531a2abf5aa9f61648c57a4ed689b56dc96f38ecb50084c44",
+          "image": "final-refs/kitchen-03.png"
+        },
+        {
+          "id": "kitchen-04",
+          "canvasPNG_SHA256": "ec27f136120d406bc756998e0d4b5bea1dcb493f4407c011ec7c354caeb38c44",
+          "image": "final-refs/kitchen-04.png"
+        },
+        {
+          "id": "kitchen-05",
+          "canvasPNG_SHA256": "110fe0a22028e8fe3c69be2e96b42ba2097d72c124d998577f56c4e9a2d0b52a",
+          "image": "final-refs/kitchen-05.png"
+        },
+        {
+          "id": "kitchen-06",
+          "canvasPNG_SHA256": "26b88e3c2e143773563f6803e30cf172e943ea21253d44b9138316e2fc4d217d",
+          "image": "final-refs/kitchen-06.png"
+        },
+        {
+          "id": "kitchen-07",
+          "canvasPNG_SHA256": "41fdd159be234bdc36dc7251d429e9b40825da44ed63150c0f5b8b022274719d",
+          "image": "final-refs/kitchen-07.png"
+        },
+        {
+          "id": "kitchen-08",
+          "canvasPNG_SHA256": "100f179ecb8dc6a4be801c7c86a5a08de57fac4aa30bd8e48466ec3489feac76",
+          "image": "final-refs/kitchen-08.png"
+        },
+        {
+          "id": "kitchen-09",
+          "canvasPNG_SHA256": "a499f4f2cb31b84c47fd78bf4879c1beee6ea15ee77b369fbefa5f5fa91b9192",
+          "image": "final-refs/kitchen-09.png"
+        },
+        {
+          "id": "kitchen-10",
+          "canvasPNG_SHA256": "148bcd2b8d26d79b492ed0216bf04e830d562a3ce626b3a122ddecbdfa25aa31",
+          "image": "final-refs/kitchen-10.png"
+        },
+        {
+          "id": "kitchen-11",
+          "canvasPNG_SHA256": "ebf788ba833c95a48d2f81a921cc8eb2977ad733d9ee601aaad8d39a46e92486",
+          "image": "final-refs/kitchen-11.png"
+        },
+        {
+          "id": "kitchen-12",
+          "canvasPNG_SHA256": "fef50257973b51f1f4e291e937f0d9d368544c985df72a6cb8ccb6c0089a82a7",
+          "image": "final-refs/kitchen-12.png"
+        },
+        {
+          "id": "kitchen-13",
+          "canvasPNG_SHA256": "3b30520bf1cfccf86b6a4c4e212e8258d0304e09fb17d4d52ea00fcfa24bac0b",
+          "image": "final-refs/kitchen-13.png"
+        },
+        {
+          "id": "kitchen-14",
+          "canvasPNG_SHA256": "d267ac06cfb8196c48f939d9ef57640662c8f6641ffa2650ab20ccc38213fce5",
+          "image": "final-refs/kitchen-14.png"
+        },
+        {
+          "id": "kitchen-15",
+          "canvasPNG_SHA256": "cbb159fee059210c827c7c16f83584f8a4216ac6a039fad067e08e0f40df421b",
+          "image": "final-refs/kitchen-15.png"
+        }
+      ]
+    },
+    "bathroom": {
+      "count": 17,
+      "uniqueRenderedImages": [
+        "9529ce6048cf9608d70ee03bd34071410685f6ae42fa494162e96bdf7376a811",
+        "01eb321dea2be105dd0699d5755d09d3b7bc9e51aadd5509a60b2dcc514119e9",
+        "f26bb1874132d1ccee7bb26c9b2bb51e1f5ac3267b0683c8c96a7748bc497c24",
+        "e4b2c119649ab7fbf0a4f2f12fb9305edb821dab9f4f18241ab31b6224544bfa",
+        "abe005fc74ddfa06cbe0d5d73061e1a9731cdb3c0e7ef2e02e3611b4fb89a3e2",
+        "86d4dc016d0b4950954c907a17f8bfce3437e9e35d5b1e28c82ac79f299ed2d4",
+        "6365b26936a1b1b007af39329f84db10a9af2923fed56a1925870098881013ef",
+        "8e6b65c3a1b54f7c83a1c9b68fb42bbdc744f2c4b0029bcf6f3c992e2e7856c4",
+        "446248a04bfacdc71814f8f9f06fbc899086587b9a8816519c5f8d9113e0fb3f",
+        "4b752970db7541355d32353e571bc6eb168b8f3c7be641d8cc0b5547e95e1e8f",
+        "492b211394e70e2716f6ddc1766f1f6b9b8efa7421ae7045ffe59c1281a7f96b",
+        "ffedd159f4dcdde428db9c2da256115ed5d173b9771e151d316b396415ddf328",
+        "037affb65d0555e66d3b3c2862ebd978e7b7f0aceec3772e81222d71fb7fea7e",
+        "fad8ad766bc6a26ec6962b412c453f4257cd001328808b1e715e522a6f03a896",
+        "4abcb315a296be790106e689260efa4007ecb15686d476e8623888c96e0e66a3",
+        "75d6128adc4e809034639fc6d3fc7b976d11726dd3c34807fe319de45a39ef06",
+        "81f2f1dcc4d86f802d02bd5680c1a782aaf93298f9f2c83df7e6be3844b98aac"
+      ],
+      "eachRealSelectorClicked": true,
+      "eachWaitedForMaterialReady": true,
+      "selectedIdAndFocusVerified": true,
+      "sourcePreviewVerified": true,
+      "noSelectionModal": true,
+      "rows": [
+        {
+          "id": "bathroom-01",
+          "canvasPNG_SHA256": "9529ce6048cf9608d70ee03bd34071410685f6ae42fa494162e96bdf7376a811",
+          "image": "final-refs/bathroom-01.png"
+        },
+        {
+          "id": "bathroom-02",
+          "canvasPNG_SHA256": "01eb321dea2be105dd0699d5755d09d3b7bc9e51aadd5509a60b2dcc514119e9",
+          "image": "final-refs/bathroom-02.png"
+        },
+        {
+          "id": "bathroom-03",
+          "canvasPNG_SHA256": "f26bb1874132d1ccee7bb26c9b2bb51e1f5ac3267b0683c8c96a7748bc497c24",
+          "image": "final-refs/bathroom-03.png"
+        },
+        {
+          "id": "bathroom-04",
+          "canvasPNG_SHA256": "e4b2c119649ab7fbf0a4f2f12fb9305edb821dab9f4f18241ab31b6224544bfa",
+          "image": "final-refs/bathroom-04.png"
+        },
+        {
+          "id": "bathroom-05",
+          "canvasPNG_SHA256": "abe005fc74ddfa06cbe0d5d73061e1a9731cdb3c0e7ef2e02e3611b4fb89a3e2",
+          "image": "final-refs/bathroom-05.png"
+        },
+        {
+          "id": "bathroom-06",
+          "canvasPNG_SHA256": "86d4dc016d0b4950954c907a17f8bfce3437e9e35d5b1e28c82ac79f299ed2d4",
+          "image": "final-refs/bathroom-06.png"
+        },
+        {
+          "id": "bathroom-07",
+          "canvasPNG_SHA256": "6365b26936a1b1b007af39329f84db10a9af2923fed56a1925870098881013ef",
+          "image": "final-refs/bathroom-07.png"
+        },
+        {
+          "id": "bathroom-08",
+          "canvasPNG_SHA256": "8e6b65c3a1b54f7c83a1c9b68fb42bbdc744f2c4b0029bcf6f3c992e2e7856c4",
+          "image": "final-refs/bathroom-08.png"
+        },
+        {
+          "id": "bathroom-09",
+          "canvasPNG_SHA256": "446248a04bfacdc71814f8f9f06fbc899086587b9a8816519c5f8d9113e0fb3f",
+          "image": "final-refs/bathroom-09.png"
+        },
+        {
+          "id": "bathroom-10",
+          "canvasPNG_SHA256": "4b752970db7541355d32353e571bc6eb168b8f3c7be641d8cc0b5547e95e1e8f",
+          "image": "final-refs/bathroom-10.png"
+        },
+        {
+          "id": "bathroom-11",
+          "canvasPNG_SHA256": "492b211394e70e2716f6ddc1766f1f6b9b8efa7421ae7045ffe59c1281a7f96b",
+          "image": "final-refs/bathroom-11.png"
+        },
+        {
+          "id": "bathroom-12",
+          "canvasPNG_SHA256": "ffedd159f4dcdde428db9c2da256115ed5d173b9771e151d316b396415ddf328",
+          "image": "final-refs/bathroom-12.png"
+        },
+        {
+          "id": "bathroom-13",
+          "canvasPNG_SHA256": "037affb65d0555e66d3b3c2862ebd978e7b7f0aceec3772e81222d71fb7fea7e",
+          "image": "final-refs/bathroom-13.png"
+        },
+        {
+          "id": "bathroom-14",
+          "canvasPNG_SHA256": "fad8ad766bc6a26ec6962b412c453f4257cd001328808b1e715e522a6f03a896",
+          "image": "final-refs/bathroom-14.png"
+        },
+        {
+          "id": "bathroom-15",
+          "canvasPNG_SHA256": "4abcb315a296be790106e689260efa4007ecb15686d476e8623888c96e0e66a3",
+          "image": "final-refs/bathroom-15.png"
+        },
+        {
+          "id": "bathroom-16",
+          "canvasPNG_SHA256": "75d6128adc4e809034639fc6d3fc7b976d11726dd3c34807fe319de45a39ef06",
+          "image": "final-refs/bathroom-16.png"
+        },
+        {
+          "id": "bathroom-17",
+          "canvasPNG_SHA256": "81f2f1dcc4d86f802d02bd5680c1a782aaf93298f9f2c83df7e6be3844b98aac",
+          "image": "final-refs/bathroom-17.png"
+        }
+      ]
+    }
+  },
+  "fixedFindings": [
+    {
+      "issue": "Reference selection previously left the rendered room unchanged",
+      "proof": "baseline-audit.json; final-profile-refresh.json"
+    },
+    {
+      "issue": "Room focus and clipping hid furniture and equipment",
+      "proof": "final-kitchen-frame-corrected.png; final-bathroom-last-model.png"
+    },
+    {
+      "issue": "Reference and furniture controls lost keyboard focus after rerender",
+      "proof": "post-final-progress.json"
+    },
+    {
+      "issue": "Switching categories retained prior scroll and hid the category heading",
+      "proof": "post-final-progress.json"
+    },
+    {
+      "issue": "Portrait source preview and scene title obscured focused model, including after orbit",
+      "proof": "mobile-final.json"
+    },
+    {
+      "issue": "Open furniture state diverged from geometry after changing view; Repor left furniture marked open",
+      "proof": "fittings-lifecycle.json; fittings-lifecycle-fixed.json"
+    }
+  ],
+  "latestRetest": {
+    "file": "fittings-lifecycle-fixed.json",
+    "openReturn": {
+      "state": true,
+      "geometryOpen": true,
+      "sidebarAndToolbarCoherent": true
+    },
+    "reset": {
+      "state": false,
+      "allGeometryClosed": true,
+      "sidebarAndToolbarCoherent": true
+    },
+    "globalCameraRestoresHeading": true,
+    "windowFrameScreenshot": "final-kitchen-frame-corrected.png",
+    "catalogueWallShaderSmoke": true
+  },
+  "logs": {
+    "mainAndMobileAnd32Profiles": {
+      "pageErrors": 0,
+      "consoleWarningsOrErrors": 0
+    },
+    "latestRetest": {
+      "pageErrors": 0,
+      "consoleHTTP404": 2,
+      "expectedPendingAssets": [
+        "assets/presentation-v5.mp4",
+        "assets/presentation-v5-poster.jpg"
+      ],
+      "note": "Index refers to in-progress R5 film. These two assets are absent on disk at audit time; final film validation remains separate.",
+      "httpResponses": [
+        {
+          "kind": "http",
+          "url": "http://127.0.0.1:4174/assets/presentation-v5-poster.jpg",
+          "status": 404
+        },
+        {
+          "kind": "http",
+          "url": "http://127.0.0.1:4174/assets/presentation-v5.mp4",
+          "status": 404
+        }
+      ]
+    }
+  },
+  "sourceSHA256": {
+    "app.js": "eaa2a37b20ea349eb3f784e7fba2a8861e5458917fd8aa7b426316ddf6ed0167",
+    "configuration.js": "ca78e1fdaddf504f6be43c8b4ec3c45ec92d07bdea1f35094ca967408316fdf1",
+    "data.js": "51c44e7592d2cdd773eab4e9a66be1ebf739b408eb4ace55ffdfff397c248f1d",
+    "index.html": "17ae8c5403792be6f10eab47b07eeabac909edee378632d8fd1b3feda3e9331a",
+    "interior-detail.js": "3c58dcac9ce363d05c37c1495ec8b5b667595aba607fd0900afd779bfb7a4ea2",
+    "interior-references.js": "41cdd74bdd7d79740372ae090aa38278b62eadfa05261a4952b2295f0ec369ac",
+    "material-data.js": "e55563fc9cb5f75514eb545f6e9a4e056847b3579556fd5a614da88bc381f011",
+    "material-library.js": "6ea527b3c83c63696289da7b1b493ec060660d29592d697e5718c0ec19041c40",
+    "model.js": "476260c030edfa18a476f82adc6b80008ca3ae7915e1dd3fefde0e117eccb1e9",
+    "panel-joints.js": "d1a21680e6e51c1462ce0799a3959e3472b20dd4aa33ed9f56b268baca7e38e0",
+    "photo-plank-data.js": "0c48780479b6849e88bfe56e7d28fdaa1f3feee908784bb83ddfaaf525c74b17",
+    "photo-planks.js": "72d1b085f1694244c2f414f63aa130f4fe6d64e005a02d2560763044131c6d45",
+    "photo-wall-data.js": "fdddccc5a95ad206b38a26db55c40a84aa1a18ea3df0a63260f221d7b378c1b4",
+    "plan-svg.js": "058d4ebc43ed2895d0e9d383e0f51cc3d819c466065b607c1c4e42e9faa86328",
+    "reference-videos.js": "52790dfc440060b0658eef11b464dbdcd1efa0a0565f7949687af6bbe463565c",
+    "specification.js": "7f674db3d949536d2e4253fc7cca5af5be7410e0292bd53c95ef0d6f69ed69af",
+    "stage.js": "f267d8ced81973011e8f55f28a75458bbe4b4ca77597149e17120ffede83bef4",
+    "studio-r3.css": "9d2cae6d608e3a66b6b297a11c37e4894feeab0d182452ab0eae2b2a876bcc3a",
+    "studio-r4.css": "5525e424b28fa46135cb6f1fb0621e694538863c433c79b78c83c828113a6760",
+    "studio-r5.css": "e7beab54f576a66d4c04e7df0dae43aada38056a263917ba537a224740598860",
+    "style.css": "50612c879180893524cc05006759fff3fbfee7675d2f0e9beabfdb54b1b7e5e4",
+    "video-library.js": "d847ea0e56293b0a65cd4ca19d851ab7bee20179c3ef55f354484a060eba5c51"
+  },
+  "snapshotMatchesCurrentAtReport": {
+    "app.js": true,
+    "configuration.js": true,
+    "data.js": true,
+    "index.html": true,
+    "interior-detail.js": true,
+    "interior-references.js": true,
+    "material-data.js": true,
+    "material-library.js": true,
+    "model.js": true,
+    "panel-joints.js": true,
+    "photo-plank-data.js": true,
+    "photo-planks.js": true,
+    "photo-wall-data.js": true,
+    "plan-svg.js": true,
+    "reference-videos.js": true,
+    "specification.js": true,
+    "stage.js": true,
+    "studio-r3.css": true,
+    "studio-r4.css": true,
+    "studio-r5.css": true,
+    "style.css": true,
+    "video-library.js": true
+  },
+  "coverageTiming": "All 32 profile screenshots rerun after curved sanitary geometry and U kitchen clearance changes. Last app lifecycle, reference descriptors, index and focused window clipping changes received targeted lifecycle and kitchen visual retest; 32 hashes are from the preceding profile pass, not the later clipping revision.",
+  "limitations": [
+    "Viewport emulation only; no physical mobile device or Safari/WebKit run in R5 scope.",
+    "Unique rendered image hashes establish per-reference visual change, not exact photographic or engineering equivalence.",
+    "No new full media audit, seven-layout sweep or WebGL fallback sweep in this focused R5 task.",
+    "Known pending R5 film and poster HTTP404 are excluded from the passing kitchen/bathroom scope."
+  ],
+  "screenshots": [
+    "final-kitchen-frame-corrected.png",
+    "final-kitchen-frame-corrected-model.png",
+    "final-1440-kitchen-02.png",
+    "final-1440-bathroom-02.png",
+    "final-768-kitchen-02.png",
+    "final-768-bathroom-02.png",
+    "final-375-kitchen-02.png",
+    "final-375-bathroom-02.png",
+    "final-375-kitchen-orbit.png",
+    "final-375-bathroom-orbit.png",
+    "final-kitchen-catalogue-colour.png"
+  ],
+  "rawReports": [
+    "baseline-audit.json",
+    "post-final-progress.json",
+    "mobile-final.json",
+    "final-profile-refresh.json",
+    "fittings-lifecycle-fixed.json"
+  ],
+  "additionalEvidence": {
+    "exports": {
+      "status": "PASS",
+      "report": "exports/export-validation.json",
+      "configuration": "T2; kitchen-12 in L; bathroom-16; source texture; catalogue light",
+      "pdfPages": 2,
+      "summaryRowsVerified": 14,
+      "pdfImagePixelEqualPNG": true
+    }
+  }
+}

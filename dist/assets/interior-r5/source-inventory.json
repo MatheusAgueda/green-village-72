@@ -1,0 +1,2513 @@
+{
+  "revision": "R5-independent-photo-inventory",
+  "generatedAt": "2026-09-10T17:24:54.195336+00:00",
+  "sourceCount": 32,
+  "kitchens": 15,
+  "bathrooms": 17,
+  "globalLimits": [
+    "Labels are editorial and do not establish manufacturer model codes.",
+    "Visible and not_shown describe the photograph, not the complete supplied product.",
+    "None of the fifteen kitchen photos shows an installed oven.",
+    "Do not infer cabinet colour from the global photo average: wall, floor, black frames and shadows dominate that value.",
+    "A photo-specific style should affect geometry and separate component finishes; kitchen layout compatibility remains a separate plan constraint.",
+    "A single picture does not prove these catalogue options fit the 6.22 × 11.80 m house or coexist with each other.",
+    "Patch colour is a photographed appearance, not RAL/NCS or a measured reflectance. Patterns lack physical scale."
+  ],
+  "items": [
+    {
+      "id": "kitchen-01",
+      "sourceAsset": "assets/catalogue/reference/kitchen-01.jpg",
+      "sourcePage": 16,
+      "sha256": "23dbf4b0663b9c859b201265ccccaffa8b470ed13d4fe8a3b95170a13a3b2889",
+      "sourceSize": [
+        720,
+        450
+      ],
+      "scope": "kitchen_room_reference",
+      "inspection": "all pixels reviewed at native image resolution in contact sheet; selected originals reviewed individually",
+      "visible": {
+        "layout": "l_with_peninsula",
+        "cabinetFrontStyle": "protected_flat_main_fluted_peninsula",
+        "cabinetAppearance": "main finish hidden by printed protective film; exposed peninsula face is grey-brown fluted",
+        "countertopAppearance": "white with grey marble veins",
+        "upperCabinets": "visible_protected",
+        "hob": "electric_two_zones",
+        "oven": "not_shown",
+        "sink": "black_rectangle",
+        "faucet": "black_high_arch",
+        "details": [
+          "Freestanding/peninsula front counter with vertical fluting.",
+          "Open appliance bay under rear counter."
+        ]
+      },
+      "notEstablished": [
+        "Do not treat protective film colour or printed logos as cabinet finish.",
+        "Exact product dimensions, material specification and calibrated colour."
+      ],
+      "patches": [
+        {
+          "surface": "peninsulaFluting",
+          "rect": [
+            140,
+            302,
+            280,
+            408
+          ],
+          "purpose": "geometry_detail_reference",
+          "medianRGB": [
+            95,
+            82,
+            84
+          ],
+          "medianHex": "#5f5254",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "high",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        },
+        {
+          "surface": "countertop",
+          "rect": [
+            170,
+            222,
+            315,
+            244
+          ],
+          "purpose": "colour_sample",
+          "medianRGB": [
+            180,
+            184,
+            190
+          ],
+          "medianHex": "#b4b8be",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "high",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        }
+      ],
+      "unavailableSamples": [
+        "Main cabinet finish is hidden by printed protective film. Only peninsula fluting and countertop are exposed."
+      ]
+    },
+    {
+      "id": "kitchen-02",
+      "sourceAsset": "assets/catalogue/reference/kitchen-02.jpg",
+      "sourcePage": 16,
+      "sha256": "445e7672ae63865f69004e488b6baa60ce222f7ecc007656493b2c9879abfadd",
+      "sourceSize": [
+        720,
+        450
+      ],
+      "scope": "kitchen_room_reference",
+      "inspection": "all pixels reviewed at native image resolution in contact sheet; selected originals reviewed individually",
+      "visible": {
+        "layout": "l",
+        "cabinetFrontStyle": "framed_shaker",
+        "cabinetAppearance": "warm white",
+        "countertopAppearance": "black",
+        "upperCabinets": "not_shown",
+        "hob": "electric_two_zones",
+        "oven": "not_shown",
+        "sink": "black_rectangle_with_insert",
+        "faucet": "metal_high_arch",
+        "details": [
+          "Three drawers on rear run.",
+          "Dark bar handles.",
+          "Sink on left return; hob on rear run."
+        ]
+      },
+      "notEstablished": [
+        "Warm lighting shifts white and metal hues.",
+        "Exact product dimensions, material specification and calibrated colour."
+      ],
+      "patches": [
+        {
+          "surface": "cabinetFront",
+          "rect": [
+            383,
+            302,
+            411,
+            351
+          ],
+          "purpose": "colour_sample",
+          "medianRGB": [
+            217,
+            202,
+            175
+          ],
+          "medianHex": "#d9caaf",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "high",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        },
+        {
+          "surface": "countertop",
+          "rect": [
+            187,
+            267,
+            219,
+            273
+          ],
+          "purpose": "colour_sample",
+          "medianRGB": [
+            22,
+            16,
+            13
+          ],
+          "medianHex": "#16100d",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "high",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        }
+      ]
+    },
+    {
+      "id": "kitchen-03",
+      "sourceAsset": "assets/catalogue/reference/kitchen-03.jpg",
+      "sourcePage": 16,
+      "sha256": "789feeef9dc748c691b4fec2890cad8b2f24e73b74a99f48c03916bf81acdcb5",
+      "sourceSize": [
+        720,
+        450
+      ],
+      "scope": "kitchen_room_reference",
+      "inspection": "all pixels reviewed at native image resolution in contact sheet; selected originals reviewed individually",
+      "visible": {
+        "layout": "l",
+        "cabinetFrontStyle": "slab",
+        "cabinetAppearance": "light greige",
+        "countertopAppearance": "white with faint grey marble veins",
+        "upperCabinets": "visible",
+        "hob": "not_shown",
+        "oven": "not_shown",
+        "sink": "black_rectangle",
+        "faucet": "black_arch",
+        "details": [
+          "Lower fronts have black horizontal grip channels.",
+          "Upper cupboards have dark vertical handles and a horizontal lift-up-looking front.",
+          "Rear drawer bank."
+        ]
+      },
+      "notEstablished": [
+        "A lift mechanism cannot be proven from the closed front.",
+        "Exact product dimensions, material specification and calibrated colour."
+      ],
+      "patches": [
+        {
+          "surface": "cabinetFront",
+          "rect": [
+            322,
+            329,
+            342,
+            357
+          ],
+          "purpose": "colour_sample",
+          "medianRGB": [
+            174,
+            165,
+            150
+          ],
+          "medianHex": "#aea596",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "high",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        },
+        {
+          "surface": "countertop",
+          "rect": [
+            267,
+            265,
+            345,
+            276
+          ],
+          "purpose": "colour_sample",
+          "medianRGB": [
+            216,
+            218,
+            219
+          ],
+          "medianHex": "#d8dadb",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "high",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        },
+        {
+          "surface": "upperCabinetFront",
+          "rect": [
+            602,
+            51,
+            620,
+            83
+          ],
+          "purpose": "colour_sample",
+          "medianRGB": [
+            248,
+            244,
+            239
+          ],
+          "medianHex": "#f8f4ef",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "high",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        }
+      ]
+    },
+    {
+      "id": "kitchen-04",
+      "sourceAsset": "assets/catalogue/reference/kitchen-04.jpg",
+      "sourcePage": 16,
+      "sha256": "dea673435a261728ad158f80f3f80a628cd88dc819fe07e1d74b591699ce736a",
+      "sourceSize": [
+        720,
+        450
+      ],
+      "scope": "kitchen_room_reference",
+      "inspection": "all pixels reviewed at native image resolution in contact sheet; selected originals reviewed individually",
+      "visible": {
+        "layout": "l",
+        "cabinetFrontStyle": "slab_gloss",
+        "cabinetAppearance": "white",
+        "countertopAppearance": "very pale grey/white fine speckle",
+        "upperCabinets": "visible",
+        "hob": "not_shown",
+        "oven": "not_shown",
+        "sink": "rectangular_open_cutout",
+        "faucet": "not_installed_or_not_shown",
+        "details": [
+          "Black horizontal grip channels.",
+          "Three drawers on rear run.",
+          "Two open under-counter bays.",
+          "Warm light strip above/along upper cabinetry."
+        ]
+      },
+      "notEstablished": [
+        "Sink bowl or cutout is unfinished; no faucet visible.",
+        "Exact product dimensions, material specification and calibrated colour."
+      ],
+      "patches": [
+        {
+          "surface": "cabinetFront",
+          "rect": [
+            552,
+            247,
+            585,
+            310
+          ],
+          "purpose": "colour_sample",
+          "medianRGB": [
+            210,
+            216,
+            222
+          ],
+          "medianHex": "#d2d8de",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "high",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        },
+        {
+          "surface": "countertop",
+          "rect": [
+            455,
+            184,
+            549,
+            192
+          ],
+          "purpose": "colour_sample",
+          "medianRGB": [
+            212,
+            209,
+            201
+          ],
+          "medianHex": "#d4d1c9",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "high",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        },
+        {
+          "surface": "upperCabinetFront",
+          "rect": [
+            265,
+            27,
+            282,
+            56
+          ],
+          "purpose": "colour_sample",
+          "medianRGB": [
+            206,
+            209,
+            213
+          ],
+          "medianHex": "#ced1d5",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "high",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        }
+      ]
+    },
+    {
+      "id": "kitchen-05",
+      "sourceAsset": "assets/catalogue/reference/kitchen-05.jpg",
+      "sourcePage": 16,
+      "sha256": "0e70d139f545b35bd623b07aff9fa96917bfe3895a834dc6e8c2ec280d623076",
+      "sourceSize": [
+        720,
+        450
+      ],
+      "scope": "kitchen_room_reference",
+      "inspection": "all pixels reviewed at native image resolution in contact sheet; selected originals reviewed individually",
+      "visible": {
+        "layout": "l",
+        "cabinetFrontStyle": "slab",
+        "cabinetAppearance": "light greige",
+        "countertopAppearance": "white with grey marble veins",
+        "upperCabinets": "visible",
+        "hob": "not_shown",
+        "oven": "not_shown",
+        "sink": "black_rectangle_with_rack",
+        "faucet": "dark_arch",
+        "details": [
+          "Dark grip channels on lower cabinets.",
+          "Dark vertical bar handles on upper cabinets.",
+          "Drawer stack on short return."
+        ]
+      },
+      "notEstablished": [
+        "No oven or hob visible.",
+        "Exact product dimensions, material specification and calibrated colour."
+      ],
+      "patches": [
+        {
+          "surface": "cabinetFront",
+          "rect": [
+            243,
+            299,
+            272,
+            316
+          ],
+          "purpose": "colour_sample",
+          "medianRGB": [
+            143,
+            141,
+            134
+          ],
+          "medianHex": "#8f8d86",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "high",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        },
+        {
+          "surface": "countertop",
+          "rect": [
+            570,
+            318,
+            627,
+            327
+          ],
+          "purpose": "colour_sample",
+          "medianRGB": [
+            174,
+            179,
+            182
+          ],
+          "medianHex": "#aeb3b6",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "high",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        },
+        {
+          "surface": "upperCabinetFront",
+          "rect": [
+            588,
+            18,
+            622,
+            42
+          ],
+          "purpose": "colour_sample",
+          "medianRGB": [
+            187,
+            183,
+            174
+          ],
+          "medianHex": "#bbb7ae",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "high",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        }
+      ]
+    },
+    {
+      "id": "kitchen-06",
+      "sourceAsset": "assets/catalogue/reference/kitchen-06.jpg",
+      "sourcePage": 16,
+      "sha256": "8993dcd8526cc974c8046b1ee789b51ccee6ba89047cfd9c4e8679f00349e506",
+      "sourceSize": [
+        720,
+        450
+      ],
+      "scope": "kitchen_room_reference",
+      "inspection": "all pixels reviewed at native image resolution in contact sheet; selected originals reviewed individually",
+      "visible": {
+        "layout": "u",
+        "cabinetFrontStyle": "slab_with_notched_grips",
+        "cabinetAppearance": "pale cream/greige",
+        "countertopAppearance": "black",
+        "upperCabinets": "not_shown",
+        "hob": "electric_two_zones",
+        "oven": "not_shown",
+        "sink": "black_double_rectangle",
+        "faucet": "chrome_high_arch",
+        "details": [
+          "Three drawers on rear run.",
+          "Dark notches at top of doors/drawers.",
+          "Sink on right return.",
+          "Right exposed gable retains printed protective film."
+        ]
+      },
+      "notEstablished": [
+        "Use exposed rear fronts for colour, not protected gable.",
+        "Exact product dimensions, material specification and calibrated colour."
+      ],
+      "patches": [
+        {
+          "surface": "cabinetFront",
+          "rect": [
+            351,
+            259,
+            389,
+            330
+          ],
+          "purpose": "colour_sample",
+          "medianRGB": [
+            186,
+            172,
+            163
+          ],
+          "medianHex": "#baaca3",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "high",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        },
+        {
+          "surface": "countertop",
+          "rect": [
+            30,
+            266,
+            102,
+            288
+          ],
+          "purpose": "colour_sample",
+          "medianRGB": [
+            68,
+            67,
+            66
+          ],
+          "medianHex": "#444342",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "high",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        }
+      ]
+    },
+    {
+      "id": "kitchen-07",
+      "sourceAsset": "assets/catalogue/reference/kitchen-07.jpg",
+      "sourcePage": 16,
+      "sha256": "527ff1725d0c89b64bcf2b08044a2700ca01bc9c59c2829437c25b1db74d2f8b",
+      "sourceSize": [
+        720,
+        450
+      ],
+      "scope": "kitchen_room_reference",
+      "inspection": "all pixels reviewed at native image resolution in contact sheet; selected originals reviewed individually",
+      "visible": {
+        "layout": "l",
+        "cabinetFrontStyle": "slab",
+        "cabinetAppearance": "dark charcoal grey",
+        "countertopAppearance": "white",
+        "upperCabinets": "not_shown",
+        "hob": "not_shown",
+        "oven": "not_shown",
+        "sink": "black_rectangle",
+        "faucet": "not_installed_or_not_shown",
+        "details": [
+          "Black/recessed horizontal grip line.",
+          "Rear drawer bank; broad flat door faces."
+        ]
+      },
+      "notEstablished": [
+        "The photo does not show a faucet.",
+        "Exact product dimensions, material specification and calibrated colour."
+      ],
+      "patches": [
+        {
+          "surface": "cabinetFront",
+          "rect": [
+            224,
+            266,
+            248,
+            331
+          ],
+          "purpose": "colour_sample",
+          "medianRGB": [
+            56,
+            56,
+            56
+          ],
+          "medianHex": "#383838",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "high",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        },
+        {
+          "surface": "countertop",
+          "rect": [
+            209,
+            198,
+            325,
+            205
+          ],
+          "purpose": "colour_sample",
+          "medianRGB": [
+            173,
+            174,
+            161
+          ],
+          "medianHex": "#adaea1",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "high",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        }
+      ]
+    },
+    {
+      "id": "kitchen-08",
+      "sourceAsset": "assets/catalogue/reference/kitchen-08.jpg",
+      "sourcePage": 16,
+      "sha256": "6b98ceb03cc905cb3ee75f385351d673314bc1769313a3d1e9c3dbfecb7842f5",
+      "sourceSize": [
+        720,
+        450
+      ],
+      "scope": "kitchen_room_reference",
+      "inspection": "all pixels reviewed at native image resolution in contact sheet; selected originals reviewed individually",
+      "visible": {
+        "layout": "l",
+        "cabinetFrontStyle": "framed_shaker",
+        "cabinetAppearance": "off-white",
+        "countertopAppearance": "white/grey marble-like",
+        "upperCabinets": "visible",
+        "hob": "not_shown",
+        "oven": "not_shown",
+        "sink": "obscured",
+        "faucet": "obscured",
+        "details": [
+          "Black bar handles.",
+          "Three drawers in the long run.",
+          "Upper framed doors.",
+          "Much of cabinetry and sink area is wrapped."
+        ]
+      },
+      "notEstablished": [
+        "Film and loose packaging obscure sheen and installed sink/faucet.",
+        "Exact product dimensions, material specification and calibrated colour."
+      ],
+      "patches": [
+        {
+          "surface": "upperCabinetFront",
+          "rect": [
+            545,
+            28,
+            563,
+            58
+          ],
+          "purpose": "colour_sample",
+          "medianRGB": [
+            200,
+            198,
+            185
+          ],
+          "medianHex": "#c8c6b9",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "medium",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        },
+        {
+          "surface": "countertop",
+          "rect": [
+            230,
+            284,
+            268,
+            289
+          ],
+          "purpose": "colour_sample",
+          "medianRGB": [
+            201,
+            201,
+            196
+          ],
+          "medianHex": "#c9c9c4",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "medium",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        }
+      ],
+      "unavailableSamples": [
+        "Main lower fronts are wrapped; use exposed upper front sample only as an approximate family colour."
+      ]
+    },
+    {
+      "id": "kitchen-09",
+      "sourceAsset": "assets/catalogue/reference/kitchen-09.jpg",
+      "sourcePage": 16,
+      "sha256": "4cf7d16e68b20c207f27c106cad4fea9802e20cc0f3e0ebafa5939fd74fd2e87",
+      "sourceSize": [
+        720,
+        450
+      ],
+      "scope": "kitchen_room_reference",
+      "inspection": "all pixels reviewed at native image resolution in contact sheet; selected originals reviewed individually",
+      "visible": {
+        "layout": "u_or_l_plus_near_return",
+        "cabinetFrontStyle": "slab_handleless",
+        "cabinetAppearance": "pale cream/yellow",
+        "countertopAppearance": "white",
+        "upperCabinets": "not_shown",
+        "hob": "gas_two_burners",
+        "oven": "not_shown",
+        "sink": "black_rectangle_with_rack",
+        "faucet": "black_high_arch",
+        "details": [
+          "Gas burners visible on left return.",
+          "Wide drawer fronts below rear counter.",
+          "A near white counter return is partly cropped."
+        ]
+      },
+      "notEstablished": [
+        "The near return is cropped, so the full plan is not measured.",
+        "Exact product dimensions, material specification and calibrated colour."
+      ],
+      "patches": [
+        {
+          "surface": "cabinetFront",
+          "rect": [
+            487,
+            304,
+            537,
+            366
+          ],
+          "purpose": "colour_sample",
+          "medianRGB": [
+            216,
+            200,
+            172
+          ],
+          "medianHex": "#d8c8ac",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "high",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        },
+        {
+          "surface": "countertop",
+          "rect": [
+            331,
+            216,
+            444,
+            227
+          ],
+          "purpose": "colour_sample",
+          "medianRGB": [
+            231,
+            232,
+            230
+          ],
+          "medianHex": "#e7e8e6",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "high",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        }
+      ]
+    },
+    {
+      "id": "kitchen-10",
+      "sourceAsset": "assets/catalogue/reference/kitchen-10.jpg",
+      "sourcePage": 16,
+      "sha256": "0f9fac604703637b2ef1d1c0713df9d039e8cd98d4f888aeeac73ab7e4bf9082",
+      "sourceSize": [
+        720,
+        450
+      ],
+      "scope": "kitchen_room_reference",
+      "inspection": "all pixels reviewed at native image resolution in contact sheet; selected originals reviewed individually",
+      "visible": {
+        "layout": "l",
+        "cabinetFrontStyle": "raised_panel_with_vertical_grooves",
+        "cabinetAppearance": "white",
+        "countertopAppearance": "medium grey",
+        "upperCabinets": "not_shown",
+        "hob": "not_shown",
+        "oven": "not_shown",
+        "sink": "black_rectangle_with_rack",
+        "faucet": "dark_metal_high_arch",
+        "details": [
+          "Three central drawers.",
+          "Black bar handles.",
+          "Grey upstand matching worktop."
+        ]
+      },
+      "notEstablished": [
+        "Recessed panel faces contain narrow vertical grooves; this is not a plain slab kitchen.",
+        "Exact product dimensions, material specification and calibrated colour."
+      ],
+      "patches": [
+        {
+          "surface": "cabinetFront",
+          "rect": [
+            131,
+            307,
+            155,
+            350
+          ],
+          "purpose": "colour_sample",
+          "medianRGB": [
+            210,
+            212,
+            208
+          ],
+          "medianHex": "#d2d4d0",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "high",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        },
+        {
+          "surface": "countertop",
+          "rect": [
+            164,
+            235,
+            278,
+            244
+          ],
+          "purpose": "colour_sample",
+          "medianRGB": [
+            113,
+            118,
+            111
+          ],
+          "medianHex": "#71766f",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "high",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        }
+      ]
+    },
+    {
+      "id": "kitchen-11",
+      "sourceAsset": "assets/catalogue/reference/kitchen-11.jpg",
+      "sourcePage": 16,
+      "sha256": "e25e86c9a87cb9ef5410ce381844a2d588cb6b516b21e65d23e43dfed203657d",
+      "sourceSize": [
+        720,
+        450
+      ],
+      "scope": "kitchen_room_reference",
+      "inspection": "all pixels reviewed at native image resolution in contact sheet; selected originals reviewed individually",
+      "visible": {
+        "layout": "l",
+        "cabinetFrontStyle": "framed_shaker",
+        "cabinetAppearance": "pale grey-green lower / white upper",
+        "countertopAppearance": "white",
+        "upperCabinets": "visible",
+        "hob": "not_shown",
+        "oven": "not_shown",
+        "sink": "black_rectangle_with_rack",
+        "faucet": "black_high_arch",
+        "details": [
+          "Black bar handles.",
+          "Drawer bank on return.",
+          "Upper cupboards cover left run."
+        ]
+      },
+      "notEstablished": [
+        "Photo lighting gives lower cabinetry a subtle sage cast; no calibrated colour standard.",
+        "Exact product dimensions, material specification and calibrated colour."
+      ],
+      "patches": [
+        {
+          "surface": "cabinetFront",
+          "rect": [
+            445,
+            311,
+            478,
+            368
+          ],
+          "purpose": "colour_sample",
+          "medianRGB": [
+            162,
+            166,
+            156
+          ],
+          "medianHex": "#a2a69c",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "high",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        },
+        {
+          "surface": "countertop",
+          "rect": [
+            370,
+            256,
+            460,
+            263
+          ],
+          "purpose": "colour_sample",
+          "medianRGB": [
+            185,
+            184,
+            180
+          ],
+          "medianHex": "#b9b8b4",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "high",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        },
+        {
+          "surface": "upperCabinetFront",
+          "rect": [
+            110,
+            28,
+            138,
+            88
+          ],
+          "purpose": "colour_sample",
+          "medianRGB": [
+            204,
+            208,
+            207
+          ],
+          "medianHex": "#ccd0cf",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "high",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        }
+      ]
+    },
+    {
+      "id": "kitchen-12",
+      "sourceAsset": "assets/catalogue/reference/kitchen-12.jpg",
+      "sourcePage": 16,
+      "sha256": "344f1593252cfb8d0023974ea7eb2281c55419b8952e827200329f4d526be570",
+      "sourceSize": [
+        720,
+        450
+      ],
+      "scope": "kitchen_room_reference",
+      "inspection": "all pixels reviewed at native image resolution in contact sheet; selected originals reviewed individually",
+      "visible": {
+        "layout": "l",
+        "cabinetFrontStyle": "slab_handleless_woodgrain",
+        "cabinetAppearance": "warm medium oak/brown vertical grain",
+        "countertopAppearance": "white",
+        "upperCabinets": "not_shown",
+        "hob": "not_shown",
+        "oven": "not_shown",
+        "sink": "stainless_rectangle",
+        "faucet": "chrome_arch",
+        "details": [
+          "Continuous vertical wood grain across base fronts.",
+          "No visible projecting handles.",
+          "No upper cupboards shown."
+        ]
+      },
+      "notEstablished": [
+        "The photograph does not establish wood species, veneer or laminate composition.",
+        "Exact product dimensions, material specification and calibrated colour."
+      ],
+      "patches": [
+        {
+          "surface": "cabinetFront",
+          "rect": [
+            60,
+            285,
+            122,
+            373
+          ],
+          "purpose": "woodgrain_reference",
+          "medianRGB": [
+            102,
+            79,
+            45
+          ],
+          "medianHex": "#664f2d",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "high",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        },
+        {
+          "surface": "countertop",
+          "rect": [
+            260,
+            247,
+            328,
+            251
+          ],
+          "purpose": "colour_sample",
+          "medianRGB": [
+            204,
+            196,
+            173
+          ],
+          "medianHex": "#ccc4ad",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "high",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        }
+      ]
+    },
+    {
+      "id": "kitchen-13",
+      "sourceAsset": "assets/catalogue/reference/kitchen-13.jpg",
+      "sourcePage": 16,
+      "sha256": "48ba5eb94fa992147a82ec018be1d61baaa53304c969d51c6f99a2b007dcc5f7",
+      "sourceSize": [
+        720,
+        450
+      ],
+      "scope": "kitchen_room_reference",
+      "inspection": "all pixels reviewed at native image resolution in contact sheet; selected originals reviewed individually",
+      "visible": {
+        "layout": "l",
+        "cabinetFrontStyle": "slab",
+        "cabinetAppearance": "light grey lower / medium grey upper",
+        "countertopAppearance": "white with grey marble veins",
+        "upperCabinets": "visible",
+        "hob": "not_shown",
+        "oven": "not_shown",
+        "sink": "black_rectangle_with_drainer",
+        "faucet": "chrome_arch",
+        "details": [
+          "Black horizontal channels on lower doors.",
+          "Rear drawer bank.",
+          "Upper cabinets only over the sink return."
+        ]
+      },
+      "notEstablished": [
+        "Upper colour appears darker partly because of shading.",
+        "Exact product dimensions, material specification and calibrated colour."
+      ],
+      "patches": [
+        {
+          "surface": "cabinetFront",
+          "rect": [
+            505,
+            347,
+            548,
+            407
+          ],
+          "purpose": "colour_sample",
+          "medianRGB": [
+            164,
+            161,
+            154
+          ],
+          "medianHex": "#a4a19a",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "high",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        },
+        {
+          "surface": "countertop",
+          "rect": [
+            492,
+            289,
+            555,
+            296
+          ],
+          "purpose": "colour_sample",
+          "medianRGB": [
+            171,
+            168,
+            155
+          ],
+          "medianHex": "#aba89b",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "high",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        },
+        {
+          "surface": "upperCabinetFront",
+          "rect": [
+            244,
+            71,
+            266,
+            115
+          ],
+          "purpose": "colour_sample",
+          "medianRGB": [
+            98,
+            89,
+            80
+          ],
+          "medianHex": "#625950",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "high",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        }
+      ]
+    },
+    {
+      "id": "kitchen-14",
+      "sourceAsset": "assets/catalogue/reference/kitchen-14.jpg",
+      "sourcePage": 16,
+      "sha256": "41b49bf743db0fbeaac469ee5b16262e561421b3982421ef9b41ce269508af9b",
+      "sourceSize": [
+        720,
+        450
+      ],
+      "scope": "kitchen_room_reference",
+      "inspection": "all pixels reviewed at native image resolution in contact sheet; selected originals reviewed individually",
+      "visible": {
+        "layout": "l",
+        "cabinetFrontStyle": "slab_protected",
+        "cabinetAppearance": "grey wood-like appearance under printed film; intrinsic finish uncertain",
+        "countertopAppearance": "hidden by white foam wrapping",
+        "upperCabinets": "not_shown",
+        "hob": "obscured",
+        "oven": "not_shown",
+        "sink": "obscured",
+        "faucet": "obscured",
+        "details": [
+          "Dark bar handles.",
+          "Three drawers on rear run.",
+          "All main fronts and countertop protected for transport."
+        ]
+      },
+      "notEstablished": [
+        "No clean cabinet or worktop finish sample exists; do not texture with plastic film or foam.",
+        "Exact product dimensions, material specification and calibrated colour."
+      ],
+      "patches": [],
+      "unavailableSamples": [
+        "No trustworthy cabinet or countertop finish crop: plastic film and foam cover both."
+      ]
+    },
+    {
+      "id": "kitchen-15",
+      "sourceAsset": "assets/catalogue/reference/kitchen-15.jpg",
+      "sourcePage": 16,
+      "sha256": "58fcfd88e0447245651420ee4977bf38b37624138ac11f9748fa851f1b222b32",
+      "sourceSize": [
+        720,
+        450
+      ],
+      "scope": "kitchen_room_reference",
+      "inspection": "all pixels reviewed at native image resolution in contact sheet; selected originals reviewed individually",
+      "visible": {
+        "layout": "l",
+        "cabinetFrontStyle": "slab",
+        "cabinetAppearance": "white",
+        "countertopAppearance": "white with subtle grey veins",
+        "upperCabinets": "not_shown",
+        "hob": "not_shown",
+        "oven": "not_shown",
+        "sink": "black_double_rectangle",
+        "faucet": "metal_medium_arch",
+        "details": [
+          "Black horizontal grip channels.",
+          "Drawer stack at outer right end.",
+          "Plain white doors; no upper cabinetry shown."
+        ]
+      },
+      "notEstablished": [
+        "Decorations and appliances on the countertop are not built-in cabinet components.",
+        "Exact product dimensions, material specification and calibrated colour."
+      ],
+      "patches": [
+        {
+          "surface": "cabinetFront",
+          "rect": [
+            424,
+            326,
+            462,
+            381
+          ],
+          "purpose": "colour_sample",
+          "medianRGB": [
+            220,
+            221,
+            217
+          ],
+          "medianHex": "#dcddd9",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "high",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        },
+        {
+          "surface": "countertop",
+          "rect": [
+            218,
+            268,
+            240,
+            272
+          ],
+          "purpose": "colour_sample",
+          "medianRGB": [
+            221,
+            226,
+            229
+          ],
+          "medianHex": "#dde2e5",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "high",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        }
+      ]
+    },
+    {
+      "id": "bathroom-01",
+      "sourceAsset": "assets/catalogue/reference/bathroom-01.jpg",
+      "sourcePage": 17,
+      "sha256": "415f9e814575309c6308e20e03d370b790d0a21e054965176f77dbd416017272",
+      "sourceSize": [
+        450,
+        600
+      ],
+      "scope": "whole_room_and_separate_wash_area",
+      "inspection": "all pixels reviewed at native image resolution in contact sheet; selected originals reviewed individually",
+      "visible": {
+        "vanityFrontStyle": "black_slab_with_fluted_side",
+        "basinType": "rectangular_integrated",
+        "basinColour": "white",
+        "faucet": "black_short_arch",
+        "mirror": "rectangular_black_mirror_cabinet_with_side_shelf",
+        "showerEnclosure": "rectangular_black_frame",
+        "showerGlazing": "part_clear",
+        "wallAppearance": "beige_wash_area_and_grey_wet_room",
+        "details": [
+          "Washbasin area appears outside the inner wet compartment.",
+          "Black shelf beside basin; black mirror surround.",
+          "White toilet visible through doorway."
+        ]
+      },
+      "notEstablished": [
+        "Do not apply beige wash-area wall colour to every inner shower wall.",
+        "Exact product dimensions, material specification and calibrated colour."
+      ],
+      "patches": [
+        {
+          "surface": "cabinetFront",
+          "rect": [
+            74,
+            419,
+            94,
+            432
+          ],
+          "purpose": "colour_sample",
+          "medianRGB": [
+            28,
+            24,
+            21
+          ],
+          "medianHex": "#1c1815",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "high",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        },
+        {
+          "surface": "wallFinish",
+          "rect": [
+            186,
+            196,
+            211,
+            245
+          ],
+          "purpose": "wall_pattern_reference",
+          "medianRGB": [
+            223,
+            183,
+            141
+          ],
+          "medianHex": "#dfb78d",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "high",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        }
+      ]
+    },
+    {
+      "id": "bathroom-02",
+      "sourceAsset": "assets/catalogue/reference/bathroom-02.jpg",
+      "sourcePage": 17,
+      "sha256": "c8452676ea2a31b96f77639ed990d077ff5e19281c7045c436956af8ab18b6d1",
+      "sourceSize": [
+        450,
+        600
+      ],
+      "scope": "whole_bathroom",
+      "inspection": "all pixels reviewed at native image resolution in contact sheet; selected originals reviewed individually",
+      "visible": {
+        "vanityFrontStyle": "dark_grey_partial",
+        "basinType": "oval_integrated",
+        "basinColour": "white",
+        "faucet": "not_shown",
+        "mirror": "partial_white_cabinet_open_shelves",
+        "showerEnclosure": "curved_quadrant_enclosed_pod",
+        "showerGlazing": "horizontal_frosted_stripes",
+        "wallAppearance": "white_marble_grey_veins",
+        "details": [
+          "White curved shower base and top cap.",
+          "Curved sliding doors with silver vertical handles.",
+          "Overhead round shower and internal column visible.",
+          "White toilet."
+        ]
+      },
+      "notEstablished": [
+        "Vanity/mirror are partly outside the crop.",
+        "Exact product dimensions, material specification and calibrated colour."
+      ],
+      "patches": [
+        {
+          "surface": "cabinetFront",
+          "rect": [
+            93,
+            534,
+            122,
+            563
+          ],
+          "purpose": "colour_sample",
+          "medianRGB": [
+            57,
+            58,
+            52
+          ],
+          "medianHex": "#393a34",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "high",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        },
+        {
+          "surface": "wallFinish",
+          "rect": [
+            356,
+            254,
+            408,
+            320
+          ],
+          "purpose": "wall_pattern_reference",
+          "medianRGB": [
+            181,
+            181,
+            181
+          ],
+          "medianHex": "#b5b5b5",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "high",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        }
+      ]
+    },
+    {
+      "id": "bathroom-03",
+      "sourceAsset": "assets/catalogue/reference/bathroom-03.jpg",
+      "sourcePage": 17,
+      "sha256": "dda569bdc02ccfba746e3178916e48d99cfc972d6262e645fdc45f0b0ce30fc1",
+      "sourceSize": [
+        450,
+        600
+      ],
+      "scope": "whole_bathroom",
+      "inspection": "all pixels reviewed at native image resolution in contact sheet; selected originals reviewed individually",
+      "visible": {
+        "vanityFrontStyle": "light_grey_woodgrain",
+        "basinType": "oval_integrated",
+        "basinColour": "white",
+        "faucet": "not_shown",
+        "mirror": "not_shown",
+        "showerEnclosure": "curved_quadrant_enclosed_pod",
+        "showerGlazing": "horizontal_frosted_stripes",
+        "wallAppearance": "plain_light_grey",
+        "details": [
+          "White curved shower base and top cap.",
+          "Silver vertical handles.",
+          "Two dark vanity handles visible.",
+          "White toilet."
+        ]
+      },
+      "notEstablished": [
+        "Do not import marble walls from bathroom-02; this room has plain walls.",
+        "Exact product dimensions, material specification and calibrated colour."
+      ],
+      "patches": [
+        {
+          "surface": "cabinetFront",
+          "rect": [
+            111,
+            484,
+            128,
+            521
+          ],
+          "purpose": "colour_sample",
+          "medianRGB": [
+            132,
+            125,
+            116
+          ],
+          "medianHex": "#847d74",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "high",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        },
+        {
+          "surface": "wallFinish",
+          "rect": [
+            300,
+            273,
+            345,
+            326
+          ],
+          "purpose": "wall_pattern_reference",
+          "medianRGB": [
+            199,
+            194,
+            190
+          ],
+          "medianHex": "#c7c2be",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "high",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        }
+      ]
+    },
+    {
+      "id": "bathroom-04",
+      "sourceAsset": "assets/catalogue/reference/bathroom-04.jpg",
+      "sourcePage": 17,
+      "sha256": "701e9444aba8e769b26cc48295a4143f12f6fcee689e1521ec00f2e116af8ef7",
+      "sourceSize": [
+        450,
+        600
+      ],
+      "scope": "partial_bathroom",
+      "inspection": "all pixels reviewed at native image resolution in contact sheet; selected originals reviewed individually",
+      "visible": {
+        "vanityFrontStyle": "grey_slab",
+        "basinType": "rounded_rect_integrated",
+        "basinColour": "white",
+        "faucet": "not_shown",
+        "mirror": "not_shown",
+        "showerEnclosure": "rectangular_white_grid_frame",
+        "showerGlazing": "frosted",
+        "wallAppearance": "warm_grey_beige_stone_veins",
+        "details": [
+          "White shower surround/plinth.",
+          "Dark slatted shower floor insert.",
+          "White toilet with top flush button."
+        ]
+      },
+      "notEstablished": [
+        "Mirror and tap are not visible.",
+        "Exact product dimensions, material specification and calibrated colour."
+      ],
+      "patches": [
+        {
+          "surface": "cabinetFront",
+          "rect": [
+            90,
+            487,
+            114,
+            540
+          ],
+          "purpose": "colour_sample",
+          "medianRGB": [
+            101,
+            101,
+            99
+          ],
+          "medianHex": "#656563",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "high",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        },
+        {
+          "surface": "wallFinish",
+          "rect": [
+            94,
+            86,
+            157,
+            173
+          ],
+          "purpose": "wall_pattern_reference",
+          "medianRGB": [
+            172,
+            160,
+            137
+          ],
+          "medianHex": "#aca089",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "high",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        }
+      ]
+    },
+    {
+      "id": "bathroom-05",
+      "sourceAsset": "assets/catalogue/reference/bathroom-05.jpg",
+      "sourcePage": 18,
+      "sha256": "ad9a9a7782dbc7a497e1f9ee1c73ba5a38f11591ef026b27a968604366bf813e",
+      "sourceSize": [
+        450,
+        600
+      ],
+      "scope": "toilet_closeup",
+      "inspection": "all pixels reviewed at native image resolution in contact sheet; selected originals reviewed individually",
+      "visible": {
+        "vanityFrontStyle": "not_shown",
+        "basinType": "not_established",
+        "basinColour": "not_established",
+        "faucet": "not_shown",
+        "mirror": "not_shown",
+        "showerEnclosure": "only_partial_black_edge",
+        "showerGlazing": "frosted",
+        "wallAppearance": "small_fragment_white_grey_marble",
+        "details": [
+          "White toilet, top round dual-flush button and protected seat.",
+          "Grey wood-like floor, square floor drain."
+        ]
+      },
+      "notEstablished": [
+        "This is a toilet close-up. It cannot define a vanity, mirror, full shower shape or whole-room wall treatment.",
+        "Exact product dimensions, material specification and calibrated colour."
+      ],
+      "patches": [
+        {
+          "surface": "wallFragment",
+          "rect": [
+            15,
+            14,
+            64,
+            38
+          ],
+          "purpose": "wall_pattern_reference",
+          "medianRGB": [
+            184,
+            183,
+            188
+          ],
+          "medianHex": "#b8b7bc",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "high",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        }
+      ],
+      "unavailableSamples": [
+        "No reliable finished vanity-front crop."
+      ]
+    },
+    {
+      "id": "bathroom-06",
+      "sourceAsset": "assets/catalogue/reference/bathroom-06.jpg",
+      "sourcePage": 18,
+      "sha256": "647065e56bb6dcbd365be448a207031696fc4c9f22fbf23267420e90b548d49b",
+      "sourceSize": [
+        450,
+        600
+      ],
+      "scope": "whole_bathroom",
+      "inspection": "all pixels reviewed at native image resolution in contact sheet; selected originals reviewed individually",
+      "visible": {
+        "vanityFrontStyle": "taupe_slab",
+        "basinType": "rectangular_integrated",
+        "basinColour": "white",
+        "faucet": "black_angular",
+        "mirror": "wide_rectangular_mirror_cabinet_with_dark_open_side_shelves",
+        "showerEnclosure": "rectangular_black_frame",
+        "showerGlazing": "frosted_panel_and_clear_area",
+        "wallAppearance": "grey_cream_wavy_stone",
+        "details": [
+          "Long worktop with washing machine under left bay.",
+          "Two large vanity doors with curved silver handles.",
+          "White shower base.",
+          "White toilet.",
+          "Oak-like herringbone floor."
+        ]
+      },
+      "notEstablished": [
+        "Pattern resembles wavy stone; material species/composition not established.",
+        "Exact product dimensions, material specification and calibrated colour."
+      ],
+      "patches": [
+        {
+          "surface": "cabinetFront",
+          "rect": [
+            319,
+            478,
+            383,
+            560
+          ],
+          "purpose": "colour_sample",
+          "medianRGB": [
+            78,
+            67,
+            53
+          ],
+          "medianHex": "#4e4335",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "high",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        },
+        {
+          "surface": "wallFinish",
+          "rect": [
+            39,
+            267,
+            96,
+            328
+          ],
+          "purpose": "wall_pattern_reference",
+          "medianRGB": [
+            181,
+            178,
+            166
+          ],
+          "medianHex": "#b5b2a6",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "high",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        },
+        {
+          "surface": "countertop",
+          "rect": [
+            225,
+            325,
+            268,
+            333
+          ],
+          "purpose": "colour_sample",
+          "medianRGB": [
+            235,
+            234,
+            230
+          ],
+          "medianHex": "#ebeae6",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "high",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        }
+      ]
+    },
+    {
+      "id": "bathroom-07",
+      "sourceAsset": "assets/catalogue/reference/bathroom-07.jpg",
+      "sourcePage": 18,
+      "sha256": "3e1c80409b361bc7ac82bb3cd8cd84409dfbcd5faaa3d54ac2eacbe98375ec34",
+      "sourceSize": [
+        450,
+        600
+      ],
+      "scope": "whole_bathroom",
+      "inspection": "all pixels reviewed at native image resolution in contact sheet; selected originals reviewed individually",
+      "visible": {
+        "vanityFrontStyle": "taupe_slab_horizontal_grips",
+        "basinType": "rounded_rect_integrated",
+        "basinColour": "white",
+        "faucet": "not_shown",
+        "mirror": "partial_white_mirror_cabinet_open_side_shelves",
+        "showerEnclosure": "rectangular_black_frame",
+        "showerGlazing": "frosted_panel_and_clear_area",
+        "wallAppearance": "white_marble_broad_grey_veins",
+        "details": [
+          "Black horizontal shower handle.",
+          "Dark grey tiled/shower floor.",
+          "White toilet."
+        ]
+      },
+      "notEstablished": [
+        "Vanity fronts partly cropped; do not infer exact drawer count.",
+        "Exact product dimensions, material specification and calibrated colour."
+      ],
+      "patches": [
+        {
+          "surface": "cabinetFront",
+          "rect": [
+            95,
+            465,
+            141,
+            481
+          ],
+          "purpose": "colour_sample",
+          "medianRGB": [
+            66,
+            64,
+            51
+          ],
+          "medianHex": "#424033",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "high",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        },
+        {
+          "surface": "wallFinish",
+          "rect": [
+            96,
+            221,
+            160,
+            368
+          ],
+          "purpose": "wall_pattern_reference",
+          "medianRGB": [
+            209,
+            209,
+            199
+          ],
+          "medianHex": "#d1d1c7",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "high",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        }
+      ]
+    },
+    {
+      "id": "bathroom-08",
+      "sourceAsset": "assets/catalogue/reference/bathroom-08.jpg",
+      "sourcePage": 18,
+      "sha256": "21274ada3a08a8cfd5c6c1b43019ab92001960e3903069b2b469a7d4d209ec3b",
+      "sourceSize": [
+        450,
+        600
+      ],
+      "scope": "whole_bathroom",
+      "inspection": "all pixels reviewed at native image resolution in contact sheet; selected originals reviewed individually",
+      "visible": {
+        "vanityFrontStyle": "grey_slab_horizontal_grips",
+        "basinType": "rounded_rect_integrated",
+        "basinColour": "white",
+        "faucet": "chrome_partial",
+        "mirror": "rectangular_mirror",
+        "showerEnclosure": "rectangular_clear_glass_chrome_rail",
+        "showerGlazing": "clear",
+        "wallAppearance": "white_marble_broad_grey_veins",
+        "details": [
+          "Visible upper sliding rail/rollers in chrome.",
+          "Hand shower and shelf visible.",
+          "Dark grey shower floor.",
+          "White toilet."
+        ]
+      },
+      "notEstablished": [
+        "No opaque black full frame is shown around this shower.",
+        "Exact product dimensions, material specification and calibrated colour."
+      ],
+      "patches": [
+        {
+          "surface": "cabinetFront",
+          "rect": [
+            155,
+            547,
+            175,
+            565
+          ],
+          "purpose": "colour_sample",
+          "medianRGB": [
+            69,
+            64,
+            61
+          ],
+          "medianHex": "#45403d",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "medium",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        },
+        {
+          "surface": "wallFinish",
+          "rect": [
+            20,
+            320,
+            135,
+            361
+          ],
+          "purpose": "wall_pattern_reference",
+          "medianRGB": [
+            159,
+            159,
+            161
+          ],
+          "medianHex": "#9f9fa1",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "medium",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        }
+      ]
+    },
+    {
+      "id": "bathroom-09",
+      "sourceAsset": "assets/catalogue/reference/bathroom-09.jpg",
+      "sourcePage": 18,
+      "sha256": "29a343f8b41a1f07d652619800d3a32191a0c12d075e32d12c6279f6f6422bf7",
+      "sourceSize": [
+        450,
+        600
+      ],
+      "scope": "whole_bathroom_with_unfinished_vanity",
+      "inspection": "all pixels reviewed at native image resolution in contact sheet; selected originals reviewed individually",
+      "visible": {
+        "vanityFrontStyle": "open_unfinished_vanity",
+        "basinType": "rectangular_vessel",
+        "basinColour": "white",
+        "faucet": "not_shown",
+        "mirror": "white_mirror_cabinet_with_open_side_shelves",
+        "showerEnclosure": "rectangular_chrome_frame",
+        "showerGlazing": "frosted_panel_and_clear_area",
+        "wallAppearance": "white_marble_grey_veins",
+        "details": [
+          "Long white worktop; empty lower bay and side gable.",
+          "Small wall water heater with exposed hoses.",
+          "White shower base and toilet."
+        ]
+      },
+      "notEstablished": [
+        "No finished vanity doors are shown; gable colour should not define a full cabinet family.",
+        "Exact product dimensions, material specification and calibrated colour."
+      ],
+      "patches": [
+        {
+          "surface": "wallFinish",
+          "rect": [
+            324,
+            280,
+            422,
+            392
+          ],
+          "purpose": "wall_pattern_reference",
+          "medianRGB": [
+            188,
+            186,
+            180
+          ],
+          "medianHex": "#bcbab4",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "high",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        },
+        {
+          "surface": "countertop",
+          "rect": [
+            140,
+            334,
+            175,
+            340
+          ],
+          "purpose": "colour_sample",
+          "medianRGB": [
+            243,
+            234,
+            232
+          ],
+          "medianHex": "#f3eae8",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "high",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        }
+      ],
+      "unavailableSamples": [
+        "No reliable finished vanity-front crop."
+      ]
+    },
+    {
+      "id": "bathroom-10",
+      "sourceAsset": "assets/catalogue/reference/bathroom-10.jpg",
+      "sourcePage": 18,
+      "sha256": "aa73143382e71f48ef26d8ce8d2dfe53d0054f1ff6a513dee04443063cffb7ef",
+      "sourceSize": [
+        450,
+        600
+      ],
+      "scope": "whole_bathroom",
+      "inspection": "all pixels reviewed at native image resolution in contact sheet; selected originals reviewed individually",
+      "visible": {
+        "vanityFrontStyle": "light_grey_partial",
+        "basinType": "rounded_rect_integrated",
+        "basinColour": "white",
+        "faucet": "not_shown",
+        "mirror": "white_mirror_cabinet_with_open_side_shelves",
+        "showerEnclosure": "rectangular_black_frame",
+        "showerGlazing": "frosted_panel_and_clear_area",
+        "wallAppearance": "white_marble_bold_grey_black_veins",
+        "details": [
+          "White shower base.",
+          "White wall water heater.",
+          "White toilet."
+        ]
+      },
+      "notEstablished": [
+        "Vanity face and faucet are only partly visible.",
+        "Exact product dimensions, material specification and calibrated colour."
+      ],
+      "patches": [
+        {
+          "surface": "cabinetFront",
+          "rect": [
+            92,
+            566,
+            106,
+            585
+          ],
+          "purpose": "colour_sample",
+          "medianRGB": [
+            116,
+            115,
+            109
+          ],
+          "medianHex": "#74736d",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "medium",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        },
+        {
+          "surface": "wallFinish",
+          "rect": [
+            272,
+            336,
+            347,
+            437
+          ],
+          "purpose": "wall_pattern_reference",
+          "medianRGB": [
+            170,
+            166,
+            161
+          ],
+          "medianHex": "#aaa6a1",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "medium",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        }
+      ]
+    },
+    {
+      "id": "bathroom-11",
+      "sourceAsset": "assets/catalogue/reference/bathroom-11.jpg",
+      "sourcePage": 18,
+      "sha256": "7d49efc0b2036ba7574af20b29f2f4e51ac612330d55edc33f84307d13cbf105",
+      "sourceSize": [
+        450,
+        600
+      ],
+      "scope": "whole_bathroom",
+      "inspection": "all pixels reviewed at native image resolution in contact sheet; selected originals reviewed individually",
+      "visible": {
+        "vanityFrontStyle": "brown_woodgrain_slab",
+        "basinType": "rounded_rect_integrated",
+        "basinColour": "white",
+        "faucet": "chrome_short",
+        "mirror": "white_mirror_cabinet_with_open_side_shelves",
+        "showerEnclosure": "rectangular_dark_frame",
+        "showerGlazing": "frosted_panel_and_clear_area",
+        "wallAppearance": "white_marble_fine_grey_veins",
+        "details": [
+          "Two dark bar handles on vanity doors.",
+          "Dark horizontal shower handle.",
+          "White base, toilet and compact wall heater."
+        ]
+      },
+      "notEstablished": [
+        "Green cast on walls/glass is photographic and not a calibrated paint colour.",
+        "Exact product dimensions, material specification and calibrated colour."
+      ],
+      "patches": [
+        {
+          "surface": "cabinetFront",
+          "rect": [
+            105,
+            479,
+            141,
+            510
+          ],
+          "purpose": "colour_sample",
+          "medianRGB": [
+            64,
+            48,
+            35
+          ],
+          "medianHex": "#403023",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "high",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        },
+        {
+          "surface": "wallFinish",
+          "rect": [
+            350,
+            222,
+            408,
+            302
+          ],
+          "purpose": "wall_pattern_reference",
+          "medianRGB": [
+            189,
+            197,
+            206
+          ],
+          "medianHex": "#bdc5ce",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "high",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        }
+      ]
+    },
+    {
+      "id": "bathroom-12",
+      "sourceAsset": "assets/catalogue/reference/bathroom-12.jpg",
+      "sourcePage": 18,
+      "sha256": "8f424b325867e141bbd45477a4fd724a039da4e05ea215464269d8509edf333c",
+      "sourceSize": [
+        450,
+        600
+      ],
+      "scope": "whole_bathroom",
+      "inspection": "all pixels reviewed at native image resolution in contact sheet; selected originals reviewed individually",
+      "visible": {
+        "vanityFrontStyle": "grey_partial",
+        "basinType": "rounded_rect_integrated",
+        "basinColour": "white",
+        "faucet": "not_shown",
+        "mirror": "partial_rectangular",
+        "showerEnclosure": "rectangular_black_frame",
+        "showerGlazing": "frosted_panel_and_clear_area",
+        "wallAppearance": "dark_grey_marble_light_veins",
+        "details": [
+          "White shower base and toilet.",
+          "Black wall water heater."
+        ]
+      },
+      "notEstablished": [
+        "Only a narrow piece of vanity/mirror is shown.",
+        "Exact product dimensions, material specification and calibrated colour."
+      ],
+      "patches": [
+        {
+          "surface": "cabinetFront",
+          "rect": [
+            91,
+            538,
+            109,
+            569
+          ],
+          "purpose": "colour_sample",
+          "medianRGB": [
+            64,
+            60,
+            57
+          ],
+          "medianHex": "#403c39",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "medium",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        },
+        {
+          "surface": "wallFinish",
+          "rect": [
+            207,
+            303,
+            251,
+            419
+          ],
+          "purpose": "wall_pattern_reference",
+          "medianRGB": [
+            107,
+            104,
+            100
+          ],
+          "medianHex": "#6b6864",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "medium",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        }
+      ]
+    },
+    {
+      "id": "bathroom-13",
+      "sourceAsset": "assets/catalogue/reference/bathroom-13.jpg",
+      "sourcePage": 18,
+      "sha256": "451486ba1669e5516ea2b8a2190741ccf2eea7a681ca3f9236061b8d65a60678",
+      "sourceSize": [
+        450,
+        600
+      ],
+      "scope": "whole_bathroom",
+      "inspection": "all pixels reviewed at native image resolution in contact sheet; selected originals reviewed individually",
+      "visible": {
+        "vanityFrontStyle": "light_grey_vertical_woodgrain",
+        "basinType": "rounded_rect_integrated",
+        "basinColour": "white",
+        "faucet": "chrome_short",
+        "mirror": "white_mirror_cabinet_with_open_side_shelves",
+        "showerEnclosure": "rectangular_light_frame_dark_internal_mullions",
+        "showerGlazing": "frosted_panel_and_clear_area",
+        "wallAppearance": "plain_light_grey_wash_area_fine_marble_wet_area",
+        "details": [
+          "Dark vertical division and low horizontal division on frosted glass.",
+          "Dark recessed vertical shower pull.",
+          "White toilet."
+        ]
+      },
+      "notEstablished": [
+        "The wall finish differs between wash area and wet area.",
+        "Exact product dimensions, material specification and calibrated colour."
+      ],
+      "patches": [
+        {
+          "surface": "cabinetFront",
+          "rect": [
+            132,
+            545,
+            163,
+            576
+          ],
+          "purpose": "colour_sample",
+          "medianRGB": [
+            104,
+            100,
+            93
+          ],
+          "medianHex": "#68645d",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "high",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        },
+        {
+          "surface": "wallFinish",
+          "rect": [
+            115,
+            157,
+            174,
+            259
+          ],
+          "purpose": "wall_pattern_reference",
+          "medianRGB": [
+            184,
+            189,
+            192
+          ],
+          "medianHex": "#b8bdc0",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "high",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        },
+        {
+          "surface": "wetWallFinish",
+          "rect": [
+            378,
+            291,
+            428,
+            418
+          ],
+          "purpose": "wall_pattern_reference",
+          "medianRGB": [
+            135,
+            135,
+            134
+          ],
+          "medianHex": "#878786",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "high",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        }
+      ]
+    },
+    {
+      "id": "bathroom-14",
+      "sourceAsset": "assets/catalogue/reference/bathroom-14.jpg",
+      "sourcePage": 18,
+      "sha256": "d551290a49fddd1595e9b3e078160d6eb358b7609fba8ccc34a5f26d1b3a57e3",
+      "sourceSize": [
+        450,
+        600
+      ],
+      "scope": "whole_bathroom_with_open_counter_bay",
+      "inspection": "all pixels reviewed at native image resolution in contact sheet; selected originals reviewed individually",
+      "visible": {
+        "vanityFrontStyle": "partial_light_fronts_open_bay",
+        "basinType": "rectangular_vessel",
+        "basinColour": "white",
+        "faucet": "not_shown",
+        "mirror": "white_mirror_cabinet_with_open_side_shelves",
+        "showerEnclosure": "rectangular_light_frame_dark_grid",
+        "showerGlazing": "frosted_grid_panel_and_clear_area",
+        "wallAppearance": "white_marble_fine_grey_veins",
+        "details": [
+          "Long worktop with empty appliance/leg bay.",
+          "Dark thin multi-row grid on frosted panel.",
+          "White shower base; white toilet partly hidden.",
+          "Wall heater."
+        ]
+      },
+      "notEstablished": [
+        "Exact number of lower cabinet modules is outside the crop.",
+        "Exact product dimensions, material specification and calibrated colour."
+      ],
+      "patches": [
+        {
+          "surface": "wallFinish",
+          "rect": [
+            46,
+            187,
+            111,
+            304
+          ],
+          "purpose": "wall_pattern_reference",
+          "medianRGB": [
+            199,
+            200,
+            197
+          ],
+          "medianHex": "#c7c8c5",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "high",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        },
+        {
+          "surface": "countertop",
+          "rect": [
+            244,
+            346,
+            280,
+            365
+          ],
+          "purpose": "colour_sample",
+          "medianRGB": [
+            225,
+            226,
+            221
+          ],
+          "medianHex": "#e1e2dd",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "high",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        }
+      ],
+      "unavailableSamples": [
+        "No reliable finished vanity-front crop."
+      ]
+    },
+    {
+      "id": "bathroom-15",
+      "sourceAsset": "assets/catalogue/reference/bathroom-15.jpg",
+      "sourcePage": 18,
+      "sha256": "8ab5fc0580c6e2ea1b22c77010fcb3dd7cb07e86ad921548cf18598941c2dd44",
+      "sourceSize": [
+        450,
+        600
+      ],
+      "scope": "whole_bathroom_with_open_counter_bay",
+      "inspection": "all pixels reviewed at native image resolution in contact sheet; selected originals reviewed individually",
+      "visible": {
+        "vanityFrontStyle": "grey_slab_partial_open_door",
+        "basinType": "rectangular_vessel",
+        "basinColour": "white",
+        "faucet": "chrome_tall",
+        "mirror": "white_mirror_cabinet_with_open_side_shelves",
+        "showerEnclosure": "rectangular_black_rail_clear_glass",
+        "showerGlazing": "clear",
+        "wallAppearance": "white_marble_bold_grey_gold_brown_veins",
+        "details": [
+          "Long white worktop, open lower bay and open cabinet door.",
+          "Black U-shaped shower handle.",
+          "Square overhead shower and handheld shower visible.",
+          "White tray and toilet."
+        ]
+      },
+      "notEstablished": [
+        "The cabinet is open/incomplete, not evidence for a fully closed generic vanity.",
+        "Exact product dimensions, material specification and calibrated colour."
+      ],
+      "patches": [
+        {
+          "surface": "cabinetFront",
+          "rect": [
+            55,
+            436,
+            90,
+            510
+          ],
+          "purpose": "colour_sample",
+          "medianRGB": [
+            91,
+            92,
+            87
+          ],
+          "medianHex": "#5b5c57",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "medium",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        },
+        {
+          "surface": "wallFinish",
+          "rect": [
+            152,
+            184,
+            196,
+            255
+          ],
+          "purpose": "wall_pattern_reference",
+          "medianRGB": [
+            117,
+            129,
+            133
+          ],
+          "medianHex": "#758185",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "medium",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        },
+        {
+          "surface": "wetWallFinish",
+          "rect": [
+            396,
+            178,
+            439,
+            252
+          ],
+          "purpose": "wall_pattern_reference",
+          "medianRGB": [
+            109,
+            118,
+            124
+          ],
+          "medianHex": "#6d767c",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "medium",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        },
+        {
+          "surface": "countertop",
+          "rect": [
+            155,
+            287,
+            190,
+            304
+          ],
+          "purpose": "colour_sample",
+          "medianRGB": [
+            162,
+            167,
+            163
+          ],
+          "medianHex": "#a2a7a3",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "medium",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        }
+      ]
+    },
+    {
+      "id": "bathroom-16",
+      "sourceAsset": "assets/catalogue/reference/bathroom-16.jpg",
+      "sourcePage": 18,
+      "sha256": "74305b7d19920f12b18c2d1a451e798fd4b38762454079fa4a88ddb70dbe6bca",
+      "sourceSize": [
+        450,
+        600
+      ],
+      "scope": "whole_bathroom",
+      "inspection": "all pixels reviewed at native image resolution in contact sheet; selected originals reviewed individually",
+      "visible": {
+        "vanityFrontStyle": "light_greige_slab",
+        "basinType": "rectangular_vessel",
+        "basinColour": "white",
+        "faucet": "dark_metal_angular",
+        "mirror": "wide_rectangular_mirror_cabinet",
+        "showerEnclosure": "rectangular_black_frame",
+        "showerGlazing": "frosted_panel_and_clear_area",
+        "wallAppearance": "charcoal_marble_fine_light_veins",
+        "details": [
+          "Dark vanity handles.",
+          "White shower base and toilet.",
+          "Dark marble continues across ceiling."
+        ]
+      },
+      "notEstablished": [
+        "Very dark exposure; sample colours retain photographic lighting.",
+        "Exact product dimensions, material specification and calibrated colour."
+      ],
+      "patches": [
+        {
+          "surface": "cabinetFront",
+          "rect": [
+            116,
+            532,
+            147,
+            572
+          ],
+          "purpose": "colour_sample",
+          "medianRGB": [
+            115,
+            111,
+            106
+          ],
+          "medianHex": "#736f6a",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "medium",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        },
+        {
+          "surface": "wallFinish",
+          "rect": [
+            175,
+            231,
+            220,
+            293
+          ],
+          "purpose": "wall_pattern_reference",
+          "medianRGB": [
+            114,
+            114,
+            114
+          ],
+          "medianHex": "#727272",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "medium",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        }
+      ]
+    },
+    {
+      "id": "bathroom-17",
+      "sourceAsset": "assets/catalogue/reference/bathroom-17.jpg",
+      "sourcePage": 18,
+      "sha256": "f865311cd839e0733187f675067ddca5136da62b450fb7fae40b1cd50426bda3",
+      "sourceSize": [
+        450,
+        600
+      ],
+      "scope": "whole_bathroom",
+      "inspection": "all pixels reviewed at native image resolution in contact sheet; selected originals reviewed individually",
+      "visible": {
+        "vanityFrontStyle": "grey_slab_partial",
+        "basinType": "rounded_rect_integrated",
+        "basinColour": "white",
+        "faucet": "not_shown",
+        "mirror": "not_shown",
+        "showerEnclosure": "rectangular_light_frame_dark_internal_mullions",
+        "showerGlazing": "frosted_panel_and_clear_area",
+        "wallAppearance": "white_marble_fine_grey_veins",
+        "details": [
+          "Dark recessed shower pull.",
+          "Dark vertical/low horizontal mullions.",
+          "White toilet; wood-brown floor.",
+          "White inset shower base visible."
+        ]
+      },
+      "notEstablished": [
+        "Vanity and mirror are heavily cropped.",
+        "Exact product dimensions, material specification and calibrated colour."
+      ],
+      "patches": [
+        {
+          "surface": "cabinetFront",
+          "rect": [
+            59,
+            468,
+            87,
+            542
+          ],
+          "purpose": "colour_sample",
+          "medianRGB": [
+            42,
+            39,
+            35
+          ],
+          "medianHex": "#2a2723",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "medium",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        },
+        {
+          "surface": "wallFinish",
+          "rect": [
+            245,
+            302,
+            310,
+            395
+          ],
+          "purpose": "wall_pattern_reference",
+          "medianRGB": [
+            117,
+            117,
+            117
+          ],
+          "medianHex": "#757575",
+          "intrinsicColourCalibrated": false,
+          "tileable": false,
+          "confidence": "medium",
+          "note": "Source crop preserves perspective and lighting. Use median for flat colour; do not stretch an entire room photograph over cabinetry."
+        }
+      ]
+    }
+  ]
+}

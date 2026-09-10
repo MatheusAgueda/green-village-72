@@ -33,3 +33,11 @@ A falta de desenhos de fabrico não bloqueia as correcções verificáveis. Dime
 - Garantir que a expansão apresenta os painéis necessários mesmo quando outras vistas usam cortes ou fachadas ocultas; os controlos devem corresponder à visibilidade efectiva.
 - Corrigir bugs reproduzidos na revisão de estados, câmaras e exportações; preservar os pisos, materiais e vídeos originais já tratados.
 - Testar trajectórias e estados intermédios, sete layouts e opcionais, transições, telemóvel e recuperação. Actualizar o filme da expansão para corresponder à sequência entregue e publicar no Site existente.
+
+## R5 — correspondência entre catálogo e ambientes 3D
+
+- Cada referência de cozinha e banho selecciona acabamentos e elementos visíveis específicos; as fotografias são cotejadas individualmente. A implantação adapta-se à planta com medidas estimadas, sem inventar códigos de material.
+- Usar recortes reais rastreáveis para os materiais de ambientes; oferecer aplicação sem tratamento de cor das amostras e comparação digital. Preservar originais e identificar escala/iluminação estimadas.
+- Acrescentar aproximação dedicada, comparação com a referência seleccionada, frentes móveis, ferragens, cubas côncavas, torneiras, espelhos e resguardos detalhados.
+- Guardar/exportar todas as escolhas. Testar cada referência, migração das configurações existentes, carregamento/recuperação de texturas, navegação móvel e expansão R4 sem regressões.
+- Rever visualmente os ambientes no navegador, actualizar o filme de apresentação com o modelo entregue e publicar no Site privado existente.

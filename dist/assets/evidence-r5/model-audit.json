@@ -1,0 +1,1623 @@
+{
+  "results": [
+    {
+      "id": "kitchen-01",
+      "meshCount": 273,
+      "kitchenImmutableNestedMeshes": 10,
+      "motions": 10,
+      "materials": {
+        "Kfront": {
+          "name": "kitchen-01 · front",
+          "toneMapped": false,
+          "colour": "#c6c7c2",
+          "onBeforeCompile": true
+        },
+        "Kcounter": {
+          "name": "kitchen-01 · counter",
+          "toneMapped": false,
+          "colour": "#b4b8be",
+          "onBeforeCompile": true
+        },
+        "Kupper": {
+          "name": "kitchen-01 · upper",
+          "toneMapped": false,
+          "colour": "#c6c7c2",
+          "onBeforeCompile": true
+        },
+        "Bfront": {
+          "name": "bathroom-01 · front",
+          "toneMapped": false,
+          "colour": "#1c1815",
+          "onBeforeCompile": true
+        },
+        "Bcounter": {
+          "name": "bathroom-01 · counter",
+          "toneMapped": false,
+          "colour": "#eff0e9",
+          "onBeforeCompile": true
+        },
+        "Bwall": {
+          "name": "bathroom-01/wall",
+          "toneMapped": false,
+          "colour": "#dfb78d",
+          "onBeforeCompile": true
+        }
+      },
+      "dispose": {
+        "geometry": 273,
+        "materials": 40,
+        "undisposedGeometry": 0,
+        "undisposedMaterial": 0
+      }
+    },
+    {
+      "id": "kitchen-02",
+      "meshCount": 291,
+      "kitchenImmutableNestedMeshes": 9,
+      "motions": 9,
+      "materials": {
+        "Kfront": {
+          "name": "kitchen-02 · front",
+          "toneMapped": false,
+          "colour": "#d9caaf",
+          "onBeforeCompile": true
+        },
+        "Kcounter": {
+          "name": "kitchen-02 · counter",
+          "toneMapped": false,
+          "colour": "#16100d",
+          "onBeforeCompile": true
+        },
+        "Kupper": {
+          "name": "kitchen-02 · upper",
+          "toneMapped": false,
+          "colour": "#d9caaf",
+          "onBeforeCompile": true
+        },
+        "Bfront": {
+          "name": "bathroom-01 · front",
+          "toneMapped": false,
+          "colour": "#1c1815",
+          "onBeforeCompile": true
+        },
+        "Bcounter": {
+          "name": "bathroom-01 · counter",
+          "toneMapped": false,
+          "colour": "#eff0e9",
+          "onBeforeCompile": true
+        },
+        "Bwall": {
+          "name": "bathroom-01/wall",
+          "toneMapped": false,
+          "colour": "#dfb78d",
+          "onBeforeCompile": true
+        }
+      },
+      "dispose": {
+        "geometry": 291,
+        "materials": 39,
+        "undisposedGeometry": 0,
+        "undisposedMaterial": 0
+      }
+    },
+    {
+      "id": "kitchen-03",
+      "meshCount": 295,
+      "kitchenImmutableNestedMeshes": 9,
+      "motions": 13,
+      "materials": {
+        "Kfront": {
+          "name": "kitchen-03 · front",
+          "toneMapped": false,
+          "colour": "#aea596",
+          "onBeforeCompile": true
+        },
+        "Kcounter": {
+          "name": "kitchen-03 · counter",
+          "toneMapped": false,
+          "colour": "#d8dadb",
+          "onBeforeCompile": true
+        },
+        "Kupper": {
+          "name": "kitchen-03 · upper",
+          "toneMapped": false,
+          "colour": "#f8f4ef",
+          "onBeforeCompile": true
+        },
+        "Bfront": {
+          "name": "bathroom-01 · front",
+          "toneMapped": false,
+          "colour": "#1c1815",
+          "onBeforeCompile": true
+        },
+        "Bcounter": {
+          "name": "bathroom-01 · counter",
+          "toneMapped": false,
+          "colour": "#eff0e9",
+          "onBeforeCompile": true
+        },
+        "Bwall": {
+          "name": "bathroom-01/wall",
+          "toneMapped": false,
+          "colour": "#dfb78d",
+          "onBeforeCompile": true
+        }
+      },
+      "dispose": {
+        "geometry": 295,
+        "materials": 39,
+        "undisposedGeometry": 0,
+        "undisposedMaterial": 0
+      }
+    },
+    {
+      "id": "kitchen-04",
+      "meshCount": 270,
+      "kitchenImmutableNestedMeshes": 7,
+      "motions": 10,
+      "materials": {
+        "Kfront": {
+          "name": "kitchen-04 · front",
+          "toneMapped": false,
+          "colour": "#d2d8de",
+          "onBeforeCompile": true
+        },
+        "Kcounter": {
+          "name": "kitchen-04 · counter",
+          "toneMapped": false,
+          "colour": "#d4d1c9",
+          "onBeforeCompile": true
+        },
+        "Kupper": {
+          "name": "kitchen-04 · upper",
+          "toneMapped": false,
+          "colour": "#ced1d5",
+          "onBeforeCompile": true
+        },
+        "Bfront": {
+          "name": "bathroom-01 · front",
+          "toneMapped": false,
+          "colour": "#1c1815",
+          "onBeforeCompile": true
+        },
+        "Bcounter": {
+          "name": "bathroom-01 · counter",
+          "toneMapped": false,
+          "colour": "#eff0e9",
+          "onBeforeCompile": true
+        },
+        "Bwall": {
+          "name": "bathroom-01/wall",
+          "toneMapped": false,
+          "colour": "#dfb78d",
+          "onBeforeCompile": true
+        }
+      },
+      "dispose": {
+        "geometry": 270,
+        "materials": 38,
+        "undisposedGeometry": 0,
+        "undisposedMaterial": 0
+      }
+    },
+    {
+      "id": "kitchen-05",
+      "meshCount": 282,
+      "kitchenImmutableNestedMeshes": 9,
+      "motions": 11,
+      "materials": {
+        "Kfront": {
+          "name": "kitchen-05 · front",
+          "toneMapped": false,
+          "colour": "#8f8d86",
+          "onBeforeCompile": true
+        },
+        "Kcounter": {
+          "name": "kitchen-05 · counter",
+          "toneMapped": false,
+          "colour": "#aeb3b6",
+          "onBeforeCompile": true
+        },
+        "Kupper": {
+          "name": "kitchen-05 · upper",
+          "toneMapped": false,
+          "colour": "#bbb7ae",
+          "onBeforeCompile": true
+        },
+        "Bfront": {
+          "name": "bathroom-01 · front",
+          "toneMapped": false,
+          "colour": "#1c1815",
+          "onBeforeCompile": true
+        },
+        "Bcounter": {
+          "name": "bathroom-01 · counter",
+          "toneMapped": false,
+          "colour": "#eff0e9",
+          "onBeforeCompile": true
+        },
+        "Bwall": {
+          "name": "bathroom-01/wall",
+          "toneMapped": false,
+          "colour": "#dfb78d",
+          "onBeforeCompile": true
+        }
+      },
+      "dispose": {
+        "geometry": 282,
+        "materials": 39,
+        "undisposedGeometry": 0,
+        "undisposedMaterial": 0
+      }
+    },
+    {
+      "id": "kitchen-06",
+      "meshCount": 280,
+      "kitchenImmutableNestedMeshes": 10,
+      "motions": 9,
+      "materials": {
+        "Kfront": {
+          "name": "kitchen-06 · front",
+          "toneMapped": false,
+          "colour": "#baaca3",
+          "onBeforeCompile": true
+        },
+        "Kcounter": {
+          "name": "kitchen-06 · counter",
+          "toneMapped": false,
+          "colour": "#444342",
+          "onBeforeCompile": true
+        },
+        "Kupper": {
+          "name": "kitchen-06 · upper",
+          "toneMapped": false,
+          "colour": "#baaca3",
+          "onBeforeCompile": true
+        },
+        "Bfront": {
+          "name": "bathroom-01 · front",
+          "toneMapped": false,
+          "colour": "#1c1815",
+          "onBeforeCompile": true
+        },
+        "Bcounter": {
+          "name": "bathroom-01 · counter",
+          "toneMapped": false,
+          "colour": "#eff0e9",
+          "onBeforeCompile": true
+        },
+        "Bwall": {
+          "name": "bathroom-01/wall",
+          "toneMapped": false,
+          "colour": "#dfb78d",
+          "onBeforeCompile": true
+        }
+      },
+      "dispose": {
+        "geometry": 280,
+        "materials": 39,
+        "undisposedGeometry": 0,
+        "undisposedMaterial": 0
+      }
+    },
+    {
+      "id": "kitchen-07",
+      "meshCount": 277,
+      "kitchenImmutableNestedMeshes": 7,
+      "motions": 9,
+      "materials": {
+        "Kfront": {
+          "name": "kitchen-07 · front",
+          "toneMapped": false,
+          "colour": "#383838",
+          "onBeforeCompile": true
+        },
+        "Kcounter": {
+          "name": "kitchen-07 · counter",
+          "toneMapped": false,
+          "colour": "#adaea1",
+          "onBeforeCompile": true
+        },
+        "Kupper": {
+          "name": "kitchen-07 · upper",
+          "toneMapped": false,
+          "colour": "#383838",
+          "onBeforeCompile": true
+        },
+        "Bfront": {
+          "name": "bathroom-01 · front",
+          "toneMapped": false,
+          "colour": "#1c1815",
+          "onBeforeCompile": true
+        },
+        "Bcounter": {
+          "name": "bathroom-01 · counter",
+          "toneMapped": false,
+          "colour": "#eff0e9",
+          "onBeforeCompile": true
+        },
+        "Bwall": {
+          "name": "bathroom-01/wall",
+          "toneMapped": false,
+          "colour": "#dfb78d",
+          "onBeforeCompile": true
+        }
+      },
+      "dispose": {
+        "geometry": 277,
+        "materials": 37,
+        "undisposedGeometry": 0,
+        "undisposedMaterial": 0
+      }
+    },
+    {
+      "id": "kitchen-08",
+      "meshCount": 304,
+      "kitchenImmutableNestedMeshes": 6,
+      "motions": 13,
+      "materials": {
+        "Kfront": {
+          "name": "kitchen-08 · front",
+          "toneMapped": false,
+          "colour": "#c8c6b9",
+          "onBeforeCompile": true
+        },
+        "Kcounter": {
+          "name": "kitchen-08 · counter",
+          "toneMapped": false,
+          "colour": "#c9c9c4",
+          "onBeforeCompile": true
+        },
+        "Kupper": {
+          "name": "kitchen-08 · upper",
+          "toneMapped": false,
+          "colour": "#c8c6b9",
+          "onBeforeCompile": true
+        },
+        "Bfront": {
+          "name": "bathroom-01 · front",
+          "toneMapped": false,
+          "colour": "#1c1815",
+          "onBeforeCompile": true
+        },
+        "Bcounter": {
+          "name": "bathroom-01 · counter",
+          "toneMapped": false,
+          "colour": "#eff0e9",
+          "onBeforeCompile": true
+        },
+        "Bwall": {
+          "name": "bathroom-01/wall",
+          "toneMapped": false,
+          "colour": "#dfb78d",
+          "onBeforeCompile": true
+        }
+      },
+      "dispose": {
+        "geometry": 304,
+        "materials": 38,
+        "undisposedGeometry": 0,
+        "undisposedMaterial": 0
+      }
+    },
+    {
+      "id": "kitchen-09",
+      "meshCount": 279,
+      "kitchenImmutableNestedMeshes": 9,
+      "motions": 9,
+      "materials": {
+        "Kfront": {
+          "name": "kitchen-09 · front",
+          "toneMapped": false,
+          "colour": "#d8c8ac",
+          "onBeforeCompile": true
+        },
+        "Kcounter": {
+          "name": "kitchen-09 · counter",
+          "toneMapped": false,
+          "colour": "#e7e8e6",
+          "onBeforeCompile": true
+        },
+        "Kupper": {
+          "name": "kitchen-09 · upper",
+          "toneMapped": false,
+          "colour": "#d8c8ac",
+          "onBeforeCompile": true
+        },
+        "Bfront": {
+          "name": "bathroom-01 · front",
+          "toneMapped": false,
+          "colour": "#1c1815",
+          "onBeforeCompile": true
+        },
+        "Bcounter": {
+          "name": "bathroom-01 · counter",
+          "toneMapped": false,
+          "colour": "#eff0e9",
+          "onBeforeCompile": true
+        },
+        "Bwall": {
+          "name": "bathroom-01/wall",
+          "toneMapped": false,
+          "colour": "#dfb78d",
+          "onBeforeCompile": true
+        }
+      },
+      "dispose": {
+        "geometry": 279,
+        "materials": 39,
+        "undisposedGeometry": 0,
+        "undisposedMaterial": 0
+      }
+    },
+    {
+      "id": "kitchen-10",
+      "meshCount": 293,
+      "kitchenImmutableNestedMeshes": 8,
+      "motions": 9,
+      "materials": {
+        "Kfront": {
+          "name": "kitchen-10 · front",
+          "toneMapped": false,
+          "colour": "#d2d4d0",
+          "onBeforeCompile": true
+        },
+        "Kcounter": {
+          "name": "kitchen-10 · counter",
+          "toneMapped": false,
+          "colour": "#71766f",
+          "onBeforeCompile": true
+        },
+        "Kupper": {
+          "name": "kitchen-10 · upper",
+          "toneMapped": false,
+          "colour": "#d2d4d0",
+          "onBeforeCompile": true
+        },
+        "Bfront": {
+          "name": "bathroom-01 · front",
+          "toneMapped": false,
+          "colour": "#1c1815",
+          "onBeforeCompile": true
+        },
+        "Bcounter": {
+          "name": "bathroom-01 · counter",
+          "toneMapped": false,
+          "colour": "#eff0e9",
+          "onBeforeCompile": true
+        },
+        "Bwall": {
+          "name": "bathroom-01/wall",
+          "toneMapped": false,
+          "colour": "#dfb78d",
+          "onBeforeCompile": true
+        }
+      },
+      "dispose": {
+        "geometry": 293,
+        "materials": 38,
+        "undisposedGeometry": 0,
+        "undisposedMaterial": 0
+      }
+    },
+    {
+      "id": "kitchen-11",
+      "meshCount": 290,
+      "kitchenImmutableNestedMeshes": 9,
+      "motions": 11,
+      "materials": {
+        "Kfront": {
+          "name": "kitchen-11 · front",
+          "toneMapped": false,
+          "colour": "#a2a69c",
+          "onBeforeCompile": true
+        },
+        "Kcounter": {
+          "name": "kitchen-11 · counter",
+          "toneMapped": false,
+          "colour": "#b9b8b4",
+          "onBeforeCompile": true
+        },
+        "Kupper": {
+          "name": "kitchen-11 · upper",
+          "toneMapped": false,
+          "colour": "#ccd0cf",
+          "onBeforeCompile": true
+        },
+        "Bfront": {
+          "name": "bathroom-01 · front",
+          "toneMapped": false,
+          "colour": "#1c1815",
+          "onBeforeCompile": true
+        },
+        "Bcounter": {
+          "name": "bathroom-01 · counter",
+          "toneMapped": false,
+          "colour": "#eff0e9",
+          "onBeforeCompile": true
+        },
+        "Bwall": {
+          "name": "bathroom-01/wall",
+          "toneMapped": false,
+          "colour": "#dfb78d",
+          "onBeforeCompile": true
+        }
+      },
+      "dispose": {
+        "geometry": 290,
+        "materials": 39,
+        "undisposedGeometry": 0,
+        "undisposedMaterial": 0
+      }
+    },
+    {
+      "id": "kitchen-12",
+      "meshCount": 265,
+      "kitchenImmutableNestedMeshes": 8,
+      "motions": 7,
+      "materials": {
+        "Kfront": {
+          "name": "kitchen-12/front",
+          "toneMapped": false,
+          "colour": "#664f2d",
+          "onBeforeCompile": true
+        },
+        "Kcounter": {
+          "name": "kitchen-12 · counter",
+          "toneMapped": false,
+          "colour": "#ccc4ad",
+          "onBeforeCompile": true
+        },
+        "Kupper": {
+          "name": "kitchen-12 · upper",
+          "toneMapped": false,
+          "colour": "#664f2d",
+          "onBeforeCompile": true
+        },
+        "Bfront": {
+          "name": "bathroom-01 · front",
+          "toneMapped": false,
+          "colour": "#1c1815",
+          "onBeforeCompile": true
+        },
+        "Bcounter": {
+          "name": "bathroom-01 · counter",
+          "toneMapped": false,
+          "colour": "#eff0e9",
+          "onBeforeCompile": true
+        },
+        "Bwall": {
+          "name": "bathroom-01/wall",
+          "toneMapped": false,
+          "colour": "#dfb78d",
+          "onBeforeCompile": true
+        }
+      },
+      "dispose": {
+        "geometry": 265,
+        "materials": 38,
+        "undisposedGeometry": 0,
+        "undisposedMaterial": 0
+      }
+    },
+    {
+      "id": "kitchen-13",
+      "meshCount": 287,
+      "kitchenImmutableNestedMeshes": 9,
+      "motions": 13,
+      "materials": {
+        "Kfront": {
+          "name": "kitchen-13 · front",
+          "toneMapped": false,
+          "colour": "#a4a19a",
+          "onBeforeCompile": true
+        },
+        "Kcounter": {
+          "name": "kitchen-13 · counter",
+          "toneMapped": false,
+          "colour": "#aba89b",
+          "onBeforeCompile": true
+        },
+        "Kupper": {
+          "name": "kitchen-13 · upper",
+          "toneMapped": false,
+          "colour": "#625950",
+          "onBeforeCompile": true
+        },
+        "Bfront": {
+          "name": "bathroom-01 · front",
+          "toneMapped": false,
+          "colour": "#1c1815",
+          "onBeforeCompile": true
+        },
+        "Bcounter": {
+          "name": "bathroom-01 · counter",
+          "toneMapped": false,
+          "colour": "#eff0e9",
+          "onBeforeCompile": true
+        },
+        "Bwall": {
+          "name": "bathroom-01/wall",
+          "toneMapped": false,
+          "colour": "#dfb78d",
+          "onBeforeCompile": true
+        }
+      },
+      "dispose": {
+        "geometry": 287,
+        "materials": 39,
+        "undisposedGeometry": 0,
+        "undisposedMaterial": 0
+      }
+    },
+    {
+      "id": "kitchen-14",
+      "meshCount": 287,
+      "kitchenImmutableNestedMeshes": 5,
+      "motions": 9,
+      "materials": {
+        "Kfront": {
+          "name": "kitchen-14 · front",
+          "toneMapped": false,
+          "colour": "#c6c7c2",
+          "onBeforeCompile": true
+        },
+        "Kcounter": {
+          "name": "kitchen-14 · counter",
+          "toneMapped": false,
+          "colour": "#e0e1da",
+          "onBeforeCompile": true
+        },
+        "Kupper": {
+          "name": "kitchen-14 · upper",
+          "toneMapped": false,
+          "colour": "#c6c7c2",
+          "onBeforeCompile": true
+        },
+        "Bfront": {
+          "name": "bathroom-01 · front",
+          "toneMapped": false,
+          "colour": "#1c1815",
+          "onBeforeCompile": true
+        },
+        "Bcounter": {
+          "name": "bathroom-01 · counter",
+          "toneMapped": false,
+          "colour": "#eff0e9",
+          "onBeforeCompile": true
+        },
+        "Bwall": {
+          "name": "bathroom-01/wall",
+          "toneMapped": false,
+          "colour": "#dfb78d",
+          "onBeforeCompile": true
+        }
+      },
+      "dispose": {
+        "geometry": 287,
+        "materials": 37,
+        "undisposedGeometry": 0,
+        "undisposedMaterial": 0
+      }
+    },
+    {
+      "id": "kitchen-15",
+      "meshCount": 280,
+      "kitchenImmutableNestedMeshes": 10,
+      "motions": 9,
+      "materials": {
+        "Kfront": {
+          "name": "kitchen-15 · front",
+          "toneMapped": false,
+          "colour": "#dcddd9",
+          "onBeforeCompile": true
+        },
+        "Kcounter": {
+          "name": "kitchen-15 · counter",
+          "toneMapped": false,
+          "colour": "#dde2e5",
+          "onBeforeCompile": true
+        },
+        "Kupper": {
+          "name": "kitchen-15 · upper",
+          "toneMapped": false,
+          "colour": "#dcddd9",
+          "onBeforeCompile": true
+        },
+        "Bfront": {
+          "name": "bathroom-01 · front",
+          "toneMapped": false,
+          "colour": "#1c1815",
+          "onBeforeCompile": true
+        },
+        "Bcounter": {
+          "name": "bathroom-01 · counter",
+          "toneMapped": false,
+          "colour": "#eff0e9",
+          "onBeforeCompile": true
+        },
+        "Bwall": {
+          "name": "bathroom-01/wall",
+          "toneMapped": false,
+          "colour": "#dfb78d",
+          "onBeforeCompile": true
+        }
+      },
+      "dispose": {
+        "geometry": 280,
+        "materials": 38,
+        "undisposedGeometry": 0,
+        "undisposedMaterial": 0
+      }
+    },
+    {
+      "id": "bathroom-01",
+      "meshCount": 273,
+      "kitchenImmutableNestedMeshes": 10,
+      "motions": 10,
+      "materials": {
+        "Kfront": {
+          "name": "kitchen-01 · front",
+          "toneMapped": false,
+          "colour": "#c6c7c2",
+          "onBeforeCompile": true
+        },
+        "Kcounter": {
+          "name": "kitchen-01 · counter",
+          "toneMapped": false,
+          "colour": "#b4b8be",
+          "onBeforeCompile": true
+        },
+        "Kupper": {
+          "name": "kitchen-01 · upper",
+          "toneMapped": false,
+          "colour": "#c6c7c2",
+          "onBeforeCompile": true
+        },
+        "Bfront": {
+          "name": "bathroom-01 · front",
+          "toneMapped": false,
+          "colour": "#1c1815",
+          "onBeforeCompile": true
+        },
+        "Bcounter": {
+          "name": "bathroom-01 · counter",
+          "toneMapped": false,
+          "colour": "#eff0e9",
+          "onBeforeCompile": true
+        },
+        "Bwall": {
+          "name": "bathroom-01/wall",
+          "toneMapped": false,
+          "colour": "#dfb78d",
+          "onBeforeCompile": true
+        }
+      },
+      "dispose": {
+        "geometry": 273,
+        "materials": 40,
+        "undisposedGeometry": 0,
+        "undisposedMaterial": 0
+      }
+    },
+    {
+      "id": "bathroom-02",
+      "meshCount": 267,
+      "kitchenImmutableNestedMeshes": 10,
+      "motions": 9,
+      "materials": {
+        "Kfront": {
+          "name": "kitchen-01 · front",
+          "toneMapped": false,
+          "colour": "#c6c7c2",
+          "onBeforeCompile": true
+        },
+        "Kcounter": {
+          "name": "kitchen-01 · counter",
+          "toneMapped": false,
+          "colour": "#b4b8be",
+          "onBeforeCompile": true
+        },
+        "Kupper": {
+          "name": "kitchen-01 · upper",
+          "toneMapped": false,
+          "colour": "#c6c7c2",
+          "onBeforeCompile": true
+        },
+        "Bfront": {
+          "name": "bathroom-02 · front",
+          "toneMapped": false,
+          "colour": "#393a34",
+          "onBeforeCompile": true
+        },
+        "Bcounter": {
+          "name": "bathroom-02 · counter",
+          "toneMapped": false,
+          "colour": "#eff0e9",
+          "onBeforeCompile": true
+        },
+        "Bwall": {
+          "name": "bathroom-02/wall",
+          "toneMapped": false,
+          "colour": "#b5b5b5",
+          "onBeforeCompile": true
+        }
+      },
+      "dispose": {
+        "geometry": 267,
+        "materials": 41,
+        "undisposedGeometry": 0,
+        "undisposedMaterial": 0
+      }
+    },
+    {
+      "id": "bathroom-03",
+      "meshCount": 265,
+      "kitchenImmutableNestedMeshes": 10,
+      "motions": 9,
+      "materials": {
+        "Kfront": {
+          "name": "kitchen-01 · front",
+          "toneMapped": false,
+          "colour": "#c6c7c2",
+          "onBeforeCompile": true
+        },
+        "Kcounter": {
+          "name": "kitchen-01 · counter",
+          "toneMapped": false,
+          "colour": "#b4b8be",
+          "onBeforeCompile": true
+        },
+        "Kupper": {
+          "name": "kitchen-01 · upper",
+          "toneMapped": false,
+          "colour": "#c6c7c2",
+          "onBeforeCompile": true
+        },
+        "Bfront": {
+          "name": "bathroom-03 · front",
+          "toneMapped": false,
+          "colour": "#847d74",
+          "onBeforeCompile": true
+        },
+        "Bcounter": {
+          "name": "bathroom-03 · counter",
+          "toneMapped": false,
+          "colour": "#eff0e9",
+          "onBeforeCompile": true
+        },
+        "Bwall": {
+          "name": "bathroom-03/wall",
+          "toneMapped": false,
+          "colour": "#c7c2be",
+          "onBeforeCompile": true
+        }
+      },
+      "dispose": {
+        "geometry": 265,
+        "materials": 41,
+        "undisposedGeometry": 0,
+        "undisposedMaterial": 0
+      }
+    },
+    {
+      "id": "bathroom-04",
+      "meshCount": 265,
+      "kitchenImmutableNestedMeshes": 10,
+      "motions": 10,
+      "materials": {
+        "Kfront": {
+          "name": "kitchen-01 · front",
+          "toneMapped": false,
+          "colour": "#c6c7c2",
+          "onBeforeCompile": true
+        },
+        "Kcounter": {
+          "name": "kitchen-01 · counter",
+          "toneMapped": false,
+          "colour": "#b4b8be",
+          "onBeforeCompile": true
+        },
+        "Kupper": {
+          "name": "kitchen-01 · upper",
+          "toneMapped": false,
+          "colour": "#c6c7c2",
+          "onBeforeCompile": true
+        },
+        "Bfront": {
+          "name": "bathroom-04 · front",
+          "toneMapped": false,
+          "colour": "#656563",
+          "onBeforeCompile": true
+        },
+        "Bcounter": {
+          "name": "bathroom-04 · counter",
+          "toneMapped": false,
+          "colour": "#eff0e9",
+          "onBeforeCompile": true
+        },
+        "Bwall": {
+          "name": "bathroom-04/wall",
+          "toneMapped": false,
+          "colour": "#aca089",
+          "onBeforeCompile": true
+        }
+      },
+      "dispose": {
+        "geometry": 265,
+        "materials": 41,
+        "undisposedGeometry": 0,
+        "undisposedMaterial": 0
+      }
+    },
+    {
+      "id": "bathroom-05",
+      "meshCount": 267,
+      "kitchenImmutableNestedMeshes": 10,
+      "motions": 10,
+      "materials": {
+        "Kfront": {
+          "name": "kitchen-01 · front",
+          "toneMapped": false,
+          "colour": "#c6c7c2",
+          "onBeforeCompile": true
+        },
+        "Kcounter": {
+          "name": "kitchen-01 · counter",
+          "toneMapped": false,
+          "colour": "#b4b8be",
+          "onBeforeCompile": true
+        },
+        "Kupper": {
+          "name": "kitchen-01 · upper",
+          "toneMapped": false,
+          "colour": "#c6c7c2",
+          "onBeforeCompile": true
+        },
+        "Bfront": {
+          "name": "bathroom-05 · front",
+          "toneMapped": false,
+          "colour": "#c6c7c2",
+          "onBeforeCompile": true
+        },
+        "Bcounter": {
+          "name": "bathroom-05 · counter",
+          "toneMapped": false,
+          "colour": "#eff0e9",
+          "onBeforeCompile": true
+        },
+        "Bwall": {
+          "name": "bathroom-05 · wall",
+          "toneMapped": false,
+          "colour": "#b8b7bc",
+          "onBeforeCompile": true
+        }
+      },
+      "dispose": {
+        "geometry": 267,
+        "materials": 41,
+        "undisposedGeometry": 0,
+        "undisposedMaterial": 0
+      }
+    },
+    {
+      "id": "bathroom-06",
+      "meshCount": 269,
+      "kitchenImmutableNestedMeshes": 10,
+      "motions": 10,
+      "materials": {
+        "Kfront": {
+          "name": "kitchen-01 · front",
+          "toneMapped": false,
+          "colour": "#c6c7c2",
+          "onBeforeCompile": true
+        },
+        "Kcounter": {
+          "name": "kitchen-01 · counter",
+          "toneMapped": false,
+          "colour": "#b4b8be",
+          "onBeforeCompile": true
+        },
+        "Kupper": {
+          "name": "kitchen-01 · upper",
+          "toneMapped": false,
+          "colour": "#c6c7c2",
+          "onBeforeCompile": true
+        },
+        "Bfront": {
+          "name": "bathroom-06 · front",
+          "toneMapped": false,
+          "colour": "#4e4335",
+          "onBeforeCompile": true
+        },
+        "Bcounter": {
+          "name": "bathroom-06 · counter",
+          "toneMapped": false,
+          "colour": "#ebeae6",
+          "onBeforeCompile": true
+        },
+        "Bwall": {
+          "name": "bathroom-06/wall",
+          "toneMapped": false,
+          "colour": "#b5b2a6",
+          "onBeforeCompile": true
+        }
+      },
+      "dispose": {
+        "geometry": 269,
+        "materials": 41,
+        "undisposedGeometry": 0,
+        "undisposedMaterial": 0
+      }
+    },
+    {
+      "id": "bathroom-07",
+      "meshCount": 271,
+      "kitchenImmutableNestedMeshes": 10,
+      "motions": 10,
+      "materials": {
+        "Kfront": {
+          "name": "kitchen-01 · front",
+          "toneMapped": false,
+          "colour": "#c6c7c2",
+          "onBeforeCompile": true
+        },
+        "Kcounter": {
+          "name": "kitchen-01 · counter",
+          "toneMapped": false,
+          "colour": "#b4b8be",
+          "onBeforeCompile": true
+        },
+        "Kupper": {
+          "name": "kitchen-01 · upper",
+          "toneMapped": false,
+          "colour": "#c6c7c2",
+          "onBeforeCompile": true
+        },
+        "Bfront": {
+          "name": "bathroom-07 · front",
+          "toneMapped": false,
+          "colour": "#424033",
+          "onBeforeCompile": true
+        },
+        "Bcounter": {
+          "name": "bathroom-07 · counter",
+          "toneMapped": false,
+          "colour": "#eff0e9",
+          "onBeforeCompile": true
+        },
+        "Bwall": {
+          "name": "bathroom-07/wall",
+          "toneMapped": false,
+          "colour": "#d1d1c7",
+          "onBeforeCompile": true
+        }
+      },
+      "dispose": {
+        "geometry": 271,
+        "materials": 41,
+        "undisposedGeometry": 0,
+        "undisposedMaterial": 0
+      }
+    },
+    {
+      "id": "bathroom-08",
+      "meshCount": 269,
+      "kitchenImmutableNestedMeshes": 10,
+      "motions": 10,
+      "materials": {
+        "Kfront": {
+          "name": "kitchen-01 · front",
+          "toneMapped": false,
+          "colour": "#c6c7c2",
+          "onBeforeCompile": true
+        },
+        "Kcounter": {
+          "name": "kitchen-01 · counter",
+          "toneMapped": false,
+          "colour": "#b4b8be",
+          "onBeforeCompile": true
+        },
+        "Kupper": {
+          "name": "kitchen-01 · upper",
+          "toneMapped": false,
+          "colour": "#c6c7c2",
+          "onBeforeCompile": true
+        },
+        "Bfront": {
+          "name": "bathroom-08 · front",
+          "toneMapped": false,
+          "colour": "#45403d",
+          "onBeforeCompile": true
+        },
+        "Bcounter": {
+          "name": "bathroom-08 · counter",
+          "toneMapped": false,
+          "colour": "#eff0e9",
+          "onBeforeCompile": true
+        },
+        "Bwall": {
+          "name": "bathroom-08/wall",
+          "toneMapped": false,
+          "colour": "#9f9fa1",
+          "onBeforeCompile": true
+        }
+      },
+      "dispose": {
+        "geometry": 269,
+        "materials": 40,
+        "undisposedGeometry": 0,
+        "undisposedMaterial": 0
+      }
+    },
+    {
+      "id": "bathroom-09",
+      "meshCount": 259,
+      "kitchenImmutableNestedMeshes": 10,
+      "motions": 8,
+      "materials": {
+        "Kfront": {
+          "name": "kitchen-01 · front",
+          "toneMapped": false,
+          "colour": "#c6c7c2",
+          "onBeforeCompile": true
+        },
+        "Kcounter": {
+          "name": "kitchen-01 · counter",
+          "toneMapped": false,
+          "colour": "#b4b8be",
+          "onBeforeCompile": true
+        },
+        "Kupper": {
+          "name": "kitchen-01 · upper",
+          "toneMapped": false,
+          "colour": "#c6c7c2",
+          "onBeforeCompile": true
+        },
+        "Bfront": {
+          "name": "bathroom-09 · front",
+          "toneMapped": false,
+          "colour": "#c6c7c2",
+          "onBeforeCompile": true
+        },
+        "Bcounter": {
+          "name": "bathroom-09 · counter",
+          "toneMapped": false,
+          "colour": "#f3eae8",
+          "onBeforeCompile": true
+        },
+        "Bwall": {
+          "name": "bathroom-09/wall",
+          "toneMapped": false,
+          "colour": "#bcbab4",
+          "onBeforeCompile": true
+        }
+      },
+      "dispose": {
+        "geometry": 259,
+        "materials": 41,
+        "undisposedGeometry": 0,
+        "undisposedMaterial": 0
+      }
+    },
+    {
+      "id": "bathroom-10",
+      "meshCount": 269,
+      "kitchenImmutableNestedMeshes": 10,
+      "motions": 10,
+      "materials": {
+        "Kfront": {
+          "name": "kitchen-01 · front",
+          "toneMapped": false,
+          "colour": "#c6c7c2",
+          "onBeforeCompile": true
+        },
+        "Kcounter": {
+          "name": "kitchen-01 · counter",
+          "toneMapped": false,
+          "colour": "#b4b8be",
+          "onBeforeCompile": true
+        },
+        "Kupper": {
+          "name": "kitchen-01 · upper",
+          "toneMapped": false,
+          "colour": "#c6c7c2",
+          "onBeforeCompile": true
+        },
+        "Bfront": {
+          "name": "bathroom-10 · front",
+          "toneMapped": false,
+          "colour": "#74736d",
+          "onBeforeCompile": true
+        },
+        "Bcounter": {
+          "name": "bathroom-10 · counter",
+          "toneMapped": false,
+          "colour": "#eff0e9",
+          "onBeforeCompile": true
+        },
+        "Bwall": {
+          "name": "bathroom-10/wall",
+          "toneMapped": false,
+          "colour": "#aaa6a1",
+          "onBeforeCompile": true
+        }
+      },
+      "dispose": {
+        "geometry": 269,
+        "materials": 41,
+        "undisposedGeometry": 0,
+        "undisposedMaterial": 0
+      }
+    },
+    {
+      "id": "bathroom-11",
+      "meshCount": 269,
+      "kitchenImmutableNestedMeshes": 10,
+      "motions": 10,
+      "materials": {
+        "Kfront": {
+          "name": "kitchen-01 · front",
+          "toneMapped": false,
+          "colour": "#c6c7c2",
+          "onBeforeCompile": true
+        },
+        "Kcounter": {
+          "name": "kitchen-01 · counter",
+          "toneMapped": false,
+          "colour": "#b4b8be",
+          "onBeforeCompile": true
+        },
+        "Kupper": {
+          "name": "kitchen-01 · upper",
+          "toneMapped": false,
+          "colour": "#c6c7c2",
+          "onBeforeCompile": true
+        },
+        "Bfront": {
+          "name": "bathroom-11 · front",
+          "toneMapped": false,
+          "colour": "#403023",
+          "onBeforeCompile": true
+        },
+        "Bcounter": {
+          "name": "bathroom-11 · counter",
+          "toneMapped": false,
+          "colour": "#eff0e9",
+          "onBeforeCompile": true
+        },
+        "Bwall": {
+          "name": "bathroom-11/wall",
+          "toneMapped": false,
+          "colour": "#bdc5ce",
+          "onBeforeCompile": true
+        }
+      },
+      "dispose": {
+        "geometry": 269,
+        "materials": 41,
+        "undisposedGeometry": 0,
+        "undisposedMaterial": 0
+      }
+    },
+    {
+      "id": "bathroom-12",
+      "meshCount": 268,
+      "kitchenImmutableNestedMeshes": 10,
+      "motions": 10,
+      "materials": {
+        "Kfront": {
+          "name": "kitchen-01 · front",
+          "toneMapped": false,
+          "colour": "#c6c7c2",
+          "onBeforeCompile": true
+        },
+        "Kcounter": {
+          "name": "kitchen-01 · counter",
+          "toneMapped": false,
+          "colour": "#b4b8be",
+          "onBeforeCompile": true
+        },
+        "Kupper": {
+          "name": "kitchen-01 · upper",
+          "toneMapped": false,
+          "colour": "#c6c7c2",
+          "onBeforeCompile": true
+        },
+        "Bfront": {
+          "name": "bathroom-12 · front",
+          "toneMapped": false,
+          "colour": "#403c39",
+          "onBeforeCompile": true
+        },
+        "Bcounter": {
+          "name": "bathroom-12 · counter",
+          "toneMapped": false,
+          "colour": "#eff0e9",
+          "onBeforeCompile": true
+        },
+        "Bwall": {
+          "name": "bathroom-12/wall",
+          "toneMapped": false,
+          "colour": "#6b6864",
+          "onBeforeCompile": true
+        }
+      },
+      "dispose": {
+        "geometry": 268,
+        "materials": 41,
+        "undisposedGeometry": 0,
+        "undisposedMaterial": 0
+      }
+    },
+    {
+      "id": "bathroom-13",
+      "meshCount": 267,
+      "kitchenImmutableNestedMeshes": 10,
+      "motions": 10,
+      "materials": {
+        "Kfront": {
+          "name": "kitchen-01 · front",
+          "toneMapped": false,
+          "colour": "#c6c7c2",
+          "onBeforeCompile": true
+        },
+        "Kcounter": {
+          "name": "kitchen-01 · counter",
+          "toneMapped": false,
+          "colour": "#b4b8be",
+          "onBeforeCompile": true
+        },
+        "Kupper": {
+          "name": "kitchen-01 · upper",
+          "toneMapped": false,
+          "colour": "#c6c7c2",
+          "onBeforeCompile": true
+        },
+        "Bfront": {
+          "name": "bathroom-13 · front",
+          "toneMapped": false,
+          "colour": "#68645d",
+          "onBeforeCompile": true
+        },
+        "Bcounter": {
+          "name": "bathroom-13 · counter",
+          "toneMapped": false,
+          "colour": "#eff0e9",
+          "onBeforeCompile": true
+        },
+        "Bwall": {
+          "name": "bathroom-13/wall",
+          "toneMapped": false,
+          "colour": "#b8bdc0",
+          "onBeforeCompile": true
+        }
+      },
+      "dispose": {
+        "geometry": 267,
+        "materials": 41,
+        "undisposedGeometry": 0,
+        "undisposedMaterial": 0
+      }
+    },
+    {
+      "id": "bathroom-14",
+      "meshCount": 257,
+      "kitchenImmutableNestedMeshes": 10,
+      "motions": 8,
+      "materials": {
+        "Kfront": {
+          "name": "kitchen-01 · front",
+          "toneMapped": false,
+          "colour": "#c6c7c2",
+          "onBeforeCompile": true
+        },
+        "Kcounter": {
+          "name": "kitchen-01 · counter",
+          "toneMapped": false,
+          "colour": "#b4b8be",
+          "onBeforeCompile": true
+        },
+        "Kupper": {
+          "name": "kitchen-01 · upper",
+          "toneMapped": false,
+          "colour": "#c6c7c2",
+          "onBeforeCompile": true
+        },
+        "Bfront": {
+          "name": "bathroom-14 · front",
+          "toneMapped": false,
+          "colour": "#c6c7c2",
+          "onBeforeCompile": true
+        },
+        "Bcounter": {
+          "name": "bathroom-14 · counter",
+          "toneMapped": false,
+          "colour": "#e1e2dd",
+          "onBeforeCompile": true
+        },
+        "Bwall": {
+          "name": "bathroom-14/wall",
+          "toneMapped": false,
+          "colour": "#c7c8c5",
+          "onBeforeCompile": true
+        }
+      },
+      "dispose": {
+        "geometry": 257,
+        "materials": 41,
+        "undisposedGeometry": 0,
+        "undisposedMaterial": 0
+      }
+    },
+    {
+      "id": "bathroom-15",
+      "meshCount": 259,
+      "kitchenImmutableNestedMeshes": 10,
+      "motions": 8,
+      "materials": {
+        "Kfront": {
+          "name": "kitchen-01 · front",
+          "toneMapped": false,
+          "colour": "#c6c7c2",
+          "onBeforeCompile": true
+        },
+        "Kcounter": {
+          "name": "kitchen-01 · counter",
+          "toneMapped": false,
+          "colour": "#b4b8be",
+          "onBeforeCompile": true
+        },
+        "Kupper": {
+          "name": "kitchen-01 · upper",
+          "toneMapped": false,
+          "colour": "#c6c7c2",
+          "onBeforeCompile": true
+        },
+        "Bfront": {
+          "name": "bathroom-15 · front",
+          "toneMapped": false,
+          "colour": "#5b5c57",
+          "onBeforeCompile": true
+        },
+        "Bcounter": {
+          "name": "bathroom-15 · counter",
+          "toneMapped": false,
+          "colour": "#a2a7a3",
+          "onBeforeCompile": true
+        },
+        "Bwall": {
+          "name": "bathroom-15/wall",
+          "toneMapped": false,
+          "colour": "#758185",
+          "onBeforeCompile": true
+        }
+      },
+      "dispose": {
+        "geometry": 259,
+        "materials": 40,
+        "undisposedGeometry": 0,
+        "undisposedMaterial": 0
+      }
+    },
+    {
+      "id": "bathroom-16",
+      "meshCount": 271,
+      "kitchenImmutableNestedMeshes": 10,
+      "motions": 10,
+      "materials": {
+        "Kfront": {
+          "name": "kitchen-01 · front",
+          "toneMapped": false,
+          "colour": "#c6c7c2",
+          "onBeforeCompile": true
+        },
+        "Kcounter": {
+          "name": "kitchen-01 · counter",
+          "toneMapped": false,
+          "colour": "#b4b8be",
+          "onBeforeCompile": true
+        },
+        "Kupper": {
+          "name": "kitchen-01 · upper",
+          "toneMapped": false,
+          "colour": "#c6c7c2",
+          "onBeforeCompile": true
+        },
+        "Bfront": {
+          "name": "bathroom-16 · front",
+          "toneMapped": false,
+          "colour": "#736f6a",
+          "onBeforeCompile": true
+        },
+        "Bcounter": {
+          "name": "bathroom-16 · counter",
+          "toneMapped": false,
+          "colour": "#eff0e9",
+          "onBeforeCompile": true
+        },
+        "Bwall": {
+          "name": "bathroom-16/wall",
+          "toneMapped": false,
+          "colour": "#727272",
+          "onBeforeCompile": true
+        }
+      },
+      "dispose": {
+        "geometry": 271,
+        "materials": 41,
+        "undisposedGeometry": 0,
+        "undisposedMaterial": 0
+      }
+    },
+    {
+      "id": "bathroom-17",
+      "meshCount": 265,
+      "kitchenImmutableNestedMeshes": 10,
+      "motions": 10,
+      "materials": {
+        "Kfront": {
+          "name": "kitchen-01 · front",
+          "toneMapped": false,
+          "colour": "#c6c7c2",
+          "onBeforeCompile": true
+        },
+        "Kcounter": {
+          "name": "kitchen-01 · counter",
+          "toneMapped": false,
+          "colour": "#b4b8be",
+          "onBeforeCompile": true
+        },
+        "Kupper": {
+          "name": "kitchen-01 · upper",
+          "toneMapped": false,
+          "colour": "#c6c7c2",
+          "onBeforeCompile": true
+        },
+        "Bfront": {
+          "name": "bathroom-17 · front",
+          "toneMapped": false,
+          "colour": "#2a2723",
+          "onBeforeCompile": true
+        },
+        "Bcounter": {
+          "name": "bathroom-17 · counter",
+          "toneMapped": false,
+          "colour": "#eff0e9",
+          "onBeforeCompile": true
+        },
+        "Bwall": {
+          "name": "bathroom-17/wall",
+          "toneMapped": false,
+          "colour": "#757575",
+          "onBeforeCompile": true
+        }
+      },
+      "dispose": {
+        "geometry": 265,
+        "materials": 41,
+        "undisposedGeometry": 0,
+        "undisposedMaterial": 0
+      }
+    }
+  ],
+  "exported": {
+    "schemaVersion": 2,
+    "layout": "t2",
+    "exteriorId": "exterior-standard-branco-glacial",
+    "exterior": "#ddddda",
+    "floorId": "floor-spc-kx7006",
+    "floor": "#92846c",
+    "interior": "#eeede8",
+    "interiorName": "Branco natural",
+    "kitchen": "linear",
+    "kitchenRef": "kitchen-15",
+    "bathroom": "standard",
+    "bathroomRef": "bathroom-05",
+    "bathroomUV": null,
+    "roof": false,
+    "porch": false,
+    "lighting": "catalogue",
+    "textureMode": "prepared"
+  }
+}

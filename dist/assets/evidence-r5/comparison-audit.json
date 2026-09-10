@@ -1,0 +1,70 @@
+{
+  "close": {
+    "beforeCleanup": {
+      "renderers": 1,
+      "rendererDispose": 1,
+      "materials": 1,
+      "release": 1,
+      "renders": 0,
+      "dialogOpen": false,
+      "previewStillRegistered": false
+    },
+    "afterClosingAvailablePreview": {
+      "renderers": 1,
+      "rendererDispose": 1,
+      "materials": 1,
+      "release": 1,
+      "renders": 0
+    },
+    "unreleasedMaterials": 0,
+    "undisposedRenderers": 0
+  },
+  "switch": {
+    "beforeCleanup": {
+      "renderers": 2,
+      "rendererDispose": 1,
+      "materials": 2,
+      "release": 1,
+      "renders": 1,
+      "dialogOpen": true,
+      "previewStillRegistered": true
+    },
+    "afterClosingAvailablePreview": {
+      "renderers": 2,
+      "rendererDispose": 2,
+      "materials": 2,
+      "release": 2,
+      "renders": 1
+    },
+    "unreleasedMaterials": 0,
+    "undisposedRenderers": 0
+  },
+  "failure": {
+    "beforeCleanup": {
+      "renderers": 1,
+      "rendererDispose": 1,
+      "materials": 1,
+      "release": 1,
+      "renders": 0,
+      "dialogOpen": true,
+      "previewStillRegistered": true
+    },
+    "afterClosingAvailablePreview": {
+      "renderers": 1,
+      "rendererDispose": 1,
+      "materials": 1,
+      "release": 1,
+      "renders": 0
+    },
+    "unreleasedMaterials": 0,
+    "undisposedRenderers": 0
+  },
+  "gm16Frame": {
+    "imageAspect": 2.2135922330097086,
+    "planeWidth": 2.3,
+    "planeHeight": 1.0390350877192982,
+    "cameraWidth": 2.6,
+    "cameraHeight": 1.84,
+    "clippedWidthFraction": 0
+  }
+}

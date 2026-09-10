@@ -1,0 +1,535 @@
+{
+  "method": "Frontal orthographic plane, native original-crop resolution, current createStage renderer/lights. Source-exact uses MeshBasicMaterial toneMapped=false; lit uses source map and MeshStandardMaterial; current uses lib.create and physical metre UV. Nearest sampling only for original texture isolates processing from interpolation. Not physical calibration.",
+  "results": [
+    {
+      "id": "floor-spc-kx7006",
+      "sourceMeanRGB8": [
+        146.419,
+        132.062,
+        108.179
+      ],
+      "modes": {
+        "source-exact": {
+          "meanRGB8": [
+            146.419,
+            132.062,
+            108.179
+          ],
+          "meanRGBDifference8": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "maeRGB8": 0.0,
+          "maximumChannelError8": 0.0,
+          "exactPixelFraction": 1.0,
+          "maeMeaning": "same source pixels and normalized UV, native resolution"
+        },
+        "source-lit": {
+          "meanRGB8": [
+            145.577,
+            130.318,
+            103.423
+          ],
+          "meanRGBDifference8": [
+            -0.841,
+            -1.745,
+            -4.755
+          ],
+          "maeRGB8": 2.6552,
+          "maximumChannelError8": 14.0,
+          "exactPixelFraction": 0.0,
+          "maeMeaning": "same source pixels and normalized UV, native resolution"
+        },
+        "source-lit-no-tone": {
+          "meanRGB8": [
+            154.574,
+            140.87,
+            117.332
+          ],
+          "meanRGBDifference8": [
+            8.155,
+            8.808,
+            9.153
+          ],
+          "maeRGB8": 8.7054,
+          "maximumChannelError8": 20.0,
+          "exactPixelFraction": 0.0,
+          "maeMeaning": "same source pixels and normalized UV, native resolution"
+        },
+        "current": {
+          "meanRGB8": [
+            146.45,
+            131.47,
+            105.199
+          ],
+          "meanRGBDifference8": [
+            0.031,
+            -0.593,
+            -2.979
+          ],
+          "maeRGB8": 19.2956,
+          "maximumChannelError8": 105.0,
+          "exactPixelFraction": 0.000117,
+          "maeMeaning": "spatial error combines pattern rearrangement and light"
+        },
+        "prepared": {
+          "meanRGB8": [
+            146.704,
+            131.83,
+            105.82
+          ],
+          "meanRGBDifference8": [
+            0.285,
+            -0.232,
+            -2.359
+          ],
+          "maeRGB8": 18.3226,
+          "maximumChannelError8": 110.0,
+          "exactPixelFraction": 0.000117,
+          "maeMeaning": "spatial error combines pattern rearrangement and light"
+        },
+        "library-source-unlit": {
+          "meanRGB8": [
+            146.419,
+            132.062,
+            108.179
+          ],
+          "meanRGBDifference8": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "maeRGB8": 0.0,
+          "maximumChannelError8": 0.0,
+          "exactPixelFraction": 1.0,
+          "maeMeaning": "same source pixels and normalized UV, native resolution"
+        }
+      }
+    },
+    {
+      "id": "exterior-3d-gm-gm-16",
+      "sourceMeanRGB8": [
+        200.664,
+        165.812,
+        96.86
+      ],
+      "modes": {
+        "source-exact": {
+          "meanRGB8": [
+            200.664,
+            165.812,
+            96.86
+          ],
+          "meanRGBDifference8": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "maeRGB8": 0.0,
+          "maximumChannelError8": 0.0,
+          "exactPixelFraction": 1.0,
+          "maeMeaning": "same source pixels and normalized UV, native resolution"
+        },
+        "source-lit": {
+          "meanRGB8": [
+            203.083,
+            166.782,
+            91.404
+          ],
+          "meanRGBDifference8": [
+            2.419,
+            0.97,
+            -5.456
+          ],
+          "maeRGB8": 3.244,
+          "maximumChannelError8": 14.0,
+          "exactPixelFraction": 0.0,
+          "maeMeaning": "same source pixels and normalized UV, native resolution"
+        },
+        "source-lit-no-tone": {
+          "meanRGB8": [
+            209.497,
+            174.883,
+            107.443
+          ],
+          "meanRGBDifference8": [
+            8.833,
+            9.07,
+            10.584
+          ],
+          "maeRGB8": 9.4955,
+          "maximumChannelError8": 38.0,
+          "exactPixelFraction": 0.0,
+          "maeMeaning": "same source pixels and normalized UV, native resolution"
+        },
+        "current": {
+          "meanRGB8": [
+            202.866,
+            166.742,
+            91.407
+          ],
+          "meanRGBDifference8": [
+            2.201,
+            0.929,
+            -5.453
+          ],
+          "maeRGB8": 24.3618,
+          "maximumChannelError8": 167.0,
+          "exactPixelFraction": 3.2e-05,
+          "maeMeaning": "spatial error combines pattern rearrangement and light"
+        },
+        "prepared": {
+          "meanRGB8": [
+            203.044,
+            166.704,
+            91.455
+          ],
+          "meanRGBDifference8": [
+            2.379,
+            0.892,
+            -5.405
+          ],
+          "maeRGB8": 19.2792,
+          "maximumChannelError8": 124.0,
+          "exactPixelFraction": 6.4e-05,
+          "maeMeaning": "spatial error combines pattern rearrangement and light"
+        },
+        "library-source-unlit": {
+          "meanRGB8": [
+            200.664,
+            165.812,
+            96.86
+          ],
+          "meanRGBDifference8": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "maeRGB8": 0.0,
+          "maximumChannelError8": 0.0,
+          "exactPixelFraction": 1.0,
+          "maeMeaning": "same source pixels and normalized UV, native resolution"
+        }
+      }
+    },
+    {
+      "id": "exterior-finishes-lamela-branca",
+      "sourceMeanRGB8": [
+        204.708,
+        203.738,
+        202.087
+      ],
+      "modes": {
+        "source-exact": {
+          "meanRGB8": [
+            204.708,
+            203.738,
+            202.087
+          ],
+          "meanRGBDifference8": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "maeRGB8": 0.0,
+          "maximumChannelError8": 0.0,
+          "exactPixelFraction": 1.0,
+          "maeMeaning": "same source pixels and normalized UV, native resolution"
+        },
+        "source-lit": {
+          "meanRGB8": [
+            207.502,
+            206.737,
+            204.355
+          ],
+          "meanRGBDifference8": [
+            2.794,
+            2.999,
+            2.268
+          ],
+          "maeRGB8": 2.7965,
+          "maximumChannelError8": 13.0,
+          "exactPixelFraction": 0.000312,
+          "maeMeaning": "same source pixels and normalized UV, native resolution"
+        },
+        "source-lit-no-tone": {
+          "meanRGB8": [
+            213.67,
+            212.726,
+            210.087
+          ],
+          "meanRGBDifference8": [
+            8.962,
+            8.987,
+            8.0
+          ],
+          "maeRGB8": 8.6497,
+          "maximumChannelError8": 10.0,
+          "exactPixelFraction": 2.5e-05,
+          "maeMeaning": "same source pixels and normalized UV, native resolution"
+        },
+        "current": {
+          "meanRGB8": [
+            207.578,
+            206.6,
+            204.133
+          ],
+          "meanRGBDifference8": [
+            2.869,
+            2.862,
+            2.047
+          ],
+          "maeRGB8": 9.7231,
+          "maximumChannelError8": 61.0,
+          "exactPixelFraction": 0.00166,
+          "maeMeaning": "spatial error combines pattern rearrangement and light"
+        },
+        "prepared": {
+          "meanRGB8": [
+            207.263,
+            206.589,
+            204.155
+          ],
+          "meanRGBDifference8": [
+            2.555,
+            2.851,
+            2.068
+          ],
+          "maeRGB8": 8.5896,
+          "maximumChannelError8": 62.0,
+          "exactPixelFraction": 0.000978,
+          "maeMeaning": "spatial error combines pattern rearrangement and light"
+        },
+        "library-source-unlit": {
+          "meanRGB8": [
+            204.708,
+            203.738,
+            202.087
+          ],
+          "meanRGBDifference8": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "maeRGB8": 0.0,
+          "maximumChannelError8": 0.0,
+          "exactPixelFraction": 1.0,
+          "maeMeaning": "same source pixels and normalized UV, native resolution"
+        }
+      }
+    },
+    {
+      "id": "exterior-3d-textures-tijolo-bordo",
+      "sourceMeanRGB8": [
+        114.101,
+        93.707,
+        96.908
+      ],
+      "modes": {
+        "source-exact": {
+          "meanRGB8": [
+            114.101,
+            93.707,
+            96.908
+          ],
+          "meanRGBDifference8": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "maeRGB8": 0.0,
+          "maximumChannelError8": 0.0,
+          "exactPixelFraction": 1.0,
+          "maeMeaning": "same source pixels and normalized UV, native resolution"
+        },
+        "source-lit": {
+          "meanRGB8": [
+            110.878,
+            87.972,
+            91.215
+          ],
+          "meanRGBDifference8": [
+            -3.223,
+            -5.735,
+            -5.693
+          ],
+          "maeRGB8": 4.9233,
+          "maximumChannelError8": 14.0,
+          "exactPixelFraction": 0.000423,
+          "maeMeaning": "same source pixels and normalized UV, native resolution"
+        },
+        "source-lit-no-tone": {
+          "meanRGB8": [
+            123.605,
+            104.466,
+            107.132
+          ],
+          "meanRGBDifference8": [
+            9.504,
+            10.759,
+            10.224
+          ],
+          "maeRGB8": 10.1624,
+          "maximumChannelError8": 18.0,
+          "exactPixelFraction": 0.0,
+          "maeMeaning": "same source pixels and normalized UV, native resolution"
+        },
+        "current": {
+          "meanRGB8": [
+            112.536,
+            89.912,
+            93.137
+          ],
+          "meanRGBDifference8": [
+            -1.565,
+            -3.795,
+            -3.771
+          ],
+          "maeRGB8": 20.7445,
+          "maximumChannelError8": 113.0,
+          "exactPixelFraction": 0.000363,
+          "maeMeaning": "spatial error combines pattern rearrangement and light"
+        },
+        "prepared": {
+          "meanRGB8": [
+            112.497,
+            89.881,
+            93.151
+          ],
+          "meanRGBDifference8": [
+            -1.604,
+            -3.826,
+            -3.757
+          ],
+          "maeRGB8": 20.5285,
+          "maximumChannelError8": 112.0,
+          "exactPixelFraction": 0.000363,
+          "maeMeaning": "spatial error combines pattern rearrangement and light"
+        },
+        "library-source-unlit": {
+          "meanRGB8": [
+            114.101,
+            93.707,
+            96.908
+          ],
+          "meanRGBDifference8": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "maeRGB8": 0.0,
+          "maximumChannelError8": 0.0,
+          "exactPixelFraction": 1.0,
+          "maeMeaning": "same source pixels and normalized UV, native resolution"
+        }
+      }
+    },
+    {
+      "id": "exterior-standard-branco-glacial",
+      "sourceMeanRGB8": [
+        221.096,
+        220.634,
+        217.595
+      ],
+      "modes": {
+        "source-exact": {
+          "meanRGB8": [
+            221.096,
+            220.634,
+            217.595
+          ],
+          "meanRGBDifference8": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "maeRGB8": 0.0,
+          "maximumChannelError8": 0.0,
+          "exactPixelFraction": 1.0,
+          "maeMeaning": "same source pixels and normalized UV, native resolution"
+        },
+        "source-lit": {
+          "meanRGB8": [
+            224.61,
+            224.461,
+            220.442
+          ],
+          "meanRGBDifference8": [
+            3.514,
+            3.827,
+            2.848
+          ],
+          "maeRGB8": 3.4242,
+          "maximumChannelError8": 8.0,
+          "exactPixelFraction": 0.002857,
+          "maeMeaning": "same source pixels and normalized UV, native resolution"
+        },
+        "source-lit-no-tone": {
+          "meanRGB8": [
+            230.096,
+            229.635,
+            225.637
+          ],
+          "meanRGBDifference8": [
+            9.0,
+            9.001,
+            8.043
+          ],
+          "maeRGB8": 8.6811,
+          "maximumChannelError8": 10.0,
+          "exactPixelFraction": 0.0,
+          "maeMeaning": "same source pixels and normalized UV, native resolution"
+        },
+        "current": {
+          "meanRGB8": [
+            224.754,
+            224.676,
+            220.718
+          ],
+          "meanRGBDifference8": [
+            3.658,
+            4.042,
+            3.123
+          ],
+          "maeRGB8": 5.1972,
+          "maximumChannelError8": 29.0,
+          "exactPixelFraction": 0.001429,
+          "maeMeaning": "spatial error combines pattern rearrangement and light"
+        },
+        "prepared": {
+          "meanRGB8": [
+            225.0,
+            225.0,
+            221.0
+          ],
+          "meanRGBDifference8": [
+            3.904,
+            4.366,
+            3.405
+          ],
+          "maeRGB8": 5.11,
+          "maximumChannelError8": 29.0,
+          "exactPixelFraction": 0.0,
+          "maeMeaning": "spatial error combines pattern rearrangement and light"
+        },
+        "library-source-unlit": {
+          "meanRGB8": [
+            221.096,
+            220.634,
+            217.595
+          ],
+          "meanRGBDifference8": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "maeRGB8": 0.0,
+          "maximumChannelError8": 0.0,
+          "exactPixelFraction": 1.0,
+          "maeMeaning": "same source pixels and normalized UV, native resolution"
+        }
+      }
+    }
+  ]
+}
