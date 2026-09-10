@@ -1,0 +1,141 @@
+{
+  "id": "06-casa-de-banho",
+  "state": {
+    "schemaVersion": 2,
+    "layout": "t3-a",
+    "exteriorId": "exterior-standard-branco-glacial",
+    "exterior": "#ddddda",
+    "floorId": "floor-spc-kx7008",
+    "floor": "#a18a6e",
+    "interior": "#eeede8",
+    "interiorName": "Branco natural",
+    "kitchen": "l",
+    "kitchenRef": "kitchen-03",
+    "bathroom": "standard",
+    "bathroomRef": "bathroom-06",
+    "bathroomUV": null,
+    "roof": true,
+    "porch": true,
+    "lighting": "neutral",
+    "textureMode": "source",
+    "view": "interior",
+    "expansion": 1,
+    "cut": 1.1,
+    "exploded": 0,
+    "roofVisible": true,
+    "wallsVisible": true,
+    "furnitureVisible": true,
+    "doorsOpen": true
+  },
+  "framingMarginsPixels": {
+    "left": 1053.1727695346358,
+    "right": 1129.0215558830541,
+    "top": 371.9588552317989,
+    "bottom": 132.63157894736833
+  },
+  "revision": "R6",
+  "nativePixels": [
+    3840,
+    2160
+  ],
+  "drawingBuffer": [
+    3840,
+    2160
+  ],
+  "pixelRatio": 1,
+  "contextLost": false,
+  "camera": {
+    "type": "PerspectiveCamera",
+    "position": [
+      4.639236087058338,
+      4.545905988346828,
+      0.7660203935794376
+    ],
+    "up": [
+      0,
+      1,
+      0
+    ],
+    "quaternion": [
+      -0.20715145087640568,
+      0.3475439758870173,
+      0.07902122507078088,
+      0.9110746990300835
+    ],
+    "fov": 36,
+    "near": 0.05,
+    "far": 200
+  },
+  "bounds": {
+    "min": [
+      -1.0959999561309814,
+      -0.012000000000000361,
+      -5.898999998718501
+    ],
+    "max": [
+      1.0914,
+      2.420000042915344,
+      -2.966
+    ]
+  },
+  "cameraBox": {
+    "min": [
+      -1.0959999561309814,
+      -0.012000000000000361,
+      -5.898999998718501
+    ],
+    "max": [
+      1.0914,
+      2.420000042915344,
+      -2.966
+    ]
+  },
+  "materials": {
+    "pending": 0,
+    "backgroundPending": 0,
+    "failures": [],
+    "cachedTextures": 3,
+    "leases": 3
+  },
+  "textures": [
+    {
+      "name": "floor-spc-kx7008",
+      "url": "/assets/catalogue-v2/textures/floor-spc-kx7008.png",
+      "dimensions": [
+        440,
+        233
+      ],
+      "sourceStatus": "catalogue-photo",
+      "textureMode": "source"
+    },
+    {
+      "name": "exterior-standard-branco-glacial",
+      "url": "/assets/catalogue-v2/textures/exterior-standard-branco-glacial.png",
+      "dimensions": [
+        270,
+        210
+      ],
+      "sourceStatus": "catalogue-photo",
+      "textureMode": "source"
+    },
+    {
+      "name": "bathroom-06/wall",
+      "url": "/assets/interior-r5/bathroom-06-wallFinish.png",
+      "dimensions": [
+        57,
+        61
+      ],
+      "sourceStatus": "reference-photo"
+    }
+  ],
+  "render": {
+    "calls": 190,
+    "triangles": 52628,
+    "memory": {
+      "geometries": 159,
+      "textures": 7
+    },
+    "programs": 18
+  },
+  "expansion": null
+}

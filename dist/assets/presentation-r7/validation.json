@@ -1,0 +1,15 @@
+{
+  "images": 8,
+  "native4K": 8,
+  "allSourceMode": true,
+  "failures": 0,
+  "geometryHash": "4379058d41b8627850a3c8cb556b974b5743b68696ae676c99eab342fcfe9cba",
+  "snapshotUnmodified": true,
+  "modelAndMaterialsMatchCurrent": true,
+  "currentSourceDifferences": [
+    "configuration.js"
+  ],
+  "totalJpegBytes": 5734420,
+  "totalThumbnailBytes": 415707,
+  "minimumFramingMarginPixels": 107.02702702702663
+}

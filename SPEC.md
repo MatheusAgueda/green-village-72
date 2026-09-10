@@ -50,3 +50,13 @@ Preserve the existing Site, catalogue references, user configuration and R4 expa
 - Furniture fronts and shower doors must open away from their closed body and keep coherent individual and collective controls.
 - Exercise all six portfolio sections and core configure/save/recover/export flows, keyboard navigation, responsive layouts, source comparisons and media. Record the scope and real reproductions before fixing; document inapplicable account/CRUD scenarios rather than inventing them.
 - Regression checks must prove the corrected directions for all seven plans, stable closed endpoints, matching 2D/3D, retained expansion and the specific interaction defects discovered in this audit.
+
+## R7 — commercial presentation and branded client dossier
+
+Visual thesis: an architectural catalogue in forest green and white, led by the actual72 model and original Green Village logo, with readable material samples and generous image-led spreads. Preserve the existing interactive studio as the first view.
+
+- The original brand appears in the header, footer and exported client dossier; never reuse144m² dimensions or unsupported performance claims from the supplied design reference.
+- A model presentation explains documented dimensions, seven plans, material choices and roof/porch options, with clear routes to the live configurator.
+- A gallery offers actual native3840×2160 renders of this model, labelled by configuration and view. Downloads and applying the pictured configuration must correspond to the assets. Original photographs and films remain accessible.
+- The selection summary includes identifiable references, material images, plan and a branded multipagePDF. Rendering method and unconfirmed commercial totals remain accurately described.
+- Verify every new navigation/gallery/apply/download/PDF flow, mobile layout and accessibility; rerun existing functional and expansion tests. Preserve catalog source images, R6 doors, furniture motions, user persistence and expansion mechanics.

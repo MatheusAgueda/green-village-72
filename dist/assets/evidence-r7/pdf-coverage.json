@@ -1,0 +1,123 @@
+{
+  "pdfCount": 159,
+  "errors": [],
+  "overlaps": [],
+  "minBodyY": 72,
+  "rejected": 15,
+  "invalid": 15,
+  "htmlEscaped": true,
+  "gallery": [
+    {
+      "id": "01-exterior-alpendre",
+      "configurationValid": true,
+      "reference": "GV72-8A538E40",
+      "viewRecognised": true,
+      "view": "exterior",
+      "originalExists": true,
+      "thumbnailExists": true,
+      "distPathExists": true,
+      "size": [
+        3840,
+        2160
+      ]
+    },
+    {
+      "id": "02-exterior-cobertura-plana",
+      "configurationValid": true,
+      "reference": "GV72-EE4DC950",
+      "viewRecognised": true,
+      "view": "exterior",
+      "originalExists": true,
+      "thumbnailExists": true,
+      "distPathExists": true,
+      "size": [
+        3840,
+        2160
+      ]
+    },
+    {
+      "id": "03-interior-perspectiva",
+      "configurationValid": true,
+      "reference": "GV72-8A538E40",
+      "viewRecognised": true,
+      "view": "interior",
+      "originalExists": true,
+      "thumbnailExists": true,
+      "distPathExists": true,
+      "size": [
+        3840,
+        2160
+      ]
+    },
+    {
+      "id": "04-planta-mobilada",
+      "configurationValid": true,
+      "reference": "GV72-8A538E40",
+      "viewRecognised": true,
+      "view": "interior",
+      "originalExists": true,
+      "thumbnailExists": true,
+      "distPathExists": true,
+      "size": [
+        3840,
+        2160
+      ]
+    },
+    {
+      "id": "05-cozinha",
+      "configurationValid": true,
+      "reference": "GV72-8A538E40",
+      "viewRecognised": true,
+      "view": "interior",
+      "originalExists": true,
+      "thumbnailExists": true,
+      "distPathExists": true,
+      "size": [
+        3840,
+        2160
+      ]
+    },
+    {
+      "id": "06-casa-de-banho",
+      "configurationValid": true,
+      "reference": "GV72-8A538E40",
+      "viewRecognised": true,
+      "view": "interior",
+      "originalExists": true,
+      "thumbnailExists": true,
+      "distPathExists": true,
+      "size": [
+        3840,
+        2160
+      ]
+    },
+    {
+      "id": "07-estrutura",
+      "configurationValid": true,
+      "reference": "GV72-8A538E40",
+      "viewRecognised": true,
+      "view": "structure",
+      "originalExists": true,
+      "thumbnailExists": true,
+      "distPathExists": true,
+      "size": [
+        3840,
+        2160
+      ]
+    },
+    {
+      "id": "08-expansao",
+      "configurationValid": true,
+      "reference": "GV72-8A538E40",
+      "viewRecognised": true,
+      "view": "expansion",
+      "originalExists": true,
+      "thumbnailExists": true,
+      "distPathExists": true,
+      "size": [
+        3840,
+        2160
+      ]
+    }
+  ]
+}

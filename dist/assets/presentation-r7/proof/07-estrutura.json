@@ -1,0 +1,111 @@
+{
+  "id": "07-estrutura",
+  "state": {
+    "schemaVersion": 2,
+    "layout": "t3-a",
+    "exteriorId": "exterior-standard-branco-glacial",
+    "exterior": "#ddddda",
+    "floorId": "floor-spc-kx7008",
+    "floor": "#a18a6e",
+    "interior": "#eeede8",
+    "interiorName": "Branco natural",
+    "kitchen": "l",
+    "kitchenRef": "kitchen-03",
+    "bathroom": "standard",
+    "bathroomRef": "bathroom-06",
+    "bathroomUV": null,
+    "roof": true,
+    "porch": true,
+    "lighting": "neutral",
+    "textureMode": "source",
+    "view": "structure",
+    "expansion": 1,
+    "cut": 1.1,
+    "exploded": 0,
+    "roofVisible": true,
+    "wallsVisible": true,
+    "furnitureVisible": true,
+    "doorsOpen": true
+  },
+  "framingMarginsPixels": {
+    "left": 730.1845240289911,
+    "right": 794.9176090082524,
+    "top": 474.8283273475379,
+    "bottom": 124.24778761061884
+  },
+  "revision": "R6",
+  "nativePixels": [
+    3840,
+    2160
+  ],
+  "drawingBuffer": [
+    3840,
+    2160
+  ],
+  "pixelRatio": 1,
+  "contextLost": false,
+  "camera": {
+    "type": "PerspectiveCamera",
+    "position": [
+      14.821696665109354,
+      11.024684604442381,
+      10.375187665576545
+    ],
+    "up": [
+      0,
+      1,
+      0
+    ],
+    "quaternion": [
+      -0.21208822103445193,
+      0.4484140571688207,
+      0.11042491182578967,
+      0.8612489527889747
+    ],
+    "fov": 36,
+    "near": 0.05,
+    "far": 200
+  },
+  "bounds": {
+    "min": [
+      -3.3942369587318773,
+      -0.3644999861717224,
+      -5.925000000372529
+    ],
+    "max": [
+      3.3942369587318773,
+      3.4420974637165123,
+      5.925000000372529
+    ]
+  },
+  "cameraBox": {
+    "min": [
+      -3.3942369587318773,
+      -0.3644999861717224,
+      -5.925000000372529
+    ],
+    "max": [
+      3.3942369587318773,
+      3.4420974637165123,
+      5.925000000372529
+    ]
+  },
+  "materials": {
+    "pending": 0,
+    "backgroundPending": 0,
+    "failures": [],
+    "cachedTextures": 3,
+    "leases": 3
+  },
+  "textures": [],
+  "render": {
+    "calls": 28,
+    "triangles": 10082,
+    "memory": {
+      "geometries": 28,
+      "textures": 7
+    },
+    "programs": 3
+  },
+  "expansion": null
+}

@@ -1,0 +1,120 @@
+{
+  "date": "2026-09-10T21:22:12.876Z",
+  "sourceHashes": {
+    "portfolio.js": "7e55fc7283894662af26a977280ac3544216bd4de58724c08f087cf8751ed0ce",
+    "app.js": "76c2e30cfe73612436abdb720e6a08a69a5c94fe331170366aeb21bbe8f6f3b2",
+    "index.html": "0e87bc9474bbe4becc01873346348c6ada7a006cf02561f172eaf3b839e20649",
+    "configuration.js": "26a9aabac665b9e8ffdaf3001b3c920a34fa16faa7c71a04c950678df1bb521e"
+  },
+  "summaryConfigCount": 56,
+  "summaryFailures": [],
+  "materialCounts": {
+    "exterior-3d-textures": 12,
+    "exterior-3d-gm": 15,
+    "exterior-finishes": 12,
+    "exterior-standard": 12,
+    "floor-spc": 12,
+    "bathroom-uv": 8
+  },
+  "referenceCount": {
+    "kitchen": 15,
+    "bathroom": 17
+  },
+  "materialFindings": [],
+  "pdfResults": [
+    {
+      "name": "default",
+      "status": "generated",
+      "pages": 4,
+      "bytes": 746334,
+      "observations": []
+    },
+    {
+      "name": "none",
+      "status": "generated",
+      "pages": 4,
+      "bytes": 740468,
+      "observations": []
+    },
+    {
+      "name": "long-name",
+      "status": "generated",
+      "pages": 4,
+      "bytes": 794963,
+      "observations": []
+    },
+    {
+      "name": "null-colours",
+      "status": "generated",
+      "pages": 4,
+      "bytes": 480815,
+      "observations": []
+    },
+    {
+      "name": "control-nul",
+      "status": "generated",
+      "pages": 4,
+      "bytes": 746338,
+      "observations": []
+    },
+    {
+      "name": "control-del",
+      "status": "generated",
+      "pages": 4,
+      "bytes": 746334,
+      "observations": []
+    },
+    {
+      "name": "control-c1",
+      "status": "generated",
+      "pages": 4,
+      "bytes": 746326,
+      "observations": []
+    },
+    {
+      "name": "unicode",
+      "status": "generated",
+      "pages": 4,
+      "bytes": 746335,
+      "observations": []
+    }
+  ],
+  "r6Runtime": [
+    {
+      "file": "model.js",
+      "tested": "4379058d41b8627850a3c8cb556b974b5743b68696ae676c99eab342fcfe9cba",
+      "current": "4379058d41b8627850a3c8cb556b974b5743b68696ae676c99eab342fcfe9cba",
+      "identical": true
+    },
+    {
+      "file": "specification.js",
+      "tested": "e1784a324c129ed85944a1abbe98a2d21b08a8a91d6e34a637e6463523f6cdbe",
+      "current": "e1784a324c129ed85944a1abbe98a2d21b08a8a91d6e34a637e6463523f6cdbe",
+      "identical": true
+    },
+    {
+      "file": "configuration.js",
+      "tested": "ca78e1fdaddf504f6be43c8b4ec3c45ec92d07bdea1f35094ca967408316fdf1",
+      "current": "26a9aabac665b9e8ffdaf3001b3c920a34fa16faa7c71a04c950678df1bb521e",
+      "identical": false
+    },
+    {
+      "file": "plan-svg.js",
+      "tested": "e14dba25221447474d3eafce9b806d68937329b33bd417b79cec5906ba9b994f",
+      "current": "e14dba25221447474d3eafce9b806d68937329b33bd417b79cec5906ba9b994f",
+      "identical": true
+    },
+    {
+      "file": "interior-detail.js",
+      "tested": "c2a1b1a645c5c809314d6a3a146b335339d64c439cc4dedbf8afbc470797dd16",
+      "current": "c2a1b1a645c5c809314d6a3a146b335339d64c439cc4dedbf8afbc470797dd16",
+      "identical": true
+    },
+    {
+      "file": "interior-references.js",
+      "tested": "41cdd74bdd7d79740372ae090aa38278b62eadfa05261a4952b2295f0ec369ac",
+      "current": "41cdd74bdd7d79740372ae090aa38278b62eadfa05261a4952b2295f0ec369ac",
+      "identical": true
+    }
+  ]
+}

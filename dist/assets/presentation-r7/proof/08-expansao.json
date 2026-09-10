@@ -1,0 +1,143 @@
+{
+  "id": "08-expansao",
+  "state": {
+    "schemaVersion": 2,
+    "layout": "t3-a",
+    "exteriorId": "exterior-standard-branco-glacial",
+    "exterior": "#ddddda",
+    "floorId": "floor-spc-kx7008",
+    "floor": "#a18a6e",
+    "interior": "#eeede8",
+    "interiorName": "Branco natural",
+    "kitchen": "l",
+    "kitchenRef": "kitchen-03",
+    "bathroom": "standard",
+    "bathroomRef": "bathroom-06",
+    "bathroomUV": null,
+    "roof": true,
+    "porch": true,
+    "lighting": "neutral",
+    "textureMode": "source",
+    "view": "expansion",
+    "expansion": 0.69,
+    "cut": 1.1,
+    "exploded": 0,
+    "roofVisible": true,
+    "wallsVisible": true,
+    "furnitureVisible": true,
+    "doorsOpen": true
+  },
+  "framingMarginsPixels": {
+    "left": 570.5788331482753,
+    "right": 835.9823523794212,
+    "top": 513.2240487713503,
+    "bottom": 124.24778761061975
+  },
+  "revision": "R6",
+  "nativePixels": [
+    3840,
+    2160
+  ],
+  "drawingBuffer": [
+    3840,
+    2160
+  ],
+  "pixelRatio": 1,
+  "contextLost": false,
+  "camera": {
+    "type": "PerspectiveCamera",
+    "position": [
+      15.80349026474159,
+      12.311943155993628,
+      13.43296672503035
+    ],
+    "up": [
+      0,
+      1,
+      0
+    ],
+    "quaternion": [
+      -0.2201451751859823,
+      0.4071998618920285,
+      0.10180403934688785,
+      0.8805454627048528
+    ],
+    "fov": 36,
+    "near": 0.05,
+    "far": 200
+  },
+  "bounds": {
+    "min": [
+      -3.186232521612309,
+      -0.3644999861717224,
+      -8.090000009536743
+    ],
+    "max": [
+      3.186232521612309,
+      2.8634999275207518,
+      8.090000009536743
+    ]
+  },
+  "cameraBox": {
+    "min": [
+      -3.186232521612309,
+      -0.3644999861717224,
+      -8.090000009536743
+    ],
+    "max": [
+      3.186232521612309,
+      2.8634999275207518,
+      8.090000009536743
+    ]
+  },
+  "materials": {
+    "pending": 0,
+    "backgroundPending": 0,
+    "failures": [],
+    "cachedTextures": 3,
+    "leases": 3
+  },
+  "textures": [
+    {
+      "name": "floor-spc-kx7008",
+      "url": "/assets/catalogue-v2/textures/floor-spc-kx7008.png",
+      "dimensions": [
+        440,
+        233
+      ],
+      "sourceStatus": "catalogue-photo",
+      "textureMode": "source"
+    },
+    {
+      "name": "exterior-standard-branco-glacial",
+      "url": "/assets/catalogue-v2/textures/exterior-standard-branco-glacial.png",
+      "dimensions": [
+        270,
+        210
+      ],
+      "sourceStatus": "catalogue-photo",
+      "textureMode": "source"
+    }
+  ],
+  "render": {
+    "calls": 230,
+    "triangles": 81532,
+    "memory": {
+      "geometries": 125,
+      "textures": 7
+    },
+    "programs": 8
+  },
+  "expansion": {
+    "p": 0.69,
+    "roof": 1,
+    "roofDock": 1,
+    "floor": 1,
+    "roofLower": 0,
+    "wall": 0.49999999999999956,
+    "ends": 0,
+    "postsDock": 0,
+    "label": "Elevação das paredes",
+    "uncertain": true
+  }
+}

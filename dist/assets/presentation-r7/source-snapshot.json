@@ -1,0 +1,1705 @@
+{
+  "sourceRoot": "dist",
+  "files": [
+    {
+      "path": "material-library.js",
+      "bytes": 7402,
+      "sha256": "5ca8156a343927e75a3abada6db8443f3d76927c47a29034653aa3ec338e3bcd"
+    },
+    {
+      "path": "photo-planks.js",
+      "bytes": 6481,
+      "sha256": "72d1b085f1694244c2f414f63aa130f4fe6d64e005a02d2560763044131c6d45"
+    },
+    {
+      "path": "photo-wall-data.js",
+      "bytes": 18059,
+      "sha256": "fdddccc5a95ad206b38a26db55c40a84aa1a18ea3df0a63260f221d7b378c1b4"
+    },
+    {
+      "path": "photo-plank-data.js",
+      "bytes": 23230,
+      "sha256": "0c48780479b6849e88bfe56e7d28fdaa1f3feee908784bb83ddfaaf525c74b17"
+    },
+    {
+      "path": "configuration.js",
+      "bytes": 5498,
+      "sha256": "ca78e1fdaddf504f6be43c8b4ec3c45ec92d07bdea1f35094ca967408316fdf1"
+    },
+    {
+      "path": "interior-detail.js",
+      "bytes": 20158,
+      "sha256": "c2a1b1a645c5c809314d6a3a146b335339d64c439cc4dedbf8afbc470797dd16"
+    },
+    {
+      "path": "stage.js",
+      "bytes": 4361,
+      "sha256": "f267d8ced81973011e8f55f28a75458bbe4b4ca77597149e17120ffede83bef4"
+    },
+    {
+      "path": "panel-joints.js",
+      "bytes": 1299,
+      "sha256": "d1a21680e6e51c1462ce0799a3959e3472b20dd4aa33ed9f56b268baca7e38e0"
+    },
+    {
+      "path": "data.js",
+      "bytes": 47694,
+      "sha256": "51c44e7592d2cdd773eab4e9a66be1ebf739b408eb4ace55ffdfff397c248f1d"
+    },
+    {
+      "path": "interior-references.js",
+      "bytes": 47959,
+      "sha256": "41cdd74bdd7d79740372ae090aa38278b62eadfa05261a4952b2295f0ec369ac"
+    },
+    {
+      "path": "model.js",
+      "bytes": 28652,
+      "sha256": "4379058d41b8627850a3c8cb556b974b5743b68696ae676c99eab342fcfe9cba"
+    },
+    {
+      "path": "material-data.js",
+      "bytes": 89062,
+      "sha256": "e55563fc9cb5f75514eb545f6e9a4e056847b3579556fd5a614da88bc381f011"
+    },
+    {
+      "path": "specification.js",
+      "bytes": 15972,
+      "sha256": "e1784a324c129ed85944a1abbe98a2d21b08a8a91d6e34a637e6463523f6cdbe"
+    },
+    {
+      "path": "vendor/three.module.js",
+      "bytes": 603113,
+      "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a"
+    },
+    {
+      "path": "vendor/THREE-LICENSE.txt",
+      "bytes": 1081,
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    {
+      "path": "vendor/RoomEnvironment.js",
+      "bytes": 4911,
+      "sha256": "faf5469bea1b9961e4b82d1da6a1671ec16137b6cc5b482a6d75a64a05bdc903"
+    },
+    {
+      "path": "vendor/RoundedBoxGeometry.js",
+      "bytes": 6488,
+      "sha256": "c13ec51ca1dfa2a584e6e6898e5f45e754d7b8093314b3db89b726c044259531"
+    },
+    {
+      "path": "vendor/three.core.js",
+      "bytes": 1403455,
+      "sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20"
+    },
+    {
+      "path": "vendor/pdf-lib.min.js",
+      "bytes": 525099,
+      "sha256": "0f9a5cad07941f0826586c94e089d89b918c46e5c17cf2d5a3c6f666e3bc694f"
+    },
+    {
+      "path": "vendor/BufferGeometryUtils.js",
+      "bytes": 35551,
+      "sha256": "248b3e8420bd3de805ca01845c1b0cc62aa2766f3c56bdcead265e306f8e715c"
+    },
+    {
+      "path": "vendor/PDF-LIB-LICENSE.txt",
+      "bytes": 1070,
+      "sha256": "f2c9fc00fdb66eb99ac156ba52d734af66d8d309f65753ae809ad34ee2883bcb"
+    },
+    {
+      "path": "vendor/OrbitControls.js",
+      "bytes": 38703,
+      "sha256": "b97879c748170baadeb3fb84cea1ffdf4674e283dc06042f34e2acb95a76042c"
+    },
+    {
+      "path": "assets/catalogue-v2/material-ledger.json",
+      "bytes": 367397,
+      "sha256": "26fc4d62822866d6d88cbccf7f4d4d6e0653eca6497d83defec1fea2bfde2869"
+    },
+    {
+      "path": "assets/catalogue-v2/colour-comparison.json",
+      "bytes": 100573,
+      "sha256": "b2f9abacfbe305d0ceb52e3dd82f7fc4904e8ed16a0cfb0705ba95d1da672e8b"
+    },
+    {
+      "path": "assets/catalogue-v2/validation.json",
+      "bytes": 1047,
+      "sha256": "2b48be110550e78e7c38b86f23f63fdd3ec60a4edf4f7f89c9cbfafe5fed1762"
+    },
+    {
+      "path": "assets/catalogue-v2/annex-reference-ledger.json",
+      "bytes": 20898,
+      "sha256": "8f7ea58d172b40c5a569759459af7566f24200cca84aa0ce6802934305574a90"
+    },
+    {
+      "path": "assets/catalogue-r3/validation.json",
+      "bytes": 1193,
+      "sha256": "45b3f4021167d8dd28f3664039d25015c46a56746f1b22ecc6b454ad72559737"
+    },
+    {
+      "path": "assets/catalogue-r3/material-r3-ledger.json",
+      "bytes": 255985,
+      "sha256": "6e8709e33aeae22f2e6b6cbee55b21de7df749423e85bbb6593227c4e25720cc"
+    },
+    {
+      "path": "assets/catalogue-r3/floor-manifest.json",
+      "bytes": 31935,
+      "sha256": "74e3d234e5cadc6aa6119cdd0ae94d7739c94c89a1e8b293e37843e793dae2e5"
+    },
+    {
+      "path": "assets/catalogue-r3/floor-visual-metrics.json",
+      "bytes": 19826,
+      "sha256": "9cf343347101bad873d23b374b8d1a5fa4f72da65b61ab0685e992f6e31e0896"
+    },
+    {
+      "path": "assets/catalogue-r3/wall-manifest.json",
+      "bytes": 133045,
+      "sha256": "847b1026373f83e4ad3c4fb2dd493cb8fd6086aaaba88deb7d6ad267877d0516"
+    },
+    {
+      "path": "assets/interior-r5/kitchen-05-cabinetFront.png",
+      "bytes": 358,
+      "sha256": "d9cb68cb5fc21fab21a5ec56ac660341deaf129706efbef12ff671ed0168f59f"
+    },
+    {
+      "path": "assets/interior-r5/bathroom-16-cabinetFront.png",
+      "bytes": 653,
+      "sha256": "d37889341f02b7e3fa2c27000a3dabf6d2ba742229570d7e73b4b8fc11460e24"
+    },
+    {
+      "path": "assets/interior-r5/bathroom-17-wallFinish.png",
+      "bytes": 3375,
+      "sha256": "a019b01a7583582faa794add02551551be73a706beb3588ddb65cdbdc13b6ced"
+    },
+    {
+      "path": "assets/interior-r5/bathroom-02-wallFinish.png",
+      "bytes": 2732,
+      "sha256": "a3ee56df7ada373a2c9463e96a57aad79e90b9fccccc8ca4efc53c301f7cb49d"
+    },
+    {
+      "path": "assets/interior-r5/kitchen-05-upperCabinetFront.png",
+      "bytes": 440,
+      "sha256": "3cc62d6f016ee250ffa6a0c77d7a89050699a05e54805edd65ddd0d2c5d93701"
+    },
+    {
+      "path": "assets/interior-r5/kitchen-13-upperCabinetFront.png",
+      "bytes": 449,
+      "sha256": "78b9aeee769202b96d0f7de3e070848e1ba0cc72dadad1f2c91962c1d0b444d7"
+    },
+    {
+      "path": "assets/interior-r5/bathroom-02-cabinetFront.png",
+      "bytes": 331,
+      "sha256": "9e0958d0cd8205df10b7d1550ffdeeebcf0ecca65f4a16dee298b1f328aa0014"
+    },
+    {
+      "path": "assets/interior-r5/kitchen-11-cabinetFront.png",
+      "bytes": 758,
+      "sha256": "f3b6ca0d14f681379b407288a05229a1c1bdb31b4c91ce3a55ece0719f5715bc"
+    },
+    {
+      "path": "assets/interior-r5/bathroom-10-wallFinish.png",
+      "bytes": 11941,
+      "sha256": "cd9736a288cb1074a71e4643f1cee3bf8b5742df0990a65704ddf78fc1d860e6"
+    },
+    {
+      "path": "assets/interior-r5/kitchen-15-cabinetFront.png",
+      "bytes": 962,
+      "sha256": "409b2511179f878cccfa98c354b895cf146d5d94507fcb9f7408c846c05f95dc"
+    },
+    {
+      "path": "assets/interior-r5/bathroom-06-cabinetFront.png",
+      "bytes": 2157,
+      "sha256": "979671d9d9e290cad9033807eff2bf08100598703c802dedac5717de115fe6c6"
+    },
+    {
+      "path": "assets/interior-r5/bathroom-11-wallFinish.png",
+      "bytes": 3683,
+      "sha256": "fa3932981703ac4fb4f2b8cd283f327eef60722c29dc701e36a43f0c7ffe5ac2"
+    },
+    {
+      "path": "assets/interior-r5/bathroom-04-wallFinish.png",
+      "bytes": 6008,
+      "sha256": "cea66e9abd9f56118ba32d56c8a761ad26febddbaa0e97873e4a876bfea3aa84"
+    },
+    {
+      "path": "assets/interior-r5/source-inventory.json",
+      "bytes": 81934,
+      "sha256": "e49bc43cff90feff5da1990f6ac631e1d929c7b12477d633a92308d8f64bcd66"
+    },
+    {
+      "path": "assets/interior-r5/bathroom-03-wallFinish.png",
+      "bytes": 452,
+      "sha256": "cc3ccf9e9309809d86e7926a078b8ee3683c1241cc8b48f38b9c547c84b23ce7"
+    },
+    {
+      "path": "assets/interior-r5/bathroom-16-wallFinish.png",
+      "bytes": 2163,
+      "sha256": "a45d210c480d1d1c6dbd92df0ff80b6db5e5a995d26b851768655b77cb4c9e53"
+    },
+    {
+      "path": "assets/interior-r5/bathroom-12-cabinetFront.png",
+      "bytes": 341,
+      "sha256": "91b4bbb8fe2a736deba61d9bb0facd24b3bd8185dfc74d985d3dec663e4bca9a"
+    },
+    {
+      "path": "assets/interior-r5/kitchen-11-upperCabinetFront.png",
+      "bytes": 734,
+      "sha256": "7fa3eafd2308b092d5e044d5fc2abaf7ebeaa27a9e9cfcf57a37a115bb42189e"
+    },
+    {
+      "path": "assets/interior-r5/bathroom-08-cabinetFront.png",
+      "bytes": 233,
+      "sha256": "cc46b639d0142318430e0a1a37feaee16ea4adf439a6108edbc850f4ab5e811d"
+    },
+    {
+      "path": "assets/interior-r5/bathroom-01-wallFinish.png",
+      "bytes": 569,
+      "sha256": "f03bfb227003a76d4ce785e9cb3d9441520348910c4df942f3b814db614c4f3b"
+    },
+    {
+      "path": "assets/interior-r5/bathroom-14-wallFinish.png",
+      "bytes": 6473,
+      "sha256": "5940c12aef7eddd0f55c6cbd0a50f4e984dc3495245983ae32684017cdacf6f6"
+    },
+    {
+      "path": "assets/interior-r5/kitchen-04-cabinetFront.png",
+      "bytes": 777,
+      "sha256": "f7e237a2bf912497481c82dda082ce4730446822679a20ed48c7bcd9e612c0ce"
+    },
+    {
+      "path": "assets/interior-r5/bathroom-17-cabinetFront.png",
+      "bytes": 573,
+      "sha256": "927917cfa5367c71176c8f300ecebe6f0874fa35aad3ef121276658e5c02b520"
+    },
+    {
+      "path": "assets/interior-r5/bathroom-09-wallFinish.png",
+      "bytes": 10542,
+      "sha256": "220e88faddfe7f9b75982fb87de180890e55f90ca0554877478e30c4892318ad"
+    },
+    {
+      "path": "assets/interior-r5/bathroom-13-wallFinish.png",
+      "bytes": 2338,
+      "sha256": "5a4a7c8a66e05937572c6d107d8c65df9e62ef219cef9d1a39feb6e80346888d"
+    },
+    {
+      "path": "assets/interior-r5/bathroom-06-wallFinish.png",
+      "bytes": 3644,
+      "sha256": "a67e91290e9e7c799bb31e8db4b28e30a1ef1c90a850c1f1c257328b265f8d83"
+    },
+    {
+      "path": "assets/interior-r5/bathroom-03-cabinetFront.png",
+      "bytes": 437,
+      "sha256": "bf245d1ffd5fba962b8de82d462de444fc906c3d596e30347b074d9c35e4afff"
+    },
+    {
+      "path": "assets/interior-r5/kitchen-10-cabinetFront.png",
+      "bytes": 758,
+      "sha256": "49716c020a6746453f208e58578c6a9087ec7189688d84a352cdd4dbc83b7406"
+    },
+    {
+      "path": "assets/interior-r5/kitchen-03-upperCabinetFront.png",
+      "bytes": 516,
+      "sha256": "0630515a228a1b72016436a262d40343a6795a692888066b59f4bfed7e99058a"
+    },
+    {
+      "path": "assets/interior-r5/bathroom-07-wallFinish.png",
+      "bytes": 5638,
+      "sha256": "0885f55b4fa329e98125c11fd4fe6fda055aa70775e75a92a818889adf79eae9"
+    },
+    {
+      "path": "assets/interior-r5/bathroom-12-wallFinish.png",
+      "bytes": 4985,
+      "sha256": "9a38e1c3d66778795e3f1970803d74a1563393f5415fd930841adc58b6531ef8"
+    },
+    {
+      "path": "assets/interior-r5/bathroom-07-cabinetFront.png",
+      "bytes": 428,
+      "sha256": "5befae7abf479569d280f3fe8c4645b077e84f49af61b8cdb4b2599cf1e0e8f0"
+    },
+    {
+      "path": "assets/interior-r5/bathroom-13-cabinetFront.png",
+      "bytes": 814,
+      "sha256": "1a39003bfda444d3c6184e96395772554e9c06837d83f4ab3c0ed9bd153a3fff"
+    },
+    {
+      "path": "assets/interior-r5/bathroom-08-wallFinish.png",
+      "bytes": 3013,
+      "sha256": "913c84f73934fabe50025752585d976ab9952114f25be348886e9090044be85a"
+    },
+    {
+      "path": "assets/interior-r5/bathroom-15-wallFinish.png",
+      "bytes": 2104,
+      "sha256": "3d5fbde6ab12073eef66a1f6f3e887668a4654677fadb3f27d169f72b85baaf8"
+    },
+    {
+      "path": "assets/interior-r5/kitchen-13-cabinetFront.png",
+      "bytes": 940,
+      "sha256": "ea5eba524688b4ea44873700ffc3e65464d462bcfff20afa35ea77db37c06ce1"
+    },
+    {
+      "path": "assets/interior-r5/kitchen-04-upperCabinetFront.png",
+      "bytes": 295,
+      "sha256": "aef07c675d1a97c51fa0ddfa69eec03aecc7dd03564adffca712479ccbc3c0fd"
+    },
+    {
+      "path": "assets/interior-r5/kitchen-12-countertop.png",
+      "bytes": 389,
+      "sha256": "fcc82254e4151aa155da8bec44859189c890efbe010241c2da0213b2f0c836f8"
+    },
+    {
+      "path": "assets/interior-r5/kitchen-07-countertop.png",
+      "bytes": 648,
+      "sha256": "2b1af0a7e4b1bbf4ff3b52d0a3ffc33d3426840b0b04add01df8f93043353bd8"
+    },
+    {
+      "path": "assets/interior-r5/kitchen-08-countertop.png",
+      "bytes": 363,
+      "sha256": "8e977f19222888ad6ac3fba9dafe36edb6354c16ff936899d5db8a82ce07d908"
+    },
+    {
+      "path": "assets/interior-r5/kitchen-15-countertop.png",
+      "bytes": 147,
+      "sha256": "8b14c20ae3e9eff03bced56fb5b0710ca9c41ef43b79addf608c2b5b1f903e53"
+    },
+    {
+      "path": "assets/interior-r5/kitchen-07-cabinetFront.png",
+      "bytes": 375,
+      "sha256": "56a77d2a1bcc00ee13645ecefaf00161ce7812c0a4e99c68a4142a9d79cd6992"
+    },
+    {
+      "path": "assets/interior-r5/bathroom-15-countertop.png",
+      "bytes": 331,
+      "sha256": "a301266bffcd49596c5aa440db19beb0db71a00e7d2670d388d0d5d8284bd52a"
+    },
+    {
+      "path": "assets/interior-r5/kitchen-01-countertop.png",
+      "bytes": 2963,
+      "sha256": "933e9f253bdc80ddd1a2e9f01190bee58a4c0351fdaa471f951fa3fd29a86bdb"
+    },
+    {
+      "path": "assets/interior-r5/bathroom-14-countertop.png",
+      "bytes": 581,
+      "sha256": "523e896fa75cb30acd98964400664599660030e487d469fbe5640a9d2b03e1b5"
+    },
+    {
+      "path": "assets/interior-r5/kitchen-03-cabinetFront.png",
+      "bytes": 275,
+      "sha256": "bcea398ce16e1b7a3386ee48e6ba18be7124a947a96a3df71920b1bd4b452444"
+    },
+    {
+      "path": "assets/interior-r5/bathroom-10-cabinetFront.png",
+      "bytes": 266,
+      "sha256": "3847d81e0b3a3f4462638c9313661b59ad54ad05cd581fd9806be02336be8487"
+    },
+    {
+      "path": "assets/interior-r5/bathroom-09-countertop.png",
+      "bytes": 339,
+      "sha256": "e296dcfe112e242f216c4e07d01bf8784fb8c09aafc9c3901574b091694e6b76"
+    },
+    {
+      "path": "assets/interior-r5/kitchen-09-countertop.png",
+      "bytes": 1045,
+      "sha256": "8dcd4571909c4ebd8f76504903f09b5205bb86307356a1ebe158fb5a69afb3fb"
+    },
+    {
+      "path": "assets/interior-r5/kitchen-06-countertop.png",
+      "bytes": 1008,
+      "sha256": "d64db88fe8213056548f1158fd2da88774953c26ee5fcecc67fd846d1d145df7"
+    },
+    {
+      "path": "assets/interior-r5/kitchen-13-countertop.png",
+      "bytes": 689,
+      "sha256": "c03d44d15a319f40b28a7a6ca37b1098c42f271b2b549164eda60e6aa946e475"
+    },
+    {
+      "path": "assets/interior-r5/bathroom-06-countertop.png",
+      "bytes": 294,
+      "sha256": "8beeeeec1b66fca3ba572c98fa863af0449405fca9ea40c9cfac936f8c1b94d3"
+    },
+    {
+      "path": "assets/interior-r5/bathroom-04-cabinetFront.png",
+      "bytes": 467,
+      "sha256": "0ca06d2839c8db6b265c76b393df6f15acb49fc3042a9ce7ce5c6908303ad3f4"
+    },
+    {
+      "path": "assets/interior-r5/kitchen-08-upperCabinetFront.png",
+      "bytes": 335,
+      "sha256": "bcb7f092fe8ceb8a5ad6a08a3972b8785c14e74a95020cd2b4f46009f18f8b60"
+    },
+    {
+      "path": "assets/interior-r5/kitchen-04-countertop.png",
+      "bytes": 585,
+      "sha256": "2f53d00ff22784d6f4e3e66bd7123edba48ceaf4d4a1e4d3efcf81ac410230cf"
+    },
+    {
+      "path": "assets/interior-r5/kitchen-11-countertop.png",
+      "bytes": 513,
+      "sha256": "aed80ebc2c5e370eb81ae2efeeff97a7420fd3ef821ca917cb26ba247881e039"
+    },
+    {
+      "path": "assets/interior-r5/kitchen-12-cabinetFront.png",
+      "bytes": 3723,
+      "sha256": "c9307dc247513b59724c9348e2d37cf2c27e1d13b9fe07257fba958f941e5d7d"
+    },
+    {
+      "path": "assets/interior-r5/bathroom-01-cabinetFront.png",
+      "bytes": 275,
+      "sha256": "f96157554f1011ae176c46cdb1fa69d752ea17231b31672ef6e5b0353916a094"
+    },
+    {
+      "path": "assets/interior-r5/bathroom-15-cabinetFront.png",
+      "bytes": 420,
+      "sha256": "688ad68b9e270636badd1473d2848868acaaa61d3539581edbddfa14c16fca3d"
+    },
+    {
+      "path": "assets/interior-r5/kitchen-06-cabinetFront.png",
+      "bytes": 1117,
+      "sha256": "cee772ad48c36896d304e976cb13ebad735a7ad68b10e9e7136c1137995a247d"
+    },
+    {
+      "path": "assets/interior-r5/kitchen-03-countertop.png",
+      "bytes": 929,
+      "sha256": "0ecfd25a722833f59e625638a9902e6541ed0a5bf0048430045f10aa9bce1c56"
+    },
+    {
+      "path": "assets/interior-r5/kitchen-02-cabinetFront.png",
+      "bytes": 450,
+      "sha256": "2dbd2e2985f9bd69085d8e1001bba511bc7886f000412b7e0e8e7ce05b50161d"
+    },
+    {
+      "path": "assets/interior-r5/bathroom-11-cabinetFront.png",
+      "bytes": 648,
+      "sha256": "1b9ed158b8a3802a7a8aae723a363b7c29cba525b6f67bce67dd79b853f9c816"
+    },
+    {
+      "path": "assets/interior-r5/kitchen-02-countertop.png",
+      "bytes": 339,
+      "sha256": "ce6d57c7056f57209356797644a82852c705c997d9f55574a38c3268aac4837d"
+    },
+    {
+      "path": "assets/interior-r5/kitchen-09-cabinetFront.png",
+      "bytes": 1026,
+      "sha256": "4bcd9bcccd16175af71eaede99fce46b5a05f6845fbb841a1ee83ea6c2e5b60f"
+    },
+    {
+      "path": "assets/interior-r5/kitchen-10-countertop.png",
+      "bytes": 871,
+      "sha256": "4d275ad2e786342a6c929e48027336a09c03d190204cb6cb20c66afcafb5ac9f"
+    },
+    {
+      "path": "assets/interior-r5/kitchen-05-countertop.png",
+      "bytes": 682,
+      "sha256": "22b73b55c2167a3309282a81579e92b222d549062d64782a4b35a7cbd8ae2b40"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/exterior-finishes-vermelho.png",
+      "bytes": 172057,
+      "sha256": "1f56f4fab10e2e7974bfaad6e3624d286e6a1ba81ba3082f9991ac4156a11349"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/bathroom-uv-amostra-3.png",
+      "bytes": 52120,
+      "sha256": "32febc1f49310add3d517a68805b2ba5d3c43eb380d1f796868ed1cc73477919"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/bathroom-uv-amostra-2.png",
+      "bytes": 59340,
+      "sha256": "17fc57ab22d5d4bf4146cdb143482d1216a6bd475c7341e8d2a702e5c9917ae0"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/exterior-standard-cinza-quente.png",
+      "bytes": 19966,
+      "sha256": "88fa9410c99c9d5e28031c6928c214489ccd050fc6595f5d0b53e82f792d4ec7"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/bathroom-uv-amostra-1.png",
+      "bytes": 49015,
+      "sha256": "c06228c80c8905963e0ba337169cfec7ace6091e4b10acd1eaf2308dfa64007a"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/exterior-3d-textures-tijolo-castanho.png",
+      "bytes": 83647,
+      "sha256": "e4e4916233165861295fa6e22d022bec1bbec946b746e9583ad8863a277fa5e7"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/exterior-3d-textures-granito-cinza.png",
+      "bytes": 135298,
+      "sha256": "f871b81789669392e2821868288984e7c46d36c2ca56fdee6745be816e299f8e"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/exterior-finishes-lamela-creme.png",
+      "bytes": 107918,
+      "sha256": "a9d154e2a348be37f54103604b2e29dceb62b86a30234a62246928ff3149038b"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/exterior-standard-vermelho-borgonha.png",
+      "bytes": 45251,
+      "sha256": "4c402da9663b4da44bce2936aadbf354731744b36e402a267332d6b18e6878aa"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/exterior-standard-cinza-perola.png",
+      "bytes": 22049,
+      "sha256": "4932623a3e29e5a92738dd0c24958b08ce003680c5c146a3b30ee48b67d61750"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/exterior-3d-gm-gm-29.png",
+      "bytes": 62312,
+      "sha256": "748fc3cd77eadba1c6d09fc355327e7447fd3ff09bc9297811dea3c50be51fa6"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/bathroom-uv-amostra-5.png",
+      "bytes": 74181,
+      "sha256": "db8ccbb815e2089228a18b07841d513a6436be178e2c51a8201cc7a848605e05"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/bathroom-uv-amostra-4.png",
+      "bytes": 63675,
+      "sha256": "9e8026a83749a5ca6f7e23c040fef00bc478b5334c423c28cfd91033727f596b"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/exterior-3d-gm-gm-28.png",
+      "bytes": 71192,
+      "sha256": "f0c77dbf55d7b13c2d69bc2d0d2c2bd95bce52dd6d4dfacee63c7b144d6d9e3b"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/floor-spc-kx8009.png",
+      "bytes": 88247,
+      "sha256": "e5f715f8c2e0814470c34f93c4ea89e68603b4bf7fda95a0c8dfd8a153f76494"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/exterior-3d-gm-gm-16.png",
+      "bytes": 81108,
+      "sha256": "e2b4591389b143d829a97b133907502f46143ff3aac5c32fea38161ce7213691"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/exterior-3d-textures-pedra-bege.png",
+      "bytes": 81914,
+      "sha256": "868dba35d8a79b59b7c656741d4dd0b55a6ca96f04aa6da205e22b219f338edf"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/bathroom-uv-amostra-6.png",
+      "bytes": 69630,
+      "sha256": "95fd76739f72ef6d61ca7af08b2ac33b1b117be2e7c614cae3b50838f5d03d85"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/exterior-3d-textures-pedra-areia.png",
+      "bytes": 75857,
+      "sha256": "e7508212307ba5840639881ada03d766fcf926d776dc140fcad3178b0fd485ef"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/bathroom-uv-amostra-7.png",
+      "bytes": 22660,
+      "sha256": "72a9796a259374b00835486193c2e3838c2a9f497038848dc1de341e174ffb19"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/exterior-3d-gm-gm-17.png",
+      "bytes": 95202,
+      "sha256": "c4c7a58a3151e7f477179dad4ff84191292a9cb0ff000d83bc6284e997af3f16"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/floor-spc-kx8008.png",
+      "bytes": 103532,
+      "sha256": "f2c4a99c68cc927f391f700d2d63b0b53332f8fc7b3c8f8d8918bf54cda23901"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/exterior-3d-textures-tijolo-cinza.png",
+      "bytes": 83423,
+      "sha256": "38f9f9d22e242bff0fe6a5c72769aa4baf72cb20d98e5be43e69af3f48f6aedc"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/exterior-finishes-lamela-bordo.png",
+      "bytes": 135956,
+      "sha256": "56d41db1b09392081e4c96278e8e01349bfd6bdb8ec8051e8ab71f6cbed6e418"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/floor-spc-kx9005.png",
+      "bytes": 95224,
+      "sha256": "8818f14fd586031eff63dcd3fc6c6770a2570d6e4b57b8513730dc80f6f352ae"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/floor-spc-kx7010.png",
+      "bytes": 114375,
+      "sha256": "7d6529d43877a87c8353af1672414b05d4b3abe76e3bd0e35fc9c0e51a423d0d"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/exterior-standard-branco-glacial.png",
+      "bytes": 31939,
+      "sha256": "b89733c95e83f06a01642c17ef89b3ba5789b410c7628bc7331a66d302825e8d"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/floor-spc-kx7005.png",
+      "bytes": 83416,
+      "sha256": "d594a754fed03b9e3df63b11ba075a77f204ba24c7aad9b20e8c5e2818e87b86"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/exterior-standard-prata.png",
+      "bytes": 13324,
+      "sha256": "af043724f06728177c99c2ab3d97d46e4c25a31b5975a00a8f5bbb538adff77f"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/exterior-finishes-preto.png",
+      "bytes": 132671,
+      "sha256": "3d4206dfbc193d24428c92ae7f8867707597947cc68147e282489ef49b29dfcc"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/floor-spc-kx7007.png",
+      "bytes": 117743,
+      "sha256": "97612932eb1a52ebe3f2bc363f4c3417f95681fbd32eb11646ad956695880ea1"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/floor-spc-kx7006.png",
+      "bytes": 127958,
+      "sha256": "35623c717ff11f2629f92e94b51ef3f8855460e24a6dd04c94cda6b50ce7d96f"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/exterior-standard-pedra-cinza.png",
+      "bytes": 135206,
+      "sha256": "92bfb5035a928440c240a97facfc59cf062e184baf1e1480bf1df5637450144d"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/exterior-standard-madeira-cerejeira.png",
+      "bytes": 75500,
+      "sha256": "061b5326db5ab18c9ed603fcbb9dee0825318cbe9f5c69706679c40eb3b02ada"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/exterior-finishes-madeira-mel.png",
+      "bytes": 162926,
+      "sha256": "43cfca668b408d8b74733283d067e09de5df5219bd41f882d810f422e212f2c0"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/exterior-3d-textures-tijolo-creme.png",
+      "bytes": 74543,
+      "sha256": "ea1036cf19b71d86621f54f2101e60a3353532a308c79b478abe5d305aa0a855"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/floor-spc-kx7008.png",
+      "bytes": 102869,
+      "sha256": "5fc6de84f9c8f1e98aea6f66825586afb117731953e3ed941c939ebdde306c69"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/exterior-finishes-grafite.png",
+      "bytes": 166991,
+      "sha256": "34cf4961919ceccf280aa59f60347cf95317ca957bf412306c1d3eba21b43a87"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/floor-spc-kx7009.png",
+      "bytes": 115548,
+      "sha256": "10a6982512b090e9ba688d45cee4cc56af50932a4b0618cc88e544d8829c75f7"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/exterior-finishes-granito-branco.png",
+      "bytes": 228702,
+      "sha256": "74a380d253e2ce2577def135c6d42827059cb8039e8d7923bda89a7580614630"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/exterior-3d-textures-tijolo-rustico.png",
+      "bytes": 57987,
+      "sha256": "378667a29b748ce9baf51ee0ff0e749ce4cd663afafe9b35e52cc26dfddbc875"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/exterior-standard-bege-marfim.png",
+      "bytes": 16900,
+      "sha256": "5675ad09ee7ddc38604144f61398f5bfee7a64d6e88b438b399fc93dbee8a1a1"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/floor-spc-kx8005.png",
+      "bytes": 94376,
+      "sha256": "e6f92483edde43456748dbb6780898d9c8e5b2577b34fb17bc0c9f109d10e187"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/exterior-3d-gm-gm-26.png",
+      "bytes": 57905,
+      "sha256": "29190dd7309f46fa1e5a07c5ef263fba8aecec518a118f06b33095ab503f1ba6"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/exterior-standard-cinza-metalico.png",
+      "bytes": 5835,
+      "sha256": "5e13bf914400c296f280ddb3fb84ab375f229bc733a88cf1b78e08bef7321b90"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/exterior-3d-textures-tijolo-bordo.png",
+      "bytes": 58031,
+      "sha256": "2e47cc37dd786d3cc89123a03cdaf3f14bb7aab447f9b953c5c1505218f5ded9"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/exterior-3d-textures-tijolo-ardosia.png",
+      "bytes": 102928,
+      "sha256": "c4dd3464a52eacd9147174920829d5cfd574b4dd91c377fae674eeaf3500032f"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/exterior-finishes-lamela-cinza.png",
+      "bytes": 111835,
+      "sha256": "2a36bb2ecd6a511edc916d68be7a4892ea4a68517d343a6b749b134bd39b4e0a"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/exterior-finishes-areia.png",
+      "bytes": 85785,
+      "sha256": "0b91d1d6d96d2edb633f3fb83356ef66a57ab62f078db4380346103174d6e85c"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/exterior-3d-gm-gm-27.png",
+      "bytes": 83276,
+      "sha256": "053223f000f40aaaf4c7be6abee7ac5061b63123adf79f5e2983f2b6153e0347"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/floor-spc-kx8006.png",
+      "bytes": 82096,
+      "sha256": "19f2b747cb1bb0a9b0d739bf262997d4fb4916cdbf41a892c1674254f46479ff"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/exterior-3d-gm-gm-19.png",
+      "bytes": 87928,
+      "sha256": "bf71f4c1fcb230f4678ba190be774ae4fe2fb84f408c7e98945a9299a4b5cae9"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/exterior-3d-gm-gm-25.png",
+      "bytes": 72869,
+      "sha256": "a93023f0fcffde488dadee54eba280d03958d886bcf337230559d3efe6aa22f6"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/exterior-standard-madeira-mel.png",
+      "bytes": 147094,
+      "sha256": "161a64a1458a20c5e9af3806d7dc5d209e62c7429ff95b91c68c0a678134bf6c"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/bathroom-uv-amostra-8.png",
+      "bytes": 46063,
+      "sha256": "6b50e7dd69942b34b9ef51663a2a7f44ea36c27c404f187574eff013545f49e1"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/exterior-3d-gm-gm-30.png",
+      "bytes": 31981,
+      "sha256": "ebb89936f5bc886d683f1b2e42b7207a9238ecaeb1dd1ffdf74397cac7c4731a"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/exterior-3d-gm-gm-24.png",
+      "bytes": 61619,
+      "sha256": "04aaca17ce414cbf75290c1bf70728595a384ce90deacad621e6bd3c80922055"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/exterior-3d-gm-gm-18.png",
+      "bytes": 87795,
+      "sha256": "0264008196ee8e3ceb3225e0d5289890138a8279a2c1df2ee70c81aebddd189f"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/floor-spc-kx8007.png",
+      "bytes": 69516,
+      "sha256": "e351146f075283c27f87a2a69a6bb5b00861a24f0b59bbf8ca00ccd71f236799"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/exterior-3d-gm-gm-20.png",
+      "bytes": 71630,
+      "sha256": "dbe884734bf57305fcc60077857bc56d45f50854d5d66926b7a58c0021d7bbe0"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/exterior-3d-textures-tijolo-vermelho.png",
+      "bytes": 73757,
+      "sha256": "b263813407f0416e6ad7e209ae1be90455967d6c6ff4bba477458c3c0a131139"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/exterior-finishes-lamela-branca.png",
+      "bytes": 97540,
+      "sha256": "048a50242bb92d3651e4b45bfa32bf19c79d70de26b4b8d383b016863d42d708"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/exterior-standard-madeira-castanho.png",
+      "bytes": 59357,
+      "sha256": "e489d9e26dceecf4486c351ef6ab255070b0f8f8d210babaf526fe9b6aff22bc"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/exterior-3d-textures-tijolo-multicor.png",
+      "bytes": 75624,
+      "sha256": "2d924a33d7bf9d948e9301f402b0758911552de1c03510c2d953a35e72411cc9"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/exterior-3d-gm-gm-21.png",
+      "bytes": 81811,
+      "sha256": "7362b8f54c95df726461f0a8d346381e13ea59cb16f167cc550050732daaaa63"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/exterior-standard-grafite.png",
+      "bytes": 26192,
+      "sha256": "778b89f924870132932dbed4096decb4896ebe17e8b90741a031530504e15ec1"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/exterior-3d-textures-bloco-cinza.png",
+      "bytes": 99766,
+      "sha256": "248b8dc3d3b6c0c00d9619ce28f1768651a7dc75907a115328fd1aba8f6d424f"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/exterior-3d-gm-gm-23.png",
+      "bytes": 40952,
+      "sha256": "cf7960e96ca13ea0a9a97bfaa92ded82b742f6ef774179fba020ed2021732768"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/exterior-finishes-lamela-dourada.png",
+      "bytes": 132085,
+      "sha256": "b776c23fe83836900813167c02e7057f968b795fecfd3922eef88c130d2c8a09"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/exterior-finishes-lamela-bege.png",
+      "bytes": 118242,
+      "sha256": "4bc52fbf463a3776dd57fa7750058992d4f689acd8268bf0f9c7a8883bdfb14b"
+    },
+    {
+      "path": "assets/catalogue-v2/textures/exterior-3d-gm-gm-22.png",
+      "bytes": 36794,
+      "sha256": "cb45ac07929b16390b6d96697c5628fa4140f8d4c74ebe19dc19c524c0a846a8"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/exterior-finishes-vermelho.jpg",
+      "bytes": 48502,
+      "sha256": "91e94e296b3adafa31fe9777010b1387e040729603b308c342e419484943bbe3"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/bathroom-uv-amostra-3.jpg",
+      "bytes": 15670,
+      "sha256": "c594adaefb309db70927f6e2e767d6381965ccdf3eb4c3a30ece9470f094c6e0"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/bathroom-uv-amostra-2.jpg",
+      "bytes": 13873,
+      "sha256": "aba775e44f0ed84e55b8e329a355f65c98b9363795374960537b6f7423041f56"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/exterior-standard-cinza-quente.jpg",
+      "bytes": 15750,
+      "sha256": "64ad8c295658fa98807c778f52da0a547b312250e39fd03d6ab9e77338b76676"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/exterior-3d-textures-granito-cinza.jpg",
+      "bytes": 37025,
+      "sha256": "9157b0120be05348b8e25d89d816140efe5ba3004cbbf1849342149a6c5e685c"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/exterior-finishes-lamela-creme.jpg",
+      "bytes": 32634,
+      "sha256": "f2a20e77c9947c01e338abf6e2951d3d4e06637fc8548445e93e514a2645ed3a"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/exterior-3d-textures-tijolo-castanho.jpg",
+      "bytes": 34697,
+      "sha256": "ebefc5ee31aec7af0efa5ef62a69a5384720cd34cc7acd34047366cf7807456a"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/bathroom-uv-amostra-1.jpg",
+      "bytes": 12108,
+      "sha256": "7ed4ad487c9e7c655d004360d61b30d88c80b9f5e8402470d7df976b7b1b75f7"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/exterior-standard-cinza-perola.jpg",
+      "bytes": 22829,
+      "sha256": "cd2e36658f9165da20b52cb6e6dff736b69d918bcdee2efe1edabad83331d3fc"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/exterior-standard-vermelho-borgonha.jpg",
+      "bytes": 16173,
+      "sha256": "315d2c94103ed401f1558e2072c55e2b6f27ad5dc54c2132a25010a48e0595c3"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/exterior-3d-gm-gm-29.jpg",
+      "bytes": 23219,
+      "sha256": "03f38d4602ca41c0c193d68ed5e2577e54b4968cc474b7b41db158bfbdcf5bdc"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/bathroom-uv-amostra-5.jpg",
+      "bytes": 18931,
+      "sha256": "65f707a5894069903ea7f5856a11acc51722daa118a0bc0a3f47c2ab51b9351e"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/bathroom-uv-amostra-4.jpg",
+      "bytes": 19839,
+      "sha256": "724fb8b3ed778a6b2f8375e198367bea3e391fae67c68f07ea3df5823a31ef2b"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/exterior-3d-gm-gm-28.jpg",
+      "bytes": 34894,
+      "sha256": "81e9d9e5d48e529a201fce7a7fcdd8c10f77842c82e4082acead01dac3bd47e7"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/exterior-3d-gm-gm-16.jpg",
+      "bytes": 28325,
+      "sha256": "2c79ba9c2864520db1420cacd1f1eab72b470c57b2699ed9c994269d4be8b212"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/floor-spc-kx8009.jpg",
+      "bytes": 35327,
+      "sha256": "99c9903af4c2823b42df8a836580814962b07524b387c3250a5c38a34abbaa01"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/exterior-3d-textures-pedra-areia.jpg",
+      "bytes": 26374,
+      "sha256": "86d9c44b075bd84f45c9f37956ceb6479f99b361646605cc9fdf6a242a7a0042"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/bathroom-uv-amostra-6.jpg",
+      "bytes": 21275,
+      "sha256": "7e7c5427da36995807fd47a7afd28667644e91c0bc6e52bd2730b5c550286095"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/exterior-3d-textures-pedra-bege.jpg",
+      "bytes": 30979,
+      "sha256": "48a442ab41da0e46918b042e308af1c1b9e6b3e9b8566d11c2d274960f2bc3cc"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/bathroom-uv-amostra-7.jpg",
+      "bytes": 9275,
+      "sha256": "376470605c03dd851ea9bed0f1f70e79d4ca97205de950409655a72d77a41e39"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/floor-spc-kx8008.jpg",
+      "bytes": 38838,
+      "sha256": "f16b4c13884ad56ffd1cbef57ef54e0593b328797e0b721c8849f8d24d196739"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/exterior-3d-gm-gm-17.jpg",
+      "bytes": 30764,
+      "sha256": "c31d84c4e3f0b52d497e132382c9f1d6fc4f80c919c1700eb395e138f38f627b"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/exterior-3d-textures-tijolo-cinza.jpg",
+      "bytes": 26673,
+      "sha256": "84692a95deaad9f32c60cdaf1434f3000ac191b81083ea559eee9294f7cf48f2"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/exterior-finishes-lamela-bordo.jpg",
+      "bytes": 41565,
+      "sha256": "c617605223d1e23533a1ffc0ca9e64de4c333f5115968a229069b45ee6159fd2"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/floor-spc-kx9005.jpg",
+      "bytes": 37844,
+      "sha256": "b17812b10c72271a9e5743b177ea5f010c209602e7d5806e8ee1fb8ecc2f02e3"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/floor-spc-kx7010.jpg",
+      "bytes": 35125,
+      "sha256": "6244c6e808f0367f031fff6b1f97e2b1612f5bd91a90b095bd8b65ef93655aa1"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/floor-spc-kx7005.jpg",
+      "bytes": 35767,
+      "sha256": "a8fbabf3fe3a50737fdd66077a622424faec3299262c0792e5493ca4da0c97a0"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/exterior-standard-branco-glacial.jpg",
+      "bytes": 19239,
+      "sha256": "e1ed185d67554aa0f376b7b9ddd8aefbcb1cd67ec2839c56022f5556b56b3e17"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/exterior-standard-prata.jpg",
+      "bytes": 16613,
+      "sha256": "1576077b88300208b7ba0fe81798b96e4f0e8003a8c16851530bb5273db67606"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/exterior-finishes-preto.jpg",
+      "bytes": 49262,
+      "sha256": "8b33ff897381ef7fc44904818a08124500a0ea874e775d205d8768dc5a61b991"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/floor-spc-kx7007.jpg",
+      "bytes": 40525,
+      "sha256": "d53fbf4096ab4b1583cc3402f0df0e37b384db278cac4fb00f65050584e87a19"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/floor-spc-kx7006.jpg",
+      "bytes": 44033,
+      "sha256": "e9979e50d9f28a16f5a556e03aaa1f999096a9b0e4f63f3a75ad23f98fdc007c"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/exterior-standard-pedra-cinza.jpg",
+      "bytes": 36908,
+      "sha256": "d0fa07fc7c2e6073d998354ffb9241c5232b0b61d5cc1e010ec8dbf38799d53e"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/floor-spc-kx7008.jpg",
+      "bytes": 37669,
+      "sha256": "ae197182c1fe5758e9b4c1545d655b01b5798fb1742e84df328d214d86438018"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/exterior-finishes-madeira-mel.jpg",
+      "bytes": 45079,
+      "sha256": "8f05df4315d7eb523a6c9f71647a66f347c294ff51fa6f5b4e6fa51903f1d6af"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/exterior-standard-madeira-cerejeira.jpg",
+      "bytes": 39232,
+      "sha256": "59f62d59b25e7acbbf839322731e3f66c520f989bf422f892713a5c5857d20b8"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/exterior-3d-textures-tijolo-creme.jpg",
+      "bytes": 27385,
+      "sha256": "d864dc09b6046523f6996a5d91b46544bdfa2c2489b35811100314b9367d964d"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/floor-spc-kx7009.jpg",
+      "bytes": 44548,
+      "sha256": "f69e048841e479cff7b393fcec7a74167cee94bbf9b7c90f296f5e31f5be6193"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/exterior-finishes-grafite.jpg",
+      "bytes": 55670,
+      "sha256": "e85a0bcb4c0dc732a651a3975b1001a59773de92529c60d6c957da436e1abba5"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/exterior-finishes-granito-branco.jpg",
+      "bytes": 74950,
+      "sha256": "5949e5d2842c7d504719873d5d3ade9f251fa1a9084145659fb89338f352cbe7"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/exterior-3d-textures-tijolo-rustico.jpg",
+      "bytes": 24317,
+      "sha256": "b722de36bbb99e8bd004a87222dbc2b82848665b066c978565bc0131387b419b"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/exterior-standard-cinza-metalico.jpg",
+      "bytes": 25858,
+      "sha256": "ed9030850110bde4fa0e2f6b273282bc155f59fdc7a76a44a6c95d6596cc7bb9"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/exterior-3d-textures-tijolo-bordo.jpg",
+      "bytes": 29482,
+      "sha256": "5dacec9d490b176ddbf3a28d875b9482f88eba4dc4b88c00dfa0f498d6fe068e"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/exterior-3d-gm-gm-26.jpg",
+      "bytes": 24972,
+      "sha256": "33e6d6c3aa12553b34f6a569abcd1c513597dc42b7ea5bab3685992ee4befd60"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/exterior-standard-bege-marfim.jpg",
+      "bytes": 17891,
+      "sha256": "f957b5490ddc773a560460ea5abf4c354cb9b0b72e325ef8acf94b540da14af1"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/floor-spc-kx8005.jpg",
+      "bytes": 28801,
+      "sha256": "6ee25e2209965e4c38869a0b4c7e42bfb41201a8e7f8ef4fa6dacbf5b07acee4"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/exterior-3d-textures-tijolo-ardosia.jpg",
+      "bytes": 27770,
+      "sha256": "a44098c46e0b97cbc23fd43fa78d24b0105fcd281ff143c5267f1089cd3e876e"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/exterior-finishes-lamela-cinza.jpg",
+      "bytes": 35739,
+      "sha256": "de652375598898475e97e4c0c4d412c646f479dcba85b66e67815bbf1ae597b1"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/exterior-3d-gm-gm-27.jpg",
+      "bytes": 38209,
+      "sha256": "28045b56482a6b6f0d24191e0e5588aec3fa79d0c035fabefb1f6027b53d337d"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/exterior-finishes-areia.jpg",
+      "bytes": 29492,
+      "sha256": "639778948d4f6534a4a68e700c8b3a8346ad978067f538a32940c13fddf519ff"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/exterior-3d-gm-gm-19.jpg",
+      "bytes": 30952,
+      "sha256": "227251ab5f9d9c3aae896d13e3b47a3764454c5707d39c167db54adb1267e9d5"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/exterior-3d-gm-gm-25.jpg",
+      "bytes": 31656,
+      "sha256": "be4d61d1d13b696bc327b4993b5c84f86898f7671b8568b43b1bcecfc197ff62"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/floor-spc-kx8006.jpg",
+      "bytes": 37666,
+      "sha256": "6025f124d93e4f8996203d92c4fd6ba853aa459ace2721e831207a73d4462c78"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/exterior-standard-madeira-mel.jpg",
+      "bytes": 39858,
+      "sha256": "df65c8c1570a138da230d569c976e49f2838c8a15ef93b7435077d45aa261cdd"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/bathroom-uv-amostra-8.jpg",
+      "bytes": 11299,
+      "sha256": "f7a26000d5a2943a6c4fe665167ad3c153bd2f1688b99c3badeb836b9b2c8350"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/floor-spc-kx8007.jpg",
+      "bytes": 22564,
+      "sha256": "e7d093b8df16aa25015c3048e5c4049f67cc17894a9789363fefc2579a101da2"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/exterior-3d-gm-gm-24.jpg",
+      "bytes": 22272,
+      "sha256": "7a1ccb3616ab2b4e8e60aeafc52f07d948b033e40f6b31a9617a8d68e89e4988"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/exterior-3d-gm-gm-30.jpg",
+      "bytes": 14847,
+      "sha256": "7032de6343794dbe1beb37eafdd7265a8d6f4911693d098c338d5fc5129b91bc"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/exterior-3d-gm-gm-18.jpg",
+      "bytes": 28490,
+      "sha256": "a7c9a042d0acf38d549ad85f74024a441989446c3a403847f8fa0641718edb3f"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/exterior-finishes-lamela-branca.jpg",
+      "bytes": 29604,
+      "sha256": "db7b2ab3f3336ad20de732231ce15a4b735b379821e273fbffc345160ed086c3"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/exterior-3d-gm-gm-20.jpg",
+      "bytes": 21398,
+      "sha256": "40da7cf959856eabcc92da56ea38252612c6800b57be09b0707c2b24ee50d4f3"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/exterior-3d-textures-tijolo-vermelho.jpg",
+      "bytes": 27543,
+      "sha256": "535213b6c2f38787f6a92dbcd4adc133f504ba39d2a37a4f449b509de35f4943"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/exterior-3d-textures-tijolo-multicor.jpg",
+      "bytes": 29624,
+      "sha256": "1f22ab7436a5a380ffa83c4b8ea108f416b1dc0a72ccb199056ee0b5c0da08b3"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/exterior-standard-madeira-castanho.jpg",
+      "bytes": 41534,
+      "sha256": "91aa8e183fe4314d6bc8ab6d92dc6103d9026b3cae4bbe63337fbe2cb3c01f11"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/exterior-3d-textures-bloco-cinza.jpg",
+      "bytes": 33084,
+      "sha256": "cf667ecd0aa27727f31154c48d0c356fd704de09dec382f20543821d58a7a951"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/exterior-standard-grafite.jpg",
+      "bytes": 12872,
+      "sha256": "50eed377c50aed025f43999a002c4822acd5071a64140c16366ec03612198aa6"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/exterior-3d-gm-gm-21.jpg",
+      "bytes": 29312,
+      "sha256": "79e7b88780434bd85f2e2d9af6ed23b24cec3f41451e8afb1038366c989c119d"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/exterior-finishes-lamela-dourada.jpg",
+      "bytes": 41728,
+      "sha256": "cc6bf805a91d45348b562d0d7333ced829cb082d10e46b8b8f0f8e876b66c0ac"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/exterior-3d-gm-gm-23.jpg",
+      "bytes": 17275,
+      "sha256": "f7677363984872e65310b631cf9a700d1b0e82aaefcfd088a4b097bf827ffc00"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/exterior-finishes-lamela-bege.jpg",
+      "bytes": 37158,
+      "sha256": "dcdbf422c62e3c16b310da7b6f06dbe79aa110bd05db88d5a53d0cc095ebcf89"
+    },
+    {
+      "path": "assets/catalogue-v2/originals/exterior-3d-gm-gm-22.jpg",
+      "bytes": 14324,
+      "sha256": "b888d7460ebeec0c84efad6d1133ff9c5a9b726a377b272cf9f2559ac0415c5a"
+    },
+    {
+      "path": "assets/catalogue-r3/derived/exterior-3d-textures-tijolo-castanho.png",
+      "bytes": 90401,
+      "sha256": "6cc7dd6d8d5c8245d9ab0665d18d6e6488a0d32f86b7a86b530e091e273faade"
+    },
+    {
+      "path": "assets/catalogue-r3/derived/exterior-3d-textures-granito-cinza.png",
+      "bytes": 151195,
+      "sha256": "04171de62fb801cf6ed7b507abe9da275a8aa3af0b45daec6c91686a32abc752"
+    },
+    {
+      "path": "assets/catalogue-r3/derived/exterior-finishes-lamela-creme.png",
+      "bytes": 69411,
+      "sha256": "43b0bc9666be53f364adeb1ba2e7f798ec139fb87b85f743d0c164b754eac3ea"
+    },
+    {
+      "path": "assets/catalogue-r3/derived/exterior-3d-gm-gm-29.png",
+      "bytes": 72797,
+      "sha256": "46cd3a6c478f347f5e14fa858e58e287ba21f8d28f1d13da840d4f9e1cf3eedd"
+    },
+    {
+      "path": "assets/catalogue-r3/derived/exterior-3d-gm-gm-28.png",
+      "bytes": 93126,
+      "sha256": "b45b5579680b0214c92e4cdaa0cc04a728c50febf764a74b19a5dc30d647727e"
+    },
+    {
+      "path": "assets/catalogue-r3/derived/floor-spc-kx8009.png",
+      "bytes": 108306,
+      "sha256": "85f3e2e4ea7dc6daf521a7ba95a3d649b1180ef931648d661d84422296a1bf03"
+    },
+    {
+      "path": "assets/catalogue-r3/derived/exterior-3d-gm-gm-16.png",
+      "bytes": 37814,
+      "sha256": "a9b22b197a10ea30fa1053f77fe0ea57449e28153e53b09cfbb9d432c4fd2485"
+    },
+    {
+      "path": "assets/catalogue-r3/derived/exterior-3d-textures-pedra-bege.png",
+      "bytes": 95945,
+      "sha256": "063a9aac2c70872328be633ff52ebe1e91843bb230ff06e62c94ad2f35a71566"
+    },
+    {
+      "path": "assets/catalogue-r3/derived/exterior-3d-textures-pedra-areia.png",
+      "bytes": 83390,
+      "sha256": "d8296512a49efc01addafda37302d4d32c771807defed85ed27cf88206e24190"
+    },
+    {
+      "path": "assets/catalogue-r3/derived/exterior-3d-gm-gm-17.png",
+      "bytes": 52472,
+      "sha256": "0a343482371514d138c010d36475a423c12071116650a8ba3a26b544a5339929"
+    },
+    {
+      "path": "assets/catalogue-r3/derived/floor-spc-kx8008.png",
+      "bytes": 123597,
+      "sha256": "6441329b49305b60b27223e4fe90205beadfe9ad42a011ac9756e6915225a6e5"
+    },
+    {
+      "path": "assets/catalogue-r3/derived/exterior-3d-textures-tijolo-cinza.png",
+      "bytes": 95116,
+      "sha256": "9ded7d83e81032a188eef494eae40327c7b789314bf66364e8e1bfc32a04997c"
+    },
+    {
+      "path": "assets/catalogue-r3/derived/exterior-finishes-lamela-bordo.png",
+      "bytes": 74082,
+      "sha256": "365f963b99f3af0ac7c270b8f8892e4b95f5446148057c94296c7875562320fd"
+    },
+    {
+      "path": "assets/catalogue-r3/derived/floor-spc-kx9005.png",
+      "bytes": 119485,
+      "sha256": "40220e0c9941120cae4afdbca241dbcd23fc092fdae4d951c39103f90f90bc6a"
+    },
+    {
+      "path": "assets/catalogue-r3/derived/floor-spc-kx7010.png",
+      "bytes": 128441,
+      "sha256": "e81204dd160198ac14748f76ccdd029e323adccd1b840eb4a89e1e94446851f5"
+    },
+    {
+      "path": "assets/catalogue-r3/derived/floor-spc-kx7005.png",
+      "bytes": 107377,
+      "sha256": "5c419f529ecc43d59d56fca512055c2aa279c1261ec08f03434052f64465dd57"
+    },
+    {
+      "path": "assets/catalogue-r3/derived/floor-spc-kx7007.png",
+      "bytes": 140212,
+      "sha256": "4f3bf101db2502152433dde37fc3d106e2ac24d036016102fb424a265cebe4af"
+    },
+    {
+      "path": "assets/catalogue-r3/derived/floor-spc-kx7006.png",
+      "bytes": 143126,
+      "sha256": "dd68565a5fc35af0e579bc231ec9e548d25d4dfa29aa6682c4165bac07ce6241"
+    },
+    {
+      "path": "assets/catalogue-r3/derived/exterior-standard-madeira-cerejeira.png",
+      "bytes": 32382,
+      "sha256": "8b29d7291be59ec316b16ec617990e98cb47460e074d086f2ffbfefb0bc7b20e"
+    },
+    {
+      "path": "assets/catalogue-r3/derived/exterior-finishes-madeira-mel.png",
+      "bytes": 84919,
+      "sha256": "f8f425045acce59f6055c5ba3e435e537ac7a3ce392d3f04eff7a88fe86af51e"
+    },
+    {
+      "path": "assets/catalogue-r3/derived/exterior-3d-textures-tijolo-creme.png",
+      "bytes": 81691,
+      "sha256": "1706763d64ea30fd9e24f8cb91fbbe154d4329da385f7d1f3733a64a5e97ff54"
+    },
+    {
+      "path": "assets/catalogue-r3/derived/floor-spc-kx7008.png",
+      "bytes": 122606,
+      "sha256": "04330fe75e3105c72b234c6c4395b52d39d0389bbc7477e704e5ec6a514121d7"
+    },
+    {
+      "path": "assets/catalogue-r3/derived/floor-spc-kx7009.png",
+      "bytes": 140613,
+      "sha256": "88c39b851bfff1e6283ad58f00175b7fb36aed5605913357d1b2dbde697fe61c"
+    },
+    {
+      "path": "assets/catalogue-r3/derived/exterior-3d-textures-tijolo-rustico.png",
+      "bytes": 62085,
+      "sha256": "c3a9966800522ed27122f063d0d87995cf0b0ba3b580a082d7bebe4e9e01579f"
+    },
+    {
+      "path": "assets/catalogue-r3/derived/floor-spc-kx8005.png",
+      "bytes": 109083,
+      "sha256": "3fef5238be9e03175b002766284f7894d28089a335c5053473461f43248cf036"
+    },
+    {
+      "path": "assets/catalogue-r3/derived/exterior-3d-gm-gm-26.png",
+      "bytes": 76021,
+      "sha256": "a7d57a63bc214fd58b0d93736bf5043d69a629f9800625941f5423d977ad4690"
+    },
+    {
+      "path": "assets/catalogue-r3/derived/exterior-3d-textures-tijolo-bordo.png",
+      "bytes": 67639,
+      "sha256": "d429c8be9691b2a4aec3500801a681b8414e04071352e3532b9572f6279660ce"
+    },
+    {
+      "path": "assets/catalogue-r3/derived/exterior-3d-textures-tijolo-ardosia.png",
+      "bytes": 110768,
+      "sha256": "ad414d66d8860e19d5288980fa8ce24d1b7ef7daa5f98b2aecd9eed44a9366f9"
+    },
+    {
+      "path": "assets/catalogue-r3/derived/exterior-finishes-lamela-cinza.png",
+      "bytes": 70196,
+      "sha256": "c64d96dbca7b755d970d4885ed6fabc4644fb449594ce1213e8b1515b8098aa5"
+    },
+    {
+      "path": "assets/catalogue-r3/derived/exterior-3d-gm-gm-27.png",
+      "bytes": 102395,
+      "sha256": "508b5631dcc0f143e25610ee570dc3804f62d45cfc5ae8c607e4b38dec29a780"
+    },
+    {
+      "path": "assets/catalogue-r3/derived/floor-spc-kx8006.png",
+      "bytes": 112735,
+      "sha256": "693e3319d9adb9b3dbab81043a89992fe5b822b2e2bc3062bbc9ce2e5217889e"
+    },
+    {
+      "path": "assets/catalogue-r3/derived/exterior-3d-gm-gm-19.png",
+      "bytes": 38343,
+      "sha256": "323c89a1abf174d48471f645285b76e74fb15d5ef248977e155b6688a842d0ef"
+    },
+    {
+      "path": "assets/catalogue-r3/derived/exterior-3d-gm-gm-25.png",
+      "bytes": 91443,
+      "sha256": "f2cc158abe517ed4a1ad3a11994cca149147e55366a54e8186bb81008dcd81e4"
+    },
+    {
+      "path": "assets/catalogue-r3/derived/exterior-standard-madeira-mel.png",
+      "bytes": 163215,
+      "sha256": "ff9039e2356eb8f1aca20eb5b59357fe346f03e37e2b86d5018a152f5c076fb6"
+    },
+    {
+      "path": "assets/catalogue-r3/derived/exterior-3d-gm-gm-30.png",
+      "bytes": 41467,
+      "sha256": "f6ce0bbf44f21dc905149f32af3694825afaacf8fc1d5055a2842051f598dea9"
+    },
+    {
+      "path": "assets/catalogue-r3/derived/exterior-3d-gm-gm-24.png",
+      "bytes": 38206,
+      "sha256": "f901fea04b1b6251b638db14751cef0e78a57b2fa5fe954724adf2bb3ac90fbd"
+    },
+    {
+      "path": "assets/catalogue-r3/derived/exterior-3d-gm-gm-18.png",
+      "bytes": 47504,
+      "sha256": "3f1795457be3ce2db2c355a29796967e76fd79ef95a1a0910f8863f8d52c23a8"
+    },
+    {
+      "path": "assets/catalogue-r3/derived/floor-spc-kx8007.png",
+      "bytes": 89277,
+      "sha256": "7c0259884ed8ba6de130ddbbebbee86a61a28c3461c244b2e9096657aedd5077"
+    },
+    {
+      "path": "assets/catalogue-r3/derived/exterior-3d-gm-gm-20.png",
+      "bytes": 41849,
+      "sha256": "958476e5742d8404f1aa0b2a9c9c0eb8ccf8d0f445e9c02c6f19e28fb99ffed3"
+    },
+    {
+      "path": "assets/catalogue-r3/derived/exterior-3d-textures-tijolo-vermelho.png",
+      "bytes": 77355,
+      "sha256": "e77994ee86681d1fa234b6bf0694ffb0bfe20f4f422c3d0d398f120be2f59d75"
+    },
+    {
+      "path": "assets/catalogue-r3/derived/exterior-finishes-lamela-branca.png",
+      "bytes": 60915,
+      "sha256": "93c0ace2b557e0bb3b107fb1ce8db682766f336880b4c1fea4797e0dd19a69e2"
+    },
+    {
+      "path": "assets/catalogue-r3/derived/exterior-standard-madeira-castanho.png",
+      "bytes": 19791,
+      "sha256": "3f65bf28ac54d0051a7553a21d8a4d39c0fae0e8555224a720eed57dc7209905"
+    },
+    {
+      "path": "assets/catalogue-r3/derived/exterior-3d-textures-tijolo-multicor.png",
+      "bytes": 81682,
+      "sha256": "cb3be033ad5c13b0b542a02c888b38f56c11d2a4955a8ecb86ea78f5ac01d49f"
+    },
+    {
+      "path": "assets/catalogue-r3/derived/exterior-3d-gm-gm-21.png",
+      "bytes": 53968,
+      "sha256": "7ef6fe82a51eefd5bfd554dfd7dbeb907244834219029bc758317a69b9125811"
+    },
+    {
+      "path": "assets/catalogue-r3/derived/exterior-3d-textures-bloco-cinza.png",
+      "bytes": 109882,
+      "sha256": "116c59f32500630aa1b2a3e86e8a76bc317d9d608ab4a89276d060047345c5de"
+    },
+    {
+      "path": "assets/catalogue-r3/derived/exterior-3d-gm-gm-23.png",
+      "bytes": 33873,
+      "sha256": "f8d246173a3058d659c237d4874b9d0f0d500b0bef9e6ef936011e77c453314c"
+    },
+    {
+      "path": "assets/catalogue-r3/derived/exterior-finishes-lamela-dourada.png",
+      "bytes": 71759,
+      "sha256": "75b81e50e2dad4a4889c3e9762c04291e8509fcb0561fefd8a211d296d10f043"
+    },
+    {
+      "path": "assets/catalogue-r3/derived/exterior-finishes-lamela-bege.png",
+      "bytes": 75016,
+      "sha256": "cf69b394b6c6281e6765afae9a28e60549cf229e3bf80aa71efbd2b66efe20ae"
+    },
+    {
+      "path": "assets/catalogue-r3/derived/exterior-3d-gm-gm-22.png",
+      "bytes": 29996,
+      "sha256": "6e91f5113ee1a3b6f202f00a01748da9884aa2f3d361a09ea225ba581e698dad"
+    },
+    {
+      "path": "assets/catalogue-r3/crops/exterior-3d-textures-tijolo-castanho.png",
+      "bytes": 83647,
+      "sha256": "e4e4916233165861295fa6e22d022bec1bbec946b746e9583ad8863a277fa5e7"
+    },
+    {
+      "path": "assets/catalogue-r3/crops/exterior-3d-textures-granito-cinza.png",
+      "bytes": 135298,
+      "sha256": "f871b81789669392e2821868288984e7c46d36c2ca56fdee6745be816e299f8e"
+    },
+    {
+      "path": "assets/catalogue-r3/crops/exterior-finishes-lamela-creme.png",
+      "bytes": 42178,
+      "sha256": "f1aa8993c12522f004fa02861df4d3502c3107f704e8d1f9fcb59ef873d101db"
+    },
+    {
+      "path": "assets/catalogue-r3/crops/exterior-3d-gm-gm-29.png",
+      "bytes": 62312,
+      "sha256": "748fc3cd77eadba1c6d09fc355327e7447fd3ff09bc9297811dea3c50be51fa6"
+    },
+    {
+      "path": "assets/catalogue-r3/crops/exterior-3d-gm-gm-28.png",
+      "bytes": 71192,
+      "sha256": "f0c77dbf55d7b13c2d69bc2d0d2c2bd95bce52dd6d4dfacee63c7b144d6d9e3b"
+    },
+    {
+      "path": "assets/catalogue-r3/crops/floor-spc-kx8009.png",
+      "bytes": 88247,
+      "sha256": "e5f715f8c2e0814470c34f93c4ea89e68603b4bf7fda95a0c8dfd8a153f76494"
+    },
+    {
+      "path": "assets/catalogue-r3/crops/exterior-3d-gm-gm-16.png",
+      "bytes": 23213,
+      "sha256": "b449230fb7dbcc946c31f30401cdad2df8120de15463a1e4d0489e9af1d77984"
+    },
+    {
+      "path": "assets/catalogue-r3/crops/exterior-3d-textures-pedra-bege.png",
+      "bytes": 81914,
+      "sha256": "868dba35d8a79b59b7c656741d4dd0b55a6ca96f04aa6da205e22b219f338edf"
+    },
+    {
+      "path": "assets/catalogue-r3/crops/exterior-3d-textures-pedra-areia.png",
+      "bytes": 75857,
+      "sha256": "e7508212307ba5840639881ada03d766fcf926d776dc140fcad3178b0fd485ef"
+    },
+    {
+      "path": "assets/catalogue-r3/crops/exterior-3d-gm-gm-17.png",
+      "bytes": 36980,
+      "sha256": "0baf3fb81e8efe9bc3d34afa679a3ebc6c398342aabdaac9cf03d46a3a082e2a"
+    },
+    {
+      "path": "assets/catalogue-r3/crops/floor-spc-kx8008.png",
+      "bytes": 103532,
+      "sha256": "f2c4a99c68cc927f391f700d2d63b0b53332f8fc7b3c8f8d8918bf54cda23901"
+    },
+    {
+      "path": "assets/catalogue-r3/crops/exterior-3d-textures-tijolo-cinza.png",
+      "bytes": 83423,
+      "sha256": "38f9f9d22e242bff0fe6a5c72769aa4baf72cb20d98e5be43e69af3f48f6aedc"
+    },
+    {
+      "path": "assets/catalogue-r3/crops/exterior-finishes-lamela-bordo.png",
+      "bytes": 53382,
+      "sha256": "7cb89f5e07f39eb65bc0405e5ddd7197595f1a32e9602b12ba06d6025a80e455"
+    },
+    {
+      "path": "assets/catalogue-r3/crops/floor-spc-kx9005.png",
+      "bytes": 95224,
+      "sha256": "8818f14fd586031eff63dcd3fc6c6770a2570d6e4b57b8513730dc80f6f352ae"
+    },
+    {
+      "path": "assets/catalogue-r3/crops/floor-spc-kx7010.png",
+      "bytes": 114375,
+      "sha256": "7d6529d43877a87c8353af1672414b05d4b3abe76e3bd0e35fc9c0e51a423d0d"
+    },
+    {
+      "path": "assets/catalogue-r3/crops/floor-spc-kx7005.png",
+      "bytes": 83416,
+      "sha256": "d594a754fed03b9e3df63b11ba075a77f204ba24c7aad9b20e8c5e2818e87b86"
+    },
+    {
+      "path": "assets/catalogue-r3/crops/floor-spc-kx7007.png",
+      "bytes": 117743,
+      "sha256": "97612932eb1a52ebe3f2bc363f4c3417f95681fbd32eb11646ad956695880ea1"
+    },
+    {
+      "path": "assets/catalogue-r3/crops/floor-spc-kx7006.png",
+      "bytes": 127958,
+      "sha256": "35623c717ff11f2629f92e94b51ef3f8855460e24a6dd04c94cda6b50ce7d96f"
+    },
+    {
+      "path": "assets/catalogue-r3/crops/exterior-standard-madeira-cerejeira.png",
+      "bytes": 25657,
+      "sha256": "ebb9c1e5983ab9ee1bf251585e807f0e9d5fb4d14b7dcd6e6df4e8455004c0c9"
+    },
+    {
+      "path": "assets/catalogue-r3/crops/exterior-finishes-madeira-mel.png",
+      "bytes": 67925,
+      "sha256": "1da9bb68af41b750d0b789508ffb54cda060cca1bbcc52bdc2363db29a10a470"
+    },
+    {
+      "path": "assets/catalogue-r3/crops/exterior-3d-textures-tijolo-creme.png",
+      "bytes": 74543,
+      "sha256": "ea1036cf19b71d86621f54f2101e60a3353532a308c79b478abe5d305aa0a855"
+    },
+    {
+      "path": "assets/catalogue-r3/crops/floor-spc-kx7008.png",
+      "bytes": 102869,
+      "sha256": "5fc6de84f9c8f1e98aea6f66825586afb117731953e3ed941c939ebdde306c69"
+    },
+    {
+      "path": "assets/catalogue-r3/crops/floor-spc-kx7009.png",
+      "bytes": 115548,
+      "sha256": "10a6982512b090e9ba688d45cee4cc56af50932a4b0618cc88e544d8829c75f7"
+    },
+    {
+      "path": "assets/catalogue-r3/crops/exterior-3d-textures-tijolo-rustico.png",
+      "bytes": 57987,
+      "sha256": "378667a29b748ce9baf51ee0ff0e749ce4cd663afafe9b35e52cc26dfddbc875"
+    },
+    {
+      "path": "assets/catalogue-r3/crops/floor-spc-kx8005.png",
+      "bytes": 94376,
+      "sha256": "e6f92483edde43456748dbb6780898d9c8e5b2577b34fb17bc0c9f109d10e187"
+    },
+    {
+      "path": "assets/catalogue-r3/crops/exterior-3d-gm-gm-26.png",
+      "bytes": 57905,
+      "sha256": "29190dd7309f46fa1e5a07c5ef263fba8aecec518a118f06b33095ab503f1ba6"
+    },
+    {
+      "path": "assets/catalogue-r3/crops/exterior-3d-textures-tijolo-bordo.png",
+      "bytes": 58031,
+      "sha256": "2e47cc37dd786d3cc89123a03cdaf3f14bb7aab447f9b953c5c1505218f5ded9"
+    },
+    {
+      "path": "assets/catalogue-r3/crops/exterior-3d-textures-tijolo-ardosia.png",
+      "bytes": 102928,
+      "sha256": "c4dd3464a52eacd9147174920829d5cfd574b4dd91c377fae674eeaf3500032f"
+    },
+    {
+      "path": "assets/catalogue-r3/crops/exterior-finishes-lamela-cinza.png",
+      "bytes": 43986,
+      "sha256": "c15d3655bc5411eab3bdf67f896b549454c78ca2972aabbc21ef0f5e98d0ee10"
+    },
+    {
+      "path": "assets/catalogue-r3/crops/exterior-3d-gm-gm-27.png",
+      "bytes": 83276,
+      "sha256": "053223f000f40aaaf4c7be6abee7ac5061b63123adf79f5e2983f2b6153e0347"
+    },
+    {
+      "path": "assets/catalogue-r3/crops/floor-spc-kx8006.png",
+      "bytes": 82096,
+      "sha256": "19f2b747cb1bb0a9b0d739bf262997d4fb4916cdbf41a892c1674254f46479ff"
+    },
+    {
+      "path": "assets/catalogue-r3/crops/exterior-3d-gm-gm-19.png",
+      "bytes": 23819,
+      "sha256": "b0ce0d12ae0bb4cdfafb5e902c93bff517aafce872e367cb109e489145174a8e"
+    },
+    {
+      "path": "assets/catalogue-r3/crops/exterior-3d-gm-gm-25.png",
+      "bytes": 72869,
+      "sha256": "a93023f0fcffde488dadee54eba280d03958d886bcf337230559d3efe6aa22f6"
+    },
+    {
+      "path": "assets/catalogue-r3/crops/exterior-standard-madeira-mel.png",
+      "bytes": 145262,
+      "sha256": "c6976f1d1d4bf66e16c8b991ca068e7bb80453a2044761d26ac826d11b4f5dce"
+    },
+    {
+      "path": "assets/catalogue-r3/crops/exterior-3d-gm-gm-30.png",
+      "bytes": 31981,
+      "sha256": "ebb89936f5bc886d683f1b2e42b7207a9238ecaeb1dd1ffdf74397cac7c4731a"
+    },
+    {
+      "path": "assets/catalogue-r3/crops/exterior-3d-gm-gm-24.png",
+      "bytes": 23674,
+      "sha256": "7d8bf1826247cded58aa1412b397ae2cf88a0f21acde8ffb2cd5877c1ac3e7a3"
+    },
+    {
+      "path": "assets/catalogue-r3/crops/exterior-3d-gm-gm-18.png",
+      "bytes": 30797,
+      "sha256": "edd7352b741b3c08753d890347ec1d4ec58442f587150d5692368dd19f607b9a"
+    },
+    {
+      "path": "assets/catalogue-r3/crops/floor-spc-kx8007.png",
+      "bytes": 69516,
+      "sha256": "e351146f075283c27f87a2a69a6bb5b00861a24f0b59bbf8ca00ccd71f236799"
+    },
+    {
+      "path": "assets/catalogue-r3/crops/exterior-3d-gm-gm-20.png",
+      "bytes": 30468,
+      "sha256": "500705a8687028f9f617e9d7f7baefa93385eaa4b90aa68e9f107ed480a11b98"
+    },
+    {
+      "path": "assets/catalogue-r3/crops/exterior-3d-textures-tijolo-vermelho.png",
+      "bytes": 73757,
+      "sha256": "b263813407f0416e6ad7e209ae1be90455967d6c6ff4bba477458c3c0a131139"
+    },
+    {
+      "path": "assets/catalogue-r3/crops/exterior-finishes-lamela-branca.png",
+      "bytes": 35185,
+      "sha256": "3741e8950624d9297a489f7f14d221158ab98825d558e1607074ed4901d46e69"
+    },
+    {
+      "path": "assets/catalogue-r3/crops/exterior-standard-madeira-castanho.png",
+      "bytes": 15290,
+      "sha256": "031cef8705efb46b4da658f305df0afad10679dd7c5fa5a077939a5473eb5fa5"
+    },
+    {
+      "path": "assets/catalogue-r3/crops/exterior-3d-textures-tijolo-multicor.png",
+      "bytes": 75624,
+      "sha256": "2d924a33d7bf9d948e9301f402b0758911552de1c03510c2d953a35e72411cc9"
+    },
+    {
+      "path": "assets/catalogue-r3/crops/exterior-3d-gm-gm-21.png",
+      "bytes": 39173,
+      "sha256": "a3b4a7e2a14977f4541464d3343b071f4b8b559d53b11c84485e5642d562284a"
+    },
+    {
+      "path": "assets/catalogue-r3/crops/exterior-3d-textures-bloco-cinza.png",
+      "bytes": 99766,
+      "sha256": "248b8dc3d3b6c0c00d9619ce28f1768651a7dc75907a115328fd1aba8f6d424f"
+    },
+    {
+      "path": "assets/catalogue-r3/crops/exterior-3d-gm-gm-23.png",
+      "bytes": 16231,
+      "sha256": "840e8077f2861c25057c287f63454e64d0bad53772daddbe8d67bf62359b1f1d"
+    },
+    {
+      "path": "assets/catalogue-r3/crops/exterior-finishes-lamela-dourada.png",
+      "bytes": 46752,
+      "sha256": "29c44aae8c2994691efb151468d5a11ab00658fb9538a3ed853dbc49c53f71da"
+    },
+    {
+      "path": "assets/catalogue-r3/crops/exterior-finishes-lamela-bege.png",
+      "bytes": 46844,
+      "sha256": "8f97589699679a14bdbc853ca6bf6f764b45f13c40470e2c7c2b087849316e65"
+    },
+    {
+      "path": "assets/catalogue-r3/crops/exterior-3d-gm-gm-22.png",
+      "bytes": 14426,
+      "sha256": "9d111e5cc20861a17acb4e533f58ed7f49b5dab752650333017fdc68a98ee724"
+    },
+    {
+      "path": "assets/catalogue/reference/bathroom-06.jpg",
+      "bytes": 62716,
+      "sha256": "647065e56bb6dcbd365be448a207031696fc4c9f22fbf23267420e90b548d49b"
+    },
+    {
+      "path": "assets/catalogue/reference/kitchen-03.jpg",
+      "bytes": 61753,
+      "sha256": "789feeef9dc748c691b4fec2890cad8b2f24e73b74a99f48c03916bf81acdcb5"
+    }
+  ]
+}

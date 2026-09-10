@@ -1,0 +1,192 @@
+{
+  "status": "PASS_WITH_STATED_SCOPE",
+  "currentHashes": {
+    "portfolio.js": "7e55fc7283894662af26a977280ac3544216bd4de58724c08f087cf8751ed0ce",
+    "configuration.js": "26a9aabac665b9e8ffdaf3001b3c920a34fa16faa7c71a04c950678df1bb521e",
+    "app.js": "76c2e30cfe73612436abdb720e6a08a69a5c94fe331170366aeb21bbe8f6f3b2",
+    "index.html": "0e87bc9474bbe4becc01873346348c6ada7a006cf02561f172eaf3b839e20649",
+    "assets/presentation-r7/manifest.json": "c4ace6aad2cc716c705e4d767435714171ea7665d782c692d23cd2420e54b598"
+  },
+  "pdfCodeMatchesCurrent": true,
+  "configurationMatchesCurrent": true,
+  "integrationCodeMatchesCurrent": true,
+  "pdfCases": 167,
+  "pdfErrors": [],
+  "overlaps": [],
+  "integrationPassed": true,
+  "galleryAll24AssetsMatchRenderer": true,
+  "galleryAssetCopyChecks": [
+    {
+      "id": "01-exterior-alpendre",
+      "kind": "image",
+      "matchesOriginalRender": true
+    },
+    {
+      "id": "01-exterior-alpendre",
+      "kind": "thumbnail",
+      "matchesOriginalRender": true
+    },
+    {
+      "id": "01-exterior-alpendre",
+      "kind": "original",
+      "matchesOriginalRender": true
+    },
+    {
+      "id": "02-exterior-cobertura-plana",
+      "kind": "image",
+      "matchesOriginalRender": true
+    },
+    {
+      "id": "02-exterior-cobertura-plana",
+      "kind": "thumbnail",
+      "matchesOriginalRender": true
+    },
+    {
+      "id": "02-exterior-cobertura-plana",
+      "kind": "original",
+      "matchesOriginalRender": true
+    },
+    {
+      "id": "03-interior-perspectiva",
+      "kind": "image",
+      "matchesOriginalRender": true
+    },
+    {
+      "id": "03-interior-perspectiva",
+      "kind": "thumbnail",
+      "matchesOriginalRender": true
+    },
+    {
+      "id": "03-interior-perspectiva",
+      "kind": "original",
+      "matchesOriginalRender": true
+    },
+    {
+      "id": "04-planta-mobilada",
+      "kind": "image",
+      "matchesOriginalRender": true
+    },
+    {
+      "id": "04-planta-mobilada",
+      "kind": "thumbnail",
+      "matchesOriginalRender": true
+    },
+    {
+      "id": "04-planta-mobilada",
+      "kind": "original",
+      "matchesOriginalRender": true
+    },
+    {
+      "id": "05-cozinha",
+      "kind": "image",
+      "matchesOriginalRender": true
+    },
+    {
+      "id": "05-cozinha",
+      "kind": "thumbnail",
+      "matchesOriginalRender": true
+    },
+    {
+      "id": "05-cozinha",
+      "kind": "original",
+      "matchesOriginalRender": true
+    },
+    {
+      "id": "06-casa-de-banho",
+      "kind": "image",
+      "matchesOriginalRender": true
+    },
+    {
+      "id": "06-casa-de-banho",
+      "kind": "thumbnail",
+      "matchesOriginalRender": true
+    },
+    {
+      "id": "06-casa-de-banho",
+      "kind": "original",
+      "matchesOriginalRender": true
+    },
+    {
+      "id": "07-estrutura",
+      "kind": "image",
+      "matchesOriginalRender": true
+    },
+    {
+      "id": "07-estrutura",
+      "kind": "thumbnail",
+      "matchesOriginalRender": true
+    },
+    {
+      "id": "07-estrutura",
+      "kind": "original",
+      "matchesOriginalRender": true
+    },
+    {
+      "id": "08-expansao",
+      "kind": "image",
+      "matchesOriginalRender": true
+    },
+    {
+      "id": "08-expansao",
+      "kind": "thumbnail",
+      "matchesOriginalRender": true
+    },
+    {
+      "id": "08-expansao",
+      "kind": "original",
+      "matchesOriginalRender": true
+    }
+  ],
+  "sourceSnapshotDifferences": [
+    {
+      "file": "configuration.js",
+      "snapshot": "ca78e1fdaddf504f6be43c8b4ec3c45ec92d07bdea1f35094ca967408316fdf1",
+      "current": "26a9aabac665b9e8ffdaf3001b3c920a34fa16faa7c71a04c950678df1bb521e"
+    }
+  ],
+  "r6Runtime": [
+    {
+      "file": "model.js",
+      "tested": "4379058d41b8627850a3c8cb556b974b5743b68696ae676c99eab342fcfe9cba",
+      "current": "4379058d41b8627850a3c8cb556b974b5743b68696ae676c99eab342fcfe9cba",
+      "identical": true
+    },
+    {
+      "file": "specification.js",
+      "tested": "e1784a324c129ed85944a1abbe98a2d21b08a8a91d6e34a637e6463523f6cdbe",
+      "current": "e1784a324c129ed85944a1abbe98a2d21b08a8a91d6e34a637e6463523f6cdbe",
+      "identical": true
+    },
+    {
+      "file": "configuration.js",
+      "tested": "ca78e1fdaddf504f6be43c8b4ec3c45ec92d07bdea1f35094ca967408316fdf1",
+      "current": "26a9aabac665b9e8ffdaf3001b3c920a34fa16faa7c71a04c950678df1bb521e",
+      "identical": false
+    },
+    {
+      "file": "plan-svg.js",
+      "tested": "e14dba25221447474d3eafce9b806d68937329b33bd417b79cec5906ba9b994f",
+      "current": "e14dba25221447474d3eafce9b806d68937329b33bd417b79cec5906ba9b994f",
+      "identical": true
+    },
+    {
+      "file": "interior-detail.js",
+      "tested": "c2a1b1a645c5c809314d6a3a146b335339d64c439cc4dedbf8afbc470797dd16",
+      "current": "c2a1b1a645c5c809314d6a3a146b335339d64c439cc4dedbf8afbc470797dd16",
+      "identical": true
+    },
+    {
+      "file": "interior-references.js",
+      "tested": "41cdd74bdd7d79740372ae090aa38278b62eadfa05261a4952b2295f0ec369ac",
+      "current": "41cdd74bdd7d79740372ae090aa38278b62eadfa05261a4952b2295f0ec369ac",
+      "identical": true
+    }
+  ],
+  "limitations": [
+    "159 pairwise catalogue/space cases plus 8 edge cases; not full Cartesian product of every option.",
+    "Code/data integration exercised with DOM/WebGL stubs; browser interaction and visual screenshots belong to the parallel browser review.",
+    "PDF tests embedded actual catalogue images, but no 3D or SVG raster passed as page images. Browser review covers those capture paths.",
+    "Non-WinAnsi user characters are converted to question marks in PDF; controls converted to spaces.",
+    "Gallery lighting/backdrop and context visibility intentionally differ from interactive studio; recipes reproduce configuration, not identical pixels."
+  ]
+}

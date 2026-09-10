@@ -55,3 +55,13 @@ New expansion-v4 film:20s,1920×1080,24fps,480frames, same T2/materials as prese
 - Current report dist/assets/evidence-r6/audit-report.html; builder scripts/evidence-r6.py collects independent proof from /private/tmp/gv72-r6. PDF2pages rendered/inspected, JSON/SVG downloaded. Final publication identifiers recorded in parent session_20260910_green_village_72_r6.json after successful deployment.
 
 - Final catalogue browser coverage:174/174 (71 IDs×2 modes+15 kitchens+17 baths), rendered material/mode/path checked, no console/page/HTTP errors. Two initial video metadata requests aborted; playback separately passed. Cache maximum18, final3leases, pending0; sources unchanged throughout.
+
+## R7 — branded commercial portfolio, 2026-09-10
+
+- Official logo from the original optional catalogue in header/footer/client dossier; published contact verified on p19. Never use website/logo.png (unrelated Meta account screenshot), or transfer144m² dimensions from the colleague reference.
+- Model narrative, materials/space/roof/expansion decision sections, all original photographs/films/technical sources retained. Studio remains entry surface; mobile native view picker preserves visible3D during material selection.
+- Eight actual native3840×2160 renders, JPEG and originalPNG downloads, lightweight960×540 thumbnails. assets/presentation-r7/manifest.json binds full validated configurations. Applying resets hidden furniture/walls, cut and open fittings. Render lighting/camera differ from navigation and are documented; geometry/materials remain R6.
+- portfolio.js shares reference hashes, selection cards/groups and branded four-pagePDF. Names/codes/sourcepages, exact selected plan and original material/reference images preserved. Inactive kitchen no longer labelled applied. MeasuredPDFcardrows handle80-character names; importedcontrolcharacters no longer break WinAnsi. LongHTMLnames wrap within cards.
+- Tests:32 regressiongroups passed, independent159-PDFmatrix passed,8 galleryconfigs and10mobileviews exercised. Existing R6 geometry/door/fittings code unchanged; expansion audit passed without added collision regressions.
+- Public scoped evidence: dist/assets/evidence-r7/audit-report.html. Source research/browser evidence: /private/tmp/gv72-r7. Native private publication receipt is recorded outside this checkout in ../session_20260910_green_village_72_r7.json.
+- Preserved projectID appgprj_6aa28c2f3e1881918f795ae2c908b371, owner-only audience, URL https://green-village-72-studio.greenvillage.chatgpt.site/. Recovery tag recovery/gv72-before-commercial-r7-20260910 points to R6. No geometry alteration, catalogue recolouring or fabricated engineering certification.

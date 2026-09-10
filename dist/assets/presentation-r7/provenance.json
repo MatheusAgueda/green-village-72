@@ -1,0 +1,296 @@
+{
+  "createdAt": "2026-09-10T21:17:34.701048+00:00",
+  "engine": "Three.js raster, WebGL2; not path tracing",
+  "capture": "Native 3840 × 2160 drawing buffer; deviceScaleFactor and renderer pixel ratio 1; no upscale. PNG read directly from the renderer canvas. JPEG at the same dimensions, quality 95, 4:4:4. Thumbnails downsampled to 960 × 540.",
+  "configuration": {
+    "schemaVersion": 2,
+    "layout": "t3-a",
+    "exteriorId": "exterior-standard-branco-glacial",
+    "exterior": "#ddddda",
+    "floorId": "floor-spc-kx7008",
+    "floor": "#a18a6e",
+    "interior": "#eeede8",
+    "interiorName": "Branco natural",
+    "kitchen": "l",
+    "kitchenRef": "kitchen-03",
+    "bathroom": "standard",
+    "bathroomRef": "bathroom-06",
+    "bathroomUV": null,
+    "roof": true,
+    "porch": true,
+    "lighting": "neutral",
+    "textureMode": "source"
+  },
+  "revision": "R6",
+  "sourceSnapshot": "source-snapshot.json",
+  "snapshotUnmodified": true,
+  "currentSourceDifferences": [
+    "configuration.js"
+  ],
+  "sourceMode": "Original catalogue crops, textureMode source in all eight renders. No colour treatment, replacement texture or generated imagery. Neutral stage lighting naturally changes the visible photographed colours. No physical calibration is claimed.",
+  "sourceReferences": {
+    "exterior": "assets/catalogue-v2/originals/exterior-standard-branco-glacial.jpg",
+    "floor": "assets/catalogue-v2/originals/floor-spc-kx7008.jpg",
+    "kitchen": "assets/catalogue/reference/kitchen-03.jpg",
+    "bathroom": "assets/catalogue/reference/bathroom-06.jpg"
+  },
+  "studioChanges": {
+    "modelGeometryAndMaterials": "Unmodified frozen R6 modules",
+    "backdrop": "Existing ground scaled ×10 and recoloured #b6c0b5; background #cdd9cc",
+    "lighting": "Existing neutral rig; key intensity 1.8 rather than 2.1; shadow map 4096 rather than 2048; all house materials unchanged",
+    "camera": "Independent fitted views; true orthographic top view",
+    "detailVisibility": [
+      "Kitchen and bathroom: structural group, supports and underfloor layers hidden for an isolated cutaway",
+      "Kitchen: distant bathroom wall group hidden",
+      "Bathroom: interior wall/door context hidden except the selected bathroom surfaces",
+      "Structure: porch group hidden to avoid isolated balustrades"
+    ],
+    "notReconstructed": [
+      "No extra furnishings, landscaping or synthetic textures added",
+      "No geometry, fitting mechanism or dimensions changed"
+    ]
+  },
+  "limits": [
+    "Catalogue material photographs are low-resolution source samples; rendering at 4K does not add source texture detail.",
+    "Original SPC photographs have baked lighting and visible periodic seams. KX7008 was kept as the tested original with the smallest border discontinuity; no correction was applied.",
+    "Top plan is a view of the approximate furnished model, not a certified construction plan.",
+    "Structure dimensions and connectors are illustrative.",
+    "Expansion frame is an estimated simulation, not documented transport or a real assembly photograph.",
+    "Hero and flat-roof image are explicitly different roof/porch options; the T3-A layout and selected original interior references are identical."
+  ],
+  "evidence": [
+    {
+      "id": "01-exterior-alpendre",
+      "sourcePNG": "renders/01-exterior-alpendre.png",
+      "pngSha256": "1a3111cfb7b45cdc7be9a6a32feb228e5027dbe33366981af8b8617ea398f65f",
+      "jpegSha256": "eb4f384464d4cb4da81b0f273273aea875778b97d6e5f087e7dfe99d816dd376",
+      "thumbnailSha256": "896a199d0d93aaf566a89cdcd29ec3838947f872c59570ea707bb1aa8e961802",
+      "proof": "proof/01-exterior-alpendre.json",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "drawingBuffer": [
+        3840,
+        2160
+      ],
+      "renderCalls": 588,
+      "triangles": 136364,
+      "framingMarginsPixels": {
+        "left": 483.7858217928581,
+        "right": 982.8648248234681,
+        "top": 624.7337225036856,
+        "bottom": 115.71428571428623
+      },
+      "assetBytes": {
+        "png": 1662391,
+        "jpeg": 509344,
+        "thumbnail": 41431
+      }
+    },
+    {
+      "id": "02-exterior-cobertura-plana",
+      "sourcePNG": "renders/02-exterior-cobertura-plana.png",
+      "pngSha256": "cbe414dd5eed674a5360422a7e2dccca430e06c9464ae8cd24ee8921161c2096",
+      "jpegSha256": "b533626e3481c760417e7e47ae9016ab61cb9ae11ffc9eebd5c485a1853291ca",
+      "thumbnailSha256": "eea354de9877a14e2f76c36adcbce8fd40f7c3c403142716e381d163e0ad67b9",
+      "proof": "proof/02-exterior-cobertura-plana.json",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "drawingBuffer": [
+        3840,
+        2160
+      ],
+      "renderCalls": 498,
+      "triangles": 130100,
+      "framingMarginsPixels": {
+        "left": 933.5520092045019,
+        "right": 597.1548705644159,
+        "top": 568.6531901072467,
+        "bottom": 115.71428571428532
+      },
+      "assetBytes": {
+        "png": 2112005,
+        "jpeg": 576817,
+        "thumbnail": 43492
+      }
+    },
+    {
+      "id": "03-interior-perspectiva",
+      "sourcePNG": "renders/03-interior-perspectiva.png",
+      "pngSha256": "16cd955ada9025573d7d6b0249396d6521c7e5819f4e3b3aa3356fd4546d3efe",
+      "jpegSha256": "7e157f9a7c3b4bb2e65a7ac8224800e707216aa80b38de26ce7536e743189b04",
+      "thumbnailSha256": "c399162630ed308892d94c772e5441694d220b21ccc7a4d87df27bee3782c3a0",
+      "proof": "proof/03-interior-perspectiva.json",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "drawingBuffer": [
+        3840,
+        2160
+      ],
+      "renderCalls": 538,
+      "triangles": 131444,
+      "framingMarginsPixels": {
+        "left": 669.11454868512,
+        "right": 737.4284301639295,
+        "top": 392.9353510796278,
+        "bottom": 107.02702702702663
+      },
+      "assetBytes": {
+        "png": 2561337,
+        "jpeg": 764177,
+        "thumbnail": 55672
+      }
+    },
+    {
+      "id": "04-planta-mobilada",
+      "sourcePNG": "renders/04-planta-mobilada.png",
+      "pngSha256": "ff60a10795767a63caeafac049946899ccf1d225184c0deb22fcc4b5241b9994",
+      "jpegSha256": "56f680b54bce73e027ff195f277bc453246c5a5240362df343c572e8f8763107",
+      "thumbnailSha256": "f5b41f1ddf2ebd51e0cfdb206f4c68a3c60620faafebe2d2afaa064605c97d09",
+      "proof": "proof/04-planta-mobilada.json",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "drawingBuffer": [
+        3840,
+        2160
+      ],
+      "renderCalls": 538,
+      "triangles": 131444,
+      "framingMarginsPixels": {
+        "left": 319.99999999999994,
+        "right": 319.99999999999955,
+        "top": 356.2181884053128,
+        "bottom": 356.21818840531273
+      },
+      "assetBytes": {
+        "png": 6204459,
+        "jpeg": 1612625,
+        "thumbnail": 87742
+      }
+    },
+    {
+      "id": "05-cozinha",
+      "sourcePNG": "renders/05-cozinha.png",
+      "pngSha256": "9b0a5a83804b66887ac17eb36e314b0d5b3c80e5188b1ededeaf133a8ebf262f",
+      "jpegSha256": "a3f7f2ca9bbf1751ba4e22437cb379d68b3dff9015da79970fc09302a204b6a6",
+      "thumbnailSha256": "4a8649b77c8cfcebebe0114caf896cde2d9a7177956ba2a10b184c5274e96271",
+      "proof": "proof/05-cozinha.json",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "drawingBuffer": [
+        3840,
+        2160
+      ],
+      "renderCalls": 204,
+      "triangles": 47828,
+      "framingMarginsPixels": {
+        "left": 1037.154611091815,
+        "right": 928.8799758390178,
+        "top": 353.76365056020114,
+        "bottom": 124.24778761061975
+      },
+      "assetBytes": {
+        "png": 1811330,
+        "jpeg": 513264,
+        "thumbnail": 36797
+      }
+    },
+    {
+      "id": "06-casa-de-banho",
+      "sourcePNG": "renders/06-casa-de-banho.png",
+      "pngSha256": "3bd2fe4f0eb53117a156bb4eac1f0027d7b496553345f5e1bbef4d6f8b864754",
+      "jpegSha256": "7084f110be941e79de9267b5043a42cb05373f52e298534f076ca507f27a7711",
+      "thumbnailSha256": "f9190c19ea27278a73e6941005daa164683ba882c0104e6a7cfefa7fc88a4512",
+      "proof": "proof/06-casa-de-banho.json",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "drawingBuffer": [
+        3840,
+        2160
+      ],
+      "renderCalls": 190,
+      "triangles": 52628,
+      "framingMarginsPixels": {
+        "left": 1053.1727695346358,
+        "right": 1129.0215558830541,
+        "top": 371.9588552317989,
+        "bottom": 132.63157894736833
+      },
+      "assetBytes": {
+        "png": 2139222,
+        "jpeg": 537743,
+        "thumbnail": 39039
+      }
+    },
+    {
+      "id": "07-estrutura",
+      "sourcePNG": "renders/07-estrutura.png",
+      "pngSha256": "9f17783086bb46226927165e5af37b66e1b7ad9a41784685a3d0e03d9c2b6e65",
+      "jpegSha256": "9e9093ff0dc91e5829a05e1c3cc4c6ed9c83835f50667eaab0ae5508e892154d",
+      "thumbnailSha256": "5783199a64eb71946f7ec87b4d5718273d88c28c6abc6147b5fa1f2243265ab6",
+      "proof": "proof/07-estrutura.json",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "drawingBuffer": [
+        3840,
+        2160
+      ],
+      "renderCalls": 28,
+      "triangles": 10082,
+      "framingMarginsPixels": {
+        "left": 730.1845240289911,
+        "right": 794.9176090082524,
+        "top": 474.8283273475379,
+        "bottom": 124.24778761061884
+      },
+      "assetBytes": {
+        "png": 1285711,
+        "jpeg": 715631,
+        "thumbnail": 70735
+      }
+    },
+    {
+      "id": "08-expansao",
+      "sourcePNG": "renders/08-expansao.png",
+      "pngSha256": "6791eaa0a8cd6160f4127c77479a0e38ff4724f098822bd8ad1b528322455d80",
+      "jpegSha256": "5ea1e02927968f82b3b250cb685332bc16d9408c7afd0160add677074ddd957e",
+      "thumbnailSha256": "2a52a158106c4bb8443f96966007cde38f9818dbd7a030b49ccb8487b9b16c5a",
+      "proof": "proof/08-expansao.json",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "drawingBuffer": [
+        3840,
+        2160
+      ],
+      "renderCalls": 230,
+      "triangles": 81532,
+      "framingMarginsPixels": {
+        "left": 570.5788331482753,
+        "right": 835.9823523794212,
+        "top": 513.2240487713503,
+        "bottom": 124.24778761061975
+      },
+      "assetBytes": {
+        "png": 1648174,
+        "jpeg": 504819,
+        "thumbnail": 40799
+      }
+    }
+  ],
+  "captureErrors": []
+}

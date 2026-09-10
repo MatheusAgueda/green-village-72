@@ -11,6 +11,7 @@ import {physicalUV} from './dist/material-library.js';
 import {planSVG} from './dist/plan-svg.js';
 import {DATA} from './dist/data.js';
 import {INTERIOR_REFERENCES} from './dist/interior-references.js';
+import {selectionMaterials,selectionGroups,configurationReference,summaryMarkup} from './dist/portfolio.js';
 const core=process.argv.includes('--core');let count=0;
 function check(label,fn){fn();count++;console.log('PASS '+label);}
 const close=(a,b,e=1e-6)=>assert.ok(Math.abs(a-b)<=e,`${a} != ${b}`);
@@ -104,7 +105,7 @@ check('plan area labels retain readable contrast with extreme custom floors',()=
 });
 check('all original plans, catalogue references and application dependencies are present',()=>{
  for(const x of DATA.layouts)assert.ok(existsSync('dist/'+x.image));for(const x of [...DATA.kitchens,...DATA.bathrooms])assert.ok(existsSync('dist/assets/catalogue/'+x.asset));for(const f of ['opcionais-2026.pdf','plantas-40-pes.xlsx'])assert.ok(statSync('dist/assets/'+f).size>1000);
- for(const m of readFileSync('dist/index.html','utf8').matchAll(/(?:src|href)="([^"#]+)"/g)){const u=m[1];if(u==='./'||/^https?:|data:/.test(u)||(core&&/v2(?:-poster)?\.(?:jpg|mp4)$/.test(u)))continue;assert.ok(existsSync('dist/'+u),u);}
+ for(const m of readFileSync('dist/index.html','utf8').matchAll(/(?:src|href)="([^"#]+)"/g)){const u=m[1];if(u==='./'||/^https?:|data:/.test(u)||u==='mailto:info@greenvillagemobilehomes.com'||(core&&/v2(?:-poster)?\.(?:jpg|mp4)$/.test(u)))continue;assert.ok(existsSync('dist/'+u),u);}
 });
 check('R5 all 32 reference selections affect the actual model and retain source provenance',()=>{
  const signatures={kitchen:new Set(),bathroom:new Set()};for(const [id,ref]of Object.entries(INTERIOR_REFERENCES)){
@@ -156,6 +157,22 @@ check('R6 open furniture remains inside the detail camera bounds and is not clip
  for(const ref of DATA.kitchens){const h=makeHouse({...DEFAULT_CONFIG,kitchen:'linear',kitchenRef:ref.id,view:'interior'});h.details.setOpen(true,'kitchen');h.setDetail('kitchen');h.root.updateMatrixWorld(true);const bounds=h.detailBounds('kitchen').expandByScalar(1e-8);for(const m of h.details.motions.filter(m=>m.scope==='kitchen'))assert.ok(bounds.containsBox(new THREE.Box3().setFromObject(m.g)),ref.id+' open component');for(const material of h.details.detailMaterials)assert.equal(material.clippingPlanes.length,0);h.dispose();}
 });
 check('new videos, poster images and evidence links are real delivered files',()=>{for(const f of ['presentation-v3.mp4','expansion-v4.mp4','presentation-v3-poster.jpg','expansion-v4-poster.jpg','evidence-r4/audit-report.html','evidence-r4/dimensions.json'])assert.ok(statSync('dist/assets/'+f).size>1000,f);});
+check('R7 commercial summaries retain selected references and omit inactive kitchen photographs',()=>{
+ for(const layout of DATA.layouts)for(const kitchen of ['none','linear']){
+  const state=validateConfiguration({...DEFAULT_CONFIG,layout:layout.id,kitchen}),cards=selectionMaterials(state),groups=selectionGroups(state),markup=summaryMarkup(state,{plan:planSVG(state)});
+  assert.equal(cards.some(m=>m.title.startsWith('Cozinha')),kitchen!=='none');assert.ok(groups.flatMap(g=>g.rows).some(([k,v])=>k==='Planta'&&v===layout.label));
+  assert.ok(!/undefined|NaN/.test(markup));assert.equal(configurationReference(state),configurationReference(decodeConfiguration(encodeConfiguration(state))));
+  if(kitchen==='none')assert.ok(!JSON.stringify(summaryRows(state)).includes('elementos aplicados ao 3D'));
+  for(const m of cards)if(m.image)assert.ok(existsSync('dist/'+m.image),m.image);
+ }
+ const state={...DEFAULT_CONFIG,interiorName:'<img src=x onerror=alert(1)>'};assert.ok(!summaryMarkup(state).includes('<img src=x'));
+});
+check('R7 gallery applies valid configurations with real native 4K images and three categories',()=>{
+ const manifest=JSON.parse(readFileSync('dist/assets/presentation-r7/manifest.json','utf8'));assert.equal(manifest.items.length,8);assert.equal(new Set(manifest.items.map(i=>i.id)).size,8);
+ assert.deepEqual([...new Set(manifest.items.map(i=>i.category))].sort(),['construction','exterior','interior']);
+ function dimensions(bytes){let at=2;while(at<bytes.length){if(bytes[at]!==255){at++;continue;}const marker=bytes[at+1],length=bytes.readUInt16BE(at+2);if([192,193,194].includes(marker))return [bytes.readUInt16BE(at+7),bytes.readUInt16BE(at+5)];at+=2+length;}throw new Error('JPEG dimensions not found');}
+ for(const item of manifest.items){validateConfiguration(item.configuration);assert.ok(['exterior','interior','structure','expansion'].includes(item.view));for(const field of ['image','thumbnail'])assert.ok(existsSync('dist/'+item[field]));assert.deepEqual(dimensions(readFileSync('dist/'+item.image)),[3840,2160]);assert.deepEqual(dimensions(readFileSync('dist/'+item.thumbnail)),[960,540]);if(item.room)assert.ok(['kitchen','bathroom'].includes(item.room));}
+});
 check('distributed first-party text contains no machine paths or credentials',()=>{
  function scan(dir){for(const f of readdirSync(dir)){const p=path.join(dir,f);if(statSync(p).isDirectory())scan(p);else if(/\.(js|html|json|css)$/.test(f)&&!p.includes('vendor')){const s=readFileSync(p,'utf8');assert.ok(!s.includes('/Users/'),p);assert.ok(!s.includes('API_KEY'),p);}}}scan('dist');
 });
