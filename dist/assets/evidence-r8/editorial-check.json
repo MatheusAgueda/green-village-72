@@ -1,0 +1,9 @@
+{
+  "scope": "Single commercial text correction after the independent R8 audit; all executable statements, geometry, materials and controls unchanged.",
+  "before": "As paredes elevam-se do interior para o exterior, como confirmou.",
+  "after": "As paredes elevam-se de dentro para fora.",
+  "beforeAppSHA256": "62210abbb6afee8b932afd9531366aef6557ac348127881e0d7c7e5a69db8b6c",
+  "afterAppSHA256": "25c56548115ecb5a34e68fc7b17ca561919a7443e8c36d3286640a089f9e15ea",
+  "baseCommit": "bb5fa3e6e97c235451927a1d6930aa62d6c5b3f5",
+  "verification": "Exact replacement of one string literal; 37 regression groups rerun. Hosted expansion stage to be checked after publication."
+}

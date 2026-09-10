@@ -17,3 +17,5 @@ T4-A proposed kitchen translated -50mm Z only; 10mm navigation grid resolves roo
 Current evidence: dist/assets/evidence-r8/audit-report.html. Data: assets/product-r8. README documents updates/limits; scripts/evidence-r8.py packages sanitised independent proofs; scripts/export-catalogue.mjs generates catalogue/ledger. Full nonpublic proof /private/tmp/gv72-r8. Same owner-private Site, source-only root, no GLS operations. Publication receipt goes to ../session_20260910_green_village_72_r8.json after deployment.
 
 Final GLB verification: official GLTFLoader r180 reimported the exported T2 model;230 meshes/61,280 triangles/3 decoded embedded textures, original metadata preserved, zero bounds error versus source, non-empty exterior/interior renders. No loader/browser errors.
+
+Hosted handoff refinement: replaced one conversational phrase in expansion step3 with neutral commercial wording. Runtime/geometry unchanged; exact before/after app hashes recorded in assets/evidence-r8/editorial-check.json.

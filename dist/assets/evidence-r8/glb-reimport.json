@@ -620,5 +620,27 @@
     "browserClosed": true,
     "temporaryServerClosed": true,
     "mainServer4174Untouched": true
+  },
+  "visualReview": {
+    "status": "PASS",
+    "reviewed": [
+      "gltf-loader/reimport-exterior.png",
+      "gltf-loader/reimport-cutaway.png"
+    ],
+    "observations": [
+      "Exterior: complete expanded house, roof, entry glazing and facade windows visible without crop.",
+      "Cutaway: two bedrooms, kitchen, bathroom and floor finishes visible; no blank image or missing model."
+    ],
+    "renderHashes": [
+      {
+        "path": "audit/geometry/runtime/gltf-loader/reimport-exterior.png",
+        "sha256": "091f7554e34545ed794e8b6ad3e71bcfb263e259ef53706d922b985e3e026a83"
+      },
+      {
+        "path": "audit/geometry/runtime/gltf-loader/reimport-cutaway.png",
+        "sha256": "3354361cc0b93c99e039adad06ecbe1a57d13da4fc7f19247440b1a2a6c1a203"
+      }
+    ],
+    "performanceWarnings": "ReadPixels GPU-stall warnings were caused by deliberate pixel verification. No loader error, browser error, failed request, lost WebGL context or WebGL error occurred."
   }
 }

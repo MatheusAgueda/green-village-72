@@ -63,7 +63,7 @@ for name, relative in (('glb-reimport.json', 'geometry/runtime/glb-reimport.json
         (DEST / name).write_text(json.dumps(sanitise(json.loads(path.read_text(encoding='utf-8'))), ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
         extra.append(name)
 
-links = ''.join(f'<li><a href="{html.escape(name)}">{html.escape(name)}</a></li>' for name in [*records, *extra, 'regression-tests.txt'])
+links = ''.join(f'<li><a href="{html.escape(name)}">{html.escape(name)}</a></li>' for name in [*records, *extra, 'regression-tests.txt', 'editorial-check.json'])
 page = '''<!doctype html>
 <html lang="pt-PT"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Verificação R8 · Green Village Expandível 72</title>

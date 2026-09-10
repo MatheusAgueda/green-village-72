@@ -136,7 +136,7 @@
     "Navigation is a sampled 2D capsule/rectangle solver with assumed140mm radius, not physical accessibility/camera-volume certification. Narrow passage requires10mm refinement; 60mm raw result remains negative.",
     "SAT uses connected-component OBB envelopes and0.5mm report tolerance; continuous exact-mesh collision is not certified. Passage-door sweep181poses; equipment motions41positions, other furniture closed and passage doors0/0.5/1. Existing baseline contacts excluded from equipment regression tests.",
     "Self-cabinet moving-pair tests were not repeated because the entire kitchen assembly translates rigidly; the external sweep and actual detail bounds were rechecked.",
-    "No actual GLB/4K export or WebGL texture loading was executed here. GLB/4K source review found no critical issue; browser export verification is separate.",
+    "The original geometry audit did not execute browser exports. Subsequently, this exact T2 GLB was reimported/rendered with official GLTFLoader r180: see additionalEvidence.glbReimport. Actual 4K export remains covered separately by the browser audit.",
     "Source4-stage diagram supports reference illustrations only. Old direction-oracle/expansion SAT files are historical failing evidence, not current release gates. No manufacturer motion inferred."
   ],
   "evidence": [
@@ -153,5 +153,36 @@
     "detail-bounds-check.json",
     "client-data-check.json",
     "source-snapshot.json"
-  ]
+  ],
+  "additionalEvidence": {
+    "glbReimport": {
+      "status": "PASS",
+      "path": "audit/geometry/runtime/glb-reimport.json",
+      "checkedAt": "2026-09-10T22:39:20.270Z",
+      "configuration": {
+        "schemaVersion": 2,
+        "layout": "t2",
+        "exteriorId": "exterior-standard-branco-glacial",
+        "exterior": "#ddddda",
+        "floorId": "floor-spc-kx7005",
+        "floor": "#a9916a",
+        "interior": "#eeede8",
+        "interiorName": "Branco natural",
+        "kitchen": "linear",
+        "kitchenRef": "kitchen-01",
+        "bathroom": "standard",
+        "bathroomRef": "bathroom-01",
+        "bathroomUV": null,
+        "roof": false,
+        "porch": false,
+        "lighting": "neutral",
+        "textureMode": "source"
+      },
+      "meshCount": 230,
+      "triangleCount": 61280,
+      "embeddedDecodedTextures": 3,
+      "maximumImportBoundsErrorM": 0,
+      "browserAndServerClosed": true
+    }
+  }
 }
