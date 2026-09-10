@@ -1,0 +1,943 @@
+{
+  "revision": "R3-photo-derived-stochastic-planks-v1",
+  "floorCount": 12,
+  "notManufacturerCertified": true,
+  "entries": [
+    {
+      "id": "floor-spc-kx7005",
+      "label": "KX7005",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 14,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "id88d47603a37ea255f27dc97e003297d1",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/floor-spc-kx7005.jpg",
+        "retainedOriginalSha256": "a8fbabf3fe3a50737fdd66077a622424faec3299262c0792e5493ca4da0c97a0",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/floor-spc-kx7005.jpg",
+      "exactCropAsset": "crops/floor-spc-kx7005.png",
+      "derivedAsset": "derived/floor-spc-kx7005.png",
+      "cropRectPx": [
+        24,
+        22,
+        464,
+        255
+      ],
+      "dimensionsPx": [
+        440,
+        233
+      ],
+      "sourceFootprintM": [
+        0.45833,
+        0.24271
+      ],
+      "boardDimensionsM": [
+        0.18,
+        1.22
+      ],
+      "jointWidthM": 0.0008,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "meanSrgb": [
+        0.6621420210690597,
+        0.5690647066473878,
+        0.4169294943884694
+      ],
+      "processing": "Native-size periodic border reconciliation; 60% attenuation of broad common-channel luminance at sigma=28px, capped at +/-18 sRGB8; exact per-channel arithmetic mean restored. Not calibrated albedo.",
+      "metrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 14.045779685264664,
+          "topBottomMeanAbsSrgb8": 26.068939393939395
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 1.3848354792560802,
+          "topBottomMeanAbsSrgb8": 4.5613636363636365
+        },
+        "sourceMeanSrgb8": [
+          168.84621537261023,
+          145.1115001950839,
+          106.31702106905969
+        ],
+        "derivedMeanSrgb8": [
+          168.84621537261023,
+          145.1115001950839,
+          106.31702106905969
+        ],
+        "meanMaxAbsDifferenceSrgb8": 0.0,
+        "broadLuminanceStdBefore": 5.218057158102996,
+        "broadLuminanceStdAfter": 1.9203659176089884,
+        "highFrequencyCorrelationInner": 0.9996794683517392,
+        "pixelRMSESrgb8": 7.807863086156675
+      },
+      "sha256": "5c419f529ecc43d59d56fca512055c2aa279c1261ec08f03434052f64465dd57",
+      "normalMap": null,
+      "bumpMap": null,
+      "roughnessMap": null
+    },
+    {
+      "id": "floor-spc-kx7006",
+      "label": "KX7006",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 14,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "i630a1cb4efbe0dfc40b642ecb0c11d5a1",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/floor-spc-kx7006.jpg",
+        "retainedOriginalSha256": "e9979e50d9f28a16f5a556e03aaa1f999096a9b0e4f63f3a75ad23f98fdc007c",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/floor-spc-kx7006.jpg",
+      "exactCropAsset": "crops/floor-spc-kx7006.png",
+      "derivedAsset": "derived/floor-spc-kx7006.png",
+      "cropRectPx": [
+        24,
+        22,
+        464,
+        255
+      ],
+      "dimensionsPx": [
+        440,
+        233
+      ],
+      "sourceFootprintM": [
+        0.45833,
+        0.24271
+      ],
+      "boardDimensionsM": [
+        0.18,
+        1.22
+      ],
+      "jointWidthM": 0.0008,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "meanSrgb": [
+        0.5741907078867442,
+        0.5178917552194502,
+        0.4242299541744126
+      ],
+      "processing": "Native-size periodic border reconciliation; 60% attenuation of broad common-channel luminance at sigma=28px, capped at +/-18 sRGB8; exact per-channel arithmetic mean restored. Not calibrated albedo.",
+      "metrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 34.625178826895564,
+          "topBottomMeanAbsSrgb8": 27.26969696969697
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 2.4706723891273246,
+          "topBottomMeanAbsSrgb8": 6.24469696969697
+        },
+        "sourceMeanSrgb8": [
+          146.41863051111977,
+          132.0623975809598,
+          108.17863831447522
+        ],
+        "derivedMeanSrgb8": [
+          146.41863051111977,
+          132.0623975809598,
+          108.17863831447522
+        ],
+        "meanMaxAbsDifferenceSrgb8": 0.0,
+        "broadLuminanceStdBefore": 6.05892719922905,
+        "broadLuminanceStdAfter": 4.065077328050632,
+        "highFrequencyCorrelationInner": 0.9998181004167729,
+        "pixelRMSESrgb8": 9.131354560169292
+      },
+      "sha256": "dd68565a5fc35af0e579bc231ec9e548d25d4dfa29aa6682c4165bac07ce6241",
+      "normalMap": null,
+      "bumpMap": null,
+      "roughnessMap": null
+    },
+    {
+      "id": "floor-spc-kx7007",
+      "label": "KX7007",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 14,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "i5f23a847596ef4a61391e500c22e7bcd1",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/floor-spc-kx7007.jpg",
+        "retainedOriginalSha256": "d53fbf4096ab4b1583cc3402f0df0e37b384db278cac4fb00f65050584e87a19",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/floor-spc-kx7007.jpg",
+      "exactCropAsset": "crops/floor-spc-kx7007.png",
+      "derivedAsset": "derived/floor-spc-kx7007.png",
+      "cropRectPx": [
+        24,
+        22,
+        464,
+        255
+      ],
+      "dimensionsPx": [
+        440,
+        233
+      ],
+      "sourceFootprintM": [
+        0.45833,
+        0.24271
+      ],
+      "boardDimensionsM": [
+        0.18,
+        1.22
+      ],
+      "jointWidthM": 0.0008,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "meanSrgb": [
+        0.6700450605525081,
+        0.5433840933954541,
+        0.3326682120370583
+      ],
+      "processing": "Native-size periodic border reconciliation; 60% attenuation of broad common-channel luminance at sigma=28px, capped at +/-18 sRGB8; exact per-channel arithmetic mean restored. Not calibrated albedo.",
+      "metrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 22.028612303290416,
+          "topBottomMeanAbsSrgb8": 43.21666666666667
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 1.5751072961373391,
+          "topBottomMeanAbsSrgb8": 5.209090909090909
+        },
+        "sourceMeanSrgb8": [
+          170.86149044088958,
+          138.5629438158408,
+          84.83039406944987
+        ],
+        "derivedMeanSrgb8": [
+          170.86149044088958,
+          138.5629438158408,
+          84.83039406944987
+        ],
+        "meanMaxAbsDifferenceSrgb8": 0.0,
+        "broadLuminanceStdBefore": 10.178663327023598,
+        "broadLuminanceStdAfter": 3.150792841151737,
+        "highFrequencyCorrelationInner": 0.9996783242829407,
+        "pixelRMSESrgb8": 14.44355574330917
+      },
+      "sha256": "4f3bf101db2502152433dde37fc3d106e2ac24d036016102fb424a265cebe4af",
+      "normalMap": null,
+      "bumpMap": null,
+      "roughnessMap": null
+    },
+    {
+      "id": "floor-spc-kx7008",
+      "label": "KX7008",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 14,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "i57fd1b12bea14bbde3d408ae8609e0581",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/floor-spc-kx7008.jpg",
+        "retainedOriginalSha256": "ae197182c1fe5758e9b4c1545d655b01b5798fb1742e84df328d214d86438018",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/floor-spc-kx7008.jpg",
+      "exactCropAsset": "crops/floor-spc-kx7008.png",
+      "derivedAsset": "derived/floor-spc-kx7008.png",
+      "cropRectPx": [
+        24,
+        22,
+        464,
+        255
+      ],
+      "dimensionsPx": [
+        440,
+        233
+      ],
+      "sourceFootprintM": [
+        0.45833,
+        0.24271
+      ],
+      "boardDimensionsM": [
+        0.18,
+        1.22
+      ],
+      "jointWidthM": 0.0008,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "meanSrgb": [
+        0.6295386074835708,
+        0.5404003044838693,
+        0.433105582459281
+      ],
+      "processing": "Native-size periodic border reconciliation; 60% attenuation of broad common-channel luminance at sigma=28px, capped at +/-18 sRGB8; exact per-channel arithmetic mean restored. Not calibrated albedo.",
+      "metrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 11.67095851216023,
+          "topBottomMeanAbsSrgb8": 19.541666666666668
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 1.6409155937052933,
+          "topBottomMeanAbsSrgb8": 4.50530303030303
+        },
+        "sourceMeanSrgb8": [
+          160.53234490831056,
+          137.80207764338667,
+          110.44192352711666
+        ],
+        "derivedMeanSrgb8": [
+          160.53234490831056,
+          137.80207764338667,
+          110.44192352711666
+        ],
+        "meanMaxAbsDifferenceSrgb8": 0.0,
+        "broadLuminanceStdBefore": 7.761412860915264,
+        "broadLuminanceStdAfter": 3.517661007721313,
+        "highFrequencyCorrelationInner": 0.9995837673533577,
+        "pixelRMSESrgb8": 6.425406595341936
+      },
+      "sha256": "04330fe75e3105c72b234c6c4395b52d39d0389bbc7477e704e5ec6a514121d7",
+      "normalMap": null,
+      "bumpMap": null,
+      "roughnessMap": null
+    },
+    {
+      "id": "floor-spc-kx7009",
+      "label": "KX7009",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 14,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "i4be1900754d05e384c782a1a07e682161",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/floor-spc-kx7009.jpg",
+        "retainedOriginalSha256": "f69e048841e479cff7b393fcec7a74167cee94bbf9b7c90f296f5e31f5be6193",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/floor-spc-kx7009.jpg",
+      "exactCropAsset": "crops/floor-spc-kx7009.png",
+      "derivedAsset": "derived/floor-spc-kx7009.png",
+      "cropRectPx": [
+        24,
+        22,
+        464,
+        255
+      ],
+      "dimensionsPx": [
+        440,
+        233
+      ],
+      "sourceFootprintM": [
+        0.45833,
+        0.24271
+      ],
+      "boardDimensionsM": [
+        0.18,
+        1.22
+      ],
+      "jointWidthM": 0.0008,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "meanSrgb": [
+        0.6587521134087657,
+        0.582264579651603,
+        0.49861337433920117
+      ],
+      "processing": "Native-size periodic border reconciliation; 60% attenuation of broad common-channel luminance at sigma=28px, capped at +/-18 sRGB8; exact per-channel arithmetic mean restored. Not calibrated albedo.",
+      "metrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 34.10586552217453,
+          "topBottomMeanAbsSrgb8": 30.190151515151516
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 2.1030042918454934,
+          "topBottomMeanAbsSrgb8": 6.874242424242424
+        },
+        "sourceMeanSrgb8": [
+          167.98178891923527,
+          148.4774678111588,
+          127.1464104564963
+        ],
+        "derivedMeanSrgb8": [
+          167.98178891923527,
+          148.4774678111588,
+          127.1464104564963
+        ],
+        "meanMaxAbsDifferenceSrgb8": 0.0,
+        "broadLuminanceStdBefore": 10.627024694767732,
+        "broadLuminanceStdAfter": 2.9111307275847396,
+        "highFrequencyCorrelationInner": 0.9998092698906617,
+        "pixelRMSESrgb8": 13.190943424373511
+      },
+      "sha256": "88c39b851bfff1e6283ad58f00175b7fb36aed5605913357d1b2dbde697fe61c",
+      "normalMap": null,
+      "bumpMap": null,
+      "roughnessMap": null
+    },
+    {
+      "id": "floor-spc-kx7010",
+      "label": "KX7010",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 14,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "ide82f5cd941e9d976fd6e8ac01d56a931",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/floor-spc-kx7010.jpg",
+        "retainedOriginalSha256": "6244c6e808f0367f031fff6b1f97e2b1612f5bd91a90b095bd8b65ef93655aa1",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/floor-spc-kx7010.jpg",
+      "exactCropAsset": "crops/floor-spc-kx7010.png",
+      "derivedAsset": "derived/floor-spc-kx7010.png",
+      "cropRectPx": [
+        24,
+        22,
+        464,
+        255
+      ],
+      "dimensionsPx": [
+        440,
+        233
+      ],
+      "sourceFootprintM": [
+        0.45833,
+        0.24271
+      ],
+      "boardDimensionsM": [
+        0.18,
+        1.22
+      ],
+      "jointWidthM": 0.0008,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "meanSrgb": [
+        0.6530692433040325,
+        0.48388519122046014,
+        0.31976348947694566
+      ],
+      "processing": "Native-size periodic border reconciliation; 60% attenuation of broad common-channel luminance at sigma=28px, capped at +/-18 sRGB8; exact per-channel arithmetic mean restored. Not calibrated albedo.",
+      "metrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 14.778254649499285,
+          "topBottomMeanAbsSrgb8": 30.88712121212121
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 1.9313304721030042,
+          "topBottomMeanAbsSrgb8": 3.143939393939394
+        },
+        "sourceMeanSrgb8": [
+          166.53265704252829,
+          123.39072376121733,
+          81.53968981662115
+        ],
+        "derivedMeanSrgb8": [
+          166.53265704252829,
+          123.39072376121733,
+          81.53968981662115
+        ],
+        "meanMaxAbsDifferenceSrgb8": 0.0,
+        "broadLuminanceStdBefore": 8.423735113436463,
+        "broadLuminanceStdAfter": 3.173275791215938,
+        "highFrequencyCorrelationInner": 0.999129322269232,
+        "pixelRMSESrgb8": 10.937643223148626
+      },
+      "sha256": "e81204dd160198ac14748f76ccdd029e323adccd1b840eb4a89e1e94446851f5",
+      "normalMap": null,
+      "bumpMap": null,
+      "roughnessMap": null
+    },
+    {
+      "id": "floor-spc-kx8005",
+      "label": "KX8005",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 14,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "i563c8de31266e812c0bece16daec96501",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/floor-spc-kx8005.jpg",
+        "retainedOriginalSha256": "6ee25e2209965e4c38869a0b4c7e42bfb41201a8e7f8ef4fa6dacbf5b07acee4",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/floor-spc-kx8005.jpg",
+      "exactCropAsset": "crops/floor-spc-kx8005.png",
+      "derivedAsset": "derived/floor-spc-kx8005.png",
+      "cropRectPx": [
+        24,
+        22,
+        464,
+        255
+      ],
+      "dimensionsPx": [
+        440,
+        233
+      ],
+      "sourceFootprintM": [
+        0.45833,
+        0.24271
+      ],
+      "boardDimensionsM": [
+        0.18,
+        1.22
+      ],
+      "jointWidthM": 0.0008,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "meanSrgb": [
+        0.6269791068983193,
+        0.3868781988019554,
+        0.21295823674768385
+      ],
+      "processing": "Native-size periodic border reconciliation; 60% attenuation of broad common-channel luminance at sigma=28px, capped at +/-18 sRGB8; exact per-channel arithmetic mean restored. Not calibrated albedo.",
+      "metrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 19.846924177396282,
+          "topBottomMeanAbsSrgb8": 21.447727272727274
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 1.1101573676680974,
+          "topBottomMeanAbsSrgb8": 2.168939393939394
+        },
+        "sourceMeanSrgb8": [
+          159.8796722590714,
+          98.65394069449863,
+          54.304350370659385
+        ],
+        "derivedMeanSrgb8": [
+          159.8796722590714,
+          98.65394069449863,
+          54.304350370659385
+        ],
+        "meanMaxAbsDifferenceSrgb8": 0.0,
+        "broadLuminanceStdBefore": 6.1873482509164575,
+        "broadLuminanceStdAfter": 2.3385891956286424,
+        "highFrequencyCorrelationInner": 0.9981384099174848,
+        "pixelRMSESrgb8": 8.69966767834363
+      },
+      "sha256": "3fef5238be9e03175b002766284f7894d28089a335c5053473461f43248cf036",
+      "normalMap": null,
+      "bumpMap": null,
+      "roughnessMap": null
+    },
+    {
+      "id": "floor-spc-kx8006",
+      "label": "KX8006",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 14,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "i12e0d313e83c2b00376d590fa68491671",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/floor-spc-kx8006.jpg",
+        "retainedOriginalSha256": "6025f124d93e4f8996203d92c4fd6ba853aa459ace2721e831207a73d4462c78",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/floor-spc-kx8006.jpg",
+      "exactCropAsset": "crops/floor-spc-kx8006.png",
+      "derivedAsset": "derived/floor-spc-kx8006.png",
+      "cropRectPx": [
+        24,
+        22,
+        464,
+        255
+      ],
+      "dimensionsPx": [
+        440,
+        233
+      ],
+      "sourceFootprintM": [
+        0.45833,
+        0.24271
+      ],
+      "boardDimensionsM": [
+        0.18,
+        1.22
+      ],
+      "jointWidthM": 0.0008,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "meanSrgb": [
+        0.5630712323946355,
+        0.5809370529327611,
+        0.5927423439137652
+      ],
+      "processing": "Native-size periodic border reconciliation; 60% attenuation of broad common-channel luminance at sigma=28px, capped at +/-18 sRGB8; exact per-channel arithmetic mean restored. Not calibrated albedo.",
+      "metrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 20.377682403433475,
+          "topBottomMeanAbsSrgb8": 28.479545454545455
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 1.9585121602288984,
+          "topBottomMeanAbsSrgb8": 5.4818181818181815
+        },
+        "sourceMeanSrgb8": [
+          143.58316426063206,
+          148.13894849785407,
+          151.14929769801014
+        ],
+        "derivedMeanSrgb8": [
+          143.58316426063206,
+          148.13894849785407,
+          151.14929769801014
+        ],
+        "meanMaxAbsDifferenceSrgb8": 0.0,
+        "broadLuminanceStdBefore": 9.39683739525977,
+        "broadLuminanceStdAfter": 4.428615565583918,
+        "highFrequencyCorrelationInner": 0.9996845316883038,
+        "pixelRMSESrgb8": 9.75996977527626
+      },
+      "sha256": "693e3319d9adb9b3dbab81043a89992fe5b822b2e2bc3062bbc9ce2e5217889e",
+      "normalMap": null,
+      "bumpMap": null,
+      "roughnessMap": null
+    },
+    {
+      "id": "floor-spc-kx8007",
+      "label": "KX8007",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 14,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "i0749f43c4a7df5443e4dafa8cd1e995f1",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/floor-spc-kx8007.jpg",
+        "retainedOriginalSha256": "e7d093b8df16aa25015c3048e5c4049f67cc17894a9789363fefc2579a101da2",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/floor-spc-kx8007.jpg",
+      "exactCropAsset": "crops/floor-spc-kx8007.png",
+      "derivedAsset": "derived/floor-spc-kx8007.png",
+      "cropRectPx": [
+        24,
+        22,
+        464,
+        255
+      ],
+      "dimensionsPx": [
+        440,
+        233
+      ],
+      "sourceFootprintM": [
+        0.45833,
+        0.24271
+      ],
+      "boardDimensionsM": [
+        0.18,
+        1.22
+      ],
+      "jointWidthM": 0.0008,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "meanSrgb": [
+        0.8540344112674333,
+        0.7521069059695669,
+        0.6006627496882483
+      ],
+      "processing": "Native-size periodic border reconciliation; 60% attenuation of broad common-channel luminance at sigma=28px, capped at +/-18 sRGB8; exact per-channel arithmetic mean restored. Not calibrated albedo.",
+      "metrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 8.526466380543633,
+          "topBottomMeanAbsSrgb8": 35.625
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 0.648068669527897,
+          "topBottomMeanAbsSrgb8": 1.6098484848484849
+        },
+        "sourceMeanSrgb8": [
+          217.7787748731955,
+          191.78726102223956,
+          153.16900117050332
+        ],
+        "derivedMeanSrgb8": [
+          217.7787748731955,
+          191.78726102223956,
+          153.16900117050332
+        ],
+        "meanMaxAbsDifferenceSrgb8": 0.0,
+        "broadLuminanceStdBefore": 7.390022439798959,
+        "broadLuminanceStdAfter": 1.545022930612921,
+        "highFrequencyCorrelationInner": 0.9956161530635012,
+        "pixelRMSESrgb8": 11.355023787867902
+      },
+      "sha256": "7c0259884ed8ba6de130ddbbebbee86a61a28c3461c244b2e9096657aedd5077",
+      "normalMap": null,
+      "bumpMap": null,
+      "roughnessMap": null
+    },
+    {
+      "id": "floor-spc-kx8008",
+      "label": "KX8008",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 14,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "i5555136d8adaa0c32f1425f1235dfb671",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/floor-spc-kx8008.jpg",
+        "retainedOriginalSha256": "f16b4c13884ad56ffd1cbef57ef54e0593b328797e0b721c8849f8d24d196739",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/floor-spc-kx8008.jpg",
+      "exactCropAsset": "crops/floor-spc-kx8008.png",
+      "derivedAsset": "derived/floor-spc-kx8008.png",
+      "cropRectPx": [
+        24,
+        22,
+        464,
+        255
+      ],
+      "dimensionsPx": [
+        440,
+        233
+      ],
+      "sourceFootprintM": [
+        0.45833,
+        0.24271
+      ],
+      "boardDimensionsM": [
+        0.18,
+        1.22
+      ],
+      "jointWidthM": 0.0008,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "meanSrgb": [
+        0.60752262590561,
+        0.5847753092653369,
+        0.5152960302341771
+      ],
+      "processing": "Native-size periodic border reconciliation; 60% attenuation of broad common-channel luminance at sigma=28px, capped at +/-18 sRGB8; exact per-channel arithmetic mean restored. Not calibrated albedo.",
+      "metrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 22.40486409155937,
+          "topBottomMeanAbsSrgb8": 25.60757575757576
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 2.8426323319027182,
+          "topBottomMeanAbsSrgb8": 6.082575757575758
+        },
+        "sourceMeanSrgb8": [
+          154.91826960593056,
+          149.11770386266093,
+          131.40048770971518
+        ],
+        "derivedMeanSrgb8": [
+          154.91826960593056,
+          149.11770386266093,
+          131.40048770971518
+        ],
+        "meanMaxAbsDifferenceSrgb8": 0.0,
+        "broadLuminanceStdBefore": 5.689720726153504,
+        "broadLuminanceStdAfter": 2.200128847859772,
+        "highFrequencyCorrelationInner": 0.999741879920782,
+        "pixelRMSESrgb8": 7.553682677506168
+      },
+      "sha256": "6441329b49305b60b27223e4fe90205beadfe9ad42a011ac9756e6915225a6e5",
+      "normalMap": null,
+      "bumpMap": null,
+      "roughnessMap": null
+    },
+    {
+      "id": "floor-spc-kx8009",
+      "label": "KX8009",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 14,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "if958c44854351f401f902df9291c884d1",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/floor-spc-kx8009.jpg",
+        "retainedOriginalSha256": "99c9903af4c2823b42df8a836580814962b07524b387c3250a5c38a34abbaa01",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/floor-spc-kx8009.jpg",
+      "exactCropAsset": "crops/floor-spc-kx8009.png",
+      "derivedAsset": "derived/floor-spc-kx8009.png",
+      "cropRectPx": [
+        24,
+        22,
+        464,
+        255
+      ],
+      "dimensionsPx": [
+        440,
+        233
+      ],
+      "sourceFootprintM": [
+        0.45833,
+        0.24271
+      ],
+      "boardDimensionsM": [
+        0.18,
+        1.22
+      ],
+      "jointWidthM": 0.0008,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "meanSrgb": [
+        0.6908555767215198,
+        0.5146573408918776,
+        0.28794920933648527
+      ],
+      "processing": "Native-size periodic border reconciliation; 60% attenuation of broad common-channel luminance at sigma=28px, capped at +/-18 sRGB8; exact per-channel arithmetic mean restored. Not calibrated albedo.",
+      "metrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 14.553648068669528,
+          "topBottomMeanAbsSrgb8": 24.977272727272727
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 1.3690987124463518,
+          "topBottomMeanAbsSrgb8": 5.358333333333333
+        },
+        "sourceMeanSrgb8": [
+          176.16817206398753,
+          131.2376219274288,
+          73.42704838080374
+        ],
+        "derivedMeanSrgb8": [
+          176.16817206398753,
+          131.2376219274288,
+          73.42704838080374
+        ],
+        "meanMaxAbsDifferenceSrgb8": 0.0,
+        "broadLuminanceStdBefore": 4.412578712817659,
+        "broadLuminanceStdAfter": 2.507845469036931,
+        "highFrequencyCorrelationInner": 0.9997530259637214,
+        "pixelRMSESrgb8": 6.688758104352464
+      },
+      "sha256": "85f3e2e4ea7dc6daf521a7ba95a3d649b1180ef931648d661d84422296a1bf03",
+      "normalMap": null,
+      "bumpMap": null,
+      "roughnessMap": null
+    },
+    {
+      "id": "floor-spc-kx9005",
+      "label": "KX9005",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 14,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "i8c68594906afbf1ff3f67c75ba734b9f1",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/floor-spc-kx9005.jpg",
+        "retainedOriginalSha256": "b17812b10c72271a9e5743b177ea5f010c209602e7d5806e8ee1fb8ecc2f02e3",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/floor-spc-kx9005.jpg",
+      "exactCropAsset": "crops/floor-spc-kx9005.png",
+      "derivedAsset": "derived/floor-spc-kx9005.png",
+      "cropRectPx": [
+        24,
+        22,
+        464,
+        255
+      ],
+      "dimensionsPx": [
+        440,
+        233
+      ],
+      "sourceFootprintM": [
+        0.45833,
+        0.24271
+      ],
+      "boardDimensionsM": [
+        0.18,
+        1.22
+      ],
+      "jointWidthM": 0.0008,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "meanSrgb": [
+        0.6575255712897722,
+        0.571326379166571,
+        0.4456112245912801
+      ],
+      "processing": "Native-size periodic border reconciliation; 60% attenuation of broad common-channel luminance at sigma=28px, capped at +/-18 sRGB8; exact per-channel arithmetic mean restored. Not calibrated albedo.",
+      "metrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 19.28898426323319,
+          "topBottomMeanAbsSrgb8": 24.418181818181818
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 1.6351931330472103,
+          "topBottomMeanAbsSrgb8": 5.465909090909091
+        },
+        "sourceMeanSrgb8": [
+          167.6690206788919,
+          145.6882266874756,
+          113.63086227077643
+        ],
+        "derivedMeanSrgb8": [
+          167.6690206788919,
+          145.6882266874756,
+          113.63086227077643
+        ],
+        "meanMaxAbsDifferenceSrgb8": 0.0,
+        "broadLuminanceStdBefore": 11.317774227531476,
+        "broadLuminanceStdAfter": 5.180775260202269,
+        "highFrequencyCorrelationInner": 0.9996300879313844,
+        "pixelRMSESrgb8": 9.482336701731791
+      },
+      "sha256": "40220e0c9941120cae4afdbca241dbcd23fc092fdae4d951c39103f90f90bc6a",
+      "normalMap": null,
+      "bumpMap": null,
+      "roughnessMap": null
+    }
+  ]
+}

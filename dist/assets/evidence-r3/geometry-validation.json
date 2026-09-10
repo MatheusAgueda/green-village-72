@@ -1,0 +1,264 @@
+{
+  "auditRevision": "R3",
+  "baseline": "Independent V2 checks repeated after source-video-informed visual details",
+  "status": "PASS_WITH_STATED_SCOPE",
+  "auditedAt": "2026-09-10T14:55:32.229Z",
+  "sourceStableDuringGeometryRun": true,
+  "sourceUnchangedSinceGeometryRun": true,
+  "sourceHashes": {
+    "model.js": "9130b326aa4f97183f10a9d813ee8c6afa04fcbab8510700f6d5b8cd711786af",
+    "specification.js": "8ac210a899907aaafa5edd7c1747f415132aae7dd319467fe240d1c22f79a0fd",
+    "configuration.js": "323424bb2c18d8313e7592f3e0ba41fc34ab684bd43a71ff9a7da108046e86aa"
+  },
+  "readOnlySite": true,
+  "scope": {
+    "expansion": "101 equally spaced progress values0..1. Both longitudinal panels and four end panels against each other, actual floor and roof envelopes. No closed transport pose exists or is certified.",
+    "configurations": "48 allowed combinations of7 layouts, kitchen choices and standard/mirrored bathroom. Door sweeps at31 angles against actual furniture group bounds, furniture against split wall solids, furniture pair bounds.",
+    "refinement": "L kitchen overlap candidates refined using separate connected components from actual batched geometry in all6 allowed L layouts;1mm overlap threshold.",
+    "electrical": "Actual transformed electrical triangles against interior-wall solids, each doorway explicitly subtracted. Wall solids shrunk1mm to ignore boundary contacts. All7 layouts. Electrical clipping disabled.",
+    "dimensions": "Source bands and actual mesh envelope checked. Internal proportions, height, wall thickness, furniture and mechanisms remain visualization assumptions.",
+    "plumbing": "48 allowed configurations;486 actual vertical cylinder risers recovered from batched geometry. Centre+12 circumference rays through actual holes in all3 floor layers; actual pipe triangles vs solid partitions and structural triangles. Intentional fixture terminations distinguished."
+  },
+  "results": {
+    "expansionCollisionCount": 0,
+    "actualBottomTrimFloorCollisionCount": 0,
+    "minimumSampledBottomTrimHeightM": 0.0034999996423721313,
+    "configurationsTested": 48,
+    "remainingActionableFindings": [],
+    "sourceDoorWindowFixtureFailures": 0,
+    "refinedKitchenJointCollisions": 0,
+    "electricalSolidWallIntersections": 0,
+    "electricalClippedMeshCount": 0,
+    "plumbing": {
+      "configurations": 48,
+      "structuralProxyIntersectionCount": 486,
+      "refinedStructuralTriangleIntersectionCount": 0,
+      "solidWallIntersectionCount": 0,
+      "floorPassageProblems": 0,
+      "riserChecks": 486,
+      "maxPassageCentreErrorM": 1.0245138455446706e-07
+    },
+    "plumbingSourceStable": true,
+    "plumbingCurrentHashesMatch": true
+  },
+  "dimensions": {
+    "declared": {
+      "width": 6.22,
+      "length": 11.8,
+      "core": 2.2,
+      "wing": 2.01,
+      "height": 2.55,
+      "panel": 0.1,
+      "partition": 0.08,
+      "frame": 0.12,
+      "floor": 0.121,
+      "roof": 0.127,
+      "doorWidth": 0.76,
+      "doorHeight": 2.05,
+      "windowWidth": 0.92,
+      "windowHeight": 1.05,
+      "windowSill": 0.95,
+      "entryWidth": 1.7,
+      "entryHeight": 2.15,
+      "bathWindowWidth": 0.6,
+      "bathWindowHeight": 0.5,
+      "bathWindowSill": 1.7,
+      "porchDepth": 1.95,
+      "canopyOverhang": 0.28,
+      "canopyEavesAboveWall": 0.22,
+      "canopyRise": 0.65
+    },
+    "measuredVisibleGeometryBounds": {
+      "structure": {
+        "min": [
+          -3.109999895095825,
+          -0.16750000417232513,
+          -5.900000095367432
+        ],
+        "max": [
+          3.109999895095825,
+          2.549999952316284,
+          5.900000095367432
+        ],
+        "size": [
+          6.21999979019165,
+          2.7174999564886093,
+          11.800000190734863
+        ]
+      },
+      "floor": {
+        "min": [
+          -3.1059999465942383,
+          -0.012000000000000361,
+          -5.895999908447266
+        ],
+        "max": [
+          3.1059999465942383,
+          1.0430812810713341e-10,
+          5.895999908447266
+        ],
+        "size": [
+          6.211999893188477,
+          0.01200000010430849,
+          11.791999816894531
+        ]
+      },
+      "roof": {
+        "min": [
+          -3.109999895095825,
+          2.436500000055879,
+          -5.895999908447266
+        ],
+        "max": [
+          3.109999895095825,
+          2.563499927520752,
+          5.895999908447266
+        ],
+        "size": [
+          6.21999979019165,
+          0.12699992746487299,
+          11.791999816894531
+        ]
+      }
+    },
+    "confirmedSourceM": {
+      "width": 6.22,
+      "length": 11.8,
+      "coreBand": 2.2,
+      "wingBand": 2.01,
+      "commonWindowWidth": 0.92
+    },
+    "exteriorAreaType": "Bounding rectangle only,6.22×11.80=73.396 m²; neither useful area nor exact stepped footprint.",
+    "sourceOutlineLimitation": "Reference drawings show projecting central-core ends. R3 retains a common rectangular plan envelope; source partition positions and end offsets remain approximate interpretations, not fabrication geometry."
+  },
+  "sourceRegressionFixtures": {
+    "t0": {
+      "sideWindows": [
+        2,
+        2
+      ],
+      "rearWindows": 3,
+      "doors": []
+    },
+    "t1": {
+      "sideWindows": [
+        2,
+        2
+      ],
+      "rearWindows": 3,
+      "doors": [
+        "end"
+      ]
+    },
+    "t2": {
+      "sideWindows": [
+        2,
+        2
+      ],
+      "rearWindows": 3,
+      "doors": [
+        "end",
+        "start"
+      ]
+    },
+    "t3-a": {
+      "sideWindows": [
+        2,
+        2
+      ],
+      "rearWindows": 3,
+      "doors": [
+        "end",
+        "end",
+        "start"
+      ]
+    },
+    "t3-b": {
+      "sideWindows": [
+        3,
+        3
+      ],
+      "rearWindows": 3,
+      "doors": [
+        "end",
+        "end",
+        "start"
+      ]
+    },
+    "t4-a": {
+      "sideWindows": [
+        2,
+        2
+      ],
+      "rearWindows": 3,
+      "doors": [
+        "end",
+        "end",
+        "start",
+        "start"
+      ]
+    },
+    "t4-b": {
+      "sideWindows": [
+        3,
+        3
+      ],
+      "rearWindows": 3,
+      "doors": [
+        "end",
+        "end",
+        "end",
+        "start"
+      ]
+    }
+  },
+  "resolvedFindings": [
+    "Initial V2 bottom trim crossed floor by approximately5mm; final pivot offset X−.106 leaves sampled minimum3.5mm.",
+    "Front bedroom door positions now follow source end/start map.",
+    "Both rear920mm windows restored; lateral counts2 or3 match each source layout.",
+    "T4-A kitchen moved beyond bathroom door swing and counter offset from partition.",
+    "Islands moved in front of bathroom; no detected wall overlap in allowed variants.",
+    "Short rear-room beds moved clear of door swing.",
+    "L countertop junction overhang removed; first main-module front/handle omitted to make blind corner.",
+    "T4-A common electrical branch terminates in corridor; network passes represented wall openings and remains visible in cut view.",
+    "486 plumbing risers align with actual extruded floor holes with no blocked passage. Structural perimeter-frame proxy alarms resolve to empty space after actual-triangle checks. No solid wall or beam crossings detected."
+  ],
+  "limits": [
+    "No manufacturer transport, hinges, foundation or installation certification.",
+    "Sampled SAT does not prove every continuous trajectory state; no exhaustive swept-volume proof or static fabrication-joint check.",
+    "Whole-mesh proxies can contain empty space; all remaining L candidates resolved by component-level checks.",
+    "Door jamb/leaf rebates, plumbing fixture interfaces and construction tolerances are not certified.",
+    "Reference dimensions confirm bands; actual room clearances are based on assumed panel/partition thickness and illustrative furniture.",
+    "Plumbing checks concern visible schematic geometry only; no hydraulic sizing, falls, watertight sleeves, flexible joints or manufacturer installation procedure is certified."
+  ],
+  "evidenceFiles": [
+    "geometry-r3-evidence.json",
+    "kitchen-joint-evidence.json",
+    "electrical-evidence.json",
+    "plumbing-evidence.json"
+  ],
+  "allAuditSourceHashes": {
+    "model.js": "9130b326aa4f97183f10a9d813ee8c6afa04fcbab8510700f6d5b8cd711786af",
+    "specification.js": "8ac210a899907aaafa5edd7c1747f415132aae7dd319467fe240d1c22f79a0fd",
+    "configuration.js": "323424bb2c18d8313e7592f3e0ba41fc34ab684bd43a71ff9a7da108046e86aa",
+    "material-library.js": "1bd16ca1676b5fff6010f8a1a563d573957b046b326c0ba6c556c1cde17c1e7f",
+    "panel-joints.js": "d1a21680e6e51c1462ce0799a3959e3472b20dd4aa33ed9f56b268baca7e38e0"
+  },
+  "geometryAuditSourcesStableDuringRun": true,
+  "visualSourcesChangedDuringRun": [],
+  "visualSourceScope": "Materials/shaders are recorded for provenance but their visual appearance is outside this geometric regression. Geometry source changes reject the run.",
+  "verifiedCoverage": {
+    "expansion_frames": 101,
+    "configurations": 48,
+    "distinct_layouts": 7,
+    "kitchen_refinement_layouts": 6,
+    "electrical_layouts": 7,
+    "electrical_all_nonempty": true,
+    "plumbing_configurations": 48,
+    "plumbing_risers": 486,
+    "plumbing_ray_checks": 6318,
+    "baseline_visible_bounds_equal": true,
+    "baseline_confirmed_dimensions_equal": true,
+    "core_source_stable": true
+  }
+}

@@ -1,6 +1,6 @@
 import { DATA } from './data.js';
 // Coordinates: metres; +X right, +Y up, +Z entrance. Origin: floor centre.
-export const REVISION='GV72-R2-2026-09-10';
+export const REVISION='GV72-R3-2026-09-10';
 export const EPSILON=1e-7; // Numerical tolerance only, not a manufacturing tolerance.
 export const DIM=Object.freeze({width:6.22,length:11.8,core:2.2,wing:2.01,height:2.55,panel:.1,partition:.08,frame:.12,floor:.121,roof:.127,doorWidth:.76,doorHeight:2.05,windowWidth:.92,windowHeight:1.05,windowSill:.95,entryWidth:1.7,entryHeight:2.15,bathWindowWidth:.6,bathWindowHeight:.5,bathWindowSill:1.7,porchDepth:1.95,canopyOverhang:.28,canopyEavesAboveWall:.22,canopyRise:.65});
 const d=(id,label,value,source,status='confirmed',note='')=>({id,label,value,unit:'m',source,status,note});

@@ -1,0 +1,101 @@
+{
+  "logs": [
+    {
+      "label": "audit",
+      "kind": "requestfailed",
+      "url": "http://127.0.0.1:4174/assets/presentation-v2.mp4",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "label": "audit",
+      "kind": "requestfailed",
+      "url": "http://127.0.0.1:4174/assets/expansion-v2.mp4",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "label": "audit",
+      "kind": "requestfailed",
+      "url": "http://127.0.0.1:4174/assets/catalogue-r3/derived/floor-spc-kx8006.png",
+      "failure": {
+        "errorText": "net::ERR_FAILED"
+      }
+    },
+    {
+      "label": "audit",
+      "kind": "error",
+      "message": "Failed to load resource: net::ERR_FAILED"
+    }
+  ],
+  "failed": {
+    "state": {
+      "schemaVersion": 2,
+      "layout": "t2",
+      "exteriorId": "exterior-standard-branco-glacial",
+      "exterior": "#ddddda",
+      "floorId": "floor-spc-kx8006",
+      "floor": "#909497",
+      "interior": "#eeede8",
+      "interiorName": "Branco natural",
+      "kitchen": "linear",
+      "kitchenRef": "kitchen-01",
+      "bathroom": "standard",
+      "bathroomRef": "bathroom-01",
+      "bathroomUV": null,
+      "roof": false,
+      "porch": false,
+      "lighting": "neutral"
+    },
+    "stats": {
+      "pending": 0,
+      "failures": [
+        "floor-spc-kx8006"
+      ],
+      "cachedTextures": 2,
+      "leases": 1
+    },
+    "image": {
+      "width": 1,
+      "height": 1
+    },
+    "retryVisible": true,
+    "note": "Textura indisponível: cor aproximada apresentada. Use Tentar texturas.",
+    "canvasSha256": "40c035c27c81b6e19aa9a85ba551200a9162b0edf339fca7361913a95ab440ae"
+  },
+  "recovered": {
+    "state": {
+      "schemaVersion": 2,
+      "layout": "t2",
+      "exteriorId": "exterior-standard-branco-glacial",
+      "exterior": "#ddddda",
+      "floorId": "floor-spc-kx8006",
+      "floor": "#909497",
+      "interior": "#eeede8",
+      "interiorName": "Branco natural",
+      "kitchen": "linear",
+      "kitchenRef": "kitchen-01",
+      "bathroom": "standard",
+      "bathroomRef": "bathroom-01",
+      "bathroomUV": null,
+      "roof": false,
+      "porch": false,
+      "lighting": "neutral"
+    },
+    "stats": {
+      "pending": 0,
+      "failures": [],
+      "cachedTextures": 2,
+      "leases": 1
+    },
+    "image": {
+      "width": 440,
+      "height": 233
+    },
+    "retryVisible": false,
+    "note": "Cotas exteriores confirmadas · divisões e detalhes estimados identificados nas fontes.",
+    "canvasSha256": "3c112baa5823e7430eebecefbe5167f878f12899d495a5e50136b19ceb95de0f"
+  }
+}

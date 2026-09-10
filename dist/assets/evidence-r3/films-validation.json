@@ -1,0 +1,244 @@
+{
+  "status": "PASS_WITH_DOCUMENTED_SOURCE_EXCEPTION",
+  "sameT2Configuration": true,
+  "configuration": {
+    "schemaVersion": 2,
+    "layout": "t2",
+    "exteriorId": "exterior-standard-branco-glacial",
+    "exterior": "#ddddda",
+    "floorId": "floor-spc-kx7006",
+    "floor": "#92846c",
+    "interior": "#eeede8",
+    "interiorName": "Branco natural",
+    "kitchen": "linear",
+    "kitchenRef": "kitchen-01",
+    "bathroom": "standard",
+    "bathroomRef": "bathroom-01",
+    "bathroomUV": null,
+    "roof": false,
+    "porch": false,
+    "lighting": "neutral",
+    "view": "exterior",
+    "expansion": 1,
+    "cut": 1.1,
+    "exploded": 0,
+    "roofVisible": true,
+    "wallsVisible": true,
+    "furnitureVisible": true,
+    "doorsOpen": true
+  },
+  "sameSnapshotBothFilms": true,
+  "snapshotUnchangedDuringCapture": true,
+  "currentCheckoutDifferences": [
+    "material-library.js"
+  ],
+  "documentedSourceExceptions": [
+    {
+      "file": "material-library.js",
+      "snapshotSha256": "3d6066c33332602e91e54621bd366b5f1a3dce2702cd6e5f2a9e6617624d2928",
+      "currentSha256": "4a7ad220ed802dfe92608c416b2e173d55c0a4516860a09b1f25f702f2537280",
+      "verifiedDifference": "Dispose the previous GPU texture when an image replaces a previously populated texture with different dimensions, enabling recovery from a 1×1 failed-load fallback.",
+      "whyCaptureUnaffected": "Both captures loaded the one required texture successfully before frame capture; no page errors, pending loads, failed materials, retry calls or material-selection changes occurred. The added previous-image resize branch is not reached on first successful load.",
+      "sourcePolicy": "Parent explicitly requested preservation of the existing capture and documentation of this inactive recovery-branch difference. The render snapshot remains unchanged."
+    }
+  ],
+  "captureChecks": [
+    {
+      "film": "tour",
+      "pageErrors": 0,
+      "materialFailures": 0,
+      "framing": {
+        "checks": 529,
+        "minimum": {
+          "left": 237.55675185925995,
+          "right": 270.69905324605315,
+          "top": 32.062978367206455,
+          "bottom": 4.604893509137128
+        },
+        "violations": []
+      }
+    },
+    {
+      "film": "assembly",
+      "pageErrors": 0,
+      "materialFailures": 0,
+      "framing": {
+        "checks": 385,
+        "minimum": {
+          "left": 205.01198320565442,
+          "right": 329.6624397172325,
+          "top": 46.24421612380689,
+          "bottom": 18.537469581827622
+        },
+        "violations": []
+      }
+    }
+  ],
+  "framingCandidateCount": 0,
+  "colourEncoding": {
+    "method": "Exact source frame 216 at 9 s compared to lossless RGB PNG decoded from final H.264. Encoding explicitly converts full RGB to limited BT.709 YUV. This verifies encoding fidelity, not calibrated product colour.",
+    "films": {
+      "tour": {
+        "footer": {
+          "sourceMeanRgb8": [
+            42.697,
+            68.678,
+            57.76
+          ],
+          "decodedMeanRgb8": [
+            41.554,
+            66.706,
+            55.77
+          ],
+          "meanAbsoluteChannelError": 1.856
+        },
+        "background": {
+          "sourceMeanRgb8": [
+            240.0,
+            244.0,
+            233.0
+          ],
+          "decodedMeanRgb8": [
+            238.0,
+            242.0,
+            231.0
+          ],
+          "meanAbsoluteChannelError": 2.0
+        },
+        "wholeFrame": {
+          "sourceMeanRgb8": [
+            202.405,
+            208.338,
+            197.298
+          ],
+          "decodedMeanRgb8": [
+            200.435,
+            206.417,
+            195.219
+          ],
+          "meanAbsoluteChannelError": 2.15
+        }
+      },
+      "assembly": {
+        "footer": {
+          "sourceMeanRgb8": [
+            39.499,
+            65.869,
+            54.914
+          ],
+          "decodedMeanRgb8": [
+            38.406,
+            63.916,
+            52.879
+          ],
+          "meanAbsoluteChannelError": 1.792
+        },
+        "background": {
+          "sourceMeanRgb8": [
+            240.0,
+            244.0,
+            233.0
+          ],
+          "decodedMeanRgb8": [
+            238.0,
+            242.0,
+            231.0
+          ],
+          "meanAbsoluteChannelError": 2.0
+        },
+        "wholeFrame": {
+          "sourceMeanRgb8": [
+            200.729,
+            207.258,
+            197.556
+          ],
+          "decodedMeanRgb8": [
+            198.846,
+            205.139,
+            195.548
+          ],
+          "meanAbsoluteChannelError": 2.105
+        }
+      }
+    }
+  },
+  "videoOutputs": [
+    {
+      "id": "assembly",
+      "video": "green-village-r3-assembly.mp4",
+      "poster": "green-village-r3-assembly-poster.jpg",
+      "contactSheet": "green-village-r3-assembly-contact-sheet.jpg",
+      "durationSeconds": 16,
+      "width": 1920,
+      "height": 1080,
+      "fps": 24,
+      "frames": 384,
+      "codec": "h264",
+      "pixelFormat": "yuv420p",
+      "audio": false,
+      "faststart": true,
+      "decodeErrors": false,
+      "sha256": "bc56cfe3007c2f1358dcbc54e6b95212dbce4b90e2eef3c09f1f693db97c0513",
+      "sizeBytes": 3117718,
+      "caption": "Maquete ilustrativa · articulações não documentadas"
+    },
+    {
+      "id": "tour",
+      "video": "green-village-r3-tour.mp4",
+      "poster": "green-village-r3-tour-poster.jpg",
+      "contactSheet": "green-village-r3-tour-contact-sheet.jpg",
+      "durationSeconds": 22,
+      "width": 1920,
+      "height": 1080,
+      "fps": 24,
+      "frames": 528,
+      "codec": "h264",
+      "pixelFormat": "yuv420p",
+      "audio": false,
+      "faststart": true,
+      "decodeErrors": false,
+      "sha256": "a6b636f7d21c018ec201df6918e534c84fd4fafe193e59d49d7b64a769e2c288",
+      "sizeBytes": 5583348,
+      "caption": "Maquete ilustrativa · dimensões e acabamentos sujeitos a confirmação"
+    }
+  ],
+  "limits": [
+    "Films show the illustrative GV72 T2 model, not the separate units shown in user-supplied product videos.",
+    "Assembly begins with floors and roof open; no closed transport pose or manufacturer folding sequence is asserted.",
+    "Framing tests use conservative projected bounds, supplemented by visual review of decoded frames."
+  ],
+  "visualReview": {
+    "status": "PASS",
+    "decodedContactSheetSeconds": {
+      "tour": [
+        0,
+        3,
+        6,
+        9,
+        13,
+        16,
+        19,
+        21
+      ],
+      "assembly": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15
+      ]
+    },
+    "nativeEndpointFrames": {
+      "tour": 527,
+      "assembly": 383
+    },
+    "observations": [
+      "Whole model stays visible in exterior, interior cut and partial assembly shots.",
+      "Native 1080p shows staggered floor planks and subtle wall joints.",
+      "Same T2 configuration and finish choices in both films.",
+      "No black frames, missing textures or unintended screen overlays observed in reviewed samples."
+    ],
+    "scope": "Visual review of decoded contact sheets plus native detailed/endpoint samples; per-frame conservative projected bounds were checked for all captured frames."
+  }
+}

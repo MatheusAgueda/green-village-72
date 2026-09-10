@@ -1,0 +1,1175 @@
+{
+  "schema_version": 1,
+  "audit": "GV72-R3 / four specifically requested local videos / read-only source audit",
+  "source_inventory": [
+    {
+      "id": "v1-spacious",
+      "filename": "40FT EXPANDABLE CONTAINER HOUSE — 3 Bedroom Modular Home - Mobile Residence - Emergency Housing Solution Modern Design • Spacious Living • Thermal Insulation • Fast Installation Designed for modern family living, emergency accommoda.mp4",
+      "path": "audit-local/40FT EXPANDABLE CONTAINER HOUSE — 3 Bedroom Modular Home - Mobile Residence - Emergency Housing Solution Modern Design • Spacious Living • Thermal Insulation • Fast Installation Designed for modern family living, emergency accommoda.mp4",
+      "bytes": 14919007,
+      "sha256": "24ab128ec1648232fccc74f5954e1b5ba8313e484a39eed30dc9327854aa00f7",
+      "duration_seconds": 118.233333,
+      "width": 576,
+      "height": 1024,
+      "fps": "30/1",
+      "codec": "h264",
+      "audio": true,
+      "metadata_tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2avc1mp41",
+        "aigc_info": "{\"aigc_label_type\":0}",
+        "comment": "vid:v15044gf0000d8f6hgvog65trh4b66u0",
+        "vid_md5": "76d9850309077c9d887caf83bf7a7bab",
+        "encoder": "Lavf58.76.100"
+      }
+    },
+    {
+      "id": "v2-74m2",
+      "filename": "40FT EXPANDABLE CONTAINER HOUSE — 74㎡ Modern Modular Living • Fast Installation • Luxury Interior • Export Standard Designed for modern residential living, tourism projects, emergency accommodation, and commercial housing solution.mp4",
+      "path": "audit-local/40FT EXPANDABLE CONTAINER HOUSE — 74㎡ Modern Modular Living • Fast Installation • Luxury Interior • Export Standard Designed for modern residential living, tourism projects, emergency accommodation, and commercial housing solution.mp4",
+      "bytes": 6007251,
+      "sha256": "1c68b155875dc30534750f817785ad24f6e469e813013ba4fe2632b92ef0c0c1",
+      "duration_seconds": 57.0,
+      "width": 576,
+      "height": 1024,
+      "fps": "30/1",
+      "codec": "h264",
+      "audio": true,
+      "metadata_tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2avc1mp41",
+        "aigc_info": "{\"aigc_label_type\":0}",
+        "comment": "vid:v15044gf0000d889pe7og65mq8rs51o0",
+        "vid_md5": "2022577535dab9dc7c0d21f21a767621",
+        "encoder": "Lavf58.76.100"
+      }
+    },
+    {
+      "id": "v3-comfortable",
+      "filename": "40FT EXPANDABLE CONTAINER HOUSE — 3 Bedroom Modular Home - Mobile Residence - Emergency Housing Solution Modern Design • Comfortable Living • Thermal Insulation • Fast Installation Designed for modern family living, temporary accomm.mp4",
+      "path": "audit-local/40FT EXPANDABLE CONTAINER HOUSE — 3 Bedroom Modular Home - Mobile Residence - Emergency Housing Solution Modern Design • Comfortable Living • Thermal Insulation • Fast Installation Designed for modern family living, temporary accomm.mp4",
+      "bytes": 11770834,
+      "sha256": "6a5266ec7bd584785dee744490b2694994abc60ef2bad7a88c791e2c4367163b",
+      "duration_seconds": 100.198027,
+      "width": 576,
+      "height": 1024,
+      "fps": "18024/601",
+      "codec": "h264",
+      "audio": true,
+      "metadata_tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2avc1mp41",
+        "aigc_info": "{\"aigc_label_type\":0}",
+        "comment": "vid:v15044gf0000d8cso6nog65o6887m63g",
+        "vid_md5": "0d52b3fcd87610670528e6cd3578d457",
+        "encoder": "Lavf58.76.100"
+      }
+    },
+    {
+      "id": "v4-37m2",
+      "filename": "20ft Foldable Modular Mobile House - 37㎡ Spacious Living - Professional Export from China If you are looking for a modern housing solution that combines large space, easy transportation, and fast installation, this 40ft foldable modular h.mp4",
+      "path": "audit-local/20ft Foldable Modular Mobile House - 37㎡ Spacious Living - Professional Export from China If you are looking for a modern housing solution that combines large space, easy transportation, and fast installation, this 40ft foldable modular h.mp4",
+      "bytes": 6590943,
+      "sha256": "106762e67dbb6359804b3b23822ed23d3778824a2fc6a861810e45aa7fadb0e1",
+      "duration_seconds": 56.566667,
+      "width": 576,
+      "height": 1024,
+      "fps": "30/1",
+      "codec": "h264",
+      "audio": true,
+      "metadata_tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2avc1mp41",
+        "aigc_info": "{\"aigc_label_type\":0}",
+        "comment": "vid:v15044gf0000d7bu5lvog65umr51q3t0",
+        "vid_md5": "8ca4d67f34fec7f5c55059209a5b02ec",
+        "encoder": "Lavf58.76.100"
+      }
+    }
+  ],
+  "coverage": {
+    "decoded_frames_saved": 332,
+    "sampling": "All4 videos decoded at1fps;10 contact sheets every4s visually inspected,85 overview images; targeted native frames reviewed for kitchen, floor, wall, bathroom and last factory scene.",
+    "contact_sheets": [
+      {
+        "id": "v1-spacious",
+        "frame_count_1fps": 118,
+        "contact_sheets": [
+          "audit-local/contact-01.jpg",
+          "audit-local/contact-02.jpg",
+          "audit-local/contact-03.jpg"
+        ],
+        "frame_timestamp_note": "Frame number N corresponds approximately to source second N−1 after fps1 resampling; timecode is a scene locator, not a metrology timebase."
+      },
+      {
+        "id": "v2-74m2",
+        "frame_count_1fps": 57,
+        "contact_sheets": [
+          "audit-local/contact-01.jpg",
+          "audit-local/contact-02.jpg"
+        ],
+        "frame_timestamp_note": "Frame number N corresponds approximately to source second N−1 after fps1 resampling; timecode is a scene locator, not a metrology timebase."
+      },
+      {
+        "id": "v3-comfortable",
+        "frame_count_1fps": 100,
+        "contact_sheets": [
+          "audit-local/contact-01.jpg",
+          "audit-local/contact-02.jpg",
+          "audit-local/contact-03.jpg"
+        ],
+        "frame_timestamp_note": "Frame number N corresponds approximately to source second N−1 after fps1 resampling; timecode is a scene locator, not a metrology timebase."
+      },
+      {
+        "id": "v4-37m2",
+        "frame_count_1fps": 57,
+        "contact_sheets": [
+          "audit-local/contact-01.jpg",
+          "audit-local/contact-02.jpg"
+        ],
+        "frame_timestamp_note": "Frame number N corresponds approximately to source second N−1 after fps1 resampling; timecode is a scene locator, not a metrology timebase."
+      }
+    ],
+    "native_resolution": "576×1024 for all4. No upscaling or inferred higher-detail source.",
+    "audio": "Audio stream present in all4; not transcribed. No claim here depends on spoken narration.",
+    "timestamps": "Approximate source scene locations at1fps resampling; not exact motion measurement.",
+    "manufacturer_authentication": "Files are user-supplied product tours. Specific manufacturer/model identity or product certificate not established by video metadata."
+  },
+  "videos": {
+    "v1-spacious": {
+      "display_label_pt": "40FT — Spacious Living",
+      "identification": {
+        "length_class_from_filename": "40FT",
+        "bedrooms_from_filename": 3,
+        "area_from_filename_m2": null,
+        "same_as_72m2_workbook": "not established",
+        "complete_layout_inferred": false
+      },
+      "scenes": [
+        {
+          "start_seconds_approx": 0,
+          "end_seconds_approx": 7,
+          "topic": "exterior",
+          "observations_pt": [
+            "Unidade numa nave industrial, com caixilharia/perfis escuros e acabamento exterior com desenho de pequenas pedras sobrepostas.",
+            "Uma fachada longa é quase toda envidraçada."
+          ],
+          "status": "directly_observed",
+          "confidence": "high",
+          "limits_pt": [
+            "A dimensão40FT provém do nome; não há régua ou cota visível. Não transferir a fachada longa envidraçada para as sete plantas base."
+          ]
+        },
+        {
+          "start_seconds_approx": 8,
+          "end_seconds_approx": 15,
+          "topic": "entry/living",
+          "observations_pt": [
+            "Pavimento cinza com desenho de madeira em réguas.",
+            "Cozinha em L ao fundo da área aberta, com móvel branco e tampo escuro.",
+            "Tecto branco dividido por juntas rectas e perfis longitudinais escuros; luminárias quadradas planas."
+          ],
+          "status": "directly_observed",
+          "confidence": "high",
+          "limits_pt": []
+        },
+        {
+          "start_seconds_approx": 16,
+          "end_seconds_approx": 29,
+          "topic": "bathroom visit A",
+          "observations_pt": [
+            "Base de duche rectangular branca e resguardo com caixilharia escura e painel fosco.",
+            "Revestimento liso brilhante branco com veios cinzentos; sanita branca e pequeno móvel suspenso cinza com lavatório.",
+            "Chuveiro com cabeça superior quadrada e chuveiro de mão."
+          ],
+          "status": "directly_observed",
+          "confidence": "high",
+          "limits_pt": [
+            "Material exacto do revestimento e medidas dos equipamentos não identificados."
+          ]
+        },
+        {
+          "start_seconds_approx": 30,
+          "end_seconds_approx": 59,
+          "topic": "partitions/empty rooms",
+          "observations_pt": [
+            "Paredes claras lisas com juntas verticais estreitas.",
+            "Rodapé escuro no perímetro e guarnições claras em divisórias interiores.",
+            "Folhas de porta claras, ferragens contrastantes e janelas de caixilho escuro.",
+            "Painel embalado deitado no pavimento."
+          ],
+          "status": "directly_observed",
+          "confidence": "high",
+          "limits_pt": [
+            "Não contar automaticamente cada regresso da câmara como novo quarto."
+          ]
+        },
+        {
+          "start_seconds_approx": 60,
+          "end_seconds_approx": 80,
+          "topic": "room and bathroom visit B",
+          "observations_pt": [
+            "Nova aproximação a uma zona de banho com resguardo, sanita, lavatório e aparelho de aquecimento de água mural branco.",
+            "Ligações curtas flexíveis metálicas e válvulas vermelha/azul visíveis sob o aparelho.",
+            "Armário de espelho escuro, revestimento com veios cinzentos."
+          ],
+          "status": "directly_observed",
+          "confidence": "high",
+          "limits_pt": [
+            "O percurso não demonstra se são duas casas de banho distintas ou duas visitas/ângulos editados. Contagem exacta de casas de banho e ligação aos quartos ficam por confirmar."
+          ]
+        },
+        {
+          "start_seconds_approx": 81,
+          "end_seconds_approx": 106,
+          "topic": "living/kitchen/glazing",
+          "observations_pt": [
+            "Grande superfície de vidro ao longo da área comum.",
+            "Cozinha em L: frentes brancas emolduradas, conjunto de gavetas, portas com puxadores pequenos e tampo escuro.",
+            "Janela horizontal estreita sobre a bancada no fundo; mobiliário ainda envolvido em película transparente.",
+            "Perfis escuros salientes no encontro entre módulos e juntas compridas no pavimento."
+          ],
+          "status": "directly_observed",
+          "confidence": "high",
+          "limits_pt": [
+            "A película é embalagem temporária, não acabamento. Janela horizontal sobre a cozinha difere das plantas do XLSX."
+          ]
+        },
+        {
+          "start_seconds_approx": 107,
+          "end_seconds_approx": 118,
+          "topic": "exterior return",
+          "observations_pt": [
+            "Acabamento de efeito pedra continua numa fachada longa com várias janelas escuras.",
+            "Não há abertura ou fecho de alas."
+          ],
+          "status": "directly_observed",
+          "confidence": "high",
+          "limits_pt": []
+        }
+      ],
+      "material_signature_pt": {
+        "floor": "Madeira cinza relativamente escura/neutra, veio moderado e réguas longitudinais desencontradas.",
+        "interior_walls": "Painéis claros lisos, juntas verticais e guarnições finas.",
+        "exterior": "Efeito pedra claro/cinza com perfis escuros; não assumir pedra natural ou espessura pelo vídeo.",
+        "kitchen": "L branca com frentes emolduradas, tampo escuro e embalagem plástica.",
+        "bathroom": "Veio cinzento sobre branco, móvel cinza e ferragens escuras/cromadas."
+      }
+    },
+    "v2-74m2": {
+      "display_label_pt": "40FT — 74 m²",
+      "identification": {
+        "length_class_from_filename": "40FT",
+        "bedrooms_from_filename": null,
+        "area_from_filename_m2": 74,
+        "same_as_72m2_workbook": "not established",
+        "complete_layout_inferred": false
+      },
+      "scenes": [
+        {
+          "start_seconds_approx": 0,
+          "end_seconds_approx": 10,
+          "topic": "exterior",
+          "observations_pt": [
+            "Fachada cinzenta com linhas horizontais largas e textura fina, pilares e remates escuros.",
+            "Entrada envidraçada no núcleo central, com janela em cada ala frontal.",
+            "Núcleo central projecta-se relativamente às alas nas extremidades."
+          ],
+          "status": "directly_observed",
+          "confidence": "high",
+          "limits_pt": [
+            "74m² é uma identificação no nome do ficheiro, não uma medição demonstrada."
+          ]
+        },
+        {
+          "start_seconds_approx": 11,
+          "end_seconds_approx": 20,
+          "topic": "common room",
+          "observations_pt": [
+            "Sala comprida, pavimento de madeira clara acinzentada/greige, tecto branco de painéis e duas linhas estruturais escuras.",
+            "Parede interior lisa longa com juntas verticais; várias portas numa banda lateral.",
+            "Uma peça branca embalada está pousada na zona central."
+          ],
+          "status": "directly_observed",
+          "confidence": "high",
+          "limits_pt": [
+            "A peça embalada não demonstra uma ilha de cozinha instalada."
+          ]
+        },
+        {
+          "start_seconds_approx": 21,
+          "end_seconds_approx": 27,
+          "topic": "kitchen",
+          "observations_pt": [
+            "Cozinha em L com frentes brancas emolduradas, gavetas e tampo cinzento/escuro.",
+            "Janela rectangular de duas folhas sobre a bancada da parede do fundo.",
+            "Película e protecções presentes."
+          ],
+          "status": "directly_observed",
+          "confidence": "high",
+          "limits_pt": [
+            "A configuração do lava-loiça/placa não é suficientemente clara para fixar equipamento ou ligações."
+          ]
+        },
+        {
+          "start_seconds_approx": 28,
+          "end_seconds_approx": 38,
+          "topic": "empty rooms",
+          "observations_pt": [
+            "Portas claras de abrir, paredes lisas brancas, rodapé/perfis superiores escuros e caixilhos pretos.",
+            "Réguas do pavimento continuam pela área dos quartos."
+          ],
+          "status": "directly_observed",
+          "confidence": "high",
+          "limits_pt": []
+        },
+        {
+          "start_seconds_approx": 39,
+          "end_seconds_approx": 49,
+          "topic": "bathroom",
+          "observations_pt": [
+            "Revestimento branco brilhante com veios castanhos/dourados largos.",
+            "Duche com ferragens escuras, base branca, pequena janela alta e resguardo.",
+            "Lavatório compacto e sanita branca."
+          ],
+          "status": "directly_observed",
+          "confidence": "high",
+          "limits_pt": []
+        },
+        {
+          "start_seconds_approx": 50,
+          "end_seconds_approx": 57,
+          "topic": "room/kitchen return",
+          "observations_pt": [
+            "Regresso a quarto e cozinha; peça/móvel embalado no pavimento.",
+            "Não é mostrada qualquer manobra de expansão."
+          ],
+          "status": "directly_observed",
+          "confidence": "high",
+          "limits_pt": []
+        }
+      ],
+      "material_signature_pt": {
+        "floor": "Madeira clara greige, mais quente e suave que o cinza contrastado do Comfortable.",
+        "interior_walls": "Branco liso com juntas verticais e rodapé escuro.",
+        "exterior": "Cinza horizontal com relevo visual fino.",
+        "kitchen": "L branca emoldurada, tampo cinzento, filme protector.",
+        "bathroom": "Veios largos quentes/castanhos sobre fundo branco."
+      }
+    },
+    "v3-comfortable": {
+      "display_label_pt": "40FT — Comfortable Living",
+      "identification": {
+        "length_class_from_filename": "40FT",
+        "bedrooms_from_filename": 3,
+        "area_from_filename_m2": null,
+        "same_as_72m2_workbook": "not established",
+        "complete_layout_inferred": false
+      },
+      "scenes": [
+        {
+          "start_seconds_approx": 0,
+          "end_seconds_approx": 13,
+          "topic": "exterior",
+          "observations_pt": [
+            "Fachadas creme com linhas horizontais, estrutura escura e porta lateral envidraçada.",
+            "Núcleo com entrada envidraçada e maior projecção que as alas.",
+            "Janelas de caixilharia escura."
+          ],
+          "status": "directly_observed",
+          "confidence": "high",
+          "limits_pt": [
+            "A porta lateral não existe nas sete plantas de referência e requer variante separada."
+          ]
+        },
+        {
+          "start_seconds_approx": 14,
+          "end_seconds_approx": 31,
+          "topic": "living/kitchen",
+          "observations_pt": [
+            "Pavimento cinza claro com nós e veios de madeira contrastados, réguas desencontradas.",
+            "Linhas/juntas compridas do piso acompanham as bandas modulares.",
+            "Armários e módulos de bancada brancos parcialmente montados, frentes protegidas por película impressa.",
+            "Dois blocos compridos embalados na área central; não há prova de estarem na sua posição definitiva.",
+            "Cozinha visível em linha/retorno parcial junto à parede; vários nichos ainda vazios e pés expostos."
+          ],
+          "status": "directly_observed",
+          "confidence": "high",
+          "limits_pt": []
+        },
+        {
+          "start_seconds_approx": 32,
+          "end_seconds_approx": 54,
+          "topic": "partitions/room details",
+          "observations_pt": [
+            "Folhas interiores brancas, algumas com linhas horizontais discretas.",
+            "Painéis interiores lisos e juntas verticais finas; guarnição superior clara e perfis estruturais escuros por cima.",
+            "Soleiras/juntas metálicas baixas visíveis nas entradas e nas linhas do piso.",
+            "Tomadas/interruptores escuros sobre parede clara; algumas esperas e acabamentos incompletos."
+          ],
+          "status": "directly_observed",
+          "confidence": "high",
+          "limits_pt": []
+        },
+        {
+          "start_seconds_approx": 55,
+          "end_seconds_approx": 70,
+          "topic": "bathroom",
+          "observations_pt": [
+            "Base de duche branca e resguardo com perfil escuro.",
+            "Ferragens do duche e torneira de aparência dourada.",
+            "Móvel suspenso azul escuro com lavatório branco e armário de espelho.",
+            "Aparelho branco mural de água quente com ligações flexíveis expostas.",
+            "Parede de banho clara com aspecto liso/brilhante."
+          ],
+          "status": "directly_observed",
+          "confidence": "high",
+          "limits_pt": [
+            "Cor/aparência dourada não identifica liga metálica ou tratamento. Posições e dimensões não são cotadas."
+          ]
+        },
+        {
+          "start_seconds_approx": 71,
+          "end_seconds_approx": 81,
+          "topic": "empty room",
+          "observations_pt": [
+            "Quarto vazio com pavimento cinza de madeira, janela escura e paredes claras.",
+            "Porta interior e enquadramento de perfis permitem observar espessura visual dos remates, sem cota."
+          ],
+          "status": "directly_observed",
+          "confidence": "high",
+          "limits_pt": []
+        },
+        {
+          "start_seconds_approx": 82,
+          "end_seconds_approx": 100,
+          "topic": "whole-room return",
+          "observations_pt": [
+            "Vista ampla das bandas do piso, perfis escuros no tecto e alinhamento das divisórias.",
+            "Os blocos embalados permanecem soltos.",
+            "Não se vê expansão ou dobragem."
+          ],
+          "status": "directly_observed",
+          "confidence": "high",
+          "limits_pt": []
+        }
+      ],
+      "material_signature_pt": {
+        "floor": "Cinza claro de madeira, nós e veio escuro marcados, padrões alternados por régua.",
+        "interior_walls": "Cinza/branco claro liso, juntas verticais claras; perfis estruturais e rodapés escuros.",
+        "exterior": "Creme horizontal e perfis escuros.",
+        "kitchen": "Módulos brancos em montagem, filme impresso temporário, tampos escuros e pés expostos.",
+        "bathroom": "Móvel azul, ferragens douradas, revestimento claro."
+      }
+    },
+    "v4-37m2": {
+      "display_label_pt": "20ft — 37 m²",
+      "identification": {
+        "length_class_from_filename": "20ft, contradicted by40ft later in same filename",
+        "bedrooms_from_filename": null,
+        "area_from_filename_m2": 37,
+        "same_as_72m2_workbook": "not established; visibly shorter class and different claimed area",
+        "complete_layout_inferred": false
+      },
+      "scenes": [
+        {
+          "start_seconds_approx": 0,
+          "end_seconds_approx": 11,
+          "topic": "exterior",
+          "observations_pt": [
+            "Unidade visualmente mais curta, revestimento castanho/taupe horizontal e caixilharia escura.",
+            "Porta opaca central ainda protegida por película, com janelas frontais nas alas."
+          ],
+          "status": "directly_observed",
+          "confidence": "high",
+          "limits_pt": [
+            "O nome começa20ft/37m² mas inclui40ft no texto posterior. A dimensão exacta exige ficha identificada."
+          ]
+        },
+        {
+          "start_seconds_approx": 12,
+          "end_seconds_approx": 34,
+          "topic": "interior/rooms",
+          "observations_pt": [
+            "Pavimento castanho com desenho de madeira.",
+            "Paredes claras ligeiramente quentes, perfis/rodapés escuros.",
+            "Várias portas interiores claras e porta de banho parcialmente fosca; espaços por concluir.",
+            "Juntas de piso e elementos embalados no chão."
+          ],
+          "status": "directly_observed",
+          "confidence": "high",
+          "limits_pt": []
+        },
+        {
+          "start_seconds_approx": 35,
+          "end_seconds_approx": 45,
+          "topic": "bathroom",
+          "observations_pt": [
+            "Revestimento branco com veios cinzentos finos, base de duche branca e perfil de resguardo escuro.",
+            "Sanita e móvel de lavatório branco.",
+            "Esperas de instalação e cablagem exposta demonstram fase de montagem."
+          ],
+          "status": "directly_observed",
+          "confidence": "high",
+          "limits_pt": []
+        },
+        {
+          "start_seconds_approx": 46,
+          "end_seconds_approx": 54,
+          "topic": "room/kitchen return",
+          "observations_pt": [
+            "Pavimento castanho continua em quartos/área comum.",
+            "Mobiliário parcial embalado junto à entrada do espaço comum."
+          ],
+          "status": "directly_observed",
+          "confidence": "high",
+          "limits_pt": []
+        },
+        {
+          "start_seconds_approx": 55,
+          "end_seconds_approx": 57,
+          "topic": "factory work",
+          "observations_pt": [
+            "Trabalhador num apoio actua na ligação/perfil superior de uma unidade incompleta.",
+            "Há uma plataforma de piso exposta, perfis e um painel exterior ao fundo."
+          ],
+          "status": "directly_observed",
+          "confidence": "high",
+          "limits_pt": [
+            "Não há movimento de dobragem mostrado, nem etapas que revelem eixos/folgas de expansão. Não identificar esta unidade final como a mesma das cenas anteriores sem ligação comprovada."
+          ]
+        }
+      ],
+      "material_signature_pt": {
+        "floor": "Madeira castanha média/quente.",
+        "interior_walls": "Claro creme/branco quente, remates escuros.",
+        "exterior": "Castanho/taupe horizontal.",
+        "kitchen": "Apenas mobiliário parcial; planta e configuração final não estabelecidas.",
+        "bathroom": "Veios cinzentos finos, aparelhos brancos e acabamento em montagem."
+      }
+    }
+  },
+  "claims": [
+    {
+      "id": "base_dimensions",
+      "claim_pt": "A referência dimensional da maquete72 mantém6220×11800mm e bandas2010/2200/2010 do XLSX.",
+      "status": "confirmed_from_prior_dimensioned_source",
+      "confidence": "high",
+      "source": "audit-local/sources-geometry.json",
+      "video_support": "No replacement dimensions or scale ruler visible."
+    },
+    {
+      "id": "not_same_variant",
+      "claim_pt": "Não está demonstrado que os quatro vídeos e as sete plantas6220 sejam a mesma variante.",
+      "status": "source_limit",
+      "confidence": "high",
+      "evidence": [
+        "Área74m² apenas no nome deV2.",
+        "Área37m²/20ft no nome deV4, com40ft contraditório mais adiante.",
+        "V1 fachada longa envidraçada;V3 porta lateral; ambos diferem dos vãos das plantas."
+      ]
+    },
+    {
+      "id": "no_expansion_motion",
+      "claim_pt": "Os quatro vídeos mostram visitas/inspecção a casas já abertas; não fornecem sequência cinemática de expansão.",
+      "status": "directly_observed_across_reviewed_scene_coverage",
+      "confidence": "high",
+      "evidence": [
+        "v1 all scenes",
+        "v2 all scenes",
+        "v3 all scenes",
+        "v4 last factory scene56s is stationary work, not folding"
+      ]
+    },
+    {
+      "id": "floor_detail",
+      "claim_pt": "As réguas desencontradas, variação entre tábuas, juntas de módulo e soleiras baixas são referências visuais úteis para melhorar o piso.",
+      "status": "directly_observed",
+      "confidence": "high",
+      "frames": [
+        "v1-spacious@88",
+        "v2-74m2@12",
+        "v3-comfortable@16",
+        "v3-comfortable@92",
+        "v4-37m2@16"
+      ],
+      "limit_pt": "Sem dimensões de régua, marca, código de catálogo, camada/SPC ou parâmetros PBR comprovados."
+    },
+    {
+      "id": "wall_detail",
+      "claim_pt": "As paredes interiores têm faces lisas com juntas verticais, guarnições e rodapé; as linhas estruturais superiores são distintas.",
+      "status": "directly_observed",
+      "confidence": "high",
+      "frames": [
+        "v1-spacious@36",
+        "v2-74m2@32",
+        "v3-comfortable@40",
+        "v3-comfortable@52"
+      ],
+      "limit_pt": "Não inferir espessura de painel, isolamento ou distância exacta entre juntas."
+    },
+    {
+      "id": "cabinet_film",
+      "claim_pt": "Película transparente/impresso nas frentes é protecção de transporte ou montagem, não acabamento final.",
+      "status": "visual_inference",
+      "confidence": "high",
+      "frames": [
+        "v1-spacious@88",
+        "v2-74m2@24",
+        "v3-comfortable@16"
+      ],
+      "limit_pt": "O acabamento final por baixo está parcialmente oculto."
+    },
+    {
+      "id": "loose_blocks",
+      "claim_pt": "Os blocos embalados no centro não provam uma ilha ou disposição definitiva.",
+      "status": "source_limit",
+      "confidence": "high",
+      "frames": [
+        "v2-74m2@12",
+        "v3-comfortable@92"
+      ]
+    },
+    {
+      "id": "layout_count",
+      "claim_pt": "Três quartos é a descrição dos nomesV1/V3; a contagem completa, portas e medidas de cada divisão não podem ser reconstruídas com rigor apenas pelo percurso editado.",
+      "status": "metadata_claim_with_visual_limit",
+      "confidence": "high",
+      "frames": [
+        "v1-spacious@48",
+        "v3-comfortable@92"
+      ]
+    },
+    {
+      "id": "bathroom_count",
+      "claim_pt": "V1 tem duas sequências de visita à casa de banho com vistas diferentes; não há prova suficiente para declarar duas casas de banho distintas.",
+      "status": "uncertain_topology",
+      "confidence": "medium",
+      "frames": [
+        "v1-spacious@20",
+        "v1-spacious@24",
+        "v1-spacious@72",
+        "v1-spacious@76"
+      ]
+    },
+    {
+      "id": "water_connections",
+      "claim_pt": "V1/V3 mostram aparelho mural branco para aquecimento de água e ligações curtas flexíveis junto aos equipamentos.",
+      "status": "directly_observed",
+      "confidence": "high",
+      "frames": [
+        "v1-spacious@76",
+        "v3-comfortable@68"
+      ],
+      "limit_pt": "Não define o traçado oculto, diâmetros, pressões ou sistema de transporte das redes."
+    }
+  ],
+  "recommendations": [
+    {
+      "priority": "high",
+      "topic": "Piso",
+      "action_pt": "Representar réguas compridas com juntas desencontradas e algumas variantes de veio; adicionar as linhas de união das bandas e soleiras como geometria discreta.",
+      "source_frames": [
+        "v3-comfortable@16",
+        "v3-comfortable@92"
+      ],
+      "guardrail_pt": "Manter6,22×11,80m; largura de régua, repetição e dimensões das juntas são escolhas visuais estimadas."
+    },
+    {
+      "priority": "high",
+      "topic": "Paredes",
+      "action_pt": "Separar painéis lisos, juntas verticais finas, guarnições, rodapé e perfil superior; evitar uma única superfície lisa sem remates.",
+      "source_frames": [
+        "v3-comfortable@40",
+        "v1-spacious@36"
+      ],
+      "guardrail_pt": "Não transformar as juntas visíveis em cotas de fabrico ou espessura de isolamento."
+    },
+    {
+      "priority": "high",
+      "topic": "Cozinhas",
+      "action_pt": "Melhorar frentes, gavetas, puxadores, remate inferior e tampo usando as cozinhasL brancas deV1/V2 como inspiração; tratar V3 como montagem incompleta.",
+      "source_frames": [
+        "v1-spacious@88",
+        "v2-74m2@24",
+        "v3-comfortable@16"
+      ],
+      "guardrail_pt": "Não mapear película impressa como textura. As plantas originais não cotam a cozinha."
+    },
+    {
+      "priority": "high",
+      "topic": "Variantes",
+      "action_pt": "Organizar referências por vídeo/variante, com selecção explícita e legenda. V1 pedra/vidro, V2 cinza74, V3 creme/porta lateral, V4 castanho37.",
+      "source_frames": [],
+      "guardrail_pt": "Não somar características de unidades diferentes e apresentar o resultado como variante fornecida/documentada."
+    },
+    {
+      "priority": "medium",
+      "topic": "Casa de banho",
+      "action_pt": "Distinguir resguardo fosco/transparente, base de duche, móvel suspenso, espelho e aparelho mural; apresentar cada conjunto como referência própria.",
+      "source_frames": [
+        "v1-spacious@20",
+        "v2-74m2@40",
+        "v3-comfortable@68",
+        "v4-37m2@36"
+      ],
+      "guardrail_pt": "Veios cinzentos, veios quentes e ferragens douradas não devem aparecer automaticamente juntos."
+    },
+    {
+      "priority": "medium",
+      "topic": "Expansão",
+      "action_pt": "Manter a sequência conceptual já validada, separada dos filmes reais. Os novos vídeos acrescentam acabamentos e detalhes de montagem estática.",
+      "source_frames": [
+        "v4-37m2@56"
+      ],
+      "guardrail_pt": "Não existe suporte novo para transporte fechado, dobradiças, trajectórias ou folgas de fabricante."
+    }
+  ],
+  "selected_assets": [
+    {
+      "video_id": "v1-spacious",
+      "time_seconds_approx": 0,
+      "timecode": "00:00",
+      "label": "exterior-stone-effect",
+      "path": "audit-local/v1-spacious-000s-exterior-stone-effect.jpg",
+      "native_pixels": [
+        576,
+        1024
+      ],
+      "upscaled": false
+    },
+    {
+      "video_id": "v1-spacious",
+      "time_seconds_approx": 4,
+      "timecode": "00:04",
+      "label": "long-glazing",
+      "path": "audit-local/v1-spacious-004s-long-glazing.jpg",
+      "native_pixels": [
+        576,
+        1024
+      ],
+      "upscaled": false
+    },
+    {
+      "video_id": "v1-spacious",
+      "time_seconds_approx": 8,
+      "timecode": "00:08",
+      "label": "living-kitchen-floor",
+      "path": "audit-local/v1-spacious-008s-living-kitchen-floor.jpg",
+      "native_pixels": [
+        576,
+        1024
+      ],
+      "upscaled": false
+    },
+    {
+      "video_id": "v1-spacious",
+      "time_seconds_approx": 20,
+      "timecode": "00:20",
+      "label": "bathroom-frosted-screen",
+      "path": "audit-local/v1-spacious-020s-bathroom-frosted-screen.jpg",
+      "native_pixels": [
+        576,
+        1024
+      ],
+      "upscaled": false
+    },
+    {
+      "video_id": "v1-spacious",
+      "time_seconds_approx": 24,
+      "timecode": "00:24",
+      "label": "bathroom-vanity",
+      "path": "audit-local/v1-spacious-024s-bathroom-vanity.jpg",
+      "native_pixels": [
+        576,
+        1024
+      ],
+      "upscaled": false
+    },
+    {
+      "video_id": "v1-spacious",
+      "time_seconds_approx": 36,
+      "timecode": "00:36",
+      "label": "wall-panel-joint",
+      "path": "audit-local/v1-spacious-036s-wall-panel-joint.jpg",
+      "native_pixels": [
+        576,
+        1024
+      ],
+      "upscaled": false
+    },
+    {
+      "video_id": "v1-spacious",
+      "time_seconds_approx": 48,
+      "timecode": "00:48",
+      "label": "internal-door-pair",
+      "path": "audit-local/v1-spacious-048s-internal-door-pair.jpg",
+      "native_pixels": [
+        576,
+        1024
+      ],
+      "upscaled": false
+    },
+    {
+      "video_id": "v1-spacious",
+      "time_seconds_approx": 72,
+      "timecode": "01:12",
+      "label": "bathroom-shower-heater",
+      "path": "audit-local/v1-spacious-072s-bathroom-shower-heater.jpg",
+      "native_pixels": [
+        576,
+        1024
+      ],
+      "upscaled": false
+    },
+    {
+      "video_id": "v1-spacious",
+      "time_seconds_approx": 76,
+      "timecode": "01:16",
+      "label": "heater-flexible-connections",
+      "path": "audit-local/v1-spacious-076s-heater-flexible-connections.jpg",
+      "native_pixels": [
+        576,
+        1024
+      ],
+      "upscaled": false
+    },
+    {
+      "video_id": "v1-spacious",
+      "time_seconds_approx": 88,
+      "timecode": "01:28",
+      "label": "white-framed-l-kitchen",
+      "path": "audit-local/v1-spacious-088s-white-framed-l-kitchen.jpg",
+      "native_pixels": [
+        576,
+        1024
+      ],
+      "upscaled": false
+    },
+    {
+      "video_id": "v1-spacious",
+      "time_seconds_approx": 100,
+      "timecode": "01:40",
+      "label": "ceiling-beam-glazing",
+      "path": "audit-local/v1-spacious-100s-ceiling-beam-glazing.jpg",
+      "native_pixels": [
+        576,
+        1024
+      ],
+      "upscaled": false
+    },
+    {
+      "video_id": "v1-spacious",
+      "time_seconds_approx": 112,
+      "timecode": "01:52",
+      "label": "long-stone-effect-facade",
+      "path": "audit-local/v1-spacious-112s-long-stone-effect-facade.jpg",
+      "native_pixels": [
+        576,
+        1024
+      ],
+      "upscaled": false
+    },
+    {
+      "video_id": "v2-74m2",
+      "time_seconds_approx": 0,
+      "timecode": "00:00",
+      "label": "grey-front",
+      "path": "audit-local/v2-74m2-000s-grey-front.jpg",
+      "native_pixels": [
+        576,
+        1024
+      ],
+      "upscaled": false
+    },
+    {
+      "video_id": "v2-74m2",
+      "time_seconds_approx": 8,
+      "timecode": "00:08",
+      "label": "horizontal-grey-cladding",
+      "path": "audit-local/v2-74m2-008s-horizontal-grey-cladding.jpg",
+      "native_pixels": [
+        576,
+        1024
+      ],
+      "upscaled": false
+    },
+    {
+      "video_id": "v2-74m2",
+      "time_seconds_approx": 12,
+      "timecode": "00:12",
+      "label": "greige-floor-long-room",
+      "path": "audit-local/v2-74m2-012s-greige-floor-long-room.jpg",
+      "native_pixels": [
+        576,
+        1024
+      ],
+      "upscaled": false
+    },
+    {
+      "video_id": "v2-74m2",
+      "time_seconds_approx": 24,
+      "timecode": "00:24",
+      "label": "white-l-kitchen",
+      "path": "audit-local/v2-74m2-024s-white-l-kitchen.jpg",
+      "native_pixels": [
+        576,
+        1024
+      ],
+      "upscaled": false
+    },
+    {
+      "video_id": "v2-74m2",
+      "time_seconds_approx": 32,
+      "timecode": "00:32",
+      "label": "white-walls-black-skirting",
+      "path": "audit-local/v2-74m2-032s-white-walls-black-skirting.jpg",
+      "native_pixels": [
+        576,
+        1024
+      ],
+      "upscaled": false
+    },
+    {
+      "video_id": "v2-74m2",
+      "time_seconds_approx": 40,
+      "timecode": "00:40",
+      "label": "bathroom-veined-panels",
+      "path": "audit-local/v2-74m2-040s-bathroom-veined-panels.jpg",
+      "native_pixels": [
+        576,
+        1024
+      ],
+      "upscaled": false
+    },
+    {
+      "video_id": "v2-74m2",
+      "time_seconds_approx": 48,
+      "timecode": "00:48",
+      "label": "vanity-toilet",
+      "path": "audit-local/v2-74m2-048s-vanity-toilet.jpg",
+      "native_pixels": [
+        576,
+        1024
+      ],
+      "upscaled": false
+    },
+    {
+      "video_id": "v3-comfortable",
+      "time_seconds_approx": 0,
+      "timecode": "00:00",
+      "label": "cream-horizontal-cladding",
+      "path": "audit-local/v3-comfortable-000s-cream-horizontal-cladding.jpg",
+      "native_pixels": [
+        576,
+        1024
+      ],
+      "upscaled": false
+    },
+    {
+      "video_id": "v3-comfortable",
+      "time_seconds_approx": 12,
+      "timecode": "00:12",
+      "label": "side-glazed-door",
+      "path": "audit-local/v3-comfortable-012s-side-glazed-door.jpg",
+      "native_pixels": [
+        576,
+        1024
+      ],
+      "upscaled": false
+    },
+    {
+      "video_id": "v3-comfortable",
+      "time_seconds_approx": 16,
+      "timecode": "00:16",
+      "label": "unfinished-kitchen-floor-joint",
+      "path": "audit-local/v3-comfortable-016s-unfinished-kitchen-floor-joint.jpg",
+      "native_pixels": [
+        576,
+        1024
+      ],
+      "upscaled": false
+    },
+    {
+      "video_id": "v3-comfortable",
+      "time_seconds_approx": 24,
+      "timecode": "00:24",
+      "label": "side-entry-interior",
+      "path": "audit-local/v3-comfortable-024s-side-entry-interior.jpg",
+      "native_pixels": [
+        576,
+        1024
+      ],
+      "upscaled": false
+    },
+    {
+      "video_id": "v3-comfortable",
+      "time_seconds_approx": 40,
+      "timecode": "00:40",
+      "label": "panel-wall-seams",
+      "path": "audit-local/v3-comfortable-040s-panel-wall-seams.jpg",
+      "native_pixels": [
+        576,
+        1024
+      ],
+      "upscaled": false
+    },
+    {
+      "video_id": "v3-comfortable",
+      "time_seconds_approx": 52,
+      "timecode": "00:52",
+      "label": "partition-and-threshold",
+      "path": "audit-local/v3-comfortable-052s-partition-and-threshold.jpg",
+      "native_pixels": [
+        576,
+        1024
+      ],
+      "upscaled": false
+    },
+    {
+      "video_id": "v3-comfortable",
+      "time_seconds_approx": 60,
+      "timecode": "01:00",
+      "label": "bathroom-gold-fixtures",
+      "path": "audit-local/v3-comfortable-060s-bathroom-gold-fixtures.jpg",
+      "native_pixels": [
+        576,
+        1024
+      ],
+      "upscaled": false
+    },
+    {
+      "video_id": "v3-comfortable",
+      "time_seconds_approx": 68,
+      "timecode": "01:08",
+      "label": "blue-vanity-heater",
+      "path": "audit-local/v3-comfortable-068s-blue-vanity-heater.jpg",
+      "native_pixels": [
+        576,
+        1024
+      ],
+      "upscaled": false
+    },
+    {
+      "video_id": "v3-comfortable",
+      "time_seconds_approx": 76,
+      "timecode": "01:16",
+      "label": "empty-room-grey-floor",
+      "path": "audit-local/v3-comfortable-076s-empty-room-grey-floor.jpg",
+      "native_pixels": [
+        576,
+        1024
+      ],
+      "upscaled": false
+    },
+    {
+      "video_id": "v3-comfortable",
+      "time_seconds_approx": 92,
+      "timecode": "01:32",
+      "label": "floor-module-lines-loose-packages",
+      "path": "audit-local/v3-comfortable-092s-floor-module-lines-loose-packages.jpg",
+      "native_pixels": [
+        576,
+        1024
+      ],
+      "upscaled": false
+    },
+    {
+      "video_id": "v4-37m2",
+      "time_seconds_approx": 4,
+      "timecode": "00:04",
+      "label": "brown-cladding-window",
+      "path": "audit-local/v4-37m2-004s-brown-cladding-window.jpg",
+      "native_pixels": [
+        576,
+        1024
+      ],
+      "upscaled": false
+    },
+    {
+      "video_id": "v4-37m2",
+      "time_seconds_approx": 8,
+      "timecode": "00:08",
+      "label": "opaque-front-door",
+      "path": "audit-local/v4-37m2-008s-opaque-front-door.jpg",
+      "native_pixels": [
+        576,
+        1024
+      ],
+      "upscaled": false
+    },
+    {
+      "video_id": "v4-37m2",
+      "time_seconds_approx": 16,
+      "timecode": "00:16",
+      "label": "brown-floor-white-wall",
+      "path": "audit-local/v4-37m2-016s-brown-floor-white-wall.jpg",
+      "native_pixels": [
+        576,
+        1024
+      ],
+      "upscaled": false
+    },
+    {
+      "video_id": "v4-37m2",
+      "time_seconds_approx": 20,
+      "timecode": "00:20",
+      "label": "doorway-partitions",
+      "path": "audit-local/v4-37m2-020s-doorway-partitions.jpg",
+      "native_pixels": [
+        576,
+        1024
+      ],
+      "upscaled": false
+    },
+    {
+      "video_id": "v4-37m2",
+      "time_seconds_approx": 36,
+      "timecode": "00:36",
+      "label": "bathroom-grey-veins",
+      "path": "audit-local/v4-37m2-036s-bathroom-grey-veins.jpg",
+      "native_pixels": [
+        576,
+        1024
+      ],
+      "upscaled": false
+    },
+    {
+      "video_id": "v4-37m2",
+      "time_seconds_approx": 52,
+      "timecode": "00:52",
+      "label": "unfinished-interior",
+      "path": "audit-local/v4-37m2-052s-unfinished-interior.jpg",
+      "native_pixels": [
+        576,
+        1024
+      ],
+      "upscaled": false
+    },
+    {
+      "video_id": "v4-37m2",
+      "time_seconds_approx": 56,
+      "timecode": "00:56",
+      "label": "factory-worker-upper-frame",
+      "path": "audit-local/v4-37m2-056s-factory-worker-upper-frame.jpg",
+      "native_pixels": [
+        576,
+        1024
+      ],
+      "upscaled": false
+    }
+  ],
+  "unresolved": [
+    "Exact match to6220×11800 workbook variant.",
+    "As-built dimensions, net area and count/topology of every room.",
+    "Floor/panel product code, physical repeat, calibrated colour and finish chemistry.",
+    "Panel thickness, joint clearance, profile dimensions and hinge/actuator design.",
+    "Transport/expansion sequence and installed position of wrapped loose modules."
+  ],
+  "allowed_use_pt": "Referência visual de apresentação com identificação do vídeo. As medidas confirmadas do XLSX mantêm precedência; propostas visuais e diferenças de variante ficam explícitas.",
+  "site_modified": false
+}

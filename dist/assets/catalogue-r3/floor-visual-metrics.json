@@ -1,0 +1,673 @@
+{
+  "method": "Actual GPU shader renders; flat orthographic 4.096m/1024px, NoToneMapping, sRGB output, lighting bypassed; measured central 984x984 region. Luminance correlation at the former mirrored-repeat periods. Correlation is not a universal realism score.",
+  "entries": [
+    {
+      "id": "floor-spc-kx7005",
+      "before": {
+        "meanSrgb8": [
+          169.2332048549144,
+          145.79716727807522,
+          107.22907784718092
+        ],
+        "mirrorPeriodCorrelationX": 0.9850103110339067,
+        "mirrorPeriodCorrelationY": 0.9943146452162477,
+        "measuredPeriodPixels": [
+          229,
+          121
+        ]
+      },
+      "after": {
+        "meanSrgb8": [
+          169.16102043261287,
+          145.53091847610548,
+          107.04398423557406
+        ],
+        "mirrorPeriodCorrelationX": 0.009278528640017067,
+        "mirrorPeriodCorrelationY": 0.3322765596255703,
+        "measuredPeriodPixels": [
+          229,
+          121
+        ]
+      },
+      "renderedMeanDeltaE76": 0.12456251584689434,
+      "derivedTextureMetrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 14.045779685264664,
+          "topBottomMeanAbsSrgb8": 26.068939393939395
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 1.3848354792560802,
+          "topBottomMeanAbsSrgb8": 4.5613636363636365
+        },
+        "sourceMeanSrgb8": [
+          168.84621537261023,
+          145.1115001950839,
+          106.31702106905969
+        ],
+        "derivedMeanSrgb8": [
+          168.84621537261023,
+          145.1115001950839,
+          106.31702106905969
+        ],
+        "meanMaxAbsDifferenceSrgb8": 0.0,
+        "broadLuminanceStdBefore": 5.218057158102996,
+        "broadLuminanceStdAfter": 1.9203659176089884,
+        "highFrequencyCorrelationInner": 0.9996794683517392,
+        "pixelRMSESrgb8": 7.807863086156675
+      }
+    },
+    {
+      "id": "floor-spc-kx7006",
+      "before": {
+        "meanSrgb8": [
+          147.4213720338423,
+          133.28360888029613,
+          109.72786948906075
+        ],
+        "mirrorPeriodCorrelationX": 0.9804385427830062,
+        "mirrorPeriodCorrelationY": 0.9873380406315586,
+        "measuredPeriodPixels": [
+          229,
+          121
+        ]
+      },
+      "after": {
+        "meanSrgb8": [
+          147.45531966752594,
+          133.3034631337167,
+          109.78330420880428
+        ],
+        "mirrorPeriodCorrelationX": -0.00994278723113535,
+        "mirrorPeriodCorrelationY": 0.2313679243267258,
+        "measuredPeriodPixels": [
+          229,
+          121
+        ]
+      },
+      "renderedMeanDeltaE76": 0.02294261950413278,
+      "derivedTextureMetrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 34.625178826895564,
+          "topBottomMeanAbsSrgb8": 27.26969696969697
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 2.4706723891273246,
+          "topBottomMeanAbsSrgb8": 6.24469696969697
+        },
+        "sourceMeanSrgb8": [
+          146.41863051111977,
+          132.0623975809598,
+          108.17863831447522
+        ],
+        "derivedMeanSrgb8": [
+          146.41863051111977,
+          132.0623975809598,
+          108.17863831447522
+        ],
+        "meanMaxAbsDifferenceSrgb8": 0.0,
+        "broadLuminanceStdBefore": 6.05892719922905,
+        "broadLuminanceStdAfter": 4.065077328050632,
+        "highFrequencyCorrelationInner": 0.9998181004167729,
+        "pixelRMSESrgb8": 9.131354560169292
+      }
+    },
+    {
+      "id": "floor-spc-kx7007",
+      "before": {
+        "meanSrgb8": [
+          172.2793723973825,
+          139.96395374776918,
+          86.33582854121224
+        ],
+        "mirrorPeriodCorrelationX": 0.9916069390674577,
+        "mirrorPeriodCorrelationY": 0.9943579425679037,
+        "measuredPeriodPixels": [
+          229,
+          121
+        ]
+      },
+      "after": {
+        "meanSrgb8": [
+          171.28368427358055,
+          139.16956569337034,
+          85.86665096833894
+        ],
+        "mirrorPeriodCorrelationX": -0.0010820345841175219,
+        "mirrorPeriodCorrelationY": 0.23880118046687063,
+        "measuredPeriodPixels": [
+          229,
+          121
+        ]
+      },
+      "renderedMeanDeltaE76": 0.3597776971095727,
+      "derivedTextureMetrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 22.028612303290416,
+          "topBottomMeanAbsSrgb8": 43.21666666666667
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 1.5751072961373391,
+          "topBottomMeanAbsSrgb8": 5.209090909090909
+        },
+        "sourceMeanSrgb8": [
+          170.86149044088958,
+          138.5629438158408,
+          84.83039406944987
+        ],
+        "derivedMeanSrgb8": [
+          170.86149044088958,
+          138.5629438158408,
+          84.83039406944987
+        ],
+        "meanMaxAbsDifferenceSrgb8": 0.0,
+        "broadLuminanceStdBefore": 10.178663327023598,
+        "broadLuminanceStdAfter": 3.150792841151737,
+        "highFrequencyCorrelationInner": 0.9996783242829407,
+        "pixelRMSESrgb8": 14.44355574330917
+      }
+    },
+    {
+      "id": "floor-spc-kx7008",
+      "before": {
+        "meanSrgb8": [
+          161.30058786106153,
+          138.6497083415956,
+          111.42181200013219
+        ],
+        "mirrorPeriodCorrelationX": 0.9900100273679466,
+        "mirrorPeriodCorrelationY": 0.9903440673260874,
+        "measuredPeriodPixels": [
+          229,
+          121
+        ]
+      },
+      "after": {
+        "meanSrgb8": [
+          160.68780054035295,
+          138.07483867902704,
+          110.87345598684645
+        ],
+        "mirrorPeriodCorrelationX": -0.014532142184578649,
+        "mirrorPeriodCorrelationY": 0.24379550702822148,
+        "measuredPeriodPixels": [
+          229,
+          121
+        ]
+      },
+      "renderedMeanDeltaE76": 0.22339483763957949,
+      "derivedTextureMetrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 11.67095851216023,
+          "topBottomMeanAbsSrgb8": 19.541666666666668
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 1.6409155937052933,
+          "topBottomMeanAbsSrgb8": 4.50530303030303
+        },
+        "sourceMeanSrgb8": [
+          160.53234490831056,
+          137.80207764338667,
+          110.44192352711666
+        ],
+        "derivedMeanSrgb8": [
+          160.53234490831056,
+          137.80207764338667,
+          110.44192352711666
+        ],
+        "meanMaxAbsDifferenceSrgb8": 0.0,
+        "broadLuminanceStdBefore": 7.761412860915264,
+        "broadLuminanceStdAfter": 3.517661007721313,
+        "highFrequencyCorrelationInner": 0.9995837673533577,
+        "pixelRMSESrgb8": 6.425406595341936
+      }
+    },
+    {
+      "id": "floor-spc-kx7009",
+      "before": {
+        "meanSrgb8": [
+          168.43265004296384,
+          148.98582089860534,
+          127.7273985392293
+        ],
+        "mirrorPeriodCorrelationX": 0.9849167763904636,
+        "mirrorPeriodCorrelationY": 0.9935500253421852,
+        "measuredPeriodPixels": [
+          229,
+          121
+        ]
+      },
+      "after": {
+        "meanSrgb8": [
+          168.73977439850617,
+          149.49495691222157,
+          128.42386930729063
+        ],
+        "mirrorPeriodCorrelationX": 0.0023934652611150293,
+        "mirrorPeriodCorrelationY": 0.11777707695670739,
+        "measuredPeriodPixels": [
+          229,
+          121
+        ]
+      },
+      "renderedMeanDeltaE76": 0.23202374982015367,
+      "derivedTextureMetrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 34.10586552217453,
+          "topBottomMeanAbsSrgb8": 30.190151515151516
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 2.1030042918454934,
+          "topBottomMeanAbsSrgb8": 6.874242424242424
+        },
+        "sourceMeanSrgb8": [
+          167.98178891923527,
+          148.4774678111588,
+          127.1464104564963
+        ],
+        "derivedMeanSrgb8": [
+          167.98178891923527,
+          148.4774678111588,
+          127.1464104564963
+        ],
+        "meanMaxAbsDifferenceSrgb8": 0.0,
+        "broadLuminanceStdBefore": 10.627024694767732,
+        "broadLuminanceStdAfter": 2.9111307275847396,
+        "highFrequencyCorrelationInner": 0.9998092698906617,
+        "pixelRMSESrgb8": 13.190943424373511
+      }
+    },
+    {
+      "id": "floor-spc-kx7010",
+      "before": {
+        "meanSrgb8": [
+          165.86947873289708,
+          123.21180865390971,
+          81.36020226055919
+        ],
+        "mirrorPeriodCorrelationX": 0.9941881613631955,
+        "mirrorPeriodCorrelationY": 0.9969220285443158,
+        "measuredPeriodPixels": [
+          229,
+          121
+        ]
+      },
+      "after": {
+        "meanSrgb8": [
+          166.2820029000595,
+          123.33568808249058,
+          81.995427862053
+        ],
+        "mirrorPeriodCorrelationX": -0.0071353180756642594,
+        "mirrorPeriodCorrelationY": 0.3852424585920387,
+        "measuredPeriodPixels": [
+          229,
+          121
+        ]
+      },
+      "renderedMeanDeltaE76": 0.2994204002015014,
+      "derivedTextureMetrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 14.778254649499285,
+          "topBottomMeanAbsSrgb8": 30.88712121212121
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 1.9313304721030042,
+          "topBottomMeanAbsSrgb8": 3.143939393939394
+        },
+        "sourceMeanSrgb8": [
+          166.53265704252829,
+          123.39072376121733,
+          81.53968981662115
+        ],
+        "derivedMeanSrgb8": [
+          166.53265704252829,
+          123.39072376121733,
+          81.53968981662115
+        ],
+        "meanMaxAbsDifferenceSrgb8": 0.0,
+        "broadLuminanceStdBefore": 8.423735113436463,
+        "broadLuminanceStdAfter": 3.173275791215938,
+        "highFrequencyCorrelationInner": 0.999129322269232,
+        "pixelRMSESrgb8": 10.937643223148626
+      }
+    },
+    {
+      "id": "floor-spc-kx8005",
+      "before": {
+        "meanSrgb8": [
+          160.64734119902175,
+          99.54657652521647,
+          54.5115031561901
+        ],
+        "mirrorPeriodCorrelationX": 0.9959928874831847,
+        "mirrorPeriodCorrelationY": 0.996090742366242,
+        "measuredPeriodPixels": [
+          229,
+          121
+        ]
+      },
+      "after": {
+        "meanSrgb8": [
+          159.65883299457994,
+          98.64345173177341,
+          54.558113763302266
+        ],
+        "mirrorPeriodCorrelationX": -0.02276715583150342,
+        "mirrorPeriodCorrelationY": 0.2921491565239449,
+        "measuredPeriodPixels": [
+          229,
+          121
+        ]
+      },
+      "renderedMeanDeltaE76": 0.5833622442951676,
+      "derivedTextureMetrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 19.846924177396282,
+          "topBottomMeanAbsSrgb8": 21.447727272727274
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 1.1101573676680974,
+          "topBottomMeanAbsSrgb8": 2.168939393939394
+        },
+        "sourceMeanSrgb8": [
+          159.8796722590714,
+          98.65394069449863,
+          54.304350370659385
+        ],
+        "derivedMeanSrgb8": [
+          159.8796722590714,
+          98.65394069449863,
+          54.304350370659385
+        ],
+        "meanMaxAbsDifferenceSrgb8": 0.0,
+        "broadLuminanceStdBefore": 6.1873482509164575,
+        "broadLuminanceStdAfter": 2.3385891956286424,
+        "highFrequencyCorrelationInner": 0.9981384099174848,
+        "pixelRMSESrgb8": 8.69966767834363
+      }
+    },
+    {
+      "id": "floor-spc-kx8006",
+      "before": {
+        "meanSrgb8": [
+          144.1261546533148,
+          148.70998372331283,
+          151.74105195320246
+        ],
+        "mirrorPeriodCorrelationX": 0.9906978569017578,
+        "mirrorPeriodCorrelationY": 0.9933285141970402,
+        "measuredPeriodPixels": [
+          229,
+          121
+        ]
+      },
+      "after": {
+        "meanSrgb8": [
+          144.04349985954127,
+          148.56118216669972,
+          151.56954359177738
+        ],
+        "mirrorPeriodCorrelationX": -0.02971369787742839,
+        "mirrorPeriodCorrelationY": 0.3085250913813599,
+        "measuredPeriodPixels": [
+          229,
+          121
+        ]
+      },
+      "renderedMeanDeltaE76": 0.05896417450169673,
+      "derivedTextureMetrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 20.377682403433475,
+          "topBottomMeanAbsSrgb8": 28.479545454545455
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 1.9585121602288984,
+          "topBottomMeanAbsSrgb8": 5.4818181818181815
+        },
+        "sourceMeanSrgb8": [
+          143.58316426063206,
+          148.13894849785407,
+          151.14929769801014
+        ],
+        "derivedMeanSrgb8": [
+          143.58316426063206,
+          148.13894849785407,
+          151.14929769801014
+        ],
+        "meanMaxAbsDifferenceSrgb8": 0.0,
+        "broadLuminanceStdBefore": 9.39683739525977,
+        "broadLuminanceStdAfter": 4.428615565583918,
+        "highFrequencyCorrelationInner": 0.9996845316883038,
+        "pixelRMSESrgb8": 9.75996977527626
+      }
+    },
+    {
+      "id": "floor-spc-kx8007",
+      "before": {
+        "meanSrgb8": [
+          218.10120877123404,
+          192.14999545574724,
+          153.712001784652
+        ],
+        "mirrorPeriodCorrelationX": 0.9976280307075615,
+        "mirrorPeriodCorrelationY": 0.9981080052292943,
+        "measuredPeriodPixels": [
+          229,
+          121
+        ]
+      },
+      "after": {
+        "meanSrgb8": [
+          217.58912415724768,
+          191.65862127371273,
+          153.1646300152026
+        ],
+        "mirrorPeriodCorrelationX": -0.015737492674172123,
+        "mirrorPeriodCorrelationY": 0.33707845305297235,
+        "measuredPeriodPixels": [
+          229,
+          121
+        ]
+      },
+      "renderedMeanDeltaE76": 0.18441770685444145,
+      "derivedTextureMetrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 8.526466380543633,
+          "topBottomMeanAbsSrgb8": 35.625
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 0.648068669527897,
+          "topBottomMeanAbsSrgb8": 1.6098484848484849
+        },
+        "sourceMeanSrgb8": [
+          217.7787748731955,
+          191.78726102223956,
+          153.16900117050332
+        ],
+        "derivedMeanSrgb8": [
+          217.7787748731955,
+          191.78726102223956,
+          153.16900117050332
+        ],
+        "meanMaxAbsDifferenceSrgb8": 0.0,
+        "broadLuminanceStdBefore": 7.390022439798959,
+        "broadLuminanceStdAfter": 1.545022930612921,
+        "highFrequencyCorrelationInner": 0.9956161530635012,
+        "pixelRMSESrgb8": 11.355023787867902
+      }
+    },
+    {
+      "id": "floor-spc-kx8008",
+      "before": {
+        "meanSrgb8": [
+          155.5930642309472,
+          149.83142061603542,
+          132.32810124595147
+        ],
+        "mirrorPeriodCorrelationX": 0.9843834605333864,
+        "mirrorPeriodCorrelationY": 0.9868410746549627,
+        "measuredPeriodPixels": [
+          229,
+          121
+        ]
+      },
+      "after": {
+        "meanSrgb8": [
+          155.33845594553506,
+          149.57610177473725,
+          132.07113408024324
+        ],
+        "mirrorPeriodCorrelationX": -0.00483569955206758,
+        "mirrorPeriodCorrelationY": 0.13561478497320048,
+        "measuredPeriodPixels": [
+          229,
+          121
+        ]
+      },
+      "renderedMeanDeltaE76": 0.0972528607276182,
+      "derivedTextureMetrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 22.40486409155937,
+          "topBottomMeanAbsSrgb8": 25.60757575757576
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 2.8426323319027182,
+          "topBottomMeanAbsSrgb8": 6.082575757575758
+        },
+        "sourceMeanSrgb8": [
+          154.91826960593056,
+          149.11770386266093,
+          131.40048770971518
+        ],
+        "derivedMeanSrgb8": [
+          154.91826960593056,
+          149.11770386266093,
+          131.40048770971518
+        ],
+        "meanMaxAbsDifferenceSrgb8": 0.0,
+        "broadLuminanceStdBefore": 5.689720726153504,
+        "broadLuminanceStdAfter": 2.200128847859772,
+        "highFrequencyCorrelationInner": 0.999741879920782,
+        "pixelRMSESrgb8": 7.553682677506168
+      }
+    },
+    {
+      "id": "floor-spc-kx8009",
+      "before": {
+        "meanSrgb8": [
+          176.56167377222553,
+          132.06223973825104,
+          75.00076012955252
+        ],
+        "mirrorPeriodCorrelationX": 0.9767326849018146,
+        "mirrorPeriodCorrelationY": 0.9942971363315007,
+        "measuredPeriodPixels": [
+          229,
+          121
+        ]
+      },
+      "after": {
+        "meanSrgb8": [
+          176.58904256725495,
+          132.03373488003172,
+          75.00189309438827
+        ],
+        "mirrorPeriodCorrelationX": -0.014510514047228132,
+        "mirrorPeriodCorrelationY": 0.23015429846112115,
+        "measuredPeriodPixels": [
+          229,
+          121
+        ]
+      },
+      "renderedMeanDeltaE76": 0.028631034154620802,
+      "derivedTextureMetrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 14.553648068669528,
+          "topBottomMeanAbsSrgb8": 24.977272727272727
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 1.3690987124463518,
+          "topBottomMeanAbsSrgb8": 5.358333333333333
+        },
+        "sourceMeanSrgb8": [
+          176.16817206398753,
+          131.2376219274288,
+          73.42704838080374
+        ],
+        "derivedMeanSrgb8": [
+          176.16817206398753,
+          131.2376219274288,
+          73.42704838080374
+        ],
+        "meanMaxAbsDifferenceSrgb8": 0.0,
+        "broadLuminanceStdBefore": 4.412578712817659,
+        "broadLuminanceStdAfter": 2.507845469036931,
+        "highFrequencyCorrelationInner": 0.9997530259637214,
+        "pixelRMSESrgb8": 6.688758104352464
+      }
+    },
+    {
+      "id": "floor-spc-kx9005",
+      "before": {
+        "meanSrgb8": [
+          168.66492332606254,
+          146.84520416088307,
+          115.07319964967942
+        ],
+        "mirrorPeriodCorrelationX": 0.9912412707488699,
+        "mirrorPeriodCorrelationY": 0.994468849355301,
+        "measuredPeriodPixels": [
+          229,
+          121
+        ]
+      },
+      "after": {
+        "meanSrgb8": [
+          168.16450401546697,
+          146.31435797970784,
+          114.4866698476436
+        ],
+        "mirrorPeriodCorrelationX": -0.037467333516831416,
+        "mirrorPeriodCorrelationY": 0.31456645293948476,
+        "measuredPeriodPixels": [
+          229,
+          121
+        ]
+      },
+      "renderedMeanDeltaE76": 0.20550930148748545,
+      "derivedTextureMetrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 19.28898426323319,
+          "topBottomMeanAbsSrgb8": 24.418181818181818
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 1.6351931330472103,
+          "topBottomMeanAbsSrgb8": 5.465909090909091
+        },
+        "sourceMeanSrgb8": [
+          167.6690206788919,
+          145.6882266874756,
+          113.63086227077643
+        ],
+        "derivedMeanSrgb8": [
+          167.6690206788919,
+          145.6882266874756,
+          113.63086227077643
+        ],
+        "meanMaxAbsDifferenceSrgb8": 0.0,
+        "broadLuminanceStdBefore": 11.317774227531476,
+        "broadLuminanceStdAfter": 5.180775260202269,
+        "highFrequencyCorrelationInner": 0.9996300879313844,
+        "pixelRMSESrgb8": 9.482336701731791
+      }
+    }
+  ],
+  "summary": {
+    "floorCount": 12,
+    "worstRenderedMeanDeltaE76": 0.5833622442951676,
+    "medianCorrelationBefore": 0.9924677266322489,
+    "medianCorrelationAfter": 0.06352780279836223,
+    "minimumFineGrainCorrelation": 0.9956161530635012,
+    "nativeTextureMeanDifferenceMax": 0.0
+  }
+}

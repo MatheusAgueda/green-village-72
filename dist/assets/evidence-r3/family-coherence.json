@@ -1,0 +1,169 @@
+{
+  "logs": [
+    {
+      "label": "audit",
+      "kind": "requestfailed",
+      "url": "http://127.0.0.1:4174/assets/presentation-v3.mp4",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "label": "audit",
+      "kind": "requestfailed",
+      "url": "http://127.0.0.1:4174/assets/expansion-v3.mp4",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "label": "audit",
+      "kind": "requestfailed",
+      "url": "http://127.0.0.1:4174/assets/presentation-v3.mp4",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "label": "audit",
+      "kind": "requestfailed",
+      "url": "http://127.0.0.1:4174/assets/expansion-v3.mp4",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    }
+  ],
+  "reload": {
+    "state": {
+      "schemaVersion": 2,
+      "layout": "t2",
+      "exteriorId": "exterior-3d-gm-gm-16",
+      "exterior": "#c9a661",
+      "floorId": "floor-spc-kx7006",
+      "floor": "#92846c",
+      "interior": "#eeede8",
+      "interiorName": "Branco natural",
+      "kitchen": "linear",
+      "kitchenRef": "kitchen-01",
+      "bathroom": "standard",
+      "bathroomRef": "bathroom-01",
+      "bathroomUV": null,
+      "roof": false,
+      "porch": false,
+      "lighting": "neutral"
+    },
+    "visual": {
+      "view": "exterior",
+      "expansion": 1,
+      "cut": 1.1,
+      "exploded": 0,
+      "roofVisible": true,
+      "wallsVisible": true,
+      "furnitureVisible": true,
+      "doorsOpen": true
+    },
+    "family": "exterior-3d-gm",
+    "active": "exterior-3d-gm-gm-16",
+    "selectedCount": 1,
+    "surface": "exterior"
+  },
+  "recover": {
+    "state": {
+      "schemaVersion": 2,
+      "layout": "t2",
+      "exteriorId": "exterior-3d-gm-gm-16",
+      "exterior": "#c9a661",
+      "floorId": "floor-spc-kx7006",
+      "floor": "#92846c",
+      "interior": "#eeede8",
+      "interiorName": "Branco natural",
+      "kitchen": "linear",
+      "kitchenRef": "kitchen-01",
+      "bathroom": "standard",
+      "bathroomRef": "bathroom-01",
+      "bathroomUV": null,
+      "roof": false,
+      "porch": false,
+      "lighting": "neutral"
+    },
+    "visual": {
+      "view": "exterior",
+      "expansion": 1,
+      "cut": 1.1,
+      "exploded": 0,
+      "roofVisible": true,
+      "wallsVisible": true,
+      "furnitureVisible": true,
+      "doorsOpen": true
+    },
+    "family": "exterior-3d-gm",
+    "active": "exterior-3d-gm-gm-16",
+    "selectedCount": 1,
+    "surface": "exterior"
+  },
+  "kitchen": {
+    "state": {
+      "schemaVersion": 2,
+      "layout": "t2",
+      "exteriorId": "exterior-3d-gm-gm-16",
+      "exterior": "#c9a661",
+      "floorId": "floor-spc-kx7006",
+      "floor": "#92846c",
+      "interior": "#eeede8",
+      "interiorName": "Branco natural",
+      "kitchen": "l",
+      "kitchenRef": "kitchen-01",
+      "bathroom": "standard",
+      "bathroomRef": "bathroom-01",
+      "bathroomUV": null,
+      "roof": false,
+      "porch": false,
+      "lighting": "neutral"
+    },
+    "visual": {
+      "view": "interior",
+      "expansion": 1,
+      "cut": 1.1,
+      "exploded": 0,
+      "roofVisible": true,
+      "wallsVisible": true,
+      "furnitureVisible": true,
+      "doorsOpen": true
+    },
+    "selectedCount": 0
+  },
+  "materials": {
+    "state": {
+      "schemaVersion": 2,
+      "layout": "t2",
+      "exteriorId": "exterior-3d-gm-gm-16",
+      "exterior": "#c9a661",
+      "floorId": "floor-spc-kx7006",
+      "floor": "#92846c",
+      "interior": "#eeede8",
+      "interiorName": "Branco natural",
+      "kitchen": "l",
+      "kitchenRef": "kitchen-01",
+      "bathroom": "standard",
+      "bathroomRef": "bathroom-01",
+      "bathroomUV": null,
+      "roof": false,
+      "porch": false,
+      "lighting": "neutral"
+    },
+    "visual": {
+      "view": "exterior",
+      "expansion": 1,
+      "cut": 1.1,
+      "exploded": 0,
+      "roofVisible": true,
+      "wallsVisible": true,
+      "furnitureVisible": true,
+      "doorsOpen": true
+    },
+    "family": "exterior-3d-gm",
+    "active": "exterior-3d-gm-gm-16",
+    "selectedCount": 1,
+    "surface": "exterior"
+  }
+}

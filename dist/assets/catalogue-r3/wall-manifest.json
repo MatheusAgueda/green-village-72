@@ -1,0 +1,3485 @@
+{
+  "revision": "R3-wall-original-derived-v1",
+  "notManufacturerCertified": true,
+  "entries": [
+    {
+      "id": "exterior-3d-textures-tijolo-cinza",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 7,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "i648d04bce83bbc0b8477f66e28ab89741",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/exterior-3d-textures-tijolo-cinza.jpg",
+        "retainedOriginalSha256": "84692a95deaad9f32c60cdaf1434f3000ac191b81083ea559eee9294f7cf48f2",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/exterior-3d-textures-tijolo-cinza.jpg",
+      "originalDimensionsPx": [
+        480,
+        300
+      ],
+      "referenceCropAsset": "textures/exterior-3d-textures-tijolo-cinza.png",
+      "normalMap": null,
+      "roughnessMap": null,
+      "bumpMap": null,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "cropRectPx": [
+        58,
+        16,
+        460,
+        283
+      ],
+      "dimensionsPx": [
+        402,
+        267
+      ],
+      "sourceFootprintM": [
+        0.55275,
+        0.36712
+      ],
+      "meanSrgb": [
+        0.44164796930380773,
+        0.46456134543555994,
+        0.4810766977333352
+      ],
+      "processing": "Smooth border reconciliation only; retain source masonry joint geometry, pixel aspect and regular repeat. Never randomise, mirror or rotate structured masonry.",
+      "remainingLimit": "Perspective and nonuniform mortar in the catalogue photograph remain; smooth reconciliation cannot certify geometric seam alignment.",
+      "mode": "structured-regular-repeat",
+      "derivedAsset": "derived/exterior-3d-textures-tijolo-cinza.png",
+      "exactCropAsset": "crops/exterior-3d-textures-tijolo-cinza.png",
+      "sha256": "9ded7d83e81032a188eef494eae40327c7b789314bf66364e8e1bfc32a04997c",
+      "metrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 6.850187265917603,
+          "topBottomMeanAbsSrgb8": 7.298507462686567
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 1.515605493133583,
+          "topBottomMeanAbsSrgb8": 1.4013266998341625
+        },
+        "referenceMeanSrgb8": [
+          112.62023217247098,
+          118.46314308606779,
+          122.67455792200049
+        ],
+        "derivedMeanSrgb8": [
+          112.62023217247098,
+          118.46314308606779,
+          122.67455792200049
+        ],
+        "meanMaxAbsDifferenceSrgb8": 0.0
+      }
+    },
+    {
+      "id": "exterior-3d-textures-tijolo-bordo",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 7,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "ide39203e102bd5dd82f16c6866987b1b1",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/exterior-3d-textures-tijolo-bordo.jpg",
+        "retainedOriginalSha256": "5dacec9d490b176ddbf3a28d875b9482f88eba4dc4b88c00dfa0f498d6fe068e",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/exterior-3d-textures-tijolo-bordo.jpg",
+      "originalDimensionsPx": [
+        480,
+        300
+      ],
+      "referenceCropAsset": "textures/exterior-3d-textures-tijolo-bordo.png",
+      "normalMap": null,
+      "roughnessMap": null,
+      "bumpMap": null,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "cropRectPx": [
+        6,
+        70,
+        340,
+        268
+      ],
+      "dimensionsPx": [
+        334,
+        198
+      ],
+      "sourceFootprintM": [
+        0.45925,
+        0.27225
+      ],
+      "meanSrgb": [
+        0.44745494157258864,
+        0.36747841215963795,
+        0.3800300172086012
+      ],
+      "processing": "Smooth border reconciliation only; retain source masonry joint geometry, pixel aspect and regular repeat. Never randomise, mirror or rotate structured masonry.",
+      "remainingLimit": "Perspective and nonuniform mortar in the catalogue photograph remain; smooth reconciliation cannot certify geometric seam alignment.",
+      "mode": "structured-regular-repeat",
+      "derivedAsset": "derived/exterior-3d-textures-tijolo-bordo.png",
+      "exactCropAsset": "crops/exterior-3d-textures-tijolo-bordo.png",
+      "sha256": "d429c8be9691b2a4aec3500801a681b8414e04071352e3532b9572f6279660ce",
+      "metrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 8.715488215488216,
+          "topBottomMeanAbsSrgb8": 9.048902195608783
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 1.8148148148148149,
+          "topBottomMeanAbsSrgb8": 1.1826347305389222
+        },
+        "referenceMeanSrgb8": [
+          114.1010101010101,
+          93.70699510070767,
+          96.90765438819331
+        ],
+        "derivedMeanSrgb8": [
+          114.1010101010101,
+          93.70699510070767,
+          96.90765438819331
+        ],
+        "meanMaxAbsDifferenceSrgb8": 0.0
+      }
+    },
+    {
+      "id": "exterior-3d-textures-tijolo-creme",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 7,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "i1e0382431c599a37d6419a2f30570d6e1",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/exterior-3d-textures-tijolo-creme.jpg",
+        "retainedOriginalSha256": "d864dc09b6046523f6996a5d91b46544bdfa2c2489b35811100314b9367d964d",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/exterior-3d-textures-tijolo-creme.jpg",
+      "originalDimensionsPx": [
+        480,
+        300
+      ],
+      "referenceCropAsset": "textures/exterior-3d-textures-tijolo-creme.png",
+      "normalMap": null,
+      "roughnessMap": null,
+      "bumpMap": null,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "cropRectPx": [
+        8,
+        8,
+        414,
+        209
+      ],
+      "dimensionsPx": [
+        406,
+        201
+      ],
+      "sourceFootprintM": [
+        0.55825,
+        0.27637
+      ],
+      "meanSrgb": [
+        0.7248312191577608,
+        0.6250869193105274,
+        0.4005345147151329
+      ],
+      "processing": "Smooth border reconciliation only; retain source masonry joint geometry, pixel aspect and regular repeat. Never randomise, mirror or rotate structured masonry.",
+      "remainingLimit": "Perspective and nonuniform mortar in the catalogue photograph remain; smooth reconciliation cannot certify geometric seam alignment.",
+      "mode": "structured-regular-repeat",
+      "derivedAsset": "derived/exterior-3d-textures-tijolo-creme.png",
+      "exactCropAsset": "crops/exterior-3d-textures-tijolo-creme.png",
+      "sha256": "1706763d64ea30fd9e24f8cb91fbbe154d4329da385f7d1f3733a64a5e97ff54",
+      "metrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 6.5787728026534,
+          "topBottomMeanAbsSrgb8": 10.638752052545156
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 1.3897180762852404,
+          "topBottomMeanAbsSrgb8": 0.9655172413793104
+        },
+        "referenceMeanSrgb8": [
+          184.83196088522902,
+          159.3971644241845,
+          102.13630125235889
+        ],
+        "derivedMeanSrgb8": [
+          184.83196088522902,
+          159.3971644241845,
+          102.13630125235889
+        ],
+        "meanMaxAbsDifferenceSrgb8": 0.0
+      }
+    },
+    {
+      "id": "exterior-3d-textures-tijolo-vermelho",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 7,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "i0597dafd6403f8a40fec3fc5e865a5f51",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/exterior-3d-textures-tijolo-vermelho.jpg",
+        "retainedOriginalSha256": "535213b6c2f38787f6a92dbcd4adc133f504ba39d2a37a4f449b509de35f4943",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/exterior-3d-textures-tijolo-vermelho.jpg",
+      "originalDimensionsPx": [
+        480,
+        300
+      ],
+      "referenceCropAsset": "textures/exterior-3d-textures-tijolo-vermelho.png",
+      "normalMap": null,
+      "roughnessMap": null,
+      "bumpMap": null,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "cropRectPx": [
+        68,
+        68,
+        408,
+        270
+      ],
+      "dimensionsPx": [
+        340,
+        202
+      ],
+      "sourceFootprintM": [
+        0.4675,
+        0.27775
+      ],
+      "meanSrgb": [
+        0.5829342674751904,
+        0.251150147886761,
+        0.2075324608585426
+      ],
+      "processing": "Smooth border reconciliation only; retain source masonry joint geometry, pixel aspect and regular repeat. Never randomise, mirror or rotate structured masonry.",
+      "remainingLimit": "Perspective and nonuniform mortar in the catalogue photograph remain; smooth reconciliation cannot certify geometric seam alignment.",
+      "mode": "structured-regular-repeat",
+      "derivedAsset": "derived/exterior-3d-textures-tijolo-vermelho.png",
+      "exactCropAsset": "crops/exterior-3d-textures-tijolo-vermelho.png",
+      "sha256": "e77994ee86681d1fa234b6bf0694ffb0bfe20f4f422c3d0d398f120be2f59d75",
+      "metrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 11.567656765676567,
+          "topBottomMeanAbsSrgb8": 7.004901960784314
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 1.863036303630363,
+          "topBottomMeanAbsSrgb8": 0.9754901960784313
+        },
+        "referenceMeanSrgb8": [
+          148.64823820617354,
+          64.04328771112405,
+          52.92077751892836
+        ],
+        "derivedMeanSrgb8": [
+          148.64823820617354,
+          64.04328771112405,
+          52.92077751892836
+        ],
+        "meanMaxAbsDifferenceSrgb8": 0.0
+      }
+    },
+    {
+      "id": "exterior-3d-textures-pedra-areia",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 7,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "i2b81e0f4f916457df5361cd1a00f53311",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/exterior-3d-textures-pedra-areia.jpg",
+        "retainedOriginalSha256": "86d9c44b075bd84f45c9f37956ceb6479f99b361646605cc9fdf6a242a7a0042",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/exterior-3d-textures-pedra-areia.jpg",
+      "originalDimensionsPx": [
+        480,
+        300
+      ],
+      "referenceCropAsset": "textures/exterior-3d-textures-pedra-areia.png",
+      "normalMap": null,
+      "roughnessMap": null,
+      "bumpMap": null,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "cropRectPx": [
+        86,
+        32,
+        428,
+        280
+      ],
+      "dimensionsPx": [
+        342,
+        248
+      ],
+      "sourceFootprintM": [
+        0.47025,
+        0.341
+      ],
+      "meanSrgb": [
+        0.7179548993715578,
+        0.6586670199111525,
+        0.6330080155057685
+      ],
+      "processing": "Smooth border reconciliation only; retain source masonry joint geometry, pixel aspect and regular repeat. Never randomise, mirror or rotate structured masonry.",
+      "remainingLimit": "Perspective and nonuniform mortar in the catalogue photograph remain; smooth reconciliation cannot certify geometric seam alignment.",
+      "mode": "structured-regular-repeat",
+      "derivedAsset": "derived/exterior-3d-textures-pedra-areia.png",
+      "exactCropAsset": "crops/exterior-3d-textures-pedra-areia.png",
+      "sha256": "d8296512a49efc01addafda37302d4d32c771807defed85ed27cf88206e24190",
+      "metrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 5.908602150537634,
+          "topBottomMeanAbsSrgb8": 6.205653021442495
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 1.3884408602150538,
+          "topBottomMeanAbsSrgb8": 1.1910331384015596
+        },
+        "referenceMeanSrgb8": [
+          183.07849933974722,
+          167.9600900773439,
+          161.41704395397096
+        ],
+        "derivedMeanSrgb8": [
+          183.07849933974722,
+          167.9600900773439,
+          161.41704395397096
+        ],
+        "meanMaxAbsDifferenceSrgb8": 0.0
+      }
+    },
+    {
+      "id": "exterior-3d-textures-bloco-cinza",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 7,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "i0c6f64c2f0146fe81ee3529b5a1a85811",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/exterior-3d-textures-bloco-cinza.jpg",
+        "retainedOriginalSha256": "cf667ecd0aa27727f31154c48d0c356fd704de09dec382f20543821d58a7a951",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/exterior-3d-textures-bloco-cinza.jpg",
+      "originalDimensionsPx": [
+        480,
+        300
+      ],
+      "referenceCropAsset": "textures/exterior-3d-textures-bloco-cinza.png",
+      "normalMap": null,
+      "roughnessMap": null,
+      "bumpMap": null,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "cropRectPx": [
+        22,
+        16,
+        438,
+        239
+      ],
+      "dimensionsPx": [
+        416,
+        223
+      ],
+      "sourceFootprintM": [
+        0.69333,
+        0.37167
+      ],
+      "meanSrgb": [
+        0.44294935204161,
+        0.5000822207116721,
+        0.5362236978268369
+      ],
+      "processing": "Smooth border reconciliation only; retain source masonry joint geometry, pixel aspect and regular repeat. Never randomise, mirror or rotate structured masonry.",
+      "remainingLimit": "Perspective and nonuniform mortar in the catalogue photograph remain; smooth reconciliation cannot certify geometric seam alignment.",
+      "mode": "structured-regular-repeat",
+      "derivedAsset": "derived/exterior-3d-textures-bloco-cinza.png",
+      "exactCropAsset": "crops/exterior-3d-textures-bloco-cinza.png",
+      "sha256": "116c59f32500630aa1b2a3e86e8a76bc317d9d608ab4a89276d060047345c5de",
+      "metrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 9.315396113602391,
+          "topBottomMeanAbsSrgb8": 17.923878205128204
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 1.8011958146487295,
+          "topBottomMeanAbsSrgb8": 3.0128205128205128
+        },
+        "referenceMeanSrgb8": [
+          112.95208477061055,
+          127.52096628147638,
+          136.7370429458434
+        ],
+        "derivedMeanSrgb8": [
+          112.95208477061055,
+          127.52096628147638,
+          136.7370429458434
+        ],
+        "meanMaxAbsDifferenceSrgb8": 0.0
+      }
+    },
+    {
+      "id": "exterior-3d-textures-tijolo-castanho",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 7,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "i7c4818bfdabef950bf6b7cba20fc159e1",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/exterior-3d-textures-tijolo-castanho.jpg",
+        "retainedOriginalSha256": "ebefc5ee31aec7af0efa5ef62a69a5384720cd34cc7acd34047366cf7807456a",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/exterior-3d-textures-tijolo-castanho.jpg",
+      "originalDimensionsPx": [
+        480,
+        300
+      ],
+      "referenceCropAsset": "textures/exterior-3d-textures-tijolo-castanho.png",
+      "normalMap": null,
+      "roughnessMap": null,
+      "bumpMap": null,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "cropRectPx": [
+        78,
+        58,
+        412,
+        278
+      ],
+      "dimensionsPx": [
+        334,
+        220
+      ],
+      "sourceFootprintM": [
+        0.55667,
+        0.36667
+      ],
+      "meanSrgb": [
+        0.34959829005091425,
+        0.24554943588758313,
+        0.2449020675227086
+      ],
+      "processing": "Smooth border reconciliation only; retain source masonry joint geometry, pixel aspect and regular repeat. Never randomise, mirror or rotate structured masonry.",
+      "remainingLimit": "Perspective and nonuniform mortar in the catalogue photograph remain; smooth reconciliation cannot certify geometric seam alignment.",
+      "mode": "structured-regular-repeat",
+      "derivedAsset": "derived/exterior-3d-textures-tijolo-castanho.png",
+      "exactCropAsset": "crops/exterior-3d-textures-tijolo-castanho.png",
+      "sha256": "6cc7dd6d8d5c8245d9ab0665d18d6e6488a0d32f86b7a86b530e091e273faade",
+      "metrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 15.18030303030303,
+          "topBottomMeanAbsSrgb8": 17.706586826347305
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 3.128787878787879,
+          "topBottomMeanAbsSrgb8": 3.1277445109780437
+        },
+        "referenceMeanSrgb8": [
+          89.14756396298313,
+          62.6151061513337,
+          62.45002721829069
+        ],
+        "derivedMeanSrgb8": [
+          89.14756396298313,
+          62.6151061513337,
+          62.45002721829069
+        ],
+        "meanMaxAbsDifferenceSrgb8": 0.0
+      }
+    },
+    {
+      "id": "exterior-3d-textures-pedra-bege",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 7,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "ia9728a3b6e226b996b439493df7d3ef41",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/exterior-3d-textures-pedra-bege.jpg",
+        "retainedOriginalSha256": "48a442ab41da0e46918b042e308af1c1b9e6b3e9b8566d11c2d274960f2bc3cc",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/exterior-3d-textures-pedra-bege.jpg",
+      "originalDimensionsPx": [
+        480,
+        300
+      ],
+      "referenceCropAsset": "textures/exterior-3d-textures-pedra-bege.png",
+      "normalMap": null,
+      "roughnessMap": null,
+      "bumpMap": null,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "cropRectPx": [
+        92,
+        16,
+        452,
+        269
+      ],
+      "dimensionsPx": [
+        360,
+        253
+      ],
+      "sourceFootprintM": [
+        0.6,
+        0.42167
+      ],
+      "meanSrgb": [
+        0.6770731612803225,
+        0.6036520791891636,
+        0.573834379601643
+      ],
+      "processing": "Smooth border reconciliation only; retain source masonry joint geometry, pixel aspect and regular repeat. Never randomise, mirror or rotate structured masonry.",
+      "remainingLimit": "Perspective and nonuniform mortar in the catalogue photograph remain; smooth reconciliation cannot certify geometric seam alignment.",
+      "mode": "structured-regular-repeat",
+      "derivedAsset": "derived/exterior-3d-textures-pedra-bege.png",
+      "exactCropAsset": "crops/exterior-3d-textures-pedra-bege.png",
+      "sha256": "063a9aac2c70872328be633ff52ebe1e91843bb230ff06e62c94ad2f35a71566",
+      "metrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 14.507246376811594,
+          "topBottomMeanAbsSrgb8": 16.82777777777778
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 2.450592885375494,
+          "topBottomMeanAbsSrgb8": 3.026851851851852
+        },
+        "referenceMeanSrgb8": [
+          172.65365612648222,
+          153.93128019323672,
+          146.32776679841896
+        ],
+        "derivedMeanSrgb8": [
+          172.65365612648222,
+          153.93128019323672,
+          146.32776679841896
+        ],
+        "meanMaxAbsDifferenceSrgb8": 0.0
+      }
+    },
+    {
+      "id": "exterior-3d-textures-tijolo-multicor",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 7,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "ida048a296a81b287de96cd9a3e0f85061",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/exterior-3d-textures-tijolo-multicor.jpg",
+        "retainedOriginalSha256": "1f22ab7436a5a380ffa83c4b8ea108f416b1dc0a72ccb199056ee0b5c0da08b3",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/exterior-3d-textures-tijolo-multicor.jpg",
+      "originalDimensionsPx": [
+        480,
+        300
+      ],
+      "referenceCropAsset": "textures/exterior-3d-textures-tijolo-multicor.png",
+      "normalMap": null,
+      "roughnessMap": null,
+      "bumpMap": null,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "cropRectPx": [
+        46,
+        76,
+        382,
+        280
+      ],
+      "dimensionsPx": [
+        336,
+        204
+      ],
+      "sourceFootprintM": [
+        0.462,
+        0.2805
+      ],
+      "meanSrgb": [
+        0.5943970153420846,
+        0.45478965278922023,
+        0.46336196243203165
+      ],
+      "processing": "Smooth border reconciliation only; retain source masonry joint geometry, pixel aspect and regular repeat. Never randomise, mirror or rotate structured masonry.",
+      "remainingLimit": "Perspective and nonuniform mortar in the catalogue photograph remain; smooth reconciliation cannot certify geometric seam alignment.",
+      "mode": "structured-regular-repeat",
+      "derivedAsset": "derived/exterior-3d-textures-tijolo-multicor.png",
+      "exactCropAsset": "crops/exterior-3d-textures-tijolo-multicor.png",
+      "sha256": "cb3be033ad5c13b0b542a02c888b38f56c11d2a4955a8ecb86ea78f5ac01d49f",
+      "metrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 19.447712418300654,
+          "topBottomMeanAbsSrgb8": 14.01388888888889
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 2.450980392156863,
+          "topBottomMeanAbsSrgb8": 1.8680555555555556
+        },
+        "referenceMeanSrgb8": [
+          151.57123891223156,
+          115.97136146125116,
+          118.15730042016807
+        ],
+        "derivedMeanSrgb8": [
+          151.57123891223156,
+          115.97136146125116,
+          118.15730042016807
+        ],
+        "meanMaxAbsDifferenceSrgb8": 0.0
+      }
+    },
+    {
+      "id": "exterior-3d-textures-tijolo-ardosia",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 7,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "i188ba72fe6b70e004f29f21823b1104b1",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/exterior-3d-textures-tijolo-ardosia.jpg",
+        "retainedOriginalSha256": "a44098c46e0b97cbc23fd43fa78d24b0105fcd281ff143c5267f1089cd3e876e",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/exterior-3d-textures-tijolo-ardosia.jpg",
+      "originalDimensionsPx": [
+        480,
+        300
+      ],
+      "referenceCropAsset": "textures/exterior-3d-textures-tijolo-ardosia.png",
+      "normalMap": null,
+      "roughnessMap": null,
+      "bumpMap": null,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "cropRectPx": [
+        30,
+        20,
+        470,
+        263
+      ],
+      "dimensionsPx": [
+        440,
+        243
+      ],
+      "sourceFootprintM": [
+        0.605,
+        0.33413
+      ],
+      "meanSrgb": [
+        0.3558560184268245,
+        0.42871885155109557,
+        0.48471934303088987
+      ],
+      "processing": "Smooth border reconciliation only; retain source masonry joint geometry, pixel aspect and regular repeat. Never randomise, mirror or rotate structured masonry.",
+      "remainingLimit": "Perspective and nonuniform mortar in the catalogue photograph remain; smooth reconciliation cannot certify geometric seam alignment.",
+      "mode": "structured-regular-repeat",
+      "derivedAsset": "derived/exterior-3d-textures-tijolo-ardosia.png",
+      "exactCropAsset": "crops/exterior-3d-textures-tijolo-ardosia.png",
+      "sha256": "ad414d66d8860e19d5288980fa8ce24d1b7ef7daa5f98b2aecd9eed44a9366f9",
+      "metrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 9.303155006858711,
+          "topBottomMeanAbsSrgb8": 10.6
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 1.6213991769547325,
+          "topBottomMeanAbsSrgb8": 1.2636363636363637
+        },
+        "referenceMeanSrgb8": [
+          90.74328469884026,
+          109.32330714552937,
+          123.60343247287692
+        ],
+        "derivedMeanSrgb8": [
+          90.74328469884026,
+          109.32330714552937,
+          123.60343247287692
+        ],
+        "meanMaxAbsDifferenceSrgb8": 0.0
+      }
+    },
+    {
+      "id": "exterior-3d-textures-tijolo-rustico",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 7,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "i65c9cfaca74368b7dff8edfd615617441",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/exterior-3d-textures-tijolo-rustico.jpg",
+        "retainedOriginalSha256": "b722de36bbb99e8bd004a87222dbc2b82848665b066c978565bc0131387b419b",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/exterior-3d-textures-tijolo-rustico.jpg",
+      "originalDimensionsPx": [
+        480,
+        300
+      ],
+      "referenceCropAsset": "textures/exterior-3d-textures-tijolo-rustico.png",
+      "normalMap": null,
+      "roughnessMap": null,
+      "bumpMap": null,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "cropRectPx": [
+        98,
+        70,
+        474,
+        250
+      ],
+      "dimensionsPx": [
+        376,
+        180
+      ],
+      "sourceFootprintM": [
+        0.517,
+        0.2475
+      ],
+      "meanSrgb": [
+        0.4949481411950123,
+        0.2793779840541417,
+        0.2854729291243684
+      ],
+      "processing": "Smooth border reconciliation only; retain source masonry joint geometry, pixel aspect and regular repeat. Never randomise, mirror or rotate structured masonry.",
+      "remainingLimit": "Perspective and nonuniform mortar in the catalogue photograph remain; smooth reconciliation cannot certify geometric seam alignment.",
+      "mode": "structured-regular-repeat",
+      "derivedAsset": "derived/exterior-3d-textures-tijolo-rustico.png",
+      "exactCropAsset": "crops/exterior-3d-textures-tijolo-rustico.png",
+      "sha256": "c3a9966800522ed27122f063d0d87995cf0b0ba3b580a082d7bebe4e9e01579f",
+      "metrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 5.287037037037037,
+          "topBottomMeanAbsSrgb8": 8.082446808510639
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 0.9092592592592592,
+          "topBottomMeanAbsSrgb8": 0.9219858156028369
+        },
+        "referenceMeanSrgb8": [
+          126.21177600472814,
+          71.24138593380614,
+          72.79559692671394
+        ],
+        "derivedMeanSrgb8": [
+          126.21177600472814,
+          71.24138593380614,
+          72.79559692671394
+        ],
+        "meanMaxAbsDifferenceSrgb8": 0.0
+      }
+    },
+    {
+      "id": "exterior-3d-textures-granito-cinza",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 7,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "i1099d475c5ae32d733648e95db7ffb041",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/exterior-3d-textures-granito-cinza.jpg",
+        "retainedOriginalSha256": "9157b0120be05348b8e25d89d816140efe5ba3004cbbf1849342149a6c5e685c",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/exterior-3d-textures-granito-cinza.jpg",
+      "originalDimensionsPx": [
+        480,
+        300
+      ],
+      "referenceCropAsset": "textures/exterior-3d-textures-granito-cinza.png",
+      "normalMap": null,
+      "roughnessMap": null,
+      "bumpMap": null,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "cropRectPx": [
+        19,
+        12,
+        460,
+        288
+      ],
+      "dimensionsPx": [
+        441,
+        276
+      ],
+      "sourceFootprintM": [
+        0.27562,
+        0.1725
+      ],
+      "meanSrgb": [
+        0.6506042352528772,
+        0.6301345336846493,
+        0.5962660104299369
+      ],
+      "processing": "Smooth border reconciliation only; retain source masonry joint geometry, pixel aspect and regular repeat. Never randomise, mirror or rotate structured masonry.",
+      "remainingLimit": "Perspective and nonuniform mortar in the catalogue photograph remain; smooth reconciliation cannot certify geometric seam alignment.",
+      "mode": "structured-regular-repeat",
+      "derivedAsset": "derived/exterior-3d-textures-granito-cinza.png",
+      "exactCropAsset": "crops/exterior-3d-textures-granito-cinza.png",
+      "sha256": "04171de62fb801cf6ed7b507abe9da275a8aa3af0b45daec6c91686a32abc752",
+      "metrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 23.268115942028984,
+          "topBottomMeanAbsSrgb8": 26.19198790627362
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 4.007246376811594,
+          "topBottomMeanAbsSrgb8": 4.73167044595616
+        },
+        "referenceMeanSrgb8": [
+          165.9040799894837,
+          160.6843060895856,
+          152.0478326596339
+        ],
+        "derivedMeanSrgb8": [
+          165.9040799894837,
+          160.6843060895856,
+          152.0478326596339
+        ],
+        "meanMaxAbsDifferenceSrgb8": 0.0
+      }
+    },
+    {
+      "id": "exterior-3d-gm-gm-16",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 8,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "i3784c4c7152c1174a56b990b168404bc1",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/exterior-3d-gm-gm-16.jpg",
+        "retainedOriginalSha256": "2c79ba9c2864520db1420cacd1f1eab72b470c57b2699ed9c994269d4be8b212",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/exterior-3d-gm-gm-16.jpg",
+      "originalDimensionsPx": [
+        480,
+        300
+      ],
+      "referenceCropAsset": "textures/exterior-3d-gm-gm-16.png",
+      "normalMap": null,
+      "roughnessMap": null,
+      "bumpMap": null,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "cropRationale": "Select a clean contiguous grain region: omit isolated knot for GM16/19 to avoid multiplying that one knot into dots; omit photographed glare for the two standard woods. Original reference retains the whole photograph. This preview cannot represent the full distribution of knots in the product.",
+      "cropRectPx": [
+        80,
+        34,
+        468,
+        125
+      ],
+      "losslessPreprocess": "transpose",
+      "dimensionsPx": [
+        91,
+        388
+      ],
+      "sourceFootprintM": [
+        0.322,
+        1.3729230769230767
+      ],
+      "boardDimensionsM": [
+        0.28,
+        24.0
+      ],
+      "grainAxis": "horizontal",
+      "jointWidthM": 0.0012,
+      "meanSrgb": [
+        0.7869194211494852,
+        0.6502438038748117,
+        0.37984176126590985
+      ],
+      "panelProfile": {
+        "pitchM": 0.28,
+        "depthM": 0.0012,
+        "grooveWidthM": 0.004
+      },
+      "profileEvidence": "Horizontal grooves are visible in the source for GM/lamela/wood finishes; standard wood pitch is an optional illustrative siding layout, not documented product geometry.",
+      "profileRecommended": true,
+      "grainScaleBasis": "Both world-coordinate axes scaled equally so the clean source band spans at least one estimated panel pitch without cross-grain repetition. Pixel aspect remains unchanged. No physical sample dimensions are documented.",
+      "processing": "Selected an unlabelled band of photographed grain, removed smooth illumination and made periodic, transposed without resampling; restored the R2 reference mean. Runtime keeps original grain, decorrelates phases, and adds estimated horizontal seams. No generated wood.",
+      "mode": "photo-grain-horizontal-panels",
+      "derivedAsset": "derived/exterior-3d-gm-gm-16.png",
+      "exactCropAsset": "crops/exterior-3d-gm-gm-16.png",
+      "sha256": "a9b22b197a10ea30fa1053f77fe0ea57449e28153e53b09cfbb9d432c4fd2485",
+      "metrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 19.04982817869416,
+          "topBottomMeanAbsSrgb8": 14.340659340659341
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 1.3256013745704467,
+          "topBottomMeanAbsSrgb8": 2.8241758241758244
+        },
+        "referenceMeanSrgb8": [
+          200.66445239311872,
+          165.812169988077,
+          96.85964912280701
+        ],
+        "derivedMeanSrgb8": [
+          200.66446697632264,
+          165.81219553642234,
+          96.85966353234394
+        ],
+        "meanMaxAbsDifferenceSrgb8": 2.5548345348624935e-05
+      }
+    },
+    {
+      "id": "exterior-3d-gm-gm-17",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 8,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "i85913408356a28bbaf06512e19057cd91",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/exterior-3d-gm-gm-17.jpg",
+        "retainedOriginalSha256": "c31d84c4e3f0b52d497e132382c9f1d6fc4f80c919c1700eb395e138f38f627b",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/exterior-3d-gm-gm-17.jpg",
+      "originalDimensionsPx": [
+        480,
+        300
+      ],
+      "referenceCropAsset": "textures/exterior-3d-gm-gm-17.png",
+      "normalMap": null,
+      "roughnessMap": null,
+      "bumpMap": null,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "cropRectPx": [
+        12,
+        30,
+        468,
+        118
+      ],
+      "losslessPreprocess": "transpose",
+      "dimensionsPx": [
+        88,
+        456
+      ],
+      "sourceFootprintM": [
+        0.322,
+        1.6685454545454546
+      ],
+      "boardDimensionsM": [
+        0.28,
+        24.0
+      ],
+      "grainAxis": "horizontal",
+      "jointWidthM": 0.0012,
+      "meanSrgb": [
+        0.5300259918309004,
+        0.411625854565979,
+        0.2361066441565555
+      ],
+      "panelProfile": {
+        "pitchM": 0.28,
+        "depthM": 0.0012,
+        "grooveWidthM": 0.004
+      },
+      "profileEvidence": "Horizontal grooves are visible in the source for GM/lamela/wood finishes; standard wood pitch is an optional illustrative siding layout, not documented product geometry.",
+      "profileRecommended": true,
+      "grainScaleBasis": "Both world-coordinate axes scaled equally so the clean source band spans at least one estimated panel pitch without cross-grain repetition. Pixel aspect remains unchanged. No physical sample dimensions are documented.",
+      "processing": "Selected an unlabelled band of photographed grain, removed smooth illumination and made periodic, transposed without resampling; restored the R2 reference mean. Runtime keeps original grain, decorrelates phases, and adds estimated horizontal seams. No generated wood.",
+      "mode": "photo-grain-horizontal-panels",
+      "derivedAsset": "derived/exterior-3d-gm-gm-17.png",
+      "exactCropAsset": "crops/exterior-3d-gm-gm-17.png",
+      "sha256": "0a343482371514d138c010d36475a423c12071116650a8ba3a26b544a5339929",
+      "metrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 18.361842105263158,
+          "topBottomMeanAbsSrgb8": 20.992424242424242
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 1.5657894736842106,
+          "topBottomMeanAbsSrgb8": 3.2234848484848486
+        },
+        "referenceMeanSrgb8": [
+          135.1566279168796,
+          104.96459291432464,
+          60.20719425992165
+        ],
+        "derivedMeanSrgb8": [
+          135.15664872408294,
+          104.96461323763955,
+          60.207187001594896
+        ],
+        "meanMaxAbsDifferenceSrgb8": 2.080720335584374e-05
+      }
+    },
+    {
+      "id": "exterior-3d-gm-gm-18",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 8,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "i5ef15a6a5a5fb47bf717014b7335b80a1",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/exterior-3d-gm-gm-18.jpg",
+        "retainedOriginalSha256": "a7c9a042d0acf38d549ad85f74024a441989446c3a403847f8fa0641718edb3f",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/exterior-3d-gm-gm-18.jpg",
+      "originalDimensionsPx": [
+        480,
+        300
+      ],
+      "referenceCropAsset": "textures/exterior-3d-gm-gm-18.png",
+      "normalMap": null,
+      "roughnessMap": null,
+      "bumpMap": null,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "cropRectPx": [
+        12,
+        30,
+        468,
+        118
+      ],
+      "losslessPreprocess": "transpose",
+      "dimensionsPx": [
+        88,
+        456
+      ],
+      "sourceFootprintM": [
+        0.322,
+        1.6685454545454546
+      ],
+      "boardDimensionsM": [
+        0.28,
+        24.0
+      ],
+      "grainAxis": "horizontal",
+      "jointWidthM": 0.0012,
+      "meanSrgb": [
+        0.6552958042355079,
+        0.4111546952284576,
+        0.21298597960730878
+      ],
+      "panelProfile": {
+        "pitchM": 0.28,
+        "depthM": 0.0012,
+        "grooveWidthM": 0.004
+      },
+      "profileEvidence": "Horizontal grooves are visible in the source for GM/lamela/wood finishes; standard wood pitch is an optional illustrative siding layout, not documented product geometry.",
+      "profileRecommended": true,
+      "grainScaleBasis": "Both world-coordinate axes scaled equally so the clean source band spans at least one estimated panel pitch without cross-grain repetition. Pixel aspect remains unchanged. No physical sample dimensions are documented.",
+      "processing": "Selected an unlabelled band of photographed grain, removed smooth illumination and made periodic, transposed without resampling; restored the R2 reference mean. Runtime keeps original grain, decorrelates phases, and adds estimated horizontal seams. No generated wood.",
+      "mode": "photo-grain-horizontal-panels",
+      "derivedAsset": "derived/exterior-3d-gm-gm-18.png",
+      "exactCropAsset": "crops/exterior-3d-gm-gm-18.png",
+      "sha256": "3f1795457be3ce2db2c355a29796967e76fd79ef95a1a0910f8863f8d52c23a8",
+      "metrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 12.655701754385966,
+          "topBottomMeanAbsSrgb8": 29.15530303030303
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 1.3625730994152048,
+          "topBottomMeanAbsSrgb8": 2.3446969696969697
+        },
+        "referenceMeanSrgb8": [
+          167.1004300800545,
+          104.84444728325668,
+          54.31142479986374
+        ],
+        "derivedMeanSrgb8": [
+          167.10042862838915,
+          104.84442284688996,
+          54.31142842902711
+        ],
+        "meanMaxAbsDifferenceSrgb8": 2.4436366729219117e-05
+      }
+    },
+    {
+      "id": "exterior-3d-gm-gm-19",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 8,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "i3aece06a6837d236b4221185ea8eee081",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/exterior-3d-gm-gm-19.jpg",
+        "retainedOriginalSha256": "227251ab5f9d9c3aae896d13e3b47a3764454c5707d39c167db54adb1267e9d5",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/exterior-3d-gm-gm-19.jpg",
+      "originalDimensionsPx": [
+        480,
+        300
+      ],
+      "referenceCropAsset": "textures/exterior-3d-gm-gm-19.png",
+      "normalMap": null,
+      "roughnessMap": null,
+      "bumpMap": null,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "cropRationale": "Select a clean contiguous grain region: omit isolated knot for GM16/19 to avoid multiplying that one knot into dots; omit photographed glare for the two standard woods. Original reference retains the whole photograph. This preview cannot represent the full distribution of knots in the product.",
+      "cropRectPx": [
+        12,
+        22,
+        290,
+        135
+      ],
+      "losslessPreprocess": "transpose",
+      "dimensionsPx": [
+        113,
+        278
+      ],
+      "sourceFootprintM": [
+        0.322,
+        0.7921769911504425
+      ],
+      "boardDimensionsM": [
+        0.28,
+        24.0
+      ],
+      "grainAxis": "horizontal",
+      "jointWidthM": 0.0012,
+      "meanSrgb": [
+        0.6837819074146436,
+        0.5021297353893014,
+        0.3305365188146456
+      ],
+      "panelProfile": {
+        "pitchM": 0.28,
+        "depthM": 0.0012,
+        "grooveWidthM": 0.004
+      },
+      "profileEvidence": "Horizontal grooves are visible in the source for GM/lamela/wood finishes; standard wood pitch is an optional illustrative siding layout, not documented product geometry.",
+      "profileRecommended": true,
+      "grainScaleBasis": "Both world-coordinate axes scaled equally so the clean source band spans at least one estimated panel pitch without cross-grain repetition. Pixel aspect remains unchanged. No physical sample dimensions are documented.",
+      "processing": "Selected an unlabelled band of photographed grain, removed smooth illumination and made periodic, transposed without resampling; restored the R2 reference mean. Runtime keeps original grain, decorrelates phases, and adds estimated horizontal seams. No generated wood.",
+      "mode": "photo-grain-horizontal-panels",
+      "derivedAsset": "derived/exterior-3d-gm-gm-19.png",
+      "exactCropAsset": "crops/exterior-3d-gm-gm-19.png",
+      "sha256": "323c89a1abf174d48471f645285b76e74fb15d5ef248977e155b6688a842d0ef",
+      "metrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 17.21462829736211,
+          "topBottomMeanAbsSrgb8": 19.87905604719764
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 1.4028776978417266,
+          "topBottomMeanAbsSrgb8": 2.9557522123893807
+        },
+        "referenceMeanSrgb8": [
+          174.36438639073413,
+          128.04308252427185,
+          84.28681229773463
+        ],
+        "derivedMeanSrgb8": [
+          174.36435983956198,
+          128.0430699688037,
+          84.28678296301013
+        ],
+        "meanMaxAbsDifferenceSrgb8": 2.9334724501950404e-05
+      }
+    },
+    {
+      "id": "exterior-3d-gm-gm-20",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 8,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "i8ba17aaeefd82cc5f211f9fcd68e32261",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/exterior-3d-gm-gm-20.jpg",
+        "retainedOriginalSha256": "40da7cf959856eabcc92da56ea38252612c6800b57be09b0707c2b24ee50d4f3",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/exterior-3d-gm-gm-20.jpg",
+      "originalDimensionsPx": [
+        480,
+        300
+      ],
+      "referenceCropAsset": "textures/exterior-3d-gm-gm-20.png",
+      "normalMap": null,
+      "roughnessMap": null,
+      "bumpMap": null,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "cropRectPx": [
+        12,
+        30,
+        468,
+        118
+      ],
+      "losslessPreprocess": "transpose",
+      "dimensionsPx": [
+        88,
+        456
+      ],
+      "sourceFootprintM": [
+        0.322,
+        1.6685454545454546
+      ],
+      "boardDimensionsM": [
+        0.28,
+        24.0
+      ],
+      "grainAxis": "horizontal",
+      "jointWidthM": 0.0012,
+      "meanSrgb": [
+        0.6723639123508371,
+        0.3902206258078091,
+        0.14204702575971626
+      ],
+      "panelProfile": {
+        "pitchM": 0.28,
+        "depthM": 0.0012,
+        "grooveWidthM": 0.004
+      },
+      "profileEvidence": "Horizontal grooves are visible in the source for GM/lamela/wood finishes; standard wood pitch is an optional illustrative siding layout, not documented product geometry.",
+      "profileRecommended": true,
+      "grainScaleBasis": "Both world-coordinate axes scaled equally so the clean source band spans at least one estimated panel pitch without cross-grain repetition. Pixel aspect remains unchanged. No physical sample dimensions are documented.",
+      "processing": "Selected an unlabelled band of photographed grain, removed smooth illumination and made periodic, transposed without resampling; restored the R2 reference mean. Runtime keeps original grain, decorrelates phases, and adds estimated horizontal seams. No generated wood.",
+      "mode": "photo-grain-horizontal-panels",
+      "derivedAsset": "derived/exterior-3d-gm-gm-20.png",
+      "exactCropAsset": "crops/exterior-3d-gm-gm-20.png",
+      "sha256": "958476e5742d8404f1aa0b2a9c9c0eb8ccf8d0f445e9c02c6f19e28fb99ffed3",
+      "metrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 7.717105263157895,
+          "topBottomMeanAbsSrgb8": 30.62121212121212
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 0.7697368421052632,
+          "topBottomMeanAbsSrgb8": 2.0265151515151514
+        },
+        "referenceMeanSrgb8": [
+          171.45279764946346,
+          99.50625958099131,
+          36.221991568727645
+        ],
+        "derivedMeanSrgb8": [
+          171.45280103668262,
+          99.50625498405104,
+          36.22201455342903
+        ],
+        "meanMaxAbsDifferenceSrgb8": 2.298470138129005e-05
+      }
+    },
+    {
+      "id": "exterior-3d-gm-gm-21",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 8,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "i373c5cefe6d73b77305121451479249f1",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/exterior-3d-gm-gm-21.jpg",
+        "retainedOriginalSha256": "79e7b88780434bd85f2e2d9af6ed23b24cec3f41451e8afb1038366c989c119d",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/exterior-3d-gm-gm-21.jpg",
+      "originalDimensionsPx": [
+        480,
+        300
+      ],
+      "referenceCropAsset": "textures/exterior-3d-gm-gm-21.png",
+      "normalMap": null,
+      "roughnessMap": null,
+      "bumpMap": null,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "cropRectPx": [
+        12,
+        30,
+        468,
+        118
+      ],
+      "losslessPreprocess": "transpose",
+      "dimensionsPx": [
+        88,
+        456
+      ],
+      "sourceFootprintM": [
+        0.322,
+        1.6685454545454546
+      ],
+      "boardDimensionsM": [
+        0.28,
+        24.0
+      ],
+      "grainAxis": "horizontal",
+      "jointWidthM": 0.0012,
+      "meanSrgb": [
+        0.3702155576930142,
+        0.2801385423868065,
+        0.2040149154534919
+      ],
+      "panelProfile": {
+        "pitchM": 0.28,
+        "depthM": 0.0012,
+        "grooveWidthM": 0.004
+      },
+      "profileEvidence": "Horizontal grooves are visible in the source for GM/lamela/wood finishes; standard wood pitch is an optional illustrative siding layout, not documented product geometry.",
+      "profileRecommended": true,
+      "grainScaleBasis": "Both world-coordinate axes scaled equally so the clean source band spans at least one estimated panel pitch without cross-grain repetition. Pixel aspect remains unchanged. No physical sample dimensions are documented.",
+      "processing": "Selected an unlabelled band of photographed grain, removed smooth illumination and made periodic, transposed without resampling; restored the R2 reference mean. Runtime keeps original grain, decorrelates phases, and adds estimated horizontal seams. No generated wood.",
+      "mode": "photo-grain-horizontal-panels",
+      "derivedAsset": "derived/exterior-3d-gm-gm-21.png",
+      "exactCropAsset": "crops/exterior-3d-gm-gm-21.png",
+      "sha256": "7ef6fe82a51eefd5bfd554dfd7dbeb907244834219029bc758317a69b9125811",
+      "metrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 16.373538011695906,
+          "topBottomMeanAbsSrgb8": 21.814393939393938
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 1.3720760233918128,
+          "topBottomMeanAbsSrgb8": 3.5113636363636362
+        },
+        "referenceMeanSrgb8": [
+          94.40496721171861,
+          71.43532830863566,
+          52.023803440640435
+        ],
+        "derivedMeanSrgb8": [
+          94.40495414673046,
+          71.43533193779905,
+          52.023798843700156
+        ],
+        "meanMaxAbsDifferenceSrgb8": 1.306498815267787e-05
+      }
+    },
+    {
+      "id": "exterior-3d-gm-gm-22",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 8,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "icc138ce1762818859645ed4f95fcc9a81",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/exterior-3d-gm-gm-22.jpg",
+        "retainedOriginalSha256": "b888d7460ebeec0c84efad6d1133ff9c5a9b726a377b272cf9f2559ac0415c5a",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/exterior-3d-gm-gm-22.jpg",
+      "originalDimensionsPx": [
+        480,
+        300
+      ],
+      "referenceCropAsset": "textures/exterior-3d-gm-gm-22.png",
+      "normalMap": null,
+      "roughnessMap": null,
+      "bumpMap": null,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "cropRectPx": [
+        12,
+        30,
+        468,
+        118
+      ],
+      "losslessPreprocess": "transpose",
+      "dimensionsPx": [
+        88,
+        456
+      ],
+      "sourceFootprintM": [
+        0.322,
+        1.6685454545454546
+      ],
+      "boardDimensionsM": [
+        0.28,
+        24.0
+      ],
+      "grainAxis": "horizontal",
+      "jointWidthM": 0.0012,
+      "meanSrgb": [
+        0.7495509666990626,
+        0.6630589955280358,
+        0.5162175081240127
+      ],
+      "panelProfile": {
+        "pitchM": 0.28,
+        "depthM": 0.0012,
+        "grooveWidthM": 0.004
+      },
+      "profileEvidence": "Horizontal grooves are visible in the source for GM/lamela/wood finishes; standard wood pitch is an optional illustrative siding layout, not documented product geometry.",
+      "profileRecommended": true,
+      "grainScaleBasis": "Both world-coordinate axes scaled equally so the clean source band spans at least one estimated panel pitch without cross-grain repetition. Pixel aspect remains unchanged. No physical sample dimensions are documented.",
+      "processing": "Selected an unlabelled band of photographed grain, removed smooth illumination and made periodic, transposed without resampling; restored the R2 reference mean. Runtime keeps original grain, decorrelates phases, and adds estimated horizontal seams. No generated wood.",
+      "mode": "photo-grain-horizontal-panels",
+      "derivedAsset": "derived/exterior-3d-gm-gm-22.png",
+      "exactCropAsset": "crops/exterior-3d-gm-gm-22.png",
+      "sha256": "6e91f5113ee1a3b6f202f00a01748da9884aa2f3d361a09ea225ba581e698dad",
+      "metrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 13.225146198830409,
+          "topBottomMeanAbsSrgb8": 26.738636363636363
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 0.6491228070175439,
+          "topBottomMeanAbsSrgb8": 0.4962121212121212
+        },
+        "referenceMeanSrgb8": [
+          191.13549650826096,
+          169.08004385964912,
+          131.63546457162323
+        ],
+        "derivedMeanSrgb8": [
+          191.1354914274322,
+          169.08001893939394,
+          131.63546650717703
+        ],
+        "meanMaxAbsDifferenceSrgb8": 2.4920255185634232e-05
+      }
+    },
+    {
+      "id": "exterior-3d-gm-gm-23",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 8,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "ifb2a82d8ae94d69cf87f244838a1a7a51",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/exterior-3d-gm-gm-23.jpg",
+        "retainedOriginalSha256": "f7677363984872e65310b631cf9a700d1b0e82aaefcfd088a4b097bf827ffc00",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/exterior-3d-gm-gm-23.jpg",
+      "originalDimensionsPx": [
+        480,
+        300
+      ],
+      "referenceCropAsset": "textures/exterior-3d-gm-gm-23.png",
+      "normalMap": null,
+      "roughnessMap": null,
+      "bumpMap": null,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "cropRectPx": [
+        12,
+        30,
+        468,
+        118
+      ],
+      "losslessPreprocess": "transpose",
+      "dimensionsPx": [
+        88,
+        456
+      ],
+      "sourceFootprintM": [
+        0.322,
+        1.6685454545454546
+      ],
+      "boardDimensionsM": [
+        0.28,
+        24.0
+      ],
+      "grainAxis": "horizontal",
+      "jointWidthM": 0.0012,
+      "meanSrgb": [
+        0.6219440603698472,
+        0.5363948253462516,
+        0.2928157176684334
+      ],
+      "panelProfile": {
+        "pitchM": 0.28,
+        "depthM": 0.0012,
+        "grooveWidthM": 0.004
+      },
+      "profileEvidence": "Horizontal grooves are visible in the source for GM/lamela/wood finishes; standard wood pitch is an optional illustrative siding layout, not documented product geometry.",
+      "profileRecommended": true,
+      "grainScaleBasis": "Both world-coordinate axes scaled equally so the clean source band spans at least one estimated panel pitch without cross-grain repetition. Pixel aspect remains unchanged. No physical sample dimensions are documented.",
+      "processing": "Selected an unlabelled band of photographed grain, removed smooth illumination and made periodic, transposed without resampling; restored the R2 reference mean. Runtime keeps original grain, decorrelates phases, and adds estimated horizontal seams. No generated wood.",
+      "mode": "photo-grain-horizontal-panels",
+      "derivedAsset": "derived/exterior-3d-gm-gm-23.png",
+      "exactCropAsset": "crops/exterior-3d-gm-gm-23.png",
+      "sha256": "f8d246173a3058d659c237d4874b9d0f0d500b0bef9e6ef936011e77c453314c",
+      "metrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 9.826023391812866,
+          "topBottomMeanAbsSrgb8": 7.996212121212121
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 0.6228070175438597,
+          "topBottomMeanAbsSrgb8": 1.0378787878787878
+        },
+        "referenceMeanSrgb8": [
+          158.59573539431102,
+          136.78068046329415,
+          74.66800800545052
+        ],
+        "derivedMeanSrgb8": [
+          158.5957187001595,
+          136.7806768341308,
+          74.66798744019138
+        ],
+        "meanMaxAbsDifferenceSrgb8": 2.056525913474161e-05
+      }
+    },
+    {
+      "id": "exterior-3d-gm-gm-24",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 8,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "ia0b1ca16db436df11a72ec461324aa171",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/exterior-3d-gm-gm-24.jpg",
+        "retainedOriginalSha256": "7a1ccb3616ab2b4e8e60aeafc52f07d948b033e40f6b31a9617a8d68e89e4988",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/exterior-3d-gm-gm-24.jpg",
+      "originalDimensionsPx": [
+        480,
+        300
+      ],
+      "referenceCropAsset": "textures/exterior-3d-gm-gm-24.png",
+      "normalMap": null,
+      "roughnessMap": null,
+      "bumpMap": null,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "cropRectPx": [
+        12,
+        30,
+        468,
+        118
+      ],
+      "losslessPreprocess": "transpose",
+      "dimensionsPx": [
+        88,
+        456
+      ],
+      "sourceFootprintM": [
+        0.322,
+        1.6685454545454546
+      ],
+      "boardDimensionsM": [
+        0.28,
+        24.0
+      ],
+      "grainAxis": "horizontal",
+      "jointWidthM": 0.0012,
+      "meanSrgb": [
+        0.6662199712111041,
+        0.45356467148262813,
+        0.22267146425935389
+      ],
+      "panelProfile": {
+        "pitchM": 0.28,
+        "depthM": 0.0012,
+        "grooveWidthM": 0.004
+      },
+      "profileEvidence": "Horizontal grooves are visible in the source for GM/lamela/wood finishes; standard wood pitch is an optional illustrative siding layout, not documented product geometry.",
+      "profileRecommended": true,
+      "grainScaleBasis": "Both world-coordinate axes scaled equally so the clean source band spans at least one estimated panel pitch without cross-grain repetition. Pixel aspect remains unchanged. No physical sample dimensions are documented.",
+      "processing": "Selected an unlabelled band of photographed grain, removed smooth illumination and made periodic, transposed without resampling; restored the R2 reference mean. Runtime keeps original grain, decorrelates phases, and adds estimated horizontal seams. No generated wood.",
+      "mode": "photo-grain-horizontal-panels",
+      "derivedAsset": "derived/exterior-3d-gm-gm-24.png",
+      "exactCropAsset": "crops/exterior-3d-gm-gm-24.png",
+      "sha256": "f901fea04b1b6251b638db14751cef0e78a57b2fa5fe954724adf2bb3ac90fbd",
+      "metrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 7.894736842105263,
+          "topBottomMeanAbsSrgb8": 21.58712121212121
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 0.7185672514619883,
+          "topBottomMeanAbsSrgb8": 1.5909090909090908
+        },
+        "referenceMeanSrgb8": [
+          169.88609265883156,
+          115.65899122807018,
+          56.78122338613524
+        ],
+        "derivedMeanSrgb8": [
+          169.8860895135566,
+          115.65899122807018,
+          56.781200159489636
+        ],
+        "meanMaxAbsDifferenceSrgb8": 2.3226645602392182e-05
+      }
+    },
+    {
+      "id": "exterior-3d-gm-gm-25",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 8,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "ia3012f0e02a3e698a3fe2b55870d22f71",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/exterior-3d-gm-gm-25.jpg",
+        "retainedOriginalSha256": "be4d61d1d13b696bc327b4993b5c84f86898f7671b8568b43b1bcecfc197ff62",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/exterior-3d-gm-gm-25.jpg",
+      "originalDimensionsPx": [
+        480,
+        300
+      ],
+      "referenceCropAsset": "textures/exterior-3d-gm-gm-25.png",
+      "normalMap": null,
+      "roughnessMap": null,
+      "bumpMap": null,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "cropRectPx": [
+        12,
+        14,
+        468,
+        220
+      ],
+      "dimensionsPx": [
+        456,
+        206
+      ],
+      "sourceFootprintM": [
+        1.14,
+        0.515
+      ],
+      "meanSrgb": [
+        0.45279577083771677,
+        0.37040316978435045,
+        0.372204270909522
+      ],
+      "processing": "Smooth border reconciliation only; retain source masonry joint geometry, pixel aspect and regular repeat. Never randomise, mirror or rotate structured masonry.",
+      "remainingLimit": "Perspective and nonuniform mortar in the catalogue photograph remain; smooth reconciliation cannot certify geometric seam alignment.",
+      "mode": "structured-regular-repeat",
+      "derivedAsset": "derived/exterior-3d-gm-gm-25.png",
+      "exactCropAsset": "crops/exterior-3d-gm-gm-25.png",
+      "sha256": "f2cc158abe517ed4a1ad3a11994cca149147e55366a54e8186bb81008dcd81e4",
+      "metrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 19.114886731391586,
+          "topBottomMeanAbsSrgb8": 12.557017543859649
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 3.23462783171521,
+          "topBottomMeanAbsSrgb8": 3.2748538011695905
+        },
+        "referenceMeanSrgb8": [
+          115.46292156361778,
+          94.45280829500936,
+          94.91208908192812
+        ],
+        "derivedMeanSrgb8": [
+          115.46292156361778,
+          94.45280829500936,
+          94.91208908192812
+        ],
+        "meanMaxAbsDifferenceSrgb8": 0.0
+      }
+    },
+    {
+      "id": "exterior-3d-gm-gm-26",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 8,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "i1fb2e963c0431211cd0bbc109f2756ab1",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/exterior-3d-gm-gm-26.jpg",
+        "retainedOriginalSha256": "33e6d6c3aa12553b34f6a569abcd1c513597dc42b7ea5bab3685992ee4befd60",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/exterior-3d-gm-gm-26.jpg",
+      "originalDimensionsPx": [
+        480,
+        300
+      ],
+      "referenceCropAsset": "textures/exterior-3d-gm-gm-26.png",
+      "normalMap": null,
+      "roughnessMap": null,
+      "bumpMap": null,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "cropRectPx": [
+        12,
+        14,
+        468,
+        220
+      ],
+      "dimensionsPx": [
+        456,
+        206
+      ],
+      "sourceFootprintM": [
+        1.14,
+        0.515
+      ],
+      "meanSrgb": [
+        0.3632464406304167,
+        0.3786779734888335,
+        0.3859550599323361
+      ],
+      "processing": "Smooth border reconciliation only; retain source masonry joint geometry, pixel aspect and regular repeat. Never randomise, mirror or rotate structured masonry.",
+      "remainingLimit": "Perspective and nonuniform mortar in the catalogue photograph remain; smooth reconciliation cannot certify geometric seam alignment.",
+      "mode": "structured-regular-repeat",
+      "derivedAsset": "derived/exterior-3d-gm-gm-26.png",
+      "exactCropAsset": "crops/exterior-3d-gm-gm-26.png",
+      "sha256": "a7d57a63bc214fd58b0d93736bf5043d69a629f9800625941f5423d977ad4690",
+      "metrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 9.983818770226538,
+          "topBottomMeanAbsSrgb8": 6.456871345029239
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 1.603559870550162,
+          "topBottomMeanAbsSrgb8": 1.6937134502923976
+        },
+        "referenceMeanSrgb8": [
+          92.62784236075626,
+          96.56288323965254,
+          98.4185402827457
+        ],
+        "derivedMeanSrgb8": [
+          92.62784236075626,
+          96.56288323965254,
+          98.4185402827457
+        ],
+        "meanMaxAbsDifferenceSrgb8": 0.0
+      }
+    },
+    {
+      "id": "exterior-3d-gm-gm-27",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 8,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "if0495af4d119c88b1f30f8077e6b900c1",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/exterior-3d-gm-gm-27.jpg",
+        "retainedOriginalSha256": "28045b56482a6b6f0d24191e0e5588aec3fa79d0c035fabefb1f6027b53d337d",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/exterior-3d-gm-gm-27.jpg",
+      "originalDimensionsPx": [
+        480,
+        300
+      ],
+      "referenceCropAsset": "textures/exterior-3d-gm-gm-27.png",
+      "normalMap": null,
+      "roughnessMap": null,
+      "bumpMap": null,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "cropRectPx": [
+        12,
+        14,
+        468,
+        220
+      ],
+      "dimensionsPx": [
+        456,
+        206
+      ],
+      "sourceFootprintM": [
+        1.14,
+        0.515
+      ],
+      "meanSrgb": [
+        0.7623251208165092,
+        0.7881376890732447,
+        0.8152161171060146
+      ],
+      "processing": "Smooth border reconciliation only; retain source masonry joint geometry, pixel aspect and regular repeat. Never randomise, mirror or rotate structured masonry.",
+      "remainingLimit": "Perspective and nonuniform mortar in the catalogue photograph remain; smooth reconciliation cannot certify geometric seam alignment.",
+      "mode": "structured-regular-repeat",
+      "derivedAsset": "derived/exterior-3d-gm-gm-27.png",
+      "exactCropAsset": "crops/exterior-3d-gm-gm-27.png",
+      "sha256": "508b5631dcc0f143e25610ee570dc3804f62d45cfc5ae8c607e4b38dec29a780",
+      "metrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 17.527508090614887,
+          "topBottomMeanAbsSrgb8": 18.859649122807017
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 3.841423948220065,
+          "topBottomMeanAbsSrgb8": 4.287280701754386
+        },
+        "referenceMeanSrgb8": [
+          194.39290580820983,
+          200.9751107136774,
+          207.88010986203372
+        ],
+        "derivedMeanSrgb8": [
+          194.39290580820983,
+          200.9751107136774,
+          207.88010986203372
+        ],
+        "meanMaxAbsDifferenceSrgb8": 0.0
+      }
+    },
+    {
+      "id": "exterior-3d-gm-gm-28",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 8,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "iea0fdba993153215e86981db44f5ab2f1",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/exterior-3d-gm-gm-28.jpg",
+        "retainedOriginalSha256": "81e9d9e5d48e529a201fce7a7fcdd8c10f77842c82e4082acead01dac3bd47e7",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/exterior-3d-gm-gm-28.jpg",
+      "originalDimensionsPx": [
+        480,
+        300
+      ],
+      "referenceCropAsset": "textures/exterior-3d-gm-gm-28.png",
+      "normalMap": null,
+      "roughnessMap": null,
+      "bumpMap": null,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "cropRectPx": [
+        12,
+        14,
+        468,
+        220
+      ],
+      "dimensionsPx": [
+        456,
+        206
+      ],
+      "sourceFootprintM": [
+        0.76,
+        0.34333
+      ],
+      "meanSrgb": [
+        0.3774022196171945,
+        0.39271698544858247,
+        0.39867339799145685
+      ],
+      "processing": "Smooth border reconciliation only; retain source masonry joint geometry, pixel aspect and regular repeat. Never randomise, mirror or rotate structured masonry.",
+      "remainingLimit": "Perspective and nonuniform mortar in the catalogue photograph remain; smooth reconciliation cannot certify geometric seam alignment.",
+      "mode": "structured-regular-repeat",
+      "derivedAsset": "derived/exterior-3d-gm-gm-28.png",
+      "exactCropAsset": "crops/exterior-3d-gm-gm-28.png",
+      "sha256": "b45b5579680b0214c92e4cdaa0cc04a728c50febf764a74b19a5dc30d647727e",
+      "metrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 21.79935275080906,
+          "topBottomMeanAbsSrgb8": 16.82675438596491
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 4.043689320388349,
+          "topBottomMeanAbsSrgb8": 2.970029239766082
+        },
+        "referenceMeanSrgb8": [
+          96.2375660023846,
+          100.14283128938852,
+          101.6617164878215
+        ],
+        "derivedMeanSrgb8": [
+          96.2375660023846,
+          100.14283128938852,
+          101.6617164878215
+        ],
+        "meanMaxAbsDifferenceSrgb8": 0.0
+      }
+    },
+    {
+      "id": "exterior-3d-gm-gm-29",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 8,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "i56c2fdf7b52f4eb1a2396034aafd918d1",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/exterior-3d-gm-gm-29.jpg",
+        "retainedOriginalSha256": "03f38d4602ca41c0c193d68ed5e2577e54b4968cc474b7b41db158bfbdcf5bdc",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/exterior-3d-gm-gm-29.jpg",
+      "originalDimensionsPx": [
+        480,
+        300
+      ],
+      "referenceCropAsset": "textures/exterior-3d-gm-gm-29.png",
+      "normalMap": null,
+      "roughnessMap": null,
+      "bumpMap": null,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "cropRectPx": [
+        12,
+        14,
+        468,
+        220
+      ],
+      "dimensionsPx": [
+        456,
+        206
+      ],
+      "sourceFootprintM": [
+        0.76,
+        0.34333
+      ],
+      "meanSrgb": [
+        0.849757281553398,
+        0.7274970693438336,
+        0.5307242978949372
+      ],
+      "processing": "Smooth border reconciliation only; retain source masonry joint geometry, pixel aspect and regular repeat. Never randomise, mirror or rotate structured masonry.",
+      "remainingLimit": "Perspective and nonuniform mortar in the catalogue photograph remain; smooth reconciliation cannot certify geometric seam alignment.",
+      "mode": "structured-regular-repeat",
+      "derivedAsset": "derived/exterior-3d-gm-gm-29.png",
+      "exactCropAsset": "crops/exterior-3d-gm-gm-29.png",
+      "sha256": "46cd3a6c478f347f5e14fa858e58e287ba21f8d28f1d13da840d4f9e1cf3eedd",
+      "metrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 4.686084142394822,
+          "topBottomMeanAbsSrgb8": 12.512426900584796
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 0.8964401294498382,
+          "topBottomMeanAbsSrgb8": 1.253654970760234
+        },
+        "referenceMeanSrgb8": [
+          216.6881067961165,
+          185.51175268267758,
+          135.334695963209
+        ],
+        "derivedMeanSrgb8": [
+          216.6881067961165,
+          185.51175268267758,
+          135.334695963209
+        ],
+        "meanMaxAbsDifferenceSrgb8": 0.0
+      }
+    },
+    {
+      "id": "exterior-3d-gm-gm-30",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 8,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "i654ad32dac09bfe0eeb40ac41fc2d7f91",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/exterior-3d-gm-gm-30.jpg",
+        "retainedOriginalSha256": "7032de6343794dbe1beb37eafdd7265a8d6f4911693d098c338d5fc5129b91bc",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/exterior-3d-gm-gm-30.jpg",
+      "originalDimensionsPx": [
+        480,
+        300
+      ],
+      "referenceCropAsset": "textures/exterior-3d-gm-gm-30.png",
+      "normalMap": null,
+      "roughnessMap": null,
+      "bumpMap": null,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "cropRectPx": [
+        12,
+        14,
+        468,
+        220
+      ],
+      "dimensionsPx": [
+        456,
+        206
+      ],
+      "sourceFootprintM": [
+        0.76,
+        0.34333
+      ],
+      "meanSrgb": [
+        0.8247887172242427,
+        0.8245406968783084,
+        0.8246842238854323
+      ],
+      "processing": "Smooth border reconciliation only; retain source masonry joint geometry, pixel aspect and regular repeat. Never randomise, mirror or rotate structured masonry.",
+      "remainingLimit": "Perspective and nonuniform mortar in the catalogue photograph remain; smooth reconciliation cannot certify geometric seam alignment.",
+      "mode": "structured-regular-repeat",
+      "derivedAsset": "derived/exterior-3d-gm-gm-30.png",
+      "exactCropAsset": "crops/exterior-3d-gm-gm-30.png",
+      "sha256": "f6ce0bbf44f21dc905149f32af3694825afaacf8fc1d5055a2842051f598dea9",
+      "metrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 7.022653721682848,
+          "topBottomMeanAbsSrgb8": 4.787280701754386
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 0.5307443365695793,
+          "topBottomMeanAbsSrgb8": 0.722953216374269
+        },
+        "referenceMeanSrgb8": [
+          210.3211228921819,
+          210.25787770396866,
+          210.29447709078522
+        ],
+        "derivedMeanSrgb8": [
+          210.3211228921819,
+          210.25787770396866,
+          210.29447709078522
+        ],
+        "meanMaxAbsDifferenceSrgb8": 0.0
+      }
+    },
+    {
+      "id": "exterior-finishes-madeira-mel",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 9,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "icc2e8d9b8bdbbd8b3944204c2e9179a31",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/exterior-finishes-madeira-mel.jpg",
+        "retainedOriginalSha256": "8f05df4315d7eb523a6c9f71647a66f347c294ff51fa6f5b4e6fa51903f1d6af",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/exterior-finishes-madeira-mel.jpg",
+      "originalDimensionsPx": [
+        480,
+        300
+      ],
+      "referenceCropAsset": "textures/exterior-finishes-madeira-mel.png",
+      "normalMap": null,
+      "roughnessMap": null,
+      "bumpMap": null,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "cropRectPx": [
+        19,
+        48,
+        460,
+        165
+      ],
+      "losslessPreprocess": "transpose",
+      "dimensionsPx": [
+        117,
+        441
+      ],
+      "sourceFootprintM": [
+        0.345,
+        1.3003846153846155
+      ],
+      "boardDimensionsM": [
+        0.3,
+        24.0
+      ],
+      "grainAxis": "horizontal",
+      "jointWidthM": 0.0012,
+      "meanSrgb": [
+        0.7466408463546449,
+        0.448177692977352,
+        0.36832456009779113
+      ],
+      "panelProfile": {
+        "pitchM": 0.3,
+        "depthM": 0.0012,
+        "grooveWidthM": 0.004
+      },
+      "profileEvidence": "Horizontal grooves are visible in the source for GM/lamela/wood finishes; standard wood pitch is an optional illustrative siding layout, not documented product geometry.",
+      "profileRecommended": true,
+      "grainScaleBasis": "Both world-coordinate axes scaled equally so the clean source band spans at least one estimated panel pitch without cross-grain repetition. Pixel aspect remains unchanged. No physical sample dimensions are documented.",
+      "processing": "Selected an unlabelled band of photographed grain, removed smooth illumination and made periodic, transposed without resampling; restored the R2 reference mean. Runtime keeps original grain, decorrelates phases, and adds estimated horizontal seams. No generated wood.",
+      "mode": "photo-grain-horizontal-panels",
+      "derivedAsset": "derived/exterior-finishes-madeira-mel.png",
+      "exactCropAsset": "crops/exterior-finishes-madeira-mel.png",
+      "sha256": "f8f425045acce59f6055c5ba3e435e537ac7a3ce392d3f04eff7a88fe86af51e",
+      "metrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 22.42554799697657,
+          "topBottomMeanAbsSrgb8": 17.666666666666668
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 3.8458049886621315,
+          "topBottomMeanAbsSrgb8": 6.156695156695156
+        },
+        "referenceMeanSrgb8": [
+          190.39341582043446,
+          114.28531170922476,
+          93.92276282493674
+        ],
+        "derivedMeanSrgb8": [
+          190.3934143457953,
+          114.28532666627905,
+          93.92276682752873
+        ],
+        "meanMaxAbsDifferenceSrgb8": 1.4957054290221095e-05
+      }
+    },
+    {
+      "id": "exterior-finishes-lamela-branca",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 9,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "ic321914dd2626b6ea275cf8f44a344021",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/exterior-finishes-lamela-branca.jpg",
+        "retainedOriginalSha256": "db7b2ab3f3336ad20de732231ce15a4b735b379821e273fbffc345160ed086c3",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/exterior-finishes-lamela-branca.jpg",
+      "originalDimensionsPx": [
+        480,
+        300
+      ],
+      "referenceCropAsset": "textures/exterior-finishes-lamela-branca.png",
+      "normalMap": null,
+      "roughnessMap": null,
+      "bumpMap": null,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "cropRectPx": [
+        19,
+        60,
+        460,
+        165
+      ],
+      "losslessPreprocess": "transpose",
+      "dimensionsPx": [
+        105,
+        441
+      ],
+      "sourceFootprintM": [
+        0.345,
+        1.449
+      ],
+      "boardDimensionsM": [
+        0.3,
+        24.0
+      ],
+      "grainAxis": "horizontal",
+      "jointWidthM": 0.0012,
+      "meanSrgb": [
+        0.8027765695650241,
+        0.7989735346634629,
+        0.7924964832954116
+      ],
+      "panelProfile": {
+        "pitchM": 0.3,
+        "depthM": 0.0012,
+        "grooveWidthM": 0.004
+      },
+      "profileEvidence": "Horizontal grooves are visible in the source for GM/lamela/wood finishes; standard wood pitch is an optional illustrative siding layout, not documented product geometry.",
+      "profileRecommended": true,
+      "grainScaleBasis": "Both world-coordinate axes scaled equally so the clean source band spans at least one estimated panel pitch without cross-grain repetition. Pixel aspect remains unchanged. No physical sample dimensions are documented.",
+      "processing": "Selected an unlabelled band of photographed grain, removed smooth illumination and made periodic, transposed without resampling; restored the R2 reference mean. Runtime keeps original grain, decorrelates phases, and adds estimated horizontal seams. No generated wood.",
+      "mode": "photo-grain-horizontal-panels",
+      "derivedAsset": "derived/exterior-finishes-lamela-branca.png",
+      "exactCropAsset": "crops/exterior-finishes-lamela-branca.png",
+      "sha256": "93c0ace2b557e0bb3b107fb1ce8db682766f336880b4c1fea4797e0dd19a69e2",
+      "metrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 7.627362055933484,
+          "topBottomMeanAbsSrgb8": 7.6
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 1.4565381708238851,
+          "topBottomMeanAbsSrgb8": 2.9682539682539684
+        },
+        "referenceMeanSrgb8": [
+          204.70802523908114,
+          203.73825133918302,
+          202.08660324032994
+        ],
+        "derivedMeanSrgb8": [
+          204.70802289169637,
+          203.738235611705,
+          202.08662131519273
+        ],
+        "meanMaxAbsDifferenceSrgb8": 1.8074862794037472e-05
+      }
+    },
+    {
+      "id": "exterior-finishes-lamela-bege",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 9,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "i48efdcd14c8bc251422c2b15ba3c95de1",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/exterior-finishes-lamela-bege.jpg",
+        "retainedOriginalSha256": "dcdbf422c62e3c16b310da7b6f06dbe79aa110bd05db88d5a53d0cc095ebcf89",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/exterior-finishes-lamela-bege.jpg",
+      "originalDimensionsPx": [
+        480,
+        300
+      ],
+      "referenceCropAsset": "textures/exterior-finishes-lamela-bege.png",
+      "normalMap": null,
+      "roughnessMap": null,
+      "bumpMap": null,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "cropRectPx": [
+        19,
+        60,
+        460,
+        165
+      ],
+      "losslessPreprocess": "transpose",
+      "dimensionsPx": [
+        105,
+        441
+      ],
+      "sourceFootprintM": [
+        0.345,
+        1.449
+      ],
+      "boardDimensionsM": [
+        0.3,
+        24.0
+      ],
+      "grainAxis": "horizontal",
+      "jointWidthM": 0.0012,
+      "meanSrgb": [
+        0.7360620898923177,
+        0.6925481625822631,
+        0.6368906983083089
+      ],
+      "panelProfile": {
+        "pitchM": 0.3,
+        "depthM": 0.0012,
+        "grooveWidthM": 0.004
+      },
+      "profileEvidence": "Horizontal grooves are visible in the source for GM/lamela/wood finishes; standard wood pitch is an optional illustrative siding layout, not documented product geometry.",
+      "profileRecommended": true,
+      "grainScaleBasis": "Both world-coordinate axes scaled equally so the clean source band spans at least one estimated panel pitch without cross-grain repetition. Pixel aspect remains unchanged. No physical sample dimensions are documented.",
+      "processing": "Selected an unlabelled band of photographed grain, removed smooth illumination and made periodic, transposed without resampling; restored the R2 reference mean. Runtime keeps original grain, decorrelates phases, and adds estimated horizontal seams. No generated wood.",
+      "mode": "photo-grain-horizontal-panels",
+      "derivedAsset": "derived/exterior-finishes-lamela-bege.png",
+      "exactCropAsset": "crops/exterior-finishes-lamela-bege.png",
+      "sha256": "cf69b394b6c6281e6765afae9a28e60549cf229e3bf80aa71efbd2b66efe20ae",
+      "metrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 13.534391534391535,
+          "topBottomMeanAbsSrgb8": 13.079365079365079
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 2.9690098261526834,
+          "topBottomMeanAbsSrgb8": 5.307936507936508
+        },
+        "referenceMeanSrgb8": [
+          187.695832922541,
+          176.5997814584771,
+          162.40712806861876
+        ],
+        "derivedMeanSrgb8": [
+          187.69584278155708,
+          176.59978404060035,
+          162.40712666018788
+        ],
+        "meanMaxAbsDifferenceSrgb8": 9.859016074642568e-06
+      }
+    },
+    {
+      "id": "exterior-finishes-lamela-creme",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 9,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "i64516709818b9b9f284f3770545efe021",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/exterior-finishes-lamela-creme.jpg",
+        "retainedOriginalSha256": "f2a20e77c9947c01e338abf6e2951d3d4e06637fc8548445e93e514a2645ed3a",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/exterior-finishes-lamela-creme.jpg",
+      "originalDimensionsPx": [
+        480,
+        300
+      ],
+      "referenceCropAsset": "textures/exterior-finishes-lamela-creme.png",
+      "normalMap": null,
+      "roughnessMap": null,
+      "bumpMap": null,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "cropRectPx": [
+        19,
+        60,
+        460,
+        165
+      ],
+      "losslessPreprocess": "transpose",
+      "dimensionsPx": [
+        105,
+        441
+      ],
+      "sourceFootprintM": [
+        0.345,
+        1.449
+      ],
+      "boardDimensionsM": [
+        0.3,
+        24.0
+      ],
+      "grainAxis": "horizontal",
+      "jointWidthM": 0.0012,
+      "meanSrgb": [
+        0.7759686805479035,
+        0.7102612703696616,
+        0.5670532303098372
+      ],
+      "panelProfile": {
+        "pitchM": 0.3,
+        "depthM": 0.0012,
+        "grooveWidthM": 0.004
+      },
+      "profileEvidence": "Horizontal grooves are visible in the source for GM/lamela/wood finishes; standard wood pitch is an optional illustrative siding layout, not documented product geometry.",
+      "profileRecommended": true,
+      "grainScaleBasis": "Both world-coordinate axes scaled equally so the clean source band spans at least one estimated panel pitch without cross-grain repetition. Pixel aspect remains unchanged. No physical sample dimensions are documented.",
+      "processing": "Selected an unlabelled band of photographed grain, removed smooth illumination and made periodic, transposed without resampling; restored the R2 reference mean. Runtime keeps original grain, decorrelates phases, and adds estimated horizontal seams. No generated wood.",
+      "mode": "photo-grain-horizontal-panels",
+      "derivedAsset": "derived/exterior-finishes-lamela-creme.png",
+      "exactCropAsset": "crops/exterior-finishes-lamela-creme.png",
+      "sha256": "43b0bc9666be53f364adeb1ba2e7f798ec139fb87b85f743d0c164b754eac3ea",
+      "metrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 10.75283446712018,
+          "topBottomMeanAbsSrgb8": 8.304761904761905
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 2.014361300075586,
+          "topBottomMeanAbsSrgb8": 3.13015873015873
+        },
+        "referenceMeanSrgb8": [
+          197.8720135397154,
+          181.1166239442637,
+          144.5985737290085
+        ],
+        "derivedMeanSrgb8": [
+          197.87202245977755,
+          181.11663967174172,
+          144.59857466796242
+        ],
+        "meanMaxAbsDifferenceSrgb8": 1.5727478029248232e-05
+      }
+    },
+    {
+      "id": "exterior-finishes-lamela-dourada",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 9,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "ib812e8ddcdf6fd786900bd576aa2a3341",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/exterior-finishes-lamela-dourada.jpg",
+        "retainedOriginalSha256": "cc6bf805a91d45348b562d0d7333ced829cb082d10e46b8b8f0f8e876b66c0ac",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/exterior-finishes-lamela-dourada.jpg",
+      "originalDimensionsPx": [
+        480,
+        300
+      ],
+      "referenceCropAsset": "textures/exterior-finishes-lamela-dourada.png",
+      "normalMap": null,
+      "roughnessMap": null,
+      "bumpMap": null,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "cropRectPx": [
+        19,
+        60,
+        460,
+        165
+      ],
+      "losslessPreprocess": "transpose",
+      "dimensionsPx": [
+        105,
+        441
+      ],
+      "sourceFootprintM": [
+        0.345,
+        1.449
+      ],
+      "boardDimensionsM": [
+        0.3,
+        24.0
+      ],
+      "grainAxis": "horizontal",
+      "jointWidthM": 0.0012,
+      "meanSrgb": [
+        0.7850935543299445,
+        0.7139387478018582,
+        0.4892593752476836
+      ],
+      "panelProfile": {
+        "pitchM": 0.3,
+        "depthM": 0.0012,
+        "grooveWidthM": 0.004
+      },
+      "profileEvidence": "Horizontal grooves are visible in the source for GM/lamela/wood finishes; standard wood pitch is an optional illustrative siding layout, not documented product geometry.",
+      "profileRecommended": true,
+      "grainScaleBasis": "Both world-coordinate axes scaled equally so the clean source band spans at least one estimated panel pitch without cross-grain repetition. Pixel aspect remains unchanged. No physical sample dimensions are documented.",
+      "processing": "Selected an unlabelled band of photographed grain, removed smooth illumination and made periodic, transposed without resampling; restored the R2 reference mean. Runtime keeps original grain, decorrelates phases, and adds estimated horizontal seams. No generated wood.",
+      "mode": "photo-grain-horizontal-panels",
+      "derivedAsset": "derived/exterior-finishes-lamela-dourada.png",
+      "exactCropAsset": "crops/exterior-finishes-lamela-dourada.png",
+      "sha256": "75b81e50e2dad4a4889c3e9762c04291e8509fcb0561fefd8a211d296d10f043",
+      "metrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 12.597127739984883,
+          "topBottomMeanAbsSrgb8": 14.561904761904762
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 3.105820105820106,
+          "topBottomMeanAbsSrgb8": 5.809523809523809
+        },
+        "referenceMeanSrgb8": [
+          200.19885635413587,
+          182.05438068947385,
+          124.76114068815932
+        ],
+        "derivedMeanSrgb8": [
+          200.19885541518195,
+          182.05440017276752,
+          124.76112730806608
+        ],
+        "meanMaxAbsDifferenceSrgb8": 1.948329366996404e-05
+      }
+    },
+    {
+      "id": "exterior-finishes-lamela-cinza",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 9,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "id60534c7f946808220cb25bbf53d25421",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/exterior-finishes-lamela-cinza.jpg",
+        "retainedOriginalSha256": "de652375598898475e97e4c0c4d412c646f479dcba85b66e67815bbf1ae597b1",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/exterior-finishes-lamela-cinza.jpg",
+      "originalDimensionsPx": [
+        480,
+        300
+      ],
+      "referenceCropAsset": "textures/exterior-finishes-lamela-cinza.png",
+      "normalMap": null,
+      "roughnessMap": null,
+      "bumpMap": null,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "cropRectPx": [
+        19,
+        60,
+        460,
+        165
+      ],
+      "losslessPreprocess": "transpose",
+      "dimensionsPx": [
+        105,
+        441
+      ],
+      "sourceFootprintM": [
+        0.345,
+        1.449
+      ],
+      "boardDimensionsM": [
+        0.3,
+        24.0
+      ],
+      "grainAxis": "horizontal",
+      "jointWidthM": 0.0012,
+      "meanSrgb": [
+        0.45029493278793,
+        0.4959054153062191,
+        0.5382314278368353
+      ],
+      "panelProfile": {
+        "pitchM": 0.3,
+        "depthM": 0.0012,
+        "grooveWidthM": 0.004
+      },
+      "profileEvidence": "Horizontal grooves are visible in the source for GM/lamela/wood finishes; standard wood pitch is an optional illustrative siding layout, not documented product geometry.",
+      "profileRecommended": true,
+      "grainScaleBasis": "Both world-coordinate axes scaled equally so the clean source band spans at least one estimated panel pitch without cross-grain repetition. Pixel aspect remains unchanged. No physical sample dimensions are documented.",
+      "processing": "Selected an unlabelled band of photographed grain, removed smooth illumination and made periodic, transposed without resampling; restored the R2 reference mean. Runtime keeps original grain, decorrelates phases, and adds estimated horizontal seams. No generated wood.",
+      "mode": "photo-grain-horizontal-panels",
+      "derivedAsset": "derived/exterior-finishes-lamela-cinza.png",
+      "exactCropAsset": "crops/exterior-finishes-lamela-cinza.png",
+      "sha256": "c64d96dbca7b755d970d4885ed6fabc4644fb449594ce1213e8b1515b8098aa5",
+      "metrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 13.554043839758126,
+          "topBottomMeanAbsSrgb8": 9.644444444444444
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 2.5389266817838245,
+          "topBottomMeanAbsSrgb8": 3.961904761904762
+        },
+        "referenceMeanSrgb8": [
+          114.82520786092215,
+          126.45588090308587,
+          137.249014098393
+        ],
+        "derivedMeanSrgb8": [
+          114.82520246193715,
+          126.45589029262499,
+          137.24900118777668
+        ],
+        "meanMaxAbsDifferenceSrgb8": 1.2910616305816802e-05
+      }
+    },
+    {
+      "id": "exterior-finishes-lamela-bordo",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 9,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "i7210a32ed6e263e399be64c9f4f313e81",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/exterior-finishes-lamela-bordo.jpg",
+        "retainedOriginalSha256": "c617605223d1e23533a1ffc0ca9e64de4c333f5115968a229069b45ee6159fd2",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/exterior-finishes-lamela-bordo.jpg",
+      "originalDimensionsPx": [
+        480,
+        300
+      ],
+      "referenceCropAsset": "textures/exterior-finishes-lamela-bordo.png",
+      "normalMap": null,
+      "roughnessMap": null,
+      "bumpMap": null,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "cropRectPx": [
+        19,
+        60,
+        460,
+        165
+      ],
+      "losslessPreprocess": "transpose",
+      "dimensionsPx": [
+        105,
+        441
+      ],
+      "sourceFootprintM": [
+        0.345,
+        1.449
+      ],
+      "boardDimensionsM": [
+        0.3,
+        24.0
+      ],
+      "grainAxis": "horizontal",
+      "jointWidthM": 0.0012,
+      "meanSrgb": [
+        0.38066692055244,
+        0.2799010747616277,
+        0.2857713777942739
+      ],
+      "panelProfile": {
+        "pitchM": 0.3,
+        "depthM": 0.0012,
+        "grooveWidthM": 0.004
+      },
+      "profileEvidence": "Horizontal grooves are visible in the source for GM/lamela/wood finishes; standard wood pitch is an optional illustrative siding layout, not documented product geometry.",
+      "profileRecommended": true,
+      "grainScaleBasis": "Both world-coordinate axes scaled equally so the clean source band spans at least one estimated panel pitch without cross-grain repetition. Pixel aspect remains unchanged. No physical sample dimensions are documented.",
+      "processing": "Selected an unlabelled band of photographed grain, removed smooth illumination and made periodic, transposed without resampling; restored the R2 reference mean. Runtime keeps original grain, decorrelates phases, and adds estimated horizontal seams. No generated wood.",
+      "mode": "photo-grain-horizontal-panels",
+      "derivedAsset": "derived/exterior-finishes-lamela-bordo.png",
+      "exactCropAsset": "crops/exterior-finishes-lamela-bordo.png",
+      "sha256": "365f963b99f3af0ac7c270b8f8892e4b95f5446148057c94296c7875562320fd",
+      "metrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 12.336356764928194,
+          "topBottomMeanAbsSrgb8": 12.0
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 3.636432350718065,
+          "topBottomMeanAbsSrgb8": 4.784126984126984
+        },
+        "referenceMeanSrgb8": [
+          97.0700647408722,
+          71.37477406421506,
+          72.87170133753985
+        ],
+        "derivedMeanSrgb8": [
+          97.0700572292409,
+          71.37477594212288,
+          72.87172011661808
+        ],
+        "meanMaxAbsDifferenceSrgb8": 1.8779078232000757e-05
+      }
+    },
+    {
+      "id": "exterior-finishes-grafite",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 9,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "i0727cf1178c3ec793da47ab6fa8896831",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/exterior-finishes-grafite.jpg",
+        "retainedOriginalSha256": "e85a0bcb4c0dc732a651a3975b1001a59773de92529c60d6c957da436e1abba5",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/exterior-finishes-grafite.jpg",
+      "originalDimensionsPx": [
+        480,
+        300
+      ],
+      "referenceCropAsset": "textures/exterior-finishes-grafite.png",
+      "normalMap": null,
+      "roughnessMap": null,
+      "bumpMap": null,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "recommendation": "Retain current sampled colour or source map. No invented micro-relief. Use reference original in the material comparator.",
+      "mode": "retained-reference"
+    },
+    {
+      "id": "exterior-finishes-preto",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 9,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "ia85420df327522373071ba9be638c1091",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/exterior-finishes-preto.jpg",
+        "retainedOriginalSha256": "8b33ff897381ef7fc44904818a08124500a0ea874e775d205d8768dc5a61b991",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/exterior-finishes-preto.jpg",
+      "originalDimensionsPx": [
+        480,
+        300
+      ],
+      "referenceCropAsset": "textures/exterior-finishes-preto.png",
+      "normalMap": null,
+      "roughnessMap": null,
+      "bumpMap": null,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "recommendation": "Retain current sampled colour or source map. No invented micro-relief. Use reference original in the material comparator.",
+      "mode": "retained-reference"
+    },
+    {
+      "id": "exterior-finishes-vermelho",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 9,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "i59656c681eb5d10330811bb9a5d652541",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/exterior-finishes-vermelho.jpg",
+        "retainedOriginalSha256": "91e94e296b3adafa31fe9777010b1387e040729603b308c342e419484943bbe3",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/exterior-finishes-vermelho.jpg",
+      "originalDimensionsPx": [
+        480,
+        300
+      ],
+      "referenceCropAsset": "textures/exterior-finishes-vermelho.png",
+      "normalMap": null,
+      "roughnessMap": null,
+      "bumpMap": null,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "recommendation": "Retain current sampled colour or source map. No invented micro-relief. Use reference original in the material comparator.",
+      "mode": "retained-reference"
+    },
+    {
+      "id": "exterior-finishes-areia",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 9,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "idd6b81b6ce9f1fc01f1728777d0be0211",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/exterior-finishes-areia.jpg",
+        "retainedOriginalSha256": "639778948d4f6534a4a68e700c8b3a8346ad978067f538a32940c13fddf519ff",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/exterior-finishes-areia.jpg",
+      "originalDimensionsPx": [
+        480,
+        300
+      ],
+      "referenceCropAsset": "textures/exterior-finishes-areia.png",
+      "normalMap": null,
+      "roughnessMap": null,
+      "bumpMap": null,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "recommendation": "Retain current sampled colour or source map. No invented micro-relief. Use reference original in the material comparator.",
+      "mode": "retained-reference"
+    },
+    {
+      "id": "exterior-finishes-granito-branco",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 9,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "i45a8384518925772584a00cd443870b81",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/exterior-finishes-granito-branco.jpg",
+        "retainedOriginalSha256": "5949e5d2842c7d504719873d5d3ade9f251fa1a9084145659fb89338f352cbe7",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/exterior-finishes-granito-branco.jpg",
+      "originalDimensionsPx": [
+        480,
+        300
+      ],
+      "referenceCropAsset": "textures/exterior-finishes-granito-branco.png",
+      "normalMap": null,
+      "roughnessMap": null,
+      "bumpMap": null,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "recommendation": "Retain current sampled colour or source map. No invented micro-relief. Use reference original in the material comparator.",
+      "mode": "retained-reference"
+    },
+    {
+      "id": "exterior-standard-pedra-cinza",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 10,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "i250bae80c06b5cdc4cae0ebdf6f19d161",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/exterior-standard-pedra-cinza.jpg",
+        "retainedOriginalSha256": "d0fa07fc7c2e6073d998354ffb9241c5232b0b61d5cc1e010ec8dbf38799d53e",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/exterior-standard-pedra-cinza.jpg",
+      "originalDimensionsPx": [
+        480,
+        300
+      ],
+      "referenceCropAsset": "textures/exterior-standard-pedra-cinza.png",
+      "normalMap": null,
+      "roughnessMap": null,
+      "bumpMap": null,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "recommendation": "Retain current sampled colour or source map. No invented micro-relief. Use reference original in the material comparator.",
+      "mode": "retained-reference"
+    },
+    {
+      "id": "exterior-standard-cinza-metalico",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 10,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "i1d2edd2127a57878feb824be8be9209d1",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/exterior-standard-cinza-metalico.jpg",
+        "retainedOriginalSha256": "ed9030850110bde4fa0e2f6b273282bc155f59fdc7a76a44a6c95d6596cc7bb9",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/exterior-standard-cinza-metalico.jpg",
+      "originalDimensionsPx": [
+        480,
+        300
+      ],
+      "referenceCropAsset": "textures/exterior-standard-cinza-metalico.png",
+      "normalMap": null,
+      "roughnessMap": null,
+      "bumpMap": null,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "recommendation": "Retain current sampled colour or source map. No invented micro-relief. Use reference original in the material comparator.",
+      "mode": "retained-reference"
+    },
+    {
+      "id": "exterior-standard-prata",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 10,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "ia12fe24d21d64d9fe91464eba6665f011",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/exterior-standard-prata.jpg",
+        "retainedOriginalSha256": "1576077b88300208b7ba0fe81798b96e4f0e8003a8c16851530bb5273db67606",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/exterior-standard-prata.jpg",
+      "originalDimensionsPx": [
+        480,
+        300
+      ],
+      "referenceCropAsset": "textures/exterior-standard-prata.png",
+      "normalMap": null,
+      "roughnessMap": null,
+      "bumpMap": null,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "recommendation": "Retain current sampled colour or source map. No invented micro-relief. Use reference original in the material comparator.",
+      "mode": "retained-reference"
+    },
+    {
+      "id": "exterior-standard-madeira-castanho",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 10,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "i5a1c506d285447ad998d8019d57c1d7d1",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/exterior-standard-madeira-castanho.jpg",
+        "retainedOriginalSha256": "91aa8e183fe4314d6bc8ab6d92dc6103d9026b3cae4bbe63337fbe2cb3c01f11",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/exterior-standard-madeira-castanho.jpg",
+      "originalDimensionsPx": [
+        480,
+        300
+      ],
+      "referenceCropAsset": "textures/exterior-standard-madeira-castanho.png",
+      "normalMap": null,
+      "roughnessMap": null,
+      "bumpMap": null,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "cropRationale": "Select a clean contiguous grain region: omit isolated knot for GM16/19 to avoid multiplying that one knot into dots; omit photographed glare for the two standard woods. Original reference retains the whole photograph. This preview cannot represent the full distribution of knots in the product.",
+      "cropRectPx": [
+        20,
+        20,
+        175,
+        112
+      ],
+      "losslessPreprocess": "transpose",
+      "dimensionsPx": [
+        92,
+        155
+      ],
+      "sourceFootprintM": [
+        0.322,
+        0.5425000000000001
+      ],
+      "boardDimensionsM": [
+        0.28,
+        24.0
+      ],
+      "grainAxis": "horizontal",
+      "jointWidthM": 0.0012,
+      "meanSrgb": [
+        0.6911274955736358,
+        0.5699786650411459,
+        0.5346052101970401
+      ],
+      "panelProfile": {
+        "pitchM": 0.28,
+        "depthM": 0.0012,
+        "grooveWidthM": 0.004
+      },
+      "profileEvidence": "Horizontal grooves are visible in the source for GM/lamela/wood finishes; standard wood pitch is an optional illustrative siding layout, not documented product geometry.",
+      "profileRecommended": false,
+      "grainScaleBasis": "Both world-coordinate axes scaled equally so the clean source band spans at least one estimated panel pitch without cross-grain repetition. Pixel aspect remains unchanged. No physical sample dimensions are documented.",
+      "processing": "Selected an unlabelled band of photographed grain, removed smooth illumination and made periodic, transposed without resampling; restored the R2 reference mean. Runtime keeps original grain, decorrelates phases, and adds estimated horizontal seams. No generated wood.",
+      "mode": "photo-grain-horizontal-panels",
+      "derivedAsset": "derived/exterior-standard-madeira-castanho.png",
+      "exactCropAsset": "crops/exterior-standard-madeira-castanho.png",
+      "sha256": "3f65bf28ac54d0051a7553a21d8a4d39c0fae0e8555224a720eed57dc7209905",
+      "metrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 10.729032258064516,
+          "topBottomMeanAbsSrgb8": 18.485507246376812
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 1.7655913978494624,
+          "topBottomMeanAbsSrgb8": 3.9565217391304346
+        },
+        "referenceMeanSrgb8": [
+          176.23751137127715,
+          145.34455958549222,
+          136.32432860024522
+        ],
+        "derivedMeanSrgb8": [
+          176.2374474053296,
+          145.3445301542777,
+          136.32426367461431
+        ],
+        "meanMaxAbsDifferenceSrgb8": 6.492563090887415e-05
+      }
+    },
+    {
+      "id": "exterior-standard-cinza-perola",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 10,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "i6f64d05c20d36c894c3d4fb0d8bf52de1",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/exterior-standard-cinza-perola.jpg",
+        "retainedOriginalSha256": "cd2e36658f9165da20b52cb6e6dff736b69d918bcdee2efe1edabad83331d3fc",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/exterior-standard-cinza-perola.jpg",
+      "originalDimensionsPx": [
+        480,
+        300
+      ],
+      "referenceCropAsset": "textures/exterior-standard-cinza-perola.png",
+      "normalMap": null,
+      "roughnessMap": null,
+      "bumpMap": null,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "recommendation": "Retain current sampled colour or source map. No invented micro-relief. Use reference original in the material comparator.",
+      "mode": "retained-reference"
+    },
+    {
+      "id": "exterior-standard-madeira-mel",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 10,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "i0c373f487aaf02926c5b6c0551d665a31",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/exterior-standard-madeira-mel.jpg",
+        "retainedOriginalSha256": "df65c8c1570a138da230d569c976e49f2838c8a15ef93b7435077d45aa261cdd",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/exterior-standard-madeira-mel.jpg",
+      "originalDimensionsPx": [
+        480,
+        300
+      ],
+      "referenceCropAsset": "textures/exterior-standard-madeira-mel.png",
+      "normalMap": null,
+      "roughnessMap": null,
+      "bumpMap": null,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "cropRectPx": [
+        19,
+        12,
+        460,
+        288
+      ],
+      "losslessPreprocess": "transpose",
+      "dimensionsPx": [
+        276,
+        441
+      ],
+      "sourceFootprintM": [
+        0.37375,
+        0.5971875000000001
+      ],
+      "boardDimensionsM": [
+        0.28,
+        24.0
+      ],
+      "grainAxis": "horizontal",
+      "jointWidthM": 0.0012,
+      "meanSrgb": [
+        0.7838049229353578,
+        0.5168944550444977,
+        0.29045653688206363
+      ],
+      "panelProfile": {
+        "pitchM": 0.28,
+        "depthM": 0.0012,
+        "grooveWidthM": 0.004
+      },
+      "profileEvidence": "Horizontal grooves are visible in the source for GM/lamela/wood finishes; standard wood pitch is an optional illustrative siding layout, not documented product geometry.",
+      "profileRecommended": false,
+      "grainScaleBasis": "Both world-coordinate axes scaled equally so the clean source band spans at least one estimated panel pitch without cross-grain repetition. Pixel aspect remains unchanged. No physical sample dimensions are documented.",
+      "processing": "Selected an unlabelled band of photographed grain, removed smooth illumination and made periodic, transposed without resampling; restored the R2 reference mean. Runtime keeps original grain, decorrelates phases, and adds estimated horizontal seams. No generated wood.",
+      "mode": "photo-grain-horizontal-panels",
+      "derivedAsset": "derived/exterior-standard-madeira-mel.png",
+      "exactCropAsset": "crops/exterior-standard-madeira-mel.png",
+      "sha256": "ff9039e2356eb8f1aca20eb5b59357fe346f03e37e2b86d5018a152f5c076fb6",
+      "metrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 22.12925170068027,
+          "topBottomMeanAbsSrgb8": 18.71014492753623
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 3.2448979591836733,
+          "topBottomMeanAbsSrgb8": 4.188405797101449
+        },
+        "referenceMeanSrgb8": [
+          199.87025534851622,
+          131.8080860363469,
+          74.06641690492623
+        ],
+        "derivedMeanSrgb8": [
+          199.87025534851622,
+          131.8080860363469,
+          74.06641690492623
+        ],
+        "meanMaxAbsDifferenceSrgb8": 0.0
+      }
+    },
+    {
+      "id": "exterior-standard-madeira-cerejeira",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 10,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "ibfb3d410f99d4da65494e788cdf382ca1",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/exterior-standard-madeira-cerejeira.jpg",
+        "retainedOriginalSha256": "59f62d59b25e7acbbf839322731e3f66c520f989bf422f892713a5c5857d20b8",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/exterior-standard-madeira-cerejeira.jpg",
+      "originalDimensionsPx": [
+        480,
+        300
+      ],
+      "referenceCropAsset": "textures/exterior-standard-madeira-cerejeira.png",
+      "normalMap": null,
+      "roughnessMap": null,
+      "bumpMap": null,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "cropRationale": "Select a clean contiguous grain region: omit isolated knot for GM16/19 to avoid multiplying that one knot into dots; omit photographed glare for the two standard woods. Original reference retains the whole photograph. This preview cannot represent the full distribution of knots in the product.",
+      "cropRectPx": [
+        20,
+        12,
+        320,
+        85
+      ],
+      "losslessPreprocess": "transpose",
+      "dimensionsPx": [
+        73,
+        300
+      ],
+      "sourceFootprintM": [
+        0.322,
+        1.3232876712328767
+      ],
+      "boardDimensionsM": [
+        0.28,
+        24.0
+      ],
+      "grainAxis": "horizontal",
+      "jointWidthM": 0.0012,
+      "meanSrgb": [
+        0.9037640162189801,
+        0.48650690786388,
+        0.3340266960500257
+      ],
+      "panelProfile": {
+        "pitchM": 0.28,
+        "depthM": 0.0012,
+        "grooveWidthM": 0.004
+      },
+      "profileEvidence": "Horizontal grooves are visible in the source for GM/lamela/wood finishes; standard wood pitch is an optional illustrative siding layout, not documented product geometry.",
+      "profileRecommended": false,
+      "grainScaleBasis": "Both world-coordinate axes scaled equally so the clean source band spans at least one estimated panel pitch without cross-grain repetition. Pixel aspect remains unchanged. No physical sample dimensions are documented.",
+      "processing": "Selected an unlabelled band of photographed grain, removed smooth illumination and made periodic, transposed without resampling; restored the R2 reference mean. Runtime keeps original grain, decorrelates phases, and adds estimated horizontal seams. No generated wood.",
+      "mode": "photo-grain-horizontal-panels",
+      "derivedAsset": "derived/exterior-standard-madeira-cerejeira.png",
+      "exactCropAsset": "crops/exterior-standard-madeira-cerejeira.png",
+      "sha256": "8b29d7291be59ec316b16ec617990e98cb47460e074d086f2ffbfefb0bc7b20e",
+      "metrics": {
+        "sourceEdge": {
+          "leftRightMeanAbsSrgb8": 21.916666666666668,
+          "topBottomMeanAbsSrgb8": 17.19634703196347
+        },
+        "derivedEdge": {
+          "leftRightMeanAbsSrgb8": 2.2488888888888887,
+          "topBottomMeanAbsSrgb8": 6.424657534246576
+        },
+        "referenceMeanSrgb8": [
+          230.4598241358399,
+          124.0592615052894,
+          85.17680749275655
+        ],
+        "derivedMeanSrgb8": [
+          230.45981735159816,
+          124.05926940639269,
+          85.17680365296803
+        ],
+        "meanMaxAbsDifferenceSrgb8": 7.901103288077138e-06
+      }
+    },
+    {
+      "id": "exterior-standard-cinza-quente",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 10,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "i7aa0abfc8f1ed40f868f28ee35e43d9f1",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/exterior-standard-cinza-quente.jpg",
+        "retainedOriginalSha256": "64ad8c295658fa98807c778f52da0a547b312250e39fd03d6ab9e77338b76676",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/exterior-standard-cinza-quente.jpg",
+      "originalDimensionsPx": [
+        480,
+        300
+      ],
+      "referenceCropAsset": "textures/exterior-standard-cinza-quente.png",
+      "normalMap": null,
+      "roughnessMap": null,
+      "bumpMap": null,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "recommendation": "Retain current sampled colour or source map. No invented micro-relief. Use reference original in the material comparator.",
+      "mode": "retained-reference"
+    },
+    {
+      "id": "exterior-standard-grafite",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 10,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "id90500edd7c8ac9cdbc29cb2c33b1d571",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/exterior-standard-grafite.jpg",
+        "retainedOriginalSha256": "50eed377c50aed025f43999a002c4822acd5071a64140c16366ec03612198aa6",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/exterior-standard-grafite.jpg",
+      "originalDimensionsPx": [
+        480,
+        300
+      ],
+      "referenceCropAsset": "textures/exterior-standard-grafite.png",
+      "normalMap": null,
+      "roughnessMap": null,
+      "bumpMap": null,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "recommendation": "Retain current sampled colour or source map. No invented micro-relief. Use reference original in the material comparator.",
+      "mode": "retained-reference"
+    },
+    {
+      "id": "exterior-standard-branco-glacial",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 10,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "i7713b9898c91feca4801357eb519151d1",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/exterior-standard-branco-glacial.jpg",
+        "retainedOriginalSha256": "e1ed185d67554aa0f376b7b9ddd8aefbcb1cd67ec2839c56022f5556b56b3e17",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/exterior-standard-branco-glacial.jpg",
+      "originalDimensionsPx": [
+        480,
+        300
+      ],
+      "referenceCropAsset": "textures/exterior-standard-branco-glacial.png",
+      "normalMap": null,
+      "roughnessMap": null,
+      "bumpMap": null,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "recommendation": "Retain current sampled colour or source map. No invented micro-relief. Use reference original in the material comparator.",
+      "mode": "retained-reference"
+    },
+    {
+      "id": "exterior-standard-bege-marfim",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 10,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "i3aa068ae5d10980ffcb9017b6f2c787c1",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/exterior-standard-bege-marfim.jpg",
+        "retainedOriginalSha256": "f957b5490ddc773a560460ea5abf4c354cb9b0b72e325ef8acf94b540da14af1",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/exterior-standard-bege-marfim.jpg",
+      "originalDimensionsPx": [
+        480,
+        300
+      ],
+      "referenceCropAsset": "textures/exterior-standard-bege-marfim.png",
+      "normalMap": null,
+      "roughnessMap": null,
+      "bumpMap": null,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "recommendation": "Retain current sampled colour or source map. No invented micro-relief. Use reference original in the material comparator.",
+      "mode": "retained-reference"
+    },
+    {
+      "id": "exterior-standard-vermelho-borgonha",
+      "source": {
+        "document": "assets/opcionais-2026.pdf",
+        "documentTitle": "Green Village - Opcionais de personaliza\u00e7\u00e3o",
+        "edition": "2026-07-11",
+        "page": 10,
+        "pageVisuallyVerified": true,
+        "pdfImageResource": "i6a71d59a526bf79ec83b4a42cfb055901",
+        "embeddedImageDimensionsPx": [
+          480,
+          300
+        ],
+        "retainedOriginalAsset": "originals/exterior-standard-vermelho-borgonha.jpg",
+        "retainedOriginalSha256": "315d2c94103ed401f1558e2072c55e2b6f27ad5dc54c2132a25010a48e0595c3",
+        "iccProfilePresent": false,
+        "colourInterpretation": "Assumed sRGB for web preview; no colour target or lighting calibration supplied."
+      },
+      "originalAsset": "originals/exterior-standard-vermelho-borgonha.jpg",
+      "originalDimensionsPx": [
+        480,
+        300
+      ],
+      "referenceCropAsset": "textures/exterior-standard-vermelho-borgonha.png",
+      "normalMap": null,
+      "roughnessMap": null,
+      "bumpMap": null,
+      "physicalDimensionsStatus": "visualisation-estimate-not-manufacturer-data",
+      "recommendation": "Retain current sampled colour or source map. No invented micro-relief. Use reference original in the material comparator.",
+      "mode": "retained-reference"
+    }
+  ]
+}

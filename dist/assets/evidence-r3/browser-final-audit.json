@@ -1,0 +1,1188 @@
+{
+  "revision": "GV72-R3-2026-09-10",
+  "generated_at": "2026-09-10T15:24:05.373167+00:00",
+  "status": "PASS",
+  "scope": {
+    "url": "http://127.0.0.1:4174",
+    "baseline": "http://127.0.0.1:4185",
+    "browser": "Chrome 153 headless",
+    "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4, Unspecified Version)",
+    "viewports": [
+      [
+        375,
+        812
+      ],
+      [
+        768,
+        1024
+      ],
+      [
+        1440,
+        1000
+      ]
+    ],
+    "additional_short_phone": [
+      375,
+      667
+    ],
+    "deviceScaleFactor": 1,
+    "touch_emulated": true,
+    "physical_mobile_hardware": false,
+    "site_modified_by_auditor": false,
+    "production_authenticated_tested": false
+  },
+  "checks": [
+    {
+      "name": "All 71 materials rendered twice, including 12 photographic floors and 37 walls",
+      "pass": true,
+      "evidence": "r3-shader-matrix.json",
+      "details": {
+        "renders": 142,
+        "pass_end_resources": [
+          {
+            "pass": 0,
+            "id": "bathroom-uv-amostra-8",
+            "key": "bathroomUV",
+            "ok": true,
+            "actual": "bathroom-uv-amostra-8",
+            "applied": 3,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 158,
+              "textures": 21
+            },
+            "programs": 10
+          },
+          {
+            "pass": 1,
+            "id": "bathroom-uv-amostra-8",
+            "key": "bathroomUV",
+            "ok": true,
+            "actual": "bathroom-uv-amostra-8",
+            "applied": 3,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 158,
+              "textures": 21
+            },
+            "programs": 10
+          }
+        ]
+      }
+    },
+    {
+      "name": "Seven layouts through real controls",
+      "pass": true,
+      "evidence": "r3-final-core.json",
+      "details": null
+    },
+    {
+      "name": "Seven views through real controls",
+      "pass": true,
+      "evidence": "r3-final-core.json",
+      "details": null
+    },
+    {
+      "name": "Exploded layers above ground and all bounds within frame",
+      "pass": true,
+      "evidence": "r3-final-core.json",
+      "details": {
+        "groundY": -0.96,
+        "floorMinY": -0.7710000000000004,
+        "floorMaxY": -0.6639999984800816,
+        "roofY": 1.2,
+        "exploded": 1,
+        "corners": [
+          [
+            0.08447539760416088,
+            0.07442891621839738,
+            0.9977543358849527
+          ],
+          [
+            -0.5419547947152925,
+            -0.46090320372024246,
+            0.9967229725130237
+          ],
+          [
+            0.09071523633348769,
+            0.5464833490887168,
+            0.997551516106134
+          ],
+          [
+            -0.5985948174640318,
+            0.15104564103296725,
+            0.9963282200232507
+          ],
+          [
+            0.4503912405724671,
+            -0.11035116319370124,
+            0.9973983411693924
+          ],
+          [
+            -0.13027028230809745,
+            -0.8284663112786808,
+            0.9960148305729294
+          ],
+          [
+            0.48833641823572976,
+            0.41249432738203806,
+            0.9971370178373447
+          ],
+          [
+            -0.14676048709890832,
+            -0.13379404047892093,
+            0.9954470616017222
+          ]
+        ]
+      }
+    },
+    {
+      "name": "Explode zero survives rebuild",
+      "pass": true,
+      "evidence": "r3-adversarial.json",
+      "details": null
+    },
+    {
+      "name": "recover during animation",
+      "pass": true,
+      "evidence": "r3-adversarial.json",
+      "details": null
+    },
+    {
+      "name": "import during animation",
+      "pass": true,
+      "evidence": "r3-adversarial.json",
+      "details": null
+    },
+    {
+      "name": "Configuration construction failure retains prior house and state",
+      "pass": true,
+      "evidence": "r3-adversarial.json",
+      "details": null
+    },
+    {
+      "name": "View/reset/visibility construction failures remain coherent",
+      "pass": true,
+      "evidence": "r3-view-fault.json",
+      "details": null
+    },
+    {
+      "name": "Blocked storage label truthful",
+      "pass": true,
+      "evidence": "r3-adversarial.json",
+      "details": null
+    },
+    {
+      "name": "Six invalid imports rejected without mutation",
+      "pass": true,
+      "evidence": "r3-invalid-imports.json",
+      "details": null
+    },
+    {
+      "name": "WebGL absent retains plans and configuration",
+      "pass": true,
+      "evidence": "r3-resilience.json",
+      "details": null
+    },
+    {
+      "name": "WebGL context restores saved state",
+      "pass": true,
+      "evidence": "r3-resilience.json",
+      "details": null
+    },
+    {
+      "name": "Texture retry reallocates GPU storage and visibly restores grain",
+      "pass": true,
+      "evidence": "r3-texture-retry.json",
+      "details": {
+        "before": "40c035c27c81b6e19aa9a85ba551200a9162b0edf339fca7361913a95ab440ae",
+        "after": "3c112baa5823e7430eebecefbe5167f878f12899d495a5e50136b19ceb95de0f"
+      }
+    },
+    {
+      "name": "Five comparator closes during delayed texture loads release resources",
+      "pass": true,
+      "evidence": "r3-races-camera.json",
+      "details": null
+    },
+    {
+      "name": "Keyboard changes camera label coherently",
+      "pass": true,
+      "evidence": "r3-races-camera.json",
+      "details": null
+    },
+    {
+      "name": "No horizontal overflow and one selected checkmark at 375/768/1440",
+      "pass": true,
+      "evidence": "r3-final-organisation.json",
+      "details": null
+    },
+    {
+      "name": "Four original videos, sixteen real chapter clicks",
+      "pass": true,
+      "evidence": "r3-original-media.json",
+      "details": null
+    },
+    {
+      "name": "Four original videos advance during playback",
+      "pass": true,
+      "evidence": "r3-video-progress.json",
+      "details": null
+    },
+    {
+      "name": "Leaving Films pauses all players and cancels pending chapter",
+      "pass": true,
+      "evidence": "r3-original-media.json",
+      "details": null
+    },
+    {
+      "name": "New PDF JSON PNG SVG files downloaded and PDF pages visually opened",
+      "pass": true,
+      "evidence": "r3-export-current.json",
+      "details": null
+    },
+    {
+      "name": "Recovered GM family and return from kitchen remain coherent",
+      "pass": true,
+      "evidence": "r3-family-coherence.json",
+      "details": null
+    },
+    {
+      "name": "Advanced controls do not trap short phone viewport",
+      "pass": true,
+      "evidence": "r3-controls-fixed.json",
+      "details": null
+    },
+    {
+      "name": "Final report, all eighteen linked resources and six images load",
+      "pass": true,
+      "evidence": "r3-report-links.json",
+      "details": null
+    },
+    {
+      "name": "Six current video files support byte range and download",
+      "pass": true,
+      "evidence": "r3-final-media.json",
+      "details": null
+    },
+    {
+      "name": "Both R3 films play at start middle and end",
+      "pass": true,
+      "evidence": "r3-final-media.json",
+      "details": null
+    },
+    {
+      "name": "Both R3 downloads are 1080p24 H264 with 528 and 384 frames",
+      "pass": true,
+      "evidence": "r3-media-metadata.json",
+      "details": null
+    },
+    {
+      "name": "Four kitchens and both bathroom layouts through real controls",
+      "pass": true,
+      "evidence": "r3-last-controls.json",
+      "details": null
+    },
+    {
+      "name": "Door geometry, furniture visibility, cut and expansion pause/restart",
+      "pass": true,
+      "evidence": "r3-last-controls.json",
+      "details": null
+    }
+  ],
+  "resolved_findings": [
+    "Truthful storage status",
+    "Transactional model/view/reset/visibility reconstruction",
+    "Exploded zero preserved",
+    "Recovery/import pause animation",
+    "Resize preserves orbit and keyboard label follows camera",
+    "Structure hides optional cladding",
+    "Exploded layers above ground",
+    "Complete export framing and readable plan labels",
+    "Single selected swatch marker",
+    "Compact sticky model, accessible categories and tablet grid",
+    "Tall advanced controls do not trap short phone",
+    "Texture retry reallocates GPU storage",
+    "Recovered material family and active view stay coherent",
+    "PMREM warning removed"
+  ],
+  "performance": {
+    "idleFrames": 0,
+    "rotation": {
+      "elapsedMs": 2986.300000011921,
+      "frames": 179,
+      "fps": 59.94039446783158
+    }
+  },
+  "controlled_error_policy": {
+    "expected": [
+      "Forced missing WebGL produces two handled console errors",
+      "Forced texture request failure produces browser resource error",
+      "Cancelled media preloads and superseded image requests may emit ERR_ABORTED"
+    ],
+    "unexpected_shader_warnings_after_final_fixes": 0,
+    "unhandled_errors_in_latest_fault_retests": 0
+  },
+  "limitations": [
+    "No physical mobile hardware or Safari/Firefox coverage",
+    "Renderer frame rate is one local execution measurement, not a device-independent guarantee",
+    "Physical material colour, measured PBR and certified geometry are outside browser verification"
+  ],
+  "source_sha256_at_report": {
+    "app.js": "02f297604270a00b121f7a3e7a95ed6cb05d1938a0642e38722bc353da40f0e3",
+    "model.js": "9130b326aa4f97183f10a9d813ee8c6afa04fcbab8510700f6d5b8cd711786af",
+    "stage.js": "f267d8ced81973011e8f55f28a75458bbe4b4ca77597149e17120ffede83bef4",
+    "material-library.js": "4a7ad220ed802dfe92608c416b2e173d55c0a4516860a09b1f25f702f2537280",
+    "photo-planks.js": "72d1b085f1694244c2f414f63aa130f4fe6d64e005a02d2560763044131c6d45",
+    "panel-joints.js": "d1a21680e6e51c1462ce0799a3959e3472b20dd4aa33ed9f56b268baca7e38e0",
+    "plan-svg.js": "058d4ebc43ed2895d0e9d383e0f51cc3d819c466065b607c1c4e42e9faa86328",
+    "studio-r3.css": "9d2cae6d608e3a66b6b297a11c37e4894feeab0d182452ab0eae2b2a876bcc3a"
+  },
+  "new_media": {
+    "logs": [
+      {
+        "label": "audit",
+        "kind": "requestfailed",
+        "url": "http://127.0.0.1:4174/assets/presentation-v3.mp4",
+        "failure": {
+          "errorText": "net::ERR_ABORTED"
+        }
+      },
+      {
+        "label": "audit",
+        "kind": "requestfailed",
+        "url": "http://127.0.0.1:4174/assets/expansion-v3.mp4",
+        "failure": {
+          "errorText": "net::ERR_ABORTED"
+        }
+      },
+      {
+        "label": "audit",
+        "kind": "requestfailed",
+        "url": "http://127.0.0.1:4174/assets/presentation-v3.mp4",
+        "failure": {
+          "errorText": "net::ERR_ABORTED"
+        }
+      }
+    ],
+    "cases": [
+      {
+        "name": "six players and range support",
+        "result": {
+          "count": 6,
+          "rows": [
+            {
+              "url": "http://127.0.0.1:4174/assets/presentation-v3.mp4",
+              "status": 206,
+              "headers": {
+                "content-range": "bytes 0-1023/5583348",
+                "content-type": "video/mp4",
+                "content-length": "1024",
+                "accept-ranges": "bytes",
+                "cache-control": "no-cache",
+                "date": "Thu, 10 Sep 2026 15:18:53 GMT",
+                "connection": "keep-alive",
+                "keep-alive": "timeout=5"
+              },
+              "received": 1024
+            },
+            {
+              "url": "http://127.0.0.1:4174/assets/expansion-v3.mp4",
+              "status": 206,
+              "headers": {
+                "content-range": "bytes 0-1023/3117718",
+                "content-type": "video/mp4",
+                "content-length": "1024",
+                "accept-ranges": "bytes",
+                "cache-control": "no-cache",
+                "date": "Thu, 10 Sep 2026 15:18:53 GMT",
+                "connection": "keep-alive",
+                "keep-alive": "timeout=5"
+              },
+              "received": 1024
+            },
+            {
+              "url": "http://127.0.0.1:4174/assets/reference-videos/v1-spacious.mp4",
+              "status": 206,
+              "headers": {
+                "content-range": "bytes 0-1023/14919007",
+                "content-type": "video/mp4",
+                "content-length": "1024",
+                "accept-ranges": "bytes",
+                "cache-control": "no-cache",
+                "date": "Thu, 10 Sep 2026 15:18:53 GMT",
+                "connection": "keep-alive",
+                "keep-alive": "timeout=5"
+              },
+              "received": 1024
+            },
+            {
+              "url": "http://127.0.0.1:4174/assets/reference-videos/v2-74m2.mp4",
+              "status": 206,
+              "headers": {
+                "content-range": "bytes 0-1023/6007251",
+                "content-type": "video/mp4",
+                "content-length": "1024",
+                "accept-ranges": "bytes",
+                "cache-control": "no-cache",
+                "date": "Thu, 10 Sep 2026 15:18:53 GMT",
+                "connection": "keep-alive",
+                "keep-alive": "timeout=5"
+              },
+              "received": 1024
+            },
+            {
+              "url": "http://127.0.0.1:4174/assets/reference-videos/v3-comfortable.mp4",
+              "status": 206,
+              "headers": {
+                "content-range": "bytes 0-1023/11770834",
+                "content-type": "video/mp4",
+                "content-length": "1024",
+                "accept-ranges": "bytes",
+                "cache-control": "no-cache",
+                "date": "Thu, 10 Sep 2026 15:18:53 GMT",
+                "connection": "keep-alive",
+                "keep-alive": "timeout=5"
+              },
+              "received": 1024
+            },
+            {
+              "url": "http://127.0.0.1:4174/assets/reference-videos/v4-37m2.mp4",
+              "status": 206,
+              "headers": {
+                "content-range": "bytes 0-1023/6590943",
+                "content-type": "video/mp4",
+                "content-length": "1024",
+                "accept-ranges": "bytes",
+                "cache-control": "no-cache",
+                "date": "Thu, 10 Sep 2026 15:18:53 GMT",
+                "connection": "keep-alive",
+                "keep-alive": "timeout=5"
+              },
+              "received": 1024
+            }
+          ]
+        }
+      },
+      {
+        "name": "rendered films zero middle end playback",
+        "result": [
+          {
+            "src": "http://127.0.0.1:4174/assets/presentation-v3.mp4",
+            "duration": 22,
+            "width": 1920,
+            "height": 1080,
+            "frames": [
+              {
+                "time": 0.222379,
+                "paused": false,
+                "ready": 4,
+                "decoded": 13
+              },
+              {
+                "time": 11.21829,
+                "paused": false,
+                "ready": 4,
+                "decoded": 39
+              },
+              {
+                "time": 21.770318,
+                "paused": false,
+                "ready": 4,
+                "decoded": 66
+              }
+            ]
+          },
+          {
+            "src": "http://127.0.0.1:4174/assets/expansion-v3.mp4",
+            "duration": 16,
+            "width": 1920,
+            "height": 1080,
+            "frames": [
+              {
+                "time": 0.222396,
+                "paused": false,
+                "ready": 4,
+                "decoded": 15
+              },
+              {
+                "time": 8.149034,
+                "paused": false,
+                "ready": 4,
+                "decoded": 218
+              },
+              {
+                "time": 15.84437,
+                "paused": false,
+                "ready": 4,
+                "decoded": 355
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "download all six linked videos",
+        "result": [
+          {
+            "href": "assets/presentation-v3.mp4",
+            "file": "audit-local/video-0-presentation-v3.mp4",
+            "failure": null
+          },
+          {
+            "href": "assets/expansion-v3.mp4",
+            "file": "audit-local/video-1-expansion-v3.mp4",
+            "failure": null
+          },
+          {
+            "href": "assets/reference-videos/v1-spacious.mp4",
+            "file": "audit-local/video-2-v1-spacious.mp4",
+            "failure": null
+          },
+          {
+            "href": "assets/reference-videos/v2-74m2.mp4",
+            "file": "audit-local/video-3-v2-74m2.mp4",
+            "failure": null
+          },
+          {
+            "href": "assets/reference-videos/v3-comfortable.mp4",
+            "file": "audit-local/video-4-v3-comfortable.mp4",
+            "failure": null
+          },
+          {
+            "href": "assets/reference-videos/v4-37m2.mp4",
+            "file": "audit-local/video-5-v4-37m2.mp4",
+            "failure": null
+          }
+        ]
+      }
+    ],
+    "mediaResponses": [
+      {
+        "url": "http://127.0.0.1:4174/assets/presentation-v3.mp4",
+        "status": 206,
+        "headers": {
+          "cache-control": "no-cache",
+          "connection": "keep-alive",
+          "content-range": "bytes 327680-5583347/5583348",
+          "accept-ranges": "bytes",
+          "keep-alive": "timeout=5",
+          "content-length": "5255668",
+          "date": "Thu, 10 Sep 2026 15:18:53 GMT",
+          "content-type": "video/mp4"
+        }
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/presentation-v3.mp4",
+        "status": 206,
+        "headers": {
+          "cache-control": "no-cache",
+          "connection": "keep-alive",
+          "content-range": "bytes 5275648-5583347/5583348",
+          "accept-ranges": "bytes",
+          "keep-alive": "timeout=5",
+          "content-length": "307700",
+          "date": "Thu, 10 Sep 2026 15:18:53 GMT",
+          "content-type": "video/mp4"
+        }
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/expansion-v3.mp4",
+        "status": 206,
+        "headers": {
+          "cache-control": "no-cache",
+          "connection": "keep-alive",
+          "content-range": "bytes 131072-3117717/3117718",
+          "accept-ranges": "bytes",
+          "keep-alive": "timeout=5",
+          "content-length": "2986646",
+          "date": "Thu, 10 Sep 2026 15:18:54 GMT",
+          "content-type": "video/mp4"
+        }
+      }
+    ]
+  },
+  "media_metadata": [
+    {
+      "file": "video-0-presentation-v3.mp4",
+      "bytes": 5583348,
+      "duration": "22.000000",
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 1920,
+          "height": 1080,
+          "r_frame_rate": "24/1",
+          "avg_frame_rate": "24/1",
+          "duration": "22.000000",
+          "nb_frames": "528"
+        }
+      ]
+    },
+    {
+      "file": "video-1-expansion-v3.mp4",
+      "bytes": 3117718,
+      "duration": "16.000000",
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 1920,
+          "height": 1080,
+          "r_frame_rate": "24/1",
+          "avg_frame_rate": "24/1",
+          "duration": "16.000000",
+          "nb_frames": "384"
+        }
+      ]
+    },
+    {
+      "file": "video-2-v1-spacious.mp4",
+      "bytes": 14919007,
+      "duration": "118.233333",
+      "streams": [
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "width": null,
+          "height": null,
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "duration": "118.188005",
+          "nb_frames": "2549"
+        },
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 576,
+          "height": 1024,
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "duration": "118.233333",
+          "nb_frames": "3547"
+        }
+      ]
+    },
+    {
+      "file": "video-3-v2-74m2.mp4",
+      "bytes": 6007251,
+      "duration": "57.000000",
+      "streams": [
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "width": null,
+          "height": null,
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "duration": "56.980000",
+          "nb_frames": "1231"
+        },
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 576,
+          "height": 1024,
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "duration": "57.000000",
+          "nb_frames": "1710"
+        }
+      ]
+    },
+    {
+      "file": "video-4-v3-comfortable.mp4",
+      "bytes": 11770834,
+      "duration": "100.198027",
+      "streams": [
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "width": null,
+          "height": null,
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "duration": "100.122018",
+          "nb_frames": "2136"
+        },
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 576,
+          "height": 1024,
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "18024/601",
+          "duration": "100.166667",
+          "nb_frames": "3004"
+        }
+      ]
+    },
+    {
+      "file": "video-5-v4-37m2.mp4",
+      "bytes": 6590943,
+      "duration": "56.566667",
+      "streams": [
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "width": null,
+          "height": null,
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "duration": "56.507755",
+          "nb_frames": "1189"
+        },
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 576,
+          "height": 1024,
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "duration": "56.566667",
+          "nb_frames": "1697"
+        }
+      ]
+    }
+  ],
+  "report_links": {
+    "logs": [
+      {
+        "label": "audit",
+        "kind": "requestfailed",
+        "url": "http://127.0.0.1:4174/assets/presentation-v3.mp4",
+        "failure": {
+          "errorText": "net::ERR_ABORTED"
+        }
+      },
+      {
+        "label": "audit",
+        "kind": "requestfailed",
+        "url": "http://127.0.0.1:4174/assets/expansion-v3.mp4",
+        "failure": {
+          "errorText": "net::ERR_ABORTED"
+        }
+      },
+      {
+        "label": "audit",
+        "kind": "requestfailed",
+        "url": "http://127.0.0.1:4174/assets/expansion-v3.mp4",
+        "failure": {
+          "errorText": "net::ERR_ABORTED"
+        }
+      },
+      {
+        "label": "audit",
+        "kind": "requestfailed",
+        "url": "http://127.0.0.1:4174/assets/presentation-v3.mp4",
+        "failure": {
+          "errorText": "net::ERR_ABORTED"
+        }
+      },
+      {
+        "label": "audit",
+        "kind": "error",
+        "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      }
+    ],
+    "sourceLinks": [
+      {
+        "text": "Abrir fonte ↗",
+        "url": "http://127.0.0.1:4174/assets/plantas-40-pes.xlsx"
+      },
+      {
+        "text": "Abrir fonte ↗",
+        "url": "http://127.0.0.1:4174/assets/opcionais-2026.pdf"
+      },
+      {
+        "text": "Abrir fonte ↗",
+        "url": "http://127.0.0.1:4174/assets/expansao.png"
+      },
+      {
+        "text": "Abrir fonte ↗",
+        "url": "http://127.0.0.1:4174/assets/estrutura.png"
+      },
+      {
+        "text": "Abrir fonte ↗",
+        "url": "http://127.0.0.1:4174/assets/alpendre.jpg"
+      },
+      {
+        "text": "Inventário dos vídeos ↓",
+        "url": "http://127.0.0.1:4174/assets/reference-videos/source-inventory.json"
+      },
+      {
+        "text": "Mapa dos 71 materiais ↓",
+        "url": "http://127.0.0.1:4174/assets/catalogue-r3/material-r3-ledger.json"
+      },
+      {
+        "text": "Cor e repetição dos pisos ↓",
+        "url": "http://127.0.0.1:4174/assets/catalogue-r3/floor-visual-metrics.json"
+      },
+      {
+        "text": "Revisão R3 e antes/depois ↗",
+        "url": "http://127.0.0.1:4174/assets/evidence-r3/audit-report.html"
+      },
+      {
+        "text": "Medidas e fontes JSON ↓",
+        "url": "http://127.0.0.1:4174/assets/evidence-r3/dimensions.json"
+      }
+    ],
+    "reportURL": "http://127.0.0.1:4174/assets/evidence-r3/audit-report.html",
+    "status": 200,
+    "images": [
+      {
+        "url": "http://127.0.0.1:4174/assets/evidence-r3/floor-before-after.png",
+        "width": 1440,
+        "loaded": true
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/evidence-r3/wall-before-after.png",
+        "width": 1440,
+        "loaded": true
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/evidence-r3/brick-before-after.png",
+        "width": 1440,
+        "loaded": true
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/evidence-r3/mobile-before.png",
+        "width": 375,
+        "loaded": true
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/evidence-r3/mobile-after.png",
+        "width": 375,
+        "loaded": true
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/evidence-r3/video-variants.jpg",
+        "width": 1120,
+        "loaded": true
+      }
+    ],
+    "links": [
+      {
+        "text": "Abrir configurador ↗",
+        "url": "http://127.0.0.1:4174/index.html"
+      },
+      {
+        "text": "Verificação geométrica ↓",
+        "url": "http://127.0.0.1:4174/assets/evidence-r3/geometry-validation.json"
+      },
+      {
+        "text": "Mapa de medidas ↓",
+        "url": "http://127.0.0.1:4174/assets/evidence-r3/dimensions.json"
+      },
+      {
+        "text": "Mapa dos 71 materiais ↓",
+        "url": "http://127.0.0.1:4174/assets/catalogue-r3/material-r3-ledger.json"
+      },
+      {
+        "text": "Comparação de cor e repetição ↓",
+        "url": "http://127.0.0.1:4174/assets/evidence-r3/floor-colour-periodicity.json"
+      },
+      {
+        "text": "Abrir os vídeos no portefólio ↗",
+        "url": "http://127.0.0.1:4174/index.html"
+      },
+      {
+        "text": "Leitura dos vídeos e tempos ↓",
+        "url": "http://127.0.0.1:4174/assets/evidence-r3/source-video-audit.json"
+      },
+      {
+        "text": "Inventário dos quatro originais ↓",
+        "url": "http://127.0.0.1:4174/assets/reference-videos/source-inventory.json"
+      },
+      {
+        "text": "Descarregar MP4 ↓",
+        "url": "http://127.0.0.1:4174/assets/presentation-v3.mp4"
+      },
+      {
+        "text": "Descarregar MP4 ↓",
+        "url": "http://127.0.0.1:4174/assets/expansion-v3.mp4"
+      },
+      {
+        "text": "Revisão anterior R2 ↗",
+        "url": "http://127.0.0.1:4174/assets/evidence/audit-report.html"
+      },
+      {
+        "text": "Identificação dos ficheiros verificados ↓",
+        "url": "http://127.0.0.1:4174/assets/evidence-r3/source-hashes.json"
+      }
+    ],
+    "checked": [
+      {
+        "url": "http://127.0.0.1:4174/assets/plantas-40-pes.xlsx",
+        "status": 200,
+        "contentType": "application/octet-stream"
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/opcionais-2026.pdf",
+        "status": 200,
+        "contentType": "application/pdf"
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/expansao.png",
+        "status": 200,
+        "contentType": "image/png"
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/estrutura.png",
+        "status": 200,
+        "contentType": "image/png"
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/alpendre.jpg",
+        "status": 200,
+        "contentType": "image/jpeg"
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/reference-videos/source-inventory.json",
+        "status": 200,
+        "contentType": "application/json"
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/catalogue-r3/material-r3-ledger.json",
+        "status": 200,
+        "contentType": "application/json"
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/catalogue-r3/floor-visual-metrics.json",
+        "status": 200,
+        "contentType": "application/json"
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/evidence-r3/audit-report.html",
+        "status": 200,
+        "contentType": "text/html"
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/evidence-r3/dimensions.json",
+        "status": 200,
+        "contentType": "application/json"
+      },
+      {
+        "url": "http://127.0.0.1:4174/index.html",
+        "status": 200,
+        "contentType": "text/html"
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/evidence-r3/geometry-validation.json",
+        "status": 200,
+        "contentType": "application/json"
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/evidence-r3/floor-colour-periodicity.json",
+        "status": 200,
+        "contentType": "application/json"
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/evidence-r3/source-video-audit.json",
+        "status": 200,
+        "contentType": "application/json"
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/presentation-v3.mp4",
+        "status": 206,
+        "contentType": "video/mp4"
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/expansion-v3.mp4",
+        "status": 206,
+        "contentType": "video/mp4"
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/evidence/audit-report.html",
+        "status": 200,
+        "contentType": "text/html"
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/evidence-r3/source-hashes.json",
+        "status": 200,
+        "contentType": "application/json"
+      }
+    ]
+  },
+  "final_family_check": {
+    "logs": [
+      {
+        "label": "audit",
+        "kind": "requestfailed",
+        "url": "http://127.0.0.1:4174/assets/presentation-v3.mp4",
+        "failure": {
+          "errorText": "net::ERR_ABORTED"
+        }
+      },
+      {
+        "label": "audit",
+        "kind": "requestfailed",
+        "url": "http://127.0.0.1:4174/assets/expansion-v3.mp4",
+        "failure": {
+          "errorText": "net::ERR_ABORTED"
+        }
+      },
+      {
+        "label": "audit",
+        "kind": "requestfailed",
+        "url": "http://127.0.0.1:4174/assets/presentation-v3.mp4",
+        "failure": {
+          "errorText": "net::ERR_ABORTED"
+        }
+      },
+      {
+        "label": "audit",
+        "kind": "requestfailed",
+        "url": "http://127.0.0.1:4174/assets/expansion-v3.mp4",
+        "failure": {
+          "errorText": "net::ERR_ABORTED"
+        }
+      }
+    ],
+    "reload": {
+      "state": {
+        "schemaVersion": 2,
+        "layout": "t2",
+        "exteriorId": "exterior-3d-gm-gm-16",
+        "exterior": "#c9a661",
+        "floorId": "floor-spc-kx7006",
+        "floor": "#92846c",
+        "interior": "#eeede8",
+        "interiorName": "Branco natural",
+        "kitchen": "linear",
+        "kitchenRef": "kitchen-01",
+        "bathroom": "standard",
+        "bathroomRef": "bathroom-01",
+        "bathroomUV": null,
+        "roof": false,
+        "porch": false,
+        "lighting": "neutral"
+      },
+      "visual": {
+        "view": "exterior",
+        "expansion": 1,
+        "cut": 1.1,
+        "exploded": 0,
+        "roofVisible": true,
+        "wallsVisible": true,
+        "furnitureVisible": true,
+        "doorsOpen": true
+      },
+      "family": "exterior-3d-gm",
+      "active": "exterior-3d-gm-gm-16",
+      "selectedCount": 1,
+      "surface": "exterior"
+    },
+    "recover": {
+      "state": {
+        "schemaVersion": 2,
+        "layout": "t2",
+        "exteriorId": "exterior-3d-gm-gm-16",
+        "exterior": "#c9a661",
+        "floorId": "floor-spc-kx7006",
+        "floor": "#92846c",
+        "interior": "#eeede8",
+        "interiorName": "Branco natural",
+        "kitchen": "linear",
+        "kitchenRef": "kitchen-01",
+        "bathroom": "standard",
+        "bathroomRef": "bathroom-01",
+        "bathroomUV": null,
+        "roof": false,
+        "porch": false,
+        "lighting": "neutral"
+      },
+      "visual": {
+        "view": "exterior",
+        "expansion": 1,
+        "cut": 1.1,
+        "exploded": 0,
+        "roofVisible": true,
+        "wallsVisible": true,
+        "furnitureVisible": true,
+        "doorsOpen": true
+      },
+      "family": "exterior-3d-gm",
+      "active": "exterior-3d-gm-gm-16",
+      "selectedCount": 1,
+      "surface": "exterior"
+    },
+    "kitchen": {
+      "state": {
+        "schemaVersion": 2,
+        "layout": "t2",
+        "exteriorId": "exterior-3d-gm-gm-16",
+        "exterior": "#c9a661",
+        "floorId": "floor-spc-kx7006",
+        "floor": "#92846c",
+        "interior": "#eeede8",
+        "interiorName": "Branco natural",
+        "kitchen": "l",
+        "kitchenRef": "kitchen-01",
+        "bathroom": "standard",
+        "bathroomRef": "bathroom-01",
+        "bathroomUV": null,
+        "roof": false,
+        "porch": false,
+        "lighting": "neutral"
+      },
+      "visual": {
+        "view": "interior",
+        "expansion": 1,
+        "cut": 1.1,
+        "exploded": 0,
+        "roofVisible": true,
+        "wallsVisible": true,
+        "furnitureVisible": true,
+        "doorsOpen": true
+      },
+      "selectedCount": 0
+    },
+    "materials": {
+      "state": {
+        "schemaVersion": 2,
+        "layout": "t2",
+        "exteriorId": "exterior-3d-gm-gm-16",
+        "exterior": "#c9a661",
+        "floorId": "floor-spc-kx7006",
+        "floor": "#92846c",
+        "interior": "#eeede8",
+        "interiorName": "Branco natural",
+        "kitchen": "l",
+        "kitchenRef": "kitchen-01",
+        "bathroom": "standard",
+        "bathroomRef": "bathroom-01",
+        "bathroomUV": null,
+        "roof": false,
+        "porch": false,
+        "lighting": "neutral"
+      },
+      "visual": {
+        "view": "exterior",
+        "expansion": 1,
+        "cut": 1.1,
+        "exploded": 0,
+        "roofVisible": true,
+        "wallsVisible": true,
+        "furnitureVisible": true,
+        "doorsOpen": true
+      },
+      "family": "exterior-3d-gm",
+      "active": "exterior-3d-gm-gm-16",
+      "selectedCount": 1,
+      "surface": "exterior"
+    }
+  },
+  "evidence_directory": "audit-local/browser"
+}

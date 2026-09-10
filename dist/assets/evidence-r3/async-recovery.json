@@ -1,0 +1,61 @@
+{
+  "sourceSha256": "27a0b9bd55e4214c96fbd4cbe52e3508cb364083079f3627efc708f54e28e349",
+  "exportStateRace": {
+    "firstPageLayout": "t2",
+    "secondPageTitle": "PLANTA t2",
+    "planInput": "svg-t2",
+    "metadataTitle": "Green Village 72 — t2",
+    "downloadName": "green-village-72-t2.pdf"
+  },
+  "staleCompareFailure": {
+    "newTitle": "new",
+    "messageAfterOldReject": "",
+    "messageAfterNewRender": "",
+    "newRendererCalled": true
+  },
+  "summaryTimeout": {
+    "summaryShown": true,
+    "notifications": [
+      "Imagem indisponível: Tempo de carregamento dos materiais excedido."
+    ],
+    "containsCurrentConfiguration": true,
+    "containsFallbackNote": true
+  },
+  "snapshotGuards": [
+    {
+      "kind": "configuration",
+      "renders": 0,
+      "image": null,
+      "error": "A configuração mudou durante a captura. Tente novamente."
+    },
+    {
+      "kind": "visual",
+      "renders": 0,
+      "image": null,
+      "error": "A configuração mudou durante a captura. Tente novamente."
+    },
+    {
+      "kind": "unchanged",
+      "renders": 1,
+      "image": "data:image/png;base64,t2",
+      "error": null
+    }
+  ],
+  "handlerTimeouts": [
+    {
+      "kind": "snapshot",
+      "notifications": [
+        "Timeout test"
+      ]
+    },
+    {
+      "kind": "retry",
+      "notifications": [
+        "A tentar carregar as texturas…",
+        "Timeout test"
+      ]
+    }
+  ],
+  "pdfGlobalStateReads": 1,
+  "status": "PASS"
+}

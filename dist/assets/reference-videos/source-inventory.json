@@ -1,0 +1,195 @@
+{
+  "schema_version": 1,
+  "notice_pt": "Referências visuais de quatro variantes. A correspondência com as plantas de 72 m² não está comprovada. Os vídeos não mostram a expansão.",
+  "native_pixels": [
+    576,
+    1024
+  ],
+  "timecode_note_pt": "Localizadores aproximados a 1 fps.",
+  "videos": [
+    {
+      "id": "v1-spacious",
+      "filename": "40FT EXPANDABLE CONTAINER HOUSE — 3 Bedroom Modular Home - Mobile Residence - Emergency Housing Solution Modern Design • Spacious Living • Thermal Insulation • Fast Installation Designed for modern family living, emergency accommoda.mp4",
+      "sha256": "24ab128ec1648232fccc74f5954e1b5ba8313e484a39eed30dc9327854aa00f7",
+      "duration_seconds": 118.233333,
+      "label_pt": "40FT — Spacious Living",
+      "frames": [
+        {
+          "category": "exterior",
+          "label_pt": "Exterior com efeito de pedra",
+          "time_seconds": 0,
+          "timecode": "00:00",
+          "sha256": "a19c79d72ffcec93b23800675dc016d294df674f8b45f05ebc5fd5f0c3b91b81",
+          "asset": "assets/reference-videos/v1-spacious-000s-exterior-stone-effect.jpg"
+        },
+        {
+          "category": "piso",
+          "label_pt": "Piso cinza e juntas de módulo",
+          "time_seconds": 8,
+          "timecode": "00:08",
+          "sha256": "7ce07ba8f8fcadc2dfb1d02bbc140e14a3ba8119957c7b3f7d019ffcb4b6c6ad",
+          "asset": "assets/reference-videos/v1-spacious-008s-living-kitchen-floor.jpg"
+        },
+        {
+          "category": "parede",
+          "label_pt": "Painéis lisos e juntas verticais",
+          "time_seconds": 36,
+          "timecode": "00:36",
+          "sha256": "fabbcfc1a40dd344f544c9ba6a042f69f8eb085aaf95f53f557d1ad82ef9b1ab",
+          "asset": "assets/reference-videos/v1-spacious-036s-wall-panel-joint.jpg"
+        },
+        {
+          "category": "cozinha",
+          "label_pt": "Cozinha branca em L",
+          "time_seconds": 88,
+          "timecode": "01:28",
+          "sha256": "ad53366fca224760aaa8ffb22d88345adf7626738ded3f0cbad95b7abf8dd9da",
+          "asset": "assets/reference-videos/v1-spacious-088s-white-framed-l-kitchen.jpg"
+        }
+      ],
+      "asset": "assets/reference-videos/v1-spacious.mp4",
+      "poster": "assets/reference-videos/v1-spacious-000s-exterior-stone-effect.jpg",
+      "title": "Exterior em pedra",
+      "description": "Fachada envidraçada, piso cinza e cozinha em L.",
+      "variantNote": "40FT no nome do ficheiro; correspondência com as plantas por confirmar."
+    },
+    {
+      "id": "v2-74m2",
+      "filename": "40FT EXPANDABLE CONTAINER HOUSE — 74㎡ Modern Modular Living • Fast Installation • Luxury Interior • Export Standard Designed for modern residential living, tourism projects, emergency accommodation, and commercial housing solution.mp4",
+      "sha256": "1c68b155875dc30534750f817785ad24f6e469e813013ba4fe2632b92ef0c0c1",
+      "duration_seconds": 57.0,
+      "label_pt": "40FT — 74 m²",
+      "frames": [
+        {
+          "category": "exterior",
+          "label_pt": "Exterior cinza e entrada frontal",
+          "time_seconds": 0,
+          "timecode": "00:00",
+          "sha256": "a48bec3a7dbfd7923a01002f7c4facc187e6bfc9d02158327c2aeb2aa68c23e2",
+          "asset": "assets/reference-videos/v2-74m2-000s-grey-front.jpg"
+        },
+        {
+          "category": "piso",
+          "label_pt": "Piso greige na área comum",
+          "time_seconds": 12,
+          "timecode": "00:12",
+          "sha256": "d73530134fbc5c1c0606cedfd5caa9aa0448302d2e332e72b134ad54ad61ad41",
+          "asset": "assets/reference-videos/v2-74m2-012s-greige-floor-long-room.jpg"
+        },
+        {
+          "category": "parede",
+          "label_pt": "Paredes claras e rodapé escuro",
+          "time_seconds": 32,
+          "timecode": "00:32",
+          "sha256": "4c09de8b8d95a0d15d552cab809e58b5220c48d01ce2d8c52dadaf9166701e58",
+          "asset": "assets/reference-videos/v2-74m2-032s-white-walls-black-skirting.jpg"
+        },
+        {
+          "category": "cozinha",
+          "label_pt": "Frentes brancas e tampo escuro",
+          "time_seconds": 24,
+          "timecode": "00:24",
+          "sha256": "a1c44a9b295b7a481dc68c19fc167d0f0a5bf7c06ee2bb6055803394dff2e6ce",
+          "asset": "assets/reference-videos/v2-74m2-024s-white-l-kitchen.jpg"
+        }
+      ],
+      "asset": "assets/reference-videos/v2-74m2.mp4",
+      "poster": "assets/reference-videos/v2-74m2-000s-grey-front.jpg",
+      "title": "Exterior cinza",
+      "description": "Réguas greige, paredes claras e cozinha branca com tampo escuro.",
+      "variantNote": "Identificado como 74 m² no ficheiro. Referência de outra variante."
+    },
+    {
+      "id": "v3-comfortable",
+      "filename": "40FT EXPANDABLE CONTAINER HOUSE — 3 Bedroom Modular Home - Mobile Residence - Emergency Housing Solution Modern Design • Comfortable Living • Thermal Insulation • Fast Installation Designed for modern family living, temporary accomm.mp4",
+      "sha256": "6a5266ec7bd584785dee744490b2694994abc60ef2bad7a88c791e2c4367163b",
+      "duration_seconds": 100.198027,
+      "label_pt": "40FT — Comfortable Living",
+      "frames": [
+        {
+          "category": "exterior",
+          "label_pt": "Exterior creme e porta lateral",
+          "time_seconds": 0,
+          "timecode": "00:00",
+          "sha256": "c08ab4db875a61ea9a010c18b6d172c5dc120f30457f879441d1df9810d77413",
+          "asset": "assets/reference-videos/v3-comfortable-000s-cream-horizontal-cladding.jpg"
+        },
+        {
+          "category": "piso",
+          "label_pt": "Piso cinza com juntas entre bandas",
+          "time_seconds": 92,
+          "timecode": "01:32",
+          "sha256": "0ac79c6ab4a7c65aae35193f2359840f57c4adaaf5d5acc3905ac0e790ae37a2",
+          "asset": "assets/reference-videos/v3-comfortable-092s-floor-module-lines-loose-packages.jpg"
+        },
+        {
+          "category": "parede",
+          "label_pt": "Juntas e remates dos painéis",
+          "time_seconds": 40,
+          "timecode": "00:40",
+          "sha256": "f85d5d0e4a8e557c5cdb124db904657d4e630984da7d790a278e411e8230e015",
+          "asset": "assets/reference-videos/v3-comfortable-040s-panel-wall-seams.jpg"
+        },
+        {
+          "category": "banho",
+          "label_pt": "Móvel azul e aparelho mural",
+          "time_seconds": 68,
+          "timecode": "01:08",
+          "sha256": "c10cc112373c28531cc452ebb010b09b4929af0af6439227dea284312e33d147",
+          "asset": "assets/reference-videos/v3-comfortable-068s-blue-vanity-heater.jpg"
+        }
+      ],
+      "asset": "assets/reference-videos/v3-comfortable.mp4",
+      "poster": "assets/reference-videos/v3-comfortable-000s-cream-horizontal-cladding.jpg",
+      "title": "Exterior creme",
+      "description": "Porta lateral, juntas entre módulos e detalhes de banho.",
+      "variantNote": "Contém superfícies protegidas e equipamentos embalados; acabamentos finais por confirmar."
+    },
+    {
+      "id": "v4-37m2",
+      "filename": "20ft Foldable Modular Mobile House - 37㎡ Spacious Living - Professional Export from China If you are looking for a modern housing solution that combines large space, easy transportation, and fast installation, this 40ft foldable modular h.mp4",
+      "sha256": "106762e67dbb6359804b3b23822ed23d3778824a2fc6a861810e45aa7fadb0e1",
+      "duration_seconds": 56.566667,
+      "label_pt": "20ft — 37 m²",
+      "frames": [
+        {
+          "category": "exterior",
+          "label_pt": "Exterior castanho numa unidade curta",
+          "time_seconds": 4,
+          "timecode": "00:04",
+          "sha256": "27a7f31454c9bb2844bdcea8a283bb2ff28eebb058c0b215784cbfde28f20275",
+          "asset": "assets/reference-videos/v4-37m2-004s-brown-cladding-window.jpg"
+        },
+        {
+          "category": "piso",
+          "label_pt": "Piso castanho e rodapé escuro",
+          "time_seconds": 16,
+          "timecode": "00:16",
+          "sha256": "76bf1eea2ccab58bd39cdc09938485f8d80b51690238ae5077ee3b52031d4abd",
+          "asset": "assets/reference-videos/v4-37m2-016s-brown-floor-white-wall.jpg"
+        },
+        {
+          "category": "parede",
+          "label_pt": "Divisórias e portas interiores",
+          "time_seconds": 20,
+          "timecode": "00:20",
+          "sha256": "b85eb18288efa95c671ea8b0adbcbd9e684154a2155a49dc0eaeb551f0c9f76a",
+          "asset": "assets/reference-videos/v4-37m2-020s-doorway-partitions.jpg"
+        },
+        {
+          "category": "banho",
+          "label_pt": "Duche e revestimento com veios cinzentos",
+          "time_seconds": 36,
+          "timecode": "00:36",
+          "sha256": "42acea579aa7e2b036cb22f1616685d9021f404350ab8566e58570c6e429cd56",
+          "asset": "assets/reference-videos/v4-37m2-036s-bathroom-grey-veins.jpg"
+        }
+      ],
+      "asset": "assets/reference-videos/v4-37m2.mp4",
+      "poster": "assets/reference-videos/v4-37m2-004s-brown-cladding-window.jpg",
+      "title": "Unidade compacta",
+      "description": "Piso castanho, painéis claros e duche com revestimento de veios.",
+      "variantNote": "Identificado como 20ft / 37 m²; o nome também menciona 40ft. Variante distinta."
+    }
+  ]
+}

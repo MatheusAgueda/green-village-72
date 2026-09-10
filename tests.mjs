@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
 import {readFileSync,existsSync,readdirSync,statSync} from 'node:fs';
 import path from 'node:path';
 import * as THREE from './dist/vendor/three.module.js';
@@ -53,6 +54,22 @@ check('71 material IDs map to original/crop assets and valid render metadata',()
  assert.equal(MATERIALS.length,71);assert.equal(new Set(MATERIALS.map(x=>x.id)).size,71);assert.deepEqual(new Set(MATERIALS.map(x=>x.id)),new Set(SWATCHES.map(x=>x.id)));
  for(const m of MATERIALS){for(const f of [m.originalAsset,m.textureAsset,m.referenceCropAsset].filter(Boolean))assert.ok(existsSync('dist/assets/catalogue-v2/'+f),f);assert.ok(/^#[a-f0-9]{6}$/i.test(m.previewHexApprox));assert.ok(m.render.roughnessApprox>=0&&m.render.roughnessApprox<=1);assert.ok(m.render.estimatedPhysicalRepeat.widthM>0&&m.render.estimatedPhysicalRepeat.heightM>0);assert.ok(['original-crop-texture','sampled-colour'].includes(m.render.mode));}
 });
+check('R3 grain treatment preserves 12 source identities and native map dimensions',()=>{
+ const manifest=JSON.parse(readFileSync('dist/assets/catalogue-r3/floor-manifest.json','utf8'));
+ assert.equal(manifest.entries.length,12);
+ for(const entry of manifest.entries){assert.ok(MATERIALS.find(m=>m.id===entry.id));const png=readFileSync('dist/assets/catalogue-r3/'+entry.derivedAsset);assert.deepEqual([png.readUInt32BE(16),png.readUInt32BE(20)],entry.dimensionsPx);assert.equal(entry.physicalDimensionsStatus,'visualisation-estimate-not-manufacturer-data');assert.ok(entry.metrics.meanMaxAbsDifferenceSrgb8<.01);assert.ok(entry.metrics.highFrequencyCorrelationInner>.99);}
+});
+check('37 wall derivatives retain native dimensions and original identities',()=>{
+ const manifest=JSON.parse(readFileSync('dist/assets/catalogue-r3/wall-manifest.json','utf8')),entries=manifest.entries.filter(e=>e.derivedAsset);assert.equal(entries.length,37);
+ for(const e of entries){assert.ok(MATERIALS.find(m=>m.id===e.id));const png=readFileSync('dist/assets/catalogue-r3/'+e.derivedAsset);assert.deepEqual([png.readUInt32BE(16),png.readUInt32BE(20)],e.dimensionsPx);assert.equal(createHash('sha256').update(png).digest('hex'),e.sha256);assert.equal(e.physicalDimensionsStatus,'visualisation-estimate-not-manufacturer-data');}
+});
+check('R3 collapsed layers remain collapsed and optional roofs never hide structure',()=>{
+ const h=makeHouse({...DEFAULT_CONFIG,view:'finishes',exploded:0,roof:true,porch:true});close(h.groups.roof.position.y,0);h.setView('finishes');close(h.groups.roof.position.y,0);h.setView('structure');assert.ok(h.groups.cover.children.some(o=>o.visible&&o.material===h.materials.steel));assert.equal(h.groups.cover.children.filter(o=>o.material===h.materials.roof&&o.visible).length,0);assert.equal(h.groups.porch.children.find(o=>o.name==='Cobertura do alpendre').visible,false);h.setView('exterior');assert.ok(h.groups.cover.children.every(o=>o.visible));h.dispose();
+});
+check('four original reference videos preserve their hashes and valid chapter bounds',()=>{
+ const videos=JSON.parse(readFileSync('dist/assets/reference-videos/source-inventory.json','utf8')).videos;assert.equal(videos.length,4);
+ for(const video of videos){assert.equal(createHash('sha256').update(readFileSync('dist/'+video.asset)).digest('hex'),video.sha256);assert.equal(video.frames.length,4);for(const frame of video.frames){assert.ok(frame.time_seconds>=0&&frame.time_seconds<video.duration_seconds);assert.equal(createHash('sha256').update(readFileSync('dist/'+frame.asset)).digest('hex'),frame.sha256);}}
+});
 check('metre UVs preserve physical scale across different mesh fragments',()=>{
  const a=physicalUV(new THREE.BoxGeometry(1,2,.1),[0,1,0]),b=physicalUV(new THREE.BoxGeometry(2,2,.1),[1.5,1,0]);const span=g=>{const u=[];for(let i=0;i<g.attributes.position.count;i++)if(g.attributes.normal.getZ(i)>.9)u.push(g.attributes.uv.getX(i));return Math.max(...u)-Math.min(...u);};close(span(a),1);close(span(b),2);a.dispose();b.dispose();
 });
@@ -73,11 +90,15 @@ check('bath mirroring updates fixtures and service terminals together',()=>{
 check('SVG and exported configuration contain the current layout and same area data',()=>{
  for(const layout of Object.keys(source)){const s={...DEFAULT_CONFIG,layout},p=getPlan(s),svg=planSVG(s),json=JSON.parse(encodeConfiguration(s));assert.ok(svg.includes('6 220 mm')&&svg.includes('11 800 mm'));assert.ok(svg.includes(p.label));assert.deepEqual(json.areas,p.areas);assert.equal(json.configuration.layout,layout);assert.ok(!/NaN|undefined/.test(svg));}
 });
+check('plan area labels retain readable contrast with extreme custom floors',()=>{
+ const luminance=hex=>{const values=[1,3,5].map(i=>parseInt(hex.slice(i,i+2),16)/255).map(v=>v<=.04045?v/12.92:((v+.055)/1.055)**2.4);return values.reduce((sum,v,i)=>sum+v*[.2126,.7152,.0722][i],0);};
+ for(const floor of ['#000000','#ffffff','#ff0000','#00ff00','#0000ff']){const svg=planSVG({...DEFAULT_CONFIG,floorId:null,floor}),background=svg.match(/rx="0" fill="(#[a-f0-9]{6})"/)[1],foreground='#405a47';assert.ok(svg.includes(foreground));assert.ok((luminance(background)+.05)/(luminance(foreground)+.05)>=4.5);}
+});
 check('all original plans, catalogue references and application dependencies are present',()=>{
  for(const x of DATA.layouts)assert.ok(existsSync('dist/'+x.image));for(const x of [...DATA.kitchens,...DATA.bathrooms])assert.ok(existsSync('dist/assets/catalogue/'+x.asset));for(const f of ['opcionais-2026.pdf','plantas-40-pes.xlsx'])assert.ok(statSync('dist/assets/'+f).size>1000);
  for(const m of readFileSync('dist/index.html','utf8').matchAll(/(?:src|href)="([^"#]+)"/g)){const u=m[1];if(u==='./'||/^https?:|data:/.test(u)||(core&&/v2(?:-poster)?\.(?:jpg|mp4)$/.test(u)))continue;assert.ok(existsSync('dist/'+u),u);}
 });
-if(!core)check('new videos, poster images and evidence links are real delivered files',()=>{for(const f of ['presentation-v2.mp4','expansion-v2.mp4','presentation-v2-poster.jpg','expansion-v2-poster.jpg','evidence/audit-report.html','evidence/dimensions.json'])assert.ok(statSync('dist/assets/'+f).size>1000,f);});
+if(!core)check('new videos, poster images and evidence links are real delivered files',()=>{for(const f of ['presentation-v3.mp4','expansion-v3.mp4','presentation-v3-poster.jpg','expansion-v3-poster.jpg','evidence-r3/audit-report.html','evidence-r3/dimensions.json'])assert.ok(statSync('dist/assets/'+f).size>1000,f);});
 check('distributed first-party text contains no machine paths or credentials',()=>{
  function scan(dir){for(const f of readdirSync(dir)){const p=path.join(dir,f);if(statSync(p).isDirectory())scan(p);else if(/\.(js|html|json|css)$/.test(f)&&!p.includes('vendor')){const s=readFileSync(p,'utf8');assert.ok(!s.includes('/Users/'),p);assert.ok(!s.includes('API_KEY'),p);}}}scan('dist');
 });

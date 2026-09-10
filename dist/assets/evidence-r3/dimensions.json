@@ -1,0 +1,3645 @@
+{
+  "revision": "GV72-R2-2026-09-10",
+  "units": "metres",
+  "axes": {
+    "x": "right",
+    "y": "up",
+    "z": "main entrance"
+  },
+  "origin": "Centre of floor surface",
+  "sourcePrecision": "Exterior integer mm as printed. Interior trace proportions and unmeasured details remain estimates; floating-point precision does not improve source certainty.",
+  "numericToleranceM": 1e-7,
+  "manufacturingTolerance": null,
+  "parameters": {
+    "width": 6.22,
+    "length": 11.8,
+    "core": 2.2,
+    "wing": 2.01,
+    "height": 2.55,
+    "panel": 0.1,
+    "partition": 0.08,
+    "frame": 0.12,
+    "floor": 0.121,
+    "roof": 0.127,
+    "doorWidth": 0.76,
+    "doorHeight": 2.05,
+    "windowWidth": 0.92,
+    "windowHeight": 1.05,
+    "windowSill": 0.95,
+    "entryWidth": 1.7,
+    "entryHeight": 2.15,
+    "bathWindowWidth": 0.6,
+    "bathWindowHeight": 0.5,
+    "bathWindowSill": 1.7,
+    "porchDepth": 1.95,
+    "canopyOverhang": 0.28,
+    "canopyEavesAboveWall": 0.22,
+    "canopyRise": 0.65
+  },
+  "measures": [
+    {
+      "id": "length",
+      "label": "Comprimento exterior",
+      "value": 11.8,
+      "unit": "m",
+      "source": "XLSX · todas as 7 plantas",
+      "status": "confirmed",
+      "note": ""
+    },
+    {
+      "id": "width",
+      "label": "Largura exterior",
+      "value": 6.22,
+      "unit": "m",
+      "source": "XLSX · todas as 7 plantas",
+      "status": "confirmed",
+      "note": ""
+    },
+    {
+      "id": "core",
+      "label": "Banda central",
+      "value": 2.2,
+      "unit": "m",
+      "source": "XLSX · cota superior 2200",
+      "status": "confirmed",
+      "note": ""
+    },
+    {
+      "id": "wing",
+      "label": "Banda lateral (cada)",
+      "value": 2.01,
+      "unit": "m",
+      "source": "XLSX · cotas superiores 2010",
+      "status": "confirmed",
+      "note": ""
+    },
+    {
+      "id": "windowWidth",
+      "label": "Largura cotada das janelas",
+      "value": 0.92,
+      "unit": "m",
+      "source": "XLSX · cota 920; posição/altura não cotadas",
+      "status": "confirmed",
+      "note": ""
+    },
+    {
+      "id": "height",
+      "label": "Altura das paredes e perfis na maquete",
+      "value": 2.55,
+      "unit": "m",
+      "source": "Hipótese da maquete",
+      "status": "estimated",
+      "note": "Não indicada nos anexos. Não usar como cota de fabrico."
+    },
+    {
+      "id": "panel",
+      "label": "Espessura de parede na maquete",
+      "value": 0.1,
+      "unit": "m",
+      "source": "Hipótese geométrica",
+      "status": "estimated",
+      "note": "O catálogo refere opção lã de rocha 100 mm; não comprova espessura total da parede desta variante."
+    },
+    {
+      "id": "partition",
+      "label": "Divisória interior",
+      "value": 0.08,
+      "unit": "m",
+      "source": "Hipótese geométrica",
+      "status": "estimated",
+      "note": ""
+    },
+    {
+      "id": "frame",
+      "label": "Secção visual dos perfis",
+      "value": 0.12,
+      "unit": "m",
+      "source": "Fotografias e maquete",
+      "status": "estimated",
+      "note": "Sem desenho de perfil ou ligação."
+    },
+    {
+      "id": "floor",
+      "label": "Camadas de piso, incluindo intervalos",
+      "value": 0.121,
+      "unit": "m",
+      "source": "Hipótese geométrica",
+      "status": "estimated",
+      "note": ""
+    },
+    {
+      "id": "roof",
+      "label": "Camadas e nervuras da cobertura",
+      "value": 0.127,
+      "unit": "m",
+      "source": "Hipótese geométrica",
+      "status": "estimated",
+      "note": ""
+    },
+    {
+      "id": "doorWidth",
+      "label": "Vão interior na maquete",
+      "value": 0.76,
+      "unit": "m",
+      "source": "Hipótese de visualização",
+      "status": "estimated",
+      "note": ""
+    },
+    {
+      "id": "doorHeight",
+      "label": "Altura das portas na maquete",
+      "value": 2.05,
+      "unit": "m",
+      "source": "Hipótese de visualização",
+      "status": "estimated",
+      "note": ""
+    },
+    {
+      "id": "windowHeight",
+      "label": "Altura das janelas na maquete",
+      "value": 1.05,
+      "unit": "m",
+      "source": "Fotografias, sem cota",
+      "status": "estimated",
+      "note": ""
+    },
+    {
+      "id": "entryWidthVisual",
+      "label": "Largura de entrada na maquete",
+      "value": 1.7,
+      "unit": "m",
+      "source": "Fotografias sem cotas",
+      "status": "estimated",
+      "note": ""
+    },
+    {
+      "id": "entryHeightVisual",
+      "label": "Altura de entrada na maquete",
+      "value": 2.15,
+      "unit": "m",
+      "source": "Fotografias sem cotas",
+      "status": "estimated",
+      "note": ""
+    },
+    {
+      "id": "bathWindowWidthVisual",
+      "label": "Largura de janela do banho na maquete",
+      "value": 0.6,
+      "unit": "m",
+      "source": "Planta sem cota neste vão",
+      "status": "estimated",
+      "note": ""
+    },
+    {
+      "id": "windowSillVisual",
+      "label": "Peitoril de janela na maquete",
+      "value": 0.95,
+      "unit": "m",
+      "source": "Fotografias sem cotas",
+      "status": "estimated",
+      "note": ""
+    },
+    {
+      "id": "porchDepthVisual",
+      "label": "Profundidade de alpendre na maquete",
+      "value": 1.95,
+      "unit": "m",
+      "source": "Hipótese de visualização",
+      "status": "estimated",
+      "note": ""
+    },
+    {
+      "id": "canopyRiseVisual",
+      "label": "Desnível da cumeeira na maquete",
+      "value": 0.65,
+      "unit": "m",
+      "source": "Fotografia sem cota",
+      "status": "estimated",
+      "note": ""
+    },
+    {
+      "id": "canopyOverhangVisual",
+      "label": "Beiral na maquete",
+      "value": 0.28,
+      "unit": "m",
+      "source": "Fotografia sem cota",
+      "status": "estimated",
+      "note": ""
+    },
+    {
+      "id": "closedWidth",
+      "label": "Largura de transporte",
+      "value": null,
+      "unit": "m",
+      "source": "Desenho do módulo fechado não fornecido",
+      "status": "missing",
+      "note": "A banda central de 2,20 m não estabelece a largura exterior de transporte com painéis recolhidos."
+    },
+    {
+      "id": "usefulArea",
+      "label": "Área útil certificada",
+      "value": null,
+      "unit": "m",
+      "source": "Mapa de áreas não fornecido",
+      "status": "missing",
+      "note": ""
+    },
+    {
+      "id": "ridge",
+      "label": "Altura da cumeeira adicional",
+      "value": null,
+      "unit": "m",
+      "source": "Fotografia de cobertura sem cotas",
+      "status": "missing",
+      "note": ""
+    },
+    {
+      "id": "porchDepth",
+      "label": "Profundidade de alpendre",
+      "value": null,
+      "unit": "m",
+      "source": "Fotografia de cobertura sem cotas",
+      "status": "missing",
+      "note": ""
+    }
+  ],
+  "sources": [
+    {
+      "id": "plans",
+      "file": "assets/plantas-40-pes.xlsx",
+      "label": "Plantas de 40 pés",
+      "scope": "7 layouts de unidade de dupla asa; designação 72 m² não impressa.",
+      "locations": "7 imagens na folha 40ft Standard Double-Wing Unit",
+      "confirmed": [
+        "11 800 × 6 220 mm",
+        "2010 + 2200 + 2010 mm",
+        "T0, T1, T2, T3 A/B e T4 A/B"
+      ],
+      "limits": "As posições interiores são proporcionais aproximadas; não há cozinha nem altura cotada."
+    },
+    {
+      "id": "catalogue",
+      "file": "assets/opcionais-2026.pdf",
+      "label": "Opcionais de personalização · 11/07/2026",
+      "scope": "Catálogo genérico de expansíveis; compatibilidade específica de 72 m² por confirmar.",
+      "locations": "p. 7–10 exterior; p. 11 SPC; p. 16 cozinha; p. 17–19 casa de banho",
+      "limits": "Amostras raster até 480 × 300 px. Não há RAL/NCS, escala de textura ou preço total da casa."
+    },
+    {
+      "id": "expansion",
+      "file": "assets/expansao.png",
+      "label": "Sequência de expansão em quatro imagens",
+      "scope": "Referência conceptual sem cotas e sem variante comprovada.",
+      "locations": "4 posições",
+      "limits": "Não define pivôs exactos, alturas, folgas, bloqueios ou transporte das divisórias."
+    },
+    {
+      "id": "frame",
+      "file": "assets/estrutura.png",
+      "label": "Referência de armação",
+      "scope": "Imagem de estrutura, sem desenho de fabrico.",
+      "locations": "Imagem completa",
+      "limits": "Perfis, fixações e soldaduras não cotados."
+    },
+    {
+      "id": "canopy",
+      "file": "assets/alpendre.jpg",
+      "label": "Fotografia de telhado e alpendre",
+      "scope": "Variante fotografada, sem dimensões.",
+      "locations": "Imagem completa",
+      "limits": "A maquete reproduz forma e apoios com medidas estimadas."
+    }
+  ],
+  "divergences": [
+    "72 m² é a designação comercial. 11,80 × 6,22 = 73,396 m² de rectângulo exterior. A diferença não é corrigida alterando cotas.",
+    "5690 + 5690 = 11380 mm: faltam 420 mm para os 11800 mm totais nas plantas T0/T1/T2/T3 A/T4 A. Não foi atribuída silenciosamente uma espessura a esta diferença.",
+    "4000 + 3900 + 3900 = 11800 mm nas plantas T3 B/T4 B; a cota 210 nas extremidades não é somada novamente ao comprimento exterior.",
+    "As bandas estruturais cotadas não coincidem com os traços de divisórias no desenho raster. Os limites de divisões mantêm o traçado observado como estimativa, não cota exacta.",
+    "As fotografias mostram unidades com vãos, portas laterais e acabamentos distintos. Não provam que todos estes elementos coexistem numa única variante."
+  ],
+  "layouts": [
+    {
+      "id": "t0",
+      "label": "T0",
+      "description": "Espaço aberto, com casa de banho no fundo ao centro.",
+      "sourceImage": "assets/layouts/image1.png",
+      "bedrooms": 0,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "label": "Casa de banho",
+          "outline": {
+            "x0": -0.7464,
+            "x1": 0.7464,
+            "z0": -5.9,
+            "z1": -3.186
+          },
+          "clear": {
+            "x0": -0.7063999999999999,
+            "x1": 0.7063999999999999,
+            "z0": -5.800000000000001,
+            "z1": -3.226
+          },
+          "area": 3.6365472000000008,
+          "status": "estimated"
+        }
+      ],
+      "walls": [
+        {
+          "id": "bath--1",
+          "axis": "z",
+          "c": -0.7464,
+          "a": -5.9,
+          "b": -3.186,
+          "thickness": 0.08,
+          "height": 2.55,
+          "door": null
+        },
+        {
+          "id": "bath-1",
+          "axis": "z",
+          "c": 0.7464,
+          "a": -5.9,
+          "b": -3.186,
+          "thickness": 0.08,
+          "height": 2.55,
+          "door": null
+        },
+        {
+          "id": "bath-front",
+          "axis": "x",
+          "c": -3.186,
+          "a": -0.7464,
+          "b": 0.7464,
+          "thickness": 0.08,
+          "height": 2.55,
+          "door": {
+            "id": "bath-door",
+            "u": 0,
+            "width": 0.76,
+            "height": 2.05,
+            "hinge": -1,
+            "opensInto": "common"
+          }
+        }
+      ],
+      "doors": [
+        {
+          "id": "bath-door",
+          "u": 0,
+          "width": 0.76,
+          "height": 2.05,
+          "hinge": -1,
+          "opensInto": "common",
+          "wall": "bath-front",
+          "axis": "x",
+          "c": -3.186
+        }
+      ],
+      "perimeter": [
+        {
+          "axis": "x",
+          "c": 5.9,
+          "a": -3.11,
+          "b": 3.11,
+          "holes": [
+            {
+              "id": "entry",
+              "u": 0,
+              "width": 1.7,
+              "height": 2.15,
+              "sill": 0,
+              "kind": "door",
+              "source": "double-leaf door depicted; size estimated"
+            },
+            {
+              "id": "front-window--1",
+              "u": -2.05,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95,
+              "kind": "window"
+            },
+            {
+              "id": "front-window-1",
+              "u": 2.05,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95,
+              "kind": "window"
+            }
+          ]
+        },
+        {
+          "axis": "x",
+          "c": -5.9,
+          "a": -3.11,
+          "b": 3.11,
+          "holes": [
+            {
+              "id": "bath-window",
+              "u": 0,
+              "width": 0.6,
+              "height": 0.5,
+              "sill": 1.7,
+              "kind": "window",
+              "source": "estimated"
+            },
+            {
+              "id": "rear-window--1",
+              "u": -2.05,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95,
+              "kind": "window"
+            },
+            {
+              "id": "rear-window-1",
+              "u": 2.05,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95,
+              "kind": "window"
+            }
+          ]
+        },
+        {
+          "axis": "z",
+          "c": -3.11,
+          "a": -5.9,
+          "b": 5.9,
+          "holes": [
+            {
+              "id": "side--1-0",
+              "u": -2.85,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95,
+              "kind": "window",
+              "source": "window count/room relation follows source; centre position estimated"
+            },
+            {
+              "id": "side--1-1",
+              "u": 2.85,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95,
+              "kind": "window",
+              "source": "window count/room relation follows source; centre position estimated"
+            }
+          ]
+        },
+        {
+          "axis": "z",
+          "c": 3.11,
+          "a": -5.9,
+          "b": 5.9,
+          "holes": [
+            {
+              "id": "side-1-0",
+              "u": -2.85,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95,
+              "kind": "window",
+              "source": "window count/room relation follows source; centre position estimated"
+            },
+            {
+              "id": "side-1-1",
+              "u": 2.85,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95,
+              "kind": "window",
+              "source": "window count/room relation follows source; centre position estimated"
+            }
+          ]
+        }
+      ],
+      "furnishings": [
+        {
+          "id": "shower",
+          "type": "shower",
+          "x0": -0.6713999999999999,
+          "x1": 0.6713999999999999,
+          "z0": -5.775,
+          "z1": -4.950000000000001,
+          "height": 1.95,
+          "status": "estimated"
+        },
+        {
+          "id": "toilet",
+          "type": "toilet",
+          "x0": -0.6364,
+          "x1": -0.19639999999999994,
+          "z0": -4.7700000000000005,
+          "z1": -4.110000000000001,
+          "height": 0.78,
+          "status": "estimated"
+        },
+        {
+          "id": "basin",
+          "type": "basin",
+          "x0": 0.26639999999999997,
+          "x1": 0.6863999999999999,
+          "z0": -3.786,
+          "z1": -3.346,
+          "height": 0.85,
+          "status": "estimated"
+        },
+        {
+          "id": "kitchen-main",
+          "type": "kitchen",
+          "x0": -2.985,
+          "x1": -2.385,
+          "z0": -3.9,
+          "z1": -1.5,
+          "height": 0.91,
+          "status": "estimated"
+        },
+        {
+          "id": "sofa",
+          "type": "sofa",
+          "x0": -2.65,
+          "x1": -0.82,
+          "z0": 3.78,
+          "z1": 4.6,
+          "height": 0.8,
+          "status": "estimated"
+        },
+        {
+          "id": "table",
+          "type": "table",
+          "x0": -2.29,
+          "x1": -1.15,
+          "z0": 4.91,
+          "z1": 5.48,
+          "height": 0.4,
+          "status": "estimated"
+        }
+      ],
+      "servicePoints": [
+        {
+          "id": "shower",
+          "x": 0,
+          "z": -5.700000000000001,
+          "y": 1.05,
+          "hot": true
+        },
+        {
+          "id": "toilet",
+          "x": -0.41639999999999994,
+          "z": -4.65,
+          "y": 0.45,
+          "hot": false
+        },
+        {
+          "id": "basin",
+          "x": 0.47639999999999993,
+          "z": -3.556,
+          "y": 0.83,
+          "hot": true
+        },
+        {
+          "id": "kitchen-sink",
+          "x": -2.685,
+          "z": -3.44,
+          "y": 0.91,
+          "hot": true
+        }
+      ],
+      "areas": {
+        "commercial": 72,
+        "exterior": 73.396,
+        "internalEnvelope": 69.83200000000001,
+        "partitions": 0.47366400000000053,
+        "estimatedNet": 69.35833600000001,
+        "common": 65.72178880000001,
+        "roomTotal": 3.6365472000000008,
+        "status": "estimated",
+        "note": "Áreas calculadas com paredes de 100 mm e divisórias de 80 mm assumidas; não são um mapa de áreas certificado."
+      },
+      "dimensions": {
+        "width": 6.22,
+        "length": 11.8,
+        "core": 2.2,
+        "wing": 2.01,
+        "height": 2.55,
+        "panel": 0.1,
+        "partition": 0.08,
+        "frame": 0.12,
+        "floor": 0.121,
+        "roof": 0.127,
+        "doorWidth": 0.76,
+        "doorHeight": 2.05,
+        "windowWidth": 0.92,
+        "windowHeight": 1.05,
+        "windowSill": 0.95,
+        "entryWidth": 1.7,
+        "entryHeight": 2.15,
+        "bathWindowWidth": 0.6,
+        "bathWindowHeight": 0.5,
+        "bathWindowSill": 1.7,
+        "porchDepth": 1.95,
+        "canopyOverhang": 0.28,
+        "canopyEavesAboveWall": 0.22,
+        "canopyRise": 0.65
+      },
+      "sourceStatus": "estimated",
+      "compact": false
+    },
+    {
+      "id": "t1",
+      "label": "T1",
+      "description": "Um quarto ao fundo à direita. Sala aberta à esquerda e junto à entrada.",
+      "sourceImage": "assets/layouts/image2.png",
+      "bedrooms": 1,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "label": "Casa de banho",
+          "outline": {
+            "x0": -0.7464,
+            "x1": 0.7464,
+            "z0": -5.9,
+            "z1": -3.186
+          },
+          "clear": {
+            "x0": -0.7063999999999999,
+            "x1": 0.7063999999999999,
+            "z0": -5.800000000000001,
+            "z1": -3.226
+          },
+          "area": 3.6365472000000008,
+          "status": "estimated"
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "label": "Quarto 1",
+          "outline": {
+            "x0": 0.7464,
+            "x1": 3.11,
+            "z0": -5.9,
+            "z1": 0
+          },
+          "clear": {
+            "x0": 0.7864,
+            "x1": 3.01,
+            "z0": -5.800000000000001,
+            "z1": -0.04
+          },
+          "area": 12.807936,
+          "status": "estimated"
+        }
+      ],
+      "walls": [
+        {
+          "id": "bedroom-1-side",
+          "axis": "z",
+          "c": 0.7464,
+          "a": -5.9,
+          "b": 0,
+          "thickness": 0.08,
+          "height": 2.55,
+          "door": {
+            "id": "bedroom-1-door",
+            "u": -0.64,
+            "width": 0.76,
+            "height": 2.05,
+            "hinge": 1,
+            "opensInto": "bedroom-1"
+          }
+        },
+        {
+          "id": "bedroom-1-end",
+          "axis": "x",
+          "c": 0,
+          "a": 0.7464,
+          "b": 3.11,
+          "thickness": 0.08,
+          "height": 2.55,
+          "door": null
+        },
+        {
+          "id": "bath--1",
+          "axis": "z",
+          "c": -0.7464,
+          "a": -5.9,
+          "b": -3.186,
+          "thickness": 0.08,
+          "height": 2.55,
+          "door": null
+        },
+        {
+          "id": "bath-front",
+          "axis": "x",
+          "c": -3.186,
+          "a": -0.7464,
+          "b": 0.7464,
+          "thickness": 0.08,
+          "height": 2.55,
+          "door": {
+            "id": "bath-door",
+            "u": 0,
+            "width": 0.76,
+            "height": 2.05,
+            "hinge": -1,
+            "opensInto": "common"
+          }
+        }
+      ],
+      "doors": [
+        {
+          "id": "bedroom-1-door",
+          "u": -0.64,
+          "width": 0.76,
+          "height": 2.05,
+          "hinge": 1,
+          "opensInto": "bedroom-1",
+          "wall": "bedroom-1-side",
+          "axis": "z",
+          "c": 0.7464
+        },
+        {
+          "id": "bath-door",
+          "u": 0,
+          "width": 0.76,
+          "height": 2.05,
+          "hinge": -1,
+          "opensInto": "common",
+          "wall": "bath-front",
+          "axis": "x",
+          "c": -3.186
+        }
+      ],
+      "perimeter": [
+        {
+          "axis": "x",
+          "c": 5.9,
+          "a": -3.11,
+          "b": 3.11,
+          "holes": [
+            {
+              "id": "entry",
+              "u": 0,
+              "width": 1.7,
+              "height": 2.15,
+              "sill": 0,
+              "kind": "door",
+              "source": "double-leaf door depicted; size estimated"
+            },
+            {
+              "id": "front-window--1",
+              "u": -2.05,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95,
+              "kind": "window"
+            },
+            {
+              "id": "front-window-1",
+              "u": 2.05,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95,
+              "kind": "window"
+            }
+          ]
+        },
+        {
+          "axis": "x",
+          "c": -5.9,
+          "a": -3.11,
+          "b": 3.11,
+          "holes": [
+            {
+              "id": "bath-window",
+              "u": 0,
+              "width": 0.6,
+              "height": 0.5,
+              "sill": 1.7,
+              "kind": "window",
+              "source": "estimated"
+            },
+            {
+              "id": "rear-window--1",
+              "u": -2.05,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95,
+              "kind": "window"
+            },
+            {
+              "id": "rear-window-1",
+              "u": 2.05,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95,
+              "kind": "window"
+            }
+          ]
+        },
+        {
+          "axis": "z",
+          "c": -3.11,
+          "a": -5.9,
+          "b": 5.9,
+          "holes": [
+            {
+              "id": "side--1-0",
+              "u": -2.85,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95,
+              "kind": "window",
+              "source": "window count/room relation follows source; centre position estimated"
+            },
+            {
+              "id": "side--1-1",
+              "u": 2.85,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95,
+              "kind": "window",
+              "source": "window count/room relation follows source; centre position estimated"
+            }
+          ]
+        },
+        {
+          "axis": "z",
+          "c": 3.11,
+          "a": -5.9,
+          "b": 5.9,
+          "holes": [
+            {
+              "id": "side-1-0",
+              "u": -2.95,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95,
+              "kind": "window",
+              "source": "window count/room relation follows source; centre position estimated"
+            },
+            {
+              "id": "side-1-1",
+              "u": 3.7,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95,
+              "kind": "window",
+              "source": "window count/room relation follows source; centre position estimated"
+            }
+          ]
+        }
+      ],
+      "furnishings": [
+        {
+          "id": "bedroom-1-bed",
+          "type": "bed",
+          "x0": 1.2182,
+          "x1": 2.5782,
+          "z0": -3.8800000000000003,
+          "z1": -1.9600000000000004,
+          "height": 0.53,
+          "status": "estimated"
+        },
+        {
+          "id": "shower",
+          "type": "shower",
+          "x0": -0.6713999999999999,
+          "x1": 0.6713999999999999,
+          "z0": -5.775,
+          "z1": -4.950000000000001,
+          "height": 1.95,
+          "status": "estimated"
+        },
+        {
+          "id": "toilet",
+          "type": "toilet",
+          "x0": -0.6364,
+          "x1": -0.19639999999999994,
+          "z0": -4.7700000000000005,
+          "z1": -4.110000000000001,
+          "height": 0.78,
+          "status": "estimated"
+        },
+        {
+          "id": "basin",
+          "type": "basin",
+          "x0": 0.26639999999999997,
+          "x1": 0.6863999999999999,
+          "z0": -3.786,
+          "z1": -3.346,
+          "height": 0.85,
+          "status": "estimated"
+        },
+        {
+          "id": "kitchen-main",
+          "type": "kitchen",
+          "x0": -2.985,
+          "x1": -2.385,
+          "z0": -3.9,
+          "z1": -1.5,
+          "height": 0.91,
+          "status": "estimated"
+        },
+        {
+          "id": "sofa",
+          "type": "sofa",
+          "x0": -2.65,
+          "x1": -0.82,
+          "z0": 3.78,
+          "z1": 4.6,
+          "height": 0.8,
+          "status": "estimated"
+        },
+        {
+          "id": "table",
+          "type": "table",
+          "x0": -2.29,
+          "x1": -1.15,
+          "z0": 4.91,
+          "z1": 5.48,
+          "height": 0.4,
+          "status": "estimated"
+        }
+      ],
+      "servicePoints": [
+        {
+          "id": "shower",
+          "x": 0,
+          "z": -5.700000000000001,
+          "y": 1.05,
+          "hot": true
+        },
+        {
+          "id": "toilet",
+          "x": -0.41639999999999994,
+          "z": -4.65,
+          "y": 0.45,
+          "hot": false
+        },
+        {
+          "id": "basin",
+          "x": 0.47639999999999993,
+          "z": -3.556,
+          "y": 0.83,
+          "hot": true
+        },
+        {
+          "id": "kitchen-sink",
+          "x": -2.685,
+          "z": -3.44,
+          "y": 0.91,
+          "hot": true
+        }
+      ],
+      "areas": {
+        "commercial": 72,
+        "exterior": 73.396,
+        "internalEnvelope": 69.83200000000001,
+        "partitions": 0.8456320000000008,
+        "estimatedNet": 68.98636800000001,
+        "common": 52.54188480000001,
+        "roomTotal": 16.4444832,
+        "status": "estimated",
+        "note": "Áreas calculadas com paredes de 100 mm e divisórias de 80 mm assumidas; não são um mapa de áreas certificado."
+      },
+      "dimensions": {
+        "width": 6.22,
+        "length": 11.8,
+        "core": 2.2,
+        "wing": 2.01,
+        "height": 2.55,
+        "panel": 0.1,
+        "partition": 0.08,
+        "frame": 0.12,
+        "floor": 0.121,
+        "roof": 0.127,
+        "doorWidth": 0.76,
+        "doorHeight": 2.05,
+        "windowWidth": 0.92,
+        "windowHeight": 1.05,
+        "windowSill": 0.95,
+        "entryWidth": 1.7,
+        "entryHeight": 2.15,
+        "bathWindowWidth": 0.6,
+        "bathWindowHeight": 0.5,
+        "bathWindowSill": 1.7,
+        "porchDepth": 1.95,
+        "canopyOverhang": 0.28,
+        "canopyEavesAboveWall": 0.22,
+        "canopyRise": 0.65
+      },
+      "sourceStatus": "estimated",
+      "compact": false
+    },
+    {
+      "id": "t2",
+      "label": "T2",
+      "description": "Dois quartos na lateral direita. Sala na lateral esquerda.",
+      "sourceImage": "assets/layouts/image3.png",
+      "bedrooms": 2,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "label": "Casa de banho",
+          "outline": {
+            "x0": -0.7464,
+            "x1": 0.7464,
+            "z0": -5.9,
+            "z1": -3.186
+          },
+          "clear": {
+            "x0": -0.7063999999999999,
+            "x1": 0.7063999999999999,
+            "z0": -5.800000000000001,
+            "z1": -3.226
+          },
+          "area": 3.6365472000000008,
+          "status": "estimated"
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "label": "Quarto 1",
+          "outline": {
+            "x0": 0.7464,
+            "x1": 3.11,
+            "z0": -5.9,
+            "z1": 0
+          },
+          "clear": {
+            "x0": 0.7864,
+            "x1": 3.01,
+            "z0": -5.800000000000001,
+            "z1": -0.04
+          },
+          "area": 12.807936,
+          "status": "estimated"
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "label": "Quarto 2",
+          "outline": {
+            "x0": 0.7464,
+            "x1": 3.11,
+            "z0": 0,
+            "z1": 5.9
+          },
+          "clear": {
+            "x0": 0.7864,
+            "x1": 3.01,
+            "z0": 0.04,
+            "z1": 5.800000000000001
+          },
+          "area": 12.807936,
+          "status": "estimated"
+        }
+      ],
+      "walls": [
+        {
+          "id": "bedroom-1-side",
+          "axis": "z",
+          "c": 0.7464,
+          "a": -5.9,
+          "b": 0,
+          "thickness": 0.08,
+          "height": 2.55,
+          "door": {
+            "id": "bedroom-1-door",
+            "u": -0.64,
+            "width": 0.76,
+            "height": 2.05,
+            "hinge": 1,
+            "opensInto": "bedroom-1"
+          }
+        },
+        {
+          "id": "bedroom-1-end",
+          "axis": "x",
+          "c": 0,
+          "a": 0.7464,
+          "b": 3.11,
+          "thickness": 0.08,
+          "height": 2.55,
+          "door": null
+        },
+        {
+          "id": "bedroom-2-side",
+          "axis": "z",
+          "c": 0.7464,
+          "a": 0,
+          "b": 5.9,
+          "thickness": 0.08,
+          "height": 2.55,
+          "door": {
+            "id": "bedroom-2-door",
+            "u": 0.64,
+            "width": 0.76,
+            "height": 2.05,
+            "hinge": 1,
+            "opensInto": "bedroom-2"
+          }
+        },
+        {
+          "id": "bath--1",
+          "axis": "z",
+          "c": -0.7464,
+          "a": -5.9,
+          "b": -3.186,
+          "thickness": 0.08,
+          "height": 2.55,
+          "door": null
+        },
+        {
+          "id": "bath-front",
+          "axis": "x",
+          "c": -3.186,
+          "a": -0.7464,
+          "b": 0.7464,
+          "thickness": 0.08,
+          "height": 2.55,
+          "door": {
+            "id": "bath-door",
+            "u": 0,
+            "width": 0.76,
+            "height": 2.05,
+            "hinge": -1,
+            "opensInto": "common"
+          }
+        }
+      ],
+      "doors": [
+        {
+          "id": "bedroom-1-door",
+          "u": -0.64,
+          "width": 0.76,
+          "height": 2.05,
+          "hinge": 1,
+          "opensInto": "bedroom-1",
+          "wall": "bedroom-1-side",
+          "axis": "z",
+          "c": 0.7464
+        },
+        {
+          "id": "bedroom-2-door",
+          "u": 0.64,
+          "width": 0.76,
+          "height": 2.05,
+          "hinge": 1,
+          "opensInto": "bedroom-2",
+          "wall": "bedroom-2-side",
+          "axis": "z",
+          "c": 0.7464
+        },
+        {
+          "id": "bath-door",
+          "u": 0,
+          "width": 0.76,
+          "height": 2.05,
+          "hinge": -1,
+          "opensInto": "common",
+          "wall": "bath-front",
+          "axis": "x",
+          "c": -3.186
+        }
+      ],
+      "perimeter": [
+        {
+          "axis": "x",
+          "c": 5.9,
+          "a": -3.11,
+          "b": 3.11,
+          "holes": [
+            {
+              "id": "entry",
+              "u": 0,
+              "width": 1.7,
+              "height": 2.15,
+              "sill": 0,
+              "kind": "door",
+              "source": "double-leaf door depicted; size estimated"
+            },
+            {
+              "id": "front-window--1",
+              "u": -2.05,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95,
+              "kind": "window"
+            },
+            {
+              "id": "front-window-1",
+              "u": 2.05,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95,
+              "kind": "window"
+            }
+          ]
+        },
+        {
+          "axis": "x",
+          "c": -5.9,
+          "a": -3.11,
+          "b": 3.11,
+          "holes": [
+            {
+              "id": "bath-window",
+              "u": 0,
+              "width": 0.6,
+              "height": 0.5,
+              "sill": 1.7,
+              "kind": "window",
+              "source": "estimated"
+            },
+            {
+              "id": "rear-window--1",
+              "u": -2.05,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95,
+              "kind": "window"
+            },
+            {
+              "id": "rear-window-1",
+              "u": 2.05,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95,
+              "kind": "window"
+            }
+          ]
+        },
+        {
+          "axis": "z",
+          "c": -3.11,
+          "a": -5.9,
+          "b": 5.9,
+          "holes": [
+            {
+              "id": "side--1-0",
+              "u": -2.85,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95,
+              "kind": "window",
+              "source": "window count/room relation follows source; centre position estimated"
+            },
+            {
+              "id": "side--1-1",
+              "u": 2.85,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95,
+              "kind": "window",
+              "source": "window count/room relation follows source; centre position estimated"
+            }
+          ]
+        },
+        {
+          "axis": "z",
+          "c": 3.11,
+          "a": -5.9,
+          "b": 5.9,
+          "holes": [
+            {
+              "id": "side-1-0",
+              "u": -2.95,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95,
+              "kind": "window",
+              "source": "window count/room relation follows source; centre position estimated"
+            },
+            {
+              "id": "side-1-1",
+              "u": 2.95,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95,
+              "kind": "window",
+              "source": "window count/room relation follows source; centre position estimated"
+            }
+          ]
+        }
+      ],
+      "furnishings": [
+        {
+          "id": "bedroom-1-bed",
+          "type": "bed",
+          "x0": 1.2182,
+          "x1": 2.5782,
+          "z0": -3.8800000000000003,
+          "z1": -1.9600000000000004,
+          "height": 0.53,
+          "status": "estimated"
+        },
+        {
+          "id": "bedroom-2-bed",
+          "type": "bed",
+          "x0": 1.2182,
+          "x1": 2.5782,
+          "z0": 1.9600000000000004,
+          "z1": 3.8800000000000003,
+          "height": 0.53,
+          "status": "estimated"
+        },
+        {
+          "id": "shower",
+          "type": "shower",
+          "x0": -0.6713999999999999,
+          "x1": 0.6713999999999999,
+          "z0": -5.775,
+          "z1": -4.950000000000001,
+          "height": 1.95,
+          "status": "estimated"
+        },
+        {
+          "id": "toilet",
+          "type": "toilet",
+          "x0": -0.6364,
+          "x1": -0.19639999999999994,
+          "z0": -4.7700000000000005,
+          "z1": -4.110000000000001,
+          "height": 0.78,
+          "status": "estimated"
+        },
+        {
+          "id": "basin",
+          "type": "basin",
+          "x0": 0.26639999999999997,
+          "x1": 0.6863999999999999,
+          "z0": -3.786,
+          "z1": -3.346,
+          "height": 0.85,
+          "status": "estimated"
+        },
+        {
+          "id": "kitchen-main",
+          "type": "kitchen",
+          "x0": -2.985,
+          "x1": -2.385,
+          "z0": -3.9,
+          "z1": -1.5,
+          "height": 0.91,
+          "status": "estimated"
+        },
+        {
+          "id": "sofa",
+          "type": "sofa",
+          "x0": -2.65,
+          "x1": -0.82,
+          "z0": 3.78,
+          "z1": 4.6,
+          "height": 0.8,
+          "status": "estimated"
+        },
+        {
+          "id": "table",
+          "type": "table",
+          "x0": -2.29,
+          "x1": -1.15,
+          "z0": 4.91,
+          "z1": 5.48,
+          "height": 0.4,
+          "status": "estimated"
+        }
+      ],
+      "servicePoints": [
+        {
+          "id": "shower",
+          "x": 0,
+          "z": -5.700000000000001,
+          "y": 1.05,
+          "hot": true
+        },
+        {
+          "id": "toilet",
+          "x": -0.41639999999999994,
+          "z": -4.65,
+          "y": 0.45,
+          "hot": false
+        },
+        {
+          "id": "basin",
+          "x": 0.47639999999999993,
+          "z": -3.556,
+          "y": 0.83,
+          "hot": true
+        },
+        {
+          "id": "kitchen-sink",
+          "x": -2.685,
+          "z": -3.44,
+          "y": 0.91,
+          "hot": true
+        }
+      ],
+      "areas": {
+        "commercial": 72,
+        "exterior": 73.396,
+        "internalEnvelope": 69.83200000000001,
+        "partitions": 1.2472320000000012,
+        "estimatedNet": 68.58476800000001,
+        "common": 39.33234880000001,
+        "roomTotal": 29.2524192,
+        "status": "estimated",
+        "note": "Áreas calculadas com paredes de 100 mm e divisórias de 80 mm assumidas; não são um mapa de áreas certificado."
+      },
+      "dimensions": {
+        "width": 6.22,
+        "length": 11.8,
+        "core": 2.2,
+        "wing": 2.01,
+        "height": 2.55,
+        "panel": 0.1,
+        "partition": 0.08,
+        "frame": 0.12,
+        "floor": 0.121,
+        "roof": 0.127,
+        "doorWidth": 0.76,
+        "doorHeight": 2.05,
+        "windowWidth": 0.92,
+        "windowHeight": 1.05,
+        "windowSill": 0.95,
+        "entryWidth": 1.7,
+        "entryHeight": 2.15,
+        "bathWindowWidth": 0.6,
+        "bathWindowHeight": 0.5,
+        "bathWindowSill": 1.7,
+        "porchDepth": 1.95,
+        "canopyOverhang": 0.28,
+        "canopyEavesAboveWall": 0.22,
+        "canopyRise": 0.65
+      },
+      "sourceStatus": "estimated",
+      "compact": false
+    },
+    {
+      "id": "t3-a",
+      "label": "T3 · distribuição · A",
+      "description": "Um quarto ao fundo à esquerda e dois à direita. Sala junto à entrada à esquerda.",
+      "sourceImage": "assets/layouts/image4.png",
+      "bedrooms": 3,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "label": "Casa de banho",
+          "outline": {
+            "x0": -0.7464,
+            "x1": 0.7464,
+            "z0": -5.9,
+            "z1": -3.186
+          },
+          "clear": {
+            "x0": -0.7063999999999999,
+            "x1": 0.7063999999999999,
+            "z0": -5.800000000000001,
+            "z1": -3.226
+          },
+          "area": 3.6365472000000008,
+          "status": "estimated"
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "label": "Quarto 1",
+          "outline": {
+            "x0": -3.11,
+            "x1": -0.7464,
+            "z0": -5.9,
+            "z1": 0
+          },
+          "clear": {
+            "x0": -3.01,
+            "x1": -0.7864,
+            "z0": -5.800000000000001,
+            "z1": -0.04
+          },
+          "area": 12.807936,
+          "status": "estimated"
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "label": "Quarto 2",
+          "outline": {
+            "x0": 0.7464,
+            "x1": 3.11,
+            "z0": -5.9,
+            "z1": 0
+          },
+          "clear": {
+            "x0": 0.7864,
+            "x1": 3.01,
+            "z0": -5.800000000000001,
+            "z1": -0.04
+          },
+          "area": 12.807936,
+          "status": "estimated"
+        },
+        {
+          "id": "bedroom-3",
+          "kind": "bedroom",
+          "label": "Quarto 3",
+          "outline": {
+            "x0": 0.7464,
+            "x1": 3.11,
+            "z0": 0,
+            "z1": 5.9
+          },
+          "clear": {
+            "x0": 0.7864,
+            "x1": 3.01,
+            "z0": 0.04,
+            "z1": 5.800000000000001
+          },
+          "area": 12.807936,
+          "status": "estimated"
+        }
+      ],
+      "walls": [
+        {
+          "id": "bedroom-1-side",
+          "axis": "z",
+          "c": -0.7464,
+          "a": -5.9,
+          "b": 0,
+          "thickness": 0.08,
+          "height": 2.55,
+          "door": {
+            "id": "bedroom-1-door",
+            "u": -0.64,
+            "width": 0.76,
+            "height": 2.05,
+            "hinge": -1,
+            "opensInto": "bedroom-1"
+          }
+        },
+        {
+          "id": "bedroom-1-end",
+          "axis": "x",
+          "c": 0,
+          "a": -3.11,
+          "b": -0.7464,
+          "thickness": 0.08,
+          "height": 2.55,
+          "door": null
+        },
+        {
+          "id": "bedroom-2-side",
+          "axis": "z",
+          "c": 0.7464,
+          "a": -5.9,
+          "b": 0,
+          "thickness": 0.08,
+          "height": 2.55,
+          "door": {
+            "id": "bedroom-2-door",
+            "u": -0.64,
+            "width": 0.76,
+            "height": 2.05,
+            "hinge": 1,
+            "opensInto": "bedroom-2"
+          }
+        },
+        {
+          "id": "bedroom-2-end",
+          "axis": "x",
+          "c": 0,
+          "a": 0.7464,
+          "b": 3.11,
+          "thickness": 0.08,
+          "height": 2.55,
+          "door": null
+        },
+        {
+          "id": "bedroom-3-side",
+          "axis": "z",
+          "c": 0.7464,
+          "a": 0,
+          "b": 5.9,
+          "thickness": 0.08,
+          "height": 2.55,
+          "door": {
+            "id": "bedroom-3-door",
+            "u": 0.64,
+            "width": 0.76,
+            "height": 2.05,
+            "hinge": 1,
+            "opensInto": "bedroom-3"
+          }
+        },
+        {
+          "id": "bath-front",
+          "axis": "x",
+          "c": -3.186,
+          "a": -0.7464,
+          "b": 0.7464,
+          "thickness": 0.08,
+          "height": 2.55,
+          "door": {
+            "id": "bath-door",
+            "u": 0,
+            "width": 0.76,
+            "height": 2.05,
+            "hinge": -1,
+            "opensInto": "common"
+          }
+        }
+      ],
+      "doors": [
+        {
+          "id": "bedroom-1-door",
+          "u": -0.64,
+          "width": 0.76,
+          "height": 2.05,
+          "hinge": -1,
+          "opensInto": "bedroom-1",
+          "wall": "bedroom-1-side",
+          "axis": "z",
+          "c": -0.7464
+        },
+        {
+          "id": "bedroom-2-door",
+          "u": -0.64,
+          "width": 0.76,
+          "height": 2.05,
+          "hinge": 1,
+          "opensInto": "bedroom-2",
+          "wall": "bedroom-2-side",
+          "axis": "z",
+          "c": 0.7464
+        },
+        {
+          "id": "bedroom-3-door",
+          "u": 0.64,
+          "width": 0.76,
+          "height": 2.05,
+          "hinge": 1,
+          "opensInto": "bedroom-3",
+          "wall": "bedroom-3-side",
+          "axis": "z",
+          "c": 0.7464
+        },
+        {
+          "id": "bath-door",
+          "u": 0,
+          "width": 0.76,
+          "height": 2.05,
+          "hinge": -1,
+          "opensInto": "common",
+          "wall": "bath-front",
+          "axis": "x",
+          "c": -3.186
+        }
+      ],
+      "perimeter": [
+        {
+          "axis": "x",
+          "c": 5.9,
+          "a": -3.11,
+          "b": 3.11,
+          "holes": [
+            {
+              "id": "entry",
+              "u": 0,
+              "width": 1.7,
+              "height": 2.15,
+              "sill": 0,
+              "kind": "door",
+              "source": "double-leaf door depicted; size estimated"
+            },
+            {
+              "id": "front-window--1",
+              "u": -2.05,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95,
+              "kind": "window"
+            },
+            {
+              "id": "front-window-1",
+              "u": 2.05,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95,
+              "kind": "window"
+            }
+          ]
+        },
+        {
+          "axis": "x",
+          "c": -5.9,
+          "a": -3.11,
+          "b": 3.11,
+          "holes": [
+            {
+              "id": "bath-window",
+              "u": 0,
+              "width": 0.6,
+              "height": 0.5,
+              "sill": 1.7,
+              "kind": "window",
+              "source": "estimated"
+            },
+            {
+              "id": "rear-window--1",
+              "u": -2.05,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95,
+              "kind": "window"
+            },
+            {
+              "id": "rear-window-1",
+              "u": 2.05,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95,
+              "kind": "window"
+            }
+          ]
+        },
+        {
+          "axis": "z",
+          "c": -3.11,
+          "a": -5.9,
+          "b": 5.9,
+          "holes": [
+            {
+              "id": "side--1-0",
+              "u": -2.95,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95,
+              "kind": "window",
+              "source": "window count/room relation follows source; centre position estimated"
+            },
+            {
+              "id": "side--1-1",
+              "u": 3.7,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95,
+              "kind": "window",
+              "source": "window count/room relation follows source; centre position estimated"
+            }
+          ]
+        },
+        {
+          "axis": "z",
+          "c": 3.11,
+          "a": -5.9,
+          "b": 5.9,
+          "holes": [
+            {
+              "id": "side-1-0",
+              "u": -2.95,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95,
+              "kind": "window",
+              "source": "window count/room relation follows source; centre position estimated"
+            },
+            {
+              "id": "side-1-1",
+              "u": 2.95,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95,
+              "kind": "window",
+              "source": "window count/room relation follows source; centre position estimated"
+            }
+          ]
+        }
+      ],
+      "furnishings": [
+        {
+          "id": "bedroom-1-bed",
+          "type": "bed",
+          "x0": -2.5782,
+          "x1": -1.2182,
+          "z0": -3.8800000000000003,
+          "z1": -1.9600000000000004,
+          "height": 0.53,
+          "status": "estimated"
+        },
+        {
+          "id": "bedroom-2-bed",
+          "type": "bed",
+          "x0": 1.2182,
+          "x1": 2.5782,
+          "z0": -3.8800000000000003,
+          "z1": -1.9600000000000004,
+          "height": 0.53,
+          "status": "estimated"
+        },
+        {
+          "id": "bedroom-3-bed",
+          "type": "bed",
+          "x0": 1.2182,
+          "x1": 2.5782,
+          "z0": 1.9600000000000004,
+          "z1": 3.8800000000000003,
+          "height": 0.53,
+          "status": "estimated"
+        },
+        {
+          "id": "shower",
+          "type": "shower",
+          "x0": -0.6713999999999999,
+          "x1": 0.6713999999999999,
+          "z0": -5.775,
+          "z1": -4.950000000000001,
+          "height": 1.95,
+          "status": "estimated"
+        },
+        {
+          "id": "toilet",
+          "type": "toilet",
+          "x0": -0.6364,
+          "x1": -0.19639999999999994,
+          "z0": -4.7700000000000005,
+          "z1": -4.110000000000001,
+          "height": 0.78,
+          "status": "estimated"
+        },
+        {
+          "id": "basin",
+          "type": "basin",
+          "x0": 0.26639999999999997,
+          "x1": 0.6863999999999999,
+          "z0": -3.786,
+          "z1": -3.346,
+          "height": 0.85,
+          "status": "estimated"
+        },
+        {
+          "id": "kitchen-main",
+          "type": "kitchen",
+          "x0": -2.985,
+          "x1": -2.385,
+          "z0": 0.24,
+          "z1": 2.6399999999999997,
+          "height": 0.91,
+          "status": "estimated"
+        },
+        {
+          "id": "sofa",
+          "type": "sofa",
+          "x0": -2.65,
+          "x1": -0.82,
+          "z0": 3.78,
+          "z1": 4.6,
+          "height": 0.8,
+          "status": "estimated"
+        },
+        {
+          "id": "table",
+          "type": "table",
+          "x0": -2.29,
+          "x1": -1.15,
+          "z0": 4.91,
+          "z1": 5.48,
+          "height": 0.4,
+          "status": "estimated"
+        }
+      ],
+      "servicePoints": [
+        {
+          "id": "shower",
+          "x": 0,
+          "z": -5.700000000000001,
+          "y": 1.05,
+          "hot": true
+        },
+        {
+          "id": "toilet",
+          "x": -0.41639999999999994,
+          "z": -4.65,
+          "y": 0.45,
+          "hot": false
+        },
+        {
+          "id": "basin",
+          "x": 0.47639999999999993,
+          "z": -3.556,
+          "y": 0.83,
+          "hot": true
+        },
+        {
+          "id": "kitchen-sink",
+          "x": -2.685,
+          "z": 0.7,
+          "y": 0.91,
+          "hot": true
+        }
+      ],
+      "areas": {
+        "commercial": 72,
+        "exterior": 73.396,
+        "internalEnvelope": 69.83200000000001,
+        "partitions": 1.6192000000000013,
+        "estimatedNet": 68.2128,
+        "common": 26.152444800000005,
+        "roomTotal": 42.0603552,
+        "status": "estimated",
+        "note": "Áreas calculadas com paredes de 100 mm e divisórias de 80 mm assumidas; não são um mapa de áreas certificado."
+      },
+      "dimensions": {
+        "width": 6.22,
+        "length": 11.8,
+        "core": 2.2,
+        "wing": 2.01,
+        "height": 2.55,
+        "panel": 0.1,
+        "partition": 0.08,
+        "frame": 0.12,
+        "floor": 0.121,
+        "roof": 0.127,
+        "doorWidth": 0.76,
+        "doorHeight": 2.05,
+        "windowWidth": 0.92,
+        "windowHeight": 1.05,
+        "windowSill": 0.95,
+        "entryWidth": 1.7,
+        "entryHeight": 2.15,
+        "bathWindowWidth": 0.6,
+        "bathWindowHeight": 0.5,
+        "bathWindowSill": 1.7,
+        "porchDepth": 1.95,
+        "canopyOverhang": 0.28,
+        "canopyEavesAboveWall": 0.22,
+        "canopyRise": 0.65
+      },
+      "sourceStatus": "estimated",
+      "compact": false
+    },
+    {
+      "id": "t3-b",
+      "label": "T3 · distribuição · B",
+      "description": "Três quartos na lateral direita. Sala aberta ao longo da lateral esquerda.",
+      "sourceImage": "assets/layouts/image5.png",
+      "bedrooms": 3,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "label": "Casa de banho",
+          "outline": {
+            "x0": -0.7464,
+            "x1": 0.7464,
+            "z0": -5.9,
+            "z1": -3.186
+          },
+          "clear": {
+            "x0": -0.7063999999999999,
+            "x1": 0.7063999999999999,
+            "z0": -5.800000000000001,
+            "z1": -3.226
+          },
+          "area": 3.6365472000000008,
+          "status": "estimated"
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "label": "Quarto 1",
+          "outline": {
+            "x0": 0.7464,
+            "x1": 3.11,
+            "z0": -5.9,
+            "z1": -1.9705999999999997
+          },
+          "clear": {
+            "x0": 0.7864,
+            "x1": 3.01,
+            "z0": -5.800000000000001,
+            "z1": -2.0105999999999997
+          },
+          "area": 8.426109840000002,
+          "status": "estimated"
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "label": "Quarto 2",
+          "outline": {
+            "x0": 0.7464,
+            "x1": 3.11,
+            "z0": -1.9705999999999997,
+            "z1": 2.1004000000000005
+          },
+          "clear": {
+            "x0": 0.7864,
+            "x1": 3.01,
+            "z0": -1.9305999999999996,
+            "z1": 2.0604000000000005
+          },
+          "area": 8.874387599999999,
+          "status": "estimated"
+        },
+        {
+          "id": "bedroom-3",
+          "kind": "bedroom",
+          "label": "Quarto 3",
+          "outline": {
+            "x0": 0.7464,
+            "x1": 3.11,
+            "z0": 2.1004000000000005,
+            "z1": 5.9
+          },
+          "clear": {
+            "x0": 0.7864,
+            "x1": 3.01,
+            "z0": 2.1404000000000005,
+            "z1": 5.800000000000001
+          },
+          "area": 8.13748656,
+          "status": "estimated"
+        }
+      ],
+      "walls": [
+        {
+          "id": "bedroom-1-side",
+          "axis": "z",
+          "c": 0.7464,
+          "a": -5.9,
+          "b": -1.9705999999999997,
+          "thickness": 0.08,
+          "height": 2.55,
+          "door": {
+            "id": "bedroom-1-door",
+            "u": -2.6106,
+            "width": 0.76,
+            "height": 2.05,
+            "hinge": 1,
+            "opensInto": "bedroom-1"
+          }
+        },
+        {
+          "id": "bedroom-1-end",
+          "axis": "x",
+          "c": -1.9705999999999997,
+          "a": 0.7464,
+          "b": 3.11,
+          "thickness": 0.08,
+          "height": 2.55,
+          "door": null
+        },
+        {
+          "id": "bedroom-2-side",
+          "axis": "z",
+          "c": 0.7464,
+          "a": -1.9705999999999997,
+          "b": 2.1004000000000005,
+          "thickness": 0.08,
+          "height": 2.55,
+          "door": {
+            "id": "bedroom-2-door",
+            "u": 1.4604000000000004,
+            "width": 0.76,
+            "height": 2.05,
+            "hinge": 1,
+            "opensInto": "bedroom-2"
+          }
+        },
+        {
+          "id": "bedroom-2-end",
+          "axis": "x",
+          "c": 2.1004000000000005,
+          "a": 0.7464,
+          "b": 3.11,
+          "thickness": 0.08,
+          "height": 2.55,
+          "door": null
+        },
+        {
+          "id": "bedroom-3-side",
+          "axis": "z",
+          "c": 0.7464,
+          "a": 2.1004000000000005,
+          "b": 5.9,
+          "thickness": 0.08,
+          "height": 2.55,
+          "door": {
+            "id": "bedroom-3-door",
+            "u": 2.7404000000000006,
+            "width": 0.76,
+            "height": 2.05,
+            "hinge": 1,
+            "opensInto": "bedroom-3"
+          }
+        },
+        {
+          "id": "bath--1",
+          "axis": "z",
+          "c": -0.7464,
+          "a": -5.9,
+          "b": -3.186,
+          "thickness": 0.08,
+          "height": 2.55,
+          "door": null
+        },
+        {
+          "id": "bath-front",
+          "axis": "x",
+          "c": -3.186,
+          "a": -0.7464,
+          "b": 0.7464,
+          "thickness": 0.08,
+          "height": 2.55,
+          "door": {
+            "id": "bath-door",
+            "u": 0,
+            "width": 0.76,
+            "height": 2.05,
+            "hinge": -1,
+            "opensInto": "common"
+          }
+        }
+      ],
+      "doors": [
+        {
+          "id": "bedroom-1-door",
+          "u": -2.6106,
+          "width": 0.76,
+          "height": 2.05,
+          "hinge": 1,
+          "opensInto": "bedroom-1",
+          "wall": "bedroom-1-side",
+          "axis": "z",
+          "c": 0.7464
+        },
+        {
+          "id": "bedroom-2-door",
+          "u": 1.4604000000000004,
+          "width": 0.76,
+          "height": 2.05,
+          "hinge": 1,
+          "opensInto": "bedroom-2",
+          "wall": "bedroom-2-side",
+          "axis": "z",
+          "c": 0.7464
+        },
+        {
+          "id": "bedroom-3-door",
+          "u": 2.7404000000000006,
+          "width": 0.76,
+          "height": 2.05,
+          "hinge": 1,
+          "opensInto": "bedroom-3",
+          "wall": "bedroom-3-side",
+          "axis": "z",
+          "c": 0.7464
+        },
+        {
+          "id": "bath-door",
+          "u": 0,
+          "width": 0.76,
+          "height": 2.05,
+          "hinge": -1,
+          "opensInto": "common",
+          "wall": "bath-front",
+          "axis": "x",
+          "c": -3.186
+        }
+      ],
+      "perimeter": [
+        {
+          "axis": "x",
+          "c": 5.9,
+          "a": -3.11,
+          "b": 3.11,
+          "holes": [
+            {
+              "id": "entry",
+              "u": 0,
+              "width": 1.7,
+              "height": 2.15,
+              "sill": 0,
+              "kind": "door",
+              "source": "double-leaf door depicted; size estimated"
+            },
+            {
+              "id": "front-window--1",
+              "u": -2.05,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95,
+              "kind": "window"
+            },
+            {
+              "id": "front-window-1",
+              "u": 2.05,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95,
+              "kind": "window"
+            }
+          ]
+        },
+        {
+          "axis": "x",
+          "c": -5.9,
+          "a": -3.11,
+          "b": 3.11,
+          "holes": [
+            {
+              "id": "bath-window",
+              "u": 0,
+              "width": 0.6,
+              "height": 0.5,
+              "sill": 1.7,
+              "kind": "window",
+              "source": "estimated"
+            },
+            {
+              "id": "rear-window--1",
+              "u": -2.05,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95,
+              "kind": "window"
+            },
+            {
+              "id": "rear-window-1",
+              "u": 2.05,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95,
+              "kind": "window"
+            }
+          ]
+        },
+        {
+          "axis": "z",
+          "c": -3.11,
+          "a": -5.9,
+          "b": 5.9,
+          "holes": [
+            {
+              "id": "side--1-0",
+              "u": -3.7,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95,
+              "kind": "window",
+              "source": "window count/room relation follows source; centre position estimated"
+            },
+            {
+              "id": "side--1-1",
+              "u": 0.05,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95,
+              "kind": "window",
+              "source": "window count/room relation follows source; centre position estimated"
+            },
+            {
+              "id": "side--1-2",
+              "u": 3.7,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95,
+              "kind": "window",
+              "source": "window count/room relation follows source; centre position estimated"
+            }
+          ]
+        },
+        {
+          "axis": "z",
+          "c": 3.11,
+          "a": -5.9,
+          "b": 5.9,
+          "holes": [
+            {
+              "id": "side-1-0",
+              "u": -3.9353,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95,
+              "kind": "window",
+              "source": "window count/room relation follows source; centre position estimated"
+            },
+            {
+              "id": "side-1-1",
+              "u": 0.0649000000000004,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95,
+              "kind": "window",
+              "source": "window count/room relation follows source; centre position estimated"
+            },
+            {
+              "id": "side-1-2",
+              "u": 4.0002,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95,
+              "kind": "window",
+              "source": "window count/room relation follows source; centre position estimated"
+            }
+          ]
+        }
+      ],
+      "furnishings": [
+        {
+          "id": "bedroom-1-bed",
+          "type": "bed",
+          "x0": 1.2182,
+          "x1": 2.5782,
+          "z0": -5.0306,
+          "z1": -3.1106,
+          "height": 0.53,
+          "status": "estimated"
+        },
+        {
+          "id": "bedroom-2-bed",
+          "type": "bed",
+          "x0": 1.2182,
+          "x1": 2.5782,
+          "z0": -0.9595999999999995,
+          "z1": 0.9604000000000005,
+          "height": 0.53,
+          "status": "estimated"
+        },
+        {
+          "id": "bedroom-3-bed",
+          "type": "bed",
+          "x0": 1.2182,
+          "x1": 2.5782,
+          "z0": 3.0102000000000007,
+          "z1": 4.930200000000001,
+          "height": 0.53,
+          "status": "estimated"
+        },
+        {
+          "id": "shower",
+          "type": "shower",
+          "x0": -0.6713999999999999,
+          "x1": 0.6713999999999999,
+          "z0": -5.775,
+          "z1": -4.950000000000001,
+          "height": 1.95,
+          "status": "estimated"
+        },
+        {
+          "id": "toilet",
+          "type": "toilet",
+          "x0": -0.6364,
+          "x1": -0.19639999999999994,
+          "z0": -4.7700000000000005,
+          "z1": -4.110000000000001,
+          "height": 0.78,
+          "status": "estimated"
+        },
+        {
+          "id": "basin",
+          "type": "basin",
+          "x0": 0.26639999999999997,
+          "x1": 0.6863999999999999,
+          "z0": -3.786,
+          "z1": -3.346,
+          "height": 0.85,
+          "status": "estimated"
+        },
+        {
+          "id": "kitchen-main",
+          "type": "kitchen",
+          "x0": -2.985,
+          "x1": -2.385,
+          "z0": -3.9,
+          "z1": -1.5,
+          "height": 0.91,
+          "status": "estimated"
+        },
+        {
+          "id": "sofa",
+          "type": "sofa",
+          "x0": -2.65,
+          "x1": -0.82,
+          "z0": 3.78,
+          "z1": 4.6,
+          "height": 0.8,
+          "status": "estimated"
+        },
+        {
+          "id": "table",
+          "type": "table",
+          "x0": -2.29,
+          "x1": -1.15,
+          "z0": 4.91,
+          "z1": 5.48,
+          "height": 0.4,
+          "status": "estimated"
+        }
+      ],
+      "servicePoints": [
+        {
+          "id": "shower",
+          "x": 0,
+          "z": -5.700000000000001,
+          "y": 1.05,
+          "hot": true
+        },
+        {
+          "id": "toilet",
+          "x": -0.41639999999999994,
+          "z": -4.65,
+          "y": 0.45,
+          "hot": false
+        },
+        {
+          "id": "basin",
+          "x": 0.47639999999999993,
+          "z": -3.556,
+          "y": 0.83,
+          "hot": true
+        },
+        {
+          "id": "kitchen-sink",
+          "x": -2.685,
+          "z": -3.44,
+          "y": 0.91,
+          "hot": true
+        }
+      ],
+      "areas": {
+        "commercial": 72,
+        "exterior": 73.396,
+        "internalEnvelope": 69.83200000000001,
+        "partitions": 1.3643200000000015,
+        "estimatedNet": 68.46768,
+        "common": 39.3931488,
+        "roomTotal": 29.074531200000003,
+        "status": "estimated",
+        "note": "Áreas calculadas com paredes de 100 mm e divisórias de 80 mm assumidas; não são um mapa de áreas certificado."
+      },
+      "dimensions": {
+        "width": 6.22,
+        "length": 11.8,
+        "core": 2.2,
+        "wing": 2.01,
+        "height": 2.55,
+        "panel": 0.1,
+        "partition": 0.08,
+        "frame": 0.12,
+        "floor": 0.121,
+        "roof": 0.127,
+        "doorWidth": 0.76,
+        "doorHeight": 2.05,
+        "windowWidth": 0.92,
+        "windowHeight": 1.05,
+        "windowSill": 0.95,
+        "entryWidth": 1.7,
+        "entryHeight": 2.15,
+        "bathWindowWidth": 0.6,
+        "bathWindowHeight": 0.5,
+        "bathWindowSill": 1.7,
+        "porchDepth": 1.95,
+        "canopyOverhang": 0.28,
+        "canopyEavesAboveWall": 0.22,
+        "canopyRise": 0.65
+      },
+      "sourceStatus": "estimated",
+      "compact": false
+    },
+    {
+      "id": "t4-a",
+      "label": "T4 · distribuição · A",
+      "description": "Dois quartos em cada lateral. Circulação central desde a entrada até à casa de banho.",
+      "sourceImage": "assets/layouts/image6.png",
+      "bedrooms": 4,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "label": "Casa de banho",
+          "outline": {
+            "x0": -0.7464,
+            "x1": 0.7464,
+            "z0": -5.9,
+            "z1": -3.186
+          },
+          "clear": {
+            "x0": -0.7063999999999999,
+            "x1": 0.7063999999999999,
+            "z0": -5.800000000000001,
+            "z1": -3.226
+          },
+          "area": 3.6365472000000008,
+          "status": "estimated"
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "label": "Quarto 1",
+          "outline": {
+            "x0": -3.11,
+            "x1": -0.7464,
+            "z0": -5.9,
+            "z1": 0
+          },
+          "clear": {
+            "x0": -3.01,
+            "x1": -0.7864,
+            "z0": -5.800000000000001,
+            "z1": -0.04
+          },
+          "area": 12.807936,
+          "status": "estimated"
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "label": "Quarto 2",
+          "outline": {
+            "x0": 0.7464,
+            "x1": 3.11,
+            "z0": -5.9,
+            "z1": 0
+          },
+          "clear": {
+            "x0": 0.7864,
+            "x1": 3.01,
+            "z0": -5.800000000000001,
+            "z1": -0.04
+          },
+          "area": 12.807936,
+          "status": "estimated"
+        },
+        {
+          "id": "bedroom-3",
+          "kind": "bedroom",
+          "label": "Quarto 3",
+          "outline": {
+            "x0": -3.11,
+            "x1": -0.7464,
+            "z0": 0,
+            "z1": 5.9
+          },
+          "clear": {
+            "x0": -3.01,
+            "x1": -0.7864,
+            "z0": 0.04,
+            "z1": 5.800000000000001
+          },
+          "area": 12.807936,
+          "status": "estimated"
+        },
+        {
+          "id": "bedroom-4",
+          "kind": "bedroom",
+          "label": "Quarto 4",
+          "outline": {
+            "x0": 0.7464,
+            "x1": 3.11,
+            "z0": 0,
+            "z1": 5.9
+          },
+          "clear": {
+            "x0": 0.7864,
+            "x1": 3.01,
+            "z0": 0.04,
+            "z1": 5.800000000000001
+          },
+          "area": 12.807936,
+          "status": "estimated"
+        }
+      ],
+      "walls": [
+        {
+          "id": "bedroom-1-side",
+          "axis": "z",
+          "c": -0.7464,
+          "a": -5.9,
+          "b": 0,
+          "thickness": 0.08,
+          "height": 2.55,
+          "door": {
+            "id": "bedroom-1-door",
+            "u": -0.64,
+            "width": 0.76,
+            "height": 2.05,
+            "hinge": -1,
+            "opensInto": "bedroom-1"
+          }
+        },
+        {
+          "id": "bedroom-1-end",
+          "axis": "x",
+          "c": 0,
+          "a": -3.11,
+          "b": -0.7464,
+          "thickness": 0.08,
+          "height": 2.55,
+          "door": null
+        },
+        {
+          "id": "bedroom-2-side",
+          "axis": "z",
+          "c": 0.7464,
+          "a": -5.9,
+          "b": 0,
+          "thickness": 0.08,
+          "height": 2.55,
+          "door": {
+            "id": "bedroom-2-door",
+            "u": -0.64,
+            "width": 0.76,
+            "height": 2.05,
+            "hinge": 1,
+            "opensInto": "bedroom-2"
+          }
+        },
+        {
+          "id": "bedroom-2-end",
+          "axis": "x",
+          "c": 0,
+          "a": 0.7464,
+          "b": 3.11,
+          "thickness": 0.08,
+          "height": 2.55,
+          "door": null
+        },
+        {
+          "id": "bedroom-3-side",
+          "axis": "z",
+          "c": -0.7464,
+          "a": 0,
+          "b": 5.9,
+          "thickness": 0.08,
+          "height": 2.55,
+          "door": {
+            "id": "bedroom-3-door",
+            "u": 0.64,
+            "width": 0.76,
+            "height": 2.05,
+            "hinge": -1,
+            "opensInto": "bedroom-3"
+          }
+        },
+        {
+          "id": "bedroom-4-side",
+          "axis": "z",
+          "c": 0.7464,
+          "a": 0,
+          "b": 5.9,
+          "thickness": 0.08,
+          "height": 2.55,
+          "door": {
+            "id": "bedroom-4-door",
+            "u": 0.64,
+            "width": 0.76,
+            "height": 2.05,
+            "hinge": 1,
+            "opensInto": "bedroom-4"
+          }
+        },
+        {
+          "id": "bath-front",
+          "axis": "x",
+          "c": -3.186,
+          "a": -0.7464,
+          "b": 0.7464,
+          "thickness": 0.08,
+          "height": 2.55,
+          "door": {
+            "id": "bath-door",
+            "u": 0,
+            "width": 0.76,
+            "height": 2.05,
+            "hinge": -1,
+            "opensInto": "common"
+          }
+        }
+      ],
+      "doors": [
+        {
+          "id": "bedroom-1-door",
+          "u": -0.64,
+          "width": 0.76,
+          "height": 2.05,
+          "hinge": -1,
+          "opensInto": "bedroom-1",
+          "wall": "bedroom-1-side",
+          "axis": "z",
+          "c": -0.7464
+        },
+        {
+          "id": "bedroom-2-door",
+          "u": -0.64,
+          "width": 0.76,
+          "height": 2.05,
+          "hinge": 1,
+          "opensInto": "bedroom-2",
+          "wall": "bedroom-2-side",
+          "axis": "z",
+          "c": 0.7464
+        },
+        {
+          "id": "bedroom-3-door",
+          "u": 0.64,
+          "width": 0.76,
+          "height": 2.05,
+          "hinge": -1,
+          "opensInto": "bedroom-3",
+          "wall": "bedroom-3-side",
+          "axis": "z",
+          "c": -0.7464
+        },
+        {
+          "id": "bedroom-4-door",
+          "u": 0.64,
+          "width": 0.76,
+          "height": 2.05,
+          "hinge": 1,
+          "opensInto": "bedroom-4",
+          "wall": "bedroom-4-side",
+          "axis": "z",
+          "c": 0.7464
+        },
+        {
+          "id": "bath-door",
+          "u": 0,
+          "width": 0.76,
+          "height": 2.05,
+          "hinge": -1,
+          "opensInto": "common",
+          "wall": "bath-front",
+          "axis": "x",
+          "c": -3.186
+        }
+      ],
+      "perimeter": [
+        {
+          "axis": "x",
+          "c": 5.9,
+          "a": -3.11,
+          "b": 3.11,
+          "holes": [
+            {
+              "id": "entry",
+              "u": 0,
+              "width": 1.7,
+              "height": 2.15,
+              "sill": 0,
+              "kind": "door",
+              "source": "double-leaf door depicted; size estimated"
+            },
+            {
+              "id": "front-window--1",
+              "u": -2.05,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95,
+              "kind": "window"
+            },
+            {
+              "id": "front-window-1",
+              "u": 2.05,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95,
+              "kind": "window"
+            }
+          ]
+        },
+        {
+          "axis": "x",
+          "c": -5.9,
+          "a": -3.11,
+          "b": 3.11,
+          "holes": [
+            {
+              "id": "bath-window",
+              "u": 0,
+              "width": 0.6,
+              "height": 0.5,
+              "sill": 1.7,
+              "kind": "window",
+              "source": "estimated"
+            },
+            {
+              "id": "rear-window--1",
+              "u": -2.05,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95,
+              "kind": "window"
+            },
+            {
+              "id": "rear-window-1",
+              "u": 2.05,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95,
+              "kind": "window"
+            }
+          ]
+        },
+        {
+          "axis": "z",
+          "c": -3.11,
+          "a": -5.9,
+          "b": 5.9,
+          "holes": [
+            {
+              "id": "side--1-0",
+              "u": -2.95,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95,
+              "kind": "window",
+              "source": "window count/room relation follows source; centre position estimated"
+            },
+            {
+              "id": "side--1-1",
+              "u": 2.95,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95,
+              "kind": "window",
+              "source": "window count/room relation follows source; centre position estimated"
+            }
+          ]
+        },
+        {
+          "axis": "z",
+          "c": 3.11,
+          "a": -5.9,
+          "b": 5.9,
+          "holes": [
+            {
+              "id": "side-1-0",
+              "u": -2.95,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95,
+              "kind": "window",
+              "source": "window count/room relation follows source; centre position estimated"
+            },
+            {
+              "id": "side-1-1",
+              "u": 2.95,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95,
+              "kind": "window",
+              "source": "window count/room relation follows source; centre position estimated"
+            }
+          ]
+        }
+      ],
+      "furnishings": [
+        {
+          "id": "bedroom-1-bed",
+          "type": "bed",
+          "x0": -2.5782,
+          "x1": -1.2182,
+          "z0": -3.8800000000000003,
+          "z1": -1.9600000000000004,
+          "height": 0.53,
+          "status": "estimated"
+        },
+        {
+          "id": "bedroom-2-bed",
+          "type": "bed",
+          "x0": 1.2182,
+          "x1": 2.5782,
+          "z0": -3.8800000000000003,
+          "z1": -1.9600000000000004,
+          "height": 0.53,
+          "status": "estimated"
+        },
+        {
+          "id": "bedroom-3-bed",
+          "type": "bed",
+          "x0": -2.5782,
+          "x1": -1.2182,
+          "z0": 1.9600000000000004,
+          "z1": 3.8800000000000003,
+          "height": 0.53,
+          "status": "estimated"
+        },
+        {
+          "id": "bedroom-4-bed",
+          "type": "bed",
+          "x0": 1.2182,
+          "x1": 2.5782,
+          "z0": 1.9600000000000004,
+          "z1": 3.8800000000000003,
+          "height": 0.53,
+          "status": "estimated"
+        },
+        {
+          "id": "shower",
+          "type": "shower",
+          "x0": -0.6713999999999999,
+          "x1": 0.6713999999999999,
+          "z0": -5.775,
+          "z1": -4.950000000000001,
+          "height": 1.95,
+          "status": "estimated"
+        },
+        {
+          "id": "toilet",
+          "type": "toilet",
+          "x0": -0.6364,
+          "x1": -0.19639999999999994,
+          "z0": -4.7700000000000005,
+          "z1": -4.110000000000001,
+          "height": 0.78,
+          "status": "estimated"
+        },
+        {
+          "id": "basin",
+          "type": "basin",
+          "x0": 0.26639999999999997,
+          "x1": 0.6863999999999999,
+          "z0": -3.786,
+          "z1": -3.346,
+          "height": 0.85,
+          "status": "estimated"
+        },
+        {
+          "id": "kitchen-main",
+          "type": "kitchen",
+          "x0": -0.6863999999999999,
+          "x1": -0.08639999999999992,
+          "z0": -2.346,
+          "z1": -0.546,
+          "height": 0.91,
+          "status": "estimated"
+        }
+      ],
+      "servicePoints": [
+        {
+          "id": "shower",
+          "x": 0,
+          "z": -5.700000000000001,
+          "y": 1.05,
+          "hot": true
+        },
+        {
+          "id": "toilet",
+          "x": -0.41639999999999994,
+          "z": -4.65,
+          "y": 0.45,
+          "hot": false
+        },
+        {
+          "id": "basin",
+          "x": 0.47639999999999993,
+          "z": -3.556,
+          "y": 0.83,
+          "hot": true
+        },
+        {
+          "id": "kitchen-sink",
+          "x": -0.3863999999999999,
+          "z": -1.8860000000000001,
+          "y": 0.91,
+          "hot": true
+        }
+      ],
+      "areas": {
+        "commercial": 72,
+        "exterior": 73.396,
+        "internalEnvelope": 69.83200000000001,
+        "partitions": 2.0208000000000017,
+        "estimatedNet": 67.8112,
+        "common": 12.942908800000005,
+        "roomTotal": 54.868291199999994,
+        "status": "estimated",
+        "note": "Áreas calculadas com paredes de 100 mm e divisórias de 80 mm assumidas; não são um mapa de áreas certificado."
+      },
+      "dimensions": {
+        "width": 6.22,
+        "length": 11.8,
+        "core": 2.2,
+        "wing": 2.01,
+        "height": 2.55,
+        "panel": 0.1,
+        "partition": 0.08,
+        "frame": 0.12,
+        "floor": 0.121,
+        "roof": 0.127,
+        "doorWidth": 0.76,
+        "doorHeight": 2.05,
+        "windowWidth": 0.92,
+        "windowHeight": 1.05,
+        "windowSill": 0.95,
+        "entryWidth": 1.7,
+        "entryHeight": 2.15,
+        "bathWindowWidth": 0.6,
+        "bathWindowHeight": 0.5,
+        "bathWindowSill": 1.7,
+        "porchDepth": 1.95,
+        "canopyOverhang": 0.28,
+        "canopyEavesAboveWall": 0.22,
+        "canopyRise": 0.65
+      },
+      "sourceStatus": "estimated",
+      "compact": true
+    },
+    {
+      "id": "t4-b",
+      "label": "T4 · distribuição · B",
+      "description": "Um quarto ao fundo à esquerda e três à direita. Sala na frente à esquerda.",
+      "sourceImage": "assets/layouts/image7.png",
+      "bedrooms": 4,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "label": "Casa de banho",
+          "outline": {
+            "x0": -0.7464,
+            "x1": 0.7464,
+            "z0": -5.9,
+            "z1": -3.186
+          },
+          "clear": {
+            "x0": -0.7063999999999999,
+            "x1": 0.7063999999999999,
+            "z0": -5.800000000000001,
+            "z1": -3.226
+          },
+          "area": 3.6365472000000008,
+          "status": "estimated"
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "label": "Quarto 1",
+          "outline": {
+            "x0": -3.11,
+            "x1": -0.7464,
+            "z0": -5.9,
+            "z1": -1.9705999999999997
+          },
+          "clear": {
+            "x0": -3.01,
+            "x1": -0.7864,
+            "z0": -5.800000000000001,
+            "z1": -2.0105999999999997
+          },
+          "area": 8.426109840000002,
+          "status": "estimated"
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "label": "Quarto 2",
+          "outline": {
+            "x0": 0.7464,
+            "x1": 3.11,
+            "z0": -5.9,
+            "z1": -1.9705999999999997
+          },
+          "clear": {
+            "x0": 0.7864,
+            "x1": 3.01,
+            "z0": -5.800000000000001,
+            "z1": -2.0105999999999997
+          },
+          "area": 8.426109840000002,
+          "status": "estimated"
+        },
+        {
+          "id": "bedroom-3",
+          "kind": "bedroom",
+          "label": "Quarto 3",
+          "outline": {
+            "x0": 0.7464,
+            "x1": 3.11,
+            "z0": -1.9705999999999997,
+            "z1": 2.1004000000000005
+          },
+          "clear": {
+            "x0": 0.7864,
+            "x1": 3.01,
+            "z0": -1.9305999999999996,
+            "z1": 2.0604000000000005
+          },
+          "area": 8.874387599999999,
+          "status": "estimated"
+        },
+        {
+          "id": "bedroom-4",
+          "kind": "bedroom",
+          "label": "Quarto 4",
+          "outline": {
+            "x0": 0.7464,
+            "x1": 3.11,
+            "z0": 2.1004000000000005,
+            "z1": 5.9
+          },
+          "clear": {
+            "x0": 0.7864,
+            "x1": 3.01,
+            "z0": 2.1404000000000005,
+            "z1": 5.800000000000001
+          },
+          "area": 8.13748656,
+          "status": "estimated"
+        }
+      ],
+      "walls": [
+        {
+          "id": "bedroom-1-side",
+          "axis": "z",
+          "c": -0.7464,
+          "a": -5.9,
+          "b": -1.9705999999999997,
+          "thickness": 0.08,
+          "height": 2.55,
+          "door": {
+            "id": "bedroom-1-door",
+            "u": -2.6106,
+            "width": 0.76,
+            "height": 2.05,
+            "hinge": -1,
+            "opensInto": "bedroom-1"
+          }
+        },
+        {
+          "id": "bedroom-1-end",
+          "axis": "x",
+          "c": -1.9705999999999997,
+          "a": -3.11,
+          "b": -0.7464,
+          "thickness": 0.08,
+          "height": 2.55,
+          "door": null
+        },
+        {
+          "id": "bedroom-2-side",
+          "axis": "z",
+          "c": 0.7464,
+          "a": -5.9,
+          "b": -1.9705999999999997,
+          "thickness": 0.08,
+          "height": 2.55,
+          "door": {
+            "id": "bedroom-2-door",
+            "u": -2.6106,
+            "width": 0.76,
+            "height": 2.05,
+            "hinge": 1,
+            "opensInto": "bedroom-2"
+          }
+        },
+        {
+          "id": "bedroom-2-end",
+          "axis": "x",
+          "c": -1.9705999999999997,
+          "a": 0.7464,
+          "b": 3.11,
+          "thickness": 0.08,
+          "height": 2.55,
+          "door": null
+        },
+        {
+          "id": "bedroom-3-side",
+          "axis": "z",
+          "c": 0.7464,
+          "a": -1.9705999999999997,
+          "b": 2.1004000000000005,
+          "thickness": 0.08,
+          "height": 2.55,
+          "door": {
+            "id": "bedroom-3-door",
+            "u": 1.4604000000000004,
+            "width": 0.76,
+            "height": 2.05,
+            "hinge": 1,
+            "opensInto": "bedroom-3"
+          }
+        },
+        {
+          "id": "bedroom-3-end",
+          "axis": "x",
+          "c": 2.1004000000000005,
+          "a": 0.7464,
+          "b": 3.11,
+          "thickness": 0.08,
+          "height": 2.55,
+          "door": null
+        },
+        {
+          "id": "bedroom-4-side",
+          "axis": "z",
+          "c": 0.7464,
+          "a": 2.1004000000000005,
+          "b": 5.9,
+          "thickness": 0.08,
+          "height": 2.55,
+          "door": {
+            "id": "bedroom-4-door",
+            "u": 2.7404000000000006,
+            "width": 0.76,
+            "height": 2.05,
+            "hinge": 1,
+            "opensInto": "bedroom-4"
+          }
+        },
+        {
+          "id": "bath-front",
+          "axis": "x",
+          "c": -3.186,
+          "a": -0.7464,
+          "b": 0.7464,
+          "thickness": 0.08,
+          "height": 2.55,
+          "door": {
+            "id": "bath-door",
+            "u": 0,
+            "width": 0.76,
+            "height": 2.05,
+            "hinge": -1,
+            "opensInto": "common"
+          }
+        }
+      ],
+      "doors": [
+        {
+          "id": "bedroom-1-door",
+          "u": -2.6106,
+          "width": 0.76,
+          "height": 2.05,
+          "hinge": -1,
+          "opensInto": "bedroom-1",
+          "wall": "bedroom-1-side",
+          "axis": "z",
+          "c": -0.7464
+        },
+        {
+          "id": "bedroom-2-door",
+          "u": -2.6106,
+          "width": 0.76,
+          "height": 2.05,
+          "hinge": 1,
+          "opensInto": "bedroom-2",
+          "wall": "bedroom-2-side",
+          "axis": "z",
+          "c": 0.7464
+        },
+        {
+          "id": "bedroom-3-door",
+          "u": 1.4604000000000004,
+          "width": 0.76,
+          "height": 2.05,
+          "hinge": 1,
+          "opensInto": "bedroom-3",
+          "wall": "bedroom-3-side",
+          "axis": "z",
+          "c": 0.7464
+        },
+        {
+          "id": "bedroom-4-door",
+          "u": 2.7404000000000006,
+          "width": 0.76,
+          "height": 2.05,
+          "hinge": 1,
+          "opensInto": "bedroom-4",
+          "wall": "bedroom-4-side",
+          "axis": "z",
+          "c": 0.7464
+        },
+        {
+          "id": "bath-door",
+          "u": 0,
+          "width": 0.76,
+          "height": 2.05,
+          "hinge": -1,
+          "opensInto": "common",
+          "wall": "bath-front",
+          "axis": "x",
+          "c": -3.186
+        }
+      ],
+      "perimeter": [
+        {
+          "axis": "x",
+          "c": 5.9,
+          "a": -3.11,
+          "b": 3.11,
+          "holes": [
+            {
+              "id": "entry",
+              "u": 0,
+              "width": 1.7,
+              "height": 2.15,
+              "sill": 0,
+              "kind": "door",
+              "source": "double-leaf door depicted; size estimated"
+            },
+            {
+              "id": "front-window--1",
+              "u": -2.05,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95,
+              "kind": "window"
+            },
+            {
+              "id": "front-window-1",
+              "u": 2.05,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95,
+              "kind": "window"
+            }
+          ]
+        },
+        {
+          "axis": "x",
+          "c": -5.9,
+          "a": -3.11,
+          "b": 3.11,
+          "holes": [
+            {
+              "id": "bath-window",
+              "u": 0,
+              "width": 0.6,
+              "height": 0.5,
+              "sill": 1.7,
+              "kind": "window",
+              "source": "estimated"
+            },
+            {
+              "id": "rear-window--1",
+              "u": -2.05,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95,
+              "kind": "window"
+            },
+            {
+              "id": "rear-window-1",
+              "u": 2.05,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95,
+              "kind": "window"
+            }
+          ]
+        },
+        {
+          "axis": "z",
+          "c": -3.11,
+          "a": -5.9,
+          "b": 5.9,
+          "holes": [
+            {
+              "id": "side--1-0",
+              "u": -3.9353,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95,
+              "kind": "window",
+              "source": "window count/room relation follows source; centre position estimated"
+            },
+            {
+              "id": "side--1-1",
+              "u": 0.05,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95,
+              "kind": "window",
+              "source": "window count/room relation follows source; centre position estimated"
+            },
+            {
+              "id": "side--1-2",
+              "u": 3.7,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95,
+              "kind": "window",
+              "source": "window count/room relation follows source; centre position estimated"
+            }
+          ]
+        },
+        {
+          "axis": "z",
+          "c": 3.11,
+          "a": -5.9,
+          "b": 5.9,
+          "holes": [
+            {
+              "id": "side-1-0",
+              "u": -3.9353,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95,
+              "kind": "window",
+              "source": "window count/room relation follows source; centre position estimated"
+            },
+            {
+              "id": "side-1-1",
+              "u": 0.0649000000000004,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95,
+              "kind": "window",
+              "source": "window count/room relation follows source; centre position estimated"
+            },
+            {
+              "id": "side-1-2",
+              "u": 4.0002,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95,
+              "kind": "window",
+              "source": "window count/room relation follows source; centre position estimated"
+            }
+          ]
+        }
+      ],
+      "furnishings": [
+        {
+          "id": "bedroom-1-bed",
+          "type": "bed",
+          "x0": -2.5782,
+          "x1": -1.2182,
+          "z0": -5.0306,
+          "z1": -3.1106,
+          "height": 0.53,
+          "status": "estimated"
+        },
+        {
+          "id": "bedroom-2-bed",
+          "type": "bed",
+          "x0": 1.2182,
+          "x1": 2.5782,
+          "z0": -5.0306,
+          "z1": -3.1106,
+          "height": 0.53,
+          "status": "estimated"
+        },
+        {
+          "id": "bedroom-3-bed",
+          "type": "bed",
+          "x0": 1.2182,
+          "x1": 2.5782,
+          "z0": -0.9595999999999995,
+          "z1": 0.9604000000000005,
+          "height": 0.53,
+          "status": "estimated"
+        },
+        {
+          "id": "bedroom-4-bed",
+          "type": "bed",
+          "x0": 1.2182,
+          "x1": 2.5782,
+          "z0": 3.0102000000000007,
+          "z1": 4.930200000000001,
+          "height": 0.53,
+          "status": "estimated"
+        },
+        {
+          "id": "shower",
+          "type": "shower",
+          "x0": -0.6713999999999999,
+          "x1": 0.6713999999999999,
+          "z0": -5.775,
+          "z1": -4.950000000000001,
+          "height": 1.95,
+          "status": "estimated"
+        },
+        {
+          "id": "toilet",
+          "type": "toilet",
+          "x0": -0.6364,
+          "x1": -0.19639999999999994,
+          "z0": -4.7700000000000005,
+          "z1": -4.110000000000001,
+          "height": 0.78,
+          "status": "estimated"
+        },
+        {
+          "id": "basin",
+          "type": "basin",
+          "x0": 0.26639999999999997,
+          "x1": 0.6863999999999999,
+          "z0": -3.786,
+          "z1": -3.346,
+          "height": 0.85,
+          "status": "estimated"
+        },
+        {
+          "id": "kitchen-main",
+          "type": "kitchen",
+          "x0": -2.985,
+          "x1": -2.385,
+          "z0": -1.7305999999999997,
+          "z1": 0.6694000000000002,
+          "height": 0.91,
+          "status": "estimated"
+        },
+        {
+          "id": "sofa",
+          "type": "sofa",
+          "x0": -2.65,
+          "x1": -0.82,
+          "z0": 3.78,
+          "z1": 4.6,
+          "height": 0.8,
+          "status": "estimated"
+        },
+        {
+          "id": "table",
+          "type": "table",
+          "x0": -2.29,
+          "x1": -1.15,
+          "z0": 4.91,
+          "z1": 5.48,
+          "height": 0.4,
+          "status": "estimated"
+        }
+      ],
+      "servicePoints": [
+        {
+          "id": "shower",
+          "x": 0,
+          "z": -5.700000000000001,
+          "y": 1.05,
+          "hot": true
+        },
+        {
+          "id": "toilet",
+          "x": -0.41639999999999994,
+          "z": -4.65,
+          "y": 0.45,
+          "hot": false
+        },
+        {
+          "id": "basin",
+          "x": 0.47639999999999993,
+          "z": -3.556,
+          "y": 0.83,
+          "hot": true
+        },
+        {
+          "id": "kitchen-sink",
+          "x": -2.685,
+          "z": -1.2705999999999997,
+          "y": 0.91,
+          "hot": true
+        }
+      ],
+      "areas": {
+        "commercial": 72,
+        "exterior": 73.396,
+        "internalEnvelope": 69.83200000000001,
+        "partitions": 1.5786400000000016,
+        "estimatedNet": 68.25336,
+        "common": 30.752718959999996,
+        "roomTotal": 37.500641040000005,
+        "status": "estimated",
+        "note": "Áreas calculadas com paredes de 100 mm e divisórias de 80 mm assumidas; não são um mapa de áreas certificado."
+      },
+      "dimensions": {
+        "width": 6.22,
+        "length": 11.8,
+        "core": 2.2,
+        "wing": 2.01,
+        "height": 2.55,
+        "panel": 0.1,
+        "partition": 0.08,
+        "frame": 0.12,
+        "floor": 0.121,
+        "roof": 0.127,
+        "doorWidth": 0.76,
+        "doorHeight": 2.05,
+        "windowWidth": 0.92,
+        "windowHeight": 1.05,
+        "windowSill": 0.95,
+        "entryWidth": 1.7,
+        "entryHeight": 2.15,
+        "bathWindowWidth": 0.6,
+        "bathWindowHeight": 0.5,
+        "bathWindowSill": 1.7,
+        "porchDepth": 1.95,
+        "canopyOverhang": 0.28,
+        "canopyEavesAboveWall": 0.22,
+        "canopyRise": 0.65
+      },
+      "sourceStatus": "estimated",
+      "compact": false
+    }
+  ],
+  "areasNote": "Exterior bounding rectangle: 73.396 m²; commercial name: 72 m². Exact stepped footprint/useful certified area not provided. Interior areas computed with assumed wall sections; additional canopy and porch excluded."
+}

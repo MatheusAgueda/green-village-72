@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "scope": "Prototype assets and shader only; parent owns integration and final checkout smoke checks.",
+  "entryCount": 71,
+  "retainedOriginalCount": 71,
+  "derivedNativeSizeCount": 49,
+  "floor3DComparisons": 12,
+  "floorAlbedoMeasurementRenders": 24,
+  "wall3DComparisons": 37,
+  "housePreviewCount": 1,
+  "shaderAndPageErrors": [],
+  "sourceCropExactPixelChecks": 49,
+  "floorMetrics": {
+    "floorCount": 12,
+    "worstRenderedMeanDeltaE76": 0.5833622442951676,
+    "medianCorrelationBefore": 0.9924677266322489,
+    "medianCorrelationAfter": 0.06352780279836223,
+    "minimumFineGrainCorrelation": 0.9956161530635012,
+    "nativeTextureMeanDifferenceMax": 0.0
+  },
+  "filesHashed": 55,
+  "siteEdits": false,
+  "limits": [
+    "Catalogue images are 480x300; source crops remain native and no new detail is invented.",
+    "Physical dimensions, source scale and panel profiles are estimates.",
+    "Native colour mean preservation does not establish a calibrated physical colour.",
+    "Structured masonry retains some source perspective mismatch.",
+    "Two GM knot-free crops omit the isolated knot from the shader but preserve it in the original reference."
+  ]
+}

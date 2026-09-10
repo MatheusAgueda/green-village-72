@@ -1,0 +1,399 @@
+{
+  "cases": [
+    {
+      "width": 375,
+      "height": 667,
+      "state": {
+        "scrollY": 700,
+        "workspace": {
+          "x": 11,
+          "y": -514.953125,
+          "width": 353,
+          "height": 644,
+          "top": -514.953125,
+          "right": 364,
+          "bottom": 129.046875,
+          "left": 11
+        },
+        "viewport": {
+          "x": 11,
+          "y": -331.953125,
+          "width": 353,
+          "height": 215,
+          "top": -331.953125,
+          "right": 364,
+          "bottom": -116.953125,
+          "left": 11
+        },
+        "layers": {
+          "x": 11,
+          "y": -49.953125,
+          "width": 353,
+          "height": 95,
+          "top": -49.953125,
+          "right": 364,
+          "bottom": 45.046875,
+          "left": 11
+        },
+        "categories": {
+          "x": 11,
+          "y": 206.546875,
+          "width": 353,
+          "height": 43,
+          "top": 206.546875,
+          "right": 364,
+          "bottom": 249.546875,
+          "left": 11
+        },
+        "panel": {
+          "x": 11,
+          "y": 129.046875,
+          "width": 353,
+          "height": 1225.515625,
+          "top": 129.046875,
+          "right": 364,
+          "bottom": 1354.5625,
+          "left": 11
+        },
+        "settings": {
+          "x": 11,
+          "y": -430.953125,
+          "width": 353,
+          "height": 99,
+          "top": -430.953125,
+          "right": 364,
+          "bottom": -331.953125,
+          "left": 11
+        },
+        "expansion": {
+          "x": 11,
+          "y": -116.953125,
+          "width": 353,
+          "height": 67,
+          "top": -116.953125,
+          "right": 364,
+          "bottom": -49.953125,
+          "left": 11
+        },
+        "label": {
+          "x": 11,
+          "y": 45.046875,
+          "width": 353,
+          "height": 48,
+          "top": 45.046875,
+          "right": 364,
+          "bottom": 93.046875,
+          "left": 11
+        },
+        "body": 2312
+      },
+      "afterPersonalize": {
+        "settingsHidden": true,
+        "layersHidden": true,
+        "view": "exterior",
+        "workspace": {
+          "x": 11,
+          "y": 8.046875,
+          "width": 353,
+          "height": 335,
+          "top": 8.046875,
+          "right": 364,
+          "bottom": 343.046875,
+          "left": 11
+        },
+        "tabs": {
+          "x": 11,
+          "y": 420.546875,
+          "width": 353,
+          "height": 43,
+          "top": 420.546875,
+          "right": 364,
+          "bottom": 463.546875,
+          "left": 11
+        },
+        "sticky": "sticky",
+        "tall": "false"
+      }
+    },
+    {
+      "width": 375,
+      "height": 812,
+      "state": {
+        "scrollY": 700,
+        "workspace": {
+          "x": 11,
+          "y": -514.953125,
+          "width": 353,
+          "height": 680.71875,
+          "top": -514.953125,
+          "right": 364,
+          "bottom": 165.765625,
+          "left": 11
+        },
+        "viewport": {
+          "x": 11,
+          "y": -331.953125,
+          "width": 353,
+          "height": 251.71875,
+          "top": -331.953125,
+          "right": 364,
+          "bottom": -80.234375,
+          "left": 11
+        },
+        "layers": {
+          "x": 11,
+          "y": -13.234375,
+          "width": 353,
+          "height": 95,
+          "top": -13.234375,
+          "right": 364,
+          "bottom": 81.765625,
+          "left": 11
+        },
+        "categories": {
+          "x": 11,
+          "y": 243.265625,
+          "width": 353,
+          "height": 43,
+          "top": 243.265625,
+          "right": 364,
+          "bottom": 286.265625,
+          "left": 11
+        },
+        "panel": {
+          "x": 11,
+          "y": 165.765625,
+          "width": 353,
+          "height": 1225.515625,
+          "top": 165.765625,
+          "right": 364,
+          "bottom": 1391.28125,
+          "left": 11
+        },
+        "settings": {
+          "x": 11,
+          "y": -430.953125,
+          "width": 353,
+          "height": 99,
+          "top": -430.953125,
+          "right": 364,
+          "bottom": -331.953125,
+          "left": 11
+        },
+        "expansion": {
+          "x": 11,
+          "y": -80.234375,
+          "width": 353,
+          "height": 67,
+          "top": -80.234375,
+          "right": 364,
+          "bottom": -13.234375,
+          "left": 11
+        },
+        "label": {
+          "x": 11,
+          "y": 81.765625,
+          "width": 353,
+          "height": 48,
+          "top": 81.765625,
+          "right": 364,
+          "bottom": 129.765625,
+          "left": 11
+        },
+        "body": 2348
+      },
+      "afterPersonalize": {
+        "settingsHidden": true,
+        "layersHidden": true,
+        "view": "exterior",
+        "workspace": {
+          "x": 11,
+          "y": 8.046875,
+          "width": 353,
+          "height": 371.71875,
+          "top": 8.046875,
+          "right": 364,
+          "bottom": 379.765625,
+          "left": 11
+        },
+        "tabs": {
+          "x": 11,
+          "y": 457.265625,
+          "width": 353,
+          "height": 43,
+          "top": 457.265625,
+          "right": 364,
+          "bottom": 500.265625,
+          "left": 11
+        },
+        "sticky": "sticky",
+        "tall": "false"
+      }
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "state": {
+        "scrollY": 700,
+        "workspace": {
+          "x": 24.03125,
+          "y": -489.203125,
+          "width": 719.9375,
+          "height": 686,
+          "top": -489.203125,
+          "right": 743.96875,
+          "bottom": 196.796875,
+          "left": 24.03125
+        },
+        "viewport": {
+          "x": 24.03125,
+          "y": -338.203125,
+          "width": 719.9375,
+          "height": 355,
+          "top": -338.203125,
+          "right": 743.96875,
+          "bottom": 16.796875,
+          "left": 24.03125
+        },
+        "layers": {
+          "x": 24.03125,
+          "y": 83.796875,
+          "width": 719.9375,
+          "height": 39,
+          "top": 83.796875,
+          "right": 743.96875,
+          "bottom": 122.796875,
+          "left": 24.03125
+        },
+        "categories": {
+          "x": 24.03125,
+          "y": 278.796875,
+          "width": 719.9375,
+          "height": 45,
+          "top": 278.796875,
+          "right": 743.96875,
+          "bottom": 323.796875,
+          "left": 24.03125
+        },
+        "panel": {
+          "x": 24.03125,
+          "y": 196.796875,
+          "width": 719.9375,
+          "height": 1011.84375,
+          "top": 196.796875,
+          "right": 743.96875,
+          "bottom": 1208.640625,
+          "left": 24.03125
+        },
+        "settings": {
+          "x": 24.03125,
+          "y": -403.203125,
+          "width": 719.9375,
+          "height": 65,
+          "top": -403.203125,
+          "right": 743.96875,
+          "bottom": -338.203125,
+          "left": 24.03125
+        },
+        "expansion": {
+          "x": 24.03125,
+          "y": 16.796875,
+          "width": 719.9375,
+          "height": 67,
+          "top": 16.796875,
+          "right": 743.96875,
+          "bottom": 83.796875,
+          "left": 24.03125
+        },
+        "label": {
+          "x": 24.03125,
+          "y": 122.796875,
+          "width": 719.9375,
+          "height": 38,
+          "top": 122.796875,
+          "right": 743.96875,
+          "bottom": 160.796875,
+          "left": 24.03125
+        },
+        "body": 2140
+      },
+      "afterPersonalize": {
+        "settingsHidden": true,
+        "layersHidden": true,
+        "view": "exterior",
+        "workspace": {
+          "x": 24.03125,
+          "y": 7.796875,
+          "width": 719.9375,
+          "height": 477,
+          "top": 7.796875,
+          "right": 743.96875,
+          "bottom": 484.796875,
+          "left": 24.03125
+        },
+        "tabs": {
+          "x": 24.03125,
+          "y": 566.796875,
+          "width": 719.9375,
+          "height": 45,
+          "top": 566.796875,
+          "right": 743.96875,
+          "bottom": 611.796875,
+          "left": 24.03125
+        },
+        "sticky": "sticky",
+        "tall": "false"
+      }
+    }
+  ],
+  "logs": [
+    {
+      "label": "audit",
+      "kind": "requestfailed",
+      "url": "http://127.0.0.1:4174/assets/expansion-v2.mp4",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "label": "audit",
+      "kind": "requestfailed",
+      "url": "http://127.0.0.1:4174/assets/presentation-v2.mp4",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "label": "audit",
+      "kind": "requestfailed",
+      "url": "http://127.0.0.1:4174/assets/presentation-v2.mp4",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "label": "audit",
+      "kind": "requestfailed",
+      "url": "http://127.0.0.1:4174/assets/expansion-v2.mp4",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "label": "audit",
+      "kind": "requestfailed",
+      "url": "http://127.0.0.1:4174/assets/presentation-v2.mp4",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "label": "audit",
+      "kind": "requestfailed",
+      "url": "http://127.0.0.1:4174/assets/expansion-v2.mp4",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    }
+  ]
+}

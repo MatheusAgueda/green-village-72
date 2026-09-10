@@ -1,0 +1,649 @@
+{
+  "logs": [
+    {
+      "label": "audit",
+      "kind": "requestfailed",
+      "url": "http://127.0.0.1:4174/assets/presentation-v2.mp4",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "label": "audit",
+      "kind": "requestfailed",
+      "url": "http://127.0.0.1:4174/assets/expansion-v2.mp4",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "label": "audit",
+      "kind": "requestfailed",
+      "url": "http://127.0.0.1:4174/assets/reference-videos/v1-spacious.mp4",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "label": "audit",
+      "kind": "requestfailed",
+      "url": "http://127.0.0.1:4174/assets/reference-videos/v1-spacious.mp4",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "label": "audit",
+      "kind": "requestfailed",
+      "url": "http://127.0.0.1:4174/assets/reference-videos/v1-spacious.mp4",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "label": "audit",
+      "kind": "requestfailed",
+      "url": "http://127.0.0.1:4174/assets/reference-videos/v2-74m2.mp4",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "label": "audit",
+      "kind": "requestfailed",
+      "url": "http://127.0.0.1:4174/assets/reference-videos/v3-comfortable.mp4",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "label": "audit",
+      "kind": "requestfailed",
+      "url": "http://127.0.0.1:4174/assets/reference-videos/v3-comfortable.mp4",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "label": "audit",
+      "kind": "requestfailed",
+      "url": "http://127.0.0.1:4174/assets/reference-videos/v3-comfortable.mp4",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "label": "audit",
+      "kind": "requestfailed",
+      "url": "http://127.0.0.1:4174/assets/reference-videos/v3-comfortable.mp4",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "label": "audit",
+      "kind": "requestfailed",
+      "url": "http://127.0.0.1:4174/assets/reference-videos/v4-37m2.mp4",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "label": "audit",
+      "kind": "requestfailed",
+      "url": "http://127.0.0.1:4174/assets/reference-videos/v4-37m2.mp4",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "label": "pending chapter leave",
+      "kind": "requestfailed",
+      "url": "http://127.0.0.1:4174/assets/presentation-v2.mp4",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "label": "pending chapter leave",
+      "kind": "requestfailed",
+      "url": "http://127.0.0.1:4174/assets/expansion-v2.mp4",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "label": "pending chapter leave",
+      "kind": "requestfailed",
+      "url": "http://127.0.0.1:4174/assets/reference-videos/v1-spacious.mp4",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    }
+  ],
+  "cases": [
+    {
+      "name": "six players and range support",
+      "result": {
+        "count": 6,
+        "rows": [
+          {
+            "url": "http://127.0.0.1:4174/assets/presentation-v2.mp4",
+            "status": 206,
+            "headers": {
+              "content-range": "bytes 0-1023/3302851",
+              "content-type": "video/mp4",
+              "content-length": "1024",
+              "accept-ranges": "bytes",
+              "cache-control": "no-cache",
+              "date": "Thu, 10 Sep 2026 15:02:53 GMT",
+              "connection": "keep-alive",
+              "keep-alive": "timeout=5"
+            },
+            "received": 1024
+          },
+          {
+            "url": "http://127.0.0.1:4174/assets/expansion-v2.mp4",
+            "status": 206,
+            "headers": {
+              "content-range": "bytes 0-1023/1976509",
+              "content-type": "video/mp4",
+              "content-length": "1024",
+              "accept-ranges": "bytes",
+              "cache-control": "no-cache",
+              "date": "Thu, 10 Sep 2026 15:02:53 GMT",
+              "connection": "keep-alive",
+              "keep-alive": "timeout=5"
+            },
+            "received": 1024
+          },
+          {
+            "url": "http://127.0.0.1:4174/assets/reference-videos/v1-spacious.mp4",
+            "status": 206,
+            "headers": {
+              "content-range": "bytes 0-1023/14919007",
+              "content-type": "video/mp4",
+              "content-length": "1024",
+              "accept-ranges": "bytes",
+              "cache-control": "no-cache",
+              "date": "Thu, 10 Sep 2026 15:02:53 GMT",
+              "connection": "keep-alive",
+              "keep-alive": "timeout=5"
+            },
+            "received": 1024
+          },
+          {
+            "url": "http://127.0.0.1:4174/assets/reference-videos/v2-74m2.mp4",
+            "status": 206,
+            "headers": {
+              "content-range": "bytes 0-1023/6007251",
+              "content-type": "video/mp4",
+              "content-length": "1024",
+              "accept-ranges": "bytes",
+              "cache-control": "no-cache",
+              "date": "Thu, 10 Sep 2026 15:02:53 GMT",
+              "connection": "keep-alive",
+              "keep-alive": "timeout=5"
+            },
+            "received": 1024
+          },
+          {
+            "url": "http://127.0.0.1:4174/assets/reference-videos/v3-comfortable.mp4",
+            "status": 206,
+            "headers": {
+              "content-range": "bytes 0-1023/11770834",
+              "content-type": "video/mp4",
+              "content-length": "1024",
+              "accept-ranges": "bytes",
+              "cache-control": "no-cache",
+              "date": "Thu, 10 Sep 2026 15:02:53 GMT",
+              "connection": "keep-alive",
+              "keep-alive": "timeout=5"
+            },
+            "received": 1024
+          },
+          {
+            "url": "http://127.0.0.1:4174/assets/reference-videos/v4-37m2.mp4",
+            "status": 206,
+            "headers": {
+              "content-range": "bytes 0-1023/6590943",
+              "content-type": "video/mp4",
+              "content-length": "1024",
+              "accept-ranges": "bytes",
+              "cache-control": "no-cache",
+              "date": "Thu, 10 Sep 2026 15:02:53 GMT",
+              "connection": "keep-alive",
+              "keep-alive": "timeout=5"
+            },
+            "received": 1024
+          }
+        ]
+      }
+    },
+    {
+      "name": "all sixteen original chapters play requested time",
+      "result": {
+        "count": 16,
+        "rows": [
+          {
+            "id": "v1-spacious",
+            "time": 0,
+            "label": "Exterior com efeito de pedra, 00:00",
+            "duration": 118.233333,
+            "width": 576,
+            "height": 1024,
+            "paused": false,
+            "decodedFrames": 4,
+            "otherPlaying": 0
+          },
+          {
+            "id": "v1-spacious",
+            "time": 8,
+            "label": "Piso cinza e juntas de módulo, 00:08",
+            "duration": 118.233333,
+            "width": 576,
+            "height": 1024,
+            "paused": false,
+            "decodedFrames": 109,
+            "otherPlaying": 0
+          },
+          {
+            "id": "v1-spacious",
+            "time": 36,
+            "label": "Painéis lisos e juntas verticais, 00:36",
+            "duration": 118.233333,
+            "width": 576,
+            "height": 1024,
+            "paused": false,
+            "decodedFrames": 133,
+            "otherPlaying": 0
+          },
+          {
+            "id": "v1-spacious",
+            "time": 88,
+            "label": "Cozinha branca em L, 01:28",
+            "duration": 118.233333,
+            "width": 576,
+            "height": 1024,
+            "paused": false,
+            "decodedFrames": 144,
+            "otherPlaying": 0
+          },
+          {
+            "id": "v2-74m2",
+            "time": 0.104632,
+            "label": "Exterior cinza e entrada frontal, 00:00",
+            "duration": 57,
+            "width": 576,
+            "height": 1024,
+            "paused": false,
+            "decodedFrames": 9,
+            "otherPlaying": 0
+          },
+          {
+            "id": "v2-74m2",
+            "time": 12.141969,
+            "label": "Piso greige na área comum, 00:12",
+            "duration": 57,
+            "width": 576,
+            "height": 1024,
+            "paused": false,
+            "decodedFrames": 28,
+            "otherPlaying": 0
+          },
+          {
+            "id": "v2-74m2",
+            "time": 32.097499,
+            "label": "Paredes claras e rodapé escuro, 00:32",
+            "duration": 57,
+            "width": 576,
+            "height": 1024,
+            "paused": false,
+            "decodedFrames": 252,
+            "otherPlaying": 0
+          },
+          {
+            "id": "v2-74m2",
+            "time": 24.103359,
+            "label": "Frentes brancas e tampo escuro, 00:24",
+            "duration": 57,
+            "width": 576,
+            "height": 1024,
+            "paused": false,
+            "decodedFrames": 382,
+            "otherPlaying": 0
+          },
+          {
+            "id": "v3-comfortable",
+            "time": 0.124626,
+            "label": "Exterior creme e porta lateral, 00:00",
+            "duration": 100.198027,
+            "width": 576,
+            "height": 1024,
+            "paused": false,
+            "decodedFrames": 10,
+            "otherPlaying": 0
+          },
+          {
+            "id": "v3-comfortable",
+            "time": 92.094462,
+            "label": "Piso cinza com juntas entre bandas, 01:32",
+            "duration": 100.198027,
+            "width": 576,
+            "height": 1024,
+            "paused": false,
+            "decodedFrames": 47,
+            "otherPlaying": 0
+          },
+          {
+            "id": "v3-comfortable",
+            "time": 40.108675,
+            "label": "Juntas e remates dos painéis, 00:40",
+            "duration": 100.198027,
+            "width": 576,
+            "height": 1024,
+            "paused": false,
+            "decodedFrames": 82,
+            "otherPlaying": 0
+          },
+          {
+            "id": "v3-comfortable",
+            "time": 68.106648,
+            "label": "Móvel azul e aparelho mural, 01:08",
+            "duration": 100.198027,
+            "width": 576,
+            "height": 1024,
+            "paused": false,
+            "decodedFrames": 187,
+            "otherPlaying": 0
+          },
+          {
+            "id": "v4-37m2",
+            "time": 4.108829,
+            "label": "Exterior castanho numa unidade curta, 00:04",
+            "duration": 56.566667,
+            "width": 576,
+            "height": 1024,
+            "paused": false,
+            "decodedFrames": 129,
+            "otherPlaying": 0
+          },
+          {
+            "id": "v4-37m2",
+            "time": 16.097076,
+            "label": "Piso castanho e rodapé escuro, 00:16",
+            "duration": 56.566667,
+            "width": 576,
+            "height": 1024,
+            "paused": false,
+            "decodedFrames": 238,
+            "otherPlaying": 0
+          },
+          {
+            "id": "v4-37m2",
+            "time": 20.121674,
+            "label": "Divisórias e portas interiores, 00:20",
+            "duration": 56.566667,
+            "width": 576,
+            "height": 1024,
+            "paused": false,
+            "decodedFrames": 306,
+            "otherPlaying": 0
+          },
+          {
+            "id": "v4-37m2",
+            "time": 36.111988,
+            "label": "Duche e revestimento com veios cinzentos, 00:36",
+            "duration": 56.566667,
+            "width": 576,
+            "height": 1024,
+            "paused": false,
+            "decodedFrames": 325,
+            "otherPlaying": 0
+          }
+        ]
+      }
+    },
+    {
+      "name": "leaving films pauses all six videos",
+      "result": [
+        {
+          "src": "http://127.0.0.1:4174/assets/presentation-v2.mp4",
+          "paused": true,
+          "time": 0
+        },
+        {
+          "src": "http://127.0.0.1:4174/assets/expansion-v2.mp4",
+          "paused": true,
+          "time": 0
+        },
+        {
+          "src": "http://127.0.0.1:4174/assets/reference-videos/v1-spacious.mp4",
+          "paused": true,
+          "time": 88
+        },
+        {
+          "src": "http://127.0.0.1:4174/assets/reference-videos/v2-74m2.mp4",
+          "paused": true,
+          "time": 24.246046
+        },
+        {
+          "src": "http://127.0.0.1:4174/assets/reference-videos/v3-comfortable.mp4",
+          "paused": true,
+          "time": 68.247693
+        },
+        {
+          "src": "http://127.0.0.1:4174/assets/reference-videos/v4-37m2.mp4",
+          "paused": true,
+          "time": 36.258749
+        }
+      ]
+    },
+    {
+      "name": "pending chapter cancelled when leaving films",
+      "result": {
+        "page": "studio",
+        "playing": [],
+        "toast": ""
+      }
+    }
+  ],
+  "mediaResponses": [
+    {
+      "url": "http://127.0.0.1:4174/assets/reference-videos/v1-spacious.mp4",
+      "status": 206,
+      "headers": {
+        "cache-control": "no-cache",
+        "connection": "keep-alive",
+        "content-range": "bytes 0-14919006/14919007",
+        "accept-ranges": "bytes",
+        "keep-alive": "timeout=5",
+        "content-length": "14919007",
+        "date": "Thu, 10 Sep 2026 15:02:53 GMT",
+        "content-type": "video/mp4"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:4174/assets/reference-videos/v1-spacious.mp4",
+      "status": 206,
+      "headers": {
+        "cache-control": "no-cache",
+        "connection": "keep-alive",
+        "content-range": "bytes 1179648-14919006/14919007",
+        "accept-ranges": "bytes",
+        "keep-alive": "timeout=5",
+        "content-length": "13739359",
+        "date": "Thu, 10 Sep 2026 15:02:53 GMT",
+        "content-type": "video/mp4"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:4174/assets/reference-videos/v1-spacious.mp4",
+      "status": 206,
+      "headers": {
+        "cache-control": "no-cache",
+        "connection": "keep-alive",
+        "content-range": "bytes 4390912-14919006/14919007",
+        "accept-ranges": "bytes",
+        "keep-alive": "timeout=5",
+        "content-length": "10528095",
+        "date": "Thu, 10 Sep 2026 15:02:54 GMT",
+        "content-type": "video/mp4"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:4174/assets/reference-videos/v1-spacious.mp4",
+      "status": 206,
+      "headers": {
+        "cache-control": "no-cache",
+        "connection": "keep-alive",
+        "content-range": "bytes 9830400-14919006/14919007",
+        "accept-ranges": "bytes",
+        "keep-alive": "timeout=5",
+        "content-length": "5088607",
+        "date": "Thu, 10 Sep 2026 15:02:54 GMT",
+        "content-type": "video/mp4"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:4174/assets/reference-videos/v2-74m2.mp4",
+      "status": 206,
+      "headers": {
+        "cache-control": "no-cache",
+        "connection": "keep-alive",
+        "content-range": "bytes 0-6007250/6007251",
+        "accept-ranges": "bytes",
+        "keep-alive": "timeout=5",
+        "content-length": "6007251",
+        "date": "Thu, 10 Sep 2026 15:02:55 GMT",
+        "content-type": "video/mp4"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:4174/assets/reference-videos/v2-74m2.mp4",
+      "status": 206,
+      "headers": {
+        "cache-control": "no-cache",
+        "connection": "keep-alive",
+        "content-range": "bytes 589824-6007250/6007251",
+        "accept-ranges": "bytes",
+        "keep-alive": "timeout=5",
+        "content-length": "5417427",
+        "date": "Thu, 10 Sep 2026 15:02:55 GMT",
+        "content-type": "video/mp4"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:4174/assets/reference-videos/v3-comfortable.mp4",
+      "status": 206,
+      "headers": {
+        "cache-control": "no-cache",
+        "connection": "keep-alive",
+        "content-range": "bytes 0-11770833/11770834",
+        "accept-ranges": "bytes",
+        "keep-alive": "timeout=5",
+        "content-length": "11770834",
+        "date": "Thu, 10 Sep 2026 15:02:57 GMT",
+        "content-type": "video/mp4"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:4174/assets/reference-videos/v3-comfortable.mp4",
+      "status": 206,
+      "headers": {
+        "cache-control": "no-cache",
+        "connection": "keep-alive",
+        "content-range": "bytes 196608-11770833/11770834",
+        "accept-ranges": "bytes",
+        "keep-alive": "timeout=5",
+        "content-length": "11574226",
+        "date": "Thu, 10 Sep 2026 15:02:57 GMT",
+        "content-type": "video/mp4"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:4174/assets/reference-videos/v3-comfortable.mp4",
+      "status": 206,
+      "headers": {
+        "cache-control": "no-cache",
+        "connection": "keep-alive",
+        "content-range": "bytes 10813440-11770833/11770834",
+        "accept-ranges": "bytes",
+        "keep-alive": "timeout=5",
+        "content-length": "957394",
+        "date": "Thu, 10 Sep 2026 15:02:57 GMT",
+        "content-type": "video/mp4"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:4174/assets/reference-videos/v3-comfortable.mp4",
+      "status": 206,
+      "headers": {
+        "cache-control": "no-cache",
+        "connection": "keep-alive",
+        "content-range": "bytes 5537792-11770833/11770834",
+        "accept-ranges": "bytes",
+        "keep-alive": "timeout=5",
+        "content-length": "6233042",
+        "date": "Thu, 10 Sep 2026 15:02:57 GMT",
+        "content-type": "video/mp4"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:4174/assets/reference-videos/v3-comfortable.mp4",
+      "status": 206,
+      "headers": {
+        "cache-control": "no-cache",
+        "connection": "keep-alive",
+        "content-range": "bytes 8028160-11770833/11770834",
+        "accept-ranges": "bytes",
+        "keep-alive": "timeout=5",
+        "content-length": "3742674",
+        "date": "Thu, 10 Sep 2026 15:02:58 GMT",
+        "content-type": "video/mp4"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:4174/assets/reference-videos/v4-37m2.mp4",
+      "status": 206,
+      "headers": {
+        "cache-control": "no-cache",
+        "connection": "keep-alive",
+        "content-range": "bytes 0-6590942/6590943",
+        "accept-ranges": "bytes",
+        "keep-alive": "timeout=5",
+        "content-length": "6590943",
+        "date": "Thu, 10 Sep 2026 15:02:58 GMT",
+        "content-type": "video/mp4"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:4174/assets/reference-videos/v4-37m2.mp4",
+      "status": 206,
+      "headers": {
+        "cache-control": "no-cache",
+        "connection": "keep-alive",
+        "content-range": "bytes 589824-6590942/6590943",
+        "accept-ranges": "bytes",
+        "keep-alive": "timeout=5",
+        "content-length": "6001119",
+        "date": "Thu, 10 Sep 2026 15:02:58 GMT",
+        "content-type": "video/mp4"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:4174/assets/reference-videos/v4-37m2.mp4",
+      "status": 206,
+      "headers": {
+        "cache-control": "no-cache",
+        "connection": "keep-alive",
+        "content-range": "bytes 4096000-6590942/6590943",
+        "accept-ranges": "bytes",
+        "keep-alive": "timeout=5",
+        "content-length": "2494943",
+        "date": "Thu, 10 Sep 2026 15:02:59 GMT",
+        "content-type": "video/mp4"
+      }
+    }
+  ]
+}

@@ -1,0 +1,264 @@
+{
+  "logs": [
+    {
+      "label": "audit",
+      "kind": "requestfailed",
+      "url": "http://127.0.0.1:4174/assets/presentation-v3.mp4",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "label": "audit",
+      "kind": "requestfailed",
+      "url": "http://127.0.0.1:4174/assets/expansion-v3.mp4",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "label": "audit",
+      "kind": "requestfailed",
+      "url": "http://127.0.0.1:4174/assets/presentation-v3.mp4",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    }
+  ],
+  "cases": [
+    {
+      "name": "six players and range support",
+      "result": {
+        "count": 6,
+        "rows": [
+          {
+            "url": "http://127.0.0.1:4174/assets/presentation-v3.mp4",
+            "status": 206,
+            "headers": {
+              "content-range": "bytes 0-1023/5583348",
+              "content-type": "video/mp4",
+              "content-length": "1024",
+              "accept-ranges": "bytes",
+              "cache-control": "no-cache",
+              "date": "Thu, 10 Sep 2026 15:18:53 GMT",
+              "connection": "keep-alive",
+              "keep-alive": "timeout=5"
+            },
+            "received": 1024
+          },
+          {
+            "url": "http://127.0.0.1:4174/assets/expansion-v3.mp4",
+            "status": 206,
+            "headers": {
+              "content-range": "bytes 0-1023/3117718",
+              "content-type": "video/mp4",
+              "content-length": "1024",
+              "accept-ranges": "bytes",
+              "cache-control": "no-cache",
+              "date": "Thu, 10 Sep 2026 15:18:53 GMT",
+              "connection": "keep-alive",
+              "keep-alive": "timeout=5"
+            },
+            "received": 1024
+          },
+          {
+            "url": "http://127.0.0.1:4174/assets/reference-videos/v1-spacious.mp4",
+            "status": 206,
+            "headers": {
+              "content-range": "bytes 0-1023/14919007",
+              "content-type": "video/mp4",
+              "content-length": "1024",
+              "accept-ranges": "bytes",
+              "cache-control": "no-cache",
+              "date": "Thu, 10 Sep 2026 15:18:53 GMT",
+              "connection": "keep-alive",
+              "keep-alive": "timeout=5"
+            },
+            "received": 1024
+          },
+          {
+            "url": "http://127.0.0.1:4174/assets/reference-videos/v2-74m2.mp4",
+            "status": 206,
+            "headers": {
+              "content-range": "bytes 0-1023/6007251",
+              "content-type": "video/mp4",
+              "content-length": "1024",
+              "accept-ranges": "bytes",
+              "cache-control": "no-cache",
+              "date": "Thu, 10 Sep 2026 15:18:53 GMT",
+              "connection": "keep-alive",
+              "keep-alive": "timeout=5"
+            },
+            "received": 1024
+          },
+          {
+            "url": "http://127.0.0.1:4174/assets/reference-videos/v3-comfortable.mp4",
+            "status": 206,
+            "headers": {
+              "content-range": "bytes 0-1023/11770834",
+              "content-type": "video/mp4",
+              "content-length": "1024",
+              "accept-ranges": "bytes",
+              "cache-control": "no-cache",
+              "date": "Thu, 10 Sep 2026 15:18:53 GMT",
+              "connection": "keep-alive",
+              "keep-alive": "timeout=5"
+            },
+            "received": 1024
+          },
+          {
+            "url": "http://127.0.0.1:4174/assets/reference-videos/v4-37m2.mp4",
+            "status": 206,
+            "headers": {
+              "content-range": "bytes 0-1023/6590943",
+              "content-type": "video/mp4",
+              "content-length": "1024",
+              "accept-ranges": "bytes",
+              "cache-control": "no-cache",
+              "date": "Thu, 10 Sep 2026 15:18:53 GMT",
+              "connection": "keep-alive",
+              "keep-alive": "timeout=5"
+            },
+            "received": 1024
+          }
+        ]
+      }
+    },
+    {
+      "name": "rendered films zero middle end playback",
+      "result": [
+        {
+          "src": "http://127.0.0.1:4174/assets/presentation-v3.mp4",
+          "duration": 22,
+          "width": 1920,
+          "height": 1080,
+          "frames": [
+            {
+              "time": 0.222379,
+              "paused": false,
+              "ready": 4,
+              "decoded": 13
+            },
+            {
+              "time": 11.21829,
+              "paused": false,
+              "ready": 4,
+              "decoded": 39
+            },
+            {
+              "time": 21.770318,
+              "paused": false,
+              "ready": 4,
+              "decoded": 66
+            }
+          ]
+        },
+        {
+          "src": "http://127.0.0.1:4174/assets/expansion-v3.mp4",
+          "duration": 16,
+          "width": 1920,
+          "height": 1080,
+          "frames": [
+            {
+              "time": 0.222396,
+              "paused": false,
+              "ready": 4,
+              "decoded": 15
+            },
+            {
+              "time": 8.149034,
+              "paused": false,
+              "ready": 4,
+              "decoded": 218
+            },
+            {
+              "time": 15.84437,
+              "paused": false,
+              "ready": 4,
+              "decoded": 355
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "download all six linked videos",
+      "result": [
+        {
+          "href": "assets/presentation-v3.mp4",
+          "file": "audit-local/video-0-presentation-v3.mp4",
+          "failure": null
+        },
+        {
+          "href": "assets/expansion-v3.mp4",
+          "file": "audit-local/video-1-expansion-v3.mp4",
+          "failure": null
+        },
+        {
+          "href": "assets/reference-videos/v1-spacious.mp4",
+          "file": "audit-local/video-2-v1-spacious.mp4",
+          "failure": null
+        },
+        {
+          "href": "assets/reference-videos/v2-74m2.mp4",
+          "file": "audit-local/video-3-v2-74m2.mp4",
+          "failure": null
+        },
+        {
+          "href": "assets/reference-videos/v3-comfortable.mp4",
+          "file": "audit-local/video-4-v3-comfortable.mp4",
+          "failure": null
+        },
+        {
+          "href": "assets/reference-videos/v4-37m2.mp4",
+          "file": "audit-local/video-5-v4-37m2.mp4",
+          "failure": null
+        }
+      ]
+    }
+  ],
+  "mediaResponses": [
+    {
+      "url": "http://127.0.0.1:4174/assets/presentation-v3.mp4",
+      "status": 206,
+      "headers": {
+        "cache-control": "no-cache",
+        "connection": "keep-alive",
+        "content-range": "bytes 327680-5583347/5583348",
+        "accept-ranges": "bytes",
+        "keep-alive": "timeout=5",
+        "content-length": "5255668",
+        "date": "Thu, 10 Sep 2026 15:18:53 GMT",
+        "content-type": "video/mp4"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:4174/assets/presentation-v3.mp4",
+      "status": 206,
+      "headers": {
+        "cache-control": "no-cache",
+        "connection": "keep-alive",
+        "content-range": "bytes 5275648-5583347/5583348",
+        "accept-ranges": "bytes",
+        "keep-alive": "timeout=5",
+        "content-length": "307700",
+        "date": "Thu, 10 Sep 2026 15:18:53 GMT",
+        "content-type": "video/mp4"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:4174/assets/expansion-v3.mp4",
+      "status": 206,
+      "headers": {
+        "cache-control": "no-cache",
+        "connection": "keep-alive",
+        "content-range": "bytes 131072-3117717/3117718",
+        "accept-ranges": "bytes",
+        "keep-alive": "timeout=5",
+        "content-length": "2986646",
+        "date": "Thu, 10 Sep 2026 15:18:54 GMT",
+        "content-type": "video/mp4"
+      }
+    }
+  ]
+}

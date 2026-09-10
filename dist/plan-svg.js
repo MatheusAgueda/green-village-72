@@ -3,7 +3,9 @@ import {materialById} from './material-library.js';
 const escape=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 export function planSVG(configuration,{compact=false,materialColours={}}={}){
  const p=getPlan(configuration),scale=58,ox=285,oy=80;const X=x=>ox+x*scale,Z=z=>oy+(z+DIM.length/2)*scale;
- const floor=materialColours.floor||materialById(configuration.floorId)?.previewHexApprox||configuration.floor||'#e4dfd3',wall=configuration.interior||'#eee';
+ const originalFloor=materialColours.floor||materialById(configuration.floorId)?.previewHexApprox||configuration.floor||'#e4dfd3';
+ // Drawing tones remain related to the selection but favour legible room labels.
+ const floor='#'+[1,3,5].map(i=>Math.round(parseInt(originalFloor.slice(i,i+2),16)*.16+255*.84).toString(16).padStart(2,'0')).join('');
  let content='';const rect=(r,fill,stroke='#85988b',rx=0)=>`<rect x="${X(r.x0)}" y="${Z(r.z0)}" width="${(r.x1-r.x0)*scale}" height="${(r.z1-r.z0)*scale}" rx="${rx}" fill="${fill}" stroke="${stroke}" stroke-width=".65"/>`;
  const ln=(x1,y1,x2,y2,style='')=>`<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" ${style}/>`;
  const text=(x,y,str,size=12,more='')=>`<text x="${x}" y="${y}" font-size="${size}" ${more}>${escape(str)}</text>`;
@@ -23,12 +25,12 @@ export function planSVG(configuration,{compact=false,materialColours={}}={}){
  else if(f.type.includes('kitchen')||f.type==='island'){content+=rect(f,'#f2f1eb','#8b9d8e',1);}
  else content+=rect(f,f.type==='sofa'?'#c1cbbb':'#ba9e7f','#9baf9a',4);
  }
- for(const r of p.rooms){const c=r.clear,cx=(c.x0+c.x1)/2,cz=r.kind==='bathroom'?c.z1-.95:(c.z0+c.z1)/2+1.55;content+=text(X(cx),Z(cz),r.kind==='bathroom'?'Banho':r.label,compact?10:12,'text-anchor="middle" font-weight="600"');content+=text(X(cx),Z(cz)+15,`≈ ${r.area.toFixed(1).replace('.',',')} m²`,compact?9:11,'text-anchor="middle" fill="#546d5d"');}
- const commonX=p.compact?0:-1.9,commonZ=p.compact?3.2:2.7;content+=text(X(commonX),Z(commonZ),'Espaço comum',compact?10:12,'text-anchor="middle" font-weight="600"');content+=text(X(commonX),Z(commonZ)+15,`≈ ${p.areas.common.toFixed(1).replace('.',',')} m²`,compact?9:11,'text-anchor="middle" fill="#546d5d"');
+ for(const r of p.rooms){const c=r.clear,cx=(c.x0+c.x1)/2,cz=r.kind==='bathroom'?c.z1-.95:(c.z0+c.z1)/2+1.55;content+=text(X(cx),Z(cz),r.kind==='bathroom'?'Banho':r.label,compact?10:12,'text-anchor="middle" font-weight="600"');content+=text(X(cx),Z(cz)+15,`≈ ${r.area.toFixed(1).replace('.',',')} m²`,compact?9:11,'text-anchor="middle" fill="#405a47"');}
+ const commonX=p.compact?0:-1.9,commonZ=p.compact?3.2:2.7;content+=text(X(commonX),Z(commonZ),'Espaço comum',compact?10:12,'text-anchor="middle" font-weight="600"');content+=text(X(commonX),Z(commonZ)+15,`≈ ${p.areas.common.toFixed(1).replace('.',',')} m²`,compact?9:11,'text-anchor="middle" fill="#405a47"');
  // Dimensions are sourced from the workbook, never measured from a screenshot.
  const y=49;content+=ln(X(-3.11),y,X(3.11),y,'stroke="#173f35"');for(const x of [-3.11,3.11])content+=ln(X(x),y-7,X(x),y+9,'stroke="#173f35"');content+=text(ox,y-10,'6 220 mm',13,'text-anchor="middle"');
  content+=ln(66,Z(-5.9),66,Z(5.9),'stroke="#173f35"');for(const z of [-5.9,5.9])content+=ln(58,Z(z),75,Z(z),'stroke="#173f35"');content+=`<text transform="translate(49,${Z(0)}) rotate(-90)" font-size="13" text-anchor="middle">11 800 mm</text>`;
  const bandY=Z(5.9)+35;for(const [a,b,n] of [[-3.11,-1.1,'2 010'],[-1.1,1.1,'2 200'],[1.1,3.11,'2 010']]){content+=ln(X(a),bandY,X(b),bandY,'stroke="#94a390"');content+=text(X((a+b)/2),bandY+16,n,11,'text-anchor="middle"');}
  content+=text(ox,bandY+39,'Entrada / fachada principal',12,'text-anchor="middle"');
- return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 570 885" role="img" aria-label="Planta derivada ${escape(p.label)}" style="font-family:Arial,sans-serif;color:#173f35"><rect width="570" height="885" fill="#fff"/><g fill="#173f35">${content}</g><text x="25" y="866" font-family="Arial" font-size="10" fill="#617468">Cotas exteriores confirmadas · áreas e divisões interiores aproximadas</text></svg>`;
+ return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 570 885" role="img" aria-label="Planta derivada ${escape(p.label)}" style="font-family:Arial,sans-serif;color:#173f35"><rect width="570" height="885" fill="#fff"/><g fill="#173f35">${content}</g><text x="25" y="866" font-family="Arial" font-size="10" fill="#617468">Cotas exteriores confirmadas · áreas aproximadas · cores suavizadas</text></svg>`;
 }

@@ -1,0 +1,3292 @@
+{
+  "logs": [
+    {
+      "label": "audit",
+      "kind": "requestfailed",
+      "url": "http://127.0.0.1:4174/assets/presentation-v2.mp4",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "label": "audit",
+      "kind": "requestfailed",
+      "url": "http://127.0.0.1:4174/assets/expansion-v2.mp4",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    }
+  ],
+  "checks": [],
+  "cases": [
+    {
+      "name": "renderer identity",
+      "result": {
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+        "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4, Unspecified Version)",
+        "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+        "diagnostics": {
+          "revision": "GV72-R3-2026-09-10",
+          "frames": 3,
+          "materials": {
+            "pending": 0,
+            "failures": [],
+            "cachedTextures": 1,
+            "leases": 1
+          },
+          "render": {
+            "calls": 295,
+            "triangles": 108136,
+            "memory": {
+              "geometries": 158,
+              "textures": 4
+            },
+            "camera": [
+              11.411160277073336,
+              10.005705016117204,
+              14.263950346341668
+            ],
+            "target": [
+              0,
+              1.105,
+              0
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "all seven layouts via real controls",
+      "result": [
+        {
+          "state": {
+            "schemaVersion": 2,
+            "layout": "t0",
+            "exteriorId": "exterior-standard-branco-glacial",
+            "exterior": "#ddddda",
+            "floorId": "floor-spc-kx7006",
+            "floor": "#92846c",
+            "interior": "#eeede8",
+            "interiorName": "Branco natural",
+            "kitchen": "linear",
+            "kitchenRef": "kitchen-01",
+            "bathroom": "standard",
+            "bathroomRef": "bathroom-01",
+            "bathroomUV": null,
+            "roof": false,
+            "porch": false,
+            "lighting": "neutral"
+          },
+          "planId": "t0",
+          "label": "T0"
+        },
+        {
+          "state": {
+            "schemaVersion": 2,
+            "layout": "t1",
+            "exteriorId": "exterior-standard-branco-glacial",
+            "exterior": "#ddddda",
+            "floorId": "floor-spc-kx7006",
+            "floor": "#92846c",
+            "interior": "#eeede8",
+            "interiorName": "Branco natural",
+            "kitchen": "linear",
+            "kitchenRef": "kitchen-01",
+            "bathroom": "standard",
+            "bathroomRef": "bathroom-01",
+            "bathroomUV": null,
+            "roof": false,
+            "porch": false,
+            "lighting": "neutral"
+          },
+          "planId": "t1",
+          "label": "T1"
+        },
+        {
+          "state": {
+            "schemaVersion": 2,
+            "layout": "t2",
+            "exteriorId": "exterior-standard-branco-glacial",
+            "exterior": "#ddddda",
+            "floorId": "floor-spc-kx7006",
+            "floor": "#92846c",
+            "interior": "#eeede8",
+            "interiorName": "Branco natural",
+            "kitchen": "linear",
+            "kitchenRef": "kitchen-01",
+            "bathroom": "standard",
+            "bathroomRef": "bathroom-01",
+            "bathroomUV": null,
+            "roof": false,
+            "porch": false,
+            "lighting": "neutral"
+          },
+          "planId": "t2",
+          "label": "T2"
+        },
+        {
+          "state": {
+            "schemaVersion": 2,
+            "layout": "t3-a",
+            "exteriorId": "exterior-standard-branco-glacial",
+            "exterior": "#ddddda",
+            "floorId": "floor-spc-kx7006",
+            "floor": "#92846c",
+            "interior": "#eeede8",
+            "interiorName": "Branco natural",
+            "kitchen": "linear",
+            "kitchenRef": "kitchen-01",
+            "bathroom": "standard",
+            "bathroomRef": "bathroom-01",
+            "bathroomUV": null,
+            "roof": false,
+            "porch": false,
+            "lighting": "neutral"
+          },
+          "planId": "t3-a",
+          "label": "T3 · distribuição · A"
+        },
+        {
+          "state": {
+            "schemaVersion": 2,
+            "layout": "t3-b",
+            "exteriorId": "exterior-standard-branco-glacial",
+            "exterior": "#ddddda",
+            "floorId": "floor-spc-kx7006",
+            "floor": "#92846c",
+            "interior": "#eeede8",
+            "interiorName": "Branco natural",
+            "kitchen": "linear",
+            "kitchenRef": "kitchen-01",
+            "bathroom": "standard",
+            "bathroomRef": "bathroom-01",
+            "bathroomUV": null,
+            "roof": false,
+            "porch": false,
+            "lighting": "neutral"
+          },
+          "planId": "t3-b",
+          "label": "T3 · distribuição · B"
+        },
+        {
+          "state": {
+            "schemaVersion": 2,
+            "layout": "t4-a",
+            "exteriorId": "exterior-standard-branco-glacial",
+            "exterior": "#ddddda",
+            "floorId": "floor-spc-kx7006",
+            "floor": "#92846c",
+            "interior": "#eeede8",
+            "interiorName": "Branco natural",
+            "kitchen": "linear",
+            "kitchenRef": "kitchen-01",
+            "bathroom": "standard",
+            "bathroomRef": "bathroom-01",
+            "bathroomUV": null,
+            "roof": false,
+            "porch": false,
+            "lighting": "neutral"
+          },
+          "planId": "t4-a",
+          "label": "T4 · distribuição · A"
+        },
+        {
+          "state": {
+            "schemaVersion": 2,
+            "layout": "t4-b",
+            "exteriorId": "exterior-standard-branco-glacial",
+            "exterior": "#ddddda",
+            "floorId": "floor-spc-kx7006",
+            "floor": "#92846c",
+            "interior": "#eeede8",
+            "interiorName": "Branco natural",
+            "kitchen": "linear",
+            "kitchenRef": "kitchen-01",
+            "bathroom": "standard",
+            "bathroomRef": "bathroom-01",
+            "bathroomUV": null,
+            "roof": false,
+            "porch": false,
+            "lighting": "neutral"
+          },
+          "planId": "t4-b",
+          "label": "T4 · distribuição · B"
+        }
+      ]
+    },
+    {
+      "name": "all material assignments two passes",
+      "result": {
+        "count": 71,
+        "failed": [],
+        "passes": [
+          {
+            "pass": 0,
+            "id": "bathroom-uv-amostra-8",
+            "key": "bathroomUV",
+            "ok": true,
+            "actual": "bathroom-uv-amostra-8",
+            "applied": 3,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 1,
+            "id": "bathroom-uv-amostra-8",
+            "key": "bathroomUV",
+            "ok": true,
+            "actual": "bathroom-uv-amostra-8",
+            "applied": 3,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 1,
+              "textures": 21
+            },
+            "programs": 3
+          }
+        ],
+        "rows": [
+          {
+            "pass": 0,
+            "id": "exterior-3d-textures-tijolo-cinza",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-3d-textures-tijolo-cinza",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 2,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 5
+            },
+            "programs": 14
+          },
+          {
+            "pass": 0,
+            "id": "exterior-3d-textures-tijolo-bordo",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-3d-textures-tijolo-bordo",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 3,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 6
+            },
+            "programs": 14
+          },
+          {
+            "pass": 0,
+            "id": "exterior-3d-textures-tijolo-creme",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-3d-textures-tijolo-creme",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 4,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 7
+            },
+            "programs": 14
+          },
+          {
+            "pass": 0,
+            "id": "exterior-3d-textures-tijolo-vermelho",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-3d-textures-tijolo-vermelho",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 5,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 8
+            },
+            "programs": 14
+          },
+          {
+            "pass": 0,
+            "id": "exterior-3d-textures-pedra-areia",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-3d-textures-pedra-areia",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 6,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 9
+            },
+            "programs": 14
+          },
+          {
+            "pass": 0,
+            "id": "exterior-3d-textures-bloco-cinza",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-3d-textures-bloco-cinza",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 7,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 10
+            },
+            "programs": 14
+          },
+          {
+            "pass": 0,
+            "id": "exterior-3d-textures-tijolo-castanho",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-3d-textures-tijolo-castanho",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 8,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 11
+            },
+            "programs": 14
+          },
+          {
+            "pass": 0,
+            "id": "exterior-3d-textures-pedra-bege",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-3d-textures-pedra-bege",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 9,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 12
+            },
+            "programs": 14
+          },
+          {
+            "pass": 0,
+            "id": "exterior-3d-textures-tijolo-multicor",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-3d-textures-tijolo-multicor",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 10,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 13
+            },
+            "programs": 14
+          },
+          {
+            "pass": 0,
+            "id": "exterior-3d-textures-tijolo-ardosia",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-3d-textures-tijolo-ardosia",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 11,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 14
+            },
+            "programs": 14
+          },
+          {
+            "pass": 0,
+            "id": "exterior-3d-textures-tijolo-rustico",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-3d-textures-tijolo-rustico",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 12,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 14
+            },
+            "programs": 14
+          },
+          {
+            "pass": 0,
+            "id": "exterior-3d-textures-granito-cinza",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-3d-textures-granito-cinza",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 13,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 16
+            },
+            "programs": 14
+          },
+          {
+            "pass": 0,
+            "id": "exterior-3d-gm-gm-16",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-3d-gm-gm-16",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 14,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 17
+            },
+            "programs": 14
+          },
+          {
+            "pass": 0,
+            "id": "exterior-3d-gm-gm-17",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-3d-gm-gm-17",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 15,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 18
+            },
+            "programs": 14
+          },
+          {
+            "pass": 0,
+            "id": "exterior-3d-gm-gm-18",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-3d-gm-gm-18",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 16,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 19
+            },
+            "programs": 14
+          },
+          {
+            "pass": 0,
+            "id": "exterior-3d-gm-gm-19",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-3d-gm-gm-19",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 17,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 20
+            },
+            "programs": 14
+          },
+          {
+            "pass": 0,
+            "id": "exterior-3d-gm-gm-20",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-3d-gm-gm-20",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 0,
+            "id": "exterior-3d-gm-gm-21",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-3d-gm-gm-21",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 0,
+            "id": "exterior-3d-gm-gm-22",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-3d-gm-gm-22",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 0,
+            "id": "exterior-3d-gm-gm-23",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-3d-gm-gm-23",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 0,
+            "id": "exterior-3d-gm-gm-24",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-3d-gm-gm-24",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 0,
+            "id": "exterior-3d-gm-gm-25",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-3d-gm-gm-25",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 0,
+            "id": "exterior-3d-gm-gm-26",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-3d-gm-gm-26",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 0,
+            "id": "exterior-3d-gm-gm-27",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-3d-gm-gm-27",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 0,
+            "id": "exterior-3d-gm-gm-28",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-3d-gm-gm-28",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 0,
+            "id": "exterior-3d-gm-gm-29",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-3d-gm-gm-29",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 0,
+            "id": "exterior-3d-gm-gm-30",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-3d-gm-gm-30",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 0,
+            "id": "exterior-finishes-madeira-mel",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-finishes-madeira-mel",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 0,
+            "id": "exterior-finishes-lamela-branca",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-finishes-lamela-branca",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 0,
+            "id": "exterior-finishes-lamela-bege",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-finishes-lamela-bege",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 0,
+            "id": "exterior-finishes-lamela-creme",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-finishes-lamela-creme",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 0,
+            "id": "exterior-finishes-lamela-dourada",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-finishes-lamela-dourada",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 0,
+            "id": "exterior-finishes-lamela-cinza",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-finishes-lamela-cinza",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 0,
+            "id": "exterior-finishes-lamela-bordo",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-finishes-lamela-bordo",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 0,
+            "id": "exterior-finishes-grafite",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-finishes-grafite",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 0,
+            "id": "exterior-finishes-preto",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-finishes-preto",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 0,
+            "id": "exterior-finishes-vermelho",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-finishes-vermelho",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 0,
+            "id": "exterior-finishes-areia",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-finishes-areia",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 0,
+            "id": "exterior-finishes-granito-branco",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-finishes-granito-branco",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 0,
+            "id": "exterior-standard-pedra-cinza",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-standard-pedra-cinza",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 0,
+            "id": "exterior-standard-cinza-metalico",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-standard-cinza-metalico",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 1
+            },
+            "renderMemory": {
+              "geometries": 1,
+              "textures": 21
+            },
+            "programs": 3
+          },
+          {
+            "pass": 0,
+            "id": "exterior-standard-prata",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-standard-prata",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 1
+            },
+            "renderMemory": {
+              "geometries": 1,
+              "textures": 21
+            },
+            "programs": 3
+          },
+          {
+            "pass": 0,
+            "id": "exterior-standard-madeira-castanho",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-standard-madeira-castanho",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 12
+          },
+          {
+            "pass": 0,
+            "id": "exterior-standard-cinza-perola",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-standard-cinza-perola",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 1
+            },
+            "renderMemory": {
+              "geometries": 1,
+              "textures": 21
+            },
+            "programs": 3
+          },
+          {
+            "pass": 0,
+            "id": "exterior-standard-madeira-mel",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-standard-madeira-mel",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 12
+          },
+          {
+            "pass": 0,
+            "id": "exterior-standard-madeira-cerejeira",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-standard-madeira-cerejeira",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 12
+          },
+          {
+            "pass": 0,
+            "id": "exterior-standard-cinza-quente",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-standard-cinza-quente",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 1
+            },
+            "renderMemory": {
+              "geometries": 1,
+              "textures": 21
+            },
+            "programs": 3
+          },
+          {
+            "pass": 0,
+            "id": "exterior-standard-grafite",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-standard-grafite",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 1
+            },
+            "renderMemory": {
+              "geometries": 1,
+              "textures": 21
+            },
+            "programs": 3
+          },
+          {
+            "pass": 0,
+            "id": "exterior-standard-branco-glacial",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-standard-branco-glacial",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 1
+            },
+            "renderMemory": {
+              "geometries": 1,
+              "textures": 21
+            },
+            "programs": 3
+          },
+          {
+            "pass": 0,
+            "id": "exterior-standard-bege-marfim",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-standard-bege-marfim",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 1
+            },
+            "renderMemory": {
+              "geometries": 1,
+              "textures": 21
+            },
+            "programs": 3
+          },
+          {
+            "pass": 0,
+            "id": "exterior-standard-vermelho-borgonha",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-standard-vermelho-borgonha",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 1
+            },
+            "renderMemory": {
+              "geometries": 1,
+              "textures": 21
+            },
+            "programs": 3
+          },
+          {
+            "pass": 0,
+            "id": "floor-spc-kx7005",
+            "key": "floorId",
+            "ok": true,
+            "actual": "floor-spc-kx7005",
+            "applied": 3,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 1
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 12
+          },
+          {
+            "pass": 0,
+            "id": "floor-spc-kx7006",
+            "key": "floorId",
+            "ok": true,
+            "actual": "floor-spc-kx7006",
+            "applied": 3,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 1
+            },
+            "renderMemory": {
+              "geometries": 1,
+              "textures": 21
+            },
+            "programs": 3
+          },
+          {
+            "pass": 0,
+            "id": "floor-spc-kx7007",
+            "key": "floorId",
+            "ok": true,
+            "actual": "floor-spc-kx7007",
+            "applied": 3,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 1
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 12
+          },
+          {
+            "pass": 0,
+            "id": "floor-spc-kx7008",
+            "key": "floorId",
+            "ok": true,
+            "actual": "floor-spc-kx7008",
+            "applied": 3,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 1
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 12
+          },
+          {
+            "pass": 0,
+            "id": "floor-spc-kx7009",
+            "key": "floorId",
+            "ok": true,
+            "actual": "floor-spc-kx7009",
+            "applied": 3,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 1
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 12
+          },
+          {
+            "pass": 0,
+            "id": "floor-spc-kx7010",
+            "key": "floorId",
+            "ok": true,
+            "actual": "floor-spc-kx7010",
+            "applied": 3,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 1
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 12
+          },
+          {
+            "pass": 0,
+            "id": "floor-spc-kx8005",
+            "key": "floorId",
+            "ok": true,
+            "actual": "floor-spc-kx8005",
+            "applied": 3,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 1
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 12
+          },
+          {
+            "pass": 0,
+            "id": "floor-spc-kx8006",
+            "key": "floorId",
+            "ok": true,
+            "actual": "floor-spc-kx8006",
+            "applied": 3,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 1
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 12
+          },
+          {
+            "pass": 0,
+            "id": "floor-spc-kx8007",
+            "key": "floorId",
+            "ok": true,
+            "actual": "floor-spc-kx8007",
+            "applied": 3,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 1
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 12
+          },
+          {
+            "pass": 0,
+            "id": "floor-spc-kx8008",
+            "key": "floorId",
+            "ok": true,
+            "actual": "floor-spc-kx8008",
+            "applied": 3,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 1
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 12
+          },
+          {
+            "pass": 0,
+            "id": "floor-spc-kx8009",
+            "key": "floorId",
+            "ok": true,
+            "actual": "floor-spc-kx8009",
+            "applied": 3,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 1
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 12
+          },
+          {
+            "pass": 0,
+            "id": "floor-spc-kx9005",
+            "key": "floorId",
+            "ok": true,
+            "actual": "floor-spc-kx9005",
+            "applied": 3,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 1
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 12
+          },
+          {
+            "pass": 0,
+            "id": "bathroom-uv-amostra-1",
+            "key": "bathroomUV",
+            "ok": true,
+            "actual": "bathroom-uv-amostra-1",
+            "applied": 3,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 0,
+            "id": "bathroom-uv-amostra-2",
+            "key": "bathroomUV",
+            "ok": true,
+            "actual": "bathroom-uv-amostra-2",
+            "applied": 3,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 0,
+            "id": "bathroom-uv-amostra-3",
+            "key": "bathroomUV",
+            "ok": true,
+            "actual": "bathroom-uv-amostra-3",
+            "applied": 3,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 0,
+            "id": "bathroom-uv-amostra-4",
+            "key": "bathroomUV",
+            "ok": true,
+            "actual": "bathroom-uv-amostra-4",
+            "applied": 3,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 0,
+            "id": "bathroom-uv-amostra-5",
+            "key": "bathroomUV",
+            "ok": true,
+            "actual": "bathroom-uv-amostra-5",
+            "applied": 3,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 0,
+            "id": "bathroom-uv-amostra-6",
+            "key": "bathroomUV",
+            "ok": true,
+            "actual": "bathroom-uv-amostra-6",
+            "applied": 3,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 0,
+            "id": "bathroom-uv-amostra-7",
+            "key": "bathroomUV",
+            "ok": true,
+            "actual": "bathroom-uv-amostra-7",
+            "applied": 3,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 0,
+            "id": "bathroom-uv-amostra-8",
+            "key": "bathroomUV",
+            "ok": true,
+            "actual": "bathroom-uv-amostra-8",
+            "applied": 3,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 1,
+            "id": "exterior-3d-textures-tijolo-cinza",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-3d-textures-tijolo-cinza",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 3
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 1,
+            "id": "exterior-3d-textures-tijolo-bordo",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-3d-textures-tijolo-bordo",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 3
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 1,
+            "id": "exterior-3d-textures-tijolo-creme",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-3d-textures-tijolo-creme",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 3
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 1,
+            "id": "exterior-3d-textures-tijolo-vermelho",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-3d-textures-tijolo-vermelho",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 3
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 1,
+            "id": "exterior-3d-textures-pedra-areia",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-3d-textures-pedra-areia",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 3
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 1,
+            "id": "exterior-3d-textures-bloco-cinza",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-3d-textures-bloco-cinza",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 3
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 1,
+            "id": "exterior-3d-textures-tijolo-castanho",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-3d-textures-tijolo-castanho",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 3
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 1,
+            "id": "exterior-3d-textures-pedra-bege",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-3d-textures-pedra-bege",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 3
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 1,
+            "id": "exterior-3d-textures-tijolo-multicor",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-3d-textures-tijolo-multicor",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 3
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 1,
+            "id": "exterior-3d-textures-tijolo-ardosia",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-3d-textures-tijolo-ardosia",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 3
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 1,
+            "id": "exterior-3d-textures-tijolo-rustico",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-3d-textures-tijolo-rustico",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 3
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 1,
+            "id": "exterior-3d-textures-granito-cinza",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-3d-textures-granito-cinza",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 3
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 1,
+            "id": "exterior-3d-gm-gm-16",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-3d-gm-gm-16",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 3
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 16
+          },
+          {
+            "pass": 1,
+            "id": "exterior-3d-gm-gm-17",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-3d-gm-gm-17",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 3
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 16
+          },
+          {
+            "pass": 1,
+            "id": "exterior-3d-gm-gm-18",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-3d-gm-gm-18",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 3
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 16
+          },
+          {
+            "pass": 1,
+            "id": "exterior-3d-gm-gm-19",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-3d-gm-gm-19",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 3
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 16
+          },
+          {
+            "pass": 1,
+            "id": "exterior-3d-gm-gm-20",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-3d-gm-gm-20",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 3
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 16
+          },
+          {
+            "pass": 1,
+            "id": "exterior-3d-gm-gm-21",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-3d-gm-gm-21",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 3
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 16
+          },
+          {
+            "pass": 1,
+            "id": "exterior-3d-gm-gm-22",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-3d-gm-gm-22",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 3
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 16
+          },
+          {
+            "pass": 1,
+            "id": "exterior-3d-gm-gm-23",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-3d-gm-gm-23",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 3
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 16
+          },
+          {
+            "pass": 1,
+            "id": "exterior-3d-gm-gm-24",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-3d-gm-gm-24",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 3
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 16
+          },
+          {
+            "pass": 1,
+            "id": "exterior-3d-gm-gm-25",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-3d-gm-gm-25",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 3
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 1,
+            "id": "exterior-3d-gm-gm-26",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-3d-gm-gm-26",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 3
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 1,
+            "id": "exterior-3d-gm-gm-27",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-3d-gm-gm-27",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 3
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 1,
+            "id": "exterior-3d-gm-gm-28",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-3d-gm-gm-28",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 3
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 1,
+            "id": "exterior-3d-gm-gm-29",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-3d-gm-gm-29",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 3
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 1,
+            "id": "exterior-3d-gm-gm-30",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-3d-gm-gm-30",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 3
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 1,
+            "id": "exterior-finishes-madeira-mel",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-finishes-madeira-mel",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 3
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 16
+          },
+          {
+            "pass": 1,
+            "id": "exterior-finishes-lamela-branca",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-finishes-lamela-branca",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 3
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 16
+          },
+          {
+            "pass": 1,
+            "id": "exterior-finishes-lamela-bege",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-finishes-lamela-bege",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 3
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 16
+          },
+          {
+            "pass": 1,
+            "id": "exterior-finishes-lamela-creme",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-finishes-lamela-creme",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 3
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 16
+          },
+          {
+            "pass": 1,
+            "id": "exterior-finishes-lamela-dourada",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-finishes-lamela-dourada",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 3
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 16
+          },
+          {
+            "pass": 1,
+            "id": "exterior-finishes-lamela-cinza",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-finishes-lamela-cinza",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 3
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 16
+          },
+          {
+            "pass": 1,
+            "id": "exterior-finishes-lamela-bordo",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-finishes-lamela-bordo",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 3
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 16
+          },
+          {
+            "pass": 1,
+            "id": "exterior-finishes-grafite",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-finishes-grafite",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 3
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 1,
+            "id": "exterior-finishes-preto",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-finishes-preto",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 3
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 1,
+            "id": "exterior-finishes-vermelho",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-finishes-vermelho",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 3
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 1,
+            "id": "exterior-finishes-areia",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-finishes-areia",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 3
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 1,
+            "id": "exterior-finishes-granito-branco",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-finishes-granito-branco",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 3
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 1,
+            "id": "exterior-standard-pedra-cinza",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-standard-pedra-cinza",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 3
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 1,
+            "id": "exterior-standard-cinza-metalico",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-standard-cinza-metalico",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 1,
+              "textures": 21
+            },
+            "programs": 3
+          },
+          {
+            "pass": 1,
+            "id": "exterior-standard-prata",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-standard-prata",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 1,
+              "textures": 21
+            },
+            "programs": 3
+          },
+          {
+            "pass": 1,
+            "id": "exterior-standard-madeira-castanho",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-standard-madeira-castanho",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 3
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 1,
+            "id": "exterior-standard-cinza-perola",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-standard-cinza-perola",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 1,
+              "textures": 21
+            },
+            "programs": 3
+          },
+          {
+            "pass": 1,
+            "id": "exterior-standard-madeira-mel",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-standard-madeira-mel",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 3
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 1,
+            "id": "exterior-standard-madeira-cerejeira",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-standard-madeira-cerejeira",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 3
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 1,
+            "id": "exterior-standard-cinza-quente",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-standard-cinza-quente",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 1,
+              "textures": 21
+            },
+            "programs": 3
+          },
+          {
+            "pass": 1,
+            "id": "exterior-standard-grafite",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-standard-grafite",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 1,
+              "textures": 21
+            },
+            "programs": 3
+          },
+          {
+            "pass": 1,
+            "id": "exterior-standard-branco-glacial",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-standard-branco-glacial",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 1,
+              "textures": 21
+            },
+            "programs": 3
+          },
+          {
+            "pass": 1,
+            "id": "exterior-standard-bege-marfim",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-standard-bege-marfim",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 1,
+              "textures": 21
+            },
+            "programs": 3
+          },
+          {
+            "pass": 1,
+            "id": "exterior-standard-vermelho-borgonha",
+            "key": "exteriorId",
+            "ok": true,
+            "actual": "exterior-standard-vermelho-borgonha",
+            "applied": 13,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 1,
+              "textures": 21
+            },
+            "programs": 3
+          },
+          {
+            "pass": 1,
+            "id": "floor-spc-kx7005",
+            "key": "floorId",
+            "ok": true,
+            "actual": "floor-spc-kx7005",
+            "applied": 3,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 1,
+            "id": "floor-spc-kx7006",
+            "key": "floorId",
+            "ok": true,
+            "actual": "floor-spc-kx7006",
+            "applied": 3,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 1,
+            "id": "floor-spc-kx7007",
+            "key": "floorId",
+            "ok": true,
+            "actual": "floor-spc-kx7007",
+            "applied": 3,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 1,
+            "id": "floor-spc-kx7008",
+            "key": "floorId",
+            "ok": true,
+            "actual": "floor-spc-kx7008",
+            "applied": 3,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 1,
+            "id": "floor-spc-kx7009",
+            "key": "floorId",
+            "ok": true,
+            "actual": "floor-spc-kx7009",
+            "applied": 3,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 1,
+            "id": "floor-spc-kx7010",
+            "key": "floorId",
+            "ok": true,
+            "actual": "floor-spc-kx7010",
+            "applied": 3,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 1,
+            "id": "floor-spc-kx8005",
+            "key": "floorId",
+            "ok": true,
+            "actual": "floor-spc-kx8005",
+            "applied": 3,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 1,
+            "id": "floor-spc-kx8006",
+            "key": "floorId",
+            "ok": true,
+            "actual": "floor-spc-kx8006",
+            "applied": 3,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 1,
+            "id": "floor-spc-kx8007",
+            "key": "floorId",
+            "ok": true,
+            "actual": "floor-spc-kx8007",
+            "applied": 3,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 1,
+            "id": "floor-spc-kx8008",
+            "key": "floorId",
+            "ok": true,
+            "actual": "floor-spc-kx8008",
+            "applied": 3,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 1,
+            "id": "floor-spc-kx8009",
+            "key": "floorId",
+            "ok": true,
+            "actual": "floor-spc-kx8009",
+            "applied": 3,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 1,
+            "id": "floor-spc-kx9005",
+            "key": "floorId",
+            "ok": true,
+            "actual": "floor-spc-kx9005",
+            "applied": 3,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 1,
+              "textures": 21
+            },
+            "programs": 3
+          },
+          {
+            "pass": 1,
+            "id": "bathroom-uv-amostra-1",
+            "key": "bathroomUV",
+            "ok": true,
+            "actual": "bathroom-uv-amostra-1",
+            "applied": 3,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 1,
+            "id": "bathroom-uv-amostra-2",
+            "key": "bathroomUV",
+            "ok": true,
+            "actual": "bathroom-uv-amostra-2",
+            "applied": 3,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 1,
+            "id": "bathroom-uv-amostra-3",
+            "key": "bathroomUV",
+            "ok": true,
+            "actual": "bathroom-uv-amostra-3",
+            "applied": 3,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 1,
+            "id": "bathroom-uv-amostra-4",
+            "key": "bathroomUV",
+            "ok": true,
+            "actual": "bathroom-uv-amostra-4",
+            "applied": 3,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 1,
+            "id": "bathroom-uv-amostra-5",
+            "key": "bathroomUV",
+            "ok": true,
+            "actual": "bathroom-uv-amostra-5",
+            "applied": 3,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 1,
+            "id": "bathroom-uv-amostra-6",
+            "key": "bathroomUV",
+            "ok": true,
+            "actual": "bathroom-uv-amostra-6",
+            "applied": 3,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 1,
+            "id": "bathroom-uv-amostra-7",
+            "key": "bathroomUV",
+            "ok": true,
+            "actual": "bathroom-uv-amostra-7",
+            "applied": 3,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 149,
+              "textures": 21
+            },
+            "programs": 14
+          },
+          {
+            "pass": 1,
+            "id": "bathroom-uv-amostra-8",
+            "key": "bathroomUV",
+            "ok": true,
+            "actual": "bathroom-uv-amostra-8",
+            "applied": 3,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 18,
+              "leases": 2
+            },
+            "renderMemory": {
+              "geometries": 1,
+              "textures": 21
+            },
+            "programs": 3
+          }
+        ]
+      }
+    },
+    {
+      "name": "finish layers above ground and fit",
+      "result": {
+        "groundY": -0.96,
+        "floorMinY": -0.7710000000000004,
+        "floorMaxY": -0.6639999984800816,
+        "roofY": 1.2,
+        "exploded": 1,
+        "corners": [
+          [
+            0.08447539760416088,
+            0.07442891621839738,
+            0.9977543358849527
+          ],
+          [
+            -0.5419547947152925,
+            -0.46090320372024246,
+            0.9967229725130237
+          ],
+          [
+            0.09071523633348769,
+            0.5464833490887168,
+            0.997551516106134
+          ],
+          [
+            -0.5985948174640318,
+            0.15104564103296725,
+            0.9963282200232507
+          ],
+          [
+            0.4503912405724671,
+            -0.11035116319370124,
+            0.9973983411693924
+          ],
+          [
+            -0.13027028230809745,
+            -0.8284663112786808,
+            0.9960148305729294
+          ],
+          [
+            0.48833641823572976,
+            0.41249432738203806,
+            0.9971370178373447
+          ],
+          [
+            -0.14676048709890832,
+            -0.13379404047892093,
+            0.9954470616017222
+          ]
+        ]
+      }
+    },
+    {
+      "name": "seven views screenshots",
+      "result": [
+        {
+          "visual": {
+            "view": "exterior",
+            "expansion": 1,
+            "cut": 1.1,
+            "exploded": 0,
+            "roofVisible": true,
+            "wallsVisible": true,
+            "furnitureVisible": true,
+            "doorsOpen": true
+          },
+          "title": "Vista exterior",
+          "materials": {
+            "pending": 0,
+            "failures": [],
+            "cachedTextures": 18,
+            "leases": 2
+          },
+          "render": {
+            "calls": 385,
+            "triangles": 114400,
+            "memory": {
+              "geometries": 203,
+              "textures": 21
+            },
+            "camera": [
+              13.732378881863195,
+              12.271255527853294,
+              18.140473602328992
+            ],
+            "target": [
+              0,
+              1.56,
+              0.9750000000000001
+            ]
+          }
+        },
+        {
+          "visual": {
+            "view": "interior",
+            "expansion": 1,
+            "cut": 1.1,
+            "exploded": 0,
+            "roofVisible": true,
+            "wallsVisible": true,
+            "furnitureVisible": true,
+            "doorsOpen": true
+          },
+          "title": "Interior em corte",
+          "materials": {
+            "pending": 0,
+            "failures": [],
+            "cachedTextures": 18,
+            "leases": 2
+          },
+          "render": {
+            "calls": 335,
+            "triangles": 109480,
+            "memory": {
+              "geometries": 178,
+              "textures": 21
+            },
+            "camera": [
+              10.284225968954088,
+              18.73510166106415,
+              18.010514091853146
+            ],
+            "target": [
+              0,
+              1.105,
+              1.1150000000000002
+            ]
+          }
+        },
+        {
+          "visual": {
+            "view": "structure",
+            "expansion": 1,
+            "cut": 1.1,
+            "exploded": 0,
+            "roofVisible": true,
+            "wallsVisible": true,
+            "furnitureVisible": true,
+            "doorsOpen": true
+          },
+          "title": "Estrutura",
+          "materials": {
+            "pending": 0,
+            "failures": [],
+            "cachedTextures": 18,
+            "leases": 2
+          },
+          "render": {
+            "calls": 44,
+            "triangles": 9266,
+            "memory": {
+              "geometries": 44,
+              "textures": 21
+            },
+            "camera": [
+              13.732378881863195,
+              12.271255527853294,
+              18.140473602328992
+            ],
+            "target": [
+              0,
+              1.56,
+              0.9750000000000001
+            ]
+          }
+        },
+        {
+          "visual": {
+            "view": "finishes",
+            "expansion": 1,
+            "cut": 1.1,
+            "exploded": 1,
+            "roofVisible": true,
+            "wallsVisible": true,
+            "furnitureVisible": true,
+            "doorsOpen": true
+          },
+          "title": "Camadas e acabamentos",
+          "materials": {
+            "pending": 0,
+            "failures": [],
+            "cachedTextures": 18,
+            "leases": 2
+          },
+          "render": {
+            "calls": 385,
+            "triangles": 114400,
+            "memory": {
+              "geometries": 203,
+              "textures": 21
+            },
+            "camera": [
+              15.755521813476758,
+              14.393807014511873,
+              20.66940226684595
+            ],
+            "target": [
+              0,
+              2.1045000000000003,
+              0.9750000000000001
+            ]
+          }
+        },
+        {
+          "visual": {
+            "view": "plumbing",
+            "expansion": 1,
+            "cut": 1.1,
+            "exploded": 0,
+            "roofVisible": true,
+            "wallsVisible": true,
+            "furnitureVisible": true,
+            "doorsOpen": true
+          },
+          "title": "Água e esgotos",
+          "materials": {
+            "pending": 0,
+            "failures": [],
+            "cachedTextures": 18,
+            "leases": 2
+          },
+          "render": {
+            "calls": 323,
+            "triangles": 103648,
+            "memory": {
+              "geometries": 172,
+              "textures": 21
+            },
+            "camera": [
+              10.284225968954088,
+              18.73510166106415,
+              18.010514091853146
+            ],
+            "target": [
+              0,
+              1.105,
+              1.1150000000000002
+            ]
+          }
+        },
+        {
+          "visual": {
+            "view": "electrical",
+            "expansion": 1,
+            "cut": 1.1,
+            "exploded": 0,
+            "roofVisible": true,
+            "wallsVisible": true,
+            "furnitureVisible": true,
+            "doorsOpen": true
+          },
+          "title": "Electricidade",
+          "materials": {
+            "pending": 0,
+            "failures": [],
+            "cachedTextures": 18,
+            "leases": 2
+          },
+          "render": {
+            "calls": 323,
+            "triangles": 104272,
+            "memory": {
+              "geometries": 172,
+              "textures": 21
+            },
+            "camera": [
+              10.284225968954088,
+              18.73510166106415,
+              18.010514091853146
+            ],
+            "target": [
+              0,
+              1.105,
+              1.1150000000000002
+            ]
+          }
+        },
+        {
+          "visual": {
+            "view": "expansion",
+            "expansion": 0,
+            "cut": 1.1,
+            "exploded": 0,
+            "roofVisible": true,
+            "wallsVisible": true,
+            "furnitureVisible": true,
+            "doorsOpen": true
+          },
+          "title": "Montagem da envolvente",
+          "materials": {
+            "pending": 0,
+            "failures": [],
+            "cachedTextures": 18,
+            "leases": 2
+          },
+          "render": {
+            "calls": 206,
+            "triangles": 75772,
+            "memory": {
+              "geometries": 113,
+              "textures": 21
+            },
+            "camera": [
+              13.69151135317479,
+              11.784378855476339,
+              17.114389191468486
+            ],
+            "target": [
+              0,
+              1.105,
+              0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "idle and rotation browser frame rate",
+      "result": {
+        "idleFrames": 0,
+        "rotation": {
+          "elapsedMs": 2986.300000011921,
+          "frames": 179,
+          "fps": 59.94039446783158
+        }
+      }
+    }
+  ]
+}
