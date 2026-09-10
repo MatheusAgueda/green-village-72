@@ -1,0 +1,793 @@
+{
+  "originalWorkbook": "sources/PLANTAS 40 PÉS  (1).xlsx",
+  "workbookSha256": "a9d340041331089744a6b2b879d4892b40ac21cc6a2530c1780d9dbc3b058962",
+  "worksheet": "40ft Standard Double-Wing Unit",
+  "coordinateSystem": "Metres; +X right,+Y up,+Z front/entrance. PNG down corresponds to +Z.",
+  "layouts": [
+    {
+      "layout": "t0",
+      "originalPNG": "audit-workspace/layouts/image1.png",
+      "sha256": "b467df5198a8aef1d4b8aa9eff56f181324b5d943fa2c8f6ec72edc37f852e14",
+      "pixels": [
+        545,
+        666
+      ],
+      "visuallyInspected": true,
+      "bedroomHingeEndsInSourceRoomOrder": [],
+      "bedroomSwing": "Into bedroom: left rooms towards -X, right rooms towards +X",
+      "bathroom": {
+        "hingeEnd": "right / max X",
+        "swing": "Into bathroom, towards -Z",
+        "basin": "Small washbasin drawn on left near entrance; WC also left, farther back",
+        "confidence": "high visual; not dimensioned"
+      },
+      "sourceStatus": "Handedness and room relationship visibly supported. Door width, hinge offsets, thickness, exact positions and clearances estimated."
+    },
+    {
+      "layout": "t1",
+      "originalPNG": "audit-workspace/layouts/image2.png",
+      "sha256": "fdd7e143613af962e75b372c7a7ed7636094dc817a5c3998e2e0de963bf31797",
+      "pixels": [
+        374,
+        559
+      ],
+      "visuallyInspected": true,
+      "bedroomHingeEndsInSourceRoomOrder": [
+        "end"
+      ],
+      "bedroomSwing": "Into bedroom: left rooms towards -X, right rooms towards +X",
+      "bathroom": {
+        "hingeEnd": "right / max X",
+        "swing": "Into bathroom, towards -Z",
+        "basin": "Small washbasin drawn on left near entrance; WC also left, farther back",
+        "confidence": "high visual; not dimensioned"
+      },
+      "sourceStatus": "Handedness and room relationship visibly supported. Door width, hinge offsets, thickness, exact positions and clearances estimated."
+    },
+    {
+      "layout": "t2",
+      "originalPNG": "audit-workspace/layouts/image3.png",
+      "sha256": "2d9fc7d6005b049cc2edcfccf878c1319a6f1eeaee0145de0dfd3d59108e20c2",
+      "pixels": [
+        496,
+        609
+      ],
+      "visuallyInspected": true,
+      "bedroomHingeEndsInSourceRoomOrder": [
+        "end",
+        "start"
+      ],
+      "bedroomSwing": "Into bedroom: left rooms towards -X, right rooms towards +X",
+      "bathroom": {
+        "hingeEnd": "right / max X",
+        "swing": "Into bathroom, towards -Z",
+        "basin": "Small washbasin drawn on left near entrance; WC also left, farther back",
+        "confidence": "high visual; not dimensioned"
+      },
+      "sourceStatus": "Handedness and room relationship visibly supported. Door width, hinge offsets, thickness, exact positions and clearances estimated."
+    },
+    {
+      "layout": "t3-a",
+      "originalPNG": "audit-workspace/layouts/image4.png",
+      "sha256": "93c5b49261c159c5abb9323dde5c891d0d0b8b5d52072ab91e407df60abf1956",
+      "pixels": [
+        448,
+        583
+      ],
+      "visuallyInspected": true,
+      "bedroomHingeEndsInSourceRoomOrder": [
+        "end",
+        "end",
+        "start"
+      ],
+      "bedroomSwing": "Into bedroom: left rooms towards -X, right rooms towards +X",
+      "bathroom": {
+        "hingeEnd": "right / max X",
+        "swing": "Into bathroom, towards -Z",
+        "basin": "Small washbasin drawn on left near entrance; WC also left, farther back",
+        "confidence": "high visual; not dimensioned"
+      },
+      "sourceStatus": "Handedness and room relationship visibly supported. Door width, hinge offsets, thickness, exact positions and clearances estimated."
+    },
+    {
+      "layout": "t3-b",
+      "originalPNG": "audit-workspace/layouts/image5.png",
+      "sha256": "8a140dca7167381ecb870b5d9f5e5ab48d9789da89306099b13fbd372d44f1a1",
+      "pixels": [
+        450,
+        582
+      ],
+      "visuallyInspected": true,
+      "bedroomHingeEndsInSourceRoomOrder": [
+        "end",
+        "end",
+        "start"
+      ],
+      "bedroomSwing": "Into bedroom: left rooms towards -X, right rooms towards +X",
+      "bathroom": {
+        "hingeEnd": "right / max X",
+        "swing": "Into bathroom, towards -Z",
+        "basin": "Small washbasin drawn on left near entrance; WC also left, farther back",
+        "confidence": "high visual; not dimensioned"
+      },
+      "sourceStatus": "Handedness and room relationship visibly supported. Door width, hinge offsets, thickness, exact positions and clearances estimated."
+    },
+    {
+      "layout": "t4-a",
+      "originalPNG": "audit-workspace/layouts/image6.png",
+      "sha256": "ea2b29b65ca10e034531a5f1fe1e8adcca4d14b89e39f5cacbb34ac3ef7b3d92",
+      "pixels": [
+        412,
+        575
+      ],
+      "visuallyInspected": true,
+      "bedroomHingeEndsInSourceRoomOrder": [
+        "end",
+        "end",
+        "start",
+        "start"
+      ],
+      "bedroomSwing": "Into bedroom: left rooms towards -X, right rooms towards +X",
+      "bathroom": {
+        "hingeEnd": "right / max X",
+        "swing": "Into bathroom, towards -Z",
+        "basin": "Small washbasin drawn on left near entrance; WC also left, farther back",
+        "confidence": "high visual; not dimensioned"
+      },
+      "sourceStatus": "Handedness and room relationship visibly supported. Door width, hinge offsets, thickness, exact positions and clearances estimated."
+    },
+    {
+      "layout": "t4-b",
+      "originalPNG": "audit-workspace/layouts/image7.png",
+      "sha256": "bcd6cc01ace2d9f2c99047aeebe449f69ceb02c17b5ad1f0243695372fbd6f85",
+      "pixels": [
+        389,
+        567
+      ],
+      "visuallyInspected": true,
+      "bedroomHingeEndsInSourceRoomOrder": [
+        "end",
+        "end",
+        "end",
+        "start"
+      ],
+      "bedroomSwing": "Into bedroom: left rooms towards -X, right rooms towards +X",
+      "bathroom": {
+        "hingeEnd": "right / max X",
+        "swing": "Into bathroom, towards -Z",
+        "basin": "Small washbasin drawn on left near entrance; WC also left, farther back",
+        "confidence": "high visual; not dimensioned"
+      },
+      "sourceStatus": "Handedness and room relationship visibly supported. Door width, hinge offsets, thickness, exact positions and clearances estimated."
+    }
+  ],
+  "correctionToEarlierManifest": "Older manifest said bathroom opens into common space. All seven original blue arcs show right hinge and inward swing.",
+  "doorMatrix": [
+    {
+      "layout": "t0",
+      "door": "bath-door",
+      "wall": "bath-front",
+      "axis": "x",
+      "current": {
+        "u": 0,
+        "hingeU": -0.38,
+        "angle": -1.5707963267948966,
+        "opensInto": "common"
+      },
+      "source": {
+        "hingeEnd": "end",
+        "opensInto": "bathroom",
+        "confidence": "high_visual_all_7_originals"
+      },
+      "sourceMismatch": true,
+      "initialCandidatePose": {
+        "u": 0.2913999999999999,
+        "hingeU": 0.6713999999999999,
+        "hingePlaneOffset": -0.07250000000000001,
+        "leafDirection": -1,
+        "angle": -1.5707963267948966,
+        "leafWidth": 0.714
+      }
+    },
+    {
+      "layout": "t1",
+      "door": "bedroom-1-door",
+      "wall": "bedroom-1-side",
+      "axis": "z",
+      "current": {
+        "u": -0.64,
+        "hingeU": -1.02,
+        "angle": 1.5707963267948966,
+        "opensInto": "bedroom-1"
+      },
+      "source": {
+        "hingeEnd": "end",
+        "opensInto": "bedroom-1",
+        "confidence": "high_visual_all_7_originals"
+      },
+      "sourceMismatch": true,
+      "initialCandidatePose": {
+        "u": -0.64,
+        "hingeU": -0.26,
+        "hingePlaneOffset": 0.07250000000000001,
+        "leafDirection": -1,
+        "angle": -1.5707963267948966,
+        "leafWidth": 0.714
+      }
+    },
+    {
+      "layout": "t1",
+      "door": "bath-door",
+      "wall": "bath-front",
+      "axis": "x",
+      "current": {
+        "u": 0,
+        "hingeU": -0.38,
+        "angle": -1.5707963267948966,
+        "opensInto": "common"
+      },
+      "source": {
+        "hingeEnd": "end",
+        "opensInto": "bathroom",
+        "confidence": "high_visual_all_7_originals"
+      },
+      "sourceMismatch": true,
+      "initialCandidatePose": {
+        "u": 0.2913999999999999,
+        "hingeU": 0.6713999999999999,
+        "hingePlaneOffset": -0.07250000000000001,
+        "leafDirection": -1,
+        "angle": -1.5707963267948966,
+        "leafWidth": 0.714
+      }
+    },
+    {
+      "layout": "t2",
+      "door": "bedroom-1-door",
+      "wall": "bedroom-1-side",
+      "axis": "z",
+      "current": {
+        "u": -0.64,
+        "hingeU": -1.02,
+        "angle": 1.5707963267948966,
+        "opensInto": "bedroom-1"
+      },
+      "source": {
+        "hingeEnd": "end",
+        "opensInto": "bedroom-1",
+        "confidence": "high_visual_all_7_originals"
+      },
+      "sourceMismatch": true,
+      "initialCandidatePose": {
+        "u": -0.64,
+        "hingeU": -0.26,
+        "hingePlaneOffset": 0.07250000000000001,
+        "leafDirection": -1,
+        "angle": -1.5707963267948966,
+        "leafWidth": 0.714
+      }
+    },
+    {
+      "layout": "t2",
+      "door": "bedroom-2-door",
+      "wall": "bedroom-2-side",
+      "axis": "z",
+      "current": {
+        "u": 0.64,
+        "hingeU": 0.26,
+        "angle": 1.5707963267948966,
+        "opensInto": "bedroom-2"
+      },
+      "source": {
+        "hingeEnd": "start",
+        "opensInto": "bedroom-2",
+        "confidence": "high_visual_all_7_originals"
+      },
+      "sourceMismatch": false,
+      "initialCandidatePose": {
+        "u": 0.64,
+        "hingeU": 0.26,
+        "hingePlaneOffset": 0.07250000000000001,
+        "leafDirection": 1,
+        "angle": 1.5707963267948966,
+        "leafWidth": 0.714
+      }
+    },
+    {
+      "layout": "t2",
+      "door": "bath-door",
+      "wall": "bath-front",
+      "axis": "x",
+      "current": {
+        "u": 0,
+        "hingeU": -0.38,
+        "angle": -1.5707963267948966,
+        "opensInto": "common"
+      },
+      "source": {
+        "hingeEnd": "end",
+        "opensInto": "bathroom",
+        "confidence": "high_visual_all_7_originals"
+      },
+      "sourceMismatch": true,
+      "initialCandidatePose": {
+        "u": 0.2913999999999999,
+        "hingeU": 0.6713999999999999,
+        "hingePlaneOffset": -0.07250000000000001,
+        "leafDirection": -1,
+        "angle": -1.5707963267948966,
+        "leafWidth": 0.714
+      }
+    },
+    {
+      "layout": "t3-a",
+      "door": "bedroom-1-door",
+      "wall": "bedroom-1-side",
+      "axis": "z",
+      "current": {
+        "u": -0.64,
+        "hingeU": -1.02,
+        "angle": -1.5707963267948966,
+        "opensInto": "bedroom-1"
+      },
+      "source": {
+        "hingeEnd": "end",
+        "opensInto": "bedroom-1",
+        "confidence": "high_visual_all_7_originals"
+      },
+      "sourceMismatch": true,
+      "initialCandidatePose": {
+        "u": -0.64,
+        "hingeU": -0.26,
+        "hingePlaneOffset": -0.07250000000000001,
+        "leafDirection": -1,
+        "angle": 1.5707963267948966,
+        "leafWidth": 0.714
+      }
+    },
+    {
+      "layout": "t3-a",
+      "door": "bedroom-2-door",
+      "wall": "bedroom-2-side",
+      "axis": "z",
+      "current": {
+        "u": -0.64,
+        "hingeU": -1.02,
+        "angle": 1.5707963267948966,
+        "opensInto": "bedroom-2"
+      },
+      "source": {
+        "hingeEnd": "end",
+        "opensInto": "bedroom-2",
+        "confidence": "high_visual_all_7_originals"
+      },
+      "sourceMismatch": true,
+      "initialCandidatePose": {
+        "u": -0.64,
+        "hingeU": -0.26,
+        "hingePlaneOffset": 0.07250000000000001,
+        "leafDirection": -1,
+        "angle": -1.5707963267948966,
+        "leafWidth": 0.714
+      }
+    },
+    {
+      "layout": "t3-a",
+      "door": "bedroom-3-door",
+      "wall": "bedroom-3-side",
+      "axis": "z",
+      "current": {
+        "u": 0.64,
+        "hingeU": 0.26,
+        "angle": 1.5707963267948966,
+        "opensInto": "bedroom-3"
+      },
+      "source": {
+        "hingeEnd": "start",
+        "opensInto": "bedroom-3",
+        "confidence": "high_visual_all_7_originals"
+      },
+      "sourceMismatch": false,
+      "initialCandidatePose": {
+        "u": 0.64,
+        "hingeU": 0.26,
+        "hingePlaneOffset": 0.07250000000000001,
+        "leafDirection": 1,
+        "angle": 1.5707963267948966,
+        "leafWidth": 0.714
+      }
+    },
+    {
+      "layout": "t3-a",
+      "door": "bath-door",
+      "wall": "bath-front",
+      "axis": "x",
+      "current": {
+        "u": 0,
+        "hingeU": -0.38,
+        "angle": -1.5707963267948966,
+        "opensInto": "common"
+      },
+      "source": {
+        "hingeEnd": "end",
+        "opensInto": "bathroom",
+        "confidence": "high_visual_all_7_originals"
+      },
+      "sourceMismatch": true,
+      "initialCandidatePose": {
+        "u": 0.2913999999999999,
+        "hingeU": 0.6713999999999999,
+        "hingePlaneOffset": -0.07250000000000001,
+        "leafDirection": -1,
+        "angle": -1.5707963267948966,
+        "leafWidth": 0.714
+      }
+    },
+    {
+      "layout": "t3-b",
+      "door": "bedroom-1-door",
+      "wall": "bedroom-1-side",
+      "axis": "z",
+      "current": {
+        "u": -2.6106,
+        "hingeU": -2.9905999999999997,
+        "angle": 1.5707963267948966,
+        "opensInto": "bedroom-1"
+      },
+      "source": {
+        "hingeEnd": "end",
+        "opensInto": "bedroom-1",
+        "confidence": "high_visual_all_7_originals"
+      },
+      "sourceMismatch": true,
+      "initialCandidatePose": {
+        "u": -2.6106,
+        "hingeU": -2.2306,
+        "hingePlaneOffset": 0.07250000000000001,
+        "leafDirection": -1,
+        "angle": -1.5707963267948966,
+        "leafWidth": 0.714
+      }
+    },
+    {
+      "layout": "t3-b",
+      "door": "bedroom-2-door",
+      "wall": "bedroom-2-side",
+      "axis": "z",
+      "current": {
+        "u": 1.4604000000000004,
+        "hingeU": 1.0804000000000005,
+        "angle": 1.5707963267948966,
+        "opensInto": "bedroom-2"
+      },
+      "source": {
+        "hingeEnd": "end",
+        "opensInto": "bedroom-2",
+        "confidence": "high_visual_all_7_originals"
+      },
+      "sourceMismatch": true,
+      "initialCandidatePose": {
+        "u": 1.4604000000000004,
+        "hingeU": 1.8404000000000003,
+        "hingePlaneOffset": 0.07250000000000001,
+        "leafDirection": -1,
+        "angle": -1.5707963267948966,
+        "leafWidth": 0.714
+      }
+    },
+    {
+      "layout": "t3-b",
+      "door": "bedroom-3-door",
+      "wall": "bedroom-3-side",
+      "axis": "z",
+      "current": {
+        "u": 2.7404000000000006,
+        "hingeU": 2.3604000000000007,
+        "angle": 1.5707963267948966,
+        "opensInto": "bedroom-3"
+      },
+      "source": {
+        "hingeEnd": "start",
+        "opensInto": "bedroom-3",
+        "confidence": "high_visual_all_7_originals"
+      },
+      "sourceMismatch": false,
+      "initialCandidatePose": {
+        "u": 2.7404000000000006,
+        "hingeU": 2.3604000000000007,
+        "hingePlaneOffset": 0.07250000000000001,
+        "leafDirection": 1,
+        "angle": 1.5707963267948966,
+        "leafWidth": 0.714
+      }
+    },
+    {
+      "layout": "t3-b",
+      "door": "bath-door",
+      "wall": "bath-front",
+      "axis": "x",
+      "current": {
+        "u": 0,
+        "hingeU": -0.38,
+        "angle": -1.5707963267948966,
+        "opensInto": "common"
+      },
+      "source": {
+        "hingeEnd": "end",
+        "opensInto": "bathroom",
+        "confidence": "high_visual_all_7_originals"
+      },
+      "sourceMismatch": true,
+      "initialCandidatePose": {
+        "u": 0.2913999999999999,
+        "hingeU": 0.6713999999999999,
+        "hingePlaneOffset": -0.07250000000000001,
+        "leafDirection": -1,
+        "angle": -1.5707963267948966,
+        "leafWidth": 0.714
+      }
+    },
+    {
+      "layout": "t4-a",
+      "door": "bedroom-1-door",
+      "wall": "bedroom-1-side",
+      "axis": "z",
+      "current": {
+        "u": -0.64,
+        "hingeU": -1.02,
+        "angle": -1.5707963267948966,
+        "opensInto": "bedroom-1"
+      },
+      "source": {
+        "hingeEnd": "end",
+        "opensInto": "bedroom-1",
+        "confidence": "high_visual_all_7_originals"
+      },
+      "sourceMismatch": true,
+      "initialCandidatePose": {
+        "u": -0.64,
+        "hingeU": -0.26,
+        "hingePlaneOffset": -0.07250000000000001,
+        "leafDirection": -1,
+        "angle": 1.5707963267948966,
+        "leafWidth": 0.714
+      }
+    },
+    {
+      "layout": "t4-a",
+      "door": "bedroom-2-door",
+      "wall": "bedroom-2-side",
+      "axis": "z",
+      "current": {
+        "u": -0.64,
+        "hingeU": -1.02,
+        "angle": 1.5707963267948966,
+        "opensInto": "bedroom-2"
+      },
+      "source": {
+        "hingeEnd": "end",
+        "opensInto": "bedroom-2",
+        "confidence": "high_visual_all_7_originals"
+      },
+      "sourceMismatch": true,
+      "initialCandidatePose": {
+        "u": -0.64,
+        "hingeU": -0.26,
+        "hingePlaneOffset": 0.07250000000000001,
+        "leafDirection": -1,
+        "angle": -1.5707963267948966,
+        "leafWidth": 0.714
+      }
+    },
+    {
+      "layout": "t4-a",
+      "door": "bedroom-3-door",
+      "wall": "bedroom-3-side",
+      "axis": "z",
+      "current": {
+        "u": 0.64,
+        "hingeU": 0.26,
+        "angle": -1.5707963267948966,
+        "opensInto": "bedroom-3"
+      },
+      "source": {
+        "hingeEnd": "start",
+        "opensInto": "bedroom-3",
+        "confidence": "high_visual_all_7_originals"
+      },
+      "sourceMismatch": false,
+      "initialCandidatePose": {
+        "u": 0.64,
+        "hingeU": 0.26,
+        "hingePlaneOffset": -0.07250000000000001,
+        "leafDirection": 1,
+        "angle": -1.5707963267948966,
+        "leafWidth": 0.714
+      }
+    },
+    {
+      "layout": "t4-a",
+      "door": "bedroom-4-door",
+      "wall": "bedroom-4-side",
+      "axis": "z",
+      "current": {
+        "u": 0.64,
+        "hingeU": 0.26,
+        "angle": 1.5707963267948966,
+        "opensInto": "bedroom-4"
+      },
+      "source": {
+        "hingeEnd": "start",
+        "opensInto": "bedroom-4",
+        "confidence": "high_visual_all_7_originals"
+      },
+      "sourceMismatch": false,
+      "initialCandidatePose": {
+        "u": 0.64,
+        "hingeU": 0.26,
+        "hingePlaneOffset": 0.07250000000000001,
+        "leafDirection": 1,
+        "angle": 1.5707963267948966,
+        "leafWidth": 0.714
+      }
+    },
+    {
+      "layout": "t4-a",
+      "door": "bath-door",
+      "wall": "bath-front",
+      "axis": "x",
+      "current": {
+        "u": 0,
+        "hingeU": -0.38,
+        "angle": -1.5707963267948966,
+        "opensInto": "common"
+      },
+      "source": {
+        "hingeEnd": "end",
+        "opensInto": "bathroom",
+        "confidence": "high_visual_all_7_originals"
+      },
+      "sourceMismatch": true,
+      "initialCandidatePose": {
+        "u": 0.2913999999999999,
+        "hingeU": 0.6713999999999999,
+        "hingePlaneOffset": -0.07250000000000001,
+        "leafDirection": -1,
+        "angle": -1.5707963267948966,
+        "leafWidth": 0.714
+      }
+    },
+    {
+      "layout": "t4-b",
+      "door": "bedroom-1-door",
+      "wall": "bedroom-1-side",
+      "axis": "z",
+      "current": {
+        "u": -2.6106,
+        "hingeU": -2.9905999999999997,
+        "angle": -1.5707963267948966,
+        "opensInto": "bedroom-1"
+      },
+      "source": {
+        "hingeEnd": "end",
+        "opensInto": "bedroom-1",
+        "confidence": "high_visual_all_7_originals"
+      },
+      "sourceMismatch": true,
+      "initialCandidatePose": {
+        "u": -2.6106,
+        "hingeU": -2.2306,
+        "hingePlaneOffset": -0.07250000000000001,
+        "leafDirection": -1,
+        "angle": 1.5707963267948966,
+        "leafWidth": 0.714
+      }
+    },
+    {
+      "layout": "t4-b",
+      "door": "bedroom-2-door",
+      "wall": "bedroom-2-side",
+      "axis": "z",
+      "current": {
+        "u": -2.6106,
+        "hingeU": -2.9905999999999997,
+        "angle": 1.5707963267948966,
+        "opensInto": "bedroom-2"
+      },
+      "source": {
+        "hingeEnd": "end",
+        "opensInto": "bedroom-2",
+        "confidence": "high_visual_all_7_originals"
+      },
+      "sourceMismatch": true,
+      "initialCandidatePose": {
+        "u": -2.6106,
+        "hingeU": -2.2306,
+        "hingePlaneOffset": 0.07250000000000001,
+        "leafDirection": -1,
+        "angle": -1.5707963267948966,
+        "leafWidth": 0.714
+      }
+    },
+    {
+      "layout": "t4-b",
+      "door": "bedroom-3-door",
+      "wall": "bedroom-3-side",
+      "axis": "z",
+      "current": {
+        "u": 1.4604000000000004,
+        "hingeU": 1.0804000000000005,
+        "angle": 1.5707963267948966,
+        "opensInto": "bedroom-3"
+      },
+      "source": {
+        "hingeEnd": "end",
+        "opensInto": "bedroom-3",
+        "confidence": "high_visual_all_7_originals"
+      },
+      "sourceMismatch": true,
+      "initialCandidatePose": {
+        "u": 1.4604000000000004,
+        "hingeU": 1.8404000000000003,
+        "hingePlaneOffset": 0.07250000000000001,
+        "leafDirection": -1,
+        "angle": -1.5707963267948966,
+        "leafWidth": 0.714
+      }
+    },
+    {
+      "layout": "t4-b",
+      "door": "bedroom-4-door",
+      "wall": "bedroom-4-side",
+      "axis": "z",
+      "current": {
+        "u": 2.7404000000000006,
+        "hingeU": 2.3604000000000007,
+        "angle": 1.5707963267948966,
+        "opensInto": "bedroom-4"
+      },
+      "source": {
+        "hingeEnd": "start",
+        "opensInto": "bedroom-4",
+        "confidence": "high_visual_all_7_originals"
+      },
+      "sourceMismatch": false,
+      "initialCandidatePose": {
+        "u": 2.7404000000000006,
+        "hingeU": 2.3604000000000007,
+        "hingePlaneOffset": 0.07250000000000001,
+        "leafDirection": 1,
+        "angle": 1.5707963267948966,
+        "leafWidth": 0.714
+      }
+    },
+    {
+      "layout": "t4-b",
+      "door": "bath-door",
+      "wall": "bath-front",
+      "axis": "x",
+      "current": {
+        "u": 0,
+        "hingeU": -0.38,
+        "angle": -1.5707963267948966,
+        "opensInto": "common"
+      },
+      "source": {
+        "hingeEnd": "end",
+        "opensInto": "bathroom",
+        "confidence": "high_visual_all_7_originals"
+      },
+      "sourceMismatch": true,
+      "initialCandidatePose": {
+        "u": 0.2913999999999999,
+        "hingeU": 0.6713999999999999,
+        "hingePlaneOffset": -0.07250000000000001,
+        "leafDirection": -1,
+        "angle": -1.5707963267948966,
+        "leafWidth": 0.714
+      }
+    }
+  ],
+  "initialCandidateNote": "Single-handle candidate used35mm bath hinge side inset. Final two-handle model uses100mm; see final-door-matrix.json.",
+  "finalMatrix": "final-door-matrix.json"
+}

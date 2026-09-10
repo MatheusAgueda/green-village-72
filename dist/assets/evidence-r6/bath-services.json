@@ -1,0 +1,835 @@
+{
+  "status": "PASS",
+  "sourceStableDuringRun": true,
+  "startHashes": {
+    "model.js": "4379058d41b8627850a3c8cb556b974b5743b68696ae676c99eab342fcfe9cba",
+    "specification.js": "e1784a324c129ed85944a1abbe98a2d21b08a8a91d6e34a637e6463523f6cdbe",
+    "interior-detail.js": "c2a1b1a645c5c809314d6a3a146b335339d64c439cc4dedbf8afbc470797dd16"
+  },
+  "endHashes": {
+    "model.js": "4379058d41b8627850a3c8cb556b974b5743b68696ae676c99eab342fcfe9cba",
+    "specification.js": "e1784a324c129ed85944a1abbe98a2d21b08a8a91d6e34a637e6463523f6cdbe",
+    "interior-detail.js": "c2a1b1a645c5c809314d6a3a146b335339d64c439cc4dedbf8afbc470797dd16"
+  },
+  "configurations": 34,
+  "poseCount": 6154,
+  "scope": "17 actual bath references×2 layouts,181 door poses; leaf and both handles vs actual furniture component OBBs plus actual transformed plumbing/electrical triangles. Service point lies inside actual relocated basin footprint. Equipment closed.",
+  "reports": [
+    {
+      "reference": "bathroom-01",
+      "bathroom": "standard",
+      "service": {
+        "id": "basin",
+        "x": -0.47639999999999993,
+        "z": -3.556,
+        "y": 0.83,
+        "hot": true
+      },
+      "basin": {
+        "id": "basin",
+        "type": "basin",
+        "x0": -0.6863999999999999,
+        "x1": -0.26639999999999997,
+        "z0": -4.066,
+        "z1": -3.346,
+        "height": 0.85,
+        "status": "estimated"
+      },
+      "serviceAligned": true,
+      "hits": [],
+      "pipeHits": []
+    },
+    {
+      "reference": "bathroom-01",
+      "bathroom": "mirrored",
+      "service": {
+        "id": "basin",
+        "x": 0.47639999999999993,
+        "z": -3.556,
+        "y": 0.83,
+        "hot": true
+      },
+      "basin": {
+        "id": "basin",
+        "type": "basin",
+        "x0": 0.26639999999999997,
+        "x1": 0.6863999999999999,
+        "z0": -4.066,
+        "z1": -3.346,
+        "height": 0.85,
+        "status": "estimated"
+      },
+      "serviceAligned": true,
+      "hits": [],
+      "pipeHits": []
+    },
+    {
+      "reference": "bathroom-02",
+      "bathroom": "standard",
+      "service": {
+        "id": "basin",
+        "x": -0.47639999999999993,
+        "z": -3.556,
+        "y": 0.83,
+        "hot": true
+      },
+      "basin": {
+        "id": "basin",
+        "type": "basin",
+        "x0": -0.6863999999999999,
+        "x1": -0.26639999999999997,
+        "z0": -4.066,
+        "z1": -3.346,
+        "height": 0.85,
+        "status": "estimated"
+      },
+      "serviceAligned": true,
+      "hits": [],
+      "pipeHits": []
+    },
+    {
+      "reference": "bathroom-02",
+      "bathroom": "mirrored",
+      "service": {
+        "id": "basin",
+        "x": 0.47639999999999993,
+        "z": -3.556,
+        "y": 0.83,
+        "hot": true
+      },
+      "basin": {
+        "id": "basin",
+        "type": "basin",
+        "x0": 0.26639999999999997,
+        "x1": 0.6863999999999999,
+        "z0": -4.066,
+        "z1": -3.346,
+        "height": 0.85,
+        "status": "estimated"
+      },
+      "serviceAligned": true,
+      "hits": [],
+      "pipeHits": []
+    },
+    {
+      "reference": "bathroom-03",
+      "bathroom": "standard",
+      "service": {
+        "id": "basin",
+        "x": -0.47639999999999993,
+        "z": -3.556,
+        "y": 0.83,
+        "hot": true
+      },
+      "basin": {
+        "id": "basin",
+        "type": "basin",
+        "x0": -0.6863999999999999,
+        "x1": -0.26639999999999997,
+        "z0": -4.066,
+        "z1": -3.346,
+        "height": 0.85,
+        "status": "estimated"
+      },
+      "serviceAligned": true,
+      "hits": [],
+      "pipeHits": []
+    },
+    {
+      "reference": "bathroom-03",
+      "bathroom": "mirrored",
+      "service": {
+        "id": "basin",
+        "x": 0.47639999999999993,
+        "z": -3.556,
+        "y": 0.83,
+        "hot": true
+      },
+      "basin": {
+        "id": "basin",
+        "type": "basin",
+        "x0": 0.26639999999999997,
+        "x1": 0.6863999999999999,
+        "z0": -4.066,
+        "z1": -3.346,
+        "height": 0.85,
+        "status": "estimated"
+      },
+      "serviceAligned": true,
+      "hits": [],
+      "pipeHits": []
+    },
+    {
+      "reference": "bathroom-04",
+      "bathroom": "standard",
+      "service": {
+        "id": "basin",
+        "x": -0.47639999999999993,
+        "z": -3.556,
+        "y": 0.83,
+        "hot": true
+      },
+      "basin": {
+        "id": "basin",
+        "type": "basin",
+        "x0": -0.6863999999999999,
+        "x1": -0.26639999999999997,
+        "z0": -4.066,
+        "z1": -3.346,
+        "height": 0.85,
+        "status": "estimated"
+      },
+      "serviceAligned": true,
+      "hits": [],
+      "pipeHits": []
+    },
+    {
+      "reference": "bathroom-04",
+      "bathroom": "mirrored",
+      "service": {
+        "id": "basin",
+        "x": 0.47639999999999993,
+        "z": -3.556,
+        "y": 0.83,
+        "hot": true
+      },
+      "basin": {
+        "id": "basin",
+        "type": "basin",
+        "x0": 0.26639999999999997,
+        "x1": 0.6863999999999999,
+        "z0": -4.066,
+        "z1": -3.346,
+        "height": 0.85,
+        "status": "estimated"
+      },
+      "serviceAligned": true,
+      "hits": [],
+      "pipeHits": []
+    },
+    {
+      "reference": "bathroom-05",
+      "bathroom": "standard",
+      "service": {
+        "id": "basin",
+        "x": -0.47639999999999993,
+        "z": -3.556,
+        "y": 0.83,
+        "hot": true
+      },
+      "basin": {
+        "id": "basin",
+        "type": "basin",
+        "x0": -0.6863999999999999,
+        "x1": -0.26639999999999997,
+        "z0": -4.066,
+        "z1": -3.346,
+        "height": 0.85,
+        "status": "estimated"
+      },
+      "serviceAligned": true,
+      "hits": [],
+      "pipeHits": []
+    },
+    {
+      "reference": "bathroom-05",
+      "bathroom": "mirrored",
+      "service": {
+        "id": "basin",
+        "x": 0.47639999999999993,
+        "z": -3.556,
+        "y": 0.83,
+        "hot": true
+      },
+      "basin": {
+        "id": "basin",
+        "type": "basin",
+        "x0": 0.26639999999999997,
+        "x1": 0.6863999999999999,
+        "z0": -4.066,
+        "z1": -3.346,
+        "height": 0.85,
+        "status": "estimated"
+      },
+      "serviceAligned": true,
+      "hits": [],
+      "pipeHits": []
+    },
+    {
+      "reference": "bathroom-06",
+      "bathroom": "standard",
+      "service": {
+        "id": "basin",
+        "x": -0.47639999999999993,
+        "z": -3.556,
+        "y": 0.83,
+        "hot": true
+      },
+      "basin": {
+        "id": "basin",
+        "type": "basin",
+        "x0": -0.6863999999999999,
+        "x1": -0.26639999999999997,
+        "z0": -4.066,
+        "z1": -3.346,
+        "height": 0.85,
+        "status": "estimated"
+      },
+      "serviceAligned": true,
+      "hits": [],
+      "pipeHits": []
+    },
+    {
+      "reference": "bathroom-06",
+      "bathroom": "mirrored",
+      "service": {
+        "id": "basin",
+        "x": 0.47639999999999993,
+        "z": -3.556,
+        "y": 0.83,
+        "hot": true
+      },
+      "basin": {
+        "id": "basin",
+        "type": "basin",
+        "x0": 0.26639999999999997,
+        "x1": 0.6863999999999999,
+        "z0": -4.066,
+        "z1": -3.346,
+        "height": 0.85,
+        "status": "estimated"
+      },
+      "serviceAligned": true,
+      "hits": [],
+      "pipeHits": []
+    },
+    {
+      "reference": "bathroom-07",
+      "bathroom": "standard",
+      "service": {
+        "id": "basin",
+        "x": -0.47639999999999993,
+        "z": -3.556,
+        "y": 0.83,
+        "hot": true
+      },
+      "basin": {
+        "id": "basin",
+        "type": "basin",
+        "x0": -0.6863999999999999,
+        "x1": -0.26639999999999997,
+        "z0": -4.066,
+        "z1": -3.346,
+        "height": 0.85,
+        "status": "estimated"
+      },
+      "serviceAligned": true,
+      "hits": [],
+      "pipeHits": []
+    },
+    {
+      "reference": "bathroom-07",
+      "bathroom": "mirrored",
+      "service": {
+        "id": "basin",
+        "x": 0.47639999999999993,
+        "z": -3.556,
+        "y": 0.83,
+        "hot": true
+      },
+      "basin": {
+        "id": "basin",
+        "type": "basin",
+        "x0": 0.26639999999999997,
+        "x1": 0.6863999999999999,
+        "z0": -4.066,
+        "z1": -3.346,
+        "height": 0.85,
+        "status": "estimated"
+      },
+      "serviceAligned": true,
+      "hits": [],
+      "pipeHits": []
+    },
+    {
+      "reference": "bathroom-08",
+      "bathroom": "standard",
+      "service": {
+        "id": "basin",
+        "x": -0.47639999999999993,
+        "z": -3.556,
+        "y": 0.83,
+        "hot": true
+      },
+      "basin": {
+        "id": "basin",
+        "type": "basin",
+        "x0": -0.6863999999999999,
+        "x1": -0.26639999999999997,
+        "z0": -4.066,
+        "z1": -3.346,
+        "height": 0.85,
+        "status": "estimated"
+      },
+      "serviceAligned": true,
+      "hits": [],
+      "pipeHits": []
+    },
+    {
+      "reference": "bathroom-08",
+      "bathroom": "mirrored",
+      "service": {
+        "id": "basin",
+        "x": 0.47639999999999993,
+        "z": -3.556,
+        "y": 0.83,
+        "hot": true
+      },
+      "basin": {
+        "id": "basin",
+        "type": "basin",
+        "x0": 0.26639999999999997,
+        "x1": 0.6863999999999999,
+        "z0": -4.066,
+        "z1": -3.346,
+        "height": 0.85,
+        "status": "estimated"
+      },
+      "serviceAligned": true,
+      "hits": [],
+      "pipeHits": []
+    },
+    {
+      "reference": "bathroom-09",
+      "bathroom": "standard",
+      "service": {
+        "id": "basin",
+        "x": -0.47639999999999993,
+        "z": -3.556,
+        "y": 0.83,
+        "hot": true
+      },
+      "basin": {
+        "id": "basin",
+        "type": "basin",
+        "x0": -0.6863999999999999,
+        "x1": -0.26639999999999997,
+        "z0": -4.066,
+        "z1": -3.346,
+        "height": 0.85,
+        "status": "estimated"
+      },
+      "serviceAligned": true,
+      "hits": [],
+      "pipeHits": []
+    },
+    {
+      "reference": "bathroom-09",
+      "bathroom": "mirrored",
+      "service": {
+        "id": "basin",
+        "x": 0.47639999999999993,
+        "z": -3.556,
+        "y": 0.83,
+        "hot": true
+      },
+      "basin": {
+        "id": "basin",
+        "type": "basin",
+        "x0": 0.26639999999999997,
+        "x1": 0.6863999999999999,
+        "z0": -4.066,
+        "z1": -3.346,
+        "height": 0.85,
+        "status": "estimated"
+      },
+      "serviceAligned": true,
+      "hits": [],
+      "pipeHits": []
+    },
+    {
+      "reference": "bathroom-10",
+      "bathroom": "standard",
+      "service": {
+        "id": "basin",
+        "x": -0.47639999999999993,
+        "z": -3.556,
+        "y": 0.83,
+        "hot": true
+      },
+      "basin": {
+        "id": "basin",
+        "type": "basin",
+        "x0": -0.6863999999999999,
+        "x1": -0.26639999999999997,
+        "z0": -4.066,
+        "z1": -3.346,
+        "height": 0.85,
+        "status": "estimated"
+      },
+      "serviceAligned": true,
+      "hits": [],
+      "pipeHits": []
+    },
+    {
+      "reference": "bathroom-10",
+      "bathroom": "mirrored",
+      "service": {
+        "id": "basin",
+        "x": 0.47639999999999993,
+        "z": -3.556,
+        "y": 0.83,
+        "hot": true
+      },
+      "basin": {
+        "id": "basin",
+        "type": "basin",
+        "x0": 0.26639999999999997,
+        "x1": 0.6863999999999999,
+        "z0": -4.066,
+        "z1": -3.346,
+        "height": 0.85,
+        "status": "estimated"
+      },
+      "serviceAligned": true,
+      "hits": [],
+      "pipeHits": []
+    },
+    {
+      "reference": "bathroom-11",
+      "bathroom": "standard",
+      "service": {
+        "id": "basin",
+        "x": -0.47639999999999993,
+        "z": -3.556,
+        "y": 0.83,
+        "hot": true
+      },
+      "basin": {
+        "id": "basin",
+        "type": "basin",
+        "x0": -0.6863999999999999,
+        "x1": -0.26639999999999997,
+        "z0": -4.066,
+        "z1": -3.346,
+        "height": 0.85,
+        "status": "estimated"
+      },
+      "serviceAligned": true,
+      "hits": [],
+      "pipeHits": []
+    },
+    {
+      "reference": "bathroom-11",
+      "bathroom": "mirrored",
+      "service": {
+        "id": "basin",
+        "x": 0.47639999999999993,
+        "z": -3.556,
+        "y": 0.83,
+        "hot": true
+      },
+      "basin": {
+        "id": "basin",
+        "type": "basin",
+        "x0": 0.26639999999999997,
+        "x1": 0.6863999999999999,
+        "z0": -4.066,
+        "z1": -3.346,
+        "height": 0.85,
+        "status": "estimated"
+      },
+      "serviceAligned": true,
+      "hits": [],
+      "pipeHits": []
+    },
+    {
+      "reference": "bathroom-12",
+      "bathroom": "standard",
+      "service": {
+        "id": "basin",
+        "x": -0.47639999999999993,
+        "z": -3.556,
+        "y": 0.83,
+        "hot": true
+      },
+      "basin": {
+        "id": "basin",
+        "type": "basin",
+        "x0": -0.6863999999999999,
+        "x1": -0.26639999999999997,
+        "z0": -4.066,
+        "z1": -3.346,
+        "height": 0.85,
+        "status": "estimated"
+      },
+      "serviceAligned": true,
+      "hits": [],
+      "pipeHits": []
+    },
+    {
+      "reference": "bathroom-12",
+      "bathroom": "mirrored",
+      "service": {
+        "id": "basin",
+        "x": 0.47639999999999993,
+        "z": -3.556,
+        "y": 0.83,
+        "hot": true
+      },
+      "basin": {
+        "id": "basin",
+        "type": "basin",
+        "x0": 0.26639999999999997,
+        "x1": 0.6863999999999999,
+        "z0": -4.066,
+        "z1": -3.346,
+        "height": 0.85,
+        "status": "estimated"
+      },
+      "serviceAligned": true,
+      "hits": [],
+      "pipeHits": []
+    },
+    {
+      "reference": "bathroom-13",
+      "bathroom": "standard",
+      "service": {
+        "id": "basin",
+        "x": -0.47639999999999993,
+        "z": -3.556,
+        "y": 0.83,
+        "hot": true
+      },
+      "basin": {
+        "id": "basin",
+        "type": "basin",
+        "x0": -0.6863999999999999,
+        "x1": -0.26639999999999997,
+        "z0": -4.066,
+        "z1": -3.346,
+        "height": 0.85,
+        "status": "estimated"
+      },
+      "serviceAligned": true,
+      "hits": [],
+      "pipeHits": []
+    },
+    {
+      "reference": "bathroom-13",
+      "bathroom": "mirrored",
+      "service": {
+        "id": "basin",
+        "x": 0.47639999999999993,
+        "z": -3.556,
+        "y": 0.83,
+        "hot": true
+      },
+      "basin": {
+        "id": "basin",
+        "type": "basin",
+        "x0": 0.26639999999999997,
+        "x1": 0.6863999999999999,
+        "z0": -4.066,
+        "z1": -3.346,
+        "height": 0.85,
+        "status": "estimated"
+      },
+      "serviceAligned": true,
+      "hits": [],
+      "pipeHits": []
+    },
+    {
+      "reference": "bathroom-14",
+      "bathroom": "standard",
+      "service": {
+        "id": "basin",
+        "x": -0.47639999999999993,
+        "z": -3.556,
+        "y": 0.83,
+        "hot": true
+      },
+      "basin": {
+        "id": "basin",
+        "type": "basin",
+        "x0": -0.6863999999999999,
+        "x1": -0.26639999999999997,
+        "z0": -4.066,
+        "z1": -3.346,
+        "height": 0.85,
+        "status": "estimated"
+      },
+      "serviceAligned": true,
+      "hits": [],
+      "pipeHits": []
+    },
+    {
+      "reference": "bathroom-14",
+      "bathroom": "mirrored",
+      "service": {
+        "id": "basin",
+        "x": 0.47639999999999993,
+        "z": -3.556,
+        "y": 0.83,
+        "hot": true
+      },
+      "basin": {
+        "id": "basin",
+        "type": "basin",
+        "x0": 0.26639999999999997,
+        "x1": 0.6863999999999999,
+        "z0": -4.066,
+        "z1": -3.346,
+        "height": 0.85,
+        "status": "estimated"
+      },
+      "serviceAligned": true,
+      "hits": [],
+      "pipeHits": []
+    },
+    {
+      "reference": "bathroom-15",
+      "bathroom": "standard",
+      "service": {
+        "id": "basin",
+        "x": -0.47639999999999993,
+        "z": -3.556,
+        "y": 0.83,
+        "hot": true
+      },
+      "basin": {
+        "id": "basin",
+        "type": "basin",
+        "x0": -0.6863999999999999,
+        "x1": -0.26639999999999997,
+        "z0": -4.066,
+        "z1": -3.346,
+        "height": 0.85,
+        "status": "estimated"
+      },
+      "serviceAligned": true,
+      "hits": [],
+      "pipeHits": []
+    },
+    {
+      "reference": "bathroom-15",
+      "bathroom": "mirrored",
+      "service": {
+        "id": "basin",
+        "x": 0.47639999999999993,
+        "z": -3.556,
+        "y": 0.83,
+        "hot": true
+      },
+      "basin": {
+        "id": "basin",
+        "type": "basin",
+        "x0": 0.26639999999999997,
+        "x1": 0.6863999999999999,
+        "z0": -4.066,
+        "z1": -3.346,
+        "height": 0.85,
+        "status": "estimated"
+      },
+      "serviceAligned": true,
+      "hits": [],
+      "pipeHits": []
+    },
+    {
+      "reference": "bathroom-16",
+      "bathroom": "standard",
+      "service": {
+        "id": "basin",
+        "x": -0.47639999999999993,
+        "z": -3.556,
+        "y": 0.83,
+        "hot": true
+      },
+      "basin": {
+        "id": "basin",
+        "type": "basin",
+        "x0": -0.6863999999999999,
+        "x1": -0.26639999999999997,
+        "z0": -4.066,
+        "z1": -3.346,
+        "height": 0.85,
+        "status": "estimated"
+      },
+      "serviceAligned": true,
+      "hits": [],
+      "pipeHits": []
+    },
+    {
+      "reference": "bathroom-16",
+      "bathroom": "mirrored",
+      "service": {
+        "id": "basin",
+        "x": 0.47639999999999993,
+        "z": -3.556,
+        "y": 0.83,
+        "hot": true
+      },
+      "basin": {
+        "id": "basin",
+        "type": "basin",
+        "x0": 0.26639999999999997,
+        "x1": 0.6863999999999999,
+        "z0": -4.066,
+        "z1": -3.346,
+        "height": 0.85,
+        "status": "estimated"
+      },
+      "serviceAligned": true,
+      "hits": [],
+      "pipeHits": []
+    },
+    {
+      "reference": "bathroom-17",
+      "bathroom": "standard",
+      "service": {
+        "id": "basin",
+        "x": -0.47639999999999993,
+        "z": -3.556,
+        "y": 0.83,
+        "hot": true
+      },
+      "basin": {
+        "id": "basin",
+        "type": "basin",
+        "x0": -0.6863999999999999,
+        "x1": -0.26639999999999997,
+        "z0": -4.066,
+        "z1": -3.346,
+        "height": 0.85,
+        "status": "estimated"
+      },
+      "serviceAligned": true,
+      "hits": [],
+      "pipeHits": []
+    },
+    {
+      "reference": "bathroom-17",
+      "bathroom": "mirrored",
+      "service": {
+        "id": "basin",
+        "x": 0.47639999999999993,
+        "z": -3.556,
+        "y": 0.83,
+        "hot": true
+      },
+      "basin": {
+        "id": "basin",
+        "type": "basin",
+        "x0": 0.26639999999999997,
+        "x1": 0.6863999999999999,
+        "z0": -4.066,
+        "z1": -3.346,
+        "height": 0.85,
+        "status": "estimated"
+      },
+      "serviceAligned": true,
+      "hits": [],
+      "pipeHits": []
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "requestedMaterialIDs": 71,
+  "materialRuns": 142,
+  "referenceRuns": 32,
+  "total": 174,
+  "passed": 174,
+  "failed": [],
+  "consoleErrors": [],
+  "pageErrors": [],
+  "requestFailures": [
+    {
+      "phase": "initial",
+      "url": "/assets/presentation-v5.mp4",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "phase": "initial",
+      "url": "/assets/expansion-v4.mp4",
+      "error": "net::ERR_ABORTED"
+    }
+  ],
+  "httpErrors": [],
+  "initial": {
+    "revision": "GV72-R6-2026-09-10",
+    "frames": 3,
+    "materials": {
+      "pending": 0,
+      "backgroundPending": 0,
+      "failures": [],
+      "cachedTextures": 3,
+      "leases": 3
+    },
+    "render": {
+      "calls": 428,
+      "triangles": 123740,
+      "memory": {
+        "geometries": 225,
+        "textures": 6
+      },
+      "camera": [
+        11.426878956597193,
+        10.007965586145815,
+        14.283598695746493
+      ],
+      "target": [
+        0,
+        1.095,
+        0
+      ]
+    }
+  },
+  "final": {
+    "revision": "GV72-R6-2026-09-10",
+    "frames": 325,
+    "materials": {
+      "pending": 0,
+      "backgroundPending": 0,
+      "failures": [],
+      "cachedTextures": 18,
+      "leases": 3
+    },
+    "render": {
+      "calls": 226,
+      "triangles": 76244,
+      "memory": {
+        "geometries": 158,
+        "textures": 21
+      },
+      "camera": [
+        3.059245558142705,
+        4.121745558142706,
+        0.1498777817580068
+      ],
+      "target": [
+        -0.002500000000000058,
+        1.06,
+        -4.5605
+      ]
+    }
+  },
+  "peakCache": 18,
+  "peakLeases": 4,
+  "peakGpuTextures": 21,
+  "sourceUnchanged": true,
+  "before": {
+    "app.js": "e9d30faee377a8e00195fa61ac4ab33e75092f67924380c61f6c7eefbbd5002b",
+    "model.js": "4379058d41b8627850a3c8cb556b974b5743b68696ae676c99eab342fcfe9cba",
+    "stage.js": "f267d8ced81973011e8f55f28a75458bbe4b4ca77597149e17120ffede83bef4",
+    "specification.js": "e1784a324c129ed85944a1abbe98a2d21b08a8a91d6e34a637e6463523f6cdbe",
+    "configuration.js": "ca78e1fdaddf504f6be43c8b4ec3c45ec92d07bdea1f35094ca967408316fdf1",
+    "material-library.js": "5ca8156a343927e75a3abada6db8443f3d76927c47a29034653aa3ec338e3bcd",
+    "material-data.js": "e55563fc9cb5f75514eb545f6e9a4e056847b3579556fd5a614da88bc381f011",
+    "photo-planks.js": "72d1b085f1694244c2f414f63aa130f4fe6d64e005a02d2560763044131c6d45",
+    "photo-plank-data.js": "0c48780479b6849e88bfe56e7d28fdaa1f3feee908784bb83ddfaaf525c74b17",
+    "photo-wall-data.js": "fdddccc5a95ad206b38a26db55c40a84aa1a18ea3df0a63260f221d7b378c1b4",
+    "interior-detail.js": "c2a1b1a645c5c809314d6a3a146b335339d64c439cc4dedbf8afbc470797dd16",
+    "interior-references.js": "41cdd74bdd7d79740372ae090aa38278b62eadfa05261a4952b2295f0ec369ac",
+    "data.js": "51c44e7592d2cdd773eab4e9a66be1ebf739b408eb4ace55ffdfff397c248f1d",
+    "index.html": "2c7ef51b32170c4fc940af12f3aabf4023cf9f5ce57113f4d2e8b282ade8a145"
+  },
+  "after": {
+    "app.js": "e9d30faee377a8e00195fa61ac4ab33e75092f67924380c61f6c7eefbbd5002b",
+    "model.js": "4379058d41b8627850a3c8cb556b974b5743b68696ae676c99eab342fcfe9cba",
+    "stage.js": "f267d8ced81973011e8f55f28a75458bbe4b4ca77597149e17120ffede83bef4",
+    "specification.js": "e1784a324c129ed85944a1abbe98a2d21b08a8a91d6e34a637e6463523f6cdbe",
+    "configuration.js": "ca78e1fdaddf504f6be43c8b4ec3c45ec92d07bdea1f35094ca967408316fdf1",
+    "material-library.js": "5ca8156a343927e75a3abada6db8443f3d76927c47a29034653aa3ec338e3bcd",
+    "material-data.js": "e55563fc9cb5f75514eb545f6e9a4e056847b3579556fd5a614da88bc381f011",
+    "photo-planks.js": "72d1b085f1694244c2f414f63aa130f4fe6d64e005a02d2560763044131c6d45",
+    "photo-plank-data.js": "0c48780479b6849e88bfe56e7d28fdaa1f3feee908784bb83ddfaaf525c74b17",
+    "photo-wall-data.js": "fdddccc5a95ad206b38a26db55c40a84aa1a18ea3df0a63260f221d7b378c1b4",
+    "interior-detail.js": "c2a1b1a645c5c809314d6a3a146b335339d64c439cc4dedbf8afbc470797dd16",
+    "interior-references.js": "41cdd74bdd7d79740372ae090aa38278b62eadfa05261a4952b2295f0ec369ac",
+    "data.js": "51c44e7592d2cdd773eab4e9a66be1ebf739b408eb4ace55ffdfff397c248f1d",
+    "index.html": "2c7ef51b32170c4fc940af12f3aabf4023cf9f5ce57113f4d2e8b282ade8a145"
+  }
+}

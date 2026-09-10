@@ -1,0 +1,434 @@
+{
+  "status": "PASS",
+  "browser": "Chrome headless on macOS",
+  "viewport": [
+    1440,
+    1000
+  ],
+  "scope": "Directed fitting-state and bounds regression; source snapshot, actual UI interactions plus validated configure API for the 15 reference bounds cases.",
+  "checks": [
+    {
+      "name": "Individual native click persists through floor and view rebuilds; mixed/global scope/reset",
+      "pass": true
+    },
+    {
+      "name": "Hidden ancestors, toolbar clicks and drag do not toggle furnishings",
+      "pass": true
+    },
+    {
+      "name": "All 15 linear references fit opened equipment and do not clip detail meshes",
+      "pass": true
+    }
+  ],
+  "linearReferences": {
+    "count": 15,
+    "allOpened": true,
+    "clippedDetailVertices": 0,
+    "maxAbsScreenNDC": 0.894388808367932,
+    "insideScreenLimit": 1,
+    "rows": [
+      {
+        "id": "kitchen-01",
+        "status": {
+          "total": 7,
+          "opened": 7,
+          "anyOpen": true,
+          "allOpen": true
+        },
+        "bounds": {
+          "min": [
+            -3.0549999999999997,
+            0,
+            -3.94
+          ],
+          "max": [
+            -1.832147482637592,
+            2.23,
+            -1.46
+          ]
+        },
+        "maxNDC": 0.8934913279868584,
+        "meshes": 24,
+        "clipViolations": []
+      },
+      {
+        "id": "kitchen-02",
+        "status": {
+          "total": 6,
+          "opened": 6,
+          "anyOpen": true,
+          "allOpen": true
+        },
+        "bounds": {
+          "min": [
+            -3.0549999999999997,
+            0,
+            -3.94
+          ],
+          "max": [
+            -1.8306434961217533,
+            1.22,
+            -1.46
+          ]
+        },
+        "maxNDC": 0.894388808367932,
+        "meshes": 42,
+        "clipViolations": []
+      },
+      {
+        "id": "kitchen-03",
+        "status": {
+          "total": 10,
+          "opened": 10,
+          "anyOpen": true,
+          "allOpen": true
+        },
+        "bounds": {
+          "min": [
+            -3.0549999999999997,
+            0,
+            -3.94
+          ],
+          "max": [
+            -1.832147482637592,
+            2.23,
+            -1.46
+          ]
+        },
+        "maxNDC": 0.893248997929709,
+        "meshes": 46,
+        "clipViolations": []
+      },
+      {
+        "id": "kitchen-04",
+        "status": {
+          "total": 7,
+          "opened": 7,
+          "anyOpen": true,
+          "allOpen": true
+        },
+        "bounds": {
+          "min": [
+            -3.0549999999999997,
+            0,
+            -3.94
+          ],
+          "max": [
+            -1.832147482637592,
+            2.23,
+            -1.46
+          ]
+        },
+        "maxNDC": 0.8929219946697611,
+        "meshes": 21,
+        "clipViolations": []
+      },
+      {
+        "id": "kitchen-05",
+        "status": {
+          "total": 8,
+          "opened": 8,
+          "anyOpen": true,
+          "allOpen": true
+        },
+        "bounds": {
+          "min": [
+            -3.0549999999999997,
+            0,
+            -3.94
+          ],
+          "max": [
+            -1.832147482637592,
+            2.23,
+            -1.46
+          ]
+        },
+        "maxNDC": 0.8929250544385936,
+        "meshes": 33,
+        "clipViolations": []
+      },
+      {
+        "id": "kitchen-06",
+        "status": {
+          "total": 6,
+          "opened": 6,
+          "anyOpen": true,
+          "allOpen": true
+        },
+        "bounds": {
+          "min": [
+            -3.0549999999999997,
+            0,
+            -3.94
+          ],
+          "max": [
+            -1.832147482637592,
+            1.22,
+            -1.46
+          ]
+        },
+        "maxNDC": 0.8928918030311046,
+        "meshes": 31,
+        "clipViolations": []
+      },
+      {
+        "id": "kitchen-07",
+        "status": {
+          "total": 6,
+          "opened": 6,
+          "anyOpen": true,
+          "allOpen": true
+        },
+        "bounds": {
+          "min": [
+            -3.0549999999999997,
+            0,
+            -3.94
+          ],
+          "max": [
+            -1.832147482637592,
+            1.22,
+            -1.46
+          ]
+        },
+        "maxNDC": 0.8928781864399821,
+        "meshes": 28,
+        "clipViolations": []
+      },
+      {
+        "id": "kitchen-08",
+        "status": {
+          "total": 10,
+          "opened": 10,
+          "anyOpen": true,
+          "allOpen": true
+        },
+        "bounds": {
+          "min": [
+            -3.0549999999999997,
+            0,
+            -3.94
+          ],
+          "max": [
+            -1.8306434961217533,
+            2.23,
+            -1.46
+          ]
+        },
+        "maxNDC": 0.8928643635310269,
+        "meshes": 55,
+        "clipViolations": []
+      },
+      {
+        "id": "kitchen-09",
+        "status": {
+          "total": 6,
+          "opened": 6,
+          "anyOpen": true,
+          "allOpen": true
+        },
+        "bounds": {
+          "min": [
+            -3.0549999999999997,
+            0,
+            -3.94
+          ],
+          "max": [
+            -1.832147482637592,
+            1.22,
+            -1.46
+          ]
+        },
+        "maxNDC": 0.8928648990820556,
+        "meshes": 30,
+        "clipViolations": []
+      },
+      {
+        "id": "kitchen-10",
+        "status": {
+          "total": 6,
+          "opened": 6,
+          "anyOpen": true,
+          "allOpen": true
+        },
+        "bounds": {
+          "min": [
+            -3.0549999999999997,
+            0,
+            -3.94
+          ],
+          "max": [
+            -1.8306434961217533,
+            1.22,
+            -1.46
+          ]
+        },
+        "maxNDC": 0.8928618498102525,
+        "meshes": 44,
+        "clipViolations": []
+      },
+      {
+        "id": "kitchen-11",
+        "status": {
+          "total": 8,
+          "opened": 8,
+          "anyOpen": true,
+          "allOpen": true
+        },
+        "bounds": {
+          "min": [
+            -3.0549999999999997,
+            0,
+            -3.94
+          ],
+          "max": [
+            -1.8306434961217533,
+            2.23,
+            -1.46
+          ]
+        },
+        "maxNDC": 0.8928587584861383,
+        "meshes": 41,
+        "clipViolations": []
+      },
+      {
+        "id": "kitchen-12",
+        "status": {
+          "total": 4,
+          "opened": 4,
+          "anyOpen": true,
+          "allOpen": true
+        },
+        "bounds": {
+          "min": [
+            -3.0549999999999997,
+            0,
+            -3.94
+          ],
+          "max": [
+            -1.832147482637592,
+            1.22,
+            -1.46
+          ]
+        },
+        "maxNDC": 0.8928588782564907,
+        "meshes": 16,
+        "clipViolations": []
+      },
+      {
+        "id": "kitchen-13",
+        "status": {
+          "total": 10,
+          "opened": 10,
+          "anyOpen": true,
+          "allOpen": true
+        },
+        "bounds": {
+          "min": [
+            -3.0549999999999997,
+            0,
+            -3.94
+          ],
+          "max": [
+            -1.832147482637592,
+            2.23,
+            -1.46
+          ]
+        },
+        "maxNDC": 0.8928577384660316,
+        "meshes": 38,
+        "clipViolations": []
+      },
+      {
+        "id": "kitchen-14",
+        "status": {
+          "total": 6,
+          "opened": 6,
+          "anyOpen": true,
+          "allOpen": true
+        },
+        "bounds": {
+          "min": [
+            -3.0549999999999997,
+            0,
+            -3.94
+          ],
+          "max": [
+            -1.832147482637592,
+            1.22,
+            -1.46
+          ]
+        },
+        "maxNDC": 0.8928577824283803,
+        "meshes": 38,
+        "clipViolations": []
+      },
+      {
+        "id": "kitchen-15",
+        "status": {
+          "total": 6,
+          "opened": 6,
+          "anyOpen": true,
+          "allOpen": true
+        },
+        "bounds": {
+          "min": [
+            -3.0549999999999997,
+            0,
+            -3.94
+          ],
+          "max": [
+            -1.832147482637592,
+            1.22,
+            -1.46
+          ]
+        },
+        "maxNDC": 0.8928575311261008,
+        "meshes": 31,
+        "clipViolations": []
+      }
+    ]
+  },
+  "logs": [],
+  "sourceSHA256": {
+    "material-library.js": "5ca8156a343927e75a3abada6db8443f3d76927c47a29034653aa3ec338e3bcd",
+    "photo-planks.js": "72d1b085f1694244c2f414f63aa130f4fe6d64e005a02d2560763044131c6d45",
+    "photo-wall-data.js": "fdddccc5a95ad206b38a26db55c40a84aa1a18ea3df0a63260f221d7b378c1b4",
+    "index.html": "e8297e4dea4ceedc078c9308ec9887fdb346b4a47d3b02948fc5c331a15dd258",
+    "reference-videos.js": "52790dfc440060b0658eef11b464dbdcd1efa0a0565f7949687af6bbe463565c",
+    "video-library.js": "d847ea0e56293b0a65cd4ca19d851ab7bee20179c3ef55f354484a060eba5c51",
+    "photo-plank-data.js": "0c48780479b6849e88bfe56e7d28fdaa1f3feee908784bb83ddfaaf525c74b17",
+    "configuration.js": "ca78e1fdaddf504f6be43c8b4ec3c45ec92d07bdea1f35094ca967408316fdf1",
+    "interior-detail.js": "ca6d81c2855b8e7f0fb30542dbb10bcdbd103312d3a2f1ce1bad3196ee500a54",
+    "stage.js": "f267d8ced81973011e8f55f28a75458bbe4b4ca77597149e17120ffede83bef4",
+    "plan-svg.js": "e14dba25221447474d3eafce9b806d68937329b33bd417b79cec5906ba9b994f",
+    "panel-joints.js": "d1a21680e6e51c1462ce0799a3959e3472b20dd4aa33ed9f56b268baca7e38e0",
+    "data.js": "51c44e7592d2cdd773eab4e9a66be1ebf739b408eb4ace55ffdfff397c248f1d",
+    "style.css": "50612c879180893524cc05006759fff3fbfee7675d2f0e9beabfdb54b1b7e5e4",
+    "interior-references.js": "41cdd74bdd7d79740372ae090aa38278b62eadfa05261a4952b2295f0ec369ac",
+    "model.js": "70c66a455df2225d51a5e31e12488322ede4148585c89139f8dfc49d3f3c1d14",
+    "studio-r3.css": "9d2cae6d608e3a66b6b297a11c37e4894feeab0d182452ab0eae2b2a876bcc3a",
+    "material-data.js": "e55563fc9cb5f75514eb545f6e9a4e056847b3579556fd5a614da88bc381f011",
+    "app.js": "9b0284a18ed5ad3e7d10323f24dd0c62104e963b3e9f786835c5509c7abb9f89",
+    "studio-r4.css": "5525e424b28fa46135cb6f1fb0621e694538863c433c79b78c83c828113a6760",
+    "studio-r5.css": "450311770abcd17cf6670cfb0c31fb7a4e0117115e47192a129e744134079cbb",
+    "specification.js": "e1784a324c129ed85944a1abbe98a2d21b08a8a91d6e34a637e6463523f6cdbe"
+  },
+  "relevantSourcesMatchCurrent": {
+    "app.js": true,
+    "model.js": true,
+    "interior-detail.js": true,
+    "specification.js": true,
+    "stage.js": true
+  },
+  "screenshots": [
+    "individual-open.png",
+    "linear-last-open.png"
+  ],
+  "visualObservation": "A brown context panel appears in the right foreground in both captures, outside the kitchen work area. Flagged to root for its door/context visual review; no new functional failure assigned.",
+  "limitations": [
+    "Desktop viewport only in this directed test.",
+    "No full photographic or collision equivalence claim; geometry collision audit owned separately.",
+    "Bounds cover kitchen detail and opened motions, with vertex-plane clipping checked on visible kitchen equipment."
+  ]
+}

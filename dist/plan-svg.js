@@ -1,4 +1,4 @@
-import {DIM,getPlan} from './specification.js';
+import {DIM,getPlan,doorPose} from './specification.js';
 import {materialById} from './material-library.js';
 const escape=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 export function planSVG(configuration,{compact=false,materialColours={}}={}){
@@ -17,7 +17,8 @@ export function planSVG(configuration,{compact=false,materialColours={}}={}){
   for(const h of holes){if(h.kind==='window'){if(axis==='x')content+=ln(X(h.u-h.width/2),Z(c+(c>0?-.04:.04)),X(h.u+h.width/2),Z(c+(c>0?-.04:.04)),'stroke="#4c8992" stroke-width="2.5"');else content+=ln(X(c+(c>0?-.04:.04)),Z(h.u-h.width/2),X(c+(c>0?-.04:.04)),Z(h.u+h.width/2),'stroke="#4c8992" stroke-width="2.5"');}}
  }
  for(const w of p.walls){const cuts=w.door?[[w.a,w.door.u-w.door.width/2],[w.door.u+w.door.width/2,w.b]]:[[w.a,w.b]];for(const [a,b]of cuts)content+=rect(w.axis==='z'?{x0:w.c-w.thickness/2,x1:w.c+w.thickness/2,z0:a,z1:b}:{x0:a,x1:b,z0:w.c-w.thickness/2,z1:w.c+w.thickness/2},'#50685b','#50685b');
-  if(w.door){const d=w.door,r=d.width*scale;if(w.axis==='z'){const hx=X(w.c),hy=Z(d.u-d.width/2),direction=w.c>0?1:-1;content+=ln(hx,hy,hx+direction*r,hy,'stroke="#687e70" stroke-width="1"');content+=`<path d="M ${hx},${hy+r} A ${r},${r} 0 0 ${direction>0?0:1} ${hx+direction*r},${hy}" fill="none" stroke="#809487" stroke-width=".8"/>`;}else{const hx=X(d.u-d.width/2),hy=Z(w.c);content+=ln(hx,hy,hx,hy+r,'stroke="#687e70"');content+=`<path d="M ${hx+r},${hy} A ${r},${r} 0 0 1 ${hx},${hy+r}" fill="none" stroke="#809487" stroke-width=".8"/>`;}}
+  if(w.door){const closed=doorPose(w.door),open=doorPose(w.door,1),r=open.radius*scale;content+=`<g data-door-id="${w.door.id}" data-hinge-end="${w.door.hingeEnd}" data-open-angle="${open.angle}">`;content+=ln(X(open.start.x),Z(open.start.z),X(open.tip.x),Z(open.tip.z),'data-door-leaf="true" stroke="#687e70" stroke-width="1.2"');content+=`<path d="M ${X(closed.tip.x)},${Z(closed.tip.z)} A ${r},${r} 0 0 ${open.angle<0?1:0} ${X(open.tip.x)},${Z(open.tip.z)}" fill="none" stroke="#809487" stroke-width=".8"/><circle cx="${X(open.hinge.x)}" cy="${Z(open.hinge.z)}" r="1.3" fill="#50685b"/></g>`;}
+
  }
  for(const f of p.furnishings){if(f.type==='bed'){content+=rect(f,'#f8f7ef','#9ea99c',4);content+=rect({x0:f.x0+.05,x1:f.x1-.05,z0:f.z0+.05,z1:f.z0+.39},'#fff','#c7cbbf',3);content+=rect({x0:f.x0+.025,x1:f.x1-.025,z0:f.z0+.75,z1:f.z1-.04},'#c4cfba','#b8c5ae');}
  else if(f.type==='shower'){content+=rect(f,'#e2edf0','#80a6a9',2);content+=ln(X(f.x0),Z(f.z0),X(f.x1),Z(f.z1),'stroke="#bfd0d0"');content+=ln(X(f.x1),Z(f.z0),X(f.x0),Z(f.z1),'stroke="#bfd0d0"');}

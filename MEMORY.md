@@ -39,3 +39,19 @@ New expansion-v4 film:20s,1920×1080,24fps,480frames, same T2/materials as prese
 - Sources: `dist/assets/interior-r5/source-inventory.json` (32 photos / 70 independently inventoried crops; 66 used sample crops), currentaudit `dist/assets/evidence-r5/audit-report.html`.
 - Film R5:30 seconds Full HD 24 fps, actualT2model with labelleddifferentkitchens/bathrooms. Kept expansion-v4 film for itsunchanged sequence.
 - Site stays owner-private; publication record for R5 is recorded in parent GLS session JSON after successfuldeployment.
+
+
+## R6 — doors, furniture and full client audit (10 September 2026)
+
+- Recovery tag recovery/gv72-before-r6-20260910 at 41e729edb68227d2743213297a24dda51a013876. Same owner-private Site; never create another Site or change its audience.
+- Seven original plans independently inspected: 18 wrong hinge/swing relationships among24 standard passage doors. Shared doorPose/DOOR_DETAIL now drives leaves/handles and SVG. Bath opens inward with right hinge, basin on source left; mirrored layout reflects both and services. Eleven rear/middle bedroom hinges reversed, six front bedroom hinges preserved.
+- Door geometry: 56 allowed combinations,31494 sampled poses;34 bath reference/mirror combinations,6154 poses;72 continuously separated independent door-pair envelopes;546 actual floor passages. Leaf/handles clear tested walls, trims and closed furniture. Sizes/clearances remain visual assumptions, not fabrication dimensions.
+- Furniture: correct outer hinges, clear fronts/body, drawer shelf interference removed and fixed blind L/U corner panels.76×22 sampled poses and32 independently opened configurations passed. Minimum model front/body gap2.5mm; threshold0.1mm is numerical only. Curved shower refs02/03 remain static without hardware sources.
+- State: capture/restore individual fronts across model rebuilds; scoped mixed/global control and reset. Hidden groups/toolbar/drag do not open parts; picking stops at the first visible unclipped surface, including walls. Detail bounds include open parts, equipment materials are not clipped.
+- Recovery: active texture leases govern ready/retry; comparator waits only for its sample. WebGL fallback retains choices. Partial model construction now records each acquire immediately and disposes on exception; original house retained, leases3→3→3→3. Disposal idempotent.
+- Accessibility: focus restored by stable IDs/data, skip link activates studio, named dialogs, contrast increased, original-plan/roof images keyboard buttons. Five pages/eight states passed axe; six widths375–1920 no horizontal overflow; actual native controls/films/downloads and 49-action walkthrough passed. Chrome/macOS local tests are not physical-mobile certification or a universal no-bugs claim.
+- 30 permanent Node regression groups pass; expansion T2 1001-pose SAT unchanged24 final assembly baseline contacts and no extra overlaps;707 additional all-layout rigid transform/disposal positions.
+- R4 expansion/video and source materials/original MP4s preserved. R5 tour is now labelled reference because the current configurator contains corrected door/bath distribution.
+- Current report dist/assets/evidence-r6/audit-report.html; builder scripts/evidence-r6.py collects independent proof from /private/tmp/gv72-r6. PDF2pages rendered/inspected, JSON/SVG downloaded. Final publication identifiers recorded in parent session_20260910_green_village_72_r6.json after successful deployment.
+
+- Final catalogue browser coverage:174/174 (71 IDs×2 modes+15 kitchens+17 baths), rendered material/mode/path checked, no console/page/HTTP errors. Two initial video metadata requests aborted; playback separately passed. Cache maximum18, final3leases, pending0; sources unchanged throughout.

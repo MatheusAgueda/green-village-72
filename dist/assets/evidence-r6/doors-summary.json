@@ -1,0 +1,111 @@
+{
+  "status": "PASS_WITH_STATED_SCOPE",
+  "revision": "R6",
+  "validatedAt": "2026-09-10T19:11:31.332543+00:00",
+  "readOnlySite": true,
+  "sourceHashes": {
+    "model.js": "4379058d41b8627850a3c8cb556b974b5743b68696ae676c99eab342fcfe9cba",
+    "specification.js": "e1784a324c129ed85944a1abbe98a2d21b08a8a91d6e34a637e6463523f6cdbe",
+    "configuration.js": "ca78e1fdaddf504f6be43c8b4ec3c45ec92d07bdea1f35094ca967408316fdf1",
+    "plan-svg.js": "e14dba25221447474d3eafce9b806d68937329b33bd417b79cec5906ba9b994f",
+    "interior-detail.js": "c2a1b1a645c5c809314d6a3a146b335339d64c439cc4dedbf8afbc470797dd16",
+    "interior-references.js": "41cdd74bdd7d79740372ae090aa38278b62eadfa05261a4952b2295f0ec369ac"
+  },
+  "sourceStableDuringRuns": true,
+  "changedLiveFilesAfterAudit": [],
+  "sourceMatchesLiveAtFinalization": true,
+  "resolvedFindings": [
+    {
+      "id": "source-handedness",
+      "sourceDoors": 24,
+      "mismatchesBefore": 18,
+      "correctDirectionsRetained": 6,
+      "detail": "Bath opens inward with right hinge; eleven rear/middle bedrooms use maxZ hinge; six front bedrooms retain minZ hinge."
+    },
+    {
+      "id": "leaf-wall-jamb",
+      "detail": "Moved leaf plane72.5mm into destination room;714mm leaf in760mm opening,23mm end gaps,8mm floor gap."
+    },
+    {
+      "id": "bath-layout",
+      "detail": "Vanity moved to source side,facing room; doorway toward opposite side; services follow vanity; mirror option reflects both."
+    },
+    {
+      "id": "second-handle",
+      "detail": "Bath hinge side inset35→100mm. Former handle maximumX=.7614 intersected wall inner face.7064. Final maximumX=.6964 clears UV skin inner face.7034 by7mm; mirrored symmetrically."
+    }
+  ],
+  "results": {
+    "allowedConfigurations": 56,
+    "passageDoorPoseChecks": 31494,
+    "bodiesPerDoor": "leaf and both handles",
+    "wallJambTrimFurnitureFindings": 0,
+    "closedOpenClosedMatrixDrift": 0,
+    "maximumMeshPoseErrorM": 4.965068306494546e-16,
+    "maximumSVGCoordinateErrorPx": 0,
+    "bathReferenceMirrorCombinations": 34,
+    "bathReferenceDoorPoseChecks": 6154,
+    "bathFixtureAndActualServiceTriangleFindings": 0,
+    "continuousIndependentDoorPairs": 72,
+    "continuousPairEnvelopeIntersections": 0,
+    "floorPassageRays": 546,
+    "blockedPassageRays": 0
+  },
+  "finalParameters": {
+    "leafWidth": 0.714,
+    "leafThickness": 0.035,
+    "normalOffset": 0.0725,
+    "baseGap": 0.008,
+    "topGap": 0.017,
+    "jambNormalGap": 0.003,
+    "jambEndGap": 0.005,
+    "bathHingeSideInset": 0.1,
+    "bathStandardCentreX": 0.2264,
+    "bathStandardHingeX": 0.6064,
+    "bathMirroredCentreX": -0.2264,
+    "bathMirroredHingeX": -0.6064,
+    "bathHingeZ": -3.2585,
+    "bathStandardBasinServiceX": -0.4764,
+    "bathMirroredBasinServiceX": 0.4764,
+    "units": "metres",
+    "status": "visualisation assumptions; not manufacturer clearances"
+  },
+  "evidence": [
+    "source-ledger.json",
+    "SOURCE-DOOR-MATRIX.md",
+    "final-door-matrix.json",
+    "integrated-audit.json",
+    "integrated-bath-services.json",
+    "door-pair-continuous.json",
+    "basin-floor-passages.json",
+    "expansion-smoke.json"
+  ],
+  "reproduction": [
+    "integrated-audit.mjs",
+    "integrated-bath-services.mjs",
+    "door-pair-continuous.mjs",
+    "basin-floor-passages.mjs",
+    "expansion-smoke.mjs",
+    "finalize.py"
+  ],
+  "limitations": [
+    "Wall/fixture/service checks sample181 positions per door; not a complete continuous swept-volume proof for all objects.",
+    "Door-to-door separation is analytically bounded over full independent sweeps for72 pairs.",
+    "Rounded/hollow furniture component boxes are conservative; service candidates refined against actual transformed triangles.",
+    "Equipment fronts stay closed; cabinet/shower hardware opening outside this passage-door audit.",
+    "Handedness is visibly supported by7 original plans; metric positions,sizes and clearances remain estimated.",
+    "No hardware,installation or manufacturer certification. Expansion has a normal execution/rigidity smoke check only; no new expansion collision audit."
+  ],
+  "expansionExecutionSmoke": {
+    "status": "PASS",
+    "positions": 707,
+    "layoutCount": 7,
+    "checks": [
+      "finite transforms",
+      "rigid moving groups",
+      "expanded endpoint restored",
+      "dispose twice succeeds"
+    ],
+    "scope": "Execution and rigidity only; no new collision claim"
+  }
+}

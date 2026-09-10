@@ -1,0 +1,1103 @@
+{
+  "status": "PASS",
+  "scope": "Analytical coordinate extrema for every leaf/handle bounding-box corner over the full door angle interval. Disjoint complete swept AABBs prove no door-to-door collision at any independent opening fractions for these model envelopes.",
+  "configurations": 14,
+  "pairs": 72,
+  "hits": [],
+  "reports": [
+    {
+      "layout": "t0",
+      "bathroom": "standard",
+      "bounds": [
+        {
+          "id": "bath-door",
+          "min": [
+            -0.13080773202849438,
+            0.007999952316284142,
+            -3.995707732028494
+          ],
+          "max": [
+            0.6963999991059303,
+            2.033000047683716,
+            -3.1685000008940696
+          ]
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "layout": "t0",
+      "bathroom": "mirrored",
+      "bounds": [
+        {
+          "id": "bath-door",
+          "min": [
+            -0.6963999991059303,
+            0.007999952316284142,
+            -3.995707732028494
+          ],
+          "max": [
+            0.13080773202849438,
+            2.033000047683716,
+            -3.1685000008940696
+          ]
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "layout": "t1",
+      "bathroom": "standard",
+      "bounds": [
+        {
+          "id": "bedroom-1-door",
+          "min": [
+            0.7289000008940696,
+            0.007999952316284142,
+            -0.9972077320284943
+          ],
+          "max": [
+            1.5561077320284942,
+            2.033000047683716,
+            -0.17000000089406972
+          ]
+        },
+        {
+          "id": "bath-door",
+          "min": [
+            -0.13080773202849438,
+            0.007999952316284142,
+            -3.995707732028494
+          ],
+          "max": [
+            0.6963999991059303,
+            2.033000047683716,
+            -3.1685000008940696
+          ]
+        }
+      ],
+      "pairs": [
+        {
+          "a": "bedroom-1-door",
+          "b": "bath-door",
+          "sweptBoundingBoxesIntersect": false
+        }
+      ]
+    },
+    {
+      "layout": "t1",
+      "bathroom": "mirrored",
+      "bounds": [
+        {
+          "id": "bedroom-1-door",
+          "min": [
+            0.7289000008940696,
+            0.007999952316284142,
+            -0.9972077320284943
+          ],
+          "max": [
+            1.5561077320284942,
+            2.033000047683716,
+            -0.17000000089406972
+          ]
+        },
+        {
+          "id": "bath-door",
+          "min": [
+            -0.6963999991059303,
+            0.007999952316284142,
+            -3.995707732028494
+          ],
+          "max": [
+            0.13080773202849438,
+            2.033000047683716,
+            -3.1685000008940696
+          ]
+        }
+      ],
+      "pairs": [
+        {
+          "a": "bedroom-1-door",
+          "b": "bath-door",
+          "sweptBoundingBoxesIntersect": false
+        }
+      ]
+    },
+    {
+      "layout": "t2",
+      "bathroom": "standard",
+      "bounds": [
+        {
+          "id": "bedroom-1-door",
+          "min": [
+            0.7289000008940696,
+            0.007999952316284142,
+            -0.9972077320284943
+          ],
+          "max": [
+            1.5561077320284942,
+            2.033000047683716,
+            -0.17000000089406972
+          ]
+        },
+        {
+          "id": "bedroom-2-door",
+          "min": [
+            0.7289000008940696,
+            0.007999952316284142,
+            0.17000000089406972
+          ],
+          "max": [
+            1.5561077320284942,
+            2.033000047683716,
+            0.9972077320284943
+          ]
+        },
+        {
+          "id": "bath-door",
+          "min": [
+            -0.13080773202849438,
+            0.007999952316284142,
+            -3.995707732028494
+          ],
+          "max": [
+            0.6963999991059303,
+            2.033000047683716,
+            -3.1685000008940696
+          ]
+        }
+      ],
+      "pairs": [
+        {
+          "a": "bedroom-1-door",
+          "b": "bedroom-2-door",
+          "sweptBoundingBoxesIntersect": false
+        },
+        {
+          "a": "bedroom-1-door",
+          "b": "bath-door",
+          "sweptBoundingBoxesIntersect": false
+        },
+        {
+          "a": "bedroom-2-door",
+          "b": "bath-door",
+          "sweptBoundingBoxesIntersect": false
+        }
+      ]
+    },
+    {
+      "layout": "t2",
+      "bathroom": "mirrored",
+      "bounds": [
+        {
+          "id": "bedroom-1-door",
+          "min": [
+            0.7289000008940696,
+            0.007999952316284142,
+            -0.9972077320284943
+          ],
+          "max": [
+            1.5561077320284942,
+            2.033000047683716,
+            -0.17000000089406972
+          ]
+        },
+        {
+          "id": "bedroom-2-door",
+          "min": [
+            0.7289000008940696,
+            0.007999952316284142,
+            0.17000000089406972
+          ],
+          "max": [
+            1.5561077320284942,
+            2.033000047683716,
+            0.9972077320284943
+          ]
+        },
+        {
+          "id": "bath-door",
+          "min": [
+            -0.6963999991059303,
+            0.007999952316284142,
+            -3.995707732028494
+          ],
+          "max": [
+            0.13080773202849438,
+            2.033000047683716,
+            -3.1685000008940696
+          ]
+        }
+      ],
+      "pairs": [
+        {
+          "a": "bedroom-1-door",
+          "b": "bedroom-2-door",
+          "sweptBoundingBoxesIntersect": false
+        },
+        {
+          "a": "bedroom-1-door",
+          "b": "bath-door",
+          "sweptBoundingBoxesIntersect": false
+        },
+        {
+          "a": "bedroom-2-door",
+          "b": "bath-door",
+          "sweptBoundingBoxesIntersect": false
+        }
+      ]
+    },
+    {
+      "layout": "t3-a",
+      "bathroom": "standard",
+      "bounds": [
+        {
+          "id": "bedroom-1-door",
+          "min": [
+            -1.5561077320284942,
+            0.007999952316284142,
+            -0.9972077320284943
+          ],
+          "max": [
+            -0.7289000008940696,
+            2.033000047683716,
+            -0.17000000089406972
+          ]
+        },
+        {
+          "id": "bedroom-2-door",
+          "min": [
+            0.7289000008940696,
+            0.007999952316284142,
+            -0.9972077320284943
+          ],
+          "max": [
+            1.5561077320284942,
+            2.033000047683716,
+            -0.17000000089406972
+          ]
+        },
+        {
+          "id": "bedroom-3-door",
+          "min": [
+            0.7289000008940696,
+            0.007999952316284142,
+            0.17000000089406972
+          ],
+          "max": [
+            1.5561077320284942,
+            2.033000047683716,
+            0.9972077320284943
+          ]
+        },
+        {
+          "id": "bath-door",
+          "min": [
+            -0.13080773202849438,
+            0.007999952316284142,
+            -3.995707732028494
+          ],
+          "max": [
+            0.6963999991059303,
+            2.033000047683716,
+            -3.1685000008940696
+          ]
+        }
+      ],
+      "pairs": [
+        {
+          "a": "bedroom-1-door",
+          "b": "bedroom-2-door",
+          "sweptBoundingBoxesIntersect": false
+        },
+        {
+          "a": "bedroom-1-door",
+          "b": "bedroom-3-door",
+          "sweptBoundingBoxesIntersect": false
+        },
+        {
+          "a": "bedroom-1-door",
+          "b": "bath-door",
+          "sweptBoundingBoxesIntersect": false
+        },
+        {
+          "a": "bedroom-2-door",
+          "b": "bedroom-3-door",
+          "sweptBoundingBoxesIntersect": false
+        },
+        {
+          "a": "bedroom-2-door",
+          "b": "bath-door",
+          "sweptBoundingBoxesIntersect": false
+        },
+        {
+          "a": "bedroom-3-door",
+          "b": "bath-door",
+          "sweptBoundingBoxesIntersect": false
+        }
+      ]
+    },
+    {
+      "layout": "t3-a",
+      "bathroom": "mirrored",
+      "bounds": [
+        {
+          "id": "bedroom-1-door",
+          "min": [
+            -1.5561077320284942,
+            0.007999952316284142,
+            -0.9972077320284943
+          ],
+          "max": [
+            -0.7289000008940696,
+            2.033000047683716,
+            -0.17000000089406972
+          ]
+        },
+        {
+          "id": "bedroom-2-door",
+          "min": [
+            0.7289000008940696,
+            0.007999952316284142,
+            -0.9972077320284943
+          ],
+          "max": [
+            1.5561077320284942,
+            2.033000047683716,
+            -0.17000000089406972
+          ]
+        },
+        {
+          "id": "bedroom-3-door",
+          "min": [
+            0.7289000008940696,
+            0.007999952316284142,
+            0.17000000089406972
+          ],
+          "max": [
+            1.5561077320284942,
+            2.033000047683716,
+            0.9972077320284943
+          ]
+        },
+        {
+          "id": "bath-door",
+          "min": [
+            -0.6963999991059303,
+            0.007999952316284142,
+            -3.995707732028494
+          ],
+          "max": [
+            0.13080773202849438,
+            2.033000047683716,
+            -3.1685000008940696
+          ]
+        }
+      ],
+      "pairs": [
+        {
+          "a": "bedroom-1-door",
+          "b": "bedroom-2-door",
+          "sweptBoundingBoxesIntersect": false
+        },
+        {
+          "a": "bedroom-1-door",
+          "b": "bedroom-3-door",
+          "sweptBoundingBoxesIntersect": false
+        },
+        {
+          "a": "bedroom-1-door",
+          "b": "bath-door",
+          "sweptBoundingBoxesIntersect": false
+        },
+        {
+          "a": "bedroom-2-door",
+          "b": "bedroom-3-door",
+          "sweptBoundingBoxesIntersect": false
+        },
+        {
+          "a": "bedroom-2-door",
+          "b": "bath-door",
+          "sweptBoundingBoxesIntersect": false
+        },
+        {
+          "a": "bedroom-3-door",
+          "b": "bath-door",
+          "sweptBoundingBoxesIntersect": false
+        }
+      ]
+    },
+    {
+      "layout": "t3-b",
+      "bathroom": "standard",
+      "bounds": [
+        {
+          "id": "bedroom-1-door",
+          "min": [
+            0.7289000008940696,
+            0.007999952316284142,
+            -2.9678077320284943
+          ],
+          "max": [
+            1.5561077320284942,
+            2.033000047683716,
+            -2.1406000008940698
+          ]
+        },
+        {
+          "id": "bedroom-2-door",
+          "min": [
+            0.7289000008940696,
+            0.007999952316284142,
+            1.103192267971506
+          ],
+          "max": [
+            1.5561077320284942,
+            2.033000047683716,
+            1.9303999991059306
+          ]
+        },
+        {
+          "id": "bedroom-3-door",
+          "min": [
+            0.7289000008940696,
+            0.007999952316284142,
+            2.2704000008940706
+          ],
+          "max": [
+            1.5561077320284942,
+            2.033000047683716,
+            3.097607732028495
+          ]
+        },
+        {
+          "id": "bath-door",
+          "min": [
+            -0.13080773202849438,
+            0.007999952316284142,
+            -3.995707732028494
+          ],
+          "max": [
+            0.6963999991059303,
+            2.033000047683716,
+            -3.1685000008940696
+          ]
+        }
+      ],
+      "pairs": [
+        {
+          "a": "bedroom-1-door",
+          "b": "bedroom-2-door",
+          "sweptBoundingBoxesIntersect": false
+        },
+        {
+          "a": "bedroom-1-door",
+          "b": "bedroom-3-door",
+          "sweptBoundingBoxesIntersect": false
+        },
+        {
+          "a": "bedroom-1-door",
+          "b": "bath-door",
+          "sweptBoundingBoxesIntersect": false
+        },
+        {
+          "a": "bedroom-2-door",
+          "b": "bedroom-3-door",
+          "sweptBoundingBoxesIntersect": false
+        },
+        {
+          "a": "bedroom-2-door",
+          "b": "bath-door",
+          "sweptBoundingBoxesIntersect": false
+        },
+        {
+          "a": "bedroom-3-door",
+          "b": "bath-door",
+          "sweptBoundingBoxesIntersect": false
+        }
+      ]
+    },
+    {
+      "layout": "t3-b",
+      "bathroom": "mirrored",
+      "bounds": [
+        {
+          "id": "bedroom-1-door",
+          "min": [
+            0.7289000008940696,
+            0.007999952316284142,
+            -2.9678077320284943
+          ],
+          "max": [
+            1.5561077320284942,
+            2.033000047683716,
+            -2.1406000008940698
+          ]
+        },
+        {
+          "id": "bedroom-2-door",
+          "min": [
+            0.7289000008940696,
+            0.007999952316284142,
+            1.103192267971506
+          ],
+          "max": [
+            1.5561077320284942,
+            2.033000047683716,
+            1.9303999991059306
+          ]
+        },
+        {
+          "id": "bedroom-3-door",
+          "min": [
+            0.7289000008940696,
+            0.007999952316284142,
+            2.2704000008940706
+          ],
+          "max": [
+            1.5561077320284942,
+            2.033000047683716,
+            3.097607732028495
+          ]
+        },
+        {
+          "id": "bath-door",
+          "min": [
+            -0.6963999991059303,
+            0.007999952316284142,
+            -3.995707732028494
+          ],
+          "max": [
+            0.13080773202849438,
+            2.033000047683716,
+            -3.1685000008940696
+          ]
+        }
+      ],
+      "pairs": [
+        {
+          "a": "bedroom-1-door",
+          "b": "bedroom-2-door",
+          "sweptBoundingBoxesIntersect": false
+        },
+        {
+          "a": "bedroom-1-door",
+          "b": "bedroom-3-door",
+          "sweptBoundingBoxesIntersect": false
+        },
+        {
+          "a": "bedroom-1-door",
+          "b": "bath-door",
+          "sweptBoundingBoxesIntersect": false
+        },
+        {
+          "a": "bedroom-2-door",
+          "b": "bedroom-3-door",
+          "sweptBoundingBoxesIntersect": false
+        },
+        {
+          "a": "bedroom-2-door",
+          "b": "bath-door",
+          "sweptBoundingBoxesIntersect": false
+        },
+        {
+          "a": "bedroom-3-door",
+          "b": "bath-door",
+          "sweptBoundingBoxesIntersect": false
+        }
+      ]
+    },
+    {
+      "layout": "t4-a",
+      "bathroom": "standard",
+      "bounds": [
+        {
+          "id": "bedroom-1-door",
+          "min": [
+            -1.5561077320284942,
+            0.007999952316284142,
+            -0.9972077320284943
+          ],
+          "max": [
+            -0.7289000008940696,
+            2.033000047683716,
+            -0.17000000089406972
+          ]
+        },
+        {
+          "id": "bedroom-2-door",
+          "min": [
+            0.7289000008940696,
+            0.007999952316284142,
+            -0.9972077320284943
+          ],
+          "max": [
+            1.5561077320284942,
+            2.033000047683716,
+            -0.17000000089406972
+          ]
+        },
+        {
+          "id": "bedroom-3-door",
+          "min": [
+            -1.5561077320284942,
+            0.007999952316284142,
+            0.17000000089406972
+          ],
+          "max": [
+            -0.7289000008940696,
+            2.033000047683716,
+            0.9972077320284943
+          ]
+        },
+        {
+          "id": "bedroom-4-door",
+          "min": [
+            0.7289000008940696,
+            0.007999952316284142,
+            0.17000000089406972
+          ],
+          "max": [
+            1.5561077320284942,
+            2.033000047683716,
+            0.9972077320284943
+          ]
+        },
+        {
+          "id": "bath-door",
+          "min": [
+            -0.13080773202849438,
+            0.007999952316284142,
+            -3.995707732028494
+          ],
+          "max": [
+            0.6963999991059303,
+            2.033000047683716,
+            -3.1685000008940696
+          ]
+        }
+      ],
+      "pairs": [
+        {
+          "a": "bedroom-1-door",
+          "b": "bedroom-2-door",
+          "sweptBoundingBoxesIntersect": false
+        },
+        {
+          "a": "bedroom-1-door",
+          "b": "bedroom-3-door",
+          "sweptBoundingBoxesIntersect": false
+        },
+        {
+          "a": "bedroom-1-door",
+          "b": "bedroom-4-door",
+          "sweptBoundingBoxesIntersect": false
+        },
+        {
+          "a": "bedroom-1-door",
+          "b": "bath-door",
+          "sweptBoundingBoxesIntersect": false
+        },
+        {
+          "a": "bedroom-2-door",
+          "b": "bedroom-3-door",
+          "sweptBoundingBoxesIntersect": false
+        },
+        {
+          "a": "bedroom-2-door",
+          "b": "bedroom-4-door",
+          "sweptBoundingBoxesIntersect": false
+        },
+        {
+          "a": "bedroom-2-door",
+          "b": "bath-door",
+          "sweptBoundingBoxesIntersect": false
+        },
+        {
+          "a": "bedroom-3-door",
+          "b": "bedroom-4-door",
+          "sweptBoundingBoxesIntersect": false
+        },
+        {
+          "a": "bedroom-3-door",
+          "b": "bath-door",
+          "sweptBoundingBoxesIntersect": false
+        },
+        {
+          "a": "bedroom-4-door",
+          "b": "bath-door",
+          "sweptBoundingBoxesIntersect": false
+        }
+      ]
+    },
+    {
+      "layout": "t4-a",
+      "bathroom": "mirrored",
+      "bounds": [
+        {
+          "id": "bedroom-1-door",
+          "min": [
+            -1.5561077320284942,
+            0.007999952316284142,
+            -0.9972077320284943
+          ],
+          "max": [
+            -0.7289000008940696,
+            2.033000047683716,
+            -0.17000000089406972
+          ]
+        },
+        {
+          "id": "bedroom-2-door",
+          "min": [
+            0.7289000008940696,
+            0.007999952316284142,
+            -0.9972077320284943
+          ],
+          "max": [
+            1.5561077320284942,
+            2.033000047683716,
+            -0.17000000089406972
+          ]
+        },
+        {
+          "id": "bedroom-3-door",
+          "min": [
+            -1.5561077320284942,
+            0.007999952316284142,
+            0.17000000089406972
+          ],
+          "max": [
+            -0.7289000008940696,
+            2.033000047683716,
+            0.9972077320284943
+          ]
+        },
+        {
+          "id": "bedroom-4-door",
+          "min": [
+            0.7289000008940696,
+            0.007999952316284142,
+            0.17000000089406972
+          ],
+          "max": [
+            1.5561077320284942,
+            2.033000047683716,
+            0.9972077320284943
+          ]
+        },
+        {
+          "id": "bath-door",
+          "min": [
+            -0.6963999991059303,
+            0.007999952316284142,
+            -3.995707732028494
+          ],
+          "max": [
+            0.13080773202849438,
+            2.033000047683716,
+            -3.1685000008940696
+          ]
+        }
+      ],
+      "pairs": [
+        {
+          "a": "bedroom-1-door",
+          "b": "bedroom-2-door",
+          "sweptBoundingBoxesIntersect": false
+        },
+        {
+          "a": "bedroom-1-door",
+          "b": "bedroom-3-door",
+          "sweptBoundingBoxesIntersect": false
+        },
+        {
+          "a": "bedroom-1-door",
+          "b": "bedroom-4-door",
+          "sweptBoundingBoxesIntersect": false
+        },
+        {
+          "a": "bedroom-1-door",
+          "b": "bath-door",
+          "sweptBoundingBoxesIntersect": false
+        },
+        {
+          "a": "bedroom-2-door",
+          "b": "bedroom-3-door",
+          "sweptBoundingBoxesIntersect": false
+        },
+        {
+          "a": "bedroom-2-door",
+          "b": "bedroom-4-door",
+          "sweptBoundingBoxesIntersect": false
+        },
+        {
+          "a": "bedroom-2-door",
+          "b": "bath-door",
+          "sweptBoundingBoxesIntersect": false
+        },
+        {
+          "a": "bedroom-3-door",
+          "b": "bedroom-4-door",
+          "sweptBoundingBoxesIntersect": false
+        },
+        {
+          "a": "bedroom-3-door",
+          "b": "bath-door",
+          "sweptBoundingBoxesIntersect": false
+        },
+        {
+          "a": "bedroom-4-door",
+          "b": "bath-door",
+          "sweptBoundingBoxesIntersect": false
+        }
+      ]
+    },
+    {
+      "layout": "t4-b",
+      "bathroom": "standard",
+      "bounds": [
+        {
+          "id": "bedroom-1-door",
+          "min": [
+            -1.5561077320284942,
+            0.007999952316284142,
+            -2.9678077320284943
+          ],
+          "max": [
+            -0.7289000008940696,
+            2.033000047683716,
+            -2.1406000008940698
+          ]
+        },
+        {
+          "id": "bedroom-2-door",
+          "min": [
+            0.7289000008940696,
+            0.007999952316284142,
+            -2.9678077320284943
+          ],
+          "max": [
+            1.5561077320284942,
+            2.033000047683716,
+            -2.1406000008940698
+          ]
+        },
+        {
+          "id": "bedroom-3-door",
+          "min": [
+            0.7289000008940696,
+            0.007999952316284142,
+            1.103192267971506
+          ],
+          "max": [
+            1.5561077320284942,
+            2.033000047683716,
+            1.9303999991059306
+          ]
+        },
+        {
+          "id": "bedroom-4-door",
+          "min": [
+            0.7289000008940696,
+            0.007999952316284142,
+            2.2704000008940706
+          ],
+          "max": [
+            1.5561077320284942,
+            2.033000047683716,
+            3.097607732028495
+          ]
+        },
+        {
+          "id": "bath-door",
+          "min": [
+            -0.13080773202849438,
+            0.007999952316284142,
+            -3.995707732028494
+          ],
+          "max": [
+            0.6963999991059303,
+            2.033000047683716,
+            -3.1685000008940696
+          ]
+        }
+      ],
+      "pairs": [
+        {
+          "a": "bedroom-1-door",
+          "b": "bedroom-2-door",
+          "sweptBoundingBoxesIntersect": false
+        },
+        {
+          "a": "bedroom-1-door",
+          "b": "bedroom-3-door",
+          "sweptBoundingBoxesIntersect": false
+        },
+        {
+          "a": "bedroom-1-door",
+          "b": "bedroom-4-door",
+          "sweptBoundingBoxesIntersect": false
+        },
+        {
+          "a": "bedroom-1-door",
+          "b": "bath-door",
+          "sweptBoundingBoxesIntersect": false
+        },
+        {
+          "a": "bedroom-2-door",
+          "b": "bedroom-3-door",
+          "sweptBoundingBoxesIntersect": false
+        },
+        {
+          "a": "bedroom-2-door",
+          "b": "bedroom-4-door",
+          "sweptBoundingBoxesIntersect": false
+        },
+        {
+          "a": "bedroom-2-door",
+          "b": "bath-door",
+          "sweptBoundingBoxesIntersect": false
+        },
+        {
+          "a": "bedroom-3-door",
+          "b": "bedroom-4-door",
+          "sweptBoundingBoxesIntersect": false
+        },
+        {
+          "a": "bedroom-3-door",
+          "b": "bath-door",
+          "sweptBoundingBoxesIntersect": false
+        },
+        {
+          "a": "bedroom-4-door",
+          "b": "bath-door",
+          "sweptBoundingBoxesIntersect": false
+        }
+      ]
+    },
+    {
+      "layout": "t4-b",
+      "bathroom": "mirrored",
+      "bounds": [
+        {
+          "id": "bedroom-1-door",
+          "min": [
+            -1.5561077320284942,
+            0.007999952316284142,
+            -2.9678077320284943
+          ],
+          "max": [
+            -0.7289000008940696,
+            2.033000047683716,
+            -2.1406000008940698
+          ]
+        },
+        {
+          "id": "bedroom-2-door",
+          "min": [
+            0.7289000008940696,
+            0.007999952316284142,
+            -2.9678077320284943
+          ],
+          "max": [
+            1.5561077320284942,
+            2.033000047683716,
+            -2.1406000008940698
+          ]
+        },
+        {
+          "id": "bedroom-3-door",
+          "min": [
+            0.7289000008940696,
+            0.007999952316284142,
+            1.103192267971506
+          ],
+          "max": [
+            1.5561077320284942,
+            2.033000047683716,
+            1.9303999991059306
+          ]
+        },
+        {
+          "id": "bedroom-4-door",
+          "min": [
+            0.7289000008940696,
+            0.007999952316284142,
+            2.2704000008940706
+          ],
+          "max": [
+            1.5561077320284942,
+            2.033000047683716,
+            3.097607732028495
+          ]
+        },
+        {
+          "id": "bath-door",
+          "min": [
+            -0.6963999991059303,
+            0.007999952316284142,
+            -3.995707732028494
+          ],
+          "max": [
+            0.13080773202849438,
+            2.033000047683716,
+            -3.1685000008940696
+          ]
+        }
+      ],
+      "pairs": [
+        {
+          "a": "bedroom-1-door",
+          "b": "bedroom-2-door",
+          "sweptBoundingBoxesIntersect": false
+        },
+        {
+          "a": "bedroom-1-door",
+          "b": "bedroom-3-door",
+          "sweptBoundingBoxesIntersect": false
+        },
+        {
+          "a": "bedroom-1-door",
+          "b": "bedroom-4-door",
+          "sweptBoundingBoxesIntersect": false
+        },
+        {
+          "a": "bedroom-1-door",
+          "b": "bath-door",
+          "sweptBoundingBoxesIntersect": false
+        },
+        {
+          "a": "bedroom-2-door",
+          "b": "bedroom-3-door",
+          "sweptBoundingBoxesIntersect": false
+        },
+        {
+          "a": "bedroom-2-door",
+          "b": "bedroom-4-door",
+          "sweptBoundingBoxesIntersect": false
+        },
+        {
+          "a": "bedroom-2-door",
+          "b": "bath-door",
+          "sweptBoundingBoxesIntersect": false
+        },
+        {
+          "a": "bedroom-3-door",
+          "b": "bedroom-4-door",
+          "sweptBoundingBoxesIntersect": false
+        },
+        {
+          "a": "bedroom-3-door",
+          "b": "bath-door",
+          "sweptBoundingBoxesIntersect": false
+        },
+        {
+          "a": "bedroom-4-door",
+          "b": "bath-door",
+          "sweptBoundingBoxesIntersect": false
+        }
+      ]
+    }
+  ]
+}

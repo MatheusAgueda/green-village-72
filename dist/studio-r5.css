@@ -4,3 +4,11 @@
 @media(max-width:430px){.reference-options{grid-template-columns:repeat(3,minmax(0,1fr))}.reference-peek{width:103px}.reference-peek img{height:56px}.reference-actions button{font-size:10px}.scene-label strong{font-size:19px}}
 
 @media(max-width:560px){#viewport[data-detail]:not([data-detail=""]) .scene-label{top:8px;max-width:calc(100% - 52px)}#viewport[data-detail]:not([data-detail=""]) .scene-label strong{font-size:12px;line-height:1.2}#viewport[data-detail]:not([data-detail=""]) .scene-label>span:last-child{display:none}#viewport[data-detail]:not([data-detail=""])>canvas{top:36px!important;height:calc(100% - 36px)!important}#viewport[data-detail]:not([data-detail=""]) .reference-peek{width:auto;bottom:8px;left:8px}#viewport[data-detail]:not([data-detail=""]) .reference-peek>button:first-child{display:none}#viewport[data-detail]:not([data-detail=""]) .reference-peek .detail-exit{font-size:9px;padding:7px}#viewport[data-detail]:not([data-detail=""]) .canvas-tools{top:40px}.scene-label strong{font-size:14px}}
+
+/* Audit: readable controls, contrast and keyboard access to original images. */
+.workspace-footer,#details-open,.config-tab:not(.active),#config-content .value,.reference-strip .eyebrow,.reference-strip a span{color:#526447}
+.muted{opacity:1;color:#526447}.workspace-footer{font-size:12px}.config-tab{font-size:14px}.reference-options small,.reference-features span,.reference-number,.selected-photo span,.reference-peek span{font-size:12px}.reference-actions button{font-size:14px}.field-description{font-size:13px;line-height:1.6}.reference-peek .detail-exit{font-size:12px;min-height:38px}.image-preview{display:block;width:100%;padding:0;border:0;background:transparent;cursor:zoom-in}.image-preview:focus-visible{outline:3px solid #80621d;outline-offset:3px}.reference-options small{min-height:42px}.reference-options button{min-height:118px}
+@media(max-width:560px){.config-tab{font-size:13px}.reference-actions button{font-size:13px}.reference-options small{font-size:12px}#viewport[data-detail]:not([data-detail=""]) .reference-peek .detail-exit{font-size:12px;min-height:36px}.scene-label strong{font-size:15px}}
+
+/* R6: secondary text remains legible on documentation and plan surfaces. */
+.field-description,.status-label.missing{color:#526447}

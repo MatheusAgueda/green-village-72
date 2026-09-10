@@ -1,0 +1,637 @@
+{
+  "toleranceM": 0.0001,
+  "positions": [
+    0,
+    0.0001,
+    0.0005,
+    0.001,
+    0.002,
+    0.005,
+    0.01,
+    0.02,
+    0.03,
+    0.05,
+    0.075,
+    0.1,
+    0.15,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    1
+  ],
+  "results": [
+    {
+      "id": "kitchen-01",
+      "bathroom": "standard",
+      "kitchen": "u",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "kitchen-01",
+      "bathroom": "mirrored",
+      "kitchen": "u",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "kitchen-02",
+      "bathroom": "standard",
+      "kitchen": "l",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "kitchen-02",
+      "bathroom": "mirrored",
+      "kitchen": "l",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "kitchen-03",
+      "bathroom": "standard",
+      "kitchen": "l",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "kitchen-03",
+      "bathroom": "mirrored",
+      "kitchen": "l",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "kitchen-04",
+      "bathroom": "standard",
+      "kitchen": "l",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "kitchen-04",
+      "bathroom": "mirrored",
+      "kitchen": "l",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "kitchen-05",
+      "bathroom": "standard",
+      "kitchen": "l",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "kitchen-05",
+      "bathroom": "mirrored",
+      "kitchen": "l",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "kitchen-06",
+      "bathroom": "standard",
+      "kitchen": "u",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "kitchen-06",
+      "bathroom": "mirrored",
+      "kitchen": "u",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "kitchen-07",
+      "bathroom": "standard",
+      "kitchen": "l",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "kitchen-07",
+      "bathroom": "mirrored",
+      "kitchen": "l",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "kitchen-08",
+      "bathroom": "standard",
+      "kitchen": "l",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "kitchen-08",
+      "bathroom": "mirrored",
+      "kitchen": "l",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "kitchen-09",
+      "bathroom": "standard",
+      "kitchen": "u",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "kitchen-09",
+      "bathroom": "mirrored",
+      "kitchen": "u",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "kitchen-10",
+      "bathroom": "standard",
+      "kitchen": "l",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "kitchen-10",
+      "bathroom": "mirrored",
+      "kitchen": "l",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "kitchen-11",
+      "bathroom": "standard",
+      "kitchen": "l",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "kitchen-11",
+      "bathroom": "mirrored",
+      "kitchen": "l",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "kitchen-12",
+      "bathroom": "standard",
+      "kitchen": "l",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "kitchen-12",
+      "bathroom": "mirrored",
+      "kitchen": "l",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "kitchen-13",
+      "bathroom": "standard",
+      "kitchen": "l",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "kitchen-13",
+      "bathroom": "mirrored",
+      "kitchen": "l",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "kitchen-14",
+      "bathroom": "standard",
+      "kitchen": "l",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "kitchen-14",
+      "bathroom": "mirrored",
+      "kitchen": "l",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "kitchen-15",
+      "bathroom": "standard",
+      "kitchen": "l",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "kitchen-15",
+      "bathroom": "mirrored",
+      "kitchen": "l",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "bathroom-01",
+      "bathroom": "standard",
+      "kitchen": "linear",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "bathroom-01",
+      "bathroom": "mirrored",
+      "kitchen": "linear",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "bathroom-02",
+      "bathroom": "standard",
+      "kitchen": "linear",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "bathroom-02",
+      "bathroom": "mirrored",
+      "kitchen": "linear",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "bathroom-03",
+      "bathroom": "standard",
+      "kitchen": "linear",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "bathroom-03",
+      "bathroom": "mirrored",
+      "kitchen": "linear",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "bathroom-04",
+      "bathroom": "standard",
+      "kitchen": "linear",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "bathroom-04",
+      "bathroom": "mirrored",
+      "kitchen": "linear",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "bathroom-05",
+      "bathroom": "standard",
+      "kitchen": "linear",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "bathroom-05",
+      "bathroom": "mirrored",
+      "kitchen": "linear",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "bathroom-06",
+      "bathroom": "standard",
+      "kitchen": "linear",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "bathroom-06",
+      "bathroom": "mirrored",
+      "kitchen": "linear",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "bathroom-07",
+      "bathroom": "standard",
+      "kitchen": "linear",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "bathroom-07",
+      "bathroom": "mirrored",
+      "kitchen": "linear",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "bathroom-08",
+      "bathroom": "standard",
+      "kitchen": "linear",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "bathroom-08",
+      "bathroom": "mirrored",
+      "kitchen": "linear",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "bathroom-09",
+      "bathroom": "standard",
+      "kitchen": "linear",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "bathroom-09",
+      "bathroom": "mirrored",
+      "kitchen": "linear",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "bathroom-10",
+      "bathroom": "standard",
+      "kitchen": "linear",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "bathroom-10",
+      "bathroom": "mirrored",
+      "kitchen": "linear",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "bathroom-11",
+      "bathroom": "standard",
+      "kitchen": "linear",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "bathroom-11",
+      "bathroom": "mirrored",
+      "kitchen": "linear",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "bathroom-12",
+      "bathroom": "standard",
+      "kitchen": "linear",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "bathroom-12",
+      "bathroom": "mirrored",
+      "kitchen": "linear",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "bathroom-13",
+      "bathroom": "standard",
+      "kitchen": "linear",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "bathroom-13",
+      "bathroom": "mirrored",
+      "kitchen": "linear",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "bathroom-14",
+      "bathroom": "standard",
+      "kitchen": "linear",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "bathroom-14",
+      "bathroom": "mirrored",
+      "kitchen": "linear",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "bathroom-15",
+      "bathroom": "standard",
+      "kitchen": "linear",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "bathroom-15",
+      "bathroom": "mirrored",
+      "kitchen": "linear",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "bathroom-16",
+      "bathroom": "standard",
+      "kitchen": "linear",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "bathroom-16",
+      "bathroom": "mirrored",
+      "kitchen": "linear",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "bathroom-17",
+      "bathroom": "standard",
+      "kitchen": "linear",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "bathroom-17",
+      "bathroom": "mirrored",
+      "kitchen": "linear",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "kitchen-02",
+      "bathroom": "standard",
+      "kitchen": "linear",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "kitchen-02",
+      "bathroom": "standard",
+      "kitchen": "linear",
+      "layout": "t4-a",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "kitchen-02",
+      "bathroom": "mirrored",
+      "kitchen": "linear",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "kitchen-02",
+      "bathroom": "mirrored",
+      "kitchen": "linear",
+      "layout": "t4-a",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "kitchen-09",
+      "bathroom": "standard",
+      "kitchen": "linear",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "kitchen-09",
+      "bathroom": "standard",
+      "kitchen": "linear",
+      "layout": "t4-a",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "kitchen-09",
+      "bathroom": "mirrored",
+      "kitchen": "linear",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "kitchen-09",
+      "bathroom": "mirrored",
+      "kitchen": "linear",
+      "layout": "t4-a",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "kitchen-15",
+      "bathroom": "standard",
+      "kitchen": "linear",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "kitchen-15",
+      "bathroom": "standard",
+      "kitchen": "linear",
+      "layout": "t4-a",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "kitchen-15",
+      "bathroom": "mirrored",
+      "kitchen": "linear",
+      "layout": "t2",
+      "poses": 22,
+      "collisions": []
+    },
+    {
+      "id": "kitchen-15",
+      "bathroom": "mirrored",
+      "kitchen": "linear",
+      "layout": "t4-a",
+      "poses": 22,
+      "collisions": []
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "status": "PASS_NO_OPEN_FINDINGS_IN_REVIEWED_SCOPE",
+  "generatedAtUTC": "2026-09-10T19:13:18.952121+00:00",
+  "fixedFinding": {
+    "severity": "P2",
+    "title": "Partial house construction leaked acquired material leases",
+    "baselineLeases": [
+      3,
+      5,
+      7,
+      9
+    ],
+    "retestLeases": [
+      3,
+      3,
+      3,
+      3
+    ],
+    "fix": "Immediate registration of acquired materials, idempotent factory cleanup on construction exception",
+    "evidence": [
+      "final-code-review-tests.json",
+      "construction-failure-fixed.json"
+    ]
+  },
+  "securityChecks": {
+    "importedMarkupRenderedAsText": true,
+    "URLTextNotConsumedAsHTML": true,
+    "invalidFieldsRejectedWithoutStateMutation": true,
+    "prototypePayloadIgnored": true,
+    "corruptCurrentAndSavedStorageRejected": true,
+    "quotaFailureKeepsChoicesAndJSONExport": true
+  },
+  "performance": {
+    "normalRebuildCycles": 12,
+    "geometriesBeforeAfter": [
+      225,
+      225
+    ],
+    "texturesBeforeAfter": [
+      6,
+      6
+    ],
+    "leasesBeforeAfter": [
+      3,
+      3
+    ],
+    "pausedFramesBeforeAfter": [
+      40,
+      40
+    ],
+    "idleWindowMs": 1500
+  },
+  "picking": {
+    "report": "picking-validation.json",
+    "nativeFrontOpens": true,
+    "fixedBackPanelBlocks": true,
+    "ExteriorWallBlocks": true,
+    "hiddenAncestorToolbarDragDoNotToggle": true,
+    "individualStatePreserved": true,
+    "scopedGlobalResetCorrect": true
+  },
+  "finalSourceSHA256": {
+    "material-library.js": "5ca8156a343927e75a3abada6db8443f3d76927c47a29034653aa3ec338e3bcd",
+    "photo-planks.js": "72d1b085f1694244c2f414f63aa130f4fe6d64e005a02d2560763044131c6d45",
+    "photo-wall-data.js": "fdddccc5a95ad206b38a26db55c40a84aa1a18ea3df0a63260f221d7b378c1b4",
+    "index.html": "2c7ef51b32170c4fc940af12f3aabf4023cf9f5ce57113f4d2e8b282ade8a145",
+    "reference-videos.js": "52790dfc440060b0658eef11b464dbdcd1efa0a0565f7949687af6bbe463565c",
+    "video-library.js": "d847ea0e56293b0a65cd4ca19d851ab7bee20179c3ef55f354484a060eba5c51",
+    "photo-plank-data.js": "0c48780479b6849e88bfe56e7d28fdaa1f3feee908784bb83ddfaaf525c74b17",
+    "configuration.js": "ca78e1fdaddf504f6be43c8b4ec3c45ec92d07bdea1f35094ca967408316fdf1",
+    "interior-detail.js": "c2a1b1a645c5c809314d6a3a146b335339d64c439cc4dedbf8afbc470797dd16",
+    "stage.js": "f267d8ced81973011e8f55f28a75458bbe4b4ca77597149e17120ffede83bef4",
+    "plan-svg.js": "e14dba25221447474d3eafce9b806d68937329b33bd417b79cec5906ba9b994f",
+    "panel-joints.js": "d1a21680e6e51c1462ce0799a3959e3472b20dd4aa33ed9f56b268baca7e38e0",
+    "data.js": "51c44e7592d2cdd773eab4e9a66be1ebf739b408eb4ace55ffdfff397c248f1d",
+    "style.css": "50612c879180893524cc05006759fff3fbfee7675d2f0e9beabfdb54b1b7e5e4",
+    "interior-references.js": "41cdd74bdd7d79740372ae090aa38278b62eadfa05261a4952b2295f0ec369ac",
+    "model.js": "4379058d41b8627850a3c8cb556b974b5743b68696ae676c99eab342fcfe9cba",
+    "studio-r3.css": "9d2cae6d608e3a66b6b297a11c37e4894feeab0d182452ab0eae2b2a876bcc3a",
+    "material-data.js": "e55563fc9cb5f75514eb545f6e9a4e056847b3579556fd5a614da88bc381f011",
+    "app.js": "e9d30faee377a8e00195fa61ac4ab33e75092f67924380c61f6c7eefbbd5002b",
+    "studio-r4.css": "5525e424b28fa46135cb6f1fb0621e694538863c433c79b78c83c828113a6760",
+    "studio-r5.css": "9ad311ba67537d6b2b9c3597912e1c51d1e3ea5460ee556bfcdca434470fef20",
+    "specification.js": "e1784a324c129ed85944a1abbe98a2d21b08a8a91d6e34a637e6463523f6cdbe"
+  },
+  "relevantSourcesMatchCurrent": {
+    "app.js": true,
+    "configuration.js": true,
+    "material-library.js": true,
+    "model.js": true,
+    "interior-detail.js": true,
+    "stage.js": true,
+    "video-library.js": true,
+    "plan-svg.js": true
+  },
+  "notes": [
+    "Security and normal-rebuild tests used review-source; final-source retested the subsequent construction cleanup and picking changes.",
+    "No checkout edits; test scripts and frozen audit sources only under audit-workspace/app-audit."
+  ],
+  "limits": [
+    "Focused client-code review and local Chrome tests; not a guarantee against every vulnerability.",
+    "No server auth/header/CSP configuration or dependency vulnerability database audit.",
+    "No physical mobile hardware or general UX sweep repeated.",
+    "Resource counts cover 12 normal rebuilds and three injected construction failures; no long-running heap profile or FPS claim."
+  ]
+}

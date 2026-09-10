@@ -4,7 +4,7 @@ import {readFileSync,existsSync,readdirSync,statSync} from 'node:fs';
 import path from 'node:path';
 import * as THREE from './dist/vendor/three.module.js';
 import {makeHouse} from './dist/model.js';
-import {DIM,MEASURES,getPlan,compatibility,expansionState,unionArea,intersects} from './dist/specification.js';
+import {DIM,MEASURES,getPlan,doorPose,DOOR_DETAIL,compatibility,expansionState,unionArea,intersects} from './dist/specification.js';
 import {DEFAULT_CONFIG,validateConfiguration,encodeConfiguration,decodeConfiguration,summaryRows,SWATCHES} from './dist/configuration.js';
 import {MATERIALS} from './dist/material-data.js';
 import {physicalUV} from './dist/material-library.js';
@@ -124,7 +124,38 @@ check('R5 digital catalogue mode disables illumination of reference finishes, in
  for(const id of ['kitchen-02','kitchen-12','bathroom-06','bathroom-16']){const h=makeHouse({...DEFAULT_CONFIG,lighting:'catalogue',[id.startsWith('kitchen')?'kitchenRef':'bathroomRef']:id});for(const m of [h.materials.exterior,h.materials.floor,h.details.K.front,h.details.K.counter,h.details.K.upper,h.details.B.front,h.details.B.counter,h.details.B.wall])assert.equal(m.toneMapped,false,m.name);h.dispose();}
  const legacy={...DEFAULT_CONFIG};delete legacy.textureMode;assert.equal(validateConfiguration(legacy).textureMode,'source');assert.throws(()=>validateConfiguration({...DEFAULT_CONFIG,textureMode:'fake'}));
 });
-if(!core)check('new videos, poster images and evidence links are real delivered files',()=>{for(const f of ['presentation-v3.mp4','expansion-v4.mp4','presentation-v3-poster.jpg','expansion-v4-poster.jpg','evidence-r4/audit-report.html','evidence-r4/dimensions.json'])assert.ok(statSync('dist/assets/'+f).size>1000,f);});
+if(!core)check('R6 source door hinges open into their rooms, mirror coherently and return to the same closed pose',()=>{
+ for(const [layout,ref]of Object.entries(source))for(const bathroom of ['standard','mirrored']){
+  const config={...DEFAULT_CONFIG,layout,bathroom},h=makeHouse({...config,view:'interior'}),p=h.plan;
+  p.rooms.filter(r=>r.kind==='bedroom').forEach((r,i)=>assert.equal(p.doors.find(d=>d.opensInto===r.id).hingeEnd,ref.doors[i]));
+  const bath=p.doors.find(d=>d.id==='bath-door');assert.equal(bath.hingeEnd,bathroom==='standard'?'end':'start');assert.equal(bath.opensInto,p.rooms.find(r=>r.kind==='bathroom').id);
+  h.setDoors(false);const closed=h.doors.map(d=>({id:d.id,matrix:d.pivot.matrix.toArray(),position:d.pivot.position.toArray()}));
+  for(const open of [true,false,true,false]){h.setDoors(open);h.root.updateMatrixWorld(true);for(const d of h.doors){const pose=doorPose(d,open?1:0);close(d.pivot.rotation.y,pose.angle);close(d.pivot.position.x,pose.hinge.x);close(d.pivot.position.z,pose.hinge.z);assert.deepEqual(d.pivot.position.toArray(),closed.find(x=>x.id===d.id).position);if(open){const r=p.rooms.find(r=>r.id===d.opensInto);assert.ok(pose.tip.x>r.outline.x0&&pose.tip.x<r.outline.x1&&pose.tip.z>r.outline.z0&&pose.tip.z<r.outline.z1,layout+' '+d.id+' must open inward');}else close(d.pivot.rotation.y,0);}}
+  const svg=planSVG(config);for(const d of p.doors){const pose=doorPose(d,1);assert.ok(svg.includes(`data-door-id="${d.id}" data-hinge-end="${d.hingeEnd}" data-open-angle="${pose.angle}"`));close(pose.leafWidth,d.width-2*DOOR_DETAIL.endGap);}
+  h.dispose();
+ }
+});
+check('R6 individual furniture states survive rebuild and hidden groups cannot be toggled',()=>{
+ const config={...DEFAULT_CONFIG,kitchen:'linear',kitchenRef:'kitchen-09',view:'interior'},a=makeHouse(config),m=a.details.motions.find(m=>m.scope==='kitchen'&&m.kind==='rotation');assert.ok(m);a.details.toggle(m.g.children[0]);assert.equal(m.opened,true);const saved=a.details.capture(),b=makeHouse({...config,floor:'#bb9988'});b.details.restore(saved);assert.equal(b.details.motions.find(x=>x.key===m.key).opened,true);assert.equal(b.details.status('bathroom').anyOpen,false);
+ b.details.setOpen(true,'kitchen');assert.equal(b.details.status('kitchen').allOpen,true);assert.equal(b.details.status('bathroom').anyOpen,false);b.setDetail('bathroom');const hidden=b.details.motions.find(x=>x.scope==='kitchen');assert.equal(b.details.toggle(hidden.g.children[0]),null);b.details.setOpen(false);assert.equal(b.details.status().anyOpen,false);a.dispose();b.dispose();
+});
+check('R6 partial construction releases acquired materials without touching the existing house',()=>{
+ const live=new Set();let calls=0,failAt=Infinity;const create=()=>{if(++calls===failAt)throw new Error('Injected construction failure');const m=new THREE.MeshStandardMaterial();m.userData.lease='test-'+calls;live.add(m);return m;},lib={create,createPhoto:create,release(m){live.delete(m);m.dispose();}};
+ const original=makeHouse(DEFAULT_CONFIG,lib),baseline=live.size;assert.ok(baseline>0);
+ for(const offset of [3,6,8]){failAt=calls+offset;assert.throws(()=>makeHouse(DEFAULT_CONFIG,lib),/Injected construction failure/);assert.equal(live.size,baseline);assert.ok(original.root.children.length);}
+ original.dispose();assert.equal(live.size,0);original.dispose();assert.equal(live.size,0);
+});
+check('R6 picking stops at opaque surfaces and ignores hidden or clipped surfaces',()=>{
+ const h=makeHouse({...DEFAULT_CONFIG,kitchen:'linear',view:'interior'}),m=h.details.motions.find(x=>x.scope==='kitchen'),leaf=m.g.children[0],point=new THREE.Vector3(),panel=new THREE.Mesh(new THREE.BoxGeometry(1,1,1),new THREE.MeshBasicMaterial());
+ const hits=[{object:panel,point},{object:leaf,point}];assert.equal(h.details.pick(hits),null);assert.equal(m.opened,false);
+ panel.visible=false;assert.ok(h.details.pick(hits));assert.equal(m.opened,true);h.details.setOpen(false);
+ panel.visible=true;panel.material.clippingPlanes=[new THREE.Plane(new THREE.Vector3(1,0,0),-1)];assert.ok(h.details.pick(hits));assert.equal(m.opened,true);
+ panel.geometry.dispose();panel.material.dispose();h.dispose();
+});
+check('R6 open furniture remains inside the detail camera bounds and is not clipped',()=>{
+ for(const ref of DATA.kitchens){const h=makeHouse({...DEFAULT_CONFIG,kitchen:'linear',kitchenRef:ref.id,view:'interior'});h.details.setOpen(true,'kitchen');h.setDetail('kitchen');h.root.updateMatrixWorld(true);const bounds=h.detailBounds('kitchen').expandByScalar(1e-8);for(const m of h.details.motions.filter(m=>m.scope==='kitchen'))assert.ok(bounds.containsBox(new THREE.Box3().setFromObject(m.g)),ref.id+' open component');for(const material of h.details.detailMaterials)assert.equal(material.clippingPlanes.length,0);h.dispose();}
+});
+check('new videos, poster images and evidence links are real delivered files',()=>{for(const f of ['presentation-v3.mp4','expansion-v4.mp4','presentation-v3-poster.jpg','expansion-v4-poster.jpg','evidence-r4/audit-report.html','evidence-r4/dimensions.json'])assert.ok(statSync('dist/assets/'+f).size>1000,f);});
 check('distributed first-party text contains no machine paths or credentials',()=>{
  function scan(dir){for(const f of readdirSync(dir)){const p=path.join(dir,f);if(statSync(p).isDirectory())scan(p);else if(/\.(js|html|json|css)$/.test(f)&&!p.includes('vendor')){const s=readFileSync(p,'utf8');assert.ok(!s.includes('/Users/'),p);assert.ok(!s.includes('API_KEY'),p);}}}scan('dist');
 });

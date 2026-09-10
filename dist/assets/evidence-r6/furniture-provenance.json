@@ -1,0 +1,8 @@
+{
+  "geometryPrefixExactMatch": true,
+  "geometryPrefixSHA256": "c1856193cb6a2d0e8671daa9393b128e157433098b039a481bc7ac6725759a8a",
+  "fullModuleBeforePicking": "f191944f31a51503b0ac2cd4366c59d8c685d823b1fde1967faf28c2fad4c834",
+  "fullModuleAfterPicking": "c2a1b1a645c5c809314d6a3a146b335339d64c439cc4dedbf8afbc470797dd16",
+  "modelSpecificationReferencesUnchanged": true,
+  "difference": "Picking helper and exported pick method only; no geometry changed."
+}

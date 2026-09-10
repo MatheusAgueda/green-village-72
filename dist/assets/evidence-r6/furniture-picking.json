@@ -1,0 +1,34 @@
+{
+  "rebuild": {
+    "openedBefore": true,
+    "openAfter": true,
+    "globalFlag": false,
+    "trigger": "rebuild after changing material/lighting/view"
+  },
+  "raycast": {
+    "focus": "kitchen",
+    "bathWrapperVisible": false,
+    "rayOrigin": [
+      0.8942121874313479,
+      0.41,
+      -3.3720586491073172
+    ],
+    "rayDirection": [
+      -1,
+      0,
+      -2.220446049250313e-16
+    ],
+    "toggled": null
+  },
+  "occlusion": {
+    "firstHit": {
+      "name": " · 7 peças",
+      "distance": 0.10100010490417421
+    },
+    "closedBefore": true,
+    "throughBack": null,
+    "remainsClosed": true,
+    "directFront": "Porta do armário",
+    "opensFromFront": true
+  }
+}

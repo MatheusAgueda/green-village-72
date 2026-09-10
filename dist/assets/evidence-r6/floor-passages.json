@@ -1,0 +1,189 @@
+{
+  "status": "PASS",
+  "scope": "Actual floor and lower-layer triangles; centre plus12 circumference rays at radius30mm for each of3 basin service passages. All7 layouts and2 bath distributions.",
+  "rays": 546,
+  "reports": [
+    {
+      "layout": "t0",
+      "bathroom": "standard",
+      "servicePoint": {
+        "id": "basin",
+        "x": -0.47639999999999993,
+        "z": -3.556,
+        "y": 0.83,
+        "hot": true
+      },
+      "rayChecks": 39,
+      "blocked": []
+    },
+    {
+      "layout": "t0",
+      "bathroom": "mirrored",
+      "servicePoint": {
+        "id": "basin",
+        "x": 0.47639999999999993,
+        "z": -3.556,
+        "y": 0.83,
+        "hot": true
+      },
+      "rayChecks": 39,
+      "blocked": []
+    },
+    {
+      "layout": "t1",
+      "bathroom": "standard",
+      "servicePoint": {
+        "id": "basin",
+        "x": -0.47639999999999993,
+        "z": -3.556,
+        "y": 0.83,
+        "hot": true
+      },
+      "rayChecks": 39,
+      "blocked": []
+    },
+    {
+      "layout": "t1",
+      "bathroom": "mirrored",
+      "servicePoint": {
+        "id": "basin",
+        "x": 0.47639999999999993,
+        "z": -3.556,
+        "y": 0.83,
+        "hot": true
+      },
+      "rayChecks": 39,
+      "blocked": []
+    },
+    {
+      "layout": "t2",
+      "bathroom": "standard",
+      "servicePoint": {
+        "id": "basin",
+        "x": -0.47639999999999993,
+        "z": -3.556,
+        "y": 0.83,
+        "hot": true
+      },
+      "rayChecks": 39,
+      "blocked": []
+    },
+    {
+      "layout": "t2",
+      "bathroom": "mirrored",
+      "servicePoint": {
+        "id": "basin",
+        "x": 0.47639999999999993,
+        "z": -3.556,
+        "y": 0.83,
+        "hot": true
+      },
+      "rayChecks": 39,
+      "blocked": []
+    },
+    {
+      "layout": "t3-a",
+      "bathroom": "standard",
+      "servicePoint": {
+        "id": "basin",
+        "x": -0.47639999999999993,
+        "z": -3.556,
+        "y": 0.83,
+        "hot": true
+      },
+      "rayChecks": 39,
+      "blocked": []
+    },
+    {
+      "layout": "t3-a",
+      "bathroom": "mirrored",
+      "servicePoint": {
+        "id": "basin",
+        "x": 0.47639999999999993,
+        "z": -3.556,
+        "y": 0.83,
+        "hot": true
+      },
+      "rayChecks": 39,
+      "blocked": []
+    },
+    {
+      "layout": "t3-b",
+      "bathroom": "standard",
+      "servicePoint": {
+        "id": "basin",
+        "x": -0.47639999999999993,
+        "z": -3.556,
+        "y": 0.83,
+        "hot": true
+      },
+      "rayChecks": 39,
+      "blocked": []
+    },
+    {
+      "layout": "t3-b",
+      "bathroom": "mirrored",
+      "servicePoint": {
+        "id": "basin",
+        "x": 0.47639999999999993,
+        "z": -3.556,
+        "y": 0.83,
+        "hot": true
+      },
+      "rayChecks": 39,
+      "blocked": []
+    },
+    {
+      "layout": "t4-a",
+      "bathroom": "standard",
+      "servicePoint": {
+        "id": "basin",
+        "x": -0.47639999999999993,
+        "z": -3.556,
+        "y": 0.83,
+        "hot": true
+      },
+      "rayChecks": 39,
+      "blocked": []
+    },
+    {
+      "layout": "t4-a",
+      "bathroom": "mirrored",
+      "servicePoint": {
+        "id": "basin",
+        "x": 0.47639999999999993,
+        "z": -3.556,
+        "y": 0.83,
+        "hot": true
+      },
+      "rayChecks": 39,
+      "blocked": []
+    },
+    {
+      "layout": "t4-b",
+      "bathroom": "standard",
+      "servicePoint": {
+        "id": "basin",
+        "x": -0.47639999999999993,
+        "z": -3.556,
+        "y": 0.83,
+        "hot": true
+      },
+      "rayChecks": 39,
+      "blocked": []
+    },
+    {
+      "layout": "t4-b",
+      "bathroom": "mirrored",
+      "servicePoint": {
+        "id": "basin",
+        "x": 0.47639999999999993,
+        "z": -3.556,
+        "y": 0.83,
+        "hot": true
+      },
+      "rayChecks": 39,
+      "blocked": []
+    }
+  ]
+}

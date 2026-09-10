@@ -1,0 +1,134 @@
+{
+  "cases": [
+    {
+      "name": "Construction failure releases partial leases and ignores abandoned pending asset",
+      "pass": true,
+      "before": {
+        "state": {
+          "schemaVersion": 2,
+          "layout": "t2",
+          "exteriorId": "exterior-standard-branco-glacial",
+          "exterior": "#ddddda",
+          "floorId": "floor-spc-kx7006",
+          "floor": "#92846c",
+          "interior": "#eeede8",
+          "interiorName": "Branco natural",
+          "kitchen": "linear",
+          "kitchenRef": "kitchen-01",
+          "bathroom": "standard",
+          "bathroomRef": "bathroom-01",
+          "bathroomUV": null,
+          "roof": false,
+          "porch": false,
+          "lighting": "neutral",
+          "textureMode": "source"
+        },
+        "stats": {
+          "pending": 0,
+          "backgroundPending": 0,
+          "failures": [],
+          "cachedTextures": 3,
+          "leases": 3
+        }
+      },
+      "results": [
+        {
+          "ok": false,
+          "state": {
+            "schemaVersion": 2,
+            "layout": "t2",
+            "exteriorId": "exterior-standard-branco-glacial",
+            "exterior": "#ddddda",
+            "floorId": "floor-spc-kx7006",
+            "floor": "#92846c",
+            "interior": "#eeede8",
+            "interiorName": "Branco natural",
+            "kitchen": "linear",
+            "kitchenRef": "kitchen-01",
+            "bathroom": "standard",
+            "bathroomRef": "bathroom-01",
+            "bathroomUV": null,
+            "roof": false,
+            "porch": false,
+            "lighting": "neutral",
+            "textureMode": "source"
+          },
+          "stats": {
+            "pending": 0,
+            "backgroundPending": 1,
+            "failures": [],
+            "cachedTextures": 4,
+            "leases": 3
+          }
+        },
+        {
+          "ok": false,
+          "state": {
+            "schemaVersion": 2,
+            "layout": "t2",
+            "exteriorId": "exterior-standard-branco-glacial",
+            "exterior": "#ddddda",
+            "floorId": "floor-spc-kx7006",
+            "floor": "#92846c",
+            "interior": "#eeede8",
+            "interiorName": "Branco natural",
+            "kitchen": "linear",
+            "kitchenRef": "kitchen-01",
+            "bathroom": "standard",
+            "bathroomRef": "bathroom-01",
+            "bathroomUV": null,
+            "roof": false,
+            "porch": false,
+            "lighting": "neutral",
+            "textureMode": "source"
+          },
+          "stats": {
+            "pending": 0,
+            "backgroundPending": 1,
+            "failures": [],
+            "cachedTextures": 4,
+            "leases": 3
+          }
+        },
+        {
+          "ok": false,
+          "state": {
+            "schemaVersion": 2,
+            "layout": "t2",
+            "exteriorId": "exterior-standard-branco-glacial",
+            "exterior": "#ddddda",
+            "floorId": "floor-spc-kx7006",
+            "floor": "#92846c",
+            "interior": "#eeede8",
+            "interiorName": "Branco natural",
+            "kitchen": "linear",
+            "kitchenRef": "kitchen-01",
+            "bathroom": "standard",
+            "bathroomRef": "bathroom-01",
+            "bathroomUV": null,
+            "roof": false,
+            "porch": false,
+            "lighting": "neutral",
+            "textureMode": "source"
+          },
+          "stats": {
+            "pending": 0,
+            "backgroundPending": 1,
+            "failures": [],
+            "cachedTextures": 4,
+            "leases": 3
+          }
+        }
+      ],
+      "ready": "ready",
+      "final": {
+        "pending": 0,
+        "backgroundPending": 0,
+        "failures": [],
+        "cachedTextures": 4,
+        "leases": 3
+      },
+      "logs": []
+    }
+  ]
+}

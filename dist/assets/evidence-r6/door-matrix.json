@@ -1,0 +1,2309 @@
+{
+  "coordinateSystem": "Metres; +X right,+Y up,+Z front/entrance. PNG down corresponds to +Z.",
+  "doors": [
+    {
+      "layout": "t0",
+      "bathroom": "standard",
+      "door": "bath-door",
+      "hingeEnd": "end",
+      "opensInto": "bathroom-0",
+      "closed": {
+        "direction": -1,
+        "hingeU": 0.6063999999999999,
+        "hinge": {
+          "x": 0.6063999999999999,
+          "z": -3.2584999999999997
+        },
+        "angle": 0,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.5833999999999999,
+          "z": -3.2584999999999997
+        },
+        "tip": {
+          "x": -0.13060000000000005,
+          "z": -3.2584999999999997
+        },
+        "radius": 0.737
+      },
+      "open": {
+        "direction": -1,
+        "hingeU": 0.6063999999999999,
+        "hinge": {
+          "x": 0.6063999999999999,
+          "z": -3.2584999999999997
+        },
+        "angle": -1.5707963267948966,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.6063999999999999,
+          "z": -3.2815
+        },
+        "tip": {
+          "x": 0.6063999999999999,
+          "z": -3.9955
+        },
+        "radius": 0.737
+      },
+      "floorGapM": 0.007999952316284142,
+      "findings": [],
+      "metricStatus": "estimated"
+    },
+    {
+      "layout": "t0",
+      "bathroom": "mirrored",
+      "door": "bath-door",
+      "hingeEnd": "start",
+      "opensInto": "bathroom-0",
+      "closed": {
+        "direction": 1,
+        "hingeU": -0.6063999999999999,
+        "hinge": {
+          "x": -0.6063999999999999,
+          "z": -3.2584999999999997
+        },
+        "angle": 0,
+        "leafWidth": 0.714,
+        "start": {
+          "x": -0.5833999999999999,
+          "z": -3.2584999999999997
+        },
+        "tip": {
+          "x": 0.13060000000000005,
+          "z": -3.2584999999999997
+        },
+        "radius": 0.737
+      },
+      "open": {
+        "direction": 1,
+        "hingeU": -0.6063999999999999,
+        "hinge": {
+          "x": -0.6063999999999999,
+          "z": -3.2584999999999997
+        },
+        "angle": 1.5707963267948966,
+        "leafWidth": 0.714,
+        "start": {
+          "x": -0.6063999999999999,
+          "z": -3.2815
+        },
+        "tip": {
+          "x": -0.6063999999999999,
+          "z": -3.9955
+        },
+        "radius": 0.737
+      },
+      "floorGapM": 0.007999952316284142,
+      "findings": [],
+      "metricStatus": "estimated"
+    },
+    {
+      "layout": "t1",
+      "bathroom": "standard",
+      "door": "bedroom-1-door",
+      "hingeEnd": "end",
+      "opensInto": "bedroom-1",
+      "closed": {
+        "direction": -1,
+        "hingeU": -0.26,
+        "hinge": {
+          "x": 0.8189,
+          "z": -0.26
+        },
+        "angle": 0,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.8189,
+          "z": -0.28300000000000003
+        },
+        "tip": {
+          "x": 0.8189,
+          "z": -0.997
+        },
+        "radius": 0.737
+      },
+      "open": {
+        "direction": -1,
+        "hingeU": -0.26,
+        "hinge": {
+          "x": 0.8189,
+          "z": -0.26
+        },
+        "angle": -1.5707963267948966,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.8419,
+          "z": -0.26
+        },
+        "tip": {
+          "x": 1.5558999999999998,
+          "z": -0.26000000000000006
+        },
+        "radius": 0.737
+      },
+      "floorGapM": 0.007999952316284142,
+      "findings": [],
+      "metricStatus": "estimated"
+    },
+    {
+      "layout": "t1",
+      "bathroom": "standard",
+      "door": "bath-door",
+      "hingeEnd": "end",
+      "opensInto": "bathroom-0",
+      "closed": {
+        "direction": -1,
+        "hingeU": 0.6063999999999999,
+        "hinge": {
+          "x": 0.6063999999999999,
+          "z": -3.2584999999999997
+        },
+        "angle": 0,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.5833999999999999,
+          "z": -3.2584999999999997
+        },
+        "tip": {
+          "x": -0.13060000000000005,
+          "z": -3.2584999999999997
+        },
+        "radius": 0.737
+      },
+      "open": {
+        "direction": -1,
+        "hingeU": 0.6063999999999999,
+        "hinge": {
+          "x": 0.6063999999999999,
+          "z": -3.2584999999999997
+        },
+        "angle": -1.5707963267948966,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.6063999999999999,
+          "z": -3.2815
+        },
+        "tip": {
+          "x": 0.6063999999999999,
+          "z": -3.9955
+        },
+        "radius": 0.737
+      },
+      "floorGapM": 0.007999952316284142,
+      "findings": [],
+      "metricStatus": "estimated"
+    },
+    {
+      "layout": "t1",
+      "bathroom": "mirrored",
+      "door": "bedroom-1-door",
+      "hingeEnd": "end",
+      "opensInto": "bedroom-1",
+      "closed": {
+        "direction": -1,
+        "hingeU": -0.26,
+        "hinge": {
+          "x": 0.8189,
+          "z": -0.26
+        },
+        "angle": 0,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.8189,
+          "z": -0.28300000000000003
+        },
+        "tip": {
+          "x": 0.8189,
+          "z": -0.997
+        },
+        "radius": 0.737
+      },
+      "open": {
+        "direction": -1,
+        "hingeU": -0.26,
+        "hinge": {
+          "x": 0.8189,
+          "z": -0.26
+        },
+        "angle": -1.5707963267948966,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.8419,
+          "z": -0.26
+        },
+        "tip": {
+          "x": 1.5558999999999998,
+          "z": -0.26000000000000006
+        },
+        "radius": 0.737
+      },
+      "floorGapM": 0.007999952316284142,
+      "findings": [],
+      "metricStatus": "estimated"
+    },
+    {
+      "layout": "t1",
+      "bathroom": "mirrored",
+      "door": "bath-door",
+      "hingeEnd": "start",
+      "opensInto": "bathroom-0",
+      "closed": {
+        "direction": 1,
+        "hingeU": -0.6063999999999999,
+        "hinge": {
+          "x": -0.6063999999999999,
+          "z": -3.2584999999999997
+        },
+        "angle": 0,
+        "leafWidth": 0.714,
+        "start": {
+          "x": -0.5833999999999999,
+          "z": -3.2584999999999997
+        },
+        "tip": {
+          "x": 0.13060000000000005,
+          "z": -3.2584999999999997
+        },
+        "radius": 0.737
+      },
+      "open": {
+        "direction": 1,
+        "hingeU": -0.6063999999999999,
+        "hinge": {
+          "x": -0.6063999999999999,
+          "z": -3.2584999999999997
+        },
+        "angle": 1.5707963267948966,
+        "leafWidth": 0.714,
+        "start": {
+          "x": -0.6063999999999999,
+          "z": -3.2815
+        },
+        "tip": {
+          "x": -0.6063999999999999,
+          "z": -3.9955
+        },
+        "radius": 0.737
+      },
+      "floorGapM": 0.007999952316284142,
+      "findings": [],
+      "metricStatus": "estimated"
+    },
+    {
+      "layout": "t2",
+      "bathroom": "standard",
+      "door": "bedroom-1-door",
+      "hingeEnd": "end",
+      "opensInto": "bedroom-1",
+      "closed": {
+        "direction": -1,
+        "hingeU": -0.26,
+        "hinge": {
+          "x": 0.8189,
+          "z": -0.26
+        },
+        "angle": 0,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.8189,
+          "z": -0.28300000000000003
+        },
+        "tip": {
+          "x": 0.8189,
+          "z": -0.997
+        },
+        "radius": 0.737
+      },
+      "open": {
+        "direction": -1,
+        "hingeU": -0.26,
+        "hinge": {
+          "x": 0.8189,
+          "z": -0.26
+        },
+        "angle": -1.5707963267948966,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.8419,
+          "z": -0.26
+        },
+        "tip": {
+          "x": 1.5558999999999998,
+          "z": -0.26000000000000006
+        },
+        "radius": 0.737
+      },
+      "floorGapM": 0.007999952316284142,
+      "findings": [],
+      "metricStatus": "estimated"
+    },
+    {
+      "layout": "t2",
+      "bathroom": "standard",
+      "door": "bedroom-2-door",
+      "hingeEnd": "start",
+      "opensInto": "bedroom-2",
+      "closed": {
+        "direction": 1,
+        "hingeU": 0.26,
+        "hinge": {
+          "x": 0.8189,
+          "z": 0.26
+        },
+        "angle": 0,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.8189,
+          "z": 0.28300000000000003
+        },
+        "tip": {
+          "x": 0.8189,
+          "z": 0.997
+        },
+        "radius": 0.737
+      },
+      "open": {
+        "direction": 1,
+        "hingeU": 0.26,
+        "hinge": {
+          "x": 0.8189,
+          "z": 0.26
+        },
+        "angle": 1.5707963267948966,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.8419,
+          "z": 0.26
+        },
+        "tip": {
+          "x": 1.5558999999999998,
+          "z": 0.26000000000000006
+        },
+        "radius": 0.737
+      },
+      "floorGapM": 0.007999952316284142,
+      "findings": [],
+      "metricStatus": "estimated"
+    },
+    {
+      "layout": "t2",
+      "bathroom": "standard",
+      "door": "bath-door",
+      "hingeEnd": "end",
+      "opensInto": "bathroom-0",
+      "closed": {
+        "direction": -1,
+        "hingeU": 0.6063999999999999,
+        "hinge": {
+          "x": 0.6063999999999999,
+          "z": -3.2584999999999997
+        },
+        "angle": 0,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.5833999999999999,
+          "z": -3.2584999999999997
+        },
+        "tip": {
+          "x": -0.13060000000000005,
+          "z": -3.2584999999999997
+        },
+        "radius": 0.737
+      },
+      "open": {
+        "direction": -1,
+        "hingeU": 0.6063999999999999,
+        "hinge": {
+          "x": 0.6063999999999999,
+          "z": -3.2584999999999997
+        },
+        "angle": -1.5707963267948966,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.6063999999999999,
+          "z": -3.2815
+        },
+        "tip": {
+          "x": 0.6063999999999999,
+          "z": -3.9955
+        },
+        "radius": 0.737
+      },
+      "floorGapM": 0.007999952316284142,
+      "findings": [],
+      "metricStatus": "estimated"
+    },
+    {
+      "layout": "t2",
+      "bathroom": "mirrored",
+      "door": "bedroom-1-door",
+      "hingeEnd": "end",
+      "opensInto": "bedroom-1",
+      "closed": {
+        "direction": -1,
+        "hingeU": -0.26,
+        "hinge": {
+          "x": 0.8189,
+          "z": -0.26
+        },
+        "angle": 0,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.8189,
+          "z": -0.28300000000000003
+        },
+        "tip": {
+          "x": 0.8189,
+          "z": -0.997
+        },
+        "radius": 0.737
+      },
+      "open": {
+        "direction": -1,
+        "hingeU": -0.26,
+        "hinge": {
+          "x": 0.8189,
+          "z": -0.26
+        },
+        "angle": -1.5707963267948966,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.8419,
+          "z": -0.26
+        },
+        "tip": {
+          "x": 1.5558999999999998,
+          "z": -0.26000000000000006
+        },
+        "radius": 0.737
+      },
+      "floorGapM": 0.007999952316284142,
+      "findings": [],
+      "metricStatus": "estimated"
+    },
+    {
+      "layout": "t2",
+      "bathroom": "mirrored",
+      "door": "bedroom-2-door",
+      "hingeEnd": "start",
+      "opensInto": "bedroom-2",
+      "closed": {
+        "direction": 1,
+        "hingeU": 0.26,
+        "hinge": {
+          "x": 0.8189,
+          "z": 0.26
+        },
+        "angle": 0,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.8189,
+          "z": 0.28300000000000003
+        },
+        "tip": {
+          "x": 0.8189,
+          "z": 0.997
+        },
+        "radius": 0.737
+      },
+      "open": {
+        "direction": 1,
+        "hingeU": 0.26,
+        "hinge": {
+          "x": 0.8189,
+          "z": 0.26
+        },
+        "angle": 1.5707963267948966,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.8419,
+          "z": 0.26
+        },
+        "tip": {
+          "x": 1.5558999999999998,
+          "z": 0.26000000000000006
+        },
+        "radius": 0.737
+      },
+      "floorGapM": 0.007999952316284142,
+      "findings": [],
+      "metricStatus": "estimated"
+    },
+    {
+      "layout": "t2",
+      "bathroom": "mirrored",
+      "door": "bath-door",
+      "hingeEnd": "start",
+      "opensInto": "bathroom-0",
+      "closed": {
+        "direction": 1,
+        "hingeU": -0.6063999999999999,
+        "hinge": {
+          "x": -0.6063999999999999,
+          "z": -3.2584999999999997
+        },
+        "angle": 0,
+        "leafWidth": 0.714,
+        "start": {
+          "x": -0.5833999999999999,
+          "z": -3.2584999999999997
+        },
+        "tip": {
+          "x": 0.13060000000000005,
+          "z": -3.2584999999999997
+        },
+        "radius": 0.737
+      },
+      "open": {
+        "direction": 1,
+        "hingeU": -0.6063999999999999,
+        "hinge": {
+          "x": -0.6063999999999999,
+          "z": -3.2584999999999997
+        },
+        "angle": 1.5707963267948966,
+        "leafWidth": 0.714,
+        "start": {
+          "x": -0.6063999999999999,
+          "z": -3.2815
+        },
+        "tip": {
+          "x": -0.6063999999999999,
+          "z": -3.9955
+        },
+        "radius": 0.737
+      },
+      "floorGapM": 0.007999952316284142,
+      "findings": [],
+      "metricStatus": "estimated"
+    },
+    {
+      "layout": "t3-a",
+      "bathroom": "standard",
+      "door": "bedroom-1-door",
+      "hingeEnd": "end",
+      "opensInto": "bedroom-1",
+      "closed": {
+        "direction": -1,
+        "hingeU": -0.26,
+        "hinge": {
+          "x": -0.8189,
+          "z": -0.26
+        },
+        "angle": 0,
+        "leafWidth": 0.714,
+        "start": {
+          "x": -0.8189,
+          "z": -0.28300000000000003
+        },
+        "tip": {
+          "x": -0.8189,
+          "z": -0.997
+        },
+        "radius": 0.737
+      },
+      "open": {
+        "direction": -1,
+        "hingeU": -0.26,
+        "hinge": {
+          "x": -0.8189,
+          "z": -0.26
+        },
+        "angle": 1.5707963267948966,
+        "leafWidth": 0.714,
+        "start": {
+          "x": -0.8419,
+          "z": -0.26
+        },
+        "tip": {
+          "x": -1.5558999999999998,
+          "z": -0.26000000000000006
+        },
+        "radius": 0.737
+      },
+      "floorGapM": 0.007999952316284142,
+      "findings": [],
+      "metricStatus": "estimated"
+    },
+    {
+      "layout": "t3-a",
+      "bathroom": "standard",
+      "door": "bedroom-2-door",
+      "hingeEnd": "end",
+      "opensInto": "bedroom-2",
+      "closed": {
+        "direction": -1,
+        "hingeU": -0.26,
+        "hinge": {
+          "x": 0.8189,
+          "z": -0.26
+        },
+        "angle": 0,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.8189,
+          "z": -0.28300000000000003
+        },
+        "tip": {
+          "x": 0.8189,
+          "z": -0.997
+        },
+        "radius": 0.737
+      },
+      "open": {
+        "direction": -1,
+        "hingeU": -0.26,
+        "hinge": {
+          "x": 0.8189,
+          "z": -0.26
+        },
+        "angle": -1.5707963267948966,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.8419,
+          "z": -0.26
+        },
+        "tip": {
+          "x": 1.5558999999999998,
+          "z": -0.26000000000000006
+        },
+        "radius": 0.737
+      },
+      "floorGapM": 0.007999952316284142,
+      "findings": [],
+      "metricStatus": "estimated"
+    },
+    {
+      "layout": "t3-a",
+      "bathroom": "standard",
+      "door": "bedroom-3-door",
+      "hingeEnd": "start",
+      "opensInto": "bedroom-3",
+      "closed": {
+        "direction": 1,
+        "hingeU": 0.26,
+        "hinge": {
+          "x": 0.8189,
+          "z": 0.26
+        },
+        "angle": 0,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.8189,
+          "z": 0.28300000000000003
+        },
+        "tip": {
+          "x": 0.8189,
+          "z": 0.997
+        },
+        "radius": 0.737
+      },
+      "open": {
+        "direction": 1,
+        "hingeU": 0.26,
+        "hinge": {
+          "x": 0.8189,
+          "z": 0.26
+        },
+        "angle": 1.5707963267948966,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.8419,
+          "z": 0.26
+        },
+        "tip": {
+          "x": 1.5558999999999998,
+          "z": 0.26000000000000006
+        },
+        "radius": 0.737
+      },
+      "floorGapM": 0.007999952316284142,
+      "findings": [],
+      "metricStatus": "estimated"
+    },
+    {
+      "layout": "t3-a",
+      "bathroom": "standard",
+      "door": "bath-door",
+      "hingeEnd": "end",
+      "opensInto": "bathroom-0",
+      "closed": {
+        "direction": -1,
+        "hingeU": 0.6063999999999999,
+        "hinge": {
+          "x": 0.6063999999999999,
+          "z": -3.2584999999999997
+        },
+        "angle": 0,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.5833999999999999,
+          "z": -3.2584999999999997
+        },
+        "tip": {
+          "x": -0.13060000000000005,
+          "z": -3.2584999999999997
+        },
+        "radius": 0.737
+      },
+      "open": {
+        "direction": -1,
+        "hingeU": 0.6063999999999999,
+        "hinge": {
+          "x": 0.6063999999999999,
+          "z": -3.2584999999999997
+        },
+        "angle": -1.5707963267948966,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.6063999999999999,
+          "z": -3.2815
+        },
+        "tip": {
+          "x": 0.6063999999999999,
+          "z": -3.9955
+        },
+        "radius": 0.737
+      },
+      "floorGapM": 0.007999952316284142,
+      "findings": [],
+      "metricStatus": "estimated"
+    },
+    {
+      "layout": "t3-a",
+      "bathroom": "mirrored",
+      "door": "bedroom-1-door",
+      "hingeEnd": "end",
+      "opensInto": "bedroom-1",
+      "closed": {
+        "direction": -1,
+        "hingeU": -0.26,
+        "hinge": {
+          "x": -0.8189,
+          "z": -0.26
+        },
+        "angle": 0,
+        "leafWidth": 0.714,
+        "start": {
+          "x": -0.8189,
+          "z": -0.28300000000000003
+        },
+        "tip": {
+          "x": -0.8189,
+          "z": -0.997
+        },
+        "radius": 0.737
+      },
+      "open": {
+        "direction": -1,
+        "hingeU": -0.26,
+        "hinge": {
+          "x": -0.8189,
+          "z": -0.26
+        },
+        "angle": 1.5707963267948966,
+        "leafWidth": 0.714,
+        "start": {
+          "x": -0.8419,
+          "z": -0.26
+        },
+        "tip": {
+          "x": -1.5558999999999998,
+          "z": -0.26000000000000006
+        },
+        "radius": 0.737
+      },
+      "floorGapM": 0.007999952316284142,
+      "findings": [],
+      "metricStatus": "estimated"
+    },
+    {
+      "layout": "t3-a",
+      "bathroom": "mirrored",
+      "door": "bedroom-2-door",
+      "hingeEnd": "end",
+      "opensInto": "bedroom-2",
+      "closed": {
+        "direction": -1,
+        "hingeU": -0.26,
+        "hinge": {
+          "x": 0.8189,
+          "z": -0.26
+        },
+        "angle": 0,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.8189,
+          "z": -0.28300000000000003
+        },
+        "tip": {
+          "x": 0.8189,
+          "z": -0.997
+        },
+        "radius": 0.737
+      },
+      "open": {
+        "direction": -1,
+        "hingeU": -0.26,
+        "hinge": {
+          "x": 0.8189,
+          "z": -0.26
+        },
+        "angle": -1.5707963267948966,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.8419,
+          "z": -0.26
+        },
+        "tip": {
+          "x": 1.5558999999999998,
+          "z": -0.26000000000000006
+        },
+        "radius": 0.737
+      },
+      "floorGapM": 0.007999952316284142,
+      "findings": [],
+      "metricStatus": "estimated"
+    },
+    {
+      "layout": "t3-a",
+      "bathroom": "mirrored",
+      "door": "bedroom-3-door",
+      "hingeEnd": "start",
+      "opensInto": "bedroom-3",
+      "closed": {
+        "direction": 1,
+        "hingeU": 0.26,
+        "hinge": {
+          "x": 0.8189,
+          "z": 0.26
+        },
+        "angle": 0,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.8189,
+          "z": 0.28300000000000003
+        },
+        "tip": {
+          "x": 0.8189,
+          "z": 0.997
+        },
+        "radius": 0.737
+      },
+      "open": {
+        "direction": 1,
+        "hingeU": 0.26,
+        "hinge": {
+          "x": 0.8189,
+          "z": 0.26
+        },
+        "angle": 1.5707963267948966,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.8419,
+          "z": 0.26
+        },
+        "tip": {
+          "x": 1.5558999999999998,
+          "z": 0.26000000000000006
+        },
+        "radius": 0.737
+      },
+      "floorGapM": 0.007999952316284142,
+      "findings": [],
+      "metricStatus": "estimated"
+    },
+    {
+      "layout": "t3-a",
+      "bathroom": "mirrored",
+      "door": "bath-door",
+      "hingeEnd": "start",
+      "opensInto": "bathroom-0",
+      "closed": {
+        "direction": 1,
+        "hingeU": -0.6063999999999999,
+        "hinge": {
+          "x": -0.6063999999999999,
+          "z": -3.2584999999999997
+        },
+        "angle": 0,
+        "leafWidth": 0.714,
+        "start": {
+          "x": -0.5833999999999999,
+          "z": -3.2584999999999997
+        },
+        "tip": {
+          "x": 0.13060000000000005,
+          "z": -3.2584999999999997
+        },
+        "radius": 0.737
+      },
+      "open": {
+        "direction": 1,
+        "hingeU": -0.6063999999999999,
+        "hinge": {
+          "x": -0.6063999999999999,
+          "z": -3.2584999999999997
+        },
+        "angle": 1.5707963267948966,
+        "leafWidth": 0.714,
+        "start": {
+          "x": -0.6063999999999999,
+          "z": -3.2815
+        },
+        "tip": {
+          "x": -0.6063999999999999,
+          "z": -3.9955
+        },
+        "radius": 0.737
+      },
+      "floorGapM": 0.007999952316284142,
+      "findings": [],
+      "metricStatus": "estimated"
+    },
+    {
+      "layout": "t3-b",
+      "bathroom": "standard",
+      "door": "bedroom-1-door",
+      "hingeEnd": "end",
+      "opensInto": "bedroom-1",
+      "closed": {
+        "direction": -1,
+        "hingeU": -2.2306,
+        "hinge": {
+          "x": 0.8189,
+          "z": -2.2306
+        },
+        "angle": 0,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.8189,
+          "z": -2.2536
+        },
+        "tip": {
+          "x": 0.8189,
+          "z": -2.9676
+        },
+        "radius": 0.737
+      },
+      "open": {
+        "direction": -1,
+        "hingeU": -2.2306,
+        "hinge": {
+          "x": 0.8189,
+          "z": -2.2306
+        },
+        "angle": -1.5707963267948966,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.8419,
+          "z": -2.2306
+        },
+        "tip": {
+          "x": 1.5558999999999998,
+          "z": -2.2306
+        },
+        "radius": 0.737
+      },
+      "floorGapM": 0.007999952316284142,
+      "findings": [],
+      "metricStatus": "estimated"
+    },
+    {
+      "layout": "t3-b",
+      "bathroom": "standard",
+      "door": "bedroom-2-door",
+      "hingeEnd": "end",
+      "opensInto": "bedroom-2",
+      "closed": {
+        "direction": -1,
+        "hingeU": 1.8404000000000003,
+        "hinge": {
+          "x": 0.8189,
+          "z": 1.8404000000000003
+        },
+        "angle": 0,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.8189,
+          "z": 1.8174000000000003
+        },
+        "tip": {
+          "x": 0.8189,
+          "z": 1.1034000000000002
+        },
+        "radius": 0.737
+      },
+      "open": {
+        "direction": -1,
+        "hingeU": 1.8404000000000003,
+        "hinge": {
+          "x": 0.8189,
+          "z": 1.8404000000000003
+        },
+        "angle": -1.5707963267948966,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.8419,
+          "z": 1.8404000000000003
+        },
+        "tip": {
+          "x": 1.5558999999999998,
+          "z": 1.8404000000000003
+        },
+        "radius": 0.737
+      },
+      "floorGapM": 0.007999952316284142,
+      "findings": [],
+      "metricStatus": "estimated"
+    },
+    {
+      "layout": "t3-b",
+      "bathroom": "standard",
+      "door": "bedroom-3-door",
+      "hingeEnd": "start",
+      "opensInto": "bedroom-3",
+      "closed": {
+        "direction": 1,
+        "hingeU": 2.3604000000000007,
+        "hinge": {
+          "x": 0.8189,
+          "z": 2.3604000000000007
+        },
+        "angle": 0,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.8189,
+          "z": 2.383400000000001
+        },
+        "tip": {
+          "x": 0.8189,
+          "z": 3.097400000000001
+        },
+        "radius": 0.737
+      },
+      "open": {
+        "direction": 1,
+        "hingeU": 2.3604000000000007,
+        "hinge": {
+          "x": 0.8189,
+          "z": 2.3604000000000007
+        },
+        "angle": 1.5707963267948966,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.8419,
+          "z": 2.3604000000000007
+        },
+        "tip": {
+          "x": 1.5558999999999998,
+          "z": 2.3604000000000007
+        },
+        "radius": 0.737
+      },
+      "floorGapM": 0.007999952316284142,
+      "findings": [],
+      "metricStatus": "estimated"
+    },
+    {
+      "layout": "t3-b",
+      "bathroom": "standard",
+      "door": "bath-door",
+      "hingeEnd": "end",
+      "opensInto": "bathroom-0",
+      "closed": {
+        "direction": -1,
+        "hingeU": 0.6063999999999999,
+        "hinge": {
+          "x": 0.6063999999999999,
+          "z": -3.2584999999999997
+        },
+        "angle": 0,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.5833999999999999,
+          "z": -3.2584999999999997
+        },
+        "tip": {
+          "x": -0.13060000000000005,
+          "z": -3.2584999999999997
+        },
+        "radius": 0.737
+      },
+      "open": {
+        "direction": -1,
+        "hingeU": 0.6063999999999999,
+        "hinge": {
+          "x": 0.6063999999999999,
+          "z": -3.2584999999999997
+        },
+        "angle": -1.5707963267948966,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.6063999999999999,
+          "z": -3.2815
+        },
+        "tip": {
+          "x": 0.6063999999999999,
+          "z": -3.9955
+        },
+        "radius": 0.737
+      },
+      "floorGapM": 0.007999952316284142,
+      "findings": [],
+      "metricStatus": "estimated"
+    },
+    {
+      "layout": "t3-b",
+      "bathroom": "mirrored",
+      "door": "bedroom-1-door",
+      "hingeEnd": "end",
+      "opensInto": "bedroom-1",
+      "closed": {
+        "direction": -1,
+        "hingeU": -2.2306,
+        "hinge": {
+          "x": 0.8189,
+          "z": -2.2306
+        },
+        "angle": 0,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.8189,
+          "z": -2.2536
+        },
+        "tip": {
+          "x": 0.8189,
+          "z": -2.9676
+        },
+        "radius": 0.737
+      },
+      "open": {
+        "direction": -1,
+        "hingeU": -2.2306,
+        "hinge": {
+          "x": 0.8189,
+          "z": -2.2306
+        },
+        "angle": -1.5707963267948966,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.8419,
+          "z": -2.2306
+        },
+        "tip": {
+          "x": 1.5558999999999998,
+          "z": -2.2306
+        },
+        "radius": 0.737
+      },
+      "floorGapM": 0.007999952316284142,
+      "findings": [],
+      "metricStatus": "estimated"
+    },
+    {
+      "layout": "t3-b",
+      "bathroom": "mirrored",
+      "door": "bedroom-2-door",
+      "hingeEnd": "end",
+      "opensInto": "bedroom-2",
+      "closed": {
+        "direction": -1,
+        "hingeU": 1.8404000000000003,
+        "hinge": {
+          "x": 0.8189,
+          "z": 1.8404000000000003
+        },
+        "angle": 0,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.8189,
+          "z": 1.8174000000000003
+        },
+        "tip": {
+          "x": 0.8189,
+          "z": 1.1034000000000002
+        },
+        "radius": 0.737
+      },
+      "open": {
+        "direction": -1,
+        "hingeU": 1.8404000000000003,
+        "hinge": {
+          "x": 0.8189,
+          "z": 1.8404000000000003
+        },
+        "angle": -1.5707963267948966,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.8419,
+          "z": 1.8404000000000003
+        },
+        "tip": {
+          "x": 1.5558999999999998,
+          "z": 1.8404000000000003
+        },
+        "radius": 0.737
+      },
+      "floorGapM": 0.007999952316284142,
+      "findings": [],
+      "metricStatus": "estimated"
+    },
+    {
+      "layout": "t3-b",
+      "bathroom": "mirrored",
+      "door": "bedroom-3-door",
+      "hingeEnd": "start",
+      "opensInto": "bedroom-3",
+      "closed": {
+        "direction": 1,
+        "hingeU": 2.3604000000000007,
+        "hinge": {
+          "x": 0.8189,
+          "z": 2.3604000000000007
+        },
+        "angle": 0,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.8189,
+          "z": 2.383400000000001
+        },
+        "tip": {
+          "x": 0.8189,
+          "z": 3.097400000000001
+        },
+        "radius": 0.737
+      },
+      "open": {
+        "direction": 1,
+        "hingeU": 2.3604000000000007,
+        "hinge": {
+          "x": 0.8189,
+          "z": 2.3604000000000007
+        },
+        "angle": 1.5707963267948966,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.8419,
+          "z": 2.3604000000000007
+        },
+        "tip": {
+          "x": 1.5558999999999998,
+          "z": 2.3604000000000007
+        },
+        "radius": 0.737
+      },
+      "floorGapM": 0.007999952316284142,
+      "findings": [],
+      "metricStatus": "estimated"
+    },
+    {
+      "layout": "t3-b",
+      "bathroom": "mirrored",
+      "door": "bath-door",
+      "hingeEnd": "start",
+      "opensInto": "bathroom-0",
+      "closed": {
+        "direction": 1,
+        "hingeU": -0.6063999999999999,
+        "hinge": {
+          "x": -0.6063999999999999,
+          "z": -3.2584999999999997
+        },
+        "angle": 0,
+        "leafWidth": 0.714,
+        "start": {
+          "x": -0.5833999999999999,
+          "z": -3.2584999999999997
+        },
+        "tip": {
+          "x": 0.13060000000000005,
+          "z": -3.2584999999999997
+        },
+        "radius": 0.737
+      },
+      "open": {
+        "direction": 1,
+        "hingeU": -0.6063999999999999,
+        "hinge": {
+          "x": -0.6063999999999999,
+          "z": -3.2584999999999997
+        },
+        "angle": 1.5707963267948966,
+        "leafWidth": 0.714,
+        "start": {
+          "x": -0.6063999999999999,
+          "z": -3.2815
+        },
+        "tip": {
+          "x": -0.6063999999999999,
+          "z": -3.9955
+        },
+        "radius": 0.737
+      },
+      "floorGapM": 0.007999952316284142,
+      "findings": [],
+      "metricStatus": "estimated"
+    },
+    {
+      "layout": "t4-a",
+      "bathroom": "standard",
+      "door": "bedroom-1-door",
+      "hingeEnd": "end",
+      "opensInto": "bedroom-1",
+      "closed": {
+        "direction": -1,
+        "hingeU": -0.26,
+        "hinge": {
+          "x": -0.8189,
+          "z": -0.26
+        },
+        "angle": 0,
+        "leafWidth": 0.714,
+        "start": {
+          "x": -0.8189,
+          "z": -0.28300000000000003
+        },
+        "tip": {
+          "x": -0.8189,
+          "z": -0.997
+        },
+        "radius": 0.737
+      },
+      "open": {
+        "direction": -1,
+        "hingeU": -0.26,
+        "hinge": {
+          "x": -0.8189,
+          "z": -0.26
+        },
+        "angle": 1.5707963267948966,
+        "leafWidth": 0.714,
+        "start": {
+          "x": -0.8419,
+          "z": -0.26
+        },
+        "tip": {
+          "x": -1.5558999999999998,
+          "z": -0.26000000000000006
+        },
+        "radius": 0.737
+      },
+      "floorGapM": 0.007999952316284142,
+      "findings": [],
+      "metricStatus": "estimated"
+    },
+    {
+      "layout": "t4-a",
+      "bathroom": "standard",
+      "door": "bedroom-2-door",
+      "hingeEnd": "end",
+      "opensInto": "bedroom-2",
+      "closed": {
+        "direction": -1,
+        "hingeU": -0.26,
+        "hinge": {
+          "x": 0.8189,
+          "z": -0.26
+        },
+        "angle": 0,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.8189,
+          "z": -0.28300000000000003
+        },
+        "tip": {
+          "x": 0.8189,
+          "z": -0.997
+        },
+        "radius": 0.737
+      },
+      "open": {
+        "direction": -1,
+        "hingeU": -0.26,
+        "hinge": {
+          "x": 0.8189,
+          "z": -0.26
+        },
+        "angle": -1.5707963267948966,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.8419,
+          "z": -0.26
+        },
+        "tip": {
+          "x": 1.5558999999999998,
+          "z": -0.26000000000000006
+        },
+        "radius": 0.737
+      },
+      "floorGapM": 0.007999952316284142,
+      "findings": [],
+      "metricStatus": "estimated"
+    },
+    {
+      "layout": "t4-a",
+      "bathroom": "standard",
+      "door": "bedroom-3-door",
+      "hingeEnd": "start",
+      "opensInto": "bedroom-3",
+      "closed": {
+        "direction": 1,
+        "hingeU": 0.26,
+        "hinge": {
+          "x": -0.8189,
+          "z": 0.26
+        },
+        "angle": 0,
+        "leafWidth": 0.714,
+        "start": {
+          "x": -0.8189,
+          "z": 0.28300000000000003
+        },
+        "tip": {
+          "x": -0.8189,
+          "z": 0.997
+        },
+        "radius": 0.737
+      },
+      "open": {
+        "direction": 1,
+        "hingeU": 0.26,
+        "hinge": {
+          "x": -0.8189,
+          "z": 0.26
+        },
+        "angle": -1.5707963267948966,
+        "leafWidth": 0.714,
+        "start": {
+          "x": -0.8419,
+          "z": 0.26
+        },
+        "tip": {
+          "x": -1.5558999999999998,
+          "z": 0.26000000000000006
+        },
+        "radius": 0.737
+      },
+      "floorGapM": 0.007999952316284142,
+      "findings": [],
+      "metricStatus": "estimated"
+    },
+    {
+      "layout": "t4-a",
+      "bathroom": "standard",
+      "door": "bedroom-4-door",
+      "hingeEnd": "start",
+      "opensInto": "bedroom-4",
+      "closed": {
+        "direction": 1,
+        "hingeU": 0.26,
+        "hinge": {
+          "x": 0.8189,
+          "z": 0.26
+        },
+        "angle": 0,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.8189,
+          "z": 0.28300000000000003
+        },
+        "tip": {
+          "x": 0.8189,
+          "z": 0.997
+        },
+        "radius": 0.737
+      },
+      "open": {
+        "direction": 1,
+        "hingeU": 0.26,
+        "hinge": {
+          "x": 0.8189,
+          "z": 0.26
+        },
+        "angle": 1.5707963267948966,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.8419,
+          "z": 0.26
+        },
+        "tip": {
+          "x": 1.5558999999999998,
+          "z": 0.26000000000000006
+        },
+        "radius": 0.737
+      },
+      "floorGapM": 0.007999952316284142,
+      "findings": [],
+      "metricStatus": "estimated"
+    },
+    {
+      "layout": "t4-a",
+      "bathroom": "standard",
+      "door": "bath-door",
+      "hingeEnd": "end",
+      "opensInto": "bathroom-0",
+      "closed": {
+        "direction": -1,
+        "hingeU": 0.6063999999999999,
+        "hinge": {
+          "x": 0.6063999999999999,
+          "z": -3.2584999999999997
+        },
+        "angle": 0,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.5833999999999999,
+          "z": -3.2584999999999997
+        },
+        "tip": {
+          "x": -0.13060000000000005,
+          "z": -3.2584999999999997
+        },
+        "radius": 0.737
+      },
+      "open": {
+        "direction": -1,
+        "hingeU": 0.6063999999999999,
+        "hinge": {
+          "x": 0.6063999999999999,
+          "z": -3.2584999999999997
+        },
+        "angle": -1.5707963267948966,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.6063999999999999,
+          "z": -3.2815
+        },
+        "tip": {
+          "x": 0.6063999999999999,
+          "z": -3.9955
+        },
+        "radius": 0.737
+      },
+      "floorGapM": 0.007999952316284142,
+      "findings": [],
+      "metricStatus": "estimated"
+    },
+    {
+      "layout": "t4-a",
+      "bathroom": "mirrored",
+      "door": "bedroom-1-door",
+      "hingeEnd": "end",
+      "opensInto": "bedroom-1",
+      "closed": {
+        "direction": -1,
+        "hingeU": -0.26,
+        "hinge": {
+          "x": -0.8189,
+          "z": -0.26
+        },
+        "angle": 0,
+        "leafWidth": 0.714,
+        "start": {
+          "x": -0.8189,
+          "z": -0.28300000000000003
+        },
+        "tip": {
+          "x": -0.8189,
+          "z": -0.997
+        },
+        "radius": 0.737
+      },
+      "open": {
+        "direction": -1,
+        "hingeU": -0.26,
+        "hinge": {
+          "x": -0.8189,
+          "z": -0.26
+        },
+        "angle": 1.5707963267948966,
+        "leafWidth": 0.714,
+        "start": {
+          "x": -0.8419,
+          "z": -0.26
+        },
+        "tip": {
+          "x": -1.5558999999999998,
+          "z": -0.26000000000000006
+        },
+        "radius": 0.737
+      },
+      "floorGapM": 0.007999952316284142,
+      "findings": [],
+      "metricStatus": "estimated"
+    },
+    {
+      "layout": "t4-a",
+      "bathroom": "mirrored",
+      "door": "bedroom-2-door",
+      "hingeEnd": "end",
+      "opensInto": "bedroom-2",
+      "closed": {
+        "direction": -1,
+        "hingeU": -0.26,
+        "hinge": {
+          "x": 0.8189,
+          "z": -0.26
+        },
+        "angle": 0,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.8189,
+          "z": -0.28300000000000003
+        },
+        "tip": {
+          "x": 0.8189,
+          "z": -0.997
+        },
+        "radius": 0.737
+      },
+      "open": {
+        "direction": -1,
+        "hingeU": -0.26,
+        "hinge": {
+          "x": 0.8189,
+          "z": -0.26
+        },
+        "angle": -1.5707963267948966,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.8419,
+          "z": -0.26
+        },
+        "tip": {
+          "x": 1.5558999999999998,
+          "z": -0.26000000000000006
+        },
+        "radius": 0.737
+      },
+      "floorGapM": 0.007999952316284142,
+      "findings": [],
+      "metricStatus": "estimated"
+    },
+    {
+      "layout": "t4-a",
+      "bathroom": "mirrored",
+      "door": "bedroom-3-door",
+      "hingeEnd": "start",
+      "opensInto": "bedroom-3",
+      "closed": {
+        "direction": 1,
+        "hingeU": 0.26,
+        "hinge": {
+          "x": -0.8189,
+          "z": 0.26
+        },
+        "angle": 0,
+        "leafWidth": 0.714,
+        "start": {
+          "x": -0.8189,
+          "z": 0.28300000000000003
+        },
+        "tip": {
+          "x": -0.8189,
+          "z": 0.997
+        },
+        "radius": 0.737
+      },
+      "open": {
+        "direction": 1,
+        "hingeU": 0.26,
+        "hinge": {
+          "x": -0.8189,
+          "z": 0.26
+        },
+        "angle": -1.5707963267948966,
+        "leafWidth": 0.714,
+        "start": {
+          "x": -0.8419,
+          "z": 0.26
+        },
+        "tip": {
+          "x": -1.5558999999999998,
+          "z": 0.26000000000000006
+        },
+        "radius": 0.737
+      },
+      "floorGapM": 0.007999952316284142,
+      "findings": [],
+      "metricStatus": "estimated"
+    },
+    {
+      "layout": "t4-a",
+      "bathroom": "mirrored",
+      "door": "bedroom-4-door",
+      "hingeEnd": "start",
+      "opensInto": "bedroom-4",
+      "closed": {
+        "direction": 1,
+        "hingeU": 0.26,
+        "hinge": {
+          "x": 0.8189,
+          "z": 0.26
+        },
+        "angle": 0,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.8189,
+          "z": 0.28300000000000003
+        },
+        "tip": {
+          "x": 0.8189,
+          "z": 0.997
+        },
+        "radius": 0.737
+      },
+      "open": {
+        "direction": 1,
+        "hingeU": 0.26,
+        "hinge": {
+          "x": 0.8189,
+          "z": 0.26
+        },
+        "angle": 1.5707963267948966,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.8419,
+          "z": 0.26
+        },
+        "tip": {
+          "x": 1.5558999999999998,
+          "z": 0.26000000000000006
+        },
+        "radius": 0.737
+      },
+      "floorGapM": 0.007999952316284142,
+      "findings": [],
+      "metricStatus": "estimated"
+    },
+    {
+      "layout": "t4-a",
+      "bathroom": "mirrored",
+      "door": "bath-door",
+      "hingeEnd": "start",
+      "opensInto": "bathroom-0",
+      "closed": {
+        "direction": 1,
+        "hingeU": -0.6063999999999999,
+        "hinge": {
+          "x": -0.6063999999999999,
+          "z": -3.2584999999999997
+        },
+        "angle": 0,
+        "leafWidth": 0.714,
+        "start": {
+          "x": -0.5833999999999999,
+          "z": -3.2584999999999997
+        },
+        "tip": {
+          "x": 0.13060000000000005,
+          "z": -3.2584999999999997
+        },
+        "radius": 0.737
+      },
+      "open": {
+        "direction": 1,
+        "hingeU": -0.6063999999999999,
+        "hinge": {
+          "x": -0.6063999999999999,
+          "z": -3.2584999999999997
+        },
+        "angle": 1.5707963267948966,
+        "leafWidth": 0.714,
+        "start": {
+          "x": -0.6063999999999999,
+          "z": -3.2815
+        },
+        "tip": {
+          "x": -0.6063999999999999,
+          "z": -3.9955
+        },
+        "radius": 0.737
+      },
+      "floorGapM": 0.007999952316284142,
+      "findings": [],
+      "metricStatus": "estimated"
+    },
+    {
+      "layout": "t4-b",
+      "bathroom": "standard",
+      "door": "bedroom-1-door",
+      "hingeEnd": "end",
+      "opensInto": "bedroom-1",
+      "closed": {
+        "direction": -1,
+        "hingeU": -2.2306,
+        "hinge": {
+          "x": -0.8189,
+          "z": -2.2306
+        },
+        "angle": 0,
+        "leafWidth": 0.714,
+        "start": {
+          "x": -0.8189,
+          "z": -2.2536
+        },
+        "tip": {
+          "x": -0.8189,
+          "z": -2.9676
+        },
+        "radius": 0.737
+      },
+      "open": {
+        "direction": -1,
+        "hingeU": -2.2306,
+        "hinge": {
+          "x": -0.8189,
+          "z": -2.2306
+        },
+        "angle": 1.5707963267948966,
+        "leafWidth": 0.714,
+        "start": {
+          "x": -0.8419,
+          "z": -2.2306
+        },
+        "tip": {
+          "x": -1.5558999999999998,
+          "z": -2.2306
+        },
+        "radius": 0.737
+      },
+      "floorGapM": 0.007999952316284142,
+      "findings": [],
+      "metricStatus": "estimated"
+    },
+    {
+      "layout": "t4-b",
+      "bathroom": "standard",
+      "door": "bedroom-2-door",
+      "hingeEnd": "end",
+      "opensInto": "bedroom-2",
+      "closed": {
+        "direction": -1,
+        "hingeU": -2.2306,
+        "hinge": {
+          "x": 0.8189,
+          "z": -2.2306
+        },
+        "angle": 0,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.8189,
+          "z": -2.2536
+        },
+        "tip": {
+          "x": 0.8189,
+          "z": -2.9676
+        },
+        "radius": 0.737
+      },
+      "open": {
+        "direction": -1,
+        "hingeU": -2.2306,
+        "hinge": {
+          "x": 0.8189,
+          "z": -2.2306
+        },
+        "angle": -1.5707963267948966,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.8419,
+          "z": -2.2306
+        },
+        "tip": {
+          "x": 1.5558999999999998,
+          "z": -2.2306
+        },
+        "radius": 0.737
+      },
+      "floorGapM": 0.007999952316284142,
+      "findings": [],
+      "metricStatus": "estimated"
+    },
+    {
+      "layout": "t4-b",
+      "bathroom": "standard",
+      "door": "bedroom-3-door",
+      "hingeEnd": "end",
+      "opensInto": "bedroom-3",
+      "closed": {
+        "direction": -1,
+        "hingeU": 1.8404000000000003,
+        "hinge": {
+          "x": 0.8189,
+          "z": 1.8404000000000003
+        },
+        "angle": 0,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.8189,
+          "z": 1.8174000000000003
+        },
+        "tip": {
+          "x": 0.8189,
+          "z": 1.1034000000000002
+        },
+        "radius": 0.737
+      },
+      "open": {
+        "direction": -1,
+        "hingeU": 1.8404000000000003,
+        "hinge": {
+          "x": 0.8189,
+          "z": 1.8404000000000003
+        },
+        "angle": -1.5707963267948966,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.8419,
+          "z": 1.8404000000000003
+        },
+        "tip": {
+          "x": 1.5558999999999998,
+          "z": 1.8404000000000003
+        },
+        "radius": 0.737
+      },
+      "floorGapM": 0.007999952316284142,
+      "findings": [],
+      "metricStatus": "estimated"
+    },
+    {
+      "layout": "t4-b",
+      "bathroom": "standard",
+      "door": "bedroom-4-door",
+      "hingeEnd": "start",
+      "opensInto": "bedroom-4",
+      "closed": {
+        "direction": 1,
+        "hingeU": 2.3604000000000007,
+        "hinge": {
+          "x": 0.8189,
+          "z": 2.3604000000000007
+        },
+        "angle": 0,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.8189,
+          "z": 2.383400000000001
+        },
+        "tip": {
+          "x": 0.8189,
+          "z": 3.097400000000001
+        },
+        "radius": 0.737
+      },
+      "open": {
+        "direction": 1,
+        "hingeU": 2.3604000000000007,
+        "hinge": {
+          "x": 0.8189,
+          "z": 2.3604000000000007
+        },
+        "angle": 1.5707963267948966,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.8419,
+          "z": 2.3604000000000007
+        },
+        "tip": {
+          "x": 1.5558999999999998,
+          "z": 2.3604000000000007
+        },
+        "radius": 0.737
+      },
+      "floorGapM": 0.007999952316284142,
+      "findings": [],
+      "metricStatus": "estimated"
+    },
+    {
+      "layout": "t4-b",
+      "bathroom": "standard",
+      "door": "bath-door",
+      "hingeEnd": "end",
+      "opensInto": "bathroom-0",
+      "closed": {
+        "direction": -1,
+        "hingeU": 0.6063999999999999,
+        "hinge": {
+          "x": 0.6063999999999999,
+          "z": -3.2584999999999997
+        },
+        "angle": 0,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.5833999999999999,
+          "z": -3.2584999999999997
+        },
+        "tip": {
+          "x": -0.13060000000000005,
+          "z": -3.2584999999999997
+        },
+        "radius": 0.737
+      },
+      "open": {
+        "direction": -1,
+        "hingeU": 0.6063999999999999,
+        "hinge": {
+          "x": 0.6063999999999999,
+          "z": -3.2584999999999997
+        },
+        "angle": -1.5707963267948966,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.6063999999999999,
+          "z": -3.2815
+        },
+        "tip": {
+          "x": 0.6063999999999999,
+          "z": -3.9955
+        },
+        "radius": 0.737
+      },
+      "floorGapM": 0.007999952316284142,
+      "findings": [],
+      "metricStatus": "estimated"
+    },
+    {
+      "layout": "t4-b",
+      "bathroom": "mirrored",
+      "door": "bedroom-1-door",
+      "hingeEnd": "end",
+      "opensInto": "bedroom-1",
+      "closed": {
+        "direction": -1,
+        "hingeU": -2.2306,
+        "hinge": {
+          "x": -0.8189,
+          "z": -2.2306
+        },
+        "angle": 0,
+        "leafWidth": 0.714,
+        "start": {
+          "x": -0.8189,
+          "z": -2.2536
+        },
+        "tip": {
+          "x": -0.8189,
+          "z": -2.9676
+        },
+        "radius": 0.737
+      },
+      "open": {
+        "direction": -1,
+        "hingeU": -2.2306,
+        "hinge": {
+          "x": -0.8189,
+          "z": -2.2306
+        },
+        "angle": 1.5707963267948966,
+        "leafWidth": 0.714,
+        "start": {
+          "x": -0.8419,
+          "z": -2.2306
+        },
+        "tip": {
+          "x": -1.5558999999999998,
+          "z": -2.2306
+        },
+        "radius": 0.737
+      },
+      "floorGapM": 0.007999952316284142,
+      "findings": [],
+      "metricStatus": "estimated"
+    },
+    {
+      "layout": "t4-b",
+      "bathroom": "mirrored",
+      "door": "bedroom-2-door",
+      "hingeEnd": "end",
+      "opensInto": "bedroom-2",
+      "closed": {
+        "direction": -1,
+        "hingeU": -2.2306,
+        "hinge": {
+          "x": 0.8189,
+          "z": -2.2306
+        },
+        "angle": 0,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.8189,
+          "z": -2.2536
+        },
+        "tip": {
+          "x": 0.8189,
+          "z": -2.9676
+        },
+        "radius": 0.737
+      },
+      "open": {
+        "direction": -1,
+        "hingeU": -2.2306,
+        "hinge": {
+          "x": 0.8189,
+          "z": -2.2306
+        },
+        "angle": -1.5707963267948966,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.8419,
+          "z": -2.2306
+        },
+        "tip": {
+          "x": 1.5558999999999998,
+          "z": -2.2306
+        },
+        "radius": 0.737
+      },
+      "floorGapM": 0.007999952316284142,
+      "findings": [],
+      "metricStatus": "estimated"
+    },
+    {
+      "layout": "t4-b",
+      "bathroom": "mirrored",
+      "door": "bedroom-3-door",
+      "hingeEnd": "end",
+      "opensInto": "bedroom-3",
+      "closed": {
+        "direction": -1,
+        "hingeU": 1.8404000000000003,
+        "hinge": {
+          "x": 0.8189,
+          "z": 1.8404000000000003
+        },
+        "angle": 0,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.8189,
+          "z": 1.8174000000000003
+        },
+        "tip": {
+          "x": 0.8189,
+          "z": 1.1034000000000002
+        },
+        "radius": 0.737
+      },
+      "open": {
+        "direction": -1,
+        "hingeU": 1.8404000000000003,
+        "hinge": {
+          "x": 0.8189,
+          "z": 1.8404000000000003
+        },
+        "angle": -1.5707963267948966,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.8419,
+          "z": 1.8404000000000003
+        },
+        "tip": {
+          "x": 1.5558999999999998,
+          "z": 1.8404000000000003
+        },
+        "radius": 0.737
+      },
+      "floorGapM": 0.007999952316284142,
+      "findings": [],
+      "metricStatus": "estimated"
+    },
+    {
+      "layout": "t4-b",
+      "bathroom": "mirrored",
+      "door": "bedroom-4-door",
+      "hingeEnd": "start",
+      "opensInto": "bedroom-4",
+      "closed": {
+        "direction": 1,
+        "hingeU": 2.3604000000000007,
+        "hinge": {
+          "x": 0.8189,
+          "z": 2.3604000000000007
+        },
+        "angle": 0,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.8189,
+          "z": 2.383400000000001
+        },
+        "tip": {
+          "x": 0.8189,
+          "z": 3.097400000000001
+        },
+        "radius": 0.737
+      },
+      "open": {
+        "direction": 1,
+        "hingeU": 2.3604000000000007,
+        "hinge": {
+          "x": 0.8189,
+          "z": 2.3604000000000007
+        },
+        "angle": 1.5707963267948966,
+        "leafWidth": 0.714,
+        "start": {
+          "x": 0.8419,
+          "z": 2.3604000000000007
+        },
+        "tip": {
+          "x": 1.5558999999999998,
+          "z": 2.3604000000000007
+        },
+        "radius": 0.737
+      },
+      "floorGapM": 0.007999952316284142,
+      "findings": [],
+      "metricStatus": "estimated"
+    },
+    {
+      "layout": "t4-b",
+      "bathroom": "mirrored",
+      "door": "bath-door",
+      "hingeEnd": "start",
+      "opensInto": "bathroom-0",
+      "closed": {
+        "direction": 1,
+        "hingeU": -0.6063999999999999,
+        "hinge": {
+          "x": -0.6063999999999999,
+          "z": -3.2584999999999997
+        },
+        "angle": 0,
+        "leafWidth": 0.714,
+        "start": {
+          "x": -0.5833999999999999,
+          "z": -3.2584999999999997
+        },
+        "tip": {
+          "x": 0.13060000000000005,
+          "z": -3.2584999999999997
+        },
+        "radius": 0.737
+      },
+      "open": {
+        "direction": 1,
+        "hingeU": -0.6063999999999999,
+        "hinge": {
+          "x": -0.6063999999999999,
+          "z": -3.2584999999999997
+        },
+        "angle": 1.5707963267948966,
+        "leafWidth": 0.714,
+        "start": {
+          "x": -0.6063999999999999,
+          "z": -3.2815
+        },
+        "tip": {
+          "x": -0.6063999999999999,
+          "z": -3.9955
+        },
+        "radius": 0.737
+      },
+      "floorGapM": 0.007999952316284142,
+      "findings": [],
+      "metricStatus": "estimated"
+    }
+  ]
+}

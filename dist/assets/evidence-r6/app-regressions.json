@@ -1,0 +1,268 @@
+{
+  "status": "PASS_ALL_SIX_FINDINGS_FIXED",
+  "generatedAtUTC": "2026-09-10T18:55:58.634934+00:00",
+  "scope": {
+    "url": "local-preview",
+    "browser": "Chrome headless via Playwright on macOS",
+    "viewport": [
+      1440,
+      1000
+    ],
+    "siteReadOnly": true,
+    "modulesReviewed": [
+      "app.js",
+      "configuration.js",
+      "material-library.js",
+      "stage.js",
+      "video-library.js",
+      "index.html",
+      "style.css",
+      "studio-r3.css",
+      "studio-r4.css",
+      "studio-r5.css"
+    ],
+    "notes": "Hypothesis-driven R6 audit. No R5 reference/layout matrix repeated; no publication, Site tools, checkout edits or subagents."
+  },
+  "findings": [
+    {
+      "id": "R6-A1",
+      "severity": "P2",
+      "status": "FIXED_RETEST_PASS",
+      "title": "Textura abandonada bloqueava exportação de uma escolha já carregada",
+      "repro": [
+        "Suspender resposta do recorte KX7005.",
+        "Seleccionar KX7005 e depois KX7007, esperando que a imagem activa esteja pronta.",
+        "Guardar PNG. Antes, aguardava a resposta abandonada; depois, o PNG sai imediatamente."
+      ],
+      "cause": "ready() aguardava contador global pending, mesmo sem referências activas para a textura antiga.",
+      "fix": "Contar loading com references>0 para ready/stats e limitar retry às leases activas.",
+      "source": "material-library.js:59",
+      "evidence": [
+        "hypotheses.json",
+        "hypotheses-fixed.json"
+      ]
+    },
+    {
+      "id": "R6-A2",
+      "severity": "P2",
+      "status": "FIXED_RETEST_PASS",
+      "title": "Cozinha e banho lançavam erros no fallback sem WebGL",
+      "repro": [
+        "Impedir criação de contextos WebGL antes do carregamento.",
+        "Abrir Cozinha, escolher12, abrir Banho e escolher16."
+      ],
+      "cause": "focusRoom chamava house.setDetail sem house/stage válidos.",
+      "fix": "Guardas stage/house/contextLost; manter escolhas e gravação disponíveis.",
+      "source": "app.js:63",
+      "evidence": [
+        "hypotheses.json",
+        "hypotheses-fixed.json",
+        "fallback-choices.png"
+      ]
+    },
+    {
+      "id": "R6-A3",
+      "severity": "P2",
+      "status": "FIXED_RETEST_PASS",
+      "title": "Controlos recriados perdiam o foco de teclado",
+      "repro": [
+        "Focar família e seleccionar outra família.",
+        "Focar telhado e premir Espaço.",
+        "Escolher revestimento UV, focar Usar parede da fotografia e premir Enter."
+      ],
+      "cause": "renderPanel substituía DOM e só restaurava alguns data attributes, sem IDs ou bathSource.",
+      "fix": "Restaurar foco por ID estável, ou dados bathSource/colour.",
+      "source": "app.js:65",
+      "evidence": [
+        "hypotheses.json",
+        "secondary.json",
+        "hypotheses-fixed.json",
+        "secondary-fixed.json"
+      ]
+    },
+    {
+      "id": "R6-A4",
+      "severity": "P2",
+      "status": "FIXED_RETEST_PASS",
+      "title": "Ligação de salto apontava para configurador oculto",
+      "repro": [
+        "Abrir Filmes.",
+        "Focar Ir para o configurador e premir Enter."
+      ],
+      "cause": "href #studio não activava a página escondida nem deslocava o foco.",
+      "fix": "Activar página studio e focar viewport.",
+      "source": "app.js:130",
+      "evidence": [
+        "secondary.json",
+        "secondary-fixed.json",
+        "skip-link-films.png"
+      ]
+    },
+    {
+      "id": "R6-A5",
+      "severity": "P2",
+      "status": "FIXED_RETEST_PASS",
+      "title": "Diálogos sem nome na árvore de acessibilidade",
+      "repro": [
+        "Abrir resumo, fotografia e comparador.",
+        "Ler ariaSnapshot: antes dialog sem nome; depois cada diálogo tem o título correcto."
+      ],
+      "cause": "Faltava ligação entre dialog e o seu título.",
+      "fix": "aria-labelledby apontado a títulos únicos.",
+      "source": "index.html:22",
+      "evidence": [
+        "secondary.json",
+        "secondary-fixed.json"
+      ]
+    },
+    {
+      "id": "R6-A6",
+      "severity": "P2",
+      "status": "FIXED_RETEST_PASS",
+      "title": "Comparação de fachada bloqueada por falha de textura do piso",
+      "repro": [
+        "Responder503 apenas ao recorte do piso KX7005.",
+        "Aplicar esse piso.",
+        "Abrir Exterior e comparar Branco Glacial."
+      ],
+      "cause": "compareMaterial usa ready/failures globais de todas as leases activas: a falha do piso invalida uma amostra de fachada pronta.",
+      "fix": "lib.ready(lease) aguarda e valida apenas a lease do comparador; chamadas globais continuam a proteger o snapshot.",
+      "source": "app.js:98",
+      "evidence": [
+        "comparator-isolation.json",
+        "comparator-unrelated-failure.png",
+        "comparator-fixed.json",
+        "comparator-fixed-failed-503.png",
+        "comparator-fixed-pending-timeout.png"
+      ]
+    }
+  ],
+  "passingChecks": {
+    "normalStorageContextRecovery": true,
+    "idle": {
+      "windowMs": 1500,
+      "framesBefore": 3,
+      "framesAfter": 3,
+      "memoryBefore": {
+        "geometries": 223,
+        "textures": 6
+      },
+      "memoryAfter": {
+        "geometries": 223,
+        "textures": 6
+      }
+    },
+    "obsoleteRequestCleanup": {
+      "pending": 0,
+      "backgroundPending": 0,
+      "failures": [],
+      "cachedTextures": 5,
+      "leases": 3
+    },
+    "renderedActiveFloorImage": {
+      "width": 440,
+      "height": 233
+    },
+    "comparatorIsolation": [
+      {
+        "mode": "failed-503",
+        "renderedWithinMs": 38,
+        "fullSceneTimeout": null,
+        "leasesBefore": 3,
+        "leasesDuring": 4,
+        "leasesAfterClose": 3,
+        "pendingSettled": 0
+      },
+      {
+        "mode": "pending-timeout",
+        "renderedWithinMs": 46,
+        "fullSceneTimeout": "Tempo de carregamento dos materiais excedido.",
+        "leasesBefore": 3,
+        "leasesDuring": 4,
+        "leasesAfterClose": 3,
+        "pendingSettled": 0
+      }
+    ]
+  },
+  "sourceSHA256": {
+    "material-library.js": "a6959b0c38145c3087330e16262dc23dfcc4e2830bf52155f3bc773b9446ebc4",
+    "photo-planks.js": "72d1b085f1694244c2f414f63aa130f4fe6d64e005a02d2560763044131c6d45",
+    "photo-wall-data.js": "fdddccc5a95ad206b38a26db55c40a84aa1a18ea3df0a63260f221d7b378c1b4",
+    "index.html": "7163c608ebd39ad2f70884444dbdc63c1df68739d1b93e2768c3da8f90efbd0f",
+    "reference-videos.js": "52790dfc440060b0658eef11b464dbdcd1efa0a0565f7949687af6bbe463565c",
+    "video-library.js": "d847ea0e56293b0a65cd4ca19d851ab7bee20179c3ef55f354484a060eba5c51",
+    "photo-plank-data.js": "0c48780479b6849e88bfe56e7d28fdaa1f3feee908784bb83ddfaaf525c74b17",
+    "configuration.js": "ca78e1fdaddf504f6be43c8b4ec3c45ec92d07bdea1f35094ca967408316fdf1",
+    "interior-detail.js": "3c58dcac9ce363d05c37c1495ec8b5b667595aba607fd0900afd779bfb7a4ea2",
+    "stage.js": "f267d8ced81973011e8f55f28a75458bbe4b4ca77597149e17120ffede83bef4",
+    "plan-svg.js": "058d4ebc43ed2895d0e9d383e0f51cc3d819c466065b607c1c4e42e9faa86328",
+    "panel-joints.js": "d1a21680e6e51c1462ce0799a3959e3472b20dd4aa33ed9f56b268baca7e38e0",
+    "data.js": "51c44e7592d2cdd773eab4e9a66be1ebf739b408eb4ace55ffdfff397c248f1d",
+    "style.css": "50612c879180893524cc05006759fff3fbfee7675d2f0e9beabfdb54b1b7e5e4",
+    "interior-references.js": "41cdd74bdd7d79740372ae090aa38278b62eadfa05261a4952b2295f0ec369ac",
+    "model.js": "476260c030edfa18a476f82adc6b80008ca3ae7915e1dd3fefde0e117eccb1e9",
+    "studio-r3.css": "9d2cae6d608e3a66b6b297a11c37e4894feeab0d182452ab0eae2b2a876bcc3a",
+    "material-data.js": "e55563fc9cb5f75514eb545f6e9a4e056847b3579556fd5a614da88bc381f011",
+    "app.js": "71d63106175f5678ca1d79dc6b0c88d55f0308c0c211fd980f34691f156c367f",
+    "studio-r4.css": "5525e424b28fa46135cb6f1fb0621e694538863c433c79b78c83c828113a6760",
+    "studio-r5.css": "e7beab54f576a66d4c04e7df0dae43aada38056a263917ba537a224740598860",
+    "specification.js": "7f674db3d949536d2e4253fc7cca5af5be7410e0292bd53c95ef0d6f69ed69af"
+  },
+  "console": "Normal retests have no console/page errors. Deliberate WebGL denial emits two expected initialization diagnostics; texture503 case emits injected network errors.",
+  "limitations": [
+    "No physical mobile device, screen-reader application or broad axe audit in this subtask. Accessible names verified through browser ariaSnapshot.",
+    "No FPS claim: only idle frame counter and renderer memory measured.",
+    "Storage/JSON/export code reviewed; new runtime tests focus on obsolete-texture PNG export and normal-storage context recovery.",
+    "Resource observation is bounded: final active leases3, cached textures5 within limit18 and pending/backgroundPending0 after obsolete response completes."
+  ],
+  "sourceSHA256LatestComparatorRetest": {
+    "material-library.js": "5ca8156a343927e75a3abada6db8443f3d76927c47a29034653aa3ec338e3bcd",
+    "photo-planks.js": "72d1b085f1694244c2f414f63aa130f4fe6d64e005a02d2560763044131c6d45",
+    "photo-wall-data.js": "fdddccc5a95ad206b38a26db55c40a84aa1a18ea3df0a63260f221d7b378c1b4",
+    "index.html": "7163c608ebd39ad2f70884444dbdc63c1df68739d1b93e2768c3da8f90efbd0f",
+    "reference-videos.js": "52790dfc440060b0658eef11b464dbdcd1efa0a0565f7949687af6bbe463565c",
+    "video-library.js": "d847ea0e56293b0a65cd4ca19d851ab7bee20179c3ef55f354484a060eba5c51",
+    "photo-plank-data.js": "0c48780479b6849e88bfe56e7d28fdaa1f3feee908784bb83ddfaaf525c74b17",
+    "configuration.js": "ca78e1fdaddf504f6be43c8b4ec3c45ec92d07bdea1f35094ca967408316fdf1",
+    "interior-detail.js": "f8d5cfc30ed8cd344afbc04bbcd9159998fd3926d6c55b0af6c2fb53d2249690",
+    "stage.js": "f267d8ced81973011e8f55f28a75458bbe4b4ca77597149e17120ffede83bef4",
+    "plan-svg.js": "e14dba25221447474d3eafce9b806d68937329b33bd417b79cec5906ba9b994f",
+    "panel-joints.js": "d1a21680e6e51c1462ce0799a3959e3472b20dd4aa33ed9f56b268baca7e38e0",
+    "data.js": "51c44e7592d2cdd773eab4e9a66be1ebf739b408eb4ace55ffdfff397c248f1d",
+    "style.css": "50612c879180893524cc05006759fff3fbfee7675d2f0e9beabfdb54b1b7e5e4",
+    "interior-references.js": "41cdd74bdd7d79740372ae090aa38278b62eadfa05261a4952b2295f0ec369ac",
+    "model.js": "6f85d22f66f20e305132a15f888c09c12d3412f84a59357eb85cffb397f745cf",
+    "studio-r3.css": "9d2cae6d608e3a66b6b297a11c37e4894feeab0d182452ab0eae2b2a876bcc3a",
+    "material-data.js": "e55563fc9cb5f75514eb545f6e9a4e056847b3579556fd5a614da88bc381f011",
+    "app.js": "406d5692b5085fc34316f1d254ce0f83611131fdef32f4344c1d7bbac55ff93b",
+    "studio-r4.css": "5525e424b28fa46135cb6f1fb0621e694538863c433c79b78c83c828113a6760",
+    "studio-r5.css": "e7beab54f576a66d4c04e7df0dae43aada38056a263917ba537a224740598860",
+    "specification.js": "c6cb35fae29108ff9bb48686729420675997649dbe226a412842b37696a7388f"
+  },
+  "sourceTiming": "source-fixed hashes cover focus/fallback/obsolete texture/skip/dialog/idle retests; source-final hashes cover the final comparator lease fix. Normal-storage context restore was checked on baseline source.",
+  "latestComparatorRelevantSourcesMatchCurrent": {
+    "app.js": true,
+    "material-library.js": true,
+    "configuration.js": true,
+    "stage.js": true,
+    "video-library.js": true
+  },
+  "additionalEvidence": {
+    "fittings": {
+      "status": "PASS",
+      "report": "fittings/fittings-summary.json",
+      "rawReport": "fittings/fittings-validation.json",
+      "linearReferences": 15,
+      "nativeIndividualPersistence": true,
+      "hiddenAncestorGuard": true,
+      "scopedGlobalAndReset": true
+    },
+    "finalCodeReview": {
+      "status": "PASS_NO_OPEN_FINDINGS_IN_REVIEWED_SCOPE",
+      "report": "final-code-review.md",
+      "data": "final-code-review.json",
+      "constructionFailureCleanup": "construction-failure-fixed.json",
+      "nativePicking": "picking-validation.json"
+    }
+  }
+}

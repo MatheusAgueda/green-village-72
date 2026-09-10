@@ -1,0 +1,193 @@
+[
+  {
+    "config": {
+      "kitchenRef": "kitchen-02",
+      "kitchen": "l",
+      "bathroomRef": "bathroom-02"
+    },
+    "fitting": "basin",
+    "nominalDepthM": 0.41999999999999993,
+    "bodyDepthInterval": [
+      -0.20499999725818635,
+      0.18199999725818639
+    ],
+    "closedFrontDepthInterval": [
+      0.1850000000596046,
+      0.2069999999403953
+    ],
+    "bodyInsetRearM": 0.005000002741813614,
+    "bodyInsetFrontM": 0.02800000274181358,
+    "bodyToFrontGapM": 0.003000002801418211,
+    "counterFrontOverhangM": 0.012999998867511797
+  },
+  {
+    "config": {
+      "kitchenRef": "kitchen-02",
+      "kitchen": "l",
+      "bathroomRef": "bathroom-02"
+    },
+    "fitting": "kitchen-main",
+    "nominalDepthM": 0.6000000000000001,
+    "bodyDepthInterval": [
+      -0.2950000035762792,
+      0.2600000035762786
+    ],
+    "closedFrontDepthInterval": [
+      0.2630000000596042,
+      0.297000000052154
+    ],
+    "bodyInsetRearM": 0.004999996423720843,
+    "bodyInsetFrontM": 0.03999999642372143,
+    "bodyToFrontGapM": 0.0029999964833256065,
+    "counterFrontOverhangM": 0.0030000118687749655
+  },
+  {
+    "config": {
+      "kitchenRef": "kitchen-02",
+      "kitchen": "l",
+      "bathroomRef": "bathroom-02"
+    },
+    "fitting": "kitchen-return",
+    "nominalDepthM": 0.6000000000000001,
+    "bodyDepthInterval": [
+      -0.29500000357627876,
+      0.2600000035762786
+    ],
+    "closedFrontDepthInterval": [
+      0.26300000005960467,
+      0.297000000052154
+    ],
+    "bodyInsetRearM": 0.004999996423721287,
+    "bodyInsetFrontM": 0.03999999642372143,
+    "bodyToFrontGapM": 0.0029999964833260506,
+    "counterFrontOverhangM": 0.0030000118687749655
+  },
+  {
+    "config": {
+      "kitchenRef": "kitchen-09",
+      "kitchen": "u",
+      "bathroomRef": "bathroom-01"
+    },
+    "fitting": "basin",
+    "nominalDepthM": 0.41999999999999993,
+    "bodyDepthInterval": [
+      -0.20499999725818635,
+      0.18199999725818639
+    ],
+    "closedFrontDepthInterval": [
+      0.1844999999776482,
+      0.2075000000223517
+    ],
+    "bodyInsetRearM": 0.005000002741813614,
+    "bodyInsetFrontM": 0.02800000274181358,
+    "bodyToFrontGapM": 0.0025000027194618246,
+    "counterFrontOverhangM": 0.01249999878555541
+  },
+  {
+    "config": {
+      "kitchenRef": "kitchen-09",
+      "kitchen": "u",
+      "bathroomRef": "bathroom-01"
+    },
+    "fitting": "kitchen-main",
+    "nominalDepthM": 0.6000000000000001,
+    "bodyDepthInterval": [
+      -0.29500000357627876,
+      0.26000000357627906
+    ],
+    "closedFrontDepthInterval": [
+      0.26300000005960467,
+      0.2940000000521543
+    ],
+    "bodyInsetRearM": 0.004999996423721287,
+    "bodyInsetFrontM": 0.039999996423720985,
+    "bodyToFrontGapM": 0.0029999964833256065,
+    "counterFrontOverhangM": 0.006000011868774635
+  },
+  {
+    "config": {
+      "kitchenRef": "kitchen-09",
+      "kitchen": "u",
+      "bathroomRef": "bathroom-01"
+    },
+    "fitting": "kitchen-return",
+    "nominalDepthM": 0.6000000000000001,
+    "bodyDepthInterval": [
+      -0.29500000357627876,
+      0.2600000035762786
+    ],
+    "closedFrontDepthInterval": [
+      0.26300000005960467,
+      0.2940000000521539
+    ],
+    "bodyInsetRearM": 0.004999996423721287,
+    "bodyInsetFrontM": 0.03999999642372143,
+    "bodyToFrontGapM": 0.0029999964833260506,
+    "counterFrontOverhangM": 0.006000011868775079
+  },
+  {
+    "config": {
+      "kitchenRef": "kitchen-09",
+      "kitchen": "u",
+      "bathroomRef": "bathroom-01"
+    },
+    "fitting": "kitchen-opposite",
+    "nominalDepthM": 0.6000000000000001,
+    "bodyDepthInterval": [
+      -0.29500000357627876,
+      0.2600000035762787
+    ],
+    "closedFrontDepthInterval": [
+      0.2630000000596048,
+      0.2940000000521542
+    ],
+    "bodyInsetRearM": 0.004999996423721287,
+    "bodyInsetFrontM": 0.03999999642372132,
+    "bodyToFrontGapM": 0.0029999964833260506,
+    "counterFrontOverhangM": 0.006000011868774746
+  },
+  {
+    "config": {
+      "kitchenRef": "kitchen-12",
+      "kitchen": "linear",
+      "bathroomRef": "bathroom-02",
+      "bathroom": "mirrored"
+    },
+    "fitting": "basin",
+    "nominalDepthM": 0.41999999999999993,
+    "bodyDepthInterval": [
+      -0.20499999725818635,
+      0.18199999725818639
+    ],
+    "closedFrontDepthInterval": [
+      0.1850000000596046,
+      0.2069999999403953
+    ],
+    "bodyInsetRearM": 0.005000002741813614,
+    "bodyInsetFrontM": 0.02800000274181358,
+    "bodyToFrontGapM": 0.003000002801418211,
+    "counterFrontOverhangM": 0.012999998867511797
+  },
+  {
+    "config": {
+      "kitchenRef": "kitchen-12",
+      "kitchen": "linear",
+      "bathroomRef": "bathroom-02",
+      "bathroom": "mirrored"
+    },
+    "fitting": "kitchen-main",
+    "nominalDepthM": 0.6000000000000001,
+    "bodyDepthInterval": [
+      -0.2950000035762792,
+      0.2600000035762786
+    ],
+    "closedFrontDepthInterval": [
+      0.2630000000596042,
+      0.2940000000521543
+    ],
+    "bodyInsetRearM": 0.004999996423720843,
+    "bodyInsetFrontM": 0.03999999642372143,
+    "bodyToFrontGapM": 0.0029999964833256065,
+    "counterFrontOverhangM": 0.006000011868774635
+  }
+]

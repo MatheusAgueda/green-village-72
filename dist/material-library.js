@@ -56,9 +56,10 @@ export function createMaterialLibrary(onLoad=()=>{},limit=18){
   return material;
  }
  function release(material){const key=material.userData.lease;if(key&&cache.has(key))cache.get(key).references=Math.max(0,cache.get(key).references-1);material.dispose();trim();}
- function stats(){return {pending,failures:[...failures].filter(id=>cache.get(id)?.references>0),cachedTextures:cache.size,leases:[...cache.values()].reduce((a,x)=>a+x.references,0)};}
- async function ready(){const deadline=Date.now()+20000;while(pending&&Date.now()<deadline)await new Promise(r=>setTimeout(r,20));if(pending)throw new Error('Tempo de carregamento dos materiais excedido.');return stats();}
- function retry(){for(const id of failures){const record=cache.get(id);if(record)fetchTexture(record);}return ready();}
+ const activePending=()=>[...cache.values()].filter(r=>r.references>0&&r.loading&&!r.disposed).length;
+ function stats(){return {pending:activePending(),backgroundPending:pending-activePending(),failures:[...failures].filter(id=>cache.get(id)?.references>0),cachedTextures:cache.size,leases:[...cache.values()].reduce((a,x)=>a+x.references,0)};}
+ async function ready(lease=null){const waiting=()=>[...cache.values()].some(r=>r.references>0&&r.loading&&!r.disposed&&(!lease||r.id===lease));const deadline=Date.now()+20000;while(waiting()&&Date.now()<deadline)await new Promise(r=>setTimeout(r,20));if(waiting())throw new Error('Tempo de carregamento dos materiais excedido.');const result=stats();return lease?{...result,failures:result.failures.filter(id=>id===lease)}:result;}
+ function retry(){for(const id of failures){const record=cache.get(id);if(record?.references>0)fetchTexture(record);}return ready();}
  return {create,createPhoto,release,stats,ready,retry,dispose(){disposed=true;for(const r of cache.values()){r.disposed=true;r.texture.dispose();}cache.clear();failures.clear();}};
 }
 // UV coordinates are measured in metres, so adjacent fragments share one texture grid.

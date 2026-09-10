@@ -41,3 +41,12 @@ A falta de desenhos de fabrico não bloqueia as correcções verificáveis. Dime
 - Acrescentar aproximação dedicada, comparação com a referência seleccionada, frentes móveis, ferragens, cubas côncavas, torneiras, espelhos e resguardos detalhados.
 - Guardar/exportar todas as escolhas. Testar cada referência, migração das configurações existentes, carregamento/recuperação de texturas, navegação móvel e expansão R4 sem regressões.
 - Rever visualmente os ambientes no navegador, actualizar o filme de apresentação com o modelo entregue e publicar no Site privado existente.
+# R6 — door correction and product audit, 10 September 2026
+
+Preserve the existing Site, catalogue references, user configuration and R4 expansion. Follow the seven original plan images when assigning passage-door hinges and swing directions. No new fabrication measurements are inferred from the drawings.
+
+- Passage-door leaves and SVG swing arcs must share one kinematic definition, including hinge end, closed direction and opening side.
+- Opening and closing must return to the same doorway without reversing through a wall or moving the hinge. Audit the swept leaf against partitions and proposed furniture; resolve model conflicts without changing confirmed exterior dimensions.
+- Furniture fronts and shower doors must open away from their closed body and keep coherent individual and collective controls.
+- Exercise all six portfolio sections and core configure/save/recover/export flows, keyboard navigation, responsive layouts, source comparisons and media. Record the scope and real reproductions before fixing; document inapplicable account/CRUD scenarios rather than inventing them.
+- Regression checks must prove the corrected directions for all seven plans, stable closed endpoints, matching 2D/3D, retained expansion and the specific interaction defects discovered in this audit.

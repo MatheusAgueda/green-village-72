@@ -1,6 +1,6 @@
 import { DATA } from './data.js';
 // Coordinates: metres; +X right, +Y up, +Z entrance. Origin: floor centre.
-export const REVISION='GV72-R5-2026-09-10';
+export const REVISION='GV72-R6-2026-09-10';
 // Deployment offsets are presentation assumptions, never transport or fabrication dimensions.
 export const EXPANSION_RIG=Object.freeze({status:'estimated',floorLift:.55,floorOffset:.45,wallPivotInset:.126,wallPivotHeight:.14,roofOffset:.8,roofLift:.3,endOffset:.15,endAxialOffset:.30,postClearance:.18,postLateralClearance:.02});
 export const EPSILON=1e-7; // Numerical tolerance only, not a manufacturing tolerance.
@@ -30,25 +30,35 @@ export const SOURCE_DIVERGENCES=[
 export const LAYOUTS=DATA.layouts.map(p=>({...p,sourceStatus:'estimated',sourceNote:'Tipologia confirmada; limites interiores aproximados a partir do traçado da planta.'}));
 export function rectArea(r){return Math.max(0,r.x1-r.x0)*Math.max(0,r.z1-r.z0);}
 export function intersects(a,b,margin=0){return Math.min(a.x1,b.x1)-Math.max(a.x0,b.x0)>margin+EPSILON&&Math.min(a.z1,b.z1)-Math.max(a.z0,b.z0)>margin+EPSILON;}
+// Door clearances are illustrative. Hinge end and opening side follow the source plans.
+export const DOOR_DETAIL=Object.freeze({normalOffset:.0725,endGap:.023,baseGap:.008,thickness:.035});
+export function doorPose(door,progress=0){
+ const direction=door.hingeEnd==='end'?-1:1,hingeU=door.u-direction*door.width/2;
+ const side=door.axis==='z'?door.hinge:-1,angle=(door.axis==='z'?side*direction:direction)*Math.PI/2*Math.min(1,Math.max(0,progress));
+ const hinge={x:door.axis==='z'?door.c+side*DOOR_DETAIL.normalOffset:hingeU,z:door.axis==='z'?hingeU:door.c-DOOR_DETAIL.normalOffset};
+ const point=distance=>{const x=door.axis==='z'?0:direction*distance,z=door.axis==='z'?direction*distance:0;return{x:hinge.x+x*Math.cos(angle)+z*Math.sin(angle),z:hinge.z-x*Math.sin(angle)+z*Math.cos(angle)};};
+ return {direction,hingeU,hinge,angle,leafWidth:door.width-2*DOOR_DETAIL.endGap,start:point(DOOR_DETAIL.endGap),tip:point(door.width-DOOR_DETAIL.endGap),radius:door.width-DOOR_DETAIL.endGap};
+}
 export function getPlan(config){
  const template=LAYOUTS.find(x=>x.id===config.layout);if(!template)throw new Error('Planta desconhecida');
  const W=DIM.width,L=DIM.length,t=DIM.partition,edge=DIM.panel;
  const walls=[],doors=[],rooms=[];
- const wall=(id,axis,c,a,b,door=null)=>{const w={id,axis,c,a,b,thickness:t,height:DIM.height,door};walls.push(w);if(door)doors.push({...door,wall:id,axis,c});return w;};
+ const wall=(id,axis,c,a,b,door=null)=>{const w={id,axis,c,a,b,thickness:t,height:DIM.height,door:door?{...door,axis,c}:null};walls.push(w);if(door)doors.push({...door,wall:id,axis,c});return w;};
  for(const [i,r] of template.rooms.entries()){
   const [u0,v0,u1,v1]=r.bounds,x0=u0*W-W/2,x1=u1*W-W/2,z0=v0*L-L/2,z1=v1*L-L/2;
   const clear={x0:x0+(u0===0?edge:t/2),x1:x1-(u1===1?edge:t/2),z0:z0+(v0===0?edge:t/2),z1:z1-(v1===1?edge:t/2)};
   const room={id:`${r.kind}-${i}`,kind:r.kind,label:r.label,outline:{x0,x1,z0,z1},clear,area:rectArea(clear),status:'estimated'};rooms.push(room);
   if(r.kind==='bedroom'){
    const side=x0>=0?1:-1,c=side===1?x0:x1;
-   const centre=v1>=.999?z0+Math.max(.64,DIM.doorWidth*.8):z1-Math.max(.64,DIM.doorWidth*.8);wall(room.id+'-side','z',c,z0,z1,{id:room.id+'-door',u:centre,width:DIM.doorWidth,height:DIM.doorHeight,hinge:side,opensInto:room.id});
+   const centre=v1>=.999?z0+Math.max(.64,DIM.doorWidth*.8):z1-Math.max(.64,DIM.doorWidth*.8);wall(room.id+'-side','z',c,z0,z1,{id:room.id+'-door',u:centre,width:DIM.doorWidth,height:DIM.doorHeight,hinge:side,hingeEnd:v1>=.999?'start':'end',opensInto:room.id});
    if(v1<.999)wall(room.id+'-end','x',z1,x0,x1);
   }
  }
  const bath=rooms.find(r=>r.kind==='bathroom'),b=bath.outline;
  // The bathroom sides are shared with rear bedroom walls when a bedroom is adjacent.
  for(const [side,c] of [[-1,b.x0],[1,b.x1]])if(!walls.some(w=>w.axis==='z'&&Math.abs(w.c-c)<EPSILON&&w.a<=b.z0+EPSILON&&w.b>=b.z1-EPSILON))wall('bath-'+side,'z',c,b.z0,b.z1);
- wall('bath-front','x',b.z1,b.x0,b.x1,{id:'bath-door',u:(b.x0+b.x1)/2,width:Math.min(DIM.doorWidth,b.x1-b.x0-.2),height:DIM.doorHeight,hinge:-1,opensInto:'common'});
+ const mirrored=config.bathroom==='mirrored',bathDoorWidth=Math.min(DIM.doorWidth,b.x1-b.x0-.2);
+ wall('bath-front','x',b.z1,b.x0,b.x1,{id:'bath-door',u:mirrored?bath.clear.x0+.10+bathDoorWidth/2:bath.clear.x1-.10-bathDoorWidth/2,width:bathDoorWidth,height:DIM.doorHeight,hinge:-1,hingeEnd:mirrored?'start':'end',opensInto:bath.id});
  const perimeter=[{axis:'x',c:L/2,a:-W/2,b:W/2,holes:[{id:'entry',u:0,width:DIM.entryWidth,height:DIM.entryHeight,sill:0,kind:'door',source:'double-leaf door depicted; size estimated'},...[-1,1].map(s=>({id:'front-window-'+s,u:s*2.05,width:DIM.windowWidth,height:DIM.windowHeight,sill:DIM.windowSill,kind:'window'}))]},
  {axis:'x',c:-L/2,a:-W/2,b:W/2,holes:[{id:'bath-window',u:0,width:DIM.bathWindowWidth,height:DIM.bathWindowHeight,sill:DIM.bathWindowSill,kind:'window',source:'estimated'},...[-1,1].map(s=>({id:'rear-window-'+s,u:s*2.05,width:DIM.windowWidth,height:DIM.windowHeight,sill:DIM.windowSill,kind:'window'}))]}];
  for(const side of [-1,1]){
@@ -62,8 +72,7 @@ export function getPlan(config){
  for(const r of rooms.filter(r=>r.kind==='bedroom')){const c=r.clear,cx=(c.x0+c.x1)/2,w=walls.find(w=>w.id===r.id+'-side'),mid=(c.z0+c.z1)/2,cz=r.outline.z1<L/2-EPSILON?Math.min(mid,w.door.u-w.door.width/2-.96-.12):mid;item(r.id+'-bed','bed',{x0:cx-.68,x1:cx+.68,z0:cz-.96,z1:cz+.96},{height:.53});}
  const bc=bath.clear,bw=bc.x1-bc.x0;
  item('shower','shower',{x0:bc.x0+.035,x1:bc.x1-.035,z0:bc.z0+.025,z1:bc.z0+.85},{height:1.95});
- const mirrored=config.bathroom==='mirrored';
- const toiletX=mirrored?bc.x1-.29:bc.x0+.29,basinX=mirrored?bc.x0+.23:bc.x1-.23;
+ const toiletX=mirrored?bc.x1-.29:bc.x0+.29,basinX=mirrored?bc.x1-.23:bc.x0+.23;
  item('toilet','toilet',{x0:toiletX-.22,x1:toiletX+.22,z0:bc.z0+1.03,z1:bc.z0+1.69},{height:.78});
  item('basin','basin',{x0:basinX-.21,x1:basinX+.21,z0:bc.z1-.84,z1:bc.z1-.12},{height:.85});
  servicePoints.push({id:'shower',x:(bc.x0+bc.x1)/2,z:bc.z0+.1,y:1.05,hot:true},{id:'toilet',x:toiletX,z:bc.z0+1.15,y:.45,hot:false},{id:'basin',x:basinX,z:bc.z1-.33,y:.83,hot:true});

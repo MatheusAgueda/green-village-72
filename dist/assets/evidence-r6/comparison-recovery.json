@@ -1,0 +1,119 @@
+{
+  "cases": [
+    {
+      "name": "Facade comparator isolated from failed-503 active floor",
+      "pass": true,
+      "mode": "failed-503",
+      "target": {
+        "id": "floor-spc-kx7005",
+        "url": "local-preview/assets/catalogue-v2/textures/floor-spc-kx7005.png"
+      },
+      "globalReadyTimeout": null,
+      "elapsedMs": 38,
+      "title": "Branco Glacial",
+      "statsBefore": {
+        "pending": 0,
+        "backgroundPending": 0,
+        "failures": [
+          "floor-spc-kx7005:source"
+        ],
+        "cachedTextures": 4,
+        "leases": 3
+      },
+      "during": {
+        "pending": 0,
+        "backgroundPending": 0,
+        "failures": [
+          "floor-spc-kx7005:source"
+        ],
+        "cachedTextures": 4,
+        "leases": 4
+      },
+      "afterClose": {
+        "pending": 0,
+        "backgroundPending": 0,
+        "failures": [
+          "floor-spc-kx7005:source"
+        ],
+        "cachedTextures": 4,
+        "leases": 3
+      },
+      "settled": {
+        "pending": 0,
+        "backgroundPending": 0,
+        "failures": [
+          "floor-spc-kx7005:source"
+        ],
+        "cachedTextures": 4,
+        "leases": 3
+      },
+      "rendered": {
+        "width": 340,
+        "height": 240,
+        "nonblack": 81600,
+        "pixels": 81600
+      },
+      "logs": [
+        {
+          "kind": "error",
+          "message": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)"
+        },
+        {
+          "kind": "error",
+          "message": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)"
+        },
+        {
+          "kind": "error",
+          "message": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)"
+        }
+      ]
+    },
+    {
+      "name": "Facade comparator isolated from pending-timeout active floor",
+      "pass": true,
+      "mode": "pending-timeout",
+      "target": {
+        "id": "floor-spc-kx7005",
+        "url": "local-preview/assets/catalogue-v2/textures/floor-spc-kx7005.png"
+      },
+      "globalReadyTimeout": "Tempo de carregamento dos materiais excedido.",
+      "elapsedMs": 46,
+      "title": "Branco Glacial",
+      "statsBefore": {
+        "pending": 1,
+        "backgroundPending": 0,
+        "failures": [],
+        "cachedTextures": 4,
+        "leases": 3
+      },
+      "during": {
+        "pending": 1,
+        "backgroundPending": 0,
+        "failures": [],
+        "cachedTextures": 4,
+        "leases": 4
+      },
+      "afterClose": {
+        "pending": 1,
+        "backgroundPending": 0,
+        "failures": [],
+        "cachedTextures": 4,
+        "leases": 3
+      },
+      "settled": {
+        "pending": 0,
+        "backgroundPending": 0,
+        "failures": [],
+        "cachedTextures": 4,
+        "leases": 3
+      },
+      "rendered": {
+        "width": 340,
+        "height": 240,
+        "nonblack": 81600,
+        "pixels": 81600
+      },
+      "logs": []
+    }
+  ]
+}
