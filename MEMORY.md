@@ -15,3 +15,6 @@ R3 films:22s tour/16s assembly,1920×1080/24fps/H264,912frames. Identical T2 and
 Evidence current: dist/assets/evidence-r3; historicalR2: dist/assets/evidence. npm test21groups; node scripts/serve.mjs port4174. Geometry48combos/101poses/486plumbingrisers. Browser71materials×2 with GPU compilation,7layouts/views, async/failure/exports/mobile. AppleM4 Chrome153≈59.94fps, idle0frames/1s; not physical-phone verification or universal performance.
 
 Recovery tags: recovery/gv72-before-r3-20260910 and recovery/gv72-before-audit-20260910. Preserve original sources and source-labelled uncertainty. No pending question is required to deliver supported corrections.
+
+
+Final publication transport correction: the hosted static MP4 endpoint returns HTTP 200 to Range requests, unlike the local server. The shared video-library now prepares a complete Blob on first playback or chapter selection, retains at most two media objects, validates seek completion, cancels stale requests on navigation and supports native controls for all six videos. Original download links remain unchanged. This changes the player only; captured model geometry and film pixels are unchanged. Swatch thumbnails use the same exact R3 crops as the comparator.

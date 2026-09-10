@@ -1,0 +1,578 @@
+{
+  "status": "PASS",
+  "generatedAt": "2026-09-10T15:49:25.289395+00:00",
+  "scope": "Independent local Chrome browser regression against the current dist, served by a deliberately Range-ignoring HTTP 200 fixture. No Site files modified by auditor.",
+  "environment": {
+    "url": "http://127.0.0.1:4186",
+    "browser": "Installed Google Chrome, Playwright headless",
+    "viewport": "1440x1000",
+    "transferThrottle": "64 KiB per 25 ms",
+    "rangeSupport": false
+  },
+  "httpNoRange": {
+    "url": "http://127.0.0.1:4186/assets/reference-videos/v2-74m2.mp4",
+    "requestRange": "bytes=0-99",
+    "status": 200,
+    "headers": {
+      "Server": "SimpleHTTP/0.6 Python/3.14.6",
+      "Date": "Thu, 10 Sep 2026 15:46:53 GMT",
+      "Content-type": "video/mp4",
+      "Content-Length": "6007251",
+      "Last-Modified": "Thu, 20 Aug 2026 14:53:20 GMT",
+      "Cache-Control": "no-store"
+    },
+    "firstBytesRead": 100
+  },
+  "chapters": {
+    "status": "PASS",
+    "tested": 16,
+    "maxObservedTimeErrorSeconds": 0.01578,
+    "rows": [
+      {
+        "video": "v1-spacious",
+        "requestedSeconds": 0,
+        "actualSeconds": 0,
+        "seekable": [
+          [
+            0,
+            118.233333
+          ]
+        ],
+        "playingVideos": 1,
+        "liveBlobs": 1
+      },
+      {
+        "video": "v1-spacious",
+        "requestedSeconds": 8,
+        "actualSeconds": 8,
+        "seekable": [
+          [
+            0,
+            118.233333
+          ]
+        ],
+        "playingVideos": 1,
+        "liveBlobs": 1
+      },
+      {
+        "video": "v1-spacious",
+        "requestedSeconds": 36,
+        "actualSeconds": 36,
+        "seekable": [
+          [
+            0,
+            118.233333
+          ]
+        ],
+        "playingVideos": 1,
+        "liveBlobs": 1
+      },
+      {
+        "video": "v1-spacious",
+        "requestedSeconds": 88,
+        "actualSeconds": 88,
+        "seekable": [
+          [
+            0,
+            118.233333
+          ]
+        ],
+        "playingVideos": 1,
+        "liveBlobs": 1
+      },
+      {
+        "video": "v2-74m2",
+        "requestedSeconds": 0,
+        "actualSeconds": 0.005442,
+        "seekable": [
+          [
+            0,
+            57
+          ]
+        ],
+        "playingVideos": 1,
+        "liveBlobs": 2
+      },
+      {
+        "video": "v2-74m2",
+        "requestedSeconds": 12,
+        "actualSeconds": 12.005832,
+        "seekable": [
+          [
+            0,
+            57
+          ]
+        ],
+        "playingVideos": 1,
+        "liveBlobs": 2
+      },
+      {
+        "video": "v2-74m2",
+        "requestedSeconds": 32,
+        "actualSeconds": 32,
+        "seekable": [
+          [
+            0,
+            57
+          ]
+        ],
+        "playingVideos": 1,
+        "liveBlobs": 2
+      },
+      {
+        "video": "v2-74m2",
+        "requestedSeconds": 24,
+        "actualSeconds": 24,
+        "seekable": [
+          [
+            0,
+            57
+          ]
+        ],
+        "playingVideos": 1,
+        "liveBlobs": 2
+      },
+      {
+        "video": "v3-comfortable",
+        "requestedSeconds": 0,
+        "actualSeconds": 0.01578,
+        "seekable": [
+          [
+            0,
+            100.198027
+          ]
+        ],
+        "playingVideos": 1,
+        "liveBlobs": 2
+      },
+      {
+        "video": "v3-comfortable",
+        "requestedSeconds": 92,
+        "actualSeconds": 92,
+        "seekable": [
+          [
+            0,
+            100.198027
+          ]
+        ],
+        "playingVideos": 1,
+        "liveBlobs": 2
+      },
+      {
+        "video": "v3-comfortable",
+        "requestedSeconds": 40,
+        "actualSeconds": 40,
+        "seekable": [
+          [
+            0,
+            100.198027
+          ]
+        ],
+        "playingVideos": 1,
+        "liveBlobs": 2
+      },
+      {
+        "video": "v3-comfortable",
+        "requestedSeconds": 68,
+        "actualSeconds": 68.00029,
+        "seekable": [
+          [
+            0,
+            100.198027
+          ]
+        ],
+        "playingVideos": 1,
+        "liveBlobs": 2
+      },
+      {
+        "video": "v4-37m2",
+        "requestedSeconds": 4,
+        "actualSeconds": 4,
+        "seekable": [
+          [
+            0,
+            56.566667
+          ]
+        ],
+        "playingVideos": 1,
+        "liveBlobs": 2
+      },
+      {
+        "video": "v4-37m2",
+        "requestedSeconds": 16,
+        "actualSeconds": 16,
+        "seekable": [
+          [
+            0,
+            56.566667
+          ]
+        ],
+        "playingVideos": 1,
+        "liveBlobs": 2
+      },
+      {
+        "video": "v4-37m2",
+        "requestedSeconds": 20,
+        "actualSeconds": 20,
+        "seekable": [
+          [
+            0,
+            56.566667
+          ]
+        ],
+        "playingVideos": 1,
+        "liveBlobs": 2
+      },
+      {
+        "video": "v4-37m2",
+        "requestedSeconds": 36,
+        "actualSeconds": 36,
+        "seekable": [
+          [
+            0,
+            56.566667
+          ]
+        ],
+        "playingVideos": 1,
+        "liveBlobs": 2
+      }
+    ]
+  },
+  "nativeFirstPlay": {
+    "status": "PASS",
+    "tested": 6,
+    "interaction": "Focus actual native video controls and press Space; then set currentTime to midpoint and verify media state.",
+    "rows": [
+      {
+        "id": "presentation-v3",
+        "targetSeconds": 11.0,
+        "actualSeconds": 11.298287,
+        "durationSeconds": 22,
+        "playing": true,
+        "blobSource": true,
+        "seekable": [
+          [
+            0,
+            22
+          ]
+        ]
+      },
+      {
+        "id": "expansion-v3",
+        "targetSeconds": 8.0,
+        "actualSeconds": 8.235589,
+        "durationSeconds": 16,
+        "playing": true,
+        "blobSource": true,
+        "seekable": [
+          [
+            0,
+            16
+          ]
+        ]
+      },
+      {
+        "id": "v1-spacious",
+        "targetSeconds": 59.1166665,
+        "actualSeconds": 59.344718,
+        "durationSeconds": 118.233333,
+        "playing": true,
+        "blobSource": true,
+        "seekable": [
+          [
+            0,
+            118.233333
+          ]
+        ]
+      },
+      {
+        "id": "v2-74m2",
+        "targetSeconds": 28.5,
+        "actualSeconds": 28.719981,
+        "durationSeconds": 57,
+        "playing": true,
+        "blobSource": true,
+        "seekable": [
+          [
+            0,
+            57
+          ]
+        ]
+      },
+      {
+        "id": "v3-comfortable",
+        "targetSeconds": 50.0990135,
+        "actualSeconds": 50.320994,
+        "durationSeconds": 100.198027,
+        "playing": true,
+        "blobSource": true,
+        "seekable": [
+          [
+            0,
+            100.198027
+          ]
+        ]
+      },
+      {
+        "id": "v4-37m2",
+        "targetSeconds": 28.2833335,
+        "actualSeconds": 28.492591,
+        "durationSeconds": 56.566667,
+        "playing": true,
+        "blobSource": true,
+        "seekable": [
+          [
+            0,
+            56.566667
+          ]
+        ]
+      }
+    ]
+  },
+  "cache": {
+    "status": "PASS",
+    "settledMaxEntries": 2,
+    "chapterCycleCreated": 4,
+    "chapterCycleRevoked": 2,
+    "nativeCycleCreated": 6,
+    "nativeCycleRevoked": 4,
+    "chapterCyclePeakRetainedBlobBytes": 20926258,
+    "lruNativeReuse": {
+      "sequence": "A chapter → B chapter → native A → C chapter",
+      "expectedEvicted": "B = v2-74m2",
+      "actualEvicted": "B = v2-74m2",
+      "status": "PASS",
+      "liveEntries": 2
+    }
+  },
+  "rapidSameVideo": {
+    "status": "PASS",
+    "sequence": "v1 8s → 120ms → v1 36s",
+    "playing": [
+      {
+        "id": "source-v1-spacious",
+        "time": 36.01509
+      }
+    ],
+    "createdBlobs": 1,
+    "revokedBlobs": 0,
+    "liveBlobs": 1,
+    "busy": false,
+    "notification": ""
+  },
+  "rapidDifferentVideo": {
+    "status": "PASS",
+    "sequence": "v1 88s → 120ms → v2 24s",
+    "playing": [
+      {
+        "id": "source-v2-74m2",
+        "time": 24.55261
+      }
+    ],
+    "createdBlobs": 1,
+    "revokedBlobs": 0,
+    "liveBlobs": 1,
+    "busy": false,
+    "notification": ""
+  },
+  "navigationCancellation": {
+    "status": "PASS",
+    "sequence": "v1 88s → 120ms → Studio; observe another 1.2s",
+    "playing": [],
+    "createdBlobs": 0,
+    "revokedBlobs": 0,
+    "liveBlobs": 0,
+    "busy": false,
+    "notification": ""
+  },
+  "http404Retry": {
+    "status": "PASS",
+    "failure": {
+      "playing": [],
+      "createdBlobs": 0,
+      "revokedBlobs": 0,
+      "liveBlobs": 0,
+      "busy": false,
+      "notification": "Não foi possível carregar este vídeo. Tente novamente."
+    },
+    "retry": {
+      "playing": [
+        {
+          "id": "source-v2-74m2",
+          "time": 24.013772
+        }
+      ],
+      "createdBlobs": 1,
+      "revokedBlobs": 0,
+      "liveBlobs": 1,
+      "busy": false,
+      "notification": "Não foi possível carregar este vídeo. Tente novamente."
+    }
+  },
+  "timeout": {
+    "status": "PASS",
+    "note": "Browser-only response interception shortened the actual 45000ms deadline to 800ms; Site source unchanged. This exercises the timeout branch, not a 45-second wall-clock wait.",
+    "playing": [],
+    "createdBlobs": 0,
+    "revokedBlobs": 0,
+    "liveBlobs": 0,
+    "busy": false,
+    "notification": "O vídeo demorou a carregar. Tente novamente."
+  },
+  "corruptMediaRetry": {
+    "status": "PASS",
+    "initialInvalidBlobRevoked": true,
+    "cacheEntriesAfterFailure": 0,
+    "retryActualSeconds": 24,
+    "originalDownloadAnchorsUnchanged": [
+      "assets/presentation-v3.mp4",
+      "assets/expansion-v3.mp4",
+      "assets/reference-videos/v1-spacious.mp4",
+      "assets/reference-videos/v2-74m2.mp4",
+      "assets/reference-videos/v3-comfortable.mp4",
+      "assets/reference-videos/v4-37m2.mp4"
+    ]
+  },
+  "floorThumbnails": {
+    "status": "PASS",
+    "tested": 12,
+    "allDecoded": true,
+    "allNativeR3Crops": true,
+    "rows": [
+      {
+        "id": "floor-spc-kx7005",
+        "src": "http://127.0.0.1:4186/assets/catalogue-r3/crops/floor-spc-kx7005.png",
+        "width": 440,
+        "height": 233
+      },
+      {
+        "id": "floor-spc-kx7006",
+        "src": "http://127.0.0.1:4186/assets/catalogue-r3/crops/floor-spc-kx7006.png",
+        "width": 440,
+        "height": 233
+      },
+      {
+        "id": "floor-spc-kx7007",
+        "src": "http://127.0.0.1:4186/assets/catalogue-r3/crops/floor-spc-kx7007.png",
+        "width": 440,
+        "height": 233
+      },
+      {
+        "id": "floor-spc-kx7008",
+        "src": "http://127.0.0.1:4186/assets/catalogue-r3/crops/floor-spc-kx7008.png",
+        "width": 440,
+        "height": 233
+      },
+      {
+        "id": "floor-spc-kx7009",
+        "src": "http://127.0.0.1:4186/assets/catalogue-r3/crops/floor-spc-kx7009.png",
+        "width": 440,
+        "height": 233
+      },
+      {
+        "id": "floor-spc-kx7010",
+        "src": "http://127.0.0.1:4186/assets/catalogue-r3/crops/floor-spc-kx7010.png",
+        "width": 440,
+        "height": 233
+      },
+      {
+        "id": "floor-spc-kx8005",
+        "src": "http://127.0.0.1:4186/assets/catalogue-r3/crops/floor-spc-kx8005.png",
+        "width": 440,
+        "height": 233
+      },
+      {
+        "id": "floor-spc-kx8006",
+        "src": "http://127.0.0.1:4186/assets/catalogue-r3/crops/floor-spc-kx8006.png",
+        "width": 440,
+        "height": 233
+      },
+      {
+        "id": "floor-spc-kx8007",
+        "src": "http://127.0.0.1:4186/assets/catalogue-r3/crops/floor-spc-kx8007.png",
+        "width": 440,
+        "height": 233
+      },
+      {
+        "id": "floor-spc-kx8008",
+        "src": "http://127.0.0.1:4186/assets/catalogue-r3/crops/floor-spc-kx8008.png",
+        "width": 440,
+        "height": 233
+      },
+      {
+        "id": "floor-spc-kx8009",
+        "src": "http://127.0.0.1:4186/assets/catalogue-r3/crops/floor-spc-kx8009.png",
+        "width": 440,
+        "height": 233
+      },
+      {
+        "id": "floor-spc-kx9005",
+        "src": "http://127.0.0.1:4186/assets/catalogue-r3/crops/floor-spc-kx9005.png",
+        "width": 440,
+        "height": 233
+      }
+    ]
+  },
+  "reportPlayers": {
+    "status": "PASS",
+    "tested": 2,
+    "rows": [
+      {
+        "time": 11.039332,
+        "paused": false,
+        "duration": 22,
+        "width": 1920,
+        "height": 1080,
+        "seekable": [
+          [
+            0,
+            22
+          ]
+        ]
+      },
+      {
+        "time": 8.018778,
+        "paused": false,
+        "duration": 16,
+        "width": 1920,
+        "height": 1080,
+        "seekable": [
+          [
+            0,
+            16
+          ]
+        ]
+      }
+    ]
+  },
+  "console": {
+    "unhandledPageErrors": 0,
+    "expectedInjectedErrors": [
+      "HTTP 404 for deliberate video fetch failure",
+      "Media decode error for deliberately invalid MP4"
+    ],
+    "cosmeticFinding": "Report /favicon.ico returned404 in first smoke; root subsequently added an explicit favicon.svg link. No playback impact."
+  },
+  "limits": [
+    "Local desktop Chrome automated playback; not a claim of real mobile hardware coverage.",
+    "WebKit Playwright runtime was not installed. Root independently confirmed the same no-Range fixture in the actual in-app browser.",
+    "Complete Blob preparation trades first-play latency/download bandwidth for reliable seeking. Cache entry count is not a total browser/decoder memory measurement.",
+    "No unauthenticated or authenticated production controls were exercised by this auditor; live verification and publishing remain with root."
+  ],
+  "sourceHashes": {
+    "video-library.js": "d847ea0e56293b0a65cd4ca19d851ab7bee20179c3ef55f354484a060eba5c51",
+    "app.js": "25237d4efa24755f13298808732648e8f1b994350b27550cd463b417cfdc4d70",
+    "assets/evidence-r3/audit-report.html": "ead4e0af7f26c701da6c12216cb99d9705124b7d71ce80e45ea255c7a765859d"
+  },
+  "localEvidence": {
+    "regression": "no-range/regression.json",
+    "supplement": "no-range/supplement-progress.json",
+    "lru": "no-range/lru.json",
+    "corrupt": "no-range/corrupt.json",
+    "http": "no-range/http-range-evidence.json",
+    "screenshots": [
+      "no-range/floor-native-crops.png",
+      "no-range/report-blob-player.png"
+    ]
+  }
+}

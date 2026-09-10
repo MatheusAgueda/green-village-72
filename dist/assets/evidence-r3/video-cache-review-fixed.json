@@ -1,0 +1,23 @@
+{
+  "sequence": "programmatic A, programmatic B, native-controls A, programmatic C",
+  "afterC": {
+    "A": "blob:review-1",
+    "B": "B.mp4",
+    "C": "blob:review-3"
+  },
+  "revoked": [
+    "blob:review-2"
+  ],
+  "fetches": [
+    "A.mp4",
+    "B.mp4",
+    "C.mp4"
+  ],
+  "errors": [],
+  "fetchesAfterReturnToA": [
+    "A.mp4",
+    "B.mp4",
+    "C.mp4"
+  ],
+  "status": "PASS"
+}

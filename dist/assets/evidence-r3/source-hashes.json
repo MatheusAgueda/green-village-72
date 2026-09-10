@@ -1,5 +1,5 @@
 {
-  "app.js": "02f297604270a00b121f7a3e7a95ed6cb05d1938a0642e38722bc353da40f0e3",
+  "app.js": "25237d4efa24755f13298808732648e8f1b994350b27550cd463b417cfdc4d70",
   "index.html": "9660447e052caed015a50ed8743c37dc90d38b396dceb4d61a38ca3fd1c522a5",
   "studio-r3.css": "9d2cae6d608e3a66b6b297a11c37e4894feeab0d182452ab0eae2b2a876bcc3a",
   "model.js": "9130b326aa4f97183f10a9d813ee8c6afa04fcbab8510700f6d5b8cd711786af",
@@ -12,5 +12,6 @@
   "photo-plank-data.js": "0c48780479b6849e88bfe56e7d28fdaa1f3feee908784bb83ddfaaf525c74b17",
   "panel-joints.js": "d1a21680e6e51c1462ce0799a3959e3472b20dd4aa33ed9f56b268baca7e38e0",
   "plan-svg.js": "058d4ebc43ed2895d0e9d383e0f51cc3d819c466065b607c1c4e42e9faa86328",
-  "reference-videos.js": "52790dfc440060b0658eef11b464dbdcd1efa0a0565f7949687af6bbe463565c"
+  "reference-videos.js": "52790dfc440060b0658eef11b464dbdcd1efa0a0565f7949687af6bbe463565c",
+  "video-library.js": "d847ea0e56293b0a65cd4ca19d851ab7bee20179c3ef55f354484a060eba5c51"
 }

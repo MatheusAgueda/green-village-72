@@ -1,0 +1,35 @@
+{
+  "date": "2026-09-10",
+  "browser": "Codex in-app browser",
+  "before": {
+    "url": "https://green-village-72-studio.greenvillage.chatgpt.site",
+    "chapter_seconds": 24,
+    "observed_seconds": 4.088799,
+    "seekable": [
+      [
+        0,
+        0
+      ]
+    ],
+    "range_request": "bytes=0-99",
+    "http_status": 200,
+    "content_length": 6007251,
+    "accept_ranges": null
+  },
+  "fixed_local_matching_transport": {
+    "url": "http://127.0.0.1:4186",
+    "http_range_ignored": true,
+    "chapter_seconds": 24,
+    "observed_seconds_after_wait": 29.876357,
+    "blob_source": true,
+    "seekable": [
+      [
+        0,
+        57
+      ]
+    ],
+    "paused": false,
+    "error": null
+  },
+  "note": "Production recheck after corrected publish is recorded separately."
+}

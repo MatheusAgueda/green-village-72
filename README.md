@@ -44,3 +44,6 @@ Navegador: sete plantas, 71 materiais em dois ciclos com renderização efectiva
 ## Dependências e recuperação
 
 Three.js 0.180.0, respectivos auxiliares e pdf-lib incluídos em `dist/vendor/`, com licenças. Recuperação anterior à R3: `recovery/gv72-before-r3-20260910`. Histórico anterior à R2: `recovery/gv72-before-audit-20260910`. Este checkout é independente do repositório GLS que o contém.
+
+
+Final publication transport correction: the hosted static MP4 endpoint returns HTTP 200 to Range requests, unlike the local server. The shared video-library now prepares a complete Blob on first playback or chapter selection, retains at most two media objects, validates seek completion, cancels stale requests on navigation and supports native controls for all six videos. Original download links remain unchanged. This changes the player only; captured model geometry and film pixels are unchanged. Swatch thumbnails use the same exact R3 crops as the comparator.
