@@ -1,0 +1,361 @@
+{
+  "status": "PASS",
+  "timestampUTC": "2026-09-10T16:49:45.407361+00:00",
+  "scope": "Independent local browser audit. Initial full UI/view matrix followed by focused final-source regression after geometry/phase-label refinements. Site checkout unchanged by auditor.",
+  "browser": "Installed Google Chrome through Playwright headless",
+  "viewportsFinal": [
+    [
+      1440,
+      1000
+    ],
+    [
+      375,
+      844
+    ]
+  ],
+  "earlierViewports": [
+    [
+      1440,
+      1000
+    ],
+    [
+      768,
+      1024
+    ],
+    [
+      375,
+      844
+    ]
+  ],
+  "finalSteps": {
+    "rows": [
+      {
+        "step": {
+          "value": "0",
+          "label": "Recolhida"
+        },
+        "currentLabel": "Casa recolhida · simulação",
+        "progress": 0,
+        "pressed": [
+          "Recolhida"
+        ]
+      },
+      {
+        "step": {
+          "value": ".24",
+          "label": "Cobertura"
+        },
+        "currentLabel": "Cobertura aberta",
+        "progress": 0.24,
+        "pressed": [
+          "Cobertura"
+        ]
+      },
+      {
+        "step": {
+          "value": ".52",
+          "label": "Pisos"
+        },
+        "currentLabel": "Pisos abertos",
+        "progress": 0.52,
+        "pressed": [
+          "Pisos"
+        ]
+      },
+      {
+        "step": {
+          "value": ".78",
+          "label": "Paredes"
+        },
+        "currentLabel": "Paredes erguidas · ajuste da cobertura",
+        "progress": 0.78,
+        "pressed": [
+          "Paredes"
+        ]
+      },
+      {
+        "step": {
+          "value": ".9",
+          "label": "Topos"
+        },
+        "currentLabel": "Fecho dos painéis de topo",
+        "progress": 0.9,
+        "pressed": [
+          "Topos"
+        ]
+      },
+      {
+        "step": {
+          "value": "1",
+          "label": "Aberta"
+        },
+        "currentLabel": "Casa expandida",
+        "progress": 1,
+        "pressed": [
+          "Aberta"
+        ]
+      }
+    ],
+    "ranges": [
+      {
+        "value": 2,
+        "label": "Abertura da cobertura",
+        "pressed": "Cobertura"
+      },
+      {
+        "value": 18,
+        "label": "Abertura da cobertura",
+        "pressed": "Cobertura"
+      },
+      {
+        "value": 26,
+        "label": "Descida dos pisos laterais",
+        "pressed": "Pisos"
+      },
+      {
+        "value": 35,
+        "label": "Descida dos pisos laterais",
+        "pressed": "Pisos"
+      },
+      {
+        "value": 60,
+        "label": "Elevação das paredes",
+        "pressed": "Paredes"
+      },
+      {
+        "value": 70,
+        "label": "Elevação das paredes",
+        "pressed": "Paredes"
+      },
+      {
+        "value": 84,
+        "label": "Fecho dos painéis de topo",
+        "pressed": "Topos"
+      },
+      {
+        "value": 90,
+        "label": "Fecho dos painéis de topo",
+        "pressed": "Topos"
+      },
+      {
+        "value": 100,
+        "label": "Casa expandida",
+        "pressed": "Aberta"
+      }
+    ]
+  },
+  "finalExports": {
+    "png": {
+      "name": "green-village-72-t2.png",
+      "bytes": 67440,
+      "width": 981,
+      "height": 468
+    },
+    "pdf": {
+      "name": "green-village-72-t2.pdf",
+      "bytes": 97687,
+      "pages": 2,
+      "sizes": [
+        {
+          "width": 595,
+          "height": 842
+        },
+        {
+          "width": 595,
+          "height": 842
+        }
+      ]
+    }
+  },
+  "finalLifecycle": {
+    "alternations": 10,
+    "progressBefore": 0.64,
+    "progressAfter": 0.64,
+    "before": {
+      "revision": "GV72-R4-2026-09-10",
+      "frames": 12,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 1,
+        "leases": 1
+      },
+      "render": {
+        "calls": 230,
+        "triangles": 81532,
+        "memory": {
+          "geometries": 125,
+          "textures": 4
+        },
+        "camera": [
+          14.959698801908283,
+          13.003565065488456,
+          18.699623502385354
+        ],
+        "target": [
+          0,
+          1.335,
+          0
+        ]
+      }
+    },
+    "after": {
+      "revision": "GV72-R4-2026-09-10",
+      "frames": 53,
+      "materials": {
+        "pending": 0,
+        "failures": [],
+        "cachedTextures": 1,
+        "leases": 1
+      },
+      "render": {
+        "calls": 230,
+        "triangles": 81532,
+        "memory": {
+          "geometries": 125,
+          "textures": 4
+        },
+        "camera": [
+          14.959698801908283,
+          13.003565065488456,
+          18.699623502385354
+        ],
+        "target": [
+          0,
+          1.335,
+          0
+        ]
+      }
+    }
+  },
+  "finalScreenshots": [
+    {
+      "file": "final-1440-0.png",
+      "modelFile": "final-1440-0-model.png",
+      "progress": 0,
+      "title": "Casa recolhida · simulação",
+      "allProjectedBoundingCornersInsideViewport": true
+    },
+    {
+      "file": "final-1440-35.png",
+      "modelFile": "final-1440-35-model.png",
+      "progress": 0.35,
+      "title": "Descida dos pisos laterais",
+      "allProjectedBoundingCornersInsideViewport": true
+    },
+    {
+      "file": "final-1440-100.png",
+      "modelFile": "final-1440-100-model.png",
+      "progress": 1,
+      "title": "Casa expandida",
+      "allProjectedBoundingCornersInsideViewport": true
+    },
+    {
+      "file": "final-375-0.png",
+      "modelFile": "final-375-0-model.png",
+      "progress": 0,
+      "title": "Casa recolhida · simulação",
+      "allProjectedBoundingCornersInsideViewport": true
+    },
+    {
+      "file": "final-375-35.png",
+      "modelFile": "final-375-35-model.png",
+      "progress": 0.35,
+      "title": "Descida dos pisos laterais",
+      "allProjectedBoundingCornersInsideViewport": true
+    },
+    {
+      "file": "final-375-100.png",
+      "modelFile": "final-375-100-model.png",
+      "progress": 1,
+      "title": "Casa expandida",
+      "allProjectedBoundingCornersInsideViewport": true
+    },
+    {
+      "file": "final-mobile-six-steps.png",
+      "modelFile": "final-mobile-six-steps-model.png",
+      "progress": 0.35,
+      "title": "Descida dos pisos laterais",
+      "allProjectedBoundingCornersInsideViewport": true
+    }
+  ],
+  "priorFullMatrix": {
+    "evidence": "r4-matrix.json",
+    "viewLayoutCombinations": 49,
+    "stagesPerViewport": [
+      0,
+      0.18,
+      0.35,
+      0.52,
+      0.7,
+      1
+    ],
+    "tests": [
+      {
+        "name": "7 layouts by7 views preserve valid current model",
+        "pass": true
+      },
+      {
+        "name": "disabled controls force moving wall visibility despite inherited flags",
+        "pass": true
+      },
+      {
+        "name": "reset from Expansion restores state and all UI",
+        "pass": true
+      },
+      {
+        "name": "reset from Exterior restores hidden visibility",
+        "pass": true
+      },
+      {
+        "name": "all5 step selectors pause and choose exact stage",
+        "pass": true
+      },
+      {
+        "name": "aspect2 to.8 outsideStudio returns fully fitted visible geometry",
+        "pass": true
+      }
+    ]
+  },
+  "fixedFindings": [
+    {
+      "name": "Click active Expansion reset progress",
+      "status": "fixed; idempotence and exit-return verified"
+    },
+    {
+      "name": "Hidden facades remove animated panels",
+      "status": "fixed; required expansion assemblies forced visible and controls disabled"
+    },
+    {
+      "name": "Reset retains hidden visibility or stale Expansion UI",
+      "status": "fixed; both origins verified"
+    },
+    {
+      "name": "Stage button/label mismatch",
+      "status": "fixed; six exact targets plus nine phase samples verified"
+    }
+  ],
+  "consoleErrors": [],
+  "openFindings": [],
+  "sourceHashes": {
+    "app.js": "08d7d339cd8956e987d5951d731a042b7b42b7968db8097614600ef1058a92a7",
+    "model.js": "81fc4733134a4d49d9ee00e005ee78c7f712167ebd207de12f898a32bc8b973e",
+    "specification.js": "d451a71c5a25a4c9d290559a2c3f0fc6dfd9aa7053f6cf786d0ebd0e01e8d62f",
+    "stage.js": "f267d8ced81973011e8f55f28a75458bbe4b4ca77597149e17120ffede83bef4",
+    "configuration.js": "323424bb2c18d8313e7592f3e0ba41fc34ab684bd43a71ff9a7da108046e86aa",
+    "index.html": "b4566ddc2132a14e398660cf28eee9b0b3c2d9f6c624627db0a192d3173f367f",
+    "style.css": "50612c879180893524cc05006759fff3fbfee7675d2f0e9beabfdb54b1b7e5e4"
+  },
+  "evidenceFiles": [
+    "final-quick.json",
+    "r4-matrix.json",
+    "state-consolidated.json",
+    "final-expansion.png",
+    "final-expansion.pdf"
+  ],
+  "limits": [
+    "Mobile viewports are emulated in desktop Chrome; no real mobile hardware or browser-engine universality claim.",
+    "Full49-view/layout matrix preceded final geometric clearance refinement; the final source was additionally checked for six frames, all stage markers, exports and repeated view lifecycle.",
+    "Collision/SAT findings are provided by the separate geometry audit, not inferred from screenshots here."
+  ]
+}

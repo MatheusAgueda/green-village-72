@@ -1,0 +1,230 @@
+{
+  "revision": "GV72-R4",
+  "generatedAt": "2026-09-10T16:51:04.859306+00:00",
+  "status": "PASS_SAMPLED_WITH_EXPLICIT_FINAL_CONTACT_BASELINE",
+  "scope": "Actual deployed envelope and moving frame members, seven layouts. Read-only audit. No manufacturer mechanism claim.",
+  "currentSourceHashes": {
+    "model.js": "81fc4733134a4d49d9ee00e005ee78c7f712167ebd207de12f898a32bc8b973e",
+    "specification.js": "d451a71c5a25a4c9d290559a2c3f0fc6dfd9aa7053f6cf786d0ebd0e01e8d62f",
+    "configuration.js": "323424bb2c18d8313e7592f3e0ba41fc34ab684bd43a71ff9a7da108046e86aa",
+    "data.js": "51c44e7592d2cdd773eab4e9a66be1ebf739b408eb4ace55ffdfff397c248f1d",
+    "stage.js": "f267d8ced81973011e8f55f28a75458bbe4b4ca77597149e17120ffede83bef4",
+    "material-library.js": "4a7ad220ed802dfe92608c416b2e173d55c0a4516860a09b1f25f702f2537280"
+  },
+  "historicalSourceHashes": {
+    "fceed1c": {
+      "modelSHA256": "04f8f91b23e9ebe76a6f1a701b9e2b02607193da44fa630c399eee76fba7ff78",
+      "modelLines": 158
+    },
+    "7be868f": {
+      "modelSHA256": "04f8f91b23e9ebe76a6f1a701b9e2b02607193da44fa630c399eee76fba7ff78",
+      "modelLines": 158
+    },
+    "a822a66": {
+      "modelSHA256": "9130b326aa4f97183f10a9d813ee8c6afa04fcbab8510700f6d5b8cd711786af",
+      "modelLines": 165
+    }
+  },
+  "initialModelsIdentical": true,
+  "changeLedger": [
+    {
+      "revision": "fceed1c / 7be868f",
+      "coverage": "Roof rotation, nested wing floor + wall rotation and rotating end panels. All four major deployment elements animated.",
+      "timing": {
+        "roof": [
+          0,
+          0.3
+        ],
+        "floor": [
+          0.2,
+          0.65
+        ],
+        "wall": [
+          0.62,
+          0.92
+        ],
+        "ends": [
+          0.83,
+          1
+        ]
+      },
+      "limits": "Original chain uses wall height greater than wing width without lift/clearance offsets; not a validated collision-free or manufacturer mechanism."
+    },
+    {
+      "revision": "a822a66 (R3)",
+      "coverage": "Roof and floor fixed open. Side walls rotate alone. End panels slide from outside ends.",
+      "timing": {
+        "roof": "constant 1",
+        "floor": "constant 1",
+        "wall": [
+          0.06,
+          0.65
+        ],
+        "ends": [
+          0.72,
+          1
+        ]
+      },
+      "removed": [
+        "Compact initial state",
+        "Roof articulation",
+        "Floor articulation",
+        "End-panel rotation"
+      ],
+      "reasonForUserRegression": "The full deployment demonstration became only the last envelope assembly stages."
+    },
+    {
+      "revision": "current R4",
+      "coverage": "Complete rigid visual deployment restored with temporary sliding clearances and outward rotating end flaps.",
+      "timing": {
+        "roof": [
+          0.02,
+          0.18
+        ],
+        "roofDock": [
+          0.18,
+          0.24
+        ],
+        "floor": [
+          0.26,
+          0.5
+        ],
+        "wall": [
+          0.6,
+          0.78
+        ],
+        "roofLower": [
+          0.78,
+          0.84
+        ],
+        "ends": [
+          0.84,
+          0.96
+        ],
+        "postsDock": [
+          0.96,
+          1
+        ]
+      },
+      "dimensionsM": {
+        "width": 6.22,
+        "length": 11.8,
+        "core": 2.2,
+        "wing": 2.01
+      },
+      "finalTransforms": "All moving mesh world matrices at expansion p=1 exactly equal the same model in Exterior mode."
+    }
+  ],
+  "sourceImage": {
+    "path": "expansao.png",
+    "sha256": "36bbfd47243074c675aed831ccdc8b68b1253a214c0d45ec5945501a03172b69",
+    "observations": [
+      "Four images show roof wings open before side wall elevation.",
+      "An intermediate scene has a windowed side panel horizontal on the wing.",
+      "A subsequent scene has longitudinal walls upright and ends open.",
+      "The final scene shows a closed envelope."
+    ],
+    "supported": "Sequence semantics only.",
+    "notEstablished": [
+      "Exact hinge axes",
+      "Stored panel stacking",
+      "Telescopic or sliding hardware",
+      "Required clearances",
+      "Transportation envelope",
+      "Match to the 6220 × 11800 mm plan variant"
+    ]
+  },
+  "rigParameters": {
+    "status": "estimated",
+    "floorLift": 0.55,
+    "floorOffset": 0.45,
+    "wallPivotInset": 0.126,
+    "wallPivotHeight": 0.14,
+    "roofOffset": 0.8,
+    "roofLift": 0.3,
+    "endOffset": 0.15,
+    "endAxialOffset": 0.3,
+    "postClearanceZ": 0.18,
+    "postLateralClearanceX": 0.02
+  },
+  "equations": {
+    "notation": "s = wing side ±1, f = front/rear ±1; C=1.1, X=3.11, Z=5.9, H=2.55 metres. R is a rigid rotation. All phase functions use clamped smoothstep.",
+    "floor": "alpha=(pi/2)(1-floor); anchor=(s(C+.45 sin(alpha)), .55 sin(alpha),0); rotate Rz(s alpha).",
+    "wall": "beta=(pi/2)(1-wall); anchor=floorAnchor+Rz(s alpha)*(s(X-.126-C),.14,0); rotate Rz(s(alpha+beta)).",
+    "posts": "Same pivot rotation as wall; local base x gains s*.02*(1-postsDock), local z gains sign(baseZ)*.18*(1-postsDock). These are explicit independent sliding placement assumptions.",
+    "roof": "anchor=(s(C+.8(1-roofDock)),H+.3(1-roofLower),0); rotate Rz(-s*(pi/2)*(1-roof)).",
+    "ends": "theta=(pi/2)(1-ends); anchor=(s(C+.15 sin(theta)^2),0,f(Z+.30(1-ends))); rotate Ry(-s f theta).",
+    "endpoint": "Every added translation and rotation is zero at p=1 relative to its reference anchor."
+  },
+  "verification": {
+    "layouts": [
+      "t0",
+      "t1",
+      "t2",
+      "t3-a",
+      "t3-b",
+      "t4-a",
+      "t4-b"
+    ],
+    "posesPerLayout": 10001,
+    "totalPoseEvaluations": 70007,
+    "parameterStep": 0.0001,
+    "method": "Actual transformed connected mesh-component OBB SAT with 0.1 mm excess-over-final-baseline threshold. Final structural joints retained as explicit baseline contacts, not hidden claims of fabrication clearance.",
+    "regressions": 0,
+    "maxExcessThresholdM": 0.0001,
+    "baselineContactPairsPerLayout": 24,
+    "baselineDisclosure": "Final roof/profile/post construction volumes and floor/support contacts overlap in this visual solid model. They are listed explicitly, retained pair-by-pair, and are not evidence of fabrication clearance. No additional sampled penetration above baseline + 0.1 mm was found.",
+    "rigidityPosesPerLayout": 101,
+    "maxEndpointMatrixDifference": 0,
+    "maxDeterminantError": 5.551115123125783e-16,
+    "minPostY": 2.3841857821338408e-8,
+    "sweptBounds": {
+      "min": [
+        -3.9100452282445484,
+        -0.3644999861717224,
+        -8.090000009536743
+      ],
+      "max": [
+        3.9100452282445484,
+        2.8634999275207518,
+        8.090000009536743
+      ]
+    },
+    "cameraBoundsRecommended": {
+      "min": [
+        -3.93,
+        -0.4,
+        -8.15
+      ],
+      "max": [
+        3.93,
+        3.05,
+        8.15
+      ]
+    }
+  },
+  "fixedFindings": [
+    "Postes com Z original atravessavam os topos fixos do núcleo até 94 mm.",
+    "Deslocar postes para dentro em Z fazia-os atravessar a própria parede longitudinal.",
+    "Cobertura baixa antes das paredes erguidas introduzia até 3.42 mm de penetração.",
+    "Postes colocados fora em Z, com folga lateral local de 20 mm, e assentamento depois do fecho dos topos eliminam os excessos detectados.",
+    "A folga axial dos topos de 300 mm evita a sobreposição inicial com postes afastados 180 mm."
+  ],
+  "limits": [
+    "Discrete sampled test, not a continuous collision proof or manufacturing tolerance.",
+    "Connected-component boxes conservatively bound the actual triangular geometry; holes and curved surfaces may be overestimated.",
+    "Only geometry displayed during Expansion is audited. Interior partitions, furnishings, electrical and plumbing are hidden and are not shown folded or packed.",
+    "Support/joint construction detail, hardware, locks, structural strength, tolerances and transportation logistics remain unverified.",
+    "All clearances are presentation hypotheses. Numeric confidence intervals cannot be inferred from the unmeasured source image."
+  ],
+  "evidence": {
+    "t0": "actual-dense-t0.json",
+    "t1": "actual-dense-t1.json",
+    "t2": "actual-dense-t2.json",
+    "t3-a": "actual-dense-t3-a.json",
+    "t3-b": "actual-dense-t3-b.json",
+    "t4-a": "actual-dense-t4-a.json",
+    "t4-b": "actual-dense-t4-b.json"
+  },
+  "rigidityEvidence": "rigidity-endpoints.json"
+}

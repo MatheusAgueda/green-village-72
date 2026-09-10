@@ -1,1 +1,9 @@
-{"name":"green-village-72","private":true,"type":"module","scripts":{"test":"node tests.mjs"}}
+{
+  "name": "green-village-72",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node tests.mjs",
+    "test:expansion": "node scripts/expansion-audit.mjs"
+  }
+}

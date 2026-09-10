@@ -2,15 +2,15 @@ import * as THREE from './vendor/three.module.js';
 import { installPanelJoints } from './panel-joints.js';
 import { RoundedBoxGeometry } from './vendor/RoundedBoxGeometry.js';
 import { mergeGeometries } from './vendor/BufferGeometryUtils.js';
-import { DIM, getPlan, expansionState } from './specification.js';
+import { DIM, EXPANSION_RIG as RIG, getPlan, expansionState } from './specification.js';
 import { DEFAULT_CONFIG, VISUAL_DEFAULT } from './configuration.js';
 import { createMaterialLibrary, physicalUV } from './material-library.js';
 export { DIM, expansionState } from './specification.js';
 export const DEFAULT={...DEFAULT_CONFIG,...VISUAL_DEFAULT};
 export function makeHouse(options={},library=null){
- const state={...DEFAULT,...options},plan=getPlan(state),lib=library||createMaterialLibrary(),ownLibrary=!library,root=new THREE.Group();root.name='GV72 · maquete documental R3';
+ const state={...DEFAULT,...options},plan=getPlan(state),lib=library||createMaterialLibrary(),ownLibrary=!library,root=new THREE.Group();root.name='GV72 · maquete documental R4';
  const groups={};for(const name of ['structure','floor','floorLayers','shell','roof','interior','furniture','plumbing','electrical','cover','porch','supports']){const g=new THREE.Group();g.name=name;groups[name]=g;root.add(g);}
- const allMaterials=new Set(),allGeometry=new Set(),walls=[],roofPanels=[],sideAssemblies=[],endAssemblies=[],doors=[],colliders=[];
+ const allMaterials=new Set(),allGeometry=new Set(),walls=[],roofPanels=[],sideAssemblies=[],endAssemblies=[],floorAssemblies=[],roofAssemblies=[],doors=[],colliders=[];
  const plain=(name,color,roughness=.65,more={})=>{const m=new THREE.MeshStandardMaterial({color,roughness,metalness:0,...more});m.name=name;allMaterials.add(m);return m;};
  const exterior=lib.create(state.exteriorId,state.exterior,'exterior_wall'),floorFinish=lib.create(state.floorId,state.floor,'interior_floor'),bathFinish=lib.create(state.bathroomUV,'#e7e8e3','bathroom_wall');allMaterials.add(exterior);allMaterials.add(floorFinish);allMaterials.add(bathFinish);
  const M={exterior,floor:floorFinish,bath:bathFinish,inner:plain('Pintura interior',state.interior,.84),steel:plain('Perfil pintado · secção estimada','#293330',.43),aluminium:plain('Caixilharia lacada','#273632',.34),metal:plain('Metal aparente','#b0b8b5',.27,{metalness:.85}),white:plain('Cerâmica','#f2f2ed',.19),board:plain('Placa base do piso','#827765',.91),insulation:plain('Camada de isolamento ilustrativa','#ddd9c3',.97),roof:plain('Cobertura metálica','#e2e4dd',.65),cabinet:plain('Mobiliário · branco ilustrativo','#e4e4dc',.58),counter:plain('Bancada · composição ilustrativa','#e4e6df',.36),wood:plain('Madeira de mobiliário · ilustrativa','#ae8f67',.61),linen:plain('Tecido','#a8b39d',.94),fabric:plain('Roupa de cama','#e5e3d9',.96),rubber:plain('Junta elastomérica','#202722',.92),black:plain('Placa de cozinha','#101a1a',.17),blue:plain('Água fria · esquema','#2285c1'),red:plain('Água quente · esquema','#c66347'),drain:plain('Esgotos · esquema','#40846b'),electric:plain('Electricidade · esquema','#d8a027')};
@@ -24,17 +24,21 @@ export function makeHouse(options={},library=null){
  function bolt(g,x,y,z,axis='z'){const m=cylinder(g,.014,.008,x,y,z,M.metal,'Fixação representativa',6);if(axis==='z')m.rotation.x=Math.PI/2;if(axis==='x')m.rotation.z=Math.PI/2;}
  // Profile dimensions and fixing details are visual assumptions, not manufacturer specifications.
  const X=DIM.width/2,Z=DIM.length/2,C=DIM.core/2,H=DIM.height,P=DIM.frame;
+ // Rigid assemblies retain the finished geometry. Deployment clearances are illustrative.
+ const wings=new Map([-1,1].map(dir=>{const w={dir};for(const [key,parent]of [['floor','floor'],['layers','floorLayers'],['floorFrame','structure'],['roofFrame','structure'],['sideFrame','structure']]){const g=new THREE.Group();g.name=key+' '+dir;groups[parent].add(g);w[key]=g;}return [dir,w];}));
+ function hinge(g,position,name){const parent=g.parent,pivot=new THREE.Group();pivot.name=name;parent.add(pivot);pivot.position.copy(position);pivot.add(g);g.position.copy(position).negate();return pivot;}
+ const floorZones=[[-X,-C],[-C,C],[C,X]],wingAt=(a,b)=>a>=C?wings.get(1):b<=-C?wings.get(-1):null;
+
  for(const x of [-C+P/2,C-P/2])for(const z of [-Z+P/2,Z-P/2])box(groups.structure,P,H,P,x,H/2,z,M.steel,'Pilar do núcleo',.009);
  for(const x of [-C+P/2,C-P/2])for(const y of [-.075,H-P/2])box(groups.structure,P,P,DIM.length,x,y,0,M.steel,'Longarina central',.006);
- for(const x of [-X+P/2,X-P/2])for(const z of [-Z+P/2,Z-P/2])box(groups.structure,P,H,P,x,H/2,z,M.steel,'Pilar lateral',.006);
- for(const x of [-X+P/2,X-P/2])for(const y of [-.075,H-P/2])box(groups.structure,P,P,DIM.length,x,y,0,M.steel,'Longarina lateral',.005);
- for(const z of [-Z+P/2,Z-P/2])for(const y of [-.075,H-P/2])box(groups.structure,DIM.width,P,P,0,y,z,M.steel,'Travessa lateral',.005);
- for(let z=-Z+.3;z<Z-.15;z+=.59){box(groups.structure,DIM.width-.2,.055,.045,0,-.14,z,M.steel,'Travessa de piso estimada');}
+ for(const x of [-X+P/2,X-P/2])for(const z of [-Z+P/2,Z-P/2])box(wings.get(Math.sign(x)).sideFrame,P,H,P,x,H/2,z,M.steel,'Pilar lateral',.006);
+ for(const x of [-X+P/2,X-P/2])for(const y of [-.075,H-P/2])box(wings.get(Math.sign(x))[y<0?'floorFrame':'roofFrame'],P,P,DIM.length,x,y,0,M.steel,'Longarina lateral',.005);
+ for(const z of [-Z+P/2,Z-P/2])for(const y of [-.075,H-P/2])for(const [a,b]of floorZones){const wing=wingAt(a,b);box(wing?wing[y<0?'floorFrame':'roofFrame']:groups.structure,b-a,P,P,(a+b)/2,y,z,M.steel,'Travessa lateral',.005);}
+ for(let z=-Z+.3;z<Z-.15;z+=.59)for(const [a,b]of floorZones){const wing=wingAt(a,b),lo=Math.max(a,-X+.1),hi=Math.min(b,X-.1);box(wing?wing.floorFrame:groups.structure,hi-lo,.055,.045,(lo+hi)/2,-.14,z,M.steel,'Travessa de piso estimada');}
  for(const x of [-X+.2,-C+.15,C-.15,X-.2])for(const z of [-Z+.35,0,Z-.35]){box(groups.supports,.29,.035,.29,x,-.347,z,M.steel,'Base de apoio');cylinder(groups.supports,.038,.17,x,-.245,z,M.metal,'Apoio ilustrativo');}
  // Three independent visible floor layers, inside the same 6.22 × 11.80 m envelope.
- const floorZones=[[-X,-C],[-C,C],[C,X]];
  function floorSlab(g,a,b,bottom,depth,material,name){const inset=.004; a+=inset; b-=inset; const shape=new THREE.Shape();shape.moveTo(a,-Z+inset);shape.lineTo(b,-Z+inset);shape.lineTo(b,Z-inset);shape.lineTo(a,Z-inset);shape.closePath();for(const point of plan.servicePoints)for(const offset of [-.13,0,.13]){const x=point.x+offset;if(x>a+.04&&x<b-.04){const hole=new THREE.Path();hole.absarc(x,-point.z,.037,0,Math.PI*2,true);shape.holes.push(hole);}}const geo=new THREE.ExtrudeGeometry(shape,{depth,bevelEnabled:false,curveSegments:12});geo.rotateX(-Math.PI/2);physicalUV(geo);const m=mesh(g,geo,material,name);m.position.y=bottom;}
- for(const [a,b] of floorZones){floorSlab(groups.floor,a,b,-.012,.012,M.floor,'Pavimento SPC · passagens propostas');floorSlab(groups.floorLayers,a,b,-.046,.032,M.board,'Placa de suporte');floorSlab(groups.floorLayers,a,b,-.121,.07,M.insulation,'Isolamento de piso · ilustrativo');}
+ for(const [a,b] of floorZones){const w=wingAt(a,b);floorSlab(w?w.floor:groups.floor,a,b,-.012,.012,M.floor,'Pavimento SPC · passagens propostas');floorSlab(w?w.layers:groups.floorLayers,a,b,-.046,.032,M.board,'Placa de suporte');floorSlab(w?w.layers:groups.floorLayers,a,b,-.121,.07,M.insulation,'Isolamento de piso · ilustrativo');}
  // Panels have separate external skin, insulating body and internal paint. Each side has metre UVs.
  function panelSection(g,axis,c,a,b,lo,hi,sign,name,material=M.exterior){if(b-a<1e-7||hi-lo<1e-7)return;
   const centre=(a+b)/2,cy=(lo+hi)/2;const at=(offset)=>axis==='z'?[c+offset,cy,centre]:[centre,cy,c+offset];
@@ -55,7 +59,7 @@ export function makeHouse(options={},library=null){
   walls.push(g);
  }
  for(const face of plan.perimeter){const sign=face.c>0?1:-1;if(face.axis==='z'){
-   const pivot=new THREE.Group();pivot.name='Painel longitudinal '+sign;pivot.position.set(sign*(X-.106),.14,0);root.add(pivot);
+   const pivot=new THREE.Group();pivot.name='Painel longitudinal '+sign;pivot.position.set(sign*(X-RIG.wallPivotInset),RIG.wallPivotHeight,0);root.add(pivot);
    const local=new THREE.Group();local.position.set(-pivot.position.x,-pivot.position.y,0);pivot.add(local);
    wallPanel(local,'z',sign*X,-Z+P,Z-P,face.holes,sign,'Fachada longitudinal');
    sideAssemblies.push({dir:sign,pivot,local});
@@ -129,13 +133,23 @@ export function makeHouse(options={},library=null){
  for(const dir of [-1,1]){const m=box(canopyGroup,slant,.06,porchDepth+.28,dir*coverHalf/2,eaves+rise/2,Z+porchDepth/2,M.roof,'Cobertura de alpendre');m.rotation.z=-dir*pitch;}
  for(const x of [-X+.08,-1.04,1.04,X-.08])box(groups.porch,.06,eaves,.06,x,eaves/2,porchFront-.06,M.white,'Pilar de alpendre',.006);
  for(const dir of [-1,1]){box(groups.porch,2.02,.045,.05,dir*2.04,.9,porchFront-.05,M.white,'Corrimão',.006);for(let x=1.12;x<X-.06;x+=.19)box(groups.porch,.018,.8,.018,dir*x,.46,porchFront-.05,M.white,'Balaústre');}
+
+ for(const w of wings.values()){
+  const anchor=new THREE.Vector3(w.dir*C,0,0),pivots=['floor','layers','floorFrame'].map(key=>hinge(w[key],anchor,'Articulação de piso '+w.dir));
+  for(const post of w.sideFrame.children){post.userData.deploymentZ=post.position.z;post.userData.deploymentX=post.position.x;}
+  const side=sideAssemblies.find(a=>a.dir===w.dir);side.framePivot=hinge(w.sideFrame,new THREE.Vector3(w.dir*(X-RIG.wallPivotInset),RIG.wallPivotHeight,0),'Articulação de postes '+w.dir);
+  floorAssemblies.push({dir:w.dir,pivots});
+  const panel=roofPanels[w.dir<0?0:2],roofAnchor=new THREE.Vector3(w.dir*C,H,0);
+  roofAssemblies.push({dir:w.dir,pivots:[hinge(panel,roofAnchor,'Articulação de cobertura '+w.dir),hinge(w.roofFrame,roofAnchor,'Articulação de perfis de cobertura '+w.dir)]});
+ }
+ for(const a of endAssemblies){a.pivot=hinge(a.g,new THREE.Vector3(a.dir*C,0,a.front*Z),'Articulação de topo '+a.front+' '+a.dir);}
  const cutPlane=new THREE.Plane(new THREE.Vector3(0,-1,0),state.cut||1.1);
  const moving=[...sideAssemblies.map(a=>a.pivot),...endAssemblies.map(a=>a.g)];
  function setView(view){state.view=view;const cut=['interior','plan','plumbing','electrical'].includes(view),structure=view==='structure',finish=view==='finishes',expand=view==='expansion';
-  groups.shell.visible=!structure&&state.wallsVisible;groups.interior.visible=!structure&&!expand;groups.furniture.visible=state.furnitureVisible&&!structure&&!expand;
-  groups.floor.visible=!structure;groups.floorLayers.visible=!structure||finish;groups.roof.visible=!cut&&!structure&&state.roofVisible;groups.structure.visible=true;groups.supports.visible=true;
+  groups.shell.visible=!structure&&(expand||state.wallsVisible);groups.interior.visible=!structure&&!expand;groups.furniture.visible=state.furnitureVisible&&!structure&&!expand;
+  groups.floor.visible=!structure;groups.floorLayers.visible=!structure||finish;groups.roof.visible=!cut&&!structure&&(expand||state.roofVisible);groups.structure.visible=true;groups.supports.visible=true;
   groups.plumbing.visible=view==='plumbing';groups.electrical.visible=view==='electrical';
-  for(const a of sideAssemblies)a.pivot.visible=!structure&&state.wallsVisible;for(const a of endAssemblies)a.g.visible=!structure&&state.wallsVisible;
+  for(const a of sideAssemblies)a.pivot.visible=!structure&&(expand||state.wallsVisible);for(const a of endAssemblies)a.g.visible=!structure&&(expand||state.wallsVisible);
   for(const m of allMaterials){m.clippingPlanes=cut&&![M.electric,electricWhite,electricBox].includes(m)?[cutPlane]:[];m.clipShadows=true;m.needsUpdate=true;}
   if(view==='plumbing'||view==='electrical'){groups.floor.visible=false;groups.floorLayers.visible=false;}
   groups.cover.visible=state.roof&&!cut&&!expand;groups.porch.visible=state.porch&&!expand;canopyGroup.visible=!cut&&!structure;for(const o of groups.cover.children)o.visible=!structure||o.material!==M.roof;for(const o of groups.porch.children)if(o.isMesh)o.visible=!structure||o.material!==M.wood;
@@ -143,23 +157,30 @@ export function makeHouse(options={},library=null){
  }
  function setCut(height){state.cut=height;cutPlane.constant=height;}
  function setDoors(open){state.doorsOpen=open;for(const d of doors)d.pivot.rotation.y=open?(d.axis==='z'?d.side*Math.PI/2:-Math.PI/2):0;}
- function setExploded(v){state.exploded=v;groups.roof.position.y=v*1.2;groups.floorLayers.position.y=-v*.65;for(const a of sideAssemblies)a.pivot.position.x=a.dir*(X-.106+v*.6);groups.cover.position.y=v*1.5;}
- function updateExpansion(value){const e=expansionState(value);state.expansion=e.p;const active=state.view==='expansion';
-  // The undemonstrated transport and floor unfolding poses are deliberately omitted.
-  // The provided four-frame reference supports walls rising after floors/roofs are open.
-  for(const a of sideAssemblies){a.pivot.rotation.z=active?a.dir*Math.PI/2*(1-e.wall):0;a.pivot.position.x=a.dir*(X-.106+(state.view==='finishes'?state.exploded*.6:0));}
-  // End panels remain visible on an external staging line, then move rigidly into place.
-  // This is an illustrative installation sequence, not an asserted hinge mechanism.
-  for(const a of endAssemblies){a.g.position.z=active?a.front*2.1*(1-e.ends):0;}
+ function setExploded(v){state.exploded=v;groups.roof.position.y=v*1.2;groups.floorLayers.position.y=-v*.65;for(const a of sideAssemblies)for(const p of [a.pivot,a.framePivot])p.position.x=a.dir*(X-RIG.wallPivotInset+v*.6);groups.cover.position.y=v*1.5;}
+ function updateExpansion(value){
+  const e=expansionState(value);state.expansion=e.p;const active=state.view==='expansion';
+  const alpha=active?Math.PI/2*(1-e.floor):0,beta=active?Math.PI/2*(1-e.wall):0;
+  const lift=RIG.floorLift*Math.sin(alpha),offset=RIG.floorOffset*Math.sin(alpha);
+  for(const a of floorAssemblies)for(const p of a.pivots){p.rotation.z=a.dir*alpha;p.position.set(a.dir*(C+offset),lift,0);}
+  for(const a of sideAssemblies){
+   const anchor=new THREE.Vector3(a.dir*(X-RIG.wallPivotInset-C),RIG.wallPivotHeight,0).applyAxisAngle(new THREE.Vector3(0,0,1),a.dir*alpha).add(new THREE.Vector3(a.dir*(C+offset),lift,0));
+   if(state.view==='finishes')anchor.x+=a.dir*state.exploded*.6;
+   for(const p of [a.pivot,a.framePivot]){p.position.copy(anchor);p.rotation.z=a.dir*(alpha+beta);}
+   for(const post of a.framePivot.children[0].children)if(Number.isFinite(post.userData.deploymentZ)){const clearance=active?1-e.postsDock:0;post.position.z=post.userData.deploymentZ+Math.sign(post.userData.deploymentZ)*RIG.postClearance*clearance;post.position.x=post.userData.deploymentX+a.dir*RIG.postLateralClearance*clearance;}
+  }
+  for(const a of roofAssemblies)for(const p of a.pivots){p.rotation.z=active?-a.dir*Math.PI/2*(1-e.roof):0;p.position.set(a.dir*(C+(active?RIG.roofOffset*(1-e.roofDock):0)),H+(active?RIG.roofLift*(1-e.roofLower):0),0);}
+  for(const a of endAssemblies){const angle=active?Math.PI/2*(1-e.ends):0;a.pivot.rotation.y=-a.dir*a.front*angle;a.pivot.position.set(a.dir*(C+RIG.endOffset*Math.sin(angle)**2),0,a.front*(Z+(active?RIG.endAxialOffset*(1-e.ends):0)));}
   if(active){groups.interior.visible=false;groups.furniture.visible=false;groups.cover.visible=false;groups.porch.visible=false;groups.plumbing.visible=false;groups.electrical.visible=false;}
   return e;
  }
- function captureBases(){root.updateMatrixWorld(true);for(const a of sideAssemblies)colliders.push({id:'side-'+a.dir,object:a.pivot,kind:'moving-wall'});for(const a of endAssemblies)colliders.push({id:a.g.name,object:a.g,kind:'moving-end'});}
+ function captureBases(){root.updateMatrixWorld(true);for(const a of sideAssemblies)colliders.push({id:'side-'+a.dir,object:a.pivot,kind:'moving-wall'});for(const a of endAssemblies)colliders.push({id:a.g.name,object:a.pivot,kind:'moving-end'});for(const a of floorAssemblies)colliders.push({id:'floor-'+a.dir,object:a.pivots[0],kind:'moving-floor'});for(const a of roofAssemblies)colliders.push({id:'roof-'+a.dir,object:a.pivots[0],kind:'moving-roof'});}
  // Merge only immutable per-group profile pieces with the same material, retaining animated groups.
  function batch(g){const byMat=new Map();for(const o of [...g.children])if(o.isMesh&&!o.name.includes('vidro')&&o.material!==glass){if(!byMat.has(o.material))byMat.set(o.material,[]);byMat.get(o.material).push(o);}
   for(const [material,objects]of byMat)if(objects.length>3){const geometries=objects.map(o=>{o.updateMatrix();const geo=o.geometry.clone().applyMatrix4(o.matrix);return geo.index?geo.toNonIndexed():geo;});const merged=mergeGeometries(geometries,false);geometries.forEach(g=>g.dispose());if(!merged)continue;const replacement=mesh(g,merged,material,`${g.name} · ${objects.length} peças`);for(const o of objects){g.remove(o);o.geometry.dispose();allGeometry.delete(o.geometry);}}}
+ for(const w of wings.values())for(const key of ['floorFrame','roofFrame','sideFrame','layers'])batch(w[key]);
  batch(groups.structure);batch(groups.supports);batch(groups.floorLayers);batch(groups.interior);batch(groups.plumbing);batch(groups.electrical);for(const g of roofPanels)batch(g);for(const a of sideAssemblies)batch(a.local);for(const a of endAssemblies)batch(a.g);for(const g of groups.furniture.children)batch(g);
  setView(state.view);captureBases();
- root.userData={revision:'R3',state,plan,groups,bedroomCount:plan.bedrooms,colliders,envelope:{width:DIM.width,length:DIM.length,core:DIM.core,wing:DIM.wing},animationLimits:'Transport/floor-unfolding mechanism not documented; this demonstration begins with floors and roof open.'};
- return {root,groups,plan,materials:M,sideAssemblies,endAssemblies,doors,colliders,updateExpansion,setView,setCut,setExploded,setDoors,library:lib,dispose(){for(const g of allGeometry)g.dispose();for(const m of allMaterials)if(m.userData.lease||[exterior,floorFinish,bathFinish].includes(m))lib.release(m);else m.dispose();if(ownLibrary)lib.dispose();}};
+ root.userData={revision:'R4',state,plan,groups,bedroomCount:plan.bedrooms,colliders,envelope:{width:DIM.width,length:DIM.length,core:DIM.core,wing:DIM.wing},animationLimits:'Complete illustrative deployment; unmeasured hinges and temporary clearances are not manufacturer transport dimensions.'};
+ return {root,groups,plan,materials:M,sideAssemblies,endAssemblies,floorAssemblies,roofAssemblies,doors,colliders,updateExpansion,setView,setCut,setExploded,setDoors,library:lib,dispose(){for(const g of allGeometry)g.dispose();for(const m of allMaterials)if(m.userData.lease||[exterior,floorFinish,bathFinish].includes(m))lib.release(m);else m.dispose();if(ownLibrary)lib.dispose();}};
 }

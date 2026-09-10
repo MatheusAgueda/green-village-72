@@ -1,12 +1,11 @@
-# R3 source handoff · 2026-09-10
+# R4 source handoff · 2026-09-10
 
-This source revision contains the R3 configurator, native photographic material treatments, four original reference videos, two Full HD model films, and source-backed local audit evidence. Publish/reuse only the existing owner-private Site and preserve its browser tab. The publication result is recorded separately in the parent session record; local QA evidence must not be described as a production test.
+The user's complaint was correct: R3 started expansion with floors and roof already open. R4 restores a complete illustrative unfolding sequence using rigid assemblies and explicit assumed clearances. It does not claim an undocumented manufacturer transport mechanism. Source dimensions,71 material IDs, R3 photographic treatments, seven original layouts and four supplied MP4s remain preserved.
 
-Runtime modules and rendered material assets are stable. A post-capture material-library change fixes GPU storage reallocation solely after failed texture loading; the film reports identify both the captured hashes and this unused-branch exception. Model, geometry, shaders and normal successful loading are unchanged.
+Root owns this independent Site checkout and publication. Reuse `.openai/hosting.json`, preserve owner-private access and the existing browser tab. Recovery point: recovery/gv72-before-r4-20260910. R3 and earlier evidence remain historical, explicitly labelled.
 
-All supported updates are implemented. Remaining limits are documentary: closed transport state and real hinges; stepped core-end dimensions; certified net area and internal construction measurements; calibrated/high-resolution maps and real plank/profile dimensions; construction and installation projects. Four new videos show distinct open units, not the expansion mechanism.
+Verified:22 Node regression groups;7×10,001 sampled OBB SAT poses against24 final assembly contacts, zero additional overlaps above0.1mm; rigid endpoint identity;49 layout/view combinations; desktop/tablet/emulated-phone framing; six timeline steps; playback/progress/configuration continuity; reset; responsive camera/orbit; keyboard; lost-context capture; PNG/PDF; resource disposal. These are scoped local checks, not certification or proof of all possible browser/device behaviour.
 
-Useful files: README.md; dist/assets/evidence-r3/audit-report.html; dist/assets/catalogue-r3/material-r3-ledger.json; dist/assets/reference-videos/source-inventory.json. Historical reports remain untouched. Recovery tag before R3: recovery/gv72-before-r3-20260910.
+Runtime files are stable; expansion-v4 is rendered from the current model/specification snapshot with the same T2/configuration as presentation-v3. Keep the hosted-video complete-Blob preparation in video-library.js: Sites static MP4 routes previously ignored Range requests. Do not regress to setting currentTime before preparing seekable media.
 
-
-Final publication transport correction: the hosted static MP4 endpoint returns HTTP 200 to Range requests, unlike the local server. The shared video-library now prepares a complete Blob on first playback or chapter selection, retains at most two media objects, validates seek completion, cancels stale requests on navigation and supports native controls for all six videos. Original download links remain unchanged. This changes the player only; captured model geometry and film pixels are unchanged. Swatch thumbnails use the same exact R3 crops as the comparator.
+Useful files: README.md; dist/assets/evidence-r4/audit-report.html; scripts/expansion-audit.mjs; dist/specification.js EXPANSION_RIG; tests.mjs. Final publication response and live smoke-test outcome are stored in the parent session record after deployment.

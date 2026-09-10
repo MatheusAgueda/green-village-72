@@ -1,0 +1,300 @@
+{
+  "status": "FUNCTIONAL_PASS_ONE_LABEL_COHERENCE_FINDING",
+  "candidate": "Captured candidate in r4-candidate/; root may refine geometry later.",
+  "testedViewports": [
+    [
+      375,
+      844
+    ],
+    [
+      768,
+      1024
+    ],
+    [
+      1440,
+      1000
+    ]
+  ],
+  "expansionFrames": [
+    0,
+    0.18,
+    0.35,
+    0.52,
+    0.7,
+    1
+  ],
+  "viewLayoutCombinations": 49,
+  "tests": [
+    {
+      "name": "7 layouts by7 views preserve valid current model",
+      "pass": true,
+      "observations": 49
+    },
+    {
+      "name": "disabled controls force moving wall visibility despite inherited flags",
+      "pass": true,
+      "observations": null
+    },
+    {
+      "name": "reset from Expansion restores state and all UI",
+      "pass": true,
+      "observations": null
+    },
+    {
+      "name": "reset from Exterior restores hidden visibility",
+      "pass": true,
+      "observations": null
+    },
+    {
+      "name": "all5 step selectors pause and choose exact stage",
+      "pass": true,
+      "observations": 5
+    },
+    {
+      "name": "aspect2 to.8 outsideStudio returns fully fitted visible geometry",
+      "pass": true,
+      "observations": null
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "r4-1440-0.png",
+      "view": "expansion",
+      "progress": 0,
+      "label": "Casa recolhida · simulação",
+      "maxAbsProjectedXY": [
+        0.48905864908990615,
+        0.7811016681732983
+      ],
+      "fitsViewport": true
+    },
+    {
+      "file": "r4-1440-18.png",
+      "view": "expansion",
+      "progress": 0.18,
+      "label": "Abertura da cobertura",
+      "maxAbsProjectedXY": [
+        0.5222575495352875,
+        0.8370217564576954
+      ],
+      "fitsViewport": true
+    },
+    {
+      "file": "r4-1440-35.png",
+      "view": "expansion",
+      "progress": 0.35,
+      "label": "Descida dos pisos laterais",
+      "maxAbsProjectedXY": [
+        0.4913600172021256,
+        0.7846181894890426
+      ],
+      "fitsViewport": true
+    },
+    {
+      "file": "r4-1440-52.png",
+      "view": "expansion",
+      "progress": 0.52,
+      "label": "Encaixe da cobertura",
+      "maxAbsProjectedXY": [
+        0.4919115131248284,
+        0.7855150357744004
+      ],
+      "fitsViewport": true
+    },
+    {
+      "file": "r4-1440-70.png",
+      "view": "expansion",
+      "progress": 0.7,
+      "label": "Elevação das paredes",
+      "maxAbsProjectedXY": [
+        0.4907773668116748,
+        0.7884158752830901
+      ],
+      "fitsViewport": true
+    },
+    {
+      "file": "r4-1440-100.png",
+      "view": "expansion",
+      "progress": 1,
+      "label": "Casa expandida",
+      "maxAbsProjectedXY": [
+        0.3808693874491911,
+        0.6336870757050885
+      ],
+      "fitsViewport": true
+    },
+    {
+      "file": "r4-768-0.png",
+      "view": "expansion",
+      "progress": 0,
+      "label": "Casa recolhida · simulação",
+      "maxAbsProjectedXY": [
+        0.5051602144416505,
+        0.7811016681732982
+      ],
+      "fitsViewport": true
+    },
+    {
+      "file": "r4-768-18.png",
+      "view": "expansion",
+      "progress": 0.18,
+      "label": "Abertura da cobertura",
+      "maxAbsProjectedXY": [
+        0.5394521417992889,
+        0.8370217564576953
+      ],
+      "fitsViewport": true
+    },
+    {
+      "file": "r4-768-35.png",
+      "view": "expansion",
+      "progress": 0.35,
+      "label": "Descida dos pisos laterais",
+      "maxAbsProjectedXY": [
+        0.5075373518488742,
+        0.7846181894890426
+      ],
+      "fitsViewport": true
+    },
+    {
+      "file": "r4-768-52.png",
+      "view": "expansion",
+      "progress": 0.52,
+      "label": "Encaixe da cobertura",
+      "maxAbsProjectedXY": [
+        0.5081070049959859,
+        0.7855150357744003
+      ],
+      "fitsViewport": true
+    },
+    {
+      "file": "r4-768-70.png",
+      "view": "expansion",
+      "progress": 0.7,
+      "label": "Elevação das paredes",
+      "maxAbsProjectedXY": [
+        0.5069355185171618,
+        0.7884158752830903
+      ],
+      "fitsViewport": true
+    },
+    {
+      "file": "r4-768-100.png",
+      "view": "expansion",
+      "progress": 1,
+      "label": "Casa expandida",
+      "maxAbsProjectedXY": [
+        0.3934089741509172,
+        0.6336870757050886
+      ],
+      "fitsViewport": true
+    },
+    {
+      "file": "r4-375-0.png",
+      "view": "expansion",
+      "progress": 0,
+      "label": "Casa recolhida · simulação",
+      "maxAbsProjectedXY": [
+        0.7592767780038682,
+        0.7811016681732982
+      ],
+      "fitsViewport": true
+    },
+    {
+      "file": "r4-375-18.png",
+      "view": "expansion",
+      "progress": 0.18,
+      "label": "Abertura da cobertura",
+      "maxAbsProjectedXY": [
+        0.8108189687213793,
+        0.8370217564576953
+      ],
+      "fitsViewport": true
+    },
+    {
+      "file": "r4-375-35.png",
+      "view": "expansion",
+      "progress": 0.35,
+      "label": "Descida dos pisos laterais",
+      "maxAbsProjectedXY": [
+        0.7628497142324749,
+        0.7846181894890426
+      ],
+      "fitsViewport": true
+    },
+    {
+      "file": "r4-375-52.png",
+      "view": "expansion",
+      "progress": 0.52,
+      "label": "Encaixe da cobertura",
+      "maxAbsProjectedXY": [
+        0.7637059265662132,
+        0.7855150357744003
+      ],
+      "fitsViewport": true
+    },
+    {
+      "file": "r4-375-70.png",
+      "view": "expansion",
+      "progress": 0.7,
+      "label": "Elevação das paredes",
+      "maxAbsProjectedXY": [
+        0.7619451337450683,
+        0.7884158752830903
+      ],
+      "fitsViewport": true
+    },
+    {
+      "file": "r4-375-100.png",
+      "view": "expansion",
+      "progress": 1,
+      "label": "Casa expandida",
+      "maxAbsProjectedXY": [
+        0.591310023615524,
+        0.6336870757050886
+      ],
+      "fitsViewport": true
+    },
+    {
+      "file": "r4-resize-return-375.png",
+      "view": "exterior",
+      "progress": 1,
+      "label": "Casa expandida",
+      "maxAbsProjectedXY": [
+        0.6658125734123512,
+        0.8588193414072208
+      ],
+      "fitsViewport": true
+    }
+  ],
+  "consoleErrors": [],
+  "openFindings": [
+    {
+      "priority": "P3",
+      "name": "Step labels do not match selected motion phase",
+      "repro": [
+        "At18percent, title Abertura da cobertura but Recolhida selected.",
+        "Click Cobertura(.24): title Descida dos pisos laterais.",
+        "Click Pisos(.52): title Encaixe da cobertura."
+      ],
+      "source": "index.html data-expansion-step versus specification.js phase thresholds; app.js highlights previous step interval."
+    }
+  ],
+  "limits": [
+    "Visual inspection and browser projection measurements; geometric collision/SAT audit is performed independently by another agent.",
+    "Mobile sizes emulated in desktop Chrome; no real mobile hardware claim."
+  ],
+  "sourceHashes": {
+    "app.js": "56ef45df66fda8d71f0f67669624f6d96f7ac9f61a9f9ebc24b28b551ef13277",
+    "model.js": "aae1b0e7f4475644bd0982d01b3b830403d6ffe3bdd92032ff7ae514299a961f",
+    "specification.js": "9fc61b50ea995d4011addef80587a0c252857703479628ec7ee3e1a838acfc16",
+    "stage.js": "f267d8ced81973011e8f55f28a75458bbe4b4ca77597149e17120ffede83bef4",
+    "index.html": "9b70dbe12b1bfbd810212a781605fd056622b847c086c19afdcdc212437e82ed"
+  },
+  "evidence": "r4-matrix.json",
+  "naturalModelFrames": [
+    "r4-1440-0-model.png",
+    "r4-1440-35-model.png",
+    "r4-1440-100-model.png"
+  ]
+}

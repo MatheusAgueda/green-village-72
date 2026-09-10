@@ -1,12 +1,21 @@
-# Green Village — Expandível 72, revisão R3
+# Green Village — Expandível 72, revisão R4
 
 Portefólio e configurador existentes revistos em 10/09/2026. Aplicação estática em `dist/`, com identidade Green Village preservada e recursos de execução incluídos localmente. Reutilizar sempre o Site indicado em `.openai/hosting.json`.
 
 ## Utilização e verificação
 
-`node scripts/serve.mjs` disponibiliza a pré-visualização em `http://127.0.0.1:4174`. Abrir por `file://` não suporta os módulos. `npm test` executa 21 grupos de regressão. Não existe build obrigatório: o empacotamento usa directamente `dist/`.
+`node scripts/serve.mjs` disponibiliza a pré-visualização em `http://127.0.0.1:4174`. Abrir por `file://` não suporta os módulos. `npm test` executa 22 grupos de regressão. Não existe build obrigatório: o empacotamento usa directamente `dist/`.
 
-## Alterações R3
+## Alterações R4
+
+- Expansão completa com pisos, cobertura, paredes e topos rígidos. Seis etapas seleccionáveis, progresso preservado entre vistas e opções alteráveis durante a reprodução.
+- Corrigidos visibilidade herdada, reposição completa, câmara após redimensionamento fora do estúdio, órbita após vista superior, categorias por teclado, captura após perda de WebGL e alinhamento de postes na vista de camadas.
+- Parâmetros de folga e articulação em `EXPANSION_RIG`, explicitamente estimados. O estado recolhido não é uma dimensão de transporte do fabricante. Equipamentos, redes, telhado e alpendre são tratados depois da abertura.
+- Filme de expansão actualizado: 20 segundos, Full HD, 24 fps. O filme exterior/interior e quatro vídeos originais são preservados.
+- `npm run test:expansion` verifica 1 001 poses T2 por defeito; `GV72_AUDIT_LAYOUT`, `GV72_AUDIT_STEPS` e `GV72_AUDIT_DIR` permitem repetir a matriz. A auditoria final analisou 10 001 poses de cada uma das sete plantas, com limiar numérico de 0,1 mm acima dos contactos da montagem final (listados). Não é validação de engenharia.
+- Relatório actual: `dist/assets/evidence-r4/audit-report.html`. O histórico R3 permanece disponível.
+
+## Alterações R3 preservadas
 
 - 12 pisos SPC com veio da amostra original, réguas desencontradas e atenuação de iluminação fotografada; 37 paredes com tratamento específico para madeiras, lamelas e alvenarias. 49 mapas na resolução nativa, sem ampliação. 71 originais e IDs preservados.
 - Comparador com original, recorte exacto e aplicação em superfície 3D sob luz neutra. Escalas e perfis de apresentação identificados como estimativas.

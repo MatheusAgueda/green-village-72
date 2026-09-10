@@ -1,0 +1,18 @@
+{
+  "revision": "GV72-R4-2026-09-10",
+  "assets": [
+    {
+      "file": "../presentation-v3.mp4",
+      "sha256": "a6b636f7d21c018ec201df6918e534c84fd4fafe193e59d49d7b64a769e2c288"
+    },
+    {
+      "file": "../expansion-v4.mp4",
+      "sha256": "a2d7d650ca1f548ef96f9a8a97180a15b28e202e6c19a321319d154b21f1ee68"
+    },
+    {
+      "file": "../expansion-v4-poster.jpg",
+      "sha256": "3bb7bb5853a4bebc81e6240e5a1cbde93654b546f3bb7a441fcf93f1c911a116"
+    }
+  ],
+  "note": "The exterior/interior film is the preserved R3 finished house. The R4 expansion film uses the same T2 configuration and current unfolding geometry."
+}

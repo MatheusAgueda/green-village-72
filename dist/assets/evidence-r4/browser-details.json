@@ -1,0 +1,1928 @@
+{
+  "screens": [
+    {
+      "name": "final-1440-0",
+      "state": {
+        "config": {
+          "schemaVersion": 2,
+          "layout": "t2",
+          "exteriorId": "exterior-standard-branco-glacial",
+          "exterior": "#ddddda",
+          "floorId": "floor-spc-kx7006",
+          "floor": "#92846c",
+          "interior": "#eeede8",
+          "interiorName": "Branco natural",
+          "kitchen": "linear",
+          "kitchenRef": "kitchen-01",
+          "bathroom": "standard",
+          "bathroomRef": "bathroom-01",
+          "bathroomUV": null,
+          "roof": false,
+          "porch": false,
+          "lighting": "neutral"
+        },
+        "visual": {
+          "view": "expansion",
+          "expansion": 0,
+          "cut": 1.1,
+          "exploded": 0,
+          "roofVisible": true,
+          "wallsVisible": true,
+          "furnitureVisible": true,
+          "doorsOpen": true
+        },
+        "animation": {
+          "animation": false,
+          "animationStarted": 0
+        },
+        "measure": {
+          "world": {
+            "min": [
+              -3.055000066757202,
+              -0.3644999861717224,
+              -8.090000009536743
+            ],
+            "max": [
+              3.055000066757202,
+              2.849999995231628,
+              8.090000009536743
+            ]
+          },
+          "ndc": [
+            [
+              0.11272256073239613,
+              0.1836555253403994,
+              0.9976240046330931
+            ],
+            [
+              -0.46670130433786905,
+              -0.4545536251845696,
+              0.9962291794935465
+            ],
+            [
+              0.11747892600833137,
+              0.4579223803416286,
+              0.9975026457932801
+            ],
+            [
+              -0.49655510690284677,
+              -0.07959262484381013,
+              0.9959559769897963
+            ],
+            [
+              0.34868574984475725,
+              0.0396063090121768,
+              0.9973091807730756
+            ],
+            [
+              -0.1961232395930626,
+              -0.7900083613567533,
+              0.9954960331592954
+            ],
+            [
+              0.36508489668480876,
+              0.3385319011190524,
+              0.9971591064913717
+            ],
+            [
+              -0.21098554371705552,
+              -0.37122518688548567,
+              0.9951168209077548
+            ]
+          ],
+          "groups": {
+            "structure": true,
+            "floor": true,
+            "floorLayers": true,
+            "shell": true,
+            "roof": true,
+            "interior": false,
+            "furniture": false,
+            "plumbing": false,
+            "electrical": false,
+            "cover": false,
+            "porch": false,
+            "supports": true
+          },
+          "sides": [
+            {
+              "dir": -1,
+              "rotation": -3.141592653589793,
+              "position": [
+                -1.4100000000000001,
+                2.434,
+                0
+              ],
+              "visible": true
+            },
+            {
+              "dir": 1,
+              "rotation": 3.141592653589793,
+              "position": [
+                1.4100000000000001,
+                2.434,
+                0
+              ],
+              "visible": true
+            }
+          ],
+          "ends": [
+            {
+              "position": [
+                1.1,
+                0,
+                -5.9
+              ],
+              "visible": true
+            },
+            {
+              "position": [
+                -1.1,
+                0,
+                -5.9
+              ],
+              "visible": true
+            },
+            {
+              "position": [
+                1.1,
+                0,
+                5.9
+              ],
+              "visible": true
+            },
+            {
+              "position": [
+                -1.1,
+                0,
+                5.9
+              ],
+              "visible": true
+            }
+          ]
+        },
+        "diagnostics": {
+          "revision": "GV72-R4-2026-09-10",
+          "frames": 6,
+          "materials": {
+            "pending": 0,
+            "failures": [],
+            "cachedTextures": 1,
+            "leases": 1
+          },
+          "render": {
+            "calls": 230,
+            "triangles": 81532,
+            "memory": {
+              "geometries": 125,
+              "textures": 4
+            },
+            "camera": [
+              14.959698801908283,
+              13.003565065488456,
+              18.699623502385354
+            ],
+            "target": [
+              0,
+              1.335,
+              0
+            ]
+          }
+        },
+        "label": "Casa recolhida · simulação",
+        "percent": "0%",
+        "range": "0",
+        "play": "Reproduzir expansão",
+        "toast": "",
+        "settings": false
+      }
+    },
+    {
+      "name": "final-1440-35",
+      "state": {
+        "config": {
+          "schemaVersion": 2,
+          "layout": "t2",
+          "exteriorId": "exterior-standard-branco-glacial",
+          "exterior": "#ddddda",
+          "floorId": "floor-spc-kx7006",
+          "floor": "#92846c",
+          "interior": "#eeede8",
+          "interiorName": "Branco natural",
+          "kitchen": "linear",
+          "kitchenRef": "kitchen-01",
+          "bathroom": "standard",
+          "bathroomRef": "bathroom-01",
+          "bathroomUV": null,
+          "roof": false,
+          "porch": false,
+          "lighting": "neutral"
+        },
+        "visual": {
+          "view": "expansion",
+          "expansion": 0.35,
+          "cut": 1.1,
+          "exploded": 0,
+          "roofVisible": true,
+          "wallsVisible": true,
+          "furnitureVisible": true,
+          "doorsOpen": true
+        },
+        "animation": {
+          "animation": false,
+          "animationStarted": 0
+        },
+        "measure": {
+          "world": {
+            "min": [
+              -3.1099999986588953,
+              -0.3644999861717224,
+              -8.090000009536743
+            ],
+            "max": [
+              3.1099999986588953,
+              2.8634999275207518,
+              8.090000009536743
+            ]
+          },
+          "ndc": [
+            [
+              0.11080976981318334,
+              0.18482323304069295,
+              0.9976265566931107
+            ],
+            [
+              -0.46877736432081657,
+              -0.45197978700402786,
+              0.9962348046936809
+            ],
+            [
+              0.11550154934944075,
+              0.46008540376767715,
+              0.9975048873750741
+            ],
+            [
+              -0.49885577720134716,
+              -0.0757056272795749,
+              0.9959611266623893
+            ],
+            [
+              0.35104462783836043,
+              0.03816627708316847,
+              0.9973060335403313
+            ],
+            [
+              -0.1932650807932095,
+              -0.7935518226755677,
+              0.9954882888188632
+            ],
+            [
+              0.36764445751022223,
+              0.338648605017686,
+              0.9971549946965461
+            ],
+            [
+              -0.2080014863478067,
+              -0.3724455105727523,
+              0.9951061377820803
+            ]
+          ],
+          "groups": {
+            "structure": true,
+            "floor": true,
+            "floorLayers": true,
+            "shell": true,
+            "roof": true,
+            "interior": false,
+            "furniture": false,
+            "plumbing": false,
+            "electrical": false,
+            "cover": false,
+            "porch": false,
+            "supports": true
+          },
+          "sides": [
+            {
+              "dir": -1,
+              "rotation": -2.6445828783148455,
+              "position": [
+                -2.2707835396321747,
+                2.206267651336159,
+                0
+              ],
+              "visible": true
+            },
+            {
+              "dir": 1,
+              "rotation": 2.6445828783148455,
+              "position": [
+                2.2707835396321747,
+                2.206267651336159,
+                0
+              ],
+              "visible": true
+            }
+          ],
+          "ends": [
+            {
+              "position": [
+                1.1,
+                0,
+                -5.9
+              ],
+              "visible": true
+            },
+            {
+              "position": [
+                -1.1,
+                0,
+                -5.9
+              ],
+              "visible": true
+            },
+            {
+              "position": [
+                1.1,
+                0,
+                5.9
+              ],
+              "visible": true
+            },
+            {
+              "position": [
+                -1.1,
+                0,
+                5.9
+              ],
+              "visible": true
+            }
+          ]
+        },
+        "diagnostics": {
+          "revision": "GV72-R4-2026-09-10",
+          "frames": 7,
+          "materials": {
+            "pending": 0,
+            "failures": [],
+            "cachedTextures": 1,
+            "leases": 1
+          },
+          "render": {
+            "calls": 230,
+            "triangles": 81532,
+            "memory": {
+              "geometries": 125,
+              "textures": 4
+            },
+            "camera": [
+              14.959698801908283,
+              13.003565065488456,
+              18.699623502385354
+            ],
+            "target": [
+              0,
+              1.335,
+              0
+            ]
+          }
+        },
+        "label": "Descida dos pisos laterais",
+        "percent": "35%",
+        "range": "35",
+        "play": "Reproduzir expansão",
+        "toast": "",
+        "settings": false
+      }
+    },
+    {
+      "name": "final-1440-100",
+      "state": {
+        "config": {
+          "schemaVersion": 2,
+          "layout": "t2",
+          "exteriorId": "exterior-standard-branco-glacial",
+          "exterior": "#ddddda",
+          "floorId": "floor-spc-kx7006",
+          "floor": "#92846c",
+          "interior": "#eeede8",
+          "interiorName": "Branco natural",
+          "kitchen": "linear",
+          "kitchenRef": "kitchen-01",
+          "bathroom": "standard",
+          "bathroomRef": "bathroom-01",
+          "bathroomUV": null,
+          "roof": false,
+          "porch": false,
+          "lighting": "neutral"
+        },
+        "visual": {
+          "view": "expansion",
+          "expansion": 1,
+          "cut": 1.1,
+          "exploded": 0,
+          "roofVisible": true,
+          "wallsVisible": true,
+          "furnitureVisible": true,
+          "doorsOpen": true
+        },
+        "animation": {
+          "animation": false,
+          "animationStarted": 0
+        },
+        "measure": {
+          "world": {
+            "min": [
+              -3.122499942779541,
+              -0.3644999861717224,
+              -5.9125000000000005
+            ],
+            "max": [
+              3.122499942779541,
+              2.563499927520752,
+              5.92099999961257
+            ]
+          },
+          "ndc": [
+            [
+              0.05540413539651948,
+              0.12472434559528049,
+              0.9974952087815387
+            ],
+            [
+              -0.36095467957440514,
+              -0.33247858036254346,
+              0.996495978146134
+            ],
+            [
+              0.057624399231747045,
+              0.3828409353391122,
+              0.9973747898483779
+            ],
+            [
+              -0.38048992937901976,
+              -0.008628967339689634,
+              0.9962792694730463
+            ],
+            [
+              0.30251683024071735,
+              -0.03719211207860231,
+              0.9971413355324885
+            ],
+            [
+              -0.08624872058483236,
+              -0.6317018899860427,
+              0.9958420166755755
+            ],
+            [
+              0.316131803009642,
+              0.24540239698455849,
+              0.9969901709591791
+            ],
+            [
+              -0.0917273810032419,
+              -0.2706082222150587,
+              0.9955461259806191
+            ]
+          ],
+          "groups": {
+            "structure": true,
+            "floor": true,
+            "floorLayers": true,
+            "shell": true,
+            "roof": true,
+            "interior": false,
+            "furniture": false,
+            "plumbing": false,
+            "electrical": false,
+            "cover": false,
+            "porch": false,
+            "supports": true
+          },
+          "sides": [
+            {
+              "dir": -1,
+              "rotation": 0,
+              "position": [
+                -2.984,
+                0.14,
+                0
+              ],
+              "visible": true
+            },
+            {
+              "dir": 1,
+              "rotation": 0,
+              "position": [
+                2.984,
+                0.14,
+                0
+              ],
+              "visible": true
+            }
+          ],
+          "ends": [
+            {
+              "position": [
+                1.1,
+                0,
+                -5.9
+              ],
+              "visible": true
+            },
+            {
+              "position": [
+                -1.1,
+                0,
+                -5.9
+              ],
+              "visible": true
+            },
+            {
+              "position": [
+                1.1,
+                0,
+                5.9
+              ],
+              "visible": true
+            },
+            {
+              "position": [
+                -1.1,
+                0,
+                5.9
+              ],
+              "visible": true
+            }
+          ]
+        },
+        "diagnostics": {
+          "revision": "GV72-R4-2026-09-10",
+          "frames": 8,
+          "materials": {
+            "pending": 0,
+            "failures": [],
+            "cachedTextures": 1,
+            "leases": 1
+          },
+          "render": {
+            "calls": 230,
+            "triangles": 81532,
+            "memory": {
+              "geometries": 125,
+              "textures": 4
+            },
+            "camera": [
+              14.959698801908283,
+              13.003565065488456,
+              18.699623502385354
+            ],
+            "target": [
+              0,
+              1.335,
+              0
+            ]
+          }
+        },
+        "label": "Casa expandida",
+        "percent": "100%",
+        "range": "100",
+        "play": "Reproduzir expansão",
+        "toast": "",
+        "settings": false
+      }
+    },
+    {
+      "name": "final-375-0",
+      "state": {
+        "config": {
+          "schemaVersion": 2,
+          "layout": "t2",
+          "exteriorId": "exterior-standard-branco-glacial",
+          "exterior": "#ddddda",
+          "floorId": "floor-spc-kx7006",
+          "floor": "#92846c",
+          "interior": "#eeede8",
+          "interiorName": "Branco natural",
+          "kitchen": "linear",
+          "kitchenRef": "kitchen-01",
+          "bathroom": "standard",
+          "bathroomRef": "bathroom-01",
+          "bathroomUV": null,
+          "roof": false,
+          "porch": false,
+          "lighting": "neutral"
+        },
+        "visual": {
+          "view": "expansion",
+          "expansion": 0,
+          "cut": 1.1,
+          "exploded": 0,
+          "roofVisible": true,
+          "wallsVisible": true,
+          "furnitureVisible": true,
+          "doorsOpen": true
+        },
+        "animation": {
+          "animation": false,
+          "animationStarted": 0
+        },
+        "measure": {
+          "world": {
+            "min": [
+              -3.055000066757202,
+              -0.3644999861717224,
+              -8.090000009536743
+            ],
+            "max": [
+              3.055000066757202,
+              2.849999995231628,
+              8.090000009536743
+            ]
+          },
+          "ndc": [
+            [
+              0.1750048238192083,
+              0.18365552534039936,
+              0.9976240046330931
+            ],
+            [
+              -0.7245663956813432,
+              -0.45455362518457,
+              0.9962291794935465
+            ],
+            [
+              0.1823892095333595,
+              0.45792238034162847,
+              0.9975026457932801
+            ],
+            [
+              -0.7709152314802432,
+              -0.0795926248438105,
+              0.9959559769897963
+            ],
+            [
+              0.54134405591367,
+              0.03960630901217671,
+              0.9973091807730758
+            ],
+            [
+              -0.3044866331001665,
+              -0.7900083613567536,
+              0.9954960331592954
+            ],
+            [
+              0.5668041748542055,
+              0.3385319011190523,
+              0.9971591064913718
+            ],
+            [
+              -0.32756076216419305,
+              -0.37122518688548617,
+              0.9951168209077548
+            ]
+          ],
+          "groups": {
+            "structure": true,
+            "floor": true,
+            "floorLayers": true,
+            "shell": true,
+            "roof": true,
+            "interior": false,
+            "furniture": false,
+            "plumbing": false,
+            "electrical": false,
+            "cover": false,
+            "porch": false,
+            "supports": true
+          },
+          "sides": [
+            {
+              "dir": -1,
+              "rotation": -3.141592653589793,
+              "position": [
+                -1.4100000000000001,
+                2.434,
+                0
+              ],
+              "visible": true
+            },
+            {
+              "dir": 1,
+              "rotation": 3.141592653589793,
+              "position": [
+                1.4100000000000001,
+                2.434,
+                0
+              ],
+              "visible": true
+            }
+          ],
+          "ends": [
+            {
+              "position": [
+                1.1,
+                0,
+                -5.9
+              ],
+              "visible": true
+            },
+            {
+              "position": [
+                -1.1,
+                0,
+                -5.9
+              ],
+              "visible": true
+            },
+            {
+              "position": [
+                1.1,
+                0,
+                5.9
+              ],
+              "visible": true
+            },
+            {
+              "position": [
+                -1.1,
+                0,
+                5.9
+              ],
+              "visible": true
+            }
+          ]
+        },
+        "diagnostics": {
+          "revision": "GV72-R4-2026-09-10",
+          "frames": 4,
+          "materials": {
+            "pending": 0,
+            "failures": [],
+            "cachedTextures": 1,
+            "leases": 1
+          },
+          "render": {
+            "calls": 230,
+            "triangles": 81532,
+            "memory": {
+              "geometries": 125,
+              "textures": 4
+            },
+            "camera": [
+              14.959698801908283,
+              13.003565065488463,
+              18.699623502385354
+            ],
+            "target": [
+              0,
+              1.335,
+              0
+            ]
+          }
+        },
+        "label": "Casa recolhida · simulação",
+        "percent": "0%",
+        "range": "0",
+        "play": "Reproduzir expansão",
+        "toast": "",
+        "settings": false
+      }
+    },
+    {
+      "name": "final-375-35",
+      "state": {
+        "config": {
+          "schemaVersion": 2,
+          "layout": "t2",
+          "exteriorId": "exterior-standard-branco-glacial",
+          "exterior": "#ddddda",
+          "floorId": "floor-spc-kx7006",
+          "floor": "#92846c",
+          "interior": "#eeede8",
+          "interiorName": "Branco natural",
+          "kitchen": "linear",
+          "kitchenRef": "kitchen-01",
+          "bathroom": "standard",
+          "bathroomRef": "bathroom-01",
+          "bathroomUV": null,
+          "roof": false,
+          "porch": false,
+          "lighting": "neutral"
+        },
+        "visual": {
+          "view": "expansion",
+          "expansion": 0.35,
+          "cut": 1.1,
+          "exploded": 0,
+          "roofVisible": true,
+          "wallsVisible": true,
+          "furnitureVisible": true,
+          "doorsOpen": true
+        },
+        "animation": {
+          "animation": false,
+          "animationStarted": 0
+        },
+        "measure": {
+          "world": {
+            "min": [
+              -3.1099999986588953,
+              -0.3644999861717224,
+              -8.090000009536743
+            ],
+            "max": [
+              3.1099999986588953,
+              2.8634999275207518,
+              8.090000009536743
+            ]
+          },
+          "ndc": [
+            [
+              0.1720351641907821,
+              0.18482323304069298,
+              0.9976265566931108
+            ],
+            [
+              -0.7277895349463955,
+              -0.4519797870040282,
+              0.9962348046936809
+            ],
+            [
+              0.1793192787975337,
+              0.46008540376767704,
+              0.9975048873750741
+            ],
+            [
+              -0.7744870843341806,
+              -0.07570562727957526,
+              0.9959611266623893
+            ],
+            [
+              0.545006277788327,
+              0.03816627708316835,
+              0.9973060335403314
+            ],
+            [
+              -0.30004926427208367,
+              -0.7935518226755682,
+              0.9954882888188633
+            ],
+            [
+              0.5707779622521819,
+              0.33864860501768596,
+              0.9971549946965462
+            ],
+            [
+              -0.32292793240253104,
+              -0.37244551057275277,
+              0.9951061377820805
+            ]
+          ],
+          "groups": {
+            "structure": true,
+            "floor": true,
+            "floorLayers": true,
+            "shell": true,
+            "roof": true,
+            "interior": false,
+            "furniture": false,
+            "plumbing": false,
+            "electrical": false,
+            "cover": false,
+            "porch": false,
+            "supports": true
+          },
+          "sides": [
+            {
+              "dir": -1,
+              "rotation": -2.6445828783148455,
+              "position": [
+                -2.2707835396321747,
+                2.206267651336159,
+                0
+              ],
+              "visible": true
+            },
+            {
+              "dir": 1,
+              "rotation": 2.6445828783148455,
+              "position": [
+                2.2707835396321747,
+                2.206267651336159,
+                0
+              ],
+              "visible": true
+            }
+          ],
+          "ends": [
+            {
+              "position": [
+                1.1,
+                0,
+                -5.9
+              ],
+              "visible": true
+            },
+            {
+              "position": [
+                -1.1,
+                0,
+                -5.9
+              ],
+              "visible": true
+            },
+            {
+              "position": [
+                1.1,
+                0,
+                5.9
+              ],
+              "visible": true
+            },
+            {
+              "position": [
+                -1.1,
+                0,
+                5.9
+              ],
+              "visible": true
+            }
+          ]
+        },
+        "diagnostics": {
+          "revision": "GV72-R4-2026-09-10",
+          "frames": 5,
+          "materials": {
+            "pending": 0,
+            "failures": [],
+            "cachedTextures": 1,
+            "leases": 1
+          },
+          "render": {
+            "calls": 230,
+            "triangles": 81532,
+            "memory": {
+              "geometries": 125,
+              "textures": 4
+            },
+            "camera": [
+              14.959698801908283,
+              13.003565065488463,
+              18.699623502385354
+            ],
+            "target": [
+              0,
+              1.335,
+              0
+            ]
+          }
+        },
+        "label": "Descida dos pisos laterais",
+        "percent": "35%",
+        "range": "35",
+        "play": "Reproduzir expansão",
+        "toast": "",
+        "settings": false
+      }
+    },
+    {
+      "name": "final-375-100",
+      "state": {
+        "config": {
+          "schemaVersion": 2,
+          "layout": "t2",
+          "exteriorId": "exterior-standard-branco-glacial",
+          "exterior": "#ddddda",
+          "floorId": "floor-spc-kx7006",
+          "floor": "#92846c",
+          "interior": "#eeede8",
+          "interiorName": "Branco natural",
+          "kitchen": "linear",
+          "kitchenRef": "kitchen-01",
+          "bathroom": "standard",
+          "bathroomRef": "bathroom-01",
+          "bathroomUV": null,
+          "roof": false,
+          "porch": false,
+          "lighting": "neutral"
+        },
+        "visual": {
+          "view": "expansion",
+          "expansion": 1,
+          "cut": 1.1,
+          "exploded": 0,
+          "roofVisible": true,
+          "wallsVisible": true,
+          "furnitureVisible": true,
+          "doorsOpen": true
+        },
+        "animation": {
+          "animation": false,
+          "animationStarted": 0
+        },
+        "measure": {
+          "world": {
+            "min": [
+              -3.122499942779541,
+              -0.3644999861717224,
+              -5.9125000000000005
+            ],
+            "max": [
+              3.122499942779541,
+              2.563499927520752,
+              5.92099999961257
+            ]
+          },
+          "ndc": [
+            [
+              0.08601641846073539,
+              0.12472434559528042,
+              0.9974952087815387
+            ],
+            [
+              -0.5603919010995561,
+              -0.3324785803625437,
+              0.9964959781461341
+            ],
+            [
+              0.0894634381060626,
+              0.38284093533911207,
+              0.9973747898483779
+            ],
+            [
+              -0.5907209047001483,
+              -0.008628967339689896,
+              0.9962792694730463
+            ],
+            [
+              0.46966555971263296,
+              -0.03719211207860242,
+              0.9971413355324884
+            ],
+            [
+              -0.1339034710754472,
+              -0.631701889986043,
+              0.9958420166755755
+            ],
+            [
+              0.49080317311715355,
+              0.24540239698455824,
+              0.996990170959179
+            ],
+            [
+              -0.14240923953084283,
+              -0.2706082222150592,
+              0.9955461259806192
+            ]
+          ],
+          "groups": {
+            "structure": true,
+            "floor": true,
+            "floorLayers": true,
+            "shell": true,
+            "roof": true,
+            "interior": false,
+            "furniture": false,
+            "plumbing": false,
+            "electrical": false,
+            "cover": false,
+            "porch": false,
+            "supports": true
+          },
+          "sides": [
+            {
+              "dir": -1,
+              "rotation": 0,
+              "position": [
+                -2.984,
+                0.14,
+                0
+              ],
+              "visible": true
+            },
+            {
+              "dir": 1,
+              "rotation": 0,
+              "position": [
+                2.984,
+                0.14,
+                0
+              ],
+              "visible": true
+            }
+          ],
+          "ends": [
+            {
+              "position": [
+                1.1,
+                0,
+                -5.9
+              ],
+              "visible": true
+            },
+            {
+              "position": [
+                -1.1,
+                0,
+                -5.9
+              ],
+              "visible": true
+            },
+            {
+              "position": [
+                1.1,
+                0,
+                5.9
+              ],
+              "visible": true
+            },
+            {
+              "position": [
+                -1.1,
+                0,
+                5.9
+              ],
+              "visible": true
+            }
+          ]
+        },
+        "diagnostics": {
+          "revision": "GV72-R4-2026-09-10",
+          "frames": 6,
+          "materials": {
+            "pending": 0,
+            "failures": [],
+            "cachedTextures": 1,
+            "leases": 1
+          },
+          "render": {
+            "calls": 230,
+            "triangles": 81532,
+            "memory": {
+              "geometries": 125,
+              "textures": 4
+            },
+            "camera": [
+              14.959698801908283,
+              13.003565065488463,
+              18.699623502385354
+            ],
+            "target": [
+              0,
+              1.335,
+              0
+            ]
+          }
+        },
+        "label": "Casa expandida",
+        "percent": "100%",
+        "range": "100",
+        "play": "Reproduzir expansão",
+        "toast": "",
+        "settings": false
+      }
+    },
+    {
+      "name": "final-mobile-six-steps",
+      "state": {
+        "config": {
+          "schemaVersion": 2,
+          "layout": "t2",
+          "exteriorId": "exterior-standard-branco-glacial",
+          "exterior": "#ddddda",
+          "floorId": "floor-spc-kx7006",
+          "floor": "#92846c",
+          "interior": "#eeede8",
+          "interiorName": "Branco natural",
+          "kitchen": "linear",
+          "kitchenRef": "kitchen-01",
+          "bathroom": "standard",
+          "bathroomRef": "bathroom-01",
+          "bathroomUV": null,
+          "roof": false,
+          "porch": false,
+          "lighting": "neutral"
+        },
+        "visual": {
+          "view": "expansion",
+          "expansion": 0.35,
+          "cut": 1.1,
+          "exploded": 0,
+          "roofVisible": true,
+          "wallsVisible": true,
+          "furnitureVisible": true,
+          "doorsOpen": true
+        },
+        "animation": {
+          "animation": false,
+          "animationStarted": 0
+        },
+        "measure": {
+          "world": {
+            "min": [
+              -3.1099999986588953,
+              -0.3644999861717224,
+              -8.090000009536743
+            ],
+            "max": [
+              3.1099999986588953,
+              2.8634999275207518,
+              8.090000009536743
+            ]
+          },
+          "ndc": [
+            [
+              0.17203516419078216,
+              0.18482323304069287,
+              0.9976265566931107
+            ],
+            [
+              -0.727789534946396,
+              -0.4519797870040282,
+              0.996234804693681
+            ],
+            [
+              0.1793192787975338,
+              0.46008540376767715,
+              0.9975048873750741
+            ],
+            [
+              -0.7744870843341811,
+              -0.0757056272795749,
+              0.9959611266623895
+            ],
+            [
+              0.5450062777883271,
+              0.03816627708316849,
+              0.9973060335403313
+            ],
+            [
+              -0.3000492642720839,
+              -0.7935518226755679,
+              0.9954882888188633
+            ],
+            [
+              0.570777962252182,
+              0.3386486050176862,
+              0.9971549946965462
+            ],
+            [
+              -0.32292793240253126,
+              -0.3724455105727521,
+              0.9951061377820805
+            ]
+          ],
+          "groups": {
+            "structure": true,
+            "floor": true,
+            "floorLayers": true,
+            "shell": true,
+            "roof": true,
+            "interior": false,
+            "furniture": false,
+            "plumbing": false,
+            "electrical": false,
+            "cover": false,
+            "porch": false,
+            "supports": true
+          },
+          "sides": [
+            {
+              "dir": -1,
+              "rotation": -2.6445828783148455,
+              "position": [
+                -2.2707835396321747,
+                2.206267651336159,
+                0
+              ],
+              "visible": true
+            },
+            {
+              "dir": 1,
+              "rotation": 2.6445828783148455,
+              "position": [
+                2.2707835396321747,
+                2.206267651336159,
+                0
+              ],
+              "visible": true
+            }
+          ],
+          "ends": [
+            {
+              "position": [
+                1.1,
+                0,
+                -5.9
+              ],
+              "visible": true
+            },
+            {
+              "position": [
+                -1.1,
+                0,
+                -5.9
+              ],
+              "visible": true
+            },
+            {
+              "position": [
+                1.1,
+                0,
+                5.9
+              ],
+              "visible": true
+            },
+            {
+              "position": [
+                -1.1,
+                0,
+                5.9
+              ],
+              "visible": true
+            }
+          ]
+        },
+        "diagnostics": {
+          "revision": "GV72-R4-2026-09-10",
+          "frames": 55,
+          "materials": {
+            "pending": 0,
+            "failures": [],
+            "cachedTextures": 1,
+            "leases": 1
+          },
+          "render": {
+            "calls": 230,
+            "triangles": 81532,
+            "memory": {
+              "geometries": 125,
+              "textures": 4
+            },
+            "camera": [
+              14.959698801908283,
+              13.003565065488448,
+              18.699623502385354
+            ],
+            "target": [
+              0,
+              1.335,
+              0
+            ]
+          }
+        },
+        "label": "Descida dos pisos laterais",
+        "percent": "35%",
+        "range": "35",
+        "play": "Reproduzir expansão",
+        "toast": "PDF com configuração, imagem e planta criado.",
+        "settings": false
+      }
+    }
+  ],
+  "tests": [
+    {
+      "name": "six step labels and pressed markers match phases",
+      "pass": true,
+      "result": {
+        "rows": [
+          {
+            "step": {
+              "value": "0",
+              "label": "Recolhida"
+            },
+            "currentLabel": "Casa recolhida · simulação",
+            "progress": 0,
+            "pressed": [
+              "Recolhida"
+            ]
+          },
+          {
+            "step": {
+              "value": ".24",
+              "label": "Cobertura"
+            },
+            "currentLabel": "Cobertura aberta",
+            "progress": 0.24,
+            "pressed": [
+              "Cobertura"
+            ]
+          },
+          {
+            "step": {
+              "value": ".52",
+              "label": "Pisos"
+            },
+            "currentLabel": "Pisos abertos",
+            "progress": 0.52,
+            "pressed": [
+              "Pisos"
+            ]
+          },
+          {
+            "step": {
+              "value": ".78",
+              "label": "Paredes"
+            },
+            "currentLabel": "Paredes erguidas · ajuste da cobertura",
+            "progress": 0.78,
+            "pressed": [
+              "Paredes"
+            ]
+          },
+          {
+            "step": {
+              "value": ".9",
+              "label": "Topos"
+            },
+            "currentLabel": "Fecho dos painéis de topo",
+            "progress": 0.9,
+            "pressed": [
+              "Topos"
+            ]
+          },
+          {
+            "step": {
+              "value": "1",
+              "label": "Aberta"
+            },
+            "currentLabel": "Casa expandida",
+            "progress": 1,
+            "pressed": [
+              "Aberta"
+            ]
+          }
+        ],
+        "ranges": [
+          {
+            "value": 2,
+            "label": "Abertura da cobertura",
+            "pressed": "Cobertura"
+          },
+          {
+            "value": 18,
+            "label": "Abertura da cobertura",
+            "pressed": "Cobertura"
+          },
+          {
+            "value": 26,
+            "label": "Descida dos pisos laterais",
+            "pressed": "Pisos"
+          },
+          {
+            "value": 35,
+            "label": "Descida dos pisos laterais",
+            "pressed": "Pisos"
+          },
+          {
+            "value": 60,
+            "label": "Elevação das paredes",
+            "pressed": "Paredes"
+          },
+          {
+            "value": 70,
+            "label": "Elevação das paredes",
+            "pressed": "Paredes"
+          },
+          {
+            "value": 84,
+            "label": "Fecho dos painéis de topo",
+            "pressed": "Topos"
+          },
+          {
+            "value": 90,
+            "label": "Fecho dos painéis de topo",
+            "pressed": "Topos"
+          },
+          {
+            "value": 100,
+            "label": "Casa expandida",
+            "pressed": "Aberta"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PNG and PDF actual downloads parse",
+      "pass": true,
+      "result": {
+        "png": {
+          "name": "green-village-72-t2.png",
+          "bytes": 67440,
+          "width": 981,
+          "height": 468
+        },
+        "pdf": {
+          "name": "green-village-72-t2.pdf",
+          "bytes": 97687,
+          "pages": 2,
+          "sizes": [
+            {
+              "width": 595,
+              "height": 842
+            },
+            {
+              "width": 595,
+              "height": 842
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "rapid Exterior-Expansion flips preserve progress and resource counts",
+      "pass": true,
+      "result": {
+        "before": {
+          "config": {
+            "schemaVersion": 2,
+            "layout": "t2",
+            "exteriorId": "exterior-standard-branco-glacial",
+            "exterior": "#ddddda",
+            "floorId": "floor-spc-kx7006",
+            "floor": "#92846c",
+            "interior": "#eeede8",
+            "interiorName": "Branco natural",
+            "kitchen": "linear",
+            "kitchenRef": "kitchen-01",
+            "bathroom": "standard",
+            "bathroomRef": "bathroom-01",
+            "bathroomUV": null,
+            "roof": false,
+            "porch": false,
+            "lighting": "neutral"
+          },
+          "visual": {
+            "view": "expansion",
+            "expansion": 0.64,
+            "cut": 1.1,
+            "exploded": 0,
+            "roofVisible": true,
+            "wallsVisible": true,
+            "furnitureVisible": true,
+            "doorsOpen": true
+          },
+          "animation": {
+            "animation": false,
+            "animationStarted": 0
+          },
+          "measure": {
+            "world": {
+              "min": [
+                -3.150011290205251,
+                -0.3644999861717224,
+                -8.090000009536743
+              ],
+              "max": [
+                3.150011290205251,
+                2.8634999275207518,
+                8.090000009536743
+              ]
+            },
+            "ndc": [
+              [
+                0.10942038631698932,
+                0.18567141450729802,
+                0.9976284104190116
+              ],
+              [
+                -0.4702842212348068,
+                -0.4501116300674758,
+                0.9962388876064026
+              ],
+              [
+                0.11405022302380248,
+                0.460784390006127,
+                0.9975069013458782
+              ],
+              [
+                -0.5004285832766578,
+                -0.07410099463048846,
+                0.9959657500485575
+              ],
+              [
+                0.35276358777809064,
+                0.0371168980120124,
+                0.9973037400910628
+              ],
+              [
+                -0.19118026545579395,
+                -0.7961365154873816,
+                0.9954826398956084
+              ],
+              [
+                0.3694572461465911,
+                0.3377755316863093,
+                0.9971524791331452
+              ],
+              [
+                -0.20577538926468047,
+                -0.3747166539232858,
+                0.9950995939960251
+              ]
+            ],
+            "groups": {
+              "structure": true,
+              "floor": true,
+              "floorLayers": true,
+              "shell": true,
+              "roof": true,
+              "interior": false,
+              "furniture": false,
+              "plumbing": false,
+              "electrical": false,
+              "cover": false,
+              "porch": false,
+              "supports": true
+            },
+            "sides": [
+              {
+                "dir": -1,
+                "rotation": -1.372561399407886,
+                "position": [
+                  -2.984,
+                  0.14,
+                  0
+                ],
+                "visible": true
+              },
+              {
+                "dir": 1,
+                "rotation": 1.372561399407886,
+                "position": [
+                  2.984,
+                  0.14,
+                  0
+                ],
+                "visible": true
+              }
+            ],
+            "ends": [
+              {
+                "position": [
+                  1.1,
+                  0,
+                  -5.9
+                ],
+                "visible": true
+              },
+              {
+                "position": [
+                  -1.1,
+                  0,
+                  -5.9
+                ],
+                "visible": true
+              },
+              {
+                "position": [
+                  1.1,
+                  0,
+                  5.9
+                ],
+                "visible": true
+              },
+              {
+                "position": [
+                  -1.1,
+                  0,
+                  5.9
+                ],
+                "visible": true
+              }
+            ]
+          },
+          "diagnostics": {
+            "revision": "GV72-R4-2026-09-10",
+            "frames": 12,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 1,
+              "leases": 1
+            },
+            "render": {
+              "calls": 230,
+              "triangles": 81532,
+              "memory": {
+                "geometries": 125,
+                "textures": 4
+              },
+              "camera": [
+                14.959698801908283,
+                13.003565065488456,
+                18.699623502385354
+              ],
+              "target": [
+                0,
+                1.335,
+                0
+              ]
+            }
+          },
+          "label": "Elevação das paredes",
+          "percent": "64%",
+          "range": "64",
+          "play": "Reproduzir expansão",
+          "toast": "PDF com configuração, imagem e planta criado.",
+          "settings": false
+        },
+        "after": {
+          "config": {
+            "schemaVersion": 2,
+            "layout": "t2",
+            "exteriorId": "exterior-standard-branco-glacial",
+            "exterior": "#ddddda",
+            "floorId": "floor-spc-kx7006",
+            "floor": "#92846c",
+            "interior": "#eeede8",
+            "interiorName": "Branco natural",
+            "kitchen": "linear",
+            "kitchenRef": "kitchen-01",
+            "bathroom": "standard",
+            "bathroomRef": "bathroom-01",
+            "bathroomUV": null,
+            "roof": false,
+            "porch": false,
+            "lighting": "neutral"
+          },
+          "visual": {
+            "view": "expansion",
+            "expansion": 0.64,
+            "cut": 1.1,
+            "exploded": 0,
+            "roofVisible": true,
+            "wallsVisible": true,
+            "furnitureVisible": true,
+            "doorsOpen": true
+          },
+          "animation": {
+            "animation": false,
+            "animationStarted": 0
+          },
+          "measure": {
+            "world": {
+              "min": [
+                -3.150011290205251,
+                -0.3644999861717224,
+                -8.090000009536743
+              ],
+              "max": [
+                3.150011290205251,
+                2.8634999275207518,
+                8.090000009536743
+              ]
+            },
+            "ndc": [
+              [
+                0.10942038631698932,
+                0.18567141450729802,
+                0.9976284104190116
+              ],
+              [
+                -0.4702842212348068,
+                -0.4501116300674758,
+                0.9962388876064026
+              ],
+              [
+                0.11405022302380248,
+                0.460784390006127,
+                0.9975069013458782
+              ],
+              [
+                -0.5004285832766578,
+                -0.07410099463048846,
+                0.9959657500485575
+              ],
+              [
+                0.35276358777809064,
+                0.0371168980120124,
+                0.9973037400910628
+              ],
+              [
+                -0.19118026545579395,
+                -0.7961365154873816,
+                0.9954826398956084
+              ],
+              [
+                0.3694572461465911,
+                0.3377755316863093,
+                0.9971524791331452
+              ],
+              [
+                -0.20577538926468047,
+                -0.3747166539232858,
+                0.9950995939960251
+              ]
+            ],
+            "groups": {
+              "structure": true,
+              "floor": true,
+              "floorLayers": true,
+              "shell": true,
+              "roof": true,
+              "interior": false,
+              "furniture": false,
+              "plumbing": false,
+              "electrical": false,
+              "cover": false,
+              "porch": false,
+              "supports": true
+            },
+            "sides": [
+              {
+                "dir": -1,
+                "rotation": -1.372561399407886,
+                "position": [
+                  -2.984,
+                  0.14,
+                  0
+                ],
+                "visible": true
+              },
+              {
+                "dir": 1,
+                "rotation": 1.372561399407886,
+                "position": [
+                  2.984,
+                  0.14,
+                  0
+                ],
+                "visible": true
+              }
+            ],
+            "ends": [
+              {
+                "position": [
+                  1.1,
+                  0,
+                  -5.9
+                ],
+                "visible": true
+              },
+              {
+                "position": [
+                  -1.1,
+                  0,
+                  -5.9
+                ],
+                "visible": true
+              },
+              {
+                "position": [
+                  1.1,
+                  0,
+                  5.9
+                ],
+                "visible": true
+              },
+              {
+                "position": [
+                  -1.1,
+                  0,
+                  5.9
+                ],
+                "visible": true
+              }
+            ]
+          },
+          "diagnostics": {
+            "revision": "GV72-R4-2026-09-10",
+            "frames": 53,
+            "materials": {
+              "pending": 0,
+              "failures": [],
+              "cachedTextures": 1,
+              "leases": 1
+            },
+            "render": {
+              "calls": 230,
+              "triangles": 81532,
+              "memory": {
+                "geometries": 125,
+                "textures": 4
+              },
+              "camera": [
+                14.959698801908283,
+                13.003565065488456,
+                18.699623502385354
+              ],
+              "target": [
+                0,
+                1.335,
+                0
+              ]
+            }
+          },
+          "label": "Elevação das paredes",
+          "percent": "64%",
+          "range": "64",
+          "play": "Reproduzir expansão",
+          "toast": "PDF com configuração, imagem e planta criado.",
+          "settings": false
+        }
+      }
+    }
+  ],
+  "logs": []
+}

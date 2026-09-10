@@ -25,3 +25,11 @@ Pedido integral: auditoria e correcção do portefólio existente; manter identi
 8. Entrega: relatório de fontes/medidas/materiais, antes/depois, dois vídeos do modelo corrigido (exterior/interior e expansão) e versão publicada verificada.
 
 A falta de desenhos de fabrico não bloqueia as correcções verificáveis. Dimensões livres estimadas, perfis, ligações, alturas e diâmetros ilustrativos nunca são apresentados como certificados.
+
+## R4 — recuperar a expansão e corrigir regressões
+
+- Recuperar a demonstração completa de recolhimento/abertura de cobertura, pisos e paredes, mantendo peças rígidas e a geometria final do configurador. O estado recolhido e os pivôs inferidos ficam identificados como simulação, sem medidas de transporte certificadas.
+- Expor etapas seleccionáveis, reprodução, pausa, reinício e regresso à casa pronta. Trocas de opções não devem saltar silenciosamente para outra vista nem apagar o progresso.
+- Garantir que a expansão apresenta os painéis necessários mesmo quando outras vistas usam cortes ou fachadas ocultas; os controlos devem corresponder à visibilidade efectiva.
+- Corrigir bugs reproduzidos na revisão de estados, câmaras e exportações; preservar os pisos, materiais e vídeos originais já tratados.
+- Testar trajectórias e estados intermédios, sete layouts e opcionais, transições, telemóvel e recuperação. Actualizar o filme da expansão para corresponder à sequência entregue e publicar no Site existente.

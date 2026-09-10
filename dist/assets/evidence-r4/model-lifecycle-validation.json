@@ -1,0 +1,314 @@
+{
+  "modelSHA256": "550efd8b15f197b10a2c9d4f128e733c6f542ce0d0f49ba74b63450b2ea668f8",
+  "verifiedAt": "2026-09-10T16:42:07.155Z",
+  "explodedSlider": {
+    "atOne": [
+      {
+        "side": -1,
+        "wallX": -3.584,
+        "postFrameX": -3.584,
+        "offsetM": 0
+      },
+      {
+        "side": 1,
+        "wallX": 3.584,
+        "postFrameX": 3.584,
+        "offsetM": 0
+      }
+    ],
+    "afterSliderZero": [
+      {
+        "side": -1,
+        "wallX": -2.984,
+        "postFrameX": -2.984,
+        "offsetM": 0
+      },
+      {
+        "side": 1,
+        "wallX": 2.984,
+        "postFrameX": 2.984,
+        "offsetM": 0
+      }
+    ],
+    "afterExpansionUpdate": [
+      {
+        "side": -1,
+        "wallX": -2.984,
+        "postFrameX": -2.984,
+        "offsetM": 0
+      },
+      {
+        "side": 1,
+        "wallX": 2.984,
+        "postFrameX": 2.984,
+        "offsetM": 0
+      }
+    ]
+  },
+  "visibility": [
+    {
+      "view": "exterior",
+      "groups": {
+        "structure": true,
+        "floor": true,
+        "floorLayers": true,
+        "shell": true,
+        "roof": true,
+        "interior": true,
+        "furniture": true,
+        "plumbing": false,
+        "electrical": false,
+        "cover": false,
+        "porch": false,
+        "supports": true
+      },
+      "sideWalls": [
+        true,
+        true
+      ],
+      "endWalls": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "sideFrames": [
+        true,
+        true
+      ],
+      "clippedMaterials": 0
+    },
+    {
+      "view": "interior",
+      "groups": {
+        "structure": true,
+        "floor": true,
+        "floorLayers": true,
+        "shell": true,
+        "roof": false,
+        "interior": true,
+        "furniture": true,
+        "plumbing": false,
+        "electrical": false,
+        "cover": false,
+        "porch": false,
+        "supports": true
+      },
+      "sideWalls": [
+        true,
+        true
+      ],
+      "endWalls": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "sideFrames": [
+        true,
+        true
+      ],
+      "clippedMaterials": 23
+    },
+    {
+      "view": "structure",
+      "groups": {
+        "structure": true,
+        "floor": false,
+        "floorLayers": false,
+        "shell": false,
+        "roof": false,
+        "interior": false,
+        "furniture": false,
+        "plumbing": false,
+        "electrical": false,
+        "cover": false,
+        "porch": false,
+        "supports": true
+      },
+      "sideWalls": [
+        false,
+        false
+      ],
+      "endWalls": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sideFrames": [
+        true,
+        true
+      ],
+      "clippedMaterials": 0
+    },
+    {
+      "view": "finishes",
+      "groups": {
+        "structure": true,
+        "floor": true,
+        "floorLayers": true,
+        "shell": true,
+        "roof": true,
+        "interior": true,
+        "furniture": true,
+        "plumbing": false,
+        "electrical": false,
+        "cover": false,
+        "porch": false,
+        "supports": true
+      },
+      "sideWalls": [
+        true,
+        true
+      ],
+      "endWalls": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "sideFrames": [
+        true,
+        true
+      ],
+      "clippedMaterials": 0
+    },
+    {
+      "view": "plumbing",
+      "groups": {
+        "structure": true,
+        "floor": false,
+        "floorLayers": false,
+        "shell": true,
+        "roof": false,
+        "interior": true,
+        "furniture": true,
+        "plumbing": true,
+        "electrical": false,
+        "cover": false,
+        "porch": false,
+        "supports": true
+      },
+      "sideWalls": [
+        true,
+        true
+      ],
+      "endWalls": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "sideFrames": [
+        true,
+        true
+      ],
+      "clippedMaterials": 23
+    },
+    {
+      "view": "electrical",
+      "groups": {
+        "structure": true,
+        "floor": false,
+        "floorLayers": false,
+        "shell": true,
+        "roof": false,
+        "interior": true,
+        "furniture": true,
+        "plumbing": false,
+        "electrical": true,
+        "cover": false,
+        "porch": false,
+        "supports": true
+      },
+      "sideWalls": [
+        true,
+        true
+      ],
+      "endWalls": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "sideFrames": [
+        true,
+        true
+      ],
+      "clippedMaterials": 23
+    },
+    {
+      "view": "expansion",
+      "groups": {
+        "structure": true,
+        "floor": true,
+        "floorLayers": true,
+        "shell": true,
+        "roof": true,
+        "interior": false,
+        "furniture": false,
+        "plumbing": false,
+        "electrical": false,
+        "cover": false,
+        "porch": false,
+        "supports": true
+      },
+      "sideWalls": [
+        true,
+        true
+      ],
+      "endWalls": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "sideFrames": [
+        true,
+        true
+      ],
+      "clippedMaterials": 0
+    },
+    {
+      "view": "exterior",
+      "groups": {
+        "structure": true,
+        "floor": true,
+        "floorLayers": true,
+        "shell": true,
+        "roof": true,
+        "interior": true,
+        "furniture": true,
+        "plumbing": false,
+        "electrical": false,
+        "cover": false,
+        "porch": false,
+        "supports": true
+      },
+      "sideWalls": [
+        true,
+        true
+      ],
+      "endWalls": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "sideFrames": [
+        true,
+        true
+      ],
+      "clippedMaterials": 0
+    }
+  ],
+  "dispose": {
+    "geometries": 220,
+    "materials": 26,
+    "undisposedGeometry": 0,
+    "undisposedMaterials": 0,
+    "multiplyDisposedGeometry": 0,
+    "multiplyDisposedMaterials": 0
+  }
+}

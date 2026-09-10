@@ -1,0 +1,2136 @@
+{
+  "status": "ONE_REPRODUCIBLE_RESET_REGRESSION_PENDING_ROOT_FIX",
+  "cases": [
+    {
+      "name": "active tab and exit-return preserve progress",
+      "pass": true,
+      "result": {
+        "repeated": {
+          "S": {
+            "schemaVersion": 2,
+            "layout": "t2",
+            "exteriorId": "exterior-standard-branco-glacial",
+            "exterior": "#ddddda",
+            "floorId": "floor-spc-kx7006",
+            "floor": "#92846c",
+            "interior": "#eeede8",
+            "interiorName": "Branco natural",
+            "kitchen": "linear",
+            "kitchenRef": "kitchen-01",
+            "bathroom": "standard",
+            "bathroomRef": "bathroom-01",
+            "bathroomUV": null,
+            "roof": false,
+            "porch": false,
+            "lighting": "neutral"
+          },
+          "V": {
+            "view": "expansion",
+            "expansion": 0.7,
+            "cut": 1.1,
+            "exploded": 0,
+            "roofVisible": true,
+            "wallsVisible": true,
+            "furnitureVisible": true,
+            "doorsOpen": true
+          },
+          "animation": false,
+          "camera": {
+            "position": [
+              13.69151135317479,
+              11.784378855476339,
+              17.114389191468486
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "aspect": 2.094761761861892,
+            "zoom": 1,
+            "target": [
+              0,
+              1.105,
+              0
+            ],
+            "preset": "perspective"
+          },
+          "controls": [
+            {
+              "id": "walls-toggle",
+              "checked": true,
+              "disabled": true,
+              "value": "on"
+            },
+            {
+              "id": "furniture-toggle",
+              "checked": false,
+              "disabled": true,
+              "value": "on"
+            },
+            {
+              "id": "doors-toggle",
+              "checked": false,
+              "disabled": true,
+              "value": "on"
+            },
+            {
+              "id": "cut-range",
+              "checked": false,
+              "disabled": true,
+              "value": "1.1"
+            },
+            {
+              "id": "explode-range",
+              "checked": false,
+              "disabled": true,
+              "value": "0"
+            }
+          ],
+          "panel": "materials",
+          "toast": ""
+        },
+        "returned": {
+          "S": {
+            "schemaVersion": 2,
+            "layout": "t2",
+            "exteriorId": "exterior-standard-branco-glacial",
+            "exterior": "#ddddda",
+            "floorId": "floor-spc-kx7006",
+            "floor": "#92846c",
+            "interior": "#eeede8",
+            "interiorName": "Branco natural",
+            "kitchen": "linear",
+            "kitchenRef": "kitchen-01",
+            "bathroom": "standard",
+            "bathroomRef": "bathroom-01",
+            "bathroomUV": null,
+            "roof": false,
+            "porch": false,
+            "lighting": "neutral"
+          },
+          "V": {
+            "view": "expansion",
+            "expansion": 0.7,
+            "cut": 1.1,
+            "exploded": 0,
+            "roofVisible": true,
+            "wallsVisible": true,
+            "furnitureVisible": true,
+            "doorsOpen": true
+          },
+          "animation": false,
+          "camera": {
+            "position": [
+              13.69151135317479,
+              11.784378855476339,
+              17.114389191468486
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "aspect": 2.094761761861892,
+            "zoom": 1,
+            "target": [
+              0,
+              1.105,
+              0
+            ],
+            "preset": "perspective"
+          },
+          "controls": [
+            {
+              "id": "walls-toggle",
+              "checked": true,
+              "disabled": true,
+              "value": "on"
+            },
+            {
+              "id": "furniture-toggle",
+              "checked": false,
+              "disabled": true,
+              "value": "on"
+            },
+            {
+              "id": "doors-toggle",
+              "checked": false,
+              "disabled": true,
+              "value": "on"
+            },
+            {
+              "id": "cut-range",
+              "checked": false,
+              "disabled": true,
+              "value": "1.1"
+            },
+            {
+              "id": "explode-range",
+              "checked": false,
+              "disabled": true,
+              "value": "0"
+            }
+          ],
+          "panel": "materials",
+          "toast": ""
+        }
+      }
+    },
+    {
+      "name": "config categories surfaces and options preserve Expansion playback",
+      "pass": true,
+      "result": [
+        {
+          "name": "tab layout",
+          "state": {
+            "S": {
+              "schemaVersion": 2,
+              "layout": "t2",
+              "exteriorId": "exterior-standard-branco-glacial",
+              "exterior": "#ddddda",
+              "floorId": "floor-spc-kx7006",
+              "floor": "#92846c",
+              "interior": "#eeede8",
+              "interiorName": "Branco natural",
+              "kitchen": "linear",
+              "kitchenRef": "kitchen-01",
+              "bathroom": "standard",
+              "bathroomRef": "bathroom-01",
+              "bathroomUV": null,
+              "roof": false,
+              "porch": false,
+              "lighting": "neutral"
+            },
+            "V": {
+              "view": "expansion",
+              "expansion": 0.06417142857142857,
+              "cut": 1.1,
+              "exploded": 0,
+              "roofVisible": true,
+              "wallsVisible": true,
+              "furnitureVisible": true,
+              "doorsOpen": true
+            },
+            "animation": true,
+            "camera": {
+              "position": [
+                13.69151135317479,
+                11.784378855476339,
+                17.114389191468486
+              ],
+              "up": [
+                0,
+                1,
+                0
+              ],
+              "aspect": 2.094761761861892,
+              "zoom": 1,
+              "target": [
+                0,
+                1.105,
+                0
+              ],
+              "preset": "perspective"
+            },
+            "controls": [
+              {
+                "id": "walls-toggle",
+                "checked": true,
+                "disabled": true,
+                "value": "on"
+              },
+              {
+                "id": "furniture-toggle",
+                "checked": false,
+                "disabled": true,
+                "value": "on"
+              },
+              {
+                "id": "doors-toggle",
+                "checked": false,
+                "disabled": true,
+                "value": "on"
+              },
+              {
+                "id": "cut-range",
+                "checked": false,
+                "disabled": true,
+                "value": "1.1"
+              },
+              {
+                "id": "explode-range",
+                "checked": false,
+                "disabled": true,
+                "value": "0"
+              }
+            ],
+            "panel": "layout",
+            "toast": ""
+          }
+        },
+        {
+          "name": "tab kitchen",
+          "state": {
+            "S": {
+              "schemaVersion": 2,
+              "layout": "t2",
+              "exteriorId": "exterior-standard-branco-glacial",
+              "exterior": "#ddddda",
+              "floorId": "floor-spc-kx7006",
+              "floor": "#92846c",
+              "interior": "#eeede8",
+              "interiorName": "Branco natural",
+              "kitchen": "linear",
+              "kitchenRef": "kitchen-01",
+              "bathroom": "standard",
+              "bathroomRef": "bathroom-01",
+              "bathroomUV": null,
+              "roof": false,
+              "porch": false,
+              "lighting": "neutral"
+            },
+            "V": {
+              "view": "expansion",
+              "expansion": 0.06417142857142857,
+              "cut": 1.1,
+              "exploded": 0,
+              "roofVisible": true,
+              "wallsVisible": true,
+              "furnitureVisible": true,
+              "doorsOpen": true
+            },
+            "animation": true,
+            "camera": {
+              "position": [
+                13.69151135317479,
+                11.784378855476339,
+                17.114389191468486
+              ],
+              "up": [
+                0,
+                1,
+                0
+              ],
+              "aspect": 2.094761761861892,
+              "zoom": 1,
+              "target": [
+                0,
+                1.105,
+                0
+              ],
+              "preset": "perspective"
+            },
+            "controls": [
+              {
+                "id": "walls-toggle",
+                "checked": true,
+                "disabled": true,
+                "value": "on"
+              },
+              {
+                "id": "furniture-toggle",
+                "checked": false,
+                "disabled": true,
+                "value": "on"
+              },
+              {
+                "id": "doors-toggle",
+                "checked": false,
+                "disabled": true,
+                "value": "on"
+              },
+              {
+                "id": "cut-range",
+                "checked": false,
+                "disabled": true,
+                "value": "1.1"
+              },
+              {
+                "id": "explode-range",
+                "checked": false,
+                "disabled": true,
+                "value": "0"
+              }
+            ],
+            "panel": "kitchen",
+            "toast": ""
+          }
+        },
+        {
+          "name": "tab bathroom",
+          "state": {
+            "S": {
+              "schemaVersion": 2,
+              "layout": "t2",
+              "exteriorId": "exterior-standard-branco-glacial",
+              "exterior": "#ddddda",
+              "floorId": "floor-spc-kx7006",
+              "floor": "#92846c",
+              "interior": "#eeede8",
+              "interiorName": "Branco natural",
+              "kitchen": "linear",
+              "kitchenRef": "kitchen-01",
+              "bathroom": "standard",
+              "bathroomRef": "bathroom-01",
+              "bathroomUV": null,
+              "roof": false,
+              "porch": false,
+              "lighting": "neutral"
+            },
+            "V": {
+              "view": "expansion",
+              "expansion": 0.06415714285799436,
+              "cut": 1.1,
+              "exploded": 0,
+              "roofVisible": true,
+              "wallsVisible": true,
+              "furnitureVisible": true,
+              "doorsOpen": true
+            },
+            "animation": true,
+            "camera": {
+              "position": [
+                13.69151135317479,
+                11.784378855476339,
+                17.114389191468486
+              ],
+              "up": [
+                0,
+                1,
+                0
+              ],
+              "aspect": 2.094761761861892,
+              "zoom": 1,
+              "target": [
+                0,
+                1.105,
+                0
+              ],
+              "preset": "perspective"
+            },
+            "controls": [
+              {
+                "id": "walls-toggle",
+                "checked": true,
+                "disabled": true,
+                "value": "on"
+              },
+              {
+                "id": "furniture-toggle",
+                "checked": false,
+                "disabled": true,
+                "value": "on"
+              },
+              {
+                "id": "doors-toggle",
+                "checked": false,
+                "disabled": true,
+                "value": "on"
+              },
+              {
+                "id": "cut-range",
+                "checked": false,
+                "disabled": true,
+                "value": "1.1"
+              },
+              {
+                "id": "explode-range",
+                "checked": false,
+                "disabled": true,
+                "value": "0"
+              }
+            ],
+            "panel": "bathroom",
+            "toast": ""
+          }
+        },
+        {
+          "name": "tab roof",
+          "state": {
+            "S": {
+              "schemaVersion": 2,
+              "layout": "t2",
+              "exteriorId": "exterior-standard-branco-glacial",
+              "exterior": "#ddddda",
+              "floorId": "floor-spc-kx7006",
+              "floor": "#92846c",
+              "interior": "#eeede8",
+              "interiorName": "Branco natural",
+              "kitchen": "linear",
+              "kitchenRef": "kitchen-01",
+              "bathroom": "standard",
+              "bathroomRef": "bathroom-01",
+              "bathroomUV": null,
+              "roof": false,
+              "porch": false,
+              "lighting": "neutral"
+            },
+            "V": {
+              "view": "expansion",
+              "expansion": 0.06417142857142857,
+              "cut": 1.1,
+              "exploded": 0,
+              "roofVisible": true,
+              "wallsVisible": true,
+              "furnitureVisible": true,
+              "doorsOpen": true
+            },
+            "animation": true,
+            "camera": {
+              "position": [
+                13.69151135317479,
+                11.784378855476339,
+                17.114389191468486
+              ],
+              "up": [
+                0,
+                1,
+                0
+              ],
+              "aspect": 2.094761761861892,
+              "zoom": 1,
+              "target": [
+                0,
+                1.105,
+                0
+              ],
+              "preset": "perspective"
+            },
+            "controls": [
+              {
+                "id": "walls-toggle",
+                "checked": true,
+                "disabled": true,
+                "value": "on"
+              },
+              {
+                "id": "furniture-toggle",
+                "checked": false,
+                "disabled": true,
+                "value": "on"
+              },
+              {
+                "id": "doors-toggle",
+                "checked": false,
+                "disabled": true,
+                "value": "on"
+              },
+              {
+                "id": "cut-range",
+                "checked": false,
+                "disabled": true,
+                "value": "1.1"
+              },
+              {
+                "id": "explode-range",
+                "checked": false,
+                "disabled": true,
+                "value": "0"
+              }
+            ],
+            "panel": "roof",
+            "toast": ""
+          }
+        },
+        {
+          "name": "tab materials",
+          "state": {
+            "S": {
+              "schemaVersion": 2,
+              "layout": "t2",
+              "exteriorId": "exterior-standard-branco-glacial",
+              "exterior": "#ddddda",
+              "floorId": "floor-spc-kx7006",
+              "floor": "#92846c",
+              "interior": "#eeede8",
+              "interiorName": "Branco natural",
+              "kitchen": "linear",
+              "kitchenRef": "kitchen-01",
+              "bathroom": "standard",
+              "bathroomRef": "bathroom-01",
+              "bathroomUV": null,
+              "roof": false,
+              "porch": false,
+              "lighting": "neutral"
+            },
+            "V": {
+              "view": "expansion",
+              "expansion": 0.060514285714285715,
+              "cut": 1.1,
+              "exploded": 0,
+              "roofVisible": true,
+              "wallsVisible": true,
+              "furnitureVisible": true,
+              "doorsOpen": true
+            },
+            "animation": true,
+            "camera": {
+              "position": [
+                13.69151135317479,
+                11.784378855476339,
+                17.114389191468486
+              ],
+              "up": [
+                0,
+                1,
+                0
+              ],
+              "aspect": 2.094761761861892,
+              "zoom": 1,
+              "target": [
+                0,
+                1.105,
+                0
+              ],
+              "preset": "perspective"
+            },
+            "controls": [
+              {
+                "id": "walls-toggle",
+                "checked": true,
+                "disabled": true,
+                "value": "on"
+              },
+              {
+                "id": "furniture-toggle",
+                "checked": false,
+                "disabled": true,
+                "value": "on"
+              },
+              {
+                "id": "doors-toggle",
+                "checked": false,
+                "disabled": true,
+                "value": "on"
+              },
+              {
+                "id": "cut-range",
+                "checked": false,
+                "disabled": true,
+                "value": "1.1"
+              },
+              {
+                "id": "explode-range",
+                "checked": false,
+                "disabled": true,
+                "value": "0"
+              }
+            ],
+            "panel": "materials",
+            "toast": ""
+          }
+        },
+        {
+          "name": "surface interior",
+          "state": {
+            "S": {
+              "schemaVersion": 2,
+              "layout": "t2",
+              "exteriorId": "exterior-standard-branco-glacial",
+              "exterior": "#ddddda",
+              "floorId": "floor-spc-kx7006",
+              "floor": "#92846c",
+              "interior": "#eeede8",
+              "interiorName": "Branco natural",
+              "kitchen": "linear",
+              "kitchenRef": "kitchen-01",
+              "bathroom": "standard",
+              "bathroomRef": "bathroom-01",
+              "bathroomUV": null,
+              "roof": false,
+              "porch": false,
+              "lighting": "neutral"
+            },
+            "V": {
+              "view": "expansion",
+              "expansion": 0.060450000000851496,
+              "cut": 1.1,
+              "exploded": 0,
+              "roofVisible": true,
+              "wallsVisible": true,
+              "furnitureVisible": true,
+              "doorsOpen": true
+            },
+            "animation": true,
+            "camera": {
+              "position": [
+                13.69151135317479,
+                11.784378855476339,
+                17.114389191468486
+              ],
+              "up": [
+                0,
+                1,
+                0
+              ],
+              "aspect": 2.094761761861892,
+              "zoom": 1,
+              "target": [
+                0,
+                1.105,
+                0
+              ],
+              "preset": "perspective"
+            },
+            "controls": [
+              {
+                "id": "walls-toggle",
+                "checked": true,
+                "disabled": true,
+                "value": "on"
+              },
+              {
+                "id": "furniture-toggle",
+                "checked": false,
+                "disabled": true,
+                "value": "on"
+              },
+              {
+                "id": "doors-toggle",
+                "checked": false,
+                "disabled": true,
+                "value": "on"
+              },
+              {
+                "id": "cut-range",
+                "checked": false,
+                "disabled": true,
+                "value": "1.1"
+              },
+              {
+                "id": "explode-range",
+                "checked": false,
+                "disabled": true,
+                "value": "0"
+              }
+            ],
+            "panel": "materials",
+            "toast": ""
+          }
+        },
+        {
+          "name": "surface floor",
+          "state": {
+            "S": {
+              "schemaVersion": 2,
+              "layout": "t2",
+              "exteriorId": "exterior-standard-branco-glacial",
+              "exterior": "#ddddda",
+              "floorId": "floor-spc-kx7006",
+              "floor": "#92846c",
+              "interior": "#eeede8",
+              "interiorName": "Branco natural",
+              "kitchen": "linear",
+              "kitchenRef": "kitchen-01",
+              "bathroom": "standard",
+              "bathroomRef": "bathroom-01",
+              "bathroomUV": null,
+              "roof": false,
+              "porch": false,
+              "lighting": "neutral"
+            },
+            "V": {
+              "view": "expansion",
+              "expansion": 0.06049285714285715,
+              "cut": 1.1,
+              "exploded": 0,
+              "roofVisible": true,
+              "wallsVisible": true,
+              "furnitureVisible": true,
+              "doorsOpen": true
+            },
+            "animation": true,
+            "camera": {
+              "position": [
+                13.69151135317479,
+                11.784378855476339,
+                17.114389191468486
+              ],
+              "up": [
+                0,
+                1,
+                0
+              ],
+              "aspect": 2.094761761861892,
+              "zoom": 1,
+              "target": [
+                0,
+                1.105,
+                0
+              ],
+              "preset": "perspective"
+            },
+            "controls": [
+              {
+                "id": "walls-toggle",
+                "checked": true,
+                "disabled": true,
+                "value": "on"
+              },
+              {
+                "id": "furniture-toggle",
+                "checked": false,
+                "disabled": true,
+                "value": "on"
+              },
+              {
+                "id": "doors-toggle",
+                "checked": false,
+                "disabled": true,
+                "value": "on"
+              },
+              {
+                "id": "cut-range",
+                "checked": false,
+                "disabled": true,
+                "value": "1.1"
+              },
+              {
+                "id": "explode-range",
+                "checked": false,
+                "disabled": true,
+                "value": "0"
+              }
+            ],
+            "panel": "materials",
+            "toast": ""
+          }
+        },
+        {
+          "name": "surface exterior",
+          "state": {
+            "S": {
+              "schemaVersion": 2,
+              "layout": "t2",
+              "exteriorId": "exterior-standard-branco-glacial",
+              "exterior": "#ddddda",
+              "floorId": "floor-spc-kx7006",
+              "floor": "#92846c",
+              "interior": "#eeede8",
+              "interiorName": "Branco natural",
+              "kitchen": "linear",
+              "kitchenRef": "kitchen-01",
+              "bathroom": "standard",
+              "bathroomRef": "bathroom-01",
+              "bathroomUV": null,
+              "roof": false,
+              "porch": false,
+              "lighting": "neutral"
+            },
+            "V": {
+              "view": "expansion",
+              "expansion": 0.06059285714200564,
+              "cut": 1.1,
+              "exploded": 0,
+              "roofVisible": true,
+              "wallsVisible": true,
+              "furnitureVisible": true,
+              "doorsOpen": true
+            },
+            "animation": true,
+            "camera": {
+              "position": [
+                13.69151135317479,
+                11.784378855476339,
+                17.114389191468486
+              ],
+              "up": [
+                0,
+                1,
+                0
+              ],
+              "aspect": 2.094761761861892,
+              "zoom": 1,
+              "target": [
+                0,
+                1.105,
+                0
+              ],
+              "preset": "perspective"
+            },
+            "controls": [
+              {
+                "id": "walls-toggle",
+                "checked": true,
+                "disabled": true,
+                "value": "on"
+              },
+              {
+                "id": "furniture-toggle",
+                "checked": false,
+                "disabled": true,
+                "value": "on"
+              },
+              {
+                "id": "doors-toggle",
+                "checked": false,
+                "disabled": true,
+                "value": "on"
+              },
+              {
+                "id": "cut-range",
+                "checked": false,
+                "disabled": true,
+                "value": "1.1"
+              },
+              {
+                "id": "explode-range",
+                "checked": false,
+                "disabled": true,
+                "value": "0"
+              }
+            ],
+            "panel": "materials",
+            "toast": ""
+          }
+        },
+        {
+          "name": "exterior sample",
+          "state": {
+            "S": {
+              "schemaVersion": 2,
+              "layout": "t2",
+              "exteriorId": "exterior-standard-prata",
+              "exterior": "#a7a9aa",
+              "floorId": "floor-spc-kx7006",
+              "floor": "#92846c",
+              "interior": "#eeede8",
+              "interiorName": "Branco natural",
+              "kitchen": "linear",
+              "kitchenRef": "kitchen-01",
+              "bathroom": "standard",
+              "bathroomRef": "bathroom-01",
+              "bathroomUV": null,
+              "roof": false,
+              "porch": false,
+              "lighting": "neutral"
+            },
+            "V": {
+              "view": "expansion",
+              "expansion": 0.06765714285884585,
+              "cut": 1.1,
+              "exploded": 0,
+              "roofVisible": true,
+              "wallsVisible": true,
+              "furnitureVisible": true,
+              "doorsOpen": true
+            },
+            "animation": true,
+            "camera": {
+              "position": [
+                13.69151135317479,
+                11.784378855476339,
+                17.114389191468486
+              ],
+              "up": [
+                0,
+                1,
+                0
+              ],
+              "aspect": 2.094761761861892,
+              "zoom": 1,
+              "target": [
+                0,
+                1.105,
+                0
+              ],
+              "preset": "perspective"
+            },
+            "controls": [
+              {
+                "id": "walls-toggle",
+                "checked": true,
+                "disabled": true,
+                "value": "on"
+              },
+              {
+                "id": "furniture-toggle",
+                "checked": false,
+                "disabled": true,
+                "value": "on"
+              },
+              {
+                "id": "doors-toggle",
+                "checked": false,
+                "disabled": true,
+                "value": "on"
+              },
+              {
+                "id": "cut-range",
+                "checked": false,
+                "disabled": true,
+                "value": "1.1"
+              },
+              {
+                "id": "explode-range",
+                "checked": false,
+                "disabled": true,
+                "value": "0"
+              }
+            ],
+            "panel": "materials",
+            "toast": ""
+          }
+        },
+        {
+          "name": "layout T3A",
+          "state": {
+            "S": {
+              "schemaVersion": 2,
+              "layout": "t3-a",
+              "exteriorId": "exterior-standard-prata",
+              "exterior": "#a7a9aa",
+              "floorId": "floor-spc-kx7006",
+              "floor": "#92846c",
+              "interior": "#eeede8",
+              "interiorName": "Branco natural",
+              "kitchen": "linear",
+              "kitchenRef": "kitchen-01",
+              "bathroom": "standard",
+              "bathroomRef": "bathroom-01",
+              "bathroomUV": null,
+              "roof": false,
+              "porch": false,
+              "lighting": "neutral"
+            },
+            "V": {
+              "view": "expansion",
+              "expansion": 0.0664500000008515,
+              "cut": 1.1,
+              "exploded": 0,
+              "roofVisible": true,
+              "wallsVisible": true,
+              "furnitureVisible": true,
+              "doorsOpen": true
+            },
+            "animation": true,
+            "camera": {
+              "position": [
+                13.69151135317479,
+                11.784378855476339,
+                17.114389191468486
+              ],
+              "up": [
+                0,
+                1,
+                0
+              ],
+              "aspect": 2.094761761861892,
+              "zoom": 1,
+              "target": [
+                0,
+                1.105,
+                0
+              ],
+              "preset": "perspective"
+            },
+            "controls": [
+              {
+                "id": "walls-toggle",
+                "checked": true,
+                "disabled": true,
+                "value": "on"
+              },
+              {
+                "id": "furniture-toggle",
+                "checked": false,
+                "disabled": true,
+                "value": "on"
+              },
+              {
+                "id": "doors-toggle",
+                "checked": false,
+                "disabled": true,
+                "value": "on"
+              },
+              {
+                "id": "cut-range",
+                "checked": false,
+                "disabled": true,
+                "value": "1.1"
+              },
+              {
+                "id": "explode-range",
+                "checked": false,
+                "disabled": true,
+                "value": "0"
+              }
+            ],
+            "panel": "layout",
+            "toast": ""
+          }
+        },
+        {
+          "name": "kitchen L",
+          "state": {
+            "S": {
+              "schemaVersion": 2,
+              "layout": "t3-a",
+              "exteriorId": "exterior-standard-prata",
+              "exterior": "#a7a9aa",
+              "floorId": "floor-spc-kx7006",
+              "floor": "#92846c",
+              "interior": "#eeede8",
+              "interiorName": "Branco natural",
+              "kitchen": "l",
+              "kitchenRef": "kitchen-01",
+              "bathroom": "standard",
+              "bathroomRef": "bathroom-01",
+              "bathroomUV": null,
+              "roof": false,
+              "porch": false,
+              "lighting": "neutral"
+            },
+            "V": {
+              "view": "expansion",
+              "expansion": 0.06639285714456014,
+              "cut": 1.1,
+              "exploded": 0,
+              "roofVisible": true,
+              "wallsVisible": true,
+              "furnitureVisible": true,
+              "doorsOpen": true
+            },
+            "animation": true,
+            "camera": {
+              "position": [
+                13.69151135317479,
+                11.784378855476339,
+                17.114389191468486
+              ],
+              "up": [
+                0,
+                1,
+                0
+              ],
+              "aspect": 2.094761761861892,
+              "zoom": 1,
+              "target": [
+                0,
+                1.105,
+                0
+              ],
+              "preset": "perspective"
+            },
+            "controls": [
+              {
+                "id": "walls-toggle",
+                "checked": true,
+                "disabled": true,
+                "value": "on"
+              },
+              {
+                "id": "furniture-toggle",
+                "checked": false,
+                "disabled": true,
+                "value": "on"
+              },
+              {
+                "id": "doors-toggle",
+                "checked": false,
+                "disabled": true,
+                "value": "on"
+              },
+              {
+                "id": "cut-range",
+                "checked": false,
+                "disabled": true,
+                "value": "1.1"
+              },
+              {
+                "id": "explode-range",
+                "checked": false,
+                "disabled": true,
+                "value": "0"
+              }
+            ],
+            "panel": "kitchen",
+            "toast": ""
+          }
+        },
+        {
+          "name": "bathroom mirrored",
+          "state": {
+            "S": {
+              "schemaVersion": 2,
+              "layout": "t3-a",
+              "exteriorId": "exterior-standard-prata",
+              "exterior": "#a7a9aa",
+              "floorId": "floor-spc-kx7006",
+              "floor": "#92846c",
+              "interior": "#eeede8",
+              "interiorName": "Branco natural",
+              "kitchen": "l",
+              "kitchenRef": "kitchen-01",
+              "bathroom": "mirrored",
+              "bathroomRef": "bathroom-01",
+              "bathroomUV": null,
+              "roof": false,
+              "porch": false,
+              "lighting": "neutral"
+            },
+            "V": {
+              "view": "expansion",
+              "expansion": 0.06629285714456014,
+              "cut": 1.1,
+              "exploded": 0,
+              "roofVisible": true,
+              "wallsVisible": true,
+              "furnitureVisible": true,
+              "doorsOpen": true
+            },
+            "animation": true,
+            "camera": {
+              "position": [
+                13.69151135317479,
+                11.784378855476339,
+                17.114389191468486
+              ],
+              "up": [
+                0,
+                1,
+                0
+              ],
+              "aspect": 2.094761761861892,
+              "zoom": 1,
+              "target": [
+                0,
+                1.105,
+                0
+              ],
+              "preset": "perspective"
+            },
+            "controls": [
+              {
+                "id": "walls-toggle",
+                "checked": true,
+                "disabled": true,
+                "value": "on"
+              },
+              {
+                "id": "furniture-toggle",
+                "checked": false,
+                "disabled": true,
+                "value": "on"
+              },
+              {
+                "id": "doors-toggle",
+                "checked": false,
+                "disabled": true,
+                "value": "on"
+              },
+              {
+                "id": "cut-range",
+                "checked": false,
+                "disabled": true,
+                "value": "1.1"
+              },
+              {
+                "id": "explode-range",
+                "checked": false,
+                "disabled": true,
+                "value": "0"
+              }
+            ],
+            "panel": "bathroom",
+            "toast": ""
+          }
+        },
+        {
+          "name": "roof on",
+          "state": {
+            "S": {
+              "schemaVersion": 2,
+              "layout": "t3-a",
+              "exteriorId": "exterior-standard-prata",
+              "exterior": "#a7a9aa",
+              "floorId": "floor-spc-kx7006",
+              "floor": "#92846c",
+              "interior": "#eeede8",
+              "interiorName": "Branco natural",
+              "kitchen": "l",
+              "kitchenRef": "kitchen-01",
+              "bathroom": "mirrored",
+              "bathroomRef": "bathroom-01",
+              "bathroomUV": null,
+              "roof": true,
+              "porch": false,
+              "lighting": "neutral"
+            },
+            "V": {
+              "view": "expansion",
+              "expansion": 0.06870714285884585,
+              "cut": 1.1,
+              "exploded": 0,
+              "roofVisible": true,
+              "wallsVisible": true,
+              "furnitureVisible": true,
+              "doorsOpen": true
+            },
+            "animation": true,
+            "camera": {
+              "position": [
+                13.69151135317479,
+                11.784378855476339,
+                17.114389191468486
+              ],
+              "up": [
+                0,
+                1,
+                0
+              ],
+              "aspect": 2.094761761861892,
+              "zoom": 1,
+              "target": [
+                0,
+                1.105,
+                0
+              ],
+              "preset": "perspective"
+            },
+            "controls": [
+              {
+                "id": "walls-toggle",
+                "checked": true,
+                "disabled": true,
+                "value": "on"
+              },
+              {
+                "id": "furniture-toggle",
+                "checked": false,
+                "disabled": true,
+                "value": "on"
+              },
+              {
+                "id": "doors-toggle",
+                "checked": false,
+                "disabled": true,
+                "value": "on"
+              },
+              {
+                "id": "cut-range",
+                "checked": false,
+                "disabled": true,
+                "value": "1.1"
+              },
+              {
+                "id": "explode-range",
+                "checked": false,
+                "disabled": true,
+                "value": "0"
+              }
+            ],
+            "panel": "roof",
+            "toast": ""
+          }
+        },
+        {
+          "name": "porch on",
+          "state": {
+            "S": {
+              "schemaVersion": 2,
+              "layout": "t3-a",
+              "exteriorId": "exterior-standard-prata",
+              "exterior": "#a7a9aa",
+              "floorId": "floor-spc-kx7006",
+              "floor": "#92846c",
+              "interior": "#eeede8",
+              "interiorName": "Branco natural",
+              "kitchen": "l",
+              "kitchenRef": "kitchen-01",
+              "bathroom": "mirrored",
+              "bathroomRef": "bathroom-01",
+              "bathroomUV": null,
+              "roof": true,
+              "porch": true,
+              "lighting": "neutral"
+            },
+            "V": {
+              "view": "expansion",
+              "expansion": 0.06881428571598872,
+              "cut": 1.1,
+              "exploded": 0,
+              "roofVisible": true,
+              "wallsVisible": true,
+              "furnitureVisible": true,
+              "doorsOpen": true
+            },
+            "animation": true,
+            "camera": {
+              "position": [
+                13.69151135317479,
+                11.784378855476339,
+                17.114389191468486
+              ],
+              "up": [
+                0,
+                1,
+                0
+              ],
+              "aspect": 2.094761761861892,
+              "zoom": 1,
+              "target": [
+                0,
+                1.105,
+                0
+              ],
+              "preset": "perspective"
+            },
+            "controls": [
+              {
+                "id": "walls-toggle",
+                "checked": true,
+                "disabled": true,
+                "value": "on"
+              },
+              {
+                "id": "furniture-toggle",
+                "checked": false,
+                "disabled": true,
+                "value": "on"
+              },
+              {
+                "id": "doors-toggle",
+                "checked": false,
+                "disabled": true,
+                "value": "on"
+              },
+              {
+                "id": "cut-range",
+                "checked": false,
+                "disabled": true,
+                "value": "1.1"
+              },
+              {
+                "id": "explode-range",
+                "checked": false,
+                "disabled": true,
+                "value": "0"
+              }
+            ],
+            "panel": "roof",
+            "toast": ""
+          }
+        }
+      ]
+    },
+    {
+      "name": "Expansion controls disabled and coherently checked",
+      "pass": true,
+      "result": {
+        "S": {
+          "schemaVersion": 2,
+          "layout": "t3-a",
+          "exteriorId": "exterior-standard-prata",
+          "exterior": "#a7a9aa",
+          "floorId": "floor-spc-kx7006",
+          "floor": "#92846c",
+          "interior": "#eeede8",
+          "interiorName": "Branco natural",
+          "kitchen": "l",
+          "kitchenRef": "kitchen-01",
+          "bathroom": "mirrored",
+          "bathroomRef": "bathroom-01",
+          "bathroomUV": null,
+          "roof": true,
+          "porch": true,
+          "lighting": "neutral"
+        },
+        "V": {
+          "view": "expansion",
+          "expansion": 0.07000000000170296,
+          "cut": 1.1,
+          "exploded": 0,
+          "roofVisible": true,
+          "wallsVisible": true,
+          "furnitureVisible": true,
+          "doorsOpen": true
+        },
+        "animation": true,
+        "camera": {
+          "position": [
+            13.69151135317479,
+            11.784378855476339,
+            17.114389191468486
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "aspect": 2.094761761861892,
+          "zoom": 1,
+          "target": [
+            0,
+            1.105,
+            0
+          ],
+          "preset": "perspective"
+        },
+        "controls": [
+          {
+            "id": "walls-toggle",
+            "checked": true,
+            "disabled": true,
+            "value": "on"
+          },
+          {
+            "id": "furniture-toggle",
+            "checked": false,
+            "disabled": true,
+            "value": "on"
+          },
+          {
+            "id": "doors-toggle",
+            "checked": false,
+            "disabled": true,
+            "value": "on"
+          },
+          {
+            "id": "cut-range",
+            "checked": false,
+            "disabled": true,
+            "value": "1.1"
+          },
+          {
+            "id": "explode-range",
+            "checked": false,
+            "disabled": true,
+            "value": "0"
+          }
+        ],
+        "panel": "roof",
+        "toast": ""
+      }
+    },
+    {
+      "name": "keyboard category behaviour matches click outside Expansion",
+      "pass": true,
+      "result": {
+        "layout": {
+          "S": {
+            "schemaVersion": 2,
+            "layout": "t2",
+            "exteriorId": "exterior-standard-branco-glacial",
+            "exterior": "#ddddda",
+            "floorId": "floor-spc-kx7006",
+            "floor": "#92846c",
+            "interior": "#eeede8",
+            "interiorName": "Branco natural",
+            "kitchen": "linear",
+            "kitchenRef": "kitchen-01",
+            "bathroom": "standard",
+            "bathroomRef": "bathroom-01",
+            "bathroomUV": null,
+            "roof": false,
+            "porch": false,
+            "lighting": "neutral"
+          },
+          "V": {
+            "view": "interior",
+            "expansion": 1,
+            "cut": 1.1,
+            "exploded": 0,
+            "roofVisible": true,
+            "wallsVisible": true,
+            "furnitureVisible": true,
+            "doorsOpen": true
+          },
+          "animation": false,
+          "camera": {
+            "position": [
+              9.137663691961153,
+              16.769566329076262,
+              15.011876065364753
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "aspect": 1.5630971337579618,
+            "zoom": 1,
+            "target": [
+              0,
+              1.105,
+              0
+            ],
+            "preset": "inside"
+          },
+          "controls": [
+            {
+              "id": "walls-toggle",
+              "checked": true,
+              "disabled": false,
+              "value": "on"
+            },
+            {
+              "id": "furniture-toggle",
+              "checked": true,
+              "disabled": false,
+              "value": "on"
+            },
+            {
+              "id": "doors-toggle",
+              "checked": true,
+              "disabled": false,
+              "value": "on"
+            },
+            {
+              "id": "cut-range",
+              "checked": false,
+              "disabled": false,
+              "value": "1.1"
+            },
+            {
+              "id": "explode-range",
+              "checked": false,
+              "disabled": false,
+              "value": "0"
+            }
+          ],
+          "panel": "layout",
+          "toast": ""
+        },
+        "roof": {
+          "S": {
+            "schemaVersion": 2,
+            "layout": "t2",
+            "exteriorId": "exterior-standard-branco-glacial",
+            "exterior": "#ddddda",
+            "floorId": "floor-spc-kx7006",
+            "floor": "#92846c",
+            "interior": "#eeede8",
+            "interiorName": "Branco natural",
+            "kitchen": "linear",
+            "kitchenRef": "kitchen-01",
+            "bathroom": "standard",
+            "bathroomRef": "bathroom-01",
+            "bathroomUV": null,
+            "roof": false,
+            "porch": false,
+            "lighting": "neutral"
+          },
+          "V": {
+            "view": "exterior",
+            "expansion": 1,
+            "cut": 1.1,
+            "exploded": 0,
+            "roofVisible": true,
+            "wallsVisible": true,
+            "furnitureVisible": true,
+            "doorsOpen": true
+          },
+          "animation": false,
+          "camera": {
+            "position": [
+              11.411160277073336,
+              10.005705016117204,
+              14.263950346341668
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "aspect": 1.5630971337579618,
+            "zoom": 1,
+            "target": [
+              0,
+              1.105,
+              0
+            ],
+            "preset": "perspective"
+          },
+          "controls": [
+            {
+              "id": "walls-toggle",
+              "checked": true,
+              "disabled": false,
+              "value": "on"
+            },
+            {
+              "id": "furniture-toggle",
+              "checked": true,
+              "disabled": false,
+              "value": "on"
+            },
+            {
+              "id": "doors-toggle",
+              "checked": true,
+              "disabled": false,
+              "value": "on"
+            },
+            {
+              "id": "cut-range",
+              "checked": false,
+              "disabled": false,
+              "value": "1.1"
+            },
+            {
+              "id": "explode-range",
+              "checked": false,
+              "disabled": false,
+              "value": "0"
+            }
+          ],
+          "panel": "roof",
+          "toast": ""
+        },
+        "exp": {
+          "S": {
+            "schemaVersion": 2,
+            "layout": "t2",
+            "exteriorId": "exterior-standard-branco-glacial",
+            "exterior": "#ddddda",
+            "floorId": "floor-spc-kx7006",
+            "floor": "#92846c",
+            "interior": "#eeede8",
+            "interiorName": "Branco natural",
+            "kitchen": "linear",
+            "kitchenRef": "kitchen-01",
+            "bathroom": "standard",
+            "bathroomRef": "bathroom-01",
+            "bathroomUV": null,
+            "roof": false,
+            "porch": false,
+            "lighting": "neutral"
+          },
+          "V": {
+            "view": "expansion",
+            "expansion": 0,
+            "cut": 1.1,
+            "exploded": 0,
+            "roofVisible": true,
+            "wallsVisible": true,
+            "furnitureVisible": true,
+            "doorsOpen": true
+          },
+          "animation": false,
+          "camera": {
+            "position": [
+              13.69151135317479,
+              11.784378855476339,
+              17.114389191468486
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "aspect": 2.094761761861892,
+            "zoom": 1,
+            "target": [
+              0,
+              1.105,
+              0
+            ],
+            "preset": "perspective"
+          },
+          "controls": [
+            {
+              "id": "walls-toggle",
+              "checked": true,
+              "disabled": true,
+              "value": "on"
+            },
+            {
+              "id": "furniture-toggle",
+              "checked": false,
+              "disabled": true,
+              "value": "on"
+            },
+            {
+              "id": "doors-toggle",
+              "checked": false,
+              "disabled": true,
+              "value": "on"
+            },
+            {
+              "id": "cut-range",
+              "checked": false,
+              "disabled": true,
+              "value": "1.1"
+            },
+            {
+              "id": "explode-range",
+              "checked": false,
+              "disabled": true,
+              "value": "0"
+            }
+          ],
+          "panel": "materials",
+          "toast": ""
+        }
+      }
+    },
+    {
+      "name": "Top then actual drag resets camera up without roll",
+      "pass": true,
+      "result": {
+        "top": {
+          "S": {
+            "schemaVersion": 2,
+            "layout": "t2",
+            "exteriorId": "exterior-standard-branco-glacial",
+            "exterior": "#ddddda",
+            "floorId": "floor-spc-kx7006",
+            "floor": "#92846c",
+            "interior": "#eeede8",
+            "interiorName": "Branco natural",
+            "kitchen": "linear",
+            "kitchenRef": "kitchen-01",
+            "bathroom": "standard",
+            "bathroomRef": "bathroom-01",
+            "bathroomUV": null,
+            "roof": false,
+            "porch": false,
+            "lighting": "neutral"
+          },
+          "V": {
+            "view": "interior",
+            "expansion": 1,
+            "cut": 1.1,
+            "exploded": 0,
+            "roofVisible": true,
+            "wallsVisible": true,
+            "furnitureVisible": true,
+            "doorsOpen": true
+          },
+          "animation": false,
+          "camera": {
+            "position": [
+              0,
+              24.150582716202145,
+              0.000024151656192787234
+            ],
+            "up": [
+              0,
+              0,
+              -1
+            ],
+            "aspect": 1.5630971337579618,
+            "zoom": 1,
+            "target": [
+              0,
+              0,
+              0
+            ],
+            "preset": "top"
+          },
+          "controls": [
+            {
+              "id": "walls-toggle",
+              "checked": true,
+              "disabled": false,
+              "value": "on"
+            },
+            {
+              "id": "furniture-toggle",
+              "checked": true,
+              "disabled": false,
+              "value": "on"
+            },
+            {
+              "id": "doors-toggle",
+              "checked": true,
+              "disabled": false,
+              "value": "on"
+            },
+            {
+              "id": "cut-range",
+              "checked": false,
+              "disabled": false,
+              "value": "1.1"
+            },
+            {
+              "id": "explode-range",
+              "checked": false,
+              "disabled": false,
+              "value": "0"
+            }
+          ],
+          "panel": "materials",
+          "toast": ""
+        },
+        "drag": {
+          "S": {
+            "schemaVersion": 2,
+            "layout": "t2",
+            "exteriorId": "exterior-standard-branco-glacial",
+            "exterior": "#ddddda",
+            "floorId": "floor-spc-kx7006",
+            "floor": "#92846c",
+            "interior": "#eeede8",
+            "interiorName": "Branco natural",
+            "kitchen": "linear",
+            "kitchenRef": "kitchen-01",
+            "bathroom": "standard",
+            "bathroomRef": "bathroom-01",
+            "bathroomUV": null,
+            "roof": false,
+            "porch": false,
+            "lighting": "neutral"
+          },
+          "V": {
+            "view": "interior",
+            "expansion": 1,
+            "cut": 1.1,
+            "exploded": 0,
+            "roofVisible": true,
+            "wallsVisible": true,
+            "furnitureVisible": true,
+            "doorsOpen": true
+          },
+          "animation": false,
+          "camera": {
+            "position": [
+              -0.000016521998224462714,
+              24.150582716202145,
+              0.000017614602470772978
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "aspect": 1.5630971337579618,
+            "zoom": 1,
+            "target": [
+              0,
+              0,
+              0
+            ],
+            "preset": "perspective"
+          },
+          "controls": [
+            {
+              "id": "walls-toggle",
+              "checked": true,
+              "disabled": false,
+              "value": "on"
+            },
+            {
+              "id": "furniture-toggle",
+              "checked": true,
+              "disabled": false,
+              "value": "on"
+            },
+            {
+              "id": "doors-toggle",
+              "checked": true,
+              "disabled": false,
+              "value": "on"
+            },
+            {
+              "id": "cut-range",
+              "checked": false,
+              "disabled": false,
+              "value": "1.1"
+            },
+            {
+              "id": "explode-range",
+              "checked": false,
+              "disabled": false,
+              "value": "0"
+            }
+          ],
+          "panel": "materials",
+          "toast": ""
+        }
+      }
+    },
+    {
+      "name": "resize while outside Studio then return adapts aspect and camera distance",
+      "pass": true,
+      "result": {
+        "before": {
+          "S": {
+            "schemaVersion": 2,
+            "layout": "t2",
+            "exteriorId": "exterior-standard-branco-glacial",
+            "exterior": "#ddddda",
+            "floorId": "floor-spc-kx7006",
+            "floor": "#92846c",
+            "interior": "#eeede8",
+            "interiorName": "Branco natural",
+            "kitchen": "linear",
+            "kitchenRef": "kitchen-01",
+            "bathroom": "standard",
+            "bathroomRef": "bathroom-01",
+            "bathroomUV": null,
+            "roof": false,
+            "porch": false,
+            "lighting": "neutral"
+          },
+          "V": {
+            "view": "expansion",
+            "expansion": 0,
+            "cut": 1.1,
+            "exploded": 0,
+            "roofVisible": true,
+            "wallsVisible": true,
+            "furnitureVisible": true,
+            "doorsOpen": true
+          },
+          "animation": false,
+          "camera": {
+            "position": [
+              13.69151135317479,
+              11.784378855476339,
+              17.114389191468486
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "aspect": 2.094761761861892,
+            "zoom": 1,
+            "target": [
+              0,
+              1.105,
+              0
+            ],
+            "preset": "perspective"
+          },
+          "controls": [
+            {
+              "id": "walls-toggle",
+              "checked": true,
+              "disabled": true,
+              "value": "on"
+            },
+            {
+              "id": "furniture-toggle",
+              "checked": false,
+              "disabled": true,
+              "value": "on"
+            },
+            {
+              "id": "doors-toggle",
+              "checked": false,
+              "disabled": true,
+              "value": "on"
+            },
+            {
+              "id": "cut-range",
+              "checked": false,
+              "disabled": true,
+              "value": "1.1"
+            },
+            {
+              "id": "explode-range",
+              "checked": false,
+              "disabled": true,
+              "value": "0"
+            }
+          ],
+          "panel": "materials",
+          "toast": ""
+        },
+        "after": {
+          "S": {
+            "schemaVersion": 2,
+            "layout": "t2",
+            "exteriorId": "exterior-standard-branco-glacial",
+            "exterior": "#ddddda",
+            "floorId": "floor-spc-kx7006",
+            "floor": "#92846c",
+            "interior": "#eeede8",
+            "interiorName": "Branco natural",
+            "kitchen": "linear",
+            "kitchenRef": "kitchen-01",
+            "bathroom": "standard",
+            "bathroomRef": "bathroom-01",
+            "bathroomUV": null,
+            "roof": false,
+            "porch": false,
+            "lighting": "neutral"
+          },
+          "V": {
+            "view": "expansion",
+            "expansion": 0,
+            "cut": 1.1,
+            "exploded": 0,
+            "roofVisible": true,
+            "wallsVisible": true,
+            "furnitureVisible": true,
+            "doorsOpen": true
+          },
+          "animation": false,
+          "camera": {
+            "position": [
+              13.69151135317479,
+              11.784378855476339,
+              17.114389191468486
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ],
+            "aspect": 1.4065934065934067,
+            "zoom": 1,
+            "target": [
+              0,
+              1.105,
+              0
+            ],
+            "preset": "perspective"
+          },
+          "controls": [
+            {
+              "id": "walls-toggle",
+              "checked": true,
+              "disabled": true,
+              "value": "on"
+            },
+            {
+              "id": "furniture-toggle",
+              "checked": false,
+              "disabled": true,
+              "value": "on"
+            },
+            {
+              "id": "doors-toggle",
+              "checked": false,
+              "disabled": true,
+              "value": "on"
+            },
+            {
+              "id": "cut-range",
+              "checked": false,
+              "disabled": true,
+              "value": "1.1"
+            },
+            {
+              "id": "explode-range",
+              "checked": false,
+              "disabled": true,
+              "value": "0"
+            }
+          ],
+          "panel": "materials",
+          "toast": ""
+        },
+        "viewport": {
+          "x": 11,
+          "y": 269.046875,
+          "width": 368,
+          "height": 261.625
+        },
+        "distanceRatio": 1,
+        "expected": 1
+      }
+    },
+    {
+      "name": "Repor restores prior visual defaults after hide facades",
+      "pass": false,
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\nfalse !== true\n\n    at file://state-retest.mjs:27:363\n    at async test (file://state-retest.mjs:7:70)\n    at async file://state-retest.mjs:27:1"
+    }
+  ],
+  "consoleErrors": [],
+  "scope": "UI and state changes only; definitive animation geometry matrix awaits root ready signal. Two obsolete-selector harness errors replaced by passing focused reruns."
+}

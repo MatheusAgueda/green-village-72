@@ -1,6 +1,8 @@
 import { DATA } from './data.js';
 // Coordinates: metres; +X right, +Y up, +Z entrance. Origin: floor centre.
-export const REVISION='GV72-R3-2026-09-10';
+export const REVISION='GV72-R4-2026-09-10';
+// Deployment offsets are presentation assumptions, never transport or fabrication dimensions.
+export const EXPANSION_RIG=Object.freeze({status:'estimated',floorLift:.55,floorOffset:.45,wallPivotInset:.126,wallPivotHeight:.14,roofOffset:.8,roofLift:.3,endOffset:.15,endAxialOffset:.30,postClearance:.18,postLateralClearance:.02});
 export const EPSILON=1e-7; // Numerical tolerance only, not a manufacturing tolerance.
 export const DIM=Object.freeze({width:6.22,length:11.8,core:2.2,wing:2.01,height:2.55,panel:.1,partition:.08,frame:.12,floor:.121,roof:.127,doorWidth:.76,doorHeight:2.05,windowWidth:.92,windowHeight:1.05,windowSill:.95,entryWidth:1.7,entryHeight:2.15,bathWindowWidth:.6,bathWindowHeight:.5,bathWindowSill:1.7,porchDepth:1.95,canopyOverhang:.28,canopyEavesAboveWall:.22,canopyRise:.65});
 const d=(id,label,value,source,status='confirmed',note='')=>({id,label,value,unit:'m',source,status,note});
@@ -93,7 +95,7 @@ export function compatibility(state){
 }
 export function expansionState(value){
  const p=Math.min(1,Math.max(0,Number(value)||0)),smooth=(a,b)=>{const t=Math.min(1,Math.max(0,(p-a)/(b-a)));return t*t*(3-2*t);};
- return {p,roof:1,floor:1,wall:smooth(.06,.65),ends:smooth(.72,1),label:p<.06?'Pisos e cobertura já abertos':p<.65?'Elevação dos painéis laterais':p<.72?'Paredes em posição vertical':p<1?'Instalação dos painéis de topo':'Envolvente montada',uncertain:true};
+ return {p,roof:smooth(.02,.18),roofDock:smooth(.18,.24),floor:smooth(.26,.50),roofLower:smooth(.78,.84),wall:smooth(.60,.78),ends:smooth(.84,.96),postsDock:smooth(.96,1),label:p<.02?'Casa recolhida · simulação':p<.24?'Abertura da cobertura':p<.26?'Cobertura aberta':p<.50?'Descida dos pisos laterais':p<.60?'Pisos abertos':p<.78?'Elevação das paredes':p<.84?'Paredes erguidas · ajuste da cobertura':p<.96?'Fecho dos painéis de topo':p<1?'Encaixe final':'Casa expandida',uncertain:true};
 }
 
 export function unionArea(rectangles){

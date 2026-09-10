@@ -1,0 +1,89 @@
+{
+  "appSHA256": "1908712dfec69c4b045ed52ccfce080e13cb1349951d0556df0d6d25f1427541",
+  "verifiedAt": "2026-09-10T16:42:25.374Z",
+  "resize": {
+    "beforeResize": {
+      "maxAbsX": 0.544394383049895,
+      "maxAbsY": 0.8547008547008549
+    },
+    "afterResize": {
+      "maxAbsX": 0.8547008547008553,
+      "maxAbsY": 0.517794225124337
+    },
+    "afterDuplicateObserver": {
+      "maxAbsX": 0.8547008547008553,
+      "maxAbsY": 0.5177942251243368
+    },
+    "afterEightCornerFit": {
+      "maxAbsX": 0.8547008547008553,
+      "maxAbsY": 0.517794225124337
+    }
+  },
+  "orbit": {
+    "up": [
+      0,
+      1,
+      0
+    ],
+    "rollDegrees": 6.486445765477526e-16
+  },
+  "topResize": {
+    "up": [
+      0,
+      0,
+      -1
+    ],
+    "ndc": {
+      "maxAbsX": 0.5457476702586771,
+      "maxAbsY": 0.8414200882976639
+    },
+    "preset": "top"
+  },
+  "snapshot": {
+    "eventLoss": {
+      "renders": 0,
+      "error": "A ligação gráfica foi interrompida. Tente novamente após recuperar o 3D."
+    },
+    "driverLoss": {
+      "renders": 0,
+      "error": "A ligação gráfica foi interrompida. Tente novamente após recuperar o 3D."
+    },
+    "normal": {
+      "renders": 1,
+      "image": "PNG"
+    }
+  },
+  "keyboard": {
+    "panel": "layout",
+    "view": "interior"
+  },
+  "afterReset": {
+    "title": "Vista exterior",
+    "expansionControlsHidden": true,
+    "view": "exterior",
+    "wallsVisible": true,
+    "furnitureVisible": true,
+    "doorsOpen": true,
+    "cut": 1.1,
+    "expansionProgress": 0,
+    "cameraFits": 2,
+    "rebuilds": 2
+  },
+  "sameView": {
+    "expansion": 0.45,
+    "animation": true,
+    "rebuilds": 0,
+    "cameraFits": 0
+  },
+  "configuredWhilePlaying": {
+    "view": "expansion",
+    "expansion": 0.45,
+    "animation": true,
+    "rebuilds": 1,
+    "cameraFits": 0
+  },
+  "returnExpansion": {
+    "progress": 0.45,
+    "storedProgress": 0.45
+  }
+}

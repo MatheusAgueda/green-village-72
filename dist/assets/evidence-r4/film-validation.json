@@ -1,0 +1,241 @@
+{
+  "status": "PASS",
+  "configurationMatchesPresentationV3": true,
+  "configuration": {
+    "schemaVersion": 2,
+    "layout": "t2",
+    "exteriorId": "exterior-standard-branco-glacial",
+    "exterior": "#ddddda",
+    "floorId": "floor-spc-kx7006",
+    "floor": "#92846c",
+    "interior": "#eeede8",
+    "interiorName": "Branco natural",
+    "kitchen": "linear",
+    "kitchenRef": "kitchen-01",
+    "bathroom": "standard",
+    "bathroomRef": "bathroom-01",
+    "bathroomUV": null,
+    "roof": false,
+    "porch": false,
+    "lighting": "neutral",
+    "view": "exterior",
+    "expansion": 1,
+    "cut": 1.1,
+    "exploded": 0,
+    "roofVisible": true,
+    "wallsVisible": true,
+    "furnitureVisible": true,
+    "doorsOpen": true
+  },
+  "timing": {
+    "initialHoldSeconds": 1.5,
+    "animationSeconds": 16,
+    "finalHoldSeconds": 2.5,
+    "durationSeconds": 20,
+    "frames": 480
+  },
+  "sourceSnapshotUnchanged": true,
+  "currentCheckoutDifferences": [],
+  "sourceModules": {
+    "model.js": "81fc4733134a4d49d9ee00e005ee78c7f712167ebd207de12f898a32bc8b973e",
+    "specification.js": "d451a71c5a25a4c9d290559a2c3f0fc6dfd9aa7053f6cf786d0ebd0e01e8d62f",
+    "stage.js": "f267d8ced81973011e8f55f28a75458bbe4b4ca77597149e17120ffede83bef4",
+    "material-library.js": "4a7ad220ed802dfe92608c416b2e173d55c0a4516860a09b1f25f702f2537280"
+  },
+  "capture": {
+    "pageErrors": [],
+    "materials": {
+      "pending": 0,
+      "failures": [],
+      "cachedTextures": 1,
+      "leases": 1
+    },
+    "framing": {
+      "checks": 481,
+      "minimum": {
+        "left": 285.20759982594814,
+        "right": 353.5292633022034,
+        "top": 75.56799632926752,
+        "bottom": 58.818690168124476
+      },
+      "violations": []
+    }
+  },
+  "decodedFrameColourComparison": {
+    "0": {
+      "wholeFrame": {
+        "sourceMeanRGB8": [
+          203.277,
+          210.133,
+          200.263
+        ],
+        "decodedMeanRGB8": [
+          201.389,
+          207.983,
+          198.234
+        ],
+        "meanAbsoluteChannelError": 2.085
+      },
+      "footer": {
+        "sourceMeanRGB8": [
+          40.182,
+          66.505,
+          55.543
+        ],
+        "decodedMeanRGB8": [
+          39.072,
+          64.55,
+          53.526
+        ],
+        "meanAbsoluteChannelError": 1.815
+      },
+      "background": {
+        "sourceMeanRGB8": [
+          240,
+          244,
+          233
+        ],
+        "decodedMeanRGB8": [
+          238,
+          242,
+          231
+        ],
+        "meanAbsoluteChannelError": 2
+      }
+    },
+    "240": {
+      "wholeFrame": {
+        "sourceMeanRGB8": [
+          203.417,
+          210.041,
+          200.263
+        ],
+        "decodedMeanRGB8": [
+          201.55,
+          207.909,
+          198.353
+        ],
+        "meanAbsoluteChannelError": 2.112
+      },
+      "footer": {
+        "sourceMeanRGB8": [
+          38.923,
+          65.408,
+          54.428
+        ],
+        "decodedMeanRGB8": [
+          37.837,
+          63.407,
+          52.469
+        ],
+        "meanAbsoluteChannelError": 1.777
+      },
+      "background": {
+        "sourceMeanRGB8": [
+          240,
+          244,
+          233
+        ],
+        "decodedMeanRGB8": [
+          238,
+          242,
+          231
+        ],
+        "meanAbsoluteChannelError": 2
+      }
+    },
+    "479": {
+      "wholeFrame": {
+        "sourceMeanRGB8": [
+          203.845,
+          210.641,
+          201.021
+        ],
+        "decodedMeanRGB8": [
+          201.949,
+          208.502,
+          199.073
+        ],
+        "meanAbsoluteChannelError": 2.084
+      },
+      "footer": {
+        "sourceMeanRGB8": [
+          39.266,
+          65.707,
+          54.732
+        ],
+        "decodedMeanRGB8": [
+          38.165,
+          63.744,
+          52.701
+        ],
+        "meanAbsoluteChannelError": 1.776
+      },
+      "background": {
+        "sourceMeanRGB8": [
+          240,
+          244,
+          233
+        ],
+        "decodedMeanRGB8": [
+          238,
+          242,
+          231
+        ],
+        "meanAbsoluteChannelError": 2
+      }
+    }
+  },
+  "outputs": [
+    {
+      "id": "assembly",
+      "video": "green-village-r4-assembly.mp4",
+      "poster": "green-village-r4-assembly-poster.jpg",
+      "contactSheet": "green-village-r4-assembly-contact-sheet.jpg",
+      "durationSeconds": 20,
+      "width": 1920,
+      "height": 1080,
+      "fps": 24,
+      "frames": 480,
+      "codec": "h264",
+      "pixelFormat": "yuv420p",
+      "audio": false,
+      "faststart": true,
+      "decodeErrors": false,
+      "sha256": "a2d7d650ca1f548ef96f9a8a97180a15b28e202e6c19a321319d154b21f1ee68",
+      "sizeBytes": 3803818,
+      "caption": "Simulação ilustrativa · pivôs e folgas estimados"
+    }
+  ],
+  "assetSha256": {
+    "preview-start-middle-end.jpg": "8a19a50c3e8a6d3831e51c8b883df0b1ea5c2bf782c2e5382a60e43f752e2135",
+    "green-village-r4-assembly.mp4": "a2d7d650ca1f548ef96f9a8a97180a15b28e202e6c19a321319d154b21f1ee68",
+    "green-village-r4-assembly-poster.jpg": "3bb7bb5853a4bebc81e6240e5a1cbde93654b546f3bb7a441fcf93f1c911a116",
+    "green-village-r4-assembly-contact-sheet.jpg": "8679657f3daaa04a5ca1aa48df792e893d8114d8fd4a77bae25ddf279a1fd380"
+  },
+  "limitations": [
+    "Own 3D simulation; pivots and clearances estimated.",
+    "Original product videos inform appearance but do not document this expansion sequence.",
+    "Colour metrics verify encoding fidelity, not calibrated physical product colour."
+  ],
+  "visualReview": {
+    "status": "PASS",
+    "contactSheet": "green-village-r4-assembly-contact-sheet.jpg",
+    "reviewedDecodedTimesSeconds": [
+      0,
+      3,
+      6,
+      10,
+      13,
+      16,
+      19,
+      19.958333333333332
+    ],
+    "observations": [
+      "House remains inside frame and clear of captions.",
+      "Stage labels follow coverage, floor, wall and end-panel sequence.",
+      "Final house is complete in the expansion view; illustrative-pivot caption remains visible."
+    ],
+    "finalFrame": "previews/assembly-decoded-frame-00479.png"
+  }
+}
