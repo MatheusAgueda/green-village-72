@@ -1,0 +1,879 @@
+{
+  "schemaVersion": 1,
+  "title": "Green Village · galeria T3-A",
+  "items": [
+    {
+      "id": "01-exterior-alpendre",
+      "title": "Exterior com telhado e alpendre",
+      "category": "exterior",
+      "description": "T3-A com telhado de duas águas e alpendre. Branco glacial do catálogo; geometrias do telhado e alpendre estimadas.",
+      "configuration": {
+        "schemaVersion": 2,
+        "layout": "t3-a",
+        "exteriorId": "exterior-standard-branco-glacial",
+        "exterior": "#ddddda",
+        "floorId": "floor-spc-kx7008",
+        "floor": "#a18a6e",
+        "interior": "#eeede8",
+        "interiorName": "Branco natural",
+        "kitchen": "l",
+        "kitchenRef": "kitchen-03",
+        "bathroom": "standard",
+        "bathroomRef": "bathroom-06",
+        "bathroomUV": null,
+        "roof": true,
+        "porch": true,
+        "lighting": "neutral",
+        "textureMode": "source"
+      },
+      "visual": {
+        "view": "exterior",
+        "expansion": 1,
+        "cut": 1.1,
+        "exploded": 0,
+        "roofVisible": true,
+        "wallsVisible": true,
+        "furnitureVisible": true,
+        "doorsOpen": true
+      },
+      "view": "exterior",
+      "cameraPreset": "perspective",
+      "projection": "perspective",
+      "camera": {
+        "type": "PerspectiveCamera",
+        "position": [
+          10.244251010664469,
+          6.254837113982868,
+          17.29580170766221
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "quaternion": [
+          -0.11466018569606924,
+          0.2737142367516447,
+          0.03288410857725396,
+          0.9543857678206895
+        ],
+        "fov": 36,
+        "near": 0.05,
+        "far": 200,
+        "aspect": 1.7777777777777777,
+        "zoom": 1
+      },
+      "image": "assets/presentation-r8/images/01-exterior-alpendre.jpg",
+      "original": "assets/presentation-r8/renders/01-exterior-alpendre.png",
+      "thumbnail": "assets/presentation-r8/thumbnails/01-exterior-alpendre.jpg",
+      "width": 3840,
+      "height": 2160,
+      "cameraRecipe": {
+        "direction": [
+          1,
+          0.46,
+          1.6
+        ],
+        "padding": 1.12
+      },
+      "cut": 1.1
+    },
+    {
+      "id": "02-exterior-cobertura-plana",
+      "title": "Exterior com cobertura plana",
+      "category": "exterior",
+      "description": "Variante sem telhado adicional nem alpendre. Mantém a planta T3-A e os mesmos acabamentos.",
+      "configuration": {
+        "schemaVersion": 2,
+        "layout": "t3-a",
+        "exteriorId": "exterior-standard-branco-glacial",
+        "exterior": "#ddddda",
+        "floorId": "floor-spc-kx7008",
+        "floor": "#a18a6e",
+        "interior": "#eeede8",
+        "interiorName": "Branco natural",
+        "kitchen": "l",
+        "kitchenRef": "kitchen-03",
+        "bathroom": "standard",
+        "bathroomRef": "bathroom-06",
+        "bathroomUV": null,
+        "roof": false,
+        "porch": false,
+        "lighting": "neutral",
+        "textureMode": "source"
+      },
+      "visual": {
+        "view": "exterior",
+        "expansion": 1,
+        "cut": 1.1,
+        "exploded": 0,
+        "roofVisible": true,
+        "wallsVisible": true,
+        "furnitureVisible": true,
+        "doorsOpen": true
+      },
+      "view": "exterior",
+      "cameraPreset": "perspective",
+      "projection": "perspective",
+      "camera": {
+        "type": "PerspectiveCamera",
+        "position": [
+          -10.497904784377273,
+          7.608200936988424,
+          13.651526219496738
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "quaternion": [
+          -0.17015357676611964,
+          -0.3167628849490377,
+          -0.05787296576522262,
+          0.9313215099341345
+        ],
+        "fov": 36,
+        "near": 0.05,
+        "far": 200,
+        "aspect": 1.7777777777777777,
+        "zoom": 1
+      },
+      "image": "assets/presentation-r8/images/02-exterior-cobertura-plana.jpg",
+      "original": "assets/presentation-r8/renders/02-exterior-cobertura-plana.png",
+      "thumbnail": "assets/presentation-r8/thumbnails/02-exterior-cobertura-plana.jpg",
+      "width": 3840,
+      "height": 2160,
+      "cameraRecipe": {
+        "direction": [
+          -1,
+          0.62,
+          1.3
+        ],
+        "padding": 1.12
+      },
+      "cut": 1.1
+    },
+    {
+      "id": "03-interior-perspectiva",
+      "title": "T3-A · interior mobilado",
+      "category": "interior",
+      "description": "Perspectiva interior mobilada da T3-A. Cobertura ocultada e paredes em corte para mostrar a distribuição.",
+      "configuration": {
+        "schemaVersion": 2,
+        "layout": "t3-a",
+        "exteriorId": "exterior-standard-branco-glacial",
+        "exterior": "#ddddda",
+        "floorId": "floor-spc-kx7008",
+        "floor": "#a18a6e",
+        "interior": "#eeede8",
+        "interiorName": "Branco natural",
+        "kitchen": "l",
+        "kitchenRef": "kitchen-03",
+        "bathroom": "standard",
+        "bathroomRef": "bathroom-06",
+        "bathroomUV": null,
+        "roof": true,
+        "porch": true,
+        "lighting": "neutral",
+        "textureMode": "source"
+      },
+      "visual": {
+        "view": "interior",
+        "expansion": 1,
+        "cut": 1.05,
+        "exploded": 0,
+        "roofVisible": true,
+        "wallsVisible": true,
+        "furnitureVisible": true,
+        "doorsOpen": true
+      },
+      "view": "interior",
+      "cameraPreset": "inside",
+      "projection": "perspective",
+      "camera": {
+        "type": "PerspectiveCamera",
+        "position": [
+          12.053694830248354,
+          16.012553286236997,
+          8.20096691006994
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "quaternion": [
+          -0.35467523396364414,
+          0.4499177459477163,
+          0.20081370512881574,
+          0.7946403942203023
+        ],
+        "fov": 36,
+        "near": 0.05,
+        "far": 200,
+        "aspect": 1.7777777777777777,
+        "zoom": 1
+      },
+      "image": "assets/presentation-r8/images/03-interior-perspectiva.jpg",
+      "original": "assets/presentation-r8/renders/03-interior-perspectiva.png",
+      "thumbnail": "assets/presentation-r8/thumbnails/03-interior-perspectiva.jpg",
+      "width": 3840,
+      "height": 2160,
+      "cameraRecipe": {
+        "direction": [
+          1,
+          1.3,
+          0.6
+        ],
+        "padding": 1.11
+      },
+      "cut": 1.05
+    },
+    {
+      "id": "04-planta-mobilada",
+      "title": "Planta T3-A",
+      "category": "interior",
+      "description": "Vista superior ortogonal do modelo mobilado. Corpo principal 11,80 × 6,22 m, com alpendre adicional ilustrado; divisórias e mobiliário aproximados.",
+      "configuration": {
+        "schemaVersion": 2,
+        "layout": "t3-a",
+        "exteriorId": "exterior-standard-branco-glacial",
+        "exterior": "#ddddda",
+        "floorId": "floor-spc-kx7008",
+        "floor": "#a18a6e",
+        "interior": "#eeede8",
+        "interiorName": "Branco natural",
+        "kitchen": "l",
+        "kitchenRef": "kitchen-03",
+        "bathroom": "standard",
+        "bathroomRef": "bathroom-06",
+        "bathroomUV": null,
+        "roof": true,
+        "porch": true,
+        "lighting": "neutral",
+        "textureMode": "source"
+      },
+      "visual": {
+        "view": "plan",
+        "expansion": 1,
+        "cut": 0.9,
+        "exploded": 0,
+        "roofVisible": true,
+        "wallsVisible": true,
+        "furnitureVisible": true,
+        "doorsOpen": true
+      },
+      "view": "interior",
+      "cameraPreset": "top",
+      "projection": "orthographic",
+      "camera": {
+        "type": "OrthographicCamera",
+        "position": [
+          0,
+          25,
+          0.9749999642372131
+        ],
+        "up": [
+          1,
+          0,
+          0
+        ],
+        "quaternion": [
+          0.5,
+          0.5,
+          0.5,
+          -0.5
+        ],
+        "fov": null,
+        "near": 0.05,
+        "far": 100,
+        "aspect": 1.7777777777777777,
+        "zoom": 1,
+        "left": -8.250000071525573,
+        "right": 8.250000071525573,
+        "top": 4.640625040233135,
+        "bottom": -4.640625040233135
+      },
+      "image": "assets/presentation-r8/images/04-planta-mobilada.jpg",
+      "original": "assets/presentation-r8/renders/04-planta-mobilada.png",
+      "thumbnail": "assets/presentation-r8/thumbnails/04-planta-mobilada.jpg",
+      "width": 3840,
+      "height": 2160,
+      "cameraRecipe": {
+        "padding": 1.2,
+        "top": true
+      },
+      "cut": 0.9
+    },
+    {
+      "id": "05-cozinha",
+      "title": "Cozinha em L · referência 03",
+      "category": "interior",
+      "description": "Referência 03 do catálogo aplicada à cozinha em L. Frentes, bancada e armários superiores seguem a aparência da fotografia original.",
+      "configuration": {
+        "schemaVersion": 2,
+        "layout": "t3-a",
+        "exteriorId": "exterior-standard-branco-glacial",
+        "exterior": "#ddddda",
+        "floorId": "floor-spc-kx7008",
+        "floor": "#a18a6e",
+        "interior": "#eeede8",
+        "interiorName": "Branco natural",
+        "kitchen": "l",
+        "kitchenRef": "kitchen-03",
+        "bathroom": "standard",
+        "bathroomRef": "bathroom-06",
+        "bathroomUV": null,
+        "roof": true,
+        "porch": true,
+        "lighting": "neutral",
+        "textureMode": "source"
+      },
+      "visual": {
+        "view": "interior",
+        "expansion": 1,
+        "cut": 1.1,
+        "exploded": 0,
+        "roofVisible": true,
+        "wallsVisible": true,
+        "furnitureVisible": true,
+        "doorsOpen": true
+      },
+      "view": "interior",
+      "cameraPreset": "inside",
+      "projection": "perspective",
+      "camera": {
+        "type": "PerspectiveCamera",
+        "position": [
+          4.078244168165414,
+          4.244997103156193,
+          3.9902375386131768
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "quaternion": [
+          -0.17847931476480766,
+          0.5406596390247256,
+          0.11862087738719292,
+          0.8134871703835473
+        ],
+        "fov": 36,
+        "near": 0.05,
+        "far": 200,
+        "aspect": 1.7777777777777777,
+        "zoom": 1
+      },
+      "image": "assets/presentation-r8/images/05-cozinha.jpg",
+      "original": "assets/presentation-r8/renders/05-cozinha.png",
+      "thumbnail": "assets/presentation-r8/thumbnails/05-cozinha.jpg",
+      "width": 3840,
+      "height": 2160,
+      "room": "kitchen",
+      "renderVisibility": {
+        "structure": false,
+        "supports": false,
+        "floorLayers": false,
+        "interior": "Exclude bath environment walls"
+      },
+      "cameraRecipe": {
+        "direction": [
+          1,
+          0.5,
+          0.42
+        ],
+        "padding": 1.13
+      },
+      "cut": 1.1
+    },
+    {
+      "id": "06-casa-de-banho",
+      "title": "Casa de banho · referência 06",
+      "category": "interior",
+      "description": "Referência 06 do catálogo. Revestimento, lavatório e duche representados com geometria aproximada.",
+      "configuration": {
+        "schemaVersion": 2,
+        "layout": "t3-a",
+        "exteriorId": "exterior-standard-branco-glacial",
+        "exterior": "#ddddda",
+        "floorId": "floor-spc-kx7008",
+        "floor": "#a18a6e",
+        "interior": "#eeede8",
+        "interiorName": "Branco natural",
+        "kitchen": "l",
+        "kitchenRef": "kitchen-03",
+        "bathroom": "standard",
+        "bathroomRef": "bathroom-06",
+        "bathroomUV": null,
+        "roof": true,
+        "porch": true,
+        "lighting": "neutral",
+        "textureMode": "source"
+      },
+      "visual": {
+        "view": "interior",
+        "expansion": 1,
+        "cut": 1.1,
+        "exploded": 0,
+        "roofVisible": true,
+        "wallsVisible": true,
+        "furnitureVisible": true,
+        "doorsOpen": true
+      },
+      "view": "interior",
+      "cameraPreset": "inside",
+      "projection": "perspective",
+      "camera": {
+        "type": "PerspectiveCamera",
+        "position": [
+          4.639236087058338,
+          4.545905988346828,
+          0.7660203935794376
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "quaternion": [
+          -0.20715145087640568,
+          0.3475439758870173,
+          0.07902122507078088,
+          0.9110746990300835
+        ],
+        "fov": 36,
+        "near": 0.05,
+        "far": 200,
+        "aspect": 1.7777777777777777,
+        "zoom": 1
+      },
+      "image": "assets/presentation-r8/images/06-casa-de-banho.jpg",
+      "original": "assets/presentation-r8/renders/06-casa-de-banho.png",
+      "thumbnail": "assets/presentation-r8/thumbnails/06-casa-de-banho.jpg",
+      "width": 3840,
+      "height": 2160,
+      "room": "bathroom",
+      "renderVisibility": {
+        "structure": false,
+        "supports": false,
+        "floorLayers": false,
+        "interior": "Bath environment walls only"
+      },
+      "cameraRecipe": {
+        "direction": [
+          1,
+          0.72,
+          1.12
+        ],
+        "padding": 1.14
+      },
+      "cut": 1.1
+    },
+    {
+      "id": "07-estrutura",
+      "title": "Estrutura",
+      "category": "construction",
+      "description": "Armação ilustrativa da mesma T3-A. Secções, perfis e fixações não constituem um desenho de fabrico.",
+      "configuration": {
+        "schemaVersion": 2,
+        "layout": "t3-a",
+        "exteriorId": "exterior-standard-branco-glacial",
+        "exterior": "#ddddda",
+        "floorId": "floor-spc-kx7008",
+        "floor": "#a18a6e",
+        "interior": "#eeede8",
+        "interiorName": "Branco natural",
+        "kitchen": "l",
+        "kitchenRef": "kitchen-03",
+        "bathroom": "standard",
+        "bathroomRef": "bathroom-06",
+        "bathroomUV": null,
+        "roof": true,
+        "porch": true,
+        "lighting": "neutral",
+        "textureMode": "source"
+      },
+      "visual": {
+        "view": "structure",
+        "expansion": 1,
+        "cut": 1.1,
+        "exploded": 0,
+        "roofVisible": true,
+        "wallsVisible": true,
+        "furnitureVisible": true,
+        "doorsOpen": true
+      },
+      "view": "structure",
+      "cameraPreset": "perspective",
+      "projection": "perspective",
+      "camera": {
+        "type": "PerspectiveCamera",
+        "position": [
+          14.821696665109354,
+          11.024684604442381,
+          10.375187665576545
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "quaternion": [
+          -0.21208822103445193,
+          0.4484140571688207,
+          0.11042491182578967,
+          0.8612489527889747
+        ],
+        "fov": 36,
+        "near": 0.05,
+        "far": 200,
+        "aspect": 1.7777777777777777,
+        "zoom": 1
+      },
+      "image": "assets/presentation-r8/images/07-estrutura.jpg",
+      "original": "assets/presentation-r8/renders/07-estrutura.png",
+      "thumbnail": "assets/presentation-r8/thumbnails/07-estrutura.jpg",
+      "width": 3840,
+      "height": 2160,
+      "renderVisibility": {
+        "porch": false
+      },
+      "cameraRecipe": {
+        "direction": [
+          1,
+          0.64,
+          0.7
+        ],
+        "padding": 1.13
+      },
+      "cut": 1.1
+    },
+    {
+      "id": "09-fachada-principal",
+      "title": "Fachada principal",
+      "category": "exterior",
+      "description": "Elevação da entrada, identificada pela planta (+Z). T3-A com cobertura plana, sem telhado adicional nem alpendre.",
+      "configuration": {
+        "schemaVersion": 2,
+        "layout": "t3-a",
+        "exteriorId": "exterior-standard-branco-glacial",
+        "exterior": "#ddddda",
+        "floorId": "floor-spc-kx7008",
+        "floor": "#a18a6e",
+        "interior": "#eeede8",
+        "interiorName": "Branco natural",
+        "kitchen": "l",
+        "kitchenRef": "kitchen-03",
+        "bathroom": "standard",
+        "bathroomRef": "bathroom-06",
+        "bathroomUV": null,
+        "roof": false,
+        "porch": false,
+        "lighting": "neutral",
+        "textureMode": "source"
+      },
+      "visual": {
+        "view": "exterior",
+        "expansion": 1,
+        "cut": 1.1,
+        "exploded": 0,
+        "roofVisible": true,
+        "wallsVisible": true,
+        "furnitureVisible": true,
+        "doorsOpen": false
+      },
+      "view": "exterior",
+      "cameraPreset": "front",
+      "projection": "orthographic",
+      "camera": {
+        "type": "OrthographicCamera",
+        "position": [
+          0,
+          1.0994999706745148,
+          30.004249999806284
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "quaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "fov": null,
+        "near": 0.05,
+        "far": 100,
+        "aspect": 1.7777777777777777,
+        "zoom": 1,
+        "left": -3.4971999359130863,
+        "right": 3.4971999359130863,
+        "top": 1.9671749639511111,
+        "bottom": -1.9671749639511111
+      },
+      "image": "assets/presentation-r8/images/09-fachada-principal.jpg",
+      "original": "assets/presentation-r8/renders/09-fachada-principal.png",
+      "thumbnail": "assets/presentation-r8/thumbnails/09-fachada-principal.jpg",
+      "width": 3840,
+      "height": 2160,
+      "cameraRecipe": {
+        "direction": [
+          0,
+          0,
+          1
+        ],
+        "padding": 1.12,
+        "face": "front"
+      },
+      "cut": 1.1
+    },
+    {
+      "id": "10-fachada-direita",
+      "title": "Fachada lateral direita",
+      "category": "exterior",
+      "description": "Elevação da lateral direita vista a partir da entrada (+X). Posições e alturas dos vãos estimadas a partir das fontes.",
+      "configuration": {
+        "schemaVersion": 2,
+        "layout": "t3-a",
+        "exteriorId": "exterior-standard-branco-glacial",
+        "exterior": "#ddddda",
+        "floorId": "floor-spc-kx7008",
+        "floor": "#a18a6e",
+        "interior": "#eeede8",
+        "interiorName": "Branco natural",
+        "kitchen": "l",
+        "kitchenRef": "kitchen-03",
+        "bathroom": "standard",
+        "bathroomRef": "bathroom-06",
+        "bathroomUV": null,
+        "roof": false,
+        "porch": false,
+        "lighting": "neutral",
+        "textureMode": "source"
+      },
+      "visual": {
+        "view": "exterior",
+        "expansion": 1,
+        "cut": 1.1,
+        "exploded": 0,
+        "roofVisible": true,
+        "wallsVisible": true,
+        "furnitureVisible": true,
+        "doorsOpen": false
+      },
+      "view": "exterior",
+      "cameraPreset": "right",
+      "projection": "orthographic",
+      "camera": {
+        "type": "OrthographicCamera",
+        "position": [
+          30,
+          1.0994999706745148,
+          0.004249999806284599
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "quaternion": [
+          0,
+          0.7071067811865475,
+          0,
+          0.7071067811865476
+        ],
+        "fov": null,
+        "near": 0.05,
+        "far": 100,
+        "aspect": 1.7777777777777777,
+        "zoom": 1,
+        "left": -6.62675999978304,
+        "right": 6.62675999978304,
+        "top": 3.72755249987796,
+        "bottom": -3.72755249987796
+      },
+      "image": "assets/presentation-r8/images/10-fachada-direita.jpg",
+      "original": "assets/presentation-r8/renders/10-fachada-direita.png",
+      "thumbnail": "assets/presentation-r8/thumbnails/10-fachada-direita.jpg",
+      "width": 3840,
+      "height": 2160,
+      "cameraRecipe": {
+        "direction": [
+          1,
+          0,
+          0
+        ],
+        "padding": 1.12,
+        "face": "right"
+      },
+      "cut": 1.1
+    },
+    {
+      "id": "11-fachada-posterior",
+      "title": "Fachada posterior",
+      "category": "exterior",
+      "description": "Elevação oposta à entrada (−Z), com o vão da casa de banho e janelas dos quartos. Sem orientação geográfica atribuída.",
+      "configuration": {
+        "schemaVersion": 2,
+        "layout": "t3-a",
+        "exteriorId": "exterior-standard-branco-glacial",
+        "exterior": "#ddddda",
+        "floorId": "floor-spc-kx7008",
+        "floor": "#a18a6e",
+        "interior": "#eeede8",
+        "interiorName": "Branco natural",
+        "kitchen": "l",
+        "kitchenRef": "kitchen-03",
+        "bathroom": "standard",
+        "bathroomRef": "bathroom-06",
+        "bathroomUV": null,
+        "roof": false,
+        "porch": false,
+        "lighting": "neutral",
+        "textureMode": "source"
+      },
+      "visual": {
+        "view": "exterior",
+        "expansion": 1,
+        "cut": 1.1,
+        "exploded": 0,
+        "roofVisible": true,
+        "wallsVisible": true,
+        "furnitureVisible": true,
+        "doorsOpen": false
+      },
+      "view": "exterior",
+      "cameraPreset": "back",
+      "projection": "orthographic",
+      "camera": {
+        "type": "OrthographicCamera",
+        "position": [
+          0,
+          1.0994999706745148,
+          -29.995750000193716
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "quaternion": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "fov": null,
+        "near": 0.05,
+        "far": 100,
+        "aspect": 1.7777777777777777,
+        "zoom": 1,
+        "left": -3.4971999359130863,
+        "right": 3.4971999359130863,
+        "top": 1.9671749639511111,
+        "bottom": -1.9671749639511111
+      },
+      "image": "assets/presentation-r8/images/11-fachada-posterior.jpg",
+      "original": "assets/presentation-r8/renders/11-fachada-posterior.png",
+      "thumbnail": "assets/presentation-r8/thumbnails/11-fachada-posterior.jpg",
+      "width": 3840,
+      "height": 2160,
+      "cameraRecipe": {
+        "direction": [
+          0,
+          0,
+          -1
+        ],
+        "padding": 1.12,
+        "face": "back"
+      },
+      "cut": 1.1
+    },
+    {
+      "id": "12-fachada-esquerda",
+      "title": "Fachada lateral esquerda",
+      "category": "exterior",
+      "description": "Elevação da lateral esquerda vista a partir da entrada (−X). Mesma planta T3-A e acabamentos originais.",
+      "configuration": {
+        "schemaVersion": 2,
+        "layout": "t3-a",
+        "exteriorId": "exterior-standard-branco-glacial",
+        "exterior": "#ddddda",
+        "floorId": "floor-spc-kx7008",
+        "floor": "#a18a6e",
+        "interior": "#eeede8",
+        "interiorName": "Branco natural",
+        "kitchen": "l",
+        "kitchenRef": "kitchen-03",
+        "bathroom": "standard",
+        "bathroomRef": "bathroom-06",
+        "bathroomUV": null,
+        "roof": false,
+        "porch": false,
+        "lighting": "neutral",
+        "textureMode": "source"
+      },
+      "visual": {
+        "view": "exterior",
+        "expansion": 1,
+        "cut": 1.1,
+        "exploded": 0,
+        "roofVisible": true,
+        "wallsVisible": true,
+        "furnitureVisible": true,
+        "doorsOpen": false
+      },
+      "view": "exterior",
+      "cameraPreset": "left",
+      "projection": "orthographic",
+      "camera": {
+        "type": "OrthographicCamera",
+        "position": [
+          -30,
+          1.0994999706745148,
+          0.004249999806284599
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "quaternion": [
+          0,
+          -0.7071067811865475,
+          0,
+          0.7071067811865476
+        ],
+        "fov": null,
+        "near": 0.05,
+        "far": 100,
+        "aspect": 1.7777777777777777,
+        "zoom": 1,
+        "left": -6.62675999978304,
+        "right": 6.62675999978304,
+        "top": 3.72755249987796,
+        "bottom": -3.72755249987796
+      },
+      "image": "assets/presentation-r8/images/12-fachada-esquerda.jpg",
+      "original": "assets/presentation-r8/renders/12-fachada-esquerda.png",
+      "thumbnail": "assets/presentation-r8/thumbnails/12-fachada-esquerda.jpg",
+      "width": 3840,
+      "height": 2160,
+      "cameraRecipe": {
+        "direction": [
+          -1,
+          0,
+          0
+        ],
+        "padding": 1.12,
+        "face": "left"
+      },
+      "cut": 1.1
+    }
+  ]
+}

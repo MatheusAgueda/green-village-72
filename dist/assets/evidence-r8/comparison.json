@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "A": "floor-spc-kx7005",
+  "B": "floor-spc-kx7008",
+  "actualAfterCaptureAAndApplyB": "floor-spc-kx7008",
+  "details": "Com A aplicado e B diferente, capturar A mantém B; aplicar B repõe a amostra B."
+}

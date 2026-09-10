@@ -1,0 +1,93 @@
+{
+  "status": "PASS",
+  "comparison": "Historical snapshot immediately before R8 static-expansion and rear-window changes versus current runtime snapshot. Original passage-door metadata and pose output unchanged.",
+  "configurations": 14,
+  "poses": 4848,
+  "maxErrorM": 0,
+  "records": [
+    {
+      "layout": "t0",
+      "bathroom": "standard",
+      "doorCount": 1,
+      "semanticDataExactMatch": true
+    },
+    {
+      "layout": "t0",
+      "bathroom": "mirrored",
+      "doorCount": 1,
+      "semanticDataExactMatch": true
+    },
+    {
+      "layout": "t1",
+      "bathroom": "standard",
+      "doorCount": 2,
+      "semanticDataExactMatch": true
+    },
+    {
+      "layout": "t1",
+      "bathroom": "mirrored",
+      "doorCount": 2,
+      "semanticDataExactMatch": true
+    },
+    {
+      "layout": "t2",
+      "bathroom": "standard",
+      "doorCount": 3,
+      "semanticDataExactMatch": true
+    },
+    {
+      "layout": "t2",
+      "bathroom": "mirrored",
+      "doorCount": 3,
+      "semanticDataExactMatch": true
+    },
+    {
+      "layout": "t3-a",
+      "bathroom": "standard",
+      "doorCount": 4,
+      "semanticDataExactMatch": true
+    },
+    {
+      "layout": "t3-a",
+      "bathroom": "mirrored",
+      "doorCount": 4,
+      "semanticDataExactMatch": true
+    },
+    {
+      "layout": "t3-b",
+      "bathroom": "standard",
+      "doorCount": 4,
+      "semanticDataExactMatch": true
+    },
+    {
+      "layout": "t3-b",
+      "bathroom": "mirrored",
+      "doorCount": 4,
+      "semanticDataExactMatch": true
+    },
+    {
+      "layout": "t4-a",
+      "bathroom": "standard",
+      "doorCount": 5,
+      "semanticDataExactMatch": true
+    },
+    {
+      "layout": "t4-a",
+      "bathroom": "mirrored",
+      "doorCount": 5,
+      "semanticDataExactMatch": true
+    },
+    {
+      "layout": "t4-b",
+      "bathroom": "standard",
+      "doorCount": 5,
+      "semanticDataExactMatch": true
+    },
+    {
+      "layout": "t4-b",
+      "bathroom": "mirrored",
+      "doorCount": 5,
+      "semanticDataExactMatch": true
+    }
+  ]
+}

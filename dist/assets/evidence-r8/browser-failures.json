@@ -1,0 +1,68 @@
+{
+  "checks": [
+    {
+      "name": "insufficient-4K-capacity-restores-controls",
+      "status": "PASS",
+      "result": {
+        "modal": false,
+        "controls": true,
+        "message": "Este dispositivo não suporta o tamanho 4K. A galeria 4K continua disponível.",
+        "canvas": [
+          967,
+          566
+        ]
+      }
+    },
+    {
+      "name": "texture503-blocks4K-andGLB-retry-recovers",
+      "status": "PASS",
+      "result": {
+        "texture": "floor-spc-kx7005",
+        "failed": {
+          "pending": 0,
+          "backgroundPending": 0,
+          "failures": [
+            "floor-spc-kx7005:source"
+          ],
+          "cachedTextures": 4,
+          "leases": 3
+        },
+        "pngMessage": "Falta uma textura. Use Tentar texturas antes de exportar.",
+        "glbMessage": "Faltam texturas para exportar o modelo.",
+        "recovered": {
+          "pending": 0,
+          "backgroundPending": 0,
+          "failures": [],
+          "cachedTextures": 4,
+          "leases": 3
+        },
+        "retryPNG": {
+          "width": 3840,
+          "height": 2160,
+          "bytes": 1756093
+        },
+        "controls": true
+      }
+    },
+    {
+      "name": "context-loss-and-reload-preserves-configuration",
+      "status": "PASS",
+      "result": {
+        "error": "A ligação gráfica foi interrompida. As suas escolhas continuam nesta sessão.\n\nAs plantas, materiais, configurações e vídeos continuam disponíveis.\n\nTentar novamente ↻\nAbrir plantas",
+        "preserved": true,
+        "materialStatus": {
+          "pending": 0,
+          "backgroundPending": 0,
+          "failures": [],
+          "cachedTextures": 4,
+          "leases": 4
+        }
+      }
+    }
+  ],
+  "expectedFixtureErrors": [
+    "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+    "Failed to load resource: the server responded with a status of 503 (Service Unavailable)"
+  ],
+  "unexpectedErrors": []
+}

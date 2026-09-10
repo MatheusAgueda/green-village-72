@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "file": "r8-final-configuration.pdf",
+  "pages": 4,
+  "size": "A4",
+  "bytes": 1125110,
+  "configurationReference": "GV72-48D2530D",
+  "selected": {
+    "layout": "T2",
+    "kitchen": "L / 12",
+    "bathroom": "16",
+    "bathUV": "Amostra 1",
+    "floor": "KX7008",
+    "roof": true,
+    "porch": true,
+    "texture": "source",
+    "lighting": "neutral"
+  },
+  "visualInspection": "Quatro páginas renderizadas e inspeccionadas: imagem 3D coerente com cozinha escolhida, seis amostras, planta e tabela. Sem cortes ou sobreposição de texto observados.",
+  "images": [
+    "pdf-page-1.png",
+    "pdf-page-2.png",
+    "pdf-page-3.png",
+    "pdf-page-4.png"
+  ],
+  "taggedPDF": false
+}

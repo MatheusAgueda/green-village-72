@@ -1,9 +1,4 @@
-# Current handoff — R8
-
-Same owner-private Site: https://green-village-72-studio.greenvillage.chatgpt.site/
-Project: appgprj_6aa28c2f3e1881918f795ae2c908b371
-
-Recovery: recovery/gv72-before-source-r8-20260910 at d0866375d951496097325ee1e4634105e870c2e0.
+# R8 session record
 
 ## R8 — source-constrained product and interaction audit, 10 September 2026
 

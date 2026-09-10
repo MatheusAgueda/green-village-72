@@ -1,0 +1,7403 @@
+{
+  "status": "PASS",
+  "configurations": 56,
+  "states": 112,
+  "grid": "60 mm for all layouts, refined to 10 mm for T4-A linear (both bathroom mirrors/open+closed). Coarse misses the resolved narrow passage; its raw failures are preserved.",
+  "beforeT4FineBlocked": [
+    {
+      "layout": "t4-a",
+      "kitchen": "linear",
+      "bathroom": "standard",
+      "rooms": [
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 68955,
+          "visitedFree": 0,
+          "reachable": false
+        }
+      ]
+    },
+    {
+      "layout": "t4-a",
+      "kitchen": "linear",
+      "bathroom": "mirrored",
+      "rooms": [
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 68955,
+          "visitedFree": 0,
+          "reachable": false
+        }
+      ]
+    }
+  ],
+  "afterT4FineBlocked": [],
+  "closedDoorLeaks": [],
+  "longSweeps": 5800,
+  "invalidSweepEndpoints": 0,
+  "referenceEquivalenceStatus": "PASS",
+  "details": [
+    {
+      "layout": "t0",
+      "kitchen": "none",
+      "bathroom": "standard",
+      "open": false,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 15797,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 263,
+          "visitedFree": 0,
+          "reachable": false
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.22639999999999993,
+            "z": -3.0821538461538447
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t0",
+      "kitchen": "none",
+      "bathroom": "standard",
+      "open": true,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 16060,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 250,
+          "visitedFree": 250,
+          "reachable": true
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 0.22639999999999993,
+            "z": -3.6359999999999966
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t0",
+      "kitchen": "none",
+      "bathroom": "mirrored",
+      "open": false,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 15796,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 241,
+          "visitedFree": 0,
+          "reachable": false
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": -0.22639999999999993,
+            "z": -3.0821538461538447
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t0",
+      "kitchen": "none",
+      "bathroom": "mirrored",
+      "open": true,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 16052,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 242,
+          "visitedFree": 242,
+          "reachable": true
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": -0.22639999999999993,
+            "z": -3.6359999999999966
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t0",
+      "kitchen": "linear",
+      "bathroom": "standard",
+      "open": false,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 15306,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 263,
+          "visitedFree": 0,
+          "reachable": false
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.22639999999999993,
+            "z": -3.0821538461538447
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t0",
+      "kitchen": "linear",
+      "bathroom": "standard",
+      "open": true,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 15569,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 250,
+          "visitedFree": 250,
+          "reachable": true
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 0.22639999999999993,
+            "z": -3.6359999999999966
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t0",
+      "kitchen": "linear",
+      "bathroom": "mirrored",
+      "open": false,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 15305,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 241,
+          "visitedFree": 0,
+          "reachable": false
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": -0.22639999999999993,
+            "z": -3.0821538461538447
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t0",
+      "kitchen": "linear",
+      "bathroom": "mirrored",
+      "open": true,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 15561,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 242,
+          "visitedFree": 242,
+          "reachable": true
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": -0.22639999999999993,
+            "z": -3.6359999999999966
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t0",
+      "kitchen": "l",
+      "bathroom": "standard",
+      "open": false,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 15035,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 263,
+          "visitedFree": 0,
+          "reachable": false
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.22639999999999993,
+            "z": -3.0821538461538447
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t0",
+      "kitchen": "l",
+      "bathroom": "standard",
+      "open": true,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 15298,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 250,
+          "visitedFree": 250,
+          "reachable": true
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 0.22639999999999993,
+            "z": -3.6359999999999966
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t0",
+      "kitchen": "l",
+      "bathroom": "mirrored",
+      "open": false,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 15034,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 241,
+          "visitedFree": 0,
+          "reachable": false
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": -0.22639999999999993,
+            "z": -3.0821538461538447
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t0",
+      "kitchen": "l",
+      "bathroom": "mirrored",
+      "open": true,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 15290,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 242,
+          "visitedFree": 242,
+          "reachable": true
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": -0.22639999999999993,
+            "z": -3.6359999999999966
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t0",
+      "kitchen": "u",
+      "bathroom": "standard",
+      "open": false,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 13017,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 263,
+          "visitedFree": 0,
+          "reachable": false
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.22639999999999993,
+            "z": -3.0821538461538447
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t0",
+      "kitchen": "u",
+      "bathroom": "standard",
+      "open": true,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 13280,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 250,
+          "visitedFree": 250,
+          "reachable": true
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 0.22639999999999993,
+            "z": -3.6359999999999966
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t0",
+      "kitchen": "u",
+      "bathroom": "mirrored",
+      "open": false,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 13012,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 241,
+          "visitedFree": 0,
+          "reachable": false
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": -0.22639999999999993,
+            "z": -3.0821538461538447
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t0",
+      "kitchen": "u",
+      "bathroom": "mirrored",
+      "open": true,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 13268,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 242,
+          "visitedFree": 242,
+          "reachable": true
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": -0.22639999999999993,
+            "z": -3.6359999999999966
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t0",
+      "kitchen": "island",
+      "bathroom": "standard",
+      "open": false,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 14893,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 263,
+          "visitedFree": 0,
+          "reachable": false
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.22639999999999993,
+            "z": -3.0821538461538447
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t0",
+      "kitchen": "island",
+      "bathroom": "standard",
+      "open": true,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 15156,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 250,
+          "visitedFree": 250,
+          "reachable": true
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 0.22639999999999993,
+            "z": -3.6359999999999966
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t0",
+      "kitchen": "island",
+      "bathroom": "mirrored",
+      "open": false,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 14892,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 241,
+          "visitedFree": 0,
+          "reachable": false
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": -0.22639999999999993,
+            "z": -3.0821538461538447
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t0",
+      "kitchen": "island",
+      "bathroom": "mirrored",
+      "open": true,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 15148,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 242,
+          "visitedFree": 242,
+          "reachable": true
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": -0.22639999999999993,
+            "z": -3.6359999999999966
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t1",
+      "kitchen": "none",
+      "bathroom": "standard",
+      "open": false,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 12348,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 263,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 1960,
+          "visitedFree": 0,
+          "reachable": false
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.22639999999999993,
+            "z": -3.0821538461538447
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t1",
+      "kitchen": "none",
+      "bathroom": "standard",
+      "open": true,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 14572,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 250,
+          "visitedFree": 250,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 1941,
+          "visitedFree": 1941,
+          "reachable": true
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 0.22639999999999993,
+            "z": -3.6359999999999966
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t1",
+      "kitchen": "none",
+      "bathroom": "mirrored",
+      "open": false,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 12347,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 241,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 1960,
+          "visitedFree": 0,
+          "reachable": false
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": -0.22639999999999993,
+            "z": -3.0821538461538447
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t1",
+      "kitchen": "none",
+      "bathroom": "mirrored",
+      "open": true,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 14564,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 242,
+          "visitedFree": 242,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 1941,
+          "visitedFree": 1941,
+          "reachable": true
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": -0.22639999999999993,
+            "z": -3.6359999999999966
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t1",
+      "kitchen": "linear",
+      "bathroom": "standard",
+      "open": false,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 11857,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 263,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 1960,
+          "visitedFree": 0,
+          "reachable": false
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.22639999999999993,
+            "z": -3.0821538461538447
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t1",
+      "kitchen": "linear",
+      "bathroom": "standard",
+      "open": true,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 14081,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 250,
+          "visitedFree": 250,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 1941,
+          "visitedFree": 1941,
+          "reachable": true
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 0.22639999999999993,
+            "z": -3.6359999999999966
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t1",
+      "kitchen": "linear",
+      "bathroom": "mirrored",
+      "open": false,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 11856,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 241,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 1960,
+          "visitedFree": 0,
+          "reachable": false
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": -0.22639999999999993,
+            "z": -3.0821538461538447
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t1",
+      "kitchen": "linear",
+      "bathroom": "mirrored",
+      "open": true,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 14073,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 242,
+          "visitedFree": 242,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 1941,
+          "visitedFree": 1941,
+          "reachable": true
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": -0.22639999999999993,
+            "z": -3.6359999999999966
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t1",
+      "kitchen": "l",
+      "bathroom": "standard",
+      "open": false,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 11586,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 263,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 1960,
+          "visitedFree": 0,
+          "reachable": false
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.22639999999999993,
+            "z": -3.0821538461538447
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t1",
+      "kitchen": "l",
+      "bathroom": "standard",
+      "open": true,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 13810,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 250,
+          "visitedFree": 250,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 1941,
+          "visitedFree": 1941,
+          "reachable": true
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 0.22639999999999993,
+            "z": -3.6359999999999966
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t1",
+      "kitchen": "l",
+      "bathroom": "mirrored",
+      "open": false,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 11585,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 241,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 1960,
+          "visitedFree": 0,
+          "reachable": false
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": -0.22639999999999993,
+            "z": -3.0821538461538447
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t1",
+      "kitchen": "l",
+      "bathroom": "mirrored",
+      "open": true,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 13802,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 242,
+          "visitedFree": 242,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 1941,
+          "visitedFree": 1941,
+          "reachable": true
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": -0.22639999999999993,
+            "z": -3.6359999999999966
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t1",
+      "kitchen": "u",
+      "bathroom": "standard",
+      "open": false,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 9568,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 263,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 1960,
+          "visitedFree": 0,
+          "reachable": false
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.22639999999999993,
+            "z": -3.0821538461538447
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t1",
+      "kitchen": "u",
+      "bathroom": "standard",
+      "open": true,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 11792,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 250,
+          "visitedFree": 250,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 1941,
+          "visitedFree": 1941,
+          "reachable": true
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 0.22639999999999993,
+            "z": -3.6359999999999966
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t1",
+      "kitchen": "u",
+      "bathroom": "mirrored",
+      "open": false,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 9563,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 241,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 1960,
+          "visitedFree": 0,
+          "reachable": false
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": -0.22639999999999993,
+            "z": -3.0821538461538447
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t1",
+      "kitchen": "u",
+      "bathroom": "mirrored",
+      "open": true,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 11780,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 242,
+          "visitedFree": 242,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 1941,
+          "visitedFree": 1941,
+          "reachable": true
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": -0.22639999999999993,
+            "z": -3.6359999999999966
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t1",
+      "kitchen": "island",
+      "bathroom": "standard",
+      "open": false,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 11444,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 263,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 1960,
+          "visitedFree": 0,
+          "reachable": false
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.22639999999999993,
+            "z": -3.0821538461538447
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t1",
+      "kitchen": "island",
+      "bathroom": "standard",
+      "open": true,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 13668,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 250,
+          "visitedFree": 250,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 1941,
+          "visitedFree": 1941,
+          "reachable": true
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 0.22639999999999993,
+            "z": -3.6359999999999966
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t1",
+      "kitchen": "island",
+      "bathroom": "mirrored",
+      "open": false,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 11443,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 241,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 1960,
+          "visitedFree": 0,
+          "reachable": false
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": -0.22639999999999993,
+            "z": -3.0821538461538447
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t1",
+      "kitchen": "island",
+      "bathroom": "mirrored",
+      "open": true,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 13660,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 242,
+          "visitedFree": 242,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 1941,
+          "visitedFree": 1941,
+          "reachable": true
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": -0.22639999999999993,
+            "z": -3.6359999999999966
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t2",
+      "kitchen": "none",
+      "bathroom": "standard",
+      "open": false,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 8897,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 263,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 1960,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 1903,
+          "visitedFree": 0,
+          "reachable": false
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": 0.64
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.22639999999999993,
+            "z": -3.0821538461538447
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t2",
+      "kitchen": "none",
+      "bathroom": "standard",
+      "open": true,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 13025,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 250,
+          "visitedFree": 250,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 1941,
+          "visitedFree": 1941,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 1883,
+          "visitedFree": 1883,
+          "reachable": true
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": 0.64
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 0.22639999999999993,
+            "z": -3.6359999999999966
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t2",
+      "kitchen": "none",
+      "bathroom": "mirrored",
+      "open": false,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 8896,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 241,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 1960,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 1903,
+          "visitedFree": 0,
+          "reachable": false
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": 0.64
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": -0.22639999999999993,
+            "z": -3.0821538461538447
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t2",
+      "kitchen": "none",
+      "bathroom": "mirrored",
+      "open": true,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 13017,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 242,
+          "visitedFree": 242,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 1941,
+          "visitedFree": 1941,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 1883,
+          "visitedFree": 1883,
+          "reachable": true
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": 0.64
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": -0.22639999999999993,
+            "z": -3.6359999999999966
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t2",
+      "kitchen": "linear",
+      "bathroom": "standard",
+      "open": false,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 8406,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 263,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 1960,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 1903,
+          "visitedFree": 0,
+          "reachable": false
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": 0.64
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.22639999999999993,
+            "z": -3.0821538461538447
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t2",
+      "kitchen": "linear",
+      "bathroom": "standard",
+      "open": true,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 12534,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 250,
+          "visitedFree": 250,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 1941,
+          "visitedFree": 1941,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 1883,
+          "visitedFree": 1883,
+          "reachable": true
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": 0.64
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 0.22639999999999993,
+            "z": -3.6359999999999966
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t2",
+      "kitchen": "linear",
+      "bathroom": "mirrored",
+      "open": false,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 8405,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 241,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 1960,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 1903,
+          "visitedFree": 0,
+          "reachable": false
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": 0.64
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": -0.22639999999999993,
+            "z": -3.0821538461538447
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t2",
+      "kitchen": "linear",
+      "bathroom": "mirrored",
+      "open": true,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 12526,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 242,
+          "visitedFree": 242,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 1941,
+          "visitedFree": 1941,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 1883,
+          "visitedFree": 1883,
+          "reachable": true
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": 0.64
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": -0.22639999999999993,
+            "z": -3.6359999999999966
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t2",
+      "kitchen": "l",
+      "bathroom": "standard",
+      "open": false,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 8135,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 263,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 1960,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 1903,
+          "visitedFree": 0,
+          "reachable": false
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": 0.64
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.22639999999999993,
+            "z": -3.0821538461538447
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t2",
+      "kitchen": "l",
+      "bathroom": "standard",
+      "open": true,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 12263,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 250,
+          "visitedFree": 250,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 1941,
+          "visitedFree": 1941,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 1883,
+          "visitedFree": 1883,
+          "reachable": true
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": 0.64
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 0.22639999999999993,
+            "z": -3.6359999999999966
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t2",
+      "kitchen": "l",
+      "bathroom": "mirrored",
+      "open": false,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 8134,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 241,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 1960,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 1903,
+          "visitedFree": 0,
+          "reachable": false
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": 0.64
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": -0.22639999999999993,
+            "z": -3.0821538461538447
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t2",
+      "kitchen": "l",
+      "bathroom": "mirrored",
+      "open": true,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 12255,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 242,
+          "visitedFree": 242,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 1941,
+          "visitedFree": 1941,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 1883,
+          "visitedFree": 1883,
+          "reachable": true
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": 0.64
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": -0.22639999999999993,
+            "z": -3.6359999999999966
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t2",
+      "kitchen": "u",
+      "bathroom": "standard",
+      "open": false,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 6117,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 263,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 1960,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 1903,
+          "visitedFree": 0,
+          "reachable": false
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": 0.64
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.22639999999999993,
+            "z": -3.0821538461538447
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t2",
+      "kitchen": "u",
+      "bathroom": "standard",
+      "open": true,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 10245,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 250,
+          "visitedFree": 250,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 1941,
+          "visitedFree": 1941,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 1883,
+          "visitedFree": 1883,
+          "reachable": true
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": 0.64
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 0.22639999999999993,
+            "z": -3.6359999999999966
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t2",
+      "kitchen": "u",
+      "bathroom": "mirrored",
+      "open": false,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 6112,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 241,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 1960,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 1903,
+          "visitedFree": 0,
+          "reachable": false
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": 0.64
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": -0.22639999999999993,
+            "z": -3.0821538461538447
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t2",
+      "kitchen": "u",
+      "bathroom": "mirrored",
+      "open": true,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 10233,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 242,
+          "visitedFree": 242,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 1941,
+          "visitedFree": 1941,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 1883,
+          "visitedFree": 1883,
+          "reachable": true
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": 0.64
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": -0.22639999999999993,
+            "z": -3.6359999999999966
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t2",
+      "kitchen": "island",
+      "bathroom": "standard",
+      "open": false,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 7993,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 263,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 1960,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 1903,
+          "visitedFree": 0,
+          "reachable": false
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": 0.64
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.22639999999999993,
+            "z": -3.0821538461538447
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t2",
+      "kitchen": "island",
+      "bathroom": "standard",
+      "open": true,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 12121,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 250,
+          "visitedFree": 250,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 1941,
+          "visitedFree": 1941,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 1883,
+          "visitedFree": 1883,
+          "reachable": true
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": 0.64
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 0.22639999999999993,
+            "z": -3.6359999999999966
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t2",
+      "kitchen": "island",
+      "bathroom": "mirrored",
+      "open": false,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 7992,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 241,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 1960,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 1903,
+          "visitedFree": 0,
+          "reachable": false
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": 0.64
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": -0.22639999999999993,
+            "z": -3.0821538461538447
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t2",
+      "kitchen": "island",
+      "bathroom": "mirrored",
+      "open": true,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 12113,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 242,
+          "visitedFree": 242,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 1941,
+          "visitedFree": 1941,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 1883,
+          "visitedFree": 1883,
+          "reachable": true
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": 0.64
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": -0.22639999999999993,
+            "z": -3.6359999999999966
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t3-a",
+      "kitchen": "none",
+      "bathroom": "standard",
+      "open": false,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 5364,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 263,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 2048,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 1960,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-3",
+          "kind": "bedroom",
+          "allFree": 1903,
+          "visitedFree": 0,
+          "reachable": false
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": -0.642553846153846,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bedroom-3-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": 0.64
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.22639999999999993,
+            "z": -3.0821538461538447
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t3-a",
+      "kitchen": "none",
+      "bathroom": "standard",
+      "open": true,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 11531,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 250,
+          "visitedFree": 250,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 2027,
+          "visitedFree": 2027,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 1941,
+          "visitedFree": 1941,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-3",
+          "kind": "bedroom",
+          "allFree": 1883,
+          "visitedFree": 1883,
+          "reachable": true
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": -1.1964000000000004,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bedroom-3-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": 0.64
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 0.22639999999999993,
+            "z": -3.6359999999999966
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t3-a",
+      "kitchen": "none",
+      "bathroom": "mirrored",
+      "open": false,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 5363,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 241,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 2048,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 1960,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-3",
+          "kind": "bedroom",
+          "allFree": 1903,
+          "visitedFree": 0,
+          "reachable": false
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": -0.642553846153846,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bedroom-3-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": 0.64
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": -0.22639999999999993,
+            "z": -3.0821538461538447
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t3-a",
+      "kitchen": "none",
+      "bathroom": "mirrored",
+      "open": true,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 11523,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 242,
+          "visitedFree": 242,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 2027,
+          "visitedFree": 2027,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 1941,
+          "visitedFree": 1941,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-3",
+          "kind": "bedroom",
+          "allFree": 1883,
+          "visitedFree": 1883,
+          "reachable": true
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": -1.1964000000000004,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bedroom-3-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": 0.64
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": -0.22639999999999993,
+            "z": -3.6359999999999966
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t3-a",
+      "kitchen": "linear",
+      "bathroom": "standard",
+      "open": false,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 4892,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 263,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 2048,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 1960,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-3",
+          "kind": "bedroom",
+          "allFree": 1903,
+          "visitedFree": 0,
+          "reachable": false
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": -0.642553846153846,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bedroom-3-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": 0.64
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.22639999999999993,
+            "z": -3.0821538461538447
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t3-a",
+      "kitchen": "linear",
+      "bathroom": "standard",
+      "open": true,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 11059,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 250,
+          "visitedFree": 250,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 2027,
+          "visitedFree": 2027,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 1941,
+          "visitedFree": 1941,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-3",
+          "kind": "bedroom",
+          "allFree": 1883,
+          "visitedFree": 1883,
+          "reachable": true
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": -1.1964000000000004,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bedroom-3-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": 0.64
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 0.22639999999999993,
+            "z": -3.6359999999999966
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t3-a",
+      "kitchen": "linear",
+      "bathroom": "mirrored",
+      "open": false,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 4891,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 241,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 2048,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 1960,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-3",
+          "kind": "bedroom",
+          "allFree": 1903,
+          "visitedFree": 0,
+          "reachable": false
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": -0.642553846153846,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bedroom-3-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": 0.64
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": -0.22639999999999993,
+            "z": -3.0821538461538447
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t3-a",
+      "kitchen": "linear",
+      "bathroom": "mirrored",
+      "open": true,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 11051,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 242,
+          "visitedFree": 242,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 2027,
+          "visitedFree": 2027,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 1941,
+          "visitedFree": 1941,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-3",
+          "kind": "bedroom",
+          "allFree": 1883,
+          "visitedFree": 1883,
+          "reachable": true
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": -1.1964000000000004,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bedroom-3-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": 0.64
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": -0.22639999999999993,
+            "z": -3.6359999999999966
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t3-a",
+      "kitchen": "l",
+      "bathroom": "standard",
+      "open": false,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 4659,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 263,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 2048,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 1960,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-3",
+          "kind": "bedroom",
+          "allFree": 1903,
+          "visitedFree": 0,
+          "reachable": false
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": -0.642553846153846,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bedroom-3-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": 0.64
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.22639999999999993,
+            "z": -3.0821538461538447
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t3-a",
+      "kitchen": "l",
+      "bathroom": "standard",
+      "open": true,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 10826,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 250,
+          "visitedFree": 250,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 2027,
+          "visitedFree": 2027,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 1941,
+          "visitedFree": 1941,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-3",
+          "kind": "bedroom",
+          "allFree": 1883,
+          "visitedFree": 1883,
+          "reachable": true
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": -1.1964000000000004,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bedroom-3-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": 0.64
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 0.22639999999999993,
+            "z": -3.6359999999999966
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t3-a",
+      "kitchen": "l",
+      "bathroom": "mirrored",
+      "open": false,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 4658,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 241,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 2048,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 1960,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-3",
+          "kind": "bedroom",
+          "allFree": 1903,
+          "visitedFree": 0,
+          "reachable": false
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": -0.642553846153846,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bedroom-3-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": 0.64
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": -0.22639999999999993,
+            "z": -3.0821538461538447
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t3-a",
+      "kitchen": "l",
+      "bathroom": "mirrored",
+      "open": true,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 10818,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 242,
+          "visitedFree": 242,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 2027,
+          "visitedFree": 2027,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 1941,
+          "visitedFree": 1941,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-3",
+          "kind": "bedroom",
+          "allFree": 1883,
+          "visitedFree": 1883,
+          "reachable": true
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": -1.1964000000000004,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bedroom-3-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": 0.64
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": -0.22639999999999993,
+            "z": -3.6359999999999966
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t3-b",
+      "kitchen": "none",
+      "bathroom": "standard",
+      "open": false,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 8905,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 263,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 881,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 975,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-3",
+          "kind": "bedroom",
+          "allFree": 808,
+          "visitedFree": 0,
+          "reachable": false
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": -2.6106
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": 1.4604000000000004
+          }
+        },
+        {
+          "id": "bedroom-3-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": 2.7404000000000006
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.22639999999999993,
+            "z": -3.0821538461538447
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t3-b",
+      "kitchen": "none",
+      "bathroom": "standard",
+      "open": true,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 11834,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 250,
+          "visitedFree": 250,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 861,
+          "visitedFree": 861,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 956,
+          "visitedFree": 956,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-3",
+          "kind": "bedroom",
+          "allFree": 788,
+          "visitedFree": 788,
+          "reachable": true
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": -2.6106
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": 1.4604000000000004
+          }
+        },
+        {
+          "id": "bedroom-3-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": 2.7404000000000006
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 0.22639999999999993,
+            "z": -3.6359999999999966
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t3-b",
+      "kitchen": "none",
+      "bathroom": "mirrored",
+      "open": false,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 8904,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 241,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 881,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 975,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-3",
+          "kind": "bedroom",
+          "allFree": 808,
+          "visitedFree": 0,
+          "reachable": false
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": -2.6106
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": 1.4604000000000004
+          }
+        },
+        {
+          "id": "bedroom-3-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": 2.7404000000000006
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": -0.22639999999999993,
+            "z": -3.0821538461538447
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t3-b",
+      "kitchen": "none",
+      "bathroom": "mirrored",
+      "open": true,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 11826,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 242,
+          "visitedFree": 242,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 861,
+          "visitedFree": 861,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 956,
+          "visitedFree": 956,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-3",
+          "kind": "bedroom",
+          "allFree": 788,
+          "visitedFree": 788,
+          "reachable": true
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": -2.6106
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": 1.4604000000000004
+          }
+        },
+        {
+          "id": "bedroom-3-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": 2.7404000000000006
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": -0.22639999999999993,
+            "z": -3.6359999999999966
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t3-b",
+      "kitchen": "linear",
+      "bathroom": "standard",
+      "open": false,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 8414,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 263,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 881,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 975,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-3",
+          "kind": "bedroom",
+          "allFree": 808,
+          "visitedFree": 0,
+          "reachable": false
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": -2.6106
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": 1.4604000000000004
+          }
+        },
+        {
+          "id": "bedroom-3-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": 2.7404000000000006
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.22639999999999993,
+            "z": -3.0821538461538447
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t3-b",
+      "kitchen": "linear",
+      "bathroom": "standard",
+      "open": true,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 11343,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 250,
+          "visitedFree": 250,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 861,
+          "visitedFree": 861,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 956,
+          "visitedFree": 956,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-3",
+          "kind": "bedroom",
+          "allFree": 788,
+          "visitedFree": 788,
+          "reachable": true
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": -2.6106
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": 1.4604000000000004
+          }
+        },
+        {
+          "id": "bedroom-3-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": 2.7404000000000006
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 0.22639999999999993,
+            "z": -3.6359999999999966
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t3-b",
+      "kitchen": "linear",
+      "bathroom": "mirrored",
+      "open": false,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 8413,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 241,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 881,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 975,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-3",
+          "kind": "bedroom",
+          "allFree": 808,
+          "visitedFree": 0,
+          "reachable": false
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": -2.6106
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": 1.4604000000000004
+          }
+        },
+        {
+          "id": "bedroom-3-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": 2.7404000000000006
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": -0.22639999999999993,
+            "z": -3.0821538461538447
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t3-b",
+      "kitchen": "linear",
+      "bathroom": "mirrored",
+      "open": true,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 11335,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 242,
+          "visitedFree": 242,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 861,
+          "visitedFree": 861,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 956,
+          "visitedFree": 956,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-3",
+          "kind": "bedroom",
+          "allFree": 788,
+          "visitedFree": 788,
+          "reachable": true
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": -2.6106
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": 1.4604000000000004
+          }
+        },
+        {
+          "id": "bedroom-3-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": 2.7404000000000006
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": -0.22639999999999993,
+            "z": -3.6359999999999966
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t3-b",
+      "kitchen": "l",
+      "bathroom": "standard",
+      "open": false,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 8143,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 263,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 881,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 975,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-3",
+          "kind": "bedroom",
+          "allFree": 808,
+          "visitedFree": 0,
+          "reachable": false
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": -2.6106
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": 1.4604000000000004
+          }
+        },
+        {
+          "id": "bedroom-3-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": 2.7404000000000006
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.22639999999999993,
+            "z": -3.0821538461538447
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t3-b",
+      "kitchen": "l",
+      "bathroom": "standard",
+      "open": true,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 11072,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 250,
+          "visitedFree": 250,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 861,
+          "visitedFree": 861,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 956,
+          "visitedFree": 956,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-3",
+          "kind": "bedroom",
+          "allFree": 788,
+          "visitedFree": 788,
+          "reachable": true
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": -2.6106
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": 1.4604000000000004
+          }
+        },
+        {
+          "id": "bedroom-3-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": 2.7404000000000006
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 0.22639999999999993,
+            "z": -3.6359999999999966
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t3-b",
+      "kitchen": "l",
+      "bathroom": "mirrored",
+      "open": false,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 8142,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 241,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 881,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 975,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-3",
+          "kind": "bedroom",
+          "allFree": 808,
+          "visitedFree": 0,
+          "reachable": false
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": -2.6106
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": 1.4604000000000004
+          }
+        },
+        {
+          "id": "bedroom-3-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": 2.7404000000000006
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": -0.22639999999999993,
+            "z": -3.0821538461538447
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t3-b",
+      "kitchen": "l",
+      "bathroom": "mirrored",
+      "open": true,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 11064,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 242,
+          "visitedFree": 242,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 861,
+          "visitedFree": 861,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 956,
+          "visitedFree": 956,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-3",
+          "kind": "bedroom",
+          "allFree": 788,
+          "visitedFree": 788,
+          "reachable": true
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": -2.6106
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": 1.4604000000000004
+          }
+        },
+        {
+          "id": "bedroom-3-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": 2.7404000000000006
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": -0.22639999999999993,
+            "z": -3.6359999999999966
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t3-b",
+      "kitchen": "u",
+      "bathroom": "standard",
+      "open": false,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 6125,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 263,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 881,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 975,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-3",
+          "kind": "bedroom",
+          "allFree": 808,
+          "visitedFree": 0,
+          "reachable": false
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": -2.6106
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": 1.4604000000000004
+          }
+        },
+        {
+          "id": "bedroom-3-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": 2.7404000000000006
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.22639999999999993,
+            "z": -3.0821538461538447
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t3-b",
+      "kitchen": "u",
+      "bathroom": "standard",
+      "open": true,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 9054,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 250,
+          "visitedFree": 250,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 861,
+          "visitedFree": 861,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 956,
+          "visitedFree": 956,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-3",
+          "kind": "bedroom",
+          "allFree": 788,
+          "visitedFree": 788,
+          "reachable": true
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": -2.6106
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": 1.4604000000000004
+          }
+        },
+        {
+          "id": "bedroom-3-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": 2.7404000000000006
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 0.22639999999999993,
+            "z": -3.6359999999999966
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t3-b",
+      "kitchen": "u",
+      "bathroom": "mirrored",
+      "open": false,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 6120,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 241,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 881,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 975,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-3",
+          "kind": "bedroom",
+          "allFree": 808,
+          "visitedFree": 0,
+          "reachable": false
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": -2.6106
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": 1.4604000000000004
+          }
+        },
+        {
+          "id": "bedroom-3-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": 2.7404000000000006
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": -0.22639999999999993,
+            "z": -3.0821538461538447
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t3-b",
+      "kitchen": "u",
+      "bathroom": "mirrored",
+      "open": true,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 9042,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 242,
+          "visitedFree": 242,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 861,
+          "visitedFree": 861,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 956,
+          "visitedFree": 956,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-3",
+          "kind": "bedroom",
+          "allFree": 788,
+          "visitedFree": 788,
+          "reachable": true
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": -2.6106
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": 1.4604000000000004
+          }
+        },
+        {
+          "id": "bedroom-3-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": 2.7404000000000006
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": -0.22639999999999993,
+            "z": -3.6359999999999966
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t3-b",
+      "kitchen": "island",
+      "bathroom": "standard",
+      "open": false,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 8001,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 263,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 881,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 975,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-3",
+          "kind": "bedroom",
+          "allFree": 808,
+          "visitedFree": 0,
+          "reachable": false
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": -2.6106
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": 1.4604000000000004
+          }
+        },
+        {
+          "id": "bedroom-3-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": 2.7404000000000006
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.22639999999999993,
+            "z": -3.0821538461538447
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t3-b",
+      "kitchen": "island",
+      "bathroom": "standard",
+      "open": true,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 10930,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 250,
+          "visitedFree": 250,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 861,
+          "visitedFree": 861,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 956,
+          "visitedFree": 956,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-3",
+          "kind": "bedroom",
+          "allFree": 788,
+          "visitedFree": 788,
+          "reachable": true
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": -2.6106
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": 1.4604000000000004
+          }
+        },
+        {
+          "id": "bedroom-3-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": 2.7404000000000006
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 0.22639999999999993,
+            "z": -3.6359999999999966
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t3-b",
+      "kitchen": "island",
+      "bathroom": "mirrored",
+      "open": false,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 8000,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 241,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 881,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 975,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-3",
+          "kind": "bedroom",
+          "allFree": 808,
+          "visitedFree": 0,
+          "reachable": false
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": -2.6106
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": 1.4604000000000004
+          }
+        },
+        {
+          "id": "bedroom-3-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": 2.7404000000000006
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": -0.22639999999999993,
+            "z": -3.0821538461538447
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t3-b",
+      "kitchen": "island",
+      "bathroom": "mirrored",
+      "open": true,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 10922,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 242,
+          "visitedFree": 242,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 861,
+          "visitedFree": 861,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 956,
+          "visitedFree": 956,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-3",
+          "kind": "bedroom",
+          "allFree": 788,
+          "visitedFree": 788,
+          "reachable": true
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": -2.6106
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": 1.4604000000000004
+          }
+        },
+        {
+          "id": "bedroom-3-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": 2.7404000000000006
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": -0.22639999999999993,
+            "z": -3.6359999999999966
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t4-a",
+      "kitchen": "none",
+      "bathroom": "standard",
+      "open": false,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 2810,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 263,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 2048,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 1960,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-3",
+          "kind": "bedroom",
+          "allFree": 1993,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-4",
+          "kind": "bedroom",
+          "allFree": 1903,
+          "visitedFree": 0,
+          "reachable": false
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": -0.642553846153846,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bedroom-3-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": -0.642553846153846,
+            "z": 0.64
+          }
+        },
+        {
+          "id": "bedroom-4-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": 0.64
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.22639999999999993,
+            "z": -3.0821538461538447
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t4-a",
+      "kitchen": "none",
+      "bathroom": "standard",
+      "open": true,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 10961,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 250,
+          "visitedFree": 250,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 2027,
+          "visitedFree": 2027,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 1941,
+          "visitedFree": 1941,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-3",
+          "kind": "bedroom",
+          "allFree": 1970,
+          "visitedFree": 1970,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-4",
+          "kind": "bedroom",
+          "allFree": 1883,
+          "visitedFree": 1883,
+          "reachable": true
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": -1.1964000000000004,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bedroom-3-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": -1.1964000000000004,
+            "z": 0.64
+          }
+        },
+        {
+          "id": "bedroom-4-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": 0.64
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 0.22639999999999993,
+            "z": -3.6359999999999966
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t4-a",
+      "kitchen": "none",
+      "bathroom": "mirrored",
+      "open": false,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 2809,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 241,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 2048,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 1960,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-3",
+          "kind": "bedroom",
+          "allFree": 1993,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-4",
+          "kind": "bedroom",
+          "allFree": 1903,
+          "visitedFree": 0,
+          "reachable": false
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": -0.642553846153846,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bedroom-3-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": -0.642553846153846,
+            "z": 0.64
+          }
+        },
+        {
+          "id": "bedroom-4-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": 0.64
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": -0.22639999999999993,
+            "z": -3.0821538461538447
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t4-a",
+      "kitchen": "none",
+      "bathroom": "mirrored",
+      "open": true,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 10953,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 242,
+          "visitedFree": 242,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 2027,
+          "visitedFree": 2027,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 1941,
+          "visitedFree": 1941,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-3",
+          "kind": "bedroom",
+          "allFree": 1970,
+          "visitedFree": 1970,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-4",
+          "kind": "bedroom",
+          "allFree": 1883,
+          "visitedFree": 1883,
+          "reachable": true
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": -1.1964000000000004,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bedroom-3-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": -1.1964000000000004,
+            "z": 0.64
+          }
+        },
+        {
+          "id": "bedroom-4-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": 0.64
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": -0.22639999999999993,
+            "z": -3.6359999999999966
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t4-a",
+      "kitchen": "linear",
+      "bathroom": "standard",
+      "open": false,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 86789,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 8975,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 69863,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 69315,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-3",
+          "kind": "bedroom",
+          "allFree": 69478,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-4",
+          "kind": "bedroom",
+          "allFree": 68932,
+          "visitedFree": 0,
+          "reachable": false
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": false,
+          "reachedTargetSide": false,
+          "end": {
+            "x": -0.29639999999999994,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bedroom-3-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": -0.642553846153846,
+            "z": 0.64
+          }
+        },
+        {
+          "id": "bedroom-4-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": 0.64
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.22639999999999993,
+            "z": -3.0821538461538447
+          }
+        }
+      ],
+      "gridStepM": 0.01
+    },
+    {
+      "layout": "t4-a",
+      "kitchen": "linear",
+      "bathroom": "standard",
+      "open": true,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 372677,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 8968,
+          "visitedFree": 8968,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 68965,
+          "visitedFree": 68965,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 68479,
+          "visitedFree": 68479,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-3",
+          "kind": "bedroom",
+          "allFree": 68646,
+          "visitedFree": 68646,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-4",
+          "kind": "bedroom",
+          "allFree": 68100,
+          "visitedFree": 68100,
+          "reachable": true
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": false,
+          "reachedTargetSide": false,
+          "end": {
+            "x": -0.29639999999999994,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bedroom-3-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": -1.1964000000000004,
+            "z": 0.64
+          }
+        },
+        {
+          "id": "bedroom-4-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": 0.64
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 0.22639999999999993,
+            "z": -3.6359999999999966
+          }
+        }
+      ],
+      "gridStepM": 0.01
+    },
+    {
+      "layout": "t4-a",
+      "kitchen": "linear",
+      "bathroom": "mirrored",
+      "open": false,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 86789,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 8975,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 69863,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 69315,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-3",
+          "kind": "bedroom",
+          "allFree": 69478,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-4",
+          "kind": "bedroom",
+          "allFree": 68932,
+          "visitedFree": 0,
+          "reachable": false
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": false,
+          "reachedTargetSide": false,
+          "end": {
+            "x": -0.29639999999999994,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bedroom-3-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": -0.642553846153846,
+            "z": 0.64
+          }
+        },
+        {
+          "id": "bedroom-4-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": 0.64
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": -0.22639999999999993,
+            "z": -3.0821538461538447
+          }
+        }
+      ],
+      "gridStepM": 0.01
+    },
+    {
+      "layout": "t4-a",
+      "kitchen": "linear",
+      "bathroom": "mirrored",
+      "open": true,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 372677,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 8968,
+          "visitedFree": 8968,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 68965,
+          "visitedFree": 68965,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 68479,
+          "visitedFree": 68479,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-3",
+          "kind": "bedroom",
+          "allFree": 68646,
+          "visitedFree": 68646,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-4",
+          "kind": "bedroom",
+          "allFree": 68100,
+          "visitedFree": 68100,
+          "reachable": true
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": false,
+          "reachedTargetSide": false,
+          "end": {
+            "x": -0.29639999999999994,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": -0.64
+          }
+        },
+        {
+          "id": "bedroom-3-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": -1.1964000000000004,
+            "z": 0.64
+          }
+        },
+        {
+          "id": "bedroom-4-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": 0.64
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": -0.22639999999999993,
+            "z": -3.6359999999999966
+          }
+        }
+      ],
+      "gridStepM": 0.01
+    },
+    {
+      "layout": "t4-b",
+      "kitchen": "none",
+      "bathroom": "standard",
+      "open": false,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 6659,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 263,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 938,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 881,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-3",
+          "kind": "bedroom",
+          "allFree": 975,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-4",
+          "kind": "bedroom",
+          "allFree": 808,
+          "visitedFree": 0,
+          "reachable": false
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": -0.642553846153846,
+            "z": -2.6106
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": -2.6106
+          }
+        },
+        {
+          "id": "bedroom-3-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": 1.4604000000000004
+          }
+        },
+        {
+          "id": "bedroom-4-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": 2.7404000000000006
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.22639999999999993,
+            "z": -3.0821538461538447
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t4-b",
+      "kitchen": "none",
+      "bathroom": "standard",
+      "open": true,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 10517,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 250,
+          "visitedFree": 250,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 916,
+          "visitedFree": 916,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 861,
+          "visitedFree": 861,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-3",
+          "kind": "bedroom",
+          "allFree": 956,
+          "visitedFree": 956,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-4",
+          "kind": "bedroom",
+          "allFree": 788,
+          "visitedFree": 788,
+          "reachable": true
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": -1.1964000000000004,
+            "z": -2.6106
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": -2.6106
+          }
+        },
+        {
+          "id": "bedroom-3-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": 1.4604000000000004
+          }
+        },
+        {
+          "id": "bedroom-4-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": 2.7404000000000006
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 0.22639999999999993,
+            "z": -3.6359999999999966
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t4-b",
+      "kitchen": "none",
+      "bathroom": "mirrored",
+      "open": false,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 6658,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 241,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 938,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 881,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-3",
+          "kind": "bedroom",
+          "allFree": 975,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-4",
+          "kind": "bedroom",
+          "allFree": 808,
+          "visitedFree": 0,
+          "reachable": false
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": -0.642553846153846,
+            "z": -2.6106
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": -2.6106
+          }
+        },
+        {
+          "id": "bedroom-3-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": 1.4604000000000004
+          }
+        },
+        {
+          "id": "bedroom-4-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": 2.7404000000000006
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": -0.22639999999999993,
+            "z": -3.0821538461538447
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t4-b",
+      "kitchen": "none",
+      "bathroom": "mirrored",
+      "open": true,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 10509,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 242,
+          "visitedFree": 242,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 916,
+          "visitedFree": 916,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 861,
+          "visitedFree": 861,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-3",
+          "kind": "bedroom",
+          "allFree": 956,
+          "visitedFree": 956,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-4",
+          "kind": "bedroom",
+          "allFree": 788,
+          "visitedFree": 788,
+          "reachable": true
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": -1.1964000000000004,
+            "z": -2.6106
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": -2.6106
+          }
+        },
+        {
+          "id": "bedroom-3-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": 1.4604000000000004
+          }
+        },
+        {
+          "id": "bedroom-4-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": 2.7404000000000006
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": -0.22639999999999993,
+            "z": -3.6359999999999966
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t4-b",
+      "kitchen": "linear",
+      "bathroom": "standard",
+      "open": false,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 6187,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 263,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 938,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 881,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-3",
+          "kind": "bedroom",
+          "allFree": 975,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-4",
+          "kind": "bedroom",
+          "allFree": 808,
+          "visitedFree": 0,
+          "reachable": false
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": -0.642553846153846,
+            "z": -2.6106
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": -2.6106
+          }
+        },
+        {
+          "id": "bedroom-3-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": 1.4604000000000004
+          }
+        },
+        {
+          "id": "bedroom-4-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": 2.7404000000000006
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.22639999999999993,
+            "z": -3.0821538461538447
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t4-b",
+      "kitchen": "linear",
+      "bathroom": "standard",
+      "open": true,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 10045,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 250,
+          "visitedFree": 250,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 916,
+          "visitedFree": 916,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 861,
+          "visitedFree": 861,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-3",
+          "kind": "bedroom",
+          "allFree": 956,
+          "visitedFree": 956,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-4",
+          "kind": "bedroom",
+          "allFree": 788,
+          "visitedFree": 788,
+          "reachable": true
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": -1.1964000000000004,
+            "z": -2.6106
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": -2.6106
+          }
+        },
+        {
+          "id": "bedroom-3-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": 1.4604000000000004
+          }
+        },
+        {
+          "id": "bedroom-4-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": 2.7404000000000006
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 0.22639999999999993,
+            "z": -3.6359999999999966
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t4-b",
+      "kitchen": "linear",
+      "bathroom": "mirrored",
+      "open": false,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 6186,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 241,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 938,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 881,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-3",
+          "kind": "bedroom",
+          "allFree": 975,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-4",
+          "kind": "bedroom",
+          "allFree": 808,
+          "visitedFree": 0,
+          "reachable": false
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": -0.642553846153846,
+            "z": -2.6106
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": -2.6106
+          }
+        },
+        {
+          "id": "bedroom-3-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": 1.4604000000000004
+          }
+        },
+        {
+          "id": "bedroom-4-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": 2.7404000000000006
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": -0.22639999999999993,
+            "z": -3.0821538461538447
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t4-b",
+      "kitchen": "linear",
+      "bathroom": "mirrored",
+      "open": true,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 10037,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 242,
+          "visitedFree": 242,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 916,
+          "visitedFree": 916,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 861,
+          "visitedFree": 861,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-3",
+          "kind": "bedroom",
+          "allFree": 956,
+          "visitedFree": 956,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-4",
+          "kind": "bedroom",
+          "allFree": 788,
+          "visitedFree": 788,
+          "reachable": true
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": -1.1964000000000004,
+            "z": -2.6106
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": -2.6106
+          }
+        },
+        {
+          "id": "bedroom-3-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": 1.4604000000000004
+          }
+        },
+        {
+          "id": "bedroom-4-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": 2.7404000000000006
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": -0.22639999999999993,
+            "z": -3.6359999999999966
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t4-b",
+      "kitchen": "l",
+      "bathroom": "standard",
+      "open": false,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 5954,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 263,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 938,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 881,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-3",
+          "kind": "bedroom",
+          "allFree": 975,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-4",
+          "kind": "bedroom",
+          "allFree": 808,
+          "visitedFree": 0,
+          "reachable": false
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": -0.642553846153846,
+            "z": -2.6106
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": -2.6106
+          }
+        },
+        {
+          "id": "bedroom-3-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": 1.4604000000000004
+          }
+        },
+        {
+          "id": "bedroom-4-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": 2.7404000000000006
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.22639999999999993,
+            "z": -3.0821538461538447
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t4-b",
+      "kitchen": "l",
+      "bathroom": "standard",
+      "open": true,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 9812,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 250,
+          "visitedFree": 250,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 916,
+          "visitedFree": 916,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 861,
+          "visitedFree": 861,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-3",
+          "kind": "bedroom",
+          "allFree": 956,
+          "visitedFree": 956,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-4",
+          "kind": "bedroom",
+          "allFree": 788,
+          "visitedFree": 788,
+          "reachable": true
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": -1.1964000000000004,
+            "z": -2.6106
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": -2.6106
+          }
+        },
+        {
+          "id": "bedroom-3-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": 1.4604000000000004
+          }
+        },
+        {
+          "id": "bedroom-4-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": 2.7404000000000006
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 0.22639999999999993,
+            "z": -3.6359999999999966
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t4-b",
+      "kitchen": "l",
+      "bathroom": "mirrored",
+      "open": false,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 5953,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 241,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 938,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 881,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-3",
+          "kind": "bedroom",
+          "allFree": 975,
+          "visitedFree": 0,
+          "reachable": false
+        },
+        {
+          "id": "bedroom-4",
+          "kind": "bedroom",
+          "allFree": 808,
+          "visitedFree": 0,
+          "reachable": false
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": -0.642553846153846,
+            "z": -2.6106
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": -2.6106
+          }
+        },
+        {
+          "id": "bedroom-3-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": 1.4604000000000004
+          }
+        },
+        {
+          "id": "bedroom-4-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": 0.642553846153846,
+            "z": 2.7404000000000006
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": false,
+          "end": {
+            "x": -0.22639999999999993,
+            "z": -3.0821538461538447
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    },
+    {
+      "layout": "t4-b",
+      "kitchen": "l",
+      "bathroom": "mirrored",
+      "open": true,
+      "start": {
+        "x": 0,
+        "z": 4.9
+      },
+      "reachableCells": 9804,
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "kind": "bathroom",
+          "allFree": 242,
+          "visitedFree": 242,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-1",
+          "kind": "bedroom",
+          "allFree": 916,
+          "visitedFree": 916,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-2",
+          "kind": "bedroom",
+          "allFree": 861,
+          "visitedFree": 861,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-3",
+          "kind": "bedroom",
+          "allFree": 956,
+          "visitedFree": 956,
+          "reachable": true
+        },
+        {
+          "id": "bedroom-4",
+          "kind": "bedroom",
+          "allFree": 788,
+          "visitedFree": 788,
+          "reachable": true
+        }
+      ],
+      "crossings": [
+        {
+          "id": "bedroom-1-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": -1.1964000000000004,
+            "z": -2.6106
+          }
+        },
+        {
+          "id": "bedroom-2-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": -2.6106
+          }
+        },
+        {
+          "id": "bedroom-3-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": 1.4604000000000004
+          }
+        },
+        {
+          "id": "bedroom-4-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": 1.1964000000000004,
+            "z": 2.7404000000000006
+          }
+        },
+        {
+          "id": "bath-door",
+          "fromValid": true,
+          "reachedTargetSide": true,
+          "end": {
+            "x": -0.22639999999999993,
+            "z": -3.6359999999999966
+          }
+        }
+      ],
+      "gridStepM": 0.06
+    }
+  ]
+}

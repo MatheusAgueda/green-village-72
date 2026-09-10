@@ -1,0 +1,157 @@
+{
+  "status": "PASS_WITH_SCOPED_LIMITS",
+  "scope": "Read-only independent R8 geometry/navigation/layer audit; scripts and evidence only in /private/tmp. Site never edited.",
+  "completedAt": "2026-09-10T22:30:11.910Z",
+  "sourceHashes": [
+    {
+      "path": "model.js",
+      "tested": "3905c7c43a82acf6c7842e2124b95506b57efe248920e0114303a138b95a3497",
+      "current": "3905c7c43a82acf6c7842e2124b95506b57efe248920e0114303a138b95a3497"
+    },
+    {
+      "path": "specification.js",
+      "tested": "7261cea836682a66027b343df171b09ced64d2a4d5c5b2c13fc0eeffdd865f99",
+      "current": "7261cea836682a66027b343df171b09ced64d2a4d5c5b2c13fc0eeffdd865f99"
+    },
+    {
+      "path": "walkthrough.js",
+      "tested": "6b714de4b61227eb9ea540429db4fa617ed66b3974ccde9b200b16f020026484",
+      "current": "6b714de4b61227eb9ea540429db4fa617ed66b3974ccde9b200b16f020026484"
+    },
+    {
+      "path": "model-layers.js",
+      "tested": "ef8fe6886a978ad7d7f89188652af28091b01e3c6ce454a1e61bfab23f2210c4",
+      "current": "ef8fe6886a978ad7d7f89188652af28091b01e3c6ce454a1e61bfab23f2210c4"
+    },
+    {
+      "path": "configuration.js",
+      "tested": "b1fd7d146a01e4d4b8f90ef9b1a45da8645c535de03d17a96fe98471e54ffaef",
+      "current": "b1fd7d146a01e4d4b8f90ef9b1a45da8645c535de03d17a96fe98471e54ffaef"
+    },
+    {
+      "path": "plan-svg.js",
+      "tested": "e14dba25221447474d3eafce9b806d68937329b33bd417b79cec5906ba9b994f",
+      "current": "e14dba25221447474d3eafce9b806d68937329b33bd417b79cec5906ba9b994f"
+    },
+    {
+      "path": "interior-detail.js",
+      "tested": "c2a1b1a645c5c809314d6a3a146b335339d64c439cc4dedbf8afbc470797dd16",
+      "current": "c2a1b1a645c5c809314d6a3a146b335339d64c439cc4dedbf8afbc470797dd16"
+    },
+    {
+      "path": "interior-references.js",
+      "tested": "41cdd74bdd7d79740372ae090aa38278b62eadfa05261a4952b2295f0ec369ac",
+      "current": "41cdd74bdd7d79740372ae090aa38278b62eadfa05261a4952b2295f0ec369ac"
+    },
+    {
+      "path": "client-tools.js",
+      "tested": "518dab48aa5735a7662514569273c04316cc2f938cffebb5113124a0ae79cf41",
+      "current": "518dab48aa5735a7662514569273c04316cc2f938cffebb5113124a0ae79cf41"
+    },
+    {
+      "path": "portfolio.js",
+      "tested": "c9246584f0ade5912ebd127a1239a0ed646e5669f7020fb14e5a57b5922743aa",
+      "current": "c9246584f0ade5912ebd127a1239a0ed646e5669f7020fb14e5a57b5922743aa"
+    },
+    {
+      "path": "data.js",
+      "tested": "51c44e7592d2cdd773eab4e9a66be1ebf739b408eb4ace55ffdfff397c248f1d",
+      "current": "51c44e7592d2cdd773eab4e9a66be1ebf739b408eb4ace55ffdfff397c248f1d"
+    },
+    {
+      "path": "material-library.js",
+      "tested": "5ca8156a343927e75a3abada6db8443f3d76927c47a29034653aa3ec338e3bcd",
+      "current": "5ca8156a343927e75a3abada6db8443f3d76927c47a29034653aa3ec338e3bcd"
+    }
+  ],
+  "untestedAppSnapshot": "app.js differs from the frozen scene snapshot and was not covered by this geometry audit. Browser/UI verification is separate.",
+  "resolvedFindings": [
+    {
+      "id": "T4A-navigation",
+      "before": "Quarto1 unreachable with 10mm grid in both bathroom mirror states.",
+      "change": "Estimated kitchen start b.z1+.84 -> b.z1+.79 (-50mm Z), radius retained at140mm.",
+      "after": "Reachable with actual movement solver on10mm grid; all64 reference configurations share identical plan obstacles within each mirror."
+    }
+  ],
+  "navigation": {
+    "status": "PASS",
+    "configurations": 56,
+    "states": 112,
+    "longSweeps": 5800,
+    "invalidSweepEndpoints": 0,
+    "coarseSpacingM": 0.06,
+    "refinedSpacingM": 0.01
+  },
+  "staticReference": {
+    "status": "PASS",
+    "layouts": 7,
+    "requestedPhasesPerLayout": 101,
+    "maximumMatrixDifference": 0,
+    "rearWingWindowsB": 0,
+    "noTechnicalRouteGeometry": true,
+    "floorHoleCount": 0
+  },
+  "passageDoorPreservation": {
+    "status": "PASS",
+    "configurations": 14,
+    "poses": 4848,
+    "maxErrorM": 0
+  },
+  "t4DoorClearance": {
+    "status": "PASS",
+    "configurations": 64,
+    "poses": 57920,
+    "maxMeshHelperPoseErrorM": 4.577566798522237e-16,
+    "maxSVGCoordinateErrorPx": 0
+  },
+  "t4Fittings": {
+    "status": "PASS",
+    "configurations": 64,
+    "componentPoses": 84640,
+    "newExternalIntersections": 0
+  },
+  "detailBounds": {
+    "status": "PASS",
+    "configurations": 64,
+    "maxDifferenceFromExpectedTranslationM": 1.8041124150158794e-16
+  },
+  "layers": {
+    "status": "PASS",
+    "layouts": 7,
+    "layerClasses": 11,
+    "opacityApplicationsPerModel": 100,
+    "maximumOwnedCloneCount": 46,
+    "allClonesDisposedExactlyOnce": true,
+    "originalMaterialsUnchanged": true
+  },
+  "clientData": {
+    "status": "PASS",
+    "roundTrips": 56,
+    "malformedRejected": 6,
+    "history": "cap,branch,defensive-copy,undo/redo",
+    "scope": "Pure-data paths executed. GLB and 4K browser rendering reviewed in source only, not executed by this audit."
+  },
+  "remainingActionableFindings": [],
+  "limits": [
+    "Navigation is a sampled 2D capsule/rectangle solver with assumed140mm radius, not physical accessibility/camera-volume certification. Narrow passage requires10mm refinement; 60mm raw result remains negative.",
+    "SAT uses connected-component OBB envelopes and0.5mm report tolerance; continuous exact-mesh collision is not certified. Passage-door sweep181poses; equipment motions41positions, other furniture closed and passage doors0/0.5/1. Existing baseline contacts excluded from equipment regression tests.",
+    "Self-cabinet moving-pair tests were not repeated because the entire kitchen assembly translates rigidly; the external sweep and actual detail bounds were rechecked.",
+    "No actual GLB/4K export or WebGL texture loading was executed here. GLB/4K source review found no critical issue; browser export verification is separate.",
+    "Source4-stage diagram supports reference illustrations only. Old direction-oracle/expansion SAT files are historical failing evidence, not current release gates. No manufacturer motion inferred."
+  ],
+  "evidence": [
+    "resolved-navigation.json",
+    "navigation.json",
+    "navigation-dense.json",
+    "before-navigation-dense.json",
+    "reference-navigation-equivalence.json",
+    "static-reference-matrix.json",
+    "model-layers.json",
+    "door-preservation.json",
+    "t4-door-reference-sweep.json",
+    "t4-fitting-external-sweep.json",
+    "detail-bounds-check.json",
+    "client-data-check.json",
+    "source-snapshot.json"
+  ]
+}

@@ -1,5 +1,6 @@
 import * as THREE from './vendor/three.module.js';
 import { createInteriorDetail } from './interior-detail.js';
+import { classifyLayer } from './model-layers.js';
 import { installPanelJoints } from './panel-joints.js';
 import { RoundedBoxGeometry } from './vendor/RoundedBoxGeometry.js';
 import { mergeGeometries } from './vendor/BufferGeometryUtils.js';
@@ -9,7 +10,7 @@ import { createMaterialLibrary, physicalUV } from './material-library.js';
 export { DIM, expansionState } from './specification.js';
 export const DEFAULT={...DEFAULT_CONFIG,...VISUAL_DEFAULT};
 export function makeHouse(options={},library=null){
- const state={...DEFAULT,...options},plan=getPlan(state),lib=library||createMaterialLibrary(),ownLibrary=!library,root=new THREE.Group();root.name='GV72 · estúdio de materiais R6';
+ const state={...DEFAULT,...options},plan=getPlan(state),lib=library||createMaterialLibrary(),ownLibrary=!library,root=new THREE.Group();root.name='GV72 · modelo de apresentação R8';
  const groups={};for(const name of ['structure','floor','floorLayers','shell','roof','interior','furniture','plumbing','electrical','cover','porch','supports']){const g=new THREE.Group();g.name=name;groups[name]=g;root.add(g);}
  const allMaterials=new Set(),allGeometry=new Set(),walls=[],roofPanels=[],sideAssemblies=[],endAssemblies=[],floorAssemblies=[],roofAssemblies=[],doors=[],colliders=[];
  let disposed=false;function dispose(){if(disposed)return;disposed=true;for(const g of allGeometry)g.dispose();for(const m of allMaterials)if(m.userData.lease)lib.release(m);else m.dispose();allGeometry.clear();allMaterials.clear();if(ownLibrary)lib.dispose();}
@@ -20,7 +21,7 @@ export function makeHouse(options={},library=null){
  const M={exterior,floor:floorFinish,bath:bathFinish,inner:plain('Pintura interior',state.interior,.84),steel:plain('Perfil pintado · secção estimada','#293330',.43),aluminium:plain('Caixilharia lacada','#273632',.34),metal:plain('Metal aparente','#b0b8b5',.27,{metalness:.85}),white:plain('Cerâmica','#f2f2ed',.19),board:plain('Placa base do piso','#827765',.91),insulation:plain('Camada de isolamento ilustrativa','#ddd9c3',.97),roof:plain('Cobertura metálica','#e2e4dd',.65),cabinet:plain('Mobiliário · branco ilustrativo','#e4e4dc',.58),counter:plain('Bancada · composição ilustrativa','#e4e6df',.36),wood:plain('Madeira de mobiliário · ilustrativa','#ae8f67',.61),linen:plain('Tecido','#a8b39d',.94),fabric:plain('Roupa de cama','#e5e3d9',.96),rubber:plain('Junta elastomérica','#202722',.92),black:plain('Placa de cozinha','#101a1a',.17),blue:plain('Água fria · esquema','#2285c1'),red:plain('Água quente · esquema','#c66347'),drain:plain('Esgotos · esquema','#40846b'),electric:plain('Electricidade · esquema','#d8a027')};
  M.panelInterior=installPanelJoints(plain('Painéis interiores · juntas estimadas',state.interior,.84));
  const glass=new THREE.MeshPhysicalMaterial({color:'#dce9e7',roughness:.06,metalness:0,transmission:.25,transparent:true,opacity:.34,ior:1.5,thickness:.006,envMapIntensity:.55,depthWrite:false});glass.name='Vidro · aparência ilustrativa';allMaterials.add(glass);M.glass=glass;
- function mesh(g,geometry,material,name=''){allGeometry.add(geometry);const m=new THREE.Mesh(geometry,material);m.name=name;m.castShadow=material!==glass;m.receiveShadow=true;g.add(m);return m;}
+ function mesh(g,geometry,material,name=''){allGeometry.add(geometry);const m=new THREE.Mesh(geometry,material);m.name=name;m.userData.layer=classifyLayer(g,material,name,M);m.castShadow=material!==glass;m.receiveShadow=true;g.add(m);return m;}
  function box(g,w,h,d,x,y,z,material,name='',bevel=0){if(w<=0||h<=0||d<=0)throw new Error('Dimensão não positiva em '+name);const geo=bevel?new RoundedBoxGeometry(w,h,d,2,Math.min(bevel,w/4,h/4,d/4)):new THREE.BoxGeometry(w,h,d);physicalUV(geo,[x,y,z]);const m=mesh(g,geo,material,name);m.position.set(x,y,z);return m;}
  function cylinder(g,r,h,x,y,z,material,name='',segments=14){const m=mesh(g,new THREE.CylinderGeometry(r,r,h,segments),material,name);m.position.set(x,y,z);return m;}
  function pipe(g,points,r,material,name){for(let i=0;i<points.length-1;i++){const a=new THREE.Vector3(...points[i]),b=new THREE.Vector3(...points[i+1]),v=b.clone().sub(a);if(v.length()<1e-6)continue;const m=mesh(g,new THREE.CylinderGeometry(r,r,v.length(),9),material,name);m.position.copy(a.add(b).multiplyScalar(.5));m.quaternion.setFromUnitVectors(new THREE.Vector3(0,1,0),v.normalize());}}
@@ -41,8 +42,8 @@ export function makeHouse(options={},library=null){
  for(let z=-Z+.3;z<Z-.15;z+=.59)for(const [a,b]of floorZones){const wing=wingAt(a,b),lo=Math.max(a,-X+.1),hi=Math.min(b,X-.1);box(wing?wing.floorFrame:groups.structure,hi-lo,.055,.045,(lo+hi)/2,-.14,z,M.steel,'Travessa de piso estimada');}
  for(const x of [-X+.2,-C+.15,C-.15,X-.2])for(const z of [-Z+.35,0,Z-.35]){box(groups.supports,.29,.035,.29,x,-.347,z,M.steel,'Base de apoio');cylinder(groups.supports,.038,.17,x,-.245,z,M.metal,'Apoio ilustrativo');}
  // Three independent visible floor layers, inside the same 6.22 × 11.80 m envelope.
- function floorSlab(g,a,b,bottom,depth,material,name){const inset=.004; a+=inset; b-=inset; const shape=new THREE.Shape();shape.moveTo(a,-Z+inset);shape.lineTo(b,-Z+inset);shape.lineTo(b,Z-inset);shape.lineTo(a,Z-inset);shape.closePath();for(const point of plan.servicePoints)for(const offset of [-.13,0,.13]){const x=point.x+offset;if(x>a+.04&&x<b-.04){const hole=new THREE.Path();hole.absarc(x,-point.z,.037,0,Math.PI*2,true);shape.holes.push(hole);}}const geo=new THREE.ExtrudeGeometry(shape,{depth,bevelEnabled:false,curveSegments:12});geo.rotateX(-Math.PI/2);physicalUV(geo);const m=mesh(g,geo,material,name);m.position.y=bottom;}
- for(const [a,b] of floorZones){const w=wingAt(a,b);floorSlab(w?w.floor:groups.floor,a,b,-.012,.012,M.floor,'Pavimento SPC · passagens propostas');floorSlab(w?w.layers:groups.floorLayers,a,b,-.046,.032,M.board,'Placa de suporte');floorSlab(w?w.layers:groups.floorLayers,a,b,-.121,.07,M.insulation,'Isolamento de piso · ilustrativo');}
+ function floorSlab(g,a,b,bottom,depth,material,name){const inset=.004; a+=inset; b-=inset; const shape=new THREE.Shape();shape.moveTo(a,-Z+inset);shape.lineTo(b,-Z+inset);shape.lineTo(b,Z-inset);shape.lineTo(a,Z-inset);shape.closePath();const geo=new THREE.ExtrudeGeometry(shape,{depth,bevelEnabled:false,curveSegments:12});geo.rotateX(-Math.PI/2);physicalUV(geo);const m=mesh(g,geo,material,name);m.position.y=bottom;}
+ for(const [a,b] of floorZones){const w=wingAt(a,b);floorSlab(w?w.floor:groups.floor,a,b,-.012,.012,M.floor,'Pavimento SPC');floorSlab(w?w.layers:groups.floorLayers,a,b,-.046,.032,M.board,'Placa de suporte');floorSlab(w?w.layers:groups.floorLayers,a,b,-.121,.07,M.insulation,'Isolamento de piso · ilustrativo');}
  // Panels have separate external skin, insulating body and internal paint. Each side has metre UVs.
  function panelSection(g,axis,c,a,b,lo,hi,sign,name,material=M.exterior){if(b-a<1e-7||hi-lo<1e-7)return;
   const centre=(a+b)/2,cy=(lo+hi)/2;const at=(offset)=>axis==='z'?[c+offset,cy,centre]:[centre,cy,c+offset];
@@ -99,26 +100,7 @@ export function makeHouse(options={},library=null){
   if(f.type.includes('kitchen')||f.type==='island')details.buildKitchen(g,f);
 
  }
- // Scheme paths follow semantic fixture coordinates from getPlan. Sizes are symbols, not pipe specifications.
- for(const [offset,material,kind]of [[-.13,M.blue,'cold'],[0,M.red,'hot'],[.13,M.drain,'drain']]){
-  const points=plan.servicePoints.filter(p=>kind!=='hot'||p.hot),maxZ=Math.max(...points.map(p=>p.z));pipe(groups.plumbing,[[offset,-.26,-Z-.2],[offset,-.26,maxZ]],kind==='drain'?.027:.017,material,kind+' · esquema');
-  for(const p of points)pipe(groups.plumbing,[[offset,-.26,p.z],[p.x+offset,-.26,p.z],[p.x+offset,p.y,p.z]],kind==='drain'?.025:.014,material,p.id+' · '+kind);
- }
- // Electrical illustration uses the documented room/door relationships. Crossing each
- // partition at 2.00 m goes through its 2.05 m door void, rather than through a solid wall.
- const electricWhite=plain('Pontos eléctricos · esquema','#f2f2ed',.6),electricBox=plain('Quadro eléctrico · esquema','#dde0d6',.6);
- box(groups.electrical,.29,.38,.1,.45,1.45,Z-.22,electricBox,'Quadro eléctrico · posição proposta',.012);
- const trunkZ=Z-.3;
- for(const room of plan.rooms.filter(r=>r.kind==='bedroom')){
-  const w=plan.walls.find(w=>w.id===room.id+'-side'),side=w.c>0?1:-1,inside=w.c+side*.15,cz=(room.clear.z0+room.clear.z1)/2,cx=(room.clear.x0+room.clear.x1)/2;
-  pipe(groups.electrical,[[.45,1.65,trunkZ],[.45,2,trunkZ],[.45,2,w.door.u],[inside,2,w.door.u],[inside,2.32,w.door.u],[inside,2.32,cz],[cx,2.32,cz]],.012,M.electric,'Percurso ilustrativo pelo vão de porta');
-  cylinder(groups.electrical,.11,.024,cx,2.31,cz,electricWhite,'Ponto de luz proposto');
-  pipe(groups.electrical,[[inside,2.32,cz],[inside,.3,cz]],.009,M.electric,'Descida conceptual junto à divisória');
-  box(groups.electrical,.035,.12,.09,inside,.28,cz,electricWhite,'Ponto de utilização proposto');
- }
- const commonLightX=plan.compact?0:-1.6;
- pipe(groups.electrical,[[.45,1.65,trunkZ],[.45,2.32,trunkZ],[.45,2.32,3],[commonLightX,2.32,3]],.012,M.electric,'Iluminação comum · esquema');
- cylinder(groups.electrical,.11,.024,commonLightX,2.31,3,electricWhite,'Ponto de luz comum proposto');
+ // No installation drawing was supplied. These layers intentionally contain no routes or proposed points.
  // Pitched canopy: dimensions below are explicitly estimates, while shape follows the supplied photograph.
  const coverHalf=X+DIM.canopyOverhang,eaves=H+DIM.canopyEavesAboveWall,rise=DIM.canopyRise,over=DIM.canopyOverhang,slant=Math.hypot(coverHalf,rise),pitch=Math.atan2(rise,coverHalf);
  for(const dir of [-1,1]){const m=box(groups.cover,slant,.06,DIM.length+2*over,dir*coverHalf/2,eaves+rise/2,0,M.roof,'Telhado adicional · medidas estimadas',.005);m.rotation.z=-dir*pitch;for(const z of [-Z,-2,2,Z])beam(groups.cover,[dir*coverHalf,eaves,z],[0,eaves+rise,z],.045,.05,M.steel,'Asna ilustrativa');}
@@ -146,7 +128,7 @@ export function makeHouse(options={},library=null){
   groups.floor.visible=!structure;groups.floorLayers.visible=!structure||finish;groups.roof.visible=!cut&&!structure&&(expand||state.roofVisible);groups.structure.visible=true;groups.supports.visible=true;
   groups.plumbing.visible=view==='plumbing';groups.electrical.visible=view==='electrical';
   for(const a of sideAssemblies)a.pivot.visible=!structure&&(expand||state.wallsVisible);for(const a of endAssemblies)a.g.visible=!structure&&(expand||state.wallsVisible);
-  for(const m of allMaterials){m.clippingPlanes=cut&&![M.electric,electricWhite,electricBox].includes(m)?[cutPlane]:[];m.clipShadows=true;m.needsUpdate=true;}
+  for(const m of allMaterials){m.clippingPlanes=cut?[cutPlane]:[];m.clipShadows=true;m.needsUpdate=true;}
   if(view==='plumbing'||view==='electrical'){groups.floor.visible=false;groups.floorLayers.visible=false;}
   groups.cover.visible=state.roof&&!cut&&!expand;groups.porch.visible=state.porch&&!expand;canopyGroup.visible=!cut&&!structure;for(const o of groups.cover.children)o.visible=!structure||o.material!==M.roof;for(const o of groups.porch.children)if(o.isMesh)o.visible=!structure||o.material!==M.wood;
   setExploded(finish?state.exploded??1:0);updateExpansion(expand?state.expansion:1);setDoors(state.doorsOpen);
@@ -165,29 +147,22 @@ export function makeHouse(options={},library=null){
  function setDoors(open){state.doorsOpen=open;for(const d of doors)d.pivot.rotation.y=doorPose(d,open?1:0).angle;}
  function setExploded(v){state.exploded=v;groups.roof.position.y=v*1.2;groups.floorLayers.position.y=-v*.65;for(const a of sideAssemblies)for(const p of [a.pivot,a.framePivot])p.position.x=a.dir*(X-RIG.wallPivotInset+v*.6);groups.cover.position.y=v*1.5;}
  function updateExpansion(value){
-  const e=expansionState(value);state.expansion=e.p;const active=state.view==='expansion';
-  const alpha=active?Math.PI/2*(1-e.floor):0,beta=active?Math.PI/2*(1-e.wall):0;
-  const lift=RIG.floorLift*Math.sin(alpha),offset=RIG.floorOffset*Math.sin(alpha);
-  for(const a of floorAssemblies)for(const p of a.pivots){p.rotation.z=a.dir*alpha;p.position.set(a.dir*(C+offset),lift,0);}
-  for(const a of sideAssemblies){
-   const anchor=new THREE.Vector3(a.dir*(X-RIG.wallPivotInset-C),RIG.wallPivotHeight,0).applyAxisAngle(new THREE.Vector3(0,0,1),a.dir*alpha).add(new THREE.Vector3(a.dir*(C+offset),lift,0));
-   if(state.view==='finishes')anchor.x+=a.dir*state.exploded*.6;
-   for(const p of [a.pivot,a.framePivot]){p.position.copy(anchor);p.rotation.z=a.dir*(alpha+beta);}
-   for(const post of a.framePivot.children[0].children)if(Number.isFinite(post.userData.deploymentZ)){const clearance=active?1-e.postsDock:0;post.position.z=post.userData.deploymentZ+Math.sign(post.userData.deploymentZ)*RIG.postClearance*clearance;post.position.x=post.userData.deploymentX+a.dir*RIG.postLateralClearance*clearance;}
-  }
-  for(const a of roofAssemblies)for(const p of a.pivots){p.rotation.z=active?-a.dir*Math.PI/2*(1-e.roof):0;p.position.set(a.dir*(C+(active?RIG.roofOffset*(1-e.roofDock):0)),H+(active?RIG.roofLift*(1-e.roofLower):0),0);}
-  for(const a of endAssemblies){const angle=active?Math.PI/2*(1-e.ends):0;a.pivot.rotation.y=-a.dir*a.front*angle;a.pivot.position.set(a.dir*(C+RIG.endOffset*Math.sin(angle)**2),0,a.front*(Z+(active?RIG.endAxialOffset*(1-e.ends):0)));}
-  if(active){groups.interior.visible=false;groups.furniture.visible=false;groups.cover.visible=false;groups.porch.visible=false;groups.plumbing.visible=false;groups.electrical.visible=false;}
-  return e;
+  const e=expansionState(value);state.expansion=e.p;
+  // Only the final assembled pose is supported. Source stages live in the reference panel.
+  for(const a of floorAssemblies)for(const p of a.pivots){p.rotation.set(0,0,0);p.position.set(a.dir*C,0,0);}
+  for(const a of sideAssemblies){for(const p of [a.pivot,a.framePivot]){p.rotation.set(0,0,0);p.position.set(a.dir*(X-RIG.wallPivotInset+(state.view==='finishes'?state.exploded*.6:0)),RIG.wallPivotHeight,0);}for(const post of a.framePivot.children[0].children)if(Number.isFinite(post.userData.deploymentZ)){post.position.z=post.userData.deploymentZ;post.position.x=post.userData.deploymentX;}}
+  for(const a of roofAssemblies)for(const p of a.pivots){p.rotation.set(0,0,0);p.position.set(a.dir*C,H,0);}
+  for(const a of endAssemblies){a.pivot.rotation.set(0,0,0);a.pivot.position.set(a.dir*C,0,a.front*Z);}
+  return {...e,referenceOnly:true};
  }
  function captureBases(){root.updateMatrixWorld(true);for(const a of sideAssemblies)colliders.push({id:'side-'+a.dir,object:a.pivot,kind:'moving-wall'});for(const a of endAssemblies)colliders.push({id:a.g.name,object:a.pivot,kind:'moving-end'});for(const a of floorAssemblies)colliders.push({id:'floor-'+a.dir,object:a.pivots[0],kind:'moving-floor'});for(const a of roofAssemblies)colliders.push({id:'roof-'+a.dir,object:a.pivots[0],kind:'moving-roof'});}
  // Merge only immutable per-group profile pieces with the same material, retaining animated groups.
- function batch(g){const byMat=new Map();for(const o of [...g.children])if(o.isMesh&&!o.name.includes('vidro')&&o.material!==glass){if(!byMat.has(o.material))byMat.set(o.material,[]);byMat.get(o.material).push(o);}
-  for(const [material,objects]of byMat)if(objects.length>3){const geometries=objects.map(o=>{o.updateMatrix();const geo=o.geometry.clone().applyMatrix4(o.matrix);return geo.index?geo.toNonIndexed():geo;});const merged=mergeGeometries(geometries,false);geometries.forEach(g=>g.dispose());if(!merged)continue;const replacement=mesh(g,merged,material,`${g.name} · ${objects.length} peças`);for(const o of objects){g.remove(o);o.geometry.dispose();allGeometry.delete(o.geometry);}}}
+ function batch(g){const byMat=new Map();for(const o of [...g.children])if(o.isMesh&&!o.name.includes('vidro')&&o.material!==glass){const key=o.material.uuid+'/'+o.userData.layer;if(!byMat.has(key))byMat.set(key,{material:o.material,objects:[]});byMat.get(key).objects.push(o);}
+  for(const {material,objects}of byMat.values())if(objects.length>3){const geometries=objects.map(o=>{o.updateMatrix();const geo=o.geometry.clone().applyMatrix4(o.matrix);return geo.index?geo.toNonIndexed():geo;});const merged=mergeGeometries(geometries,false);geometries.forEach(g=>g.dispose());if(!merged)continue;const replacement=mesh(g,merged,material,`${g.name} · ${objects.length} peças`);replacement.userData.layer=objects[0].userData.layer;for(const o of objects){g.remove(o);o.geometry.dispose();allGeometry.delete(o.geometry);}}}
  for(const w of wings.values())for(const key of ['floorFrame','roofFrame','sideFrame','layers'])batch(w[key]);
  batch(groups.structure);batch(groups.supports);batch(groups.floorLayers);batch(groups.interior);batch(groups.plumbing);batch(groups.electrical);for(const g of roofPanels)batch(g);for(const a of sideAssemblies)batch(a.local);for(const a of endAssemblies)batch(a.g);function batchTree(g){for(const child of [...g.children])if(child.isGroup)batchTree(child);batch(g);}for(const g of groups.furniture.children)batchTree(g);
  setView(state.view);captureBases();
- root.userData={revision:'R6',state,plan,groups,bedroomCount:plan.bedrooms,colliders,envelope:{width:DIM.width,length:DIM.length,core:DIM.core,wing:DIM.wing},animationLimits:'Complete illustrative deployment; unmeasured hinges and temporary clearances are not manufacturer transport dimensions.'};
+ root.userData={revision:'R8',state,plan,groups,bedroomCount:plan.bedrooms,colliders,envelope:{width:DIM.width,length:DIM.length,core:DIM.core,wing:DIM.wing},animationLimits:'Only the completed house is represented. Source diagram stages do not animate an unverified mechanism.'};
  return {root,groups,plan,details,setDetail,detailBounds,materials:M,sideAssemblies,endAssemblies,floorAssemblies,roofAssemblies,doors,colliders,updateExpansion,setView,setCut,setExploded,setDoors,library:lib,dispose};
  }catch(error){dispose();throw error;}
 }

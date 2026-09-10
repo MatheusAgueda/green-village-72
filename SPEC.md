@@ -60,3 +60,15 @@ Visual thesis: an architectural catalogue in forest green and white, led by the 
 - A gallery offers actual native3840×2160 renders of this model, labelled by configuration and view. Downloads and applying the pictured configuration must correspond to the assets. Original photographs and films remain accessible.
 - The selection summary includes identifiable references, material images, plan and a branded multipagePDF. Rendering method and unconfirmed commercial totals remain accurately described.
 - Verify every new navigation/gallery/apply/download/PDF flow, mobile layout and accessibility; rerun existing functional and expansion tests. Preserve catalog source images, R6 doors, furniture motions, user persistence and expansion mechanics.
+
+## R8 — source fidelity and verified client tools
+
+The new attached brief takes precedence over earlier permission for conceptual technical schemes. The user confirms that expansion walls unfold from inside to outside. The existing end panels rotate in the opposite direction; reversing that sign alone introduces collisions. Exact stowage and hinge drawings remain unavailable. Do not advertise the old motion as correct or invent a replacement assembly sequence. Present the supplied four-stage reference and the completed interactive house while awaiting the missing mechanism data.
+
+- Remove unsupported electrical/plumbing routes, fixture bores and free colour controls. Preserve confirmed dimensions, catalogue references and source-plan door handedness. Document source conflicts without silently changing dimensions.
+- Add native current-view 3840×2160 rendering with settled textures, coherent frozen state, progress, failure handling and restoration of interactive resolution.
+- Add undo/redo, two-configuration comparison, validated share links, selected-configuration reusable model export, four facade views, true orthographic plan and full screen.
+- Provide separately selectable visible layers with isolation and opacity while retaining original finish colours; retain coherent cuts/exploded restoration and explicitly pending undocumented services.
+- Provide bounded interior navigation with collision checks, keyboard/touch controls and reduced-motion behaviour.
+- Deliver source/value/model dimension comparison, structured catalogue and update instructions. Keep the original inputs unchanged; distinguish reference media from the current model.
+- Verify new flows and affected regressions in the browser at desktop/tablet/mobile widths, exports at native resolution and retained hosted access. Record unresolved source dependencies explicitly.

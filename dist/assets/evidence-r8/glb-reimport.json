@@ -1,0 +1,624 @@
+{
+  "status": "PASS",
+  "checkedAt": "2026-09-10T22:39:20.270Z",
+  "artifact": {
+    "path": "audit/qa/current-model.glb",
+    "bytes": 6203012,
+    "sha256": "a21bf3a4606191a54ab418102ddc4cbdf4729384c2166fedfd813f87dabf90cf"
+  },
+  "loaderSources": [
+    {
+      "url": "https://raw.githubusercontent.com/mrdoob/three.js/r180/examples/jsm/loaders/GLTFLoader.js",
+      "local": "audit/geometry/runtime/gltf-loader/GLTFLoader.official.js",
+      "sha256": "67ac5551fdafa6e349bd80c8f8e5e39c136d6b2fb1ad647db9abb21dc86f9e4a"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mrdoob/three.js/r180/examples/jsm/utils/BufferGeometryUtils.js",
+      "local": "audit/geometry/runtime/gltf-loader/BufferGeometryUtils.official.js",
+      "sha256": "fda7e946b8e0b5ab39b779206589e7a1079a22eb24efb89d7223e03fdfb1f751"
+    }
+  ],
+  "runtimeSources": [
+    {
+      "path": "project/dist/vendor/three.module.js",
+      "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a"
+    },
+    {
+      "path": "project/dist/vendor/three.core.js",
+      "sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20"
+    }
+  ],
+  "sourceGeometry": {
+    "configuration": {
+      "schemaVersion": 2,
+      "layout": "t2",
+      "exteriorId": "exterior-standard-branco-glacial",
+      "exterior": "#ddddda",
+      "floorId": "floor-spc-kx7005",
+      "floor": "#a9916a",
+      "interior": "#eeede8",
+      "interiorName": "Branco natural",
+      "kitchen": "linear",
+      "kitchenRef": "kitchen-01",
+      "bathroom": "standard",
+      "bathroomRef": "bathroom-01",
+      "bathroomUV": null,
+      "roof": false,
+      "porch": false,
+      "lighting": "neutral",
+      "textureMode": "source"
+    },
+    "visibleMeshCount": 230,
+    "bounds": {
+      "min": [
+        -3.122499942779541,
+        -0.3644999861717224,
+        -5.9125000000000005
+      ],
+      "max": [
+        3.122499942779541,
+        2.563499927520752,
+        5.92099999961257
+      ],
+      "size": [
+        6.244999885559082,
+        2.9279999136924744,
+        11.83349999961257
+      ]
+    },
+    "maximumImportBoundsErrorM": 0,
+    "modelSnapshot": "audit/geometry/runtime/scene/model.js",
+    "modelSHA256": "3905c7c43a82acf6c7842e2124b95506b57efe248920e0114303a138b95a3497"
+  },
+  "assertions": {
+    "officialR180": true,
+    "hasGeometry": true,
+    "finiteGeometry": true,
+    "meshCountMatchesVisibleSource": true,
+    "metresMetadata": true,
+    "metadataPreserved": true,
+    "rootUnitScale": true,
+    "boundsMatchSource": true,
+    "boundsPlausible": true,
+    "texturesEmbedded": true,
+    "texturesDecoded": true,
+    "renderNonEmpty": true,
+    "renderBoundsInView": true,
+    "noWebGLError": true,
+    "noLoaderOrBrowserFailure": true,
+    "localOnlyRequests": true
+  },
+  "metadataValidation": {
+    "originalKeys": [
+      "revision",
+      "configuration",
+      "units",
+      "dimensions",
+      "sourceStatus",
+      "sources",
+      "limits"
+    ],
+    "changedOriginalKeys": [],
+    "loaderAddedKeys": [
+      "name"
+    ],
+    "note": "GLTFLoader adds userData.name from the node name. Original export extras are compared field by field; the added name is expected loader behaviour."
+  },
+  "import": {
+    "threeRevision": "180",
+    "loader": "Official GLTFLoader r180",
+    "sceneCount": 1,
+    "animationCount": 0,
+    "meshCount": 230,
+    "geometryCount": 230,
+    "materialCount": 34,
+    "positionCount": 179581,
+    "indexCount": 8088,
+    "triangleCount": 61280,
+    "nonFinitePositions": 0,
+    "bounds": {
+      "min": [
+        -3.122499942779541,
+        -0.3644999861717224,
+        -5.9125000000000005
+      ],
+      "max": [
+        3.122499942779541,
+        2.563499927520752,
+        5.92099999961257
+      ],
+      "size": [
+        6.244999885559082,
+        2.9279999136924744,
+        11.83349999961257
+      ]
+    },
+    "metadataRoots": [
+      {
+        "name": "GV72_·_modelo_de_apresentação_R8",
+        "data": {
+          "name": "GV72 · modelo de apresentação R8",
+          "revision": "GV72-R8-2026-09-10",
+          "configuration": {
+            "schemaVersion": 2,
+            "layout": "t2",
+            "exteriorId": "exterior-standard-branco-glacial",
+            "exterior": "#ddddda",
+            "floorId": "floor-spc-kx7005",
+            "floor": "#a9916a",
+            "interior": "#eeede8",
+            "interiorName": "Branco natural",
+            "kitchen": "linear",
+            "kitchenRef": "kitchen-01",
+            "bathroom": "standard",
+            "bathroomRef": "bathroom-01",
+            "bathroomUV": null,
+            "roof": false,
+            "porch": false,
+            "lighting": "neutral",
+            "textureMode": "source"
+          },
+          "units": "metres",
+          "dimensions": [
+            {
+              "id": "length",
+              "label": "Comprimento exterior",
+              "value": 11.8,
+              "unit": "m",
+              "source": "XLSX · todas as 7 plantas",
+              "status": "confirmed",
+              "note": ""
+            },
+            {
+              "id": "width",
+              "label": "Largura exterior",
+              "value": 6.22,
+              "unit": "m",
+              "source": "XLSX · todas as 7 plantas",
+              "status": "confirmed",
+              "note": ""
+            },
+            {
+              "id": "core",
+              "label": "Banda central",
+              "value": 2.2,
+              "unit": "m",
+              "source": "XLSX · cota superior 2200",
+              "status": "confirmed",
+              "note": ""
+            },
+            {
+              "id": "wing",
+              "label": "Banda lateral (cada)",
+              "value": 2.01,
+              "unit": "m",
+              "source": "XLSX · cotas superiores 2010",
+              "status": "confirmed",
+              "note": ""
+            },
+            {
+              "id": "windowWidth",
+              "label": "Largura cotada das janelas",
+              "value": 0.92,
+              "unit": "m",
+              "source": "XLSX · cota 920; posição/altura não cotadas",
+              "status": "confirmed",
+              "note": ""
+            },
+            {
+              "id": "height",
+              "label": "Altura das paredes e perfis na maquete",
+              "value": 2.55,
+              "unit": "m",
+              "source": "Hipótese da maquete",
+              "status": "estimated",
+              "note": "Não indicada nos anexos. Não usar como cota de fabrico."
+            },
+            {
+              "id": "panel",
+              "label": "Espessura de parede na maquete",
+              "value": 0.1,
+              "unit": "m",
+              "source": "Hipótese geométrica",
+              "status": "estimated",
+              "note": "O catálogo refere opção lã de rocha 100 mm; não comprova espessura total da parede desta variante."
+            },
+            {
+              "id": "partition",
+              "label": "Divisória interior",
+              "value": 0.08,
+              "unit": "m",
+              "source": "Hipótese geométrica",
+              "status": "estimated",
+              "note": ""
+            },
+            {
+              "id": "frame",
+              "label": "Secção visual dos perfis",
+              "value": 0.12,
+              "unit": "m",
+              "source": "Fotografias e maquete",
+              "status": "estimated",
+              "note": "Sem desenho de perfil ou ligação."
+            },
+            {
+              "id": "floor",
+              "label": "Camadas de piso, incluindo intervalos",
+              "value": 0.121,
+              "unit": "m",
+              "source": "Hipótese geométrica",
+              "status": "estimated",
+              "note": ""
+            },
+            {
+              "id": "roof",
+              "label": "Camadas e nervuras da cobertura",
+              "value": 0.127,
+              "unit": "m",
+              "source": "Hipótese geométrica",
+              "status": "estimated",
+              "note": ""
+            },
+            {
+              "id": "doorWidth",
+              "label": "Vão interior na maquete",
+              "value": 0.76,
+              "unit": "m",
+              "source": "Hipótese de visualização",
+              "status": "estimated",
+              "note": ""
+            },
+            {
+              "id": "doorHeight",
+              "label": "Altura das portas na maquete",
+              "value": 2.05,
+              "unit": "m",
+              "source": "Hipótese de visualização",
+              "status": "estimated",
+              "note": ""
+            },
+            {
+              "id": "windowHeight",
+              "label": "Altura das janelas na maquete",
+              "value": 1.05,
+              "unit": "m",
+              "source": "Fotografias, sem cota",
+              "status": "estimated",
+              "note": ""
+            },
+            {
+              "id": "entryWidthVisual",
+              "label": "Largura de entrada na maquete",
+              "value": 1.7,
+              "unit": "m",
+              "source": "Fotografias sem cotas",
+              "status": "estimated",
+              "note": ""
+            },
+            {
+              "id": "entryHeightVisual",
+              "label": "Altura de entrada na maquete",
+              "value": 2.15,
+              "unit": "m",
+              "source": "Fotografias sem cotas",
+              "status": "estimated",
+              "note": ""
+            },
+            {
+              "id": "bathWindowWidthVisual",
+              "label": "Largura de janela do banho na maquete",
+              "value": 0.6,
+              "unit": "m",
+              "source": "Planta sem cota neste vão",
+              "status": "estimated",
+              "note": ""
+            },
+            {
+              "id": "windowSillVisual",
+              "label": "Peitoril de janela na maquete",
+              "value": 0.95,
+              "unit": "m",
+              "source": "Fotografias sem cotas",
+              "status": "estimated",
+              "note": ""
+            },
+            {
+              "id": "porchDepthVisual",
+              "label": "Profundidade de alpendre na maquete",
+              "value": 1.95,
+              "unit": "m",
+              "source": "Hipótese de visualização",
+              "status": "estimated",
+              "note": ""
+            },
+            {
+              "id": "canopyRiseVisual",
+              "label": "Desnível da cumeeira na maquete",
+              "value": 0.65,
+              "unit": "m",
+              "source": "Fotografia sem cota",
+              "status": "estimated",
+              "note": ""
+            },
+            {
+              "id": "canopyOverhangVisual",
+              "label": "Beiral na maquete",
+              "value": 0.28,
+              "unit": "m",
+              "source": "Fotografia sem cota",
+              "status": "estimated",
+              "note": ""
+            },
+            {
+              "id": "closedWidth",
+              "label": "Largura de transporte",
+              "value": null,
+              "unit": "m",
+              "source": "Desenho do módulo fechado não fornecido",
+              "status": "missing",
+              "note": "A banda central de 2,20 m não estabelece a largura exterior de transporte com painéis recolhidos."
+            },
+            {
+              "id": "usefulArea",
+              "label": "Área útil certificada",
+              "value": null,
+              "unit": "m",
+              "source": "Mapa de áreas não fornecido",
+              "status": "missing",
+              "note": ""
+            },
+            {
+              "id": "ridge",
+              "label": "Altura da cumeeira adicional",
+              "value": null,
+              "unit": "m",
+              "source": "Fotografia de cobertura sem cotas",
+              "status": "missing",
+              "note": ""
+            },
+            {
+              "id": "porchDepth",
+              "label": "Profundidade de alpendre",
+              "value": null,
+              "unit": "m",
+              "source": "Fotografia de cobertura sem cotas",
+              "status": "missing",
+              "note": ""
+            }
+          ],
+          "sourceStatus": "presentation-model-with-estimated-details",
+          "sources": [
+            {
+              "id": "plans",
+              "label": "Plantas de 40 pés",
+              "limits": "As posições interiores são proporcionais aproximadas; não há cozinha nem altura cotada."
+            },
+            {
+              "id": "catalogue",
+              "label": "Opcionais de personalização · 11/07/2026",
+              "limits": "Amostras raster até 480 × 300 px. Não há RAL/NCS, escala de textura ou preço total da casa."
+            },
+            {
+              "id": "expansion",
+              "label": "Sequência de expansão em quatro imagens",
+              "limits": "Não define pivôs exactos, alturas, folgas, bloqueios ou transporte das divisórias."
+            },
+            {
+              "id": "frame",
+              "label": "Referência de armação",
+              "limits": "Perfis, fixações e soldaduras não cotados."
+            },
+            {
+              "id": "canopy",
+              "label": "Fotografia de telhado e alpendre",
+              "limits": "A maquete reproduz forma e apoios com medidas estimadas."
+            }
+          ],
+          "limits": [
+            "No manufacturer deployment mechanism or hidden services.",
+            "Static complete house; no application controls, cut planes or interactive door behaviour.",
+            "Custom panel-joint shaders and presentation lighting are not part of glTF; standard materials and source textures are retained."
+          ]
+        },
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    ],
+    "textureObjectCount": 6,
+    "imageDefinitions": [
+      {
+        "index": 0,
+        "mimeType": "image/png",
+        "bufferView": 775,
+        "uri": null,
+        "embedded": true,
+        "byteLength": 126908
+      },
+      {
+        "index": 1,
+        "mimeType": "image/png",
+        "bufferView": 776,
+        "uri": null,
+        "embedded": true,
+        "byteLength": 56376
+      },
+      {
+        "index": 2,
+        "mimeType": "image/png",
+        "bufferView": 777,
+        "uri": null,
+        "embedded": true,
+        "byteLength": 856
+      }
+    ],
+    "decodedTextures": [
+      {
+        "index": 0,
+        "name": "",
+        "width": 440,
+        "height": 233,
+        "decodedType": "ImageBitmap",
+        "colorSpace": "",
+        "repeat": [
+          1,
+          1
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      {
+        "index": 1,
+        "name": "",
+        "width": 270,
+        "height": 210,
+        "decodedType": "ImageBitmap",
+        "colorSpace": "",
+        "repeat": [
+          1,
+          1
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      {
+        "index": 2,
+        "name": "",
+        "width": 25,
+        "height": 49,
+        "decodedType": "ImageBitmap",
+        "colorSpace": "",
+        "repeat": [
+          1,
+          1
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      }
+    ],
+    "asset": {
+      "version": "2.0",
+      "generator": "THREE.GLTFExporter r180"
+    },
+    "extensionsUsed": [
+      "KHR_texture_transform",
+      "KHR_materials_transmission",
+      "KHR_materials_volume"
+    ],
+    "extensionsRequired": [],
+    "loadErrors": [],
+    "renders": [
+      {
+        "kind": "exterior",
+        "changedPixels": 79124,
+        "coverage": 0.08585503472222222,
+        "pixelBounds": [
+          324,
+          133,
+          879,
+          503
+        ],
+        "draw": {
+          "frame": 2,
+          "calls": 438,
+          "triangles": 116536,
+          "points": 0,
+          "lines": 0
+        },
+        "cameraPosition": [
+          11.344307214866992,
+          9.825890135956817,
+          18.911428691251274
+        ],
+        "allBoundsInsideView": true,
+        "webGLError": 0,
+        "contextLost": false
+      },
+      {
+        "kind": "cutaway",
+        "changedPixels": 137427,
+        "coverage": 0.14911783854166666,
+        "pixelBounds": [
+          340,
+          47,
+          887,
+          548
+        ],
+        "draw": {
+          "frame": 4,
+          "calls": 438,
+          "triangles": 116536,
+          "points": 0,
+          "lines": 0
+        },
+        "cameraPosition": [
+          8.844353237536374,
+          18.156466928780382,
+          13.90251937307773
+        ],
+        "allBoundsInsideView": true,
+        "webGLError": 0,
+        "contextLost": false
+      }
+    ],
+    "rendererMemory": {
+      "geometries": 230,
+      "textures": 4
+    }
+  },
+  "browser": {
+    "headless": true,
+    "separateTemporaryServer": true,
+    "pageErrors": [],
+    "requestFailures": [],
+    "consoleMessages": [
+      {
+        "type": "warning",
+        "text": "[.WebGL-0x124000d0800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+      },
+      {
+        "type": "warning",
+        "text": "[.WebGL-0x124000d0800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+      },
+      {
+        "type": "warning",
+        "text": "[.WebGL-0x124000d0800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+      },
+      {
+        "type": "warning",
+        "text": "[.WebGL-0x124000d0800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+      }
+    ],
+    "requests": [
+      "http://127.0.0.1:55624/",
+      "http://127.0.0.1:55624/vendor/three.module.js",
+      "http://127.0.0.1:55624/loaders/GLTFLoader.js",
+      "http://127.0.0.1:55624/utils/BufferGeometryUtils.js",
+      "http://127.0.0.1:55624/vendor/three.core.js",
+      "http://127.0.0.1:55624/current-model.glb"
+    ]
+  },
+  "renders": [
+    "audit/geometry/runtime/gltf-loader/reimport-exterior.png",
+    "audit/geometry/runtime/gltf-loader/reimport-cutaway.png"
+  ],
+  "limits": [
+    "This proves reimport of the supplied T2 GLB, not every possible exported configuration.",
+    "Cutaway is applied only to the imported asset for visual inspection. Geometry is unmodified.",
+    "Standard glTF materials and embedded textures are inspected; application controls, hidden routes, custom shaders and presentation lighting are not part of glTF."
+  ],
+  "siteEdited": false,
+  "cleanup": {
+    "browserClosed": true,
+    "temporaryServerClosed": true,
+    "mainServer4174Untouched": true
+  }
+}

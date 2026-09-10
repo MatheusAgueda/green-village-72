@@ -1,0 +1,416 @@
+{
+  "started": "2026-09-10T22:30:16.970Z",
+  "checks": [
+    {
+      "name": "ortho-zoom-and-keyboard-fixed",
+      "status": "PASS",
+      "result": {
+        "before": {
+          "projection": "OrthographicCamera",
+          "zoom": 1
+        },
+        "zoomIn": 1.1764705882352942,
+        "zoomOut": 1.0230179028132993,
+        "arrow": {
+          "projection": "PerspectiveCamera",
+          "preset": "perspective"
+        }
+      }
+    },
+    {
+      "name": "mobile-walk-exit-sync-fixed",
+      "status": "PASS",
+      "result": {
+        "active": false,
+        "picker": "aerial",
+        "focus": "mobile-scene-view"
+      }
+    },
+    {
+      "name": "optional-isolation-removal-fixed",
+      "status": "PASS",
+      "result": {
+        "roof": false,
+        "layers": null,
+        "disabled": true,
+        "checked": false,
+        "visible": 275,
+        "canvas": 407,
+        "violations": []
+      }
+    },
+    {
+      "name": "gallery-eleven-real-configuration-and-files",
+      "status": "PASS",
+      "result": [
+        {
+          "id": "01-exterior-alpendre",
+          "thumb": {
+            "width": 960,
+            "height": 540
+          },
+          "files": [
+            {
+              "url": "assets/presentation-r8/images/01-exterior-alpendre.jpg",
+              "status": 200,
+              "bytes": 509314
+            },
+            {
+              "url": "assets/presentation-r8/renders/01-exterior-alpendre.png",
+              "status": 200,
+              "bytes": 1662487
+            }
+          ],
+          "view": "exterior",
+          "cut": 1.1,
+          "doorsOpen": true,
+          "projection": "PerspectiveCamera"
+        },
+        {
+          "id": "02-exterior-cobertura-plana",
+          "thumb": {
+            "width": 960,
+            "height": 540
+          },
+          "files": [
+            {
+              "url": "assets/presentation-r8/images/02-exterior-cobertura-plana.jpg",
+              "status": 200,
+              "bytes": 576829
+            },
+            {
+              "url": "assets/presentation-r8/renders/02-exterior-cobertura-plana.png",
+              "status": 200,
+              "bytes": 2111904
+            }
+          ],
+          "view": "exterior",
+          "cut": 1.1,
+          "doorsOpen": true,
+          "projection": "PerspectiveCamera"
+        },
+        {
+          "id": "03-interior-perspectiva",
+          "thumb": {
+            "width": 960,
+            "height": 540
+          },
+          "files": [
+            {
+              "url": "assets/presentation-r8/images/03-interior-perspectiva.jpg",
+              "status": 200,
+              "bytes": 764401
+            },
+            {
+              "url": "assets/presentation-r8/renders/03-interior-perspectiva.png",
+              "status": 200,
+              "bytes": 2561666
+            }
+          ],
+          "view": "interior",
+          "cut": 1.05,
+          "doorsOpen": true,
+          "projection": "PerspectiveCamera"
+        },
+        {
+          "id": "04-planta-mobilada",
+          "thumb": {
+            "width": 960,
+            "height": 540
+          },
+          "files": [
+            {
+              "url": "assets/presentation-r8/images/04-planta-mobilada.jpg",
+              "status": 200,
+              "bytes": 1612505
+            },
+            {
+              "url": "assets/presentation-r8/renders/04-planta-mobilada.png",
+              "status": 200,
+              "bytes": 6177230
+            }
+          ],
+          "view": "interior",
+          "cut": 0.9,
+          "doorsOpen": true,
+          "projection": "OrthographicCamera"
+        },
+        {
+          "id": "05-cozinha",
+          "thumb": {
+            "width": 960,
+            "height": 540
+          },
+          "files": [
+            {
+              "url": "assets/presentation-r8/images/05-cozinha.jpg",
+              "status": 200,
+              "bytes": 513274
+            },
+            {
+              "url": "assets/presentation-r8/renders/05-cozinha.png",
+              "status": 200,
+              "bytes": 1811115
+            }
+          ],
+          "view": "interior",
+          "cut": 1.1,
+          "doorsOpen": true,
+          "projection": "PerspectiveCamera"
+        },
+        {
+          "id": "06-casa-de-banho",
+          "thumb": {
+            "width": 960,
+            "height": 540
+          },
+          "files": [
+            {
+              "url": "assets/presentation-r8/images/06-casa-de-banho.jpg",
+              "status": 200,
+              "bytes": 537342
+            },
+            {
+              "url": "assets/presentation-r8/renders/06-casa-de-banho.png",
+              "status": 200,
+              "bytes": 2140064
+            }
+          ],
+          "view": "interior",
+          "cut": 1.1,
+          "doorsOpen": true,
+          "projection": "PerspectiveCamera"
+        },
+        {
+          "id": "07-estrutura",
+          "thumb": {
+            "width": 960,
+            "height": 540
+          },
+          "files": [
+            {
+              "url": "assets/presentation-r8/images/07-estrutura.jpg",
+              "status": 200,
+              "bytes": 715631
+            },
+            {
+              "url": "assets/presentation-r8/renders/07-estrutura.png",
+              "status": 200,
+              "bytes": 1285711
+            }
+          ],
+          "view": "structure",
+          "cut": 1.1,
+          "doorsOpen": true,
+          "projection": "PerspectiveCamera"
+        },
+        {
+          "id": "09-fachada-principal",
+          "thumb": {
+            "width": 960,
+            "height": 540
+          },
+          "files": [
+            {
+              "url": "assets/presentation-r8/images/09-fachada-principal.jpg",
+              "status": 200,
+              "bytes": 791560
+            },
+            {
+              "url": "assets/presentation-r8/renders/09-fachada-principal.png",
+              "status": 200,
+              "bytes": 4013733
+            }
+          ],
+          "view": "exterior",
+          "cut": 1.1,
+          "doorsOpen": false,
+          "projection": "OrthographicCamera"
+        },
+        {
+          "id": "10-fachada-direita",
+          "thumb": {
+            "width": 960,
+            "height": 540
+          },
+          "files": [
+            {
+              "url": "assets/presentation-r8/images/10-fachada-direita.jpg",
+              "status": 200,
+              "bytes": 590935
+            },
+            {
+              "url": "assets/presentation-r8/renders/10-fachada-direita.png",
+              "status": 200,
+              "bytes": 3136379
+            }
+          ],
+          "view": "exterior",
+          "cut": 1.1,
+          "doorsOpen": false,
+          "projection": "OrthographicCamera"
+        },
+        {
+          "id": "11-fachada-posterior",
+          "thumb": {
+            "width": 960,
+            "height": 540
+          },
+          "files": [
+            {
+              "url": "assets/presentation-r8/images/11-fachada-posterior.jpg",
+              "status": 200,
+              "bytes": 850048
+            },
+            {
+              "url": "assets/presentation-r8/renders/11-fachada-posterior.png",
+              "status": 200,
+              "bytes": 5050446
+            }
+          ],
+          "view": "exterior",
+          "cut": 1.1,
+          "doorsOpen": false,
+          "projection": "OrthographicCamera"
+        },
+        {
+          "id": "12-fachada-esquerda",
+          "thumb": {
+            "width": 960,
+            "height": 540
+          },
+          "files": [
+            {
+              "url": "assets/presentation-r8/images/12-fachada-esquerda.jpg",
+              "status": 200,
+              "bytes": 606848
+            },
+            {
+              "url": "assets/presentation-r8/renders/12-fachada-esquerda.png",
+              "status": 200,
+              "bytes": 3188617
+            }
+          ],
+          "view": "exterior",
+          "cut": 1.1,
+          "doorsOpen": false,
+          "projection": "OrthographicCamera"
+        }
+      ]
+    },
+    {
+      "name": "inspector-real-click",
+      "status": "PASS",
+      "result": {
+        "text": "COMPONENTE SELECCIONADO\nDivisórias e portas interiores\n\nRelações da planta; dimensões não cotadas estimadas.\n\nPlanta T3 · distribuição · A · cotas exteriores 11,80 × 6,22 m. Pormenores sem cotas são estimados."
+      }
+    },
+    {
+      "name": "PDF-four-page-current-configuration",
+      "status": "PASS",
+      "result": {
+        "file": "r8-final-configuration.pdf",
+        "state": {
+          "schemaVersion": 2,
+          "layout": "t2",
+          "exteriorId": "exterior-standard-branco-glacial",
+          "exterior": "#ddddda",
+          "floorId": "floor-spc-kx7008",
+          "floor": "#a18a6e",
+          "interior": "#eeede8",
+          "interiorName": "Branco natural",
+          "kitchen": "l",
+          "kitchenRef": "kitchen-12",
+          "bathroom": "standard",
+          "bathroomRef": "bathroom-16",
+          "bathroomUV": "bathroom-uv-amostra-1",
+          "roof": true,
+          "porch": true,
+          "lighting": "neutral",
+          "textureMode": "source"
+        },
+        "summary": "T2 · Expandível 72\nReferência GV72-48D2530D\n\n2 quartos · 1 casa de banho · 11,80 × 6,22 m exteriores\n\nVista guardada no estúdio\nBanho\n≈ 3,6 m²\nQuarto 1\n≈ 12,8 m²\nQuarto 2\n≈ 12,8 m²\nEspaço comum\n≈ 39,3 m²\n6 220 mm\n11 800 mm\n2 010\n2 200\n2 010\nEntrada / fachada principal\nCotas exteriores confirmadas · áreas aproximadas · cores suavizadas\nPlanta da sua configuração · áreas estimadas\nFachada\nBranco Glacial\nCatálogo 2026 · p. 10\nPavimento SPC\nKX7008\nCatálogo 2026 · p. 14\nParedes interiores\nBranco natural\nCor de visualização · #eeede8\nCozinha · 12\nMadeira de veio vertical\nCatálogo 2026 · p. 16\nCasa de banho · 16\nMármore carvão\nCatálogo 2026 · p. 18\nRevestimento UV do banho\nAmostra 1\nCatálogo 2026 · p. 17\nEspaço e distribuição\nModelo\nExpandível 72 · 40 pés\nPlanta\nT2\nDimensões exteriores\n11,80 × 6,22 m\nQuartos\n2\nCasas de banho\n1\nAcabamentos e ambientes\nExterior\nBranco Glacial\nParedes interiores\nBranco natural · aparência de referência, cor por confirmar\nPavimento SPC\nKX7008\nCozinha\nEm L\nReferência de cozinha\n12 · Madeira de veio vertical\nCasa de banho\nDistribuição da planta (aproximada)\nAmbiente de banho\n16 · Mármore carvão\nRevestimento do banho\nAmostra 1\nCobertura e apresentação\nTelhado adicional\nSeleccionado · sob consulta\nAlpendre\nSeleccionado · sob consulta\nTexturas\nRecorte original, sem tratamento de cor\nLuz\nNeutra\nPronto para preparar a proposta.\n\nGuarde o PDF e partilhe as suas escolhas com a Green Village. A proposta deverá confirmar compatibilidade, equipamentos incluídos, transporte, instalação e valor final.\n\ninfo@greenvillagemobilehomes.com ↗\n\nContacto publicado no catálogo, p. 19. O PDF é um resumo de preferências, sem orçamento total.\n\nDesignação comercial: 72 m². A área útil certificada não consta dos anexos. Medidas interiores e detalhes não cotados são estimados. Instalações e mecanismo exacto de expansão aguardam documentação. Valores sob consulta."
+      }
+    },
+    {
+      "name": "final-responsive-and-idle",
+      "status": "PASS",
+      "result": {
+        "records": [
+          {
+            "width": 375,
+            "scrollWidth": 375,
+            "canvas": 261.625
+          },
+          {
+            "width": 768,
+            "scrollWidth": 768,
+            "canvas": 355
+          },
+          {
+            "width": 1440,
+            "scrollWidth": 1440,
+            "canvas": 566
+          }
+        ],
+        "idleFrames": 0,
+        "intervalMs": 1000,
+        "diagnostics": {
+          "revision": "GV72-R8-2026-09-10",
+          "frames": 47,
+          "materials": {
+            "pending": 0,
+            "backgroundPending": 0,
+            "failures": [],
+            "cachedTextures": 8,
+            "leases": 5
+          },
+          "render": {
+            "projection": "PerspectiveCamera",
+            "walk": false,
+            "calls": 526,
+            "triangles": 121644,
+            "memory": {
+              "geometries": 274,
+              "textures": 19
+            },
+            "camera": [
+              13.748097561387059,
+              12.27351609788191,
+              18.160121951733824
+            ],
+            "target": [
+              0,
+              1.5500000000000005,
+              0.9750000000000001
+            ]
+          }
+        },
+        "browser": "153.0.8010.36"
+      }
+    }
+  ],
+  "logs": [],
+  "sources": {
+    "app.js": "62210abbb6afee8b932afd9531366aef6557ac348127881e0d7c7e5a69db8b6c",
+    "stage.js": "bc528ea9fe5dcefb72c5483ba2fd6b08f329e26b8168154c7770fd3b707a96d6",
+    "index.html": "6eb28adc56d7bca5be5aa9151e8cbdf103042c9fc5b75ec12c181b939f7951cc",
+    "studio-r8.css": "c37a77d12b0e1de6c0f20f1a6d0dc6b5aa9cb696b52218a6a3ac3e849a212141",
+    "client-tools.js": "518dab48aa5735a7662514569273c04316cc2f938cffebb5113124a0ae79cf41",
+    "model.js": "3905c7c43a82acf6c7842e2124b95506b57efe248920e0114303a138b95a3497",
+    "configuration.js": "b1fd7d146a01e4d4b8f90ef9b1a45da8645c535de03d17a96fe98471e54ffaef",
+    "assets/presentation-r8/manifest.json": "daddd6edf9f0e915c3e665f26e67157a345fcffdedd4ddfd032328d9643a18a5"
+  },
+  "sourcesAtEnd": {
+    "app.js": "62210abbb6afee8b932afd9531366aef6557ac348127881e0d7c7e5a69db8b6c",
+    "stage.js": "bc528ea9fe5dcefb72c5483ba2fd6b08f329e26b8168154c7770fd3b707a96d6",
+    "index.html": "6eb28adc56d7bca5be5aa9151e8cbdf103042c9fc5b75ec12c181b939f7951cc",
+    "studio-r8.css": "c37a77d12b0e1de6c0f20f1a6d0dc6b5aa9cb696b52218a6a3ac3e849a212141",
+    "client-tools.js": "518dab48aa5735a7662514569273c04316cc2f938cffebb5113124a0ae79cf41",
+    "model.js": "3905c7c43a82acf6c7842e2124b95506b57efe248920e0114303a138b95a3497",
+    "configuration.js": "b1fd7d146a01e4d4b8f90ef9b1a45da8645c535de03d17a96fe98471e54ffaef",
+    "assets/presentation-r8/manifest.json": "daddd6edf9f0e915c3e665f26e67157a345fcffdedd4ddfd032328d9643a18a5"
+  },
+  "sourcesUnchanged": true,
+  "completed": "2026-09-10T22:30:32.485Z"
+}

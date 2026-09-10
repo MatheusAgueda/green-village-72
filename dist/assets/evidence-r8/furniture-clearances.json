@@ -1,0 +1,456 @@
+{
+  "status": "PASS",
+  "scope": "64 T4-A configurations: each equipment motion in 41 positions versus split partitions/jambs, other furniture assemblies closed and passage doors at closed/half/open. Connected mesh component OBB envelopes; static baseline contacts excluded. This test does not re-audit self-cabinet motion pairs, which are unchanged by the kitchen translation.",
+  "configurations": 64,
+  "bodyPoses": 84640,
+  "results": [
+    {
+      "reference": "kitchen-01",
+      "bathroom": "standard",
+      "motions": 8,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "kitchen-01",
+      "bathroom": "mirrored",
+      "motions": 8,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "kitchen-02",
+      "bathroom": "standard",
+      "motions": 8,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "kitchen-02",
+      "bathroom": "mirrored",
+      "motions": 8,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "kitchen-03",
+      "bathroom": "standard",
+      "motions": 11,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "kitchen-03",
+      "bathroom": "mirrored",
+      "motions": 11,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "kitchen-04",
+      "bathroom": "standard",
+      "motions": 8,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "kitchen-04",
+      "bathroom": "mirrored",
+      "motions": 8,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "kitchen-05",
+      "bathroom": "standard",
+      "motions": 9,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "kitchen-05",
+      "bathroom": "mirrored",
+      "motions": 9,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "kitchen-06",
+      "bathroom": "standard",
+      "motions": 8,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "kitchen-06",
+      "bathroom": "mirrored",
+      "motions": 8,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "kitchen-07",
+      "bathroom": "standard",
+      "motions": 8,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "kitchen-07",
+      "bathroom": "mirrored",
+      "motions": 8,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "kitchen-08",
+      "bathroom": "standard",
+      "motions": 11,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "kitchen-08",
+      "bathroom": "mirrored",
+      "motions": 11,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "kitchen-09",
+      "bathroom": "standard",
+      "motions": 8,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "kitchen-09",
+      "bathroom": "mirrored",
+      "motions": 8,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "kitchen-10",
+      "bathroom": "standard",
+      "motions": 8,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "kitchen-10",
+      "bathroom": "mirrored",
+      "motions": 8,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "kitchen-11",
+      "bathroom": "standard",
+      "motions": 9,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "kitchen-11",
+      "bathroom": "mirrored",
+      "motions": 9,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "kitchen-12",
+      "bathroom": "standard",
+      "motions": 6,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "kitchen-12",
+      "bathroom": "mirrored",
+      "motions": 6,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "kitchen-13",
+      "bathroom": "standard",
+      "motions": 11,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "kitchen-13",
+      "bathroom": "mirrored",
+      "motions": 11,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "kitchen-14",
+      "bathroom": "standard",
+      "motions": 8,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "kitchen-14",
+      "bathroom": "mirrored",
+      "motions": 8,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "kitchen-15",
+      "bathroom": "standard",
+      "motions": 8,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "kitchen-15",
+      "bathroom": "mirrored",
+      "motions": 8,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "bathroom-01",
+      "bathroom": "standard",
+      "motions": 8,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "bathroom-01",
+      "bathroom": "mirrored",
+      "motions": 8,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "bathroom-02",
+      "bathroom": "standard",
+      "motions": 7,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "bathroom-02",
+      "bathroom": "mirrored",
+      "motions": 7,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "bathroom-03",
+      "bathroom": "standard",
+      "motions": 7,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "bathroom-03",
+      "bathroom": "mirrored",
+      "motions": 7,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "bathroom-04",
+      "bathroom": "standard",
+      "motions": 8,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "bathroom-04",
+      "bathroom": "mirrored",
+      "motions": 8,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "bathroom-05",
+      "bathroom": "standard",
+      "motions": 8,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "bathroom-05",
+      "bathroom": "mirrored",
+      "motions": 8,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "bathroom-06",
+      "bathroom": "standard",
+      "motions": 8,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "bathroom-06",
+      "bathroom": "mirrored",
+      "motions": 8,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "bathroom-07",
+      "bathroom": "standard",
+      "motions": 8,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "bathroom-07",
+      "bathroom": "mirrored",
+      "motions": 8,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "bathroom-08",
+      "bathroom": "standard",
+      "motions": 8,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "bathroom-08",
+      "bathroom": "mirrored",
+      "motions": 8,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "bathroom-09",
+      "bathroom": "standard",
+      "motions": 6,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "bathroom-09",
+      "bathroom": "mirrored",
+      "motions": 6,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "bathroom-10",
+      "bathroom": "standard",
+      "motions": 8,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "bathroom-10",
+      "bathroom": "mirrored",
+      "motions": 8,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "bathroom-11",
+      "bathroom": "standard",
+      "motions": 8,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "bathroom-11",
+      "bathroom": "mirrored",
+      "motions": 8,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "bathroom-12",
+      "bathroom": "standard",
+      "motions": 8,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "bathroom-12",
+      "bathroom": "mirrored",
+      "motions": 8,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "bathroom-13",
+      "bathroom": "standard",
+      "motions": 8,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "bathroom-13",
+      "bathroom": "mirrored",
+      "motions": 8,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "bathroom-14",
+      "bathroom": "standard",
+      "motions": 6,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "bathroom-14",
+      "bathroom": "mirrored",
+      "motions": 6,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "bathroom-15",
+      "bathroom": "standard",
+      "motions": 6,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "bathroom-15",
+      "bathroom": "mirrored",
+      "motions": 6,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "bathroom-16",
+      "bathroom": "standard",
+      "motions": 8,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "bathroom-16",
+      "bathroom": "mirrored",
+      "motions": 8,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "bathroom-17",
+      "bathroom": "standard",
+      "motions": 8,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    },
+    {
+      "reference": "bathroom-17",
+      "bathroom": "mirrored",
+      "motions": 8,
+      "baselinePairs": 0,
+      "newExternalIntersections": []
+    }
+  ]
+}

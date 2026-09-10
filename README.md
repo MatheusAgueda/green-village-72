@@ -1,58 +1,47 @@
-# Green Village — Expandível 72, revisão R4
+# Green Village — Expandível 72, revisão R8
 
-Portefólio e configurador existentes revistos em 10/09/2026. Aplicação estática em `dist/`, com identidade Green Village preservada e recursos de execução incluídos localmente. Reutilizar sempre o Site indicado em `.openai/hosting.json`.
+Portefólio comercial interactivo com o logótipo original, sete plantas, catálogo de acabamentos, cozinha e banho, galeria 4K e resumo PDF. Aplicação estática em `dist/`. Reutilizar o Site de `.openai/hosting.json`; este checkout é independente do repositório que o contém.
 
-## Utilização e verificação
+## Utilização
 
-`node scripts/serve.mjs` disponibiliza a pré-visualização em `http://127.0.0.1:4174`. Abrir por `file://` não suporta os módulos. `npm test` executa 22 grupos de regressão. Não existe build obrigatório: o empacotamento usa directamente `dist/`.
+- `node scripts/serve.mjs` serve o projecto em `http://127.0.0.1:4174`. Os módulos precisam de HTTP, não de abertura directa como ficheiro.
+- `npm test` executa os testes permanentes. `npm run test:expansion` compara componentes na posição montada; desde R8, **não verifica uma cinemática de expansão**, que está pendente de documentação.
+- Não há compilação obrigatória: a publicação usa a pasta `dist/`.
 
-## Alterações R4
+O cliente pode seleccionar materiais, desfazer/refazer escolhas, guardar/recuperar, comparar A/B, partilhar uma ligação validada e exportar JSON, PDF, PNG 4K ou GLB. A ligação mantém as permissões do Site: não concede acesso a novos visitantes. O contacto do catálogo abre uma mensagem no programa de correio do cliente; não simula nem efectua um envio.
 
-- Expansão completa com pisos, cobertura, paredes e topos rígidos. Seis etapas seleccionáveis, progresso preservado entre vistas e opções alteráveis durante a reprodução.
-- Corrigidos visibilidade herdada, reposição completa, câmara após redimensionamento fora do estúdio, órbita após vista superior, categorias por teclado, captura após perda de WebGL e alinhamento de postes na vista de camadas.
-- Parâmetros de folga e articulação em `EXPANSION_RIG`, explicitamente estimados. O estado recolhido não é uma dimensão de transporte do fabricante. Equipamentos, redes, telhado e alpendre são tratados depois da abertura.
-- Filme de expansão actualizado: 20 segundos, Full HD, 24 fps. O filme exterior/interior e quatro vídeos originais são preservados.
-- `npm run test:expansion` verifica 1 001 poses T2 por defeito; `GV72_AUDIT_LAYOUT`, `GV72_AUDIT_STEPS` e `GV72_AUDIT_DIR` permitem repetir a matriz. A auditoria final analisou 10 001 poses de cada uma das sete plantas, com limiar numérico de 0,1 mm acima dos contactos da montagem final (listados). Não é validação de engenharia.
-- Relatório actual: `dist/assets/evidence-r4/audit-report.html`. O histórico R3 permanece disponível.
+## Correcção das paredes, portas e janelas
 
-## Alterações R3 preservadas
+A auditoria comprovou que os quatro painéis de topo da animação anterior rodavam de fora para dentro. Inverter apenas o sinal da rotação criava interferências com outros componentes. A pedido do utilizador, não foi inventado outro mecanismo: a área de expansão mostra agora a sequência original de quatro imagens e o 3D na posição aberta. O filme de expansão anterior deixou de integrar o percurso comercial. Os originais e os relatórios históricos permanecem no arquivo.
 
-- 12 pisos SPC com veio da amostra original, réguas desencontradas e atenuação de iluminação fotografada; 37 paredes com tratamento específico para madeiras, lamelas e alvenarias. 49 mapas na resolução nativa, sem ampliação. 71 originais e IDs preservados.
-- Comparador com original, recorte exacto e aplicação em superfície 3D sob luz neutra. Escalas e perfis de apresentação identificados como estimativas.
-- Estúdio compacto: cena e categorias visíveis ao escolher no telefone; painel com deslocação própria no computador; expansão dos controlos técnicos não bloqueia a página.
-- Reconstrução e mudanças de vista conservam estado/casa anteriores quando há falha. Gravação, importação, recuperação, comparações simultâneas, exportações e repetição de pedidos de textura têm tratamento de erro.
-- Camadas separadas ficam acima do plano de apoio; opcionais não tapam a armação; câmara preserva a órbita ao redimensionar. Planta 2D usa cores suavizadas e rótulos legíveis.
-- Quatro vídeos originais, identificados por variante, com 16 capítulos de detalhe. Dois novos filmes da maquete em Full HD.
+As folhas interiores mantêm o sentido de abertura das sete plantas. As janelas continuam solidárias às paredes. As duas janelas traseiras acrescentadas indevidamente às variantes T3 B e T4 B foram removidas. A cozinha proposta no T4 A foi recuada 50 mm para melhorar a passagem; a porta e a planta não foram deslocadas.
 
-## Módulos e proveniência
+## Modelo e fontes
 
-`specification.js` centraliza medidas, fontes, sete plantas, vãos, áreas, equipamentos e compatibilidade. `model.js` e `plan-svg.js` usam essa base comum. `configuration.js` mantém a validação e o esquema de persistência compatível com R2.
+- Confirmado no XLSX: 11,80 × 6,22 m exteriores; bandas 2,01 / 2,20 / 2,01 m; largura de janela cotada 0,92 m.
+- 72 m² é designação comercial. O rectângulo exterior é 73,396 m². Área útil certificada não fornecida. Áreas interiores calculadas com espessuras assumidas são identificadas como estimativas.
+- Altura, espessuras completas, perfis, ferragens, posições sem cotas e implantação da cozinha são estimativas. Não são dados de fabrico.
+- A cor interior branca é uma aparência de referência. Não há paleta de tintas interiores aprovada; os selectores livres foram retirados. As importações rejeitam escolhas sem referência; a recuperação local migra antigas cores livres com aviso.
+- O terraço de 3 m do catálogo, p.13, e o alpendre da fotografia não são comprovadamente a mesma variante. O modelo fotográfico mantém uma profundidade estimada, sem lhe atribuir o preço do terraço. Valores sob consulta.
+- Sem projectos de água, esgotos, electricidade ou fundação do terreno. Percursos, quadro, pontos e furos de serviço antes propostos foram retirados.
+- Fotografias de amostras não são medições de cor ou mapas PBR. O modo Original conserva os recortes; escala, rugosidade e repetição são aproximações. Os modos de preparação de emendas estão identificados em separado.
 
-`material-data.js` preserva o catálogo R2. `photo-plank-data.js`, `photo-wall-data.js`, `photo-planks.js` e `panel-joints.js` descrevem os tratamentos R3. `material-library.js` usa uma única cache limitada e leases por material, incluindo recuperação após falha de carregamento. `stage.js` contém ambiente, iluminação e enquadramento; `app.js` coordena as interacções e exportações.
+## Exportações
 
-Relatório actual: `dist/assets/evidence-r3/audit-report.html`. Ledger dos 71 materiais: `dist/assets/catalogue-r3/material-r3-ledger.json`. Inventário dos vídeos: `dist/assets/reference-videos/source-inventory.json`. Evidências históricas R2 mantidas em `dist/assets/evidence/`.
+A imagem actual usa um buffer nativo 3840 × 2160, após carregar os materiais. Conserva posição e direcção da câmara, alargando o campo visível necessário para caber em 16:9; não recorta nem amplia uma captura pequena. A resolução interactiva é restaurada mesmo em caso de falha. A galeria identifica a configuração, vista e estado de portas de cada imagem.
 
-## Documentação e limites
+O GLB contém a casa estática completa da configuração seleccionada, componentes nomeados, materiais e texturas integradas. Não inclui os controlos da aplicação, cortes, comportamento das portas, mecanismo de expansão, iluminação do estúdio nem o shader das juntas. A geometria parametrizada, os estados e os materiais originais permanecem neste projecto. Exportador oficial Three.js r180: https://github.com/mrdoob/three.js/blob/r180/examples/jsm/exporters/GLTFExporter.js . Licença MIT incluída em `dist/vendor/THREE-LICENSE.txt`.
 
-Confirmado no XLSX: rectângulo exterior 11,80 × 6,22 m, bandas 2,01 / 2,20 / 2,01 m e janelas cotadas de 0,92 m. O rectângulo tem 73,396 m²; 72 m² é designação comercial. Área útil certificada, ressaltos exactos do núcleo e cotas interiores completas não constam dos anexos.
+## Actualizar materiais, opções e contactos
 
-Alturas, espessuras, perfis, ligações, interiores, redes, telhado e alpendre incluem hipóteses identificadas. Amostras fotográficas até 480 × 300 px não certificam cores, escala, relevo ou continuidade do produto. Os tratamentos reduzem repetição; não recuperam detalhe inexistente nem substituem mapas medidos.
+1. Cotas, plantas, vãos, áreas e fontes: `dist/specification.js`. Acrescentar fonte e estado de confirmação a cada medida. Não alterar cotas para fazer coincidir áreas.
+2. Referências do catálogo: `dist/data.js`, `dist/material-data.js` e respectivos recursos. Manter IDs estáveis, página de origem, recorte original, unidade e limites. Cozinhas/banhos: `dist/interior-references.js`; a geometria detalhada está em `dist/interior-detail.js`.
+3. Opções e validação: `dist/configuration.js`. Atualizar também a migração em `dist/client-tools.js` se mudar o esquema. Restrições de implantação calculadas não provam compatibilidade comercial.
+4. Contacto: `CONTACT_EMAIL` em `dist/portfolio.js`, cabeçalho/rodapé quando aplicável. Usar exclusivamente um contacto confirmado para este projecto. Não existe número WhatsApp confirmado.
+5. Depois de uma alteração, gerar o catálogo estruturado com `node scripts/export-catalogue.mjs`, correr os testes e verificar no navegador o material, resumo, PDF e exportações. Regenerar imagens da galeria quando a geometria ou os materiais da configuração representada mudarem.
 
-Os quatro vídeos recebidos têm 576 × 1024 px e mostram variantes diferentes já abertas. Não demonstram a sequência de expansão. A montagem 3D começa com pisos e cobertura abertos, eleva paredes e instala topos; não certifica transporte, articulações ou desdobramento do piso.
+`dist/client-tools.js` contém histórico, ligações e exportações; `dist/model-layers.js` gere camadas e transparência; `dist/walkthrough.js` define navegação com colisões; `dist/stage.js` gere iluminação/câmaras, incluindo planta e quatro fachadas ortográficas. A altura de observação de 1,60 m é uma opção de navegação, não uma cota da casa.
 
-## Vídeos produzidos
+## Entrega e limites de verificação
 
-`presentation-v3.mp4`: exterior/interior T2, 22 s. `expansion-v3.mp4`: montagem parcial, 16 s. Ambos 1920 × 1080, 24 fps, H.264, sem áudio e com faststart. 912 fotogramas capturados e descodificados; início, meio e fim inspeccionados. Fontes e hashes reais constam da evidência. Uma correcção posterior exclusiva do ramo de recuperação de texturas está registada; esse ramo não foi activado nas capturas.
-
-## Âmbito dos testes
-
-Geometria: 48 combinações permitidas, 101 posições amostradas da montagem, portas em 31 ângulos, sete redes eléctricas e 486 subidas hidráulicas. Sem colisões accionáveis no âmbito declarado; amostragem não é prova contínua do mecanismo.
-
-Navegador: sete plantas, 71 materiais em dois ciclos com renderização efectiva, sete vistas, persistência, exportações abertas, teclado, ecrãs 375/768/1440 px, falhas de WebGL e de pedidos, comparações concorrentes e recuperação de estado. Chrome 153 / Apple M4 / ANGLE Metal: 59,94 fps na órbita medida, zero frames em repouso de 1 s. Emulação de ecrã móvel não é teste em todos os telefones físicos.
-
-## Dependências e recuperação
-
-Three.js 0.180.0, respectivos auxiliares e pdf-lib incluídos em `dist/vendor/`, com licenças. Recuperação anterior à R3: `recovery/gv72-before-r3-20260910`. Histórico anterior à R2: `recovery/gv72-before-audit-20260910`. Este checkout é independente do repositório GLS que o contém.
-
-
-Final publication transport correction: the hosted static MP4 endpoint returns HTTP 200 to Range requests, unlike the local server. The shared video-library now prepares a complete Blob on first playback or chapter selection, retains at most two media objects, validates seek completion, cancels stale requests on navigation and supports native controls for all six videos. Original download links remain unchanged. This changes the player only; captured model geometry and film pixels are unchanged. Swatch thumbnails use the same exact R3 crops as the comparator.
+Catálogo e mapa de fontes: `dist/assets/product-r8/`. Relatório actual: `dist/assets/evidence-r8/audit-report.html`. Testes e provas indicam explicitamente o ambiente e o âmbito executados. Testar tamanhos móveis no computador não certifica todos os dispositivos físicos. Não declarar resolvida a cinemática de expansão até existir informação suficiente sobre o mecanismo real.

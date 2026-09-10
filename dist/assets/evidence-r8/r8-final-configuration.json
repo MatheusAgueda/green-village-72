@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 2,
+  "layout": "t2",
+  "exteriorId": "exterior-standard-branco-glacial",
+  "exterior": "#ddddda",
+  "floorId": "floor-spc-kx7008",
+  "floor": "#a18a6e",
+  "interior": "#eeede8",
+  "interiorName": "Branco natural",
+  "kitchen": "l",
+  "kitchenRef": "kitchen-12",
+  "bathroom": "standard",
+  "bathroomRef": "bathroom-16",
+  "bathroomUV": "bathroom-uv-amostra-1",
+  "roof": true,
+  "porch": true,
+  "lighting": "neutral",
+  "textureMode": "source"
+}

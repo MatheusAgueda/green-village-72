@@ -1,0 +1,508 @@
+{
+  "revision": "GV72-R8-2026-09-10",
+  "configuration": {
+    "schemaVersion": 2,
+    "layout": "t2",
+    "exteriorId": "exterior-standard-branco-glacial",
+    "exterior": "#ddddda",
+    "floorId": "floor-spc-kx7006",
+    "floor": "#92846c",
+    "interior": "#eeede8",
+    "interiorName": "Branco natural",
+    "kitchen": "linear",
+    "kitchenRef": "kitchen-01",
+    "bathroom": "standard",
+    "bathroomRef": "bathroom-01",
+    "bathroomUV": null,
+    "roof": false,
+    "porch": false,
+    "lighting": "neutral",
+    "textureMode": "source"
+  },
+  "units": "metres",
+  "dimensions": [
+    {
+      "id": "length",
+      "label": "Comprimento exterior",
+      "value": 11.8,
+      "unit": "m",
+      "source": "XLSX · todas as 7 plantas",
+      "status": "confirmed",
+      "note": "",
+      "provided": 11.8,
+      "modelled": 11.8,
+      "numericMatch": true
+    },
+    {
+      "id": "width",
+      "label": "Largura exterior",
+      "value": 6.22,
+      "unit": "m",
+      "source": "XLSX · todas as 7 plantas",
+      "status": "confirmed",
+      "note": "",
+      "provided": 6.22,
+      "modelled": 6.22,
+      "numericMatch": true
+    },
+    {
+      "id": "core",
+      "label": "Banda central",
+      "value": 2.2,
+      "unit": "m",
+      "source": "XLSX · cota superior 2200",
+      "status": "confirmed",
+      "note": "",
+      "provided": 2.2,
+      "modelled": 2.2,
+      "numericMatch": true
+    },
+    {
+      "id": "wing",
+      "label": "Banda lateral (cada)",
+      "value": 2.01,
+      "unit": "m",
+      "source": "XLSX · cotas superiores 2010",
+      "status": "confirmed",
+      "note": "",
+      "provided": 2.01,
+      "modelled": 2.01,
+      "numericMatch": true
+    },
+    {
+      "id": "windowWidth",
+      "label": "Largura cotada das janelas",
+      "value": 0.92,
+      "unit": "m",
+      "source": "XLSX · cota 920; posição/altura não cotadas",
+      "status": "confirmed",
+      "note": "",
+      "provided": 0.92,
+      "modelled": 0.92,
+      "numericMatch": true
+    },
+    {
+      "id": "height",
+      "label": "Altura das paredes e perfis na maquete",
+      "value": 2.55,
+      "unit": "m",
+      "source": "Hipótese da maquete",
+      "status": "estimated",
+      "note": "Não indicada nos anexos. Não usar como cota de fabrico.",
+      "provided": null,
+      "modelled": 2.55,
+      "numericMatch": null
+    },
+    {
+      "id": "panel",
+      "label": "Espessura de parede na maquete",
+      "value": 0.1,
+      "unit": "m",
+      "source": "Hipótese geométrica",
+      "status": "estimated",
+      "note": "O catálogo refere opção lã de rocha 100 mm; não comprova espessura total da parede desta variante.",
+      "provided": null,
+      "modelled": 0.1,
+      "numericMatch": null
+    },
+    {
+      "id": "partition",
+      "label": "Divisória interior",
+      "value": 0.08,
+      "unit": "m",
+      "source": "Hipótese geométrica",
+      "status": "estimated",
+      "note": "",
+      "provided": null,
+      "modelled": 0.08,
+      "numericMatch": null
+    },
+    {
+      "id": "frame",
+      "label": "Secção visual dos perfis",
+      "value": 0.12,
+      "unit": "m",
+      "source": "Fotografias e maquete",
+      "status": "estimated",
+      "note": "Sem desenho de perfil ou ligação.",
+      "provided": null,
+      "modelled": 0.12,
+      "numericMatch": null
+    },
+    {
+      "id": "floor",
+      "label": "Camadas de piso, incluindo intervalos",
+      "value": 0.121,
+      "unit": "m",
+      "source": "Hipótese geométrica",
+      "status": "estimated",
+      "note": "",
+      "provided": null,
+      "modelled": 0.121,
+      "numericMatch": null
+    },
+    {
+      "id": "roof",
+      "label": "Camadas e nervuras da cobertura",
+      "value": 0.127,
+      "unit": "m",
+      "source": "Hipótese geométrica",
+      "status": "estimated",
+      "note": "",
+      "provided": null,
+      "modelled": 0.127,
+      "numericMatch": null
+    },
+    {
+      "id": "doorWidth",
+      "label": "Vão interior na maquete",
+      "value": 0.76,
+      "unit": "m",
+      "source": "Hipótese de visualização",
+      "status": "estimated",
+      "note": "",
+      "provided": null,
+      "modelled": 0.76,
+      "numericMatch": null
+    },
+    {
+      "id": "doorHeight",
+      "label": "Altura das portas na maquete",
+      "value": 2.05,
+      "unit": "m",
+      "source": "Hipótese de visualização",
+      "status": "estimated",
+      "note": "",
+      "provided": null,
+      "modelled": 2.05,
+      "numericMatch": null
+    },
+    {
+      "id": "windowHeight",
+      "label": "Altura das janelas na maquete",
+      "value": 1.05,
+      "unit": "m",
+      "source": "Fotografias, sem cota",
+      "status": "estimated",
+      "note": "",
+      "provided": null,
+      "modelled": 1.05,
+      "numericMatch": null
+    },
+    {
+      "id": "entryWidthVisual",
+      "label": "Largura de entrada na maquete",
+      "value": 1.7,
+      "unit": "m",
+      "source": "Fotografias sem cotas",
+      "status": "estimated",
+      "note": "",
+      "provided": null,
+      "modelled": 1.7,
+      "numericMatch": null
+    },
+    {
+      "id": "entryHeightVisual",
+      "label": "Altura de entrada na maquete",
+      "value": 2.15,
+      "unit": "m",
+      "source": "Fotografias sem cotas",
+      "status": "estimated",
+      "note": "",
+      "provided": null,
+      "modelled": 2.15,
+      "numericMatch": null
+    },
+    {
+      "id": "bathWindowWidthVisual",
+      "label": "Largura de janela do banho na maquete",
+      "value": 0.6,
+      "unit": "m",
+      "source": "Planta sem cota neste vão",
+      "status": "estimated",
+      "note": "",
+      "provided": null,
+      "modelled": 0.6,
+      "numericMatch": null
+    },
+    {
+      "id": "windowSillVisual",
+      "label": "Peitoril de janela na maquete",
+      "value": 0.95,
+      "unit": "m",
+      "source": "Fotografias sem cotas",
+      "status": "estimated",
+      "note": "",
+      "provided": null,
+      "modelled": 0.95,
+      "numericMatch": null
+    },
+    {
+      "id": "porchDepthVisual",
+      "label": "Profundidade de alpendre na maquete",
+      "value": 1.95,
+      "unit": "m",
+      "source": "Hipótese de visualização",
+      "status": "estimated",
+      "note": "",
+      "provided": null,
+      "modelled": 1.95,
+      "numericMatch": null
+    },
+    {
+      "id": "canopyRiseVisual",
+      "label": "Desnível da cumeeira na maquete",
+      "value": 0.65,
+      "unit": "m",
+      "source": "Fotografia sem cota",
+      "status": "estimated",
+      "note": "",
+      "provided": null,
+      "modelled": 0.65,
+      "numericMatch": null
+    },
+    {
+      "id": "canopyOverhangVisual",
+      "label": "Beiral na maquete",
+      "value": 0.28,
+      "unit": "m",
+      "source": "Fotografia sem cota",
+      "status": "estimated",
+      "note": "",
+      "provided": null,
+      "modelled": 0.28,
+      "numericMatch": null
+    },
+    {
+      "id": "catalogueTerraceDepth",
+      "label": "Profundidade do terraço do catálogo",
+      "value": 3,
+      "unit": "m",
+      "source": "Catálogo p. 13",
+      "status": "confirmed",
+      "note": "Variante distinta da fotografia do alpendre. Não aplicada ao modelo sem confirmação.",
+      "provided": 3,
+      "modelled": null,
+      "numericMatch": null
+    },
+    {
+      "id": "closedWidth",
+      "label": "Largura de transporte",
+      "value": null,
+      "unit": "m",
+      "source": "Desenho do módulo fechado não fornecido",
+      "status": "missing",
+      "note": "A banda central de 2,20 m não estabelece a largura exterior de transporte com painéis recolhidos.",
+      "provided": null,
+      "modelled": null,
+      "numericMatch": null
+    },
+    {
+      "id": "usefulArea",
+      "label": "Área útil certificada",
+      "value": null,
+      "unit": "m²",
+      "source": "Mapa de áreas não fornecido",
+      "status": "missing",
+      "note": "",
+      "provided": null,
+      "modelled": null,
+      "numericMatch": null
+    },
+    {
+      "id": "ridge",
+      "label": "Altura da cumeeira adicional",
+      "value": null,
+      "unit": "m",
+      "source": "Fotografia de cobertura sem cotas",
+      "status": "missing",
+      "note": "",
+      "provided": null,
+      "modelled": null,
+      "numericMatch": null
+    },
+    {
+      "id": "porchDepth",
+      "label": "Profundidade de alpendre",
+      "value": null,
+      "unit": "m",
+      "source": "Fotografia de cobertura sem cotas",
+      "status": "missing",
+      "note": "",
+      "provided": null,
+      "modelled": 1.95,
+      "numericMatch": null
+    }
+  ],
+  "areas": {
+    "commercial": 72,
+    "exterior": 73.396,
+    "internalEnvelope": 69.83200000000001,
+    "partitions": 1.2472320000000012,
+    "estimatedNet": 68.58476800000001,
+    "common": 39.33234880000001,
+    "roomTotal": 29.2524192,
+    "status": "estimated",
+    "note": "Áreas calculadas com paredes de 100 mm e divisórias de 80 mm assumidas; não são um mapa de áreas certificado."
+  },
+  "openings": [
+    {
+      "axis": "x",
+      "c": 5.9,
+      "a": -3.11,
+      "b": 3.11,
+      "holes": [
+        {
+          "id": "entry",
+          "u": 0,
+          "width": 1.7,
+          "height": 2.15,
+          "sill": 0,
+          "kind": "door",
+          "source": "double-leaf door depicted; size estimated"
+        },
+        {
+          "id": "front-window--1",
+          "u": -2.05,
+          "width": 0.92,
+          "height": 1.05,
+          "sill": 0.95,
+          "kind": "window"
+        },
+        {
+          "id": "front-window-1",
+          "u": 2.05,
+          "width": 0.92,
+          "height": 1.05,
+          "sill": 0.95,
+          "kind": "window"
+        }
+      ]
+    },
+    {
+      "axis": "x",
+      "c": -5.9,
+      "a": -3.11,
+      "b": 3.11,
+      "holes": [
+        {
+          "id": "bath-window",
+          "u": 0,
+          "width": 0.6,
+          "height": 0.5,
+          "sill": 1.7,
+          "kind": "window",
+          "source": "estimated"
+        },
+        {
+          "id": "rear-window--1",
+          "u": -2.05,
+          "width": 0.92,
+          "height": 1.05,
+          "sill": 0.95,
+          "kind": "window"
+        },
+        {
+          "id": "rear-window-1",
+          "u": 2.05,
+          "width": 0.92,
+          "height": 1.05,
+          "sill": 0.95,
+          "kind": "window"
+        }
+      ]
+    },
+    {
+      "axis": "z",
+      "c": -3.11,
+      "a": -5.9,
+      "b": 5.9,
+      "holes": [
+        {
+          "id": "side--1-0",
+          "u": -2.85,
+          "width": 0.92,
+          "height": 1.05,
+          "sill": 0.95,
+          "kind": "window",
+          "source": "window count/room relation follows source; centre position estimated"
+        },
+        {
+          "id": "side--1-1",
+          "u": 2.85,
+          "width": 0.92,
+          "height": 1.05,
+          "sill": 0.95,
+          "kind": "window",
+          "source": "window count/room relation follows source; centre position estimated"
+        }
+      ]
+    },
+    {
+      "axis": "z",
+      "c": 3.11,
+      "a": -5.9,
+      "b": 5.9,
+      "holes": [
+        {
+          "id": "side-1-0",
+          "u": -2.95,
+          "width": 0.92,
+          "height": 1.05,
+          "sill": 0.95,
+          "kind": "window",
+          "source": "window count/room relation follows source; centre position estimated"
+        },
+        {
+          "id": "side-1-1",
+          "u": 2.95,
+          "width": 0.92,
+          "height": 1.05,
+          "sill": 0.95,
+          "kind": "window",
+          "source": "window count/room relation follows source; centre position estimated"
+        }
+      ]
+    }
+  ],
+  "sourceConflicts": [
+    {
+      "id": "plans",
+      "limits": "As posições interiores são proporcionais aproximadas; não há cozinha nem altura cotada."
+    },
+    {
+      "id": "catalogue",
+      "limits": "Amostras raster até 480 × 300 px. Não há RAL/NCS, escala de textura ou preço total da casa."
+    },
+    {
+      "id": "expansion",
+      "limits": "Não define pivôs exactos, alturas, folgas, bloqueios ou transporte das divisórias."
+    },
+    {
+      "id": "frame",
+      "limits": "Perfis, fixações e soldaduras não cotados."
+    },
+    {
+      "id": "canopy",
+      "limits": "A maquete reproduz forma e apoios com medidas estimadas."
+    }
+  ],
+  "conflicts": [
+    "O terraço do catálogo (p. 13) tem 3 m e estrutura preta. A fotografia de alpendre mostra guarda branca e não indica profundidade. São referências distintas; o preço do terraço não é atribuído ao alpendre da maquete.",
+    "72 m² é a designação comercial. 11,80 × 6,22 = 73,396 m² de rectângulo exterior. A diferença não é corrigida alterando cotas.",
+    "5690 + 5690 = 11380 mm: faltam 420 mm para os 11800 mm totais nas plantas T0/T1/T2/T3 A/T4 A. Não foi atribuída silenciosamente uma espessura a esta diferença.",
+    "4000 + 3900 + 3900 = 11800 mm nas plantas T3 B/T4 B; a cota 210 nas extremidades não é somada novamente ao comprimento exterior.",
+    "As bandas estruturais cotadas não coincidem com os traços de divisórias no desenho raster. Os limites de divisões mantêm o traçado observado como estimativa, não cota exacta.",
+    "As fotografias mostram unidades com vãos, portas laterais e acabamentos distintos. Não provam que todos estes elementos coexistem numa única variante."
+  ],
+  "pending": [
+    "Dimensioned elevations and sections",
+    "Interior clear height, full panel composition, structural sections and connections",
+    "Certified useful-area schedule",
+    "Water/drainage/electrical/foundation drawings",
+    "Actual end-panel stowage, hinges and expansion sequence",
+    "Model-specific optional compatibility and standard equipment package",
+    "Interior paint palette and measured texture scale",
+    "Terrace p13 versus photographed porch applicability"
+  ]
+}

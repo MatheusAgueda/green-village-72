@@ -1,0 +1,12 @@
+{
+  "manifestSha256": "7926c08c552830faa944bcaed3d6ac6386f3600aeee776841d974d376c218b7e",
+  "views": 11,
+  "geometryAndMaterialStateCurrent": true,
+  "currentModelSha256": "3905c7c43a82acf6c7842e2124b95506b57efe248920e0114303a138b95a3497",
+  "sourceDiffReview": "source-diff-review.json",
+  "filesPresent": 33,
+  "native4K": 11,
+  "doorsStateCorrect": true,
+  "captureErrors": 0,
+  "facadeFilesPreserved": 12
+}

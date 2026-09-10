@@ -1,0 +1,1021 @@
+{
+  "status": "PASS",
+  "replaces": "Continuous expansion collision gate. Runtime displays the assembled model for every source-step request; no folded/manufacturer mechanism is asserted.",
+  "rows": [
+    {
+      "layout": "t0",
+      "sourceImage": "assets/layouts/image1.png",
+      "requests": 101,
+      "referenceOnly": true,
+      "maxWorldMatrixDifference": 0,
+      "rearWingWindows": 2,
+      "rearWingWindowsExpected": 2,
+      "perimeter": [
+        {
+          "axis": "x",
+          "c": 5.9,
+          "openings": [
+            {
+              "id": "entry",
+              "u": 0,
+              "width": 1.7,
+              "height": 2.15,
+              "sill": 0
+            },
+            {
+              "id": "front-window--1",
+              "u": -2.05,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95
+            },
+            {
+              "id": "front-window-1",
+              "u": 2.05,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95
+            }
+          ]
+        },
+        {
+          "axis": "x",
+          "c": -5.9,
+          "openings": [
+            {
+              "id": "bath-window",
+              "u": 0,
+              "width": 0.6,
+              "height": 0.5,
+              "sill": 1.7
+            },
+            {
+              "id": "rear-window--1",
+              "u": -2.05,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95
+            },
+            {
+              "id": "rear-window-1",
+              "u": 2.05,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95
+            }
+          ]
+        },
+        {
+          "axis": "z",
+          "c": -3.11,
+          "openings": [
+            {
+              "id": "side--1-0",
+              "u": -2.85,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95
+            },
+            {
+              "id": "side--1-1",
+              "u": 2.85,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95
+            }
+          ]
+        },
+        {
+          "axis": "z",
+          "c": 3.11,
+          "openings": [
+            {
+              "id": "side-1-0",
+              "u": -2.85,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95
+            },
+            {
+              "id": "side-1-1",
+              "u": 2.85,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95
+            }
+          ]
+        }
+      ],
+      "emptyElectricalAndPlumbing": true,
+      "floorLayers": [
+        {
+          "name": "Pavimento SPC",
+          "holes": 0
+        },
+        {
+          "name": "Pavimento SPC",
+          "holes": 0
+        },
+        {
+          "name": "Pavimento SPC",
+          "holes": 0
+        },
+        {
+          "name": "Placa de suporte",
+          "holes": 0
+        },
+        {
+          "name": "Isolamento de piso · ilustrativo",
+          "holes": 0
+        },
+        {
+          "name": "Placa de suporte",
+          "holes": 0
+        },
+        {
+          "name": "Isolamento de piso · ilustrativo",
+          "holes": 0
+        },
+        {
+          "name": "Placa de suporte",
+          "holes": 0
+        },
+        {
+          "name": "Isolamento de piso · ilustrativo",
+          "holes": 0
+        }
+      ],
+      "passageDoorClosedOpenClosed": true
+    },
+    {
+      "layout": "t1",
+      "sourceImage": "assets/layouts/image2.png",
+      "requests": 101,
+      "referenceOnly": true,
+      "maxWorldMatrixDifference": 0,
+      "rearWingWindows": 2,
+      "rearWingWindowsExpected": 2,
+      "perimeter": [
+        {
+          "axis": "x",
+          "c": 5.9,
+          "openings": [
+            {
+              "id": "entry",
+              "u": 0,
+              "width": 1.7,
+              "height": 2.15,
+              "sill": 0
+            },
+            {
+              "id": "front-window--1",
+              "u": -2.05,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95
+            },
+            {
+              "id": "front-window-1",
+              "u": 2.05,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95
+            }
+          ]
+        },
+        {
+          "axis": "x",
+          "c": -5.9,
+          "openings": [
+            {
+              "id": "bath-window",
+              "u": 0,
+              "width": 0.6,
+              "height": 0.5,
+              "sill": 1.7
+            },
+            {
+              "id": "rear-window--1",
+              "u": -2.05,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95
+            },
+            {
+              "id": "rear-window-1",
+              "u": 2.05,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95
+            }
+          ]
+        },
+        {
+          "axis": "z",
+          "c": -3.11,
+          "openings": [
+            {
+              "id": "side--1-0",
+              "u": -2.85,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95
+            },
+            {
+              "id": "side--1-1",
+              "u": 2.85,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95
+            }
+          ]
+        },
+        {
+          "axis": "z",
+          "c": 3.11,
+          "openings": [
+            {
+              "id": "side-1-0",
+              "u": -2.95,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95
+            },
+            {
+              "id": "side-1-1",
+              "u": 3.7,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95
+            }
+          ]
+        }
+      ],
+      "emptyElectricalAndPlumbing": true,
+      "floorLayers": [
+        {
+          "name": "Pavimento SPC",
+          "holes": 0
+        },
+        {
+          "name": "Pavimento SPC",
+          "holes": 0
+        },
+        {
+          "name": "Pavimento SPC",
+          "holes": 0
+        },
+        {
+          "name": "Placa de suporte",
+          "holes": 0
+        },
+        {
+          "name": "Isolamento de piso · ilustrativo",
+          "holes": 0
+        },
+        {
+          "name": "Placa de suporte",
+          "holes": 0
+        },
+        {
+          "name": "Isolamento de piso · ilustrativo",
+          "holes": 0
+        },
+        {
+          "name": "Placa de suporte",
+          "holes": 0
+        },
+        {
+          "name": "Isolamento de piso · ilustrativo",
+          "holes": 0
+        }
+      ],
+      "passageDoorClosedOpenClosed": true
+    },
+    {
+      "layout": "t2",
+      "sourceImage": "assets/layouts/image3.png",
+      "requests": 101,
+      "referenceOnly": true,
+      "maxWorldMatrixDifference": 0,
+      "rearWingWindows": 2,
+      "rearWingWindowsExpected": 2,
+      "perimeter": [
+        {
+          "axis": "x",
+          "c": 5.9,
+          "openings": [
+            {
+              "id": "entry",
+              "u": 0,
+              "width": 1.7,
+              "height": 2.15,
+              "sill": 0
+            },
+            {
+              "id": "front-window--1",
+              "u": -2.05,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95
+            },
+            {
+              "id": "front-window-1",
+              "u": 2.05,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95
+            }
+          ]
+        },
+        {
+          "axis": "x",
+          "c": -5.9,
+          "openings": [
+            {
+              "id": "bath-window",
+              "u": 0,
+              "width": 0.6,
+              "height": 0.5,
+              "sill": 1.7
+            },
+            {
+              "id": "rear-window--1",
+              "u": -2.05,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95
+            },
+            {
+              "id": "rear-window-1",
+              "u": 2.05,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95
+            }
+          ]
+        },
+        {
+          "axis": "z",
+          "c": -3.11,
+          "openings": [
+            {
+              "id": "side--1-0",
+              "u": -2.85,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95
+            },
+            {
+              "id": "side--1-1",
+              "u": 2.85,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95
+            }
+          ]
+        },
+        {
+          "axis": "z",
+          "c": 3.11,
+          "openings": [
+            {
+              "id": "side-1-0",
+              "u": -2.95,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95
+            },
+            {
+              "id": "side-1-1",
+              "u": 2.95,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95
+            }
+          ]
+        }
+      ],
+      "emptyElectricalAndPlumbing": true,
+      "floorLayers": [
+        {
+          "name": "Pavimento SPC",
+          "holes": 0
+        },
+        {
+          "name": "Pavimento SPC",
+          "holes": 0
+        },
+        {
+          "name": "Pavimento SPC",
+          "holes": 0
+        },
+        {
+          "name": "Placa de suporte",
+          "holes": 0
+        },
+        {
+          "name": "Isolamento de piso · ilustrativo",
+          "holes": 0
+        },
+        {
+          "name": "Placa de suporte",
+          "holes": 0
+        },
+        {
+          "name": "Isolamento de piso · ilustrativo",
+          "holes": 0
+        },
+        {
+          "name": "Placa de suporte",
+          "holes": 0
+        },
+        {
+          "name": "Isolamento de piso · ilustrativo",
+          "holes": 0
+        }
+      ],
+      "passageDoorClosedOpenClosed": true
+    },
+    {
+      "layout": "t3-a",
+      "sourceImage": "assets/layouts/image4.png",
+      "requests": 101,
+      "referenceOnly": true,
+      "maxWorldMatrixDifference": 0,
+      "rearWingWindows": 2,
+      "rearWingWindowsExpected": 2,
+      "perimeter": [
+        {
+          "axis": "x",
+          "c": 5.9,
+          "openings": [
+            {
+              "id": "entry",
+              "u": 0,
+              "width": 1.7,
+              "height": 2.15,
+              "sill": 0
+            },
+            {
+              "id": "front-window--1",
+              "u": -2.05,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95
+            },
+            {
+              "id": "front-window-1",
+              "u": 2.05,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95
+            }
+          ]
+        },
+        {
+          "axis": "x",
+          "c": -5.9,
+          "openings": [
+            {
+              "id": "bath-window",
+              "u": 0,
+              "width": 0.6,
+              "height": 0.5,
+              "sill": 1.7
+            },
+            {
+              "id": "rear-window--1",
+              "u": -2.05,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95
+            },
+            {
+              "id": "rear-window-1",
+              "u": 2.05,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95
+            }
+          ]
+        },
+        {
+          "axis": "z",
+          "c": -3.11,
+          "openings": [
+            {
+              "id": "side--1-0",
+              "u": -2.95,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95
+            },
+            {
+              "id": "side--1-1",
+              "u": 3.7,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95
+            }
+          ]
+        },
+        {
+          "axis": "z",
+          "c": 3.11,
+          "openings": [
+            {
+              "id": "side-1-0",
+              "u": -2.95,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95
+            },
+            {
+              "id": "side-1-1",
+              "u": 2.95,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95
+            }
+          ]
+        }
+      ],
+      "emptyElectricalAndPlumbing": true,
+      "floorLayers": [
+        {
+          "name": "Pavimento SPC",
+          "holes": 0
+        },
+        {
+          "name": "Pavimento SPC",
+          "holes": 0
+        },
+        {
+          "name": "Pavimento SPC",
+          "holes": 0
+        },
+        {
+          "name": "Placa de suporte",
+          "holes": 0
+        },
+        {
+          "name": "Isolamento de piso · ilustrativo",
+          "holes": 0
+        },
+        {
+          "name": "Placa de suporte",
+          "holes": 0
+        },
+        {
+          "name": "Isolamento de piso · ilustrativo",
+          "holes": 0
+        },
+        {
+          "name": "Placa de suporte",
+          "holes": 0
+        },
+        {
+          "name": "Isolamento de piso · ilustrativo",
+          "holes": 0
+        }
+      ],
+      "passageDoorClosedOpenClosed": true
+    },
+    {
+      "layout": "t3-b",
+      "sourceImage": "assets/layouts/image5.png",
+      "requests": 101,
+      "referenceOnly": true,
+      "maxWorldMatrixDifference": 0,
+      "rearWingWindows": 0,
+      "rearWingWindowsExpected": 0,
+      "perimeter": [
+        {
+          "axis": "x",
+          "c": 5.9,
+          "openings": [
+            {
+              "id": "entry",
+              "u": 0,
+              "width": 1.7,
+              "height": 2.15,
+              "sill": 0
+            },
+            {
+              "id": "front-window--1",
+              "u": -2.05,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95
+            },
+            {
+              "id": "front-window-1",
+              "u": 2.05,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95
+            }
+          ]
+        },
+        {
+          "axis": "x",
+          "c": -5.9,
+          "openings": [
+            {
+              "id": "bath-window",
+              "u": 0,
+              "width": 0.6,
+              "height": 0.5,
+              "sill": 1.7
+            }
+          ]
+        },
+        {
+          "axis": "z",
+          "c": -3.11,
+          "openings": [
+            {
+              "id": "side--1-0",
+              "u": -3.7,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95
+            },
+            {
+              "id": "side--1-1",
+              "u": 0.05,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95
+            },
+            {
+              "id": "side--1-2",
+              "u": 3.7,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95
+            }
+          ]
+        },
+        {
+          "axis": "z",
+          "c": 3.11,
+          "openings": [
+            {
+              "id": "side-1-0",
+              "u": -3.9353,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95
+            },
+            {
+              "id": "side-1-1",
+              "u": 0.0649000000000004,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95
+            },
+            {
+              "id": "side-1-2",
+              "u": 4.0002,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95
+            }
+          ]
+        }
+      ],
+      "emptyElectricalAndPlumbing": true,
+      "floorLayers": [
+        {
+          "name": "Pavimento SPC",
+          "holes": 0
+        },
+        {
+          "name": "Pavimento SPC",
+          "holes": 0
+        },
+        {
+          "name": "Pavimento SPC",
+          "holes": 0
+        },
+        {
+          "name": "Placa de suporte",
+          "holes": 0
+        },
+        {
+          "name": "Isolamento de piso · ilustrativo",
+          "holes": 0
+        },
+        {
+          "name": "Placa de suporte",
+          "holes": 0
+        },
+        {
+          "name": "Isolamento de piso · ilustrativo",
+          "holes": 0
+        },
+        {
+          "name": "Placa de suporte",
+          "holes": 0
+        },
+        {
+          "name": "Isolamento de piso · ilustrativo",
+          "holes": 0
+        }
+      ],
+      "passageDoorClosedOpenClosed": true
+    },
+    {
+      "layout": "t4-a",
+      "sourceImage": "assets/layouts/image6.png",
+      "requests": 101,
+      "referenceOnly": true,
+      "maxWorldMatrixDifference": 0,
+      "rearWingWindows": 2,
+      "rearWingWindowsExpected": 2,
+      "perimeter": [
+        {
+          "axis": "x",
+          "c": 5.9,
+          "openings": [
+            {
+              "id": "entry",
+              "u": 0,
+              "width": 1.7,
+              "height": 2.15,
+              "sill": 0
+            },
+            {
+              "id": "front-window--1",
+              "u": -2.05,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95
+            },
+            {
+              "id": "front-window-1",
+              "u": 2.05,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95
+            }
+          ]
+        },
+        {
+          "axis": "x",
+          "c": -5.9,
+          "openings": [
+            {
+              "id": "bath-window",
+              "u": 0,
+              "width": 0.6,
+              "height": 0.5,
+              "sill": 1.7
+            },
+            {
+              "id": "rear-window--1",
+              "u": -2.05,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95
+            },
+            {
+              "id": "rear-window-1",
+              "u": 2.05,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95
+            }
+          ]
+        },
+        {
+          "axis": "z",
+          "c": -3.11,
+          "openings": [
+            {
+              "id": "side--1-0",
+              "u": -2.95,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95
+            },
+            {
+              "id": "side--1-1",
+              "u": 2.95,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95
+            }
+          ]
+        },
+        {
+          "axis": "z",
+          "c": 3.11,
+          "openings": [
+            {
+              "id": "side-1-0",
+              "u": -2.95,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95
+            },
+            {
+              "id": "side-1-1",
+              "u": 2.95,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95
+            }
+          ]
+        }
+      ],
+      "emptyElectricalAndPlumbing": true,
+      "floorLayers": [
+        {
+          "name": "Pavimento SPC",
+          "holes": 0
+        },
+        {
+          "name": "Pavimento SPC",
+          "holes": 0
+        },
+        {
+          "name": "Pavimento SPC",
+          "holes": 0
+        },
+        {
+          "name": "Placa de suporte",
+          "holes": 0
+        },
+        {
+          "name": "Isolamento de piso · ilustrativo",
+          "holes": 0
+        },
+        {
+          "name": "Placa de suporte",
+          "holes": 0
+        },
+        {
+          "name": "Isolamento de piso · ilustrativo",
+          "holes": 0
+        },
+        {
+          "name": "Placa de suporte",
+          "holes": 0
+        },
+        {
+          "name": "Isolamento de piso · ilustrativo",
+          "holes": 0
+        }
+      ],
+      "passageDoorClosedOpenClosed": true
+    },
+    {
+      "layout": "t4-b",
+      "sourceImage": "assets/layouts/image7.png",
+      "requests": 101,
+      "referenceOnly": true,
+      "maxWorldMatrixDifference": 0,
+      "rearWingWindows": 0,
+      "rearWingWindowsExpected": 0,
+      "perimeter": [
+        {
+          "axis": "x",
+          "c": 5.9,
+          "openings": [
+            {
+              "id": "entry",
+              "u": 0,
+              "width": 1.7,
+              "height": 2.15,
+              "sill": 0
+            },
+            {
+              "id": "front-window--1",
+              "u": -2.05,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95
+            },
+            {
+              "id": "front-window-1",
+              "u": 2.05,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95
+            }
+          ]
+        },
+        {
+          "axis": "x",
+          "c": -5.9,
+          "openings": [
+            {
+              "id": "bath-window",
+              "u": 0,
+              "width": 0.6,
+              "height": 0.5,
+              "sill": 1.7
+            }
+          ]
+        },
+        {
+          "axis": "z",
+          "c": -3.11,
+          "openings": [
+            {
+              "id": "side--1-0",
+              "u": -3.9353,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95
+            },
+            {
+              "id": "side--1-1",
+              "u": 0.05,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95
+            },
+            {
+              "id": "side--1-2",
+              "u": 3.7,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95
+            }
+          ]
+        },
+        {
+          "axis": "z",
+          "c": 3.11,
+          "openings": [
+            {
+              "id": "side-1-0",
+              "u": -3.9353,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95
+            },
+            {
+              "id": "side-1-1",
+              "u": 0.0649000000000004,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95
+            },
+            {
+              "id": "side-1-2",
+              "u": 4.0002,
+              "width": 0.92,
+              "height": 1.05,
+              "sill": 0.95
+            }
+          ]
+        }
+      ],
+      "emptyElectricalAndPlumbing": true,
+      "floorLayers": [
+        {
+          "name": "Pavimento SPC",
+          "holes": 0
+        },
+        {
+          "name": "Pavimento SPC",
+          "holes": 0
+        },
+        {
+          "name": "Pavimento SPC",
+          "holes": 0
+        },
+        {
+          "name": "Placa de suporte",
+          "holes": 0
+        },
+        {
+          "name": "Isolamento de piso · ilustrativo",
+          "holes": 0
+        },
+        {
+          "name": "Placa de suporte",
+          "holes": 0
+        },
+        {
+          "name": "Isolamento de piso · ilustrativo",
+          "holes": 0
+        },
+        {
+          "name": "Placa de suporte",
+          "holes": 0
+        },
+        {
+          "name": "Isolamento de piso · ilustrativo",
+          "holes": 0
+        }
+      ],
+      "passageDoorClosedOpenClosed": true
+    }
+  ]
+}

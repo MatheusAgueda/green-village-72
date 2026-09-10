@@ -1,4 +1,7 @@
 import assert from 'node:assert/strict';
+import {createHistory,shareConfiguration,readSharedConfiguration,migrateStoredConfiguration,sourceLedger,quoteLink} from './dist/client-tools.js';
+import {createLayerController,LAYERS} from './dist/model-layers.js';
+import {navigationSegments,canWalk,moveInside} from './dist/walkthrough.js';
 import {createHash} from 'node:crypto';
 import {readFileSync,existsSync,readdirSync,statSync} from 'node:fs';
 import path from 'node:path';
@@ -32,7 +35,7 @@ check('independent workbook dimensions: 11800 / 6220 / 2010+2200+2010 / windows 
 check('seven original room counts, door end relationships and window counts',()=>{
  assert.deepEqual(DATA.layouts.map(x=>x.id),Object.keys(source));
  for(const [id,ref]of Object.entries(source)){const p=getPlan({...DEFAULT_CONFIG,layout:id});assert.equal(p.bedrooms,ref.bedrooms);const rooms=p.rooms.filter(x=>x.kind==='bedroom');assert.equal(rooms.length,ref.bedrooms);rooms.forEach((r,i)=>{const d=p.walls.find(w=>w.id===r.id+'-side').door;assert.equal(d.u<(r.outline.z0+r.outline.z1)/2?'start':'end',ref.doors[i],`${id} room ${i}`);});
- const side=p.perimeter.filter(w=>w.axis==='z');assert.deepEqual(side.map(w=>w.holes.length),ref.side,id);const rear=p.perimeter.find(w=>w.axis==='x'&&w.c<0);assert.equal(rear.holes.filter(w=>w.width===.92).length,2,id);
+ const side=p.perimeter.filter(w=>w.axis==='z');assert.deepEqual(side.map(w=>w.holes.length),ref.side,id);const rear=p.perimeter.find(w=>w.axis==='x'&&w.c<0);assert.equal(rear.holes.filter(w=>w.width===.92).length,id.endsWith('-b')?0:2,id);
  for(const r of p.rooms)assert.ok(r.area>0&&r.clear.x0>=-3.11&&r.clear.x1<=3.11&&r.clear.z0>=-5.9&&r.clear.z1<=5.9);
  }
 });
@@ -50,7 +53,7 @@ check('incompatible choices fail explicitly without mutating current state',()=>
  const before={...DEFAULT_CONFIG};assert.throws(()=>validateConfiguration({...before,layout:'t4-a',kitchen:'l'}),/T4 A/);assert.throws(()=>validateConfiguration({...before,layout:'t3-a',kitchen:'island'}),/ilha/);assert.deepEqual(before,DEFAULT_CONFIG);
 });
 check('configuration roundtrip preserves choices; rejects corrupt, unknown and incomplete payloads',()=>{
- const s=validateConfiguration({...DEFAULT_CONFIG,layout:'t3-b',kitchen:'l',bathroom:'mirrored',roof:true,porch:true,interior:'#ba8970',interiorName:'Terracota',floorId:'floor-spc-kx8006'});assert.deepEqual(decodeConfiguration(encodeConfiguration(s)),s);for(const text of ['{','null','[]','{}',JSON.stringify({...s,floorId:'missing'}),JSON.stringify({...s,roof:'yes'}),JSON.stringify({...s,interior:'javascript:test'}),'x'.repeat(100001)])assert.throws(()=>decodeConfiguration(text));const missing={...s};delete missing.floorId;assert.throws(()=>validateConfiguration(missing),/Falta/);assert.equal(summaryRows(s).find(([k])=>k==='Planta')[1],DATA.layouts.find(x=>x.id==='t3-b').label);
+ const s=validateConfiguration({...DEFAULT_CONFIG,layout:'t3-b',kitchen:'l',bathroom:'mirrored',roof:true,porch:true,floorId:'floor-spc-kx8006'});assert.deepEqual(decodeConfiguration(encodeConfiguration(s)),s);for(const text of ['{','null','[]','{}',JSON.stringify({...s,floorId:'missing'}),JSON.stringify({...s,roof:'yes'}),JSON.stringify({...s,interior:'javascript:test'}),'x'.repeat(100001)])assert.throws(()=>decodeConfiguration(text));const missing={...s};delete missing.floorId;assert.throws(()=>validateConfiguration(missing),/Falta/);assert.equal(summaryRows(s).find(([k])=>k==='Planta')[1],DATA.layouts.find(x=>x.id==='t3-b').label);
 });
 check('71 material IDs map to original/crop assets and valid render metadata',()=>{
  assert.equal(MATERIALS.length,71);assert.equal(new Set(MATERIALS.map(x=>x.id)).size,71);assert.deepEqual(new Set(MATERIALS.map(x=>x.id)),new Set(SWATCHES.map(x=>x.id)));
@@ -78,15 +81,15 @@ check('metre UVs preserve physical scale across different mesh fragments',()=>{
 check('all seven geometry outputs are finite and preserve actual structural envelope',()=>{
  for(const layout of Object.keys(source)){const h=makeHouse({...DEFAULT_CONFIG,layout});h.root.updateMatrixWorld(true);h.root.traverse(o=>{assert.ok(o.matrixWorld.elements.every(Number.isFinite),o.name);if(o.isMesh)for(const a of Object.values(o.geometry.attributes))assert.ok(a.array.every(Number.isFinite),o.name);});const box=new THREE.Box3().setFromObject(h.groups.structure);close(box.max.x-box.min.x,6.22,1e-5);close(box.max.z-box.min.z,11.8,1e-5);assert.equal(h.plan.rooms.filter(r=>r.kind==='bedroom').length,source[layout].bedrooms);h.dispose();}
 });
-check('interior cut removes every high furnishing material while retaining electrical schematic',()=>{
- const h=makeHouse({...DEFAULT_CONFIG,view:'interior',roof:true,porch:true});assert.equal(h.groups.roof.visible,false);assert.equal(h.groups.cover.visible,false);for(const k of ['cabinet','metal','white','inner','steel'])assert.equal(h.materials[k].clippingPlanes.length,1,k);h.setView('electrical');assert.equal(h.materials.electric.clippingPlanes.length,0);assert.equal(h.groups.electrical.visible,true);assert.equal(h.groups.plumbing.visible,false);h.setView('exterior');assert.equal(h.groups.cover.visible,true);h.dispose();
+check('interior cut applies to furnishings; undocumented technical layers contain no geometry',()=>{
+ const h=makeHouse({...DEFAULT_CONFIG,view:'interior',roof:true,porch:true});assert.equal(h.groups.roof.visible,false);assert.equal(h.groups.cover.visible,false);for(const k of ['cabinet','metal','white','inner','steel'])assert.equal(h.materials[k].clippingPlanes.length,1,k);h.setView('electrical');assert.equal(h.groups.electrical.children.length,0);assert.equal(h.groups.plumbing.children.length,0);assert.equal(h.groups.electrical.visible,true);assert.equal(h.groups.plumbing.visible,false);h.setView('exterior');assert.equal(h.groups.cover.visible,true);h.dispose();
 });
-check('complete rigid expansion, illustrative folded pose and stable visibility across 101 positions',()=>{
+check('source reference phase selection keeps the completed house rigid across 101 positions',()=>{
  assert.equal(expansionState(-1).floor,0);assert.equal(expansionState(-1).roof,0);assert.equal(expansionState(1).floor,1);assert.equal(expansionState(1).roof,1);assert.equal(expansionState(1).wall,1);assert.equal(expansionState(1).ends,1);assert.ok(expansionState(.5).uncertain);
  const h=makeHouse({...DEFAULT_CONFIG,view:'expansion',roof:true,porch:true});let lastWall=0,lastEnds=0;for(let i=0;i<=100;i++){const e=h.updateExpansion(i/100);assert.ok(e.wall>=lastWall&&e.ends>=lastEnds);lastWall=e.wall;lastEnds=e.ends;h.root.updateMatrixWorld(true);for(const a of h.sideAssemblies){close(a.pivot.matrixWorld.determinant(),1);assert.deepEqual(a.pivot.scale.toArray(),[1,1,1]);}for(const a of h.endAssemblies){close(a.g.matrixWorld.determinant(),1);assert.equal(a.g.visible,true);}assert.equal(h.groups.furniture.visible,false);assert.equal(h.groups.porch.visible,false);assert.equal(h.groups.cover.visible,false);}
  for(const a of h.sideAssemblies)close(a.pivot.rotation.z,0);for(const a of h.endAssemblies){close(a.pivot.rotation.y,0);close(a.pivot.position.z,a.front*DIM.length/2);}for(const a of [...h.floorAssemblies,...h.roofAssemblies])for(const p of a.pivots)close(p.rotation.z,0);h.setView('exterior');assert.equal(h.groups.furniture.visible,true);h.dispose();
 });
-check('R4 folded assemblies move rigidly, mandatory surfaces remain visible and full opening matches the house',()=>{
+check('R8 source-reference mode preserves the complete house geometry and returns to the selected visibility',()=>{
  const h=makeHouse({...DEFAULT_CONFIG,view:'expansion',wallsVisible:false,roofVisible:false});
  assert.equal(h.groups.shell.visible,true);assert.equal(h.groups.roof.visible,true);assert.ok(h.sideAssemblies.every(a=>a.pivot.visible));
  const meshes=[];h.root.traverse(o=>{if(o.isMesh)meshes.push(o);});const before=new Map();h.updateExpansion(1);h.root.updateMatrixWorld(true);for(const m of meshes)before.set(m,m.matrixWorld.clone());
@@ -167,13 +170,35 @@ check('R7 commercial summaries retain selected references and omit inactive kitc
  }
  const state={...DEFAULT_CONFIG,interiorName:'<img src=x onerror=alert(1)>'};assert.ok(!summaryMarkup(state).includes('<img src=x'));
 });
-check('R7 gallery applies valid configurations with real native 4K images and three categories',()=>{
- const manifest=JSON.parse(readFileSync('dist/assets/presentation-r7/manifest.json','utf8'));assert.equal(manifest.items.length,8);assert.equal(new Set(manifest.items.map(i=>i.id)).size,8);
+check('R8 gallery has eleven matching native 4K views without undocumented expansion',()=>{
+ const manifest=JSON.parse(readFileSync('dist/assets/presentation-r8/manifest.json','utf8'));assert.equal(manifest.items.length,11);assert.equal(new Set(manifest.items.map(i=>i.id)).size,11);
  assert.deepEqual([...new Set(manifest.items.map(i=>i.category))].sort(),['construction','exterior','interior']);
  function dimensions(bytes){let at=2;while(at<bytes.length){if(bytes[at]!==255){at++;continue;}const marker=bytes[at+1],length=bytes.readUInt16BE(at+2);if([192,193,194].includes(marker))return [bytes.readUInt16BE(at+7),bytes.readUInt16BE(at+5)];at+=2+length;}throw new Error('JPEG dimensions not found');}
- for(const item of manifest.items){validateConfiguration(item.configuration);assert.ok(['exterior','interior','structure','expansion'].includes(item.view));for(const field of ['image','thumbnail'])assert.ok(existsSync('dist/'+item[field]));assert.deepEqual(dimensions(readFileSync('dist/'+item.image)),[3840,2160]);assert.deepEqual(dimensions(readFileSync('dist/'+item.thumbnail)),[960,540]);if(item.room)assert.ok(['kitchen','bathroom'].includes(item.room));}
+ for(const item of manifest.items){validateConfiguration(item.configuration);assert.ok(['exterior','interior','structure'].includes(item.view));for(const field of ['image','thumbnail'])assert.ok(existsSync('dist/'+item[field]));assert.deepEqual(dimensions(readFileSync('dist/'+item.image)),[3840,2160]);assert.deepEqual(dimensions(readFileSync('dist/'+item.thumbnail)),[960,540]);if(item.room)assert.ok(['kitchen','bathroom'].includes(item.room));}
 });
 check('distributed first-party text contains no machine paths or credentials',()=>{
  function scan(dir){for(const f of readdirSync(dir)){const p=path.join(dir,f);if(statSync(p).isDirectory())scan(p);else if(/\.(js|html|json|css)$/.test(f)&&!p.includes('vendor')){const s=readFileSync(p,'utf8');assert.ok(!s.includes('/Users/'),p);assert.ok(!s.includes('API_KEY'),p);}}}scan('dist');
+});
+check('R8 reference stages never interpolate undocumented geometry or detach windows',()=>{
+ for(const layout of Object.keys(source)){const h=makeHouse({...DEFAULT_CONFIG,layout,view:'expansion',expansion:1});h.root.updateMatrixWorld(true);const poses=new Map();h.root.traverse(o=>{if(o.isMesh)poses.set(o,o.matrixWorld.toArray());});for(const p of [0,.3333,.6667,1,0,1]){assert.equal(h.updateExpansion(p).referenceOnly,true);h.root.updateMatrixWorld(true);for(const [o,matrix]of poses)assert.deepEqual(o.matrixWorld.toArray(),matrix);}assert.equal(h.groups.plumbing.children.length,0);assert.equal(h.groups.electrical.children.length,0);h.dispose();}
+ const html=readFileSync('dist/index.html','utf8');assert.equal(html.includes('id="play-expansion"'),false);assert.equal(html.includes('src="assets/expansion-v4.mp4"'),false);assert.equal(html.includes('type="color"'),false);
+});
+check('R8 catalogue validation excludes undocumented colours and migrates legacy locally without losing plans',()=>{
+ assert.throws(()=>validateConfiguration({...DEFAULT_CONFIG,floorId:null}));assert.throws(()=>validateConfiguration({...DEFAULT_CONFIG,exteriorId:null}));assert.throws(()=>validateConfiguration({...DEFAULT_CONFIG,interior:'#123456'}));
+ const old={...DEFAULT_CONFIG,layout:'t4-b',floorId:null,interior:'#123456'},m=migrateStoredConfiguration(JSON.stringify(old));assert.equal(m.configuration.layout,'t4-b');assert.equal(m.configuration.floorId,DEFAULT_CONFIG.floorId);assert.deepEqual(m.changes,['floor','interior']);
+});
+check('R8 undo redo branch and share links preserve validated states',()=>{
+ const h=createHistory(DEFAULT_CONFIG),b={...DEFAULT_CONFIG,roof:true},c={...b,porch:true};h.push(b);h.push(c);assert.equal(h.canUndo,true);assert.deepEqual(h.undo(),b);assert.deepEqual(h.redo(),c);h.undo();h.push({...b,layout:'t1'});assert.equal(h.canRedo,false);
+ const shared=shareConfiguration(c,'https://example.test/path/#old');assert.deepEqual(readSharedConfiguration(new URL(shared).hash),c);assert.throws(()=>readSharedConfiguration('#config=%%%'));assert.throws(()=>readSharedConfiguration('#config='+btoa(JSON.stringify({...c,exteriorId:null})).replace(/=+$/,'')));assert.ok(quoteLink(c).includes('body='));
+ const ledger=sourceLedger(c);assert.equal(ledger.dimensions.find(x=>x.id==='length').numericMatch,true);assert.equal(ledger.dimensions.find(x=>x.id==='height').provided,null);assert.equal(ledger.dimensions.find(x=>x.id==='height').modelled,2.55);assert.equal(ledger.dimensions.find(x=>x.id==='catalogueTerraceDepth').modelled,null);
+});
+check('R8 layer isolation and opacity are independent, reversible and preserve materials',()=>{
+ const h=makeHouse({...DEFAULT_CONFIG,roof:true,porch:true}),l=createLayerController(h),settings=Object.fromEntries(LAYERS.map(([id])=>[id,{visible:true,opacity:1}]));
+ for(const [id]of LAYERS){l.apply({...settings,isolate:id});assert.ok(l.entries.filter(e=>e.object.visible).every(e=>e.layer===id));assert.ok(l.entries.some(e=>e.layer===id),id+' classified');}
+ l.apply({...settings,exterior:{visible:true,opacity:.35}});for(const e of l.entries){if(e.layer==='exterior'){close(e.object.material.opacity,.35);assert.notEqual(e.object.material,e.material);assert.equal(e.object.material.color.getHex(),e.material.color.getHex());}else assert.equal(e.object.material,e.material);}
+ l.dispose();for(const e of l.entries)assert.equal(e.object.material,e.material);h.dispose();
+});
+check('R8 interior movement cannot cross envelope or partitions at high movement steps',()=>{
+ for(const layout of Object.keys(source)){const p=getPlan({...DEFAULT_CONFIG,layout}),segments=navigationSegments(p,true);assert.ok(canWalk(p,segments,0,4.9));let position={x:0,z:4.9};for(const [dx,dz]of [[100,0],[-100,0],[0,-100],[0,100]]){position=moveInside(p,segments,position,dx,dz);assert.ok(canWalk(p,segments,position.x,position.z),layout);assert.ok(Math.abs(position.x)<3.01&&Math.abs(position.z)<5.8);}}
 });
 console.log(`${count} scoped regression checks passed${core?' (media/evidence integration pending)':''}.`);

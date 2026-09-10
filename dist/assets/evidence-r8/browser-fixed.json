@@ -1,0 +1,250 @@
+{
+  "started": "2026-09-10T22:22:14.222Z",
+  "checks": [
+    {
+      "name": "AB-persists-and-captureA",
+      "status": "PASS",
+      "result": {
+        "A": "floor-spc-kx7005",
+        "B": "floor-spc-kx7008",
+        "text": "Opção A · GV72-8401B477\nT2\nOpção B · GV72-8401B477\nT2\nEscolha\tOpção A\tOpção B\nModelo\tExpandível 72 · 40 pés\tExpandível 72 · 40 pés\nPlanta\tT2\tT2\nExterior\tBranco Glacial\tBranco Glacial\nParedes interiores\tBranco natural · aparência de referência, cor por confirmar\tBranco natural · aparência de referência, cor por confirmar\nPavimento SPC\tKX7008\tKX7008\nCozinha\tLinear\tLinear\nReferência de cozinha\t01 · acabamento e elementos aplicados ao 3D\t01 · acabamento e elementos aplicados ao 3D\nCasa de banho\tDistribuição da planta (aproximada)\tDistribuição da planta (aproximada)\nRevestimento do banho\tDa fotografia seleccionada\tDa fotografia seleccionada\nAmbiente de banho\t01 · acabamento e equipamentos no 3D\t01 · acabamento e equipamentos no 3D\nTexturas\tRecorte original, sem tratamento de cor\tRecorte original, sem tratamento de cor\nLuz\tNeutra\tNeutra\nTelhado adicional\tNão seleccionado\tNão seleccionado\nAlpendre\tNão seleccionado\tNão seleccionado"
+      }
+    },
+    {
+      "name": "layer-panel-and-eleven-isolations",
+      "status": "PASS",
+      "result": {
+        "before": {
+          "h": 407,
+          "buffer": 492
+        },
+        "rows": [
+          {
+            "id": "supports",
+            "count": 2
+          },
+          {
+            "id": "structure",
+            "count": 13
+          },
+          {
+            "id": "floor",
+            "count": 6
+          },
+          {
+            "id": "exterior",
+            "count": 34
+          },
+          {
+            "id": "interior",
+            "count": 14
+          },
+          {
+            "id": "insulation",
+            "count": 19
+          },
+          {
+            "id": "roof",
+            "count": 6
+          },
+          {
+            "id": "openings",
+            "count": 50
+          },
+          {
+            "id": "furniture",
+            "count": 86
+          },
+          {
+            "id": "cover",
+            "count": 14
+          },
+          {
+            "id": "porch",
+            "count": 31
+          }
+        ],
+        "opacity": [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        "after": {
+          "height": 407,
+          "buffer": 407,
+          "layers": null
+        }
+      }
+    },
+    {
+      "name": "facades-top-and-resize",
+      "status": "PASS",
+      "result": [
+        {
+          "name": "front",
+          "type": "OrthographicCamera",
+          "position": [
+            0,
+            1.550000000000003,
+            40.975
+          ],
+          "direction": [
+            0,
+            -6.106226635438361e-17,
+            -1
+          ]
+        },
+        {
+          "name": "back",
+          "type": "OrthographicCamera",
+          "position": [
+            4.898587196589413e-15,
+            1.550000000000003,
+            -39.025
+          ],
+          "direction": [
+            -1.2246467991473532e-16,
+            -6.106226635438361e-17,
+            1
+          ]
+        },
+        {
+          "name": "left",
+          "type": "OrthographicCamera",
+          "position": [
+            -40,
+            1.550000000000003,
+            0.9750000000000025
+          ],
+          "direction": [
+            1,
+            -6.106226635438361e-17,
+            -2.220446049250313e-16
+          ]
+        },
+        {
+          "name": "right",
+          "type": "OrthographicCamera",
+          "position": [
+            40,
+            1.550000000000003,
+            0.9750000000000025
+          ],
+          "direction": [
+            -1,
+            -6.106226635438361e-17,
+            -2.220446049250313e-16
+          ]
+        },
+        {
+          "name": "top",
+          "type": "OrthographicCamera",
+          "position": [
+            0,
+            41.09499999998,
+            1.1150400017779722
+          ],
+          "direction": [
+            0,
+            -0.9999999999995,
+            -1.0000444490287919e-06
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mobile-walk-touch-and-exit",
+      "status": "PASS",
+      "result": {
+        "before": [
+          0,
+          1.6239979528496868,
+          5.079865844625873
+        ],
+        "after": [
+          0,
+          1.6,
+          3.8432458446258724
+        ],
+        "picker": "walk"
+      }
+    },
+    {
+      "name": "retired-simulation-and-responsive",
+      "status": "PASS",
+      "result": {
+        "cards": 7,
+        "widths": [
+          {
+            "width": 375,
+            "scroll": 375,
+            "canvas": 261.625
+          },
+          {
+            "width": 768,
+            "scroll": 768,
+            "canvas": 355
+          },
+          {
+            "width": 1440,
+            "scroll": 1440,
+            "canvas": 368.359375
+          }
+        ]
+      }
+    }
+  ],
+  "logs": [],
+  "hashes": {
+    "app.js": "e5bf36fb0a7da6b7d68b07baed89c680352b801bc08f24007d795fcb0992765f",
+    "stage.js": "5cbed48cc525ebf7a7e2c8966f00b8d7331fd920ea8e21580b2384c866ca4710",
+    "studio-r8.css": "20191f5073bbee426fb46893a21a8c74aedaf95f1273de4a27531975538353cc",
+    "client-tools.js": "518dab48aa5735a7662514569273c04316cc2f938cffebb5113124a0ae79cf41",
+    "model-layers.js": "ef8fe6886a978ad7d7f89188652af28091b01e3c6ce454a1e61bfab23f2210c4",
+    "walkthrough.js": "6b714de4b61227eb9ea540429db4fa617ed66b3974ccde9b200b16f020026484",
+    "specification.js": "7261cea836682a66027b343df171b09ced64d2a4d5c5b2c13fc0eeffdd865f99",
+    "model.js": "3905c7c43a82acf6c7842e2124b95506b57efe248920e0114303a138b95a3497",
+    "index.html": "21a6432788add84b2582a1706f698a9eab9c41a76a10be8637c61913d254fd93"
+  },
+  "completed": "2026-09-10T22:22:27.174Z",
+  "hashesAtEnd": {
+    "app.js": "611eeb954420447a10b255b824735b20f1e48ec0d69ff88b902001e9ae569c36",
+    "stage.js": "5cbed48cc525ebf7a7e2c8966f00b8d7331fd920ea8e21580b2384c866ca4710",
+    "studio-r8.css": "c37a77d12b0e1de6c0f20f1a6d0dc6b5aa9cb696b52218a6a3ac3e849a212141",
+    "client-tools.js": "518dab48aa5735a7662514569273c04316cc2f938cffebb5113124a0ae79cf41",
+    "model-layers.js": "ef8fe6886a978ad7d7f89188652af28091b01e3c6ce454a1e61bfab23f2210c4",
+    "walkthrough.js": "6b714de4b61227eb9ea540429db4fa617ed66b3974ccde9b200b16f020026484",
+    "specification.js": "7261cea836682a66027b343df171b09ced64d2a4d5c5b2c13fc0eeffdd865f99",
+    "model.js": "3905c7c43a82acf6c7842e2124b95506b57efe248920e0114303a138b95a3497",
+    "index.html": "6eb28adc56d7bca5be5aa9151e8cbdf103042c9fc5b75ec12c181b939f7951cc"
+  },
+  "sourcesUnchanged": false
+}

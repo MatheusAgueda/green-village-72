@@ -1,0 +1,305 @@
+{
+  "revision": "GV72-R8-2026-09-10",
+  "status": "PASS",
+  "completedAt": "2026-09-10T22:35:17.897819+00:00",
+  "scope": "Auditoria independente em contexto novo do navegador local. Apenas leitura do produto; interacções, downloads e falhas controladas.",
+  "environment": {
+    "browser": "Google Chrome 153.0.8010.36",
+    "mode": "headless",
+    "platform": "macOS / Apple M4",
+    "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4, Unspecified Version)",
+    "viewports": [
+      {
+        "width": 375,
+        "height": 844
+      },
+      {
+        "width": 768,
+        "height": 1000
+      },
+      {
+        "width": 1440,
+        "height": 1000
+      }
+    ],
+    "touchScope": "Controlos móveis usados por eventos de ponteiro em viewport de 375px; não hardware móvel real."
+  },
+  "checks": [
+    {
+      "name": "Expansão documentada",
+      "status": "PASS",
+      "details": "Quatro etapas originais seleccionáveis; matrizes dos painéis 3D mantêm-se na posição aberta nas quatro etapas. Controlo antigo de reprodução ausente.",
+      "evidence": "flows-initial.json / documented-expansion"
+    },
+    {
+      "name": "Histórico e comparação A/B",
+      "status": "PASS",
+      "details": "Desfazer/refazer repõe pavimento; A e B preservados ao aplicar A e reabrir; capturar A não sobrescreve B.",
+      "evidence": [
+        "fixed-flows.json",
+        "ab-capture-regression.json"
+      ]
+    },
+    {
+      "name": "Camadas",
+      "status": "PASS",
+      "details": "11 isolamentos com meshes da categoria correcta, opacidade 10%, reposição; painel aberto preserva canvas de 407px. Opcional removido cancela isolamento e actualiza controlos.",
+      "evidence": [
+        "fixed-flows.json",
+        "final-flows.json"
+      ]
+    },
+    {
+      "name": "Câmaras ortográficas",
+      "status": "PASS",
+      "details": "Frente, posterior, esquerda, direita e topo verificados como OrthographicCamera, perpendiculares. Resize preserva projecção. Zoom por botão/teclado altera escala; setas regressam a PerspectiveCamera.",
+      "evidence": [
+        "fixed-flows.json",
+        "final-flows.json"
+      ]
+    },
+    {
+      "name": "Passeio interior",
+      "status": "PASS",
+      "details": "Entrada desktop e selector móvel; movimento WASD e botão de avanço; trajecto frontal de 7s respeita obstáculo/bordos observados; saída e Escape param, actualizam Aérea e devolvem foco ao selector móvel.",
+      "evidence": [
+        "exports-camera.json",
+        "fixed-flows.json",
+        "final-flows.json"
+      ]
+    },
+    {
+      "name": "Galeria 4K",
+      "status": "PASS",
+      "items": 11,
+      "details": "11 configurações aplicadas por clique, com planta, materiais, corte, abertura de portas e projecção esperados. 22 JPG/PNG HTTP200; 11 PNG 3840×2160. Não há item ou filme da antiga expansão simulada.",
+      "evidence": "final-flows.json"
+    },
+    {
+      "name": "Identificação de componentes",
+      "status": "PASS",
+      "details": "Activação do inspector e clique real num mesh apresentam nome e nota da camada; fechar e desligar funcionam.",
+      "evidence": "final-flows.json"
+    },
+    {
+      "name": "Catálogo restrito",
+      "status": "PASS",
+      "details": "Interior arbitrário, ID exterior/pavimento nulo e ID desconhecido rejeitados sem alterar escolhas. Sem entrada de cor livre.",
+      "evidence": "contracts.json"
+    },
+    {
+      "name": "Partilha local",
+      "status": "PASS",
+      "details": "Ligação copiada pelo botão e aberta em página nova reproduz a configuração seleccionada. Permissões/autenticação da publicação fora deste ensaio.",
+      "evidence": "flows-initial.json / glb-export-clipboard-share"
+    },
+    {
+      "name": "PNG nativo",
+      "status": "PASS",
+      "details": "Renderizador produziu drawing buffer 3840×2160, ficheiro PNG confirmado pelo cabeçalho; buffer/câmara interactivos repostos. Exportação após recuperação de textura também 3840×2160.",
+      "files": [
+        "current-top-4k.png",
+        "native-4k-after-retry.png"
+      ],
+      "evidence": [
+        "exports-camera.json",
+        "failure-paths.json"
+      ]
+    },
+    {
+      "name": "GLB",
+      "status": "PASS",
+      "details": "Duas exportações repetidas válidas com 230 meshes e 3 imagens PNG embebidas; sem URI externo nem caminhos privados. Leases e memória inalterados.",
+      "bytes": 6247400,
+      "before": {
+        "pending": 0,
+        "backgroundPending": 0,
+        "failures": [],
+        "cachedTextures": 3,
+        "leases": 3
+      },
+      "after": {
+        "pending": 0,
+        "backgroundPending": 0,
+        "failures": [],
+        "cachedTextures": 3,
+        "leases": 3
+      },
+      "rendererMemoryBefore": {
+        "geometries": 231,
+        "textures": 6
+      },
+      "rendererMemoryAfter": {
+        "geometries": 231,
+        "textures": 6
+      },
+      "evidence": "contracts.json"
+    },
+    {
+      "name": "PDF comercial",
+      "status": "PASS",
+      "details": {
+        "status": "PASS",
+        "file": "r8-final-configuration.pdf",
+        "pages": 4,
+        "size": "A4",
+        "bytes": 1125110,
+        "configurationReference": "GV72-48D2530D",
+        "selected": {
+          "layout": "T2",
+          "kitchen": "L / 12",
+          "bathroom": "16",
+          "bathUV": "Amostra 1",
+          "floor": "KX7008",
+          "roof": true,
+          "porch": true,
+          "texture": "source",
+          "lighting": "neutral"
+        },
+        "visualInspection": "Quatro páginas renderizadas e inspeccionadas: imagem 3D coerente com cozinha escolhida, seis amostras, planta e tabela. Sem cortes ou sobreposição de texto observados.",
+        "images": [
+          "pdf-page-1.png",
+          "pdf-page-2.png",
+          "pdf-page-3.png",
+          "pdf-page-4.png"
+        ],
+        "taggedPDF": false
+      },
+      "evidence": "pdf-validation.json"
+    },
+    {
+      "name": "Medidas e fontes",
+      "status": "PASS",
+      "details": {
+        "revision": "GV72-R8-2026-09-10",
+        "layout": "t4-b",
+        "dimensions": 26,
+        "confirmed": 6,
+        "estimated": 16,
+        "missing": 4,
+        "mismatches": [],
+        "hasSources": 5
+      },
+      "evidence": "contracts.json"
+    },
+    {
+      "name": "Falhas de exportação e recuperação",
+      "status": "PASS",
+      "details": "Capacidade 4K simulada 2048 rejeita sem ficheiro e restaura controlos. Textura 503 bloqueia PNG/GLB com aviso, retry recupera. Perda WebGL mostra erro e Tentar novamente restaura estado persistido.",
+      "evidence": "failure-paths.json"
+    },
+    {
+      "name": "Acessibilidade automática dirigida",
+      "status": "PASS",
+      "details": "Zero violações axe nos estados camadas, comparação A/B, resumo e expansão móvel (WCAG2A/AA,2.1AA e best-practice). Teclas de câmara e saída móvel verificadas. Não equivale a certificação completa.",
+      "evidence": [
+        "interaction-review.json",
+        "contracts.json",
+        "final-flows.json"
+      ]
+    },
+    {
+      "name": "Responsive e render em repouso",
+      "status": "PASS",
+      "details": [
+        {
+          "width": 375,
+          "scrollWidth": 375,
+          "canvas": 261.625
+        },
+        {
+          "width": 768,
+          "scrollWidth": 768,
+          "canvas": 355
+        },
+        {
+          "width": 1440,
+          "scrollWidth": 1440,
+          "canvas": 566
+        }
+      ],
+      "idleFrames": 0,
+      "measurementMs": 1000,
+      "evidence": "final-flows.json"
+    }
+  ],
+  "fixedFindings": [
+    {
+      "severity": "P1",
+      "issue": "Abrir as camadas reduzia o canvas a zero e produzia erros de framebuffer.",
+      "resolution": "Altura de painel limitada, canvas preservado e resize protegido.",
+      "retest": "fixed-flows.json"
+    },
+    {
+      "severity": "P2",
+      "issue": "Reabrir comparação após aplicar A sobrescrevia B.",
+      "resolution": "B preservada e capturaA independente.",
+      "retest": "fixed-flows.json"
+    },
+    {
+      "severity": "P2",
+      "issue": "Botões de zoom não ampliavam ortho; setas indicavam perspectiva mantendo ortho.",
+      "resolution": "Zoom ortográfico e conversão real na rotação por teclas.",
+      "retest": "final-flows.json"
+    },
+    {
+      "severity": "P2",
+      "issue": "Saída do passeio móvel deixava selector em walk e foco num botão oculto.",
+      "resolution": "Sincronização para Aérea e foco no selector.",
+      "retest": "final-flows.json"
+    },
+    {
+      "severity": "P2",
+      "issue": "Desfazer cobertura isolada mantinha isolamento indisponível e quase eliminava casa.",
+      "resolution": "Limpeza do isolamento e estado dos controlos após configurar.",
+      "retest": "final-flows.json"
+    },
+    {
+      "severity": "P3",
+      "issue": "Título das camadas saltava hierarquia.",
+      "resolution": "h2; axe zero no estado corrigido.",
+      "retest": "final-flows.json"
+    }
+  ],
+  "openReproducedDefects": [],
+  "consoleAndNetwork": {
+    "normalFinalFlowErrors": 0,
+    "normalFinalFlowWarnings": 0,
+    "normalFinalHTTPFailures": 0,
+    "faultFixtures": {
+      "http503": 2,
+      "unhandledExceptions": 0
+    }
+  },
+  "limits": [
+    "Não foi ensaiado hardware móvel real, Safari/WebKit ou sessão publicada autenticada.",
+    "O percurso interior medido não certifica acessibilidade física nem ausência de colisão em todas as plantas.",
+    "A expansão usa documentos originais e casa aberta: não há mecanismo cinemático de fabrico validado.",
+    "GLB é casa estática completa; não inclui controlos, cortes, dobradiças animadas, luz de apresentação nem shader de juntas.",
+    "Inspecção visual de quatro páginas; PDF não etiquetado, acessibilidade PDF não certificada.",
+    "Medição de render em repouso de 1 s; não é benchmark de FPS sustentado."
+  ],
+  "selectedScreenshots": [
+    "clean-mobile-375.png",
+    "clean-top.png",
+    "clean-back-facade.png",
+    "clean-source-expansion.png",
+    "final-studio-768.png",
+    "final-studio-1440.png",
+    "final-05-cozinha.png",
+    "final-06-casa-de-banho.png",
+    "r8-layers-fixed-1440.png"
+  ],
+  "sources": {
+    "app.js": "62210abbb6afee8b932afd9531366aef6557ac348127881e0d7c7e5a69db8b6c",
+    "stage.js": "bc528ea9fe5dcefb72c5483ba2fd6b08f329e26b8168154c7770fd3b707a96d6",
+    "index.html": "6eb28adc56d7bca5be5aa9151e8cbdf103042c9fc5b75ec12c181b939f7951cc",
+    "studio-r8.css": "c37a77d12b0e1de6c0f20f1a6d0dc6b5aa9cb696b52218a6a3ac3e849a212141",
+    "client-tools.js": "518dab48aa5735a7662514569273c04316cc2f938cffebb5113124a0ae79cf41",
+    "model.js": "3905c7c43a82acf6c7842e2124b95506b57efe248920e0114303a138b95a3497",
+    "configuration.js": "b1fd7d146a01e4d4b8f90ef9b1a45da8645c535de03d17a96fe98471e54ffaef",
+    "assets/presentation-r8/manifest.json": "daddd6edf9f0e915c3e665f26e67157a345fcffdedd4ddfd032328d9643a18a5"
+  },
+  "sourcesStableDuringFinalRun": true,
+  "sourcesStillMatch": true
+}

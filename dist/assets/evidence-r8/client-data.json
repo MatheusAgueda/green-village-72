@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "roundTrips": 56,
+  "malformedRejected": 6,
+  "history": "cap,branch,defensive-copy,undo/redo",
+  "scope": "Pure-data paths executed. GLB and 4K browser rendering reviewed in source only, not executed by this audit."
+}

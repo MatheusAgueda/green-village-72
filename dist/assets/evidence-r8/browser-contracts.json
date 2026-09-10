@@ -1,0 +1,144 @@
+{
+  "checks": [
+    {
+      "name": "catalogue-only-validation",
+      "status": "PASS",
+      "result": {
+        "results": [
+          {
+            "patch": {
+              "interior": "#123456"
+            },
+            "accepted": false
+          },
+          {
+            "patch": {
+              "floorId": null
+            },
+            "accepted": false
+          },
+          {
+            "patch": {
+              "exteriorId": null
+            },
+            "accepted": false
+          },
+          {
+            "patch": {
+              "floorId": "unlisted"
+            },
+            "accepted": false
+          }
+        ],
+        "freeColourInputs": 0,
+        "interior": "Exterior\nInterior\nPiso\nParedes interiores\nBranco de referência\n\nAs fotografias apresentam paredes claras. O catálogo não define uma paleta de tintas interiores: a cor final fica por confirmar na proposta.\n\nO revestimento UV da casa de banho dispõe de oito referências próprias.\n\nEscolher revestimento do banho ↗\nAplicação da textura\nOriginal\nEmendas suavizadas\n\nCor de apresentação sem equivalência RAL/NCS documentada.\n\nConsultar fontes e limitações ↗"
+      }
+    },
+    {
+      "name": "GLB-memory-and-privacy",
+      "status": "PASS",
+      "result": {
+        "before": {
+          "revision": "GV72-R8-2026-09-10",
+          "frames": 5,
+          "materials": {
+            "pending": 0,
+            "backgroundPending": 0,
+            "failures": [],
+            "cachedTextures": 3,
+            "leases": 3
+          },
+          "render": {
+            "projection": "PerspectiveCamera",
+            "walk": false,
+            "calls": 440,
+            "triangles": 116540,
+            "memory": {
+              "geometries": 231,
+              "textures": 6
+            },
+            "camera": [
+              11.426878956597193,
+              10.007965586145815,
+              14.283598695746493
+            ],
+            "target": [
+              0,
+              1.095,
+              0
+            ]
+          }
+        },
+        "after": {
+          "revision": "GV72-R8-2026-09-10",
+          "frames": 7,
+          "materials": {
+            "pending": 0,
+            "backgroundPending": 0,
+            "failures": [],
+            "cachedTextures": 3,
+            "leases": 3
+          },
+          "render": {
+            "projection": "PerspectiveCamera",
+            "walk": false,
+            "calls": 440,
+            "triangles": 116540,
+            "memory": {
+              "geometries": 231,
+              "textures": 6
+            },
+            "camera": [
+              11.426878956597193,
+              10.007965586145815,
+              14.283598695746493
+            ],
+            "target": [
+              0,
+              1.095,
+              0
+            ]
+          }
+        },
+        "downloads": [
+          {
+            "bytes": 6247400,
+            "meshes": 230,
+            "images": 3,
+            "embedded": true,
+            "privatePaths": false
+          },
+          {
+            "bytes": 6247400,
+            "meshes": 230,
+            "images": 3,
+            "embedded": true,
+            "privatePaths": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "source-ledger-current-state",
+      "status": "PASS",
+      "result": {
+        "revision": "GV72-R8-2026-09-10",
+        "layout": "t4-b",
+        "dimensions": 26,
+        "confirmed": 6,
+        "estimated": 16,
+        "missing": 4,
+        "mismatches": [],
+        "hasSources": 5
+      }
+    },
+    {
+      "name": "mobile-source-expansion-accessibility",
+      "status": "PASS",
+      "result": {
+        "violations": []
+      }
+    }
+  ],
+  "logs": []
+}

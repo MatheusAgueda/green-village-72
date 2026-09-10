@@ -1,0 +1,1997 @@
+{
+  "scope": "Actual geometry matrices in 101 requested stages for all7 layouts; layer isolation,100 opacity applications, restore and double-dispose; source rear-window correction; technical route emptiness and all floor shape holes.",
+  "results": [
+    {
+      "layout": "t0",
+      "meshCount": 257,
+      "layerCounts": {
+        "supports": 2,
+        "structure": 13,
+        "floor": 6,
+        "exterior": 34,
+        "interior": 8,
+        "insulation": 19,
+        "roof": 6,
+        "openings": 50,
+        "furniture": 74,
+        "cover": 14,
+        "porch": 31
+      },
+      "staticPoseError": 0,
+      "referenceFlags": true,
+      "noTechnicalMeshes": true,
+      "floorHoles": [
+        {
+          "name": "Pavimento SPC",
+          "holes": 0
+        },
+        {
+          "name": "Pavimento SPC",
+          "holes": 0
+        },
+        {
+          "name": "Pavimento SPC",
+          "holes": 0
+        },
+        {
+          "name": "Placa de suporte",
+          "holes": 0
+        },
+        {
+          "name": "Isolamento de piso · ilustrativo",
+          "holes": 0
+        },
+        {
+          "name": "Placa de suporte",
+          "holes": 0
+        },
+        {
+          "name": "Isolamento de piso · ilustrativo",
+          "holes": 0
+        },
+        {
+          "name": "Placa de suporte",
+          "holes": 0
+        },
+        {
+          "name": "Isolamento de piso · ilustrativo",
+          "holes": 0
+        }
+      ],
+      "rearCount": 2,
+      "rearExpected": 2,
+      "isolations": [
+        {
+          "id": "supports",
+          "visibleCount": 2,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "structure",
+          "visibleCount": 13,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "floor",
+          "visibleCount": 6,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "exterior",
+          "visibleCount": 34,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "interior",
+          "visibleCount": 8,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "insulation",
+          "visibleCount": 19,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "roof",
+          "visibleCount": 6,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "openings",
+          "visibleCount": 50,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "furniture",
+          "visibleCount": 74,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "cover",
+          "visibleCount": 14,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "porch",
+          "visibleCount": 31,
+          "otherLayerVisible": 0
+        }
+      ],
+      "ownedCloneCount": 45,
+      "uniqueLayerMaterialPairs": 45,
+      "mutatedOriginals": 0,
+      "restored": true,
+      "clonesDisposedOnce": true,
+      "doorCyclesMatchPose": true,
+      "frameOwnership": [
+        {
+          "name": "entry · aro",
+          "layer": "openings"
+        },
+        {
+          "name": "entry · aro",
+          "layer": "openings"
+        },
+        {
+          "name": "entry · aro",
+          "layer": "openings"
+        },
+        {
+          "name": "entry · aro",
+          "layer": "openings"
+        },
+        {
+          "name": "entry · montante",
+          "layer": "openings"
+        },
+        {
+          "name": "entry · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "entry · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "entry · soleira",
+          "layer": "openings"
+        },
+        {
+          "name": "bath-window · aro",
+          "layer": "openings"
+        },
+        {
+          "name": "bath-window · aro",
+          "layer": "openings"
+        },
+        {
+          "name": "bath-window · aro",
+          "layer": "openings"
+        },
+        {
+          "name": "bath-window · aro",
+          "layer": "openings"
+        },
+        {
+          "name": "bath-window · montante",
+          "layer": "openings"
+        },
+        {
+          "name": "bath-window · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "bath-window · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "bath-window · soleira",
+          "layer": "openings"
+        },
+        {
+          "name": "Fecho da janela",
+          "layer": "openings"
+        },
+        {
+          "name": "side--1-0 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "side--1-0 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "side--1-1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "side--1-1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "side-1-0 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "side-1-0 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "side-1-1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "side-1-1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "front-window--1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "front-window--1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "front-window--1 · soleira",
+          "layer": "openings"
+        },
+        {
+          "name": "Fecho da janela",
+          "layer": "openings"
+        },
+        {
+          "name": "front-window-1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "front-window-1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "front-window-1 · soleira",
+          "layer": "openings"
+        },
+        {
+          "name": "Fecho da janela",
+          "layer": "openings"
+        },
+        {
+          "name": "rear-window--1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "rear-window--1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "rear-window--1 · soleira",
+          "layer": "openings"
+        },
+        {
+          "name": "Fecho da janela",
+          "layer": "openings"
+        },
+        {
+          "name": "rear-window-1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "rear-window-1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "rear-window-1 · soleira",
+          "layer": "openings"
+        },
+        {
+          "name": "Fecho da janela",
+          "layer": "openings"
+        }
+      ]
+    },
+    {
+      "layout": "t1",
+      "meshCount": 266,
+      "layerCounts": {
+        "supports": 2,
+        "structure": 13,
+        "floor": 6,
+        "exterior": 34,
+        "interior": 11,
+        "insulation": 19,
+        "roof": 6,
+        "openings": 50,
+        "furniture": 80,
+        "cover": 14,
+        "porch": 31
+      },
+      "staticPoseError": 0,
+      "referenceFlags": true,
+      "noTechnicalMeshes": true,
+      "floorHoles": [
+        {
+          "name": "Pavimento SPC",
+          "holes": 0
+        },
+        {
+          "name": "Pavimento SPC",
+          "holes": 0
+        },
+        {
+          "name": "Pavimento SPC",
+          "holes": 0
+        },
+        {
+          "name": "Placa de suporte",
+          "holes": 0
+        },
+        {
+          "name": "Isolamento de piso · ilustrativo",
+          "holes": 0
+        },
+        {
+          "name": "Placa de suporte",
+          "holes": 0
+        },
+        {
+          "name": "Isolamento de piso · ilustrativo",
+          "holes": 0
+        },
+        {
+          "name": "Placa de suporte",
+          "holes": 0
+        },
+        {
+          "name": "Isolamento de piso · ilustrativo",
+          "holes": 0
+        }
+      ],
+      "rearCount": 2,
+      "rearExpected": 2,
+      "isolations": [
+        {
+          "id": "supports",
+          "visibleCount": 2,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "structure",
+          "visibleCount": 13,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "floor",
+          "visibleCount": 6,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "exterior",
+          "visibleCount": 34,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "interior",
+          "visibleCount": 11,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "insulation",
+          "visibleCount": 19,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "roof",
+          "visibleCount": 6,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "openings",
+          "visibleCount": 50,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "furniture",
+          "visibleCount": 80,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "cover",
+          "visibleCount": 14,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "porch",
+          "visibleCount": 31,
+          "otherLayerVisible": 0
+        }
+      ],
+      "ownedCloneCount": 46,
+      "uniqueLayerMaterialPairs": 46,
+      "mutatedOriginals": 0,
+      "restored": true,
+      "clonesDisposedOnce": true,
+      "doorCyclesMatchPose": true,
+      "frameOwnership": [
+        {
+          "name": "entry · aro",
+          "layer": "openings"
+        },
+        {
+          "name": "entry · aro",
+          "layer": "openings"
+        },
+        {
+          "name": "entry · aro",
+          "layer": "openings"
+        },
+        {
+          "name": "entry · aro",
+          "layer": "openings"
+        },
+        {
+          "name": "entry · montante",
+          "layer": "openings"
+        },
+        {
+          "name": "entry · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "entry · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "entry · soleira",
+          "layer": "openings"
+        },
+        {
+          "name": "bath-window · aro",
+          "layer": "openings"
+        },
+        {
+          "name": "bath-window · aro",
+          "layer": "openings"
+        },
+        {
+          "name": "bath-window · aro",
+          "layer": "openings"
+        },
+        {
+          "name": "bath-window · aro",
+          "layer": "openings"
+        },
+        {
+          "name": "bath-window · montante",
+          "layer": "openings"
+        },
+        {
+          "name": "bath-window · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "bath-window · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "bath-window · soleira",
+          "layer": "openings"
+        },
+        {
+          "name": "Fecho da janela",
+          "layer": "openings"
+        },
+        {
+          "name": "side--1-0 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "side--1-0 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "side--1-1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "side--1-1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "side-1-0 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "side-1-0 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "side-1-1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "side-1-1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "front-window--1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "front-window--1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "front-window--1 · soleira",
+          "layer": "openings"
+        },
+        {
+          "name": "Fecho da janela",
+          "layer": "openings"
+        },
+        {
+          "name": "front-window-1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "front-window-1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "front-window-1 · soleira",
+          "layer": "openings"
+        },
+        {
+          "name": "Fecho da janela",
+          "layer": "openings"
+        },
+        {
+          "name": "rear-window--1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "rear-window--1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "rear-window--1 · soleira",
+          "layer": "openings"
+        },
+        {
+          "name": "Fecho da janela",
+          "layer": "openings"
+        },
+        {
+          "name": "rear-window-1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "rear-window-1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "rear-window-1 · soleira",
+          "layer": "openings"
+        },
+        {
+          "name": "Fecho da janela",
+          "layer": "openings"
+        }
+      ]
+    },
+    {
+      "layout": "t2",
+      "meshCount": 275,
+      "layerCounts": {
+        "supports": 2,
+        "structure": 13,
+        "floor": 6,
+        "exterior": 34,
+        "interior": 14,
+        "insulation": 19,
+        "roof": 6,
+        "openings": 50,
+        "furniture": 86,
+        "cover": 14,
+        "porch": 31
+      },
+      "staticPoseError": 0,
+      "referenceFlags": true,
+      "noTechnicalMeshes": true,
+      "floorHoles": [
+        {
+          "name": "Pavimento SPC",
+          "holes": 0
+        },
+        {
+          "name": "Pavimento SPC",
+          "holes": 0
+        },
+        {
+          "name": "Pavimento SPC",
+          "holes": 0
+        },
+        {
+          "name": "Placa de suporte",
+          "holes": 0
+        },
+        {
+          "name": "Isolamento de piso · ilustrativo",
+          "holes": 0
+        },
+        {
+          "name": "Placa de suporte",
+          "holes": 0
+        },
+        {
+          "name": "Isolamento de piso · ilustrativo",
+          "holes": 0
+        },
+        {
+          "name": "Placa de suporte",
+          "holes": 0
+        },
+        {
+          "name": "Isolamento de piso · ilustrativo",
+          "holes": 0
+        }
+      ],
+      "rearCount": 2,
+      "rearExpected": 2,
+      "isolations": [
+        {
+          "id": "supports",
+          "visibleCount": 2,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "structure",
+          "visibleCount": 13,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "floor",
+          "visibleCount": 6,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "exterior",
+          "visibleCount": 34,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "interior",
+          "visibleCount": 14,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "insulation",
+          "visibleCount": 19,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "roof",
+          "visibleCount": 6,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "openings",
+          "visibleCount": 50,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "furniture",
+          "visibleCount": 86,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "cover",
+          "visibleCount": 14,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "porch",
+          "visibleCount": 31,
+          "otherLayerVisible": 0
+        }
+      ],
+      "ownedCloneCount": 46,
+      "uniqueLayerMaterialPairs": 46,
+      "mutatedOriginals": 0,
+      "restored": true,
+      "clonesDisposedOnce": true,
+      "doorCyclesMatchPose": true,
+      "frameOwnership": [
+        {
+          "name": "entry · aro",
+          "layer": "openings"
+        },
+        {
+          "name": "entry · aro",
+          "layer": "openings"
+        },
+        {
+          "name": "entry · aro",
+          "layer": "openings"
+        },
+        {
+          "name": "entry · aro",
+          "layer": "openings"
+        },
+        {
+          "name": "entry · montante",
+          "layer": "openings"
+        },
+        {
+          "name": "entry · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "entry · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "entry · soleira",
+          "layer": "openings"
+        },
+        {
+          "name": "bath-window · aro",
+          "layer": "openings"
+        },
+        {
+          "name": "bath-window · aro",
+          "layer": "openings"
+        },
+        {
+          "name": "bath-window · aro",
+          "layer": "openings"
+        },
+        {
+          "name": "bath-window · aro",
+          "layer": "openings"
+        },
+        {
+          "name": "bath-window · montante",
+          "layer": "openings"
+        },
+        {
+          "name": "bath-window · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "bath-window · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "bath-window · soleira",
+          "layer": "openings"
+        },
+        {
+          "name": "Fecho da janela",
+          "layer": "openings"
+        },
+        {
+          "name": "side--1-0 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "side--1-0 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "side--1-1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "side--1-1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "side-1-0 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "side-1-0 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "side-1-1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "side-1-1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "front-window--1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "front-window--1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "front-window--1 · soleira",
+          "layer": "openings"
+        },
+        {
+          "name": "Fecho da janela",
+          "layer": "openings"
+        },
+        {
+          "name": "front-window-1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "front-window-1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "front-window-1 · soleira",
+          "layer": "openings"
+        },
+        {
+          "name": "Fecho da janela",
+          "layer": "openings"
+        },
+        {
+          "name": "rear-window--1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "rear-window--1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "rear-window--1 · soleira",
+          "layer": "openings"
+        },
+        {
+          "name": "Fecho da janela",
+          "layer": "openings"
+        },
+        {
+          "name": "rear-window-1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "rear-window-1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "rear-window-1 · soleira",
+          "layer": "openings"
+        },
+        {
+          "name": "Fecho da janela",
+          "layer": "openings"
+        }
+      ]
+    },
+    {
+      "layout": "t3-a",
+      "meshCount": 284,
+      "layerCounts": {
+        "supports": 2,
+        "structure": 13,
+        "floor": 6,
+        "exterior": 34,
+        "interior": 17,
+        "insulation": 19,
+        "roof": 6,
+        "openings": 50,
+        "furniture": 92,
+        "cover": 14,
+        "porch": 31
+      },
+      "staticPoseError": 0,
+      "referenceFlags": true,
+      "noTechnicalMeshes": true,
+      "floorHoles": [
+        {
+          "name": "Pavimento SPC",
+          "holes": 0
+        },
+        {
+          "name": "Pavimento SPC",
+          "holes": 0
+        },
+        {
+          "name": "Pavimento SPC",
+          "holes": 0
+        },
+        {
+          "name": "Placa de suporte",
+          "holes": 0
+        },
+        {
+          "name": "Isolamento de piso · ilustrativo",
+          "holes": 0
+        },
+        {
+          "name": "Placa de suporte",
+          "holes": 0
+        },
+        {
+          "name": "Isolamento de piso · ilustrativo",
+          "holes": 0
+        },
+        {
+          "name": "Placa de suporte",
+          "holes": 0
+        },
+        {
+          "name": "Isolamento de piso · ilustrativo",
+          "holes": 0
+        }
+      ],
+      "rearCount": 2,
+      "rearExpected": 2,
+      "isolations": [
+        {
+          "id": "supports",
+          "visibleCount": 2,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "structure",
+          "visibleCount": 13,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "floor",
+          "visibleCount": 6,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "exterior",
+          "visibleCount": 34,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "interior",
+          "visibleCount": 17,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "insulation",
+          "visibleCount": 19,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "roof",
+          "visibleCount": 6,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "openings",
+          "visibleCount": 50,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "furniture",
+          "visibleCount": 92,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "cover",
+          "visibleCount": 14,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "porch",
+          "visibleCount": 31,
+          "otherLayerVisible": 0
+        }
+      ],
+      "ownedCloneCount": 46,
+      "uniqueLayerMaterialPairs": 46,
+      "mutatedOriginals": 0,
+      "restored": true,
+      "clonesDisposedOnce": true,
+      "doorCyclesMatchPose": true,
+      "frameOwnership": [
+        {
+          "name": "entry · aro",
+          "layer": "openings"
+        },
+        {
+          "name": "entry · aro",
+          "layer": "openings"
+        },
+        {
+          "name": "entry · aro",
+          "layer": "openings"
+        },
+        {
+          "name": "entry · aro",
+          "layer": "openings"
+        },
+        {
+          "name": "entry · montante",
+          "layer": "openings"
+        },
+        {
+          "name": "entry · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "entry · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "entry · soleira",
+          "layer": "openings"
+        },
+        {
+          "name": "bath-window · aro",
+          "layer": "openings"
+        },
+        {
+          "name": "bath-window · aro",
+          "layer": "openings"
+        },
+        {
+          "name": "bath-window · aro",
+          "layer": "openings"
+        },
+        {
+          "name": "bath-window · aro",
+          "layer": "openings"
+        },
+        {
+          "name": "bath-window · montante",
+          "layer": "openings"
+        },
+        {
+          "name": "bath-window · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "bath-window · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "bath-window · soleira",
+          "layer": "openings"
+        },
+        {
+          "name": "Fecho da janela",
+          "layer": "openings"
+        },
+        {
+          "name": "side--1-0 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "side--1-0 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "side--1-1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "side--1-1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "side-1-0 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "side-1-0 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "side-1-1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "side-1-1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "front-window--1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "front-window--1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "front-window--1 · soleira",
+          "layer": "openings"
+        },
+        {
+          "name": "Fecho da janela",
+          "layer": "openings"
+        },
+        {
+          "name": "front-window-1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "front-window-1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "front-window-1 · soleira",
+          "layer": "openings"
+        },
+        {
+          "name": "Fecho da janela",
+          "layer": "openings"
+        },
+        {
+          "name": "rear-window--1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "rear-window--1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "rear-window--1 · soleira",
+          "layer": "openings"
+        },
+        {
+          "name": "Fecho da janela",
+          "layer": "openings"
+        },
+        {
+          "name": "rear-window-1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "rear-window-1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "rear-window-1 · soleira",
+          "layer": "openings"
+        },
+        {
+          "name": "Fecho da janela",
+          "layer": "openings"
+        }
+      ]
+    },
+    {
+      "layout": "t3-b",
+      "meshCount": 278,
+      "layerCounts": {
+        "supports": 2,
+        "structure": 13,
+        "floor": 6,
+        "exterior": 34,
+        "interior": 17,
+        "insulation": 19,
+        "roof": 6,
+        "openings": 44,
+        "furniture": 92,
+        "cover": 14,
+        "porch": 31
+      },
+      "staticPoseError": 0,
+      "referenceFlags": true,
+      "noTechnicalMeshes": true,
+      "floorHoles": [
+        {
+          "name": "Pavimento SPC",
+          "holes": 0
+        },
+        {
+          "name": "Pavimento SPC",
+          "holes": 0
+        },
+        {
+          "name": "Pavimento SPC",
+          "holes": 0
+        },
+        {
+          "name": "Placa de suporte",
+          "holes": 0
+        },
+        {
+          "name": "Isolamento de piso · ilustrativo",
+          "holes": 0
+        },
+        {
+          "name": "Placa de suporte",
+          "holes": 0
+        },
+        {
+          "name": "Isolamento de piso · ilustrativo",
+          "holes": 0
+        },
+        {
+          "name": "Placa de suporte",
+          "holes": 0
+        },
+        {
+          "name": "Isolamento de piso · ilustrativo",
+          "holes": 0
+        }
+      ],
+      "rearCount": 0,
+      "rearExpected": 0,
+      "isolations": [
+        {
+          "id": "supports",
+          "visibleCount": 2,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "structure",
+          "visibleCount": 13,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "floor",
+          "visibleCount": 6,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "exterior",
+          "visibleCount": 34,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "interior",
+          "visibleCount": 17,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "insulation",
+          "visibleCount": 19,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "roof",
+          "visibleCount": 6,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "openings",
+          "visibleCount": 44,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "furniture",
+          "visibleCount": 92,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "cover",
+          "visibleCount": 14,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "porch",
+          "visibleCount": 31,
+          "otherLayerVisible": 0
+        }
+      ],
+      "ownedCloneCount": 46,
+      "uniqueLayerMaterialPairs": 46,
+      "mutatedOriginals": 0,
+      "restored": true,
+      "clonesDisposedOnce": true,
+      "doorCyclesMatchPose": true,
+      "frameOwnership": [
+        {
+          "name": "entry · aro",
+          "layer": "openings"
+        },
+        {
+          "name": "entry · aro",
+          "layer": "openings"
+        },
+        {
+          "name": "entry · aro",
+          "layer": "openings"
+        },
+        {
+          "name": "entry · aro",
+          "layer": "openings"
+        },
+        {
+          "name": "entry · montante",
+          "layer": "openings"
+        },
+        {
+          "name": "entry · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "entry · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "entry · soleira",
+          "layer": "openings"
+        },
+        {
+          "name": "bath-window · aro",
+          "layer": "openings"
+        },
+        {
+          "name": "bath-window · aro",
+          "layer": "openings"
+        },
+        {
+          "name": "bath-window · aro",
+          "layer": "openings"
+        },
+        {
+          "name": "bath-window · aro",
+          "layer": "openings"
+        },
+        {
+          "name": "bath-window · montante",
+          "layer": "openings"
+        },
+        {
+          "name": "bath-window · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "bath-window · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "bath-window · soleira",
+          "layer": "openings"
+        },
+        {
+          "name": "Fecho da janela",
+          "layer": "openings"
+        },
+        {
+          "name": "side--1-0 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "side--1-0 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "side--1-1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "side--1-1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "side--1-2 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "side--1-2 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "side-1-0 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "side-1-0 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "side-1-1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "side-1-1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "side-1-2 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "side-1-2 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "front-window--1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "front-window--1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "front-window--1 · soleira",
+          "layer": "openings"
+        },
+        {
+          "name": "Fecho da janela",
+          "layer": "openings"
+        },
+        {
+          "name": "front-window-1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "front-window-1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "front-window-1 · soleira",
+          "layer": "openings"
+        },
+        {
+          "name": "Fecho da janela",
+          "layer": "openings"
+        }
+      ]
+    },
+    {
+      "layout": "t4-a",
+      "meshCount": 285,
+      "layerCounts": {
+        "supports": 2,
+        "structure": 13,
+        "floor": 6,
+        "exterior": 34,
+        "interior": 20,
+        "insulation": 19,
+        "roof": 6,
+        "openings": 50,
+        "furniture": 90,
+        "cover": 14,
+        "porch": 31
+      },
+      "staticPoseError": 0,
+      "referenceFlags": true,
+      "noTechnicalMeshes": true,
+      "floorHoles": [
+        {
+          "name": "Pavimento SPC",
+          "holes": 0
+        },
+        {
+          "name": "Pavimento SPC",
+          "holes": 0
+        },
+        {
+          "name": "Pavimento SPC",
+          "holes": 0
+        },
+        {
+          "name": "Placa de suporte",
+          "holes": 0
+        },
+        {
+          "name": "Isolamento de piso · ilustrativo",
+          "holes": 0
+        },
+        {
+          "name": "Placa de suporte",
+          "holes": 0
+        },
+        {
+          "name": "Isolamento de piso · ilustrativo",
+          "holes": 0
+        },
+        {
+          "name": "Placa de suporte",
+          "holes": 0
+        },
+        {
+          "name": "Isolamento de piso · ilustrativo",
+          "holes": 0
+        }
+      ],
+      "rearCount": 2,
+      "rearExpected": 2,
+      "isolations": [
+        {
+          "id": "supports",
+          "visibleCount": 2,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "structure",
+          "visibleCount": 13,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "floor",
+          "visibleCount": 6,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "exterior",
+          "visibleCount": 34,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "interior",
+          "visibleCount": 20,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "insulation",
+          "visibleCount": 19,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "roof",
+          "visibleCount": 6,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "openings",
+          "visibleCount": 50,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "furniture",
+          "visibleCount": 90,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "cover",
+          "visibleCount": 14,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "porch",
+          "visibleCount": 31,
+          "otherLayerVisible": 0
+        }
+      ],
+      "ownedCloneCount": 45,
+      "uniqueLayerMaterialPairs": 45,
+      "mutatedOriginals": 0,
+      "restored": true,
+      "clonesDisposedOnce": true,
+      "doorCyclesMatchPose": true,
+      "frameOwnership": [
+        {
+          "name": "entry · aro",
+          "layer": "openings"
+        },
+        {
+          "name": "entry · aro",
+          "layer": "openings"
+        },
+        {
+          "name": "entry · aro",
+          "layer": "openings"
+        },
+        {
+          "name": "entry · aro",
+          "layer": "openings"
+        },
+        {
+          "name": "entry · montante",
+          "layer": "openings"
+        },
+        {
+          "name": "entry · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "entry · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "entry · soleira",
+          "layer": "openings"
+        },
+        {
+          "name": "bath-window · aro",
+          "layer": "openings"
+        },
+        {
+          "name": "bath-window · aro",
+          "layer": "openings"
+        },
+        {
+          "name": "bath-window · aro",
+          "layer": "openings"
+        },
+        {
+          "name": "bath-window · aro",
+          "layer": "openings"
+        },
+        {
+          "name": "bath-window · montante",
+          "layer": "openings"
+        },
+        {
+          "name": "bath-window · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "bath-window · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "bath-window · soleira",
+          "layer": "openings"
+        },
+        {
+          "name": "Fecho da janela",
+          "layer": "openings"
+        },
+        {
+          "name": "side--1-0 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "side--1-0 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "side--1-1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "side--1-1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "side-1-0 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "side-1-0 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "side-1-1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "side-1-1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "front-window--1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "front-window--1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "front-window--1 · soleira",
+          "layer": "openings"
+        },
+        {
+          "name": "Fecho da janela",
+          "layer": "openings"
+        },
+        {
+          "name": "front-window-1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "front-window-1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "front-window-1 · soleira",
+          "layer": "openings"
+        },
+        {
+          "name": "Fecho da janela",
+          "layer": "openings"
+        },
+        {
+          "name": "rear-window--1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "rear-window--1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "rear-window--1 · soleira",
+          "layer": "openings"
+        },
+        {
+          "name": "Fecho da janela",
+          "layer": "openings"
+        },
+        {
+          "name": "rear-window-1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "rear-window-1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "rear-window-1 · soleira",
+          "layer": "openings"
+        },
+        {
+          "name": "Fecho da janela",
+          "layer": "openings"
+        }
+      ]
+    },
+    {
+      "layout": "t4-b",
+      "meshCount": 287,
+      "layerCounts": {
+        "supports": 2,
+        "structure": 13,
+        "floor": 6,
+        "exterior": 34,
+        "interior": 20,
+        "insulation": 19,
+        "roof": 6,
+        "openings": 44,
+        "furniture": 98,
+        "cover": 14,
+        "porch": 31
+      },
+      "staticPoseError": 0,
+      "referenceFlags": true,
+      "noTechnicalMeshes": true,
+      "floorHoles": [
+        {
+          "name": "Pavimento SPC",
+          "holes": 0
+        },
+        {
+          "name": "Pavimento SPC",
+          "holes": 0
+        },
+        {
+          "name": "Pavimento SPC",
+          "holes": 0
+        },
+        {
+          "name": "Placa de suporte",
+          "holes": 0
+        },
+        {
+          "name": "Isolamento de piso · ilustrativo",
+          "holes": 0
+        },
+        {
+          "name": "Placa de suporte",
+          "holes": 0
+        },
+        {
+          "name": "Isolamento de piso · ilustrativo",
+          "holes": 0
+        },
+        {
+          "name": "Placa de suporte",
+          "holes": 0
+        },
+        {
+          "name": "Isolamento de piso · ilustrativo",
+          "holes": 0
+        }
+      ],
+      "rearCount": 0,
+      "rearExpected": 0,
+      "isolations": [
+        {
+          "id": "supports",
+          "visibleCount": 2,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "structure",
+          "visibleCount": 13,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "floor",
+          "visibleCount": 6,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "exterior",
+          "visibleCount": 34,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "interior",
+          "visibleCount": 20,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "insulation",
+          "visibleCount": 19,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "roof",
+          "visibleCount": 6,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "openings",
+          "visibleCount": 44,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "furniture",
+          "visibleCount": 98,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "cover",
+          "visibleCount": 14,
+          "otherLayerVisible": 0
+        },
+        {
+          "id": "porch",
+          "visibleCount": 31,
+          "otherLayerVisible": 0
+        }
+      ],
+      "ownedCloneCount": 46,
+      "uniqueLayerMaterialPairs": 46,
+      "mutatedOriginals": 0,
+      "restored": true,
+      "clonesDisposedOnce": true,
+      "doorCyclesMatchPose": true,
+      "frameOwnership": [
+        {
+          "name": "entry · aro",
+          "layer": "openings"
+        },
+        {
+          "name": "entry · aro",
+          "layer": "openings"
+        },
+        {
+          "name": "entry · aro",
+          "layer": "openings"
+        },
+        {
+          "name": "entry · aro",
+          "layer": "openings"
+        },
+        {
+          "name": "entry · montante",
+          "layer": "openings"
+        },
+        {
+          "name": "entry · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "entry · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "entry · soleira",
+          "layer": "openings"
+        },
+        {
+          "name": "bath-window · aro",
+          "layer": "openings"
+        },
+        {
+          "name": "bath-window · aro",
+          "layer": "openings"
+        },
+        {
+          "name": "bath-window · aro",
+          "layer": "openings"
+        },
+        {
+          "name": "bath-window · aro",
+          "layer": "openings"
+        },
+        {
+          "name": "bath-window · montante",
+          "layer": "openings"
+        },
+        {
+          "name": "bath-window · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "bath-window · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "bath-window · soleira",
+          "layer": "openings"
+        },
+        {
+          "name": "Fecho da janela",
+          "layer": "openings"
+        },
+        {
+          "name": "side--1-0 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "side--1-0 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "side--1-1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "side--1-1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "side--1-2 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "side--1-2 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "side-1-0 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "side-1-0 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "side-1-1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "side-1-1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "side-1-2 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "side-1-2 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "front-window--1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "front-window--1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "front-window--1 · soleira",
+          "layer": "openings"
+        },
+        {
+          "name": "Fecho da janela",
+          "layer": "openings"
+        },
+        {
+          "name": "front-window-1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "front-window-1 · vidro",
+          "layer": "openings"
+        },
+        {
+          "name": "front-window-1 · soleira",
+          "layer": "openings"
+        },
+        {
+          "name": "Fecho da janela",
+          "layer": "openings"
+        }
+      ]
+    }
+  ],
+  "failures": []
+}

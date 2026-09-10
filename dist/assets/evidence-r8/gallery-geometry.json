@@ -1,0 +1,511 @@
+{
+  "checkedAt": "2026-09-10T22:24:46.274Z",
+  "method": "SHA-256 of sorted world-space input triangles from ancestor-visible meshes, coordinates rounded to 1 micrometre solely for canonicalisation. Also compares per-triangle base material properties and clipping planes. Does not manufacture new geometry or imply measurement accuracy; source shader/texture hashes are checked separately.",
+  "configuration": {
+    "schemaVersion": 2,
+    "layout": "t3-a",
+    "exteriorId": "exterior-standard-branco-glacial",
+    "exterior": "#ddddda",
+    "floorId": "floor-spc-kx7008",
+    "floor": "#a18a6e",
+    "interior": "#eeede8",
+    "interiorName": "Branco natural",
+    "kitchen": "l",
+    "kitchenRef": "kitchen-03",
+    "bathroom": "standard",
+    "bathroomRef": "bathroom-06",
+    "bathroomUV": null,
+    "roof": true,
+    "porch": true,
+    "lighting": "neutral",
+    "textureMode": "source"
+  },
+  "results": [
+    {
+      "id": "01-exterior-alpendre",
+      "sourceSnapshot": "source-snapshot-r8.json",
+      "frozen": {
+        "modelSourceHash": "3905c7c43a82acf6c7842e2124b95506b57efe248920e0114303a138b95a3497",
+        "geometryHash": "45f082672bf88a912a6776c5af08b22206bf7b766d3a9e8aebbe97311d0ce1fd",
+        "geometryAndMaterialStateHash": "ee9c590eac4b6958d4dc75b2f84626406d84e557e53893eab03ae6d695843592",
+        "triangles": 67592,
+        "meshes": 310,
+        "bounds": {
+          "min": [
+            -3.3956492842175003,
+            -0.3644999861717224,
+            -6.179999828338623
+          ],
+          "max": [
+            3.3956492842175003,
+            3.4494632843261486,
+            7.990000009536743
+          ]
+        }
+      },
+      "current": {
+        "modelSourceHash": "3905c7c43a82acf6c7842e2124b95506b57efe248920e0114303a138b95a3497",
+        "geometryHash": "45f082672bf88a912a6776c5af08b22206bf7b766d3a9e8aebbe97311d0ce1fd",
+        "geometryAndMaterialStateHash": "ee9c590eac4b6958d4dc75b2f84626406d84e557e53893eab03ae6d695843592",
+        "triangles": 67592,
+        "meshes": 310,
+        "bounds": {
+          "min": [
+            -3.3956492842175003,
+            -0.3644999861717224,
+            -6.179999828338623
+          ],
+          "max": [
+            3.3956492842175003,
+            3.4494632843261486,
+            7.990000009536743
+          ]
+        }
+      },
+      "sameVisibleGeometry": true,
+      "sameMaterialAndClippingState": true
+    },
+    {
+      "id": "02-exterior-cobertura-plana",
+      "sourceSnapshot": "source-snapshot-r8.json",
+      "frozen": {
+        "modelSourceHash": "3905c7c43a82acf6c7842e2124b95506b57efe248920e0114303a138b95a3497",
+        "geometryHash": "d9ec114fc5a4a091341b4cd85b456c86a96f3fa31e7741888fd9dcf44d35a7e6",
+        "geometryAndMaterialStateHash": "d2005199096c1c82cfedd9a9be46c861d58ce454ce84c138990194eedd622539",
+        "triangles": 64460,
+        "meshes": 265,
+        "bounds": {
+          "min": [
+            -3.122499942779541,
+            -0.3644999861717224,
+            -5.9125000000000005
+          ],
+          "max": [
+            3.122499942779541,
+            2.563499927520752,
+            5.92099999961257
+          ]
+        }
+      },
+      "current": {
+        "modelSourceHash": "3905c7c43a82acf6c7842e2124b95506b57efe248920e0114303a138b95a3497",
+        "geometryHash": "d9ec114fc5a4a091341b4cd85b456c86a96f3fa31e7741888fd9dcf44d35a7e6",
+        "geometryAndMaterialStateHash": "d2005199096c1c82cfedd9a9be46c861d58ce454ce84c138990194eedd622539",
+        "triangles": 64460,
+        "meshes": 265,
+        "bounds": {
+          "min": [
+            -3.122499942779541,
+            -0.3644999861717224,
+            -5.9125000000000005
+          ],
+          "max": [
+            3.122499942779541,
+            2.563499927520752,
+            5.92099999961257
+          ]
+        }
+      },
+      "sameVisibleGeometry": true,
+      "sameMaterialAndClippingState": true
+    },
+    {
+      "id": "03-interior-perspectiva",
+      "sourceSnapshot": "source-snapshot-r8.json",
+      "frozen": {
+        "modelSourceHash": "3905c7c43a82acf6c7842e2124b95506b57efe248920e0114303a138b95a3497",
+        "geometryHash": "51978876844ea2a6ca52347ad762a37bc19621482456d9b137f212bbfb476de9",
+        "geometryAndMaterialStateHash": "3d2cfe54f42b6bd4837543c9e60c5bce5cf51f08d5cd166fece8ef57aa5a2f8e",
+        "triangles": 65132,
+        "meshes": 285,
+        "bounds": {
+          "min": [
+            -3.122499942779541,
+            -0.3644999861717224,
+            -5.9125000000000005
+          ],
+          "max": [
+            3.122499942779541,
+            2.7699999904632566,
+            7.850000023841858
+          ]
+        }
+      },
+      "current": {
+        "modelSourceHash": "3905c7c43a82acf6c7842e2124b95506b57efe248920e0114303a138b95a3497",
+        "geometryHash": "51978876844ea2a6ca52347ad762a37bc19621482456d9b137f212bbfb476de9",
+        "geometryAndMaterialStateHash": "3d2cfe54f42b6bd4837543c9e60c5bce5cf51f08d5cd166fece8ef57aa5a2f8e",
+        "triangles": 65132,
+        "meshes": 285,
+        "bounds": {
+          "min": [
+            -3.122499942779541,
+            -0.3644999861717224,
+            -5.9125000000000005
+          ],
+          "max": [
+            3.122499942779541,
+            2.7699999904632566,
+            7.850000023841858
+          ]
+        }
+      },
+      "sameVisibleGeometry": true,
+      "sameMaterialAndClippingState": true
+    },
+    {
+      "id": "04-planta-mobilada",
+      "sourceSnapshot": "source-snapshot-r8.json",
+      "frozen": {
+        "modelSourceHash": "3905c7c43a82acf6c7842e2124b95506b57efe248920e0114303a138b95a3497",
+        "geometryHash": "51978876844ea2a6ca52347ad762a37bc19621482456d9b137f212bbfb476de9",
+        "geometryAndMaterialStateHash": "36f4053373ff4e0e03c0042da3273b8ec283bafa0c0d6740f5d7830bc81e7182",
+        "triangles": 65132,
+        "meshes": 285,
+        "bounds": {
+          "min": [
+            -3.122499942779541,
+            -0.3644999861717224,
+            -5.9125000000000005
+          ],
+          "max": [
+            3.122499942779541,
+            2.7699999904632566,
+            7.850000023841858
+          ]
+        }
+      },
+      "current": {
+        "modelSourceHash": "3905c7c43a82acf6c7842e2124b95506b57efe248920e0114303a138b95a3497",
+        "geometryHash": "51978876844ea2a6ca52347ad762a37bc19621482456d9b137f212bbfb476de9",
+        "geometryAndMaterialStateHash": "36f4053373ff4e0e03c0042da3273b8ec283bafa0c0d6740f5d7830bc81e7182",
+        "triangles": 65132,
+        "meshes": 285,
+        "bounds": {
+          "min": [
+            -3.122499942779541,
+            -0.3644999861717224,
+            -5.9125000000000005
+          ],
+          "max": [
+            3.122499942779541,
+            2.7699999904632566,
+            7.850000023841858
+          ]
+        }
+      },
+      "sameVisibleGeometry": true,
+      "sameMaterialAndClippingState": true
+    },
+    {
+      "id": "05-cozinha",
+      "sourceSnapshot": "source-snapshot-r8.json",
+      "frozen": {
+        "modelSourceHash": "3905c7c43a82acf6c7842e2124b95506b57efe248920e0114303a138b95a3497",
+        "geometryHash": "cf315e4a8905fba75af8942f5df3853554eded140e6300a41c482e73b8e56d99",
+        "geometryAndMaterialStateHash": "7ffeaa3e87bacfc906fad9300019353159bde439cc8aecc727319c52055c1f91",
+        "triangles": 39272,
+        "meshes": 196,
+        "bounds": {
+          "min": [
+            -3.122499942779541,
+            -0.14000000074505806,
+            -5.9125000000000005
+          ],
+          "max": [
+            3.122499942779541,
+            2.7699999904632566,
+            7.850000023841858
+          ]
+        }
+      },
+      "current": {
+        "modelSourceHash": "3905c7c43a82acf6c7842e2124b95506b57efe248920e0114303a138b95a3497",
+        "geometryHash": "cf315e4a8905fba75af8942f5df3853554eded140e6300a41c482e73b8e56d99",
+        "geometryAndMaterialStateHash": "7ffeaa3e87bacfc906fad9300019353159bde439cc8aecc727319c52055c1f91",
+        "triangles": 39272,
+        "meshes": 196,
+        "bounds": {
+          "min": [
+            -3.122499942779541,
+            -0.14000000074505806,
+            -5.9125000000000005
+          ],
+          "max": [
+            3.122499942779541,
+            2.7699999904632566,
+            7.850000023841858
+          ]
+        }
+      },
+      "sameVisibleGeometry": true,
+      "sameMaterialAndClippingState": true
+    },
+    {
+      "id": "06-casa-de-banho",
+      "sourceSnapshot": "source-snapshot-r8.json",
+      "frozen": {
+        "modelSourceHash": "3905c7c43a82acf6c7842e2124b95506b57efe248920e0114303a138b95a3497",
+        "geometryHash": "f04bca01463c2d3baaac97a80704d66039cf23ccae7ff3a796060b9c3dc7fde2",
+        "geometryAndMaterialStateHash": "01e3d25ba9f89beee111056d4eb0c29409ef942446b0d0a7bf8a902f9f13cdf6",
+        "triangles": 38720,
+        "meshes": 174,
+        "bounds": {
+          "min": [
+            -3.122499942779541,
+            -0.14000000074505806,
+            -5.9125000000000005
+          ],
+          "max": [
+            3.122499942779541,
+            2.7699999904632566,
+            7.850000023841858
+          ]
+        }
+      },
+      "current": {
+        "modelSourceHash": "3905c7c43a82acf6c7842e2124b95506b57efe248920e0114303a138b95a3497",
+        "geometryHash": "f04bca01463c2d3baaac97a80704d66039cf23ccae7ff3a796060b9c3dc7fde2",
+        "geometryAndMaterialStateHash": "01e3d25ba9f89beee111056d4eb0c29409ef942446b0d0a7bf8a902f9f13cdf6",
+        "triangles": 38720,
+        "meshes": 174,
+        "bounds": {
+          "min": [
+            -3.122499942779541,
+            -0.14000000074505806,
+            -5.9125000000000005
+          ],
+          "max": [
+            3.122499942779541,
+            2.7699999904632566,
+            7.850000023841858
+          ]
+        }
+      },
+      "sameVisibleGeometry": true,
+      "sameMaterialAndClippingState": true
+    },
+    {
+      "id": "07-estrutura",
+      "sourceSnapshot": "source-snapshot-r8.json",
+      "frozen": {
+        "modelSourceHash": "3905c7c43a82acf6c7842e2124b95506b57efe248920e0114303a138b95a3497",
+        "geometryHash": "11332cdf65bf1dd93d640b42a81bf1a1f0b5693d342eab3af6f7a9611abce546",
+        "geometryAndMaterialStateHash": "67e7ca156720a09209ab911239acd090ac43f2f2fad9f487866f52a41941f4df",
+        "triangles": 10080,
+        "meshes": 27,
+        "bounds": {
+          "min": [
+            -3.3942369587318773,
+            -0.3644999861717224,
+            -5.925000000372529
+          ],
+          "max": [
+            3.3942369587318773,
+            3.4420974637165123,
+            5.925000000372529
+          ]
+        }
+      },
+      "current": {
+        "modelSourceHash": "3905c7c43a82acf6c7842e2124b95506b57efe248920e0114303a138b95a3497",
+        "geometryHash": "11332cdf65bf1dd93d640b42a81bf1a1f0b5693d342eab3af6f7a9611abce546",
+        "geometryAndMaterialStateHash": "67e7ca156720a09209ab911239acd090ac43f2f2fad9f487866f52a41941f4df",
+        "triangles": 10080,
+        "meshes": 27,
+        "bounds": {
+          "min": [
+            -3.3942369587318773,
+            -0.3644999861717224,
+            -5.925000000372529
+          ],
+          "max": [
+            3.3942369587318773,
+            3.4420974637165123,
+            5.925000000372529
+          ]
+        }
+      },
+      "sameVisibleGeometry": true,
+      "sameMaterialAndClippingState": true
+    },
+    {
+      "id": "09-fachada-principal",
+      "sourceSnapshot": "facades-source/source-snapshot-r8.json",
+      "frozen": {
+        "modelSourceHash": "2839adaea27f195da42f23a0855ce1f7eef4a4ece5a0b4a5948a8790352ec0e4",
+        "geometryHash": "e0ba8d09a1393930f2df7937f4041767f21cf2e44b72578ba376e281ed2062f9",
+        "geometryAndMaterialStateHash": "c94c198c0104f023382a313d6be9c4aa998d69f9aa5a2c16f5a9c65f4a0d116f",
+        "triangles": 64460,
+        "meshes": 265,
+        "bounds": {
+          "min": [
+            -3.122499942779541,
+            -0.3644999861717224,
+            -5.9125000000000005
+          ],
+          "max": [
+            3.122499942779541,
+            2.563499927520752,
+            5.92099999961257
+          ]
+        }
+      },
+      "current": {
+        "modelSourceHash": "3905c7c43a82acf6c7842e2124b95506b57efe248920e0114303a138b95a3497",
+        "geometryHash": "e0ba8d09a1393930f2df7937f4041767f21cf2e44b72578ba376e281ed2062f9",
+        "geometryAndMaterialStateHash": "c94c198c0104f023382a313d6be9c4aa998d69f9aa5a2c16f5a9c65f4a0d116f",
+        "triangles": 64460,
+        "meshes": 265,
+        "bounds": {
+          "min": [
+            -3.122499942779541,
+            -0.3644999861717224,
+            -5.9125000000000005
+          ],
+          "max": [
+            3.122499942779541,
+            2.563499927520752,
+            5.92099999961257
+          ]
+        }
+      },
+      "sameVisibleGeometry": true,
+      "sameMaterialAndClippingState": true
+    },
+    {
+      "id": "10-fachada-direita",
+      "sourceSnapshot": "facades-source/source-snapshot-r8.json",
+      "frozen": {
+        "modelSourceHash": "2839adaea27f195da42f23a0855ce1f7eef4a4ece5a0b4a5948a8790352ec0e4",
+        "geometryHash": "e0ba8d09a1393930f2df7937f4041767f21cf2e44b72578ba376e281ed2062f9",
+        "geometryAndMaterialStateHash": "c94c198c0104f023382a313d6be9c4aa998d69f9aa5a2c16f5a9c65f4a0d116f",
+        "triangles": 64460,
+        "meshes": 265,
+        "bounds": {
+          "min": [
+            -3.122499942779541,
+            -0.3644999861717224,
+            -5.9125000000000005
+          ],
+          "max": [
+            3.122499942779541,
+            2.563499927520752,
+            5.92099999961257
+          ]
+        }
+      },
+      "current": {
+        "modelSourceHash": "3905c7c43a82acf6c7842e2124b95506b57efe248920e0114303a138b95a3497",
+        "geometryHash": "e0ba8d09a1393930f2df7937f4041767f21cf2e44b72578ba376e281ed2062f9",
+        "geometryAndMaterialStateHash": "c94c198c0104f023382a313d6be9c4aa998d69f9aa5a2c16f5a9c65f4a0d116f",
+        "triangles": 64460,
+        "meshes": 265,
+        "bounds": {
+          "min": [
+            -3.122499942779541,
+            -0.3644999861717224,
+            -5.9125000000000005
+          ],
+          "max": [
+            3.122499942779541,
+            2.563499927520752,
+            5.92099999961257
+          ]
+        }
+      },
+      "sameVisibleGeometry": true,
+      "sameMaterialAndClippingState": true
+    },
+    {
+      "id": "11-fachada-posterior",
+      "sourceSnapshot": "facades-source/source-snapshot-r8.json",
+      "frozen": {
+        "modelSourceHash": "2839adaea27f195da42f23a0855ce1f7eef4a4ece5a0b4a5948a8790352ec0e4",
+        "geometryHash": "e0ba8d09a1393930f2df7937f4041767f21cf2e44b72578ba376e281ed2062f9",
+        "geometryAndMaterialStateHash": "c94c198c0104f023382a313d6be9c4aa998d69f9aa5a2c16f5a9c65f4a0d116f",
+        "triangles": 64460,
+        "meshes": 265,
+        "bounds": {
+          "min": [
+            -3.122499942779541,
+            -0.3644999861717224,
+            -5.9125000000000005
+          ],
+          "max": [
+            3.122499942779541,
+            2.563499927520752,
+            5.92099999961257
+          ]
+        }
+      },
+      "current": {
+        "modelSourceHash": "3905c7c43a82acf6c7842e2124b95506b57efe248920e0114303a138b95a3497",
+        "geometryHash": "e0ba8d09a1393930f2df7937f4041767f21cf2e44b72578ba376e281ed2062f9",
+        "geometryAndMaterialStateHash": "c94c198c0104f023382a313d6be9c4aa998d69f9aa5a2c16f5a9c65f4a0d116f",
+        "triangles": 64460,
+        "meshes": 265,
+        "bounds": {
+          "min": [
+            -3.122499942779541,
+            -0.3644999861717224,
+            -5.9125000000000005
+          ],
+          "max": [
+            3.122499942779541,
+            2.563499927520752,
+            5.92099999961257
+          ]
+        }
+      },
+      "sameVisibleGeometry": true,
+      "sameMaterialAndClippingState": true
+    },
+    {
+      "id": "12-fachada-esquerda",
+      "sourceSnapshot": "facades-source/source-snapshot-r8.json",
+      "frozen": {
+        "modelSourceHash": "2839adaea27f195da42f23a0855ce1f7eef4a4ece5a0b4a5948a8790352ec0e4",
+        "geometryHash": "e0ba8d09a1393930f2df7937f4041767f21cf2e44b72578ba376e281ed2062f9",
+        "geometryAndMaterialStateHash": "c94c198c0104f023382a313d6be9c4aa998d69f9aa5a2c16f5a9c65f4a0d116f",
+        "triangles": 64460,
+        "meshes": 265,
+        "bounds": {
+          "min": [
+            -3.122499942779541,
+            -0.3644999861717224,
+            -5.9125000000000005
+          ],
+          "max": [
+            3.122499942779541,
+            2.563499927520752,
+            5.92099999961257
+          ]
+        }
+      },
+      "current": {
+        "modelSourceHash": "3905c7c43a82acf6c7842e2124b95506b57efe248920e0114303a138b95a3497",
+        "geometryHash": "e0ba8d09a1393930f2df7937f4041767f21cf2e44b72578ba376e281ed2062f9",
+        "geometryAndMaterialStateHash": "c94c198c0104f023382a313d6be9c4aa998d69f9aa5a2c16f5a9c65f4a0d116f",
+        "triangles": 64460,
+        "meshes": 265,
+        "bounds": {
+          "min": [
+            -3.122499942779541,
+            -0.3644999861717224,
+            -5.9125000000000005
+          ],
+          "max": [
+            3.122499942779541,
+            2.563499927520752,
+            5.92099999961257
+          ]
+        }
+      },
+      "sameVisibleGeometry": true,
+      "sameMaterialAndClippingState": true
+    }
+  ],
+  "allGeometryMatches": true,
+  "allMaterialAndClippingStateMatches": true
+}
