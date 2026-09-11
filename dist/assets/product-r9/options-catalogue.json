@@ -1,0 +1,1174 @@
+[
+  {
+    "id": "door-steel",
+    "section": "Portas",
+    "title": "Porta de segurança em aço preta",
+    "source": {
+      "file": "assets/opcionais-2026.pdf",
+      "page": 3
+    },
+    "classification": "documented-option",
+    "catalogueBadge": "STANDARD",
+    "applicability": {
+      "sourceScope": "generic",
+      "gv72Compatibility": "not-confirmed",
+      "standardPackageForGV72": "not-provided"
+    },
+    "specifications": [
+      {
+        "label": "Material",
+        "value": "aço",
+        "unit": null,
+        "status": "documented"
+      },
+      {
+        "label": "Cor",
+        "value": "preta",
+        "unit": null,
+        "status": "documented"
+      },
+      {
+        "label": "Fecho",
+        "value": "fechadura reforçada",
+        "unit": null,
+        "status": "documented"
+      }
+    ],
+    "cataloguePrice": {
+      "value": 450,
+      "currency": "EUR",
+      "vatIncluded": true,
+      "vatRatePercent": 23,
+      "edition": "2026-07-11",
+      "sourcePage": 3,
+      "status": "documented",
+      "quoteRule": "Preço do catálogo genérico; não é orçamento GV72 nem prova compatibilidade, quantidade ou regras de soma."
+    },
+    "limits": "Sem dimensões, classe de resistência, norma de segurança ou confirmação de inclusão na casa; STANDARD é a designação do artigo com preço.",
+    "sourcePage": 3,
+    "sourceFile": "assets/opcionais-2026.pdf",
+    "inclusion": "optional",
+    "inclusionScope": "generic-catalogue",
+    "includedInGV72": null,
+    "sourceExcerpt": "Porta de entrada em aço, cor preta, com fechadura reforçada."
+  },
+  {
+    "id": "door-side-glass",
+    "section": "Portas",
+    "title": "Porta lateral em vidro",
+    "source": {
+      "file": "assets/opcionais-2026.pdf",
+      "page": 3
+    },
+    "classification": "documented-option",
+    "catalogueBadge": null,
+    "applicability": {
+      "sourceScope": "generic",
+      "gv72Compatibility": "not-confirmed",
+      "standardPackageForGV72": "not-provided"
+    },
+    "specifications": [
+      {
+        "label": "Material",
+        "value": "vidro",
+        "unit": null,
+        "status": "documented"
+      },
+      {
+        "label": "Folhas",
+        "value": 1,
+        "unit": "folha",
+        "status": "documented"
+      },
+      {
+        "label": "Local indicado",
+        "value": "lado da sala, acesso ao terraço",
+        "unit": null,
+        "status": "documented"
+      },
+      {
+        "label": "Alternativa expressa",
+        "value": "porta em aço no mesmo lado",
+        "unit": null,
+        "status": "documented"
+      }
+    ],
+    "cataloguePrice": {
+      "value": 490,
+      "currency": "EUR",
+      "vatIncluded": true,
+      "vatRatePercent": 23,
+      "edition": "2026-07-11",
+      "sourcePage": 3,
+      "status": "documented",
+      "quoteRule": "Preço do catálogo genérico; não é orçamento GV72 nem prova compatibilidade, quantidade ou regras de soma."
+    },
+    "limits": "Não identifica posição exacta, largura, altura, tipo/espessura do vidro ou planta compatível.",
+    "sourcePage": 3,
+    "sourceFile": "assets/opcionais-2026.pdf",
+    "inclusion": "optional",
+    "inclusionScope": "generic-catalogue",
+    "includedInGV72": null,
+    "sourceExcerpt": "Porta lateral em vidro (folha simples) que dá acesso ao terraço, do lado da sala. Em alternativa, o lado pode levar porta em aço."
+  },
+  {
+    "id": "door-interior",
+    "section": "Portas",
+    "title": "Porta interior",
+    "source": {
+      "file": "assets/opcionais-2026.pdf",
+      "page": 3
+    },
+    "classification": "documented-option",
+    "catalogueBadge": null,
+    "applicability": {
+      "sourceScope": "generic",
+      "gv72Compatibility": "not-confirmed",
+      "standardPackageForGV72": "not-provided"
+    },
+    "specifications": [
+      {
+        "label": "Alternativas expressas",
+        "value": [
+          "madeira",
+          "alumínio",
+          "de correr"
+        ],
+        "unit": null,
+        "status": "documented"
+      }
+    ],
+    "cataloguePrice": {
+      "value": 310,
+      "currency": "EUR",
+      "vatIncluded": true,
+      "vatRatePercent": 23,
+      "edition": "2026-07-11",
+      "sourcePage": 3,
+      "status": "documented",
+      "quoteRule": "Preço do catálogo genérico; não é orçamento GV72 nem prova compatibilidade, quantidade ou regras de soma."
+    },
+    "limits": "Material e mecanismo são alternativas sem matriz de compatibilidade nem medidas. Não inferir que todas as portas interiores têm o mesmo acabamento.",
+    "sourcePage": 3,
+    "sourceFile": "assets/opcionais-2026.pdf",
+    "inclusion": "optional",
+    "inclusionScope": "generic-catalogue",
+    "includedInGV72": null,
+    "sourceExcerpt": "Em madeira, alumínio ou de correr — à escolha."
+  },
+  {
+    "id": "front-glass-premium",
+    "section": "Portas",
+    "title": "Frente em vidro",
+    "source": {
+      "file": "assets/opcionais-2026.pdf",
+      "page": 4
+    },
+    "classification": "documented-option",
+    "catalogueBadge": "PREMIUM",
+    "applicability": {
+      "sourceScope": "generic",
+      "gv72Compatibility": "not-confirmed",
+      "standardPackageForGV72": "not-provided"
+    },
+    "specifications": [
+      {
+        "label": "Configuração",
+        "value": "frente totalmente envidraçada / curtain wall",
+        "unit": null,
+        "status": "documented"
+      },
+      {
+        "label": "Vidro",
+        "value": "temperado duplo com câmara de ar",
+        "unit": null,
+        "status": "documented"
+      },
+      {
+        "label": "Caixilho",
+        "value": "alumínio com rutura de ponte térmica",
+        "unit": null,
+        "status": "documented"
+      },
+      {
+        "label": "Designação do sistema",
+        "value": "broken bridge 55",
+        "unit": null,
+        "status": "documented"
+      }
+    ],
+    "cataloguePrice": {
+      "value": 1350,
+      "currency": "EUR",
+      "vatIncluded": true,
+      "vatRatePercent": 23,
+      "edition": "2026-07-11",
+      "sourcePage": 4,
+      "status": "documented",
+      "quoteRule": "Preço do catálogo genérico; não é orçamento GV72 nem prova compatibilidade, quantidade ou regras de soma."
+    },
+    "limits": "55 é a designação escrita, não uma cota de 55 mm confirmada. Sem composição do vidro, valor U, classe acústica, perfis, dimensões ou norma.",
+    "sourcePage": 4,
+    "sourceFile": "assets/opcionais-2026.pdf",
+    "inclusion": "optional",
+    "inclusionScope": "generic-catalogue",
+    "includedInGV72": null,
+    "sourceExcerpt": "Frente totalmente envidraçada (curtain wall) em vidro temperado duplo com câmara-de-ar, caixilho em alumínio de rutura de ponte térmica (broken bridge 55). É a configuração premium da frente da casa."
+  },
+  {
+    "id": "door-thermal-glass",
+    "section": "Portas",
+    "title": "Porta em vidro com rutura térmica",
+    "source": {
+      "file": "assets/opcionais-2026.pdf",
+      "page": 4
+    },
+    "classification": "documented-option",
+    "catalogueBadge": null,
+    "applicability": {
+      "sourceScope": "generic",
+      "gv72Compatibility": "not-confirmed",
+      "standardPackageForGV72": "not-provided"
+    },
+    "specifications": [
+      {
+        "label": "Rutura térmica",
+        "value": "material isolante entre faces interior e exterior do alumínio",
+        "unit": null,
+        "status": "documented"
+      },
+      {
+        "label": "Benefícios descritos",
+        "value": [
+          "isolamento térmico",
+          "isolamento acústico",
+          "redução de condensação"
+        ],
+        "unit": null,
+        "status": "documented"
+      }
+    ],
+    "cataloguePrice": {
+      "value": 690,
+      "currency": "EUR",
+      "vatIncluded": true,
+      "vatRatePercent": 23,
+      "edition": "2026-07-11",
+      "sourcePage": 4,
+      "status": "documented",
+      "quoteRule": "Preço do catálogo genérico; não é orçamento GV72 nem prova compatibilidade, quantidade ou regras de soma."
+    },
+    "limits": "Alegações descritivas do catálogo, sem desempenho quantificado ou ensaios fornecidos.",
+    "sourcePage": 4,
+    "sourceFile": "assets/opcionais-2026.pdf",
+    "inclusion": "optional",
+    "inclusionScope": "generic-catalogue",
+    "includedInGV72": null,
+    "sourceExcerpt": "Tecnologia que coloca um material isolante entre as partes interna e externa do alumínio — melhora o isolamento térmico e acústico e reduz a condensação."
+  },
+  {
+    "id": "window-930",
+    "section": "Janelas",
+    "title": "Janela de correr em alumínio com corte térmico, 930 × 930 mm",
+    "source": {
+      "file": "assets/opcionais-2026.pdf",
+      "page": 5
+    },
+    "classification": "documented-option",
+    "catalogueBadge": null,
+    "applicability": {
+      "sourceScope": "generic",
+      "gv72Compatibility": "not-confirmed",
+      "standardPackageForGV72": "not-provided"
+    },
+    "specifications": [
+      {
+        "label": "Dimensões",
+        "value": [
+          930,
+          930
+        ],
+        "unit": "mm",
+        "status": "documented"
+      },
+      {
+        "label": "Abertura",
+        "value": "de correr",
+        "unit": null,
+        "status": "documented"
+      },
+      {
+        "label": "Caixilho",
+        "value": "alumínio com rutura de ponte térmica",
+        "unit": null,
+        "status": "documented"
+      },
+      {
+        "label": "Vidro",
+        "value": "duplo",
+        "unit": null,
+        "status": "documented"
+      }
+    ],
+    "cataloguePrice": {
+      "value": 140,
+      "currency": "EUR",
+      "vatIncluded": true,
+      "vatRatePercent": 23,
+      "edition": "2026-07-11",
+      "sourcePage": 5,
+      "status": "documented",
+      "quoteRule": "Preço do catálogo genérico; não é orçamento GV72 nem prova compatibilidade, quantidade ou regras de soma."
+    },
+    "limits": "Opção genérica de 930 mm não substitui a cota 920 mm das plantas; alturas das janelas standard continuam desconhecidas.",
+    "sourcePage": 5,
+    "sourceFile": "assets/opcionais-2026.pdf",
+    "inclusion": "optional",
+    "inclusionScope": "generic-catalogue",
+    "includedInGV72": null,
+    "sourceExcerpt": "Janela de correr alumínio corte térmico 930 × 930. Janela em alumínio de rutura de ponte térmica (broken bridge), vidro duplo."
+  },
+  {
+    "id": "window-panoramic",
+    "section": "Janelas",
+    "title": "Janela panorâmica chão–teto, 600 × 1900 mm",
+    "source": {
+      "file": "assets/opcionais-2026.pdf",
+      "page": 5
+    },
+    "classification": "documented-option",
+    "catalogueBadge": null,
+    "applicability": {
+      "sourceScope": "generic",
+      "gv72Compatibility": "not-confirmed",
+      "standardPackageForGV72": "not-provided"
+    },
+    "specifications": [
+      {
+        "label": "Dimensões",
+        "value": [
+          600,
+          1900
+        ],
+        "unit": "mm",
+        "status": "documented"
+      },
+      {
+        "label": "Descrição",
+        "value": "panorâmica chão–teto",
+        "unit": null,
+        "status": "documented"
+      }
+    ],
+    "cataloguePrice": {
+      "value": 220,
+      "currency": "EUR",
+      "vatIncluded": true,
+      "vatRatePercent": 23,
+      "edition": "2026-07-11",
+      "sourcePage": 5,
+      "status": "documented",
+      "quoteRule": "Preço do catálogo genérico; não é orçamento GV72 nem prova compatibilidade, quantidade ou regras de soma."
+    },
+    "limits": "Dimensão da opção; não confirma pé-direito da casa nem tipo individual de vidro/abertura além do texto da secção.",
+    "sourcePage": 5,
+    "sourceFile": "assets/opcionais-2026.pdf",
+    "inclusion": "optional",
+    "inclusionScope": "generic-catalogue",
+    "includedInGV72": null,
+    "sourceExcerpt": "Janela panorâmica de chão ao teto, 600 × 1900 mm."
+  },
+  {
+    "id": "window-large",
+    "section": "Janelas",
+    "title": "Janela grande corte térmico",
+    "source": {
+      "file": "assets/opcionais-2026.pdf",
+      "page": 5
+    },
+    "classification": "documented-option",
+    "catalogueBadge": null,
+    "applicability": {
+      "sourceScope": "generic",
+      "gv72Compatibility": "not-confirmed",
+      "standardPackageForGV72": "not-provided"
+    },
+    "specifications": [
+      {
+        "label": "Caixilho",
+        "value": "alumínio com corte térmico",
+        "unit": null,
+        "status": "documented"
+      }
+    ],
+    "cataloguePrice": {
+      "value": 650,
+      "currency": "EUR",
+      "vatIncluded": true,
+      "vatRatePercent": 23,
+      "edition": "2026-07-11",
+      "sourcePage": 5,
+      "status": "documented",
+      "quoteRule": "Preço do catálogo genérico; não é orçamento GV72 nem prova compatibilidade, quantidade ou regras de soma."
+    },
+    "limits": "Sem dimensões escritas. Não inferir medidas pelo tamanho da fotografia.",
+    "sourcePage": 5,
+    "sourceFile": "assets/opcionais-2026.pdf",
+    "inclusion": "optional",
+    "inclusionScope": "generic-catalogue",
+    "includedInGV72": null,
+    "sourceExcerpt": "Janela grande em alumínio corte-térmico."
+  },
+  {
+    "id": "window-alloy",
+    "section": "Janelas",
+    "title": "Janela liga alumínio, upgrade simples",
+    "source": {
+      "file": "assets/opcionais-2026.pdf",
+      "page": 5
+    },
+    "classification": "documented-option",
+    "catalogueBadge": null,
+    "applicability": {
+      "sourceScope": "generic",
+      "gv72Compatibility": "not-confirmed",
+      "standardPackageForGV72": "not-provided"
+    },
+    "specifications": [
+      {
+        "label": "Caixilho",
+        "value": "liga de alumínio",
+        "unit": null,
+        "status": "documented"
+      },
+      {
+        "label": "Classificação",
+        "value": "upgrade face à janela standard",
+        "unit": null,
+        "status": "documented"
+      }
+    ],
+    "cataloguePrice": {
+      "value": 110,
+      "currency": "EUR",
+      "vatIncluded": true,
+      "vatRatePercent": 23,
+      "edition": "2026-07-11",
+      "sourcePage": 5,
+      "status": "documented",
+      "quoteRule": "Preço do catálogo genérico; não é orçamento GV72 nem prova compatibilidade, quantidade ou regras de soma."
+    },
+    "limits": "Não identifica especificação da janela standard, composição de vidro, dimensões ou rutura térmica.",
+    "sourcePage": 5,
+    "sourceFile": "assets/opcionais-2026.pdf",
+    "inclusion": "optional",
+    "inclusionScope": "generic-catalogue",
+    "includedInGV72": null,
+    "sourceExcerpt": "Janela em liga de alumínio — upgrade simples face à janela standard."
+  },
+  {
+    "id": "window-thermal",
+    "section": "Janelas",
+    "title": "Janela corte térmico",
+    "source": {
+      "file": "assets/opcionais-2026.pdf",
+      "page": 6
+    },
+    "classification": "documented-option",
+    "catalogueBadge": null,
+    "applicability": {
+      "sourceScope": "generic",
+      "gv72Compatibility": "not-confirmed",
+      "standardPackageForGV72": "not-provided"
+    },
+    "specifications": [
+      {
+        "label": "Caixilho",
+        "value": "alumínio com rutura de ponte térmica",
+        "unit": null,
+        "status": "documented"
+      },
+      {
+        "label": "Vidro",
+        "value": "duplo",
+        "unit": null,
+        "status": "documented"
+      }
+    ],
+    "cataloguePrice": {
+      "value": 140,
+      "currency": "EUR",
+      "vatIncluded": true,
+      "vatRatePercent": 23,
+      "edition": "2026-07-11",
+      "sourcePage": 6,
+      "status": "documented",
+      "quoteRule": "Preço do catálogo genérico; não é orçamento GV72 nem prova compatibilidade, quantidade ou regras de soma."
+    },
+    "limits": "Entrada separada no catálogo; não fundir com janela 930 × 930 só por preço igual. Não contém dimensões.",
+    "sourcePage": 6,
+    "sourceFile": "assets/opcionais-2026.pdf",
+    "inclusion": "optional",
+    "inclusionScope": "generic-catalogue",
+    "includedInGV72": null,
+    "sourceExcerpt": "Janela em alumínio de rutura de ponte térmica, vidro duplo."
+  },
+  {
+    "id": "window-projecting",
+    "section": "Janelas",
+    "title": "Janela basculante / projectante",
+    "source": {
+      "file": "assets/opcionais-2026.pdf",
+      "page": 6
+    },
+    "classification": "documented-option",
+    "catalogueBadge": null,
+    "applicability": {
+      "sourceScope": "generic",
+      "gv72Compatibility": "not-confirmed",
+      "standardPackageForGV72": "not-provided"
+    },
+    "specifications": [
+      {
+        "label": "Movimento descrito",
+        "value": "inclinação para dentro ou para fora em eixo horizontal",
+        "unit": null,
+        "status": "documented"
+      },
+      {
+        "label": "Caixilho",
+        "value": "alumínio",
+        "unit": null,
+        "status": "documented"
+      }
+    ],
+    "cataloguePrice": {
+      "value": 250,
+      "currency": "EUR",
+      "vatIncluded": true,
+      "vatRatePercent": 23,
+      "edition": "2026-07-11",
+      "sourcePage": 6,
+      "status": "documented",
+      "quoteRule": "Preço do catálogo genérico; não é orçamento GV72 nem prova compatibilidade, quantidade ou regras de soma."
+    },
+    "limits": "Texto apresenta alternativas; orientação de abertura específica, ferragens e dimensões não confirmadas.",
+    "sourcePage": 6,
+    "sourceFile": "assets/opcionais-2026.pdf",
+    "inclusion": "optional",
+    "inclusionScope": "generic-catalogue",
+    "includedInGV72": null,
+    "sourceExcerpt": "Abre inclinando para dentro ou para fora, através de um eixo horizontal. Caixilharia em alumínio."
+  },
+  {
+    "id": "window-tilt-turn",
+    "section": "Janelas",
+    "title": "Janela oscilobatente",
+    "source": {
+      "file": "assets/opcionais-2026.pdf",
+      "page": 6
+    },
+    "classification": "documented-option",
+    "catalogueBadge": null,
+    "applicability": {
+      "sourceScope": "generic",
+      "gv72Compatibility": "not-confirmed",
+      "standardPackageForGV72": "not-provided"
+    },
+    "specifications": [
+      {
+        "label": "Aberturas",
+        "value": [
+          "batente total",
+          "basculante para ventilação"
+        ],
+        "unit": null,
+        "status": "documented"
+      }
+    ],
+    "cataloguePrice": {
+      "value": 150,
+      "currency": "EUR",
+      "vatIncluded": true,
+      "vatRatePercent": 23,
+      "edition": "2026-07-11",
+      "sourcePage": 6,
+      "status": "documented",
+      "quoteRule": "Preço do catálogo genérico; não é orçamento GV72 nem prova compatibilidade, quantidade ou regras de soma."
+    },
+    "limits": "Sem cota, curso angular, ferragens, composição de vidro ou aplicação por vão.",
+    "sourcePage": 6,
+    "sourceFile": "assets/opcionais-2026.pdf",
+    "inclusion": "optional",
+    "inclusionScope": "generic-catalogue",
+    "includedInGV72": null,
+    "sourceExcerpt": "Dupla abertura num só caixilho: batente (abertura total) e basculante (inclinação para ventilação)."
+  },
+  {
+    "id": "window-mosquito",
+    "section": "Janelas",
+    "title": "Mosquiteiro para janela",
+    "source": {
+      "file": "assets/opcionais-2026.pdf",
+      "page": 6
+    },
+    "classification": "documented-option",
+    "catalogueBadge": null,
+    "applicability": {
+      "sourceScope": "generic",
+      "gv72Compatibility": "not-confirmed",
+      "standardPackageForGV72": "not-provided"
+    },
+    "specifications": [
+      {
+        "label": "Equipamento",
+        "value": "mosquiteiro",
+        "unit": null,
+        "status": "documented"
+      }
+    ],
+    "cataloguePrice": {
+      "value": 100,
+      "currency": "EUR",
+      "vatIncluded": true,
+      "vatRatePercent": 23,
+      "edition": "2026-07-11",
+      "sourcePage": 6,
+      "status": "documented",
+      "quoteRule": "Preço do catálogo genérico; não é orçamento GV72 nem prova compatibilidade, quantidade ou regras de soma."
+    },
+    "limits": "Sem dimensões, material, tipo de recolha ou compatibilidade por janela.",
+    "sourcePage": 6,
+    "sourceFile": "assets/opcionais-2026.pdf",
+    "inclusion": "optional",
+    "inclusionScope": "generic-catalogue",
+    "includedInGV72": null,
+    "sourceExcerpt": "Mosquiteiro para janela."
+  },
+  {
+    "id": "wall-3d-metal",
+    "section": "Paredes e isolamento",
+    "title": "Revestimento exterior em painel 3D metálico sandwich",
+    "source": {
+      "file": "assets/opcionais-2026.pdf",
+      "page": 7
+    },
+    "classification": "documented-option",
+    "catalogueBadge": "PREMIUM",
+    "applicability": {
+      "sourceScope": "generic",
+      "gv72Compatibility": "not-confirmed",
+      "standardPackageForGV72": "not-provided"
+    },
+    "specifications": [
+      {
+        "label": "Revestimento",
+        "value": "painel 3D metálico esculpido decorativo",
+        "unit": null,
+        "status": "documented"
+      },
+      {
+        "label": "Parede descrita",
+        "value": "liga alumínio-magnésio-manganês",
+        "unit": null,
+        "status": "documented"
+      },
+      {
+        "label": "Estrutura descrita",
+        "value": "aço galvanizado a quente",
+        "unit": null,
+        "status": "documented"
+      },
+      {
+        "label": "Alegação do catálogo",
+        "value": "resistente à corrosão",
+        "unit": null,
+        "status": "documented"
+      }
+    ],
+    "cataloguePrice": {
+      "value": 1950,
+      "currency": "EUR",
+      "vatIncluded": true,
+      "vatRatePercent": 23,
+      "edition": "2026-07-11",
+      "sourcePage": 7,
+      "status": "documented",
+      "quoteRule": "Preço do catálogo genérico; não é orçamento GV72 nem prova compatibilidade, quantidade ou regras de soma."
+    },
+    "limits": "Aplica-se à descrição desta opção. Não confirma toda a composição standard, liga/grau de aço, espessuras, galvanização ou classe de corrosividade.",
+    "sourcePage": 7,
+    "sourceFile": "assets/opcionais-2026.pdf",
+    "inclusion": "optional",
+    "inclusionScope": "generic-catalogue",
+    "includedInGV72": null,
+    "sourceExcerpt": "Revestimento exterior em painel 3D metálico esculpido (decorativo), sobre parede em liga alumínio-magnésio-manganês. Estrutura em aço galvanizado a quente. Acabamento de linha premium, resistente à corrosão."
+  },
+  {
+    "id": "interior-bamboo",
+    "section": "Paredes e isolamento",
+    "title": "Painel interior fibra de bambu",
+    "source": {
+      "file": "assets/opcionais-2026.pdf",
+      "page": 10
+    },
+    "classification": "documented-option",
+    "catalogueBadge": "DELUXE",
+    "applicability": {
+      "sourceScope": "generic",
+      "gv72Compatibility": "not-confirmed",
+      "standardPackageForGV72": "not-provided"
+    },
+    "specifications": [
+      {
+        "label": "Material",
+        "value": "placa de fibra de bambu",
+        "unit": null,
+        "status": "documented"
+      },
+      {
+        "label": "Superfícies",
+        "value": [
+          "parede interior",
+          "teto interior"
+        ],
+        "unit": null,
+        "status": "documented"
+      },
+      {
+        "label": "Descrição",
+        "value": "peça única",
+        "unit": null,
+        "status": "documented"
+      }
+    ],
+    "cataloguePrice": {
+      "value": 1950,
+      "currency": "EUR",
+      "vatIncluded": true,
+      "vatRatePercent": 23,
+      "edition": "2026-07-11",
+      "sourcePage": 10,
+      "status": "documented",
+      "quoteRule": "Preço do catálogo genérico; não é orçamento GV72 nem prova compatibilidade, quantidade ou regras de soma."
+    },
+    "limits": "Não indica espessura, dimensões da peça, juntas, resistência nem aplicação exacta na GV72; não é tinta interior.",
+    "sourcePage": 10,
+    "sourceFile": "assets/opcionais-2026.pdf",
+    "inclusion": "optional",
+    "inclusionScope": "generic-catalogue",
+    "includedInGV72": null,
+    "sourceExcerpt": "Parede e teto interiores revestidos a placa de fibra de bambu. É o interior da versão deluxe."
+  },
+  {
+    "id": "insulation-rockwool",
+    "section": "Paredes e isolamento",
+    "title": "Isolamento de parede e teto em lã de rocha, 100 mm",
+    "source": {
+      "file": "assets/opcionais-2026.pdf",
+      "page": 10
+    },
+    "classification": "documented-option",
+    "catalogueBadge": null,
+    "applicability": {
+      "sourceScope": "40 FT",
+      "gv72Compatibility": "not-confirmed",
+      "standardPackageForGV72": "not-provided"
+    },
+    "specifications": [
+      {
+        "label": "Material",
+        "value": "lã de rocha",
+        "unit": null,
+        "status": "documented"
+      },
+      {
+        "label": "Espessura do isolamento",
+        "value": 100,
+        "unit": "mm",
+        "status": "documented"
+      },
+      {
+        "label": "Superfícies",
+        "value": [
+          "parede",
+          "teto"
+        ],
+        "unit": null,
+        "status": "documented"
+      },
+      {
+        "label": "Unidade nominal",
+        "value": 40,
+        "unit": "FT",
+        "status": "documented"
+      },
+      {
+        "label": "Comparação descrita",
+        "value": "melhor resistência ao fogo do que EPS",
+        "unit": null,
+        "status": "documented"
+      }
+    ],
+    "cataloguePrice": {
+      "value": 3500,
+      "currency": "EUR",
+      "vatIncluded": true,
+      "vatRatePercent": 23,
+      "edition": "2026-07-11",
+      "sourcePage": 10,
+      "status": "documented",
+      "quoteRule": "Preço do catálogo genérico; não é orçamento GV72 nem prova compatibilidade, quantidade ou regras de soma."
+    },
+    "limits": "100 mm é isolamento, não espessura total de parede. Sem densidade, condutividade, classe de reacção/resistência ao fogo, ensaio ou certificado.",
+    "sourcePage": 10,
+    "sourceFile": "assets/opcionais-2026.pdf",
+    "inclusion": "optional",
+    "inclusionScope": "generic-catalogue",
+    "includedInGV72": null,
+    "sourceExcerpt": "Isolamento em lã de rocha de 100 mm em parede e teto (unidade 40FT). Melhor desempenho de resistência ao fogo do que o EPS."
+  },
+  {
+    "id": "insulation-eps",
+    "section": "Paredes e isolamento",
+    "title": "Isolamento de parede e teto em EPS",
+    "source": {
+      "file": "assets/opcionais-2026.pdf",
+      "page": 11
+    },
+    "classification": "documented-option",
+    "catalogueBadge": null,
+    "applicability": {
+      "sourceScope": "40 FT",
+      "gv72Compatibility": "not-confirmed",
+      "standardPackageForGV72": "not-provided"
+    },
+    "specifications": [
+      {
+        "label": "Material",
+        "value": "EPS",
+        "unit": null,
+        "status": "documented"
+      },
+      {
+        "label": "Superfícies",
+        "value": [
+          "parede",
+          "teto"
+        ],
+        "unit": null,
+        "status": "documented"
+      },
+      {
+        "label": "Unidade nominal",
+        "value": 40,
+        "unit": "FT",
+        "status": "documented"
+      }
+    ],
+    "cataloguePrice": {
+      "value": 3000,
+      "currency": "EUR",
+      "vatIncluded": true,
+      "vatRatePercent": 23,
+      "edition": "2026-07-11",
+      "sourcePage": 11,
+      "status": "documented",
+      "quoteRule": "Preço do catálogo genérico; não é orçamento GV72 nem prova compatibilidade, quantidade ou regras de soma."
+    },
+    "limits": "Espessura, densidade e desempenho não fornecidos. Não herdar 100 mm da opção lã de rocha.",
+    "sourcePage": 11,
+    "sourceFile": "assets/opcionais-2026.pdf",
+    "inclusion": "optional",
+    "inclusionScope": "generic-catalogue",
+    "includedInGV72": null,
+    "sourceExcerpt": "Isolamento em EPS em parede e teto (unidade 40FT)."
+  },
+  {
+    "id": "insulation-pu-floor",
+    "section": "Paredes e isolamento",
+    "title": "Isolamento de chão em poliuretano PU projectado",
+    "source": {
+      "file": "assets/opcionais-2026.pdf",
+      "page": 11
+    },
+    "classification": "documented-option",
+    "catalogueBadge": null,
+    "applicability": {
+      "sourceScope": "generic",
+      "gv72Compatibility": "not-confirmed",
+      "standardPackageForGV72": "not-provided"
+    },
+    "specifications": [
+      {
+        "label": "Material",
+        "value": "poliuretano PU",
+        "unit": null,
+        "status": "documented"
+      },
+      {
+        "label": "Aplicação",
+        "value": "spray",
+        "unit": null,
+        "status": "documented"
+      },
+      {
+        "label": "Superfície",
+        "value": "chão",
+        "unit": null,
+        "status": "documented"
+      },
+      {
+        "label": "Espessura",
+        "value": 50,
+        "unit": "mm",
+        "status": "documented"
+      }
+    ],
+    "cataloguePrice": {
+      "value": 2640,
+      "currency": "EUR",
+      "vatIncluded": true,
+      "vatRatePercent": 23,
+      "edition": "2026-07-11",
+      "sourcePage": 11,
+      "status": "documented",
+      "quoteRule": "Preço do catálogo genérico; não é orçamento GV72 nem prova compatibilidade, quantidade ou regras de soma."
+    },
+    "limits": "Não indica densidade, condutividade, classe de fogo, camadas complementares ou espessura total do piso.",
+    "sourcePage": 11,
+    "sourceFile": "assets/opcionais-2026.pdf",
+    "inclusion": "optional",
+    "inclusionScope": "generic-catalogue",
+    "includedInGV72": null,
+    "sourceExcerpt": "Isolamento de chão, 50 mm."
+  },
+  {
+    "id": "gable-roof",
+    "section": "Telhado",
+    "title": "Sistema de telhado triangular, casa completa",
+    "source": {
+      "file": "assets/opcionais-2026.pdf",
+      "page": 12
+    },
+    "classification": "documented-option",
+    "catalogueBadge": null,
+    "applicability": {
+      "sourceScope": "40 FT",
+      "gv72Compatibility": "not-confirmed",
+      "standardPackageForGV72": "not-provided"
+    },
+    "specifications": [
+      {
+        "label": "Geometria descrita",
+        "value": "duas águas / full gable",
+        "unit": null,
+        "status": "documented"
+      },
+      {
+        "label": "Beirado",
+        "value": "incluído no sistema descrito",
+        "unit": null,
+        "status": "documented"
+      },
+      {
+        "label": "Material de cobertura",
+        "value": "liga alumínio-magnésio-manganês",
+        "unit": null,
+        "status": "documented"
+      },
+      {
+        "label": "Unidade nominal",
+        "value": 40,
+        "unit": "FT",
+        "status": "documented"
+      },
+      {
+        "label": "Descrição funcional",
+        "value": "escoamento de água e integração com o terraço",
+        "unit": null,
+        "status": "documented"
+      }
+    ],
+    "cataloguePrice": {
+      "value": 2830,
+      "currency": "EUR",
+      "vatIncluded": true,
+      "vatRatePercent": 23,
+      "edition": "2026-07-11",
+      "sourcePage": 12,
+      "status": "documented",
+      "quoteRule": "Preço do catálogo genérico; não é orçamento GV72 nem prova compatibilidade, quantidade ou regras de soma."
+    },
+    "limits": "Sem inclinação, altura de cumeeira, comprimento do beirado, camadas, fixações ou cargas. Não identifica a correspondência exacta à fotografia isolada.",
+    "sourcePage": 12,
+    "sourceFile": "assets/opcionais-2026.pdf",
+    "inclusion": "optional",
+    "inclusionScope": "generic-catalogue",
+    "includedInGV72": null,
+    "sourceExcerpt": "Telhado triangular de duas águas (full gable), com beirado; cobertura em liga alumínio-magnésio-manganês. Melhor escoamento de água e integração com o terraço."
+  },
+  {
+    "id": "terrace-canopy",
+    "section": "Terraço",
+    "title": "Terraço com toldo chuva/sol",
+    "source": {
+      "file": "assets/opcionais-2026.pdf",
+      "page": 13
+    },
+    "classification": "documented-option",
+    "catalogueBadge": "STANDARD",
+    "applicability": {
+      "sourceScope": "generic",
+      "gv72Compatibility": "not-confirmed",
+      "standardPackageForGV72": "not-provided"
+    },
+    "specifications": [
+      {
+        "label": "Profundidade",
+        "value": 3,
+        "unit": "m",
+        "status": "documented"
+      },
+      {
+        "label": "Estrutura",
+        "value": "aço, frame preto",
+        "unit": null,
+        "status": "documented"
+      },
+      {
+        "label": "Cobertura",
+        "value": "painel sandwich de aço lacado",
+        "unit": null,
+        "status": "documented"
+      },
+      {
+        "label": "Espessura do painel",
+        "value": 50,
+        "unit": "mm",
+        "status": "documented"
+      },
+      {
+        "label": "Fornecimento descrito",
+        "value": "terraço e cobertura em conjunto na versão standard",
+        "unit": null,
+        "status": "documented"
+      }
+    ],
+    "cataloguePrice": {
+      "value": 2050,
+      "currency": "EUR",
+      "vatIncluded": true,
+      "vatRatePercent": 23,
+      "edition": "2026-07-11",
+      "sourcePage": 13,
+      "status": "documented",
+      "quoteRule": "Preço do catálogo genérico; não é orçamento GV72 nem prova compatibilidade, quantidade ou regras de soma."
+    },
+    "limits": "A fotografia na mesma página tem elementos brancos; texto/foto não provam variantes distintas. Sem largura/área/planta correspondente. Profundidade 1,95 m da maquete é estimativa, não a cota 3 m da opção.",
+    "sourcePage": 13,
+    "sourceFile": "assets/opcionais-2026.pdf",
+    "inclusion": "optional",
+    "inclusionScope": "generic-catalogue",
+    "includedInGV72": null,
+    "sourceExcerpt": "Terraço de 3 m de profundidade, estrutura em aço (frame preto) e cobertura em painel sandwich de aço lacado 50 mm (protege da chuva e do sol). Na versão standard, terraço e cobertura vêm em conjunto."
+  },
+  {
+    "id": "kitchen-upper",
+    "section": "Cozinha",
+    "title": "Armário superior",
+    "source": {
+      "file": "assets/opcionais-2026.pdf",
+      "page": 15
+    },
+    "classification": "documented-option",
+    "catalogueBadge": null,
+    "applicability": {
+      "sourceScope": "generic",
+      "gv72Compatibility": "not-confirmed",
+      "standardPackageForGV72": "not-provided"
+    },
+    "specifications": [
+      {
+        "label": "Equipamento",
+        "value": "armário superior de cozinha, de parede",
+        "unit": null,
+        "status": "documented"
+      }
+    ],
+    "cataloguePrice": {
+      "value": 700,
+      "currency": "EUR",
+      "vatIncluded": true,
+      "vatRatePercent": 23,
+      "edition": "2026-07-11",
+      "sourcePage": 15,
+      "status": "documented",
+      "quoteRule": "Preço do catálogo genérico; não é orçamento GV72 nem prova compatibilidade, quantidade ou regras de soma."
+    },
+    "limits": "Sem quantidade, dimensões, acabamento ou regra que prove o armário incluído em cada um dos 15 ambientes. Presença em fotografia não prova inclusão no preço da casa.",
+    "sourcePage": 15,
+    "sourceFile": "assets/opcionais-2026.pdf",
+    "inclusion": "optional",
+    "inclusionScope": "generic-catalogue",
+    "includedInGV72": null,
+    "sourceExcerpt": "Armário de cozinha superior (de parede)."
+  },
+  {
+    "id": "bathroom-dry-wet",
+    "section": "Casa de banho",
+    "title": "Casa de banho com separação seco/molhado — 3 m no catálogo",
+    "source": {
+      "file": "assets/opcionais-2026.pdf",
+      "page": 17
+    },
+    "classification": "documented-option",
+    "catalogueBadge": null,
+    "applicability": {
+      "sourceScope": "generic",
+      "gv72Compatibility": "not-confirmed",
+      "standardPackageForGV72": "not-provided"
+    },
+    "specifications": [
+      {
+        "label": "Valor literal indicado",
+        "value": 3,
+        "unit": "m",
+        "status": "ambiguous",
+        "interpretation": "Axis/meaning not identified in source; do not convert to m²."
+      },
+      {
+        "label": "Zonas",
+        "value": [
+          "seca",
+          "duche isolado"
+        ],
+        "unit": null,
+        "status": "documented"
+      },
+      {
+        "label": "Separação",
+        "value": "porta de correr de vidro",
+        "unit": null,
+        "status": "documented"
+      }
+    ],
+    "cataloguePrice": {
+      "value": null,
+      "currency": "EUR",
+      "vatIncluded": true,
+      "vatRatePercent": 23,
+      "edition": "2026-07-11",
+      "sourcePage": 17,
+      "status": "not-stated",
+      "quoteRule": "Preço do catálogo genérico; não é orçamento GV72 nem prova compatibilidade, quantidade ou regras de soma."
+    },
+    "limits": "O texto não identifica a que eixo/elemento se referem os 3 m; não interpretar como 3 m² nem atribuir à profundidade de todas as casas de banho. Sem preço, cota de porta ou correspondência por fotografia.",
+    "sourcePage": 17,
+    "sourceFile": "assets/opcionais-2026.pdf",
+    "inclusion": "optional",
+    "inclusionScope": "generic-catalogue",
+    "includedInGV72": null,
+    "sourceExcerpt": "Casa de banho com separação seco/molhado (3 m): zona de duche isolada da zona seca por porta de correr de vidro."
+  }
+]

@@ -1,18 +1,18 @@
-# Green Village — Expandível 72, revisão R8
+# Green Village — Expandível 72, revisão R9
 
 Portefólio comercial interactivo com o logótipo original, sete plantas, catálogo de acabamentos, cozinha e banho, galeria 4K e resumo PDF. Aplicação estática em `dist/`. Reutilizar o Site de `.openai/hosting.json`; este checkout é independente do repositório que o contém.
 
 ## Utilização
 
 - `node scripts/serve.mjs` serve o projecto em `http://127.0.0.1:4174`. Os módulos precisam de HTTP, não de abertura directa como ficheiro.
-- `npm test` executa os testes permanentes. `npm run test:expansion` compara componentes na posição montada; desde R8, **não verifica uma cinemática de expansão**, que está pendente de documentação.
+- `npm test` executa os testes permanentes. `npm run test:expansion` verifica a fase de elevação das paredes nas sete plantas, em 7 007 posições, por SAT, vínculos das janelas, monotonia e retorno à posição final. A sequência completa de montagem não está documentada.
 - Não há compilação obrigatória: a publicação usa a pasta `dist/`.
 
 O cliente pode seleccionar materiais, desfazer/refazer escolhas, guardar/recuperar, comparar A/B, partilhar uma ligação validada e exportar JSON, PDF, PNG 4K ou GLB. A ligação mantém as permissões do Site: não concede acesso a novos visitantes. O contacto do catálogo abre uma mensagem no programa de correio do cliente; não simula nem efectua um envio.
 
 ## Correcção das paredes, portas e janelas
 
-A auditoria comprovou que os quatro painéis de topo da animação anterior rodavam de fora para dentro. Inverter apenas o sinal da rotação criava interferências com outros componentes. A pedido do utilizador, não foi inventado outro mecanismo: a área de expansão mostra agora a sequência original de quatro imagens e o 3D na posição aberta. O filme de expansão anterior deixou de integrar o percurso comercial. Os originais e os relatórios históricos permanecem no arquivo.
+A expansão R9 anima a elevação das paredes longitudinais observada nos quadros 2–3 da imagem fornecida, sempre de dentro para fora, com as janelas solidárias. Reproduzir, pausar, retomar, reiniciar e cursor manual partilham a mesma geometria. Eixo longitudinal a ±2,99 m/altura 0 e folga de cobertura de 8 mm são estimativas visíveis na ficha, não cotas do fabricante. Pisos e estrutura estão abertos. Os painéis de topo e o interior são omitidos durante a demonstração; a casa completa é uma vista separada. Não se restaura a rotação incorrecta dos topos das revisões R3/R4. O recolhimento desses painéis continua dependente de documentação ou confirmação do utilizador.
 
 As folhas interiores mantêm o sentido de abertura das sete plantas. As janelas continuam solidárias às paredes. As duas janelas traseiras acrescentadas indevidamente às variantes T3 B e T4 B foram removidas. A cozinha proposta no T4 A foi recuada 50 mm para melhorar a passagem; a porta e a planta não foram deslocadas.
 
@@ -38,10 +38,18 @@ O GLB contém a casa estática completa da configuração seleccionada, componen
 2. Referências do catálogo: `dist/data.js`, `dist/material-data.js` e respectivos recursos. Manter IDs estáveis, página de origem, recorte original, unidade e limites. Cozinhas/banhos: `dist/interior-references.js`; a geometria detalhada está em `dist/interior-detail.js`.
 3. Opções e validação: `dist/configuration.js`. Atualizar também a migração em `dist/client-tools.js` se mudar o esquema. Restrições de implantação calculadas não provam compatibilidade comercial.
 4. Contacto: `CONTACT_EMAIL` em `dist/portfolio.js`, cabeçalho/rodapé quando aplicável. Usar exclusivamente um contacto confirmado para este projecto. Não existe número WhatsApp confirmado.
-5. Depois de uma alteração, gerar o catálogo estruturado com `node scripts/export-catalogue.mjs`, correr os testes e verificar no navegador o material, resumo, PDF e exportações. Regenerar imagens da galeria quando a geometria ou os materiais da configuração representada mudarem.
+5. Inventário técnico R9: `dist/technical-data.js`, `dist/technical-sheet.js` e `assets/product-r9/`. Manter os 22 opcionais, 107 factos e classificações em concordância com os originais. O gerador antigo `scripts/export-catalogue.mjs` escreve o arquivo R8; não o usar para substituir os dados R9. Depois de uma alteração, correr os testes e verificar no navegador o material, resumo, PDF e exportações. Regenerar imagens da galeria quando a geometria ou os materiais da configuração representada mudarem.
 
 `dist/client-tools.js` contém histórico, ligações e exportações; `dist/model-layers.js` gere camadas e transparência; `dist/walkthrough.js` define navegação com colisões; `dist/stage.js` gere iluminação/câmaras, incluindo planta e quatro fachadas ortográficas. A altura de observação de 1,60 m é uma opção de navegação, não uma cota da casa.
 
 ## Entrega e limites de verificação
 
-Catálogo e mapa de fontes: `dist/assets/product-r8/`. Relatório actual: `dist/assets/evidence-r8/audit-report.html`. Testes e provas indicam explicitamente o ambiente e o âmbito executados. Testar tamanhos móveis no computador não certifica todos os dispositivos físicos. Não declarar resolvida a cinemática de expansão até existir informação suficiente sobre o mecanismo real.
+Catálogo e mapa de fontes: `dist/assets/product-r9/`. Relatório actual: `dist/assets/evidence-r9/audit-report.html`. Testes e provas indicam explicitamente o ambiente e o âmbito executados. Testar tamanhos móveis no computador não certifica todos os dispositivos físicos. Não declarar resolvida a cinemática de expansão até existir informação suficiente sobre o mecanismo real.
+
+## Ficha e vídeos R9
+
+A ficha actualiza planta, vãos e áreas da configuração. As 25 medidas não repetem a profundidade do alpendre; 1,95 m assumidos não substituem os 3 m da opção genérica. São apresentados 22 opcionais, com 21 preços publicados no catálogo de 11/07/2026 e um sem preço; não são somados como orçamento. STANDARD/PREMIUM/DELUXE são designações do catálogo, sem provar inclusão. As 12 cores exteriores são explicitamente incluídas na fonte; SPC e UV não têm inclusão declarada. “Broken bridge 55” não é convertido em 55 mm; “banho 3 m” não é convertido em área. Janela opcional 930 × 930 mm não substitui a cota de 920 mm da planta.
+
+Os quatro MP4 originais mantêm bytes, duração, resolução 576 × 1024 e capítulos. Os nomes 74 m² e 20ft/37 m²/40ft não provam correspondência ou variante: conflitos identificados no próprio ficheiro. O leitor carrega o ficheiro completo antes da reprodução para contornar servidores que ignoram pedidos Range; cache limitada a dois vídeos. Leitores móveis usam largura completa. Os atalhos da ficha levam o foco e a vista ao vídeo seleccionado.
+
+Filme R9: `dist/assets/expansion-r9/wall-raising.mp4`, 14 s / 1920 × 1080 / 25 fps, 350 fotogramas renderizados do mesmo modelo. A cobertura é translúcida a 9% para leitura dos painéis, declarada na imagem. O manifesto preserva configuração, hashes de origem, verificação de descodificação e limites. O vídeo não representa duração real de montagem.

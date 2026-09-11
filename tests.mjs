@@ -1,3 +1,5 @@
+import {technicalSheetMarkup} from './dist/technical-sheet.js';
+import {CATALOGUE_OPTIONS,TECHNICAL_FACTS} from './dist/technical-data.js';
 import assert from 'node:assert/strict';
 import {createHistory,shareConfiguration,readSharedConfiguration,migrateStoredConfiguration,sourceLedger,quoteLink} from './dist/client-tools.js';
 import {createLayerController,LAYERS} from './dist/model-layers.js';
@@ -84,12 +86,12 @@ check('all seven geometry outputs are finite and preserve actual structural enve
 check('interior cut applies to furnishings; undocumented technical layers contain no geometry',()=>{
  const h=makeHouse({...DEFAULT_CONFIG,view:'interior',roof:true,porch:true});assert.equal(h.groups.roof.visible,false);assert.equal(h.groups.cover.visible,false);for(const k of ['cabinet','metal','white','inner','steel'])assert.equal(h.materials[k].clippingPlanes.length,1,k);h.setView('electrical');assert.equal(h.groups.electrical.children.length,0);assert.equal(h.groups.plumbing.children.length,0);assert.equal(h.groups.electrical.visible,true);assert.equal(h.groups.plumbing.visible,false);h.setView('exterior');assert.equal(h.groups.cover.visible,true);h.dispose();
 });
-check('source reference phase selection keeps the completed house rigid across 101 positions',()=>{
- assert.equal(expansionState(-1).floor,0);assert.equal(expansionState(-1).roof,0);assert.equal(expansionState(1).floor,1);assert.equal(expansionState(1).roof,1);assert.equal(expansionState(1).wall,1);assert.equal(expansionState(1).ends,1);assert.ok(expansionState(.5).uncertain);
- const h=makeHouse({...DEFAULT_CONFIG,view:'expansion',roof:true,porch:true});let lastWall=0,lastEnds=0;for(let i=0;i<=100;i++){const e=h.updateExpansion(i/100);assert.ok(e.wall>=lastWall&&e.ends>=lastEnds);lastWall=e.wall;lastEnds=e.ends;h.root.updateMatrixWorld(true);for(const a of h.sideAssemblies){close(a.pivot.matrixWorld.determinant(),1);assert.deepEqual(a.pivot.scale.toArray(),[1,1,1]);}for(const a of h.endAssemblies){close(a.g.matrixWorld.determinant(),1);assert.equal(a.g.visible,true);}assert.equal(h.groups.furniture.visible,false);assert.equal(h.groups.porch.visible,false);assert.equal(h.groups.cover.visible,false);}
+check('R9 wall raising keeps windows rigid and leaves undocumented end panels out of the demonstration',()=>{
+ assert.equal(expansionState(-1).wall,0);assert.equal(expansionState(1).wall,1);assert.equal(expansionState(1).angle,0);assert.ok(expansionState(.5).uncertain);assert.equal(expansionState(1).roofLift,0);assert.equal(expansionState(0).roofLift,.008);
+ const h=makeHouse({...DEFAULT_CONFIG,view:'expansion',roof:true,porch:true});let lastWall=0;for(let i=0;i<=100;i++){const e=h.updateExpansion(i/100);assert.ok(e.wall>=lastWall);lastWall=e.wall;h.root.updateMatrixWorld(true);for(const a of h.sideAssemblies){close(a.pivot.matrixWorld.determinant(),1);assert.deepEqual(a.pivot.scale.toArray(),[1,1,1]);}for(const a of h.endAssemblies){close(a.g.matrixWorld.determinant(),1);assert.equal(a.g.visible,false);}assert.equal(h.groups.furniture.visible,false);assert.equal(h.groups.porch.visible,false);assert.equal(h.groups.cover.visible,false);}
  for(const a of h.sideAssemblies)close(a.pivot.rotation.z,0);for(const a of h.endAssemblies){close(a.pivot.rotation.y,0);close(a.pivot.position.z,a.front*DIM.length/2);}for(const a of [...h.floorAssemblies,...h.roofAssemblies])for(const p of a.pivots)close(p.rotation.z,0);h.setView('exterior');assert.equal(h.groups.furniture.visible,true);h.dispose();
 });
-check('R8 source-reference mode preserves the complete house geometry and returns to the selected visibility',()=>{
+check('R9 animation restores assembled geometry and the selected visibility',()=>{
  const h=makeHouse({...DEFAULT_CONFIG,view:'expansion',wallsVisible:false,roofVisible:false});
  assert.equal(h.groups.shell.visible,true);assert.equal(h.groups.roof.visible,true);assert.ok(h.sideAssemblies.every(a=>a.pivot.visible));
  const meshes=[];h.root.traverse(o=>{if(o.isMesh)meshes.push(o);});const before=new Map();h.updateExpansion(1);h.root.updateMatrixWorld(true);for(const m of meshes)before.set(m,m.matrixWorld.clone());
@@ -179,9 +181,14 @@ check('R8 gallery has eleven matching native 4K views without undocumented expan
 check('distributed first-party text contains no machine paths or credentials',()=>{
  function scan(dir){for(const f of readdirSync(dir)){const p=path.join(dir,f);if(statSync(p).isDirectory())scan(p);else if(/\.(js|html|json|css)$/.test(f)&&!p.includes('vendor')){const s=readFileSync(p,'utf8');assert.ok(!s.includes('/Users/'),p);assert.ok(!s.includes('API_KEY'),p);}}}scan('dist');
 });
-check('R8 reference stages never interpolate undocumented geometry or detach windows',()=>{
- for(const layout of Object.keys(source)){const h=makeHouse({...DEFAULT_CONFIG,layout,view:'expansion',expansion:1});h.root.updateMatrixWorld(true);const poses=new Map();h.root.traverse(o=>{if(o.isMesh)poses.set(o,o.matrixWorld.toArray());});for(const p of [0,.3333,.6667,1,0,1]){assert.equal(h.updateExpansion(p).referenceOnly,true);h.root.updateMatrixWorld(true);for(const [o,matrix]of poses)assert.deepEqual(o.matrixWorld.toArray(),matrix);}assert.equal(h.groups.plumbing.children.length,0);assert.equal(h.groups.electrical.children.length,0);h.dispose();}
- const html=readFileSync('dist/index.html','utf8');assert.equal(html.includes('id="play-expansion"'),false);assert.equal(html.includes('src="assets/expansion-v4.mp4"'),false);assert.equal(html.includes('type="color"'),false);
+check('R9 only documented wall raising is animated and repeated poses do not drift',()=>{
+ for(const layout of Object.keys(source)){
+  const h=makeHouse({...DEFAULT_CONFIG,layout,view:'expansion',expansion:1});h.root.updateMatrixWorld(true);const closed=h.sideAssemblies.map(a=>a.pivot.matrixWorld.toArray());
+  h.updateExpansion(0);h.root.updateMatrixWorld(true);assert.notDeepEqual(h.sideAssemblies[0].pivot.matrixWorld.toArray(),closed[0]);const folded=h.sideAssemblies.map(a=>a.pivot.matrixWorld.toArray());
+  for(const p of [.4,1,0,.85,.12,1,0]){const e=h.updateExpansion(p);assert.equal(e.scope,'longitudinal-wall-raising');assert.equal(e.referenceOnly,false);h.root.updateMatrixWorld(true);if(p===0)h.sideAssemblies.forEach((a,i)=>assert.deepEqual(a.pivot.matrixWorld.toArray(),folded[i]));if(p===1)h.sideAssemblies.forEach((a,i)=>assert.deepEqual(a.pivot.matrixWorld.toArray(),closed[i]));}
+  assert.equal(h.groups.plumbing.children.length,0);assert.equal(h.groups.electrical.children.length,0);h.setView('exterior');assert.ok(h.endAssemblies.every(a=>a.g.visible));h.dispose();
+ }
+ const html=readFileSync('dist/index.html','utf8');assert.ok(html.includes('id="play-expansion"'));assert.ok(html.includes('id="expansion-range"'));assert.equal(html.includes('src="assets/expansion-v4.mp4"'),false);assert.equal(html.includes('type="color"'),false);
 });
 check('R8 catalogue validation excludes undocumented colours and migrates legacy locally without losing plans',()=>{
  assert.throws(()=>validateConfiguration({...DEFAULT_CONFIG,floorId:null}));assert.throws(()=>validateConfiguration({...DEFAULT_CONFIG,exteriorId:null}));assert.throws(()=>validateConfiguration({...DEFAULT_CONFIG,interior:'#123456'}));
@@ -200,5 +207,26 @@ check('R8 layer isolation and opacity are independent, reversible and preserve m
 });
 check('R8 interior movement cannot cross envelope or partitions at high movement steps',()=>{
  for(const layout of Object.keys(source)){const p=getPlan({...DEFAULT_CONFIG,layout}),segments=navigationSegments(p,true);assert.ok(canWalk(p,segments,0,4.9));let position={x:0,z:4.9};for(const [dx,dz]of [[100,0],[-100,0],[0,-100],[0,100]]){position=moveInside(p,segments,position,dx,dz);assert.ok(canWalk(p,segments,position.x,position.z),layout);assert.ok(Math.abs(position.x)<3.01&&Math.abs(position.z)<5.8);}}
+});
+check('R9 each model dimension appears once and source conflicts do not assert an unproven variant',()=>{
+ const ledger=sourceLedger({...DEFAULT_CONFIG,porch:true});
+ assert.equal(ledger.dimensions.filter(m=>m.id==='porchDepthVisual'||m.id==='porchDepth').length,1);
+ const porch=ledger.dimensions.find(m=>m.id==='porchDepthVisual'||m.id==='porchDepth');assert.equal(porch.provided,null);assert.equal(porch.modelled,1.95);assert.equal(porch.status,'estimated');
+ assert.equal(ledger.dimensions.find(m=>m.id==='catalogueTerraceDepth').provided,3);
+ assert.ok(!ledger.dimensions.find(m=>m.id==='catalogueTerraceDepth').note.includes('Variante distinta'));
+});
+check('R9 technical sheet preserves catalogue units, option prices and source scope',()=>{
+ assert.equal(CATALOGUE_OPTIONS.length,22);assert.equal(CATALOGUE_OPTIONS.filter(o=>o.cataloguePrice.value!==null).length,21);
+ const bathroom=CATALOGUE_OPTIONS.find(o=>o.id==='bathroom-dry-wet');assert.equal(bathroom.specifications[0].unit,'m');assert.equal(bathroom.cataloguePrice.value,null);
+ const system=CATALOGUE_OPTIONS.find(o=>o.id==='front-glass-premium').specifications.find(s=>s.label==='Designação do sistema');assert.equal(system.value,'broken bridge 55');assert.equal(system.unit,null);
+ for(const option of CATALOGUE_OPTIONS){assert.equal(option.applicability.gv72Compatibility,'not-confirmed');assert.ok(option.source.page>=3&&option.source.page<=17);}
+ for(const layout of Object.keys(source)){const config={...DEFAULT_CONFIG,layout},html=technicalSheetMarkup(config);assert.ok(html.includes(getPlan(config).label));assert.ok(!/undefined|NaN/.test(html));assert.equal((html.match(/data-option=/g)||[]).length,22);assert.equal((html.match(/data-measure=/g)||[]).length,25);assert.equal((html.match(/data-open-reference-video=/g)||[]).length,4);assert.ok(!html.includes('Fonte / m'));}
+ const current=sourceLedger(DEFAULT_CONFIG);assert.equal(current.units.areas,'m²');assert.equal(current.catalogueOptions.length,22);assert.equal(current.sourceLayout.id,DEFAULT_CONFIG.layout);assert.equal(current.videos.videos.length,4);assert.equal(TECHNICAL_FACTS.length,45);
+});
+check('R9 expansion film is native Full HD, source-bound and declares its limited animation scope',()=>{
+ const film=JSON.parse(readFileSync('dist/assets/expansion-r9/manifest.json','utf8'));assert.equal(film.status,'PASS');assert.deepEqual(film.dimensions,[1920,1080]);assert.equal(film.frameCount,350);assert.equal(film.durationSeconds,14);assert.equal(film.fps,25);assert.equal(film.displayOverrides.roofOpacity,.09);
+ for(const item of film.outputs)assert.equal(createHash('sha256').update(readFileSync('dist/'+item.path)).digest('hex'),item.sha256);
+ for(const file of ['model.js','specification.js','stage.js'])assert.equal(createHash('sha256').update(readFileSync('dist/'+file)).digest('hex'),film.sourceHashes[file]);
+ assert.ok(film.limits.some(x=>x.includes('2–3')));assert.equal(film.validation.all350MP4FramesDecoded,true);
 });
 console.log(`${count} scoped regression checks passed${core?' (media/evidence integration pending)':''}.`);

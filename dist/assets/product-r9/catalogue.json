@@ -1,0 +1,3133 @@
+{
+  "inclusionLegend": {
+    "included": "Explicitly stated included in generic catalogue",
+    "optional": "Documented generic option/premium range",
+    "not-stated": "Source does not state inclusion"
+  },
+  "materials": [
+    {
+      "id": "exterior-3d-textures-tijolo-cinza",
+      "label": "Tijolo Cinza",
+      "printedReference": null,
+      "labelStatus": "printed-in-catalogue",
+      "family": "Série Tijolo",
+      "category": "exterior-3d-textures",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 7
+      },
+      "sourceImage": "assets/catalogue-v2/originals/exterior-3d-textures-tijolo-cinza.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "84692a95deaad9f32c60cdaf1434f3000ac191b81083ea559eee9294f7cf48f2",
+      "status": "documented-digital-sample",
+      "classification": "documented-premium-range",
+      "allowedSurface": "revestimento exterior",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 7,
+      "inclusion": "optional",
+      "includedInGV72": null
+    },
+    {
+      "id": "exterior-3d-textures-tijolo-bordo",
+      "label": "Tijolo Bordô",
+      "printedReference": null,
+      "labelStatus": "printed-in-catalogue",
+      "family": "Série Tijolo",
+      "category": "exterior-3d-textures",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 7
+      },
+      "sourceImage": "assets/catalogue-v2/originals/exterior-3d-textures-tijolo-bordo.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "5dacec9d490b176ddbf3a28d875b9482f88eba4dc4b88c00dfa0f498d6fe068e",
+      "status": "documented-digital-sample",
+      "classification": "documented-premium-range",
+      "allowedSurface": "revestimento exterior",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 7,
+      "inclusion": "optional",
+      "includedInGV72": null
+    },
+    {
+      "id": "exterior-3d-textures-tijolo-creme",
+      "label": "Tijolo Creme",
+      "printedReference": null,
+      "labelStatus": "printed-in-catalogue",
+      "family": "Série Tijolo",
+      "category": "exterior-3d-textures",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 7
+      },
+      "sourceImage": "assets/catalogue-v2/originals/exterior-3d-textures-tijolo-creme.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "d864dc09b6046523f6996a5d91b46544bdfa2c2489b35811100314b9367d964d",
+      "status": "documented-digital-sample",
+      "classification": "documented-premium-range",
+      "allowedSurface": "revestimento exterior",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 7,
+      "inclusion": "optional",
+      "includedInGV72": null
+    },
+    {
+      "id": "exterior-3d-textures-tijolo-vermelho",
+      "label": "Tijolo Vermelho",
+      "printedReference": null,
+      "labelStatus": "printed-in-catalogue",
+      "family": "Série Tijolo",
+      "category": "exterior-3d-textures",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 7
+      },
+      "sourceImage": "assets/catalogue-v2/originals/exterior-3d-textures-tijolo-vermelho.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "535213b6c2f38787f6a92dbcd4adc133f504ba39d2a37a4f449b509de35f4943",
+      "status": "documented-digital-sample",
+      "classification": "documented-premium-range",
+      "allowedSurface": "revestimento exterior",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 7,
+      "inclusion": "optional",
+      "includedInGV72": null
+    },
+    {
+      "id": "exterior-3d-textures-pedra-areia",
+      "label": "Pedra Areia",
+      "printedReference": null,
+      "labelStatus": "printed-in-catalogue",
+      "family": "Série Pedra",
+      "category": "exterior-3d-textures",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 7
+      },
+      "sourceImage": "assets/catalogue-v2/originals/exterior-3d-textures-pedra-areia.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "86d9c44b075bd84f45c9f37956ceb6479f99b361646605cc9fdf6a242a7a0042",
+      "status": "documented-digital-sample",
+      "classification": "documented-premium-range",
+      "allowedSurface": "revestimento exterior",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 7,
+      "inclusion": "optional",
+      "includedInGV72": null
+    },
+    {
+      "id": "exterior-3d-textures-bloco-cinza",
+      "label": "Bloco Cinza",
+      "printedReference": null,
+      "labelStatus": "printed-in-catalogue",
+      "family": "Série Pedra",
+      "category": "exterior-3d-textures",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 7
+      },
+      "sourceImage": "assets/catalogue-v2/originals/exterior-3d-textures-bloco-cinza.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "cf667ecd0aa27727f31154c48d0c356fd704de09dec382f20543821d58a7a951",
+      "status": "documented-digital-sample",
+      "classification": "documented-premium-range",
+      "allowedSurface": "revestimento exterior",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 7,
+      "inclusion": "optional",
+      "includedInGV72": null
+    },
+    {
+      "id": "exterior-3d-textures-tijolo-castanho",
+      "label": "Tijolo Castanho",
+      "printedReference": null,
+      "labelStatus": "printed-in-catalogue",
+      "family": "Série Tijolo",
+      "category": "exterior-3d-textures",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 7
+      },
+      "sourceImage": "assets/catalogue-v2/originals/exterior-3d-textures-tijolo-castanho.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "ebefc5ee31aec7af0efa5ef62a69a5384720cd34cc7acd34047366cf7807456a",
+      "status": "documented-digital-sample",
+      "classification": "documented-premium-range",
+      "allowedSurface": "revestimento exterior",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 7,
+      "inclusion": "optional",
+      "includedInGV72": null
+    },
+    {
+      "id": "exterior-3d-textures-pedra-bege",
+      "label": "Pedra Bege",
+      "printedReference": null,
+      "labelStatus": "printed-in-catalogue",
+      "family": "Série Pedra",
+      "category": "exterior-3d-textures",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 7
+      },
+      "sourceImage": "assets/catalogue-v2/originals/exterior-3d-textures-pedra-bege.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "48a442ab41da0e46918b042e308af1c1b9e6b3e9b8566d11c2d274960f2bc3cc",
+      "status": "documented-digital-sample",
+      "classification": "documented-premium-range",
+      "allowedSurface": "revestimento exterior",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 7,
+      "inclusion": "optional",
+      "includedInGV72": null
+    },
+    {
+      "id": "exterior-3d-textures-tijolo-multicor",
+      "label": "Tijolo Multicor",
+      "printedReference": null,
+      "labelStatus": "printed-in-catalogue",
+      "family": "Série Rústica",
+      "category": "exterior-3d-textures",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 7
+      },
+      "sourceImage": "assets/catalogue-v2/originals/exterior-3d-textures-tijolo-multicor.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "1f22ab7436a5a380ffa83c4b8ea108f416b1dc0a72ccb199056ee0b5c0da08b3",
+      "status": "documented-digital-sample",
+      "classification": "documented-premium-range",
+      "allowedSurface": "revestimento exterior",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 7,
+      "inclusion": "optional",
+      "includedInGV72": null
+    },
+    {
+      "id": "exterior-3d-textures-tijolo-ardosia",
+      "label": "Tijolo Ardósia",
+      "printedReference": null,
+      "labelStatus": "printed-in-catalogue",
+      "family": "Série Rústica",
+      "category": "exterior-3d-textures",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 7
+      },
+      "sourceImage": "assets/catalogue-v2/originals/exterior-3d-textures-tijolo-ardosia.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "a44098c46e0b97cbc23fd43fa78d24b0105fcd281ff143c5267f1089cd3e876e",
+      "status": "documented-digital-sample",
+      "classification": "documented-premium-range",
+      "allowedSurface": "revestimento exterior",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 7,
+      "inclusion": "optional",
+      "includedInGV72": null
+    },
+    {
+      "id": "exterior-3d-textures-tijolo-rustico",
+      "label": "Tijolo Rústico",
+      "printedReference": null,
+      "labelStatus": "printed-in-catalogue",
+      "family": "Série Rústica",
+      "category": "exterior-3d-textures",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 7
+      },
+      "sourceImage": "assets/catalogue-v2/originals/exterior-3d-textures-tijolo-rustico.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "b722de36bbb99e8bd004a87222dbc2b82848665b066c978565bc0131387b419b",
+      "status": "documented-digital-sample",
+      "classification": "documented-premium-range",
+      "allowedSurface": "revestimento exterior",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 7,
+      "inclusion": "optional",
+      "includedInGV72": null
+    },
+    {
+      "id": "exterior-3d-textures-granito-cinza",
+      "label": "Granito Cinza",
+      "printedReference": null,
+      "labelStatus": "printed-in-catalogue",
+      "family": "Série Pedra",
+      "category": "exterior-3d-textures",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 7
+      },
+      "sourceImage": "assets/catalogue-v2/originals/exterior-3d-textures-granito-cinza.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "9157b0120be05348b8e25d89d816140efe5ba3004cbbf1849342149a6c5e685c",
+      "status": "documented-digital-sample",
+      "classification": "documented-premium-range",
+      "allowedSurface": "revestimento exterior",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 7,
+      "inclusion": "optional",
+      "includedInGV72": null
+    },
+    {
+      "id": "exterior-3d-gm-gm-16",
+      "label": "GM-16",
+      "printedReference": "GM-16",
+      "labelStatus": "printed-in-catalogue",
+      "family": "Painel 3D",
+      "category": "exterior-3d-gm",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 8
+      },
+      "sourceImage": "assets/catalogue-v2/originals/exterior-3d-gm-gm-16.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "2c79ba9c2864520db1420cacd1f1eab72b470c57b2699ed9c994269d4be8b212",
+      "status": "documented-digital-sample",
+      "classification": "documented-premium-range",
+      "allowedSurface": "revestimento exterior",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 8,
+      "inclusion": "optional",
+      "includedInGV72": null
+    },
+    {
+      "id": "exterior-3d-gm-gm-17",
+      "label": "GM-17",
+      "printedReference": "GM-17",
+      "labelStatus": "printed-in-catalogue",
+      "family": "Painel 3D",
+      "category": "exterior-3d-gm",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 8
+      },
+      "sourceImage": "assets/catalogue-v2/originals/exterior-3d-gm-gm-17.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "c31d84c4e3f0b52d497e132382c9f1d6fc4f80c919c1700eb395e138f38f627b",
+      "status": "documented-digital-sample",
+      "classification": "documented-premium-range",
+      "allowedSurface": "revestimento exterior",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 8,
+      "inclusion": "optional",
+      "includedInGV72": null
+    },
+    {
+      "id": "exterior-3d-gm-gm-18",
+      "label": "GM-18",
+      "printedReference": "GM-18",
+      "labelStatus": "printed-in-catalogue",
+      "family": "Painel 3D",
+      "category": "exterior-3d-gm",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 8
+      },
+      "sourceImage": "assets/catalogue-v2/originals/exterior-3d-gm-gm-18.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "a7c9a042d0acf38d549ad85f74024a441989446c3a403847f8fa0641718edb3f",
+      "status": "documented-digital-sample",
+      "classification": "documented-premium-range",
+      "allowedSurface": "revestimento exterior",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 8,
+      "inclusion": "optional",
+      "includedInGV72": null
+    },
+    {
+      "id": "exterior-3d-gm-gm-19",
+      "label": "GM-19",
+      "printedReference": "GM-19",
+      "labelStatus": "printed-in-catalogue",
+      "family": "Painel 3D",
+      "category": "exterior-3d-gm",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 8
+      },
+      "sourceImage": "assets/catalogue-v2/originals/exterior-3d-gm-gm-19.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "227251ab5f9d9c3aae896d13e3b47a3764454c5707d39c167db54adb1267e9d5",
+      "status": "documented-digital-sample",
+      "classification": "documented-premium-range",
+      "allowedSurface": "revestimento exterior",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 8,
+      "inclusion": "optional",
+      "includedInGV72": null
+    },
+    {
+      "id": "exterior-3d-gm-gm-20",
+      "label": "GM-20",
+      "printedReference": "GM-20",
+      "labelStatus": "printed-in-catalogue",
+      "family": "Painel 3D",
+      "category": "exterior-3d-gm",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 8
+      },
+      "sourceImage": "assets/catalogue-v2/originals/exterior-3d-gm-gm-20.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "40da7cf959856eabcc92da56ea38252612c6800b57be09b0707c2b24ee50d4f3",
+      "status": "documented-digital-sample",
+      "classification": "documented-premium-range",
+      "allowedSurface": "revestimento exterior",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 8,
+      "inclusion": "optional",
+      "includedInGV72": null
+    },
+    {
+      "id": "exterior-3d-gm-gm-21",
+      "label": "GM-21",
+      "printedReference": "GM-21",
+      "labelStatus": "printed-in-catalogue",
+      "family": "Painel 3D",
+      "category": "exterior-3d-gm",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 8
+      },
+      "sourceImage": "assets/catalogue-v2/originals/exterior-3d-gm-gm-21.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "79e7b88780434bd85f2e2d9af6ed23b24cec3f41451e8afb1038366c989c119d",
+      "status": "documented-digital-sample",
+      "classification": "documented-premium-range",
+      "allowedSurface": "revestimento exterior",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 8,
+      "inclusion": "optional",
+      "includedInGV72": null
+    },
+    {
+      "id": "exterior-3d-gm-gm-22",
+      "label": "GM-22",
+      "printedReference": "GM-22",
+      "labelStatus": "printed-in-catalogue",
+      "family": "Painel 3D",
+      "category": "exterior-3d-gm",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 8
+      },
+      "sourceImage": "assets/catalogue-v2/originals/exterior-3d-gm-gm-22.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "b888d7460ebeec0c84efad6d1133ff9c5a9b726a377b272cf9f2559ac0415c5a",
+      "status": "documented-digital-sample",
+      "classification": "documented-premium-range",
+      "allowedSurface": "revestimento exterior",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 8,
+      "inclusion": "optional",
+      "includedInGV72": null
+    },
+    {
+      "id": "exterior-3d-gm-gm-23",
+      "label": "GM-23",
+      "printedReference": "GM-23",
+      "labelStatus": "printed-in-catalogue",
+      "family": "Painel 3D",
+      "category": "exterior-3d-gm",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 8
+      },
+      "sourceImage": "assets/catalogue-v2/originals/exterior-3d-gm-gm-23.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "f7677363984872e65310b631cf9a700d1b0e82aaefcfd088a4b097bf827ffc00",
+      "status": "documented-digital-sample",
+      "classification": "documented-premium-range",
+      "allowedSurface": "revestimento exterior",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 8,
+      "inclusion": "optional",
+      "includedInGV72": null
+    },
+    {
+      "id": "exterior-3d-gm-gm-24",
+      "label": "GM-24",
+      "printedReference": "GM-24",
+      "labelStatus": "printed-in-catalogue",
+      "family": "Painel 3D",
+      "category": "exterior-3d-gm",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 8
+      },
+      "sourceImage": "assets/catalogue-v2/originals/exterior-3d-gm-gm-24.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "7a1ccb3616ab2b4e8e60aeafc52f07d948b033e40f6b31a9617a8d68e89e4988",
+      "status": "documented-digital-sample",
+      "classification": "documented-premium-range",
+      "allowedSurface": "revestimento exterior",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 8,
+      "inclusion": "optional",
+      "includedInGV72": null
+    },
+    {
+      "id": "exterior-3d-gm-gm-25",
+      "label": "GM-25",
+      "printedReference": "GM-25",
+      "labelStatus": "printed-in-catalogue",
+      "family": "Painel 3D",
+      "category": "exterior-3d-gm",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 8
+      },
+      "sourceImage": "assets/catalogue-v2/originals/exterior-3d-gm-gm-25.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "be4d61d1d13b696bc327b4993b5c84f86898f7671b8568b43b1bcecfc197ff62",
+      "status": "documented-digital-sample",
+      "classification": "documented-premium-range",
+      "allowedSurface": "revestimento exterior",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 8,
+      "inclusion": "optional",
+      "includedInGV72": null
+    },
+    {
+      "id": "exterior-3d-gm-gm-26",
+      "label": "GM-26",
+      "printedReference": "GM-26",
+      "labelStatus": "printed-in-catalogue",
+      "family": "Painel 3D",
+      "category": "exterior-3d-gm",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 8
+      },
+      "sourceImage": "assets/catalogue-v2/originals/exterior-3d-gm-gm-26.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "33e6d6c3aa12553b34f6a569abcd1c513597dc42b7ea5bab3685992ee4befd60",
+      "status": "documented-digital-sample",
+      "classification": "documented-premium-range",
+      "allowedSurface": "revestimento exterior",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 8,
+      "inclusion": "optional",
+      "includedInGV72": null
+    },
+    {
+      "id": "exterior-3d-gm-gm-27",
+      "label": "GM-27",
+      "printedReference": "GM-27",
+      "labelStatus": "printed-in-catalogue",
+      "family": "Painel 3D",
+      "category": "exterior-3d-gm",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 8
+      },
+      "sourceImage": "assets/catalogue-v2/originals/exterior-3d-gm-gm-27.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "28045b56482a6b6f0d24191e0e5588aec3fa79d0c035fabefb1f6027b53d337d",
+      "status": "documented-digital-sample",
+      "classification": "documented-premium-range",
+      "allowedSurface": "revestimento exterior",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 8,
+      "inclusion": "optional",
+      "includedInGV72": null
+    },
+    {
+      "id": "exterior-3d-gm-gm-28",
+      "label": "GM-28",
+      "printedReference": "GM-28",
+      "labelStatus": "printed-in-catalogue",
+      "family": "Painel 3D",
+      "category": "exterior-3d-gm",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 8
+      },
+      "sourceImage": "assets/catalogue-v2/originals/exterior-3d-gm-gm-28.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "81e9d9e5d48e529a201fce7a7fcdd8c10f77842c82e4082acead01dac3bd47e7",
+      "status": "documented-digital-sample",
+      "classification": "documented-premium-range",
+      "allowedSurface": "revestimento exterior",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 8,
+      "inclusion": "optional",
+      "includedInGV72": null
+    },
+    {
+      "id": "exterior-3d-gm-gm-29",
+      "label": "GM-29",
+      "printedReference": "GM-29",
+      "labelStatus": "printed-in-catalogue",
+      "family": "Painel 3D",
+      "category": "exterior-3d-gm",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 8
+      },
+      "sourceImage": "assets/catalogue-v2/originals/exterior-3d-gm-gm-29.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "03f38d4602ca41c0c193d68ed5e2577e54b4968cc474b7b41db158bfbdcf5bdc",
+      "status": "documented-digital-sample",
+      "classification": "documented-premium-range",
+      "allowedSurface": "revestimento exterior",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 8,
+      "inclusion": "optional",
+      "includedInGV72": null
+    },
+    {
+      "id": "exterior-3d-gm-gm-30",
+      "label": "GM-30",
+      "printedReference": "GM-30",
+      "labelStatus": "printed-in-catalogue",
+      "family": "Painel 3D",
+      "category": "exterior-3d-gm",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 8
+      },
+      "sourceImage": "assets/catalogue-v2/originals/exterior-3d-gm-gm-30.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "7032de6343794dbe1beb37eafdd7265a8d6f4911693d098c338d5fc5129b91bc",
+      "status": "documented-digital-sample",
+      "classification": "documented-premium-range",
+      "allowedSurface": "revestimento exterior",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 8,
+      "inclusion": "optional",
+      "includedInGV72": null
+    },
+    {
+      "id": "exterior-finishes-madeira-mel",
+      "label": "Madeira Mel",
+      "printedReference": null,
+      "labelStatus": "printed-in-catalogue",
+      "family": "Acabamento Madeira",
+      "category": "exterior-finishes",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 9
+      },
+      "sourceImage": "assets/catalogue-v2/originals/exterior-finishes-madeira-mel.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "8f05df4315d7eb523a6c9f71647a66f347c294ff51fa6f5b4e6fa51903f1d6af",
+      "status": "documented-digital-sample",
+      "classification": "documented-premium-range",
+      "allowedSurface": "revestimento exterior",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 9,
+      "inclusion": "optional",
+      "includedInGV72": null
+    },
+    {
+      "id": "exterior-finishes-lamela-branca",
+      "label": "Lamela Branca",
+      "printedReference": null,
+      "labelStatus": "printed-in-catalogue",
+      "family": "Série Ondulada",
+      "category": "exterior-finishes",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 9
+      },
+      "sourceImage": "assets/catalogue-v2/originals/exterior-finishes-lamela-branca.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "db7b2ab3f3336ad20de732231ce15a4b735b379821e273fbffc345160ed086c3",
+      "status": "documented-digital-sample",
+      "classification": "documented-premium-range",
+      "allowedSurface": "revestimento exterior",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 9,
+      "inclusion": "optional",
+      "includedInGV72": null
+    },
+    {
+      "id": "exterior-finishes-lamela-bege",
+      "label": "Lamela Bege",
+      "printedReference": null,
+      "labelStatus": "printed-in-catalogue",
+      "family": "Série Ondulada",
+      "category": "exterior-finishes",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 9
+      },
+      "sourceImage": "assets/catalogue-v2/originals/exterior-finishes-lamela-bege.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "dcdbf422c62e3c16b310da7b6f06dbe79aa110bd05db88d5a53d0cc095ebcf89",
+      "status": "documented-digital-sample",
+      "classification": "documented-premium-range",
+      "allowedSurface": "revestimento exterior",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 9,
+      "inclusion": "optional",
+      "includedInGV72": null
+    },
+    {
+      "id": "exterior-finishes-lamela-creme",
+      "label": "Lamela Creme",
+      "printedReference": null,
+      "labelStatus": "printed-in-catalogue",
+      "family": "Série Ondulada",
+      "category": "exterior-finishes",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 9
+      },
+      "sourceImage": "assets/catalogue-v2/originals/exterior-finishes-lamela-creme.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "f2a20e77c9947c01e338abf6e2951d3d4e06637fc8548445e93e514a2645ed3a",
+      "status": "documented-digital-sample",
+      "classification": "documented-premium-range",
+      "allowedSurface": "revestimento exterior",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 9,
+      "inclusion": "optional",
+      "includedInGV72": null
+    },
+    {
+      "id": "exterior-finishes-lamela-dourada",
+      "label": "Lamela Dourada",
+      "printedReference": null,
+      "labelStatus": "printed-in-catalogue",
+      "family": "Série Ondulada",
+      "category": "exterior-finishes",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 9
+      },
+      "sourceImage": "assets/catalogue-v2/originals/exterior-finishes-lamela-dourada.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "cc6bf805a91d45348b562d0d7333ced829cb082d10e46b8b8f0f8e876b66c0ac",
+      "status": "documented-digital-sample",
+      "classification": "documented-premium-range",
+      "allowedSurface": "revestimento exterior",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 9,
+      "inclusion": "optional",
+      "includedInGV72": null
+    },
+    {
+      "id": "exterior-finishes-lamela-cinza",
+      "label": "Lamela Cinza",
+      "printedReference": null,
+      "labelStatus": "printed-in-catalogue",
+      "family": "Série Ondulada",
+      "category": "exterior-finishes",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 9
+      },
+      "sourceImage": "assets/catalogue-v2/originals/exterior-finishes-lamela-cinza.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "de652375598898475e97e4c0c4d412c646f479dcba85b66e67815bbf1ae597b1",
+      "status": "documented-digital-sample",
+      "classification": "documented-premium-range",
+      "allowedSurface": "revestimento exterior",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 9,
+      "inclusion": "optional",
+      "includedInGV72": null
+    },
+    {
+      "id": "exterior-finishes-lamela-bordo",
+      "label": "Lamela Bordô",
+      "printedReference": null,
+      "labelStatus": "printed-in-catalogue",
+      "family": "Série Ondulada",
+      "category": "exterior-finishes",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 9
+      },
+      "sourceImage": "assets/catalogue-v2/originals/exterior-finishes-lamela-bordo.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "c617605223d1e23533a1ffc0ca9e64de4c333f5115968a229069b45ee6159fd2",
+      "status": "documented-digital-sample",
+      "classification": "documented-premium-range",
+      "allowedSurface": "revestimento exterior",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 9,
+      "inclusion": "optional",
+      "includedInGV72": null
+    },
+    {
+      "id": "exterior-finishes-grafite",
+      "label": "Grafite",
+      "printedReference": null,
+      "labelStatus": "printed-in-catalogue",
+      "family": "Cor Lisa",
+      "category": "exterior-finishes",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 9
+      },
+      "sourceImage": "assets/catalogue-v2/originals/exterior-finishes-grafite.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "e85a0bcb4c0dc732a651a3975b1001a59773de92529c60d6c957da436e1abba5",
+      "status": "documented-digital-sample",
+      "classification": "documented-premium-range",
+      "allowedSurface": "revestimento exterior",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 9,
+      "inclusion": "optional",
+      "includedInGV72": null
+    },
+    {
+      "id": "exterior-finishes-preto",
+      "label": "Preto",
+      "printedReference": null,
+      "labelStatus": "printed-in-catalogue",
+      "family": "Cor Lisa",
+      "category": "exterior-finishes",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 9
+      },
+      "sourceImage": "assets/catalogue-v2/originals/exterior-finishes-preto.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "8b33ff897381ef7fc44904818a08124500a0ea874e775d205d8768dc5a61b991",
+      "status": "documented-digital-sample",
+      "classification": "documented-premium-range",
+      "allowedSurface": "revestimento exterior",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 9,
+      "inclusion": "optional",
+      "includedInGV72": null
+    },
+    {
+      "id": "exterior-finishes-vermelho",
+      "label": "Vermelho",
+      "printedReference": null,
+      "labelStatus": "printed-in-catalogue",
+      "family": "Cor Lisa",
+      "category": "exterior-finishes",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 9
+      },
+      "sourceImage": "assets/catalogue-v2/originals/exterior-finishes-vermelho.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "91e94e296b3adafa31fe9777010b1387e040729603b308c342e419484943bbe3",
+      "status": "documented-digital-sample",
+      "classification": "documented-premium-range",
+      "allowedSurface": "revestimento exterior",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 9,
+      "inclusion": "optional",
+      "includedInGV72": null
+    },
+    {
+      "id": "exterior-finishes-areia",
+      "label": "Areia",
+      "printedReference": null,
+      "labelStatus": "printed-in-catalogue",
+      "family": "Cor Lisa",
+      "category": "exterior-finishes",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 9
+      },
+      "sourceImage": "assets/catalogue-v2/originals/exterior-finishes-areia.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "639778948d4f6534a4a68e700c8b3a8346ad978067f538a32940c13fddf519ff",
+      "status": "documented-digital-sample",
+      "classification": "documented-premium-range",
+      "allowedSurface": "revestimento exterior",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 9,
+      "inclusion": "optional",
+      "includedInGV72": null
+    },
+    {
+      "id": "exterior-finishes-granito-branco",
+      "label": "Granito Branco",
+      "printedReference": null,
+      "labelStatus": "printed-in-catalogue",
+      "family": "Série Pedra",
+      "category": "exterior-finishes",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 9
+      },
+      "sourceImage": "assets/catalogue-v2/originals/exterior-finishes-granito-branco.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "5949e5d2842c7d504719873d5d3ade9f251fa1a9084145659fb89338f352cbe7",
+      "status": "documented-digital-sample",
+      "classification": "documented-premium-range",
+      "allowedSurface": "revestimento exterior",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 9,
+      "inclusion": "optional",
+      "includedInGV72": null
+    },
+    {
+      "id": "exterior-standard-pedra-cinza",
+      "label": "Pedra Cinza",
+      "printedReference": null,
+      "labelStatus": "printed-in-catalogue",
+      "family": "Padrão pedra",
+      "category": "exterior-standard",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 10
+      },
+      "sourceImage": "assets/catalogue-v2/originals/exterior-standard-pedra-cinza.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "d0fa07fc7c2e6073d998354ffb9241c5232b0b61d5cc1e010ec8dbf38799d53e",
+      "status": "documented-digital-sample",
+      "classification": "confirmed-included-in-generic-catalogue",
+      "allowedSurface": "revestimento exterior",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 10,
+      "inclusion": "included",
+      "includedInGV72": null
+    },
+    {
+      "id": "exterior-standard-cinza-metalico",
+      "label": "Cinza Metálico",
+      "printedReference": null,
+      "labelStatus": "printed-in-catalogue",
+      "family": "Acabamento liso",
+      "category": "exterior-standard",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 10
+      },
+      "sourceImage": "assets/catalogue-v2/originals/exterior-standard-cinza-metalico.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "ed9030850110bde4fa0e2f6b273282bc155f59fdc7a76a44a6c95d6596cc7bb9",
+      "status": "documented-digital-sample",
+      "classification": "confirmed-included-in-generic-catalogue",
+      "allowedSurface": "revestimento exterior",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 10,
+      "inclusion": "included",
+      "includedInGV72": null
+    },
+    {
+      "id": "exterior-standard-prata",
+      "label": "Prata",
+      "printedReference": null,
+      "labelStatus": "printed-in-catalogue",
+      "family": "Acabamento liso",
+      "category": "exterior-standard",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 10
+      },
+      "sourceImage": "assets/catalogue-v2/originals/exterior-standard-prata.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "1576077b88300208b7ba0fe81798b96e4f0e8003a8c16851530bb5273db67606",
+      "status": "documented-digital-sample",
+      "classification": "confirmed-included-in-generic-catalogue",
+      "allowedSurface": "revestimento exterior",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 10,
+      "inclusion": "included",
+      "includedInGV72": null
+    },
+    {
+      "id": "exterior-standard-madeira-castanho",
+      "label": "Madeira Castanho",
+      "printedReference": null,
+      "labelStatus": "printed-in-catalogue",
+      "family": "Padrão madeira",
+      "category": "exterior-standard",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 10
+      },
+      "sourceImage": "assets/catalogue-v2/originals/exterior-standard-madeira-castanho.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "91aa8e183fe4314d6bc8ab6d92dc6103d9026b3cae4bbe63337fbe2cb3c01f11",
+      "status": "documented-digital-sample",
+      "classification": "confirmed-included-in-generic-catalogue",
+      "allowedSurface": "revestimento exterior",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 10,
+      "inclusion": "included",
+      "includedInGV72": null
+    },
+    {
+      "id": "exterior-standard-cinza-perola",
+      "label": "Cinza Pérola",
+      "printedReference": null,
+      "labelStatus": "printed-in-catalogue",
+      "family": "Acabamento liso",
+      "category": "exterior-standard",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 10
+      },
+      "sourceImage": "assets/catalogue-v2/originals/exterior-standard-cinza-perola.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "cd2e36658f9165da20b52cb6e6dff736b69d918bcdee2efe1edabad83331d3fc",
+      "status": "documented-digital-sample",
+      "classification": "confirmed-included-in-generic-catalogue",
+      "allowedSurface": "revestimento exterior",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 10,
+      "inclusion": "included",
+      "includedInGV72": null
+    },
+    {
+      "id": "exterior-standard-madeira-mel",
+      "label": "Madeira Mel",
+      "printedReference": null,
+      "labelStatus": "printed-in-catalogue",
+      "family": "Padrão madeira",
+      "category": "exterior-standard",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 10
+      },
+      "sourceImage": "assets/catalogue-v2/originals/exterior-standard-madeira-mel.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "df65c8c1570a138da230d569c976e49f2838c8a15ef93b7435077d45aa261cdd",
+      "status": "documented-digital-sample",
+      "classification": "confirmed-included-in-generic-catalogue",
+      "allowedSurface": "revestimento exterior",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 10,
+      "inclusion": "included",
+      "includedInGV72": null
+    },
+    {
+      "id": "exterior-standard-madeira-cerejeira",
+      "label": "Madeira Cerejeira",
+      "printedReference": null,
+      "labelStatus": "printed-in-catalogue",
+      "family": "Padrão madeira",
+      "category": "exterior-standard",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 10
+      },
+      "sourceImage": "assets/catalogue-v2/originals/exterior-standard-madeira-cerejeira.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "59f62d59b25e7acbbf839322731e3f66c520f989bf422f892713a5c5857d20b8",
+      "status": "documented-digital-sample",
+      "classification": "confirmed-included-in-generic-catalogue",
+      "allowedSurface": "revestimento exterior",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 10,
+      "inclusion": "included",
+      "includedInGV72": null
+    },
+    {
+      "id": "exterior-standard-cinza-quente",
+      "label": "Cinza Quente",
+      "printedReference": null,
+      "labelStatus": "printed-in-catalogue",
+      "family": "Acabamento liso",
+      "category": "exterior-standard",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 10
+      },
+      "sourceImage": "assets/catalogue-v2/originals/exterior-standard-cinza-quente.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "64ad8c295658fa98807c778f52da0a547b312250e39fd03d6ab9e77338b76676",
+      "status": "documented-digital-sample",
+      "classification": "confirmed-included-in-generic-catalogue",
+      "allowedSurface": "revestimento exterior",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 10,
+      "inclusion": "included",
+      "includedInGV72": null
+    },
+    {
+      "id": "exterior-standard-grafite",
+      "label": "Grafite",
+      "printedReference": null,
+      "labelStatus": "printed-in-catalogue",
+      "family": "Acabamento liso",
+      "category": "exterior-standard",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 10
+      },
+      "sourceImage": "assets/catalogue-v2/originals/exterior-standard-grafite.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "50eed377c50aed025f43999a002c4822acd5071a64140c16366ec03612198aa6",
+      "status": "documented-digital-sample",
+      "classification": "confirmed-included-in-generic-catalogue",
+      "allowedSurface": "revestimento exterior",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 10,
+      "inclusion": "included",
+      "includedInGV72": null
+    },
+    {
+      "id": "exterior-standard-branco-glacial",
+      "label": "Branco Glacial",
+      "printedReference": null,
+      "labelStatus": "printed-in-catalogue",
+      "family": "Acabamento liso",
+      "category": "exterior-standard",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 10
+      },
+      "sourceImage": "assets/catalogue-v2/originals/exterior-standard-branco-glacial.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "e1ed185d67554aa0f376b7b9ddd8aefbcb1cd67ec2839c56022f5556b56b3e17",
+      "status": "documented-digital-sample",
+      "classification": "confirmed-included-in-generic-catalogue",
+      "allowedSurface": "revestimento exterior",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 10,
+      "inclusion": "included",
+      "includedInGV72": null
+    },
+    {
+      "id": "exterior-standard-bege-marfim",
+      "label": "Bege Marfim",
+      "printedReference": null,
+      "labelStatus": "printed-in-catalogue",
+      "family": "Acabamento liso",
+      "category": "exterior-standard",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 10
+      },
+      "sourceImage": "assets/catalogue-v2/originals/exterior-standard-bege-marfim.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "f957b5490ddc773a560460ea5abf4c354cb9b0b72e325ef8acf94b540da14af1",
+      "status": "documented-digital-sample",
+      "classification": "confirmed-included-in-generic-catalogue",
+      "allowedSurface": "revestimento exterior",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 10,
+      "inclusion": "included",
+      "includedInGV72": null
+    },
+    {
+      "id": "exterior-standard-vermelho-borgonha",
+      "label": "Vermelho Borgonha",
+      "printedReference": null,
+      "labelStatus": "printed-in-catalogue",
+      "family": "Acabamento liso",
+      "category": "exterior-standard",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 10
+      },
+      "sourceImage": "assets/catalogue-v2/originals/exterior-standard-vermelho-borgonha.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "315d2c94103ed401f1558e2072c55e2b6f27ad5dc54c2132a25010a48e0595c3",
+      "status": "documented-digital-sample",
+      "classification": "confirmed-included-in-generic-catalogue",
+      "allowedSurface": "revestimento exterior",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 10,
+      "inclusion": "included",
+      "includedInGV72": null
+    },
+    {
+      "id": "floor-spc-kx7005",
+      "label": "KX7005",
+      "printedReference": "KX7005",
+      "labelStatus": "printed-in-catalogue",
+      "family": "SPC",
+      "category": "floor-spc",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 14
+      },
+      "sourceImage": "assets/catalogue-v2/originals/floor-spc-kx7005.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "a8fbabf3fe3a50737fdd66077a622424faec3299262c0792e5493ca4da0c97a0",
+      "status": "documented-digital-sample",
+      "classification": "not-stated",
+      "allowedSurface": "pavimento SPC",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 14,
+      "inclusion": "not-stated",
+      "includedInGV72": null
+    },
+    {
+      "id": "floor-spc-kx7006",
+      "label": "KX7006",
+      "printedReference": "KX7006",
+      "labelStatus": "printed-in-catalogue",
+      "family": "SPC",
+      "category": "floor-spc",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 14
+      },
+      "sourceImage": "assets/catalogue-v2/originals/floor-spc-kx7006.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "e9979e50d9f28a16f5a556e03aaa1f999096a9b0e4f63f3a75ad23f98fdc007c",
+      "status": "documented-digital-sample",
+      "classification": "not-stated",
+      "allowedSurface": "pavimento SPC",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 14,
+      "inclusion": "not-stated",
+      "includedInGV72": null
+    },
+    {
+      "id": "floor-spc-kx7007",
+      "label": "KX7007",
+      "printedReference": "KX7007",
+      "labelStatus": "printed-in-catalogue",
+      "family": "SPC",
+      "category": "floor-spc",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 14
+      },
+      "sourceImage": "assets/catalogue-v2/originals/floor-spc-kx7007.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "d53fbf4096ab4b1583cc3402f0df0e37b384db278cac4fb00f65050584e87a19",
+      "status": "documented-digital-sample",
+      "classification": "not-stated",
+      "allowedSurface": "pavimento SPC",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 14,
+      "inclusion": "not-stated",
+      "includedInGV72": null
+    },
+    {
+      "id": "floor-spc-kx7008",
+      "label": "KX7008",
+      "printedReference": "KX7008",
+      "labelStatus": "printed-in-catalogue",
+      "family": "SPC",
+      "category": "floor-spc",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 14
+      },
+      "sourceImage": "assets/catalogue-v2/originals/floor-spc-kx7008.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "ae197182c1fe5758e9b4c1545d655b01b5798fb1742e84df328d214d86438018",
+      "status": "documented-digital-sample",
+      "classification": "not-stated",
+      "allowedSurface": "pavimento SPC",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 14,
+      "inclusion": "not-stated",
+      "includedInGV72": null
+    },
+    {
+      "id": "floor-spc-kx7009",
+      "label": "KX7009",
+      "printedReference": "KX7009",
+      "labelStatus": "printed-in-catalogue",
+      "family": "SPC",
+      "category": "floor-spc",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 14
+      },
+      "sourceImage": "assets/catalogue-v2/originals/floor-spc-kx7009.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "f69e048841e479cff7b393fcec7a74167cee94bbf9b7c90f296f5e31f5be6193",
+      "status": "documented-digital-sample",
+      "classification": "not-stated",
+      "allowedSurface": "pavimento SPC",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 14,
+      "inclusion": "not-stated",
+      "includedInGV72": null
+    },
+    {
+      "id": "floor-spc-kx7010",
+      "label": "KX7010",
+      "printedReference": "KX7010",
+      "labelStatus": "printed-in-catalogue",
+      "family": "SPC",
+      "category": "floor-spc",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 14
+      },
+      "sourceImage": "assets/catalogue-v2/originals/floor-spc-kx7010.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "6244c6e808f0367f031fff6b1f97e2b1612f5bd91a90b095bd8b65ef93655aa1",
+      "status": "documented-digital-sample",
+      "classification": "not-stated",
+      "allowedSurface": "pavimento SPC",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 14,
+      "inclusion": "not-stated",
+      "includedInGV72": null
+    },
+    {
+      "id": "floor-spc-kx8005",
+      "label": "KX8005",
+      "printedReference": "KX8005",
+      "labelStatus": "printed-in-catalogue",
+      "family": "SPC",
+      "category": "floor-spc",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 14
+      },
+      "sourceImage": "assets/catalogue-v2/originals/floor-spc-kx8005.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "6ee25e2209965e4c38869a0b4c7e42bfb41201a8e7f8ef4fa6dacbf5b07acee4",
+      "status": "documented-digital-sample",
+      "classification": "not-stated",
+      "allowedSurface": "pavimento SPC",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 14,
+      "inclusion": "not-stated",
+      "includedInGV72": null
+    },
+    {
+      "id": "floor-spc-kx8006",
+      "label": "KX8006",
+      "printedReference": "KX8006",
+      "labelStatus": "printed-in-catalogue",
+      "family": "SPC",
+      "category": "floor-spc",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 14
+      },
+      "sourceImage": "assets/catalogue-v2/originals/floor-spc-kx8006.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "6025f124d93e4f8996203d92c4fd6ba853aa459ace2721e831207a73d4462c78",
+      "status": "documented-digital-sample",
+      "classification": "not-stated",
+      "allowedSurface": "pavimento SPC",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 14,
+      "inclusion": "not-stated",
+      "includedInGV72": null
+    },
+    {
+      "id": "floor-spc-kx8007",
+      "label": "KX8007",
+      "printedReference": "KX8007",
+      "labelStatus": "printed-in-catalogue",
+      "family": "SPC",
+      "category": "floor-spc",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 14
+      },
+      "sourceImage": "assets/catalogue-v2/originals/floor-spc-kx8007.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "e7d093b8df16aa25015c3048e5c4049f67cc17894a9789363fefc2579a101da2",
+      "status": "documented-digital-sample",
+      "classification": "not-stated",
+      "allowedSurface": "pavimento SPC",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 14,
+      "inclusion": "not-stated",
+      "includedInGV72": null
+    },
+    {
+      "id": "floor-spc-kx8008",
+      "label": "KX8008",
+      "printedReference": "KX8008",
+      "labelStatus": "printed-in-catalogue",
+      "family": "SPC",
+      "category": "floor-spc",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 14
+      },
+      "sourceImage": "assets/catalogue-v2/originals/floor-spc-kx8008.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "f16b4c13884ad56ffd1cbef57ef54e0593b328797e0b721c8849f8d24d196739",
+      "status": "documented-digital-sample",
+      "classification": "not-stated",
+      "allowedSurface": "pavimento SPC",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 14,
+      "inclusion": "not-stated",
+      "includedInGV72": null
+    },
+    {
+      "id": "floor-spc-kx8009",
+      "label": "KX8009",
+      "printedReference": "KX8009",
+      "labelStatus": "printed-in-catalogue",
+      "family": "SPC",
+      "category": "floor-spc",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 14
+      },
+      "sourceImage": "assets/catalogue-v2/originals/floor-spc-kx8009.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "99c9903af4c2823b42df8a836580814962b07524b387c3250a5c38a34abbaa01",
+      "status": "documented-digital-sample",
+      "classification": "not-stated",
+      "allowedSurface": "pavimento SPC",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 14,
+      "inclusion": "not-stated",
+      "includedInGV72": null
+    },
+    {
+      "id": "floor-spc-kx9005",
+      "label": "KX9005",
+      "printedReference": "KX9005",
+      "labelStatus": "printed-in-catalogue",
+      "family": "SPC",
+      "category": "floor-spc",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 14
+      },
+      "sourceImage": "assets/catalogue-v2/originals/floor-spc-kx9005.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "b17812b10c72271a9e5743b177ea5f010c209602e7d5806e8ee1fb8ecc2f02e3",
+      "status": "documented-digital-sample",
+      "classification": "not-stated",
+      "allowedSurface": "pavimento SPC",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 14,
+      "inclusion": "not-stated",
+      "includedInGV72": null
+    },
+    {
+      "id": "bathroom-uv-amostra-1",
+      "label": "Amostra 1",
+      "printedReference": null,
+      "labelStatus": "editorial",
+      "family": "Placa UV",
+      "category": "bathroom-uv",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 17
+      },
+      "sourceImage": "assets/catalogue-v2/originals/bathroom-uv-amostra-1.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "7ed4ad487c9e7c655d004360d61b30d88c80b9f5e8402470d7df976b7b1b75f7",
+      "status": "documented-digital-sample",
+      "classification": "not-stated",
+      "allowedSurface": "revestimento da casa de banho",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 17,
+      "inclusion": "not-stated",
+      "includedInGV72": null
+    },
+    {
+      "id": "bathroom-uv-amostra-2",
+      "label": "Amostra 2",
+      "printedReference": null,
+      "labelStatus": "editorial",
+      "family": "Placa UV",
+      "category": "bathroom-uv",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 17
+      },
+      "sourceImage": "assets/catalogue-v2/originals/bathroom-uv-amostra-2.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "aba775e44f0ed84e55b8e329a355f65c98b9363795374960537b6f7423041f56",
+      "status": "documented-digital-sample",
+      "classification": "not-stated",
+      "allowedSurface": "revestimento da casa de banho",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 17,
+      "inclusion": "not-stated",
+      "includedInGV72": null
+    },
+    {
+      "id": "bathroom-uv-amostra-3",
+      "label": "Amostra 3",
+      "printedReference": null,
+      "labelStatus": "editorial",
+      "family": "Placa UV",
+      "category": "bathroom-uv",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 17
+      },
+      "sourceImage": "assets/catalogue-v2/originals/bathroom-uv-amostra-3.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "c594adaefb309db70927f6e2e767d6381965ccdf3eb4c3a30ece9470f094c6e0",
+      "status": "documented-digital-sample",
+      "classification": "not-stated",
+      "allowedSurface": "revestimento da casa de banho",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 17,
+      "inclusion": "not-stated",
+      "includedInGV72": null
+    },
+    {
+      "id": "bathroom-uv-amostra-4",
+      "label": "Amostra 4",
+      "printedReference": null,
+      "labelStatus": "editorial",
+      "family": "Placa UV",
+      "category": "bathroom-uv",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 17
+      },
+      "sourceImage": "assets/catalogue-v2/originals/bathroom-uv-amostra-4.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "724fb8b3ed778a6b2f8375e198367bea3e391fae67c68f07ea3df5823a31ef2b",
+      "status": "documented-digital-sample",
+      "classification": "not-stated",
+      "allowedSurface": "revestimento da casa de banho",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 17,
+      "inclusion": "not-stated",
+      "includedInGV72": null
+    },
+    {
+      "id": "bathroom-uv-amostra-5",
+      "label": "Amostra 5",
+      "printedReference": null,
+      "labelStatus": "editorial",
+      "family": "Placa UV",
+      "category": "bathroom-uv",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 17
+      },
+      "sourceImage": "assets/catalogue-v2/originals/bathroom-uv-amostra-5.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "65f707a5894069903ea7f5856a11acc51722daa118a0bc0a3f47c2ab51b9351e",
+      "status": "documented-digital-sample",
+      "classification": "not-stated",
+      "allowedSurface": "revestimento da casa de banho",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 17,
+      "inclusion": "not-stated",
+      "includedInGV72": null
+    },
+    {
+      "id": "bathroom-uv-amostra-6",
+      "label": "Amostra 6",
+      "printedReference": null,
+      "labelStatus": "editorial",
+      "family": "Placa UV",
+      "category": "bathroom-uv",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 17
+      },
+      "sourceImage": "assets/catalogue-v2/originals/bathroom-uv-amostra-6.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "7e7c5427da36995807fd47a7afd28667644e91c0bc6e52bd2730b5c550286095",
+      "status": "documented-digital-sample",
+      "classification": "not-stated",
+      "allowedSurface": "revestimento da casa de banho",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 17,
+      "inclusion": "not-stated",
+      "includedInGV72": null
+    },
+    {
+      "id": "bathroom-uv-amostra-7",
+      "label": "Amostra 7",
+      "printedReference": null,
+      "labelStatus": "editorial",
+      "family": "Placa UV",
+      "category": "bathroom-uv",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 17
+      },
+      "sourceImage": "assets/catalogue-v2/originals/bathroom-uv-amostra-7.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "376470605c03dd851ea9bed0f1f70e79d4ca97205de950409655a72d77a41e39",
+      "status": "documented-digital-sample",
+      "classification": "not-stated",
+      "allowedSurface": "revestimento da casa de banho",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 17,
+      "inclusion": "not-stated",
+      "includedInGV72": null
+    },
+    {
+      "id": "bathroom-uv-amostra-8",
+      "label": "Amostra 8",
+      "printedReference": null,
+      "labelStatus": "editorial",
+      "family": "Placa UV",
+      "category": "bathroom-uv",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 17
+      },
+      "sourceImage": "assets/catalogue-v2/originals/bathroom-uv-amostra-8.jpg",
+      "sourcePixels": [
+        480,
+        300
+      ],
+      "sha256": "f7a26000d5a2943a6c4fe665167ad3c153bd2f1688b99c3badeb836b9b2c8350",
+      "status": "documented-digital-sample",
+      "classification": "not-stated",
+      "allowedSurface": "revestimento da casa de banho",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "limits": "Sem dimensão física, código RAL/NCS específico, mapas medidos ou correspondência colorimétrica certificada. IDs de implementação não são referências de fabricante.",
+      "sourcePage": 17,
+      "inclusion": "not-stated",
+      "includedInGV72": null
+    }
+  ],
+  "interiors": [
+    {
+      "id": "kitchen-01",
+      "label": "Cozinha 01",
+      "labelStatus": "editorial-not-manufacturer-reference",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 16
+      },
+      "sourceImage": "assets/catalogue/reference/kitchen-01.jpg",
+      "sourcePixels": [
+        720,
+        450
+      ],
+      "sha256": "23dbf4b0663b9c859b201265ccccaffa8b470ed13d4fe8a3b95170a13a3b2889",
+      "status": "photographic-reference-not-dimensioned",
+      "classification": "inclusion-not-stated",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "priorVisualInventory": "assets/interior-r5/source-inventory.json",
+      "observedAttributes": {
+        "layout": "l_with_peninsula",
+        "cabinetFrontStyle": "protected_flat_main_fluted_peninsula",
+        "cabinetAppearance": "main finish hidden by printed protective film; exposed peninsula face is grey-brown fluted",
+        "countertopAppearance": "white with grey marble veins",
+        "upperCabinets": "visible_protected",
+        "hob": "electric_two_zones",
+        "oven": "not_shown",
+        "sink": "black_rectangle",
+        "faucet": "black_high_arch",
+        "details": [
+          "Freestanding/peninsula front counter with vertical fluting.",
+          "Open appliance bay under rear counter."
+        ]
+      },
+      "limits": [
+        "Do not treat protective film colour or printed logos as cabinet finish.",
+        "Exact product dimensions, material specification and calibrated colour.",
+        "Main cabinet finish is hidden by printed protective film. Only peninsula fluting and countertop are exposed."
+      ],
+      "review": "Página PDF original visualmente revista nesta auditoria; atributos individuais preservados do inventário visual anterior e marcados como observações, não especificações de fornecimento."
+    },
+    {
+      "id": "kitchen-02",
+      "label": "Cozinha 02",
+      "labelStatus": "editorial-not-manufacturer-reference",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 16
+      },
+      "sourceImage": "assets/catalogue/reference/kitchen-02.jpg",
+      "sourcePixels": [
+        720,
+        450
+      ],
+      "sha256": "445e7672ae63865f69004e488b6baa60ce222f7ecc007656493b2c9879abfadd",
+      "status": "photographic-reference-not-dimensioned",
+      "classification": "inclusion-not-stated",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "priorVisualInventory": "assets/interior-r5/source-inventory.json",
+      "observedAttributes": {
+        "layout": "l",
+        "cabinetFrontStyle": "framed_shaker",
+        "cabinetAppearance": "warm white",
+        "countertopAppearance": "black",
+        "upperCabinets": "not_shown",
+        "hob": "electric_two_zones",
+        "oven": "not_shown",
+        "sink": "black_rectangle_with_insert",
+        "faucet": "metal_high_arch",
+        "details": [
+          "Three drawers on rear run.",
+          "Dark bar handles.",
+          "Sink on left return; hob on rear run."
+        ]
+      },
+      "limits": [
+        "Warm lighting shifts white and metal hues.",
+        "Exact product dimensions, material specification and calibrated colour."
+      ],
+      "review": "Página PDF original visualmente revista nesta auditoria; atributos individuais preservados do inventário visual anterior e marcados como observações, não especificações de fornecimento."
+    },
+    {
+      "id": "kitchen-03",
+      "label": "Cozinha 03",
+      "labelStatus": "editorial-not-manufacturer-reference",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 16
+      },
+      "sourceImage": "assets/catalogue/reference/kitchen-03.jpg",
+      "sourcePixels": [
+        720,
+        450
+      ],
+      "sha256": "789feeef9dc748c691b4fec2890cad8b2f24e73b74a99f48c03916bf81acdcb5",
+      "status": "photographic-reference-not-dimensioned",
+      "classification": "inclusion-not-stated",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "priorVisualInventory": "assets/interior-r5/source-inventory.json",
+      "observedAttributes": {
+        "layout": "l",
+        "cabinetFrontStyle": "slab",
+        "cabinetAppearance": "light greige",
+        "countertopAppearance": "white with faint grey marble veins",
+        "upperCabinets": "visible",
+        "hob": "not_shown",
+        "oven": "not_shown",
+        "sink": "black_rectangle",
+        "faucet": "black_arch",
+        "details": [
+          "Lower fronts have black horizontal grip channels.",
+          "Upper cupboards have dark vertical handles and a horizontal lift-up-looking front.",
+          "Rear drawer bank."
+        ]
+      },
+      "limits": [
+        "A lift mechanism cannot be proven from the closed front.",
+        "Exact product dimensions, material specification and calibrated colour."
+      ],
+      "review": "Página PDF original visualmente revista nesta auditoria; atributos individuais preservados do inventário visual anterior e marcados como observações, não especificações de fornecimento."
+    },
+    {
+      "id": "kitchen-04",
+      "label": "Cozinha 04",
+      "labelStatus": "editorial-not-manufacturer-reference",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 16
+      },
+      "sourceImage": "assets/catalogue/reference/kitchen-04.jpg",
+      "sourcePixels": [
+        720,
+        450
+      ],
+      "sha256": "dea673435a261728ad158f80f3f80a628cd88dc819fe07e1d74b591699ce736a",
+      "status": "photographic-reference-not-dimensioned",
+      "classification": "inclusion-not-stated",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "priorVisualInventory": "assets/interior-r5/source-inventory.json",
+      "observedAttributes": {
+        "layout": "l",
+        "cabinetFrontStyle": "slab_gloss",
+        "cabinetAppearance": "white",
+        "countertopAppearance": "very pale grey/white fine speckle",
+        "upperCabinets": "visible",
+        "hob": "not_shown",
+        "oven": "not_shown",
+        "sink": "rectangular_open_cutout",
+        "faucet": "not_installed_or_not_shown",
+        "details": [
+          "Black horizontal grip channels.",
+          "Three drawers on rear run.",
+          "Two open under-counter bays.",
+          "Warm light strip above/along upper cabinetry."
+        ]
+      },
+      "limits": [
+        "Sink bowl or cutout is unfinished; no faucet visible.",
+        "Exact product dimensions, material specification and calibrated colour."
+      ],
+      "review": "Página PDF original visualmente revista nesta auditoria; atributos individuais preservados do inventário visual anterior e marcados como observações, não especificações de fornecimento."
+    },
+    {
+      "id": "kitchen-05",
+      "label": "Cozinha 05",
+      "labelStatus": "editorial-not-manufacturer-reference",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 16
+      },
+      "sourceImage": "assets/catalogue/reference/kitchen-05.jpg",
+      "sourcePixels": [
+        720,
+        450
+      ],
+      "sha256": "0e70d139f545b35bd623b07aff9fa96917bfe3895a834dc6e8c2ec280d623076",
+      "status": "photographic-reference-not-dimensioned",
+      "classification": "inclusion-not-stated",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "priorVisualInventory": "assets/interior-r5/source-inventory.json",
+      "observedAttributes": {
+        "layout": "l",
+        "cabinetFrontStyle": "slab",
+        "cabinetAppearance": "light greige",
+        "countertopAppearance": "white with grey marble veins",
+        "upperCabinets": "visible",
+        "hob": "not_shown",
+        "oven": "not_shown",
+        "sink": "black_rectangle_with_rack",
+        "faucet": "dark_arch",
+        "details": [
+          "Dark grip channels on lower cabinets.",
+          "Dark vertical bar handles on upper cabinets.",
+          "Drawer stack on short return."
+        ]
+      },
+      "limits": [
+        "No oven or hob visible.",
+        "Exact product dimensions, material specification and calibrated colour."
+      ],
+      "review": "Página PDF original visualmente revista nesta auditoria; atributos individuais preservados do inventário visual anterior e marcados como observações, não especificações de fornecimento."
+    },
+    {
+      "id": "kitchen-06",
+      "label": "Cozinha 06",
+      "labelStatus": "editorial-not-manufacturer-reference",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 16
+      },
+      "sourceImage": "assets/catalogue/reference/kitchen-06.jpg",
+      "sourcePixels": [
+        720,
+        450
+      ],
+      "sha256": "8993dcd8526cc974c8046b1ee789b51ccee6ba89047cfd9c4e8679f00349e506",
+      "status": "photographic-reference-not-dimensioned",
+      "classification": "inclusion-not-stated",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "priorVisualInventory": "assets/interior-r5/source-inventory.json",
+      "observedAttributes": {
+        "layout": "u",
+        "cabinetFrontStyle": "slab_with_notched_grips",
+        "cabinetAppearance": "pale cream/greige",
+        "countertopAppearance": "black",
+        "upperCabinets": "not_shown",
+        "hob": "electric_two_zones",
+        "oven": "not_shown",
+        "sink": "black_double_rectangle",
+        "faucet": "chrome_high_arch",
+        "details": [
+          "Three drawers on rear run.",
+          "Dark notches at top of doors/drawers.",
+          "Sink on right return.",
+          "Right exposed gable retains printed protective film."
+        ]
+      },
+      "limits": [
+        "Use exposed rear fronts for colour, not protected gable.",
+        "Exact product dimensions, material specification and calibrated colour."
+      ],
+      "review": "Página PDF original visualmente revista nesta auditoria; atributos individuais preservados do inventário visual anterior e marcados como observações, não especificações de fornecimento."
+    },
+    {
+      "id": "kitchen-07",
+      "label": "Cozinha 07",
+      "labelStatus": "editorial-not-manufacturer-reference",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 16
+      },
+      "sourceImage": "assets/catalogue/reference/kitchen-07.jpg",
+      "sourcePixels": [
+        720,
+        450
+      ],
+      "sha256": "527ff1725d0c89b64bcf2b08044a2700ca01bc9c59c2829437c25b1db74d2f8b",
+      "status": "photographic-reference-not-dimensioned",
+      "classification": "inclusion-not-stated",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "priorVisualInventory": "assets/interior-r5/source-inventory.json",
+      "observedAttributes": {
+        "layout": "l",
+        "cabinetFrontStyle": "slab",
+        "cabinetAppearance": "dark charcoal grey",
+        "countertopAppearance": "white",
+        "upperCabinets": "not_shown",
+        "hob": "not_shown",
+        "oven": "not_shown",
+        "sink": "black_rectangle",
+        "faucet": "not_installed_or_not_shown",
+        "details": [
+          "Black/recessed horizontal grip line.",
+          "Rear drawer bank; broad flat door faces."
+        ]
+      },
+      "limits": [
+        "The photo does not show a faucet.",
+        "Exact product dimensions, material specification and calibrated colour."
+      ],
+      "review": "Página PDF original visualmente revista nesta auditoria; atributos individuais preservados do inventário visual anterior e marcados como observações, não especificações de fornecimento."
+    },
+    {
+      "id": "kitchen-08",
+      "label": "Cozinha 08",
+      "labelStatus": "editorial-not-manufacturer-reference",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 16
+      },
+      "sourceImage": "assets/catalogue/reference/kitchen-08.jpg",
+      "sourcePixels": [
+        720,
+        450
+      ],
+      "sha256": "6b98ceb03cc905cb3ee75f385351d673314bc1769313a3d1e9c3dbfecb7842f5",
+      "status": "photographic-reference-not-dimensioned",
+      "classification": "inclusion-not-stated",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "priorVisualInventory": "assets/interior-r5/source-inventory.json",
+      "observedAttributes": {
+        "layout": "l",
+        "cabinetFrontStyle": "framed_shaker",
+        "cabinetAppearance": "off-white",
+        "countertopAppearance": "white/grey marble-like",
+        "upperCabinets": "visible",
+        "hob": "not_shown",
+        "oven": "not_shown",
+        "sink": "obscured",
+        "faucet": "obscured",
+        "details": [
+          "Black bar handles.",
+          "Three drawers in the long run.",
+          "Upper framed doors.",
+          "Much of cabinetry and sink area is wrapped."
+        ]
+      },
+      "limits": [
+        "Film and loose packaging obscure sheen and installed sink/faucet.",
+        "Exact product dimensions, material specification and calibrated colour.",
+        "Main lower fronts are wrapped; use exposed upper front sample only as an approximate family colour."
+      ],
+      "review": "Página PDF original visualmente revista nesta auditoria; atributos individuais preservados do inventário visual anterior e marcados como observações, não especificações de fornecimento."
+    },
+    {
+      "id": "kitchen-09",
+      "label": "Cozinha 09",
+      "labelStatus": "editorial-not-manufacturer-reference",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 16
+      },
+      "sourceImage": "assets/catalogue/reference/kitchen-09.jpg",
+      "sourcePixels": [
+        720,
+        450
+      ],
+      "sha256": "4cf7d16e68b20c207f27c106cad4fea9802e20cc0f3e0ebafa5939fd74fd2e87",
+      "status": "photographic-reference-not-dimensioned",
+      "classification": "inclusion-not-stated",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "priorVisualInventory": "assets/interior-r5/source-inventory.json",
+      "observedAttributes": {
+        "layout": "u_or_l_plus_near_return",
+        "cabinetFrontStyle": "slab_handleless",
+        "cabinetAppearance": "pale cream/yellow",
+        "countertopAppearance": "white",
+        "upperCabinets": "not_shown",
+        "hob": "gas_two_burners",
+        "oven": "not_shown",
+        "sink": "black_rectangle_with_rack",
+        "faucet": "black_high_arch",
+        "details": [
+          "Gas burners visible on left return.",
+          "Wide drawer fronts below rear counter.",
+          "A near white counter return is partly cropped."
+        ]
+      },
+      "limits": [
+        "The near return is cropped, so the full plan is not measured.",
+        "Exact product dimensions, material specification and calibrated colour."
+      ],
+      "review": "Página PDF original visualmente revista nesta auditoria; atributos individuais preservados do inventário visual anterior e marcados como observações, não especificações de fornecimento."
+    },
+    {
+      "id": "kitchen-10",
+      "label": "Cozinha 10",
+      "labelStatus": "editorial-not-manufacturer-reference",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 16
+      },
+      "sourceImage": "assets/catalogue/reference/kitchen-10.jpg",
+      "sourcePixels": [
+        720,
+        450
+      ],
+      "sha256": "0f9fac604703637b2ef1d1c0713df9d039e8cd98d4f888aeeac73ab7e4bf9082",
+      "status": "photographic-reference-not-dimensioned",
+      "classification": "inclusion-not-stated",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "priorVisualInventory": "assets/interior-r5/source-inventory.json",
+      "observedAttributes": {
+        "layout": "l",
+        "cabinetFrontStyle": "raised_panel_with_vertical_grooves",
+        "cabinetAppearance": "white",
+        "countertopAppearance": "medium grey",
+        "upperCabinets": "not_shown",
+        "hob": "not_shown",
+        "oven": "not_shown",
+        "sink": "black_rectangle_with_rack",
+        "faucet": "dark_metal_high_arch",
+        "details": [
+          "Three central drawers.",
+          "Black bar handles.",
+          "Grey upstand matching worktop."
+        ]
+      },
+      "limits": [
+        "Recessed panel faces contain narrow vertical grooves; this is not a plain slab kitchen.",
+        "Exact product dimensions, material specification and calibrated colour."
+      ],
+      "review": "Página PDF original visualmente revista nesta auditoria; atributos individuais preservados do inventário visual anterior e marcados como observações, não especificações de fornecimento."
+    },
+    {
+      "id": "kitchen-11",
+      "label": "Cozinha 11",
+      "labelStatus": "editorial-not-manufacturer-reference",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 16
+      },
+      "sourceImage": "assets/catalogue/reference/kitchen-11.jpg",
+      "sourcePixels": [
+        720,
+        450
+      ],
+      "sha256": "e25e86c9a87cb9ef5410ce381844a2d588cb6b516b21e65d23e43dfed203657d",
+      "status": "photographic-reference-not-dimensioned",
+      "classification": "inclusion-not-stated",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "priorVisualInventory": "assets/interior-r5/source-inventory.json",
+      "observedAttributes": {
+        "layout": "l",
+        "cabinetFrontStyle": "framed_shaker",
+        "cabinetAppearance": "pale grey-green lower / white upper",
+        "countertopAppearance": "white",
+        "upperCabinets": "visible",
+        "hob": "not_shown",
+        "oven": "not_shown",
+        "sink": "black_rectangle_with_rack",
+        "faucet": "black_high_arch",
+        "details": [
+          "Black bar handles.",
+          "Drawer bank on return.",
+          "Upper cupboards cover left run."
+        ]
+      },
+      "limits": [
+        "Photo lighting gives lower cabinetry a subtle sage cast; no calibrated colour standard.",
+        "Exact product dimensions, material specification and calibrated colour."
+      ],
+      "review": "Página PDF original visualmente revista nesta auditoria; atributos individuais preservados do inventário visual anterior e marcados como observações, não especificações de fornecimento."
+    },
+    {
+      "id": "kitchen-12",
+      "label": "Cozinha 12",
+      "labelStatus": "editorial-not-manufacturer-reference",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 16
+      },
+      "sourceImage": "assets/catalogue/reference/kitchen-12.jpg",
+      "sourcePixels": [
+        720,
+        450
+      ],
+      "sha256": "344f1593252cfb8d0023974ea7eb2281c55419b8952e827200329f4d526be570",
+      "status": "photographic-reference-not-dimensioned",
+      "classification": "inclusion-not-stated",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "priorVisualInventory": "assets/interior-r5/source-inventory.json",
+      "observedAttributes": {
+        "layout": "l",
+        "cabinetFrontStyle": "slab_handleless_woodgrain",
+        "cabinetAppearance": "warm medium oak/brown vertical grain",
+        "countertopAppearance": "white",
+        "upperCabinets": "not_shown",
+        "hob": "not_shown",
+        "oven": "not_shown",
+        "sink": "stainless_rectangle",
+        "faucet": "chrome_arch",
+        "details": [
+          "Continuous vertical wood grain across base fronts.",
+          "No visible projecting handles.",
+          "No upper cupboards shown."
+        ]
+      },
+      "limits": [
+        "The photograph does not establish wood species, veneer or laminate composition.",
+        "Exact product dimensions, material specification and calibrated colour."
+      ],
+      "review": "Página PDF original visualmente revista nesta auditoria; atributos individuais preservados do inventário visual anterior e marcados como observações, não especificações de fornecimento."
+    },
+    {
+      "id": "kitchen-13",
+      "label": "Cozinha 13",
+      "labelStatus": "editorial-not-manufacturer-reference",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 16
+      },
+      "sourceImage": "assets/catalogue/reference/kitchen-13.jpg",
+      "sourcePixels": [
+        720,
+        450
+      ],
+      "sha256": "48ba5eb94fa992147a82ec018be1d61baaa53304c969d51c6f99a2b007dcc5f7",
+      "status": "photographic-reference-not-dimensioned",
+      "classification": "inclusion-not-stated",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "priorVisualInventory": "assets/interior-r5/source-inventory.json",
+      "observedAttributes": {
+        "layout": "l",
+        "cabinetFrontStyle": "slab",
+        "cabinetAppearance": "light grey lower / medium grey upper",
+        "countertopAppearance": "white with grey marble veins",
+        "upperCabinets": "visible",
+        "hob": "not_shown",
+        "oven": "not_shown",
+        "sink": "black_rectangle_with_drainer",
+        "faucet": "chrome_arch",
+        "details": [
+          "Black horizontal channels on lower doors.",
+          "Rear drawer bank.",
+          "Upper cabinets only over the sink return."
+        ]
+      },
+      "limits": [
+        "Upper colour appears darker partly because of shading.",
+        "Exact product dimensions, material specification and calibrated colour."
+      ],
+      "review": "Página PDF original visualmente revista nesta auditoria; atributos individuais preservados do inventário visual anterior e marcados como observações, não especificações de fornecimento."
+    },
+    {
+      "id": "kitchen-14",
+      "label": "Cozinha 14",
+      "labelStatus": "editorial-not-manufacturer-reference",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 16
+      },
+      "sourceImage": "assets/catalogue/reference/kitchen-14.jpg",
+      "sourcePixels": [
+        720,
+        450
+      ],
+      "sha256": "41b49bf743db0fbeaac469ee5b16262e561421b3982421ef9b41ce269508af9b",
+      "status": "photographic-reference-not-dimensioned",
+      "classification": "inclusion-not-stated",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "priorVisualInventory": "assets/interior-r5/source-inventory.json",
+      "observedAttributes": {
+        "layout": "l",
+        "cabinetFrontStyle": "slab_protected",
+        "cabinetAppearance": "grey wood-like appearance under printed film; intrinsic finish uncertain",
+        "countertopAppearance": "hidden by white foam wrapping",
+        "upperCabinets": "not_shown",
+        "hob": "obscured",
+        "oven": "not_shown",
+        "sink": "obscured",
+        "faucet": "obscured",
+        "details": [
+          "Dark bar handles.",
+          "Three drawers on rear run.",
+          "All main fronts and countertop protected for transport."
+        ]
+      },
+      "limits": [
+        "No clean cabinet or worktop finish sample exists; do not texture with plastic film or foam.",
+        "Exact product dimensions, material specification and calibrated colour.",
+        "No trustworthy cabinet or countertop finish crop: plastic film and foam cover both."
+      ],
+      "review": "Página PDF original visualmente revista nesta auditoria; atributos individuais preservados do inventário visual anterior e marcados como observações, não especificações de fornecimento."
+    },
+    {
+      "id": "kitchen-15",
+      "label": "Cozinha 15",
+      "labelStatus": "editorial-not-manufacturer-reference",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 16
+      },
+      "sourceImage": "assets/catalogue/reference/kitchen-15.jpg",
+      "sourcePixels": [
+        720,
+        450
+      ],
+      "sha256": "58fcfd88e0447245651420ee4977bf38b37624138ac11f9748fa851f1b222b32",
+      "status": "photographic-reference-not-dimensioned",
+      "classification": "inclusion-not-stated",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "priorVisualInventory": "assets/interior-r5/source-inventory.json",
+      "observedAttributes": {
+        "layout": "l",
+        "cabinetFrontStyle": "slab",
+        "cabinetAppearance": "white",
+        "countertopAppearance": "white with subtle grey veins",
+        "upperCabinets": "not_shown",
+        "hob": "not_shown",
+        "oven": "not_shown",
+        "sink": "black_double_rectangle",
+        "faucet": "metal_medium_arch",
+        "details": [
+          "Black horizontal grip channels.",
+          "Drawer stack at outer right end.",
+          "Plain white doors; no upper cabinetry shown."
+        ]
+      },
+      "limits": [
+        "Decorations and appliances on the countertop are not built-in cabinet components.",
+        "Exact product dimensions, material specification and calibrated colour."
+      ],
+      "review": "Página PDF original visualmente revista nesta auditoria; atributos individuais preservados do inventário visual anterior e marcados como observações, não especificações de fornecimento."
+    },
+    {
+      "id": "bathroom-01",
+      "label": "Ambiente 01",
+      "labelStatus": "editorial-not-manufacturer-reference",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 17
+      },
+      "sourceImage": "assets/catalogue/reference/bathroom-01.jpg",
+      "sourcePixels": [
+        450,
+        600
+      ],
+      "sha256": "415f9e814575309c6308e20e03d370b790d0a21e054965176f77dbd416017272",
+      "status": "photographic-reference-not-dimensioned",
+      "classification": "inclusion-not-stated",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "priorVisualInventory": "assets/interior-r5/source-inventory.json",
+      "observedAttributes": {
+        "vanityFrontStyle": "black_slab_with_fluted_side",
+        "basinType": "rectangular_integrated",
+        "basinColour": "white",
+        "faucet": "black_short_arch",
+        "mirror": "rectangular_black_mirror_cabinet_with_side_shelf",
+        "showerEnclosure": "rectangular_black_frame",
+        "showerGlazing": "part_clear",
+        "wallAppearance": "beige_wash_area_and_grey_wet_room",
+        "details": [
+          "Washbasin area appears outside the inner wet compartment.",
+          "Black shelf beside basin; black mirror surround.",
+          "White toilet visible through doorway."
+        ]
+      },
+      "limits": [
+        "Do not apply beige wash-area wall colour to every inner shower wall.",
+        "Exact product dimensions, material specification and calibrated colour."
+      ],
+      "review": "Página PDF original visualmente revista nesta auditoria; atributos individuais preservados do inventário visual anterior e marcados como observações, não especificações de fornecimento."
+    },
+    {
+      "id": "bathroom-02",
+      "label": "Ambiente 02",
+      "labelStatus": "editorial-not-manufacturer-reference",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 17
+      },
+      "sourceImage": "assets/catalogue/reference/bathroom-02.jpg",
+      "sourcePixels": [
+        450,
+        600
+      ],
+      "sha256": "c8452676ea2a31b96f77639ed990d077ff5e19281c7045c436956af8ab18b6d1",
+      "status": "photographic-reference-not-dimensioned",
+      "classification": "inclusion-not-stated",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "priorVisualInventory": "assets/interior-r5/source-inventory.json",
+      "observedAttributes": {
+        "vanityFrontStyle": "dark_grey_partial",
+        "basinType": "oval_integrated",
+        "basinColour": "white",
+        "faucet": "not_shown",
+        "mirror": "partial_white_cabinet_open_shelves",
+        "showerEnclosure": "curved_quadrant_enclosed_pod",
+        "showerGlazing": "horizontal_frosted_stripes",
+        "wallAppearance": "white_marble_grey_veins",
+        "details": [
+          "White curved shower base and top cap.",
+          "Curved sliding doors with silver vertical handles.",
+          "Overhead round shower and internal column visible.",
+          "White toilet."
+        ]
+      },
+      "limits": [
+        "Vanity/mirror are partly outside the crop.",
+        "Exact product dimensions, material specification and calibrated colour."
+      ],
+      "review": "Página PDF original visualmente revista nesta auditoria; atributos individuais preservados do inventário visual anterior e marcados como observações, não especificações de fornecimento."
+    },
+    {
+      "id": "bathroom-03",
+      "label": "Ambiente 03",
+      "labelStatus": "editorial-not-manufacturer-reference",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 17
+      },
+      "sourceImage": "assets/catalogue/reference/bathroom-03.jpg",
+      "sourcePixels": [
+        450,
+        600
+      ],
+      "sha256": "dda569bdc02ccfba746e3178916e48d99cfc972d6262e645fdc45f0b0ce30fc1",
+      "status": "photographic-reference-not-dimensioned",
+      "classification": "inclusion-not-stated",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "priorVisualInventory": "assets/interior-r5/source-inventory.json",
+      "observedAttributes": {
+        "vanityFrontStyle": "light_grey_woodgrain",
+        "basinType": "oval_integrated",
+        "basinColour": "white",
+        "faucet": "not_shown",
+        "mirror": "not_shown",
+        "showerEnclosure": "curved_quadrant_enclosed_pod",
+        "showerGlazing": "horizontal_frosted_stripes",
+        "wallAppearance": "plain_light_grey",
+        "details": [
+          "White curved shower base and top cap.",
+          "Silver vertical handles.",
+          "Two dark vanity handles visible.",
+          "White toilet."
+        ]
+      },
+      "limits": [
+        "Do not import marble walls from bathroom-02; this room has plain walls.",
+        "Exact product dimensions, material specification and calibrated colour."
+      ],
+      "review": "Página PDF original visualmente revista nesta auditoria; atributos individuais preservados do inventário visual anterior e marcados como observações, não especificações de fornecimento."
+    },
+    {
+      "id": "bathroom-04",
+      "label": "Ambiente 04",
+      "labelStatus": "editorial-not-manufacturer-reference",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 17
+      },
+      "sourceImage": "assets/catalogue/reference/bathroom-04.jpg",
+      "sourcePixels": [
+        450,
+        600
+      ],
+      "sha256": "701e9444aba8e769b26cc48295a4143f12f6fcee689e1521ec00f2e116af8ef7",
+      "status": "photographic-reference-not-dimensioned",
+      "classification": "inclusion-not-stated",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "priorVisualInventory": "assets/interior-r5/source-inventory.json",
+      "observedAttributes": {
+        "vanityFrontStyle": "grey_slab",
+        "basinType": "rounded_rect_integrated",
+        "basinColour": "white",
+        "faucet": "not_shown",
+        "mirror": "not_shown",
+        "showerEnclosure": "rectangular_white_grid_frame",
+        "showerGlazing": "frosted",
+        "wallAppearance": "warm_grey_beige_stone_veins",
+        "details": [
+          "White shower surround/plinth.",
+          "Dark slatted shower floor insert.",
+          "White toilet with top flush button."
+        ]
+      },
+      "limits": [
+        "Mirror and tap are not visible.",
+        "Exact product dimensions, material specification and calibrated colour."
+      ],
+      "review": "Página PDF original visualmente revista nesta auditoria; atributos individuais preservados do inventário visual anterior e marcados como observações, não especificações de fornecimento."
+    },
+    {
+      "id": "bathroom-05",
+      "label": "Ambiente 05",
+      "labelStatus": "editorial-not-manufacturer-reference",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 18
+      },
+      "sourceImage": "assets/catalogue/reference/bathroom-05.jpg",
+      "sourcePixels": [
+        450,
+        600
+      ],
+      "sha256": "ad9a9a7782dbc7a497e1f9ee1c73ba5a38f11591ef026b27a968604366bf813e",
+      "status": "photographic-reference-not-dimensioned",
+      "classification": "inclusion-not-stated",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "priorVisualInventory": "assets/interior-r5/source-inventory.json",
+      "observedAttributes": {
+        "vanityFrontStyle": "not_shown",
+        "basinType": "not_established",
+        "basinColour": "not_established",
+        "faucet": "not_shown",
+        "mirror": "not_shown",
+        "showerEnclosure": "only_partial_black_edge",
+        "showerGlazing": "frosted",
+        "wallAppearance": "small_fragment_white_grey_marble",
+        "details": [
+          "White toilet, top round dual-flush button and protected seat.",
+          "Grey wood-like floor, square floor drain."
+        ]
+      },
+      "limits": [
+        "This is a toilet close-up. It cannot define a vanity, mirror, full shower shape or whole-room wall treatment.",
+        "Exact product dimensions, material specification and calibrated colour.",
+        "No reliable finished vanity-front crop."
+      ],
+      "review": "Página PDF original visualmente revista nesta auditoria; atributos individuais preservados do inventário visual anterior e marcados como observações, não especificações de fornecimento."
+    },
+    {
+      "id": "bathroom-06",
+      "label": "Ambiente 06",
+      "labelStatus": "editorial-not-manufacturer-reference",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 18
+      },
+      "sourceImage": "assets/catalogue/reference/bathroom-06.jpg",
+      "sourcePixels": [
+        450,
+        600
+      ],
+      "sha256": "647065e56bb6dcbd365be448a207031696fc4c9f22fbf23267420e90b548d49b",
+      "status": "photographic-reference-not-dimensioned",
+      "classification": "inclusion-not-stated",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "priorVisualInventory": "assets/interior-r5/source-inventory.json",
+      "observedAttributes": {
+        "vanityFrontStyle": "taupe_slab",
+        "basinType": "rectangular_integrated",
+        "basinColour": "white",
+        "faucet": "black_angular",
+        "mirror": "wide_rectangular_mirror_cabinet_with_dark_open_side_shelves",
+        "showerEnclosure": "rectangular_black_frame",
+        "showerGlazing": "frosted_panel_and_clear_area",
+        "wallAppearance": "grey_cream_wavy_stone",
+        "details": [
+          "Long worktop with washing machine under left bay.",
+          "Two large vanity doors with curved silver handles.",
+          "White shower base.",
+          "White toilet.",
+          "Oak-like herringbone floor."
+        ]
+      },
+      "limits": [
+        "Pattern resembles wavy stone; material species/composition not established.",
+        "Exact product dimensions, material specification and calibrated colour."
+      ],
+      "review": "Página PDF original visualmente revista nesta auditoria; atributos individuais preservados do inventário visual anterior e marcados como observações, não especificações de fornecimento."
+    },
+    {
+      "id": "bathroom-07",
+      "label": "Ambiente 07",
+      "labelStatus": "editorial-not-manufacturer-reference",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 18
+      },
+      "sourceImage": "assets/catalogue/reference/bathroom-07.jpg",
+      "sourcePixels": [
+        450,
+        600
+      ],
+      "sha256": "3e1c80409b361bc7ac82bb3cd8cd84409dfbcd5faaa3d54ac2eacbe98375ec34",
+      "status": "photographic-reference-not-dimensioned",
+      "classification": "inclusion-not-stated",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "priorVisualInventory": "assets/interior-r5/source-inventory.json",
+      "observedAttributes": {
+        "vanityFrontStyle": "taupe_slab_horizontal_grips",
+        "basinType": "rounded_rect_integrated",
+        "basinColour": "white",
+        "faucet": "not_shown",
+        "mirror": "partial_white_mirror_cabinet_open_side_shelves",
+        "showerEnclosure": "rectangular_black_frame",
+        "showerGlazing": "frosted_panel_and_clear_area",
+        "wallAppearance": "white_marble_broad_grey_veins",
+        "details": [
+          "Black horizontal shower handle.",
+          "Dark grey tiled/shower floor.",
+          "White toilet."
+        ]
+      },
+      "limits": [
+        "Vanity fronts partly cropped; do not infer exact drawer count.",
+        "Exact product dimensions, material specification and calibrated colour."
+      ],
+      "review": "Página PDF original visualmente revista nesta auditoria; atributos individuais preservados do inventário visual anterior e marcados como observações, não especificações de fornecimento."
+    },
+    {
+      "id": "bathroom-08",
+      "label": "Ambiente 08",
+      "labelStatus": "editorial-not-manufacturer-reference",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 18
+      },
+      "sourceImage": "assets/catalogue/reference/bathroom-08.jpg",
+      "sourcePixels": [
+        450,
+        600
+      ],
+      "sha256": "21274ada3a08a8cfd5c6c1b43019ab92001960e3903069b2b469a7d4d209ec3b",
+      "status": "photographic-reference-not-dimensioned",
+      "classification": "inclusion-not-stated",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "priorVisualInventory": "assets/interior-r5/source-inventory.json",
+      "observedAttributes": {
+        "vanityFrontStyle": "grey_slab_horizontal_grips",
+        "basinType": "rounded_rect_integrated",
+        "basinColour": "white",
+        "faucet": "chrome_partial",
+        "mirror": "rectangular_mirror",
+        "showerEnclosure": "rectangular_clear_glass_chrome_rail",
+        "showerGlazing": "clear",
+        "wallAppearance": "white_marble_broad_grey_veins",
+        "details": [
+          "Visible upper sliding rail/rollers in chrome.",
+          "Hand shower and shelf visible.",
+          "Dark grey shower floor.",
+          "White toilet."
+        ]
+      },
+      "limits": [
+        "No opaque black full frame is shown around this shower.",
+        "Exact product dimensions, material specification and calibrated colour."
+      ],
+      "review": "Página PDF original visualmente revista nesta auditoria; atributos individuais preservados do inventário visual anterior e marcados como observações, não especificações de fornecimento."
+    },
+    {
+      "id": "bathroom-09",
+      "label": "Ambiente 09",
+      "labelStatus": "editorial-not-manufacturer-reference",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 18
+      },
+      "sourceImage": "assets/catalogue/reference/bathroom-09.jpg",
+      "sourcePixels": [
+        450,
+        600
+      ],
+      "sha256": "29a343f8b41a1f07d652619800d3a32191a0c12d075e32d12c6279f6f6422bf7",
+      "status": "photographic-reference-not-dimensioned",
+      "classification": "inclusion-not-stated",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "priorVisualInventory": "assets/interior-r5/source-inventory.json",
+      "observedAttributes": {
+        "vanityFrontStyle": "open_unfinished_vanity",
+        "basinType": "rectangular_vessel",
+        "basinColour": "white",
+        "faucet": "not_shown",
+        "mirror": "white_mirror_cabinet_with_open_side_shelves",
+        "showerEnclosure": "rectangular_chrome_frame",
+        "showerGlazing": "frosted_panel_and_clear_area",
+        "wallAppearance": "white_marble_grey_veins",
+        "details": [
+          "Long white worktop; empty lower bay and side gable.",
+          "Small wall water heater with exposed hoses.",
+          "White shower base and toilet."
+        ]
+      },
+      "limits": [
+        "No finished vanity doors are shown; gable colour should not define a full cabinet family.",
+        "Exact product dimensions, material specification and calibrated colour.",
+        "No reliable finished vanity-front crop."
+      ],
+      "review": "Página PDF original visualmente revista nesta auditoria; atributos individuais preservados do inventário visual anterior e marcados como observações, não especificações de fornecimento."
+    },
+    {
+      "id": "bathroom-10",
+      "label": "Ambiente 10",
+      "labelStatus": "editorial-not-manufacturer-reference",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 18
+      },
+      "sourceImage": "assets/catalogue/reference/bathroom-10.jpg",
+      "sourcePixels": [
+        450,
+        600
+      ],
+      "sha256": "aa73143382e71f48ef26d8ce8d2dfe53d0054f1ff6a513dee04443063cffb7ef",
+      "status": "photographic-reference-not-dimensioned",
+      "classification": "inclusion-not-stated",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "priorVisualInventory": "assets/interior-r5/source-inventory.json",
+      "observedAttributes": {
+        "vanityFrontStyle": "light_grey_partial",
+        "basinType": "rounded_rect_integrated",
+        "basinColour": "white",
+        "faucet": "not_shown",
+        "mirror": "white_mirror_cabinet_with_open_side_shelves",
+        "showerEnclosure": "rectangular_black_frame",
+        "showerGlazing": "frosted_panel_and_clear_area",
+        "wallAppearance": "white_marble_bold_grey_black_veins",
+        "details": [
+          "White shower base.",
+          "White wall water heater.",
+          "White toilet."
+        ]
+      },
+      "limits": [
+        "Vanity face and faucet are only partly visible.",
+        "Exact product dimensions, material specification and calibrated colour."
+      ],
+      "review": "Página PDF original visualmente revista nesta auditoria; atributos individuais preservados do inventário visual anterior e marcados como observações, não especificações de fornecimento."
+    },
+    {
+      "id": "bathroom-11",
+      "label": "Ambiente 11",
+      "labelStatus": "editorial-not-manufacturer-reference",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 18
+      },
+      "sourceImage": "assets/catalogue/reference/bathroom-11.jpg",
+      "sourcePixels": [
+        450,
+        600
+      ],
+      "sha256": "7d49efc0b2036ba7574af20b29f2f4e51ac612330d55edc33f84307d13cbf105",
+      "status": "photographic-reference-not-dimensioned",
+      "classification": "inclusion-not-stated",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "priorVisualInventory": "assets/interior-r5/source-inventory.json",
+      "observedAttributes": {
+        "vanityFrontStyle": "brown_woodgrain_slab",
+        "basinType": "rounded_rect_integrated",
+        "basinColour": "white",
+        "faucet": "chrome_short",
+        "mirror": "white_mirror_cabinet_with_open_side_shelves",
+        "showerEnclosure": "rectangular_dark_frame",
+        "showerGlazing": "frosted_panel_and_clear_area",
+        "wallAppearance": "white_marble_fine_grey_veins",
+        "details": [
+          "Two dark bar handles on vanity doors.",
+          "Dark horizontal shower handle.",
+          "White base, toilet and compact wall heater."
+        ]
+      },
+      "limits": [
+        "Green cast on walls/glass is photographic and not a calibrated paint colour.",
+        "Exact product dimensions, material specification and calibrated colour."
+      ],
+      "review": "Página PDF original visualmente revista nesta auditoria; atributos individuais preservados do inventário visual anterior e marcados como observações, não especificações de fornecimento."
+    },
+    {
+      "id": "bathroom-12",
+      "label": "Ambiente 12",
+      "labelStatus": "editorial-not-manufacturer-reference",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 18
+      },
+      "sourceImage": "assets/catalogue/reference/bathroom-12.jpg",
+      "sourcePixels": [
+        450,
+        600
+      ],
+      "sha256": "8f424b325867e141bbd45477a4fd724a039da4e05ea215464269d8509edf333c",
+      "status": "photographic-reference-not-dimensioned",
+      "classification": "inclusion-not-stated",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "priorVisualInventory": "assets/interior-r5/source-inventory.json",
+      "observedAttributes": {
+        "vanityFrontStyle": "grey_partial",
+        "basinType": "rounded_rect_integrated",
+        "basinColour": "white",
+        "faucet": "not_shown",
+        "mirror": "partial_rectangular",
+        "showerEnclosure": "rectangular_black_frame",
+        "showerGlazing": "frosted_panel_and_clear_area",
+        "wallAppearance": "dark_grey_marble_light_veins",
+        "details": [
+          "White shower base and toilet.",
+          "Black wall water heater."
+        ]
+      },
+      "limits": [
+        "Only a narrow piece of vanity/mirror is shown.",
+        "Exact product dimensions, material specification and calibrated colour."
+      ],
+      "review": "Página PDF original visualmente revista nesta auditoria; atributos individuais preservados do inventário visual anterior e marcados como observações, não especificações de fornecimento."
+    },
+    {
+      "id": "bathroom-13",
+      "label": "Ambiente 13",
+      "labelStatus": "editorial-not-manufacturer-reference",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 18
+      },
+      "sourceImage": "assets/catalogue/reference/bathroom-13.jpg",
+      "sourcePixels": [
+        450,
+        600
+      ],
+      "sha256": "451486ba1669e5516ea2b8a2190741ccf2eea7a681ca3f9236061b8d65a60678",
+      "status": "photographic-reference-not-dimensioned",
+      "classification": "inclusion-not-stated",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "priorVisualInventory": "assets/interior-r5/source-inventory.json",
+      "observedAttributes": {
+        "vanityFrontStyle": "light_grey_vertical_woodgrain",
+        "basinType": "rounded_rect_integrated",
+        "basinColour": "white",
+        "faucet": "chrome_short",
+        "mirror": "white_mirror_cabinet_with_open_side_shelves",
+        "showerEnclosure": "rectangular_light_frame_dark_internal_mullions",
+        "showerGlazing": "frosted_panel_and_clear_area",
+        "wallAppearance": "plain_light_grey_wash_area_fine_marble_wet_area",
+        "details": [
+          "Dark vertical division and low horizontal division on frosted glass.",
+          "Dark recessed vertical shower pull.",
+          "White toilet."
+        ]
+      },
+      "limits": [
+        "The wall finish differs between wash area and wet area.",
+        "Exact product dimensions, material specification and calibrated colour."
+      ],
+      "review": "Página PDF original visualmente revista nesta auditoria; atributos individuais preservados do inventário visual anterior e marcados como observações, não especificações de fornecimento."
+    },
+    {
+      "id": "bathroom-14",
+      "label": "Ambiente 14",
+      "labelStatus": "editorial-not-manufacturer-reference",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 18
+      },
+      "sourceImage": "assets/catalogue/reference/bathroom-14.jpg",
+      "sourcePixels": [
+        450,
+        600
+      ],
+      "sha256": "d551290a49fddd1595e9b3e078160d6eb358b7609fba8ccc34a5f26d1b3a57e3",
+      "status": "photographic-reference-not-dimensioned",
+      "classification": "inclusion-not-stated",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "priorVisualInventory": "assets/interior-r5/source-inventory.json",
+      "observedAttributes": {
+        "vanityFrontStyle": "partial_light_fronts_open_bay",
+        "basinType": "rectangular_vessel",
+        "basinColour": "white",
+        "faucet": "not_shown",
+        "mirror": "white_mirror_cabinet_with_open_side_shelves",
+        "showerEnclosure": "rectangular_light_frame_dark_grid",
+        "showerGlazing": "frosted_grid_panel_and_clear_area",
+        "wallAppearance": "white_marble_fine_grey_veins",
+        "details": [
+          "Long worktop with empty appliance/leg bay.",
+          "Dark thin multi-row grid on frosted panel.",
+          "White shower base; white toilet partly hidden.",
+          "Wall heater."
+        ]
+      },
+      "limits": [
+        "Exact number of lower cabinet modules is outside the crop.",
+        "Exact product dimensions, material specification and calibrated colour.",
+        "No reliable finished vanity-front crop."
+      ],
+      "review": "Página PDF original visualmente revista nesta auditoria; atributos individuais preservados do inventário visual anterior e marcados como observações, não especificações de fornecimento."
+    },
+    {
+      "id": "bathroom-15",
+      "label": "Ambiente 15",
+      "labelStatus": "editorial-not-manufacturer-reference",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 18
+      },
+      "sourceImage": "assets/catalogue/reference/bathroom-15.jpg",
+      "sourcePixels": [
+        450,
+        600
+      ],
+      "sha256": "8ab5fc0580c6e2ea1b22c77010fcb3dd7cb07e86ad921548cf18598941c2dd44",
+      "status": "photographic-reference-not-dimensioned",
+      "classification": "inclusion-not-stated",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "priorVisualInventory": "assets/interior-r5/source-inventory.json",
+      "observedAttributes": {
+        "vanityFrontStyle": "grey_slab_partial_open_door",
+        "basinType": "rectangular_vessel",
+        "basinColour": "white",
+        "faucet": "chrome_tall",
+        "mirror": "white_mirror_cabinet_with_open_side_shelves",
+        "showerEnclosure": "rectangular_black_rail_clear_glass",
+        "showerGlazing": "clear",
+        "wallAppearance": "white_marble_bold_grey_gold_brown_veins",
+        "details": [
+          "Long white worktop, open lower bay and open cabinet door.",
+          "Black U-shaped shower handle.",
+          "Square overhead shower and handheld shower visible.",
+          "White tray and toilet."
+        ]
+      },
+      "limits": [
+        "The cabinet is open/incomplete, not evidence for a fully closed generic vanity.",
+        "Exact product dimensions, material specification and calibrated colour."
+      ],
+      "review": "Página PDF original visualmente revista nesta auditoria; atributos individuais preservados do inventário visual anterior e marcados como observações, não especificações de fornecimento."
+    },
+    {
+      "id": "bathroom-16",
+      "label": "Ambiente 16",
+      "labelStatus": "editorial-not-manufacturer-reference",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 18
+      },
+      "sourceImage": "assets/catalogue/reference/bathroom-16.jpg",
+      "sourcePixels": [
+        450,
+        600
+      ],
+      "sha256": "74305b7d19920f12b18c2d1a451e798fd4b38762454079fa4a88ddb70dbe6bca",
+      "status": "photographic-reference-not-dimensioned",
+      "classification": "inclusion-not-stated",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "priorVisualInventory": "assets/interior-r5/source-inventory.json",
+      "observedAttributes": {
+        "vanityFrontStyle": "light_greige_slab",
+        "basinType": "rectangular_vessel",
+        "basinColour": "white",
+        "faucet": "dark_metal_angular",
+        "mirror": "wide_rectangular_mirror_cabinet",
+        "showerEnclosure": "rectangular_black_frame",
+        "showerGlazing": "frosted_panel_and_clear_area",
+        "wallAppearance": "charcoal_marble_fine_light_veins",
+        "details": [
+          "Dark vanity handles.",
+          "White shower base and toilet.",
+          "Dark marble continues across ceiling."
+        ]
+      },
+      "limits": [
+        "Very dark exposure; sample colours retain photographic lighting.",
+        "Exact product dimensions, material specification and calibrated colour."
+      ],
+      "review": "Página PDF original visualmente revista nesta auditoria; atributos individuais preservados do inventário visual anterior e marcados como observações, não especificações de fornecimento."
+    },
+    {
+      "id": "bathroom-17",
+      "label": "Ambiente 17",
+      "labelStatus": "editorial-not-manufacturer-reference",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 18
+      },
+      "sourceImage": "assets/catalogue/reference/bathroom-17.jpg",
+      "sourcePixels": [
+        450,
+        600
+      ],
+      "sha256": "f865311cd839e0733187f675067ddca5136da62b450fb7fae40b1cd50426bda3",
+      "status": "photographic-reference-not-dimensioned",
+      "classification": "inclusion-not-stated",
+      "gv72Compatibility": "not-confirmed-by-variant-specific-order",
+      "priorVisualInventory": "assets/interior-r5/source-inventory.json",
+      "observedAttributes": {
+        "vanityFrontStyle": "grey_slab_partial",
+        "basinType": "rounded_rect_integrated",
+        "basinColour": "white",
+        "faucet": "not_shown",
+        "mirror": "not_shown",
+        "showerEnclosure": "rectangular_light_frame_dark_internal_mullions",
+        "showerGlazing": "frosted_panel_and_clear_area",
+        "wallAppearance": "white_marble_fine_grey_veins",
+        "details": [
+          "Dark recessed shower pull.",
+          "Dark vertical/low horizontal mullions.",
+          "White toilet; wood-brown floor.",
+          "White inset shower base visible."
+        ]
+      },
+      "limits": [
+        "Vanity and mirror are heavily cropped.",
+        "Exact product dimensions, material specification and calibrated colour."
+      ],
+      "review": "Página PDF original visualmente revista nesta auditoria; atributos individuais preservados do inventário visual anterior e marcados como observações, não especificações de fornecimento."
+    }
+  ]
+}

@@ -1,7 +1,9 @@
+import {CATALOGUE_OPTIONS,TECHNICAL_FACTS,SOURCE_LAYOUTS} from './technical-data.js';
+import {REFERENCE_VIDEOS} from './reference-videos.js';
 import * as THREE from './vendor/three.module.js';
 import {validateConfiguration,DEFAULT_CONFIG,summaryRows} from './configuration.js';
 import {configurationReference,CONTACT_EMAIL} from './portfolio.js';
-import {REVISION,MEASURES,SOURCES,getPlan} from './specification.js';
+import {REVISION,MEASURES,SOURCES,SOURCE_DIVERGENCES,WALL_RAISE,getPlan} from './specification.js';
 import {makeHouse} from './model.js';
 
 export function createHistory(initial,limit=40){
@@ -64,7 +66,7 @@ export async function exportModelGLB(configuration,library,onProgress=()=>{}){
  const {GLTFExporter}=await import('./vendor/GLTFExporter.js');
  const model=makeHouse({...config,view:'exterior',doorsOpen:false,wallsVisible:true,furnitureVisible:true,roofVisible:true},library);
  try{const status=await library.ready();if(status.failures.length)throw new Error('Faltam texturas para exportar o modelo.');
-  model.root.userData={revision:REVISION,configuration:config,units:'metres',dimensions:MEASURES,sourceStatus:'presentation-model-with-estimated-details',sources:SOURCES.map(({id,label,limits})=>({id,label,limits})),limits:['No manufacturer deployment mechanism or hidden services.','Static complete house; no application controls, cut planes or interactive door behaviour.','Custom panel-joint shaders and presentation lighting are not part of glTF; standard materials and source textures are retained.']};
+  model.root.userData={revision:REVISION,configuration:config,units:{dimensions:'m unless specified per record',areas:'m²',catalogue:'per specification'},dimensions:MEASURES,sourceStatus:'presentation-model-with-estimated-details',sources:SOURCES.map(({id,label,limits})=>({id,label,limits})),limits:['No manufacturer deployment mechanism or hidden services.','Static complete house; no application controls, cut planes or interactive door behaviour.','Custom panel-joint shaders and presentation lighting are not part of glTF; standard materials and source textures are retained.']};
   model.root.traverse(o=>{if(o!==model.root)o.userData={component:o.name,layer:o.userData.layer||null};});
   model.root.updateMatrixWorld(true);onProgress(45,'A integrar geometria e texturas…');
   const result=await new GLTFExporter().parseAsync(model.root,{binary:true,onlyVisible:true,trs:true,maxTextureSize:4096});
@@ -74,5 +76,5 @@ export async function exportModelGLB(configuration,library,onProgress=()=>{}){
 }
 
 export function sourceLedger(configuration){
- const plan=getPlan(configuration),aliases={entryWidthVisual:'entryWidth',entryHeightVisual:'entryHeight',bathWindowWidthVisual:'bathWindowWidth',windowSillVisual:'windowSill',porchDepthVisual:'porchDepth',canopyRiseVisual:'canopyRise',canopyOverhangVisual:'canopyOverhang'};return {revision:REVISION,configuration:validateConfiguration(configuration),units:'metres',dimensions:MEASURES.map(m=>({...m,provided:m.status==='confirmed'?m.value:null,modelled:plan.dimensions[aliases[m.id]||m.id]??null,numericMatch:m.status==='confirmed'&&Object.hasOwn(plan.dimensions,m.id)?m.value===plan.dimensions[m.id]:null})),areas:plan.areas,openings:plan.perimeter,sourceConflicts:SOURCES.map(({id,limits})=>({id,limits}))};
+ const plan=getPlan(configuration),aliases={entryWidthVisual:'entryWidth',entryHeightVisual:'entryHeight',bathWindowWidthVisual:'bathWindowWidth',windowSillVisual:'windowSill',porchDepthVisual:'porchDepth',canopyRiseVisual:'canopyRise',canopyOverhangVisual:'canopyOverhang'};return {revision:REVISION,configuration:validateConfiguration(configuration),units:{dimensions:'m unless specified per record',areas:'m²',catalogue:'per specification'},dimensions:MEASURES.map(m=>({...m,provided:m.status==='confirmed'?m.value:null,modelled:plan.dimensions[aliases[m.id]||m.id]??null,numericMatch:m.status==='confirmed'&&Object.hasOwn(plan.dimensions,m.id)?m.value===plan.dimensions[m.id]:null})),areas:plan.areas,catalogueOptions:CATALOGUE_OPTIONS,technicalFacts:TECHNICAL_FACTS,sourceLayout:SOURCE_LAYOUTS.find(l=>l.id===configuration.layout),videos:REFERENCE_VIDEOS,openings:plan.perimeter,sourceDivergences:SOURCE_DIVERGENCES,expansion:{scope:'longitudinal-wall-raising',sourcePhase:'2–3',assumptions:WALL_RAISE,endPanels:'omitted; folding mechanism not documented'},sourceConflicts:SOURCES.map(({id,limits})=>({id,limits}))};
 }

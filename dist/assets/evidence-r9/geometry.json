@@ -1,0 +1,2806 @@
+{
+  "status": "PASS",
+  "testedAt": "2026-09-11T10:21:04.716Z",
+  "dist": "[project]/dist",
+  "sourceStable": true,
+  "startHashes": {
+    "model.js": "7145f08f00171fdf9137a15292955099f3284620e2f3a76afa96ab2feaf49f4e",
+    "specification.js": "f2e87083df655044747d13c5c13e3e1a976204b24a2b53d128d55ce54bc2ce9d",
+    "configuration.js": "b1fd7d146a01e4d4b8f90ef9b1a45da8645c535de03d17a96fe98471e54ffaef",
+    "data.js": "51c44e7592d2cdd773eab4e9a66be1ebf739b408eb4ace55ffdfff397c248f1d",
+    "interior-detail.js": "c2a1b1a645c5c809314d6a3a146b335339d64c439cc4dedbf8afbc470797dd16",
+    "interior-references.js": "41cdd74bdd7d79740372ae090aa38278b62eadfa05261a4952b2295f0ec369ac",
+    "model-layers.js": "ef8fe6886a978ad7d7f89188652af28091b01e3c6ce454a1e61bfab23f2210c4",
+    "vendor/three.module.js": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a",
+    "vendor/three.core.js": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20"
+  },
+  "endHashes": {
+    "model.js": "7145f08f00171fdf9137a15292955099f3284620e2f3a76afa96ab2feaf49f4e",
+    "specification.js": "f2e87083df655044747d13c5c13e3e1a976204b24a2b53d128d55ce54bc2ce9d",
+    "configuration.js": "b1fd7d146a01e4d4b8f90ef9b1a45da8645c535de03d17a96fe98471e54ffaef",
+    "data.js": "51c44e7592d2cdd773eab4e9a66be1ebf739b408eb4ace55ffdfff397c248f1d",
+    "interior-detail.js": "c2a1b1a645c5c809314d6a3a146b335339d64c439cc4dedbf8afbc470797dd16",
+    "interior-references.js": "41cdd74bdd7d79740372ae090aa38278b62eadfa05261a4952b2295f0ec369ac",
+    "model-layers.js": "ef8fe6886a978ad7d7f89188652af28091b01e3c6ce454a1e61bfab23f2210c4",
+    "vendor/three.module.js": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a",
+    "vendor/three.core.js": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20"
+  },
+  "framesPerLayout": 1001,
+  "layouts": 7,
+  "implementation": "Actual makeHouse.updateExpansion from the specified dist directory; no replacement transform in the harness.",
+  "method": "Connected-component OBB SAT; 0.05mm excess over explicit final structural contacts. Static end panels/posts/core/floors/roof included as obstacles. Intersections within intended final joints remain documented baseline. Furniture/interior partitions/optional canopy and porch omitted from installation demonstration. Every component-corner outward direction and mathematical pose independently checked. Reentry explicitly reapplies the requested slider value; model.setView intentionally returns to final pose when leaving expansion.",
+  "results": [
+    {
+      "layout": "t0",
+      "frames": 1001,
+      "roofClearance": 0.008,
+      "axisX": 2.99,
+      "axisY": 0,
+      "assertionFailures": [],
+      "maxFixedMatrixError": 0,
+      "maxFormulaError": 1.3506446028928519e-15,
+      "nonFiniteCoordinateCount": 0,
+      "cycleCount": 12,
+      "cycleErrors": [],
+      "componentCounts": [
+        {
+          "id": "floor -1",
+          "count": 24,
+          "moving": false
+        },
+        {
+          "id": "floor 1",
+          "count": 24,
+          "moving": false
+        },
+        {
+          "id": "roof -1",
+          "count": 26,
+          "moving": true
+        },
+        {
+          "id": "roof 1",
+          "count": 26,
+          "moving": true
+        },
+        {
+          "id": "side-panel -1",
+          "count": 16,
+          "moving": true
+        },
+        {
+          "id": "side-posts -1",
+          "count": 2,
+          "moving": false
+        },
+        {
+          "id": "side-panel 1",
+          "count": 16,
+          "moving": true
+        },
+        {
+          "id": "side-posts 1",
+          "count": 2,
+          "moving": false
+        },
+        {
+          "id": "end -1/1",
+          "count": 10,
+          "moving": false
+        },
+        {
+          "id": "end 1/1",
+          "count": 10,
+          "moving": false
+        },
+        {
+          "id": "end -1/-1",
+          "count": 10,
+          "moving": false
+        },
+        {
+          "id": "end 1/-1",
+          "count": 10,
+          "moving": false
+        },
+        {
+          "id": "fixed structure",
+          "count": 32,
+          "moving": false
+        },
+        {
+          "id": "fixed floor",
+          "count": 1,
+          "moving": false
+        },
+        {
+          "id": "fixed floorLayers",
+          "count": 2,
+          "moving": false
+        },
+        {
+          "id": "fixed roof",
+          "count": 23,
+          "moving": false
+        },
+        {
+          "id": "fixed shell",
+          "count": 41,
+          "moving": false
+        },
+        {
+          "id": "fixed supports",
+          "count": 24,
+          "moving": false
+        }
+      ],
+      "baselineContactCount": 20,
+      "regressions": [],
+      "minPanelY": 0.0034999995529651634,
+      "maxOutwardBacktrack": 0,
+      "maxAttachmentError": 1.3322676295501878e-15,
+      "endpointError": 0,
+      "axisHalfspaceViolations": 0,
+      "samples": [
+        {
+          "p": 0,
+          "pose": {
+            "p": 0,
+            "wall": 0,
+            "angle": 1.5707963267948966,
+            "roofLift": 0.008,
+            "sourcePhase": "2–3",
+            "label": "Paredes deitadas",
+            "uncertain": true,
+            "referenceOnly": false,
+            "scope": "longitudinal-wall-raising",
+            "axisStatus": "estimated"
+          },
+          "sideBounds": [
+            {
+              "id": "side-panel -1",
+              "bounds": {
+                "min": [
+                  -2.986500000447035,
+                  0.0074999427795408025,
+                  -5.78000020980835
+                ],
+                "max": [
+                  -0.5599999332427981,
+                  0.1324999427795408,
+                  5.78000020980835
+                ]
+              }
+            },
+            {
+              "id": "side-panel 1",
+              "bounds": {
+                "min": [
+                  0.5599999332427981,
+                  0.0074999427795408025,
+                  -5.78000020980835
+                ],
+                "max": [
+                  2.986500000447035,
+                  0.1324999427795408,
+                  5.78000020980835
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "p": 0.25,
+          "pose": {
+            "p": 0.25,
+            "wall": 0.18861454046639237,
+            "angle": 1.27452129945018,
+            "roofLift": 0.008,
+            "sourcePhase": "2–3",
+            "label": "Elevação de dentro para fora",
+            "uncertain": true,
+            "referenceOnly": false,
+            "scope": "longitudinal-wall-raising",
+            "axisStatus": "estimated"
+          },
+          "sideBounds": [
+            {
+              "id": "side-panel -1",
+              "bounds": {
+                "min": [
+                  -3.0213956806523656,
+                  0.021106903495407697,
+                  -5.78000020980835
+                ],
+                "max": [
+                  -0.6717126124833408,
+                  0.8242333353053501,
+                  5.78000020980835
+                ]
+              }
+            },
+            {
+              "id": "side-panel 1",
+              "bounds": {
+                "min": [
+                  0.6717126124833408,
+                  0.021106903495407697,
+                  -5.78000020980835
+                ],
+                "max": [
+                  3.0213956806523656,
+                  0.8242333353053501,
+                  5.78000020980835
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "p": 0.5,
+          "pose": {
+            "p": 0.5,
+            "wall": 0.5829903978052127,
+            "angle": 0.655037151365773,
+            "roofLift": 0.008,
+            "sourcePhase": "2–3",
+            "label": "Elevação de dentro para fora",
+            "uncertain": true,
+            "referenceOnly": false,
+            "scope": "longitudinal-wall-raising",
+            "axisStatus": "estimated"
+          },
+          "sideBounds": [
+            {
+              "id": "side-panel -1",
+              "bounds": {
+                "min": [
+                  -3.082237849064362,
+                  0.015568551783939205,
+                  -5.78000020980835
+                ],
+                "max": [
+                  -1.5255319027924246,
+                  2.0001541041097513,
+                  5.78000020980835
+                ]
+              }
+            },
+            {
+              "id": "side-panel 1",
+              "bounds": {
+                "min": [
+                  1.5255319027924246,
+                  0.015568551783939205,
+                  -5.78000020980835
+                ],
+                "max": [
+                  3.082237849064362,
+                  2.0001541041097513,
+                  5.78000020980835
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "p": 0.75,
+          "pose": {
+            "p": 0.75,
+            "wall": 0.9259259259259258,
+            "angle": 0.1163552834662888,
+            "roofLift": 0.008,
+            "sourcePhase": "2–3",
+            "label": "Elevação de dentro para fora",
+            "uncertain": true,
+            "referenceOnly": false,
+            "scope": "longitudinal-wall-raising",
+            "axisStatus": "estimated"
+          },
+          "sideBounds": [
+            {
+              "id": "side-panel -1",
+              "bounds": {
+                "min": [
+                  -3.1077890381509157,
+                  0.005914285153487471,
+                  -5.78000020980835
+                ],
+                "max": [
+                  -2.7277589686082315,
+                  2.4275004131351317,
+                  5.78000020980835
+                ]
+              }
+            },
+            {
+              "id": "side-panel 1",
+              "bounds": {
+                "min": [
+                  2.7277589686082315,
+                  0.005914285153487471,
+                  -5.78000020980835
+                ],
+                "max": [
+                  3.1077890381509157,
+                  2.4275004131351317,
+                  5.78000020980835
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "p": 0.9,
+          "pose": {
+            "p": 0.9,
+            "wall": 1,
+            "angle": 0,
+            "roofLift": 0.008,
+            "sourcePhase": "2–3",
+            "label": "Paredes verticais · assentamento visual",
+            "uncertain": true,
+            "referenceOnly": false,
+            "scope": "longitudinal-wall-raising",
+            "axisStatus": "estimated"
+          },
+          "sideBounds": [
+            {
+              "id": "side-panel -1",
+              "bounds": {
+                "min": [
+                  -3.122499942779541,
+                  0.0034999995529651634,
+                  -5.78000020980835
+                ],
+                "max": [
+                  -2.997499942779541,
+                  2.430000066757202,
+                  5.78000020980835
+                ]
+              }
+            },
+            {
+              "id": "side-panel 1",
+              "bounds": {
+                "min": [
+                  2.997499942779541,
+                  0.0034999995529651634,
+                  -5.78000020980835
+                ],
+                "max": [
+                  3.122499942779541,
+                  2.430000066757202,
+                  5.78000020980835
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "p": 1,
+          "pose": {
+            "p": 1,
+            "wall": 1,
+            "angle": 0,
+            "roofLift": 0,
+            "sourcePhase": "2–3",
+            "label": "Paredes erguidas",
+            "uncertain": true,
+            "referenceOnly": false,
+            "scope": "longitudinal-wall-raising",
+            "axisStatus": "estimated"
+          },
+          "sideBounds": [
+            {
+              "id": "side-panel -1",
+              "bounds": {
+                "min": [
+                  -3.122499942779541,
+                  0.0034999995529651634,
+                  -5.78000020980835
+                ],
+                "max": [
+                  -2.997499942779541,
+                  2.430000066757202,
+                  5.78000020980835
+                ]
+              }
+            },
+            {
+              "id": "side-panel 1",
+              "bounds": {
+                "min": [
+                  2.997499942779541,
+                  0.0034999995529651634,
+                  -5.78000020980835
+                ],
+                "max": [
+                  3.122499942779541,
+                  2.430000066757202,
+                  5.78000020980835
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "layout": "t1",
+      "frames": 1001,
+      "roofClearance": 0.008,
+      "axisX": 2.99,
+      "axisY": 0,
+      "assertionFailures": [],
+      "maxFixedMatrixError": 0,
+      "maxFormulaError": 1.3506446028928519e-15,
+      "nonFiniteCoordinateCount": 0,
+      "cycleCount": 12,
+      "cycleErrors": [],
+      "componentCounts": [
+        {
+          "id": "floor -1",
+          "count": 24,
+          "moving": false
+        },
+        {
+          "id": "floor 1",
+          "count": 24,
+          "moving": false
+        },
+        {
+          "id": "roof -1",
+          "count": 26,
+          "moving": true
+        },
+        {
+          "id": "roof 1",
+          "count": 26,
+          "moving": true
+        },
+        {
+          "id": "side-panel -1",
+          "count": 16,
+          "moving": true
+        },
+        {
+          "id": "side-posts -1",
+          "count": 2,
+          "moving": false
+        },
+        {
+          "id": "side-panel 1",
+          "count": 16,
+          "moving": true
+        },
+        {
+          "id": "side-posts 1",
+          "count": 2,
+          "moving": false
+        },
+        {
+          "id": "end -1/1",
+          "count": 10,
+          "moving": false
+        },
+        {
+          "id": "end 1/1",
+          "count": 10,
+          "moving": false
+        },
+        {
+          "id": "end -1/-1",
+          "count": 10,
+          "moving": false
+        },
+        {
+          "id": "end 1/-1",
+          "count": 10,
+          "moving": false
+        },
+        {
+          "id": "fixed structure",
+          "count": 32,
+          "moving": false
+        },
+        {
+          "id": "fixed floor",
+          "count": 1,
+          "moving": false
+        },
+        {
+          "id": "fixed floorLayers",
+          "count": 2,
+          "moving": false
+        },
+        {
+          "id": "fixed roof",
+          "count": 23,
+          "moving": false
+        },
+        {
+          "id": "fixed shell",
+          "count": 41,
+          "moving": false
+        },
+        {
+          "id": "fixed supports",
+          "count": 24,
+          "moving": false
+        }
+      ],
+      "baselineContactCount": 20,
+      "regressions": [],
+      "minPanelY": 0.0034999995529651634,
+      "maxOutwardBacktrack": 0,
+      "maxAttachmentError": 1.3322676295501878e-15,
+      "endpointError": 0,
+      "axisHalfspaceViolations": 0,
+      "samples": [
+        {
+          "p": 0,
+          "pose": {
+            "p": 0,
+            "wall": 0,
+            "angle": 1.5707963267948966,
+            "roofLift": 0.008,
+            "sourcePhase": "2–3",
+            "label": "Paredes deitadas",
+            "uncertain": true,
+            "referenceOnly": false,
+            "scope": "longitudinal-wall-raising",
+            "axisStatus": "estimated"
+          },
+          "sideBounds": [
+            {
+              "id": "side-panel -1",
+              "bounds": {
+                "min": [
+                  -2.986500000447035,
+                  0.0074999427795408025,
+                  -5.78000020980835
+                ],
+                "max": [
+                  -0.5599999332427981,
+                  0.1324999427795408,
+                  5.78000020980835
+                ]
+              }
+            },
+            {
+              "id": "side-panel 1",
+              "bounds": {
+                "min": [
+                  0.5599999332427981,
+                  0.0074999427795408025,
+                  -5.78000020980835
+                ],
+                "max": [
+                  2.986500000447035,
+                  0.1324999427795408,
+                  5.78000020980835
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "p": 0.25,
+          "pose": {
+            "p": 0.25,
+            "wall": 0.18861454046639237,
+            "angle": 1.27452129945018,
+            "roofLift": 0.008,
+            "sourcePhase": "2–3",
+            "label": "Elevação de dentro para fora",
+            "uncertain": true,
+            "referenceOnly": false,
+            "scope": "longitudinal-wall-raising",
+            "axisStatus": "estimated"
+          },
+          "sideBounds": [
+            {
+              "id": "side-panel -1",
+              "bounds": {
+                "min": [
+                  -3.0213956806523656,
+                  0.021106903495407697,
+                  -5.78000020980835
+                ],
+                "max": [
+                  -0.6717126124833408,
+                  0.8242333353053501,
+                  5.78000020980835
+                ]
+              }
+            },
+            {
+              "id": "side-panel 1",
+              "bounds": {
+                "min": [
+                  0.6717126124833408,
+                  0.021106903495407697,
+                  -5.78000020980835
+                ],
+                "max": [
+                  3.0213956806523656,
+                  0.8242333353053501,
+                  5.78000020980835
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "p": 0.5,
+          "pose": {
+            "p": 0.5,
+            "wall": 0.5829903978052127,
+            "angle": 0.655037151365773,
+            "roofLift": 0.008,
+            "sourcePhase": "2–3",
+            "label": "Elevação de dentro para fora",
+            "uncertain": true,
+            "referenceOnly": false,
+            "scope": "longitudinal-wall-raising",
+            "axisStatus": "estimated"
+          },
+          "sideBounds": [
+            {
+              "id": "side-panel -1",
+              "bounds": {
+                "min": [
+                  -3.082237849064362,
+                  0.015568551783939205,
+                  -5.78000020980835
+                ],
+                "max": [
+                  -1.5255319027924246,
+                  2.0001541041097513,
+                  5.78000020980835
+                ]
+              }
+            },
+            {
+              "id": "side-panel 1",
+              "bounds": {
+                "min": [
+                  1.5255319027924246,
+                  0.015568551783939205,
+                  -5.78000020980835
+                ],
+                "max": [
+                  3.082237849064362,
+                  2.0001541041097513,
+                  5.78000020980835
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "p": 0.75,
+          "pose": {
+            "p": 0.75,
+            "wall": 0.9259259259259258,
+            "angle": 0.1163552834662888,
+            "roofLift": 0.008,
+            "sourcePhase": "2–3",
+            "label": "Elevação de dentro para fora",
+            "uncertain": true,
+            "referenceOnly": false,
+            "scope": "longitudinal-wall-raising",
+            "axisStatus": "estimated"
+          },
+          "sideBounds": [
+            {
+              "id": "side-panel -1",
+              "bounds": {
+                "min": [
+                  -3.1077890381509157,
+                  0.005914285153487471,
+                  -5.78000020980835
+                ],
+                "max": [
+                  -2.7277589686082315,
+                  2.4275004131351317,
+                  5.78000020980835
+                ]
+              }
+            },
+            {
+              "id": "side-panel 1",
+              "bounds": {
+                "min": [
+                  2.7277589686082315,
+                  0.005914285153487471,
+                  -5.78000020980835
+                ],
+                "max": [
+                  3.1077890381509157,
+                  2.4275004131351317,
+                  5.78000020980835
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "p": 0.9,
+          "pose": {
+            "p": 0.9,
+            "wall": 1,
+            "angle": 0,
+            "roofLift": 0.008,
+            "sourcePhase": "2–3",
+            "label": "Paredes verticais · assentamento visual",
+            "uncertain": true,
+            "referenceOnly": false,
+            "scope": "longitudinal-wall-raising",
+            "axisStatus": "estimated"
+          },
+          "sideBounds": [
+            {
+              "id": "side-panel -1",
+              "bounds": {
+                "min": [
+                  -3.122499942779541,
+                  0.0034999995529651634,
+                  -5.78000020980835
+                ],
+                "max": [
+                  -2.997499942779541,
+                  2.430000066757202,
+                  5.78000020980835
+                ]
+              }
+            },
+            {
+              "id": "side-panel 1",
+              "bounds": {
+                "min": [
+                  2.997499942779541,
+                  0.0034999995529651634,
+                  -5.78000020980835
+                ],
+                "max": [
+                  3.122499942779541,
+                  2.430000066757202,
+                  5.78000020980835
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "p": 1,
+          "pose": {
+            "p": 1,
+            "wall": 1,
+            "angle": 0,
+            "roofLift": 0,
+            "sourcePhase": "2–3",
+            "label": "Paredes erguidas",
+            "uncertain": true,
+            "referenceOnly": false,
+            "scope": "longitudinal-wall-raising",
+            "axisStatus": "estimated"
+          },
+          "sideBounds": [
+            {
+              "id": "side-panel -1",
+              "bounds": {
+                "min": [
+                  -3.122499942779541,
+                  0.0034999995529651634,
+                  -5.78000020980835
+                ],
+                "max": [
+                  -2.997499942779541,
+                  2.430000066757202,
+                  5.78000020980835
+                ]
+              }
+            },
+            {
+              "id": "side-panel 1",
+              "bounds": {
+                "min": [
+                  2.997499942779541,
+                  0.0034999995529651634,
+                  -5.78000020980835
+                ],
+                "max": [
+                  3.122499942779541,
+                  2.430000066757202,
+                  5.78000020980835
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "layout": "t2",
+      "frames": 1001,
+      "roofClearance": 0.008,
+      "axisX": 2.99,
+      "axisY": 0,
+      "assertionFailures": [],
+      "maxFixedMatrixError": 0,
+      "maxFormulaError": 1.3506446028928519e-15,
+      "nonFiniteCoordinateCount": 0,
+      "cycleCount": 12,
+      "cycleErrors": [],
+      "componentCounts": [
+        {
+          "id": "floor -1",
+          "count": 24,
+          "moving": false
+        },
+        {
+          "id": "floor 1",
+          "count": 24,
+          "moving": false
+        },
+        {
+          "id": "roof -1",
+          "count": 26,
+          "moving": true
+        },
+        {
+          "id": "roof 1",
+          "count": 26,
+          "moving": true
+        },
+        {
+          "id": "side-panel -1",
+          "count": 16,
+          "moving": true
+        },
+        {
+          "id": "side-posts -1",
+          "count": 2,
+          "moving": false
+        },
+        {
+          "id": "side-panel 1",
+          "count": 16,
+          "moving": true
+        },
+        {
+          "id": "side-posts 1",
+          "count": 2,
+          "moving": false
+        },
+        {
+          "id": "end -1/1",
+          "count": 10,
+          "moving": false
+        },
+        {
+          "id": "end 1/1",
+          "count": 10,
+          "moving": false
+        },
+        {
+          "id": "end -1/-1",
+          "count": 10,
+          "moving": false
+        },
+        {
+          "id": "end 1/-1",
+          "count": 10,
+          "moving": false
+        },
+        {
+          "id": "fixed structure",
+          "count": 32,
+          "moving": false
+        },
+        {
+          "id": "fixed floor",
+          "count": 1,
+          "moving": false
+        },
+        {
+          "id": "fixed floorLayers",
+          "count": 2,
+          "moving": false
+        },
+        {
+          "id": "fixed roof",
+          "count": 23,
+          "moving": false
+        },
+        {
+          "id": "fixed shell",
+          "count": 41,
+          "moving": false
+        },
+        {
+          "id": "fixed supports",
+          "count": 24,
+          "moving": false
+        }
+      ],
+      "baselineContactCount": 20,
+      "regressions": [],
+      "minPanelY": 0.0034999995529651634,
+      "maxOutwardBacktrack": 0,
+      "maxAttachmentError": 1.3322676295501878e-15,
+      "endpointError": 0,
+      "axisHalfspaceViolations": 0,
+      "samples": [
+        {
+          "p": 0,
+          "pose": {
+            "p": 0,
+            "wall": 0,
+            "angle": 1.5707963267948966,
+            "roofLift": 0.008,
+            "sourcePhase": "2–3",
+            "label": "Paredes deitadas",
+            "uncertain": true,
+            "referenceOnly": false,
+            "scope": "longitudinal-wall-raising",
+            "axisStatus": "estimated"
+          },
+          "sideBounds": [
+            {
+              "id": "side-panel -1",
+              "bounds": {
+                "min": [
+                  -2.986500000447035,
+                  0.0074999427795408025,
+                  -5.78000020980835
+                ],
+                "max": [
+                  -0.5599999332427981,
+                  0.1324999427795408,
+                  5.78000020980835
+                ]
+              }
+            },
+            {
+              "id": "side-panel 1",
+              "bounds": {
+                "min": [
+                  0.5599999332427981,
+                  0.0074999427795408025,
+                  -5.78000020980835
+                ],
+                "max": [
+                  2.986500000447035,
+                  0.1324999427795408,
+                  5.78000020980835
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "p": 0.25,
+          "pose": {
+            "p": 0.25,
+            "wall": 0.18861454046639237,
+            "angle": 1.27452129945018,
+            "roofLift": 0.008,
+            "sourcePhase": "2–3",
+            "label": "Elevação de dentro para fora",
+            "uncertain": true,
+            "referenceOnly": false,
+            "scope": "longitudinal-wall-raising",
+            "axisStatus": "estimated"
+          },
+          "sideBounds": [
+            {
+              "id": "side-panel -1",
+              "bounds": {
+                "min": [
+                  -3.0213956806523656,
+                  0.021106903495407697,
+                  -5.78000020980835
+                ],
+                "max": [
+                  -0.6717126124833408,
+                  0.8242333353053501,
+                  5.78000020980835
+                ]
+              }
+            },
+            {
+              "id": "side-panel 1",
+              "bounds": {
+                "min": [
+                  0.6717126124833408,
+                  0.021106903495407697,
+                  -5.78000020980835
+                ],
+                "max": [
+                  3.0213956806523656,
+                  0.8242333353053501,
+                  5.78000020980835
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "p": 0.5,
+          "pose": {
+            "p": 0.5,
+            "wall": 0.5829903978052127,
+            "angle": 0.655037151365773,
+            "roofLift": 0.008,
+            "sourcePhase": "2–3",
+            "label": "Elevação de dentro para fora",
+            "uncertain": true,
+            "referenceOnly": false,
+            "scope": "longitudinal-wall-raising",
+            "axisStatus": "estimated"
+          },
+          "sideBounds": [
+            {
+              "id": "side-panel -1",
+              "bounds": {
+                "min": [
+                  -3.082237849064362,
+                  0.015568551783939205,
+                  -5.78000020980835
+                ],
+                "max": [
+                  -1.5255319027924246,
+                  2.0001541041097513,
+                  5.78000020980835
+                ]
+              }
+            },
+            {
+              "id": "side-panel 1",
+              "bounds": {
+                "min": [
+                  1.5255319027924246,
+                  0.015568551783939205,
+                  -5.78000020980835
+                ],
+                "max": [
+                  3.082237849064362,
+                  2.0001541041097513,
+                  5.78000020980835
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "p": 0.75,
+          "pose": {
+            "p": 0.75,
+            "wall": 0.9259259259259258,
+            "angle": 0.1163552834662888,
+            "roofLift": 0.008,
+            "sourcePhase": "2–3",
+            "label": "Elevação de dentro para fora",
+            "uncertain": true,
+            "referenceOnly": false,
+            "scope": "longitudinal-wall-raising",
+            "axisStatus": "estimated"
+          },
+          "sideBounds": [
+            {
+              "id": "side-panel -1",
+              "bounds": {
+                "min": [
+                  -3.1077890381509157,
+                  0.005914285153487471,
+                  -5.78000020980835
+                ],
+                "max": [
+                  -2.7277589686082315,
+                  2.4275004131351317,
+                  5.78000020980835
+                ]
+              }
+            },
+            {
+              "id": "side-panel 1",
+              "bounds": {
+                "min": [
+                  2.7277589686082315,
+                  0.005914285153487471,
+                  -5.78000020980835
+                ],
+                "max": [
+                  3.1077890381509157,
+                  2.4275004131351317,
+                  5.78000020980835
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "p": 0.9,
+          "pose": {
+            "p": 0.9,
+            "wall": 1,
+            "angle": 0,
+            "roofLift": 0.008,
+            "sourcePhase": "2–3",
+            "label": "Paredes verticais · assentamento visual",
+            "uncertain": true,
+            "referenceOnly": false,
+            "scope": "longitudinal-wall-raising",
+            "axisStatus": "estimated"
+          },
+          "sideBounds": [
+            {
+              "id": "side-panel -1",
+              "bounds": {
+                "min": [
+                  -3.122499942779541,
+                  0.0034999995529651634,
+                  -5.78000020980835
+                ],
+                "max": [
+                  -2.997499942779541,
+                  2.430000066757202,
+                  5.78000020980835
+                ]
+              }
+            },
+            {
+              "id": "side-panel 1",
+              "bounds": {
+                "min": [
+                  2.997499942779541,
+                  0.0034999995529651634,
+                  -5.78000020980835
+                ],
+                "max": [
+                  3.122499942779541,
+                  2.430000066757202,
+                  5.78000020980835
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "p": 1,
+          "pose": {
+            "p": 1,
+            "wall": 1,
+            "angle": 0,
+            "roofLift": 0,
+            "sourcePhase": "2–3",
+            "label": "Paredes erguidas",
+            "uncertain": true,
+            "referenceOnly": false,
+            "scope": "longitudinal-wall-raising",
+            "axisStatus": "estimated"
+          },
+          "sideBounds": [
+            {
+              "id": "side-panel -1",
+              "bounds": {
+                "min": [
+                  -3.122499942779541,
+                  0.0034999995529651634,
+                  -5.78000020980835
+                ],
+                "max": [
+                  -2.997499942779541,
+                  2.430000066757202,
+                  5.78000020980835
+                ]
+              }
+            },
+            {
+              "id": "side-panel 1",
+              "bounds": {
+                "min": [
+                  2.997499942779541,
+                  0.0034999995529651634,
+                  -5.78000020980835
+                ],
+                "max": [
+                  3.122499942779541,
+                  2.430000066757202,
+                  5.78000020980835
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "layout": "t3-a",
+      "frames": 1001,
+      "roofClearance": 0.008,
+      "axisX": 2.99,
+      "axisY": 0,
+      "assertionFailures": [],
+      "maxFixedMatrixError": 0,
+      "maxFormulaError": 1.3506446028928519e-15,
+      "nonFiniteCoordinateCount": 0,
+      "cycleCount": 12,
+      "cycleErrors": [],
+      "componentCounts": [
+        {
+          "id": "floor -1",
+          "count": 24,
+          "moving": false
+        },
+        {
+          "id": "floor 1",
+          "count": 24,
+          "moving": false
+        },
+        {
+          "id": "roof -1",
+          "count": 26,
+          "moving": true
+        },
+        {
+          "id": "roof 1",
+          "count": 26,
+          "moving": true
+        },
+        {
+          "id": "side-panel -1",
+          "count": 16,
+          "moving": true
+        },
+        {
+          "id": "side-posts -1",
+          "count": 2,
+          "moving": false
+        },
+        {
+          "id": "side-panel 1",
+          "count": 16,
+          "moving": true
+        },
+        {
+          "id": "side-posts 1",
+          "count": 2,
+          "moving": false
+        },
+        {
+          "id": "end -1/1",
+          "count": 10,
+          "moving": false
+        },
+        {
+          "id": "end 1/1",
+          "count": 10,
+          "moving": false
+        },
+        {
+          "id": "end -1/-1",
+          "count": 10,
+          "moving": false
+        },
+        {
+          "id": "end 1/-1",
+          "count": 10,
+          "moving": false
+        },
+        {
+          "id": "fixed structure",
+          "count": 32,
+          "moving": false
+        },
+        {
+          "id": "fixed floor",
+          "count": 1,
+          "moving": false
+        },
+        {
+          "id": "fixed floorLayers",
+          "count": 2,
+          "moving": false
+        },
+        {
+          "id": "fixed roof",
+          "count": 23,
+          "moving": false
+        },
+        {
+          "id": "fixed shell",
+          "count": 41,
+          "moving": false
+        },
+        {
+          "id": "fixed supports",
+          "count": 24,
+          "moving": false
+        }
+      ],
+      "baselineContactCount": 20,
+      "regressions": [],
+      "minPanelY": 0.0034999995529651634,
+      "maxOutwardBacktrack": 0,
+      "maxAttachmentError": 1.3322676295501878e-15,
+      "endpointError": 0,
+      "axisHalfspaceViolations": 0,
+      "samples": [
+        {
+          "p": 0,
+          "pose": {
+            "p": 0,
+            "wall": 0,
+            "angle": 1.5707963267948966,
+            "roofLift": 0.008,
+            "sourcePhase": "2–3",
+            "label": "Paredes deitadas",
+            "uncertain": true,
+            "referenceOnly": false,
+            "scope": "longitudinal-wall-raising",
+            "axisStatus": "estimated"
+          },
+          "sideBounds": [
+            {
+              "id": "side-panel -1",
+              "bounds": {
+                "min": [
+                  -2.986500000447035,
+                  0.0074999427795408025,
+                  -5.78000020980835
+                ],
+                "max": [
+                  -0.5599999332427981,
+                  0.1324999427795408,
+                  5.78000020980835
+                ]
+              }
+            },
+            {
+              "id": "side-panel 1",
+              "bounds": {
+                "min": [
+                  0.5599999332427981,
+                  0.0074999427795408025,
+                  -5.78000020980835
+                ],
+                "max": [
+                  2.986500000447035,
+                  0.1324999427795408,
+                  5.78000020980835
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "p": 0.25,
+          "pose": {
+            "p": 0.25,
+            "wall": 0.18861454046639237,
+            "angle": 1.27452129945018,
+            "roofLift": 0.008,
+            "sourcePhase": "2–3",
+            "label": "Elevação de dentro para fora",
+            "uncertain": true,
+            "referenceOnly": false,
+            "scope": "longitudinal-wall-raising",
+            "axisStatus": "estimated"
+          },
+          "sideBounds": [
+            {
+              "id": "side-panel -1",
+              "bounds": {
+                "min": [
+                  -3.0213956806523656,
+                  0.021106903495407697,
+                  -5.78000020980835
+                ],
+                "max": [
+                  -0.6717126124833408,
+                  0.8242333353053501,
+                  5.78000020980835
+                ]
+              }
+            },
+            {
+              "id": "side-panel 1",
+              "bounds": {
+                "min": [
+                  0.6717126124833408,
+                  0.021106903495407697,
+                  -5.78000020980835
+                ],
+                "max": [
+                  3.0213956806523656,
+                  0.8242333353053501,
+                  5.78000020980835
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "p": 0.5,
+          "pose": {
+            "p": 0.5,
+            "wall": 0.5829903978052127,
+            "angle": 0.655037151365773,
+            "roofLift": 0.008,
+            "sourcePhase": "2–3",
+            "label": "Elevação de dentro para fora",
+            "uncertain": true,
+            "referenceOnly": false,
+            "scope": "longitudinal-wall-raising",
+            "axisStatus": "estimated"
+          },
+          "sideBounds": [
+            {
+              "id": "side-panel -1",
+              "bounds": {
+                "min": [
+                  -3.082237849064362,
+                  0.015568551783939205,
+                  -5.78000020980835
+                ],
+                "max": [
+                  -1.5255319027924246,
+                  2.0001541041097513,
+                  5.78000020980835
+                ]
+              }
+            },
+            {
+              "id": "side-panel 1",
+              "bounds": {
+                "min": [
+                  1.5255319027924246,
+                  0.015568551783939205,
+                  -5.78000020980835
+                ],
+                "max": [
+                  3.082237849064362,
+                  2.0001541041097513,
+                  5.78000020980835
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "p": 0.75,
+          "pose": {
+            "p": 0.75,
+            "wall": 0.9259259259259258,
+            "angle": 0.1163552834662888,
+            "roofLift": 0.008,
+            "sourcePhase": "2–3",
+            "label": "Elevação de dentro para fora",
+            "uncertain": true,
+            "referenceOnly": false,
+            "scope": "longitudinal-wall-raising",
+            "axisStatus": "estimated"
+          },
+          "sideBounds": [
+            {
+              "id": "side-panel -1",
+              "bounds": {
+                "min": [
+                  -3.1077890381509157,
+                  0.005914285153487471,
+                  -5.78000020980835
+                ],
+                "max": [
+                  -2.7277589686082315,
+                  2.4275004131351317,
+                  5.78000020980835
+                ]
+              }
+            },
+            {
+              "id": "side-panel 1",
+              "bounds": {
+                "min": [
+                  2.7277589686082315,
+                  0.005914285153487471,
+                  -5.78000020980835
+                ],
+                "max": [
+                  3.1077890381509157,
+                  2.4275004131351317,
+                  5.78000020980835
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "p": 0.9,
+          "pose": {
+            "p": 0.9,
+            "wall": 1,
+            "angle": 0,
+            "roofLift": 0.008,
+            "sourcePhase": "2–3",
+            "label": "Paredes verticais · assentamento visual",
+            "uncertain": true,
+            "referenceOnly": false,
+            "scope": "longitudinal-wall-raising",
+            "axisStatus": "estimated"
+          },
+          "sideBounds": [
+            {
+              "id": "side-panel -1",
+              "bounds": {
+                "min": [
+                  -3.122499942779541,
+                  0.0034999995529651634,
+                  -5.78000020980835
+                ],
+                "max": [
+                  -2.997499942779541,
+                  2.430000066757202,
+                  5.78000020980835
+                ]
+              }
+            },
+            {
+              "id": "side-panel 1",
+              "bounds": {
+                "min": [
+                  2.997499942779541,
+                  0.0034999995529651634,
+                  -5.78000020980835
+                ],
+                "max": [
+                  3.122499942779541,
+                  2.430000066757202,
+                  5.78000020980835
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "p": 1,
+          "pose": {
+            "p": 1,
+            "wall": 1,
+            "angle": 0,
+            "roofLift": 0,
+            "sourcePhase": "2–3",
+            "label": "Paredes erguidas",
+            "uncertain": true,
+            "referenceOnly": false,
+            "scope": "longitudinal-wall-raising",
+            "axisStatus": "estimated"
+          },
+          "sideBounds": [
+            {
+              "id": "side-panel -1",
+              "bounds": {
+                "min": [
+                  -3.122499942779541,
+                  0.0034999995529651634,
+                  -5.78000020980835
+                ],
+                "max": [
+                  -2.997499942779541,
+                  2.430000066757202,
+                  5.78000020980835
+                ]
+              }
+            },
+            {
+              "id": "side-panel 1",
+              "bounds": {
+                "min": [
+                  2.997499942779541,
+                  0.0034999995529651634,
+                  -5.78000020980835
+                ],
+                "max": [
+                  3.122499942779541,
+                  2.430000066757202,
+                  5.78000020980835
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "layout": "t3-b",
+      "frames": 1001,
+      "roofClearance": 0.008,
+      "axisX": 2.99,
+      "axisY": 0,
+      "assertionFailures": [],
+      "maxFixedMatrixError": 0,
+      "maxFormulaError": 1.3506446028928519e-15,
+      "nonFiniteCoordinateCount": 0,
+      "cycleCount": 12,
+      "cycleErrors": [],
+      "componentCounts": [
+        {
+          "id": "floor -1",
+          "count": 24,
+          "moving": false
+        },
+        {
+          "id": "floor 1",
+          "count": 24,
+          "moving": false
+        },
+        {
+          "id": "roof -1",
+          "count": 26,
+          "moving": true
+        },
+        {
+          "id": "roof 1",
+          "count": 26,
+          "moving": true
+        },
+        {
+          "id": "side-panel -1",
+          "count": 22,
+          "moving": true
+        },
+        {
+          "id": "side-posts -1",
+          "count": 2,
+          "moving": false
+        },
+        {
+          "id": "side-panel 1",
+          "count": 22,
+          "moving": true
+        },
+        {
+          "id": "side-posts 1",
+          "count": 2,
+          "moving": false
+        },
+        {
+          "id": "end -1/1",
+          "count": 10,
+          "moving": false
+        },
+        {
+          "id": "end 1/1",
+          "count": 10,
+          "moving": false
+        },
+        {
+          "id": "end -1/-1",
+          "count": 4,
+          "moving": false
+        },
+        {
+          "id": "end 1/-1",
+          "count": 4,
+          "moving": false
+        },
+        {
+          "id": "fixed structure",
+          "count": 32,
+          "moving": false
+        },
+        {
+          "id": "fixed floor",
+          "count": 1,
+          "moving": false
+        },
+        {
+          "id": "fixed floorLayers",
+          "count": 2,
+          "moving": false
+        },
+        {
+          "id": "fixed roof",
+          "count": 23,
+          "moving": false
+        },
+        {
+          "id": "fixed shell",
+          "count": 41,
+          "moving": false
+        },
+        {
+          "id": "fixed supports",
+          "count": 24,
+          "moving": false
+        }
+      ],
+      "baselineContactCount": 20,
+      "regressions": [],
+      "minPanelY": 0.0034999995529651634,
+      "maxOutwardBacktrack": 0,
+      "maxAttachmentError": 1.3322676295501878e-15,
+      "endpointError": 0,
+      "axisHalfspaceViolations": 0,
+      "samples": [
+        {
+          "p": 0,
+          "pose": {
+            "p": 0,
+            "wall": 0,
+            "angle": 1.5707963267948966,
+            "roofLift": 0.008,
+            "sourcePhase": "2–3",
+            "label": "Paredes deitadas",
+            "uncertain": true,
+            "referenceOnly": false,
+            "scope": "longitudinal-wall-raising",
+            "axisStatus": "estimated"
+          },
+          "sideBounds": [
+            {
+              "id": "side-panel -1",
+              "bounds": {
+                "min": [
+                  -2.986500000447035,
+                  0.0074999427795408025,
+                  -5.78000020980835
+                ],
+                "max": [
+                  -0.5599999332427981,
+                  0.1324999427795408,
+                  5.78000020980835
+                ]
+              }
+            },
+            {
+              "id": "side-panel 1",
+              "bounds": {
+                "min": [
+                  0.5599999332427981,
+                  0.0074999427795408025,
+                  -5.78000020980835
+                ],
+                "max": [
+                  2.986500000447035,
+                  0.1324999427795408,
+                  5.78000020980835
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "p": 0.25,
+          "pose": {
+            "p": 0.25,
+            "wall": 0.18861454046639237,
+            "angle": 1.27452129945018,
+            "roofLift": 0.008,
+            "sourcePhase": "2–3",
+            "label": "Elevação de dentro para fora",
+            "uncertain": true,
+            "referenceOnly": false,
+            "scope": "longitudinal-wall-raising",
+            "axisStatus": "estimated"
+          },
+          "sideBounds": [
+            {
+              "id": "side-panel -1",
+              "bounds": {
+                "min": [
+                  -3.0213956806523656,
+                  0.021106903495407697,
+                  -5.78000020980835
+                ],
+                "max": [
+                  -0.6717126124833408,
+                  0.8242333353053501,
+                  5.78000020980835
+                ]
+              }
+            },
+            {
+              "id": "side-panel 1",
+              "bounds": {
+                "min": [
+                  0.6717126124833408,
+                  0.021106903495407697,
+                  -5.78000020980835
+                ],
+                "max": [
+                  3.0213956806523656,
+                  0.8242333353053501,
+                  5.78000020980835
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "p": 0.5,
+          "pose": {
+            "p": 0.5,
+            "wall": 0.5829903978052127,
+            "angle": 0.655037151365773,
+            "roofLift": 0.008,
+            "sourcePhase": "2–3",
+            "label": "Elevação de dentro para fora",
+            "uncertain": true,
+            "referenceOnly": false,
+            "scope": "longitudinal-wall-raising",
+            "axisStatus": "estimated"
+          },
+          "sideBounds": [
+            {
+              "id": "side-panel -1",
+              "bounds": {
+                "min": [
+                  -3.082237849064362,
+                  0.015568551783939205,
+                  -5.78000020980835
+                ],
+                "max": [
+                  -1.5255319027924246,
+                  2.0001541041097513,
+                  5.78000020980835
+                ]
+              }
+            },
+            {
+              "id": "side-panel 1",
+              "bounds": {
+                "min": [
+                  1.5255319027924246,
+                  0.015568551783939205,
+                  -5.78000020980835
+                ],
+                "max": [
+                  3.082237849064362,
+                  2.0001541041097513,
+                  5.78000020980835
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "p": 0.75,
+          "pose": {
+            "p": 0.75,
+            "wall": 0.9259259259259258,
+            "angle": 0.1163552834662888,
+            "roofLift": 0.008,
+            "sourcePhase": "2–3",
+            "label": "Elevação de dentro para fora",
+            "uncertain": true,
+            "referenceOnly": false,
+            "scope": "longitudinal-wall-raising",
+            "axisStatus": "estimated"
+          },
+          "sideBounds": [
+            {
+              "id": "side-panel -1",
+              "bounds": {
+                "min": [
+                  -3.1077890381509157,
+                  0.005914285153487471,
+                  -5.78000020980835
+                ],
+                "max": [
+                  -2.7277589686082315,
+                  2.4275004131351317,
+                  5.78000020980835
+                ]
+              }
+            },
+            {
+              "id": "side-panel 1",
+              "bounds": {
+                "min": [
+                  2.7277589686082315,
+                  0.005914285153487471,
+                  -5.78000020980835
+                ],
+                "max": [
+                  3.1077890381509157,
+                  2.4275004131351317,
+                  5.78000020980835
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "p": 0.9,
+          "pose": {
+            "p": 0.9,
+            "wall": 1,
+            "angle": 0,
+            "roofLift": 0.008,
+            "sourcePhase": "2–3",
+            "label": "Paredes verticais · assentamento visual",
+            "uncertain": true,
+            "referenceOnly": false,
+            "scope": "longitudinal-wall-raising",
+            "axisStatus": "estimated"
+          },
+          "sideBounds": [
+            {
+              "id": "side-panel -1",
+              "bounds": {
+                "min": [
+                  -3.122499942779541,
+                  0.0034999995529651634,
+                  -5.78000020980835
+                ],
+                "max": [
+                  -2.997499942779541,
+                  2.430000066757202,
+                  5.78000020980835
+                ]
+              }
+            },
+            {
+              "id": "side-panel 1",
+              "bounds": {
+                "min": [
+                  2.997499942779541,
+                  0.0034999995529651634,
+                  -5.78000020980835
+                ],
+                "max": [
+                  3.122499942779541,
+                  2.430000066757202,
+                  5.78000020980835
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "p": 1,
+          "pose": {
+            "p": 1,
+            "wall": 1,
+            "angle": 0,
+            "roofLift": 0,
+            "sourcePhase": "2–3",
+            "label": "Paredes erguidas",
+            "uncertain": true,
+            "referenceOnly": false,
+            "scope": "longitudinal-wall-raising",
+            "axisStatus": "estimated"
+          },
+          "sideBounds": [
+            {
+              "id": "side-panel -1",
+              "bounds": {
+                "min": [
+                  -3.122499942779541,
+                  0.0034999995529651634,
+                  -5.78000020980835
+                ],
+                "max": [
+                  -2.997499942779541,
+                  2.430000066757202,
+                  5.78000020980835
+                ]
+              }
+            },
+            {
+              "id": "side-panel 1",
+              "bounds": {
+                "min": [
+                  2.997499942779541,
+                  0.0034999995529651634,
+                  -5.78000020980835
+                ],
+                "max": [
+                  3.122499942779541,
+                  2.430000066757202,
+                  5.78000020980835
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "layout": "t4-a",
+      "frames": 1001,
+      "roofClearance": 0.008,
+      "axisX": 2.99,
+      "axisY": 0,
+      "assertionFailures": [],
+      "maxFixedMatrixError": 0,
+      "maxFormulaError": 1.3506446028928519e-15,
+      "nonFiniteCoordinateCount": 0,
+      "cycleCount": 12,
+      "cycleErrors": [],
+      "componentCounts": [
+        {
+          "id": "floor -1",
+          "count": 24,
+          "moving": false
+        },
+        {
+          "id": "floor 1",
+          "count": 24,
+          "moving": false
+        },
+        {
+          "id": "roof -1",
+          "count": 26,
+          "moving": true
+        },
+        {
+          "id": "roof 1",
+          "count": 26,
+          "moving": true
+        },
+        {
+          "id": "side-panel -1",
+          "count": 16,
+          "moving": true
+        },
+        {
+          "id": "side-posts -1",
+          "count": 2,
+          "moving": false
+        },
+        {
+          "id": "side-panel 1",
+          "count": 16,
+          "moving": true
+        },
+        {
+          "id": "side-posts 1",
+          "count": 2,
+          "moving": false
+        },
+        {
+          "id": "end -1/1",
+          "count": 10,
+          "moving": false
+        },
+        {
+          "id": "end 1/1",
+          "count": 10,
+          "moving": false
+        },
+        {
+          "id": "end -1/-1",
+          "count": 10,
+          "moving": false
+        },
+        {
+          "id": "end 1/-1",
+          "count": 10,
+          "moving": false
+        },
+        {
+          "id": "fixed structure",
+          "count": 32,
+          "moving": false
+        },
+        {
+          "id": "fixed floor",
+          "count": 1,
+          "moving": false
+        },
+        {
+          "id": "fixed floorLayers",
+          "count": 2,
+          "moving": false
+        },
+        {
+          "id": "fixed roof",
+          "count": 23,
+          "moving": false
+        },
+        {
+          "id": "fixed shell",
+          "count": 41,
+          "moving": false
+        },
+        {
+          "id": "fixed supports",
+          "count": 24,
+          "moving": false
+        }
+      ],
+      "baselineContactCount": 20,
+      "regressions": [],
+      "minPanelY": 0.0034999995529651634,
+      "maxOutwardBacktrack": 0,
+      "maxAttachmentError": 1.3322676295501878e-15,
+      "endpointError": 0,
+      "axisHalfspaceViolations": 0,
+      "samples": [
+        {
+          "p": 0,
+          "pose": {
+            "p": 0,
+            "wall": 0,
+            "angle": 1.5707963267948966,
+            "roofLift": 0.008,
+            "sourcePhase": "2–3",
+            "label": "Paredes deitadas",
+            "uncertain": true,
+            "referenceOnly": false,
+            "scope": "longitudinal-wall-raising",
+            "axisStatus": "estimated"
+          },
+          "sideBounds": [
+            {
+              "id": "side-panel -1",
+              "bounds": {
+                "min": [
+                  -2.986500000447035,
+                  0.0074999427795408025,
+                  -5.78000020980835
+                ],
+                "max": [
+                  -0.5599999332427981,
+                  0.1324999427795408,
+                  5.78000020980835
+                ]
+              }
+            },
+            {
+              "id": "side-panel 1",
+              "bounds": {
+                "min": [
+                  0.5599999332427981,
+                  0.0074999427795408025,
+                  -5.78000020980835
+                ],
+                "max": [
+                  2.986500000447035,
+                  0.1324999427795408,
+                  5.78000020980835
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "p": 0.25,
+          "pose": {
+            "p": 0.25,
+            "wall": 0.18861454046639237,
+            "angle": 1.27452129945018,
+            "roofLift": 0.008,
+            "sourcePhase": "2–3",
+            "label": "Elevação de dentro para fora",
+            "uncertain": true,
+            "referenceOnly": false,
+            "scope": "longitudinal-wall-raising",
+            "axisStatus": "estimated"
+          },
+          "sideBounds": [
+            {
+              "id": "side-panel -1",
+              "bounds": {
+                "min": [
+                  -3.0213956806523656,
+                  0.021106903495407697,
+                  -5.78000020980835
+                ],
+                "max": [
+                  -0.6717126124833408,
+                  0.8242333353053501,
+                  5.78000020980835
+                ]
+              }
+            },
+            {
+              "id": "side-panel 1",
+              "bounds": {
+                "min": [
+                  0.6717126124833408,
+                  0.021106903495407697,
+                  -5.78000020980835
+                ],
+                "max": [
+                  3.0213956806523656,
+                  0.8242333353053501,
+                  5.78000020980835
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "p": 0.5,
+          "pose": {
+            "p": 0.5,
+            "wall": 0.5829903978052127,
+            "angle": 0.655037151365773,
+            "roofLift": 0.008,
+            "sourcePhase": "2–3",
+            "label": "Elevação de dentro para fora",
+            "uncertain": true,
+            "referenceOnly": false,
+            "scope": "longitudinal-wall-raising",
+            "axisStatus": "estimated"
+          },
+          "sideBounds": [
+            {
+              "id": "side-panel -1",
+              "bounds": {
+                "min": [
+                  -3.082237849064362,
+                  0.015568551783939205,
+                  -5.78000020980835
+                ],
+                "max": [
+                  -1.5255319027924246,
+                  2.0001541041097513,
+                  5.78000020980835
+                ]
+              }
+            },
+            {
+              "id": "side-panel 1",
+              "bounds": {
+                "min": [
+                  1.5255319027924246,
+                  0.015568551783939205,
+                  -5.78000020980835
+                ],
+                "max": [
+                  3.082237849064362,
+                  2.0001541041097513,
+                  5.78000020980835
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "p": 0.75,
+          "pose": {
+            "p": 0.75,
+            "wall": 0.9259259259259258,
+            "angle": 0.1163552834662888,
+            "roofLift": 0.008,
+            "sourcePhase": "2–3",
+            "label": "Elevação de dentro para fora",
+            "uncertain": true,
+            "referenceOnly": false,
+            "scope": "longitudinal-wall-raising",
+            "axisStatus": "estimated"
+          },
+          "sideBounds": [
+            {
+              "id": "side-panel -1",
+              "bounds": {
+                "min": [
+                  -3.1077890381509157,
+                  0.005914285153487471,
+                  -5.78000020980835
+                ],
+                "max": [
+                  -2.7277589686082315,
+                  2.4275004131351317,
+                  5.78000020980835
+                ]
+              }
+            },
+            {
+              "id": "side-panel 1",
+              "bounds": {
+                "min": [
+                  2.7277589686082315,
+                  0.005914285153487471,
+                  -5.78000020980835
+                ],
+                "max": [
+                  3.1077890381509157,
+                  2.4275004131351317,
+                  5.78000020980835
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "p": 0.9,
+          "pose": {
+            "p": 0.9,
+            "wall": 1,
+            "angle": 0,
+            "roofLift": 0.008,
+            "sourcePhase": "2–3",
+            "label": "Paredes verticais · assentamento visual",
+            "uncertain": true,
+            "referenceOnly": false,
+            "scope": "longitudinal-wall-raising",
+            "axisStatus": "estimated"
+          },
+          "sideBounds": [
+            {
+              "id": "side-panel -1",
+              "bounds": {
+                "min": [
+                  -3.122499942779541,
+                  0.0034999995529651634,
+                  -5.78000020980835
+                ],
+                "max": [
+                  -2.997499942779541,
+                  2.430000066757202,
+                  5.78000020980835
+                ]
+              }
+            },
+            {
+              "id": "side-panel 1",
+              "bounds": {
+                "min": [
+                  2.997499942779541,
+                  0.0034999995529651634,
+                  -5.78000020980835
+                ],
+                "max": [
+                  3.122499942779541,
+                  2.430000066757202,
+                  5.78000020980835
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "p": 1,
+          "pose": {
+            "p": 1,
+            "wall": 1,
+            "angle": 0,
+            "roofLift": 0,
+            "sourcePhase": "2–3",
+            "label": "Paredes erguidas",
+            "uncertain": true,
+            "referenceOnly": false,
+            "scope": "longitudinal-wall-raising",
+            "axisStatus": "estimated"
+          },
+          "sideBounds": [
+            {
+              "id": "side-panel -1",
+              "bounds": {
+                "min": [
+                  -3.122499942779541,
+                  0.0034999995529651634,
+                  -5.78000020980835
+                ],
+                "max": [
+                  -2.997499942779541,
+                  2.430000066757202,
+                  5.78000020980835
+                ]
+              }
+            },
+            {
+              "id": "side-panel 1",
+              "bounds": {
+                "min": [
+                  2.997499942779541,
+                  0.0034999995529651634,
+                  -5.78000020980835
+                ],
+                "max": [
+                  3.122499942779541,
+                  2.430000066757202,
+                  5.78000020980835
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "layout": "t4-b",
+      "frames": 1001,
+      "roofClearance": 0.008,
+      "axisX": 2.99,
+      "axisY": 0,
+      "assertionFailures": [],
+      "maxFixedMatrixError": 0,
+      "maxFormulaError": 1.3506446028928519e-15,
+      "nonFiniteCoordinateCount": 0,
+      "cycleCount": 12,
+      "cycleErrors": [],
+      "componentCounts": [
+        {
+          "id": "floor -1",
+          "count": 24,
+          "moving": false
+        },
+        {
+          "id": "floor 1",
+          "count": 24,
+          "moving": false
+        },
+        {
+          "id": "roof -1",
+          "count": 26,
+          "moving": true
+        },
+        {
+          "id": "roof 1",
+          "count": 26,
+          "moving": true
+        },
+        {
+          "id": "side-panel -1",
+          "count": 22,
+          "moving": true
+        },
+        {
+          "id": "side-posts -1",
+          "count": 2,
+          "moving": false
+        },
+        {
+          "id": "side-panel 1",
+          "count": 22,
+          "moving": true
+        },
+        {
+          "id": "side-posts 1",
+          "count": 2,
+          "moving": false
+        },
+        {
+          "id": "end -1/1",
+          "count": 10,
+          "moving": false
+        },
+        {
+          "id": "end 1/1",
+          "count": 10,
+          "moving": false
+        },
+        {
+          "id": "end -1/-1",
+          "count": 4,
+          "moving": false
+        },
+        {
+          "id": "end 1/-1",
+          "count": 4,
+          "moving": false
+        },
+        {
+          "id": "fixed structure",
+          "count": 32,
+          "moving": false
+        },
+        {
+          "id": "fixed floor",
+          "count": 1,
+          "moving": false
+        },
+        {
+          "id": "fixed floorLayers",
+          "count": 2,
+          "moving": false
+        },
+        {
+          "id": "fixed roof",
+          "count": 23,
+          "moving": false
+        },
+        {
+          "id": "fixed shell",
+          "count": 41,
+          "moving": false
+        },
+        {
+          "id": "fixed supports",
+          "count": 24,
+          "moving": false
+        }
+      ],
+      "baselineContactCount": 20,
+      "regressions": [],
+      "minPanelY": 0.0034999995529651634,
+      "maxOutwardBacktrack": 0,
+      "maxAttachmentError": 1.3322676295501878e-15,
+      "endpointError": 0,
+      "axisHalfspaceViolations": 0,
+      "samples": [
+        {
+          "p": 0,
+          "pose": {
+            "p": 0,
+            "wall": 0,
+            "angle": 1.5707963267948966,
+            "roofLift": 0.008,
+            "sourcePhase": "2–3",
+            "label": "Paredes deitadas",
+            "uncertain": true,
+            "referenceOnly": false,
+            "scope": "longitudinal-wall-raising",
+            "axisStatus": "estimated"
+          },
+          "sideBounds": [
+            {
+              "id": "side-panel -1",
+              "bounds": {
+                "min": [
+                  -2.986500000447035,
+                  0.0074999427795408025,
+                  -5.78000020980835
+                ],
+                "max": [
+                  -0.5599999332427981,
+                  0.1324999427795408,
+                  5.78000020980835
+                ]
+              }
+            },
+            {
+              "id": "side-panel 1",
+              "bounds": {
+                "min": [
+                  0.5599999332427981,
+                  0.0074999427795408025,
+                  -5.78000020980835
+                ],
+                "max": [
+                  2.986500000447035,
+                  0.1324999427795408,
+                  5.78000020980835
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "p": 0.25,
+          "pose": {
+            "p": 0.25,
+            "wall": 0.18861454046639237,
+            "angle": 1.27452129945018,
+            "roofLift": 0.008,
+            "sourcePhase": "2–3",
+            "label": "Elevação de dentro para fora",
+            "uncertain": true,
+            "referenceOnly": false,
+            "scope": "longitudinal-wall-raising",
+            "axisStatus": "estimated"
+          },
+          "sideBounds": [
+            {
+              "id": "side-panel -1",
+              "bounds": {
+                "min": [
+                  -3.0213956806523656,
+                  0.021106903495407697,
+                  -5.78000020980835
+                ],
+                "max": [
+                  -0.6717126124833408,
+                  0.8242333353053501,
+                  5.78000020980835
+                ]
+              }
+            },
+            {
+              "id": "side-panel 1",
+              "bounds": {
+                "min": [
+                  0.6717126124833408,
+                  0.021106903495407697,
+                  -5.78000020980835
+                ],
+                "max": [
+                  3.0213956806523656,
+                  0.8242333353053501,
+                  5.78000020980835
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "p": 0.5,
+          "pose": {
+            "p": 0.5,
+            "wall": 0.5829903978052127,
+            "angle": 0.655037151365773,
+            "roofLift": 0.008,
+            "sourcePhase": "2–3",
+            "label": "Elevação de dentro para fora",
+            "uncertain": true,
+            "referenceOnly": false,
+            "scope": "longitudinal-wall-raising",
+            "axisStatus": "estimated"
+          },
+          "sideBounds": [
+            {
+              "id": "side-panel -1",
+              "bounds": {
+                "min": [
+                  -3.082237849064362,
+                  0.015568551783939205,
+                  -5.78000020980835
+                ],
+                "max": [
+                  -1.5255319027924246,
+                  2.0001541041097513,
+                  5.78000020980835
+                ]
+              }
+            },
+            {
+              "id": "side-panel 1",
+              "bounds": {
+                "min": [
+                  1.5255319027924246,
+                  0.015568551783939205,
+                  -5.78000020980835
+                ],
+                "max": [
+                  3.082237849064362,
+                  2.0001541041097513,
+                  5.78000020980835
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "p": 0.75,
+          "pose": {
+            "p": 0.75,
+            "wall": 0.9259259259259258,
+            "angle": 0.1163552834662888,
+            "roofLift": 0.008,
+            "sourcePhase": "2–3",
+            "label": "Elevação de dentro para fora",
+            "uncertain": true,
+            "referenceOnly": false,
+            "scope": "longitudinal-wall-raising",
+            "axisStatus": "estimated"
+          },
+          "sideBounds": [
+            {
+              "id": "side-panel -1",
+              "bounds": {
+                "min": [
+                  -3.1077890381509157,
+                  0.005914285153487471,
+                  -5.78000020980835
+                ],
+                "max": [
+                  -2.7277589686082315,
+                  2.4275004131351317,
+                  5.78000020980835
+                ]
+              }
+            },
+            {
+              "id": "side-panel 1",
+              "bounds": {
+                "min": [
+                  2.7277589686082315,
+                  0.005914285153487471,
+                  -5.78000020980835
+                ],
+                "max": [
+                  3.1077890381509157,
+                  2.4275004131351317,
+                  5.78000020980835
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "p": 0.9,
+          "pose": {
+            "p": 0.9,
+            "wall": 1,
+            "angle": 0,
+            "roofLift": 0.008,
+            "sourcePhase": "2–3",
+            "label": "Paredes verticais · assentamento visual",
+            "uncertain": true,
+            "referenceOnly": false,
+            "scope": "longitudinal-wall-raising",
+            "axisStatus": "estimated"
+          },
+          "sideBounds": [
+            {
+              "id": "side-panel -1",
+              "bounds": {
+                "min": [
+                  -3.122499942779541,
+                  0.0034999995529651634,
+                  -5.78000020980835
+                ],
+                "max": [
+                  -2.997499942779541,
+                  2.430000066757202,
+                  5.78000020980835
+                ]
+              }
+            },
+            {
+              "id": "side-panel 1",
+              "bounds": {
+                "min": [
+                  2.997499942779541,
+                  0.0034999995529651634,
+                  -5.78000020980835
+                ],
+                "max": [
+                  3.122499942779541,
+                  2.430000066757202,
+                  5.78000020980835
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "p": 1,
+          "pose": {
+            "p": 1,
+            "wall": 1,
+            "angle": 0,
+            "roofLift": 0,
+            "sourcePhase": "2–3",
+            "label": "Paredes erguidas",
+            "uncertain": true,
+            "referenceOnly": false,
+            "scope": "longitudinal-wall-raising",
+            "axisStatus": "estimated"
+          },
+          "sideBounds": [
+            {
+              "id": "side-panel -1",
+              "bounds": {
+                "min": [
+                  -3.122499942779541,
+                  0.0034999995529651634,
+                  -5.78000020980835
+                ],
+                "max": [
+                  -2.997499942779541,
+                  2.430000066757202,
+                  5.78000020980835
+                ]
+              }
+            },
+            {
+              "id": "side-panel 1",
+              "bounds": {
+                "min": [
+                  2.997499942779541,
+                  0.0034999995529651634,
+                  -5.78000020980835
+                ],
+                "max": [
+                  3.122499942779541,
+                  2.430000066757202,
+                  5.78000020980835
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

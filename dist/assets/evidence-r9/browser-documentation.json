@@ -1,0 +1,1333 @@
+{
+  "checks": [
+    {
+      "name": "technical-data-json-layout-refresh",
+      "status": "PASS",
+      "result": {
+        "before": "Dimensões nas plantas\n11,80 × 6,22 m\nRectângulo exterior: 73,396 m²\nDesignação comercial\n72 m²\nÁrea útil certificada por fornecer\nDistribuição seleccionada\n2 quartos · 1 banho\n9 janelas desenhadas no 3D · entrada de 2 folhas\nÁrea livre da maquete\n≈ 68,6 m²\nCalculada com espessuras estimadas",
+        "after": "Dimensões nas plantas\n11,80 × 6,22 m\nRectângulo exterior: 73,396 m²\nDesignação comercial\n72 m²\nÁrea útil certificada por fornecer\nDistribuição seleccionada\n4 quartos · 1 banho\n9 janelas desenhadas no 3D · entrada de 2 folhas\nÁrea livre da maquete\n≈ 68,3 m²\nCalculada com espessuras estimadas",
+        "sourceLayout": {
+          "id": "t4-b",
+          "bedrooms": 4,
+          "livingAreas": 1,
+          "bathrooms": 1,
+          "source": {
+            "file": "assets/plantas-40-pes.xlsx",
+            "sheet": "40ft Standard Double-Wing Unit",
+            "cell": "A49",
+            "media": "xl/media/image7.png",
+            "anchor": "A50:E74"
+          },
+          "status": "documented-layout",
+          "commonWindowsDrawn": 8,
+          "bathroomWindowDrawn": 1,
+          "interiorDoorSymbols": 5,
+          "entryLeavesDrawn": 2,
+          "kitchenDrawn": false,
+          "limits": "Quantidades observadas na planta raster; posições interiores, vãos de portas e dimensões úteis não cotados. A/B são identificadores editoriais de duas distribuições com o mesmo número de quartos."
+        },
+        "units": {
+          "dimensions": "m unless specified per record",
+          "areas": "m²",
+          "catalogue": "per specification"
+        },
+        "dimensions": 25,
+        "options": 22,
+        "videos": 4,
+        "rows": [
+          {
+            "id": "length",
+            "label": "Comprimento exterior",
+            "cells": [
+              {
+                "label": "Valor na fonte",
+                "text": "11,800 m"
+              },
+              {
+                "label": "Valor na maquete",
+                "text": "11,800 m"
+              },
+              {
+                "label": "Estado",
+                "text": "Confirmado na fonte"
+              },
+              {
+                "label": "Origem e limite",
+                "text": "XLSX · todas as 7 plantas"
+              }
+            ]
+          },
+          {
+            "id": "width",
+            "label": "Largura exterior",
+            "cells": [
+              {
+                "label": "Valor na fonte",
+                "text": "6,220 m"
+              },
+              {
+                "label": "Valor na maquete",
+                "text": "6,220 m"
+              },
+              {
+                "label": "Estado",
+                "text": "Confirmado na fonte"
+              },
+              {
+                "label": "Origem e limite",
+                "text": "XLSX · todas as 7 plantas"
+              }
+            ]
+          },
+          {
+            "id": "core",
+            "label": "Banda central",
+            "cells": [
+              {
+                "label": "Valor na fonte",
+                "text": "2,200 m"
+              },
+              {
+                "label": "Valor na maquete",
+                "text": "2,200 m"
+              },
+              {
+                "label": "Estado",
+                "text": "Confirmado na fonte"
+              },
+              {
+                "label": "Origem e limite",
+                "text": "XLSX · cota superior 2200"
+              }
+            ]
+          },
+          {
+            "id": "wing",
+            "label": "Banda lateral (cada)",
+            "cells": [
+              {
+                "label": "Valor na fonte",
+                "text": "2,010 m"
+              },
+              {
+                "label": "Valor na maquete",
+                "text": "2,010 m"
+              },
+              {
+                "label": "Estado",
+                "text": "Confirmado na fonte"
+              },
+              {
+                "label": "Origem e limite",
+                "text": "XLSX · cotas superiores 2010"
+              }
+            ]
+          },
+          {
+            "id": "windowWidth",
+            "label": "Largura cotada das janelas",
+            "cells": [
+              {
+                "label": "Valor na fonte",
+                "text": "0,920 m"
+              },
+              {
+                "label": "Valor na maquete",
+                "text": "0,920 m"
+              },
+              {
+                "label": "Estado",
+                "text": "Confirmado na fonte"
+              },
+              {
+                "label": "Origem e limite",
+                "text": "XLSX · cota 920; posição/altura não cotadas"
+              }
+            ]
+          },
+          {
+            "id": "height",
+            "label": "Altura das paredes e perfis na maquete",
+            "cells": [
+              {
+                "label": "Valor na fonte",
+                "text": "Não cotada"
+              },
+              {
+                "label": "Valor na maquete",
+                "text": "2,550 m"
+              },
+              {
+                "label": "Estado",
+                "text": "Estimado na maquete"
+              },
+              {
+                "label": "Origem e limite",
+                "text": "Hipótese da maquete\nNão indicada nos anexos. Não usar como cota de fabrico."
+              }
+            ]
+          },
+          {
+            "id": "panel",
+            "label": "Espessura de parede na maquete",
+            "cells": [
+              {
+                "label": "Valor na fonte",
+                "text": "Não cotada"
+              },
+              {
+                "label": "Valor na maquete",
+                "text": "0,100 m"
+              },
+              {
+                "label": "Estado",
+                "text": "Estimado na maquete"
+              },
+              {
+                "label": "Origem e limite",
+                "text": "Hipótese geométrica\nO catálogo refere opção lã de rocha 100 mm; não comprova espessura total da parede desta variante."
+              }
+            ]
+          },
+          {
+            "id": "partition",
+            "label": "Divisória interior",
+            "cells": [
+              {
+                "label": "Valor na fonte",
+                "text": "Não cotada"
+              },
+              {
+                "label": "Valor na maquete",
+                "text": "0,080 m"
+              },
+              {
+                "label": "Estado",
+                "text": "Estimado na maquete"
+              },
+              {
+                "label": "Origem e limite",
+                "text": "Hipótese geométrica"
+              }
+            ]
+          },
+          {
+            "id": "frame",
+            "label": "Secção visual dos perfis",
+            "cells": [
+              {
+                "label": "Valor na fonte",
+                "text": "Não cotada"
+              },
+              {
+                "label": "Valor na maquete",
+                "text": "0,120 m"
+              },
+              {
+                "label": "Estado",
+                "text": "Estimado na maquete"
+              },
+              {
+                "label": "Origem e limite",
+                "text": "Fotografias e maquete\nSem desenho de perfil ou ligação."
+              }
+            ]
+          },
+          {
+            "id": "floor",
+            "label": "Camadas de piso, incluindo intervalos",
+            "cells": [
+              {
+                "label": "Valor na fonte",
+                "text": "Não cotada"
+              },
+              {
+                "label": "Valor na maquete",
+                "text": "0,121 m"
+              },
+              {
+                "label": "Estado",
+                "text": "Estimado na maquete"
+              },
+              {
+                "label": "Origem e limite",
+                "text": "Hipótese geométrica"
+              }
+            ]
+          },
+          {
+            "id": "roof",
+            "label": "Camadas e nervuras da cobertura",
+            "cells": [
+              {
+                "label": "Valor na fonte",
+                "text": "Não cotada"
+              },
+              {
+                "label": "Valor na maquete",
+                "text": "0,127 m"
+              },
+              {
+                "label": "Estado",
+                "text": "Estimado na maquete"
+              },
+              {
+                "label": "Origem e limite",
+                "text": "Hipótese geométrica"
+              }
+            ]
+          },
+          {
+            "id": "doorWidth",
+            "label": "Vão interior na maquete",
+            "cells": [
+              {
+                "label": "Valor na fonte",
+                "text": "Não cotada"
+              },
+              {
+                "label": "Valor na maquete",
+                "text": "0,760 m"
+              },
+              {
+                "label": "Estado",
+                "text": "Estimado na maquete"
+              },
+              {
+                "label": "Origem e limite",
+                "text": "Hipótese de visualização"
+              }
+            ]
+          },
+          {
+            "id": "doorHeight",
+            "label": "Altura das portas na maquete",
+            "cells": [
+              {
+                "label": "Valor na fonte",
+                "text": "Não cotada"
+              },
+              {
+                "label": "Valor na maquete",
+                "text": "2,050 m"
+              },
+              {
+                "label": "Estado",
+                "text": "Estimado na maquete"
+              },
+              {
+                "label": "Origem e limite",
+                "text": "Hipótese de visualização"
+              }
+            ]
+          },
+          {
+            "id": "windowHeight",
+            "label": "Altura das janelas na maquete",
+            "cells": [
+              {
+                "label": "Valor na fonte",
+                "text": "Não cotada"
+              },
+              {
+                "label": "Valor na maquete",
+                "text": "1,050 m"
+              },
+              {
+                "label": "Estado",
+                "text": "Estimado na maquete"
+              },
+              {
+                "label": "Origem e limite",
+                "text": "Fotografias, sem cota"
+              }
+            ]
+          },
+          {
+            "id": "entryWidthVisual",
+            "label": "Largura de entrada na maquete",
+            "cells": [
+              {
+                "label": "Valor na fonte",
+                "text": "Não cotada"
+              },
+              {
+                "label": "Valor na maquete",
+                "text": "1,700 m"
+              },
+              {
+                "label": "Estado",
+                "text": "Estimado na maquete"
+              },
+              {
+                "label": "Origem e limite",
+                "text": "Fotografias sem cotas"
+              }
+            ]
+          },
+          {
+            "id": "entryHeightVisual",
+            "label": "Altura de entrada na maquete",
+            "cells": [
+              {
+                "label": "Valor na fonte",
+                "text": "Não cotada"
+              },
+              {
+                "label": "Valor na maquete",
+                "text": "2,150 m"
+              },
+              {
+                "label": "Estado",
+                "text": "Estimado na maquete"
+              },
+              {
+                "label": "Origem e limite",
+                "text": "Fotografias sem cotas"
+              }
+            ]
+          },
+          {
+            "id": "bathWindowWidthVisual",
+            "label": "Largura de janela do banho na maquete",
+            "cells": [
+              {
+                "label": "Valor na fonte",
+                "text": "Não cotada"
+              },
+              {
+                "label": "Valor na maquete",
+                "text": "0,600 m"
+              },
+              {
+                "label": "Estado",
+                "text": "Estimado na maquete"
+              },
+              {
+                "label": "Origem e limite",
+                "text": "Planta sem cota neste vão"
+              }
+            ]
+          },
+          {
+            "id": "windowSillVisual",
+            "label": "Peitoril de janela na maquete",
+            "cells": [
+              {
+                "label": "Valor na fonte",
+                "text": "Não cotada"
+              },
+              {
+                "label": "Valor na maquete",
+                "text": "0,950 m"
+              },
+              {
+                "label": "Estado",
+                "text": "Estimado na maquete"
+              },
+              {
+                "label": "Origem e limite",
+                "text": "Fotografias sem cotas"
+              }
+            ]
+          },
+          {
+            "id": "porchDepthVisual",
+            "label": "Profundidade de alpendre na maquete",
+            "cells": [
+              {
+                "label": "Valor na fonte",
+                "text": "Não cotada"
+              },
+              {
+                "label": "Valor na maquete",
+                "text": "1,950 m"
+              },
+              {
+                "label": "Estado",
+                "text": "Estimado na maquete"
+              },
+              {
+                "label": "Origem e limite",
+                "text": "Hipótese de visualização"
+              }
+            ]
+          },
+          {
+            "id": "canopyRiseVisual",
+            "label": "Desnível da cumeeira na maquete",
+            "cells": [
+              {
+                "label": "Valor na fonte",
+                "text": "Não cotada"
+              },
+              {
+                "label": "Valor na maquete",
+                "text": "0,650 m"
+              },
+              {
+                "label": "Estado",
+                "text": "Estimado na maquete"
+              },
+              {
+                "label": "Origem e limite",
+                "text": "Fotografia sem cota"
+              }
+            ]
+          },
+          {
+            "id": "canopyOverhangVisual",
+            "label": "Beiral na maquete",
+            "cells": [
+              {
+                "label": "Valor na fonte",
+                "text": "Não cotada"
+              },
+              {
+                "label": "Valor na maquete",
+                "text": "0,280 m"
+              },
+              {
+                "label": "Estado",
+                "text": "Estimado na maquete"
+              },
+              {
+                "label": "Origem e limite",
+                "text": "Fotografia sem cota"
+              }
+            ]
+          },
+          {
+            "id": "catalogueTerraceDepth",
+            "label": "Profundidade do terraço do catálogo",
+            "cells": [
+              {
+                "label": "Valor na fonte",
+                "text": "3,000 m"
+              },
+              {
+                "label": "Valor na maquete",
+                "text": "—"
+              },
+              {
+                "label": "Estado",
+                "text": "Confirmado na fonte"
+              },
+              {
+                "label": "Origem e limite",
+                "text": "Catálogo p. 13\nCorrespondência com a fotografia do alpendre por confirmar. Não aplicada ao modelo sem confirmação."
+              }
+            ]
+          },
+          {
+            "id": "closedWidth",
+            "label": "Largura de transporte",
+            "cells": [
+              {
+                "label": "Valor na fonte",
+                "text": "Não cotada"
+              },
+              {
+                "label": "Valor na maquete",
+                "text": "—"
+              },
+              {
+                "label": "Estado",
+                "text": "Por documentar"
+              },
+              {
+                "label": "Origem e limite",
+                "text": "Desenho do módulo fechado não fornecido\nA banda central de 2,20 m não estabelece a largura exterior de transporte com painéis recolhidos."
+              }
+            ]
+          },
+          {
+            "id": "usefulArea",
+            "label": "Área útil certificada",
+            "cells": [
+              {
+                "label": "Valor na fonte",
+                "text": "Não cotada"
+              },
+              {
+                "label": "Valor na maquete",
+                "text": "—"
+              },
+              {
+                "label": "Estado",
+                "text": "Por documentar"
+              },
+              {
+                "label": "Origem e limite",
+                "text": "Mapa de áreas não fornecido"
+              }
+            ]
+          },
+          {
+            "id": "ridge",
+            "label": "Altura da cumeeira adicional",
+            "cells": [
+              {
+                "label": "Valor na fonte",
+                "text": "Não cotada"
+              },
+              {
+                "label": "Valor na maquete",
+                "text": "—"
+              },
+              {
+                "label": "Estado",
+                "text": "Por documentar"
+              },
+              {
+                "label": "Origem e limite",
+                "text": "Fotografia de cobertura sem cotas"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "technical-responsive-375",
+      "status": "PASS",
+      "result": {
+        "metrics": {
+          "viewport": 375,
+          "pageWidth": 375,
+          "table": {
+            "scroll": 343,
+            "width": 343
+          },
+          "rows": [
+            {
+              "id": "length",
+              "width": 343,
+              "display": "block"
+            },
+            {
+              "id": "width",
+              "width": 343,
+              "display": "block"
+            },
+            {
+              "id": "core",
+              "width": 343,
+              "display": "block"
+            },
+            {
+              "id": "wing",
+              "width": 343,
+              "display": "block"
+            },
+            {
+              "id": "windowWidth",
+              "width": 343,
+              "display": "block"
+            },
+            {
+              "id": "height",
+              "width": 343,
+              "display": "block"
+            },
+            {
+              "id": "panel",
+              "width": 343,
+              "display": "block"
+            },
+            {
+              "id": "partition",
+              "width": 343,
+              "display": "block"
+            },
+            {
+              "id": "frame",
+              "width": 343,
+              "display": "block"
+            },
+            {
+              "id": "floor",
+              "width": 343,
+              "display": "block"
+            },
+            {
+              "id": "roof",
+              "width": 343,
+              "display": "block"
+            },
+            {
+              "id": "doorWidth",
+              "width": 343,
+              "display": "block"
+            },
+            {
+              "id": "doorHeight",
+              "width": 343,
+              "display": "block"
+            },
+            {
+              "id": "windowHeight",
+              "width": 343,
+              "display": "block"
+            },
+            {
+              "id": "entryWidthVisual",
+              "width": 343,
+              "display": "block"
+            },
+            {
+              "id": "entryHeightVisual",
+              "width": 343,
+              "display": "block"
+            },
+            {
+              "id": "bathWindowWidthVisual",
+              "width": 343,
+              "display": "block"
+            },
+            {
+              "id": "windowSillVisual",
+              "width": 343,
+              "display": "block"
+            },
+            {
+              "id": "porchDepthVisual",
+              "width": 343,
+              "display": "block"
+            },
+            {
+              "id": "canopyRiseVisual",
+              "width": 343,
+              "display": "block"
+            },
+            {
+              "id": "canopyOverhangVisual",
+              "width": 343,
+              "display": "block"
+            },
+            {
+              "id": "catalogueTerraceDepth",
+              "width": 343,
+              "display": "block"
+            },
+            {
+              "id": "closedWidth",
+              "width": 343,
+              "display": "block"
+            },
+            {
+              "id": "usefulArea",
+              "width": 343,
+              "display": "block"
+            },
+            {
+              "id": "ridge",
+              "width": 343,
+              "display": "block"
+            }
+          ],
+          "buttons": [
+            {
+              "height": 45,
+              "width": 297
+            },
+            {
+              "height": 45,
+              "width": 297
+            },
+            {
+              "height": 45,
+              "width": 297
+            },
+            {
+              "height": 45,
+              "width": 297
+            }
+          ]
+        },
+        "violations": []
+      }
+    },
+    {
+      "name": "technical-responsive-768",
+      "status": "PASS",
+      "result": {
+        "metrics": {
+          "viewport": 768,
+          "pageWidth": 768,
+          "table": {
+            "scroll": 720,
+            "width": 720
+          },
+          "rows": [
+            {
+              "id": "length",
+              "width": 719.9375,
+              "display": "table-row"
+            },
+            {
+              "id": "width",
+              "width": 719.9375,
+              "display": "table-row"
+            },
+            {
+              "id": "core",
+              "width": 719.9375,
+              "display": "table-row"
+            },
+            {
+              "id": "wing",
+              "width": 719.9375,
+              "display": "table-row"
+            },
+            {
+              "id": "windowWidth",
+              "width": 719.9375,
+              "display": "table-row"
+            },
+            {
+              "id": "height",
+              "width": 719.9375,
+              "display": "table-row"
+            },
+            {
+              "id": "panel",
+              "width": 719.9375,
+              "display": "table-row"
+            },
+            {
+              "id": "partition",
+              "width": 719.9375,
+              "display": "table-row"
+            },
+            {
+              "id": "frame",
+              "width": 719.9375,
+              "display": "table-row"
+            },
+            {
+              "id": "floor",
+              "width": 719.9375,
+              "display": "table-row"
+            },
+            {
+              "id": "roof",
+              "width": 719.9375,
+              "display": "table-row"
+            },
+            {
+              "id": "doorWidth",
+              "width": 719.9375,
+              "display": "table-row"
+            },
+            {
+              "id": "doorHeight",
+              "width": 719.9375,
+              "display": "table-row"
+            },
+            {
+              "id": "windowHeight",
+              "width": 719.9375,
+              "display": "table-row"
+            },
+            {
+              "id": "entryWidthVisual",
+              "width": 719.9375,
+              "display": "table-row"
+            },
+            {
+              "id": "entryHeightVisual",
+              "width": 719.9375,
+              "display": "table-row"
+            },
+            {
+              "id": "bathWindowWidthVisual",
+              "width": 719.9375,
+              "display": "table-row"
+            },
+            {
+              "id": "windowSillVisual",
+              "width": 719.9375,
+              "display": "table-row"
+            },
+            {
+              "id": "porchDepthVisual",
+              "width": 719.9375,
+              "display": "table-row"
+            },
+            {
+              "id": "canopyRiseVisual",
+              "width": 719.9375,
+              "display": "table-row"
+            },
+            {
+              "id": "canopyOverhangVisual",
+              "width": 719.9375,
+              "display": "table-row"
+            },
+            {
+              "id": "catalogueTerraceDepth",
+              "width": 719.9375,
+              "display": "table-row"
+            },
+            {
+              "id": "closedWidth",
+              "width": 719.9375,
+              "display": "table-row"
+            },
+            {
+              "id": "usefulArea",
+              "width": 719.9375,
+              "display": "table-row"
+            },
+            {
+              "id": "ridge",
+              "width": 719.9375,
+              "display": "table-row"
+            }
+          ],
+          "buttons": [
+            {
+              "height": 45,
+              "width": 142.34375
+            },
+            {
+              "height": 45,
+              "width": 142.34375
+            },
+            {
+              "height": 45,
+              "width": 142.34375
+            },
+            {
+              "height": 45,
+              "width": 142.34375
+            }
+          ]
+        },
+        "violations": []
+      }
+    },
+    {
+      "name": "technical-responsive-1440",
+      "status": "PASS",
+      "result": {
+        "metrics": {
+          "viewport": 1440,
+          "pageWidth": 1440,
+          "table": {
+            "scroll": 1352,
+            "width": 1352
+          },
+          "rows": [
+            {
+              "id": "length",
+              "width": 1351.625,
+              "display": "table-row"
+            },
+            {
+              "id": "width",
+              "width": 1351.625,
+              "display": "table-row"
+            },
+            {
+              "id": "core",
+              "width": 1351.625,
+              "display": "table-row"
+            },
+            {
+              "id": "wing",
+              "width": 1351.625,
+              "display": "table-row"
+            },
+            {
+              "id": "windowWidth",
+              "width": 1351.625,
+              "display": "table-row"
+            },
+            {
+              "id": "height",
+              "width": 1351.625,
+              "display": "table-row"
+            },
+            {
+              "id": "panel",
+              "width": 1351.625,
+              "display": "table-row"
+            },
+            {
+              "id": "partition",
+              "width": 1351.625,
+              "display": "table-row"
+            },
+            {
+              "id": "frame",
+              "width": 1351.625,
+              "display": "table-row"
+            },
+            {
+              "id": "floor",
+              "width": 1351.625,
+              "display": "table-row"
+            },
+            {
+              "id": "roof",
+              "width": 1351.625,
+              "display": "table-row"
+            },
+            {
+              "id": "doorWidth",
+              "width": 1351.625,
+              "display": "table-row"
+            },
+            {
+              "id": "doorHeight",
+              "width": 1351.625,
+              "display": "table-row"
+            },
+            {
+              "id": "windowHeight",
+              "width": 1351.625,
+              "display": "table-row"
+            },
+            {
+              "id": "entryWidthVisual",
+              "width": 1351.625,
+              "display": "table-row"
+            },
+            {
+              "id": "entryHeightVisual",
+              "width": 1351.625,
+              "display": "table-row"
+            },
+            {
+              "id": "bathWindowWidthVisual",
+              "width": 1351.625,
+              "display": "table-row"
+            },
+            {
+              "id": "windowSillVisual",
+              "width": 1351.625,
+              "display": "table-row"
+            },
+            {
+              "id": "porchDepthVisual",
+              "width": 1351.625,
+              "display": "table-row"
+            },
+            {
+              "id": "canopyRiseVisual",
+              "width": 1351.625,
+              "display": "table-row"
+            },
+            {
+              "id": "canopyOverhangVisual",
+              "width": 1351.625,
+              "display": "table-row"
+            },
+            {
+              "id": "catalogueTerraceDepth",
+              "width": 1351.625,
+              "display": "table-row"
+            },
+            {
+              "id": "closedWidth",
+              "width": 1351.625,
+              "display": "table-row"
+            },
+            {
+              "id": "usefulArea",
+              "width": 1351.625,
+              "display": "table-row"
+            },
+            {
+              "id": "ridge",
+              "width": 1351.625,
+              "display": "table-row"
+            }
+          ],
+          "buttons": [
+            {
+              "height": 45,
+              "width": 142.34375
+            },
+            {
+              "height": 45,
+              "width": 142.34375
+            },
+            {
+              "height": 45,
+              "width": 142.34375
+            },
+            {
+              "height": 45,
+              "width": 142.34375
+            }
+          ]
+        },
+        "violations": []
+      }
+    },
+    {
+      "name": "technical-four-video-buttons",
+      "status": "PASS",
+      "result": [
+        {
+          "id": "source-v1-spacious",
+          "time": 0.641647,
+          "paused": false,
+          "width": 341,
+          "height": 460,
+          "top": 1559.671875,
+          "bottom": 2019.671875,
+          "viewport": 844,
+          "scrollY": 0,
+          "otherPlaying": 1
+        },
+        {
+          "id": "source-v2-74m2",
+          "time": 0.661107,
+          "paused": false,
+          "width": 341,
+          "height": 460,
+          "top": 2419.875,
+          "bottom": 2879.875,
+          "viewport": 844,
+          "scrollY": 0,
+          "otherPlaying": 1
+        },
+        {
+          "id": "source-v3-comfortable",
+          "time": 0.657421,
+          "paused": false,
+          "width": 341,
+          "height": 460,
+          "top": 3322.953125,
+          "bottom": 3782.953125,
+          "viewport": 844,
+          "scrollY": 0,
+          "otherPlaying": 1
+        },
+        {
+          "id": "source-v4-37m2",
+          "time": 0.652674,
+          "paused": false,
+          "width": 341,
+          "height": 460,
+          "top": 4204.59375,
+          "bottom": 4664.59375,
+          "viewport": 844,
+          "scrollY": 0,
+          "otherPlaying": 1
+        }
+      ]
+    },
+    {
+      "name": "mobile-video-card-and-buttons",
+      "status": "PASS",
+      "result": {
+        "metrics": {
+          "card": 343,
+          "video": 341,
+          "noteFont": "13px",
+          "chapterButtons": [
+            {
+              "width": 119.59375,
+              "height": 44,
+              "font": "13px"
+            },
+            {
+              "width": 96.4375,
+              "height": 44,
+              "font": "13px"
+            },
+            {
+              "width": 115.15625,
+              "height": 44,
+              "font": "13px"
+            },
+            {
+              "width": 110.859375,
+              "height": 44,
+              "font": "13px"
+            }
+          ],
+          "note": "O nome menciona 20ft / 37 m² e também 40ft. Identificação contraditória no próprio ficheiro; correspondência com as plantas por confirmar."
+        },
+        "violations": []
+      }
+    },
+    {
+      "name": "technical-download-links",
+      "status": "PASS",
+      "result": [
+        {
+          "href": "assets/opcionais-2026.pdf",
+          "status": 200,
+          "bytes": 6075632
+        },
+        {
+          "href": "assets/product-r9/options-catalogue.json",
+          "status": 200,
+          "bytes": 36791
+        },
+        {
+          "href": "assets/opcionais-2026.pdf#page=3",
+          "status": 200,
+          "bytes": 6075632
+        },
+        {
+          "href": "assets/opcionais-2026.pdf#page=4",
+          "status": 200,
+          "bytes": 6075632
+        },
+        {
+          "href": "assets/opcionais-2026.pdf#page=5",
+          "status": 200,
+          "bytes": 6075632
+        },
+        {
+          "href": "assets/opcionais-2026.pdf#page=6",
+          "status": 200,
+          "bytes": 6075632
+        },
+        {
+          "href": "assets/opcionais-2026.pdf#page=7",
+          "status": 200,
+          "bytes": 6075632
+        },
+        {
+          "href": "assets/opcionais-2026.pdf#page=10",
+          "status": 200,
+          "bytes": 6075632
+        },
+        {
+          "href": "assets/opcionais-2026.pdf#page=11",
+          "status": 200,
+          "bytes": 6075632
+        },
+        {
+          "href": "assets/opcionais-2026.pdf#page=12",
+          "status": 200,
+          "bytes": 6075632
+        },
+        {
+          "href": "assets/opcionais-2026.pdf#page=13",
+          "status": 200,
+          "bytes": 6075632
+        },
+        {
+          "href": "assets/opcionais-2026.pdf#page=15",
+          "status": 200,
+          "bytes": 6075632
+        },
+        {
+          "href": "assets/opcionais-2026.pdf#page=17",
+          "status": 200,
+          "bytes": 6075632
+        },
+        {
+          "href": "assets/plantas-40-pes.xlsx",
+          "status": 200,
+          "bytes": 199798
+        },
+        {
+          "href": "assets/opcionais-2026.pdf#page=19",
+          "status": 200,
+          "bytes": 6075632
+        },
+        {
+          "href": "assets/opcionais-2026.pdf#page=14",
+          "status": 200,
+          "bytes": 6075632
+        },
+        {
+          "href": "assets/opcionais-2026.pdf#page=16",
+          "status": 200,
+          "bytes": 6075632
+        },
+        {
+          "href": "assets/reference-videos/v1-spacious.mp4",
+          "status": 200,
+          "bytes": 14919007
+        },
+        {
+          "href": "assets/reference-videos/v2-74m2.mp4",
+          "status": 200,
+          "bytes": 6007251
+        },
+        {
+          "href": "assets/reference-videos/v3-comfortable.mp4",
+          "status": 200,
+          "bytes": 11770834
+        },
+        {
+          "href": "assets/reference-videos/v4-37m2.mp4",
+          "status": 200,
+          "bytes": 6590943
+        },
+        {
+          "href": "assets/expansao.png",
+          "status": 200,
+          "bytes": 300230
+        },
+        {
+          "href": "assets/estrutura.png",
+          "status": 200,
+          "bytes": 671933
+        },
+        {
+          "href": "assets/alpendre.jpg",
+          "status": 200,
+          "bytes": 56841
+        },
+        {
+          "href": "assets/product-r9/technical-inventory.json",
+          "status": 200,
+          "bytes": 244487
+        },
+        {
+          "href": "assets/product-r9/catalogue.json",
+          "status": 200,
+          "bytes": 127638
+        },
+        {
+          "href": "assets/evidence-r9/audit-report.html",
+          "status": 404,
+          "bytes": 14
+        },
+        {
+          "href": "assets/evidence-r8/audit-report.html",
+          "status": 200,
+          "bytes": 11603
+        },
+        {
+          "href": "assets/evidence-r7/audit-report.html",
+          "status": 200,
+          "bytes": 5507
+        },
+        {
+          "href": "assets/evidence-r6/audit-report.html",
+          "status": 200,
+          "bytes": 11084
+        },
+        {
+          "href": "assets/evidence-r5/audit-report.html",
+          "status": 200,
+          "bytes": 7655
+        },
+        {
+          "href": "assets/evidence-r4/audit-report.html",
+          "status": 200,
+          "bytes": 7758
+        },
+        {
+          "href": "assets/evidence-r3/audit-report.html",
+          "status": 200,
+          "bytes": 15545
+        }
+      ]
+    }
+  ],
+  "logs": []
+}

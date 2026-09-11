@@ -1,0 +1,486 @@
+{
+  "checks": [
+    {
+      "name": "height-focus-contrast-375",
+      "status": "PASS",
+      "result": {
+        "collapsed": {
+          "width": 375,
+          "height": 844,
+          "scrollY": 307,
+          "workspace": {
+            "x": 17,
+            "y": 15.765625,
+            "width": 341,
+            "height": 722.90625,
+            "top": 15.765625,
+            "right": 358,
+            "bottom": 738.671875,
+            "left": 17
+          },
+          "canvas": {
+            "x": 17,
+            "y": 108.765625,
+            "width": 341,
+            "height": 261.625,
+            "top": 108.765625,
+            "right": 358,
+            "bottom": 370.390625,
+            "left": 17
+          },
+          "play": {
+            "x": 31,
+            "y": 443.390625,
+            "width": 96.703125,
+            "height": 40,
+            "top": 443.390625,
+            "right": 127.703125,
+            "bottom": 483.390625,
+            "left": 31
+          },
+          "footer": {
+            "x": 17,
+            "y": 702.671875,
+            "width": 341,
+            "height": 36,
+            "top": 702.671875,
+            "right": 358,
+            "bottom": 738.671875,
+            "left": 17
+          },
+          "sourceOpen": false
+        },
+        "opened": {
+          "width": 375,
+          "height": 844,
+          "scrollY": 307,
+          "workspace": {
+            "x": 17,
+            "y": 15.765625,
+            "width": 341,
+            "height": 1042.90625,
+            "top": 15.765625,
+            "right": 358,
+            "bottom": 1058.671875,
+            "left": 17
+          },
+          "canvas": {
+            "x": 17,
+            "y": 108.765625,
+            "width": 341,
+            "height": 261.625,
+            "top": 108.765625,
+            "right": 358,
+            "bottom": 370.390625,
+            "left": 17
+          },
+          "play": {
+            "x": 31,
+            "y": 443.390625,
+            "width": 96.703125,
+            "height": 40,
+            "top": 443.390625,
+            "right": 127.703125,
+            "bottom": 483.390625,
+            "left": 31
+          },
+          "footer": {
+            "x": 17,
+            "y": 1022.671875,
+            "width": 341,
+            "height": 36,
+            "top": 1022.671875,
+            "right": 358,
+            "bottom": 1058.671875,
+            "left": 17
+          },
+          "sourceOpen": true
+        },
+        "footerReachable": {
+          "x": 17,
+          "y": 453.671875,
+          "width": 341,
+          "height": 36
+        },
+        "nextFocus": "play-expansion",
+        "violations": []
+      }
+    },
+    {
+      "name": "height-focus-contrast-768",
+      "status": "PASS",
+      "result": {
+        "collapsed": {
+          "width": 768,
+          "height": 1000,
+          "scrollY": 334,
+          "workspace": {
+            "x": 24.03125,
+            "y": 16.203125,
+            "width": 719.9375,
+            "height": 806.78125,
+            "top": 16.203125,
+            "right": 743.96875,
+            "bottom": 822.984375,
+            "left": 24.03125
+          },
+          "canvas": {
+            "x": 24.03125,
+            "y": 175.203125,
+            "width": 719.9375,
+            "height": 355,
+            "top": 175.203125,
+            "right": 743.96875,
+            "bottom": 530.203125,
+            "left": 24.03125
+          },
+          "play": {
+            "x": 46.03125,
+            "y": 611.203125,
+            "width": 108.015625,
+            "height": 42,
+            "top": 611.203125,
+            "right": 154.046875,
+            "bottom": 653.203125,
+            "left": 46.03125
+          },
+          "footer": {
+            "x": 24.03125,
+            "y": 786.984375,
+            "width": 719.9375,
+            "height": 36,
+            "top": 786.984375,
+            "right": 743.96875,
+            "bottom": 822.984375,
+            "left": 24.03125
+          },
+          "sourceOpen": false
+        },
+        "opened": {
+          "width": 768,
+          "height": 1000,
+          "scrollY": 334,
+          "workspace": {
+            "x": 24.03125,
+            "y": 16.203125,
+            "width": 719.9375,
+            "height": 1054.875,
+            "top": 16.203125,
+            "right": 743.96875,
+            "bottom": 1071.078125,
+            "left": 24.03125
+          },
+          "canvas": {
+            "x": 24.03125,
+            "y": 175.203125,
+            "width": 719.9375,
+            "height": 355,
+            "top": 175.203125,
+            "right": 743.96875,
+            "bottom": 530.203125,
+            "left": 24.03125
+          },
+          "play": {
+            "x": 46.03125,
+            "y": 611.203125,
+            "width": 108.015625,
+            "height": 42,
+            "top": 611.203125,
+            "right": 154.046875,
+            "bottom": 653.203125,
+            "left": 46.03125
+          },
+          "footer": {
+            "x": 24.03125,
+            "y": 1035.078125,
+            "width": 719.9375,
+            "height": 36,
+            "top": 1035.078125,
+            "right": 743.96875,
+            "bottom": 1071.078125,
+            "left": 24.03125
+          },
+          "sourceOpen": true
+        },
+        "footerReachable": {
+          "x": 24.03125,
+          "y": 532.078125,
+          "width": 719.9375,
+          "height": 36
+        },
+        "nextFocus": "play-expansion",
+        "violations": []
+      }
+    },
+    {
+      "name": "height-focus-contrast-1169",
+      "status": "PASS",
+      "result": {
+        "collapsed": {
+          "width": 1169,
+          "height": 961,
+          "scrollY": 324,
+          "workspace": {
+            "x": 36.0625,
+            "y": 15.609375,
+            "width": 748.875,
+            "height": 798,
+            "top": 15.609375,
+            "right": 784.9375,
+            "bottom": 813.609375,
+            "left": 36.0625
+          },
+          "canvas": {
+            "x": 36.0625,
+            "y": 181.609375,
+            "width": 748.875,
+            "height": 329.21875,
+            "top": 181.609375,
+            "right": 784.9375,
+            "bottom": 510.828125,
+            "left": 36.0625
+          },
+          "play": {
+            "x": 58.0625,
+            "y": 591.828125,
+            "width": 108.015625,
+            "height": 42,
+            "top": 591.828125,
+            "right": 166.078125,
+            "bottom": 633.828125,
+            "left": 58.0625
+          },
+          "footer": {
+            "x": 36.0625,
+            "y": 767.609375,
+            "width": 748.875,
+            "height": 46,
+            "top": 767.609375,
+            "right": 784.9375,
+            "bottom": 813.609375,
+            "left": 36.0625
+          },
+          "sourceOpen": false
+        },
+        "opened": {
+          "width": 1169,
+          "height": 961,
+          "scrollY": 324,
+          "workspace": {
+            "x": 36.0625,
+            "y": 15.609375,
+            "width": 748.875,
+            "height": 978,
+            "top": 15.609375,
+            "right": 784.9375,
+            "bottom": 993.609375,
+            "left": 36.0625
+          },
+          "canvas": {
+            "x": 36.0625,
+            "y": 181.609375,
+            "width": 748.875,
+            "height": 260,
+            "top": 181.609375,
+            "right": 784.9375,
+            "bottom": 441.609375,
+            "left": 36.0625
+          },
+          "play": {
+            "x": 58.0625,
+            "y": 522.609375,
+            "width": 108.015625,
+            "height": 42,
+            "top": 522.609375,
+            "right": 166.078125,
+            "bottom": 564.609375,
+            "left": 58.0625
+          },
+          "footer": {
+            "x": 36.0625,
+            "y": 956.140625,
+            "width": 748.875,
+            "height": 46,
+            "top": 956.140625,
+            "right": 784.9375,
+            "bottom": 1002.140625,
+            "left": 36.0625
+          },
+          "sourceOpen": true
+        },
+        "footerReachable": {
+          "x": 36.0625,
+          "y": 915.140625,
+          "width": 748.875,
+          "height": 46
+        },
+        "nextFocus": "play-expansion",
+        "violations": []
+      }
+    },
+    {
+      "name": "height-focus-contrast-1440",
+      "status": "PASS",
+      "result": {
+        "collapsed": {
+          "width": 1440,
+          "height": 1000,
+          "scrollY": 293,
+          "workspace": {
+            "x": 44.1875,
+            "y": 15.65625,
+            "width": 967.625,
+            "height": 798,
+            "top": 15.65625,
+            "right": 1011.8125,
+            "bottom": 813.65625,
+            "left": 44.1875
+          },
+          "canvas": {
+            "x": 44.1875,
+            "y": 181.65625,
+            "width": 967.625,
+            "height": 347.8125,
+            "top": 181.65625,
+            "right": 1011.8125,
+            "bottom": 529.46875,
+            "left": 44.1875
+          },
+          "play": {
+            "x": 66.1875,
+            "y": 610.46875,
+            "width": 108.015625,
+            "height": 42,
+            "top": 610.46875,
+            "right": 174.203125,
+            "bottom": 652.46875,
+            "left": 66.1875
+          },
+          "footer": {
+            "x": 44.1875,
+            "y": 767.65625,
+            "width": 967.625,
+            "height": 46,
+            "top": 767.65625,
+            "right": 1011.8125,
+            "bottom": 813.65625,
+            "left": 44.1875
+          },
+          "sourceOpen": false
+        },
+        "opened": {
+          "width": 1440,
+          "height": 1000,
+          "scrollY": 293,
+          "workspace": {
+            "x": 44.1875,
+            "y": 15.65625,
+            "width": 967.625,
+            "height": 978,
+            "top": 15.65625,
+            "right": 1011.8125,
+            "bottom": 993.65625,
+            "left": 44.1875
+          },
+          "canvas": {
+            "x": 44.1875,
+            "y": 181.65625,
+            "width": 967.625,
+            "height": 270.0625,
+            "top": 181.65625,
+            "right": 1011.8125,
+            "bottom": 451.71875,
+            "left": 44.1875
+          },
+          "play": {
+            "x": 66.1875,
+            "y": 532.71875,
+            "width": 108.015625,
+            "height": 42,
+            "top": 532.71875,
+            "right": 174.203125,
+            "bottom": 574.71875,
+            "left": 66.1875
+          },
+          "footer": {
+            "x": 44.1875,
+            "y": 947.65625,
+            "width": 967.625,
+            "height": 46,
+            "top": 947.65625,
+            "right": 1011.8125,
+            "bottom": 993.65625,
+            "left": 44.1875
+          },
+          "sourceOpen": true
+        },
+        "footerReachable": {
+          "x": 44.1875,
+          "y": 947.65625,
+          "width": 967.625,
+          "height": 46
+        },
+        "nextFocus": "play-expansion",
+        "violations": []
+      }
+    },
+    {
+      "name": "summary-stops-running-animation",
+      "status": "PASS",
+      "result": {
+        "before": {
+          "p": 0.03665555555555552,
+          "playing": false,
+          "images": [
+            {
+              "loaded": true,
+              "source": "data:image/png;base64,iVBORw0K"
+            },
+            {
+              "loaded": true,
+              "source": "http://127.0.0.1:4174/assets/c"
+            },
+            {
+              "loaded": true,
+              "source": "http://127.0.0.1:4174/assets/c"
+            },
+            {
+              "loaded": true,
+              "source": "http://127.0.0.1:4174/assets/c"
+            },
+            {
+              "loaded": true,
+              "source": "http://127.0.0.1:4174/assets/c"
+            }
+          ]
+        },
+        "after": {
+          "p": 0.03665555555555552,
+          "playing": false
+        }
+      }
+    }
+  ],
+  "logs": [],
+  "sourceHashes": {
+    "app.js": "e98308404967232ed8f278f3d8af8023e95cfdef1aab085300fe39d2bef69bf6",
+    "index.html": "87d43ee51f62ffbdcbb1e420ce65076cb9d07ccd1fe4405b5b76f1aa5299a8dd",
+    "stage.js": "bc528ea9fe5dcefb72c5483ba2fd6b08f329e26b8168154c7770fd3b707a96d6",
+    "studio-r9.css": "9af1f606cb3f6f1411b64a918cc88c87056e0e6caae38658276f3484dc584f92",
+    "technical-sheet.js": "95a454eb93b8a5e3b9ac4a0a95e221f05330527d626d567258a25cfe22e160fa",
+    "technical-data.js": "7d606d86494e1250ea0ff4d571769918a73849a86401e82aa06965f23d6010c6",
+    "specification.js": "f2e87083df655044747d13c5c13e3e1a976204b24a2b53d128d55ce54bc2ce9d",
+    "model.js": "7145f08f00171fdf9137a15292955099f3284620e2f3a76afa96ab2feaf49f4e"
+  },
+  "sourceHashesAtEnd": {
+    "app.js": "e98308404967232ed8f278f3d8af8023e95cfdef1aab085300fe39d2bef69bf6",
+    "index.html": "87d43ee51f62ffbdcbb1e420ce65076cb9d07ccd1fe4405b5b76f1aa5299a8dd",
+    "stage.js": "bc528ea9fe5dcefb72c5483ba2fd6b08f329e26b8168154c7770fd3b707a96d6",
+    "studio-r9.css": "9af1f606cb3f6f1411b64a918cc88c87056e0e6caae38658276f3484dc584f92",
+    "technical-sheet.js": "95a454eb93b8a5e3b9ac4a0a95e221f05330527d626d567258a25cfe22e160fa",
+    "technical-data.js": "7d606d86494e1250ea0ff4d571769918a73849a86401e82aa06965f23d6010c6",
+    "specification.js": "f2e87083df655044747d13c5c13e3e1a976204b24a2b53d128d55ce54bc2ce9d",
+    "model.js": "7145f08f00171fdf9137a15292955099f3284620e2f3a76afa96ab2feaf49f4e"
+  },
+  "sourcesStable": true
+}

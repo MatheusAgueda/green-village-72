@@ -1,0 +1,275 @@
+{
+  "checks": [
+    {
+      "name": "t1-ui-summary-pdf-download",
+      "status": "PASS",
+      "result": {
+        "choiceText": "T11 quarto · 1 casa de banho",
+        "planText": "T1\n1 quarto / 1 WC\n\nUm quarto ao fundo à direita. Sala aberta à esquerda e junto à entrada.\n\nUsar esta planta\n↗",
+        "summary": "T1 · Expandível 72\nReferência GV72-A2D83D76\n\n1 quarto · 1 casa de banho · 11,80 × 6,22 m exteriores\n\nVista guardada no estúdio\nBanho\n≈ 3,6 m²\nQuarto 1\n≈ 12,8 m²\nEspaço comum\n≈ 52,5 m²\n6 220 mm\n11 800 mm\n2 010\n2 200\n2 010\nEntrada / fachada principal\nCotas exteriores confirmadas · áreas aproximadas · cores suavizadas\nPlanta da sua configuração · áreas estimadas\nFachada\nBranco Glacial\nCatálogo 2026 · p. 10\nPavimento SPC\nKX7006\nCatálogo 2026 · p. 14\nParedes interiores\nBranco natural\nCor de visualização · #eeede8\nCozinha · 01\nPenínsula ripada\nCatálogo 2026 · p. 16\nCasa de banho · 01\nPreto e areia\nCatálogo 2026 · p. 17\nEspaço e distribuição\nModelo\nExpandível 72 · 40 pés\nPlanta\nT1\nDimensões exteriores\n11,80 × 6,22 m\nQuartos\n1\nCasas de banho\n1\nAcabamentos e ambientes\nExterior\nBranco Glacial\nParedes interiores\nBranco natural · aparência de referência, cor por confirmar\nPavimento SPC\nKX7006\nCozinha\nLinear\nReferência de cozinha\n01 · Península ripada\nCasa de banho\nDistribuição da planta (aproximada)\nAmbiente de banho\n01 · Preto e areia\nRevestimento do banho\nDa fotografia seleccionada\nCobertura e apresentação\nTelhado adicional\nNão seleccionado\nAlpendre\nNão seleccionado\nTexturas\nRecorte original, sem tratamento de cor\nLuz\nNeutra\nPronto para preparar a proposta.\n\nGuarde o PDF e partilhe as suas escolhas com a Green Village. A proposta deverá confirmar compatibilidade, equipamentos incluídos, transporte, instalação e valor final.\n\ninfo@greenvillagemobilehomes.com ↗\n\nContacto publicado no catálogo, p. 19. O PDF é um resumo de preferências, sem orçamento total.\n\nDesignação comercial: 72 m². A área útil certificada não consta dos anexos. Medidas interiores e detalhes não cotados são estimados. Instalações e mecanismo exacto de expansão aguardam documentação. Valores sob consulta.",
+        "pdf": "r9-final-t1.pdf",
+        "bytes": 957622
+      }
+    },
+    {
+      "name": "technical-links-current-report",
+      "status": "PASS",
+      "result": [
+        {
+          "href": "assets/opcionais-2026.pdf",
+          "status": 200,
+          "bytes": 6075632
+        },
+        {
+          "href": "assets/product-r9/options-catalogue.json",
+          "status": 200,
+          "bytes": 36791
+        },
+        {
+          "href": "assets/opcionais-2026.pdf#page=3",
+          "status": 200,
+          "bytes": 6075632
+        },
+        {
+          "href": "assets/opcionais-2026.pdf#page=4",
+          "status": 200,
+          "bytes": 6075632
+        },
+        {
+          "href": "assets/opcionais-2026.pdf#page=5",
+          "status": 200,
+          "bytes": 6075632
+        },
+        {
+          "href": "assets/opcionais-2026.pdf#page=6",
+          "status": 200,
+          "bytes": 6075632
+        },
+        {
+          "href": "assets/opcionais-2026.pdf#page=7",
+          "status": 200,
+          "bytes": 6075632
+        },
+        {
+          "href": "assets/opcionais-2026.pdf#page=10",
+          "status": 200,
+          "bytes": 6075632
+        },
+        {
+          "href": "assets/opcionais-2026.pdf#page=11",
+          "status": 200,
+          "bytes": 6075632
+        },
+        {
+          "href": "assets/opcionais-2026.pdf#page=12",
+          "status": 200,
+          "bytes": 6075632
+        },
+        {
+          "href": "assets/opcionais-2026.pdf#page=13",
+          "status": 200,
+          "bytes": 6075632
+        },
+        {
+          "href": "assets/opcionais-2026.pdf#page=15",
+          "status": 200,
+          "bytes": 6075632
+        },
+        {
+          "href": "assets/opcionais-2026.pdf#page=17",
+          "status": 200,
+          "bytes": 6075632
+        },
+        {
+          "href": "assets/plantas-40-pes.xlsx",
+          "status": 200,
+          "bytes": 199798
+        },
+        {
+          "href": "assets/opcionais-2026.pdf#page=19",
+          "status": 200,
+          "bytes": 6075632
+        },
+        {
+          "href": "assets/opcionais-2026.pdf#page=14",
+          "status": 200,
+          "bytes": 6075632
+        },
+        {
+          "href": "assets/opcionais-2026.pdf#page=16",
+          "status": 200,
+          "bytes": 6075632
+        },
+        {
+          "href": "assets/reference-videos/v1-spacious.mp4",
+          "status": 200,
+          "bytes": 14919007
+        },
+        {
+          "href": "assets/reference-videos/v2-74m2.mp4",
+          "status": 200,
+          "bytes": 6007251
+        },
+        {
+          "href": "assets/reference-videos/v3-comfortable.mp4",
+          "status": 200,
+          "bytes": 11770834
+        },
+        {
+          "href": "assets/reference-videos/v4-37m2.mp4",
+          "status": 200,
+          "bytes": 6590943
+        },
+        {
+          "href": "assets/expansao.png",
+          "status": 200,
+          "bytes": 300230
+        },
+        {
+          "href": "assets/estrutura.png",
+          "status": 200,
+          "bytes": 671933
+        },
+        {
+          "href": "assets/alpendre.jpg",
+          "status": 200,
+          "bytes": 56841
+        },
+        {
+          "href": "assets/product-r9/technical-inventory.json",
+          "status": 200,
+          "bytes": 244487
+        },
+        {
+          "href": "assets/product-r9/catalogue.json",
+          "status": 200,
+          "bytes": 127638
+        },
+        {
+          "href": "assets/evidence-r9/audit-report.html",
+          "status": 200,
+          "bytes": 6196
+        },
+        {
+          "href": "assets/evidence-r8/audit-report.html",
+          "status": 200,
+          "bytes": 11603
+        },
+        {
+          "href": "assets/evidence-r7/audit-report.html",
+          "status": 200,
+          "bytes": 5507
+        },
+        {
+          "href": "assets/evidence-r6/audit-report.html",
+          "status": 200,
+          "bytes": 11084
+        },
+        {
+          "href": "assets/evidence-r5/audit-report.html",
+          "status": 200,
+          "bytes": 7655
+        },
+        {
+          "href": "assets/evidence-r4/audit-report.html",
+          "status": 200,
+          "bytes": 7758
+        },
+        {
+          "href": "assets/evidence-r3/audit-report.html",
+          "status": 200,
+          "bytes": 15545
+        }
+      ]
+    },
+    {
+      "name": "current-report-render-links-images",
+      "status": "PASS",
+      "result": {
+        "links": [
+          {
+            "href": "geometry.json",
+            "status": 200,
+            "bytes": 74707
+          },
+          {
+            "href": "sources.json",
+            "status": 200,
+            "bytes": 26288
+          },
+          {
+            "href": "source-inventory.json",
+            "status": 200,
+            "bytes": 244487
+          },
+          {
+            "href": "video-baseline.json",
+            "status": 200,
+            "bytes": 11583
+          },
+          {
+            "href": "browser-documentation.json",
+            "status": 200,
+            "bytes": 36127
+          },
+          {
+            "href": "browser-expansion.json",
+            "status": 200,
+            "bytes": 44092
+          },
+          {
+            "href": "browser-final-fixes.json",
+            "status": 200,
+            "bytes": 13398
+          },
+          {
+            "href": "../../../",
+            "status": 200,
+            "bytes": 28389
+          }
+        ],
+        "images": [
+          {
+            "src": "../catalogue/reference/logo-white.png",
+            "width": 1372,
+            "height": 344,
+            "loaded": true
+          }
+        ]
+      }
+    }
+  ],
+  "logs": [
+    {
+      "type": "error",
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    }
+  ],
+  "sourceHashes": {
+    "app.js": "d47021d6cf76e4f68512a279d62038c1d78e391942339297dbc2ff08fbfd97f7",
+    "portfolio.js": "64b75de6a8c4b2d4f35963989823fd5c32dca7f5bbf51dea07a930e4eb8ecb1c",
+    "index.html": "e9b7cde991c0e81b36cb4e14f01732e1279712abc62b8a88ad7d0528f37b794f",
+    "stage.js": "bc528ea9fe5dcefb72c5483ba2fd6b08f329e26b8168154c7770fd3b707a96d6",
+    "studio-r9.css": "9af1f606cb3f6f1411b64a918cc88c87056e0e6caae38658276f3484dc584f92",
+    "technical-sheet.js": "95a454eb93b8a5e3b9ac4a0a95e221f05330527d626d567258a25cfe22e160fa",
+    "technical-data.js": "7d606d86494e1250ea0ff4d571769918a73849a86401e82aa06965f23d6010c6",
+    "specification.js": "f2e87083df655044747d13c5c13e3e1a976204b24a2b53d128d55ce54bc2ce9d",
+    "model.js": "7145f08f00171fdf9137a15292955099f3284620e2f3a76afa96ab2feaf49f4e",
+    "video-library.js": "d847ea0e56293b0a65cd4ca19d851ab7bee20179c3ef55f354484a060eba5c51",
+    "reference-videos.js": "9281a8c664062feb935fcb59b9004f38656b6d894e36dc667d690c93add825d6"
+  },
+  "sourceHashesAtEnd": {
+    "app.js": "d47021d6cf76e4f68512a279d62038c1d78e391942339297dbc2ff08fbfd97f7",
+    "portfolio.js": "64b75de6a8c4b2d4f35963989823fd5c32dca7f5bbf51dea07a930e4eb8ecb1c",
+    "index.html": "e9b7cde991c0e81b36cb4e14f01732e1279712abc62b8a88ad7d0528f37b794f",
+    "stage.js": "bc528ea9fe5dcefb72c5483ba2fd6b08f329e26b8168154c7770fd3b707a96d6",
+    "studio-r9.css": "9af1f606cb3f6f1411b64a918cc88c87056e0e6caae38658276f3484dc584f92",
+    "technical-sheet.js": "95a454eb93b8a5e3b9ac4a0a95e221f05330527d626d567258a25cfe22e160fa",
+    "technical-data.js": "7d606d86494e1250ea0ff4d571769918a73849a86401e82aa06965f23d6010c6",
+    "specification.js": "f2e87083df655044747d13c5c13e3e1a976204b24a2b53d128d55ce54bc2ce9d",
+    "model.js": "7145f08f00171fdf9137a15292955099f3284620e2f3a76afa96ab2feaf49f4e",
+    "video-library.js": "d847ea0e56293b0a65cd4ca19d851ab7bee20179c3ef55f354484a060eba5c51",
+    "reference-videos.js": "9281a8c664062feb935fcb59b9004f38656b6d894e36dc667d690c93add825d6"
+  },
+  "sourcesStable": true
+}

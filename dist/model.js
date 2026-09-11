@@ -4,7 +4,7 @@ import { classifyLayer } from './model-layers.js';
 import { installPanelJoints } from './panel-joints.js';
 import { RoundedBoxGeometry } from './vendor/RoundedBoxGeometry.js';
 import { mergeGeometries } from './vendor/BufferGeometryUtils.js';
-import { DIM, EXPANSION_RIG as RIG, getPlan,doorPose,DOOR_DETAIL, expansionState } from './specification.js';
+import { DIM, EXPANSION_RIG as RIG, WALL_RAISE, getPlan,doorPose,DOOR_DETAIL, expansionState } from './specification.js';
 import { DEFAULT_CONFIG, VISUAL_DEFAULT } from './configuration.js';
 import { createMaterialLibrary, physicalUV } from './material-library.js';
 export { DIM, expansionState } from './specification.js';
@@ -148,12 +148,19 @@ export function makeHouse(options={},library=null){
  function setExploded(v){state.exploded=v;groups.roof.position.y=v*1.2;groups.floorLayers.position.y=-v*.65;for(const a of sideAssemblies)for(const p of [a.pivot,a.framePivot])p.position.x=a.dir*(X-RIG.wallPivotInset+v*.6);groups.cover.position.y=v*1.5;}
  function updateExpansion(value){
   const e=expansionState(value);state.expansion=e.p;
-  // Only the final assembled pose is supported. Source stages live in the reference panel.
+  // Restore exact assembled transforms before every pose, avoiding accumulated drift.
   for(const a of floorAssemblies)for(const p of a.pivots){p.rotation.set(0,0,0);p.position.set(a.dir*C,0,0);}
   for(const a of sideAssemblies){for(const p of [a.pivot,a.framePivot]){p.rotation.set(0,0,0);p.position.set(a.dir*(X-RIG.wallPivotInset+(state.view==='finishes'?state.exploded*.6:0)),RIG.wallPivotHeight,0);}for(const post of a.framePivot.children[0].children)if(Number.isFinite(post.userData.deploymentZ)){post.position.z=post.userData.deploymentZ;post.position.x=post.userData.deploymentX;}}
   for(const a of roofAssemblies)for(const p of a.pivots){p.rotation.set(0,0,0);p.position.set(a.dir*C,H,0);}
   for(const a of endAssemblies){a.pivot.rotation.set(0,0,0);a.pivot.position.set(a.dir*C,0,a.front*Z);}
-  return {...e,referenceOnly:true};
+  if(state.view==='expansion'){
+   // Only the longitudinal wall raising visible in source frames 2–3 is animated.
+   // Windows remain children of their panels. Posts and end panels have no invented path.
+   for(const a of sideAssemblies){const angle=a.dir*e.angle,ax=a.dir*WALL_RAISE.axisX,dx=a.pivot.position.x-ax,dy=a.pivot.position.y-WALL_RAISE.axisY,c=Math.cos(angle),s=Math.sin(angle);a.pivot.position.set(ax+dx*c-dy*s,WALL_RAISE.axisY+dx*s+dy*c,0);a.pivot.rotation.z=angle;}
+   for(const a of roofAssemblies)for(const p of a.pivots)p.position.y+=e.roofLift;
+   for(const a of endAssemblies)a.g.visible=false;
+  }
+  return {...e,referenceOnly:false,scope:'longitudinal-wall-raising',axisStatus:'estimated'};
  }
  function captureBases(){root.updateMatrixWorld(true);for(const a of sideAssemblies)colliders.push({id:'side-'+a.dir,object:a.pivot,kind:'moving-wall'});for(const a of endAssemblies)colliders.push({id:a.g.name,object:a.pivot,kind:'moving-end'});for(const a of floorAssemblies)colliders.push({id:'floor-'+a.dir,object:a.pivots[0],kind:'moving-floor'});for(const a of roofAssemblies)colliders.push({id:'roof-'+a.dir,object:a.pivots[0],kind:'moving-roof'});}
  // Merge only immutable per-group profile pieces with the same material, retaining animated groups.
@@ -162,7 +169,7 @@ export function makeHouse(options={},library=null){
  for(const w of wings.values())for(const key of ['floorFrame','roofFrame','sideFrame','layers'])batch(w[key]);
  batch(groups.structure);batch(groups.supports);batch(groups.floorLayers);batch(groups.interior);batch(groups.plumbing);batch(groups.electrical);for(const g of roofPanels)batch(g);for(const a of sideAssemblies)batch(a.local);for(const a of endAssemblies)batch(a.g);function batchTree(g){for(const child of [...g.children])if(child.isGroup)batchTree(child);batch(g);}for(const g of groups.furniture.children)batchTree(g);
  setView(state.view);captureBases();
- root.userData={revision:'R8',state,plan,groups,bedroomCount:plan.bedrooms,colliders,envelope:{width:DIM.width,length:DIM.length,core:DIM.core,wing:DIM.wing},animationLimits:'Only the completed house is represented. Source diagram stages do not animate an unverified mechanism.'};
+ root.userData={revision:'R9',state,plan,groups,bedroomCount:plan.bedrooms,colliders,envelope:{width:DIM.width,length:DIM.length,core:DIM.core,wing:DIM.wing},animationLimits:'Source frames 2–3: longitudinal walls raise outwards with rigid windows. Axes and 8 mm roof clearance are illustrative. End panels are omitted; transport, locking and full deployment are not documented.'};
  return {root,groups,plan,details,setDetail,detailBounds,materials:M,sideAssemblies,endAssemblies,floorAssemblies,roofAssemblies,doors,colliders,updateExpansion,setView,setCut,setExploded,setDoors,library:lib,dispose};
  }catch(error){dispose();throw error;}
 }

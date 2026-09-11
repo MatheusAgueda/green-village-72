@@ -1,0 +1,537 @@
+{
+  "status": "PASS",
+  "revision": "R9",
+  "method": "Own Three.js frame rendering with exact frozen makeHouse/updateExpansion and createStage, neutral light; 2D canvas overlays of original logo and text; ffmpeg H.264 encoding. No AI image generation or photo animation.",
+  "configuration": {
+    "schemaVersion": 2,
+    "layout": "t2",
+    "exteriorId": "exterior-standard-branco-glacial",
+    "exterior": "#ddddda",
+    "floorId": "floor-spc-kx7006",
+    "floor": "#92846c",
+    "interior": "#eeede8",
+    "interiorName": "Branco natural",
+    "kitchen": "linear",
+    "kitchenRef": "kitchen-01",
+    "bathroom": "standard",
+    "bathroomRef": "bathroom-01",
+    "bathroomUV": null,
+    "roof": false,
+    "porch": false,
+    "lighting": "neutral",
+    "textureMode": "source",
+    "view": "expansion",
+    "expansion": 0,
+    "cut": 1.1,
+    "exploded": 0,
+    "roofVisible": true,
+    "wallsVisible": true,
+    "furnitureVisible": true,
+    "doorsOpen": false
+  },
+  "dimensions": [
+    1920,
+    1080
+  ],
+  "durationSeconds": 14,
+  "fps": 25,
+  "frameCount": 350,
+  "codec": "h264",
+  "pixelFormat": "yuv420p",
+  "audio": false,
+  "faststart": true,
+  "holdSeconds": {
+    "initial": 1,
+    "animation": 11,
+    "final": 2
+  },
+  "sourceHashes": {
+    "material-library.js": "5ca8156a343927e75a3abada6db8443f3d76927c47a29034653aa3ec338e3bcd",
+    "photo-planks.js": "72d1b085f1694244c2f414f63aa130f4fe6d64e005a02d2560763044131c6d45",
+    "client-tools.js": "24524facdf1e98b3ad71711e091304bae3734f098ab89571fbd2f421518d7f85",
+    "photo-wall-data.js": "fdddccc5a95ad206b38a26db55c40a84aa1a18ea3df0a63260f221d7b378c1b4",
+    "reference-videos.js": "9281a8c664062feb935fcb59b9004f38656b6d894e36dc667d690c93add825d6",
+    "video-library.js": "d847ea0e56293b0a65cd4ca19d851ab7bee20179c3ef55f354484a060eba5c51",
+    "photo-plank-data.js": "0c48780479b6849e88bfe56e7d28fdaa1f3feee908784bb83ddfaaf525c74b17",
+    "walkthrough.js": "6b714de4b61227eb9ea540429db4fa617ed66b3974ccde9b200b16f020026484",
+    "configuration.js": "b1fd7d146a01e4d4b8f90ef9b1a45da8645c535de03d17a96fe98471e54ffaef",
+    "technical-data.js": "7d606d86494e1250ea0ff4d571769918a73849a86401e82aa06965f23d6010c6",
+    "interior-detail.js": "c2a1b1a645c5c809314d6a3a146b335339d64c439cc4dedbf8afbc470797dd16",
+    "stage.js": "bc528ea9fe5dcefb72c5483ba2fd6b08f329e26b8168154c7770fd3b707a96d6",
+    "plan-svg.js": "e14dba25221447474d3eafce9b806d68937329b33bd417b79cec5906ba9b994f",
+    "panel-joints.js": "d1a21680e6e51c1462ce0799a3959e3472b20dd4aa33ed9f56b268baca7e38e0",
+    "data.js": "51c44e7592d2cdd773eab4e9a66be1ebf739b408eb4ace55ffdfff397c248f1d",
+    "model-layers.js": "ef8fe6886a978ad7d7f89188652af28091b01e3c6ce454a1e61bfab23f2210c4",
+    "portfolio.js": "c9246584f0ade5912ebd127a1239a0ed646e5669f7020fb14e5a57b5922743aa",
+    "interior-references.js": "41cdd74bdd7d79740372ae090aa38278b62eadfa05261a4952b2295f0ec369ac",
+    "technical-sheet.js": "95a454eb93b8a5e3b9ac4a0a95e221f05330527d626d567258a25cfe22e160fa",
+    "model.js": "7145f08f00171fdf9137a15292955099f3284620e2f3a76afa96ab2feaf49f4e",
+    "material-data.js": "e55563fc9cb5f75514eb545f6e9a4e056847b3579556fd5a614da88bc381f011",
+    "app.js": "2f9f802e910d12e8e9998bff0238544f00174e048b161d92046a12510eca047c",
+    "specification.js": "f2e87083df655044747d13c5c13e3e1a976204b24a2b53d128d55ce54bc2ce9d",
+    "vendor/three.module.js": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a",
+    "vendor/GLTFExporter.js": "e7c29444454eb321b39e4c8b3062944f4fd5299a0e7483e9cb8c0594cdec829f",
+    "vendor/RoomEnvironment.js": "faf5469bea1b9961e4b82d1da6a1671ec16137b6cc5b482a6d75a64a05bdc903",
+    "vendor/RoundedBoxGeometry.js": "c13ec51ca1dfa2a584e6e6898e5f45e754d7b8093314b3db89b726c044259531",
+    "vendor/three.core.js": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20",
+    "vendor/pdf-lib.min.js": "0f9a5cad07941f0826586c94e089d89b918c46e5c17cf2d5a3c6f666e3bc694f",
+    "vendor/BufferGeometryUtils.js": "248b3e8420bd3de805ca01845c1b0cc62aa2766f3c56bdcead265e306f8e715c",
+    "vendor/OrbitControls.js": "b97879c748170baadeb3fb84cea1ffdf4674e283dc06042f34e2acb95a76042c",
+    "assets/catalogue-v2/textures/exterior-standard-branco-glacial.png": "b89733c95e83f06a01642c17ef89b3ba5789b410c7628bc7331a66d302825e8d",
+    "assets/catalogue-v2/textures/floor-spc-kx7006.png": "35623c717ff11f2629f92e94b51ef3f8855460e24a6dd04c94cda6b50ce7d96f",
+    "assets/interior-r5/bathroom-01-wallFinish.png": "f03bfb227003a76d4ce785e9cb3d9441520348910c4df942f3b814db614c4f3b",
+    "assets/catalogue/reference/logo-white.png": "2f6c5c42749297f6389ee502266f30298777d11a0a9a0a57533785b721146d7c"
+  },
+  "scriptHashes": {
+    "capture.mjs": "a68f616b00bb6a53a29b9b8b386385740c216d4e6cc74f0edb3b1263819361d2",
+    "encode.py": "c206660ec28aa3e47548bb1c532a9b6e9617b1e49f177b0bd07f4c6926032162",
+    "scene/film.html": "7ead34de2529da8433f08673dccf774081e5c36fa8db1d99e8f4a9c0dd4a56d7",
+    "finalize-validation.py": "f41308103c6d6c83f420c347bebc470444455e25fc3e3b2260c82e15fc49187a"
+  },
+  "displayOverrides": {
+    "roofOpacity": 0.09,
+    "roofMeshCount": 15,
+    "roofCastShadow": false,
+    "geometryModified": false,
+    "reason": "Show both longitudinal walls/windows; roof remains present as transparent context."
+  },
+  "validation": {
+    "all350PNGsReadable": true,
+    "all350FrameDimensions1080p": true,
+    "all350SceneVarianceNonzero": true,
+    "all350GeometryFramingPassed": true,
+    "all350FramesEndPanelsAndInteriorOmitted": true,
+    "all350MP4FramesDecoded": true,
+    "videoDurationVerified": true,
+    "pageErrors": [],
+    "requestFailures": [],
+    "textureFailures": [],
+    "cleanup": {
+      "browserClosed": true,
+      "temporaryServerClosed": true,
+      "mainServer4174Untouched": true
+    },
+    "sourceComparison": [
+      {
+        "path": "material-library.js",
+        "usedInCapture": true,
+        "frozenSha256": "5ca8156a343927e75a3abada6db8443f3d76927c47a29034653aa3ec338e3bcd",
+        "currentSha256": "5ca8156a343927e75a3abada6db8443f3d76927c47a29034653aa3ec338e3bcd",
+        "matches": true
+      },
+      {
+        "path": "photo-planks.js",
+        "usedInCapture": true,
+        "frozenSha256": "72d1b085f1694244c2f414f63aa130f4fe6d64e005a02d2560763044131c6d45",
+        "currentSha256": "72d1b085f1694244c2f414f63aa130f4fe6d64e005a02d2560763044131c6d45",
+        "matches": true
+      },
+      {
+        "path": "client-tools.js",
+        "usedInCapture": false,
+        "frozenSha256": "24524facdf1e98b3ad71711e091304bae3734f098ab89571fbd2f421518d7f85",
+        "currentSha256": "24524facdf1e98b3ad71711e091304bae3734f098ab89571fbd2f421518d7f85",
+        "matches": true
+      },
+      {
+        "path": "photo-wall-data.js",
+        "usedInCapture": true,
+        "frozenSha256": "fdddccc5a95ad206b38a26db55c40a84aa1a18ea3df0a63260f221d7b378c1b4",
+        "currentSha256": "fdddccc5a95ad206b38a26db55c40a84aa1a18ea3df0a63260f221d7b378c1b4",
+        "matches": true
+      },
+      {
+        "path": "reference-videos.js",
+        "usedInCapture": false,
+        "frozenSha256": "9281a8c664062feb935fcb59b9004f38656b6d894e36dc667d690c93add825d6",
+        "currentSha256": "9281a8c664062feb935fcb59b9004f38656b6d894e36dc667d690c93add825d6",
+        "matches": true
+      },
+      {
+        "path": "video-library.js",
+        "usedInCapture": false,
+        "frozenSha256": "d847ea0e56293b0a65cd4ca19d851ab7bee20179c3ef55f354484a060eba5c51",
+        "currentSha256": "d847ea0e56293b0a65cd4ca19d851ab7bee20179c3ef55f354484a060eba5c51",
+        "matches": true
+      },
+      {
+        "path": "photo-plank-data.js",
+        "usedInCapture": true,
+        "frozenSha256": "0c48780479b6849e88bfe56e7d28fdaa1f3feee908784bb83ddfaaf525c74b17",
+        "currentSha256": "0c48780479b6849e88bfe56e7d28fdaa1f3feee908784bb83ddfaaf525c74b17",
+        "matches": true
+      },
+      {
+        "path": "walkthrough.js",
+        "usedInCapture": false,
+        "frozenSha256": "6b714de4b61227eb9ea540429db4fa617ed66b3974ccde9b200b16f020026484",
+        "currentSha256": "6b714de4b61227eb9ea540429db4fa617ed66b3974ccde9b200b16f020026484",
+        "matches": true
+      },
+      {
+        "path": "configuration.js",
+        "usedInCapture": true,
+        "frozenSha256": "b1fd7d146a01e4d4b8f90ef9b1a45da8645c535de03d17a96fe98471e54ffaef",
+        "currentSha256": "b1fd7d146a01e4d4b8f90ef9b1a45da8645c535de03d17a96fe98471e54ffaef",
+        "matches": true
+      },
+      {
+        "path": "technical-data.js",
+        "usedInCapture": false,
+        "frozenSha256": "7d606d86494e1250ea0ff4d571769918a73849a86401e82aa06965f23d6010c6",
+        "currentSha256": "7d606d86494e1250ea0ff4d571769918a73849a86401e82aa06965f23d6010c6",
+        "matches": true
+      },
+      {
+        "path": "interior-detail.js",
+        "usedInCapture": true,
+        "frozenSha256": "c2a1b1a645c5c809314d6a3a146b335339d64c439cc4dedbf8afbc470797dd16",
+        "currentSha256": "c2a1b1a645c5c809314d6a3a146b335339d64c439cc4dedbf8afbc470797dd16",
+        "matches": true
+      },
+      {
+        "path": "stage.js",
+        "usedInCapture": true,
+        "frozenSha256": "bc528ea9fe5dcefb72c5483ba2fd6b08f329e26b8168154c7770fd3b707a96d6",
+        "currentSha256": "bc528ea9fe5dcefb72c5483ba2fd6b08f329e26b8168154c7770fd3b707a96d6",
+        "matches": true
+      },
+      {
+        "path": "plan-svg.js",
+        "usedInCapture": false,
+        "frozenSha256": "e14dba25221447474d3eafce9b806d68937329b33bd417b79cec5906ba9b994f",
+        "currentSha256": "e14dba25221447474d3eafce9b806d68937329b33bd417b79cec5906ba9b994f",
+        "matches": true
+      },
+      {
+        "path": "panel-joints.js",
+        "usedInCapture": true,
+        "frozenSha256": "d1a21680e6e51c1462ce0799a3959e3472b20dd4aa33ed9f56b268baca7e38e0",
+        "currentSha256": "d1a21680e6e51c1462ce0799a3959e3472b20dd4aa33ed9f56b268baca7e38e0",
+        "matches": true
+      },
+      {
+        "path": "data.js",
+        "usedInCapture": true,
+        "frozenSha256": "51c44e7592d2cdd773eab4e9a66be1ebf739b408eb4ace55ffdfff397c248f1d",
+        "currentSha256": "51c44e7592d2cdd773eab4e9a66be1ebf739b408eb4ace55ffdfff397c248f1d",
+        "matches": true
+      },
+      {
+        "path": "model-layers.js",
+        "usedInCapture": true,
+        "frozenSha256": "ef8fe6886a978ad7d7f89188652af28091b01e3c6ce454a1e61bfab23f2210c4",
+        "currentSha256": "ef8fe6886a978ad7d7f89188652af28091b01e3c6ce454a1e61bfab23f2210c4",
+        "matches": true
+      },
+      {
+        "path": "portfolio.js",
+        "usedInCapture": false,
+        "frozenSha256": "c9246584f0ade5912ebd127a1239a0ed646e5669f7020fb14e5a57b5922743aa",
+        "currentSha256": "64b75de6a8c4b2d4f35963989823fd5c32dca7f5bbf51dea07a930e4eb8ecb1c",
+        "matches": false
+      },
+      {
+        "path": "interior-references.js",
+        "usedInCapture": true,
+        "frozenSha256": "41cdd74bdd7d79740372ae090aa38278b62eadfa05261a4952b2295f0ec369ac",
+        "currentSha256": "41cdd74bdd7d79740372ae090aa38278b62eadfa05261a4952b2295f0ec369ac",
+        "matches": true
+      },
+      {
+        "path": "technical-sheet.js",
+        "usedInCapture": false,
+        "frozenSha256": "95a454eb93b8a5e3b9ac4a0a95e221f05330527d626d567258a25cfe22e160fa",
+        "currentSha256": "95a454eb93b8a5e3b9ac4a0a95e221f05330527d626d567258a25cfe22e160fa",
+        "matches": true
+      },
+      {
+        "path": "model.js",
+        "usedInCapture": true,
+        "frozenSha256": "7145f08f00171fdf9137a15292955099f3284620e2f3a76afa96ab2feaf49f4e",
+        "currentSha256": "7145f08f00171fdf9137a15292955099f3284620e2f3a76afa96ab2feaf49f4e",
+        "matches": true
+      },
+      {
+        "path": "material-data.js",
+        "usedInCapture": true,
+        "frozenSha256": "e55563fc9cb5f75514eb545f6e9a4e056847b3579556fd5a614da88bc381f011",
+        "currentSha256": "e55563fc9cb5f75514eb545f6e9a4e056847b3579556fd5a614da88bc381f011",
+        "matches": true
+      },
+      {
+        "path": "app.js",
+        "usedInCapture": false,
+        "frozenSha256": "2f9f802e910d12e8e9998bff0238544f00174e048b161d92046a12510eca047c",
+        "currentSha256": "d47021d6cf76e4f68512a279d62038c1d78e391942339297dbc2ff08fbfd97f7",
+        "matches": false
+      },
+      {
+        "path": "specification.js",
+        "usedInCapture": true,
+        "frozenSha256": "f2e87083df655044747d13c5c13e3e1a976204b24a2b53d128d55ce54bc2ce9d",
+        "currentSha256": "f2e87083df655044747d13c5c13e3e1a976204b24a2b53d128d55ce54bc2ce9d",
+        "matches": true
+      },
+      {
+        "path": "vendor/three.module.js",
+        "usedInCapture": true,
+        "frozenSha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a",
+        "currentSha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a",
+        "matches": true
+      },
+      {
+        "path": "vendor/GLTFExporter.js",
+        "usedInCapture": false,
+        "frozenSha256": "e7c29444454eb321b39e4c8b3062944f4fd5299a0e7483e9cb8c0594cdec829f",
+        "currentSha256": "e7c29444454eb321b39e4c8b3062944f4fd5299a0e7483e9cb8c0594cdec829f",
+        "matches": true
+      },
+      {
+        "path": "vendor/RoomEnvironment.js",
+        "usedInCapture": true,
+        "frozenSha256": "faf5469bea1b9961e4b82d1da6a1671ec16137b6cc5b482a6d75a64a05bdc903",
+        "currentSha256": "faf5469bea1b9961e4b82d1da6a1671ec16137b6cc5b482a6d75a64a05bdc903",
+        "matches": true
+      },
+      {
+        "path": "vendor/RoundedBoxGeometry.js",
+        "usedInCapture": true,
+        "frozenSha256": "c13ec51ca1dfa2a584e6e6898e5f45e754d7b8093314b3db89b726c044259531",
+        "currentSha256": "c13ec51ca1dfa2a584e6e6898e5f45e754d7b8093314b3db89b726c044259531",
+        "matches": true
+      },
+      {
+        "path": "vendor/three.core.js",
+        "usedInCapture": true,
+        "frozenSha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20",
+        "currentSha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20",
+        "matches": true
+      },
+      {
+        "path": "vendor/pdf-lib.min.js",
+        "usedInCapture": false,
+        "frozenSha256": "0f9a5cad07941f0826586c94e089d89b918c46e5c17cf2d5a3c6f666e3bc694f",
+        "currentSha256": "0f9a5cad07941f0826586c94e089d89b918c46e5c17cf2d5a3c6f666e3bc694f",
+        "matches": true
+      },
+      {
+        "path": "vendor/BufferGeometryUtils.js",
+        "usedInCapture": true,
+        "frozenSha256": "248b3e8420bd3de805ca01845c1b0cc62aa2766f3c56bdcead265e306f8e715c",
+        "currentSha256": "248b3e8420bd3de805ca01845c1b0cc62aa2766f3c56bdcead265e306f8e715c",
+        "matches": true
+      },
+      {
+        "path": "vendor/OrbitControls.js",
+        "usedInCapture": false,
+        "frozenSha256": "b97879c748170baadeb3fb84cea1ffdf4674e283dc06042f34e2acb95a76042c",
+        "currentSha256": "b97879c748170baadeb3fb84cea1ffdf4674e283dc06042f34e2acb95a76042c",
+        "matches": true
+      },
+      {
+        "path": "assets/catalogue-v2/textures/exterior-standard-branco-glacial.png",
+        "usedInCapture": true,
+        "frozenSha256": "b89733c95e83f06a01642c17ef89b3ba5789b410c7628bc7331a66d302825e8d",
+        "currentSha256": "b89733c95e83f06a01642c17ef89b3ba5789b410c7628bc7331a66d302825e8d",
+        "matches": true
+      },
+      {
+        "path": "assets/catalogue-v2/textures/floor-spc-kx7006.png",
+        "usedInCapture": true,
+        "frozenSha256": "35623c717ff11f2629f92e94b51ef3f8855460e24a6dd04c94cda6b50ce7d96f",
+        "currentSha256": "35623c717ff11f2629f92e94b51ef3f8855460e24a6dd04c94cda6b50ce7d96f",
+        "matches": true
+      },
+      {
+        "path": "assets/interior-r5/bathroom-01-wallFinish.png",
+        "usedInCapture": true,
+        "frozenSha256": "f03bfb227003a76d4ce785e9cb3d9441520348910c4df942f3b814db614c4f3b",
+        "currentSha256": "f03bfb227003a76d4ce785e9cb3d9441520348910c4df942f3b814db614c4f3b",
+        "matches": true
+      },
+      {
+        "path": "assets/catalogue/reference/logo-white.png",
+        "usedInCapture": true,
+        "frozenSha256": "2f6c5c42749297f6389ee502266f30298777d11a0a9a0a57533785b721146d7c",
+        "currentSha256": "2f6c5c42749297f6389ee502266f30298777d11a0a9a0a57533785b721146d7c",
+        "matches": true
+      }
+    ],
+    "all19UsedModulesAnd4AssetsMatchCurrentSource": true,
+    "colourChecks": [
+      {
+        "seconds": 0,
+        "patch": "background",
+        "rect": [
+          20,
+          400,
+          80,
+          460
+        ],
+        "sourceMeanRGB": [
+          240.0,
+          244.0,
+          233.0
+        ],
+        "decodedMeanRGB": [
+          238.0,
+          242.0,
+          231.0
+        ],
+        "maximumMeanChannelError": 2.0
+      },
+      {
+        "seconds": 0,
+        "patch": "brandBanner",
+        "rect": [
+          20,
+          1020,
+          50,
+          1060
+        ],
+        "sourceMeanRGB": [
+          23.0,
+          63.0,
+          53.0
+        ],
+        "decodedMeanRGB": [
+          20.0,
+          61.0,
+          52.0
+        ],
+        "maximumMeanChannelError": 3.0
+      },
+      {
+        "seconds": 6,
+        "patch": "background",
+        "rect": [
+          20,
+          400,
+          80,
+          460
+        ],
+        "sourceMeanRGB": [
+          240.0,
+          244.0,
+          233.0
+        ],
+        "decodedMeanRGB": [
+          238.0,
+          242.0,
+          231.0
+        ],
+        "maximumMeanChannelError": 2.0
+      },
+      {
+        "seconds": 6,
+        "patch": "brandBanner",
+        "rect": [
+          20,
+          1020,
+          50,
+          1060
+        ],
+        "sourceMeanRGB": [
+          23.0,
+          63.0,
+          53.0
+        ],
+        "decodedMeanRGB": [
+          20.0,
+          61.0,
+          52.0
+        ],
+        "maximumMeanChannelError": 3.0
+      },
+      {
+        "seconds": 13,
+        "patch": "background",
+        "rect": [
+          20,
+          400,
+          80,
+          460
+        ],
+        "sourceMeanRGB": [
+          240.0,
+          244.0,
+          233.0
+        ],
+        "decodedMeanRGB": [
+          238.0,
+          242.0,
+          231.0
+        ],
+        "maximumMeanChannelError": 2.0
+      },
+      {
+        "seconds": 13,
+        "patch": "brandBanner",
+        "rect": [
+          20,
+          1020,
+          50,
+          1060
+        ],
+        "sourceMeanRGB": [
+          23.0,
+          63.0,
+          53.0
+        ],
+        "decodedMeanRGB": [
+          20.0,
+          61.0,
+          52.0
+        ],
+        "maximumMeanChannelError": 3.0
+      }
+    ],
+    "finalVisualReview": {
+      "method": "Direct visual inspection of all three decoded 1920x1080 PNG frames, after complete MP4 decode.",
+      "seconds": [
+        0,
+        6,
+        13
+      ],
+      "result": "PASS",
+      "observations": [
+        "Original Green Village logo, title and illustrative-axis disclaimer are legible.",
+        "Both longitudinal panels and both sets of attached windows are visible in all three samples.",
+        "Far-side panel is perspective-foreshortened at 6 seconds; its window openings remain readable.",
+        "The house is fully within frame and clear of overlays in all samples.",
+        "Wing end panels and internal partitions/furniture remain omitted; the fixed core-end shell stays assembled.",
+        "Transparent roof display is labelled explicitly. No complete transport or manufacturing sequence is claimed."
+      ]
+    }
+  },
+  "limits": [
+    "Only longitudinal wall raising from reference frames 2–3. Floors and roof are already open; no transport or end-panel mounting is shown.",
+    "The hinge and 8 mm roof clearance are illustrative, not manufacturer or fabrication dimensions.",
+    "Roof opacity is 9% for inspection, labelled on the film; geometry and animated transforms remain unchanged.",
+    "Camera motion and the 14-second duration are presentation choices, not assembly time."
+  ],
+  "outputs": [
+    {
+      "path": "assets/expansion-r9/wall-raising.mp4",
+      "bytes": 2974419,
+      "sha256": "5b1324361d411e9e6dfcf77074463f99d8af843016711790f49615ed749133ee"
+    },
+    {
+      "path": "assets/expansion-r9/poster.png",
+      "bytes": 613486,
+      "sha256": "8a3177cacff5f926c85d240d45ac28c39099532ab930131543df137e9027c241"
+    },
+    {
+      "path": "assets/expansion-r9/contact-sheet.jpg",
+      "bytes": 128427,
+      "sha256": "e7fec7cc2a6d6d12f12ccb1e5d102ddcae93e02e2fb30468d80d1420e3a626ed"
+    }
+  ],
+  "visualReviewSamples": [
+    "previews/decoded-00.png",
+    "previews/decoded-06.png",
+    "previews/decoded-13.png"
+  ],
+  "verifiedAt": "2026-09-11T10:18:22.170096+00:00"
+}

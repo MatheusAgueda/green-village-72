@@ -72,3 +72,13 @@ The new attached brief takes precedence over earlier permission for conceptual t
 - Provide bounded interior navigation with collision checks, keyboard/touch controls and reduced-motion behaviour.
 - Deliver source/value/model dimension comparison, structured catalogue and update instructions. Keep the original inputs unchanged; distinguish reference media from the current model.
 - Verify new flows and affected regressions in the browser at desktop/tablet/mobile widths, exports at native resolution and retained hosted access. Record unresolved source dependencies explicitly.
+
+## R9 — documented expansion motion, complete technical sheet and original videos
+
+The user requests animated expansion again, inside to outside, plus a complete verified technical sheet and all supplied films. The attached brief still prohibits inventing a mechanism. Animate the wall-elevation movement observable between source frames2–3; any additional end-panel movement depends on the requested stowage clarification. Keep unsupported assembly transitions separate from the continuously animated movement and disclose the scope next to its controls.
+
+- Provide play/pause/restart and manual progress for the documented motion, preserving materials, rigid windows/frames, final assembled positions and repeatability. No jump through walls, rescaled panels or silently relocated hinges to fake a compact transport envelope.
+- Deduplicate the porch dimension. Distinguish documented product dimensions, generic catalogue option specifications, estimated model dimensions and missing drawings. Expose all catalogue technical options with original page, units, exact qualifications and applicability status. Do not convert the catalogue/photo terrace discrepancy into a proven variant distinction.
+- Keep the technical sheet current after configuration changes. Make all categories readable on mobile and desktop, including actual plan window/door counts, areas, documented options and original video identities.
+- Preserve original video bytes; verify playback, seeking, pause, switching, failure recovery and download. Preserve ambiguous40ft/74m²/20ft/37m² filenames without declaring equivalence or difference that the evidence does not establish.
+- Verify changed animation geometry, browser flows, 4K and PDF correspondence, source ledger and hosted delivery. Existing source-supported geometry, door directions, 71 material references and client capabilities remain intact.

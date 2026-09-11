@@ -1,0 +1,1428 @@
+{
+  "checks": [
+    {
+      "name": "play-pause-resume-restart-shortcuts",
+      "status": "PASS",
+      "result": {
+        "initial": {
+          "p": 0,
+          "view": "expansion",
+          "playing": false,
+          "slider": "0",
+          "label": "Paredes deitadas",
+          "aria": "false"
+        },
+        "played": {
+          "p": 0.06822222222619585,
+          "view": "expansion",
+          "playing": true,
+          "slider": "0.068",
+          "label": "Elevação de dentro para fora",
+          "aria": "true"
+        },
+        "paused": {
+          "p": 0.07192222222619588,
+          "view": "expansion",
+          "playing": false,
+          "slider": "0.072",
+          "label": "Elevação de dentro para fora",
+          "aria": "false"
+        },
+        "resumed": {
+          "p": 0.10464444444974262,
+          "view": "expansion",
+          "playing": true,
+          "slider": "0.105",
+          "label": "Elevação de dentro para fora",
+          "aria": "true"
+        },
+        "end": {
+          "p": 1,
+          "view": "expansion",
+          "playing": false,
+          "slider": "1",
+          "label": "Paredes erguidas",
+          "aria": "false"
+        },
+        "returned": {
+          "p": 0.42,
+          "view": "expansion",
+          "playing": false,
+          "slider": "0.42",
+          "label": "Elevação de dentro para fora",
+          "aria": "false"
+        }
+      }
+    },
+    {
+      "name": "five-poses-rigid-windows-and-restoration",
+      "status": "PASS",
+      "result": {
+        "records": [
+          {
+            "p": 0,
+            "pivots": [
+              {
+                "dir": -1,
+                "rotation": -1.5707963267948966,
+                "position": [
+                  -2.85,
+                  -0.006000000000000219,
+                  0
+                ],
+                "windows": [
+                  {
+                    "name": "side--1-0 · vidro",
+                    "matrix": [
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      -0.0850000000000001,
+                      1.3350000000000002,
+                      -3.08,
+                      1
+                    ]
+                  },
+                  {
+                    "name": "side--1-0 · vidro",
+                    "matrix": [
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      -0.0850000000000001,
+                      1.3350000000000002,
+                      -2.62,
+                      1
+                    ]
+                  },
+                  {
+                    "name": "side--1-1 · vidro",
+                    "matrix": [
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      -0.0850000000000001,
+                      1.3350000000000002,
+                      2.62,
+                      1
+                    ]
+                  },
+                  {
+                    "name": "side--1-1 · vidro",
+                    "matrix": [
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      -0.0850000000000001,
+                      1.3350000000000002,
+                      3.08,
+                      1
+                    ]
+                  }
+                ]
+              },
+              {
+                "dir": 1,
+                "rotation": 1.5707963267948966,
+                "position": [
+                  2.85,
+                  -0.006000000000000219,
+                  0
+                ],
+                "windows": [
+                  {
+                    "name": "side-1-0 · vidro",
+                    "matrix": [
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0.0850000000000001,
+                      1.3350000000000002,
+                      -3.18,
+                      1
+                    ]
+                  },
+                  {
+                    "name": "side-1-0 · vidro",
+                    "matrix": [
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0.0850000000000001,
+                      1.3350000000000002,
+                      -2.72,
+                      1
+                    ]
+                  },
+                  {
+                    "name": "side-1-1 · vidro",
+                    "matrix": [
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0.0850000000000001,
+                      1.3350000000000002,
+                      2.72,
+                      1
+                    ]
+                  },
+                  {
+                    "name": "side-1-1 · vidro",
+                    "matrix": [
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0.0850000000000001,
+                      1.3350000000000002,
+                      3.18,
+                      1
+                    ]
+                  }
+                ]
+              }
+            ],
+            "endsVisible": false,
+            "furniture": false
+          },
+          {
+            "p": 0.25,
+            "pivots": [
+              {
+                "dir": -1,
+                "rotation": -1.27452129945018,
+                "position": [
+                  -2.854347949745865,
+                  0.035135754749963,
+                  0
+                ],
+                "windows": [
+                  {
+                    "name": "side--1-0 · vidro",
+                    "matrix": [
+                      1.0000000000000002,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1.0000000000000002,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      -0.08499999999999996,
+                      1.3350000000000002,
+                      -3.08,
+                      1
+                    ]
+                  },
+                  {
+                    "name": "side--1-0 · vidro",
+                    "matrix": [
+                      1.0000000000000002,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1.0000000000000002,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      -0.08499999999999996,
+                      1.3350000000000002,
+                      -2.62,
+                      1
+                    ]
+                  },
+                  {
+                    "name": "side--1-1 · vidro",
+                    "matrix": [
+                      1.0000000000000002,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1.0000000000000002,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      -0.08499999999999996,
+                      1.3350000000000002,
+                      2.62,
+                      1
+                    ]
+                  },
+                  {
+                    "name": "side--1-1 · vidro",
+                    "matrix": [
+                      1.0000000000000002,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1.0000000000000002,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      -0.08499999999999996,
+                      1.3350000000000002,
+                      3.08,
+                      1
+                    ]
+                  }
+                ]
+              },
+              {
+                "dir": 1,
+                "rotation": 1.27452129945018,
+                "position": [
+                  2.854347949745865,
+                  0.035135754749963,
+                  0
+                ],
+                "windows": [
+                  {
+                    "name": "side-1-0 · vidro",
+                    "matrix": [
+                      1.0000000000000002,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1.0000000000000002,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0.08499999999999996,
+                      1.3350000000000002,
+                      -3.18,
+                      1
+                    ]
+                  },
+                  {
+                    "name": "side-1-0 · vidro",
+                    "matrix": [
+                      1.0000000000000002,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1.0000000000000002,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0.08499999999999996,
+                      1.3350000000000002,
+                      -2.72,
+                      1
+                    ]
+                  },
+                  {
+                    "name": "side-1-1 · vidro",
+                    "matrix": [
+                      1.0000000000000002,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1.0000000000000002,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0.08499999999999996,
+                      1.3350000000000002,
+                      2.72,
+                      1
+                    ]
+                  },
+                  {
+                    "name": "side-1-1 · vidro",
+                    "matrix": [
+                      1.0000000000000002,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1.0000000000000002,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0.08499999999999996,
+                      1.3350000000000002,
+                      3.18,
+                      1
+                    ]
+                  }
+                ]
+              }
+            ],
+            "endsVisible": false,
+            "furniture": false
+          },
+          {
+            "p": 0.5,
+            "pivots": [
+              {
+                "dir": -1,
+                "rotation": -0.655037151365773,
+                "position": [
+                  -2.899955429420087,
+                  0.10736840926957522,
+                  0
+                ],
+                "windows": [
+                  {
+                    "name": "side--1-0 · vidro",
+                    "matrix": [
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      -0.08500000000000041,
+                      1.3350000000000004,
+                      -3.08,
+                      1
+                    ]
+                  },
+                  {
+                    "name": "side--1-0 · vidro",
+                    "matrix": [
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      -0.08500000000000041,
+                      1.3350000000000004,
+                      -2.62,
+                      1
+                    ]
+                  },
+                  {
+                    "name": "side--1-1 · vidro",
+                    "matrix": [
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      -0.08500000000000041,
+                      1.3350000000000004,
+                      2.62,
+                      1
+                    ]
+                  },
+                  {
+                    "name": "side--1-1 · vidro",
+                    "matrix": [
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      -0.08500000000000041,
+                      1.3350000000000004,
+                      3.08,
+                      1
+                    ]
+                  }
+                ]
+              },
+              {
+                "dir": 1,
+                "rotation": 0.655037151365773,
+                "position": [
+                  2.899955429420087,
+                  0.10736840926957522,
+                  0
+                ],
+                "windows": [
+                  {
+                    "name": "side-1-0 · vidro",
+                    "matrix": [
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0.08500000000000041,
+                      1.3350000000000004,
+                      -3.18,
+                      1
+                    ]
+                  },
+                  {
+                    "name": "side-1-0 · vidro",
+                    "matrix": [
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0.08500000000000041,
+                      1.3350000000000004,
+                      -2.72,
+                      1
+                    ]
+                  },
+                  {
+                    "name": "side-1-1 · vidro",
+                    "matrix": [
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0.08500000000000041,
+                      1.3350000000000004,
+                      2.72,
+                      1
+                    ]
+                  },
+                  {
+                    "name": "side-1-1 · vidro",
+                    "matrix": [
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0.08500000000000041,
+                      1.3350000000000004,
+                      3.18,
+                      1
+                    ]
+                  }
+                ]
+              }
+            ],
+            "endsVisible": false,
+            "furniture": false
+          },
+          {
+            "p": 0.75,
+            "pivots": [
+              {
+                "dir": -1,
+                "rotation": -0.1163552834662888,
+                "position": [
+                  -2.967787561876016,
+                  0.1383568125991206,
+                  0
+                ],
+                "windows": [
+                  {
+                    "name": "side--1-0 · vidro",
+                    "matrix": [
+                      0.9999999999999999,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0.9999999999999999,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      -0.08499999999999952,
+                      1.335,
+                      -3.08,
+                      1
+                    ]
+                  },
+                  {
+                    "name": "side--1-0 · vidro",
+                    "matrix": [
+                      0.9999999999999999,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0.9999999999999999,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      -0.08499999999999952,
+                      1.335,
+                      -2.62,
+                      1
+                    ]
+                  },
+                  {
+                    "name": "side--1-1 · vidro",
+                    "matrix": [
+                      0.9999999999999999,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0.9999999999999999,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      -0.08499999999999952,
+                      1.335,
+                      2.62,
+                      1
+                    ]
+                  },
+                  {
+                    "name": "side--1-1 · vidro",
+                    "matrix": [
+                      0.9999999999999999,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0.9999999999999999,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      -0.08499999999999952,
+                      1.335,
+                      3.08,
+                      1
+                    ]
+                  }
+                ]
+              },
+              {
+                "dir": 1,
+                "rotation": 0.1163552834662888,
+                "position": [
+                  2.967787561876016,
+                  0.1383568125991206,
+                  0
+                ],
+                "windows": [
+                  {
+                    "name": "side-1-0 · vidro",
+                    "matrix": [
+                      0.9999999999999999,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0.9999999999999999,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0.08499999999999952,
+                      1.335,
+                      -3.18,
+                      1
+                    ]
+                  },
+                  {
+                    "name": "side-1-0 · vidro",
+                    "matrix": [
+                      0.9999999999999999,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0.9999999999999999,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0.08499999999999952,
+                      1.335,
+                      -2.72,
+                      1
+                    ]
+                  },
+                  {
+                    "name": "side-1-1 · vidro",
+                    "matrix": [
+                      0.9999999999999999,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0.9999999999999999,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0.08499999999999952,
+                      1.335,
+                      2.72,
+                      1
+                    ]
+                  },
+                  {
+                    "name": "side-1-1 · vidro",
+                    "matrix": [
+                      0.9999999999999999,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0.9999999999999999,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0.08499999999999952,
+                      1.335,
+                      3.18,
+                      1
+                    ]
+                  }
+                ]
+              }
+            ],
+            "endsVisible": false,
+            "furniture": false
+          },
+          {
+            "p": 1,
+            "pivots": [
+              {
+                "dir": -1,
+                "rotation": 0,
+                "position": [
+                  -2.984,
+                  0.14,
+                  0
+                ],
+                "windows": [
+                  {
+                    "name": "side--1-0 · vidro",
+                    "matrix": [
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      -0.08499999999999996,
+                      1.335,
+                      -3.08,
+                      1
+                    ]
+                  },
+                  {
+                    "name": "side--1-0 · vidro",
+                    "matrix": [
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      -0.08499999999999996,
+                      1.335,
+                      -2.62,
+                      1
+                    ]
+                  },
+                  {
+                    "name": "side--1-1 · vidro",
+                    "matrix": [
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      -0.08499999999999996,
+                      1.335,
+                      2.62,
+                      1
+                    ]
+                  },
+                  {
+                    "name": "side--1-1 · vidro",
+                    "matrix": [
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      -0.08499999999999996,
+                      1.335,
+                      3.08,
+                      1
+                    ]
+                  }
+                ]
+              },
+              {
+                "dir": 1,
+                "rotation": 0,
+                "position": [
+                  2.984,
+                  0.14,
+                  0
+                ],
+                "windows": [
+                  {
+                    "name": "side-1-0 · vidro",
+                    "matrix": [
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0.08499999999999996,
+                      1.335,
+                      -3.18,
+                      1
+                    ]
+                  },
+                  {
+                    "name": "side-1-0 · vidro",
+                    "matrix": [
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0.08499999999999996,
+                      1.335,
+                      -2.72,
+                      1
+                    ]
+                  },
+                  {
+                    "name": "side-1-1 · vidro",
+                    "matrix": [
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0.08499999999999996,
+                      1.335,
+                      2.72,
+                      1
+                    ]
+                  },
+                  {
+                    "name": "side-1-1 · vidro",
+                    "matrix": [
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0.08499999999999996,
+                      1.335,
+                      3.18,
+                      1
+                    ]
+                  }
+                ]
+              }
+            ],
+            "endsVisible": false,
+            "furniture": false
+          }
+        ],
+        "maxRigidMatrixDelta": 5.828670879282072e-16,
+        "complete": {
+          "walls": [
+            0,
+            0
+          ],
+          "ends": [
+            true,
+            true,
+            true,
+            true
+          ],
+          "furniture": true
+        }
+      }
+    },
+    {
+      "name": "pose-retained-while-changing-material-layout",
+      "status": "PASS",
+      "result": {
+        "floor": {
+          "p": 0.35,
+          "view": "expansion",
+          "playing": false,
+          "slider": "0.35",
+          "label": "Elevação de dentro para fora",
+          "aria": "false"
+        },
+        "layout": {
+          "p": 0.35,
+          "view": "expansion",
+          "playing": false,
+          "slider": "0.35",
+          "label": "Elevação de dentro para fora",
+          "aria": "false"
+        },
+        "before": {
+          "p": 0.37737777777910236,
+          "view": "expansion",
+          "playing": true,
+          "slider": "0.377",
+          "label": "Elevação de dentro para fora",
+          "aria": "true"
+        },
+        "during": {
+          "p": 0.390344444445769,
+          "view": "expansion",
+          "playing": true,
+          "slider": "0.39",
+          "label": "Elevação de dentro para fora",
+          "aria": "true"
+        }
+      }
+    },
+    {
+      "name": "four-source-frames-and-zoom",
+      "status": "FAIL",
+      "error": "locator.click: Error: strict mode violation: locator('[data-lightbox=\"assets/expansao.png\"]') resolved to 2 elements:\n    1) <button class=\"outline\" data-lightbox=\"assets/expansao.png\" data-label=\"Sequência original de expansão\">Ampliar referência ↗</button> aka getByRole('button', { name: 'Ampliar referência ↗' })\n    2) <button data-lightbox=\"assets/expansao.png\" data-label=\"Quatro etapas de referência\" aria-label=\"Ampliar Quatro etapas de referência\">…</button> aka getByLabel('Ampliar Quatro etapas de')\n\nCall log:\n\u001b[2m  - waiting for locator('[data-lightbox=\"assets/expansao.png\"]')\u001b[22m\n\n    at [evidence]/browser/r9-expansion.mjs:5:604\n    at async check ([evidence]/browser/r9-expansion.mjs:1:1167)\n    at async file://[evidence]/browser/r9-expansion.mjs:5:1"
+    },
+    {
+      "name": "native4K-paused-expansion",
+      "status": "PASS",
+      "result": {
+        "before": {
+          "p": 0.5,
+          "view": "expansion",
+          "playing": false,
+          "slider": "0.5",
+          "label": "Elevação de dentro para fora",
+          "aria": "false"
+        },
+        "after": {
+          "p": 0.5,
+          "view": "expansion",
+          "playing": false,
+          "slider": "0.5",
+          "label": "Elevação de dentro para fora",
+          "aria": "false"
+        },
+        "width": 3840,
+        "height": 2160,
+        "bytes": 657379
+      }
+    },
+    {
+      "name": "expansion-responsive-375",
+      "status": "PASS",
+      "result": {
+        "metrics": {
+          "width": 375,
+          "scroll": 375,
+          "viewport": {
+            "x": 17,
+            "y": 415.765625,
+            "width": 341,
+            "height": 261.625,
+            "top": 415.765625,
+            "right": 358,
+            "bottom": 677.390625,
+            "left": 17
+          },
+          "play": {
+            "x": 31,
+            "y": 750.390625,
+            "width": 96.703125,
+            "height": 40,
+            "top": 750.390625,
+            "right": 127.703125,
+            "bottom": 790.390625,
+            "left": 31
+          },
+          "workspace": {
+            "x": 17,
+            "y": 322.765625,
+            "width": 341,
+            "height": 1042.90625,
+            "top": 322.765625,
+            "right": 358,
+            "bottom": 1365.671875,
+            "left": 17
+          },
+          "height": 844,
+          "scrollY": 0
+        },
+        "playAfterScroll": {
+          "x": 31,
+          "y": 750.390625,
+          "width": 96.703125,
+          "height": 40
+        },
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "nodes": [
+              {
+                "target": [
+                  "button[data-layout=\"t0\"] > span:nth-child(1) > small"
+                ],
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #6d7f69, background color: #ffffff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  "button[data-layout=\"t1\"] > span:nth-child(1) > small"
+                ],
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #6d7f69, background color: #ffffff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  "button[data-layout=\"t2\"] > span:nth-child(1) > small"
+                ],
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #6d7f69, background color: #ffffff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  "button[data-layout=\"t3-a\"] > span:nth-child(1) > small"
+                ],
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.91 (foreground color: #6d7f69, background color: #f2f6e9, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  "button[data-layout=\"t3-b\"] > span:nth-child(1) > small"
+                ],
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #6d7f69, background color: #ffffff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  "button[data-layout=\"t4-a\"] > span:nth-child(1) > small"
+                ],
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #6d7f69, background color: #ffffff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  "button[data-layout=\"t4-b\"] > span:nth-child(1) > small"
+                ],
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #6d7f69, background color: #ffffff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "expansion-responsive-768",
+      "status": "PASS",
+      "result": {
+        "metrics": {
+          "width": 768,
+          "scroll": 768,
+          "viewport": {
+            "x": 24.03125,
+            "y": 509.203125,
+            "width": 719.9375,
+            "height": 355,
+            "top": 509.203125,
+            "right": 743.96875,
+            "bottom": 864.203125,
+            "left": 24.03125
+          },
+          "play": {
+            "x": 46.03125,
+            "y": 945.203125,
+            "width": 108.015625,
+            "height": 42,
+            "top": 945.203125,
+            "right": 154.046875,
+            "bottom": 987.203125,
+            "left": 46.03125
+          },
+          "workspace": {
+            "x": 24.03125,
+            "y": 350.203125,
+            "width": 719.9375,
+            "height": 1054.875,
+            "top": 350.203125,
+            "right": 743.96875,
+            "bottom": 1405.078125,
+            "left": 24.03125
+          },
+          "height": 1000,
+          "scrollY": 0
+        },
+        "playAfterScroll": {
+          "x": 46.03125,
+          "y": 945.203125,
+          "width": 108.015625,
+          "height": 42
+        },
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "nodes": [
+              {
+                "target": [
+                  "button[data-layout=\"t0\"] > span:nth-child(1) > small"
+                ],
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #6d7f69, background color: #ffffff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  "button[data-layout=\"t1\"] > span:nth-child(1) > small"
+                ],
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #6d7f69, background color: #ffffff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  "button[data-layout=\"t2\"] > span:nth-child(1) > small"
+                ],
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #6d7f69, background color: #ffffff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  "button[data-layout=\"t3-a\"] > span:nth-child(1) > small"
+                ],
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.91 (foreground color: #6d7f69, background color: #f2f6e9, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  "button[data-layout=\"t3-b\"] > span:nth-child(1) > small"
+                ],
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #6d7f69, background color: #ffffff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  "button[data-layout=\"t4-a\"] > span:nth-child(1) > small"
+                ],
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #6d7f69, background color: #ffffff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  "button[data-layout=\"t4-b\"] > span:nth-child(1) > small"
+                ],
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #6d7f69, background color: #ffffff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "expansion-responsive-1440",
+      "status": "PASS",
+      "result": {
+        "metrics": {
+          "width": 1440,
+          "scroll": 1440,
+          "viewport": {
+            "x": 44.1875,
+            "y": 474.65625,
+            "width": 967.625,
+            "height": 270.0625,
+            "top": 474.65625,
+            "right": 1011.8125,
+            "bottom": 744.71875,
+            "left": 44.1875
+          },
+          "play": {
+            "x": 66.1875,
+            "y": 825.71875,
+            "width": 108.015625,
+            "height": 42,
+            "top": 825.71875,
+            "right": 174.203125,
+            "bottom": 867.71875,
+            "left": 66.1875
+          },
+          "workspace": {
+            "x": 44.1875,
+            "y": 308.65625,
+            "width": 967.625,
+            "height": 978,
+            "top": 308.65625,
+            "right": 1011.8125,
+            "bottom": 1286.65625,
+            "left": 44.1875
+          },
+          "height": 1000,
+          "scrollY": 0
+        },
+        "playAfterScroll": {
+          "x": 66.1875,
+          "y": 825.71875,
+          "width": 108.015625,
+          "height": 42
+        },
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "nodes": [
+              {
+                "target": [
+                  "button[data-layout=\"t0\"] > span:nth-child(1) > small"
+                ],
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #6d7f69, background color: #ffffff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  "button[data-layout=\"t1\"] > span:nth-child(1) > small"
+                ],
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #6d7f69, background color: #ffffff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  "button[data-layout=\"t2\"] > span:nth-child(1) > small"
+                ],
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #6d7f69, background color: #ffffff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  "button[data-layout=\"t3-a\"] > span:nth-child(1) > small"
+                ],
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.91 (foreground color: #6d7f69, background color: #f2f6e9, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  "button[data-layout=\"t3-b\"] > span:nth-child(1) > small"
+                ],
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #6d7f69, background color: #ffffff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  "button[data-layout=\"t4-a\"] > span:nth-child(1) > small"
+                ],
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #6d7f69, background color: #ffffff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  "button[data-layout=\"t4-b\"] > span:nth-child(1) > small"
+                ],
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #6d7f69, background color: #ffffff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "logs": []
+}

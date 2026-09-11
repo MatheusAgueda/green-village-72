@@ -1,0 +1,168 @@
+{
+  "checks": [
+    {
+      "name": "new-film-native-controls-375",
+      "status": "PASS",
+      "result": {
+        "played": {
+          "time": 0.115224,
+          "duration": 14,
+          "width": 1920,
+          "height": 1080,
+          "srcType": "blob",
+          "error": null
+        },
+        "paused": 0.118211,
+        "nativeSeek": 0.258211,
+        "seek10": {
+          "time": 10,
+          "paused": true,
+          "seekable": [
+            [
+              0,
+              14
+            ]
+          ]
+        },
+        "immediateAfterNativePlay": [
+          "wall-raising-film",
+          "source-v1-spacious"
+        ],
+        "onlyPlaying": [
+          "wall-raising-film"
+        ],
+        "download": {
+          "bytes": 2974419,
+          "sha256": "5b1324361d411e9e6dfcf77074463f99d8af843016711790f49615ed749133ee",
+          "sourceMatch": true
+        },
+        "pausedOnExit": true
+      }
+    },
+    {
+      "name": "new-film-native-controls-1440",
+      "status": "PASS",
+      "result": {
+        "played": {
+          "time": 0.116472,
+          "duration": 14,
+          "width": 1920,
+          "height": 1080,
+          "srcType": "blob",
+          "error": null
+        },
+        "paused": 0.118134,
+        "nativeSeek": 0.258133,
+        "seek10": {
+          "time": 10,
+          "paused": true,
+          "seekable": [
+            [
+              0,
+              14
+            ]
+          ]
+        },
+        "immediateAfterNativePlay": [
+          "wall-raising-film",
+          "source-v1-spacious"
+        ],
+        "onlyPlaying": [
+          "wall-raising-film"
+        ],
+        "download": {
+          "bytes": 2974419,
+          "sha256": "5b1324361d411e9e6dfcf77074463f99d8af843016711790f49615ed749133ee",
+          "sourceMatch": true
+        },
+        "pausedOnExit": true
+      }
+    },
+    {
+      "name": "final-report-favicon-and-links",
+      "status": "PASS",
+      "result": {
+        "icon": "../favicon.svg",
+        "iconStatus": 200,
+        "links": [
+          {
+            "href": "../expansion-r9/wall-raising.mp4",
+            "status": 200
+          },
+          {
+            "href": "../expansion-r9/manifest.json",
+            "status": 200
+          },
+          {
+            "href": "browser-final.json",
+            "status": 200
+          },
+          {
+            "href": "geometry.json",
+            "status": 200
+          },
+          {
+            "href": "sources.json",
+            "status": 200
+          },
+          {
+            "href": "source-inventory.json",
+            "status": 200
+          },
+          {
+            "href": "video-baseline.json",
+            "status": 200
+          },
+          {
+            "href": "browser-documentation.json",
+            "status": 200
+          },
+          {
+            "href": "browser-expansion.json",
+            "status": 200
+          },
+          {
+            "href": "browser-final-fixes.json",
+            "status": 200
+          },
+          {
+            "href": "browser-export.json",
+            "status": 200
+          },
+          {
+            "href": "../../",
+            "status": 200
+          }
+        ],
+        "images": [
+          {
+            "src": "../catalogue/reference/logo-white.png",
+            "loaded": true
+          }
+        ]
+      }
+    }
+  ],
+  "logs": [],
+  "sourceHashes": {
+    "app.js": "d47021d6cf76e4f68512a279d62038c1d78e391942339297dbc2ff08fbfd97f7",
+    "index.html": "b84ba71946b31e654bd46bbd635abb4a532eebe303f4c22052c728c572826ca9",
+    "studio-r9.css": "9af1f606cb3f6f1411b64a918cc88c87056e0e6caae38658276f3484dc584f92",
+    "video-library.js": "d847ea0e56293b0a65cd4ca19d851ab7bee20179c3ef55f354484a060eba5c51",
+    "reference-videos.js": "9281a8c664062feb935fcb59b9004f38656b6d894e36dc667d690c93add825d6",
+    "portfolio.js": "64b75de6a8c4b2d4f35963989823fd5c32dca7f5bbf51dea07a930e4eb8ecb1c",
+    "model.js": "7145f08f00171fdf9137a15292955099f3284620e2f3a76afa96ab2feaf49f4e",
+    "stage.js": "bc528ea9fe5dcefb72c5483ba2fd6b08f329e26b8168154c7770fd3b707a96d6"
+  },
+  "sourceHashesAtEnd": {
+    "app.js": "d47021d6cf76e4f68512a279d62038c1d78e391942339297dbc2ff08fbfd97f7",
+    "index.html": "b84ba71946b31e654bd46bbd635abb4a532eebe303f4c22052c728c572826ca9",
+    "studio-r9.css": "9af1f606cb3f6f1411b64a918cc88c87056e0e6caae38658276f3484dc584f92",
+    "video-library.js": "d847ea0e56293b0a65cd4ca19d851ab7bee20179c3ef55f354484a060eba5c51",
+    "reference-videos.js": "9281a8c664062feb935fcb59b9004f38656b6d894e36dc667d690c93add825d6",
+    "portfolio.js": "64b75de6a8c4b2d4f35963989823fd5c32dca7f5bbf51dea07a930e4eb8ecb1c",
+    "model.js": "7145f08f00171fdf9137a15292955099f3284620e2f3a76afa96ab2feaf49f4e",
+    "stage.js": "bc528ea9fe5dcefb72c5483ba2fd6b08f329e26b8168154c7770fd3b707a96d6"
+  },
+  "sourcesStable": true
+}

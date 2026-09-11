@@ -1,8 +1,10 @@
 import { DATA } from './data.js';
 // Coordinates: metres; +X right, +Y up, +Z entrance. Origin: floor centre.
-export const REVISION='GV72-R8-2026-09-10';
+export const REVISION='GV72-R9-2026-09-11';
+// Illustrative axes and clearance for the documented wall-raising phase only.
+export const WALL_RAISE=Object.freeze({axisX:2.99,axisY:0,roofClearance:.008,wallEnd:.9,durationMs:9000,status:'estimated',source:'assets/expansao.png · quadros 2–3'});
 // Deployment offsets are presentation assumptions, never transport or fabrication dimensions.
-export const EXPANSION_RIG=Object.freeze({status:'estimated',floorLift:.55,floorOffset:.45,wallPivotInset:.126,wallPivotHeight:.14,roofOffset:.8,roofLift:.3,endOffset:.15,endAxialOffset:.30,postClearance:.18,postLateralClearance:.02});
+export const EXPANSION_RIG=Object.freeze({status:'estimated',wallPivotInset:.126,wallPivotHeight:.14});
 export const EPSILON=1e-7; // Numerical tolerance only, not a manufacturing tolerance.
 export const DIM=Object.freeze({width:6.22,length:11.8,core:2.2,wing:2.01,height:2.55,panel:.1,partition:.08,frame:.12,floor:.121,roof:.127,doorWidth:.76,doorHeight:2.05,windowWidth:.92,windowHeight:1.05,windowSill:.95,entryWidth:1.7,entryHeight:2.15,bathWindowWidth:.6,bathWindowHeight:.5,bathWindowSill:1.7,porchDepth:1.95,canopyOverhang:.28,canopyEavesAboveWall:.22,canopyRise:.65});
 const d=(id,label,value,source,status='confirmed',note='')=>({id,label,value,unit:id==='usefulArea'?'m²':'m',source,status,note});
@@ -11,17 +13,18 @@ export const MEASURES=[
  d('windowWidth','Largura cotada das janelas',.92,'XLSX · cota 920; posição/altura não cotadas'),d('height','Altura das paredes e perfis na maquete',2.55,'Hipótese da maquete','estimated','Não indicada nos anexos. Não usar como cota de fabrico.'),
  d('panel','Espessura de parede na maquete',.1,'Hipótese geométrica','estimated','O catálogo refere opção lã de rocha 100 mm; não comprova espessura total da parede desta variante.'),d('partition','Divisória interior',.08,'Hipótese geométrica','estimated'),d('frame','Secção visual dos perfis',.12,'Fotografias e maquete','estimated','Sem desenho de perfil ou ligação.'),d('floor','Camadas de piso, incluindo intervalos',DIM.floor,'Hipótese geométrica','estimated'),d('roof','Camadas e nervuras da cobertura',DIM.roof,'Hipótese geométrica','estimated'),d('doorWidth','Vão interior na maquete',.76,'Hipótese de visualização','estimated'),d('doorHeight','Altura das portas na maquete',2.05,'Hipótese de visualização','estimated'),d('windowHeight','Altura das janelas na maquete',1.05,'Fotografias, sem cota','estimated'),
  d('entryWidthVisual','Largura de entrada na maquete',DIM.entryWidth,'Fotografias sem cotas','estimated'),d('entryHeightVisual','Altura de entrada na maquete',DIM.entryHeight,'Fotografias sem cotas','estimated'),d('bathWindowWidthVisual','Largura de janela do banho na maquete',DIM.bathWindowWidth,'Planta sem cota neste vão','estimated'),d('windowSillVisual','Peitoril de janela na maquete',DIM.windowSill,'Fotografias sem cotas','estimated'),d('porchDepthVisual','Profundidade de alpendre na maquete',DIM.porchDepth,'Hipótese de visualização','estimated'),d('canopyRiseVisual','Desnível da cumeeira na maquete',DIM.canopyRise,'Fotografia sem cota','estimated'),d('canopyOverhangVisual','Beiral na maquete',DIM.canopyOverhang,'Fotografia sem cota','estimated'),
- d('catalogueTerraceDepth','Profundidade do terraço do catálogo',3,'Catálogo p. 13','confirmed','Variante distinta da fotografia do alpendre. Não aplicada ao modelo sem confirmação.'),d('closedWidth','Largura de transporte',null,'Desenho do módulo fechado não fornecido','missing','A banda central de 2,20 m não estabelece a largura exterior de transporte com painéis recolhidos.'),d('usefulArea','Área útil certificada',null,'Mapa de áreas não fornecido','missing'),d('ridge','Altura da cumeeira adicional',null,'Fotografia de cobertura sem cotas','missing'),d('porchDepth','Profundidade de alpendre',null,'Fotografia de cobertura sem cotas','missing'),
+ d('catalogueTerraceDepth','Profundidade do terraço do catálogo',3,'Catálogo p. 13','confirmed','Correspondência com a fotografia do alpendre por confirmar. Não aplicada ao modelo sem confirmação.'),d('closedWidth','Largura de transporte',null,'Desenho do módulo fechado não fornecido','missing','A banda central de 2,20 m não estabelece a largura exterior de transporte com painéis recolhidos.'),d('usefulArea','Área útil certificada',null,'Mapa de áreas não fornecido','missing'),d('ridge','Altura da cumeeira adicional',null,'Fotografia de cobertura sem cotas','missing'),
 ];
 export const SOURCES=[
  {id:'plans',file:'assets/plantas-40-pes.xlsx',label:'Plantas de 40 pés',scope:'7 layouts de unidade de dupla asa; designação 72 m² não impressa.',locations:'7 imagens na folha 40ft Standard Double-Wing Unit',confirmed:['11 800 × 6 220 mm','2010 + 2200 + 2010 mm','T0, T1, T2, T3 A/B e T4 A/B'],limits:'As posições interiores são proporcionais aproximadas; não há cozinha nem altura cotada.'},
- {id:'catalogue',file:'assets/opcionais-2026.pdf',label:'Opcionais de personalização · 11/07/2026',scope:'Catálogo genérico de expansíveis; compatibilidade específica de 72 m² por confirmar.',locations:'p. 7–10 exterior; p. 14 SPC; p. 16 cozinha; p. 17–19 casa de banho',limits:'Amostras raster até 480 × 300 px. Não há RAL/NCS, escala de textura ou preço total da casa.'},
+ {id:'catalogue',file:'assets/opcionais-2026.pdf',label:'Opcionais de personalização · 11/07/2026',scope:'Catálogo genérico de expansíveis; compatibilidade específica de 72 m² por confirmar.',locations:'p. 7–10 exterior; p. 14 SPC; p. 16 cozinha; p. 17–18 casa de banho; p. 19 contacto',limits:'Amostras raster até 480 × 300 px. Não há RAL/NCS, escala de textura ou preço total da casa.'},
  {id:'expansion',file:'assets/expansao.png',label:'Sequência de expansão em quatro imagens',scope:'Referência conceptual sem cotas e sem variante comprovada.',locations:'4 posições',limits:'Não define pivôs exactos, alturas, folgas, bloqueios ou transporte das divisórias.'},
  {id:'frame',file:'assets/estrutura.png',label:'Referência de armação',scope:'Imagem de estrutura, sem desenho de fabrico.',locations:'Imagem completa',limits:'Perfis, fixações e soldaduras não cotados.'},
  {id:'canopy',file:'assets/alpendre.jpg',label:'Fotografia de telhado e alpendre',scope:'Variante fotografada, sem dimensões.',locations:'Imagem completa',limits:'A maquete reproduz forma e apoios com medidas estimadas.'},
 ];
 export const SOURCE_DIVERGENCES=[
- 'O terraço do catálogo (p. 13) tem 3 m e estrutura preta. A fotografia de alpendre mostra guarda branca e não indica profundidade. São referências distintas; o preço do terraço não é atribuído ao alpendre da maquete.',
+ 'As plantas cotam janelas de 920 mm. A janela opcional de 930 × 930 mm (catálogo p. 5) não substitui essa cota; a compatibilidade e eventuais alterações dos vãos estão por confirmar.',
+ 'O terraço do catálogo (p. 13) indica 3 m e estrutura preta; a fotografia do alpendre apresenta guarda branca, sem profundidade cotada. Esta divergência não comprova uma variante diferente: a correspondência está por esclarecer. O preço do catálogo não é atribuído ao alpendre da maquete.',
  '72 m² é a designação comercial. 11,80 × 6,22 = 73,396 m² de rectângulo exterior. A diferença não é corrigida alterando cotas.',
  '5690 + 5690 = 11380 mm: faltam 420 mm para os 11800 mm totais nas plantas T0/T1/T2/T3 A/T4 A. Não foi atribuída silenciosamente uma espessura a esta diferença.',
  '4000 + 3900 + 3900 = 11800 mm nas plantas T3 B/T4 B; a cota 210 nas extremidades não é somada novamente ao comprimento exterior.',
@@ -106,7 +109,8 @@ export function compatibility(state){
 }
 export function expansionState(value){
  const p=Math.min(1,Math.max(0,Number(value)||0)),smooth=(a,b)=>{const t=Math.min(1,Math.max(0,(p-a)/(b-a)));return t*t*(3-2*t);};
- return {p,roof:smooth(.02,.18),roofDock:smooth(.18,.24),floor:smooth(.26,.50),roofLower:smooth(.78,.84),wall:smooth(.60,.78),ends:smooth(.84,.96),postsDock:smooth(.96,1),label:p<.02?'Casa recolhida · simulação':p<.24?'Abertura da cobertura':p<.26?'Cobertura aberta':p<.50?'Descida dos pisos laterais':p<.60?'Pisos abertos':p<.78?'Elevação das paredes':p<.84?'Paredes erguidas · ajuste da cobertura':p<.96?'Fecho dos painéis de topo':p<1?'Encaixe final':'Casa expandida',uncertain:true};
+ const wall=smooth(0,WALL_RAISE.wallEnd);
+ return {p,wall,angle:Math.PI/2*(1-wall),roofLift:WALL_RAISE.roofClearance*(1-smooth(WALL_RAISE.wallEnd,1)),sourcePhase:'2–3',label:p===0?'Paredes deitadas':p<WALL_RAISE.wallEnd?'Elevação de dentro para fora':p<1?'Paredes verticais · assentamento visual':'Paredes erguidas',uncertain:true};
 }
 
 export function unionArea(rectangles){

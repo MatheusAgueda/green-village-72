@@ -1,0 +1,2678 @@
+{
+  "revision": "GV72-R9-2026-09-11",
+  "configuration": {
+    "schemaVersion": 2,
+    "layout": "t2",
+    "exteriorId": "exterior-standard-branco-glacial",
+    "exterior": "#ddddda",
+    "floorId": "floor-spc-kx7006",
+    "floor": "#92846c",
+    "interior": "#eeede8",
+    "interiorName": "Branco natural",
+    "kitchen": "linear",
+    "kitchenRef": "kitchen-01",
+    "bathroom": "standard",
+    "bathroomRef": "bathroom-01",
+    "bathroomUV": null,
+    "roof": false,
+    "porch": false,
+    "lighting": "neutral",
+    "textureMode": "source"
+  },
+  "units": {
+    "dimensions": "m unless specified per record",
+    "areas": "m²",
+    "catalogue": "per specification"
+  },
+  "dimensions": [
+    {
+      "id": "length",
+      "label": "Comprimento exterior",
+      "value": 11.8,
+      "unit": "m",
+      "source": "XLSX · todas as 7 plantas",
+      "status": "confirmed",
+      "note": "",
+      "provided": 11.8,
+      "modelled": 11.8,
+      "numericMatch": true
+    },
+    {
+      "id": "width",
+      "label": "Largura exterior",
+      "value": 6.22,
+      "unit": "m",
+      "source": "XLSX · todas as 7 plantas",
+      "status": "confirmed",
+      "note": "",
+      "provided": 6.22,
+      "modelled": 6.22,
+      "numericMatch": true
+    },
+    {
+      "id": "core",
+      "label": "Banda central",
+      "value": 2.2,
+      "unit": "m",
+      "source": "XLSX · cota superior 2200",
+      "status": "confirmed",
+      "note": "",
+      "provided": 2.2,
+      "modelled": 2.2,
+      "numericMatch": true
+    },
+    {
+      "id": "wing",
+      "label": "Banda lateral (cada)",
+      "value": 2.01,
+      "unit": "m",
+      "source": "XLSX · cotas superiores 2010",
+      "status": "confirmed",
+      "note": "",
+      "provided": 2.01,
+      "modelled": 2.01,
+      "numericMatch": true
+    },
+    {
+      "id": "windowWidth",
+      "label": "Largura cotada das janelas",
+      "value": 0.92,
+      "unit": "m",
+      "source": "XLSX · cota 920; posição/altura não cotadas",
+      "status": "confirmed",
+      "note": "",
+      "provided": 0.92,
+      "modelled": 0.92,
+      "numericMatch": true
+    },
+    {
+      "id": "height",
+      "label": "Altura das paredes e perfis na maquete",
+      "value": 2.55,
+      "unit": "m",
+      "source": "Hipótese da maquete",
+      "status": "estimated",
+      "note": "Não indicada nos anexos. Não usar como cota de fabrico.",
+      "provided": null,
+      "modelled": 2.55,
+      "numericMatch": null
+    },
+    {
+      "id": "panel",
+      "label": "Espessura de parede na maquete",
+      "value": 0.1,
+      "unit": "m",
+      "source": "Hipótese geométrica",
+      "status": "estimated",
+      "note": "O catálogo refere opção lã de rocha 100 mm; não comprova espessura total da parede desta variante.",
+      "provided": null,
+      "modelled": 0.1,
+      "numericMatch": null
+    },
+    {
+      "id": "partition",
+      "label": "Divisória interior",
+      "value": 0.08,
+      "unit": "m",
+      "source": "Hipótese geométrica",
+      "status": "estimated",
+      "note": "",
+      "provided": null,
+      "modelled": 0.08,
+      "numericMatch": null
+    },
+    {
+      "id": "frame",
+      "label": "Secção visual dos perfis",
+      "value": 0.12,
+      "unit": "m",
+      "source": "Fotografias e maquete",
+      "status": "estimated",
+      "note": "Sem desenho de perfil ou ligação.",
+      "provided": null,
+      "modelled": 0.12,
+      "numericMatch": null
+    },
+    {
+      "id": "floor",
+      "label": "Camadas de piso, incluindo intervalos",
+      "value": 0.121,
+      "unit": "m",
+      "source": "Hipótese geométrica",
+      "status": "estimated",
+      "note": "",
+      "provided": null,
+      "modelled": 0.121,
+      "numericMatch": null
+    },
+    {
+      "id": "roof",
+      "label": "Camadas e nervuras da cobertura",
+      "value": 0.127,
+      "unit": "m",
+      "source": "Hipótese geométrica",
+      "status": "estimated",
+      "note": "",
+      "provided": null,
+      "modelled": 0.127,
+      "numericMatch": null
+    },
+    {
+      "id": "doorWidth",
+      "label": "Vão interior na maquete",
+      "value": 0.76,
+      "unit": "m",
+      "source": "Hipótese de visualização",
+      "status": "estimated",
+      "note": "",
+      "provided": null,
+      "modelled": 0.76,
+      "numericMatch": null
+    },
+    {
+      "id": "doorHeight",
+      "label": "Altura das portas na maquete",
+      "value": 2.05,
+      "unit": "m",
+      "source": "Hipótese de visualização",
+      "status": "estimated",
+      "note": "",
+      "provided": null,
+      "modelled": 2.05,
+      "numericMatch": null
+    },
+    {
+      "id": "windowHeight",
+      "label": "Altura das janelas na maquete",
+      "value": 1.05,
+      "unit": "m",
+      "source": "Fotografias, sem cota",
+      "status": "estimated",
+      "note": "",
+      "provided": null,
+      "modelled": 1.05,
+      "numericMatch": null
+    },
+    {
+      "id": "entryWidthVisual",
+      "label": "Largura de entrada na maquete",
+      "value": 1.7,
+      "unit": "m",
+      "source": "Fotografias sem cotas",
+      "status": "estimated",
+      "note": "",
+      "provided": null,
+      "modelled": 1.7,
+      "numericMatch": null
+    },
+    {
+      "id": "entryHeightVisual",
+      "label": "Altura de entrada na maquete",
+      "value": 2.15,
+      "unit": "m",
+      "source": "Fotografias sem cotas",
+      "status": "estimated",
+      "note": "",
+      "provided": null,
+      "modelled": 2.15,
+      "numericMatch": null
+    },
+    {
+      "id": "bathWindowWidthVisual",
+      "label": "Largura de janela do banho na maquete",
+      "value": 0.6,
+      "unit": "m",
+      "source": "Planta sem cota neste vão",
+      "status": "estimated",
+      "note": "",
+      "provided": null,
+      "modelled": 0.6,
+      "numericMatch": null
+    },
+    {
+      "id": "windowSillVisual",
+      "label": "Peitoril de janela na maquete",
+      "value": 0.95,
+      "unit": "m",
+      "source": "Fotografias sem cotas",
+      "status": "estimated",
+      "note": "",
+      "provided": null,
+      "modelled": 0.95,
+      "numericMatch": null
+    },
+    {
+      "id": "porchDepthVisual",
+      "label": "Profundidade de alpendre na maquete",
+      "value": 1.95,
+      "unit": "m",
+      "source": "Hipótese de visualização",
+      "status": "estimated",
+      "note": "",
+      "provided": null,
+      "modelled": 1.95,
+      "numericMatch": null
+    },
+    {
+      "id": "canopyRiseVisual",
+      "label": "Desnível da cumeeira na maquete",
+      "value": 0.65,
+      "unit": "m",
+      "source": "Fotografia sem cota",
+      "status": "estimated",
+      "note": "",
+      "provided": null,
+      "modelled": 0.65,
+      "numericMatch": null
+    },
+    {
+      "id": "canopyOverhangVisual",
+      "label": "Beiral na maquete",
+      "value": 0.28,
+      "unit": "m",
+      "source": "Fotografia sem cota",
+      "status": "estimated",
+      "note": "",
+      "provided": null,
+      "modelled": 0.28,
+      "numericMatch": null
+    },
+    {
+      "id": "catalogueTerraceDepth",
+      "label": "Profundidade do terraço do catálogo",
+      "value": 3,
+      "unit": "m",
+      "source": "Catálogo p. 13",
+      "status": "confirmed",
+      "note": "Correspondência com a fotografia do alpendre por confirmar. Não aplicada ao modelo sem confirmação.",
+      "provided": 3,
+      "modelled": null,
+      "numericMatch": null
+    },
+    {
+      "id": "closedWidth",
+      "label": "Largura de transporte",
+      "value": null,
+      "unit": "m",
+      "source": "Desenho do módulo fechado não fornecido",
+      "status": "missing",
+      "note": "A banda central de 2,20 m não estabelece a largura exterior de transporte com painéis recolhidos.",
+      "provided": null,
+      "modelled": null,
+      "numericMatch": null
+    },
+    {
+      "id": "usefulArea",
+      "label": "Área útil certificada",
+      "value": null,
+      "unit": "m²",
+      "source": "Mapa de áreas não fornecido",
+      "status": "missing",
+      "note": "",
+      "provided": null,
+      "modelled": null,
+      "numericMatch": null
+    },
+    {
+      "id": "ridge",
+      "label": "Altura da cumeeira adicional",
+      "value": null,
+      "unit": "m",
+      "source": "Fotografia de cobertura sem cotas",
+      "status": "missing",
+      "note": "",
+      "provided": null,
+      "modelled": null,
+      "numericMatch": null
+    }
+  ],
+  "areas": {
+    "commercial": 72,
+    "exterior": 73.396,
+    "internalEnvelope": 69.83200000000001,
+    "partitions": 1.2472320000000012,
+    "estimatedNet": 68.58476800000001,
+    "common": 39.33234880000001,
+    "roomTotal": 29.2524192,
+    "status": "estimated",
+    "note": "Áreas calculadas com paredes de 100 mm e divisórias de 80 mm assumidas; não são um mapa de áreas certificado."
+  },
+  "catalogueOptions": [
+    {
+      "id": "door-steel",
+      "section": "Portas",
+      "title": "Porta de segurança em aço preta",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 3
+      },
+      "classification": "documented-option",
+      "catalogueBadge": "STANDARD",
+      "applicability": {
+        "sourceScope": "generic",
+        "gv72Compatibility": "not-confirmed",
+        "standardPackageForGV72": "not-provided"
+      },
+      "specifications": [
+        {
+          "label": "Material",
+          "value": "aço",
+          "unit": null,
+          "status": "documented"
+        },
+        {
+          "label": "Cor",
+          "value": "preta",
+          "unit": null,
+          "status": "documented"
+        },
+        {
+          "label": "Fecho",
+          "value": "fechadura reforçada",
+          "unit": null,
+          "status": "documented"
+        }
+      ],
+      "cataloguePrice": {
+        "value": 450,
+        "currency": "EUR",
+        "vatIncluded": true,
+        "vatRatePercent": 23,
+        "edition": "2026-07-11",
+        "sourcePage": 3,
+        "status": "documented",
+        "quoteRule": "Preço do catálogo genérico; não é orçamento GV72 nem prova compatibilidade, quantidade ou regras de soma."
+      },
+      "limits": "Sem dimensões, classe de resistência, norma de segurança ou confirmação de inclusão na casa; STANDARD é a designação do artigo com preço.",
+      "sourcePage": 3,
+      "sourceFile": "assets/opcionais-2026.pdf",
+      "inclusion": "optional",
+      "inclusionScope": "generic-catalogue",
+      "includedInGV72": null,
+      "sourceExcerpt": "Porta de entrada em aço, cor preta, com fechadura reforçada."
+    },
+    {
+      "id": "door-side-glass",
+      "section": "Portas",
+      "title": "Porta lateral em vidro",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 3
+      },
+      "classification": "documented-option",
+      "catalogueBadge": null,
+      "applicability": {
+        "sourceScope": "generic",
+        "gv72Compatibility": "not-confirmed",
+        "standardPackageForGV72": "not-provided"
+      },
+      "specifications": [
+        {
+          "label": "Material",
+          "value": "vidro",
+          "unit": null,
+          "status": "documented"
+        },
+        {
+          "label": "Folhas",
+          "value": 1,
+          "unit": "folha",
+          "status": "documented"
+        },
+        {
+          "label": "Local indicado",
+          "value": "lado da sala, acesso ao terraço",
+          "unit": null,
+          "status": "documented"
+        },
+        {
+          "label": "Alternativa expressa",
+          "value": "porta em aço no mesmo lado",
+          "unit": null,
+          "status": "documented"
+        }
+      ],
+      "cataloguePrice": {
+        "value": 490,
+        "currency": "EUR",
+        "vatIncluded": true,
+        "vatRatePercent": 23,
+        "edition": "2026-07-11",
+        "sourcePage": 3,
+        "status": "documented",
+        "quoteRule": "Preço do catálogo genérico; não é orçamento GV72 nem prova compatibilidade, quantidade ou regras de soma."
+      },
+      "limits": "Não identifica posição exacta, largura, altura, tipo/espessura do vidro ou planta compatível.",
+      "sourcePage": 3,
+      "sourceFile": "assets/opcionais-2026.pdf",
+      "inclusion": "optional",
+      "inclusionScope": "generic-catalogue",
+      "includedInGV72": null,
+      "sourceExcerpt": "Porta lateral em vidro (folha simples) que dá acesso ao terraço, do lado da sala. Em alternativa, o lado pode levar porta em aço."
+    },
+    {
+      "id": "door-interior",
+      "section": "Portas",
+      "title": "Porta interior",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 3
+      },
+      "classification": "documented-option",
+      "catalogueBadge": null,
+      "applicability": {
+        "sourceScope": "generic",
+        "gv72Compatibility": "not-confirmed",
+        "standardPackageForGV72": "not-provided"
+      },
+      "specifications": [
+        {
+          "label": "Alternativas expressas",
+          "value": [
+            "madeira",
+            "alumínio",
+            "de correr"
+          ],
+          "unit": null,
+          "status": "documented"
+        }
+      ],
+      "cataloguePrice": {
+        "value": 310,
+        "currency": "EUR",
+        "vatIncluded": true,
+        "vatRatePercent": 23,
+        "edition": "2026-07-11",
+        "sourcePage": 3,
+        "status": "documented",
+        "quoteRule": "Preço do catálogo genérico; não é orçamento GV72 nem prova compatibilidade, quantidade ou regras de soma."
+      },
+      "limits": "Material e mecanismo são alternativas sem matriz de compatibilidade nem medidas. Não inferir que todas as portas interiores têm o mesmo acabamento.",
+      "sourcePage": 3,
+      "sourceFile": "assets/opcionais-2026.pdf",
+      "inclusion": "optional",
+      "inclusionScope": "generic-catalogue",
+      "includedInGV72": null,
+      "sourceExcerpt": "Em madeira, alumínio ou de correr — à escolha."
+    },
+    {
+      "id": "front-glass-premium",
+      "section": "Portas",
+      "title": "Frente em vidro",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 4
+      },
+      "classification": "documented-option",
+      "catalogueBadge": "PREMIUM",
+      "applicability": {
+        "sourceScope": "generic",
+        "gv72Compatibility": "not-confirmed",
+        "standardPackageForGV72": "not-provided"
+      },
+      "specifications": [
+        {
+          "label": "Configuração",
+          "value": "frente totalmente envidraçada / curtain wall",
+          "unit": null,
+          "status": "documented"
+        },
+        {
+          "label": "Vidro",
+          "value": "temperado duplo com câmara de ar",
+          "unit": null,
+          "status": "documented"
+        },
+        {
+          "label": "Caixilho",
+          "value": "alumínio com rutura de ponte térmica",
+          "unit": null,
+          "status": "documented"
+        },
+        {
+          "label": "Designação do sistema",
+          "value": "broken bridge 55",
+          "unit": null,
+          "status": "documented"
+        }
+      ],
+      "cataloguePrice": {
+        "value": 1350,
+        "currency": "EUR",
+        "vatIncluded": true,
+        "vatRatePercent": 23,
+        "edition": "2026-07-11",
+        "sourcePage": 4,
+        "status": "documented",
+        "quoteRule": "Preço do catálogo genérico; não é orçamento GV72 nem prova compatibilidade, quantidade ou regras de soma."
+      },
+      "limits": "55 é a designação escrita, não uma cota de 55 mm confirmada. Sem composição do vidro, valor U, classe acústica, perfis, dimensões ou norma.",
+      "sourcePage": 4,
+      "sourceFile": "assets/opcionais-2026.pdf",
+      "inclusion": "optional",
+      "inclusionScope": "generic-catalogue",
+      "includedInGV72": null,
+      "sourceExcerpt": "Frente totalmente envidraçada (curtain wall) em vidro temperado duplo com câmara-de-ar, caixilho em alumínio de rutura de ponte térmica (broken bridge 55). É a configuração premium da frente da casa."
+    },
+    {
+      "id": "door-thermal-glass",
+      "section": "Portas",
+      "title": "Porta em vidro com rutura térmica",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 4
+      },
+      "classification": "documented-option",
+      "catalogueBadge": null,
+      "applicability": {
+        "sourceScope": "generic",
+        "gv72Compatibility": "not-confirmed",
+        "standardPackageForGV72": "not-provided"
+      },
+      "specifications": [
+        {
+          "label": "Rutura térmica",
+          "value": "material isolante entre faces interior e exterior do alumínio",
+          "unit": null,
+          "status": "documented"
+        },
+        {
+          "label": "Benefícios descritos",
+          "value": [
+            "isolamento térmico",
+            "isolamento acústico",
+            "redução de condensação"
+          ],
+          "unit": null,
+          "status": "documented"
+        }
+      ],
+      "cataloguePrice": {
+        "value": 690,
+        "currency": "EUR",
+        "vatIncluded": true,
+        "vatRatePercent": 23,
+        "edition": "2026-07-11",
+        "sourcePage": 4,
+        "status": "documented",
+        "quoteRule": "Preço do catálogo genérico; não é orçamento GV72 nem prova compatibilidade, quantidade ou regras de soma."
+      },
+      "limits": "Alegações descritivas do catálogo, sem desempenho quantificado ou ensaios fornecidos.",
+      "sourcePage": 4,
+      "sourceFile": "assets/opcionais-2026.pdf",
+      "inclusion": "optional",
+      "inclusionScope": "generic-catalogue",
+      "includedInGV72": null,
+      "sourceExcerpt": "Tecnologia que coloca um material isolante entre as partes interna e externa do alumínio — melhora o isolamento térmico e acústico e reduz a condensação."
+    },
+    {
+      "id": "window-930",
+      "section": "Janelas",
+      "title": "Janela de correr em alumínio com corte térmico, 930 × 930 mm",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 5
+      },
+      "classification": "documented-option",
+      "catalogueBadge": null,
+      "applicability": {
+        "sourceScope": "generic",
+        "gv72Compatibility": "not-confirmed",
+        "standardPackageForGV72": "not-provided"
+      },
+      "specifications": [
+        {
+          "label": "Dimensões",
+          "value": [
+            930,
+            930
+          ],
+          "unit": "mm",
+          "status": "documented"
+        },
+        {
+          "label": "Abertura",
+          "value": "de correr",
+          "unit": null,
+          "status": "documented"
+        },
+        {
+          "label": "Caixilho",
+          "value": "alumínio com rutura de ponte térmica",
+          "unit": null,
+          "status": "documented"
+        },
+        {
+          "label": "Vidro",
+          "value": "duplo",
+          "unit": null,
+          "status": "documented"
+        }
+      ],
+      "cataloguePrice": {
+        "value": 140,
+        "currency": "EUR",
+        "vatIncluded": true,
+        "vatRatePercent": 23,
+        "edition": "2026-07-11",
+        "sourcePage": 5,
+        "status": "documented",
+        "quoteRule": "Preço do catálogo genérico; não é orçamento GV72 nem prova compatibilidade, quantidade ou regras de soma."
+      },
+      "limits": "Opção genérica de 930 mm não substitui a cota 920 mm das plantas; alturas das janelas standard continuam desconhecidas.",
+      "sourcePage": 5,
+      "sourceFile": "assets/opcionais-2026.pdf",
+      "inclusion": "optional",
+      "inclusionScope": "generic-catalogue",
+      "includedInGV72": null,
+      "sourceExcerpt": "Janela de correr alumínio corte térmico 930 × 930. Janela em alumínio de rutura de ponte térmica (broken bridge), vidro duplo."
+    },
+    {
+      "id": "window-panoramic",
+      "section": "Janelas",
+      "title": "Janela panorâmica chão–teto, 600 × 1900 mm",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 5
+      },
+      "classification": "documented-option",
+      "catalogueBadge": null,
+      "applicability": {
+        "sourceScope": "generic",
+        "gv72Compatibility": "not-confirmed",
+        "standardPackageForGV72": "not-provided"
+      },
+      "specifications": [
+        {
+          "label": "Dimensões",
+          "value": [
+            600,
+            1900
+          ],
+          "unit": "mm",
+          "status": "documented"
+        },
+        {
+          "label": "Descrição",
+          "value": "panorâmica chão–teto",
+          "unit": null,
+          "status": "documented"
+        }
+      ],
+      "cataloguePrice": {
+        "value": 220,
+        "currency": "EUR",
+        "vatIncluded": true,
+        "vatRatePercent": 23,
+        "edition": "2026-07-11",
+        "sourcePage": 5,
+        "status": "documented",
+        "quoteRule": "Preço do catálogo genérico; não é orçamento GV72 nem prova compatibilidade, quantidade ou regras de soma."
+      },
+      "limits": "Dimensão da opção; não confirma pé-direito da casa nem tipo individual de vidro/abertura além do texto da secção.",
+      "sourcePage": 5,
+      "sourceFile": "assets/opcionais-2026.pdf",
+      "inclusion": "optional",
+      "inclusionScope": "generic-catalogue",
+      "includedInGV72": null,
+      "sourceExcerpt": "Janela panorâmica de chão ao teto, 600 × 1900 mm."
+    },
+    {
+      "id": "window-large",
+      "section": "Janelas",
+      "title": "Janela grande corte térmico",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 5
+      },
+      "classification": "documented-option",
+      "catalogueBadge": null,
+      "applicability": {
+        "sourceScope": "generic",
+        "gv72Compatibility": "not-confirmed",
+        "standardPackageForGV72": "not-provided"
+      },
+      "specifications": [
+        {
+          "label": "Caixilho",
+          "value": "alumínio com corte térmico",
+          "unit": null,
+          "status": "documented"
+        }
+      ],
+      "cataloguePrice": {
+        "value": 650,
+        "currency": "EUR",
+        "vatIncluded": true,
+        "vatRatePercent": 23,
+        "edition": "2026-07-11",
+        "sourcePage": 5,
+        "status": "documented",
+        "quoteRule": "Preço do catálogo genérico; não é orçamento GV72 nem prova compatibilidade, quantidade ou regras de soma."
+      },
+      "limits": "Sem dimensões escritas. Não inferir medidas pelo tamanho da fotografia.",
+      "sourcePage": 5,
+      "sourceFile": "assets/opcionais-2026.pdf",
+      "inclusion": "optional",
+      "inclusionScope": "generic-catalogue",
+      "includedInGV72": null,
+      "sourceExcerpt": "Janela grande em alumínio corte-térmico."
+    },
+    {
+      "id": "window-alloy",
+      "section": "Janelas",
+      "title": "Janela liga alumínio, upgrade simples",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 5
+      },
+      "classification": "documented-option",
+      "catalogueBadge": null,
+      "applicability": {
+        "sourceScope": "generic",
+        "gv72Compatibility": "not-confirmed",
+        "standardPackageForGV72": "not-provided"
+      },
+      "specifications": [
+        {
+          "label": "Caixilho",
+          "value": "liga de alumínio",
+          "unit": null,
+          "status": "documented"
+        },
+        {
+          "label": "Classificação",
+          "value": "upgrade face à janela standard",
+          "unit": null,
+          "status": "documented"
+        }
+      ],
+      "cataloguePrice": {
+        "value": 110,
+        "currency": "EUR",
+        "vatIncluded": true,
+        "vatRatePercent": 23,
+        "edition": "2026-07-11",
+        "sourcePage": 5,
+        "status": "documented",
+        "quoteRule": "Preço do catálogo genérico; não é orçamento GV72 nem prova compatibilidade, quantidade ou regras de soma."
+      },
+      "limits": "Não identifica especificação da janela standard, composição de vidro, dimensões ou rutura térmica.",
+      "sourcePage": 5,
+      "sourceFile": "assets/opcionais-2026.pdf",
+      "inclusion": "optional",
+      "inclusionScope": "generic-catalogue",
+      "includedInGV72": null,
+      "sourceExcerpt": "Janela em liga de alumínio — upgrade simples face à janela standard."
+    },
+    {
+      "id": "window-thermal",
+      "section": "Janelas",
+      "title": "Janela corte térmico",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 6
+      },
+      "classification": "documented-option",
+      "catalogueBadge": null,
+      "applicability": {
+        "sourceScope": "generic",
+        "gv72Compatibility": "not-confirmed",
+        "standardPackageForGV72": "not-provided"
+      },
+      "specifications": [
+        {
+          "label": "Caixilho",
+          "value": "alumínio com rutura de ponte térmica",
+          "unit": null,
+          "status": "documented"
+        },
+        {
+          "label": "Vidro",
+          "value": "duplo",
+          "unit": null,
+          "status": "documented"
+        }
+      ],
+      "cataloguePrice": {
+        "value": 140,
+        "currency": "EUR",
+        "vatIncluded": true,
+        "vatRatePercent": 23,
+        "edition": "2026-07-11",
+        "sourcePage": 6,
+        "status": "documented",
+        "quoteRule": "Preço do catálogo genérico; não é orçamento GV72 nem prova compatibilidade, quantidade ou regras de soma."
+      },
+      "limits": "Entrada separada no catálogo; não fundir com janela 930 × 930 só por preço igual. Não contém dimensões.",
+      "sourcePage": 6,
+      "sourceFile": "assets/opcionais-2026.pdf",
+      "inclusion": "optional",
+      "inclusionScope": "generic-catalogue",
+      "includedInGV72": null,
+      "sourceExcerpt": "Janela em alumínio de rutura de ponte térmica, vidro duplo."
+    },
+    {
+      "id": "window-projecting",
+      "section": "Janelas",
+      "title": "Janela basculante / projectante",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 6
+      },
+      "classification": "documented-option",
+      "catalogueBadge": null,
+      "applicability": {
+        "sourceScope": "generic",
+        "gv72Compatibility": "not-confirmed",
+        "standardPackageForGV72": "not-provided"
+      },
+      "specifications": [
+        {
+          "label": "Movimento descrito",
+          "value": "inclinação para dentro ou para fora em eixo horizontal",
+          "unit": null,
+          "status": "documented"
+        },
+        {
+          "label": "Caixilho",
+          "value": "alumínio",
+          "unit": null,
+          "status": "documented"
+        }
+      ],
+      "cataloguePrice": {
+        "value": 250,
+        "currency": "EUR",
+        "vatIncluded": true,
+        "vatRatePercent": 23,
+        "edition": "2026-07-11",
+        "sourcePage": 6,
+        "status": "documented",
+        "quoteRule": "Preço do catálogo genérico; não é orçamento GV72 nem prova compatibilidade, quantidade ou regras de soma."
+      },
+      "limits": "Texto apresenta alternativas; orientação de abertura específica, ferragens e dimensões não confirmadas.",
+      "sourcePage": 6,
+      "sourceFile": "assets/opcionais-2026.pdf",
+      "inclusion": "optional",
+      "inclusionScope": "generic-catalogue",
+      "includedInGV72": null,
+      "sourceExcerpt": "Abre inclinando para dentro ou para fora, através de um eixo horizontal. Caixilharia em alumínio."
+    },
+    {
+      "id": "window-tilt-turn",
+      "section": "Janelas",
+      "title": "Janela oscilobatente",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 6
+      },
+      "classification": "documented-option",
+      "catalogueBadge": null,
+      "applicability": {
+        "sourceScope": "generic",
+        "gv72Compatibility": "not-confirmed",
+        "standardPackageForGV72": "not-provided"
+      },
+      "specifications": [
+        {
+          "label": "Aberturas",
+          "value": [
+            "batente total",
+            "basculante para ventilação"
+          ],
+          "unit": null,
+          "status": "documented"
+        }
+      ],
+      "cataloguePrice": {
+        "value": 150,
+        "currency": "EUR",
+        "vatIncluded": true,
+        "vatRatePercent": 23,
+        "edition": "2026-07-11",
+        "sourcePage": 6,
+        "status": "documented",
+        "quoteRule": "Preço do catálogo genérico; não é orçamento GV72 nem prova compatibilidade, quantidade ou regras de soma."
+      },
+      "limits": "Sem cota, curso angular, ferragens, composição de vidro ou aplicação por vão.",
+      "sourcePage": 6,
+      "sourceFile": "assets/opcionais-2026.pdf",
+      "inclusion": "optional",
+      "inclusionScope": "generic-catalogue",
+      "includedInGV72": null,
+      "sourceExcerpt": "Dupla abertura num só caixilho: batente (abertura total) e basculante (inclinação para ventilação)."
+    },
+    {
+      "id": "window-mosquito",
+      "section": "Janelas",
+      "title": "Mosquiteiro para janela",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 6
+      },
+      "classification": "documented-option",
+      "catalogueBadge": null,
+      "applicability": {
+        "sourceScope": "generic",
+        "gv72Compatibility": "not-confirmed",
+        "standardPackageForGV72": "not-provided"
+      },
+      "specifications": [
+        {
+          "label": "Equipamento",
+          "value": "mosquiteiro",
+          "unit": null,
+          "status": "documented"
+        }
+      ],
+      "cataloguePrice": {
+        "value": 100,
+        "currency": "EUR",
+        "vatIncluded": true,
+        "vatRatePercent": 23,
+        "edition": "2026-07-11",
+        "sourcePage": 6,
+        "status": "documented",
+        "quoteRule": "Preço do catálogo genérico; não é orçamento GV72 nem prova compatibilidade, quantidade ou regras de soma."
+      },
+      "limits": "Sem dimensões, material, tipo de recolha ou compatibilidade por janela.",
+      "sourcePage": 6,
+      "sourceFile": "assets/opcionais-2026.pdf",
+      "inclusion": "optional",
+      "inclusionScope": "generic-catalogue",
+      "includedInGV72": null,
+      "sourceExcerpt": "Mosquiteiro para janela."
+    },
+    {
+      "id": "wall-3d-metal",
+      "section": "Paredes e isolamento",
+      "title": "Revestimento exterior em painel 3D metálico sandwich",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 7
+      },
+      "classification": "documented-option",
+      "catalogueBadge": "PREMIUM",
+      "applicability": {
+        "sourceScope": "generic",
+        "gv72Compatibility": "not-confirmed",
+        "standardPackageForGV72": "not-provided"
+      },
+      "specifications": [
+        {
+          "label": "Revestimento",
+          "value": "painel 3D metálico esculpido decorativo",
+          "unit": null,
+          "status": "documented"
+        },
+        {
+          "label": "Parede descrita",
+          "value": "liga alumínio-magnésio-manganês",
+          "unit": null,
+          "status": "documented"
+        },
+        {
+          "label": "Estrutura descrita",
+          "value": "aço galvanizado a quente",
+          "unit": null,
+          "status": "documented"
+        },
+        {
+          "label": "Alegação do catálogo",
+          "value": "resistente à corrosão",
+          "unit": null,
+          "status": "documented"
+        }
+      ],
+      "cataloguePrice": {
+        "value": 1950,
+        "currency": "EUR",
+        "vatIncluded": true,
+        "vatRatePercent": 23,
+        "edition": "2026-07-11",
+        "sourcePage": 7,
+        "status": "documented",
+        "quoteRule": "Preço do catálogo genérico; não é orçamento GV72 nem prova compatibilidade, quantidade ou regras de soma."
+      },
+      "limits": "Aplica-se à descrição desta opção. Não confirma toda a composição standard, liga/grau de aço, espessuras, galvanização ou classe de corrosividade.",
+      "sourcePage": 7,
+      "sourceFile": "assets/opcionais-2026.pdf",
+      "inclusion": "optional",
+      "inclusionScope": "generic-catalogue",
+      "includedInGV72": null,
+      "sourceExcerpt": "Revestimento exterior em painel 3D metálico esculpido (decorativo), sobre parede em liga alumínio-magnésio-manganês. Estrutura em aço galvanizado a quente. Acabamento de linha premium, resistente à corrosão."
+    },
+    {
+      "id": "interior-bamboo",
+      "section": "Paredes e isolamento",
+      "title": "Painel interior fibra de bambu",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 10
+      },
+      "classification": "documented-option",
+      "catalogueBadge": "DELUXE",
+      "applicability": {
+        "sourceScope": "generic",
+        "gv72Compatibility": "not-confirmed",
+        "standardPackageForGV72": "not-provided"
+      },
+      "specifications": [
+        {
+          "label": "Material",
+          "value": "placa de fibra de bambu",
+          "unit": null,
+          "status": "documented"
+        },
+        {
+          "label": "Superfícies",
+          "value": [
+            "parede interior",
+            "teto interior"
+          ],
+          "unit": null,
+          "status": "documented"
+        },
+        {
+          "label": "Descrição",
+          "value": "peça única",
+          "unit": null,
+          "status": "documented"
+        }
+      ],
+      "cataloguePrice": {
+        "value": 1950,
+        "currency": "EUR",
+        "vatIncluded": true,
+        "vatRatePercent": 23,
+        "edition": "2026-07-11",
+        "sourcePage": 10,
+        "status": "documented",
+        "quoteRule": "Preço do catálogo genérico; não é orçamento GV72 nem prova compatibilidade, quantidade ou regras de soma."
+      },
+      "limits": "Não indica espessura, dimensões da peça, juntas, resistência nem aplicação exacta na GV72; não é tinta interior.",
+      "sourcePage": 10,
+      "sourceFile": "assets/opcionais-2026.pdf",
+      "inclusion": "optional",
+      "inclusionScope": "generic-catalogue",
+      "includedInGV72": null,
+      "sourceExcerpt": "Parede e teto interiores revestidos a placa de fibra de bambu. É o interior da versão deluxe."
+    },
+    {
+      "id": "insulation-rockwool",
+      "section": "Paredes e isolamento",
+      "title": "Isolamento de parede e teto em lã de rocha, 100 mm",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 10
+      },
+      "classification": "documented-option",
+      "catalogueBadge": null,
+      "applicability": {
+        "sourceScope": "40 FT",
+        "gv72Compatibility": "not-confirmed",
+        "standardPackageForGV72": "not-provided"
+      },
+      "specifications": [
+        {
+          "label": "Material",
+          "value": "lã de rocha",
+          "unit": null,
+          "status": "documented"
+        },
+        {
+          "label": "Espessura do isolamento",
+          "value": 100,
+          "unit": "mm",
+          "status": "documented"
+        },
+        {
+          "label": "Superfícies",
+          "value": [
+            "parede",
+            "teto"
+          ],
+          "unit": null,
+          "status": "documented"
+        },
+        {
+          "label": "Unidade nominal",
+          "value": 40,
+          "unit": "FT",
+          "status": "documented"
+        },
+        {
+          "label": "Comparação descrita",
+          "value": "melhor resistência ao fogo do que EPS",
+          "unit": null,
+          "status": "documented"
+        }
+      ],
+      "cataloguePrice": {
+        "value": 3500,
+        "currency": "EUR",
+        "vatIncluded": true,
+        "vatRatePercent": 23,
+        "edition": "2026-07-11",
+        "sourcePage": 10,
+        "status": "documented",
+        "quoteRule": "Preço do catálogo genérico; não é orçamento GV72 nem prova compatibilidade, quantidade ou regras de soma."
+      },
+      "limits": "100 mm é isolamento, não espessura total de parede. Sem densidade, condutividade, classe de reacção/resistência ao fogo, ensaio ou certificado.",
+      "sourcePage": 10,
+      "sourceFile": "assets/opcionais-2026.pdf",
+      "inclusion": "optional",
+      "inclusionScope": "generic-catalogue",
+      "includedInGV72": null,
+      "sourceExcerpt": "Isolamento em lã de rocha de 100 mm em parede e teto (unidade 40FT). Melhor desempenho de resistência ao fogo do que o EPS."
+    },
+    {
+      "id": "insulation-eps",
+      "section": "Paredes e isolamento",
+      "title": "Isolamento de parede e teto em EPS",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 11
+      },
+      "classification": "documented-option",
+      "catalogueBadge": null,
+      "applicability": {
+        "sourceScope": "40 FT",
+        "gv72Compatibility": "not-confirmed",
+        "standardPackageForGV72": "not-provided"
+      },
+      "specifications": [
+        {
+          "label": "Material",
+          "value": "EPS",
+          "unit": null,
+          "status": "documented"
+        },
+        {
+          "label": "Superfícies",
+          "value": [
+            "parede",
+            "teto"
+          ],
+          "unit": null,
+          "status": "documented"
+        },
+        {
+          "label": "Unidade nominal",
+          "value": 40,
+          "unit": "FT",
+          "status": "documented"
+        }
+      ],
+      "cataloguePrice": {
+        "value": 3000,
+        "currency": "EUR",
+        "vatIncluded": true,
+        "vatRatePercent": 23,
+        "edition": "2026-07-11",
+        "sourcePage": 11,
+        "status": "documented",
+        "quoteRule": "Preço do catálogo genérico; não é orçamento GV72 nem prova compatibilidade, quantidade ou regras de soma."
+      },
+      "limits": "Espessura, densidade e desempenho não fornecidos. Não herdar 100 mm da opção lã de rocha.",
+      "sourcePage": 11,
+      "sourceFile": "assets/opcionais-2026.pdf",
+      "inclusion": "optional",
+      "inclusionScope": "generic-catalogue",
+      "includedInGV72": null,
+      "sourceExcerpt": "Isolamento em EPS em parede e teto (unidade 40FT)."
+    },
+    {
+      "id": "insulation-pu-floor",
+      "section": "Paredes e isolamento",
+      "title": "Isolamento de chão em poliuretano PU projectado",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 11
+      },
+      "classification": "documented-option",
+      "catalogueBadge": null,
+      "applicability": {
+        "sourceScope": "generic",
+        "gv72Compatibility": "not-confirmed",
+        "standardPackageForGV72": "not-provided"
+      },
+      "specifications": [
+        {
+          "label": "Material",
+          "value": "poliuretano PU",
+          "unit": null,
+          "status": "documented"
+        },
+        {
+          "label": "Aplicação",
+          "value": "spray",
+          "unit": null,
+          "status": "documented"
+        },
+        {
+          "label": "Superfície",
+          "value": "chão",
+          "unit": null,
+          "status": "documented"
+        },
+        {
+          "label": "Espessura",
+          "value": 50,
+          "unit": "mm",
+          "status": "documented"
+        }
+      ],
+      "cataloguePrice": {
+        "value": 2640,
+        "currency": "EUR",
+        "vatIncluded": true,
+        "vatRatePercent": 23,
+        "edition": "2026-07-11",
+        "sourcePage": 11,
+        "status": "documented",
+        "quoteRule": "Preço do catálogo genérico; não é orçamento GV72 nem prova compatibilidade, quantidade ou regras de soma."
+      },
+      "limits": "Não indica densidade, condutividade, classe de fogo, camadas complementares ou espessura total do piso.",
+      "sourcePage": 11,
+      "sourceFile": "assets/opcionais-2026.pdf",
+      "inclusion": "optional",
+      "inclusionScope": "generic-catalogue",
+      "includedInGV72": null,
+      "sourceExcerpt": "Isolamento de chão, 50 mm."
+    },
+    {
+      "id": "gable-roof",
+      "section": "Telhado",
+      "title": "Sistema de telhado triangular, casa completa",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 12
+      },
+      "classification": "documented-option",
+      "catalogueBadge": null,
+      "applicability": {
+        "sourceScope": "40 FT",
+        "gv72Compatibility": "not-confirmed",
+        "standardPackageForGV72": "not-provided"
+      },
+      "specifications": [
+        {
+          "label": "Geometria descrita",
+          "value": "duas águas / full gable",
+          "unit": null,
+          "status": "documented"
+        },
+        {
+          "label": "Beirado",
+          "value": "incluído no sistema descrito",
+          "unit": null,
+          "status": "documented"
+        },
+        {
+          "label": "Material de cobertura",
+          "value": "liga alumínio-magnésio-manganês",
+          "unit": null,
+          "status": "documented"
+        },
+        {
+          "label": "Unidade nominal",
+          "value": 40,
+          "unit": "FT",
+          "status": "documented"
+        },
+        {
+          "label": "Descrição funcional",
+          "value": "escoamento de água e integração com o terraço",
+          "unit": null,
+          "status": "documented"
+        }
+      ],
+      "cataloguePrice": {
+        "value": 2830,
+        "currency": "EUR",
+        "vatIncluded": true,
+        "vatRatePercent": 23,
+        "edition": "2026-07-11",
+        "sourcePage": 12,
+        "status": "documented",
+        "quoteRule": "Preço do catálogo genérico; não é orçamento GV72 nem prova compatibilidade, quantidade ou regras de soma."
+      },
+      "limits": "Sem inclinação, altura de cumeeira, comprimento do beirado, camadas, fixações ou cargas. Não identifica a correspondência exacta à fotografia isolada.",
+      "sourcePage": 12,
+      "sourceFile": "assets/opcionais-2026.pdf",
+      "inclusion": "optional",
+      "inclusionScope": "generic-catalogue",
+      "includedInGV72": null,
+      "sourceExcerpt": "Telhado triangular de duas águas (full gable), com beirado; cobertura em liga alumínio-magnésio-manganês. Melhor escoamento de água e integração com o terraço."
+    },
+    {
+      "id": "terrace-canopy",
+      "section": "Terraço",
+      "title": "Terraço com toldo chuva/sol",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 13
+      },
+      "classification": "documented-option",
+      "catalogueBadge": "STANDARD",
+      "applicability": {
+        "sourceScope": "generic",
+        "gv72Compatibility": "not-confirmed",
+        "standardPackageForGV72": "not-provided"
+      },
+      "specifications": [
+        {
+          "label": "Profundidade",
+          "value": 3,
+          "unit": "m",
+          "status": "documented"
+        },
+        {
+          "label": "Estrutura",
+          "value": "aço, frame preto",
+          "unit": null,
+          "status": "documented"
+        },
+        {
+          "label": "Cobertura",
+          "value": "painel sandwich de aço lacado",
+          "unit": null,
+          "status": "documented"
+        },
+        {
+          "label": "Espessura do painel",
+          "value": 50,
+          "unit": "mm",
+          "status": "documented"
+        },
+        {
+          "label": "Fornecimento descrito",
+          "value": "terraço e cobertura em conjunto na versão standard",
+          "unit": null,
+          "status": "documented"
+        }
+      ],
+      "cataloguePrice": {
+        "value": 2050,
+        "currency": "EUR",
+        "vatIncluded": true,
+        "vatRatePercent": 23,
+        "edition": "2026-07-11",
+        "sourcePage": 13,
+        "status": "documented",
+        "quoteRule": "Preço do catálogo genérico; não é orçamento GV72 nem prova compatibilidade, quantidade ou regras de soma."
+      },
+      "limits": "A fotografia na mesma página tem elementos brancos; texto/foto não provam variantes distintas. Sem largura/área/planta correspondente. Profundidade 1,95 m da maquete é estimativa, não a cota 3 m da opção.",
+      "sourcePage": 13,
+      "sourceFile": "assets/opcionais-2026.pdf",
+      "inclusion": "optional",
+      "inclusionScope": "generic-catalogue",
+      "includedInGV72": null,
+      "sourceExcerpt": "Terraço de 3 m de profundidade, estrutura em aço (frame preto) e cobertura em painel sandwich de aço lacado 50 mm (protege da chuva e do sol). Na versão standard, terraço e cobertura vêm em conjunto."
+    },
+    {
+      "id": "kitchen-upper",
+      "section": "Cozinha",
+      "title": "Armário superior",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 15
+      },
+      "classification": "documented-option",
+      "catalogueBadge": null,
+      "applicability": {
+        "sourceScope": "generic",
+        "gv72Compatibility": "not-confirmed",
+        "standardPackageForGV72": "not-provided"
+      },
+      "specifications": [
+        {
+          "label": "Equipamento",
+          "value": "armário superior de cozinha, de parede",
+          "unit": null,
+          "status": "documented"
+        }
+      ],
+      "cataloguePrice": {
+        "value": 700,
+        "currency": "EUR",
+        "vatIncluded": true,
+        "vatRatePercent": 23,
+        "edition": "2026-07-11",
+        "sourcePage": 15,
+        "status": "documented",
+        "quoteRule": "Preço do catálogo genérico; não é orçamento GV72 nem prova compatibilidade, quantidade ou regras de soma."
+      },
+      "limits": "Sem quantidade, dimensões, acabamento ou regra que prove o armário incluído em cada um dos 15 ambientes. Presença em fotografia não prova inclusão no preço da casa.",
+      "sourcePage": 15,
+      "sourceFile": "assets/opcionais-2026.pdf",
+      "inclusion": "optional",
+      "inclusionScope": "generic-catalogue",
+      "includedInGV72": null,
+      "sourceExcerpt": "Armário de cozinha superior (de parede)."
+    },
+    {
+      "id": "bathroom-dry-wet",
+      "section": "Casa de banho",
+      "title": "Casa de banho com separação seco/molhado — 3 m no catálogo",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 17
+      },
+      "classification": "documented-option",
+      "catalogueBadge": null,
+      "applicability": {
+        "sourceScope": "generic",
+        "gv72Compatibility": "not-confirmed",
+        "standardPackageForGV72": "not-provided"
+      },
+      "specifications": [
+        {
+          "label": "Valor literal indicado",
+          "value": 3,
+          "unit": "m",
+          "status": "ambiguous",
+          "interpretation": "Axis/meaning not identified in source; do not convert to m²."
+        },
+        {
+          "label": "Zonas",
+          "value": [
+            "seca",
+            "duche isolado"
+          ],
+          "unit": null,
+          "status": "documented"
+        },
+        {
+          "label": "Separação",
+          "value": "porta de correr de vidro",
+          "unit": null,
+          "status": "documented"
+        }
+      ],
+      "cataloguePrice": {
+        "value": null,
+        "currency": "EUR",
+        "vatIncluded": true,
+        "vatRatePercent": 23,
+        "edition": "2026-07-11",
+        "sourcePage": 17,
+        "status": "not-stated",
+        "quoteRule": "Preço do catálogo genérico; não é orçamento GV72 nem prova compatibilidade, quantidade ou regras de soma."
+      },
+      "limits": "O texto não identifica a que eixo/elemento se referem os 3 m; não interpretar como 3 m² nem atribuir à profundidade de todas as casas de banho. Sem preço, cota de porta ou correspondência por fotografia.",
+      "sourcePage": 17,
+      "sourceFile": "assets/opcionais-2026.pdf",
+      "inclusion": "optional",
+      "inclusionScope": "generic-catalogue",
+      "includedInGV72": null,
+      "sourceExcerpt": "Casa de banho com separação seco/molhado (3 m): zona de duche isolada da zona seca por porta de correr de vidro."
+    }
+  ],
+  "technicalFacts": [
+    {
+      "id": "exterior-length",
+      "category": "Dimensões documentadas",
+      "label": "Comprimento exterior",
+      "value": 11800,
+      "unit": "mm",
+      "source": {
+        "file": "assets/plantas-40-pes.xlsx",
+        "sheet": "40ft Standard Double-Wing Unit",
+        "media": "xl/media/image1.png … image7.png"
+      },
+      "status": "documented",
+      "applicability": "all-seven-xlsx-layouts",
+      "note": "Cota impressa. Não constitui tolerância de fabrico nem medição de uma unidade construída."
+    },
+    {
+      "id": "exterior-width",
+      "category": "Dimensões documentadas",
+      "label": "Largura exterior",
+      "value": 6220,
+      "unit": "mm",
+      "source": {
+        "file": "assets/plantas-40-pes.xlsx",
+        "sheet": "40ft Standard Double-Wing Unit",
+        "media": "xl/media/image1.png … image7.png"
+      },
+      "status": "documented",
+      "applicability": "all-seven-xlsx-layouts",
+      "note": "Cota impressa. Não constitui tolerância de fabrico nem medição de uma unidade construída."
+    },
+    {
+      "id": "core-width",
+      "category": "Dimensões documentadas",
+      "label": "Banda central cotada",
+      "value": 2200,
+      "unit": "mm",
+      "source": {
+        "file": "assets/plantas-40-pes.xlsx",
+        "sheet": "40ft Standard Double-Wing Unit",
+        "media": "xl/media/image1.png … image7.png"
+      },
+      "status": "documented",
+      "applicability": "all-seven-xlsx-layouts",
+      "note": "Cota impressa. Não constitui tolerância de fabrico nem medição de uma unidade construída."
+    },
+    {
+      "id": "wing-width",
+      "category": "Dimensões documentadas",
+      "label": "Banda lateral cotada, cada",
+      "value": 2010,
+      "unit": "mm",
+      "source": {
+        "file": "assets/plantas-40-pes.xlsx",
+        "sheet": "40ft Standard Double-Wing Unit",
+        "media": "xl/media/image1.png … image7.png"
+      },
+      "status": "documented",
+      "applicability": "all-seven-xlsx-layouts",
+      "note": "Cota impressa. Não constitui tolerância de fabrico nem medição de uma unidade construída."
+    },
+    {
+      "id": "common-window-width",
+      "category": "Dimensões documentadas",
+      "label": "Largura cotada das janelas comuns",
+      "value": 920,
+      "unit": "mm",
+      "source": {
+        "file": "assets/plantas-40-pes.xlsx",
+        "sheet": "40ft Standard Double-Wing Unit",
+        "media": "xl/media/image1.png … image7.png"
+      },
+      "status": "documented",
+      "applicability": "all-seven-xlsx-layouts",
+      "note": "Cota impressa. Não constitui tolerância de fabrico nem medição de uma unidade construída."
+    },
+    {
+      "id": "nominal-unit",
+      "category": "Identificação",
+      "label": "Designação da folha",
+      "value": "40ft Standard Double-Wing Unit",
+      "unit": null,
+      "source": {
+        "file": "assets/plantas-40-pes.xlsx",
+        "sheet": "40ft Standard Double-Wing Unit",
+        "media": "xl/media/image1.png … image7.png"
+      },
+      "status": "documented",
+      "applicability": "all-seven-xlsx-layouts",
+      "note": "A indicação de 40 pés é a identificação nominal da folha; não substituir a cota explícita de 11 800 mm por uma conversão desse comprimento nominal."
+    },
+    {
+      "id": "width-chain",
+      "category": "Dimensões documentadas",
+      "label": "Cadeia transversal",
+      "value": [
+        2010,
+        2200,
+        2010
+      ],
+      "unit": "mm",
+      "source": {
+        "file": "assets/plantas-40-pes.xlsx",
+        "sheet": "40ft Standard Double-Wing Unit",
+        "media": "xl/media/image1.png … image7.png"
+      },
+      "status": "documented",
+      "applicability": "all-seven-xlsx-layouts",
+      "note": "Soma 6220 mm. Não confirma larguras úteis de quartos nem largura de transporte."
+    },
+    {
+      "id": "two-bay-chain",
+      "category": "Dimensões documentadas",
+      "label": "Cadeia longitudinal em duas parcelas",
+      "value": [
+        5690,
+        5690
+      ],
+      "unit": "mm",
+      "source": {
+        "file": "assets/plantas-40-pes.xlsx",
+        "sheet": "40ft Standard Double-Wing Unit",
+        "media": [
+          "xl/media/image1.png",
+          "xl/media/image2.png",
+          "xl/media/image3.png",
+          "xl/media/image4.png",
+          "xl/media/image6.png"
+        ]
+      },
+      "status": "documented",
+      "applicability": "t0,t1,t2,t3-a,t4-a",
+      "note": "Soma parcial 11380 mm; diferença de 420 mm para a cota total. Não distribuir por espessuras/folgas sem detalhe cotado."
+    },
+    {
+      "id": "three-bay-chain",
+      "category": "Dimensões documentadas",
+      "label": "Cadeia longitudinal em três parcelas",
+      "value": [
+        4000,
+        3900,
+        3900
+      ],
+      "unit": "mm",
+      "source": {
+        "file": "assets/plantas-40-pes.xlsx",
+        "sheet": "40ft Standard Double-Wing Unit",
+        "media": [
+          "xl/media/image5.png",
+          "xl/media/image7.png"
+        ]
+      },
+      "status": "documented",
+      "applicability": "t3-b,t4-b",
+      "note": "Soma 11800 mm. Não são cotas úteis de cada quarto."
+    },
+    {
+      "id": "three-bay-end-mark",
+      "category": "Dimensões documentadas",
+      "label": "Marca nas extremidades das plantas de três parcelas",
+      "value": 210,
+      "unit": "mm",
+      "source": {
+        "file": "assets/plantas-40-pes.xlsx",
+        "sheet": "40ft Standard Double-Wing Unit",
+        "media": [
+          "xl/media/image5.png",
+          "xl/media/image7.png"
+        ]
+      },
+      "status": "documented",
+      "applicability": "t3-b,t4-b",
+      "note": "Interpretar no desenho original; não somar novamente 210 + 210 à cadeia que já perfaz 11800 mm."
+    },
+    {
+      "id": "commercial-area",
+      "category": "Áreas",
+      "label": "Designação comercial",
+      "value": 72,
+      "unit": "m²",
+      "source": {
+        "file": null,
+        "instruction": "Designação comercial do projecto fornecida pelo utilizador"
+      },
+      "status": "commercial-designation",
+      "applicability": "gv72-presentation",
+      "note": "Não impressa nas sete plantas e não equivale a área útil certificada."
+    },
+    {
+      "id": "exterior-area",
+      "category": "Áreas",
+      "label": "Área do rectângulo exterior",
+      "value": 73.396,
+      "unit": "m²",
+      "source": {
+        "file": "assets/plantas-40-pes.xlsx",
+        "sheet": "40ft Standard Double-Wing Unit",
+        "media": "xl/media/image1.png … image7.png"
+      },
+      "status": "derived",
+      "applicability": "all-seven-xlsx-layouts",
+      "note": "11,80 × 6,22. Diferença para designação comercial: 1,396 m²; não alterar cotas para coincidir."
+    },
+    {
+      "id": "interior-envelope-area",
+      "category": "Áreas",
+      "label": "Área interna antes de subtrair divisórias",
+      "value": null,
+      "unit": "m²",
+      "source": {
+        "file": "assets/plantas-40-pes.xlsx",
+        "sheet": "40ft Standard Double-Wing Unit",
+        "media": "xl/media/image1.png … image7.png"
+      },
+      "status": "missing",
+      "applicability": "gv72-unconfirmed",
+      "note": "Depende da espessura total de parede não fornecida. O valor 69,832 m² do modelo deriva da hipótese de 100 mm."
+    },
+    {
+      "id": "useful-area",
+      "category": "Áreas",
+      "label": "Área útil certificada",
+      "value": null,
+      "unit": "m²",
+      "source": {
+        "file": "assets/plantas-40-pes.xlsx",
+        "sheet": "40ft Standard Double-Wing Unit",
+        "media": "xl/media/image1.png … image7.png"
+      },
+      "status": "missing",
+      "applicability": "gv72-unconfirmed",
+      "note": "Não existe mapa de áreas certificado; áreas de compartimentos calculadas na maquete são estimativas."
+    },
+    {
+      "id": "bathroom-fixtures",
+      "category": "Distribuição e equipamento",
+      "label": "Elementos desenhados na casa de banho",
+      "value": [
+        "duche ao fundo",
+        "sanita à esquerda",
+        "lavatório junto à entrada"
+      ],
+      "unit": null,
+      "source": {
+        "file": "assets/plantas-40-pes.xlsx",
+        "sheet": "40ft Standard Double-Wing Unit",
+        "media": "xl/media/image1.png … image7.png"
+      },
+      "status": "observed-not-dimensioned",
+      "applicability": "all-seven-xlsx-layouts",
+      "note": "Representação na planta; marcas, modelos, dimensões e pacote de fornecimento não identificados."
+    },
+    {
+      "id": "entry-leaves",
+      "category": "Distribuição e equipamento",
+      "label": "Folhas da entrada principal desenhada",
+      "value": 2,
+      "unit": "folhas",
+      "source": {
+        "file": "assets/plantas-40-pes.xlsx",
+        "sheet": "40ft Standard Double-Wing Unit",
+        "media": "xl/media/image1.png … image7.png"
+      },
+      "status": "observed-not-dimensioned",
+      "applicability": "all-seven-xlsx-layouts",
+      "note": "Ao centro da frente inferior da planta; os vãos exactos não estão cotados."
+    },
+    {
+      "id": "plan-symbols",
+      "category": "Instalações",
+      "label": "Símbolos circulares com cruz no desenho",
+      "value": "Sem legenda identificativa",
+      "unit": null,
+      "source": {
+        "file": "assets/plantas-40-pes.xlsx",
+        "sheet": "40ft Standard Double-Wing Unit",
+        "media": "xl/media/image1.png … image7.png"
+      },
+      "status": "ambiguous",
+      "applicability": "all-seven-xlsx-layouts",
+      "note": "Não inferir circuitos eléctricos, tomadas, potências nem percursos a partir de símbolos sem legenda."
+    },
+    {
+      "id": "kitchen-layout-status",
+      "category": "Distribuição e equipamento",
+      "label": "Cozinha nas sete plantas XLSX",
+      "value": false,
+      "unit": null,
+      "source": {
+        "file": "assets/plantas-40-pes.xlsx",
+        "sheet": "40ft Standard Double-Wing Unit",
+        "media": "xl/media/image1.png … image7.png"
+      },
+      "status": "observed-not-dimensioned",
+      "applicability": "all-seven-xlsx-layouts",
+      "note": "As fotografias p. 16 demonstram cozinhas; a posição/configuração dentro destas sete plantas continua a ser adaptação ilustrativa."
+    },
+    {
+      "id": "catalogue-edition",
+      "category": "Condições documentais",
+      "label": "Edição do catálogo",
+      "value": "2026-07-11",
+      "unit": null,
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 19
+      },
+      "status": "documented",
+      "applicability": "generic-catalogue-variant-unconfirmed",
+      "note": "Data da fonte; não prova disponibilidade ou condições actuais."
+    },
+    {
+      "id": "catalogue-vat",
+      "category": "Condições documentais",
+      "label": "IVA incluído nos valores do catálogo",
+      "value": 23,
+      "unit": "%",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 19
+      },
+      "status": "documented",
+      "applicability": "generic-catalogue-variant-unconfirmed",
+      "note": "É informação transcrita do anexo, não aconselhamento fiscal ou confirmação de taxa aplicável ao orçamento."
+    },
+    {
+      "id": "catalogue-collection",
+      "category": "Identificação",
+      "label": "Colecção abrangida",
+      "value": "Casas expansíveis 10–40 FT",
+      "unit": null,
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 19
+      },
+      "status": "documented",
+      "applicability": "generic-catalogue-variant-unconfirmed",
+      "note": "Catálogo genérico, não ficha específica do modelo 72."
+    },
+    {
+      "id": "catalogue-special",
+      "category": "Identificação",
+      "label": "Edições especiais",
+      "value": 184,
+      "unit": "m²",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 19
+      },
+      "status": "documented",
+      "applicability": "generic-catalogue-variant-unconfirmed",
+      "note": "Outra designação do catálogo, não área do modelo em análise."
+    },
+    {
+      "id": "spc-material",
+      "category": "Pavimento",
+      "label": "SPC",
+      "value": "compósito pedra-plástico",
+      "unit": null,
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 14
+      },
+      "status": "documented",
+      "applicability": "generic-catalogue-variant-unconfirmed",
+      "note": "Não há espessura, classe de uso, camada de desgaste, sistema de encaixe, medida de régua ou preço declarado."
+    },
+    {
+      "id": "standard-colours",
+      "category": "Acabamentos",
+      "label": "Cores explicitamente de série",
+      "value": 12,
+      "unit": "amostras",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 10
+      },
+      "status": "documented",
+      "applicability": "generic-catalogue-variant-unconfirmed",
+      "note": "Apenas estas 12 amostras têm a declaração expressa de série, sem custo adicional. O pacote contratado para a GV72 não foi fornecido.",
+      "classification": "confirmed-included-in-generic-catalogue"
+    },
+    {
+      "id": "additional-colours",
+      "category": "Acabamentos",
+      "label": "Outras cores e tons RAL",
+      "value": "Sob consulta",
+      "unit": null,
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 10
+      },
+      "status": "documented",
+      "applicability": "generic-catalogue-variant-unconfirmed",
+      "note": "Nenhum código RAL/NCS específico, leque livre aprovado ou calibração física fornecido.",
+      "classification": "consultation-only"
+    },
+    {
+      "id": "uv-surface",
+      "category": "Casa de banho",
+      "label": "Placa UV",
+      "value": "revestimento",
+      "unit": null,
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 17
+      },
+      "status": "documented",
+      "applicability": "generic-catalogue-variant-unconfirmed",
+      "note": "O título situa as oito amostras na casa de banho. Sem composição, espessura, dimensões, preço ou indicação de uso no pavimento."
+    },
+    {
+      "id": "kitchen-photos",
+      "category": "Cozinha",
+      "label": "Fotografias de modelos disponíveis",
+      "value": 15,
+      "unit": "imagens",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 16
+      },
+      "status": "observed-not-dimensioned",
+      "applicability": "generic-catalogue-variant-unconfirmed",
+      "note": "Sem nomes/referências de fábrica, medidas de módulos, marcas de electrodomésticos ou composição de fornecimento."
+    },
+    {
+      "id": "bathroom-photos",
+      "category": "Casa de banho",
+      "label": "Fotografias de ambientes reais",
+      "value": 17,
+      "unit": "imagens",
+      "source": {
+        "file": "assets/opcionais-2026.pdf",
+        "page": 17,
+        "pages": [
+          17,
+          18
+        ]
+      },
+      "status": "observed-not-dimensioned",
+      "applicability": "generic-catalogue-variant-unconfirmed",
+      "note": "Quatro fotografias na p. 17 e treze na p. 18. Os números 01–17 são editoriais; a foto 05 é um pormenor de sanita, não um ambiente integral."
+    },
+    {
+      "id": "pending-clear-height",
+      "category": "Documentação pendente",
+      "label": "Pé-direito útil",
+      "value": null,
+      "unit": null,
+      "source": {
+        "files": [
+          "assets/opcionais-2026.pdf",
+          "assets/plantas-40-pes.xlsx",
+          "assets/estrutura.png",
+          "assets/estruturas.png",
+          "assets/alpendre.jpg"
+        ],
+        "inspection": "Não localizado no conjunto revisto"
+      },
+      "status": "missing",
+      "applicability": "gv72-unconfirmed",
+      "note": "Manter pendente de documentação; não completar com valores de outro modelo ou inferências fotográficas."
+    },
+    {
+      "id": "pending-total-height",
+      "category": "Documentação pendente",
+      "label": "Altura total construída",
+      "value": null,
+      "unit": null,
+      "source": {
+        "files": [
+          "assets/opcionais-2026.pdf",
+          "assets/plantas-40-pes.xlsx",
+          "assets/estrutura.png",
+          "assets/estruturas.png",
+          "assets/alpendre.jpg"
+        ],
+        "inspection": "Não localizado no conjunto revisto"
+      },
+      "status": "missing",
+      "applicability": "gv72-unconfirmed",
+      "note": "Manter pendente de documentação; não completar com valores de outro modelo ou inferências fotográficas."
+    },
+    {
+      "id": "pending-wall-assembly",
+      "category": "Documentação pendente",
+      "label": "Composição e espessura total da parede standard",
+      "value": null,
+      "unit": null,
+      "source": {
+        "files": [
+          "assets/opcionais-2026.pdf",
+          "assets/plantas-40-pes.xlsx",
+          "assets/estrutura.png",
+          "assets/estruturas.png",
+          "assets/alpendre.jpg"
+        ],
+        "inspection": "Não localizado no conjunto revisto"
+      },
+      "status": "missing",
+      "applicability": "gv72-unconfirmed",
+      "note": "Manter pendente de documentação; não completar com valores de outro modelo ou inferências fotográficas."
+    },
+    {
+      "id": "pending-floor-assembly",
+      "category": "Documentação pendente",
+      "label": "Composição e espessura total do piso standard",
+      "value": null,
+      "unit": null,
+      "source": {
+        "files": [
+          "assets/opcionais-2026.pdf",
+          "assets/plantas-40-pes.xlsx",
+          "assets/estrutura.png",
+          "assets/estruturas.png",
+          "assets/alpendre.jpg"
+        ],
+        "inspection": "Não localizado no conjunto revisto"
+      },
+      "status": "missing",
+      "applicability": "gv72-unconfirmed",
+      "note": "Manter pendente de documentação; não completar com valores de outro modelo ou inferências fotográficas."
+    },
+    {
+      "id": "pending-roof-assembly",
+      "category": "Documentação pendente",
+      "label": "Composição e espessura total da cobertura standard",
+      "value": null,
+      "unit": null,
+      "source": {
+        "files": [
+          "assets/opcionais-2026.pdf",
+          "assets/plantas-40-pes.xlsx",
+          "assets/estrutura.png",
+          "assets/estruturas.png",
+          "assets/alpendre.jpg"
+        ],
+        "inspection": "Não localizado no conjunto revisto"
+      },
+      "status": "missing",
+      "applicability": "gv72-unconfirmed",
+      "note": "Manter pendente de documentação; não completar com valores de outro modelo ou inferências fotográficas."
+    },
+    {
+      "id": "pending-steel-profiles",
+      "category": "Documentação pendente",
+      "label": "Secções, espessuras, aço, soldaduras e fixações",
+      "value": null,
+      "unit": null,
+      "source": {
+        "files": [
+          "assets/opcionais-2026.pdf",
+          "assets/plantas-40-pes.xlsx",
+          "assets/estrutura.png",
+          "assets/estruturas.png",
+          "assets/alpendre.jpg"
+        ],
+        "inspection": "Não localizado no conjunto revisto"
+      },
+      "status": "missing",
+      "applicability": "gv72-unconfirmed",
+      "note": "Manter pendente de documentação; não completar com valores de outro modelo ou inferências fotográficas."
+    },
+    {
+      "id": "pending-foundation",
+      "category": "Documentação pendente",
+      "label": "Fundação no terreno e dimensionamento dos apoios",
+      "value": null,
+      "unit": null,
+      "source": {
+        "files": [
+          "assets/opcionais-2026.pdf",
+          "assets/plantas-40-pes.xlsx",
+          "assets/estrutura.png",
+          "assets/estruturas.png",
+          "assets/alpendre.jpg"
+        ],
+        "inspection": "Não localizado no conjunto revisto"
+      },
+      "status": "missing",
+      "applicability": "gv72-unconfirmed",
+      "note": "Manter pendente de documentação; não completar com valores de outro modelo ou inferências fotográficas."
+    },
+    {
+      "id": "pending-transport",
+      "category": "Documentação pendente",
+      "label": "Envelope/peso de transporte",
+      "value": null,
+      "unit": null,
+      "source": {
+        "files": [
+          "assets/opcionais-2026.pdf",
+          "assets/plantas-40-pes.xlsx",
+          "assets/estrutura.png",
+          "assets/estruturas.png",
+          "assets/alpendre.jpg"
+        ],
+        "inspection": "Não localizado no conjunto revisto"
+      },
+      "status": "missing",
+      "applicability": "gv72-unconfirmed",
+      "note": "Manter pendente de documentação; não completar com valores de outro modelo ou inferências fotográficas."
+    },
+    {
+      "id": "pending-services",
+      "category": "Documentação pendente",
+      "label": "Projectos de hidráulica, drenagem, electricidade e quadro eléctrico",
+      "value": null,
+      "unit": null,
+      "source": {
+        "files": [
+          "assets/opcionais-2026.pdf",
+          "assets/plantas-40-pes.xlsx",
+          "assets/estrutura.png",
+          "assets/estruturas.png",
+          "assets/alpendre.jpg"
+        ],
+        "inspection": "Não localizado no conjunto revisto"
+      },
+      "status": "missing",
+      "applicability": "gv72-unconfirmed",
+      "note": "Manter pendente de documentação; não completar com valores de outro modelo ou inferências fotográficas."
+    },
+    {
+      "id": "pending-service-performance",
+      "category": "Documentação pendente",
+      "label": "Diâmetros, declives, cabos, circuitos, potências e ligações",
+      "value": null,
+      "unit": null,
+      "source": {
+        "files": [
+          "assets/opcionais-2026.pdf",
+          "assets/plantas-40-pes.xlsx",
+          "assets/estrutura.png",
+          "assets/estruturas.png",
+          "assets/alpendre.jpg"
+        ],
+        "inspection": "Não localizado no conjunto revisto"
+      },
+      "status": "missing",
+      "applicability": "gv72-unconfirmed",
+      "note": "Manter pendente de documentação; não completar com valores de outro modelo ou inferências fotográficas."
+    },
+    {
+      "id": "pending-thermal-acoustic",
+      "category": "Documentação pendente",
+      "label": "Valores U, isolamento acústico e ventilação",
+      "value": null,
+      "unit": null,
+      "source": {
+        "files": [
+          "assets/opcionais-2026.pdf",
+          "assets/plantas-40-pes.xlsx",
+          "assets/estrutura.png",
+          "assets/estruturas.png",
+          "assets/alpendre.jpg"
+        ],
+        "inspection": "Não localizado no conjunto revisto"
+      },
+      "status": "missing",
+      "applicability": "gv72-unconfirmed",
+      "note": "Manter pendente de documentação; não completar com valores de outro modelo ou inferências fotográficas."
+    },
+    {
+      "id": "pending-loads",
+      "category": "Documentação pendente",
+      "label": "Cargas admissíveis, vento, neve e sismo",
+      "value": null,
+      "unit": null,
+      "source": {
+        "files": [
+          "assets/opcionais-2026.pdf",
+          "assets/plantas-40-pes.xlsx",
+          "assets/estrutura.png",
+          "assets/estruturas.png",
+          "assets/alpendre.jpg"
+        ],
+        "inspection": "Não localizado no conjunto revisto"
+      },
+      "status": "missing",
+      "applicability": "gv72-unconfirmed",
+      "note": "Manter pendente de documentação; não completar com valores de outro modelo ou inferências fotográficas."
+    },
+    {
+      "id": "pending-certification",
+      "category": "Documentação pendente",
+      "label": "Classes, ensaios, certificados e garantia do modelo",
+      "value": null,
+      "unit": null,
+      "source": {
+        "files": [
+          "assets/opcionais-2026.pdf",
+          "assets/plantas-40-pes.xlsx",
+          "assets/estrutura.png",
+          "assets/estruturas.png",
+          "assets/alpendre.jpg"
+        ],
+        "inspection": "Não localizado no conjunto revisto"
+      },
+      "status": "missing",
+      "applicability": "gv72-unconfirmed",
+      "note": "Manter pendente de documentação; não completar com valores de outro modelo ou inferências fotográficas."
+    },
+    {
+      "id": "pending-supply-package",
+      "category": "Documentação pendente",
+      "label": "Pacote exacto de equipamento de série e exclusões da GV72",
+      "value": null,
+      "unit": null,
+      "source": {
+        "files": [
+          "assets/opcionais-2026.pdf",
+          "assets/plantas-40-pes.xlsx",
+          "assets/estrutura.png",
+          "assets/estruturas.png",
+          "assets/alpendre.jpg"
+        ],
+        "inspection": "Não localizado no conjunto revisto"
+      },
+      "status": "missing",
+      "applicability": "gv72-unconfirmed",
+      "note": "Manter pendente de documentação; não completar com valores de outro modelo ou inferências fotográficas."
+    },
+    {
+      "id": "pending-compatibility",
+      "category": "Documentação pendente",
+      "label": "Matriz de compatibilidade dos opcionais com cada planta",
+      "value": null,
+      "unit": null,
+      "source": {
+        "files": [
+          "assets/opcionais-2026.pdf",
+          "assets/plantas-40-pes.xlsx",
+          "assets/estrutura.png",
+          "assets/estruturas.png",
+          "assets/alpendre.jpg"
+        ],
+        "inspection": "Não localizado no conjunto revisto"
+      },
+      "status": "missing",
+      "applicability": "gv72-unconfirmed",
+      "note": "Manter pendente de documentação; não completar com valores de outro modelo ou inferências fotográficas."
+    },
+    {
+      "id": "pending-manufacturing-dimensions",
+      "category": "Documentação pendente",
+      "label": "Tolerâncias de fabrico e cotas de montagem",
+      "value": null,
+      "unit": null,
+      "source": {
+        "files": [
+          "assets/opcionais-2026.pdf",
+          "assets/plantas-40-pes.xlsx",
+          "assets/estrutura.png",
+          "assets/estruturas.png",
+          "assets/alpendre.jpg"
+        ],
+        "inspection": "Não localizado no conjunto revisto"
+      },
+      "status": "missing",
+      "applicability": "gv72-unconfirmed",
+      "note": "Manter pendente de documentação; não completar com valores de outro modelo ou inferências fotográficas."
+    },
+    {
+      "id": "pending-physical-materials",
+      "category": "Documentação pendente",
+      "label": "Escala física, fichas PBR e colorimetria de materiais",
+      "value": null,
+      "unit": null,
+      "source": {
+        "files": [
+          "assets/opcionais-2026.pdf",
+          "assets/plantas-40-pes.xlsx",
+          "assets/estrutura.png",
+          "assets/estruturas.png",
+          "assets/alpendre.jpg"
+        ],
+        "inspection": "Não localizado no conjunto revisto"
+      },
+      "status": "missing",
+      "applicability": "gv72-unconfirmed",
+      "note": "Manter pendente de documentação; não completar com valores de outro modelo ou inferências fotográficas."
+    }
+  ],
+  "sourceLayout": {
+    "id": "t2",
+    "bedrooms": 2,
+    "livingAreas": 1,
+    "bathrooms": 1,
+    "source": {
+      "file": "assets/plantas-40-pes.xlsx",
+      "sheet": "40ft Standard Double-Wing Unit",
+      "cell": "K1",
+      "media": "xl/media/image3.png",
+      "anchor": "K2:O24"
+    },
+    "status": "documented-layout",
+    "commonWindowsDrawn": 8,
+    "bathroomWindowDrawn": 1,
+    "interiorDoorSymbols": 3,
+    "entryLeavesDrawn": 2,
+    "kitchenDrawn": false,
+    "limits": "Quantidades observadas na planta raster; posições interiores, vãos de portas e dimensões úteis não cotados. A/B são identificadores editoriais de duas distribuições com o mesmo número de quartos."
+  },
+  "videos": {
+    "schema_version": 1,
+    "notice_pt": "Quatro vídeos fornecidos, com diferenças visíveis de distribuição e acabamento. A correspondência com as plantas de 72 m² está por confirmar. Os vídeos mostram visitas a unidades já abertas.",
+    "native_pixels": [
+      576,
+      1024
+    ],
+    "timecode_note_pt": "Localizadores aproximados a 1 fps.",
+    "videos": [
+      {
+        "id": "v1-spacious",
+        "filename": "40FT EXPANDABLE CONTAINER HOUSE — 3 Bedroom Modular Home - Mobile Residence - Emergency Housing Solution Modern Design • Spacious Living • Thermal Insulation • Fast Installation Designed for modern family living, emergency accommoda.mp4",
+        "sha256": "24ab128ec1648232fccc74f5954e1b5ba8313e484a39eed30dc9327854aa00f7",
+        "duration_seconds": 118.233333,
+        "label_pt": "40FT — Spacious Living",
+        "frames": [
+          {
+            "category": "exterior",
+            "label_pt": "Exterior com efeito de pedra",
+            "time_seconds": 0,
+            "timecode": "00:00",
+            "sha256": "a19c79d72ffcec93b23800675dc016d294df674f8b45f05ebc5fd5f0c3b91b81",
+            "asset": "assets/reference-videos/v1-spacious-000s-exterior-stone-effect.jpg"
+          },
+          {
+            "category": "piso",
+            "label_pt": "Piso cinza e juntas de módulo",
+            "time_seconds": 8,
+            "timecode": "00:08",
+            "sha256": "7ce07ba8f8fcadc2dfb1d02bbc140e14a3ba8119957c7b3f7d019ffcb4b6c6ad",
+            "asset": "assets/reference-videos/v1-spacious-008s-living-kitchen-floor.jpg"
+          },
+          {
+            "category": "parede",
+            "label_pt": "Painéis lisos e juntas verticais",
+            "time_seconds": 36,
+            "timecode": "00:36",
+            "sha256": "fabbcfc1a40dd344f544c9ba6a042f69f8eb085aaf95f53f557d1ad82ef9b1ab",
+            "asset": "assets/reference-videos/v1-spacious-036s-wall-panel-joint.jpg"
+          },
+          {
+            "category": "cozinha",
+            "label_pt": "Cozinha branca em L",
+            "time_seconds": 88,
+            "timecode": "01:28",
+            "sha256": "ad53366fca224760aaa8ffb22d88345adf7626738ded3f0cbad95b7abf8dd9da",
+            "asset": "assets/reference-videos/v1-spacious-088s-white-framed-l-kitchen.jpg"
+          }
+        ],
+        "asset": "assets/reference-videos/v1-spacious.mp4",
+        "poster": "assets/reference-videos/v1-spacious-000s-exterior-stone-effect.jpg",
+        "title": "Exterior em pedra",
+        "description": "Fachada envidraçada, piso cinza e cozinha em L.",
+        "variantNote": "40FT no nome do ficheiro; correspondência com as plantas por confirmar."
+      },
+      {
+        "id": "v2-74m2",
+        "filename": "40FT EXPANDABLE CONTAINER HOUSE — 74㎡ Modern Modular Living • Fast Installation • Luxury Interior • Export Standard Designed for modern residential living, tourism projects, emergency accommodation, and commercial housing solution.mp4",
+        "sha256": "1c68b155875dc30534750f817785ad24f6e469e813013ba4fe2632b92ef0c0c1",
+        "duration_seconds": 57,
+        "label_pt": "40FT — 74 m²",
+        "frames": [
+          {
+            "category": "exterior",
+            "label_pt": "Exterior cinza e entrada frontal",
+            "time_seconds": 0,
+            "timecode": "00:00",
+            "sha256": "a48bec3a7dbfd7923a01002f7c4facc187e6bfc9d02158327c2aeb2aa68c23e2",
+            "asset": "assets/reference-videos/v2-74m2-000s-grey-front.jpg"
+          },
+          {
+            "category": "piso",
+            "label_pt": "Piso greige na área comum",
+            "time_seconds": 12,
+            "timecode": "00:12",
+            "sha256": "d73530134fbc5c1c0606cedfd5caa9aa0448302d2e332e72b134ad54ad61ad41",
+            "asset": "assets/reference-videos/v2-74m2-012s-greige-floor-long-room.jpg"
+          },
+          {
+            "category": "parede",
+            "label_pt": "Paredes claras e rodapé escuro",
+            "time_seconds": 32,
+            "timecode": "00:32",
+            "sha256": "4c09de8b8d95a0d15d552cab809e58b5220c48d01ce2d8c52dadaf9166701e58",
+            "asset": "assets/reference-videos/v2-74m2-032s-white-walls-black-skirting.jpg"
+          },
+          {
+            "category": "cozinha",
+            "label_pt": "Frentes brancas e tampo escuro",
+            "time_seconds": 24,
+            "timecode": "00:24",
+            "sha256": "a1c44a9b295b7a481dc68c19fc167d0f0a5bf7c06ee2bb6055803394dff2e6ce",
+            "asset": "assets/reference-videos/v2-74m2-024s-white-l-kitchen.jpg"
+          }
+        ],
+        "asset": "assets/reference-videos/v2-74m2.mp4",
+        "poster": "assets/reference-videos/v2-74m2-000s-grey-front.jpg",
+        "title": "Exterior cinza",
+        "description": "Réguas greige, paredes claras e cozinha branca com tampo escuro.",
+        "variantNote": "Designação 40FT / 74 m² no nome do ficheiro; correspondência com as plantas de 72 m² por confirmar."
+      },
+      {
+        "id": "v3-comfortable",
+        "filename": "40FT EXPANDABLE CONTAINER HOUSE — 3 Bedroom Modular Home - Mobile Residence - Emergency Housing Solution Modern Design • Comfortable Living • Thermal Insulation • Fast Installation Designed for modern family living, temporary accomm.mp4",
+        "sha256": "6a5266ec7bd584785dee744490b2694994abc60ef2bad7a88c791e2c4367163b",
+        "duration_seconds": 100.198027,
+        "label_pt": "40FT — Comfortable Living",
+        "frames": [
+          {
+            "category": "exterior",
+            "label_pt": "Exterior creme e porta lateral",
+            "time_seconds": 0,
+            "timecode": "00:00",
+            "sha256": "c08ab4db875a61ea9a010c18b6d172c5dc120f30457f879441d1df9810d77413",
+            "asset": "assets/reference-videos/v3-comfortable-000s-cream-horizontal-cladding.jpg"
+          },
+          {
+            "category": "piso",
+            "label_pt": "Piso cinza com juntas entre bandas",
+            "time_seconds": 92,
+            "timecode": "01:32",
+            "sha256": "0ac79c6ab4a7c65aae35193f2359840f57c4adaaf5d5acc3905ac0e790ae37a2",
+            "asset": "assets/reference-videos/v3-comfortable-092s-floor-module-lines-loose-packages.jpg"
+          },
+          {
+            "category": "parede",
+            "label_pt": "Juntas e remates dos painéis",
+            "time_seconds": 40,
+            "timecode": "00:40",
+            "sha256": "f85d5d0e4a8e557c5cdb124db904657d4e630984da7d790a278e411e8230e015",
+            "asset": "assets/reference-videos/v3-comfortable-040s-panel-wall-seams.jpg"
+          },
+          {
+            "category": "banho",
+            "label_pt": "Móvel azul e aparelho mural",
+            "time_seconds": 68,
+            "timecode": "01:08",
+            "sha256": "c10cc112373c28531cc452ebb010b09b4929af0af6439227dea284312e33d147",
+            "asset": "assets/reference-videos/v3-comfortable-068s-blue-vanity-heater.jpg"
+          }
+        ],
+        "asset": "assets/reference-videos/v3-comfortable.mp4",
+        "poster": "assets/reference-videos/v3-comfortable-000s-cream-horizontal-cladding.jpg",
+        "title": "Exterior creme",
+        "description": "Porta lateral, juntas entre módulos e detalhes de banho.",
+        "variantNote": "Contém superfícies protegidas e equipamentos embalados; acabamentos finais por confirmar."
+      },
+      {
+        "id": "v4-37m2",
+        "filename": "20ft Foldable Modular Mobile House - 37㎡ Spacious Living - Professional Export from China If you are looking for a modern housing solution that combines large space, easy transportation, and fast installation, this 40ft foldable modular h.mp4",
+        "sha256": "106762e67dbb6359804b3b23822ed23d3778824a2fc6a861810e45aa7fadb0e1",
+        "duration_seconds": 56.566667,
+        "label_pt": "20ft — 37 m²",
+        "frames": [
+          {
+            "category": "exterior",
+            "label_pt": "Exterior castanho numa unidade curta",
+            "time_seconds": 4,
+            "timecode": "00:04",
+            "sha256": "27a7f31454c9bb2844bdcea8a283bb2ff28eebb058c0b215784cbfde28f20275",
+            "asset": "assets/reference-videos/v4-37m2-004s-brown-cladding-window.jpg"
+          },
+          {
+            "category": "piso",
+            "label_pt": "Piso castanho e rodapé escuro",
+            "time_seconds": 16,
+            "timecode": "00:16",
+            "sha256": "76bf1eea2ccab58bd39cdc09938485f8d80b51690238ae5077ee3b52031d4abd",
+            "asset": "assets/reference-videos/v4-37m2-016s-brown-floor-white-wall.jpg"
+          },
+          {
+            "category": "parede",
+            "label_pt": "Divisórias e portas interiores",
+            "time_seconds": 20,
+            "timecode": "00:20",
+            "sha256": "b85eb18288efa95c671ea8b0adbcbd9e684154a2155a49dc0eaeb551f0c9f76a",
+            "asset": "assets/reference-videos/v4-37m2-020s-doorway-partitions.jpg"
+          },
+          {
+            "category": "banho",
+            "label_pt": "Duche e revestimento com veios cinzentos",
+            "time_seconds": 36,
+            "timecode": "00:36",
+            "sha256": "42acea579aa7e2b036cb22f1616685d9021f404350ab8566e58570c6e429cd56",
+            "asset": "assets/reference-videos/v4-37m2-036s-bathroom-grey-veins.jpg"
+          }
+        ],
+        "asset": "assets/reference-videos/v4-37m2.mp4",
+        "poster": "assets/reference-videos/v4-37m2-004s-brown-cladding-window.jpg",
+        "title": "Unidade compacta",
+        "description": "Piso castanho, painéis claros e duche com revestimento de veios.",
+        "variantNote": "O nome menciona 20ft / 37 m² e também 40ft. Identificação contraditória no próprio ficheiro; correspondência com as plantas por confirmar."
+      }
+    ]
+  },
+  "openings": [
+    {
+      "axis": "x",
+      "c": 5.9,
+      "a": -3.11,
+      "b": 3.11,
+      "holes": [
+        {
+          "id": "entry",
+          "u": 0,
+          "width": 1.7,
+          "height": 2.15,
+          "sill": 0,
+          "kind": "door",
+          "source": "double-leaf door depicted; size estimated"
+        },
+        {
+          "id": "front-window--1",
+          "u": -2.05,
+          "width": 0.92,
+          "height": 1.05,
+          "sill": 0.95,
+          "kind": "window"
+        },
+        {
+          "id": "front-window-1",
+          "u": 2.05,
+          "width": 0.92,
+          "height": 1.05,
+          "sill": 0.95,
+          "kind": "window"
+        }
+      ]
+    },
+    {
+      "axis": "x",
+      "c": -5.9,
+      "a": -3.11,
+      "b": 3.11,
+      "holes": [
+        {
+          "id": "bath-window",
+          "u": 0,
+          "width": 0.6,
+          "height": 0.5,
+          "sill": 1.7,
+          "kind": "window",
+          "source": "estimated"
+        },
+        {
+          "id": "rear-window--1",
+          "u": -2.05,
+          "width": 0.92,
+          "height": 1.05,
+          "sill": 0.95,
+          "kind": "window"
+        },
+        {
+          "id": "rear-window-1",
+          "u": 2.05,
+          "width": 0.92,
+          "height": 1.05,
+          "sill": 0.95,
+          "kind": "window"
+        }
+      ]
+    },
+    {
+      "axis": "z",
+      "c": -3.11,
+      "a": -5.9,
+      "b": 5.9,
+      "holes": [
+        {
+          "id": "side--1-0",
+          "u": -2.85,
+          "width": 0.92,
+          "height": 1.05,
+          "sill": 0.95,
+          "kind": "window",
+          "source": "window count/room relation follows source; centre position estimated"
+        },
+        {
+          "id": "side--1-1",
+          "u": 2.85,
+          "width": 0.92,
+          "height": 1.05,
+          "sill": 0.95,
+          "kind": "window",
+          "source": "window count/room relation follows source; centre position estimated"
+        }
+      ]
+    },
+    {
+      "axis": "z",
+      "c": 3.11,
+      "a": -5.9,
+      "b": 5.9,
+      "holes": [
+        {
+          "id": "side-1-0",
+          "u": -2.95,
+          "width": 0.92,
+          "height": 1.05,
+          "sill": 0.95,
+          "kind": "window",
+          "source": "window count/room relation follows source; centre position estimated"
+        },
+        {
+          "id": "side-1-1",
+          "u": 2.95,
+          "width": 0.92,
+          "height": 1.05,
+          "sill": 0.95,
+          "kind": "window",
+          "source": "window count/room relation follows source; centre position estimated"
+        }
+      ]
+    }
+  ],
+  "sourceDivergences": [
+    "As plantas cotam janelas de 920 mm. A janela opcional de 930 × 930 mm (catálogo p. 5) não substitui essa cota; a compatibilidade e eventuais alterações dos vãos estão por confirmar.",
+    "O terraço do catálogo (p. 13) indica 3 m e estrutura preta; a fotografia do alpendre apresenta guarda branca, sem profundidade cotada. Esta divergência não comprova uma variante diferente: a correspondência está por esclarecer. O preço do catálogo não é atribuído ao alpendre da maquete.",
+    "72 m² é a designação comercial. 11,80 × 6,22 = 73,396 m² de rectângulo exterior. A diferença não é corrigida alterando cotas.",
+    "5690 + 5690 = 11380 mm: faltam 420 mm para os 11800 mm totais nas plantas T0/T1/T2/T3 A/T4 A. Não foi atribuída silenciosamente uma espessura a esta diferença.",
+    "4000 + 3900 + 3900 = 11800 mm nas plantas T3 B/T4 B; a cota 210 nas extremidades não é somada novamente ao comprimento exterior.",
+    "As bandas estruturais cotadas não coincidem com os traços de divisórias no desenho raster. Os limites de divisões mantêm o traçado observado como estimativa, não cota exacta.",
+    "As fotografias mostram unidades com vãos, portas laterais e acabamentos distintos. Não provam que todos estes elementos coexistem numa única variante."
+  ],
+  "expansion": {
+    "scope": "longitudinal-wall-raising",
+    "sourcePhase": "2–3",
+    "assumptions": {
+      "axisX": 2.99,
+      "axisY": 0,
+      "roofClearance": 0.008,
+      "wallEnd": 0.9,
+      "durationMs": 9000,
+      "status": "estimated",
+      "source": "assets/expansao.png · quadros 2–3"
+    },
+    "endPanels": "omitted; folding mechanism not documented"
+  },
+  "sourceConflicts": [
+    {
+      "id": "plans",
+      "limits": "As posições interiores são proporcionais aproximadas; não há cozinha nem altura cotada."
+    },
+    {
+      "id": "catalogue",
+      "limits": "Amostras raster até 480 × 300 px. Não há RAL/NCS, escala de textura ou preço total da casa."
+    },
+    {
+      "id": "expansion",
+      "limits": "Não define pivôs exactos, alturas, folgas, bloqueios ou transporte das divisórias."
+    },
+    {
+      "id": "frame",
+      "limits": "Perfis, fixações e soldaduras não cotados."
+    },
+    {
+      "id": "canopy",
+      "limits": "A maquete reproduz forma e apoios com medidas estimadas."
+    }
+  ]
+}

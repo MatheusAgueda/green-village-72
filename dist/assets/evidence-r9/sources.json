@@ -1,0 +1,852 @@
+{
+  "reviewedAt": "2026-09-11T10:06:34.936015+00:00",
+  "scope": "Read-only document/data integration and execution of actual markup/sourceLedger modules in Node. No browser rendering or expansion geometry re-audit.",
+  "sourceHashes": {
+    "technical-data.js": "7d606d86494e1250ea0ff4d571769918a73849a86401e82aa06965f23d6010c6",
+    "technical-sheet.js": "95a454eb93b8a5e3b9ac4a0a95e221f05330527d626d567258a25cfe22e160fa",
+    "specification.js": "f2e87083df655044747d13c5c13e3e1a976204b24a2b53d128d55ce54bc2ce9d",
+    "client-tools.js": "24524facdf1e98b3ad71711e091304bae3734f098ab89571fbd2f421518d7f85",
+    "reference-videos.js": "9281a8c664062feb935fcb59b9004f38656b6d894e36dc667d690c93add825d6"
+  },
+  "publicDataHashes": {
+    "assets/product-r9/options-catalogue.json": "92d3a92af8be80fe2ef66e40cc5ff3c482c3ab64af33205dd51c5bf81dacd2cd",
+    "assets/product-r9/technical-inventory.json": "4e5f761b3dc8938d1bf85b7bdb98f400625054337b9fc2a530251fd9f9af315f",
+    "assets/product-r9/catalogue.json": "6f46aff4270e990faebda87d323fd37a3cc3fbee6a8a16c100bcdd35c3eac8a8",
+    "assets/product-r9/videos.json": "41407ff4b29215fb8414a4c378a9af027daa9b86874df6f7517eab384959bb37"
+  },
+  "checks": {
+    "optionsMatchAuditedInventory": true,
+    "standaloneFactsMatchAuditedInventory": true,
+    "layoutsMatchAuditedInventory": true,
+    "all107FactsInDownload": true,
+    "optionsDownloadMatchesModule": true,
+    "videosDownloadMatchesModule": true,
+    "sourceLedgerOptionsMatchModule": true,
+    "sourceLedgerFactsMatchModule": true,
+    "unitScopesSeparated": true,
+    "singleModelledPorchRow": true,
+    "window930Versus920Explicit": true,
+    "brokenBridge55NoInventedUnit": true,
+    "bathroom3mMeaningPending": true,
+    "catalogueCompatibilityExplicit": true,
+    "noUndefinedMarkup": true,
+    "allOptionCardsPresent": true,
+    "allDimensionRowsPresent": true,
+    "allFiveCatalogueDesignationsVisible": true,
+    "interiorEnvelopeAndNetAreaExplicit": true
+  },
+  "coverage": {
+    "sourceFacts": 107,
+    "optionSpecificationFacts": 62,
+    "standaloneFacts": 45,
+    "dimensionsInUI": 25,
+    "optionCards": 22,
+    "directSupplementaryFactCards": 15,
+    "pendingFactLabels": 17,
+    "coveredFacts": 107,
+    "missingFacts": [],
+    "mapping": [
+      {
+        "id": "exterior-length",
+        "label": "Comprimento exterior",
+        "status": "covered",
+        "representation": "dimension-table",
+        "measureIds": [
+          "length"
+        ]
+      },
+      {
+        "id": "exterior-width",
+        "label": "Largura exterior",
+        "status": "covered",
+        "representation": "dimension-table",
+        "measureIds": [
+          "width"
+        ]
+      },
+      {
+        "id": "core-width",
+        "label": "Banda central cotada",
+        "status": "covered",
+        "representation": "dimension-table",
+        "measureIds": [
+          "core"
+        ]
+      },
+      {
+        "id": "wing-width",
+        "label": "Banda lateral cotada, cada",
+        "status": "covered",
+        "representation": "dimension-table",
+        "measureIds": [
+          "wing"
+        ]
+      },
+      {
+        "id": "common-window-width",
+        "label": "Largura cotada das janelas comuns",
+        "status": "covered",
+        "representation": "dimension-table",
+        "measureIds": [
+          "windowWidth"
+        ]
+      },
+      {
+        "id": "nominal-unit",
+        "label": "Designação da folha",
+        "status": "covered",
+        "representation": "supplementary-fact-card"
+      },
+      {
+        "id": "width-chain",
+        "label": "Cadeia transversal",
+        "status": "covered",
+        "representation": "dimension-table-consolidated",
+        "measureIds": [
+          "core",
+          "wing",
+          "width"
+        ]
+      },
+      {
+        "id": "two-bay-chain",
+        "label": "Cadeia longitudinal em duas parcelas",
+        "status": "covered",
+        "representation": "source-divergence-text",
+        "divergenceIndex": 2
+      },
+      {
+        "id": "three-bay-chain",
+        "label": "Cadeia longitudinal em três parcelas",
+        "status": "covered",
+        "representation": "source-divergence-text",
+        "divergenceIndex": 3
+      },
+      {
+        "id": "three-bay-end-mark",
+        "label": "Marca nas extremidades das plantas de três parcelas",
+        "status": "covered",
+        "representation": "source-divergence-text",
+        "divergenceIndex": 3
+      },
+      {
+        "id": "commercial-area",
+        "label": "Designação comercial",
+        "status": "covered",
+        "representation": "commercial-area-key-fact"
+      },
+      {
+        "id": "exterior-area",
+        "label": "Área do rectângulo exterior",
+        "status": "covered",
+        "representation": "exterior-rectangle-key-fact"
+      },
+      {
+        "id": "interior-envelope-area",
+        "label": "Área interna antes de subtrair divisórias",
+        "status": "covered",
+        "representation": "interior-envelope-area"
+      },
+      {
+        "id": "useful-area",
+        "label": "Área útil certificada",
+        "status": "covered",
+        "representation": "certified-useful-area-dimension-and-notice"
+      },
+      {
+        "id": "bathroom-fixtures",
+        "label": "Elementos desenhados na casa de banho",
+        "status": "covered",
+        "representation": "supplementary-fact-card"
+      },
+      {
+        "id": "entry-leaves",
+        "label": "Folhas da entrada principal desenhada",
+        "status": "covered",
+        "representation": "supplementary-fact-card"
+      },
+      {
+        "id": "plan-symbols",
+        "label": "Símbolos circulares com cruz no desenho",
+        "status": "covered",
+        "representation": "supplementary-fact-card"
+      },
+      {
+        "id": "kitchen-layout-status",
+        "label": "Cozinha nas sete plantas XLSX",
+        "status": "covered",
+        "representation": "supplementary-fact-card"
+      },
+      {
+        "id": "door-steel-1",
+        "label": "Material",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "door-steel",
+        "sourcePage": 3
+      },
+      {
+        "id": "door-steel-2",
+        "label": "Cor",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "door-steel",
+        "sourcePage": 3
+      },
+      {
+        "id": "door-steel-3",
+        "label": "Fecho",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "door-steel",
+        "sourcePage": 3
+      },
+      {
+        "id": "door-side-glass-1",
+        "label": "Material",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "door-side-glass",
+        "sourcePage": 3
+      },
+      {
+        "id": "door-side-glass-2",
+        "label": "Folhas",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "door-side-glass",
+        "sourcePage": 3
+      },
+      {
+        "id": "door-side-glass-3",
+        "label": "Local indicado",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "door-side-glass",
+        "sourcePage": 3
+      },
+      {
+        "id": "door-side-glass-4",
+        "label": "Alternativa expressa",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "door-side-glass",
+        "sourcePage": 3
+      },
+      {
+        "id": "door-interior-1",
+        "label": "Alternativas expressas",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "door-interior",
+        "sourcePage": 3
+      },
+      {
+        "id": "front-glass-premium-1",
+        "label": "Configuração",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "front-glass-premium",
+        "sourcePage": 4
+      },
+      {
+        "id": "front-glass-premium-2",
+        "label": "Vidro",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "front-glass-premium",
+        "sourcePage": 4
+      },
+      {
+        "id": "front-glass-premium-3",
+        "label": "Caixilho",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "front-glass-premium",
+        "sourcePage": 4
+      },
+      {
+        "id": "front-glass-premium-4",
+        "label": "Designação do sistema",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "front-glass-premium",
+        "sourcePage": 4
+      },
+      {
+        "id": "door-thermal-glass-1",
+        "label": "Rutura térmica",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "door-thermal-glass",
+        "sourcePage": 4
+      },
+      {
+        "id": "door-thermal-glass-2",
+        "label": "Benefícios descritos",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "door-thermal-glass",
+        "sourcePage": 4
+      },
+      {
+        "id": "window-930-1",
+        "label": "Dimensões",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "window-930",
+        "sourcePage": 5
+      },
+      {
+        "id": "window-930-2",
+        "label": "Abertura",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "window-930",
+        "sourcePage": 5
+      },
+      {
+        "id": "window-930-3",
+        "label": "Caixilho",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "window-930",
+        "sourcePage": 5
+      },
+      {
+        "id": "window-930-4",
+        "label": "Vidro",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "window-930",
+        "sourcePage": 5
+      },
+      {
+        "id": "window-panoramic-1",
+        "label": "Dimensões",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "window-panoramic",
+        "sourcePage": 5
+      },
+      {
+        "id": "window-panoramic-2",
+        "label": "Descrição",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "window-panoramic",
+        "sourcePage": 5
+      },
+      {
+        "id": "window-large-1",
+        "label": "Caixilho",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "window-large",
+        "sourcePage": 5
+      },
+      {
+        "id": "window-alloy-1",
+        "label": "Caixilho",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "window-alloy",
+        "sourcePage": 5
+      },
+      {
+        "id": "window-alloy-2",
+        "label": "Classificação",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "window-alloy",
+        "sourcePage": 5
+      },
+      {
+        "id": "window-thermal-1",
+        "label": "Caixilho",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "window-thermal",
+        "sourcePage": 6
+      },
+      {
+        "id": "window-thermal-2",
+        "label": "Vidro",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "window-thermal",
+        "sourcePage": 6
+      },
+      {
+        "id": "window-projecting-1",
+        "label": "Movimento descrito",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "window-projecting",
+        "sourcePage": 6
+      },
+      {
+        "id": "window-projecting-2",
+        "label": "Caixilho",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "window-projecting",
+        "sourcePage": 6
+      },
+      {
+        "id": "window-tilt-turn-1",
+        "label": "Aberturas",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "window-tilt-turn",
+        "sourcePage": 6
+      },
+      {
+        "id": "window-mosquito-1",
+        "label": "Equipamento",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "window-mosquito",
+        "sourcePage": 6
+      },
+      {
+        "id": "wall-3d-metal-1",
+        "label": "Revestimento",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "wall-3d-metal",
+        "sourcePage": 7
+      },
+      {
+        "id": "wall-3d-metal-2",
+        "label": "Parede descrita",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "wall-3d-metal",
+        "sourcePage": 7
+      },
+      {
+        "id": "wall-3d-metal-3",
+        "label": "Estrutura descrita",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "wall-3d-metal",
+        "sourcePage": 7
+      },
+      {
+        "id": "wall-3d-metal-4",
+        "label": "Alegação do catálogo",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "wall-3d-metal",
+        "sourcePage": 7
+      },
+      {
+        "id": "interior-bamboo-1",
+        "label": "Material",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "interior-bamboo",
+        "sourcePage": 10
+      },
+      {
+        "id": "interior-bamboo-2",
+        "label": "Superfícies",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "interior-bamboo",
+        "sourcePage": 10
+      },
+      {
+        "id": "interior-bamboo-3",
+        "label": "Descrição",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "interior-bamboo",
+        "sourcePage": 10
+      },
+      {
+        "id": "insulation-rockwool-1",
+        "label": "Material",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "insulation-rockwool",
+        "sourcePage": 10
+      },
+      {
+        "id": "insulation-rockwool-2",
+        "label": "Espessura do isolamento",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "insulation-rockwool",
+        "sourcePage": 10
+      },
+      {
+        "id": "insulation-rockwool-3",
+        "label": "Superfícies",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "insulation-rockwool",
+        "sourcePage": 10
+      },
+      {
+        "id": "insulation-rockwool-4",
+        "label": "Unidade nominal",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "insulation-rockwool",
+        "sourcePage": 10
+      },
+      {
+        "id": "insulation-rockwool-5",
+        "label": "Comparação descrita",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "insulation-rockwool",
+        "sourcePage": 10
+      },
+      {
+        "id": "insulation-eps-1",
+        "label": "Material",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "insulation-eps",
+        "sourcePage": 11
+      },
+      {
+        "id": "insulation-eps-2",
+        "label": "Superfícies",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "insulation-eps",
+        "sourcePage": 11
+      },
+      {
+        "id": "insulation-eps-3",
+        "label": "Unidade nominal",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "insulation-eps",
+        "sourcePage": 11
+      },
+      {
+        "id": "insulation-pu-floor-1",
+        "label": "Material",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "insulation-pu-floor",
+        "sourcePage": 11
+      },
+      {
+        "id": "insulation-pu-floor-2",
+        "label": "Aplicação",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "insulation-pu-floor",
+        "sourcePage": 11
+      },
+      {
+        "id": "insulation-pu-floor-3",
+        "label": "Superfície",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "insulation-pu-floor",
+        "sourcePage": 11
+      },
+      {
+        "id": "insulation-pu-floor-4",
+        "label": "Espessura",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "insulation-pu-floor",
+        "sourcePage": 11
+      },
+      {
+        "id": "gable-roof-1",
+        "label": "Geometria descrita",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "gable-roof",
+        "sourcePage": 12
+      },
+      {
+        "id": "gable-roof-2",
+        "label": "Beirado",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "gable-roof",
+        "sourcePage": 12
+      },
+      {
+        "id": "gable-roof-3",
+        "label": "Material de cobertura",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "gable-roof",
+        "sourcePage": 12
+      },
+      {
+        "id": "gable-roof-4",
+        "label": "Unidade nominal",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "gable-roof",
+        "sourcePage": 12
+      },
+      {
+        "id": "gable-roof-5",
+        "label": "Descrição funcional",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "gable-roof",
+        "sourcePage": 12
+      },
+      {
+        "id": "terrace-canopy-1",
+        "label": "Profundidade",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "terrace-canopy",
+        "sourcePage": 13
+      },
+      {
+        "id": "terrace-canopy-2",
+        "label": "Estrutura",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "terrace-canopy",
+        "sourcePage": 13
+      },
+      {
+        "id": "terrace-canopy-3",
+        "label": "Cobertura",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "terrace-canopy",
+        "sourcePage": 13
+      },
+      {
+        "id": "terrace-canopy-4",
+        "label": "Espessura do painel",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "terrace-canopy",
+        "sourcePage": 13
+      },
+      {
+        "id": "terrace-canopy-5",
+        "label": "Fornecimento descrito",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "terrace-canopy",
+        "sourcePage": 13
+      },
+      {
+        "id": "kitchen-upper-1",
+        "label": "Equipamento",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "kitchen-upper",
+        "sourcePage": 15
+      },
+      {
+        "id": "bathroom-dry-wet-1",
+        "label": "Valor literal indicado",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "bathroom-dry-wet",
+        "sourcePage": 17
+      },
+      {
+        "id": "bathroom-dry-wet-2",
+        "label": "Zonas",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "bathroom-dry-wet",
+        "sourcePage": 17
+      },
+      {
+        "id": "bathroom-dry-wet-3",
+        "label": "Separação",
+        "status": "covered",
+        "representation": "option-specification",
+        "optionId": "bathroom-dry-wet",
+        "sourcePage": 17
+      },
+      {
+        "id": "catalogue-edition",
+        "label": "Edição do catálogo",
+        "status": "covered",
+        "representation": "supplementary-fact-card"
+      },
+      {
+        "id": "catalogue-vat",
+        "label": "IVA incluído nos valores do catálogo",
+        "status": "covered",
+        "representation": "supplementary-fact-card"
+      },
+      {
+        "id": "catalogue-collection",
+        "label": "Colecção abrangida",
+        "status": "covered",
+        "representation": "supplementary-fact-card"
+      },
+      {
+        "id": "catalogue-special",
+        "label": "Edições especiais",
+        "status": "covered",
+        "representation": "supplementary-fact-card"
+      },
+      {
+        "id": "spc-material",
+        "label": "SPC",
+        "status": "covered",
+        "representation": "supplementary-fact-card"
+      },
+      {
+        "id": "standard-colours",
+        "label": "Cores explicitamente de série",
+        "status": "covered",
+        "representation": "supplementary-fact-card"
+      },
+      {
+        "id": "additional-colours",
+        "label": "Outras cores e tons RAL",
+        "status": "covered",
+        "representation": "supplementary-fact-card"
+      },
+      {
+        "id": "uv-surface",
+        "label": "Placa UV",
+        "status": "covered",
+        "representation": "supplementary-fact-card"
+      },
+      {
+        "id": "kitchen-photos",
+        "label": "Fotografias de modelos disponíveis",
+        "status": "covered",
+        "representation": "supplementary-fact-card"
+      },
+      {
+        "id": "bathroom-photos",
+        "label": "Fotografias de ambientes reais",
+        "status": "covered",
+        "representation": "supplementary-fact-card"
+      },
+      {
+        "id": "pending-clear-height",
+        "label": "Pé-direito útil",
+        "status": "covered",
+        "representation": "pending-documentation-list"
+      },
+      {
+        "id": "pending-total-height",
+        "label": "Altura total construída",
+        "status": "covered",
+        "representation": "pending-documentation-list"
+      },
+      {
+        "id": "pending-wall-assembly",
+        "label": "Composição e espessura total da parede standard",
+        "status": "covered",
+        "representation": "pending-documentation-list"
+      },
+      {
+        "id": "pending-floor-assembly",
+        "label": "Composição e espessura total do piso standard",
+        "status": "covered",
+        "representation": "pending-documentation-list"
+      },
+      {
+        "id": "pending-roof-assembly",
+        "label": "Composição e espessura total da cobertura standard",
+        "status": "covered",
+        "representation": "pending-documentation-list"
+      },
+      {
+        "id": "pending-steel-profiles",
+        "label": "Secções, espessuras, aço, soldaduras e fixações",
+        "status": "covered",
+        "representation": "pending-documentation-list"
+      },
+      {
+        "id": "pending-foundation",
+        "label": "Fundação no terreno e dimensionamento dos apoios",
+        "status": "covered",
+        "representation": "pending-documentation-list"
+      },
+      {
+        "id": "pending-transport",
+        "label": "Envelope/peso de transporte",
+        "status": "covered",
+        "representation": "pending-documentation-list"
+      },
+      {
+        "id": "pending-services",
+        "label": "Projectos de hidráulica, drenagem, electricidade e quadro eléctrico",
+        "status": "covered",
+        "representation": "pending-documentation-list"
+      },
+      {
+        "id": "pending-service-performance",
+        "label": "Diâmetros, declives, cabos, circuitos, potências e ligações",
+        "status": "covered",
+        "representation": "pending-documentation-list"
+      },
+      {
+        "id": "pending-thermal-acoustic",
+        "label": "Valores U, isolamento acústico e ventilação",
+        "status": "covered",
+        "representation": "pending-documentation-list"
+      },
+      {
+        "id": "pending-loads",
+        "label": "Cargas admissíveis, vento, neve e sismo",
+        "status": "covered",
+        "representation": "pending-documentation-list"
+      },
+      {
+        "id": "pending-certification",
+        "label": "Classes, ensaios, certificados e garantia do modelo",
+        "status": "covered",
+        "representation": "pending-documentation-list"
+      },
+      {
+        "id": "pending-supply-package",
+        "label": "Pacote exacto de equipamento de série e exclusões da GV72",
+        "status": "covered",
+        "representation": "pending-documentation-list"
+      },
+      {
+        "id": "pending-compatibility",
+        "label": "Matriz de compatibilidade dos opcionais com cada planta",
+        "status": "covered",
+        "representation": "pending-documentation-list"
+      },
+      {
+        "id": "pending-manufacturing-dimensions",
+        "label": "Tolerâncias de fabrico e cotas de montagem",
+        "status": "covered",
+        "representation": "pending-documentation-list"
+      },
+      {
+        "id": "pending-physical-materials",
+        "label": "Escala física, fichas PBR e colorimetria de materiais",
+        "status": "covered",
+        "representation": "pending-documentation-list"
+      }
+    ]
+  },
+  "findings": [],
+  "interpretation": "Os 107 factos estão preservados no inventário descarregável e representados, ou consolidados de forma justificada, na ficha visível. As 25 medidas não duplicam o alpendre. Não foram encontradas unidades, preços ou compatibilidades mal aplicados na integração revista. A diferença de serialização JSON entre 57 e 57.0 na duração do segundo vídeo é numericamente irrelevante.",
+  "resolvedFindings": [
+    {
+      "id": "interior-envelope-area-omitted",
+      "resolution": "A ficha mostra agora a área antes das divisórias e distingue-a da área livre; ambas são identificadas como cálculos com espessuras assumidas, não áreas certificadas."
+    },
+    {
+      "id": "catalogue-badges-not-presented",
+      "resolution": "As cinco designações STANDARD/PREMIUM/DELUXE são apresentadas como designações do catálogo, mantendo estado opcional e compatibilidade por confirmar."
+    }
+  ]
+}

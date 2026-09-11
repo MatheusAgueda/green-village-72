@@ -1,0 +1,332 @@
+{
+  "revisionAudited": "GV72-R8-2026-09-10 / baseline para R9",
+  "completedAt": "2026-09-11T09:54:45.738129+00:00",
+  "status": "FUNCTIONAL_PASS_WITH_READABILITY_FINDINGS",
+  "environment": {
+    "surface": "servidor local existente, porta 4174",
+    "browser": "Google Chrome 153 headless",
+    "viewports": [
+      {
+        "width": 375,
+        "height": 844
+      },
+      {
+        "width": 768,
+        "height": 1000
+      },
+      {
+        "width": 1440,
+        "height": 1000
+      }
+    ],
+    "scope": "Contextos novos; sem sessão autenticada ou configuração real do utilizador."
+  },
+  "sourceHashes": {
+    "app.js": "25c56548115ecb5a34e68fc7b17ca561919a7443e8c36d3286640a089f9e15ea",
+    "index.html": "6eb28adc56d7bca5be5aa9151e8cbdf103042c9fc5b75ec12c181b939f7951cc",
+    "video-library.js": "d847ea0e56293b0a65cd4ca19d851ab7bee20179c3ef55f354484a060eba5c51",
+    "reference-videos.js": "52790dfc440060b0658eef11b464dbdcd1efa0a0565f7949687af6bbe463565c",
+    "style.css": "50612c879180893524cc05006759fff3fbfee7675d2f0e9beabfdb54b1b7e5e4",
+    "portfolio-r7.css": "a35b84d1d2d4903c4846ea0f21a5e2acc962e5244024e8b175920fe74d32c86b",
+    "studio-r8.css": "c37a77d12b0e1de6c0f20f1a6d0dc6b5aa9cb696b52218a6a3ac3e849a212141",
+    "specification.js": "7261cea836682a66027b343df171b09ced64d2a4d5c5b2c13fc0eeffdd865f99",
+    "client-tools.js": "518dab48aa5735a7662514569273c04316cc2f938cffebb5113124a0ae79cf41"
+  },
+  "sourcesUnchanged": false,
+  "videos": [
+    {
+      "id": "v1-spacious",
+      "sourceLabel": "40FT — Spacious Living",
+      "variantNote": "40FT no nome do ficheiro; correspondência com as plantas por confirmar.",
+      "sourceAsset": "assets/reference-videos/v1-spacious.mp4",
+      "nativeDimensions": [
+        576,
+        1024
+      ],
+      "durationSeconds": 118.233333,
+      "durationSourceSeconds": 118.233333,
+      "sha256": "24ab128ec1648232fccc74f5954e1b5ba8313e484a39eed30dc9327854aa00f7",
+      "downloadBytes": 14919007,
+      "originalHashMatched": true,
+      "chapters": [
+        {
+          "targetSeconds": 0,
+          "actualSeconds": 0
+        },
+        {
+          "targetSeconds": 8,
+          "actualSeconds": 8
+        },
+        {
+          "targetSeconds": 36,
+          "actualSeconds": 36
+        },
+        {
+          "targetSeconds": 88,
+          "actualSeconds": 88.001671
+        }
+      ],
+      "pauseStable": true,
+      "keyboardSeek": {
+        "from": 88.005658,
+        "to": 89.188033
+      },
+      "nativeReplayPassed": true
+    },
+    {
+      "id": "v2-74m2",
+      "sourceLabel": "40FT — 74 m²",
+      "variantNote": "Identificado como 74 m² no ficheiro. Referência de outra variante.",
+      "sourceAsset": "assets/reference-videos/v2-74m2.mp4",
+      "nativeDimensions": [
+        576,
+        1024
+      ],
+      "durationSeconds": 57,
+      "durationSourceSeconds": 57.0,
+      "sha256": "1c68b155875dc30534750f817785ad24f6e469e813013ba4fe2632b92ef0c0c1",
+      "downloadBytes": 6007251,
+      "originalHashMatched": true,
+      "chapters": [
+        {
+          "targetSeconds": 0,
+          "actualSeconds": 0
+        },
+        {
+          "targetSeconds": 12,
+          "actualSeconds": 12.019214
+        },
+        {
+          "targetSeconds": 32,
+          "actualSeconds": 32
+        },
+        {
+          "targetSeconds": 24,
+          "actualSeconds": 24.011939
+        }
+      ],
+      "pauseStable": true,
+      "keyboardSeek": {
+        "from": 24.014114,
+        "to": 24.5841
+      },
+      "nativeReplayPassed": true
+    },
+    {
+      "id": "v3-comfortable",
+      "sourceLabel": "40FT — Comfortable Living",
+      "variantNote": "Contém superfícies protegidas e equipamentos embalados; acabamentos finais por confirmar.",
+      "sourceAsset": "assets/reference-videos/v3-comfortable.mp4",
+      "nativeDimensions": [
+        576,
+        1024
+      ],
+      "durationSeconds": 100.198027,
+      "durationSourceSeconds": 100.198027,
+      "sha256": "6a5266ec7bd584785dee744490b2694994abc60ef2bad7a88c791e2c4367163b",
+      "downloadBytes": 11770834,
+      "originalHashMatched": true,
+      "chapters": [
+        {
+          "targetSeconds": 0,
+          "actualSeconds": 0.008809
+        },
+        {
+          "targetSeconds": 92,
+          "actualSeconds": 92.009658
+        },
+        {
+          "targetSeconds": 40,
+          "actualSeconds": 40
+        },
+        {
+          "targetSeconds": 68,
+          "actualSeconds": 68.009646
+        }
+      ],
+      "pauseStable": true,
+      "keyboardSeek": {
+        "from": 68.01212,
+        "to": 69.01408
+      },
+      "nativeReplayPassed": true
+    },
+    {
+      "id": "v4-37m2",
+      "sourceLabel": "20ft — 37 m²",
+      "variantNote": "Identificado como 20ft / 37 m²; o nome também menciona 40ft. Variante distinta.",
+      "sourceAsset": "assets/reference-videos/v4-37m2.mp4",
+      "nativeDimensions": [
+        576,
+        1024
+      ],
+      "durationSeconds": 56.566667,
+      "durationSourceSeconds": 56.566667,
+      "sha256": "106762e67dbb6359804b3b23822ed23d3778824a2fc6a861810e45aa7fadb0e1",
+      "downloadBytes": 6590943,
+      "originalHashMatched": true,
+      "chapters": [
+        {
+          "targetSeconds": 4,
+          "actualSeconds": 4.011011
+        },
+        {
+          "targetSeconds": 16,
+          "actualSeconds": 16.009908
+        },
+        {
+          "targetSeconds": 20,
+          "actualSeconds": 20
+        },
+        {
+          "targetSeconds": 36,
+          "actualSeconds": 36
+        }
+      ],
+      "pauseStable": true,
+      "keyboardSeek": {
+        "from": 36,
+        "to": 36.565666
+      },
+      "nativeReplayPassed": true
+    }
+  ],
+  "mediaCases": {
+    "fourOriginalsPlayPauseReplay": true,
+    "chapterSeeksPassed": 16,
+    "downloadsHashMatched": 4,
+    "rapidSameAndDifferentChapterRequests": true,
+    "maximumCachedBlobVideos": 2,
+    "oldBlobURLsRevoked": true,
+    "onePlayingAtATime": true,
+    "leavingFilmsPausesAll": true,
+    "http404Retry": true,
+    "corruptVideoRetry": true,
+    "pageLeaveDuringFetchCancels": true,
+    "timeoutRetry": true,
+    "timeoutTestNote": "Limite de 45s reduzido apenas no navegador do teste para 350ms; o atraso de 45s não foi aguardado em tempo real."
+  },
+  "documentation": {
+    "rows": 26,
+    "dataMatchesLedger": true,
+    "externalAreaM2": 73.396,
+    "commercialAreaM2": 72,
+    "usefulArea": "not documented",
+    "layoutWidths": [
+      375,
+      768,
+      1440
+    ],
+    "pageHorizontalOverflow": false,
+    "allLocalLinksHTTP200": true,
+    "localLinkCount": 18,
+    "keyboardTabAndHorizontalArrowWorksInChrome": true
+  },
+  "accessibility": {
+    "filmsAtOpacity1": [],
+    "documentation768": [],
+    "documentation1440": [],
+    "documentation375Axe": [
+      "scrollable-region-focusable"
+    ],
+    "interpretation": "Chrome 153 efectivamente permite Tab e setas na tabela. O aviso axe é registado como limitação de robustez/detecção, sem alegar bloqueio de teclado reproduzido. Primeiro ensaio de contraste durante fade descartado; ensaio após opacity=1 tem zero violações."
+  },
+  "findings": [
+    {
+      "id": "R9-UX-01",
+      "priority": "P2",
+      "category": "Mobile readability",
+      "title": "A fonte e o estado perdem o contexto da medida ao deslocar a tabela",
+      "reproduction": [
+        "Viewport 375×844; abrir Ficha técnica.",
+        "Deslocar horizontalmente a tabela até à última coluna.",
+        "Percorrer as linhas de Estado / Origem: o nome e os valores da medida estão fora da área visível."
+      ],
+      "evidence": {
+        "containerWidthPx": 341,
+        "tableWidthPx": 710,
+        "tableHeightPx": 1940.59375,
+        "screenshot": "baseline-table-right-375.png"
+      },
+      "suggestedFix": "Apresentar cada medida como cartão em mobile; em alternativa manter identificação da linha e cabeçalhos visíveis durante a deslocação.",
+      "scope": "Os 26 registos estão presentes e correctos; o problema é associar fonte/estado ao respectivo nome e valor."
+    },
+    {
+      "id": "R9-UX-02",
+      "priority": "P2",
+      "category": "Mobile readability",
+      "title": "O vídeo original ocupa apenas 136px e as notas ficam a 10px",
+      "reproduction": [
+        "Viewport 375×844; abrir Filmes e chegar ao cartão Unidade compacta.",
+        "Observar o vídeo na coluna esquerda de um cartão de 343px.",
+        "Ler capítulos e distinção 20ft / 37m²; tentar duplo clique no vídeo para ampliar."
+      ],
+      "evidence": {
+        "cardWidthPx": 343,
+        "videoWidthPx": 136.390625,
+        "videoElementHeightPx": 336.8125,
+        "chapterFontPx": 10,
+        "chapterButtonHeightPx": 30,
+        "variantNoteFontPx": 10,
+        "doubleClickEnteredFullscreen": false,
+        "screenshot": "baseline-37m2-card-clean-375.png"
+      },
+      "suggestedFix": "Usar vídeo acima da descrição, à largura disponível, e comando explícito de ampliar. Destacar a variante 20ft / 37m² antes do vídeo; manter a advertência de variante distinta.",
+      "scope": "Não é falha de reprodução: todos os comandos ensaiados funcionam. A restrição de espaço dificulta observar os detalhes e identificar a variante."
+    },
+    {
+      "id": "R9-LABEL-03",
+      "priority": "P3",
+      "category": "Units label",
+      "title": "Cabeçalhos / m também abrangem a linha Área útil certificada",
+      "reproduction": [
+        "Abrir Ficha técnica e observar Fonte / m e Modelo / m.",
+        "A linha Área útil certificada pertence à mesma tabela, embora o ledger defina a unidade m²."
+      ],
+      "evidence": {
+        "headers": [
+          "Medida",
+          "Fonte / m",
+          "Modelo / m",
+          "Estado",
+          "Origem / limite"
+        ],
+        "areaUnitInLedger": "m²",
+        "screenshot": "baseline-documentation-1440.png"
+      },
+      "suggestedFix": "Usar cabeçalhos sem unidade fixa e indicar a unidade por valor/linha.",
+      "scope": "Não há valor numérico errado: a área útil consta como não documentada. É uma incoerência do cabeçalho."
+    }
+  ],
+  "normalConsoleErrors": 0,
+  "normalNetworkFailures": 0,
+  "controlledFailureLog": [
+    "HTTP404 injectado no teste de erro"
+  ],
+  "unhandledExceptionsInFailureTests": 0,
+  "evidenceFiles": [
+    "media-baseline.json",
+    "media-errors.json",
+    "documentation-baseline.json",
+    "mobile-readability.json",
+    "baseline-hashes.json"
+  ],
+  "selectedScreenshots": [
+    "baseline-37m2-card-clean-375.png",
+    "baseline-table-right-375.png",
+    "baseline-documentation-375.png",
+    "baseline-documentation-768.png",
+    "baseline-documentation-1440.png"
+  ],
+  "limits": [
+    "Não ensaiado em hardware móvel real, Safari/WebKit ou publicação autenticada.",
+    "Resolução e duração verificadas pela descodificação do navegador; identidade de bytes confirmada pelo SHA256 do download face ao inventário da fonte.",
+    "Procura de capítulos e comandos não equivale a assistir integralmente aos 331.998 segundos dos quatro vídeos.",
+    "Sem repetição da matriz completa R8: não foram encontrados indícios que exigissem ampliar esse âmbito."
+  ],
+  "totalOriginalDurationSeconds": 331.998027,
+  "sourceFilesChangedByConsolidation": [
+    "specification.js"
+  ],
+  "sourceNote": "Baseline registado antes da revisão R9. Os hashes foram confirmados iguais após os ensaios; no momento da consolidação havia alterações de outro agente nos ficheiros indicados. Os resultados referem-se ao baseline copiado, e as alterações requerem reteste dirigido."
+}

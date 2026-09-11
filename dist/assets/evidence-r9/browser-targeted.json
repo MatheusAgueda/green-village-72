@@ -1,0 +1,582 @@
+{
+  "checks": [
+    {
+      "name": "source-frames-lightbox-zoom",
+      "status": "PASS",
+      "result": {
+        "values": [
+          {
+            "step": "0",
+            "pressed": 1,
+            "note": "A referência mostra as coberturas laterais levantadas.",
+            "p": 0
+          },
+          {
+            "step": "1",
+            "pressed": 1,
+            "note": "Paredes com janelas deitadas sobre os pisos laterais.",
+            "p": 0
+          },
+          {
+            "step": "2",
+            "pressed": 1,
+            "note": "As paredes elevam-se de dentro para fora.",
+            "p": 0
+          },
+          {
+            "step": "3",
+            "pressed": 1,
+            "note": "Posição final nas referências. Pivôs, folgas e recolhimento dos topos ainda por documentar.",
+            "p": 0
+          }
+        ],
+        "lightbox": true,
+        "zoomChanged": true
+      }
+    },
+    {
+      "name": "expansion-collapsed-open-controls-reachability",
+      "status": "PASS",
+      "result": [
+        {
+          "width": 375,
+          "height": 844,
+          "collapsed": {
+            "viewport": {
+              "x": 17,
+              "y": 415.765625,
+              "width": 341,
+              "height": 261.625,
+              "top": 415.765625,
+              "right": 358,
+              "bottom": 677.390625,
+              "left": 17
+            },
+            "play": {
+              "x": 31,
+              "y": 750.390625,
+              "width": 96.703125,
+              "height": 40,
+              "top": 750.390625,
+              "right": 127.703125,
+              "bottom": 790.390625,
+              "left": 31
+            },
+            "workspace": {
+              "x": 17,
+              "y": 322.765625,
+              "width": 341,
+              "height": 722.90625,
+              "top": 322.765625,
+              "right": 358,
+              "bottom": 1045.671875,
+              "left": 17
+            },
+            "scrollY": 0,
+            "height": 844,
+            "sourceOpen": false
+          },
+          "scrolled": {
+            "viewport": {
+              "x": 17,
+              "y": 415.765625,
+              "width": 341,
+              "height": 261.625,
+              "top": 415.765625,
+              "right": 358,
+              "bottom": 677.390625,
+              "left": 17
+            },
+            "play": {
+              "x": 31,
+              "y": 750.390625,
+              "width": 96.703125,
+              "height": 40,
+              "top": 750.390625,
+              "right": 127.703125,
+              "bottom": 790.390625,
+              "left": 31
+            },
+            "workspace": {
+              "x": 17,
+              "y": 322.765625,
+              "width": 341,
+              "height": 722.90625,
+              "top": 322.765625,
+              "right": 358,
+              "bottom": 1045.671875,
+              "left": 17
+            },
+            "scrollY": 0,
+            "height": 844,
+            "sourceOpen": false
+          },
+          "opened": {
+            "viewport": {
+              "x": 17,
+              "y": 415.765625,
+              "width": 341,
+              "height": 261.625,
+              "top": 415.765625,
+              "right": 358,
+              "bottom": 677.390625,
+              "left": 17
+            },
+            "play": {
+              "x": 31,
+              "y": 750.390625,
+              "width": 96.703125,
+              "height": 40,
+              "top": 750.390625,
+              "right": 127.703125,
+              "bottom": 790.390625,
+              "left": 31
+            },
+            "workspace": {
+              "x": 17,
+              "y": 322.765625,
+              "width": 341,
+              "height": 1042.90625,
+              "top": 322.765625,
+              "right": 358,
+              "bottom": 1365.671875,
+              "left": 17
+            },
+            "scrollY": 0,
+            "height": 844,
+            "sourceOpen": true
+          }
+        },
+        {
+          "width": 768,
+          "height": 1000,
+          "collapsed": {
+            "viewport": {
+              "x": 24.03125,
+              "y": 509.203125,
+              "width": 719.9375,
+              "height": 355,
+              "top": 509.203125,
+              "right": 743.96875,
+              "bottom": 864.203125,
+              "left": 24.03125
+            },
+            "play": {
+              "x": 46.03125,
+              "y": 945.203125,
+              "width": 108.015625,
+              "height": 42,
+              "top": 945.203125,
+              "right": 154.046875,
+              "bottom": 987.203125,
+              "left": 46.03125
+            },
+            "workspace": {
+              "x": 24.03125,
+              "y": 350.203125,
+              "width": 719.9375,
+              "height": 806.78125,
+              "top": 350.203125,
+              "right": 743.96875,
+              "bottom": 1156.984375,
+              "left": 24.03125
+            },
+            "scrollY": 0,
+            "height": 1000,
+            "sourceOpen": false
+          },
+          "scrolled": {
+            "viewport": {
+              "x": 24.03125,
+              "y": 509.203125,
+              "width": 719.9375,
+              "height": 355,
+              "top": 509.203125,
+              "right": 743.96875,
+              "bottom": 864.203125,
+              "left": 24.03125
+            },
+            "play": {
+              "x": 46.03125,
+              "y": 945.203125,
+              "width": 108.015625,
+              "height": 42,
+              "top": 945.203125,
+              "right": 154.046875,
+              "bottom": 987.203125,
+              "left": 46.03125
+            },
+            "workspace": {
+              "x": 24.03125,
+              "y": 350.203125,
+              "width": 719.9375,
+              "height": 806.78125,
+              "top": 350.203125,
+              "right": 743.96875,
+              "bottom": 1156.984375,
+              "left": 24.03125
+            },
+            "scrollY": 0,
+            "height": 1000,
+            "sourceOpen": false
+          },
+          "opened": {
+            "viewport": {
+              "x": 24.03125,
+              "y": 509.203125,
+              "width": 719.9375,
+              "height": 355,
+              "top": 509.203125,
+              "right": 743.96875,
+              "bottom": 864.203125,
+              "left": 24.03125
+            },
+            "play": {
+              "x": 46.03125,
+              "y": 945.203125,
+              "width": 108.015625,
+              "height": 42,
+              "top": 945.203125,
+              "right": 154.046875,
+              "bottom": 987.203125,
+              "left": 46.03125
+            },
+            "workspace": {
+              "x": 24.03125,
+              "y": 350.203125,
+              "width": 719.9375,
+              "height": 1054.875,
+              "top": 350.203125,
+              "right": 743.96875,
+              "bottom": 1405.078125,
+              "left": 24.03125
+            },
+            "scrollY": 0,
+            "height": 1000,
+            "sourceOpen": true
+          }
+        },
+        {
+          "width": 1169,
+          "height": 961,
+          "collapsed": {
+            "viewport": {
+              "x": 36.0625,
+              "y": 505.609375,
+              "width": 748.875,
+              "height": 509.21875,
+              "top": 505.609375,
+              "right": 784.9375,
+              "bottom": 1014.828125,
+              "left": 36.0625
+            },
+            "play": {
+              "x": 58.0625,
+              "y": 1095.828125,
+              "width": 108.015625,
+              "height": 42,
+              "top": 1095.828125,
+              "right": 166.078125,
+              "bottom": 1137.828125,
+              "left": 58.0625
+            },
+            "workspace": {
+              "x": 36.0625,
+              "y": 339.609375,
+              "width": 748.875,
+              "height": 978,
+              "top": 339.609375,
+              "right": 784.9375,
+              "bottom": 1317.609375,
+              "left": 36.0625
+            },
+            "scrollY": 0,
+            "height": 961,
+            "sourceOpen": false
+          },
+          "scrolled": {
+            "viewport": {
+              "x": 36.0625,
+              "y": -130.390625,
+              "width": 748.875,
+              "height": 509.21875,
+              "top": -130.390625,
+              "right": 784.9375,
+              "bottom": 378.828125,
+              "left": 36.0625
+            },
+            "play": {
+              "x": 58.0625,
+              "y": 459.828125,
+              "width": 108.015625,
+              "height": 42,
+              "top": 459.828125,
+              "right": 166.078125,
+              "bottom": 501.828125,
+              "left": 58.0625
+            },
+            "workspace": {
+              "x": 36.0625,
+              "y": -296.390625,
+              "width": 748.875,
+              "height": 978,
+              "top": -296.390625,
+              "right": 784.9375,
+              "bottom": 681.609375,
+              "left": 36.0625
+            },
+            "scrollY": 636,
+            "height": 961,
+            "sourceOpen": false
+          },
+          "opened": {
+            "viewport": {
+              "x": 36.0625,
+              "y": 505.609375,
+              "width": 748.875,
+              "height": 260,
+              "top": 505.609375,
+              "right": 784.9375,
+              "bottom": 765.609375,
+              "left": 36.0625
+            },
+            "play": {
+              "x": 58.0625,
+              "y": 846.609375,
+              "width": 108.015625,
+              "height": 42,
+              "top": 846.609375,
+              "right": 166.078125,
+              "bottom": 888.609375,
+              "left": 58.0625
+            },
+            "workspace": {
+              "x": 36.0625,
+              "y": 339.609375,
+              "width": 748.875,
+              "height": 978,
+              "top": 339.609375,
+              "right": 784.9375,
+              "bottom": 1317.609375,
+              "left": 36.0625
+            },
+            "scrollY": 0,
+            "height": 961,
+            "sourceOpen": true
+          }
+        },
+        {
+          "width": 1440,
+          "height": 1000,
+          "collapsed": {
+            "viewport": {
+              "x": 44.1875,
+              "y": 474.65625,
+              "width": 967.625,
+              "height": 527.8125,
+              "top": 474.65625,
+              "right": 1011.8125,
+              "bottom": 1002.46875,
+              "left": 44.1875
+            },
+            "play": {
+              "x": 66.1875,
+              "y": 1083.46875,
+              "width": 108.015625,
+              "height": 42,
+              "top": 1083.46875,
+              "right": 174.203125,
+              "bottom": 1125.46875,
+              "left": 66.1875
+            },
+            "workspace": {
+              "x": 44.1875,
+              "y": 308.65625,
+              "width": 967.625,
+              "height": 978,
+              "top": 308.65625,
+              "right": 1011.8125,
+              "bottom": 1286.65625,
+              "left": 44.1875
+            },
+            "scrollY": 0,
+            "height": 1000,
+            "sourceOpen": false
+          },
+          "scrolled": {
+            "viewport": {
+              "x": 44.1875,
+              "y": -129.34375,
+              "width": 967.625,
+              "height": 527.8125,
+              "top": -129.34375,
+              "right": 1011.8125,
+              "bottom": 398.46875,
+              "left": 44.1875
+            },
+            "play": {
+              "x": 66.1875,
+              "y": 479.46875,
+              "width": 108.015625,
+              "height": 42,
+              "top": 479.46875,
+              "right": 174.203125,
+              "bottom": 521.46875,
+              "left": 66.1875
+            },
+            "workspace": {
+              "x": 44.1875,
+              "y": -295.34375,
+              "width": 967.625,
+              "height": 978,
+              "top": -295.34375,
+              "right": 1011.8125,
+              "bottom": 682.65625,
+              "left": 44.1875
+            },
+            "scrollY": 604,
+            "height": 1000,
+            "sourceOpen": false
+          },
+          "opened": {
+            "viewport": {
+              "x": 44.1875,
+              "y": 474.65625,
+              "width": 967.625,
+              "height": 270.0625,
+              "top": 474.65625,
+              "right": 1011.8125,
+              "bottom": 744.71875,
+              "left": 44.1875
+            },
+            "play": {
+              "x": 66.1875,
+              "y": 825.71875,
+              "width": 108.015625,
+              "height": 42,
+              "top": 825.71875,
+              "right": 174.203125,
+              "bottom": 867.71875,
+              "left": 66.1875
+            },
+            "workspace": {
+              "x": 44.1875,
+              "y": 308.65625,
+              "width": 967.625,
+              "height": 978,
+              "top": 308.65625,
+              "right": 1011.8125,
+              "bottom": 1286.65625,
+              "left": 44.1875
+            },
+            "scrollY": 0,
+            "height": 1000,
+            "sourceOpen": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "video-entry-visible-375",
+      "status": "PASS",
+      "result": [
+        {
+          "id": "source-v1-spacious",
+          "top": 241.671875,
+          "bottom": 701.671875,
+          "screen": 844,
+          "focused": true,
+          "paused": false,
+          "time": 0.459955,
+          "otherPlaying": 1
+        },
+        {
+          "id": "source-v2-74m2",
+          "top": 241.875,
+          "bottom": 701.875,
+          "screen": 844,
+          "focused": true,
+          "paused": false,
+          "time": 0.45324,
+          "otherPlaying": 1
+        },
+        {
+          "id": "source-v3-comfortable",
+          "top": 241.953125,
+          "bottom": 701.953125,
+          "screen": 844,
+          "focused": true,
+          "paused": false,
+          "time": 0.452034,
+          "otherPlaying": 1
+        },
+        {
+          "id": "source-v4-37m2",
+          "top": 241.59375,
+          "bottom": 701.59375,
+          "screen": 844,
+          "focused": true,
+          "paused": false,
+          "time": 0.458241,
+          "otherPlaying": 1
+        }
+      ]
+    },
+    {
+      "name": "video-entry-visible-1440",
+      "status": "PASS",
+      "result": [
+        {
+          "id": "source-v1-spacious",
+          "top": 320.40625,
+          "bottom": 680.40625,
+          "screen": 1000,
+          "focused": true,
+          "paused": false,
+          "time": 0.459995,
+          "otherPlaying": 1
+        },
+        {
+          "id": "source-v2-74m2",
+          "top": 320.40625,
+          "bottom": 680.40625,
+          "screen": 1000,
+          "focused": true,
+          "paused": false,
+          "time": 0.474603,
+          "otherPlaying": 1
+        },
+        {
+          "id": "source-v3-comfortable",
+          "top": 320.40625,
+          "bottom": 680.40625,
+          "screen": 1000,
+          "focused": true,
+          "paused": false,
+          "time": 0.456344,
+          "otherPlaying": 1
+        },
+        {
+          "id": "source-v4-37m2",
+          "top": 320.40625,
+          "bottom": 680.40625,
+          "screen": 1000,
+          "focused": true,
+          "paused": false,
+          "time": 0.474641,
+          "otherPlaying": 1
+        }
+      ]
+    },
+    {
+      "name": "video-navigation-before-delayed-fetch",
+      "status": "PASS",
+      "result": {
+        "page": "documentation",
+        "paused": true,
+        "loading": false
+      }
+    }
+  ],
+  "logs": []
+}

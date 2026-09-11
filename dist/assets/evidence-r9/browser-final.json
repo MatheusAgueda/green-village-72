@@ -1,0 +1,514 @@
+{
+  "revision": "R9",
+  "generatedAt": "2026-09-11T10:22:59.925524+00:00",
+  "status": "PASS",
+  "environment": {
+    "browser": "Google Chrome headless",
+    "surface": "pré-visualização local isolada",
+    "viewports": [
+      [
+        375,
+        844
+      ],
+      [
+        768,
+        1000
+      ],
+      [
+        1169,
+        961
+      ],
+      [
+        1440,
+        1000
+      ]
+    ],
+    "realMobileHardware": false,
+    "webKitOrInAppBrowser": false
+  },
+  "sourceHashesLatest": {
+    "app.js": "d47021d6cf76e4f68512a279d62038c1d78e391942339297dbc2ff08fbfd97f7",
+    "portfolio.js": "64b75de6a8c4b2d4f35963989823fd5c32dca7f5bbf51dea07a930e4eb8ecb1c",
+    "index.html": "b84ba71946b31e654bd46bbd635abb4a532eebe303f4c22052c728c572826ca9",
+    "stage.js": "bc528ea9fe5dcefb72c5483ba2fd6b08f329e26b8168154c7770fd3b707a96d6",
+    "studio-r9.css": "9af1f606cb3f6f1411b64a918cc88c87056e0e6caae38658276f3484dc584f92",
+    "technical-sheet.js": "95a454eb93b8a5e3b9ac4a0a95e221f05330527d626d567258a25cfe22e160fa",
+    "technical-data.js": "7d606d86494e1250ea0ff4d571769918a73849a86401e82aa06965f23d6010c6",
+    "specification.js": "f2e87083df655044747d13c5c13e3e1a976204b24a2b53d128d55ce54bc2ce9d",
+    "model.js": "7145f08f00171fdf9137a15292955099f3284620e2f3a76afa96ab2feaf49f4e",
+    "video-library.js": "d847ea0e56293b0a65cd4ca19d851ab7bee20179c3ef55f354484a060eba5c51",
+    "reference-videos.js": "9281a8c664062feb935fcb59b9004f38656b6d894e36dc667d690c93add825d6"
+  },
+  "sourceHashesFinalBehaviourTest": {
+    "app.js": "e98308404967232ed8f278f3d8af8023e95cfdef1aab085300fe39d2bef69bf6",
+    "index.html": "87d43ee51f62ffbdcbb1e420ce65076cb9d07ccd1fe4405b5b76f1aa5299a8dd",
+    "stage.js": "bc528ea9fe5dcefb72c5483ba2fd6b08f329e26b8168154c7770fd3b707a96d6",
+    "studio-r9.css": "9af1f606cb3f6f1411b64a918cc88c87056e0e6caae38658276f3484dc584f92",
+    "technical-sheet.js": "95a454eb93b8a5e3b9ac4a0a95e221f05330527d626d567258a25cfe22e160fa",
+    "technical-data.js": "7d606d86494e1250ea0ff4d571769918a73849a86401e82aa06965f23d6010c6",
+    "specification.js": "f2e87083df655044747d13c5c13e3e1a976204b24a2b53d128d55ce54bc2ce9d",
+    "model.js": "7145f08f00171fdf9137a15292955099f3284620e2f3a76afa96ab2feaf49f4e"
+  },
+  "sourceHashesFinalPDFTest": {
+    "app.js": "d47021d6cf76e4f68512a279d62038c1d78e391942339297dbc2ff08fbfd97f7",
+    "portfolio.js": "64b75de6a8c4b2d4f35963989823fd5c32dca7f5bbf51dea07a930e4eb8ecb1c",
+    "index.html": "e9b7cde991c0e81b36cb4e14f01732e1279712abc62b8a88ad7d0528f37b794f",
+    "stage.js": "bc528ea9fe5dcefb72c5483ba2fd6b08f329e26b8168154c7770fd3b707a96d6",
+    "studio-r9.css": "9af1f606cb3f6f1411b64a918cc88c87056e0e6caae38658276f3484dc584f92",
+    "technical-sheet.js": "95a454eb93b8a5e3b9ac4a0a95e221f05330527d626d567258a25cfe22e160fa",
+    "technical-data.js": "7d606d86494e1250ea0ff4d571769918a73849a86401e82aa06965f23d6010c6",
+    "specification.js": "f2e87083df655044747d13c5c13e3e1a976204b24a2b53d128d55ce54bc2ce9d",
+    "model.js": "7145f08f00171fdf9137a15292955099f3284620e2f3a76afa96ab2feaf49f4e",
+    "video-library.js": "d847ea0e56293b0a65cd4ca19d851ab7bee20179c3ef55f354484a060eba5c51",
+    "reference-videos.js": "9281a8c664062feb935fcb59b9004f38656b6d894e36dc667d690c93add825d6"
+  },
+  "sourcesStableDuringFinalBehaviourTest": true,
+  "sourcesStableDuringFinalPDFTest": true,
+  "videoTransportUnchangedFromBaseline": true,
+  "outcomes": [
+    {
+      "name": "Quatro vídeos recebidos",
+      "status": "PASS",
+      "details": "16 capítulos reais, controlos nativos de reprodução/pausa/procura temporal, quatro downloads com hashes iguais aos originais, troca rápida, cache máximo de dois Blobs e pausa ao sair. Metadados e capítulos conservaram-se na R9."
+    },
+    {
+      "name": "Falhas de vídeo e recuperação",
+      "status": "PASS",
+      "details": "404, bytes corrompidos, resposta atrasada com saída de página e timeout simulado; erro visível, cancelamento e nova tentativa funcionam."
+    },
+    {
+      "name": "Ficha técnica",
+      "status": "PASS",
+      "details": "25 medidas, 22 opções, quatro vídeos; mudança para T4-B actualiza quartos/áreas; JSON contém unidades, opções e origem da planta."
+    },
+    {
+      "name": "Expansão interactiva",
+      "status": "PASS",
+      "details": "Reproduzir, pausar, retomar, reiniciar, cursor Home/End, Paredes erguidas, Casa completa e saída/regresso mantêm estados coerentes; alterações de piso e planta preservam a pose ou a reprodução activa."
+    },
+    {
+      "name": "Rigidez e restauro visual",
+      "status": "PASS",
+      "details": "Cinco poses 0/25/50/75/100%; oito malhas de vidro permanecem rígidas às paredes móveis; painéis de topo e mobiliário são omitidos na demonstração e restaurados na casa completa.",
+      "maxRelativeMatrixDrift": 5.828670879282072e-16
+    },
+    {
+      "name": "Referência original e câmara",
+      "status": "PASS",
+      "details": "Quatro botões seleccionam a etapa correcta; ampliação abre/fecha por Escape; zoom altera a câmara."
+    },
+    {
+      "name": "PNG nativo",
+      "status": "PASS",
+      "details": "Download real de 3840 × 2160 com pose 50% pausada; pose e estado de pausa não mudam."
+    },
+    {
+      "name": "Teclado e acessibilidade automatizada",
+      "status": "PASS",
+      "details": "Cursor → Tab → Reproduzir, Home/ArrowRight/Space; zero violações axe na ficha a 375/768/1440, nos filmes a 375 e na expansão final a 375/768/1169/1440 após terminar a transição visual."
+    },
+    {
+      "name": "Resumo e PDF T1",
+      "status": "PASS",
+      "details": "Abrir resumo pausa a animação e captura pose estável; PDF descarregado com quatro páginas A4, texto extraído e páginas renderizadas inspeccionadas sem sobreposição ou corte."
+    },
+    {
+      "name": "Ligações",
+      "status": "PASS",
+      "details": "33/33 ligações únicas da ficha técnica aprovadas; leitura final do relatório com 12/12 ligações locais HTTP 200, imagem carregada e favicon HTTP 200."
+    },
+    {
+      "name": "Filme de elevação R9",
+      "status": "PASS",
+      "details": "14 s, 1920 × 1080; reprodução nativa, pausa estável, procura temporal nativa e aos 10 s, alternância com original e pausa ao sair em 375 e 1440. Download de 2 974 419 bytes coincide com o SHA-256 do manifesto.",
+      "sha256": "5b1324361d411e9e6dfcf77074463f99d8af843016711790f49615ed749133ee"
+    }
+  ],
+  "videos": [
+    {
+      "id": "v1-spacious",
+      "nativePixels": [
+        576,
+        1024
+      ],
+      "durationSeconds": 118.233333,
+      "chapters": [
+        {
+          "requested": 0,
+          "actual": 0
+        },
+        {
+          "requested": 8,
+          "actual": 8
+        },
+        {
+          "requested": 36,
+          "actual": 36
+        },
+        {
+          "requested": 88,
+          "actual": 88.001671
+        }
+      ],
+      "downloadBytes": 14919007,
+      "sha256": "24ab128ec1648232fccc74f5954e1b5ba8313e484a39eed30dc9327854aa00f7",
+      "sourceHashMatch": true
+    },
+    {
+      "id": "v2-74m2",
+      "nativePixels": [
+        576,
+        1024
+      ],
+      "durationSeconds": 57,
+      "chapters": [
+        {
+          "requested": 0,
+          "actual": 0
+        },
+        {
+          "requested": 12,
+          "actual": 12.019214
+        },
+        {
+          "requested": 32,
+          "actual": 32
+        },
+        {
+          "requested": 24,
+          "actual": 24.011939
+        }
+      ],
+      "downloadBytes": 6007251,
+      "sha256": "1c68b155875dc30534750f817785ad24f6e469e813013ba4fe2632b92ef0c0c1",
+      "sourceHashMatch": true
+    },
+    {
+      "id": "v3-comfortable",
+      "nativePixels": [
+        576,
+        1024
+      ],
+      "durationSeconds": 100.198027,
+      "chapters": [
+        {
+          "requested": 0,
+          "actual": 0.008809
+        },
+        {
+          "requested": 92,
+          "actual": 92.009658
+        },
+        {
+          "requested": 40,
+          "actual": 40
+        },
+        {
+          "requested": 68,
+          "actual": 68.009646
+        }
+      ],
+      "downloadBytes": 11770834,
+      "sha256": "6a5266ec7bd584785dee744490b2694994abc60ef2bad7a88c791e2c4367163b",
+      "sourceHashMatch": true
+    },
+    {
+      "id": "v4-37m2",
+      "nativePixels": [
+        576,
+        1024
+      ],
+      "durationSeconds": 56.566667,
+      "chapters": [
+        {
+          "requested": 4,
+          "actual": 4.011011
+        },
+        {
+          "requested": 16,
+          "actual": 16.009908
+        },
+        {
+          "requested": 20,
+          "actual": 20
+        },
+        {
+          "requested": 36,
+          "actual": 36
+        }
+      ],
+      "downloadBytes": 6590943,
+      "sha256": "106762e67dbb6359804b3b23822ed23d3778824a2fc6a861810e45aa7fadb0e1",
+      "sourceHashMatch": true
+    }
+  ],
+  "resolvedFindings": [
+    {
+      "severity": "P2",
+      "issue": "Tabela técnica exigia deslocamento horizontal num telefone de 375 px, separando o nome da medida da fonte e do estado.",
+      "verification": "25 medidas apresentadas em cartões no telefone, sem extravasamento horizontal; 22 opções e unidades conservadas.",
+      "evidence": "r9-documentation.json"
+    },
+    {
+      "severity": "P2",
+      "issue": "Vídeos originais demasiado pequenos e capítulos com texto de 10 px no telefone.",
+      "verification": "Vídeo ocupa 341 px; capítulos com altura mínima de 44 px e texto de 13 px.",
+      "evidence": "r9-documentation.json"
+    },
+    {
+      "severity": "P2",
+      "issue": "Botões da ficha técnica iniciavam o vídeo fora do ecrã.",
+      "verification": "Quatro destinos visíveis e focados, um único vídeo em reprodução, nos tamanhos 375 e 1440. Navegação durante carregamento cancela a reprodução.",
+      "evidence": "r9-targeted.json"
+    },
+    {
+      "severity": "P2",
+      "issue": "Na expansão, o modelo e o botão Reproduzir não cabiam juntos na altura disponível em desktop.",
+      "verification": "Modelo, Reproduzir e rodapé visíveis juntos em 375/768/1169/1440; referência aberta continua acessível por deslocamento normal.",
+      "evidence": "r9-final-fixes.json"
+    },
+    {
+      "severity": "P2",
+      "issue": "Descrições das sete plantas tinham contraste abaixo de 4,5:1.",
+      "verification": "Cor corrigida; zero violações axe nas quatro dimensões finais.",
+      "evidence": "r9-final-fixes.json"
+    },
+    {
+      "severity": "P3",
+      "issue": "Cabeçalhos antigos mostravam /m também numa linha de área.",
+      "verification": "Cada medida conserva a sua unidade, incluindo m² na interface e no JSON.",
+      "evidence": "r9-documentation.json"
+    },
+    {
+      "severity": "P3",
+      "issue": "T1 mostrava «1 quartos».",
+      "verification": "Selector, plantas, resumo HTML e PDF agora apresentam «1 quarto»; PDF com quatro páginas legíveis.",
+      "evidence": "r9-final-export.json"
+    },
+    {
+      "severity": "P3",
+      "issue": "Relatório sem favicon explícito gerava um pedido 404.",
+      "verification": "Favicon ../favicon.svg responde 200; visita nova ao relatório sem avisos ou erros.",
+      "evidence": "r9-final-media.json"
+    }
+  ],
+  "supersededEvidence": [
+    {
+      "file": "r9-expansion.json",
+      "test": "four-source-frames-and-zoom",
+      "reason": "Erro do teste: selector duplicado entre páginas.",
+      "successor": "r9-targeted.json / source-frames-lightbox-zoom — PASS"
+    },
+    {
+      "file": "r9-documentation.json",
+      "test": "technical-four-video-buttons",
+      "reason": "Resultado inicial confirmava reprodução mas expôs destino fora do ecrã.",
+      "successor": "r9-targeted.json / video-entry-visible-375 e video-entry-visible-1440 — PASS"
+    },
+    {
+      "file": "r9-expansion.json",
+      "test": "expansion-responsive-*",
+      "reason": "Métricas iniciais precedem a correcção de contraste e altura.",
+      "successor": "r9-final-fixes.json / height-focus-contrast-* — PASS"
+    },
+    {
+      "file": "r9-documentation.json",
+      "test": "technical-download-links",
+      "reason": "Relatório R9 ainda inexistente na primeira leitura.",
+      "successor": "r9-final-export.json / technical-links-current-report — 33/33 HTTP 200"
+    },
+    {
+      "file": "r9-final-media-first.json",
+      "test": "new-film-native-controls-375",
+      "reason": "A propriedade paused muda antes de ser entregue o evento nativo play; leitura prematura observou dois elementos antes de o handler pausar o anterior.",
+      "successor": "r9-final-media.json — após 250 ms, um único vídeo em reprodução nos dois tamanhos; saída pausa todos. Nenhuma alteração de código necessária."
+    }
+  ],
+  "openFindings": [],
+  "pending": [],
+  "console": {
+    "functionalPageErrors": 0,
+    "normalAppWarningsOrErrors": 0,
+    "reportWarnings": [],
+    "controlledFailures": "Mensagens de erro esperadas apenas nas provas com falhas induzidas."
+  },
+  "selectedEvidence": [
+    "r9-final-expansion-375.png",
+    "r9-final-expansion-768.png",
+    "r9-final-expansion-1169.png",
+    "r9-final-expansion-1440.png",
+    "r9-technical-overview-375.png",
+    "r9-technical-overview-1440.png",
+    "r9-dimensions-375.png",
+    "r9-video-entry-fixed-375.png",
+    "r9-video37m2-card-375.png",
+    "r9-expansion-p50-4k.png",
+    "r9-final-t1.pdf",
+    "r9-final-t1-page-1.png",
+    "r9-final-t1-page-2.png",
+    "r9-final-t1-page-3.png",
+    "r9-final-t1-page-4.png",
+    "r9-final-film-375.png",
+    "r9-final-film-1440.png"
+  ],
+  "limitations": [
+    "Teste de dimensões de ecrã em Chrome local; não é uma prova em telefone físico, Safari/WebKit ou navegador integrado.",
+    "Os quatro vídeos foram percorridos pelos 16 capítulos e controlos; não se afirma visionamento integral de cada segundo.",
+    "O timeout de vídeo foi acelerado de 45 000 para 350 ms exclusivamente no teste; não se esperou 45 segundos reais.",
+    "Axe é uma verificação automática dos estados indicados, não uma certificação de acessibilidade nem teste com leitor de ecrã real.",
+    "A expansão demonstra elevação estimada de paredes; não valida mecanismo de fabrico, resistência estrutural, eixo ou folga por documentação do fornecedor.",
+    "Não se repetiu a matriz completa R8/R5, não se testou produção autenticada e não se alterou o checkout.",
+    "Os downloads JSON contêm unidades e proveniência; áreas interiores continuam estimadas e a designação comercial 72 m² é distinguida de 73,396 m² exteriores."
+  ],
+  "sourceHashesFinalMediaTest": {
+    "app.js": "d47021d6cf76e4f68512a279d62038c1d78e391942339297dbc2ff08fbfd97f7",
+    "index.html": "b84ba71946b31e654bd46bbd635abb4a532eebe303f4c22052c728c572826ca9",
+    "studio-r9.css": "9af1f606cb3f6f1411b64a918cc88c87056e0e6caae38658276f3484dc584f92",
+    "video-library.js": "d847ea0e56293b0a65cd4ca19d851ab7bee20179c3ef55f354484a060eba5c51",
+    "reference-videos.js": "9281a8c664062feb935fcb59b9004f38656b6d894e36dc667d690c93add825d6",
+    "portfolio.js": "64b75de6a8c4b2d4f35963989823fd5c32dca7f5bbf51dea07a930e4eb8ecb1c",
+    "model.js": "7145f08f00171fdf9137a15292955099f3284620e2f3a76afa96ab2feaf49f4e",
+    "stage.js": "bc528ea9fe5dcefb72c5483ba2fd6b08f329e26b8168154c7770fd3b707a96d6"
+  },
+  "sourcesStableDuringFinalMediaTest": true,
+  "newFilm": [
+    {
+      "name": "new-film-native-controls-375",
+      "status": "PASS",
+      "result": {
+        "played": {
+          "time": 0.115224,
+          "duration": 14,
+          "width": 1920,
+          "height": 1080,
+          "srcType": "blob",
+          "error": null
+        },
+        "paused": 0.118211,
+        "nativeSeek": 0.258211,
+        "seek10": {
+          "time": 10,
+          "paused": true,
+          "seekable": [
+            [
+              0,
+              14
+            ]
+          ]
+        },
+        "immediateAfterNativePlay": [
+          "wall-raising-film",
+          "source-v1-spacious"
+        ],
+        "onlyPlaying": [
+          "wall-raising-film"
+        ],
+        "download": {
+          "bytes": 2974419,
+          "sha256": "5b1324361d411e9e6dfcf77074463f99d8af843016711790f49615ed749133ee",
+          "sourceMatch": true
+        },
+        "pausedOnExit": true
+      }
+    },
+    {
+      "name": "new-film-native-controls-1440",
+      "status": "PASS",
+      "result": {
+        "played": {
+          "time": 0.116472,
+          "duration": 14,
+          "width": 1920,
+          "height": 1080,
+          "srcType": "blob",
+          "error": null
+        },
+        "paused": 0.118134,
+        "nativeSeek": 0.258133,
+        "seek10": {
+          "time": 10,
+          "paused": true,
+          "seekable": [
+            [
+              0,
+              14
+            ]
+          ]
+        },
+        "immediateAfterNativePlay": [
+          "wall-raising-film",
+          "source-v1-spacious"
+        ],
+        "onlyPlaying": [
+          "wall-raising-film"
+        ],
+        "download": {
+          "bytes": 2974419,
+          "sha256": "5b1324361d411e9e6dfcf77074463f99d8af843016711790f49615ed749133ee",
+          "sourceMatch": true
+        },
+        "pausedOnExit": true
+      }
+    }
+  ],
+  "finalReportResources": {
+    "icon": "../favicon.svg",
+    "iconStatus": 200,
+    "links": [
+      {
+        "href": "../expansion-r9/wall-raising.mp4",
+        "status": 200
+      },
+      {
+        "href": "../expansion-r9/manifest.json",
+        "status": 200
+      },
+      {
+        "href": "browser-final.json",
+        "status": 200
+      },
+      {
+        "href": "geometry.json",
+        "status": 200
+      },
+      {
+        "href": "sources.json",
+        "status": 200
+      },
+      {
+        "href": "source-inventory.json",
+        "status": 200
+      },
+      {
+        "href": "video-baseline.json",
+        "status": 200
+      },
+      {
+        "href": "browser-documentation.json",
+        "status": 200
+      },
+      {
+        "href": "browser-expansion.json",
+        "status": 200
+      },
+      {
+        "href": "browser-final-fixes.json",
+        "status": 200
+      },
+      {
+        "href": "browser-export.json",
+        "status": 200
+      },
+      {
+        "href": "../../",
+        "status": 200
+      }
+    ],
+    "images": [
+      {
+        "src": "../catalogue/reference/logo-white.png",
+        "loaded": true
+      }
+    ]
+  }
+}

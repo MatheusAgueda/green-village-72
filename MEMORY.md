@@ -1,5 +1,15 @@
 # GV72 project memory
 
+## R9 — latest source and expansion revision (11 September 2026)
+
+R9 supersedes the static-only R8 expansion and the old R3/R4 full deployment path. Actual animation covers only longitudinal wall raising from original image frames 2–3, with rigid windows and outward movement. World axis ±2.99 m at y=0; 8 mm roof clearance, both visibly labelled estimates. End wing panels and interior are omitted, rather than given an invented stowed pose. Complete house is a separate exterior view. User question on end-panel stowage remains unanswered. Never claim complete mechanism certification.
+
+25 dimensional rows with porch duplication removed; 22 catalogue options and all 107 technical facts visible. Catalogue values and current model values have separate units/status. Generic catalogue prices are not a GV72 quotation. STANDARD/PREMIUM/DELUXE do not mean included. 930 mm optional window does not replace the 920 mm plan dimension. Only exterior palette inclusion is explicit; SPC/UV inclusion is not stated. Interior envelope before partitions is explicitly estimated as well as net area.
+
+Original four MP4s unchanged; filename ambiguities are unconfirmed correspondence, not proven different variants. Mobile players are full width, chapter controls44px. Source-sheet video shortcuts scroll/focus selected player. New technical-sheet.js/technical-data.js and product-r9 data; evidence-r9 is current. Live picture/4K/GLB/4-page PDF, source door handedness, material IDs and all R8 product functionality retained. Expansion controls include play/pause/resume/restart/manual slider; reference images are independently selectable. Summary pauses animation for stable capture. New contrast and T1 singular-copy fixes.
+
+Tests:40 regression groups,7,007 actual animation poses,84 view cycles,107/107 facts in19 source integration checks. Detailed browser evidence distinguishes found issues and retests. Same owner-private Site and sole root checkout lifecycle. Publication receipt in parent session_20260911_green_village_72_r9.json; consult native deployment success before reporting current version.
+
 Existing owner-private Site: `appgprj_6aa28c2f3e1881918f795ae2c908b371`, https://green-village-72-studio.greenvillage.chatgpt.site. Reuse; never create a second Site. The Site-owning root alone edits/commits/publishes this independent checkout. Deployment IDs are recorded in the GLS parent session record; inspect current Sites state when needed.
 
 R3 (2026-09-10): 12 photographic SPC plank shaders +37 wall derivatives,49 native maps,71 original IDs retained. Wall profile and interior panel join dimensions are estimated. Source pixels and mean colours are traceable in catalogue-r3. Cache18, one lease per material, retry disposes old GPU storage when image dimensions change. Do not reinstall shaders twice on one material instance.
