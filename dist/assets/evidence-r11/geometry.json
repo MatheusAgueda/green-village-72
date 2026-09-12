@@ -1,0 +1,143 @@
+{
+  "status": "PASS",
+  "testedAt": "2026-09-12T20:53:27.921Z",
+  "scope": "Rigid meshes, sequencing, continuity, outward end-panel rotation, compact closed illustration, exact final transforms and reentry. Not a physical collision or manufacturer validation.",
+  "startHashes": {
+    "model.js": "65ec60ba0c04629e2660df75d27ffb2563e97ef80ab3907ccb8e8e0d4a5ab6c5",
+    "deployment-rig.js": "d2c437063e8c8bb437ac16f479251a30256a66c0892342e4d16c75734ef61c18",
+    "expansion-process.js": "9e00f787cf614d199a479001f7c532001d483c0059413f9a70b672e8bda7574d"
+  },
+  "endHashes": {
+    "model.js": "65ec60ba0c04629e2660df75d27ffb2563e97ef80ab3907ccb8e8e0d4a5ab6c5",
+    "deployment-rig.js": "d2c437063e8c8bb437ac16f479251a30256a66c0892342e4d16c75734ef61c18",
+    "expansion-process.js": "9e00f787cf614d199a479001f7c532001d483c0059413f9a70b672e8bda7574d"
+  },
+  "rows": [
+    {
+      "layout": "t0",
+      "poses": 1001,
+      "cycles": 8,
+      "maxTransformStep": 0.10552899005514105,
+      "closedIllustrativeBounds": {
+        "min": [
+          -1.2675000041723257,
+          -0.3645000000745058,
+          -5.9125000000000005
+        ],
+        "max": [
+          1.2675000041723257,
+          2.563499927520752,
+          5.92099999961257
+        ]
+      }
+    },
+    {
+      "layout": "t1",
+      "poses": 1001,
+      "cycles": 8,
+      "maxTransformStep": 0.10552899005514105,
+      "closedIllustrativeBounds": {
+        "min": [
+          -1.2675000041723257,
+          -0.3645000000745058,
+          -5.9125000000000005
+        ],
+        "max": [
+          1.2675000041723257,
+          2.563499927520752,
+          5.92099999961257
+        ]
+      }
+    },
+    {
+      "layout": "t2",
+      "poses": 1001,
+      "cycles": 8,
+      "maxTransformStep": 0.10552899005514105,
+      "closedIllustrativeBounds": {
+        "min": [
+          -1.2675000041723257,
+          -0.3645000000745058,
+          -5.9125000000000005
+        ],
+        "max": [
+          1.2675000041723257,
+          2.563499927520752,
+          5.92099999961257
+        ]
+      }
+    },
+    {
+      "layout": "t3-a",
+      "poses": 1001,
+      "cycles": 8,
+      "maxTransformStep": 0.10552899005514105,
+      "closedIllustrativeBounds": {
+        "min": [
+          -1.2675000041723257,
+          -0.3645000000745058,
+          -5.9125000000000005
+        ],
+        "max": [
+          1.2675000041723257,
+          2.563499927520752,
+          5.92099999961257
+        ]
+      }
+    },
+    {
+      "layout": "t3-b",
+      "poses": 1001,
+      "cycles": 8,
+      "maxTransformStep": 0.10552899005514105,
+      "closedIllustrativeBounds": {
+        "min": [
+          -1.2675000041723257,
+          -0.3645000000745058,
+          -5.9125000000000005
+        ],
+        "max": [
+          1.2675000041723257,
+          2.563499927520752,
+          5.92099999961257
+        ]
+      }
+    },
+    {
+      "layout": "t4-a",
+      "poses": 1001,
+      "cycles": 8,
+      "maxTransformStep": 0.10552899005514105,
+      "closedIllustrativeBounds": {
+        "min": [
+          -1.2675000041723257,
+          -0.3645000000745058,
+          -5.9125000000000005
+        ],
+        "max": [
+          1.2675000041723257,
+          2.563499927520752,
+          5.92099999961257
+        ]
+      }
+    },
+    {
+      "layout": "t4-b",
+      "poses": 1001,
+      "cycles": 8,
+      "maxTransformStep": 0.10552899005514105,
+      "closedIllustrativeBounds": {
+        "min": [
+          -1.2675000041723257,
+          -0.3645000000745058,
+          -5.9125000000000005
+        ],
+        "max": [
+          1.2675000041723257,
+          2.563499927520752,
+          5.92099999961257
+        ]
+      }
+    }
+  ]
+}

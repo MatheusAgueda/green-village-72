@@ -1,0 +1,111 @@
+{
+  "testedAt": "2026-09-12T20:54:31.522Z",
+  "start": {
+    "model.js": "65ec60ba0c04629e2660df75d27ffb2563e97ef80ab3907ccb8e8e0d4a5ab6c5",
+    "deployment-rig.js": "d2c437063e8c8bb437ac16f479251a30256a66c0892342e4d16c75734ef61c18"
+  },
+  "end": {
+    "model.js": "65ec60ba0c04629e2660df75d27ffb2563e97ef80ab3907ccb8e8e0d4a5ab6c5",
+    "deployment-rig.js": "d2c437063e8c8bb437ac16f479251a30256a66c0892342e4d16c75734ef61c18"
+  },
+  "sourceStable": true,
+  "rayCount": 192,
+  "knownGaps": [],
+  "allUnhit": [],
+  "trimBoxes": [
+    {
+      "id": "side -1",
+      "box": {
+        "min": [
+          -0.8199999999999996,
+          0.003500000000000003,
+          -5.78
+        ],
+        "max": [
+          -0.7219999999999998,
+          0.0885,
+          5.78
+        ]
+      }
+    },
+    {
+      "id": "side 1",
+      "box": {
+        "min": [
+          0.7219999999999998,
+          0.003500000000000003,
+          -5.78
+        ],
+        "max": [
+          0.8199999999999996,
+          0.0885,
+          5.78
+        ]
+      }
+    },
+    {
+      "id": "end -1/1",
+      "box": {
+        "min": [
+          -0.9690000000000002,
+          0.0035,
+          4.01
+        ],
+        "max": [
+          -0.870999999999999,
+          0.0885,
+          5.9
+        ]
+      }
+    },
+    {
+      "id": "end 1/1",
+      "box": {
+        "min": [
+          0.870999999999999,
+          0.0035,
+          4.01
+        ],
+        "max": [
+          0.9690000000000002,
+          0.0885,
+          5.9
+        ]
+      }
+    },
+    {
+      "id": "end -1/-1",
+      "box": {
+        "min": [
+          -0.9690000000000002,
+          0.0035,
+          -5.9
+        ],
+        "max": [
+          -0.870999999999999,
+          0.0885,
+          -4.01
+        ]
+      }
+    },
+    {
+      "id": "end 1/-1",
+      "box": {
+        "min": [
+          0.870999999999999,
+          0.0035,
+          -5.9
+        ],
+        "max": [
+          0.9690000000000002,
+          0.0885,
+          -4.01
+        ]
+      }
+    }
+  ],
+  "trimOverlaps": [],
+  "finalError": 0,
+  "restorationError": 0,
+  "metadata": "Internal stowage and panel handling are schematic; no verified transport envelope, locks, loads or collision-free factory mechanism."
+}

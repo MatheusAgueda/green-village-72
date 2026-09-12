@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "test": "node tests.mjs",
-    "test:expansion": "node scripts/expansion-audit.mjs"
+    "test:expansion": "node scripts/expansion-audit.mjs",
+    "test:deployment": "node scripts/deployment-audit.mjs"
   }
 }

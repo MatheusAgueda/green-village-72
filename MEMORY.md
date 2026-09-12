@@ -1,3 +1,8 @@
+
+## R11 — complete illustrative deployment, 12 September 2026
+User clarified the order: fully closed container → lateral wings → longitudinal walls → front/rear panels, inside to outside. The presentation now uses actual 3D at every point, with 24 s continuous playback. New deployment-rig.js preserves all final transforms and rigid window attachments. Roofs open, floors lower, then panels are schematically handled from upright internal stowage to flat on the floors; side walls rise, then front/rear ends rotate outward. Packing lanes and hinges are visual assumptions, not a validated factory mechanism. No artificial root or floor lift. Initial roof gaps and trim overlaps fixed by packing offsets; original dimensions unchanged.
+41 regression groups; current full process audit 7,007 poses/56 cycles. Independent final packing test: 192 rays hit geometry, 51 mm trim gap, final/exit transform error zero. Browser: 22 records, full 24.166 s playback, four stages, pause/restart/reentry/rebuild/exports and 375/1440 widths; no app errors. A transient unstyled local page did not recur with all eight stylesheets loaded, so no unjustified CSS patch. Public evidence assets/evidence-r11; raw /private/tmp/gv72-r11. Historical R9 film and geometry routine retained; archived model-source.js.txt preserves its original hash. Never transfer R9 SAT collision claims to the new path. Same owner-private Site. Publication IDs in ../session_20260912_green_village_72_r11.json.
+
 # GV72 project memory
 
 ## R10 — four-state expansion process, 12 September 2026

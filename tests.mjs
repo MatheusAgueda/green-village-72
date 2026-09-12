@@ -227,14 +227,14 @@ check('R9 technical sheet preserves catalogue units, option prices and source sc
 check('R9 expansion film is native Full HD, source-bound and declares its limited animation scope',()=>{
  const film=JSON.parse(readFileSync('dist/assets/expansion-r9/manifest.json','utf8'));assert.equal(film.status,'PASS');assert.deepEqual(film.dimensions,[1920,1080]);assert.equal(film.frameCount,350);assert.equal(film.durationSeconds,14);assert.equal(film.fps,25);assert.equal(film.displayOverrides.roofOpacity,.09);
  for(const item of film.outputs)assert.equal(createHash('sha256').update(readFileSync('dist/'+item.path)).digest('hex'),item.sha256);
- for(const file of ['model.js','specification.js','stage.js'])assert.equal(createHash('sha256').update(readFileSync('dist/'+file)).digest('hex'),film.sourceHashes[file]);
+ for(const file of ['model.js','specification.js','stage.js'])assert.equal(createHash('sha256').update(readFileSync(file==='model.js'?'dist/assets/expansion-r9/model-source.js.txt':'dist/'+file)).digest('hex'),film.sourceHashes[file]);
  assert.ok(film.limits.some(x=>x.includes('2–3')));assert.equal(film.validation.all350MP4FramesDecoded,true);
 });
-check('R10 process follows four documentary states without a fabricated floor or end-panel trajectory',()=>{
+check('R11 process starts closed and continuously unfolds wings, side walls and outward ends',()=>{
  assert.deepEqual(PROCESS_STEPS.map(s=>processPose(s.position).step),[0,1,2,3]);
- assert.equal(processPose(0).representation,'source');assert.equal(processPose(1).representation,'assembled');
- assert.equal(processPose(.18).wall,0);assert.equal(processPose(.78).wall,1);
- let previous=0;for(let i=0;i<=1000;i++){const pose=processPose(i/1000);assert.ok(pose.step>=previous);previous=pose.step;assert.ok(Number.isFinite(pose.wall)&&pose.wall>=0&&pose.wall<=1);if(pose.articulated)assert.equal(pose.representation,'walls');}
- const p=sourceLedger(DEFAULT_CONFIG).expansion.presentation;assert.equal(p.steps.length,4);assert.deepEqual(p.discreteTransitions,['1–2','3–4']);assert.equal(p.transportEnvelope,'not documented');
+ assert.equal(processPose(0).representation,'deployment');assert.equal(processPose(1).representation,'deployment');
+ for(const key of ['roof','floor','placement','wall','front','rear']){assert.equal(processPose(0)[key],0);assert.equal(processPose(1)[key],1);}
+ let previous=0;for(let i=0;i<=1000;i++){const pose=processPose(i/1000);assert.ok(pose.step>=previous);previous=pose.step;assert.ok(Number.isFinite(pose.wall)&&pose.wall>=0&&pose.wall<=1);if(pose.placement>0)assert.equal(pose.floor,1);if(pose.wall>0)assert.equal(pose.placement,1);if(pose.front>0||pose.rear>0)assert.equal(pose.wall,1);}
+ const p=sourceLedger(DEFAULT_CONFIG).expansion.presentation;assert.equal(p.steps.length,4);assert.deepEqual(p.discreteTransitions,[]);assert.equal(p.continuousMotion,'all stages');assert.equal(p.transportEnvelope,'not documented');
 });
 console.log(`${count} scoped regression checks passed${core?' (media/evidence integration pending)':''}.`);

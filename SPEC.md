@@ -1,5 +1,8 @@
 # Green Village 72 — portefólio e configurador
 
+## R11 — clarified full deployment order
+User clarifies fully closed container → lateral wings open → longitudinal walls raised → front/rear walls unfold outward. Replace source-image and discrete-state substitutions with a continuous 3D presentation. Preserve rigid original meshes and exact assembled transforms. Fixed-axis roof/floor opening precedes illustrative internal panel handling; side panels are stowed upright inside the core, then placed flat on fully opened floors. This internal handling and stowage are assumptions, not factory kinematics. Front/rear panels must swing from inside to outside. Preserve configuration, reverse scrubbing, replay, all four direct stage controls, exports, and the historical wall-only film. Validate mesh rigidity, continuity, complete closed envelope, final equality and browser flow; do not transfer R9 collision claims to new trajectories.
+
 A experiência abre directamente num modelo 3D interactivo. PT-PT. Direcção visual: estúdio de arquitectura, verde floresta profundo, branco, tipografia editorial, grande maquete sobre fundo mineral.
 
 ## Critérios

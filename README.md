@@ -56,3 +56,6 @@ Filme R9: `dist/assets/expansion-r9/wall-raising.mp4`, 14 s / 1920 × 1080 / 25 
 
 ## Processo de expansão R10
 A sequência segue os quatro estados confirmados pelo cliente. Etapa1: referência original; etapas2–3: painéis e janelas em 3D; etapa4: casa montada. Transições1–2 e3–4 discretas, sem dobradiças inventadas. A exportação3D é bloqueada na referência2D. Relatório completo: `dist/assets/evidence-r10/audit-report.html`. A animação real do modelo R9 foi preservada; o controlador `dist/expansion-process.js` organiza a apresentação. Ver MEMORY/HANDOFF para provas e limites geométricos.
+
+## Full expansion presentation (R11)
+`npm run test:deployment` checks the continuous closed-to-expanded model. All four process positions are 3D. The confirmed order is implemented with illustrative internal stowage and panel handling; manufacturer linkage geometry and collision-free transport are not asserted. The previous R9 film remains a labelled wall-only historical recording.

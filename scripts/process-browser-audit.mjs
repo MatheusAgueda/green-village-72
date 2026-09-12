@@ -20,7 +20,7 @@ try{
  const state=()=>page.evaluate(()=>({process:window.__GV.process(),render:window.__GV.diagnostics().render,sourceHidden:document.querySelector('#process-reference').hidden,snapshotDisabled:document.querySelector('#snapshot').disabled}));
  for(let i=0;i<4;i++){
   await page.locator(`#process-steps [data-process-step="${i}"]`).click();
-  const current=await state();assert.equal(current.process.step,i);assert.equal(current.sourceHidden,i!==0);assert.equal(current.snapshotDisabled,i===0);
+  const current=await state();assert.equal(current.process.step,i);assert.equal(current.sourceHidden,true);assert.equal(current.snapshotDisabled,false);
   report.checks.push({name:`stage-${i+1}`,process:current.process});
  }
  // Force a real render: a stale framebuffer masked the old same-tab visibility bug.
@@ -31,7 +31,7 @@ try{
  report.checks.push({name:'same-active-view-restores-assembled-panels',before:before.render,after:after.render});
  await page.locator('#process-steps [data-process-step="0"]').click();
  const sourceCapture=await page.evaluate(async()=>{try{await window.__GV.snapshotData();return {rejected:false};}catch(error){return {rejected:true,message:error.message};}});
- assert.equal(sourceCapture.rejected,true);report.checks.push({name:'source-stage-cannot-capture-hidden-model',...sourceCapture});
+ assert.equal(sourceCapture.rejected,false);report.checks.push({name:'closed-stage-captures-actual-3D-model',...sourceCapture});
  assert.deepEqual(report.errors,[]);report.status='PASS';
 }catch(error){report.status='FAIL';report.failure=error.message;process.exitCode=1;}
 finally{
