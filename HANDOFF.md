@@ -1,3 +1,12 @@
+# Current handoff — R10
+
+## R10 — four-state expansion process, 12 September 2026
+User explicitly confirms supplied four-frame diagram IS process. Navigation nowfollows4states: sourceimage1 (roofs alreadyopen),3Dwallflat2,3Dwallsupright/topendsopen3,assembledhouse4. Only2→3 continuouslyarticulated;1→2/3→4 discreteandclearlylabelled. No artificialfolding fromR4reintroduced. New expansion-process.js/controller18s. Source-onlystep blocks3D4K andcaptures;summarykeepsplan+choiceswithwarning,PDFnoimagelayoutworks4pages,A/Brejectsfalsecapture. Sequence temporarilyforceswall/roofvisible,doorsclosed,furnitureoff,canopy/porchoff;leavingrestoresS/V. Originalgeometry/model/spec/stage/filmunchangedR9.
+Auditfound+fixed detailcamera mismatch andfirstlayercheckbox/opacitystaleUI; preserveLayerControls retainsdragtarget. 41regressiongroupspass. 7007actualmodelposes/84cyclespass relativecontacttest. Auditnowexposes20baselinebeam/postproxyintersectionsperplan,largest~120mm: neverclaimabsolutephysicalcollision-free. Hypotheticalfloorfold wouldputpaneltop~0.54mbelowbase; notimplemented.7plan/71materials/32referencesstay.
+Independentbrowser baseapphashaae532fb6ce8179d2bff353a063ff010ff69868915b84aab25fc11501a15e857: full18sall4stages,375/768/1440,width/state/camera/layers,4Kstage2+4,sourcePDF4pages/A-Bguardpass. Rawproof /private/tmp/gv72-r10,publicreport assets/evidence-r10/audit-report.html. Sameowner-privateSite. Finaldeploymentreceipt outsidecheckout ../session_20260912_green_village_72_r10.json. Finalsame-active-view bugfixed: forcepose reapplication afterlayerrestore andrequestnewrender. Fresh actualrenderregression e618a7ec7e2ae35ececdf0cc5d7d96ab74c94e3d9aef011303068cd02b88c918 preserved76948triangles/270calls; all4states/sourcecaptureguardpass. Reusable script scripts/process-browser-audit.mjs. Reportimageaspectfixedheightauto. No fulltransportmechanismcertified. Sourceonlyfirstimage stillcontainswhole4panelcontext; firststateupperleft.
+
+Previous context retained below.
+
 # Current handoff — R9
 
 Same owner-private Site: https://green-village-72-studio.greenvillage.chatgpt.site/

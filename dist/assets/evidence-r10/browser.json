@@ -1,0 +1,967 @@
+{
+  "started": "2026-09-12T19:14:21.595Z",
+  "startHash": "aae532fb6ce8179d2bff353a063ff010ff69868915b84aab25fc11501a15e857",
+  "checks": [
+    {
+      "name": "prior-hidden",
+      "visual": {
+        "view": "exterior",
+        "expansion": 1,
+        "cut": 1.1,
+        "exploded": 0,
+        "roofVisible": true,
+        "wallsVisible": false,
+        "furnitureVisible": false,
+        "doorsOpen": true
+      },
+      "config": {
+        "schemaVersion": 2,
+        "layout": "t2",
+        "exteriorId": "exterior-standard-branco-glacial",
+        "exterior": "#ddddda",
+        "floorId": "floor-spc-kx7006",
+        "floor": "#92846c",
+        "interior": "#eeede8",
+        "interiorName": "Branco natural",
+        "kitchen": "linear",
+        "kitchenRef": "kitchen-01",
+        "bathroom": "standard",
+        "bathroomRef": "bathroom-01",
+        "bathroomUV": null,
+        "roof": false,
+        "porch": false,
+        "lighting": "neutral",
+        "textureMode": "source"
+      },
+      "process": {
+        "p": 0,
+        "step": 0,
+        "wall": 0,
+        "sourceIndex": 0,
+        "representation": "source",
+        "articulated": false,
+        "playing": false,
+        "revision": "GV72-EXPANSION-R10-2026-09-12"
+      },
+      "render": {
+        "projection": "PerspectiveCamera",
+        "walk": false,
+        "calls": 48,
+        "triangles": 13046,
+        "memory": {
+          "geometries": 48,
+          "textures": 6
+        },
+        "camera": [
+          11.426878956597193,
+          10.007965586145815,
+          14.283598695746493
+        ],
+        "target": [
+          0,
+          1.095,
+          0
+        ]
+      },
+      "title": "Vista exterior",
+      "cameraSelect": "perspective",
+      "cameraDataset": "perspective",
+      "sourceHidden": true,
+      "overflow": false,
+      "wallsChecked": false,
+      "doorsChecked": true,
+      "furnitureChecked": false,
+      "snapshotDisabled": false,
+      "summaryText": ""
+    },
+    {
+      "name": "stage4-hidden-prior",
+      "visual": {
+        "view": "expansion",
+        "expansion": 1,
+        "cut": 1.1,
+        "exploded": 0,
+        "roofVisible": true,
+        "wallsVisible": false,
+        "furnitureVisible": false,
+        "doorsOpen": true
+      },
+      "config": {
+        "schemaVersion": 2,
+        "layout": "t2",
+        "exteriorId": "exterior-standard-branco-glacial",
+        "exterior": "#ddddda",
+        "floorId": "floor-spc-kx7006",
+        "floor": "#92846c",
+        "interior": "#eeede8",
+        "interiorName": "Branco natural",
+        "kitchen": "linear",
+        "kitchenRef": "kitchen-01",
+        "bathroom": "standard",
+        "bathroomRef": "bathroom-01",
+        "bathroomUV": null,
+        "roof": false,
+        "porch": false,
+        "lighting": "neutral",
+        "textureMode": "source"
+      },
+      "process": {
+        "p": 1,
+        "step": 3,
+        "wall": 1,
+        "sourceIndex": 3,
+        "representation": "assembled",
+        "articulated": false,
+        "playing": false,
+        "revision": "GV72-EXPANSION-R10-2026-09-12"
+      },
+      "render": {
+        "projection": "PerspectiveCamera",
+        "walk": false,
+        "calls": 270,
+        "triangles": 76948,
+        "memory": {
+          "geometries": 145,
+          "textures": 6
+        },
+        "camera": [
+          11.426878956597193,
+          10.007965586145815,
+          14.283598695746493
+        ],
+        "target": [
+          0,
+          1.095,
+          0
+        ]
+      },
+      "title": "4 · Topos fechados",
+      "cameraSelect": "perspective",
+      "cameraDataset": "perspective",
+      "sourceHidden": true,
+      "overflow": false,
+      "wallsChecked": true,
+      "doorsChecked": false,
+      "furnitureChecked": false,
+      "snapshotDisabled": false,
+      "summaryText": ""
+    },
+    {
+      "name": "stage4-top-camera",
+      "visual": {
+        "view": "expansion",
+        "expansion": 1,
+        "cut": 1.1,
+        "exploded": 0,
+        "roofVisible": true,
+        "wallsVisible": false,
+        "furnitureVisible": false,
+        "doorsOpen": true
+      },
+      "config": {
+        "schemaVersion": 2,
+        "layout": "t2",
+        "exteriorId": "exterior-standard-branco-glacial",
+        "exterior": "#ddddda",
+        "floorId": "floor-spc-kx7006",
+        "floor": "#92846c",
+        "interior": "#eeede8",
+        "interiorName": "Branco natural",
+        "kitchen": "linear",
+        "kitchenRef": "kitchen-01",
+        "bathroom": "standard",
+        "bathroomRef": "bathroom-01",
+        "bathroomUV": null,
+        "roof": false,
+        "porch": false,
+        "lighting": "neutral",
+        "textureMode": "source"
+      },
+      "process": {
+        "p": 1,
+        "step": 3,
+        "wall": 1,
+        "sourceIndex": 3,
+        "representation": "assembled",
+        "articulated": false,
+        "playing": false,
+        "revision": "GV72-EXPANSION-R10-2026-09-12"
+      },
+      "render": {
+        "projection": "OrthographicCamera",
+        "walk": false,
+        "calls": 270,
+        "triangles": 76948,
+        "memory": {
+          "geometries": 145,
+          "textures": 7
+        },
+        "camera": [
+          0,
+          41.09499999998,
+          4.000177797212701e-05
+        ],
+        "target": [
+          0,
+          1.095,
+          0
+        ]
+      },
+      "title": "4 · Topos fechados",
+      "cameraSelect": "top",
+      "cameraDataset": "top",
+      "sourceHidden": true,
+      "overflow": false,
+      "wallsChecked": true,
+      "doorsChecked": false,
+      "furnitureChecked": false,
+      "snapshotDisabled": false,
+      "summaryText": ""
+    },
+    {
+      "name": "restore-hidden",
+      "visual": {
+        "view": "exterior",
+        "expansion": 1,
+        "cut": 1.1,
+        "exploded": 0,
+        "roofVisible": true,
+        "wallsVisible": false,
+        "furnitureVisible": false,
+        "doorsOpen": true
+      },
+      "config": {
+        "schemaVersion": 2,
+        "layout": "t2",
+        "exteriorId": "exterior-standard-branco-glacial",
+        "exterior": "#ddddda",
+        "floorId": "floor-spc-kx7006",
+        "floor": "#92846c",
+        "interior": "#eeede8",
+        "interiorName": "Branco natural",
+        "kitchen": "linear",
+        "kitchenRef": "kitchen-01",
+        "bathroom": "standard",
+        "bathroomRef": "bathroom-01",
+        "bathroomUV": null,
+        "roof": false,
+        "porch": false,
+        "lighting": "neutral",
+        "textureMode": "source"
+      },
+      "process": {
+        "p": 1,
+        "step": 3,
+        "wall": 1,
+        "sourceIndex": 3,
+        "representation": "assembled",
+        "articulated": false,
+        "playing": false,
+        "revision": "GV72-EXPANSION-R10-2026-09-12"
+      },
+      "render": {
+        "projection": "PerspectiveCamera",
+        "walk": false,
+        "calls": 48,
+        "triangles": 13046,
+        "memory": {
+          "geometries": 48,
+          "textures": 7
+        },
+        "camera": [
+          11.426878956597193,
+          10.007965586145815,
+          14.283598695746493
+        ],
+        "target": [
+          0,
+          1.095,
+          0
+        ]
+      },
+      "title": "Vista exterior",
+      "cameraSelect": "perspective",
+      "cameraDataset": "perspective",
+      "sourceHidden": true,
+      "overflow": false,
+      "wallsChecked": false,
+      "doorsChecked": true,
+      "furnitureChecked": false,
+      "snapshotDisabled": false,
+      "summaryText": ""
+    },
+    {
+      "name": "source-summary",
+      "visual": {
+        "view": "expansion",
+        "expansion": 0,
+        "cut": 1.1,
+        "exploded": 0,
+        "roofVisible": true,
+        "wallsVisible": false,
+        "furnitureVisible": false,
+        "doorsOpen": true
+      },
+      "config": {
+        "schemaVersion": 2,
+        "layout": "t2",
+        "exteriorId": "exterior-standard-branco-glacial",
+        "exterior": "#ddddda",
+        "floorId": "floor-spc-kx7006",
+        "floor": "#92846c",
+        "interior": "#eeede8",
+        "interiorName": "Branco natural",
+        "kitchen": "linear",
+        "kitchenRef": "kitchen-01",
+        "bathroom": "standard",
+        "bathroomRef": "bathroom-01",
+        "bathroomUV": null,
+        "roof": false,
+        "porch": false,
+        "lighting": "neutral",
+        "textureMode": "source"
+      },
+      "process": {
+        "p": 0,
+        "step": 0,
+        "wall": 0,
+        "sourceIndex": 0,
+        "representation": "source",
+        "articulated": false,
+        "playing": false,
+        "revision": "GV72-EXPANSION-R10-2026-09-12"
+      },
+      "render": {
+        "projection": "PerspectiveCamera",
+        "walk": false,
+        "calls": 178,
+        "triangles": 53884,
+        "memory": {
+          "geometries": 145,
+          "textures": 10
+        },
+        "camera": [
+          11.426878956597193,
+          10.007965586145815,
+          14.283598695746493
+        ],
+        "target": [
+          0,
+          1.095,
+          0
+        ]
+      },
+      "title": "1 · Referência original",
+      "cameraSelect": "perspective",
+      "cameraDataset": "perspective",
+      "sourceHidden": false,
+      "overflow": false,
+      "wallsChecked": true,
+      "doorsChecked": false,
+      "furnitureChecked": false,
+      "snapshotDisabled": true,
+      "summaryText": "T2 · Expandível 72Referência GV72-D9B7C0CD2 quartos · 1 casa de banho · 11,80 × 6,22 m exterioresBanho≈ 3,6 m²Quarto 1≈ 12,8 m²Quarto 2≈ 12,8 m²Espaço comum≈ 39,3 m²6 220 mm11 800 mm2 0102 2002 010Entrada / fachada principalCotas exteriores confirmadas · áreas aproximadas · cores suavizadasPlanta da sua configuração · áreas estimadasImagem indisponível: A etapa 1 mostra a referência original. Seleccione uma etapa 3D para incluir uma imagem da configuração; as escolhas e a planta continuam dispon"
+    },
+    {
+      "name": "full-playback-ended",
+      "visual": {
+        "view": "expansion",
+        "expansion": 1,
+        "cut": 1.1,
+        "exploded": 0,
+        "roofVisible": true,
+        "wallsVisible": false,
+        "furnitureVisible": false,
+        "doorsOpen": true
+      },
+      "config": {
+        "schemaVersion": 2,
+        "layout": "t2",
+        "exteriorId": "exterior-standard-branco-glacial",
+        "exterior": "#ddddda",
+        "floorId": "floor-spc-kx7006",
+        "floor": "#92846c",
+        "interior": "#eeede8",
+        "interiorName": "Branco natural",
+        "kitchen": "linear",
+        "kitchenRef": "kitchen-01",
+        "bathroom": "standard",
+        "bathroomRef": "bathroom-01",
+        "bathroomUV": null,
+        "roof": false,
+        "porch": false,
+        "lighting": "neutral",
+        "textureMode": "source"
+      },
+      "process": {
+        "p": 1,
+        "step": 3,
+        "wall": 1,
+        "sourceIndex": 3,
+        "representation": "assembled",
+        "articulated": false,
+        "playing": false,
+        "revision": "GV72-EXPANSION-R10-2026-09-12"
+      },
+      "render": {
+        "projection": "PerspectiveCamera",
+        "walk": false,
+        "calls": 270,
+        "triangles": 76948,
+        "memory": {
+          "geometries": 145,
+          "textures": 10
+        },
+        "camera": [
+          11.426878956597193,
+          10.007965586145815,
+          14.283598695746493
+        ],
+        "target": [
+          0,
+          1.095,
+          0
+        ]
+      },
+      "title": "4 · Topos fechados",
+      "cameraSelect": "perspective",
+      "cameraDataset": "perspective",
+      "sourceHidden": true,
+      "overflow": false,
+      "wallsChecked": true,
+      "doorsChecked": false,
+      "furnitureChecked": false,
+      "snapshotDisabled": false,
+      "summaryText": "T2 · Expandível 72Referência GV72-D9B7C0CD2 quartos · 1 casa de banho · 11,80 × 6,22 m exterioresBanho≈ 3,6 m²Quarto 1≈ 12,8 m²Quarto 2≈ 12,8 m²Espaço comum≈ 39,3 m²6 220 mm11 800 mm2 0102 2002 010Entrada / fachada principalCotas exteriores confirmadas · áreas aproximadas · cores suavizadasPlanta da sua configuração · áreas estimadasImagem indisponível: A etapa 1 mostra a referência original. Seleccione uma etapa 3D para incluir uma imagem da configuração; as escolhas e a planta continuam dispon"
+    },
+    {
+      "name": "mobile-step-1",
+      "visual": {
+        "view": "expansion",
+        "expansion": 0,
+        "cut": 1.1,
+        "exploded": 0,
+        "roofVisible": true,
+        "wallsVisible": false,
+        "furnitureVisible": false,
+        "doorsOpen": true
+      },
+      "config": {
+        "schemaVersion": 2,
+        "layout": "t2",
+        "exteriorId": "exterior-standard-branco-glacial",
+        "exterior": "#ddddda",
+        "floorId": "floor-spc-kx7006",
+        "floor": "#92846c",
+        "interior": "#eeede8",
+        "interiorName": "Branco natural",
+        "kitchen": "linear",
+        "kitchenRef": "kitchen-01",
+        "bathroom": "standard",
+        "bathroomRef": "bathroom-01",
+        "bathroomUV": null,
+        "roof": false,
+        "porch": false,
+        "lighting": "neutral",
+        "textureMode": "source"
+      },
+      "process": {
+        "p": 0,
+        "step": 0,
+        "wall": 0,
+        "sourceIndex": 0,
+        "representation": "source",
+        "articulated": false,
+        "playing": false,
+        "revision": "GV72-EXPANSION-R10-2026-09-12"
+      },
+      "render": {
+        "projection": "PerspectiveCamera",
+        "walk": false,
+        "calls": 178,
+        "triangles": 53884,
+        "memory": {
+          "geometries": 145,
+          "textures": 10
+        },
+        "camera": [
+          11.426878956597193,
+          10.007965586145815,
+          14.283598695746493
+        ],
+        "target": [
+          0,
+          1.095,
+          0
+        ]
+      },
+      "title": "1 · Referência original",
+      "cameraSelect": "perspective",
+      "cameraDataset": "perspective",
+      "sourceHidden": false,
+      "overflow": false,
+      "wallsChecked": true,
+      "doorsChecked": false,
+      "furnitureChecked": false,
+      "snapshotDisabled": true,
+      "summaryText": "T2 · Expandível 72Referência GV72-D9B7C0CD2 quartos · 1 casa de banho · 11,80 × 6,22 m exterioresBanho≈ 3,6 m²Quarto 1≈ 12,8 m²Quarto 2≈ 12,8 m²Espaço comum≈ 39,3 m²6 220 mm11 800 mm2 0102 2002 010Entrada / fachada principalCotas exteriores confirmadas · áreas aproximadas · cores suavizadasPlanta da sua configuração · áreas estimadasImagem indisponível: A etapa 1 mostra a referência original. Seleccione uma etapa 3D para incluir uma imagem da configuração; as escolhas e a planta continuam dispon"
+    },
+    {
+      "name": "mobile-step-2",
+      "visual": {
+        "view": "expansion",
+        "expansion": 0,
+        "cut": 1.1,
+        "exploded": 0,
+        "roofVisible": true,
+        "wallsVisible": false,
+        "furnitureVisible": false,
+        "doorsOpen": true
+      },
+      "config": {
+        "schemaVersion": 2,
+        "layout": "t2",
+        "exteriorId": "exterior-standard-branco-glacial",
+        "exterior": "#ddddda",
+        "floorId": "floor-spc-kx7006",
+        "floor": "#92846c",
+        "interior": "#eeede8",
+        "interiorName": "Branco natural",
+        "kitchen": "linear",
+        "kitchenRef": "kitchen-01",
+        "bathroom": "standard",
+        "bathroomRef": "bathroom-01",
+        "bathroomUV": null,
+        "roof": false,
+        "porch": false,
+        "lighting": "neutral",
+        "textureMode": "source"
+      },
+      "process": {
+        "p": 0.18,
+        "step": 1,
+        "wall": 0,
+        "sourceIndex": 1,
+        "representation": "walls",
+        "articulated": false,
+        "playing": false,
+        "revision": "GV72-EXPANSION-R10-2026-09-12"
+      },
+      "render": {
+        "projection": "PerspectiveCamera",
+        "walk": false,
+        "calls": 178,
+        "triangles": 53884,
+        "memory": {
+          "geometries": 145,
+          "textures": 10
+        },
+        "camera": [
+          11.426878956597193,
+          10.007965586145815,
+          14.283598695746493
+        ],
+        "target": [
+          0,
+          1.095,
+          0
+        ]
+      },
+      "title": "2 · Pisos abertos",
+      "cameraSelect": "perspective",
+      "cameraDataset": "perspective",
+      "sourceHidden": true,
+      "overflow": false,
+      "wallsChecked": true,
+      "doorsChecked": false,
+      "furnitureChecked": false,
+      "snapshotDisabled": false,
+      "summaryText": "T2 · Expandível 72Referência GV72-D9B7C0CD2 quartos · 1 casa de banho · 11,80 × 6,22 m exterioresBanho≈ 3,6 m²Quarto 1≈ 12,8 m²Quarto 2≈ 12,8 m²Espaço comum≈ 39,3 m²6 220 mm11 800 mm2 0102 2002 010Entrada / fachada principalCotas exteriores confirmadas · áreas aproximadas · cores suavizadasPlanta da sua configuração · áreas estimadasImagem indisponível: A etapa 1 mostra a referência original. Seleccione uma etapa 3D para incluir uma imagem da configuração; as escolhas e a planta continuam dispon"
+    },
+    {
+      "name": "mobile-step-3",
+      "visual": {
+        "view": "expansion",
+        "expansion": 1,
+        "cut": 1.1,
+        "exploded": 0,
+        "roofVisible": true,
+        "wallsVisible": false,
+        "furnitureVisible": false,
+        "doorsOpen": true
+      },
+      "config": {
+        "schemaVersion": 2,
+        "layout": "t2",
+        "exteriorId": "exterior-standard-branco-glacial",
+        "exterior": "#ddddda",
+        "floorId": "floor-spc-kx7006",
+        "floor": "#92846c",
+        "interior": "#eeede8",
+        "interiorName": "Branco natural",
+        "kitchen": "linear",
+        "kitchenRef": "kitchen-01",
+        "bathroom": "standard",
+        "bathroomRef": "bathroom-01",
+        "bathroomUV": null,
+        "roof": false,
+        "porch": false,
+        "lighting": "neutral",
+        "textureMode": "source"
+      },
+      "process": {
+        "p": 0.78,
+        "step": 2,
+        "wall": 1,
+        "sourceIndex": 2,
+        "representation": "walls",
+        "articulated": false,
+        "playing": false,
+        "revision": "GV72-EXPANSION-R10-2026-09-12"
+      },
+      "render": {
+        "projection": "PerspectiveCamera",
+        "walk": false,
+        "calls": 178,
+        "triangles": 53884,
+        "memory": {
+          "geometries": 145,
+          "textures": 10
+        },
+        "camera": [
+          11.426878956597193,
+          10.007965586145815,
+          14.283598695746493
+        ],
+        "target": [
+          0,
+          1.095,
+          0
+        ]
+      },
+      "title": "3 · Paredes erguidas",
+      "cameraSelect": "perspective",
+      "cameraDataset": "perspective",
+      "sourceHidden": true,
+      "overflow": false,
+      "wallsChecked": true,
+      "doorsChecked": false,
+      "furnitureChecked": false,
+      "snapshotDisabled": false,
+      "summaryText": "T2 · Expandível 72Referência GV72-D9B7C0CD2 quartos · 1 casa de banho · 11,80 × 6,22 m exterioresBanho≈ 3,6 m²Quarto 1≈ 12,8 m²Quarto 2≈ 12,8 m²Espaço comum≈ 39,3 m²6 220 mm11 800 mm2 0102 2002 010Entrada / fachada principalCotas exteriores confirmadas · áreas aproximadas · cores suavizadasPlanta da sua configuração · áreas estimadasImagem indisponível: A etapa 1 mostra a referência original. Seleccione uma etapa 3D para incluir uma imagem da configuração; as escolhas e a planta continuam dispon"
+    },
+    {
+      "name": "mobile-step-4",
+      "visual": {
+        "view": "expansion",
+        "expansion": 1,
+        "cut": 1.1,
+        "exploded": 0,
+        "roofVisible": true,
+        "wallsVisible": false,
+        "furnitureVisible": false,
+        "doorsOpen": true
+      },
+      "config": {
+        "schemaVersion": 2,
+        "layout": "t2",
+        "exteriorId": "exterior-standard-branco-glacial",
+        "exterior": "#ddddda",
+        "floorId": "floor-spc-kx7006",
+        "floor": "#92846c",
+        "interior": "#eeede8",
+        "interiorName": "Branco natural",
+        "kitchen": "linear",
+        "kitchenRef": "kitchen-01",
+        "bathroom": "standard",
+        "bathroomRef": "bathroom-01",
+        "bathroomUV": null,
+        "roof": false,
+        "porch": false,
+        "lighting": "neutral",
+        "textureMode": "source"
+      },
+      "process": {
+        "p": 1,
+        "step": 3,
+        "wall": 1,
+        "sourceIndex": 3,
+        "representation": "assembled",
+        "articulated": false,
+        "playing": false,
+        "revision": "GV72-EXPANSION-R10-2026-09-12"
+      },
+      "render": {
+        "projection": "PerspectiveCamera",
+        "walk": false,
+        "calls": 270,
+        "triangles": 76948,
+        "memory": {
+          "geometries": 145,
+          "textures": 10
+        },
+        "camera": [
+          11.426878956597193,
+          10.007965586145815,
+          14.283598695746493
+        ],
+        "target": [
+          0,
+          1.095,
+          0
+        ]
+      },
+      "title": "4 · Topos fechados",
+      "cameraSelect": "perspective",
+      "cameraDataset": "perspective",
+      "sourceHidden": true,
+      "overflow": false,
+      "wallsChecked": true,
+      "doorsChecked": false,
+      "furnitureChecked": false,
+      "snapshotDisabled": false,
+      "summaryText": "T2 · Expandível 72Referência GV72-D9B7C0CD2 quartos · 1 casa de banho · 11,80 × 6,22 m exterioresBanho≈ 3,6 m²Quarto 1≈ 12,8 m²Quarto 2≈ 12,8 m²Espaço comum≈ 39,3 m²6 220 mm11 800 mm2 0102 2002 010Entrada / fachada principalCotas exteriores confirmadas · áreas aproximadas · cores suavizadasPlanta da sua configuração · áreas estimadasImagem indisponível: A etapa 1 mostra a referência original. Seleccione uma etapa 3D para incluir uma imagem da configuração; as escolhas e a planta continuam dispon"
+    },
+    {
+      "name": "mobile-top",
+      "visual": {
+        "view": "interior",
+        "expansion": 1,
+        "cut": 1.1,
+        "exploded": 0,
+        "roofVisible": true,
+        "wallsVisible": false,
+        "furnitureVisible": false,
+        "doorsOpen": true
+      },
+      "config": {
+        "schemaVersion": 2,
+        "layout": "t2",
+        "exteriorId": "exterior-standard-branco-glacial",
+        "exterior": "#ddddda",
+        "floorId": "floor-spc-kx7006",
+        "floor": "#92846c",
+        "interior": "#eeede8",
+        "interiorName": "Branco natural",
+        "kitchen": "linear",
+        "kitchenRef": "kitchen-01",
+        "bathroom": "standard",
+        "bathroomRef": "bathroom-01",
+        "bathroomUV": null,
+        "roof": false,
+        "porch": false,
+        "lighting": "neutral",
+        "textureMode": "source"
+      },
+      "process": {
+        "p": 1,
+        "step": 3,
+        "wall": 1,
+        "sourceIndex": 3,
+        "representation": "assembled",
+        "articulated": false,
+        "playing": false,
+        "revision": "GV72-EXPANSION-R10-2026-09-12"
+      },
+      "render": {
+        "projection": "OrthographicCamera",
+        "walk": false,
+        "calls": 39,
+        "triangles": 11354,
+        "memory": {
+          "geometries": 39,
+          "textures": 10
+        },
+        "camera": [
+          0,
+          41.09499999998,
+          4.000177797212701e-05
+        ],
+        "target": [
+          0,
+          1.095,
+          0
+        ]
+      },
+      "title": "Interior em corte",
+      "cameraSelect": "top",
+      "cameraDataset": "top",
+      "sourceHidden": true,
+      "overflow": false,
+      "wallsChecked": false,
+      "doorsChecked": true,
+      "furnitureChecked": false,
+      "snapshotDisabled": false,
+      "summaryText": "T2 · Expandível 72Referência GV72-D9B7C0CD2 quartos · 1 casa de banho · 11,80 × 6,22 m exterioresBanho≈ 3,6 m²Quarto 1≈ 12,8 m²Quarto 2≈ 12,8 m²Espaço comum≈ 39,3 m²6 220 mm11 800 mm2 0102 2002 010Entrada / fachada principalCotas exteriores confirmadas · áreas aproximadas · cores suavizadasPlanta da sua configuração · áreas estimadasImagem indisponível: A etapa 1 mostra a referência original. Seleccione uma etapa 3D para incluir uma imagem da configuração; as escolhas e a planta continuam dispon"
+    },
+    {
+      "name": "mobile-reenter",
+      "visual": {
+        "view": "expansion",
+        "expansion": 1,
+        "cut": 1.1,
+        "exploded": 0,
+        "roofVisible": true,
+        "wallsVisible": false,
+        "furnitureVisible": false,
+        "doorsOpen": true
+      },
+      "config": {
+        "schemaVersion": 2,
+        "layout": "t2",
+        "exteriorId": "exterior-standard-branco-glacial",
+        "exterior": "#ddddda",
+        "floorId": "floor-spc-kx7006",
+        "floor": "#92846c",
+        "interior": "#eeede8",
+        "interiorName": "Branco natural",
+        "kitchen": "linear",
+        "kitchenRef": "kitchen-01",
+        "bathroom": "standard",
+        "bathroomRef": "bathroom-01",
+        "bathroomUV": null,
+        "roof": false,
+        "porch": false,
+        "lighting": "neutral",
+        "textureMode": "source"
+      },
+      "process": {
+        "p": 1,
+        "step": 3,
+        "wall": 1,
+        "sourceIndex": 3,
+        "representation": "assembled",
+        "articulated": false,
+        "playing": false,
+        "revision": "GV72-EXPANSION-R10-2026-09-12"
+      },
+      "render": {
+        "projection": "PerspectiveCamera",
+        "walk": false,
+        "calls": 270,
+        "triangles": 76948,
+        "memory": {
+          "geometries": 145,
+          "textures": 11
+        },
+        "camera": [
+          11.426878956597193,
+          10.007965586145815,
+          14.283598695746493
+        ],
+        "target": [
+          0,
+          1.095,
+          0
+        ]
+      },
+      "title": "4 · Topos fechados",
+      "cameraSelect": "perspective",
+      "cameraDataset": "perspective",
+      "sourceHidden": true,
+      "overflow": false,
+      "wallsChecked": true,
+      "doorsChecked": false,
+      "furnitureChecked": false,
+      "snapshotDisabled": false,
+      "summaryText": "T2 · Expandível 72Referência GV72-D9B7C0CD2 quartos · 1 casa de banho · 11,80 × 6,22 m exterioresBanho≈ 3,6 m²Quarto 1≈ 12,8 m²Quarto 2≈ 12,8 m²Espaço comum≈ 39,3 m²6 220 mm11 800 mm2 0102 2002 010Entrada / fachada principalCotas exteriores confirmadas · áreas aproximadas · cores suavizadasPlanta da sua configuração · áreas estimadasImagem indisponível: A etapa 1 mostra a referência original. Seleccione uma etapa 3D para incluir uma imagem da configuração; as escolhas e a planta continuam dispon"
+    }
+  ],
+  "errors": [],
+  "exports": [
+    {
+      "name": "step2-4K",
+      "width": 3840,
+      "height": 2160,
+      "bytes": 604332,
+      "before": {
+        "p": 0.18,
+        "step": 1,
+        "wall": 0,
+        "sourceIndex": 1,
+        "representation": "walls",
+        "articulated": false,
+        "playing": false,
+        "revision": "GV72-EXPANSION-R10-2026-09-12"
+      },
+      "after": {
+        "p": 0.18,
+        "step": 1,
+        "wall": 0,
+        "sourceIndex": 1,
+        "representation": "walls",
+        "articulated": false,
+        "playing": false,
+        "revision": "GV72-EXPANSION-R10-2026-09-12"
+      }
+    },
+    {
+      "name": "step4-4K",
+      "width": 3840,
+      "height": 2160,
+      "bytes": 615958,
+      "before": {
+        "p": 1,
+        "step": 3,
+        "wall": 1,
+        "sourceIndex": 3,
+        "representation": "assembled",
+        "articulated": false,
+        "playing": false,
+        "revision": "GV72-EXPANSION-R10-2026-09-12"
+      },
+      "after": {
+        "p": 1,
+        "step": 3,
+        "wall": 1,
+        "sourceIndex": 3,
+        "representation": "assembled",
+        "articulated": false,
+        "playing": false,
+        "revision": "GV72-EXPANSION-R10-2026-09-12"
+      }
+    }
+  ],
+  "playback": {
+    "seen": [
+      {
+        "step": 0,
+        "p": 0.004433333333374726,
+        "representation": "source",
+        "t": 81.39999999850988
+      },
+      {
+        "step": 1,
+        "p": 0.18220555555559692,
+        "representation": "walls",
+        "t": 3282
+      },
+      {
+        "step": 2,
+        "p": 0.7821833333333748,
+        "representation": "walls",
+        "t": 14081
+      },
+      {
+        "step": 3,
+        "p": 0.9016222222222637,
+        "representation": "assembled",
+        "t": 16241.199999999255
+      }
+    ],
+    "duration": 18080.199999999255,
+    "final": {
+      "p": 1,
+      "step": 3,
+      "wall": 1,
+      "sourceIndex": 3,
+      "representation": "assembled",
+      "articulated": false,
+      "playing": false,
+      "revision": "GV72-EXPANSION-R10-2026-09-12"
+    }
+  },
+  "endHash": "aae532fb6ce8179d2bff353a063ff010ff69868915b84aab25fc11501a15e857",
+  "stable": true,
+  "ended": "2026-09-12T19:14:48.556Z"
+}

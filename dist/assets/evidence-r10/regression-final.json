@@ -1,0 +1,111 @@
+{
+  "started": "2026-09-12T19:22:13.172Z",
+  "startHash": "e618a7ec7e2ae35ececdf0cc5d7d96ab74c94e3d9aef011303068cd02b88c918",
+  "checks": [
+    {
+      "name": "stage-1",
+      "process": {
+        "p": 0,
+        "step": 0,
+        "wall": 0,
+        "sourceIndex": 0,
+        "representation": "source",
+        "articulated": false,
+        "playing": false,
+        "revision": "GV72-EXPANSION-R10-2026-09-12"
+      }
+    },
+    {
+      "name": "stage-2",
+      "process": {
+        "p": 0.18,
+        "step": 1,
+        "wall": 0,
+        "sourceIndex": 1,
+        "representation": "walls",
+        "articulated": false,
+        "playing": false,
+        "revision": "GV72-EXPANSION-R10-2026-09-12"
+      }
+    },
+    {
+      "name": "stage-3",
+      "process": {
+        "p": 0.78,
+        "step": 2,
+        "wall": 1,
+        "sourceIndex": 2,
+        "representation": "walls",
+        "articulated": false,
+        "playing": false,
+        "revision": "GV72-EXPANSION-R10-2026-09-12"
+      }
+    },
+    {
+      "name": "stage-4",
+      "process": {
+        "p": 1,
+        "step": 3,
+        "wall": 1,
+        "sourceIndex": 3,
+        "representation": "assembled",
+        "articulated": false,
+        "playing": false,
+        "revision": "GV72-EXPANSION-R10-2026-09-12"
+      }
+    },
+    {
+      "name": "same-active-view-restores-assembled-panels",
+      "before": {
+        "projection": "PerspectiveCamera",
+        "walk": false,
+        "calls": 270,
+        "triangles": 76948,
+        "memory": {
+          "geometries": 145,
+          "textures": 6
+        },
+        "camera": [
+          11.426878956597193,
+          10.007965586145815,
+          14.283598695746493
+        ],
+        "target": [
+          0,
+          1.095,
+          0
+        ]
+      },
+      "after": {
+        "projection": "PerspectiveCamera",
+        "walk": false,
+        "calls": 270,
+        "triangles": 76948,
+        "memory": {
+          "geometries": 145,
+          "textures": 6
+        },
+        "camera": [
+          11.426878956597193,
+          10.007965586145815,
+          14.283598695746493
+        ],
+        "target": [
+          0,
+          1.095,
+          0
+        ]
+      }
+    },
+    {
+      "name": "source-stage-cannot-capture-hidden-model",
+      "rejected": true,
+      "message": "A etapa 1 mostra a referência original. Seleccione uma etapa 3D para incluir uma imagem da configuração; as escolhas e a planta continuam disponíveis."
+    }
+  ],
+  "errors": [],
+  "status": "PASS",
+  "endHash": "e618a7ec7e2ae35ececdf0cc5d7d96ab74c94e3d9aef011303068cd02b88c918",
+  "stable": true,
+  "ended": "2026-09-12T19:22:14.336Z"
+}

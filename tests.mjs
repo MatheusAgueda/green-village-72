@@ -1,3 +1,4 @@
+import {processPose,PROCESS_STEPS} from './dist/expansion-process.js';
 import {technicalSheetMarkup} from './dist/technical-sheet.js';
 import {CATALOGUE_OPTIONS,TECHNICAL_FACTS} from './dist/technical-data.js';
 import assert from 'node:assert/strict';
@@ -228,5 +229,12 @@ check('R9 expansion film is native Full HD, source-bound and declares its limite
  for(const item of film.outputs)assert.equal(createHash('sha256').update(readFileSync('dist/'+item.path)).digest('hex'),item.sha256);
  for(const file of ['model.js','specification.js','stage.js'])assert.equal(createHash('sha256').update(readFileSync('dist/'+file)).digest('hex'),film.sourceHashes[file]);
  assert.ok(film.limits.some(x=>x.includes('2–3')));assert.equal(film.validation.all350MP4FramesDecoded,true);
+});
+check('R10 process follows four documentary states without a fabricated floor or end-panel trajectory',()=>{
+ assert.deepEqual(PROCESS_STEPS.map(s=>processPose(s.position).step),[0,1,2,3]);
+ assert.equal(processPose(0).representation,'source');assert.equal(processPose(1).representation,'assembled');
+ assert.equal(processPose(.18).wall,0);assert.equal(processPose(.78).wall,1);
+ let previous=0;for(let i=0;i<=1000;i++){const pose=processPose(i/1000);assert.ok(pose.step>=previous);previous=pose.step;assert.ok(Number.isFinite(pose.wall)&&pose.wall>=0&&pose.wall<=1);if(pose.articulated)assert.equal(pose.representation,'walls');}
+ const p=sourceLedger(DEFAULT_CONFIG).expansion.presentation;assert.equal(p.steps.length,4);assert.deepEqual(p.discreteTransitions,['1–2','3–4']);assert.equal(p.transportEnvelope,'not documented');
 });
 console.log(`${count} scoped regression checks passed${core?' (media/evidence integration pending)':''}.`);

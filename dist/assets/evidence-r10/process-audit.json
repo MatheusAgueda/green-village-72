@@ -1,0 +1,49 @@
+{
+  "revision": "GV72-EXPANSION-R10-2026-09-12",
+  "source": {
+    "file": "assets/expansao.png",
+    "sha256": "36bbfd47243074c675aed831ccdc8b68b1253a214c0d45ec5945501a03172b69",
+    "confirmedByUser": "2026-09-12"
+  },
+  "states": [
+    {
+      "step": 1,
+      "display": "source image; roofs already open, floors stowed"
+    },
+    {
+      "step": 2,
+      "display": "3D floors open, longitudinal panels lying flat"
+    },
+    {
+      "step": 3,
+      "display": "3D longitudinal panels upright, end panels omitted"
+    },
+    {
+      "step": 4,
+      "display": "assembled 3D, end panels visible, no optional canopy or porch"
+    }
+  ],
+  "animatedTransition": "2–3",
+  "discreteTransitions": [
+    "1–2",
+    "3–4"
+  ],
+  "manufacturingVerified": false,
+  "geometryChecks": 7007,
+  "regressionGroups": 41,
+  "baselineStructuralIntersections": {
+    "perLayout": 20,
+    "largestOverlapM": 0.11999997481703772,
+    "explanation": "Existing beam/post proxy intersections are measured and reported, not certified joints. No additional intersection above final-contact baseline in the sampled wall-raising motion."
+  },
+  "foldingConflict": {
+    "sourceWingM": 2.01,
+    "estimatedFrameHeightM": 2.55,
+    "modelPanelTopM": 2.43,
+    "modelWallAxisXM": 2.99,
+    "coreEdgeXM": 1.1,
+    "hypotheticalFoldedTopYM": -0.54,
+    "implementation": "No floor-folding path invented to conceal this conflict."
+  },
+  "scope": "States accepted from supplied diagram; exact hinge axes, stowage, supports, locks and manufacturer clearances not supplied."
+}

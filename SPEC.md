@@ -82,3 +82,6 @@ The user requests animated expansion again, inside to outside, plus a complete v
 - Keep the technical sheet current after configuration changes. Make all categories readable on mobile and desktop, including actual plan window/door counts, areas, documented options and original video identities.
 - Preserve original video bytes; verify playback, seeking, pause, switching, failure recovery and download. Preserve ambiguous40ft/74m²/20ft/37m² filenames without declaring equivalence or difference that the evidence does not establish.
 - Verify changed animation geometry, browser flows, 4K and PDF correspondence, source ledger and hosted delivery. Existing source-supported geometry, door directions, 71 material references and client capabilities remain intact.
+
+## R10 — processo fornecido em quatro estados (12/09/2026)
+Preservar a geometria R9. Navegar pelos quatro estados na ordem das setas; quadro1 original, quadros2–3 com animação longitudinal, quadro4 com casa montada sem opcionais. Passagens1–2 e3–4 discretas e identificadas. Não deslocar piso para esconder conflito entre ala2,01m e painel estimado2,43m. Controlos, configuração, saída/reentrada e exportação coerentes com o estado visível; bloquear exportação3D no quadro original. Auditar fontes, sobreposições, entrada por vistas/camadas e fluxos desktop/mobile.
