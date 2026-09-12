@@ -115,6 +115,12 @@ export function makeHouse(options={},library=null){
  for(const dir of [-1,1]){box(groups.porch,2.02,.045,.05,dir*2.04,.9,porchFront-.05,M.white,'Corrimão',.006);for(let x=1.12;x<X-.06;x+=.19)box(groups.porch,.018,.8,.018,dir*x,.46,porchFront-.05,M.white,'Balaústre');}
 
  for(const w of wings.values()){
+  // Illustrative rigid return of the inboard floor carrier. It closes the
+  // recessed lower band when folded and nests under the core floor when open.
+  // It follows the floor without an independent hinge or visibility cut.
+  const returnWidth=C-DEPLOYMENT_ASSUMPTIONS.floorCarrierAxis;
+  const carrierReturn=box(w.layers,returnWidth+.008,.012,DIM.length-.12,w.dir*(C+DEPLOYMENT_ASSUMPTIONS.floorCarrierAxis)/2,-.06,0,M.roof,'Retorno de recolhimento · construção ilustrativa');
+  carrierReturn.userData.deploymentIllustration=true;
   const anchor=new THREE.Vector3(w.dir*C,0,0),pivots=['floor','layers','floorFrame'].map(key=>hinge(w[key],anchor,'Articulação de piso '+w.dir));
   for(const post of w.sideFrame.children){post.userData.deploymentZ=post.position.z;post.userData.deploymentX=post.position.x;}
   const side=sideAssemblies.find(a=>a.dir===w.dir);side.framePivot=hinge(w.sideFrame,new THREE.Vector3(w.dir*(X-RIG.wallPivotInset),RIG.wallPivotHeight,0),'Articulação de postes '+w.dir);

@@ -13,7 +13,10 @@ for(const {id:layout} of DATA.layouts){
  const meshes=[];h.root.traverse(o=>{if(o.isMesh)meshes.push(o);});
  const baseline=meshes.map(m=>m.matrixWorld.toArray());
  const attachments=[];for(const a of [...h.sideAssemblies,...h.endAssemblies])a.pivot.traverse(m=>{if(m.isMesh)attachments.push({m,p:a.pivot,local:new T.Matrix4().copy(a.pivot.matrixWorld).invert().multiply(m.matrixWorld).toArray()});});
- h.setView('expansion');let prev=null,maxStep=0;
+ h.setView('expansion');let prev=null,maxStep=0,maxCarrierError=0,maxRoofOvershoot=0;
+ h.updateProcess(0);
+ const relativeWall=a=>new T.Matrix4().copy(h.floorAssemblies.find(f=>f.dir===a.dir).pivots[0].matrixWorld).invert().multiply(a.pivot.matrixWorld).toArray();
+ const carried=h.sideAssemblies.map(a=>({a,relative:relativeWall(a)}));
  for(let i=0;i<=1000;i++){
   const p=i/1000,pose=processPose(p);h.updateProcess(p);
   const current=meshes.map(m=>m.matrixWorld.toArray());
@@ -23,8 +26,18 @@ for(const {id:layout} of DATA.layouts){
    if(prev)maxStep=Math.max(maxStep,...current[j].map((v,k)=>Math.abs(v-prev[j][k])));
   }
   for(const a of attachments)assert.ok(equal(new T.Matrix4().copy(a.p.matrixWorld).invert().multiply(a.m.matrixWorld).toArray(),a.local),'rigid window attachment');
-  if(pose.placement>0)assert.equal(pose.floor,1,'floor fully open before panel handling');
-  if(pose.wall>0)assert.equal(pose.placement,1,'panels placed before raising');
+  assert.equal('placement' in pose,false,'no independent panel handling phase');
+  if(pose.wall===0)for(const {a,relative} of carried){
+   const currentRelative=relativeWall(a);
+   maxCarrierError=Math.max(maxCarrierError,...relative.map((v,j)=>Math.abs(v-currentRelative[j])));
+   assert.ok(equal(relative,currentRelative),'panels rigidly accompany floors');
+  }
+  if(pose.wall>0)assert.equal(pose.floor,1,'floor fully open before panel raising');
+  for(const a of h.roofAssemblies)for(const pivot of a.pivots){
+   const signedAngle=a.dir*pivot.rotation.z;maxRoofOvershoot=Math.max(maxRoofOvershoot,signedAngle);
+   assert.ok(signedAngle<=1e-10&&signedAngle>=-Math.PI/2-1e-10,'roof never overshoots horizontal');
+   if(pose.roof===1)assert.ok(Math.abs(signedAngle)<1e-10,'open roof stays level');
+  }
   if(pose.front>0||pose.rear>0)assert.equal(pose.wall,1,'side walls upright before ends');
   for(const a of h.endAssemblies){assert.ok(a.dir*a.front*a.pivot.rotation.y>=-1e-10,'end inside-to-outside rotation');assert.equal(a.g.visible,true);}
   prev=current;
@@ -35,10 +48,10 @@ for(const {id:layout} of DATA.layouts){
  h.updateProcess(0);const bounds=new T.Box3();h.root.traverseVisible(o=>{if(o.isMesh){o.geometry.computeBoundingBox();bounds.union(o.geometry.boundingBox.clone().applyMatrix4(o.matrixWorld));}});
  assert.ok(bounds.max.x-bounds.min.x<3,'closed compact envelope');
  h.updateProcess(1);h.setView('exterior');assert.ok(meshes.every((m,i)=>equal(m.matrixWorld.toArray(),baseline[i])),'exit restores configuration');
- rows.push({layout,poses:1001,cycles:8,maxTransformStep:maxStep,closedIllustrativeBounds:{min:bounds.min.toArray(),max:bounds.max.toArray()}});h.dispose();
+ rows.push({layout,poses:1001,cycles:8,maxTransformStep:maxStep,maxCarrierError,maxRoofOvershoot,closedIllustrativeBounds:{min:bounds.min.toArray(),max:bounds.max.toArray()}});h.dispose();
 }
 assert.deepEqual(PROCESS_STEPS.map(s=>processPose(s.position).step),[0,1,2,3]);
 const endHashes=hashes();assert.deepEqual(startHashes,endHashes);
-const report={status:'PASS',testedAt:new Date().toISOString(),scope:'Rigid meshes, sequencing, continuity, outward end-panel rotation, compact closed illustration, exact final transforms and reentry. Not a physical collision or manufacturer validation.',startHashes,endHashes,rows};
+const report={status:'PASS',testedAt:new Date().toISOString(),scope:'Rigid meshes, panel-floor coupling during wing opening, level roofs without overshoot, sequencing, continuity, outward end-panel rotation, compact closed illustration, exact final transforms and reentry. Not a physical collision or manufacturer validation.',startHashes,endHashes,rows};
 const i=process.argv.indexOf('--out');if(i>=0)fs.writeFileSync(process.argv[i+1],JSON.stringify(report,null,2)+'\n');
 console.log(JSON.stringify({status:report.status,layouts:rows.length,poses:rows.reduce((n,x)=>n+x.poses,0),cycles:rows.reduce((n,x)=>n+x.cycles,0)}));

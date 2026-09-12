@@ -8,7 +8,7 @@ const {chromium}=await import(process.env.PLAYWRIGHT_MODULE||'playwright');
 const url=process.env.AUDIT_URL||'http://127.0.0.1:4174';
 assert.ok(['127.0.0.1','localhost','[::1]'].includes(new URL(url).hostname),'Use a local preview');
 const project=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
-const hash=()=>crypto.createHash('sha256').update(fs.readFileSync(path.join(project,'dist/app.js'))).digest('hex');
+const hash=()=>Object.fromEntries(['app.js','model.js','deployment-rig.js','expansion-process.js'].map(file=>[file,crypto.createHash('sha256').update(fs.readFileSync(path.join(project,'dist',file))).digest('hex')]));
 const report={started:new Date().toISOString(),startHash:hash(),checks:[],errors:[]};
 const browser=await chromium.launch({headless:true,...(process.env.CHROME_PATH?{executablePath:process.env.CHROME_PATH}:{})});
 try{
@@ -35,7 +35,7 @@ try{
  assert.deepEqual(report.errors,[]);report.status='PASS';
 }catch(error){report.status='FAIL';report.failure=error.message;process.exitCode=1;}
 finally{
- report.endHash=hash();report.stable=report.startHash===report.endHash;if(!report.stable){report.status='FAIL';process.exitCode=1;}
+ report.endHash=hash();report.stable=JSON.stringify(report.startHash)===JSON.stringify(report.endHash);if(!report.stable){report.status='FAIL';process.exitCode=1;}
  report.ended=new Date().toISOString();await browser.close();
  const i=process.argv.indexOf('--out');if(i>=0){const out=path.resolve(process.argv[i+1]);fs.mkdirSync(path.dirname(out),{recursive:true});fs.writeFileSync(out,JSON.stringify(report,null,2)+'\n');}
  console.log(JSON.stringify(report));

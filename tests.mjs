@@ -230,11 +230,11 @@ check('R9 expansion film is native Full HD, source-bound and declares its limite
  for(const file of ['model.js','specification.js','stage.js'])assert.equal(createHash('sha256').update(readFileSync(file==='model.js'?'dist/assets/expansion-r9/model-source.js.txt':'dist/'+file)).digest('hex'),film.sourceHashes[file]);
  assert.ok(film.limits.some(x=>x.includes('2–3')));assert.equal(film.validation.all350MP4FramesDecoded,true);
 });
-check('R11 process starts closed and continuously unfolds wings, side walls and outward ends',()=>{
+check('R12 panels accompany wings then rise, with no separate preparation phase',()=>{
  assert.deepEqual(PROCESS_STEPS.map(s=>processPose(s.position).step),[0,1,2,3]);
  assert.equal(processPose(0).representation,'deployment');assert.equal(processPose(1).representation,'deployment');
- for(const key of ['roof','floor','placement','wall','front','rear']){assert.equal(processPose(0)[key],0);assert.equal(processPose(1)[key],1);}
- let previous=0;for(let i=0;i<=1000;i++){const pose=processPose(i/1000);assert.ok(pose.step>=previous);previous=pose.step;assert.ok(Number.isFinite(pose.wall)&&pose.wall>=0&&pose.wall<=1);if(pose.placement>0)assert.equal(pose.floor,1);if(pose.wall>0)assert.equal(pose.placement,1);if(pose.front>0||pose.rear>0)assert.equal(pose.wall,1);}
+ for(const key of ['roof','floor','wall','front','rear']){assert.equal(processPose(0)[key],0);assert.equal(processPose(1)[key],1);}
+ let previous=0;for(let i=0;i<=1000;i++){const pose=processPose(i/1000);assert.ok(pose.step>=previous);previous=pose.step;assert.ok(Number.isFinite(pose.wall)&&pose.wall>=0&&pose.wall<=1);assert.equal('placement' in pose,false);assert.ok(!/prepar|colocar/i.test(pose.motion));if(pose.wall>0)assert.equal(pose.floor,1);if(pose.front>0||pose.rear>0)assert.equal(pose.wall,1);}
  const p=sourceLedger(DEFAULT_CONFIG).expansion.presentation;assert.equal(p.steps.length,4);assert.deepEqual(p.discreteTransitions,[]);assert.equal(p.continuousMotion,'all stages');assert.equal(p.transportEnvelope,'not documented');
 });
 console.log(`${count} scoped regression checks passed${core?' (media/evidence integration pending)':''}.`);

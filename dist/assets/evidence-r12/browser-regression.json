@@ -1,0 +1,140 @@
+{
+  "started": "2026-09-12T21:19:41.815Z",
+  "startHash": {
+    "app.js": "00ff8ab10f87a348a4102c3443fc38a3725fb3e6113531626e2b1163be988263",
+    "model.js": "22b32e8ff4b29c53b709df6f8a066155cd572eb66cb7b7470db2baf307b4dc08",
+    "deployment-rig.js": "983b749fe6e2bf8f703cce7d2d99e513290799538876bb7f5862176b05ee6b60",
+    "expansion-process.js": "bbdab2f66b90638d4e05a1e51bd707c6adee6d4d7d50baf29d16070b1e04ff75"
+  },
+  "checks": [
+    {
+      "name": "stage-1",
+      "process": {
+        "p": 0,
+        "roof": 0,
+        "floor": 0,
+        "wall": 0,
+        "front": 0,
+        "rear": 0,
+        "step": 0,
+        "sourceIndex": 0,
+        "representation": "deployment",
+        "articulated": false,
+        "motion": "Contentor fechado",
+        "playing": false,
+        "revision": "GV72-EXPANSION-R12-2026-09-12"
+      }
+    },
+    {
+      "name": "stage-2",
+      "process": {
+        "p": 0.45,
+        "roof": 1,
+        "floor": 1,
+        "wall": 0,
+        "front": 0,
+        "rear": 0,
+        "step": 1,
+        "sourceIndex": 1,
+        "representation": "deployment",
+        "articulated": true,
+        "motion": "Alas laterais abertas",
+        "playing": false,
+        "revision": "GV72-EXPANSION-R12-2026-09-12"
+      }
+    },
+    {
+      "name": "stage-3",
+      "process": {
+        "p": 0.77,
+        "roof": 1,
+        "floor": 1,
+        "wall": 1,
+        "front": 0,
+        "rear": 0,
+        "step": 2,
+        "sourceIndex": 2,
+        "representation": "deployment",
+        "articulated": true,
+        "motion": "Paredes laterais erguidas",
+        "playing": false,
+        "revision": "GV72-EXPANSION-R12-2026-09-12"
+      }
+    },
+    {
+      "name": "stage-4",
+      "process": {
+        "p": 1,
+        "roof": 1,
+        "floor": 1,
+        "wall": 1,
+        "front": 1,
+        "rear": 1,
+        "step": 3,
+        "sourceIndex": 3,
+        "representation": "deployment",
+        "articulated": false,
+        "motion": "Casa expandida",
+        "playing": false,
+        "revision": "GV72-EXPANSION-R12-2026-09-12"
+      }
+    },
+    {
+      "name": "same-active-view-restores-assembled-panels",
+      "before": {
+        "projection": "PerspectiveCamera",
+        "walk": false,
+        "calls": 290,
+        "triangles": 74380,
+        "memory": {
+          "geometries": 155,
+          "textures": 6
+        },
+        "camera": [
+          11.426878956597193,
+          10.007965586145815,
+          14.283598695746493
+        ],
+        "target": [
+          0,
+          1.095,
+          0
+        ]
+      },
+      "after": {
+        "projection": "PerspectiveCamera",
+        "walk": false,
+        "calls": 290,
+        "triangles": 74380,
+        "memory": {
+          "geometries": 155,
+          "textures": 6
+        },
+        "camera": [
+          11.426878956597193,
+          10.007965586145815,
+          14.283598695746493
+        ],
+        "target": [
+          0,
+          1.095,
+          0
+        ]
+      }
+    },
+    {
+      "name": "closed-stage-captures-actual-3D-model",
+      "rejected": false
+    }
+  ],
+  "errors": [],
+  "status": "PASS",
+  "endHash": {
+    "app.js": "00ff8ab10f87a348a4102c3443fc38a3725fb3e6113531626e2b1163be988263",
+    "model.js": "22b32e8ff4b29c53b709df6f8a066155cd572eb66cb7b7470db2baf307b4dc08",
+    "deployment-rig.js": "983b749fe6e2bf8f703cce7d2d99e513290799538876bb7f5862176b05ee6b60",
+    "expansion-process.js": "bbdab2f66b90638d4e05a1e51bd707c6adee6d4d7d50baf29d16070b1e04ff75"
+  },
+  "stable": true,
+  "ended": "2026-09-12T21:19:43.087Z"
+}

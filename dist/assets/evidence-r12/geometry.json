@@ -1,0 +1,157 @@
+{
+  "status": "PASS",
+  "testedAt": "2026-09-12T21:18:39.599Z",
+  "scope": "Rigid meshes, panel-floor coupling during wing opening, level roofs without overshoot, sequencing, continuity, outward end-panel rotation, compact closed illustration, exact final transforms and reentry. Not a physical collision or manufacturer validation.",
+  "startHashes": {
+    "model.js": "22b32e8ff4b29c53b709df6f8a066155cd572eb66cb7b7470db2baf307b4dc08",
+    "deployment-rig.js": "983b749fe6e2bf8f703cce7d2d99e513290799538876bb7f5862176b05ee6b60",
+    "expansion-process.js": "bbdab2f66b90638d4e05a1e51bd707c6adee6d4d7d50baf29d16070b1e04ff75"
+  },
+  "endHashes": {
+    "model.js": "22b32e8ff4b29c53b709df6f8a066155cd572eb66cb7b7470db2baf307b4dc08",
+    "deployment-rig.js": "983b749fe6e2bf8f703cce7d2d99e513290799538876bb7f5862176b05ee6b60",
+    "expansion-process.js": "bbdab2f66b90638d4e05a1e51bd707c6adee6d4d7d50baf29d16070b1e04ff75"
+  },
+  "rows": [
+    {
+      "layout": "t0",
+      "poses": 1001,
+      "cycles": 8,
+      "maxTransformStep": 0.10552899005514105,
+      "maxCarrierError": 8.881784197001252e-16,
+      "maxRoofOvershoot": 0,
+      "closedIllustrativeBounds": {
+        "min": [
+          -1.2134999275207528,
+          -0.3645000000745058,
+          -5.9125000000000005
+        ],
+        "max": [
+          1.2134999275207528,
+          2.563499927520752,
+          5.92099999961257
+        ]
+      }
+    },
+    {
+      "layout": "t1",
+      "poses": 1001,
+      "cycles": 8,
+      "maxTransformStep": 0.10552899005514105,
+      "maxCarrierError": 8.881784197001252e-16,
+      "maxRoofOvershoot": 0,
+      "closedIllustrativeBounds": {
+        "min": [
+          -1.2134999275207528,
+          -0.3645000000745058,
+          -5.9125000000000005
+        ],
+        "max": [
+          1.2134999275207528,
+          2.563499927520752,
+          5.92099999961257
+        ]
+      }
+    },
+    {
+      "layout": "t2",
+      "poses": 1001,
+      "cycles": 8,
+      "maxTransformStep": 0.10552899005514105,
+      "maxCarrierError": 8.881784197001252e-16,
+      "maxRoofOvershoot": 0,
+      "closedIllustrativeBounds": {
+        "min": [
+          -1.2134999275207528,
+          -0.3645000000745058,
+          -5.9125000000000005
+        ],
+        "max": [
+          1.2134999275207528,
+          2.563499927520752,
+          5.92099999961257
+        ]
+      }
+    },
+    {
+      "layout": "t3-a",
+      "poses": 1001,
+      "cycles": 8,
+      "maxTransformStep": 0.10552899005514105,
+      "maxCarrierError": 8.881784197001252e-16,
+      "maxRoofOvershoot": 0,
+      "closedIllustrativeBounds": {
+        "min": [
+          -1.2134999275207528,
+          -0.3645000000745058,
+          -5.9125000000000005
+        ],
+        "max": [
+          1.2134999275207528,
+          2.563499927520752,
+          5.92099999961257
+        ]
+      }
+    },
+    {
+      "layout": "t3-b",
+      "poses": 1001,
+      "cycles": 8,
+      "maxTransformStep": 0.10552899005514105,
+      "maxCarrierError": 8.881784197001252e-16,
+      "maxRoofOvershoot": 0,
+      "closedIllustrativeBounds": {
+        "min": [
+          -1.2134999275207528,
+          -0.3645000000745058,
+          -5.9125000000000005
+        ],
+        "max": [
+          1.2134999275207528,
+          2.563499927520752,
+          5.92099999961257
+        ]
+      }
+    },
+    {
+      "layout": "t4-a",
+      "poses": 1001,
+      "cycles": 8,
+      "maxTransformStep": 0.10552899005514105,
+      "maxCarrierError": 8.881784197001252e-16,
+      "maxRoofOvershoot": 0,
+      "closedIllustrativeBounds": {
+        "min": [
+          -1.2134999275207528,
+          -0.3645000000745058,
+          -5.9125000000000005
+        ],
+        "max": [
+          1.2134999275207528,
+          2.563499927520752,
+          5.92099999961257
+        ]
+      }
+    },
+    {
+      "layout": "t4-b",
+      "poses": 1001,
+      "cycles": 8,
+      "maxTransformStep": 0.10552899005514105,
+      "maxCarrierError": 8.881784197001252e-16,
+      "maxRoofOvershoot": 0,
+      "closedIllustrativeBounds": {
+        "min": [
+          -1.2134999275207528,
+          -0.3645000000745058,
+          -5.9125000000000005
+        ],
+        "max": [
+          1.2134999275207528,
+          2.563499927520752,
+          5.92099999961257
+        ]
+      }
+    }
+  ]
+}
