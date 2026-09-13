@@ -1,5 +1,7 @@
 ## R15 — transport and delivery films, 13 September 2026
 
+The native archive save rejected the374,860,408-byte archive at its256MiB input limit. The exact validated output remains available locally. Added a standard build command for source-only remote-build fallback; it deterministically assembles the same MP4 bytes before module versioning. Final deployment outcome is recorded outside checkout.
+
 Source packaging: the first publication push was rejected for oversized Git objects. Final sources use19 hash-verified chunks of at most8MiB outside dist; prepare:site reconstructs the two ignored MP4 outputs before versioning modules. Isolated reconstruction exactly matches the browser-tested files; no recompression or runtime changes. Proof audit/r15/source-packaging.json. Run npm run prepare:site in a fresh checkout before tests/publication.
 
 Added the two public YouTube references supplied by the user: mrVo6rKW270 from 945s (15:45) and UGaynQUNfms from 492s (08:12), each through the end of its source. Both are from Green Village Mobile Home. Two native silent720p H.264 copies (75.83MB/72.29MB;802.032s/795.034s), selected source posters, ten inspected chapters, source links with original start points, and download links appear prominently in Films. Technical sheet and configuration source ledger now contain nine source videos; main Films has eleven players. All18 distributed MP4s are physically silent. Prior sources/assets and all3D/material/kinematic modules unchanged.
