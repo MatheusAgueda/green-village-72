@@ -1,0 +1,21 @@
+{
+  "revision": "R15",
+  "regressionCommand": "npm test",
+  "regressionGroupsPassed": 45,
+  "distributedMp4Count": 18,
+  "allDistributedMp4FilesHaveZeroAudioTracks": true,
+  "sourceVideoCount": 9,
+  "mainPlayerCount": 11,
+  "browser": "browser-verification.json",
+  "playerNoRangeRegression": "player-regression.json",
+  "silentMedia": "silent-media.json",
+  "sourceHash": {
+    "app.js": "105cc91d39c233ea599e29c0dd4e0db5c4aba491937b13377aabd964c3eaee60",
+    "video-library.js": "f9b7a2e7cd44a4313eb00a20a22a7ab95f1d429078425ccf5e088ac795685ceb",
+    "reference-videos.js": "276fa3bc56affc21213e3cb335aa8c133d055d8a88a746147ad9d05b817b4ccc",
+    "index.html": "33afcf1c0256073b10358ae20c12eb43b51d040cc9398de7f5ce9ea698936ebc",
+    "technical-sheet.js": "e2985601efefa39dc59cbc66502e70c0cc2e325483b6197206ce0c5704595604",
+    "delivery-films.css": "141ae1d7179a4fcc0b8e447c6e449472e4702228e79b5b4099d1af8d53a4a1e3"
+  },
+  "scope": "Two user-supplied public YouTube delivery clips; existing3D/material/kinematic modules unchanged."
+}

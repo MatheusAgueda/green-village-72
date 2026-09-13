@@ -1,5 +1,5 @@
 ## R15 — user-supplied transport and installation references
-Add the two supplied YouTube references with the user's labels. Preserve supplied start points (945s and492s), reference provenance and the always-silent portfolio policy. Do not infer factory hinge geometry or alter the3D from these links. Retain previous media and exact current materials/kinematics.
+Add the two supplied public YouTube references with the user's labels. Preserve source start points945s/492s, all following footage, ten inspected chapters and the always-silent portfolio preference. Stream through the YouTube IFrameAPI with sound blocked by custom controls; preserve sixteen existing silent downloadable MP4s. Full prepared silent copies remain local because the hosting archive cap prevents bundling them. Preserve all current3D/material/kinematic code and prior references. Verify actual embeds, relative seek/source mapping, sound policy, cross-player pause, navigation and mobile layouts.
 
 ## R14 — all videos always silent
 User explicitly requires ALL videos without sound. Remove audio streams from every public MP4 with audio, preserve video bitstreams and original input attachments, apply silent playback to all players and downloads, identify copies accurately, bypass older cached media and verify all delivered MP4s have zero audio tracks.

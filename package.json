@@ -3,8 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node scripts/prepare-site.mjs",
-    "prepare:site": "node scripts/prepare-site.mjs",
+    "build": "node scripts/version-modules.mjs",
+    "prepare:site": "node scripts/version-modules.mjs",
     "test": "node tests.mjs",
     "test:expansion": "node scripts/expansion-audit.mjs",
     "test:deployment": "node scripts/deployment-audit.mjs"

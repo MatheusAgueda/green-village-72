@@ -1,21 +1,35 @@
 {
-  "revision": "R15",
-  "regressionCommand": "npm test",
-  "regressionGroupsPassed": 45,
-  "distributedMp4Count": 18,
-  "allDistributedMp4FilesHaveZeroAudioTracks": true,
-  "sourceVideoCount": 9,
-  "mainPlayerCount": 11,
-  "browser": "browser-verification.json",
-  "playerNoRangeRegression": "player-regression.json",
-  "silentMedia": "silent-media.json",
-  "sourceHash": {
-    "app.js": "105cc91d39c233ea599e29c0dd4e0db5c4aba491937b13377aabd964c3eaee60",
-    "video-library.js": "f9b7a2e7cd44a4313eb00a20a22a7ab95f1d429078425ccf5e088ac795685ceb",
-    "reference-videos.js": "276fa3bc56affc21213e3cb335aa8c133d055d8a88a746147ad9d05b817b4ccc",
-    "index.html": "33afcf1c0256073b10358ae20c12eb43b51d040cc9398de7f5ce9ea698936ebc",
-    "technical-sheet.js": "e2985601efefa39dc59cbc66502e70c0cc2e325483b6197206ce0c5704595604",
-    "delivery-films.css": "141ae1d7179a4fcc0b8e447c6e449472e4702228e79b5b4099d1af8d53a4a1e3"
+  "at": "2026-09-13T12:22:36.713Z",
+  "release": "R15",
+  "pass": true,
+  "checks": {
+    "npm_test": "45 groups passed before final evidence copy; no runtime changes since",
+    "browser": "audit/r15/browser-verification.json",
+    "source_records": 9,
+    "native_source_records": 7,
+    "youtube_source_records": 2,
+    "distributed_mp4_files": 16,
+    "distributed_mp4_audio_tracks": 0,
+    "playing_state_silence_samples": 114,
+    "chapters_verified": 10,
+    "unchanged_from_r14": [
+      "dist/model.js",
+      "dist/deployment-rig.js",
+      "dist/expansion-process.js",
+      "dist/material-library.js",
+      "dist/video-library.js"
+    ],
+    "public_files": 922,
+    "public_bytes": 241752688
   },
-  "scope": "Two user-supplied public YouTube delivery clips; existing3D/material/kinematic modules unchanged."
+  "source_sha256": {
+    "youtube-library.js": "b3f6828fc926551e36218fac0122a0386e650a36c3fc87e60defe00d9c23d806",
+    "app.js": "e98aea8909ede7f2c26b2b8fa7f8bc4a0f58ebb57321bc85a81a86f29d1dc35c",
+    "reference-videos.js": "e1ca748f70c156799e5ffeef2fba0f0353833edfc384ad7557e93b657aabd8e5",
+    "delivery-films.css": "2f7aa39e2108e862a778f1ef2b22143efd0679a96c8451615cc9f0dad881fa31",
+    "index.html": "42615750e9143cc5ecbb4f05cd945bd7004111fdff73c4dcb4c46d70e2a3f0d1"
+  },
+  "delivery_policy": "Both complete YouTube streams start at the user supplied timestamps and remain muted in the portfolio. Source links leave the portfolio. New silent MP4 copies are prepared locally only; the existing 16 distributed MP4 downloads remain silent.",
+  "historical_evidence": "native-preview-* and prepared-media-provenance.json document the earlier local MP4 implementation, not the final hosted YouTube players.",
+  "hosting": "Archive-based publication pending. Previous source-only version 17 failed to fetch; version 16 remains live until successful R15 publication."
 }

@@ -1,0 +1,172 @@
+{
+  "pass": true,
+  "browser": "153.0.8010.36",
+  "at": "2026-09-13T11:44:36.683Z",
+  "scope": "Only two integrated R15 delivery films; Chrome desktop1440 and simulated375 width.",
+  "source_sha256": {
+    "app.js": "105cc91d39c233ea599e29c0dd4e0db5c4aba491937b13377aabd964c3eaee60",
+    "video-library.js": "f9b7a2e7cd44a4313eb00a20a22a7ab95f1d429078425ccf5e088ac795685ceb",
+    "reference-videos.js": "276fa3bc56affc21213e3cb335aa8c133d055d8a88a746147ad9d05b817b4ccc",
+    "index.html": "33afcf1c0256073b10358ae20c12eb43b51d040cc9398de7f5ce9ea698936ebc",
+    "technical-sheet.js": "e2985601efefa39dc59cbc66502e70c0cc2e325483b6197206ce0c5704595604",
+    "delivery-films.css": "141ae1d7179a4fcc0b8e447c6e449472e4702228e79b5b4099d1af8d53a4a1e3"
+  },
+  "chapter_buttons_played": 10,
+  "late_native_seeks": [
+    {
+      "id": "retirada-contentor-transporte",
+      "requested": 777,
+      "state": {
+        "id": "source-retirada-contentor-transporte",
+        "time": 777.00513,
+        "duration": 802.031394,
+        "paused": false,
+        "readyState": 4,
+        "width": 1280,
+        "height": 720,
+        "muted": true,
+        "defaultMuted": true,
+        "volume": 0,
+        "error": null,
+        "src": "blob:http://127.0.0.1:4174/e198f6cf-4996-4cc8-8972-554d276f2d3d"
+      }
+    },
+    {
+      "id": "entrega-montagem-72m2",
+      "requested": 770,
+      "state": {
+        "id": "source-entrega-montagem-72m2",
+        "time": 770.008129,
+        "duration": 795.033333,
+        "paused": false,
+        "readyState": 4,
+        "width": 1280,
+        "height": 720,
+        "muted": true,
+        "defaultMuted": true,
+        "volume": 0,
+        "error": null,
+        "src": "blob:http://127.0.0.1:4174/06ade058-b1f3-4100-ba32-21fb88650187"
+      }
+    }
+  ],
+  "forced_unmute_resets": true,
+  "switching": [
+    {
+      "id": "source-retirada-contentor-transporte",
+      "paused": false
+    },
+    {
+      "id": "source-entrega-montagem-72m2",
+      "paused": true
+    }
+  ],
+  "section_exit": [
+    {
+      "id": "source-retirada-contentor-transporte",
+      "paused": true,
+      "muted": true,
+      "volume": 0
+    },
+    {
+      "id": "source-entrega-montagem-72m2",
+      "paused": true,
+      "muted": true,
+      "volume": 0
+    }
+  ],
+  "technical_shortcuts": 2,
+  "mobile_playback_and_mute": true,
+  "layout": [
+    {
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "videos": [
+        {
+          "id": "source-retirada-contentor-transporte",
+          "width": 659.8125,
+          "height": 371.140625,
+          "ratio": 1.7777964888645645,
+          "visible": true,
+          "cssRatio": "16 / 9",
+          "timeout": "120000"
+        },
+        {
+          "id": "source-entrega-montagem-72m2",
+          "width": 659.8125,
+          "height": 371.140625,
+          "ratio": 1.7777964888645645,
+          "visible": true,
+          "cssRatio": "16 / 9",
+          "timeout": "120000"
+        }
+      ]
+    },
+    {
+      "viewport": 375,
+      "scrollWidth": 375,
+      "videos": [
+        {
+          "id": "source-retirada-contentor-transporte",
+          "width": 341,
+          "height": 191.8125,
+          "ratio": 1.7777777777777777,
+          "visible": true,
+          "cssRatio": "16 / 9",
+          "timeout": "120000"
+        },
+        {
+          "id": "source-entrega-montagem-72m2",
+          "width": 341,
+          "height": 191.8125,
+          "ratio": 1.7777777777777777,
+          "visible": true,
+          "cssRatio": "16 / 9",
+          "timeout": "120000"
+        }
+      ]
+    }
+  ],
+  "links": [
+    {
+      "id": "retirada-contentor-transporte",
+      "source": {
+        "url": "https://www.youtube.com/watch?v=mrVo6rKW270&t=945s",
+        "download": false,
+        "text": "Vídeo de origem no YouTube ↗"
+      },
+      "download": {
+        "url": "http://127.0.0.1:4174/assets/reference-videos-r15/mrVo6rKW270-silent-720p.mp4?silent=r14",
+        "download": true,
+        "text": "Descarregar vídeo sem áudio ↓"
+      }
+    },
+    {
+      "id": "entrega-montagem-72m2",
+      "source": {
+        "url": "https://www.youtube.com/watch?v=UGaynQUNfms&t=492s",
+        "download": false,
+        "text": "Vídeo de origem no YouTube ↗"
+      },
+      "download": {
+        "url": "http://127.0.0.1:4174/assets/reference-videos-r15/UGaynQUNfms-silent-720p.mp4?silent=r14",
+        "download": true,
+        "text": "Descarregar vídeo sem áudio ↓"
+      }
+    }
+  ],
+  "verified_download": {
+    "url": "http://127.0.0.1:4174/assets/reference-videos-r15/mrVo6rKW270-silent-720p.mp4?silent=r14",
+    "suggestedFilename": "mrVo6rKW270-silent-720p.mp4",
+    "failure": null,
+    "bytes": 75828374,
+    "sha256": "bfcd274a4aeb940010cbecf9ee7456939f52bd84672f3292e5b3b391fdf23766",
+    "expectedSha256": "bfcd274a4aeb940010cbecf9ee7456939f52bd84672f3292e5b3b391fdf23766"
+  },
+  "page_errors": [],
+  "console_errors": [],
+  "http_errors": [],
+  "expected_media_request_aborts": 17,
+  "unexpected_request_failures": [],
+  "raw": "raw.json"
+}

@@ -1,172 +1,396 @@
 {
-  "pass": true,
-  "browser": "153.0.8010.36",
-  "at": "2026-09-13T11:44:36.683Z",
-  "scope": "Only two integrated R15 delivery films; Chrome desktop1440 and simulated375 width.",
-  "source_sha256": {
-    "app.js": "105cc91d39c233ea599e29c0dd4e0db5c4aba491937b13377aabd964c3eaee60",
-    "video-library.js": "f9b7a2e7cd44a4313eb00a20a22a7ab95f1d429078425ccf5e088ac795685ceb",
-    "reference-videos.js": "276fa3bc56affc21213e3cb335aa8c133d055d8a88a746147ad9d05b817b4ccc",
-    "index.html": "33afcf1c0256073b10358ae20c12eb43b51d040cc9398de7f5ce9ea698936ebc",
-    "technical-sheet.js": "e2985601efefa39dc59cbc66502e70c0cc2e325483b6197206ce0c5704595604",
-    "delivery-films.css": "141ae1d7179a4fcc0b8e447c6e449472e4702228e79b5b4099d1af8d53a4a1e3"
-  },
-  "chapter_buttons_played": 10,
-  "late_native_seeks": [
+  "at": "2026-09-13T12:19:30.463Z",
+  "scope": "Integrated actual two YouTube players, all10chapters and requested control/navigation/layout flows; one existing native player only.",
+  "chapters": [
     {
       "id": "retirada-contentor-transporte",
-      "requested": 777,
+      "label": "Retirada do contentor",
+      "relative": 0,
+      "expectedSource": 945,
       "state": {
-        "id": "source-retirada-contentor-transporte",
-        "time": 777.00513,
-        "duration": 802.031394,
-        "paused": false,
-        "readyState": 4,
-        "width": 1280,
-        "height": 720,
+        "time": 946.2986429809265,
+        "state": 1,
         "muted": true,
-        "defaultMuted": true,
         "volume": 0,
-        "error": null,
-        "src": "blob:http://127.0.0.1:4174/e198f6cf-4996-4cc8-8972-554d276f2d3d"
+        "duration": 1747.101
+      }
+    },
+    {
+      "id": "retirada-contentor-transporte",
+      "label": "Movimentação no terreno",
+      "relative": 60,
+      "expectedSource": 1005,
+      "state": {
+        "time": 1005.6261500438691,
+        "state": 1,
+        "muted": true,
+        "volume": 0,
+        "duration": 1747.101
+      }
+    },
+    {
+      "id": "retirada-contentor-transporte",
+      "label": "Módulo suspenso",
+      "relative": 420,
+      "expectedSource": 1365,
+      "state": {
+        "time": 1365.6061040419618,
+        "state": 1,
+        "muted": true,
+        "volume": 0,
+        "duration": 1747.101
+      }
+    },
+    {
+      "id": "retirada-contentor-transporte",
+      "label": "Posicionamento no terreno",
+      "relative": 720,
+      "expectedSource": 1665,
+      "state": {
+        "time": 1665.6305711163482,
+        "state": 1,
+        "muted": true,
+        "volume": 0,
+        "duration": 1747.101
       }
     },
     {
       "id": "entrega-montagem-72m2",
-      "requested": 770,
+      "label": "Descarga por grua",
+      "relative": 0,
+      "expectedSource": 492,
       "state": {
-        "id": "source-entrega-montagem-72m2",
-        "time": 770.008129,
-        "duration": 795.033333,
-        "paused": false,
-        "readyState": 4,
-        "width": 1280,
-        "height": 720,
+        "time": 493.2457850705719,
+        "state": 1,
         "muted": true,
-        "defaultMuted": true,
         "volume": 0,
-        "error": null,
-        "src": "blob:http://127.0.0.1:4174/06ade058-b1f3-4100-ba32-21fb88650187"
+        "duration": 1288
+      }
+    },
+    {
+      "id": "entrega-montagem-72m2",
+      "label": "Módulo no terreno",
+      "relative": 60,
+      "expectedSource": 552,
+      "state": {
+        "time": 552.612371917984,
+        "state": 1,
+        "muted": true,
+        "volume": 0,
+        "duration": 1288
+      }
+    },
+    {
+      "id": "entrega-montagem-72m2",
+      "label": "Abertura da estrutura",
+      "relative": 120,
+      "expectedSource": 612,
+      "state": {
+        "time": 612.6160940114441,
+        "state": 1,
+        "muted": true,
+        "volume": 0,
+        "duration": 1288
+      }
+    },
+    {
+      "id": "entrega-montagem-72m2",
+      "label": "Posicionamento de painéis",
+      "relative": 300,
+      "expectedSource": 792,
+      "state": {
+        "time": 792.6143298760223,
+        "state": 1,
+        "muted": true,
+        "volume": 0,
+        "duration": 1288
+      }
+    },
+    {
+      "id": "entrega-montagem-72m2",
+      "label": "Visita ao interior",
+      "relative": 360,
+      "expectedSource": 852,
+      "state": {
+        "time": 852.6214920534057,
+        "state": 1,
+        "muted": true,
+        "volume": 0,
+        "duration": 1288
+      }
+    },
+    {
+      "id": "entrega-montagem-72m2",
+      "label": "Divisões e acabamentos",
+      "relative": 540,
+      "expectedSource": 1032,
+      "state": {
+        "time": 1032.6081168760225,
+        "state": 1,
+        "muted": true,
+        "volume": 0,
+        "duration": 1288
       }
     }
   ],
-  "forced_unmute_resets": true,
-  "switching": [
+  "controls": [
     {
-      "id": "source-retirada-contentor-transporte",
-      "paused": false
+      "id": "retirada-contentor-transporte",
+      "action": "initial custom play",
+      "state": {
+        "time": 945.6300339713898,
+        "state": 1,
+        "muted": true,
+        "volume": 0,
+        "duration": 1747.101
+      }
     },
     {
-      "id": "source-entrega-montagem-72m2",
-      "paused": true
-    }
-  ],
-  "section_exit": [
-    {
-      "id": "source-retirada-contentor-transporte",
-      "paused": true,
-      "muted": true,
-      "volume": 0
+      "id": "retirada-contentor-transporte",
+      "action": "iframe restrictions",
+      "iframe": {
+        "pointerEvents": "none",
+        "tabIndex": -1,
+        "hidden": "true",
+        "src": "https://www.youtube.com/embed/mrVo6rKW270?start=945&autoplay=0&mute=1&controls=0&disablekb=1&playsinline=1&fs=0&rel=0&origin=http%3A%2F%2F127.0.0.1%3A4174&enablejsapi=1&widgetid=1&forigin=http%3A%2F%2F127.0.0.1%3A4174%2F&aoriginsup=1&vf=6"
+      }
     },
     {
-      "id": "source-entrega-montagem-72m2",
-      "paused": true,
-      "muted": true,
-      "volume": 0
+      "id": "retirada-contentor-transporte",
+      "action": "custom pause",
+      "state": {
+        "time": 945.674493,
+        "state": 2,
+        "muted": true,
+        "volume": 0,
+        "duration": 1747.101
+      }
+    },
+    {
+      "id": "retirada-contentor-transporte",
+      "action": "keyboard seek slider Home then ArrowRight",
+      "expectedSource": 946,
+      "state": {
+        "time": 946.6041340095368,
+        "state": 1,
+        "muted": true,
+        "volume": 0,
+        "duration": 1747.101
+      }
+    },
+    {
+      "id": "retirada-contentor-transporte",
+      "action": "fullscreen entered",
+      "pass": true
+    },
+    {
+      "id": "retirada-contentor-transporte",
+      "action": "custom fullscreen exit",
+      "pass": true
+    },
+    {
+      "id": "entrega-montagem-72m2",
+      "action": "initial custom play",
+      "state": {
+        "time": 492.6133268455048,
+        "state": 1,
+        "muted": true,
+        "volume": 0,
+        "duration": 1288
+      }
+    },
+    {
+      "id": "entrega-montagem-72m2",
+      "action": "iframe restrictions",
+      "iframe": {
+        "pointerEvents": "none",
+        "tabIndex": -1,
+        "hidden": "true",
+        "src": "https://www.youtube.com/embed/UGaynQUNfms?start=492&autoplay=0&mute=1&controls=0&disablekb=1&playsinline=1&fs=0&rel=0&origin=http%3A%2F%2F127.0.0.1%3A4174&enablejsapi=1&widgetid=3&forigin=http%3A%2F%2F127.0.0.1%3A4174%2F&aoriginsup=1&vf=6"
+      }
+    },
+    {
+      "id": "entrega-montagem-72m2",
+      "action": "custom pause",
+      "state": {
+        "time": 492.653932,
+        "state": 2,
+        "muted": true,
+        "volume": 0,
+        "duration": 1288
+      }
+    },
+    {
+      "id": "entrega-montagem-72m2",
+      "action": "keyboard seek slider Home then ArrowRight",
+      "expectedSource": 493,
+      "state": {
+        "time": 493.6299880743866,
+        "state": 1,
+        "muted": true,
+        "volume": 0,
+        "duration": 1288
+      }
+    },
+    {
+      "id": "entrega-montagem-72m2",
+      "action": "fullscreen entered",
+      "pass": true
+    },
+    {
+      "id": "entrega-montagem-72m2",
+      "action": "custom fullscreen exit",
+      "pass": true
+    },
+    {
+      "action": "YT to YT pauses previous",
+      "previous": {
+        "time": 493.767115,
+        "state": 2,
+        "muted": true,
+        "volume": 0,
+        "duration": 1288
+      }
+    },
+    {
+      "action": "YT to native pauses both YT",
+      "states": [
+        {
+          "time": 946.816834,
+          "state": 2,
+          "muted": true,
+          "volume": 0,
+          "duration": 1747.101
+        },
+        {
+          "time": 493.767115,
+          "state": 2,
+          "muted": true,
+          "volume": 0,
+          "duration": 1288
+        }
+      ]
+    },
+    {
+      "action": "native to YT pauses native",
+      "pass": true
+    },
+    {
+      "action": "section exit pauses YT",
+      "pass": true
+    },
+    {
+      "id": "retirada-contentor-transporte",
+      "action": "mobile chapter play",
+      "state": {
+        "time": 945.6174260114441,
+        "state": 1,
+        "muted": true,
+        "volume": 0,
+        "duration": 1747.101
+      }
+    },
+    {
+      "id": "entrega-montagem-72m2",
+      "action": "mobile chapter play",
+      "state": {
+        "time": 492.6088029485016,
+        "state": 1,
+        "muted": true,
+        "volume": 0,
+        "duration": 1288
+      }
     }
   ],
-  "technical_shortcuts": 2,
-  "mobile_playback_and_mute": true,
   "layout": [
     {
-      "viewport": 1440,
+      "width": 1440,
       "scrollWidth": 1440,
-      "videos": [
+      "screens": [
         {
-          "id": "source-retirada-contentor-transporte",
           "width": 659.8125,
-          "height": 371.140625,
-          "ratio": 1.7777964888645645,
-          "visible": true,
-          "cssRatio": "16 / 9",
-          "timeout": "120000"
+          "height": 371.140625
         },
         {
-          "id": "source-entrega-montagem-72m2",
           "width": 659.8125,
-          "height": 371.140625,
-          "ratio": 1.7777964888645645,
-          "visible": true,
-          "cssRatio": "16 / 9",
-          "timeout": "120000"
+          "height": 371.140625
         }
       ]
     },
     {
-      "viewport": 375,
+      "width": 375,
       "scrollWidth": 375,
-      "videos": [
+      "screens": [
         {
-          "id": "source-retirada-contentor-transporte",
-          "width": 341,
-          "height": 191.8125,
-          "ratio": 1.7777777777777777,
-          "visible": true,
-          "cssRatio": "16 / 9",
-          "timeout": "120000"
+          "width": 355.546875,
+          "height": 200
         },
         {
-          "id": "source-entrega-montagem-72m2",
-          "width": 341,
-          "height": 191.8125,
-          "ratio": 1.7777777777777777,
-          "visible": true,
-          "cssRatio": "16 / 9",
-          "timeout": "120000"
+          "width": 355.546875,
+          "height": 200
         }
       ]
+    }
+  ],
+  "shortcuts": [
+    {
+      "id": "retirada-contentor-transporte",
+      "state": {
+        "time": 945.6177520228882,
+        "state": 1,
+        "muted": true,
+        "volume": 0,
+        "duration": 1747.101
+      }
+    },
+    {
+      "id": "entrega-montagem-72m2",
+      "state": {
+        "time": 492.62205605340574,
+        "state": 1,
+        "muted": true,
+        "volume": 0,
+        "duration": 1288
+      }
     }
   ],
   "links": [
     {
       "id": "retirada-contentor-transporte",
-      "source": {
-        "url": "https://www.youtube.com/watch?v=mrVo6rKW270&t=945s",
-        "download": false,
-        "text": "Vídeo de origem no YouTube ↗"
-      },
-      "download": {
-        "url": "http://127.0.0.1:4174/assets/reference-videos-r15/mrVo6rKW270-silent-720p.mp4?silent=r14",
-        "download": true,
-        "text": "Descarregar vídeo sem áudio ↓"
-      }
+      "url": "https://www.youtube.com/watch?v=mrVo6rKW270&t=945s",
+      "download": false
     },
     {
       "id": "entrega-montagem-72m2",
-      "source": {
-        "url": "https://www.youtube.com/watch?v=UGaynQUNfms&t=492s",
-        "download": false,
-        "text": "Vídeo de origem no YouTube ↗"
-      },
-      "download": {
-        "url": "http://127.0.0.1:4174/assets/reference-videos-r15/UGaynQUNfms-silent-720p.mp4?silent=r14",
-        "download": true,
-        "text": "Descarregar vídeo sem áudio ↓"
-      }
+      "url": "https://www.youtube.com/watch?v=UGaynQUNfms&t=492s",
+      "download": false
     }
   ],
-  "verified_download": {
-    "url": "http://127.0.0.1:4174/assets/reference-videos-r15/mrVo6rKW270-silent-720p.mp4?silent=r14",
-    "suggestedFilename": "mrVo6rKW270-silent-720p.mp4",
-    "failure": null,
-    "bytes": 75828374,
-    "sha256": "bfcd274a4aeb940010cbecf9ee7456939f52bd84672f3292e5b3b391fdf23766",
-    "expectedSha256": "bfcd274a4aeb940010cbecf9ee7456939f52bd84672f3292e5b3b391fdf23766"
+  "pageErrors": [],
+  "consoleErrors": [],
+  "httpErrors": [],
+  "failures": [],
+  "browser": "153.0.8010.36",
+  "initialIframes": 0,
+  "silenceSamples": {
+    "playingSamples": 114,
+    "violations": []
   },
-  "page_errors": [],
-  "console_errors": [],
-  "http_errors": [],
-  "expected_media_request_aborts": 17,
-  "unexpected_request_failures": [],
-  "raw": "raw.json"
+  "pass": true,
+  "source_sha256": {
+    "youtube-library.js": "b3f6828fc926551e36218fac0122a0386e650a36c3fc87e60defe00d9c23d806",
+    "app.js": "e98aea8909ede7f2c26b2b8fa7f8bc4a0f58ebb57321bc85a81a86f29d1dc35c",
+    "reference-videos.js": "e1ca748f70c156799e5ffeef2fba0f0353833edfc384ad7557e93b657aabd8e5",
+    "delivery-films.css": "2f7aa39e2108e862a778f1ef2b22143efd0679a96c8451615cc9f0dad881fa31",
+    "index.html": "42615750e9143cc5ecbb4f05cd945bd7004111fdff73c4dcb4c46d70e2a3f0d1"
+  },
+  "request_aborts": 34,
+  "other_request_failures": [],
+  "verification_notes": [
+    "Every chapter required two consistent playerState1 observations with source time advancing beyond the requested offset; final sample exceeds offset+0.6s.",
+    "All114 periodic playing-state samples and all direct control-state observations remained isMuted=true/getVolume0.",
+    "Chrome global --mute-audio was removed; the product controls enforce silence.",
+    "Test instrumentation captured actual YT.Player instances for public API observations only; no checkout changes or player-state bypasses.",
+    "Fullscreen tested through custom enter and exit controls; published origin is outside this local integration scope."
+  ]
 }
