@@ -1,0 +1,17 @@
+{
+  "results": [
+    {
+      "name": "Export preserves a first-person walking camera",
+      "pass": true
+    },
+    {
+      "name": "Viewport resize preserves a first-person walking camera",
+      "pass": true
+    },
+    {
+      "name": "Editing a shared configuration survives reload",
+      "pass": true
+    }
+  ],
+  "passed": true
+}

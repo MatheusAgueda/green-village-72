@@ -1,0 +1,244 @@
+{
+  "status": "concluído",
+  "startedAt": "2026-09-13T13:49:09.727Z",
+  "measuredBeforeAudit": {
+    "at": "2026-09-13T13:50:25.059Z",
+    "elapsedMs": 75405,
+    "activePage": "model",
+    "metrics": {
+      "LCP": {
+        "value": 96,
+        "unit": "ms",
+        "rating": "good",
+        "delta": 96,
+        "navigationType": "reload",
+        "at": "2026-09-13T13:49:09.990Z",
+        "elapsedMs": 336
+      },
+      "CLS": {
+        "value": 0,
+        "unit": "score",
+        "rating": "good",
+        "delta": 0,
+        "navigationType": "reload",
+        "at": "2026-09-13T13:49:09.993Z",
+        "elapsedMs": 338
+      },
+      "INP": {
+        "value": 176,
+        "unit": "ms",
+        "rating": "good",
+        "delta": 160,
+        "navigationType": "reload",
+        "at": "2026-09-13T13:49:10.805Z",
+        "elapsedMs": 1151
+      }
+    },
+    "viewport": {
+      "width": 1440,
+      "height": 900,
+      "devicePixelRatio": 1
+    },
+    "scroll": {
+      "x": 0,
+      "y": 3236
+    },
+    "document": {
+      "width": 1440,
+      "height": 4441
+    }
+  },
+  "completedAt": "2026-09-13T13:50:25.158Z",
+  "axeVersion": "4.10.3",
+  "activePageAtCompletion": "model",
+  "samePage": true,
+  "viewport": {
+    "width": 1440,
+    "height": 900,
+    "devicePixelRatio": 1
+  },
+  "metrics": {
+    "LCP": {
+      "value": 96,
+      "unit": "ms",
+      "rating": "good",
+      "delta": 96,
+      "navigationType": "reload",
+      "at": "2026-09-13T13:49:09.990Z",
+      "elapsedMs": 336
+    },
+    "CLS": {
+      "value": 0,
+      "unit": "score",
+      "rating": "good",
+      "delta": 0,
+      "navigationType": "reload",
+      "at": "2026-09-13T13:49:09.993Z",
+      "elapsedMs": 338
+    },
+    "INP": {
+      "value": 176,
+      "unit": "ms",
+      "rating": "good",
+      "delta": 160,
+      "navigationType": "reload",
+      "at": "2026-09-13T13:49:10.805Z",
+      "elapsedMs": 1151
+    }
+  },
+  "violations": [],
+  "incomplete": [
+    {
+      "id": "skip-link",
+      "impact": "moderate",
+      "description": "Ensure all skip links have a focusable target",
+      "help": "The skip-link target should exist and be focusable",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/skip-link?application=axeAPI",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "nodes": [
+        {
+          "target": [
+            ".skip"
+          ],
+          "impact": "moderate",
+          "checks": [
+            {
+              "id": "skip-link",
+              "impact": "moderate",
+              "message": "Skip link target should become visible on activation"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "counts": {
+    "violations": 0,
+    "incomplete": 1,
+    "passes": 40,
+    "inapplicable": 48
+  },
+  "observations": {
+    "console": {
+      "errors": 0,
+      "warnings": 0,
+      "events": []
+    },
+    "runtimeErrors": [],
+    "resourceFailures": [],
+    "navigation": [
+      {
+        "activePage": "studio",
+        "at": "2026-09-13T13:49:09.727Z",
+        "elapsedMs": 73
+      },
+      {
+        "activePage": "model",
+        "at": "2026-09-13T13:49:11.184Z",
+        "elapsedMs": 1530
+      },
+      {
+        "activePage": "renders",
+        "at": "2026-09-13T13:49:11.874Z",
+        "elapsedMs": 2220
+      },
+      {
+        "activePage": "plans",
+        "at": "2026-09-13T13:49:12.600Z",
+        "elapsedMs": 2946
+      },
+      {
+        "activePage": "films",
+        "at": "2026-09-13T13:49:13.344Z",
+        "elapsedMs": 3689
+      },
+      {
+        "activePage": "documentation",
+        "at": "2026-09-13T13:49:14.115Z",
+        "elapsedMs": 4460
+      },
+      {
+        "activePage": "studio",
+        "at": "2026-09-13T13:49:32.304Z",
+        "elapsedMs": 22649
+      },
+      {
+        "activePage": "model",
+        "at": "2026-09-13T13:49:33.033Z",
+        "elapsedMs": 23379
+      },
+      {
+        "activePage": "renders",
+        "at": "2026-09-13T13:49:33.715Z",
+        "elapsedMs": 24060
+      },
+      {
+        "activePage": "plans",
+        "at": "2026-09-13T13:49:34.425Z",
+        "elapsedMs": 24770
+      },
+      {
+        "activePage": "films",
+        "at": "2026-09-13T13:49:35.168Z",
+        "elapsedMs": 25513
+      },
+      {
+        "activePage": "documentation",
+        "at": "2026-09-13T13:49:35.972Z",
+        "elapsedMs": 26318
+      },
+      {
+        "activePage": "studio",
+        "at": "2026-09-13T13:49:37.253Z",
+        "elapsedMs": 27598
+      },
+      {
+        "activePage": "model",
+        "at": "2026-09-13T13:49:38.000Z",
+        "elapsedMs": 28345
+      },
+      {
+        "activePage": "renders",
+        "at": "2026-09-13T13:49:38.715Z",
+        "elapsedMs": 29060
+      },
+      {
+        "activePage": "plans",
+        "at": "2026-09-13T13:49:39.441Z",
+        "elapsedMs": 29786
+      },
+      {
+        "activePage": "films",
+        "at": "2026-09-13T13:49:40.167Z",
+        "elapsedMs": 30512
+      },
+      {
+        "activePage": "documentation",
+        "at": "2026-09-13T13:49:40.989Z",
+        "elapsedMs": 31334
+      },
+      {
+        "activePage": "studio",
+        "at": "2026-09-13T13:50:23.982Z",
+        "elapsedMs": 74327
+      },
+      {
+        "activePage": "model",
+        "at": "2026-09-13T13:50:24.698Z",
+        "elapsedMs": 75043
+      }
+    ],
+    "excludedHarnessINP": 2
+  },
+  "privacy": "No input values, DOM HTML, console arguments, stacks, URL queries or fragments recorded.",
+  "limits": [
+    "Local browser measurement; not field Core Web Vitals.",
+    "Null metrics have not been reported yet.",
+    "Metrics snapshot precedes this axe run. Audit-control INP entries are excluded where identifiable.",
+    "Incomplete axe results require manual review.",
+    "Only the temporary audit container is excluded; the region rule is explicitly enabled."
+  ]
+}

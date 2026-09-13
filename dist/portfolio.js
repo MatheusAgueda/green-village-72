@@ -1,5 +1,5 @@
 import {DATA} from './data.js';
-import {SWATCHES,summaryRows,validateConfiguration} from './configuration.js';
+import {SWATCHES,summaryRows,validateConfiguration,kitchenFitNote} from './configuration.js';
 import {INTERIOR_REFERENCES} from './interior-references.js';
 import {referenceCropAsset} from './material-library.js';
 import {getPlan,REVISION} from './specification.js';
@@ -22,7 +22,7 @@ export function selectionGroups(s){
  const rows=summaryRows(s),k=INTERIOR_REFERENCES[s.kitchenRef],b=INTERIOR_REFERENCES[s.bathroomRef];
  return [
   {title:'Espaço e distribuição',rows:[rows[0],rows[1],['Dimensões exteriores','11,80 × 6,22 m'],['Quartos',String(DATA.layouts.find(p=>p.id===s.layout).bedrooms)],['Casas de banho','1']]},
-  {title:'Acabamentos e ambientes',rows:[rows[2],rows[3],rows[4],rows[5],['Referência de cozinha',s.kitchen==='none'?'Guardada, sem cozinha representada':s.kitchenRef.slice(-2)+' · '+k.name],rows[7],['Ambiente de banho',s.bathroomRef.slice(-2)+' · '+b.name],rows[8]]},
+  {title:'Acabamentos e ambientes',rows:[rows[2],rows[3],rows[4],rows[5],['Referência de cozinha',s.kitchen==='none'?'Guardada, sem cozinha representada':s.kitchenRef.slice(-2)+' · '+k.name+(kitchenFitNote(s)?' · '+kitchenFitNote(s):'')],rows[7],['Ambiente de banho',s.bathroomRef.slice(-2)+' · '+b.name],rows[8]]},
   {title:'Cobertura e apresentação',rows:[rows[12],rows[13],rows[10],rows[11]]}
  ];
 }

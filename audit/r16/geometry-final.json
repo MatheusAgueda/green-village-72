@@ -1,0 +1,1553 @@
+{
+  "status": "PASS",
+  "checkedAt": "2026-09-13T13:52:11.925Z",
+  "method": "CPU Three.js bounds/raycasts, sampled navigation, mirrored mesh coordinates and source guard ordering",
+  "hashes": {
+    "dist/model.js": "ab27bbf88888d4936e885dd8f35a51658286995a7dcec83114c5406e13d8c3bc",
+    "dist/interior-detail.js": "06d085bf69688c6007634cf6773fe9a1e645de29fe716420b869f1adaa84a7c5",
+    "dist/specification.js": "b647387fe7869e4ba357f7f73145923784022e14851ecad80d782b197d49dab3",
+    "dist/configuration.js": "3f3843b7105927232f47e6fd6af5a6709384760428c00c4901c5c7a444a1e6ae",
+    "dist/app.js": "7f87602ab497cf633147f7cc0549634ba8ce620e3bfcbf20c3f04c696efe41ae",
+    "dist/deployment-rig.js": "983b749fe6e2bf8f703cce7d2d99e513290799538876bb7f5862176b05ee6b60",
+    "dist/expansion-process.js": "bbdab2f66b90638d4e05a1e51bd707c6adee6d4d7d50baf29d16070b1e04ff75",
+    "dist/walkthrough.js": "6b714de4b61227eb9ea540429db4fa617ed66b3974ccde9b200b16f020026484"
+  },
+  "supportedConfigurations": 56,
+  "additionalKitchenReferences": 6,
+  "bathroomReferences": 17,
+  "bathroomPosesPerReference": 3,
+  "windowRays": 4960,
+  "detailChecks": 482,
+  "finalTransformChecks": 18488,
+  "mirrorMeshChecks": 732,
+  "navigationAllRoomsReachable": true,
+  "navigationGridM": 0.08,
+  "assembledAnchorsAndFinalTransforms": true,
+  "fittingsWalkGuard": "Source order verified; browser interaction requires separate smoke test",
+  "rows": [
+    {
+      "layout": "t0",
+      "kitchen": "none",
+      "bathroom": "standard",
+      "kitchenRef": "kitchen-01",
+      "upperModules": 0
+    },
+    {
+      "layout": "t0",
+      "kitchen": "none",
+      "bathroom": "mirrored",
+      "kitchenRef": "kitchen-01",
+      "upperModules": 0
+    },
+    {
+      "layout": "t0",
+      "kitchen": "linear",
+      "bathroom": "standard",
+      "kitchenRef": "kitchen-01",
+      "upperModules": 1
+    },
+    {
+      "layout": "t0",
+      "kitchen": "linear",
+      "bathroom": "mirrored",
+      "kitchenRef": "kitchen-01",
+      "upperModules": 1
+    },
+    {
+      "layout": "t0",
+      "kitchen": "l",
+      "bathroom": "standard",
+      "kitchenRef": "kitchen-01",
+      "upperModules": 1
+    },
+    {
+      "layout": "t0",
+      "kitchen": "l",
+      "bathroom": "mirrored",
+      "kitchenRef": "kitchen-01",
+      "upperModules": 1
+    },
+    {
+      "layout": "t0",
+      "kitchen": "u",
+      "bathroom": "standard",
+      "kitchenRef": "kitchen-01",
+      "upperModules": 3
+    },
+    {
+      "layout": "t0",
+      "kitchen": "u",
+      "bathroom": "mirrored",
+      "kitchenRef": "kitchen-01",
+      "upperModules": 3
+    },
+    {
+      "layout": "t0",
+      "kitchen": "island",
+      "bathroom": "standard",
+      "kitchenRef": "kitchen-01",
+      "upperModules": 1
+    },
+    {
+      "layout": "t0",
+      "kitchen": "island",
+      "bathroom": "mirrored",
+      "kitchenRef": "kitchen-01",
+      "upperModules": 1
+    },
+    {
+      "layout": "t1",
+      "kitchen": "none",
+      "bathroom": "standard",
+      "kitchenRef": "kitchen-01",
+      "upperModules": 0
+    },
+    {
+      "layout": "t1",
+      "kitchen": "none",
+      "bathroom": "mirrored",
+      "kitchenRef": "kitchen-01",
+      "upperModules": 0
+    },
+    {
+      "layout": "t1",
+      "kitchen": "linear",
+      "bathroom": "standard",
+      "kitchenRef": "kitchen-01",
+      "upperModules": 1
+    },
+    {
+      "layout": "t1",
+      "kitchen": "linear",
+      "bathroom": "mirrored",
+      "kitchenRef": "kitchen-01",
+      "upperModules": 1
+    },
+    {
+      "layout": "t1",
+      "kitchen": "l",
+      "bathroom": "standard",
+      "kitchenRef": "kitchen-01",
+      "upperModules": 1
+    },
+    {
+      "layout": "t1",
+      "kitchen": "l",
+      "bathroom": "mirrored",
+      "kitchenRef": "kitchen-01",
+      "upperModules": 1
+    },
+    {
+      "layout": "t1",
+      "kitchen": "u",
+      "bathroom": "standard",
+      "kitchenRef": "kitchen-01",
+      "upperModules": 3
+    },
+    {
+      "layout": "t1",
+      "kitchen": "u",
+      "bathroom": "mirrored",
+      "kitchenRef": "kitchen-01",
+      "upperModules": 3
+    },
+    {
+      "layout": "t1",
+      "kitchen": "island",
+      "bathroom": "standard",
+      "kitchenRef": "kitchen-01",
+      "upperModules": 1
+    },
+    {
+      "layout": "t1",
+      "kitchen": "island",
+      "bathroom": "mirrored",
+      "kitchenRef": "kitchen-01",
+      "upperModules": 1
+    },
+    {
+      "layout": "t2",
+      "kitchen": "none",
+      "bathroom": "standard",
+      "kitchenRef": "kitchen-01",
+      "upperModules": 0
+    },
+    {
+      "layout": "t2",
+      "kitchen": "none",
+      "bathroom": "mirrored",
+      "kitchenRef": "kitchen-01",
+      "upperModules": 0
+    },
+    {
+      "layout": "t2",
+      "kitchen": "linear",
+      "bathroom": "standard",
+      "kitchenRef": "kitchen-01",
+      "upperModules": 1
+    },
+    {
+      "layout": "t2",
+      "kitchen": "linear",
+      "bathroom": "mirrored",
+      "kitchenRef": "kitchen-01",
+      "upperModules": 1
+    },
+    {
+      "layout": "t2",
+      "kitchen": "l",
+      "bathroom": "standard",
+      "kitchenRef": "kitchen-01",
+      "upperModules": 1
+    },
+    {
+      "layout": "t2",
+      "kitchen": "l",
+      "bathroom": "mirrored",
+      "kitchenRef": "kitchen-01",
+      "upperModules": 1
+    },
+    {
+      "layout": "t2",
+      "kitchen": "u",
+      "bathroom": "standard",
+      "kitchenRef": "kitchen-01",
+      "upperModules": 3
+    },
+    {
+      "layout": "t2",
+      "kitchen": "u",
+      "bathroom": "mirrored",
+      "kitchenRef": "kitchen-01",
+      "upperModules": 3
+    },
+    {
+      "layout": "t2",
+      "kitchen": "island",
+      "bathroom": "standard",
+      "kitchenRef": "kitchen-01",
+      "upperModules": 1
+    },
+    {
+      "layout": "t2",
+      "kitchen": "island",
+      "bathroom": "mirrored",
+      "kitchenRef": "kitchen-01",
+      "upperModules": 1
+    },
+    {
+      "layout": "t3-a",
+      "kitchen": "none",
+      "bathroom": "standard",
+      "kitchenRef": "kitchen-01",
+      "upperModules": 0
+    },
+    {
+      "layout": "t3-a",
+      "kitchen": "none",
+      "bathroom": "mirrored",
+      "kitchenRef": "kitchen-01",
+      "upperModules": 0
+    },
+    {
+      "layout": "t3-a",
+      "kitchen": "linear",
+      "bathroom": "standard",
+      "kitchenRef": "kitchen-01",
+      "upperModules": 4
+    },
+    {
+      "layout": "t3-a",
+      "kitchen": "linear",
+      "bathroom": "mirrored",
+      "kitchenRef": "kitchen-01",
+      "upperModules": 4
+    },
+    {
+      "layout": "t3-a",
+      "kitchen": "l",
+      "bathroom": "standard",
+      "kitchenRef": "kitchen-01",
+      "upperModules": 4
+    },
+    {
+      "layout": "t3-a",
+      "kitchen": "l",
+      "bathroom": "mirrored",
+      "kitchenRef": "kitchen-01",
+      "upperModules": 4
+    },
+    {
+      "layout": "t3-b",
+      "kitchen": "none",
+      "bathroom": "standard",
+      "kitchenRef": "kitchen-01",
+      "upperModules": 0
+    },
+    {
+      "layout": "t3-b",
+      "kitchen": "none",
+      "bathroom": "mirrored",
+      "kitchenRef": "kitchen-01",
+      "upperModules": 0
+    },
+    {
+      "layout": "t3-b",
+      "kitchen": "linear",
+      "bathroom": "standard",
+      "kitchenRef": "kitchen-01",
+      "upperModules": 2
+    },
+    {
+      "layout": "t3-b",
+      "kitchen": "linear",
+      "bathroom": "mirrored",
+      "kitchenRef": "kitchen-01",
+      "upperModules": 2
+    },
+    {
+      "layout": "t3-b",
+      "kitchen": "l",
+      "bathroom": "standard",
+      "kitchenRef": "kitchen-01",
+      "upperModules": 2
+    },
+    {
+      "layout": "t3-b",
+      "kitchen": "l",
+      "bathroom": "mirrored",
+      "kitchenRef": "kitchen-01",
+      "upperModules": 2
+    },
+    {
+      "layout": "t3-b",
+      "kitchen": "u",
+      "bathroom": "standard",
+      "kitchenRef": "kitchen-01",
+      "upperModules": 4
+    },
+    {
+      "layout": "t3-b",
+      "kitchen": "u",
+      "bathroom": "mirrored",
+      "kitchenRef": "kitchen-01",
+      "upperModules": 4
+    },
+    {
+      "layout": "t3-b",
+      "kitchen": "island",
+      "bathroom": "standard",
+      "kitchenRef": "kitchen-01",
+      "upperModules": 2
+    },
+    {
+      "layout": "t3-b",
+      "kitchen": "island",
+      "bathroom": "mirrored",
+      "kitchenRef": "kitchen-01",
+      "upperModules": 2
+    },
+    {
+      "layout": "t4-a",
+      "kitchen": "none",
+      "bathroom": "standard",
+      "kitchenRef": "kitchen-01",
+      "upperModules": 0
+    },
+    {
+      "layout": "t4-a",
+      "kitchen": "none",
+      "bathroom": "mirrored",
+      "kitchenRef": "kitchen-01",
+      "upperModules": 0
+    },
+    {
+      "layout": "t4-a",
+      "kitchen": "linear",
+      "bathroom": "standard",
+      "kitchenRef": "kitchen-01",
+      "upperModules": 3
+    },
+    {
+      "layout": "t4-a",
+      "kitchen": "linear",
+      "bathroom": "mirrored",
+      "kitchenRef": "kitchen-01",
+      "upperModules": 3
+    },
+    {
+      "layout": "t4-b",
+      "kitchen": "none",
+      "bathroom": "standard",
+      "kitchenRef": "kitchen-01",
+      "upperModules": 0
+    },
+    {
+      "layout": "t4-b",
+      "kitchen": "none",
+      "bathroom": "mirrored",
+      "kitchenRef": "kitchen-01",
+      "upperModules": 0
+    },
+    {
+      "layout": "t4-b",
+      "kitchen": "linear",
+      "bathroom": "standard",
+      "kitchenRef": "kitchen-01",
+      "upperModules": 2
+    },
+    {
+      "layout": "t4-b",
+      "kitchen": "linear",
+      "bathroom": "mirrored",
+      "kitchenRef": "kitchen-01",
+      "upperModules": 2
+    },
+    {
+      "layout": "t4-b",
+      "kitchen": "l",
+      "bathroom": "standard",
+      "kitchenRef": "kitchen-01",
+      "upperModules": 2
+    },
+    {
+      "layout": "t4-b",
+      "kitchen": "l",
+      "bathroom": "mirrored",
+      "kitchenRef": "kitchen-01",
+      "upperModules": 2
+    },
+    {
+      "layout": "t2",
+      "kitchen": "linear",
+      "bathroom": "standard",
+      "kitchenRef": "kitchen-03",
+      "upperModules": 1
+    },
+    {
+      "layout": "t2",
+      "kitchen": "linear",
+      "bathroom": "standard",
+      "kitchenRef": "kitchen-04",
+      "upperModules": 1
+    },
+    {
+      "layout": "t2",
+      "kitchen": "linear",
+      "bathroom": "standard",
+      "kitchenRef": "kitchen-05",
+      "upperModules": 1
+    },
+    {
+      "layout": "t2",
+      "kitchen": "linear",
+      "bathroom": "standard",
+      "kitchenRef": "kitchen-08",
+      "upperModules": 1
+    },
+    {
+      "layout": "t2",
+      "kitchen": "linear",
+      "bathroom": "standard",
+      "kitchenRef": "kitchen-11",
+      "upperModules": 1
+    },
+    {
+      "layout": "t2",
+      "kitchen": "linear",
+      "bathroom": "standard",
+      "kitchenRef": "kitchen-13",
+      "upperModules": 1
+    }
+  ],
+  "navigation": [
+    {
+      "layout": "t0",
+      "kitchen": "none",
+      "bathroom": "standard",
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "reachable": 147
+        }
+      ]
+    },
+    {
+      "layout": "t0",
+      "kitchen": "none",
+      "bathroom": "mirrored",
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "reachable": 147
+        }
+      ]
+    },
+    {
+      "layout": "t0",
+      "kitchen": "linear",
+      "bathroom": "standard",
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "reachable": 147
+        }
+      ]
+    },
+    {
+      "layout": "t0",
+      "kitchen": "linear",
+      "bathroom": "mirrored",
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "reachable": 147
+        }
+      ]
+    },
+    {
+      "layout": "t0",
+      "kitchen": "l",
+      "bathroom": "standard",
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "reachable": 147
+        }
+      ]
+    },
+    {
+      "layout": "t0",
+      "kitchen": "l",
+      "bathroom": "mirrored",
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "reachable": 147
+        }
+      ]
+    },
+    {
+      "layout": "t0",
+      "kitchen": "u",
+      "bathroom": "standard",
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "reachable": 147
+        }
+      ]
+    },
+    {
+      "layout": "t0",
+      "kitchen": "u",
+      "bathroom": "mirrored",
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "reachable": 147
+        }
+      ]
+    },
+    {
+      "layout": "t0",
+      "kitchen": "island",
+      "bathroom": "standard",
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "reachable": 147
+        }
+      ]
+    },
+    {
+      "layout": "t0",
+      "kitchen": "island",
+      "bathroom": "mirrored",
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "reachable": 147
+        }
+      ]
+    },
+    {
+      "layout": "t1",
+      "kitchen": "none",
+      "bathroom": "standard",
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "reachable": 147
+        },
+        {
+          "id": "bedroom-1",
+          "reachable": 1056
+        }
+      ]
+    },
+    {
+      "layout": "t1",
+      "kitchen": "none",
+      "bathroom": "mirrored",
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "reachable": 147
+        },
+        {
+          "id": "bedroom-1",
+          "reachable": 1056
+        }
+      ]
+    },
+    {
+      "layout": "t1",
+      "kitchen": "linear",
+      "bathroom": "standard",
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "reachable": 147
+        },
+        {
+          "id": "bedroom-1",
+          "reachable": 1056
+        }
+      ]
+    },
+    {
+      "layout": "t1",
+      "kitchen": "linear",
+      "bathroom": "mirrored",
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "reachable": 147
+        },
+        {
+          "id": "bedroom-1",
+          "reachable": 1056
+        }
+      ]
+    },
+    {
+      "layout": "t1",
+      "kitchen": "l",
+      "bathroom": "standard",
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "reachable": 147
+        },
+        {
+          "id": "bedroom-1",
+          "reachable": 1056
+        }
+      ]
+    },
+    {
+      "layout": "t1",
+      "kitchen": "l",
+      "bathroom": "mirrored",
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "reachable": 147
+        },
+        {
+          "id": "bedroom-1",
+          "reachable": 1056
+        }
+      ]
+    },
+    {
+      "layout": "t1",
+      "kitchen": "u",
+      "bathroom": "standard",
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "reachable": 147
+        },
+        {
+          "id": "bedroom-1",
+          "reachable": 1056
+        }
+      ]
+    },
+    {
+      "layout": "t1",
+      "kitchen": "u",
+      "bathroom": "mirrored",
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "reachable": 147
+        },
+        {
+          "id": "bedroom-1",
+          "reachable": 1056
+        }
+      ]
+    },
+    {
+      "layout": "t1",
+      "kitchen": "island",
+      "bathroom": "standard",
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "reachable": 147
+        },
+        {
+          "id": "bedroom-1",
+          "reachable": 1056
+        }
+      ]
+    },
+    {
+      "layout": "t1",
+      "kitchen": "island",
+      "bathroom": "mirrored",
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "reachable": 147
+        },
+        {
+          "id": "bedroom-1",
+          "reachable": 1056
+        }
+      ]
+    },
+    {
+      "layout": "t2",
+      "kitchen": "none",
+      "bathroom": "standard",
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "reachable": 147
+        },
+        {
+          "id": "bedroom-1",
+          "reachable": 1056
+        },
+        {
+          "id": "bedroom-2",
+          "reachable": 1056
+        }
+      ]
+    },
+    {
+      "layout": "t2",
+      "kitchen": "none",
+      "bathroom": "mirrored",
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "reachable": 147
+        },
+        {
+          "id": "bedroom-1",
+          "reachable": 1056
+        },
+        {
+          "id": "bedroom-2",
+          "reachable": 1056
+        }
+      ]
+    },
+    {
+      "layout": "t2",
+      "kitchen": "linear",
+      "bathroom": "standard",
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "reachable": 147
+        },
+        {
+          "id": "bedroom-1",
+          "reachable": 1056
+        },
+        {
+          "id": "bedroom-2",
+          "reachable": 1056
+        }
+      ]
+    },
+    {
+      "layout": "t2",
+      "kitchen": "linear",
+      "bathroom": "mirrored",
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "reachable": 147
+        },
+        {
+          "id": "bedroom-1",
+          "reachable": 1056
+        },
+        {
+          "id": "bedroom-2",
+          "reachable": 1056
+        }
+      ]
+    },
+    {
+      "layout": "t2",
+      "kitchen": "l",
+      "bathroom": "standard",
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "reachable": 147
+        },
+        {
+          "id": "bedroom-1",
+          "reachable": 1056
+        },
+        {
+          "id": "bedroom-2",
+          "reachable": 1056
+        }
+      ]
+    },
+    {
+      "layout": "t2",
+      "kitchen": "l",
+      "bathroom": "mirrored",
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "reachable": 147
+        },
+        {
+          "id": "bedroom-1",
+          "reachable": 1056
+        },
+        {
+          "id": "bedroom-2",
+          "reachable": 1056
+        }
+      ]
+    },
+    {
+      "layout": "t2",
+      "kitchen": "u",
+      "bathroom": "standard",
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "reachable": 147
+        },
+        {
+          "id": "bedroom-1",
+          "reachable": 1056
+        },
+        {
+          "id": "bedroom-2",
+          "reachable": 1056
+        }
+      ]
+    },
+    {
+      "layout": "t2",
+      "kitchen": "u",
+      "bathroom": "mirrored",
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "reachable": 147
+        },
+        {
+          "id": "bedroom-1",
+          "reachable": 1056
+        },
+        {
+          "id": "bedroom-2",
+          "reachable": 1056
+        }
+      ]
+    },
+    {
+      "layout": "t2",
+      "kitchen": "island",
+      "bathroom": "standard",
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "reachable": 147
+        },
+        {
+          "id": "bedroom-1",
+          "reachable": 1056
+        },
+        {
+          "id": "bedroom-2",
+          "reachable": 1056
+        }
+      ]
+    },
+    {
+      "layout": "t2",
+      "kitchen": "island",
+      "bathroom": "mirrored",
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "reachable": 147
+        },
+        {
+          "id": "bedroom-1",
+          "reachable": 1056
+        },
+        {
+          "id": "bedroom-2",
+          "reachable": 1056
+        }
+      ]
+    },
+    {
+      "layout": "t3-a",
+      "kitchen": "none",
+      "bathroom": "standard",
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "reachable": 147
+        },
+        {
+          "id": "bedroom-1",
+          "reachable": 1056
+        },
+        {
+          "id": "bedroom-2",
+          "reachable": 1056
+        },
+        {
+          "id": "bedroom-3",
+          "reachable": 1056
+        }
+      ]
+    },
+    {
+      "layout": "t3-a",
+      "kitchen": "none",
+      "bathroom": "mirrored",
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "reachable": 147
+        },
+        {
+          "id": "bedroom-1",
+          "reachable": 1056
+        },
+        {
+          "id": "bedroom-2",
+          "reachable": 1056
+        },
+        {
+          "id": "bedroom-3",
+          "reachable": 1056
+        }
+      ]
+    },
+    {
+      "layout": "t3-a",
+      "kitchen": "linear",
+      "bathroom": "standard",
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "reachable": 147
+        },
+        {
+          "id": "bedroom-1",
+          "reachable": 1056
+        },
+        {
+          "id": "bedroom-2",
+          "reachable": 1056
+        },
+        {
+          "id": "bedroom-3",
+          "reachable": 1056
+        }
+      ]
+    },
+    {
+      "layout": "t3-a",
+      "kitchen": "linear",
+      "bathroom": "mirrored",
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "reachable": 147
+        },
+        {
+          "id": "bedroom-1",
+          "reachable": 1056
+        },
+        {
+          "id": "bedroom-2",
+          "reachable": 1056
+        },
+        {
+          "id": "bedroom-3",
+          "reachable": 1056
+        }
+      ]
+    },
+    {
+      "layout": "t3-a",
+      "kitchen": "l",
+      "bathroom": "standard",
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "reachable": 147
+        },
+        {
+          "id": "bedroom-1",
+          "reachable": 1056
+        },
+        {
+          "id": "bedroom-2",
+          "reachable": 1056
+        },
+        {
+          "id": "bedroom-3",
+          "reachable": 1056
+        }
+      ]
+    },
+    {
+      "layout": "t3-a",
+      "kitchen": "l",
+      "bathroom": "mirrored",
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "reachable": 147
+        },
+        {
+          "id": "bedroom-1",
+          "reachable": 1056
+        },
+        {
+          "id": "bedroom-2",
+          "reachable": 1056
+        },
+        {
+          "id": "bedroom-3",
+          "reachable": 1056
+        }
+      ]
+    },
+    {
+      "layout": "t3-b",
+      "kitchen": "none",
+      "bathroom": "standard",
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "reachable": 147
+        },
+        {
+          "id": "bedroom-1",
+          "reachable": 488
+        },
+        {
+          "id": "bedroom-2",
+          "reachable": 559
+        },
+        {
+          "id": "bedroom-3",
+          "reachable": 433
+        }
+      ]
+    },
+    {
+      "layout": "t3-b",
+      "kitchen": "none",
+      "bathroom": "mirrored",
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "reachable": 147
+        },
+        {
+          "id": "bedroom-1",
+          "reachable": 488
+        },
+        {
+          "id": "bedroom-2",
+          "reachable": 559
+        },
+        {
+          "id": "bedroom-3",
+          "reachable": 433
+        }
+      ]
+    },
+    {
+      "layout": "t3-b",
+      "kitchen": "linear",
+      "bathroom": "standard",
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "reachable": 147
+        },
+        {
+          "id": "bedroom-1",
+          "reachable": 488
+        },
+        {
+          "id": "bedroom-2",
+          "reachable": 559
+        },
+        {
+          "id": "bedroom-3",
+          "reachable": 433
+        }
+      ]
+    },
+    {
+      "layout": "t3-b",
+      "kitchen": "linear",
+      "bathroom": "mirrored",
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "reachable": 147
+        },
+        {
+          "id": "bedroom-1",
+          "reachable": 488
+        },
+        {
+          "id": "bedroom-2",
+          "reachable": 559
+        },
+        {
+          "id": "bedroom-3",
+          "reachable": 433
+        }
+      ]
+    },
+    {
+      "layout": "t3-b",
+      "kitchen": "l",
+      "bathroom": "standard",
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "reachable": 147
+        },
+        {
+          "id": "bedroom-1",
+          "reachable": 488
+        },
+        {
+          "id": "bedroom-2",
+          "reachable": 559
+        },
+        {
+          "id": "bedroom-3",
+          "reachable": 433
+        }
+      ]
+    },
+    {
+      "layout": "t3-b",
+      "kitchen": "l",
+      "bathroom": "mirrored",
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "reachable": 147
+        },
+        {
+          "id": "bedroom-1",
+          "reachable": 488
+        },
+        {
+          "id": "bedroom-2",
+          "reachable": 559
+        },
+        {
+          "id": "bedroom-3",
+          "reachable": 433
+        }
+      ]
+    },
+    {
+      "layout": "t3-b",
+      "kitchen": "u",
+      "bathroom": "standard",
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "reachable": 147
+        },
+        {
+          "id": "bedroom-1",
+          "reachable": 488
+        },
+        {
+          "id": "bedroom-2",
+          "reachable": 559
+        },
+        {
+          "id": "bedroom-3",
+          "reachable": 433
+        }
+      ]
+    },
+    {
+      "layout": "t3-b",
+      "kitchen": "u",
+      "bathroom": "mirrored",
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "reachable": 147
+        },
+        {
+          "id": "bedroom-1",
+          "reachable": 488
+        },
+        {
+          "id": "bedroom-2",
+          "reachable": 559
+        },
+        {
+          "id": "bedroom-3",
+          "reachable": 433
+        }
+      ]
+    },
+    {
+      "layout": "t3-b",
+      "kitchen": "island",
+      "bathroom": "standard",
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "reachable": 147
+        },
+        {
+          "id": "bedroom-1",
+          "reachable": 488
+        },
+        {
+          "id": "bedroom-2",
+          "reachable": 559
+        },
+        {
+          "id": "bedroom-3",
+          "reachable": 433
+        }
+      ]
+    },
+    {
+      "layout": "t3-b",
+      "kitchen": "island",
+      "bathroom": "mirrored",
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "reachable": 147
+        },
+        {
+          "id": "bedroom-1",
+          "reachable": 488
+        },
+        {
+          "id": "bedroom-2",
+          "reachable": 559
+        },
+        {
+          "id": "bedroom-3",
+          "reachable": 433
+        }
+      ]
+    },
+    {
+      "layout": "t4-a",
+      "kitchen": "none",
+      "bathroom": "standard",
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "reachable": 147
+        },
+        {
+          "id": "bedroom-1",
+          "reachable": 1056
+        },
+        {
+          "id": "bedroom-2",
+          "reachable": 1056
+        },
+        {
+          "id": "bedroom-3",
+          "reachable": 1056
+        },
+        {
+          "id": "bedroom-4",
+          "reachable": 1056
+        }
+      ]
+    },
+    {
+      "layout": "t4-a",
+      "kitchen": "none",
+      "bathroom": "mirrored",
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "reachable": 147
+        },
+        {
+          "id": "bedroom-1",
+          "reachable": 1056
+        },
+        {
+          "id": "bedroom-2",
+          "reachable": 1056
+        },
+        {
+          "id": "bedroom-3",
+          "reachable": 1056
+        },
+        {
+          "id": "bedroom-4",
+          "reachable": 1056
+        }
+      ]
+    },
+    {
+      "layout": "t4-a",
+      "kitchen": "linear",
+      "bathroom": "standard",
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "reachable": 147
+        },
+        {
+          "id": "bedroom-1",
+          "reachable": 1056
+        },
+        {
+          "id": "bedroom-2",
+          "reachable": 1056
+        },
+        {
+          "id": "bedroom-3",
+          "reachable": 1056
+        },
+        {
+          "id": "bedroom-4",
+          "reachable": 1056
+        }
+      ]
+    },
+    {
+      "layout": "t4-a",
+      "kitchen": "linear",
+      "bathroom": "mirrored",
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "reachable": 147
+        },
+        {
+          "id": "bedroom-1",
+          "reachable": 1056
+        },
+        {
+          "id": "bedroom-2",
+          "reachable": 1056
+        },
+        {
+          "id": "bedroom-3",
+          "reachable": 1056
+        },
+        {
+          "id": "bedroom-4",
+          "reachable": 1056
+        }
+      ]
+    },
+    {
+      "layout": "t4-b",
+      "kitchen": "none",
+      "bathroom": "standard",
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "reachable": 147
+        },
+        {
+          "id": "bedroom-1",
+          "reachable": 488
+        },
+        {
+          "id": "bedroom-2",
+          "reachable": 488
+        },
+        {
+          "id": "bedroom-3",
+          "reachable": 559
+        },
+        {
+          "id": "bedroom-4",
+          "reachable": 433
+        }
+      ]
+    },
+    {
+      "layout": "t4-b",
+      "kitchen": "none",
+      "bathroom": "mirrored",
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "reachable": 147
+        },
+        {
+          "id": "bedroom-1",
+          "reachable": 488
+        },
+        {
+          "id": "bedroom-2",
+          "reachable": 488
+        },
+        {
+          "id": "bedroom-3",
+          "reachable": 559
+        },
+        {
+          "id": "bedroom-4",
+          "reachable": 433
+        }
+      ]
+    },
+    {
+      "layout": "t4-b",
+      "kitchen": "linear",
+      "bathroom": "standard",
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "reachable": 147
+        },
+        {
+          "id": "bedroom-1",
+          "reachable": 488
+        },
+        {
+          "id": "bedroom-2",
+          "reachable": 488
+        },
+        {
+          "id": "bedroom-3",
+          "reachable": 559
+        },
+        {
+          "id": "bedroom-4",
+          "reachable": 433
+        }
+      ]
+    },
+    {
+      "layout": "t4-b",
+      "kitchen": "linear",
+      "bathroom": "mirrored",
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "reachable": 147
+        },
+        {
+          "id": "bedroom-1",
+          "reachable": 488
+        },
+        {
+          "id": "bedroom-2",
+          "reachable": 488
+        },
+        {
+          "id": "bedroom-3",
+          "reachable": 559
+        },
+        {
+          "id": "bedroom-4",
+          "reachable": 433
+        }
+      ]
+    },
+    {
+      "layout": "t4-b",
+      "kitchen": "l",
+      "bathroom": "standard",
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "reachable": 147
+        },
+        {
+          "id": "bedroom-1",
+          "reachable": 488
+        },
+        {
+          "id": "bedroom-2",
+          "reachable": 488
+        },
+        {
+          "id": "bedroom-3",
+          "reachable": 559
+        },
+        {
+          "id": "bedroom-4",
+          "reachable": 433
+        }
+      ]
+    },
+    {
+      "layout": "t4-b",
+      "kitchen": "l",
+      "bathroom": "mirrored",
+      "rooms": [
+        {
+          "id": "bathroom-0",
+          "reachable": 147
+        },
+        {
+          "id": "bedroom-1",
+          "reachable": 488
+        },
+        {
+          "id": "bedroom-2",
+          "reachable": 488
+        },
+        {
+          "id": "bedroom-3",
+          "reachable": 559
+        },
+        {
+          "id": "bedroom-4",
+          "reachable": 433
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+
+> test:deployment
+> node scripts/deployment-audit.mjs
+
+{"status":"PASS","layouts":7,"poses":7007,"cycles":56}

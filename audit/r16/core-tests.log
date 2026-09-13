@@ -1,0 +1,52 @@
+
+> test
+> node tests.mjs
+
+PASS independent workbook dimensions: 11800 / 6220 / 2010+2200+2010 / windows 920
+PASS seven original room counts, door end relationships and window counts
+PASS partition union handles overlaps; areas never forced to commercial 72
+PASS all supported kitchen/bath proposals avoid partition and furniture footprint overlaps
+PASS incompatible choices fail explicitly without mutating current state
+PASS configuration roundtrip preserves choices; rejects corrupt, unknown and incomplete payloads
+PASS 71 material IDs map to original/crop assets and valid render metadata
+PASS R3 grain treatment preserves 12 source identities and native map dimensions
+PASS 37 wall derivatives retain native dimensions and original identities
+PASS R3 collapsed layers remain collapsed and optional roofs never hide structure
+PASS four source reference videos match their published hashes and valid chapter bounds
+PASS supplied videos expose verified published bytes and individual media metadata
+PASS delivery references preserve supplied YouTube moments, posters and user-controlled audio
+PASS ALL distributed MP4 files contain video and zero audio tracks
+PASS metre UVs preserve physical scale across different mesh fragments
+PASS R16 partitions remain behind the facade and every glazing aperture is continuous
+PASS R16 kitchen fitting adaptations remain in commercial summaries
+PASS all seven geometry outputs are finite and preserve actual structural envelope
+PASS interior cut applies to furnishings; undocumented technical layers contain no geometry
+PASS R9 wall raising keeps windows rigid and leaves undocumented end panels out of the demonstration
+PASS R9 animation restores assembled geometry and the selected visibility
+PASS bath mirroring updates fixtures and service terminals together
+PASS SVG and exported configuration contain the current layout and same area data
+PASS plan area labels retain readable contrast with extreme custom floors
+PASS all original plans, catalogue references and application dependencies are present
+PASS returning browsers receive the current application module graph
+PASS R5 all 32 reference selections affect the actual model and retain source provenance
+PASS R5 fixture details reveal full height, open reversibly and respect bathroom wall overrides
+PASS R5 digital catalogue mode disables illumination of reference finishes, including solid samples
+PASS R6 source door hinges open into their rooms, mirror coherently and return to the same closed pose
+PASS R6 individual furniture states survive rebuild and hidden groups cannot be toggled
+PASS R6 partial construction releases acquired materials without touching the existing house
+PASS R6 picking stops at opaque surfaces and ignores hidden or clipped surfaces
+PASS R6 open furniture remains inside the detail camera bounds and is not clipped
+PASS new videos, poster images and evidence links are real delivered files
+PASS R7 commercial summaries retain selected references and omit inactive kitchen photographs
+PASS R8 gallery has eleven matching native 4K views without undocumented expansion
+PASS distributed first-party text contains no machine paths or credentials
+PASS R9 only documented wall raising is animated and repeated poses do not drift
+PASS R8 catalogue validation excludes undocumented colours and migrates legacy locally without losing plans
+PASS R8 undo redo branch and share links preserve validated states
+PASS R8 layer isolation and opacity are independent, reversible and preserve materials
+PASS R8 interior movement cannot cross envelope or partitions at high movement steps
+PASS R9 each model dimension appears once and source conflicts do not assert an unproven variant
+PASS R9 technical sheet preserves catalogue units, option prices and source scope
+PASS R9 expansion film is native Full HD, source-bound and declares its limited animation scope
+PASS R12 panels accompany wings then rise, with no separate preparation phase
+47 scoped regression checks passed.

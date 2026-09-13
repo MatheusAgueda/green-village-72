@@ -1,0 +1,404 @@
+{
+  "status": "concluído",
+  "startedAt": "2026-09-13T13:47:00.899Z",
+  "measuredBeforeAudit": {
+    "at": "2026-09-13T13:48:11.751Z",
+    "elapsedMs": 71081,
+    "activePage": "plans",
+    "metrics": {
+      "LCP": {
+        "value": 248,
+        "unit": "ms",
+        "rating": "good",
+        "delta": 248,
+        "navigationType": "reload",
+        "at": "2026-09-13T13:47:00.920Z",
+        "elapsedMs": 251
+      },
+      "CLS": {
+        "value": 0,
+        "unit": "score",
+        "rating": "good",
+        "delta": 0,
+        "navigationType": "reload",
+        "at": "2026-09-13T13:47:00.920Z",
+        "elapsedMs": 251
+      },
+      "INP": {
+        "value": 72,
+        "unit": "ms",
+        "rating": "good",
+        "delta": 40,
+        "navigationType": "reload",
+        "at": "2026-09-13T13:47:16.987Z",
+        "elapsedMs": 16318
+      }
+    },
+    "viewport": {
+      "width": 375,
+      "height": 812,
+      "devicePixelRatio": 1
+    },
+    "scroll": {
+      "x": 0,
+      "y": 5719
+    },
+    "document": {
+      "width": 375,
+      "height": 6869
+    }
+  },
+  "completedAt": "2026-09-13T13:48:11.858Z",
+  "axeVersion": "4.10.3",
+  "activePageAtCompletion": "plans",
+  "samePage": true,
+  "viewport": {
+    "width": 375,
+    "height": 812,
+    "devicePixelRatio": 1
+  },
+  "metrics": {
+    "LCP": {
+      "value": 248,
+      "unit": "ms",
+      "rating": "good",
+      "delta": 248,
+      "navigationType": "reload",
+      "at": "2026-09-13T13:47:00.920Z",
+      "elapsedMs": 251
+    },
+    "CLS": {
+      "value": 0,
+      "unit": "score",
+      "rating": "good",
+      "delta": 0,
+      "navigationType": "reload",
+      "at": "2026-09-13T13:47:00.920Z",
+      "elapsedMs": 251
+    },
+    "INP": {
+      "value": 72,
+      "unit": "ms",
+      "rating": "good",
+      "delta": 40,
+      "navigationType": "reload",
+      "at": "2026-09-13T13:47:16.987Z",
+      "elapsedMs": 16318
+    }
+  },
+  "violations": [],
+  "incomplete": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT"
+      ],
+      "nodes": [
+        {
+          "target": [
+            "button[data-page=\"films\"]"
+          ],
+          "impact": "serious",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it's partially obscured by another element"
+            }
+          ]
+        },
+        {
+          "target": [
+            "button[data-page=\"documentation\"]"
+          ],
+          "impact": "serious",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it's partially obscured by another element"
+            }
+          ]
+        },
+        {
+          "target": [
+            "text[y=\"179.99200000000002\"]"
+          ],
+          "impact": "serious",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ]
+        },
+        {
+          "target": [
+            "text[y=\"194.99200000000002\"]"
+          ],
+          "impact": "serious",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ]
+        },
+        {
+          "target": [
+            "text[y=\"342.74\"]"
+          ],
+          "impact": "serious",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ]
+        },
+        {
+          "target": [
+            "text[y=\"357.74\"]"
+          ],
+          "impact": "serious",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ]
+        },
+        {
+          "target": [
+            "text[y=\"681.46\"]"
+          ],
+          "impact": "serious",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ]
+        },
+        {
+          "target": [
+            "text[y=\"696.46\"]"
+          ],
+          "impact": "serious",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ]
+        },
+        {
+          "target": [
+            "text[y=\"578.8000000000001\"]"
+          ],
+          "impact": "serious",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ]
+        },
+        {
+          "target": [
+            "text[y=\"593.8000000000001\"]"
+          ],
+          "impact": "serious",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ]
+        },
+        {
+          "target": [
+            "text[y=\"39\"]"
+          ],
+          "impact": "serious",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ]
+        },
+        {
+          "target": [
+            "text[font-size=\"13\"][text-anchor=\"middle\"]:nth-child(66)"
+          ],
+          "impact": "serious",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "impact": "serious",
+              "message": "Element's background color could not be determined because element contains an image node"
+            }
+          ]
+        },
+        {
+          "target": [
+            "text[x=\"162.91\"]"
+          ],
+          "impact": "serious",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ]
+        },
+        {
+          "target": [
+            "text[y=\"815.4000000000001\"][x=\"285\"][font-size=\"11\"]"
+          ],
+          "impact": "serious",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ]
+        },
+        {
+          "target": [
+            "text[x=\"407.09000000000003\"]"
+          ],
+          "impact": "serious",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ]
+        },
+        {
+          "target": [
+            "text[y=\"838.4000000000001\"]"
+          ],
+          "impact": "serious",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ]
+        },
+        {
+          "target": [
+            "text[x=\"25\"]"
+          ],
+          "impact": "serious",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skip-link",
+      "impact": "moderate",
+      "description": "Ensure all skip links have a focusable target",
+      "help": "The skip-link target should exist and be focusable",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/skip-link?application=axeAPI",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "nodes": [
+        {
+          "target": [
+            ".skip"
+          ],
+          "impact": "moderate",
+          "checks": [
+            {
+              "id": "skip-link",
+              "impact": "moderate",
+              "message": "Skip link target should become visible on activation"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "counts": {
+    "violations": 0,
+    "incomplete": 2,
+    "passes": 42,
+    "inapplicable": 46
+  },
+  "observations": {
+    "console": {
+      "errors": 0,
+      "warnings": 0,
+      "events": []
+    },
+    "runtimeErrors": [],
+    "resourceFailures": [],
+    "navigation": [
+      {
+        "activePage": "studio",
+        "at": "2026-09-13T13:47:00.899Z",
+        "elapsedMs": 230
+      },
+      {
+        "activePage": "model",
+        "at": "2026-09-13T13:48:09.956Z",
+        "elapsedMs": 69286
+      },
+      {
+        "activePage": "renders",
+        "at": "2026-09-13T13:48:10.653Z",
+        "elapsedMs": 69983
+      },
+      {
+        "activePage": "plans",
+        "at": "2026-09-13T13:48:11.388Z",
+        "elapsedMs": 70718
+      }
+    ],
+    "excludedHarnessINP": 1
+  },
+  "privacy": "No input values, DOM HTML, console arguments, stacks, URL queries or fragments recorded.",
+  "limits": [
+    "Local browser measurement; not field Core Web Vitals.",
+    "Null metrics have not been reported yet.",
+    "Metrics snapshot precedes this axe run. Audit-control INP entries are excluded where identifiable.",
+    "Incomplete axe results require manual review.",
+    "Only the temporary audit container is excluded; the region rule is explicitly enabled."
+  ]
+}

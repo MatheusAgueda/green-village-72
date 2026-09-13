@@ -23,7 +23,7 @@
       "description": "Movimentação de um módulo com grua, seguida de vistas exteriores e de uma passagem pelo interior.",
       "poster": "assets/reference-videos-r13/montagem-grua-visita-real-poster.jpg",
       "poster_sha256": "19993a25b4f308cfdcb1345999df62117ecdccf59060fb32356e8aab2ff3354c",
-      "poster_time_seconds": 33.0,
+      "poster_time_seconds": 33,
       "variantNote": "Filmagem com cortes entre descarga, estrutura e visita. Não regista uma expansão completa contínua nem o tempo de instalação.",
       "frames": [
         {
@@ -111,64 +111,6 @@
       ],
       "source_sha256": "bd7a997333840628a3d205f63088e1156dcad92c44c8c6831375490fe7aa0f80",
       "source_bytes": 7994217,
-      "source_has_audio": true,
-      "audio_removed": true
-    },
-    {
-      "id": "visita-modulo-exposicao",
-      "filename": "WhatsApp Video 2026-09-13 at 00.59.07.mp4",
-      "asset": "assets/reference-videos-r13/gv-display-module-walkthrough-20260913.mp4",
-      "sha256": "610d9d294d057d86e5eead4a0fdcfa1454ef10ac826a20e5d9fb1d0aa84e42fd",
-      "bytes": 19028084,
-      "duration_seconds": 51.46,
-      "native_pixels": [
-        720,
-        1280
-      ],
-      "has_audio": false,
-      "codec": "H.264 / AVC (Baseline)",
-      "addedDate": "2026-09-13",
-      "title": "Visita a um módulo em exposição",
-      "label_pt": "Visita a um módulo em exposição",
-      "description": "Percurso pela entrada, divisões interiores e casa de banho, com vistas da fachada e da lateral.",
-      "poster": "assets/reference-videos-r13/visita-modulo-exposicao-poster.jpg",
-      "poster_sha256": "13c0cb7649a22057b5bfdc9dc2ef19dce2e51161d1b895a7edd4cd5168078c67",
-      "poster_time_seconds": 1.0,
-      "variantNote": "Visita com protecções ainda aplicadas na casa de banho; correspondência com a planta seleccionada por confirmar.",
-      "frames": [
-        {
-          "category": "Fachada e entrada",
-          "label_pt": "Fachada e entrada",
-          "time_seconds": 0,
-          "timecode": "00:00"
-        },
-        {
-          "category": "Espaço principal",
-          "label_pt": "Espaço principal",
-          "time_seconds": 4,
-          "timecode": "00:04"
-        },
-        {
-          "category": "Divisões interiores",
-          "label_pt": "Divisões interiores",
-          "time_seconds": 12,
-          "timecode": "00:12"
-        },
-        {
-          "category": "Casa de banho",
-          "label_pt": "Casa de banho",
-          "time_seconds": 26,
-          "timecode": "00:26"
-        },
-        {
-          "category": "Exterior e exposição",
-          "label_pt": "Exterior e exposição",
-          "time_seconds": 37,
-          "timecode": "00:37"
-        }
-      ],
-      "source_sha256": "dc971ecb6a3dcbdf38670ed3acdc57ef9112a0e2977e82617329d1861781170e",
-      "source_bytes": 19443963,
       "source_has_audio": true,
       "audio_removed": true
     }

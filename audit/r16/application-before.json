@@ -1,0 +1,20 @@
+{
+  "results": [
+    {
+      "name": "Export preserves a first-person walking camera",
+      "pass": false,
+      "message": "Camera changed before export task; actual OrbitControls update must not run while walking\n+ actual - expected\n\n+ '{\"position\":[0,2.888854381999832,3.5777087639996634],\"quaternion\":[-0.2297529205473612,0,0,0.9732489894677301]}'\n- '{\"position\":[0,1.6,1],\"quaternion\":[0,0,0,1]}'\n"
+    },
+    {
+      "name": "Viewport resize preserves a first-person walking camera",
+      "pass": false,
+      "message": "Camera changed when viewport aspect resized during walk\n+ actual - expected\n\n+ '{\"position\":[0,2.888854381999832,3.5777087639996634],\"quaternion\":[-0.2297529205473612,0,0,0.9732489894677301]}'\n- '{\"position\":[0,1.6,1],\"quaternion\":[0,0,0,1]}'\n"
+    },
+    {
+      "name": "Editing a shared configuration survives reload",
+      "pass": false,
+      "message": "Old shared URL still overrides the latest saved choices on reload\n+ actual - expected\n\n+ '{\"schemaVersion\":2,\"layout\":\"t1\",\"exteriorId\":\"exterior-standard-branco-glacial\",\"exterior\":\"#ddddda\",\"floorId\":\"floor-spc-kx7006\",\"floor\":\"#92846c\",\"interior\":\"#eeede8\",\"interiorName\":\"Branco natural\",\"kitchen\":\"linear\",\"kitchenRef\":\"kitchen-01\",\"bathroom\":\"standard\",\"bathroomRef\":\"bathroom-01\",\"bathroomUV\":null,\"roof\":false,\"porch\":false,\"lighting\":\"neutral\",\"textureMode\":\"source\"}'\n- '{\"schemaVersion\":2,\"layout\":\"t3-b\",\"exteriorId\":\"exterior-standard-branco-glacial\",\"exterior\":\"#ddddda\",\"floorId\":\"floor-spc-kx7006\",\"floor\":\"#92846c\",\"interior\":\"#eeede8\",\"interiorName\":\"Branco natural\",\"kitchen\":\"linear\",\"kitchenRef\":\"kitchen-01\",\"bathroom\":\"standard\",\"bathroomRef\":\"bathroom-01\",\"bathroomUV\":null,\"roof\":true,\"porch\":false,\"lighting\":\"neutral\",\"textureMode\":\"source\"}'\n"
+    }
+  ],
+  "passed": false
+}

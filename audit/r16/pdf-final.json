@@ -1,0 +1,51 @@
+{
+  "sourceSha256": "53876735f9813950b41901476119a3a7ecc7a76f1f0bcdc3326deb8960a6885d",
+  "results": [
+    {
+      "id": "t4a-linear-11-bath02",
+      "pdf": "/private/tmp/gv72-r16-app-audit/final-pdf/t4a-linear-11-bath02.pdf",
+      "pages": 4,
+      "note": "Bancada ilustrativa de 1,60 m para manter as passagens livres.",
+      "noteRetained": true,
+      "textInsidePage": true,
+      "minimumBodyBaseline": 72,
+      "bytes": 887706,
+      "sha256": "e0d7cbb8ff1d99655949d8193d5fe56e46b934c5313c618b74acc3b8565e681a",
+      "imageScope": "Original catalogue image assets and rasterized actual source SVG; cover deliberately omits 3D screenshot and says configuration without 3D image"
+    },
+    {
+      "id": "t2-blocked-uppers",
+      "pdf": "/private/tmp/gv72-r16-app-audit/final-pdf/t2-blocked-uppers.pdf",
+      "pages": 4,
+      "note": "Armários superiores ajustados para deixar as janelas livres.",
+      "noteRetained": true,
+      "textInsidePage": true,
+      "minimumBodyBaseline": 72,
+      "bytes": 818817,
+      "sha256": "b41ff443f4c6e2da37abfb09227df77b9beaadec0e2a11ab8f0acba9abe9688d",
+      "imageScope": "Original catalogue image assets and rasterized actual source SVG; cover deliberately omits 3D screenshot and says configuration without 3D image"
+    }
+  ],
+  "pass": true,
+  "visualReview": {
+    "pass": true,
+    "method": "All eight rendered pages inspected as two contact sheets; source notes also confirmed by pdftotext extraction",
+    "observations": [
+      "No clipped or overlapping content seen",
+      "Both kitchen fit notes remain legible on page 4",
+      "Catalogue photographs, floor sample, wall sample and optional UV sample fit within page 2",
+      "Cover explicitly states that the test has no 3D image; page 3 uses the actual source-generated plan"
+    ],
+    "rootReviewImages": [
+      "/private/tmp/gv72-r16-app-audit/final-pdf/t4a-2.png",
+      "/private/tmp/gv72-r16-app-audit/final-pdf/t4a-4.png",
+      "/private/tmp/gv72-r16-app-audit/final-pdf/t2-2.png",
+      "/private/tmp/gv72-r16-app-audit/final-pdf/t2-4.png"
+    ],
+    "contactSheets": [
+      "/private/tmp/gv72-r16-app-audit/final-pdf/t4a-contact.png",
+      "/private/tmp/gv72-r16-app-audit/final-pdf/t2-contact.png"
+    ],
+    "rendererWarning": "Poppler reported an unavailable writable Fontconfig cache; rendering exited successfully and embedded PDF fonts rendered correctly."
+  }
+}

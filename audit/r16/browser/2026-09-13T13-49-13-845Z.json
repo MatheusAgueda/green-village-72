@@ -1,0 +1,364 @@
+{
+  "status": "concluído",
+  "startedAt": "2026-09-13T13:49:09.727Z",
+  "measuredBeforeAudit": {
+    "at": "2026-09-13T13:49:13.723Z",
+    "elapsedMs": 4068,
+    "activePage": "films",
+    "metrics": {
+      "LCP": {
+        "value": 96,
+        "unit": "ms",
+        "rating": "good",
+        "delta": 96,
+        "navigationType": "reload",
+        "at": "2026-09-13T13:49:09.990Z",
+        "elapsedMs": 336
+      },
+      "CLS": {
+        "value": 0,
+        "unit": "score",
+        "rating": "good",
+        "delta": 0,
+        "navigationType": "reload",
+        "at": "2026-09-13T13:49:09.993Z",
+        "elapsedMs": 338
+      },
+      "INP": {
+        "value": 176,
+        "unit": "ms",
+        "rating": "good",
+        "delta": 160,
+        "navigationType": "reload",
+        "at": "2026-09-13T13:49:10.805Z",
+        "elapsedMs": 1151
+      }
+    },
+    "viewport": {
+      "width": 768,
+      "height": 1024,
+      "devicePixelRatio": 1
+    },
+    "scroll": {
+      "x": 0,
+      "y": 6193
+    },
+    "document": {
+      "width": 768,
+      "height": 7596
+    }
+  },
+  "completedAt": "2026-09-13T13:49:13.845Z",
+  "axeVersion": "4.10.3",
+  "activePageAtCompletion": "films",
+  "samePage": true,
+  "viewport": {
+    "width": 768,
+    "height": 1024,
+    "devicePixelRatio": 1
+  },
+  "metrics": {
+    "LCP": {
+      "value": 96,
+      "unit": "ms",
+      "rating": "good",
+      "delta": 96,
+      "navigationType": "reload",
+      "at": "2026-09-13T13:49:09.990Z",
+      "elapsedMs": 336
+    },
+    "CLS": {
+      "value": 0,
+      "unit": "score",
+      "rating": "good",
+      "delta": 0,
+      "navigationType": "reload",
+      "at": "2026-09-13T13:49:09.993Z",
+      "elapsedMs": 338
+    },
+    "INP": {
+      "value": 176,
+      "unit": "ms",
+      "rating": "good",
+      "delta": 160,
+      "navigationType": "reload",
+      "at": "2026-09-13T13:49:10.805Z",
+      "elapsedMs": 1151
+    }
+  },
+  "violations": [],
+  "incomplete": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT"
+      ],
+      "nodes": [
+        {
+          "target": [
+            "#source-retirada-contentor-transporte > .youtube-screen > .youtube-start[data-yt-toggle=\"\"]"
+          ],
+          "impact": "serious",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "impact": "serious",
+              "message": "Element's background color could not be determined because element contains an image node"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#source-retirada-contentor-transporte > .youtube-controls > button[data-yt-fullscreen=\"\"]"
+          ],
+          "impact": "serious",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "impact": "serious",
+              "message": "Element content contains only non-text characters"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#source-entrega-montagem-72m2 > .youtube-screen > .youtube-start[data-yt-toggle=\"\"]"
+          ],
+          "impact": "serious",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "impact": "serious",
+              "message": "Element's background color could not be determined because element contains an image node"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#source-entrega-montagem-72m2 > .youtube-controls > button[data-yt-fullscreen=\"\"]"
+          ],
+          "impact": "serious",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "impact": "serious",
+              "message": "Element content contains only non-text characters"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skip-link",
+      "impact": "moderate",
+      "description": "Ensure all skip links have a focusable target",
+      "help": "The skip-link target should exist and be focusable",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/skip-link?application=axeAPI",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "nodes": [
+        {
+          "target": [
+            ".skip"
+          ],
+          "impact": "moderate",
+          "checks": [
+            {
+              "id": "skip-link",
+              "impact": "moderate",
+              "message": "Skip link target should become visible on activation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "video-caption",
+      "impact": "critical",
+      "description": "Ensure <video> elements have captions",
+      "help": "<video> elements must have captions",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/video-caption?application=axeAPI",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag122",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT17.a",
+        "EN-301-549",
+        "EN-9.1.2.2"
+      ],
+      "nodes": [
+        {
+          "target": [
+            "video[preload=\"metadata\"]"
+          ],
+          "impact": "critical",
+          "checks": [
+            {
+              "id": "caption",
+              "impact": "critical",
+              "message": "Check that captions are available for the element"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#wall-raising-film"
+          ],
+          "impact": "critical",
+          "checks": [
+            {
+              "id": "caption",
+              "impact": "critical",
+              "message": "Check that captions are available for the element"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#source-montagem-grua-visita-real"
+          ],
+          "impact": "critical",
+          "checks": [
+            {
+              "id": "caption",
+              "impact": "critical",
+              "message": "Check that captions are available for the element"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#source-modulo-embalado-fabrica"
+          ],
+          "impact": "critical",
+          "checks": [
+            {
+              "id": "caption",
+              "impact": "critical",
+              "message": "Check that captions are available for the element"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#source-v1-spacious"
+          ],
+          "impact": "critical",
+          "checks": [
+            {
+              "id": "caption",
+              "impact": "critical",
+              "message": "Check that captions are available for the element"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#source-v2-74m2"
+          ],
+          "impact": "critical",
+          "checks": [
+            {
+              "id": "caption",
+              "impact": "critical",
+              "message": "Check that captions are available for the element"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#source-v3-comfortable"
+          ],
+          "impact": "critical",
+          "checks": [
+            {
+              "id": "caption",
+              "impact": "critical",
+              "message": "Check that captions are available for the element"
+            }
+          ]
+        },
+        {
+          "target": [
+            "#source-v4-37m2"
+          ],
+          "impact": "critical",
+          "checks": [
+            {
+              "id": "caption",
+              "impact": "critical",
+              "message": "Check that captions are available for the element"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "counts": {
+    "violations": 0,
+    "incomplete": 3,
+    "passes": 41,
+    "inapplicable": 46
+  },
+  "observations": {
+    "console": {
+      "errors": 0,
+      "warnings": 0,
+      "events": []
+    },
+    "runtimeErrors": [],
+    "resourceFailures": [],
+    "navigation": [
+      {
+        "activePage": "studio",
+        "at": "2026-09-13T13:49:09.727Z",
+        "elapsedMs": 73
+      },
+      {
+        "activePage": "model",
+        "at": "2026-09-13T13:49:11.184Z",
+        "elapsedMs": 1530
+      },
+      {
+        "activePage": "renders",
+        "at": "2026-09-13T13:49:11.874Z",
+        "elapsedMs": 2220
+      },
+      {
+        "activePage": "plans",
+        "at": "2026-09-13T13:49:12.600Z",
+        "elapsedMs": 2946
+      },
+      {
+        "activePage": "films",
+        "at": "2026-09-13T13:49:13.344Z",
+        "elapsedMs": 3689
+      }
+    ],
+    "excludedHarnessINP": 1
+  },
+  "privacy": "No input values, DOM HTML, console arguments, stacks, URL queries or fragments recorded.",
+  "limits": [
+    "Local browser measurement; not field Core Web Vitals.",
+    "Null metrics have not been reported yet.",
+    "Metrics snapshot precedes this axe run. Audit-control INP entries are excluded where identifiable.",
+    "Incomplete axe results require manual review.",
+    "Only the temporary audit container is excluded; the region rule is explicitly enabled."
+  ]
+}

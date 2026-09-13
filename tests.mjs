@@ -81,22 +81,23 @@ check('four source reference videos match their published hashes and valid chapt
 });
 check('supplied videos expose verified published bytes and individual media metadata',()=>{
  const newer=JSON.parse(readFileSync('dist/assets/reference-videos-r13/source-inventory.json','utf8')).videos;
- assert.equal(newer.length,3);assert.equal(REFERENCE_VIDEOS.videos.length,9);assert.equal(new Set(REFERENCE_VIDEOS.videos.map(v=>v.id)).size,9);
+ assert.equal(newer.length,2);assert.equal(REFERENCE_VIDEOS.videos.length,8);assert.equal(new Set(REFERENCE_VIDEOS.videos.map(v=>v.id)).size,8);assert.ok(!REFERENCE_VIDEOS.videos.some(v=>v.id==='visita-modulo-exposicao'));
  for(const video of newer){const entry=REFERENCE_VIDEOS.videos.find(v=>v.id===video.id);assert.deepEqual(entry,video);const bytes=readFileSync('dist/'+video.asset);assert.equal(bytes.length,video.bytes);assert.equal(createHash('sha256').update(bytes).digest('hex'),video.sha256);assert.ok(video.native_pixels.every(n=>Number.isInteger(n)&&n>0));assert.equal(typeof video.has_audio,'boolean');assert.equal(createHash('sha256').update(readFileSync('dist/'+video.poster)).digest('hex'),video.poster_sha256);assert.ok(video.frames.every(f=>f.time_seconds>=0&&f.time_seconds<video.duration_seconds));}
 });
-check('delivery references preserve supplied YouTube moments, posters and enforced silent playback policy',()=>{
+check('delivery references preserve supplied YouTube moments, posters and user-controlled audio',()=>{
  const expected=[['mrVo6rKW270',945,'15:45'],['UGaynQUNfms',492,'08:12']];
  const videos=REFERENCE_VIDEOS.videos.filter(v=>v.collection==='delivery');assert.equal(videos.length,2);
  for(const [id,start,label] of expected){
   const v=videos.find(v=>new URL(v.sourceUrl).searchParams.get('v')===id);assert.ok(v,id);
   assert.equal(new URL(v.sourceUrl).searchParams.get('t'),start+'s');assert.equal(v.sourceStartSeconds,start);assert.equal(v.sourceStartLabel,label);
-  assert.equal(v.provider,'youtube');assert.equal(v.youtubeId,id);assert.equal(v.playback_policy,'always-muted');assert.equal(v.asset,undefined);
+  assert.equal(v.provider,'youtube');assert.equal(v.youtubeId,id);assert.equal(v.playback_policy,'user-controlled-audio');assert.equal(v.asset,undefined);
   assert.equal(createHash('sha256').update(readFileSync('dist/'+v.poster)).digest('hex'),v.poster_sha256);
   assert.ok(v.duration_seconds>0);assert.ok(v.frames.length>0);assert.ok(v.frames.every(f=>f.time_seconds>=0&&f.time_seconds<v.duration_seconds));
  }
 });
 check('ALL distributed MP4 files contain video and zero audio tracks',()=>{
  const inventory=JSON.parse(readFileSync('audit/r14/silent-media.json','utf8'));
+ inventory.assets=inventory.assets.filter(v=>v.path!=='dist/assets/reference-videos-r13/gv-display-module-walkthrough-20260913.mp4');
  const publicFiles=[];const walk=dir=>{for(const item of readdirSync(dir,{withFileTypes:true})){const file=path.join(dir,item.name);if(item.isDirectory())walk(file);else if(file.endsWith('.mp4'))publicFiles.push(file);}};walk('dist');
  assert.deepEqual(publicFiles.sort(),inventory.assets.map(v=>v.path).sort());
  for(const record of inventory.assets){
@@ -109,6 +110,28 @@ check('ALL distributed MP4 files contain video and zero audio tracks',()=>{
 });
 check('metre UVs preserve physical scale across different mesh fragments',()=>{
  const a=physicalUV(new THREE.BoxGeometry(1,2,.1),[0,1,0]),b=physicalUV(new THREE.BoxGeometry(2,2,.1),[1.5,1,0]);const span=g=>{const u=[];for(let i=0;i<g.attributes.position.count;i++)if(g.attributes.normal.getZ(i)>.9)u.push(g.attributes.uv.getX(i));return Math.max(...u)-Math.min(...u);};close(span(a),1);close(span(b),2);a.dispose();b.dispose();
+});
+check('R16 partitions remain behind the facade and every glazing aperture is continuous',()=>{
+ for(const layout of Object.keys(source)){
+  const h=makeHouse({...DEFAULT_CONFIG,layout,view:'exterior',doorsOpen:false});h.root.updateMatrixWorld(true);
+  try{
+   for(const o of h.groups.interior.children.filter(o=>o.isMesh&&[h.materials.panelInterior,h.materials.white].includes(o.material))){
+    const b=new THREE.Box3().setFromObject(o);for(const [axis,size]of [['x',DIM.width],['z',DIM.length]]){assert.ok(b.min[axis]>=-size/2+DIM.panel-1e-6,layout+' '+o.name);assert.ok(b.max[axis]<=size/2-DIM.panel+1e-6,layout+' '+o.name);}
+   }
+   for(const face of h.plan.perimeter)for(const hole of face.holes)for(const offset of [-.03,-.02,.02,.03]){
+    const sign=Math.sign(face.c),u=hole.u+offset,y=hole.sill+hole.height/2;
+    const origin=face.axis==='z'?new THREE.Vector3(face.c+sign*.5,y,u):new THREE.Vector3(u,y,face.c+sign*.5),direction=face.axis==='z'?new THREE.Vector3(-sign,0,0):new THREE.Vector3(0,0,-sign);
+    const hit=new THREE.Raycaster(origin,direction).intersectObject(h.root,true)[0];assert.equal(hit?.object.name,hole.id+' · vidro',layout+' '+hole.id+' '+offset);
+   }
+   const skin=[];h.groups.interior.traverse(o=>{if(o.name==='Revestimento UV posterior')skin.push(o);});
+   const ray=(x,y)=>new THREE.Raycaster(new THREE.Vector3(x,y,-DIM.length/2-1),new THREE.Vector3(0,0,1)).intersectObjects(skin);
+   for(const x of [-.25,0,.25])for(const y of [1.75,1.95,2.15])assert.equal(ray(x,y).length,0,layout+' bathroom aperture');
+   assert.ok(ray(0,1).length>0);assert.ok(ray(0,2.3).length>0);
+  }finally{h.dispose();}
+ }
+});
+check('R16 kitchen fitting adaptations remain in commercial summaries',()=>{
+ for(const layout of ['t2','t4-a']){const s={...DEFAULT_CONFIG,layout,kitchenRef:'kitchen-01'},expected=layout==='t4-a'?'1,60 m':'janelas livres';assert.ok(summaryRows(s).flat().join(' ').includes(expected));assert.ok(selectionGroups(s).flatMap(g=>g.rows).flat().join(' ').includes(expected));assert.ok(summaryMarkup(s,{}).includes(expected));}
 });
 check('all seven geometry outputs are finite and preserve actual structural envelope',()=>{
  for(const layout of Object.keys(source)){const h=makeHouse({...DEFAULT_CONFIG,layout});h.root.updateMatrixWorld(true);h.root.traverse(o=>{assert.ok(o.matrixWorld.elements.every(Number.isFinite),o.name);if(o.isMesh)for(const a of Object.values(o.geometry.attributes))assert.ok(a.array.every(Number.isFinite),o.name);});const box=new THREE.Box3().setFromObject(h.groups.structure);close(box.max.x-box.min.x,6.22,1e-5);close(box.max.z-box.min.z,11.8,1e-5);assert.equal(h.plan.rooms.filter(r=>r.kind==='bedroom').length,source[layout].bedrooms);h.dispose();}
@@ -259,13 +282,13 @@ check('R9 technical sheet preserves catalogue units, option prices and source sc
  const bathroom=CATALOGUE_OPTIONS.find(o=>o.id==='bathroom-dry-wet');assert.equal(bathroom.specifications[0].unit,'m');assert.equal(bathroom.cataloguePrice.value,null);
  const system=CATALOGUE_OPTIONS.find(o=>o.id==='front-glass-premium').specifications.find(s=>s.label==='Designação do sistema');assert.equal(system.value,'broken bridge 55');assert.equal(system.unit,null);
  for(const option of CATALOGUE_OPTIONS){assert.equal(option.applicability.gv72Compatibility,'not-confirmed');assert.ok(option.source.page>=3&&option.source.page<=17);}
- for(const layout of Object.keys(source)){const config={...DEFAULT_CONFIG,layout},html=technicalSheetMarkup(config);assert.ok(html.includes(getPlan(config).label));assert.ok(!/undefined|NaN/.test(html));assert.equal((html.match(/data-option=/g)||[]).length,22);assert.equal((html.match(/data-measure=/g)||[]).length,25);assert.equal((html.match(/data-open-reference-video=/g)||[]).length,9);assert.ok(!html.includes('Fonte / m'));}
- const current=sourceLedger(DEFAULT_CONFIG);assert.equal(current.units.areas,'m²');assert.equal(current.catalogueOptions.length,22);assert.equal(current.sourceLayout.id,DEFAULT_CONFIG.layout);assert.equal(current.videos.videos.length,9);assert.equal(TECHNICAL_FACTS.length,45);
+ for(const layout of Object.keys(source)){const config={...DEFAULT_CONFIG,layout},html=technicalSheetMarkup(config);assert.ok(html.includes(getPlan(config).label));assert.ok(!/undefined|NaN/.test(html));assert.equal((html.match(/data-option=/g)||[]).length,22);assert.equal((html.match(/data-measure=/g)||[]).length,25);assert.equal((html.match(/data-open-reference-video=/g)||[]).length,8);assert.ok(!html.includes('Fonte / m'));}
+ const current=sourceLedger(DEFAULT_CONFIG);assert.equal(current.units.areas,'m²');assert.equal(current.catalogueOptions.length,22);assert.equal(current.sourceLayout.id,DEFAULT_CONFIG.layout);assert.equal(current.videos.videos.length,8);assert.equal(TECHNICAL_FACTS.length,45);
 });
 check('R9 expansion film is native Full HD, source-bound and declares its limited animation scope',()=>{
  const film=JSON.parse(readFileSync('dist/assets/expansion-r9/manifest.json','utf8'));assert.equal(film.status,'PASS');assert.deepEqual(film.dimensions,[1920,1080]);assert.equal(film.frameCount,350);assert.equal(film.durationSeconds,14);assert.equal(film.fps,25);assert.equal(film.displayOverrides.roofOpacity,.09);
  for(const item of film.outputs)assert.equal(createHash('sha256').update(readFileSync('dist/'+item.path)).digest('hex'),item.sha256);
- for(const file of ['model.js','specification.js','stage.js'])assert.equal(createHash('sha256').update(readFileSync(file==='model.js'?'dist/assets/expansion-r9/model-source.js.txt':'dist/'+file)).digest('hex'),film.sourceHashes[file]);
+ for(const file of ['model.js','specification.js','stage.js'])assert.equal(createHash('sha256').update(readFileSync(['model.js','specification.js'].includes(file)?'dist/assets/expansion-r9/'+file.replace('.js','-source.js.txt'):'dist/'+file)).digest('hex'),film.sourceHashes[file]);
  assert.ok(film.limits.some(x=>x.includes('2–3')));assert.equal(film.validation.all350MP4FramesDecoded,true);
 });
 check('R12 panels accompany wings then rise, with no separate preparation phase',()=>{

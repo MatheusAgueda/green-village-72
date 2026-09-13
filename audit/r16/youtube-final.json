@@ -1,0 +1,43 @@
+{
+  "sourceSha256": "4536a78f815d4a785cf72b8f9ab4a4a1964beeb3227530b719afc86d54023a53",
+  "scope": "Actual module with lightweight DOM and deterministic fake YouTube IFrame API; no browser/network validation",
+  "results": [
+    {
+      "name": "Players load lazily; initial markup uses source time",
+      "pass": true
+    },
+    {
+      "name": "Ready enables audio once and chapters retain source offsets",
+      "pass": true
+    },
+    {
+      "name": "Native seek before requested start displays and resumes the same source time",
+      "pass": true
+    },
+    {
+      "name": "Custom slider seeks an absolute source time including before the chapter start",
+      "pass": true
+    },
+    {
+      "name": "Native mute and volume preferences survive chapter changes and custom pause/resume",
+      "pass": true
+    },
+    {
+      "name": "Starting another YouTube video pauses the previous one",
+      "pass": true
+    },
+    {
+      "name": "Leaving the section cancels an in-flight request and pauses playback",
+      "pass": true
+    },
+    {
+      "name": "Inactive native play and hidden document cannot continue playback",
+      "pass": true
+    },
+    {
+      "name": "No reader errors were emitted",
+      "pass": true
+    }
+  ],
+  "passed": true
+}

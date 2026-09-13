@@ -82,8 +82,8 @@ export function getPlan(config){
  servicePoints.push({id:'shower',x:(bc.x0+bc.x1)/2,z:bc.z0+.1,y:1.05,hot:true},{id:'toilet',x:toiletX,z:bc.z0+1.15,y:.45,hot:false},{id:'basin',x:basinX,z:bc.z1-.33,y:.83,hot:true});
  const leftRooms=rooms.filter(r=>r.kind==='bedroom'&&r.outline.x0<0),lastLeft=leftRooms.length?Math.max(...leftRooms.map(r=>r.outline.z1)):-L/2;
  const compact=config.layout==='t4-a';
- const kitchenZ=compact?b.z1+.79:Math.max(lastLeft+.24,-3.9,config.kitchen==='u'?b.z1+.24:-Infinity),kitchenX=compact?b.x0+t/2+.02:-W/2+edge+.025;
- const length=compact?1.8:2.4,depth=.6;
+ const kitchenZ=compact?b.z1+.40:Math.max(lastLeft+.24,-3.9,config.kitchen==='u'?b.z1+.24:-Infinity),kitchenX=compact?b.x0+t/2+.02:-W/2+edge+.025;
+ const length=compact?1.6:2.4,depth=.6;
  if(config.kitchen!=='none'){
   item('kitchen-main','kitchen',{x0:kitchenX,x1:kitchenX+depth,z0:kitchenZ,z1:kitchenZ+length},{height:.91});
   if(['l','u'].includes(config.kitchen))item('kitchen-return','kitchen-return',{x0:kitchenX+depth,x1:kitchenX+(config.kitchen==='u'?2.5:1.7),z0:kitchenZ,z1:kitchenZ+depth},{height:.91});
@@ -92,6 +92,17 @@ export function getPlan(config){
   servicePoints.push({id:'kitchen-sink',x:kitchenX+.3,z:kitchenZ+.3,y:.91,hot:true});
  }
  if(!compact){item('sofa','sofa',{x0:-2.65,x1:-.82,z0:3.78,z1:4.6},{height:.8});item('table','table',{x0:-2.29,x1:-1.15,z0:4.91,z1:5.48},{height:.4});}
+ // Cabinet modules use the same openings as the shell; no upper cupboard covers a window.
+ const kitchenUpperModules=[],run=furnishings.find(f=>f.id==='kitchen-main');
+ if(run){const width=run.z1-run.z0,count=Math.max(2,Math.round(width/.6)),cell=width/count,mid=(run.z0+run.z1)/2;
+  for(let i=0;i<count;i++){const u=-width/2+(i+.5)*cell,bounds={x0:run.x0,x1:run.x0+.32,z0:mid-u-cell/2,z1:mid-u+cell/2},blockedBy=[];
+   for(const face of perimeter){const sign=Math.sign(face.c),normal=face.axis==='z'?'x':'z',along=face.axis==='z'?'z':'x',a=Math.min(face.c,face.c-sign*.4),b=Math.max(face.c,face.c-sign*.4);
+    if(bounds[normal+'1']<=a||bounds[normal+'0']>=b)continue;
+    for(const hole of face.holes)if(hole.sill<2.16&&hole.sill+hole.height>1.515&&bounds[along+'0']<hole.u+hole.width/2+.02&&bounds[along+'1']>hole.u-hole.width/2-.02)blockedBy.push(hole.id);
+   }
+   kitchenUpperModules.push({index:i,u,width:cell-.006,bounds,blockedBy});
+  }
+ }
  const inner={x0:-W/2+edge,x1:W/2-edge,z0:-L/2+edge,z1:L/2-edge};
  // Union of solid partition footprints clipped to the inner envelope; door passages remain free.
  const footprints=walls.flatMap(w=>(w.door?[[w.a,w.door.u-w.door.width/2],[w.door.u+w.door.width/2,w.b]]:[[w.a,w.b]]).map(([a,b])=>w.axis==='z'?{x0:w.c-t/2,x1:w.c+t/2,z0:a,z1:b}:{x0:a,x1:b,z0:w.c-t/2,z1:w.c+t/2})).map(r=>({x0:Math.max(inner.x0,r.x0),x1:Math.min(inner.x1,r.x1),z0:Math.max(inner.z0,r.z0),z1:Math.min(inner.z1,r.z1)})).filter(r=>r.x1>r.x0&&r.z1>r.z0);
@@ -99,7 +110,7 @@ export function getPlan(config){
  const internalEnvelope=rectArea(inner),estimatedNet=internalEnvelope-wallArea;
  const enclosed=rooms.reduce((s,r)=>s+r.area,0);
  const areas={commercial:72,exterior:W*L,internalEnvelope,partitions:wallArea,estimatedNet,common:Math.max(0,estimatedNet-enclosed),roomTotal:enclosed,status:'estimated',note:'Áreas calculadas com paredes de 100 mm e divisórias de 80 mm assumidas; não são um mapa de áreas certificado.'};
- return {id:template.id,label:template.label,description:template.description,sourceImage:template.image,bedrooms:template.bedrooms,rooms,walls,doors,perimeter,furnishings,servicePoints,areas,dimensions:DIM,sourceStatus:'estimated',compact};
+ return {id:template.id,label:template.label,description:template.description,sourceImage:template.image,bedrooms:template.bedrooms,rooms,walls,doors,perimeter,furnishings,kitchenUpperModules,servicePoints,areas,dimensions:DIM,sourceStatus:'estimated',compact};
 }
 export function compatibility(state){
  const reasons=[];if(!LAYOUTS.some(l=>l.id===state.layout))return ['Planta desconhecida.'];

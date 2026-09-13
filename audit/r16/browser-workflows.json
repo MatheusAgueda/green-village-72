@@ -1,0 +1,87 @@
+{
+  "date": "2026-09-13",
+  "method": "Real UI actions through CUA on the existing in-app browser. Screenshots emitted in conversation; not retained as local screenshot files.",
+  "origin": "http://127.0.0.1:4174",
+  "coverage": "Selected commercial workflows, not exhaustive every-element coverage",
+  "flows": [
+    {
+      "section": "studio",
+      "actions": [
+        "Search no-match value",
+        "Clear search",
+        "Select Branco Glacial",
+        "Undo to Vermelho Borgonha",
+        "Choose kitchen reference 11",
+        "Choose T4 A linear kitchen",
+        "Enter walk",
+        "Open fittings",
+        "Choose bathroom reference 02 mirrored",
+        "Open summary"
+      ],
+      "observed": "Selection restored; no-results feedback; compact kitchen note and matching mirrored shower; opening fittings exits walk."
+    },
+    {
+      "section": "model",
+      "actions": [
+        "Open section",
+        "Expand 72 square metre question"
+      ],
+      "observed": "Commercial area and exterior rectangle explained separately."
+    },
+    {
+      "section": "renders",
+      "actions": [
+        "Open section",
+        "Open bathroom lightbox",
+        "Close using Escape",
+        "Select Interior filter"
+      ],
+      "observed": "Modal and filter worked; prior-study status now explicit."
+    },
+    {
+      "section": "plans",
+      "actions": [
+        "Open section",
+        "Compare T2 original",
+        "Close comparison"
+      ],
+      "observed": "Original readable; seven plans present."
+    },
+    {
+      "section": "films",
+      "actions": [
+        "Play first YouTube with audio",
+        "Seek native video before start",
+        "Set custom slider to zero",
+        "Play second YouTube",
+        "Pause and leave section"
+      ],
+      "observed": "First video muted=false at 0.02046s and output 0:00/29:07; second muted=false at 505.976407s; previous player paused at 0.050497s. Source starts 945/492s. No errors."
+    },
+    {
+      "section": "documentation",
+      "actions": [
+        "Open section",
+        "Follow Documentos anchor",
+        "Activate skip link with Enter"
+      ],
+      "observed": "Documents reached; skip opens studio and focuses viewport group."
+    },
+    {
+      "section": "exports",
+      "configurationReference": "GV72-E31D2205",
+      "actions": [
+        "Export PDF",
+        "Export 4K",
+        "Copy share link"
+      ],
+      "observed": "UI confirmed four-page PDF, 3840x2160 export and copied link; no console errors. Native download files unavailable to CUA filesystem; separate module PDFs reviewed."
+    }
+  ],
+  "limits": [
+    "No exhaustive screen-reader audit",
+    "External video frame accessibility tested manually only",
+    "Shared-link reload additionally verified by actual-source deterministic regression",
+    "No physical colour or manufacturer linkage certification"
+  ]
+}

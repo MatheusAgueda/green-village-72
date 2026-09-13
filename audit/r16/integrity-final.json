@@ -1,0 +1,21 @@
+{
+  "checks": 662,
+  "errors": [],
+  "sourceVideos": 8,
+  "nativeSourceVideos": 6,
+  "youtubeVideos": 2,
+  "materialIds": 71,
+  "interiorIds": 32,
+  "layouts": 7,
+  "moduleFiles": 27,
+  "imports": 75,
+  "missingImports": [],
+  "sourceHashes": {
+    "app.js": "7f87602ab497cf633147f7cc0549634ba8ce620e3bfcbf20c3f04c696efe41ae",
+    "reference-videos.js": "628b27dcf3179a4e5384ed8b7c67157d6d583c5a4ca0482d7dc80ca6e248d750",
+    "youtube-library.js": "4536a78f815d4a785cf72b8f9ab4a4a1964beeb3227530b719afc86d54023a53",
+    "technical-sheet.js": "4e3136ff027fd10a020b3de148aec8d55ce5f1a718c9d2e615d4b40b57d859dc",
+    "configuration.js": "3f3843b7105927232f47e6fd6af5a6709384760428c00c4901c5c7a444a1e6ae",
+    "client-tools.js": "7d7d82a8a422db1b6d38a61cb1be6a63e643f7d6450186cbbcc546cfb7367a8e"
+  }
+}

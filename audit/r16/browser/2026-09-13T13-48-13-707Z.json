@@ -1,0 +1,206 @@
+{
+  "status": "concluído",
+  "startedAt": "2026-09-13T13:47:00.899Z",
+  "measuredBeforeAudit": {
+    "at": "2026-09-13T13:48:13.410Z",
+    "elapsedMs": 72740,
+    "activePage": "documentation",
+    "metrics": {
+      "LCP": {
+        "value": 248,
+        "unit": "ms",
+        "rating": "good",
+        "delta": 248,
+        "navigationType": "reload",
+        "at": "2026-09-13T13:47:00.920Z",
+        "elapsedMs": 251
+      },
+      "CLS": {
+        "value": 0,
+        "unit": "score",
+        "rating": "good",
+        "delta": 0,
+        "navigationType": "reload",
+        "at": "2026-09-13T13:47:00.920Z",
+        "elapsedMs": 251
+      },
+      "INP": {
+        "value": 72,
+        "unit": "ms",
+        "rating": "good",
+        "delta": 40,
+        "navigationType": "reload",
+        "at": "2026-09-13T13:47:16.987Z",
+        "elapsedMs": 16318
+      }
+    },
+    "viewport": {
+      "width": 375,
+      "height": 812,
+      "devicePixelRatio": 1
+    },
+    "scroll": {
+      "x": 0,
+      "y": 33068
+    },
+    "document": {
+      "width": 375,
+      "height": 34218
+    }
+  },
+  "completedAt": "2026-09-13T13:48:13.707Z",
+  "axeVersion": "4.10.3",
+  "activePageAtCompletion": "documentation",
+  "samePage": true,
+  "viewport": {
+    "width": 375,
+    "height": 812,
+    "devicePixelRatio": 1
+  },
+  "metrics": {
+    "LCP": {
+      "value": 248,
+      "unit": "ms",
+      "rating": "good",
+      "delta": 248,
+      "navigationType": "reload",
+      "at": "2026-09-13T13:47:00.920Z",
+      "elapsedMs": 251
+    },
+    "CLS": {
+      "value": 0,
+      "unit": "score",
+      "rating": "good",
+      "delta": 0,
+      "navigationType": "reload",
+      "at": "2026-09-13T13:47:00.920Z",
+      "elapsedMs": 251
+    },
+    "INP": {
+      "value": 72,
+      "unit": "ms",
+      "rating": "good",
+      "delta": 40,
+      "navigationType": "reload",
+      "at": "2026-09-13T13:47:16.987Z",
+      "elapsedMs": 16318
+    }
+  },
+  "violations": [],
+  "incomplete": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT"
+      ],
+      "nodes": [
+        {
+          "target": [
+            "button[data-page=\"model\"]"
+          ],
+          "impact": "serious",
+          "checks": [
+            {
+              "id": "color-contrast",
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it's partially obscured by another element"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skip-link",
+      "impact": "moderate",
+      "description": "Ensure all skip links have a focusable target",
+      "help": "The skip-link target should exist and be focusable",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/skip-link?application=axeAPI",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "nodes": [
+        {
+          "target": [
+            ".skip"
+          ],
+          "impact": "moderate",
+          "checks": [
+            {
+              "id": "skip-link",
+              "impact": "moderate",
+              "message": "Skip link target should become visible on activation"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "counts": {
+    "violations": 0,
+    "incomplete": 2,
+    "passes": 50,
+    "inapplicable": 38
+  },
+  "observations": {
+    "console": {
+      "errors": 0,
+      "warnings": 0,
+      "events": []
+    },
+    "runtimeErrors": [],
+    "resourceFailures": [],
+    "navigation": [
+      {
+        "activePage": "studio",
+        "at": "2026-09-13T13:47:00.899Z",
+        "elapsedMs": 230
+      },
+      {
+        "activePage": "model",
+        "at": "2026-09-13T13:48:09.956Z",
+        "elapsedMs": 69286
+      },
+      {
+        "activePage": "renders",
+        "at": "2026-09-13T13:48:10.653Z",
+        "elapsedMs": 69983
+      },
+      {
+        "activePage": "plans",
+        "at": "2026-09-13T13:48:11.388Z",
+        "elapsedMs": 70718
+      },
+      {
+        "activePage": "films",
+        "at": "2026-09-13T13:48:12.130Z",
+        "elapsedMs": 71460
+      },
+      {
+        "activePage": "documentation",
+        "at": "2026-09-13T13:48:12.911Z",
+        "elapsedMs": 72241
+      }
+    ],
+    "excludedHarnessINP": 1
+  },
+  "privacy": "No input values, DOM HTML, console arguments, stacks, URL queries or fragments recorded.",
+  "limits": [
+    "Local browser measurement; not field Core Web Vitals.",
+    "Null metrics have not been reported yet.",
+    "Metrics snapshot precedes this axe run. Audit-control INP entries are excluded where identifiable.",
+    "Incomplete axe results require manual review.",
+    "Only the temporary audit container is excluded; the region rule is explicitly enabled."
+  ]
+}

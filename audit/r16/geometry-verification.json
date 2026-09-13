@@ -1,0 +1,88 @@
+{
+  "status": "PASS",
+  "checkedAt": "2026-09-13T12:54:19.025Z",
+  "method": "Independent CPU Three.js world-space bounds and raycasts; no browser rendering",
+  "hashes": {
+    "dist/model.js": "6ed68b7813f3778075a6042e6228772911f5d0d402423049d92eebe790557603",
+    "dist/deployment-rig.js": "983b749fe6e2bf8f703cce7d2d99e513290799538876bb7f5862176b05ee6b60",
+    "dist/expansion-process.js": "bbdab2f66b90638d4e05a1e51bd707c6adee6d4d7d50baf29d16070b1e04ff75",
+    "dist/specification.js": "f2e87083df655044747d13c5c13e3e1a976204b24a2b53d128d55ce54bc2ce9d"
+  },
+  "layouts": [
+    {
+      "layout": "t0",
+      "apertures": 10,
+      "partitionAndTrimMeshes": 2,
+      "minExteriorClearanceM": 0.09999980926513707,
+      "bathSkinPieces": 4,
+      "rigidGlassMeshes": 20
+    },
+    {
+      "layout": "t1",
+      "apertures": 10,
+      "partitionAndTrimMeshes": 2,
+      "minExteriorClearanceM": 0.09999980926513707,
+      "bathSkinPieces": 4,
+      "rigidGlassMeshes": 20
+    },
+    {
+      "layout": "t2",
+      "apertures": 10,
+      "partitionAndTrimMeshes": 2,
+      "minExteriorClearanceM": 0.09999980926513707,
+      "bathSkinPieces": 4,
+      "rigidGlassMeshes": 20
+    },
+    {
+      "layout": "t3-a",
+      "apertures": 10,
+      "partitionAndTrimMeshes": 2,
+      "minExteriorClearanceM": 0.09999980926513707,
+      "bathSkinPieces": 4,
+      "rigidGlassMeshes": 20
+    },
+    {
+      "layout": "t3-b",
+      "apertures": 10,
+      "partitionAndTrimMeshes": 2,
+      "minExteriorClearanceM": 0.09999980926513707,
+      "bathSkinPieces": 4,
+      "rigidGlassMeshes": 20
+    },
+    {
+      "layout": "t4-a",
+      "apertures": 10,
+      "partitionAndTrimMeshes": 2,
+      "minExteriorClearanceM": 0.09999980926513707,
+      "bathSkinPieces": 4,
+      "rigidGlassMeshes": 20
+    },
+    {
+      "layout": "t4-b",
+      "apertures": 10,
+      "partitionAndTrimMeshes": 2,
+      "minExteriorClearanceM": 0.09999980926513707,
+      "bathSkinPieces": 4,
+      "rigidGlassMeshes": 20
+    }
+  ],
+  "paneRays": 280,
+  "skinInsideRays": 105,
+  "skinOutsideRays": 28,
+  "attachmentChecks": 700,
+  "unchangedRigFiles": [
+    "dist/deployment-rig.js",
+    "dist/expansion-process.js",
+    "dist/specification.js"
+  ],
+  "unchangedFunctions": [
+    "updateExpansion",
+    "updateProcess"
+  ],
+  "notes": [
+    "All partition and trim geometry stays within the inner envelope.",
+    "All former 20/30 mm mullion gaps now hit glass first.",
+    "Bathroom rear skin absent within opening and present around it.",
+    "Glazing remains attached with invariant local transforms through 5 expansion poses."
+  ]
+}

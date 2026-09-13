@@ -56,7 +56,8 @@ export function makeHouse(options={},library=null){
   const isDoor=h.kind==='door',f=isDoor?.055:.044,th=.052;for(const e of [-1,1])rect(f,height,th,u+e*(width/2-f/2),sill+height/2,M.aluminium,h.id+' · aro',-sign*.035);
   for(const y of [sill+f/2,sill+height-f/2])rect(width,f,th,u,y,M.aluminium,h.id+' · aro',-sign*.035);
   rect(.026,height-.06,.044,u,sill+height/2,M.aluminium,h.id+' · montante',-sign*.035);
-  for(const e of [-1,1]){rect((width-f*3)/2,height-f*2,.004,u+e*width/4,sill+height/2,glass,h.id+' · vidro',-sign*.041);}
+  const apertureHalf=width/2-f,mullionHalf=.026/2;
+  for(const e of [-1,1]){rect(apertureHalf-mullionHalf,height-f*2,.004,u+e*(apertureHalf+mullionHalf)/2,sill+height/2,glass,h.id+' · vidro',-sign*.041);}
   rect(width+.02,.022,DIM.panel+.025,u,sill-.011,M.metal,h.id+' · soleira',-sign*DIM.panel/2);
   if(isDoor){rect(.018,.18,.018,u+.08,.99,M.metal,'Puxador',sign*.012);}else rect(.014,.11,.012,u+.055,sill+height*.45,M.metal,'Fecho da janela',-sign*.071);
  }
@@ -76,7 +77,7 @@ export function makeHouse(options={},library=null){
   }}
  // Roof panels have a real thickness; layer visibility never leaves roof ribs over the cutaway.
  for(const [a,b]of floorZones){const g=new THREE.Group();groups.roof.add(g);box(g,b-a-.008,.06,DIM.length-.008,(a+b)/2,H-.025,0,M.roof,'Chapa de cobertura',.005);box(g,b-a-.008,.055,DIM.length-.008,(a+b)/2,H-.081,0,M.insulation,'Isolamento de cobertura');box(g,b-a-.008,.005,DIM.length-.008,(a+b)/2,H-.111,0,M.inner,'Tecto interior');for(let z=-Z+.22;z<Z;z+=.59)box(g,b-a,.009,.018,(a+b)/2,H+.009,z,M.roof,'Nervura de chapa');roofPanels.push(g);}
- function interiorWall(w){const {axis,c,a,b,door,thickness}=w;const at=(u,y)=>axis==='z'?[c,y,u]:[u,y,c];const segment=(lo,hi,y0,y1)=>{if(hi<=lo)return;box(groups.interior,axis==='z'?thickness:hi-lo,y1-y0,axis==='z'?hi-lo:thickness,...at((lo+hi)/2,(y0+y1)/2),M.panelInterior,w.id);};
+ function interiorWall(w){const {axis,c,door,thickness}=w,limit=(axis==='z'?Z:X)-DIM.panel,a=Math.max(w.a,-limit),b=Math.min(w.b,limit);const at=(u,y)=>axis==='z'?[c,y,u]:[u,y,c];const segment=(lo,hi,y0,y1)=>{lo=Math.max(lo,a);hi=Math.min(hi,b);if(hi<=lo)return;box(groups.interior,axis==='z'?thickness:hi-lo,y1-y0,axis==='z'?hi-lo:thickness,...at((lo+hi)/2,(y0+y1)/2),M.panelInterior,w.id);};
   if(door){segment(a,door.u-door.width/2,0,H-.12);segment(door.u+door.width/2,b,0,H-.12);segment(door.u-door.width/2,door.u+door.width/2,door.height,H-.12);
    const pose=doorPose(door),pivot=new THREE.Group();pivot.name=door.id;pivot.position.set(pose.hinge.x,0,pose.hinge.z);groups.interior.add(pivot);
    box(pivot,axis==='z'?DOOR_DETAIL.thickness:pose.leafWidth,door.height-.025,axis==='z'?pose.leafWidth:DOOR_DETAIL.thickness,axis==='z'?0:pose.direction*door.width/2,(door.height-.025)/2+DOOR_DETAIL.baseGap,axis==='z'?pose.direction*door.width/2:0,M.inner,'Folha de porta',.004);
@@ -88,10 +89,14 @@ export function makeHouse(options={},library=null){
   for(const [lo,hi]of door?[[a,door.u-door.width/2],[door.u+door.width/2,b]]:[[a,b]])if(hi>lo)box(groups.interior,axis==='z'?thickness+.018:hi-lo,.065,axis==='z'?hi-lo:thickness+.018,...at((lo+hi)/2,.033),M.white,'Rodapé');
  }
  plan.walls.forEach(interiorWall);
- const details=createInteriorDetail({state,lib,M,plain,box,mesh,cylinder,pipe,allMaterials});if(!state.bathroomUV)M.bath=details.B.wall;
+ const details=createInteriorDetail({state,plan,lib,M,plain,box,mesh,cylinder,pipe,allMaterials});if(!state.bathroomUV)M.bath=details.B.wall;
  const bath=plan.rooms.find(r=>r.kind==='bathroom');
  // Dedicated bathroom material is applied only to its internal walls.
- const bathSkin=new THREE.Group();bathSkin.name='Paredes do ambiente';groups.interior.add(bathSkin);const bc=bath.clear;for(const x of [bc.x0,bc.x1])box(bathSkin,.006,H-.14,bc.z1-bc.z0,x,H/2-.06,(bc.z0+bc.z1)/2,M.bath,'Revestimento UV da casa de banho');box(bathSkin,bc.x1-bc.x0,H-.14,.006,(bc.x0+bc.x1)/2,H/2-.06,bc.z0,M.bath,'Revestimento UV posterior');
+ const bathSkin=new THREE.Group();bathSkin.name='Paredes do ambiente';groups.interior.add(bathSkin);const bc=bath.clear;for(const x of [bc.x0,bc.x1])box(bathSkin,.006,H-.14,bc.z1-bc.z0,x,H/2-.06,(bc.z0+bc.z1)/2,M.bath,'Revestimento UV da casa de banho');
+ // The internal finish follows the same aperture as the external bathroom panel.
+ const rearHoles=plan.perimeter.find(face=>face.axis==='x'&&face.c<0).holes.filter(h=>h.u+h.width/2>bc.x0&&h.u-h.width/2<bc.x1);
+ const rearCuts=[bc.x0,bc.x1,...rearHoles.flatMap(h=>[Math.max(bc.x0,h.u-h.width/2),Math.min(bc.x1,h.u+h.width/2)])].sort((a,b)=>a-b);
+ for(let i=0;i<rearCuts.length-1;i++){const lo=rearCuts[i],hi=rearCuts[i+1];if(hi-lo<1e-7)continue;const hole=rearHoles.find(h=>(lo+hi)/2>h.u-h.width/2&&(lo+hi)/2<h.u+h.width/2);for(let [y0,y1]of hole?[[.01,hole.sill],[hole.sill+hole.height,H-.13]]:[[.01,H-.13]]){y0=Math.max(.01,y0);y1=Math.min(H-.13,y1);if(y1>y0)box(bathSkin,hi-lo,y1-y0,.006,(lo+hi)/2,(y0+y1)/2,bc.z0,M.bath,'Revestimento UV posterior');}}
  for(const f of plan.furnishings){const cx=(f.x0+f.x1)/2,cz=(f.z0+f.z1)/2,w=f.x1-f.x0,d=f.z1-f.z0,g=new THREE.Group();g.name=f.id;groups.furniture.add(g);
   if(f.type==='bed'){box(g,w,.19,d,cx,.145,cz,M.wood,'Base de cama',.024);box(g,w-.045,.2,d-.04,cx,.345,cz,M.fabric,'Colchão',.055);box(g,w-.035,.085,d*.58,cx,.467,cz+d*.18,M.linen,'Edredão',.035);for(const x of [cx-w*.245,cx+w*.245])box(g,w*.41,.115,.36,x,.496,f.z0+.27,M.fabric,'Almofada',.05);box(g,w+.025,.82,.055,cx,.44,f.z0+.01,M.wood,'Cabeceira',.018);}
   if(f.type==='sofa'){box(g,w,.22,d,cx,.25,cz,M.linen,'Sofá · base',.055);box(g,w,.49,.17,cx,.62,f.z0+.05,M.linen,'Sofá · costas',.05);for(const x of [f.x0+.08,f.x1-.08])box(g,.16,.49,d,x,.49,cz,M.linen,'Sofá · braço',.035);for(const x of [cx-w*.22,cx+w*.22])box(g,w*.4,.16,d*.73,x,.43,cz+.05,M.linen,'Sofá · almofada',.048);for(const x of [f.x0+.13,f.x1-.13])for(const z of [f.z0+.15,f.z1-.15])cylinder(g,.023,.15,x,.075,z,M.wood);}
@@ -144,7 +149,8 @@ export function makeHouse(options={},library=null){
  function setDetail(kind=null){
   const active=state.view==='interior'&&kind&&detailBounds(kind);root.userData.detail=active?kind:null;
   for(const g of groups.furniture.children)g.visible=!active||(kind==='kitchen'?g.name.includes('kitchen'):['shower','toilet','basin'].includes(g.name));
-  for(const wall of bathSkin.children)wall.visible=!(active&&kind==='bathroom'&&wall.position.x*(state.bathroom==='mirrored'?-1:1)>0);
+  bathSkin.visible=!(active&&kind==='kitchen');
+  for(const wall of bathSkin.children)wall.visible=!(active&&kind==='bathroom'&&wall.name==='Revestimento UV da casa de banho'&&wall.position.x*(state.bathroom==='mirrored'?-1:1)>0);
   const crop=active?active.clone().expandByScalar(.34):null;
   const planes=crop?[new THREE.Plane(new THREE.Vector3(1,0,0),-crop.min.x),new THREE.Plane(new THREE.Vector3(-1,0,0),crop.max.x),new THREE.Plane(new THREE.Vector3(0,0,1),-crop.min.z),new THREE.Plane(new THREE.Vector3(0,0,-1),crop.max.z)]:[];
   if(state.view==='interior')for(const m of allMaterials){m.clippingPlanes=active&&details.detailMaterials.has(m)?[]:active&&(m===M.bath||(kind==='kitchen'&&[M.panelInterior,M.aluminium,M.glass,M.metal].includes(m)))?planes:[active&&kind==='bathroom'?new THREE.Plane(new THREE.Vector3(0,-1,0),.07):cutPlane,...planes];m.needsUpdate=true;}

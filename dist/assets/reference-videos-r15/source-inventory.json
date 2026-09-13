@@ -11,7 +11,7 @@
       "poster": "assets/reference-videos-r15/mrVo6rKW270-poster.jpg",
       "poster_sha256": "a68bfb7e6161d0c8eef0837403326b64708231d7cebd50035a514c1c5a112759",
       "poster_time_seconds": 20,
-      "variantNote": "Vídeo completo da fonte, a partir de 15:45. Reprodução pelo YouTube, com o som bloqueado no portefólio.",
+      "variantNote": "Vídeo completo da fonte, a partir de 15:45. Reprodução pelo YouTube, com áudio e controlos de volume.",
       "collection": "delivery",
       "sourceUrl": "https://www.youtube.com/watch?v=mrVo6rKW270&t=945s",
       "sourceStartLabel": "15:45",
@@ -52,7 +52,7 @@
       ],
       "provider": "youtube",
       "youtubeId": "mrVo6rKW270",
-      "playback_policy": "always-muted"
+      "playback_policy": "user-controlled-audio"
     },
     {
       "id": "entrega-montagem-72m2",
@@ -64,7 +64,7 @@
       "poster": "assets/reference-videos-r15/UGaynQUNfms-poster.jpg",
       "poster_sha256": "3b8eb98c0704076b35edb09dc15449e6fb61429a15564dc32886c51a6f3816f9",
       "poster_time_seconds": 120,
-      "variantNote": "Vídeo completo da fonte, a partir de 08:12. Reprodução pelo YouTube, com o som bloqueado no portefólio.",
+      "variantNote": "Vídeo completo da fonte, a partir de 08:12. Reprodução pelo YouTube, com áudio e controlos de volume.",
       "collection": "delivery",
       "sourceUrl": "https://www.youtube.com/watch?v=UGaynQUNfms&t=492s",
       "sourceStartLabel": "08:12",
@@ -120,7 +120,7 @@
       "modelLabelBasis": "72 m²: identificação fornecida pela Green Village.",
       "provider": "youtube",
       "youtubeId": "UGaynQUNfms",
-      "playback_policy": "always-muted"
+      "playback_policy": "user-controlled-audio"
     }
   ]
 }

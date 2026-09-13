@@ -1,0 +1,98 @@
+{
+  "files": 921,
+  "bytes": 222613643,
+  "references": 4909,
+  "missing": [
+    [
+      "assets/evidence-r5/retry-audit.json",
+      "assets/test-photo.png",
+      "asset-literal"
+    ],
+    [
+      "assets/evidence-r9/source-inventory.json",
+      "assets/plantas-40-pes.xlsx::xl/media/image1.png",
+      "asset-literal"
+    ],
+    [
+      "assets/evidence-r9/source-inventory.json",
+      "assets/plantas-40-pes.xlsx::xl/media/image2.png",
+      "asset-literal"
+    ],
+    [
+      "assets/evidence-r9/source-inventory.json",
+      "assets/plantas-40-pes.xlsx::xl/media/image3.png",
+      "asset-literal"
+    ],
+    [
+      "assets/evidence-r9/source-inventory.json",
+      "assets/plantas-40-pes.xlsx::xl/media/image4.png",
+      "asset-literal"
+    ],
+    [
+      "assets/evidence-r9/source-inventory.json",
+      "assets/plantas-40-pes.xlsx::xl/media/image5.png",
+      "asset-literal"
+    ],
+    [
+      "assets/evidence-r9/source-inventory.json",
+      "assets/plantas-40-pes.xlsx::xl/media/image6.png",
+      "asset-literal"
+    ],
+    [
+      "assets/evidence-r9/source-inventory.json",
+      "assets/plantas-40-pes.xlsx::xl/media/image7.png",
+      "asset-literal"
+    ],
+    [
+      "assets/product-r9/technical-inventory.json",
+      "assets/plantas-40-pes.xlsx::xl/media/image1.png",
+      "asset-literal"
+    ],
+    [
+      "assets/product-r9/technical-inventory.json",
+      "assets/plantas-40-pes.xlsx::xl/media/image2.png",
+      "asset-literal"
+    ],
+    [
+      "assets/product-r9/technical-inventory.json",
+      "assets/plantas-40-pes.xlsx::xl/media/image3.png",
+      "asset-literal"
+    ],
+    [
+      "assets/product-r9/technical-inventory.json",
+      "assets/plantas-40-pes.xlsx::xl/media/image4.png",
+      "asset-literal"
+    ],
+    [
+      "assets/product-r9/technical-inventory.json",
+      "assets/plantas-40-pes.xlsx::xl/media/image5.png",
+      "asset-literal"
+    ],
+    [
+      "assets/product-r9/technical-inventory.json",
+      "assets/plantas-40-pes.xlsx::xl/media/image6.png",
+      "asset-literal"
+    ],
+    [
+      "assets/product-r9/technical-inventory.json",
+      "assets/plantas-40-pes.xlsx::xl/media/image7.png",
+      "asset-literal"
+    ]
+  ],
+  "htmlIssues": [],
+  "sensitiveCandidates": [],
+  "extensions": {
+    ".js": 35,
+    ".css": 9,
+    ".html": 13,
+    ".mp4": 15,
+    ".jpg": 344,
+    ".pdf": 7,
+    ".png": 320,
+    ".xlsx": 1,
+    ".webp": 1,
+    ".svg": 2,
+    ".txt": 5,
+    ".json": 169
+  }
+}

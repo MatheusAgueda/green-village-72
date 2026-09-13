@@ -1,3 +1,6 @@
+## R16 — complete project audit extension
+Audit all seven plans, configuration persistence/history/import/export, interior navigation, material fitting, detail views, video controls, source integrity, accessibility and responsive behaviour. Fix reproduced defects and retain evidence of both pre-fix causes and post-fix results. Preserve source opening positions, dimension truth labels, the user-confirmed expansion sequence and existing private audience. Kitchen adaptations must be visible to the buyer and appear in saved summaries.
+
 ## R15 — user-supplied transport and installation references
 Add the two supplied public YouTube references with the user's labels. Preserve source start points945s/492s, all following footage, ten inspected chapters and the always-silent portfolio preference. Stream through the YouTube IFrameAPI with sound blocked by custom controls; preserve sixteen existing silent downloadable MP4s. Full prepared silent copies remain local because the hosting archive cap prevents bundling them. Preserve all current3D/material/kinematic code and prior references. Verify actual embeds, relative seek/source mapping, sound policy, cross-player pause, navigation and mobile layouts.
 
@@ -102,3 +105,8 @@ The user requests animated expansion again, inside to outside, plus a complete v
 Preservar a geometria R9. Navegar pelos quatro estados na ordem das setas; quadro1 original, quadros2–3 com animação longitudinal, quadro4 com casa montada sem opcionais. Passagens1–2 e3–4 discretas e identificadas. Não deslocar piso para esconder conflito entre ala2,01m e painel estimado2,43m. Controlos, configuração, saída/reentrada e exportação coerentes com o estado visível; bloquear exportação3D no quadro original. Auditar fontes, sobreposições, entrada por vistas/camadas e fluxos desktop/mobile.
 
 R13 delivery acceptance: returning browsers load current content-hashed application modules; all seven source-video cards and current floor treatment appear after reload. Static GLB floor repetition limitation is visible before download and recorded in metadata.
+## R16 — targeted façade and video correction (13 September 2026)
+
+Remove the identified `visita-modulo-exposicao` video, its public download/poster and active metadata from Films and the technical sheet; re-number the six remaining local references. User originals and historical audit evidence remain recoverable. YouTube is now the explicit exception to the prior silence preference: both streams start with audio after user playback and expose standard YouTube sound controls; user mute/volume choices must survive chapter changes. Other distributed MP4s remain silent. Preserve source offsets 945/492 and mutual pause/navigation behaviour.
+
+Clip interior partition/skirting endpoints to the inner envelope without moving the source plan or doors. Fill each window/door glazing aperture continuously up to its outer frame and central mullion. Verify all seven plans with mesh bounds and raycasts, then visually reproduce the T2 façade and verify audio controls, removal and responsive video playback. Preserve expansion pivots, timeline and rigid panel/window attachment.

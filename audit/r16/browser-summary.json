@@ -1,0 +1,834 @@
+{
+  "reportCount": 36,
+  "pageWidthGroups": [
+    {
+      "width": 375,
+      "page": "documentation",
+      "runs": 1,
+      "violations": 0,
+      "manualRules": [
+        "color-contrast",
+        "skip-link"
+      ],
+      "maximumManualNodes": 2,
+      "samePageEveryRun": true
+    },
+    {
+      "width": 375,
+      "page": "films",
+      "runs": 1,
+      "violations": 0,
+      "manualRules": [
+        "color-contrast",
+        "skip-link",
+        "video-caption"
+      ],
+      "maximumManualNodes": 15,
+      "samePageEveryRun": true
+    },
+    {
+      "width": 375,
+      "page": "model",
+      "runs": 1,
+      "violations": 0,
+      "manualRules": [
+        "color-contrast",
+        "skip-link"
+      ],
+      "maximumManualNodes": 3,
+      "samePageEveryRun": true
+    },
+    {
+      "width": 375,
+      "page": "plans",
+      "runs": 1,
+      "violations": 0,
+      "manualRules": [
+        "color-contrast",
+        "skip-link"
+      ],
+      "maximumManualNodes": 18,
+      "samePageEveryRun": true
+    },
+    {
+      "width": 375,
+      "page": "renders",
+      "runs": 1,
+      "violations": 0,
+      "manualRules": [
+        "color-contrast",
+        "skip-link"
+      ],
+      "maximumManualNodes": 14,
+      "samePageEveryRun": true
+    },
+    {
+      "width": 375,
+      "page": "studio",
+      "runs": 1,
+      "violations": 0,
+      "manualRules": [
+        "color-contrast"
+      ],
+      "maximumManualNodes": 15,
+      "samePageEveryRun": true
+    },
+    {
+      "width": 768,
+      "page": "documentation",
+      "runs": 1,
+      "violations": 0,
+      "manualRules": [
+        "skip-link"
+      ],
+      "maximumManualNodes": 1,
+      "samePageEveryRun": true
+    },
+    {
+      "width": 768,
+      "page": "films",
+      "runs": 1,
+      "violations": 0,
+      "manualRules": [
+        "color-contrast",
+        "skip-link",
+        "video-caption"
+      ],
+      "maximumManualNodes": 13,
+      "samePageEveryRun": true
+    },
+    {
+      "width": 768,
+      "page": "model",
+      "runs": 1,
+      "violations": 0,
+      "manualRules": [
+        "skip-link"
+      ],
+      "maximumManualNodes": 1,
+      "samePageEveryRun": true
+    },
+    {
+      "width": 768,
+      "page": "plans",
+      "runs": 1,
+      "violations": 0,
+      "manualRules": [
+        "color-contrast",
+        "skip-link"
+      ],
+      "maximumManualNodes": 16,
+      "samePageEveryRun": true
+    },
+    {
+      "width": 768,
+      "page": "renders",
+      "runs": 1,
+      "violations": 0,
+      "manualRules": [
+        "color-contrast",
+        "skip-link"
+      ],
+      "maximumManualNodes": 12,
+      "samePageEveryRun": true
+    },
+    {
+      "width": 768,
+      "page": "studio",
+      "runs": 1,
+      "violations": 0,
+      "manualRules": [
+        "color-contrast"
+      ],
+      "maximumManualNodes": 13,
+      "samePageEveryRun": true
+    },
+    {
+      "width": 1024,
+      "page": "documentation",
+      "runs": 1,
+      "violations": 0,
+      "manualRules": [
+        "skip-link"
+      ],
+      "maximumManualNodes": 1,
+      "samePageEveryRun": true
+    },
+    {
+      "width": 1024,
+      "page": "films",
+      "runs": 1,
+      "violations": 0,
+      "manualRules": [
+        "color-contrast",
+        "skip-link",
+        "video-caption"
+      ],
+      "maximumManualNodes": 13,
+      "samePageEveryRun": true
+    },
+    {
+      "width": 1024,
+      "page": "model",
+      "runs": 1,
+      "violations": 0,
+      "manualRules": [
+        "skip-link"
+      ],
+      "maximumManualNodes": 1,
+      "samePageEveryRun": true
+    },
+    {
+      "width": 1024,
+      "page": "plans",
+      "runs": 1,
+      "violations": 0,
+      "manualRules": [
+        "color-contrast",
+        "skip-link"
+      ],
+      "maximumManualNodes": 16,
+      "samePageEveryRun": true
+    },
+    {
+      "width": 1024,
+      "page": "renders",
+      "runs": 1,
+      "violations": 0,
+      "manualRules": [
+        "color-contrast",
+        "skip-link"
+      ],
+      "maximumManualNodes": 12,
+      "samePageEveryRun": true
+    },
+    {
+      "width": 1024,
+      "page": "studio",
+      "runs": 1,
+      "violations": 0,
+      "manualRules": [
+        "color-contrast"
+      ],
+      "maximumManualNodes": 16,
+      "samePageEveryRun": true
+    },
+    {
+      "width": 1280,
+      "page": "documentation",
+      "runs": 1,
+      "violations": 0,
+      "manualRules": [
+        "skip-link"
+      ],
+      "maximumManualNodes": 1,
+      "samePageEveryRun": true
+    },
+    {
+      "width": 1280,
+      "page": "films",
+      "runs": 1,
+      "violations": 0,
+      "manualRules": [
+        "color-contrast",
+        "skip-link",
+        "video-caption"
+      ],
+      "maximumManualNodes": 13,
+      "samePageEveryRun": true
+    },
+    {
+      "width": 1280,
+      "page": "model",
+      "runs": 1,
+      "violations": 0,
+      "manualRules": [
+        "skip-link"
+      ],
+      "maximumManualNodes": 1,
+      "samePageEveryRun": true
+    },
+    {
+      "width": 1280,
+      "page": "plans",
+      "runs": 1,
+      "violations": 0,
+      "manualRules": [
+        "color-contrast",
+        "skip-link"
+      ],
+      "maximumManualNodes": 16,
+      "samePageEveryRun": true
+    },
+    {
+      "width": 1280,
+      "page": "renders",
+      "runs": 1,
+      "violations": 0,
+      "manualRules": [
+        "color-contrast",
+        "skip-link"
+      ],
+      "maximumManualNodes": 12,
+      "samePageEveryRun": true
+    },
+    {
+      "width": 1280,
+      "page": "studio",
+      "runs": 1,
+      "violations": 0,
+      "manualRules": [
+        "color-contrast"
+      ],
+      "maximumManualNodes": 14,
+      "samePageEveryRun": true
+    },
+    {
+      "width": 1440,
+      "page": "documentation",
+      "runs": 1,
+      "violations": 0,
+      "manualRules": [
+        "skip-link"
+      ],
+      "maximumManualNodes": 1,
+      "samePageEveryRun": true
+    },
+    {
+      "width": 1440,
+      "page": "films",
+      "runs": 1,
+      "violations": 0,
+      "manualRules": [
+        "color-contrast",
+        "skip-link",
+        "video-caption"
+      ],
+      "maximumManualNodes": 13,
+      "samePageEveryRun": true
+    },
+    {
+      "width": 1440,
+      "page": "model",
+      "runs": 1,
+      "violations": 0,
+      "manualRules": [
+        "skip-link"
+      ],
+      "maximumManualNodes": 1,
+      "samePageEveryRun": true
+    },
+    {
+      "width": 1440,
+      "page": "plans",
+      "runs": 1,
+      "violations": 0,
+      "manualRules": [
+        "color-contrast",
+        "skip-link"
+      ],
+      "maximumManualNodes": 16,
+      "samePageEveryRun": true
+    },
+    {
+      "width": 1440,
+      "page": "renders",
+      "runs": 1,
+      "violations": 0,
+      "manualRules": [
+        "color-contrast",
+        "skip-link"
+      ],
+      "maximumManualNodes": 12,
+      "samePageEveryRun": true
+    },
+    {
+      "width": 1440,
+      "page": "studio",
+      "runs": 1,
+      "violations": 0,
+      "manualRules": [
+        "color-contrast"
+      ],
+      "maximumManualNodes": 14,
+      "samePageEveryRun": true
+    },
+    {
+      "width": 1920,
+      "page": "documentation",
+      "runs": 1,
+      "violations": 0,
+      "manualRules": [
+        "skip-link"
+      ],
+      "maximumManualNodes": 1,
+      "samePageEveryRun": true
+    },
+    {
+      "width": 1920,
+      "page": "films",
+      "runs": 1,
+      "violations": 0,
+      "manualRules": [
+        "color-contrast",
+        "skip-link",
+        "video-caption"
+      ],
+      "maximumManualNodes": 13,
+      "samePageEveryRun": true
+    },
+    {
+      "width": 1920,
+      "page": "model",
+      "runs": 1,
+      "violations": 0,
+      "manualRules": [
+        "skip-link"
+      ],
+      "maximumManualNodes": 1,
+      "samePageEveryRun": true
+    },
+    {
+      "width": 1920,
+      "page": "plans",
+      "runs": 1,
+      "violations": 0,
+      "manualRules": [
+        "color-contrast",
+        "skip-link"
+      ],
+      "maximumManualNodes": 16,
+      "samePageEveryRun": true
+    },
+    {
+      "width": 1920,
+      "page": "renders",
+      "runs": 1,
+      "violations": 0,
+      "manualRules": [
+        "color-contrast",
+        "skip-link"
+      ],
+      "maximumManualNodes": 12,
+      "samePageEveryRun": true
+    },
+    {
+      "width": 1920,
+      "page": "studio",
+      "runs": 1,
+      "violations": 0,
+      "manualRules": [
+        "color-contrast"
+      ],
+      "maximumManualNodes": 14,
+      "samePageEveryRun": true
+    }
+  ],
+  "violations": [],
+  "manual": {
+    "color-contrast": {
+      "reports": 26,
+      "targets": [
+        "[\"#current-layout\"]",
+        "[\"#details-open > span\"]",
+        "[\"#fullscreen\"]",
+        "[\"#reset-camera\"]",
+        "[\"#scene-settings-toggle > span\"]",
+        "[\"#scene-title\"]",
+        "[\"#snapshot\"]",
+        "[\"#source-entrega-montagem-72m2 > .youtube-controls > button[data-yt-fullscreen=\\\"\\\"]\"]",
+        "[\"#source-entrega-montagem-72m2 > .youtube-screen > .youtube-start[data-yt-toggle=\\\"\\\"]\"]",
+        "[\"#source-retirada-contentor-transporte > .youtube-controls > button[data-yt-fullscreen=\\\"\\\"]\"]",
+        "[\"#source-retirada-contentor-transporte > .youtube-screen > .youtube-start[data-yt-toggle=\\\"\\\"]\"]",
+        "[\"#top-camera\"]",
+        "[\"#view-description\"]",
+        "[\"#zoom-out\"]",
+        "[\".drag-hint > span\"]",
+        "[\".drag-hint\"]",
+        "[\".model-stamp\"]",
+        "[\".reference-strip > button[data-go=\\\"gallery\\\"]\"]",
+        "[\"a[href$=\\\"opcionais-2026.pdf\\\"][rel=\\\"noopener\\\"][target=\\\"_blank\\\"] > span\"]",
+        "[\"button[aria-label=\\\"Vermelho Borgonha\\\"] > .swatch-check[aria-hidden=\\\"true\\\"]\"]",
+        "[\"button[data-page=\\\"documentation\\\"]\"]",
+        "[\"button[data-page=\\\"films\\\"]\"]",
+        "[\"button[data-page=\\\"model\\\"]\"]",
+        "[\"button[data-page=\\\"studio\\\"]\"]",
+        "[\"button[data-render-open=\\\"01-exterior-alpendre\\\"] > span\"]",
+        "[\"button[data-render-open=\\\"02-exterior-cobertura-plana\\\"] > span\"]",
+        "[\"button[data-render-open=\\\"03-interior-perspectiva\\\"] > span\"]",
+        "[\"button[data-render-open=\\\"04-planta-mobilada\\\"] > span\"]",
+        "[\"button[data-render-open=\\\"05-cozinha\\\"] > span\"]",
+        "[\"button[data-render-open=\\\"06-casa-de-banho\\\"] > span\"]",
+        "[\"button[data-render-open=\\\"07-estrutura\\\"] > span\"]",
+        "[\"button[data-render-open=\\\"09-fachada-principal\\\"] > span\"]",
+        "[\"button[data-render-open=\\\"10-fachada-direita\\\"] > span\"]",
+        "[\"button[data-render-open=\\\"11-fachada-posterior\\\"] > span\"]",
+        "[\"button[data-render-open=\\\"12-fachada-esquerda\\\"] > span\"]",
+        "[\"button[data-texture-mode=\\\"prepared\\\"]\"]",
+        "[\"button[data-view=\\\"expansion\\\"] > span\"]",
+        "[\"text[font-size=\\\"13\\\"][text-anchor=\\\"middle\\\"]:nth-child(66)\"]",
+        "[\"text[x=\\\"162.91\\\"]\"]",
+        "[\"text[x=\\\"25\\\"]\"]",
+        "[\"text[x=\\\"407.09000000000003\\\"]\"]",
+        "[\"text[y=\\\"179.99200000000002\\\"]\"]",
+        "[\"text[y=\\\"194.99200000000002\\\"]\"]",
+        "[\"text[y=\\\"342.74\\\"]\"]",
+        "[\"text[y=\\\"357.74\\\"]\"]",
+        "[\"text[y=\\\"39\\\"]\"]",
+        "[\"text[y=\\\"578.8000000000001\\\"]\"]",
+        "[\"text[y=\\\"593.8000000000001\\\"]\"]",
+        "[\"text[y=\\\"681.46\\\"]\"]",
+        "[\"text[y=\\\"696.46\\\"]\"]",
+        "[\"text[y=\\\"815.4000000000001\\\"][x=\\\"285\\\"][font-size=\\\"11\\\"]\"]",
+        "[\"text[y=\\\"838.4000000000001\\\"]\"]"
+      ],
+      "messages": [
+        "Element content contains only non-text characters",
+        "Element content is too short to determine if it is actual text content",
+        "Element's background color could not be determined because element contains an image node",
+        "Element's background color could not be determined because it is overlapped by another element",
+        "Element's background color could not be determined because it partially overlaps other elements",
+        "Element's background color could not be determined because it's partially obscured by another element"
+      ],
+      "pages": [
+        "documentation",
+        "films",
+        "model",
+        "plans",
+        "renders",
+        "studio"
+      ],
+      "widths": [
+        375,
+        768,
+        1024,
+        1280,
+        1440,
+        1920
+      ]
+    },
+    "skip-link": {
+      "reports": 30,
+      "targets": [
+        "[\".skip\"]"
+      ],
+      "messages": [
+        "Skip link target should become visible on activation"
+      ],
+      "pages": [
+        "documentation",
+        "films",
+        "model",
+        "plans",
+        "renders"
+      ],
+      "widths": [
+        375,
+        768,
+        1024,
+        1280,
+        1440,
+        1920
+      ]
+    },
+    "video-caption": {
+      "reports": 6,
+      "targets": [
+        "[\"#source-modulo-embalado-fabrica\"]",
+        "[\"#source-montagem-grua-visita-real\"]",
+        "[\"#source-v1-spacious\"]",
+        "[\"#source-v2-74m2\"]",
+        "[\"#source-v3-comfortable\"]",
+        "[\"#source-v4-37m2\"]",
+        "[\"#wall-raising-film\"]",
+        "[\"video[preload=\\\"metadata\\\"]\"]"
+      ],
+      "messages": [
+        "Check that captions are available for the element"
+      ],
+      "pages": [
+        "films"
+      ],
+      "widths": [
+        375,
+        768,
+        1024,
+        1280,
+        1440,
+        1920
+      ]
+    }
+  },
+  "runtimeErrors": [],
+  "resourceFailures": [],
+  "nonzeroConsole": [],
+  "sessionMetrics": [
+    {
+      "startedAt": "2026-09-13T13:47:00.899Z",
+      "reports": 6,
+      "last": {
+        "LCP": {
+          "value": 248,
+          "unit": "ms",
+          "rating": "good",
+          "delta": 248,
+          "navigationType": "reload",
+          "at": "2026-09-13T13:47:00.920Z",
+          "elapsedMs": 251
+        },
+        "CLS": {
+          "value": 0,
+          "unit": "score",
+          "rating": "good",
+          "delta": 0,
+          "navigationType": "reload",
+          "at": "2026-09-13T13:47:00.920Z",
+          "elapsedMs": 251
+        },
+        "INP": {
+          "value": 72,
+          "unit": "ms",
+          "rating": "good",
+          "delta": 40,
+          "navigationType": "reload",
+          "at": "2026-09-13T13:47:16.987Z",
+          "elapsedMs": 16318
+        }
+      }
+    },
+    {
+      "startedAt": "2026-09-13T13:49:09.727Z",
+      "reports": 30,
+      "last": {
+        "LCP": {
+          "value": 96,
+          "unit": "ms",
+          "rating": "good",
+          "delta": 96,
+          "navigationType": "reload",
+          "at": "2026-09-13T13:49:09.990Z",
+          "elapsedMs": 336
+        },
+        "CLS": {
+          "value": 0,
+          "unit": "score",
+          "rating": "good",
+          "delta": 0,
+          "navigationType": "reload",
+          "at": "2026-09-13T13:49:09.993Z",
+          "elapsedMs": 338
+        },
+        "INP": {
+          "value": 176,
+          "unit": "ms",
+          "rating": "good",
+          "delta": 160,
+          "navigationType": "reload",
+          "at": "2026-09-13T13:49:10.805Z",
+          "elapsedMs": 1151
+        }
+      }
+    }
+  ],
+  "silentMedia": {
+    "files": 15,
+    "allSameAsVerifiedSilentR14": true,
+    "records": [
+      {
+        "path": "dist/assets/expansion-r9/wall-raising.mp4",
+        "verifiedSilent": true,
+        "sha256": "5b1324361d411e9e6dfcf77074463f99d8af843016711790f49615ed749133ee"
+      },
+      {
+        "path": "dist/assets/expansion-v2.mp4",
+        "verifiedSilent": true,
+        "sha256": "f533953a1771fbc81100958e5a98e25e1e8511e612d7220bc9b88c46aeea2a14"
+      },
+      {
+        "path": "dist/assets/expansion-v3.mp4",
+        "verifiedSilent": true,
+        "sha256": "bc56cfe3007c2f1358dcbc54e6b95212dbce4b90e2eef3c09f1f693db97c0513"
+      },
+      {
+        "path": "dist/assets/expansion-v4.mp4",
+        "verifiedSilent": true,
+        "sha256": "a2d7d650ca1f548ef96f9a8a97180a15b28e202e6c19a321319d154b21f1ee68"
+      },
+      {
+        "path": "dist/assets/filme-expansao.mp4",
+        "verifiedSilent": true,
+        "sha256": "86c2bbe79bf11062d3caf5c4b93c99352694ad1aa4e5568163978e4c4303e520"
+      },
+      {
+        "path": "dist/assets/filme-fotografias.mp4",
+        "verifiedSilent": true,
+        "sha256": "ebd0c05bbbec954183331eb6cafbda27d7a26a3730104cf73be7c5036c020f13"
+      },
+      {
+        "path": "dist/assets/presentation-v2.mp4",
+        "verifiedSilent": true,
+        "sha256": "3d4b0d91406bf56875ca666e09e0b8b8cf0bafee9171f48c18cab580d01991d9"
+      },
+      {
+        "path": "dist/assets/presentation-v3.mp4",
+        "verifiedSilent": true,
+        "sha256": "a6b636f7d21c018ec201df6918e534c84fd4fafe193e59d49d7b64a769e2c288"
+      },
+      {
+        "path": "dist/assets/presentation-v5.mp4",
+        "verifiedSilent": true,
+        "sha256": "7bc61fa93094e6323f0bfdcaa665b8088881d849f9c81c4df6e41ede04c192b7"
+      },
+      {
+        "path": "dist/assets/reference-videos/v1-spacious.mp4",
+        "verifiedSilent": true,
+        "sha256": "e73bae0c2dc99d9cc5754d64defcda155b71123c244f065a7a87f095634b49a6"
+      },
+      {
+        "path": "dist/assets/reference-videos/v2-74m2.mp4",
+        "verifiedSilent": true,
+        "sha256": "42c70084f2c1975df41352d3669a4a74023f6e869c36090e99f2dc1740c28d41"
+      },
+      {
+        "path": "dist/assets/reference-videos/v3-comfortable.mp4",
+        "verifiedSilent": true,
+        "sha256": "b45b1b2d15874c091432e0e11511bc491add7b2a3d89f54a8849763641566439"
+      },
+      {
+        "path": "dist/assets/reference-videos/v4-37m2.mp4",
+        "verifiedSilent": true,
+        "sha256": "188b63604cd47b74c10d5afcefe513a28ab1519fb010d8371e04c81262cd9c77"
+      },
+      {
+        "path": "dist/assets/reference-videos-r13/gv-real-installation-tour-20260913.mp4",
+        "verifiedSilent": true,
+        "sha256": "84df11d69dca071d8e343c89fbf26ab5096b59fd838f7536dae6be8230dad255"
+      },
+      {
+        "path": "dist/assets/reference-videos-r13/gv-wrapped-module-factory-20260913.mp4",
+        "verifiedSilent": true,
+        "sha256": "9d3940836aa141acb5e3d3822d61d5b6565a82fbe1452240cc7bb9a003c1b78c"
+      }
+    ]
+  },
+  "newSourceSecretPatternMatches": {},
+  "integrity": {
+    "checks": 662,
+    "errors": [],
+    "sourceVideos": 8,
+    "nativeSourceVideos": 6,
+    "youtubeVideos": 2,
+    "materialIds": 71,
+    "interiorIds": 32,
+    "layouts": 7,
+    "moduleFiles": 27,
+    "imports": 75,
+    "missingImports": [],
+    "sourceHashes": {
+      "app.js": "7f87602ab497cf633147f7cc0549634ba8ce620e3bfcbf20c3f04c696efe41ae",
+      "reference-videos.js": "628b27dcf3179a4e5384ed8b7c67157d6d583c5a4ca0482d7dc80ca6e248d750",
+      "youtube-library.js": "4536a78f815d4a785cf72b8f9ab4a4a1964beeb3227530b719afc86d54023a53",
+      "technical-sheet.js": "4e3136ff027fd10a020b3de148aec8d55ce5f1a718c9d2e615d4b40b57d859dc",
+      "configuration.js": "3f3843b7105927232f47e6fd6af5a6709384760428c00c4901c5c7a444a1e6ae",
+      "client-tools.js": "7d7d82a8a422db1b6d38a61cb1be6a63e643f7d6450186cbbcc546cfb7367a8e"
+    }
+  },
+  "assetSweep": {
+    "files": 921,
+    "bytes": 222613643,
+    "references": 4909,
+    "missing": [
+      [
+        "assets/evidence-r5/retry-audit.json",
+        "assets/test-photo.png",
+        "asset-literal"
+      ],
+      [
+        "assets/evidence-r9/source-inventory.json",
+        "assets/plantas-40-pes.xlsx::xl/media/image1.png",
+        "asset-literal"
+      ],
+      [
+        "assets/evidence-r9/source-inventory.json",
+        "assets/plantas-40-pes.xlsx::xl/media/image2.png",
+        "asset-literal"
+      ],
+      [
+        "assets/evidence-r9/source-inventory.json",
+        "assets/plantas-40-pes.xlsx::xl/media/image3.png",
+        "asset-literal"
+      ],
+      [
+        "assets/evidence-r9/source-inventory.json",
+        "assets/plantas-40-pes.xlsx::xl/media/image4.png",
+        "asset-literal"
+      ],
+      [
+        "assets/evidence-r9/source-inventory.json",
+        "assets/plantas-40-pes.xlsx::xl/media/image5.png",
+        "asset-literal"
+      ],
+      [
+        "assets/evidence-r9/source-inventory.json",
+        "assets/plantas-40-pes.xlsx::xl/media/image6.png",
+        "asset-literal"
+      ],
+      [
+        "assets/evidence-r9/source-inventory.json",
+        "assets/plantas-40-pes.xlsx::xl/media/image7.png",
+        "asset-literal"
+      ],
+      [
+        "assets/product-r9/technical-inventory.json",
+        "assets/plantas-40-pes.xlsx::xl/media/image1.png",
+        "asset-literal"
+      ],
+      [
+        "assets/product-r9/technical-inventory.json",
+        "assets/plantas-40-pes.xlsx::xl/media/image2.png",
+        "asset-literal"
+      ],
+      [
+        "assets/product-r9/technical-inventory.json",
+        "assets/plantas-40-pes.xlsx::xl/media/image3.png",
+        "asset-literal"
+      ],
+      [
+        "assets/product-r9/technical-inventory.json",
+        "assets/plantas-40-pes.xlsx::xl/media/image4.png",
+        "asset-literal"
+      ],
+      [
+        "assets/product-r9/technical-inventory.json",
+        "assets/plantas-40-pes.xlsx::xl/media/image5.png",
+        "asset-literal"
+      ],
+      [
+        "assets/product-r9/technical-inventory.json",
+        "assets/plantas-40-pes.xlsx::xl/media/image6.png",
+        "asset-literal"
+      ],
+      [
+        "assets/product-r9/technical-inventory.json",
+        "assets/plantas-40-pes.xlsx::xl/media/image7.png",
+        "asset-literal"
+      ]
+    ],
+    "htmlIssues": [],
+    "sensitiveCandidates": [],
+    "extensions": {
+      ".js": 35,
+      ".css": 9,
+      ".html": 13,
+      ".mp4": 15,
+      ".jpg": 344,
+      ".pdf": 7,
+      ".png": 320,
+      ".xlsx": 1,
+      ".webp": 1,
+      ".svg": 2,
+      ".txt": 5,
+      ".json": 169
+    }
+  }
+}

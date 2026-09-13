@@ -1,0 +1,55 @@
+{
+  "scope": "Read-only geometry, room-detail clipping, kitchen/window fit, bathroom mirror and navigation audit",
+  "baseline": "R16 working tree after initial three geometry fixes, before extended audit corrections",
+  "findings": [
+    {
+      "id": "detail-rear-skin",
+      "severity": "P2",
+      "location": "dist/model.js setDetail",
+      "evidence": "Bathroom focus hides rear cladding x=+0.5032 in standard mode (opposite rear piece in mirrored mode), because side-wall culling tests only x sign.",
+      "fix": "Identify only lateral skins as candidates for the cutaway; retain rear pieces."
+    },
+    {
+      "id": "detail-kitchen-extraneous-skin",
+      "severity": "P2",
+      "location": "dist/model.js setDetail",
+      "evidence": "T2 kitchen bounds x=-3.055..-2.305,z=-3.94..-1.46; all six bathroom cladding pieces outside these bounds remain visible with zero clipping planes.",
+      "fix": "Hide bathSkin while kitchen detail is active, or scope clipping exemptions by room."
+    },
+    {
+      "id": "upper-cupboards-cover-window",
+      "severity": "P2",
+      "location": "dist/interior-detail.js buildKitchen upper loop",
+      "evidence": "T2 kitchen-01 ray(-4,1.8,-2.65)->+X hits glass x=-3.071, then solid cupboard back x=-2.98 and upper door x=-2.676. Upper row overlaps source window heights and position.",
+      "affected": "17 supported layout/kitchen combinations, seven references with uppers: kitchen-01,03,04,05,08,11,13; both bathroom orientations.",
+      "fix": "Adapt only upper modules intersecting known aperture; preserve source window and disclose adaptation."
+    },
+    {
+      "id": "compact-bedroom-door-bottleneck",
+      "severity": "P2",
+      "location": "dist/specification.js compact kitchenZ/length",
+      "evidence": "T4 A linear run blocks424mm of760mm door. Existing camera at x=-0.7464 can cross only in z=-0.456..-0.440. Coarse80mm BFS fails, refined20/10mm succeeds: tight bottleneck, not inaccessible.",
+      "fix": "Verified candidate kitchenZ=b.z1+0.40, compact length1.60: all five rooms reachable for standard/mirrored bathroom on40mm grid. Simply shifting1.80m run to b.z1+0.24 makes mirrored WC unreachable."
+    },
+    {
+      "id": "shower-not-mirrored",
+      "severity": "P2",
+      "location": "dist/interior-detail.js buildShower",
+      "evidence": "bathroom-02 curved shower centre x=-0.2014 remains equal in standard and mirrored; basin correctly changes -0.4764 to+0.4764. Shower assembly never reads state.bathroom despite UI opposite-side equipment promise.",
+      "fix": "Mirror complete shower assembly locally on X in mirrored mode, retaining motion parent and plan footprint."
+    },
+    {
+      "id": "fittings-during-walk",
+      "severity": "P2",
+      "location": "dist/app.js global fittings handler / dist/walkthrough.js",
+      "evidence": "Global fittings button is not guarded during walk. Open upper leaf spans y1.522..2.158; point(-2.15049,1.84,-1.575998) lies in leaf but navigation accepts x/z because only closed plan footprints contribute.",
+      "fix": "Stop walk before global fittings toggle, or include dynamic panel colliders."
+    }
+  ],
+  "navigation": {
+    "compatibleCombinations": 56,
+    "roomsReachable": "All combinations, with finer-grid refinement needed for T4 A linear bottleneck.",
+    "coarseEvidence": "walk-results.json",
+    "candidateRegression": "compact-options.mjs"
+  }
+}
