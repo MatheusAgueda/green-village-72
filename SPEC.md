@@ -1,5 +1,8 @@
 # Green Village 72 — portefólio e configurador
 
+## R13 — colour rendering defect and three supplied videos
+Reproduce the reported colour/banding defect in the two expansion screenshots at 6% and 69%, then fix the demonstrated renderer/material cause without changing R12 hinge paths or recolouring catalogue source images. Preserve separate internal/external finishes. Add the three WhatsApp MP4 files supplied on 13 September, with inspected titles, per-file dimensions/duration, original downloads, posters and working chapter controls. Preserve the four earlier originals and historical renders. Acceptance: visual before/after at the reported poses; material selection and expansion/reentry remain coherent; all three new films play, pause and seek in the actual browser, original bytes match hashes, technical-sheet shortcuts find the right player and mobile layout works.
+
 ## R12 — remove invented panel preparation and roof overshoot
 The latest user correction supersedes R11 internal handling: side panels accompany the opening floor wings, remain flat relative to them, and subsequently only rise. Remove the independent placement phase and all preparation labels. Roof wings stop at horizontal and never tilt above it. Preserve final meshes, materials, windows, front/rear outward motion and the four-stage controls. Internal packing and an inboard carrier axis remain illustrative, not manufacturer-confirmed dimensions. Acceptance: actual mesh transforms stay rigid and continuous; panel-to-floor transform stays constant during wing opening; roof angles never overshoot; all seven assembled layouts return exactly to baseline; playback, scrubbing and reentry pass browser checks. Historical R9/R11 evidence stays labelled and unchanged.
 
@@ -91,3 +94,5 @@ The user requests animated expansion again, inside to outside, plus a complete v
 
 ## R10 — processo fornecido em quatro estados (12/09/2026)
 Preservar a geometria R9. Navegar pelos quatro estados na ordem das setas; quadro1 original, quadros2–3 com animação longitudinal, quadro4 com casa montada sem opcionais. Passagens1–2 e3–4 discretas e identificadas. Não deslocar piso para esconder conflito entre ala2,01m e painel estimado2,43m. Controlos, configuração, saída/reentrada e exportação coerentes com o estado visível; bloquear exportação3D no quadro original. Auditar fontes, sobreposições, entrada por vistas/camadas e fluxos desktop/mobile.
+
+R13 delivery acceptance: returning browsers load current content-hashed application modules; all seven source-video cards and current floor treatment appear after reload. Static GLB floor repetition limitation is visible before download and recorded in metadata.

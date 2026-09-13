@@ -1,0 +1,164 @@
+{
+  "revision": "R13",
+  "addedDate": "2026-09-13",
+  "method": "FFmpeg 7.1 metadata, full-file decode and visually inspected original-source JPEG contact sheets and poster candidates. No original file changes. No video transcoding.",
+  "originalsUnchanged": true,
+  "videos": [
+    {
+      "id": "montagem-grua-visita-real",
+      "filename": "WhatsApp Video 2026-09-13 at 00.40.57.mp4",
+      "asset": "assets/reference-videos-r13/gv-real-installation-tour-20260913.mp4",
+      "sha256": "84df11d69dca071d8e343c89fbf26ab5096b59fd838f7536dae6be8230dad255",
+      "bytes": 14088773,
+      "duration_seconds": 78.33,
+      "native_pixels": [
+        480,
+        848
+      ],
+      "has_audio": false,
+      "codec": "H.264 / AVC (Baseline)",
+      "addedDate": "2026-09-13",
+      "title": "Da descarga à visita interior",
+      "label_pt": "Da descarga à visita interior",
+      "description": "Movimentação de um módulo com grua, seguida de vistas exteriores e de uma passagem pelo interior.",
+      "poster": "assets/reference-videos-r13/montagem-grua-visita-real-poster.jpg",
+      "poster_sha256": "19993a25b4f308cfdcb1345999df62117ecdccf59060fb32356e8aab2ff3354c",
+      "poster_time_seconds": 33.0,
+      "variantNote": "Filmagem com cortes entre descarga, estrutura e visita. Não regista uma expansão completa contínua nem o tempo de instalação.",
+      "frames": [
+        {
+          "category": "Descarga com grua",
+          "label_pt": "Descarga com grua",
+          "time_seconds": 0,
+          "timecode": "00:00"
+        },
+        {
+          "category": "Posicionamento e estrutura",
+          "label_pt": "Posicionamento e estrutura",
+          "time_seconds": 24,
+          "timecode": "00:24"
+        },
+        {
+          "category": "Vista exterior",
+          "label_pt": "Vista exterior",
+          "time_seconds": 31,
+          "timecode": "00:31"
+        },
+        {
+          "category": "Visita interior",
+          "label_pt": "Visita interior",
+          "time_seconds": 44,
+          "timecode": "00:44"
+        },
+        {
+          "category": "Entrada e fachada",
+          "label_pt": "Entrada e fachada",
+          "time_seconds": 73,
+          "timecode": "01:13"
+        }
+      ]
+    },
+    {
+      "id": "modulo-embalado-fabrica",
+      "filename": "WhatsApp Video 2026-09-13 at 00.50.52.mp4",
+      "asset": "assets/reference-videos-r13/gv-wrapped-module-factory-20260913.mp4",
+      "sha256": "bd7a997333840628a3d205f63088e1156dcad92c44c8c6831375490fe7aa0f80",
+      "bytes": 7994217,
+      "duration_seconds": 30.633333333333333,
+      "native_pixels": [
+        528,
+        944
+      ],
+      "has_audio": true,
+      "codec": "H.264 / AVC (Baseline)",
+      "addedDate": "2026-09-13",
+      "title": "Módulo embalado em fábrica",
+      "label_pt": "Módulo embalado em fábrica",
+      "description": "Percurso em torno de um módulo protegido para transporte, com vista da porta, dos painéis laterais e de uma janela.",
+      "poster": "assets/reference-videos-r13/modulo-embalado-fabrica-poster.jpg",
+      "poster_sha256": "2124e28a319b2b8225fcf1f63eb9c847aeb0b22a05fe6e228bc6f41b6f6678f8",
+      "poster_time_seconds": 0.2,
+      "variantNote": "Unidade com película e protecções de transporte; os materiais finais não são integralmente visíveis.",
+      "frames": [
+        {
+          "category": "Módulo embalado",
+          "label_pt": "Módulo embalado",
+          "time_seconds": 0,
+          "timecode": "00:00"
+        },
+        {
+          "category": "Protecção lateral",
+          "label_pt": "Protecção lateral",
+          "time_seconds": 2,
+          "timecode": "00:02"
+        },
+        {
+          "category": "Janela e revestimento",
+          "label_pt": "Janela e revestimento",
+          "time_seconds": 14,
+          "timecode": "00:14"
+        },
+        {
+          "category": "Porta protegida",
+          "label_pt": "Porta protegida",
+          "time_seconds": 29,
+          "timecode": "00:29"
+        }
+      ]
+    },
+    {
+      "id": "visita-modulo-exposicao",
+      "filename": "WhatsApp Video 2026-09-13 at 00.59.07.mp4",
+      "asset": "assets/reference-videos-r13/gv-display-module-walkthrough-20260913.mp4",
+      "sha256": "dc971ecb6a3dcbdf38670ed3acdc57ef9112a0e2977e82617329d1861781170e",
+      "bytes": 19443963,
+      "duration_seconds": 51.47666666666667,
+      "native_pixels": [
+        720,
+        1280
+      ],
+      "has_audio": true,
+      "codec": "H.264 / AVC (Baseline)",
+      "addedDate": "2026-09-13",
+      "title": "Visita a um módulo em exposição",
+      "label_pt": "Visita a um módulo em exposição",
+      "description": "Percurso pela entrada, divisões interiores e casa de banho, com vistas da fachada e da lateral.",
+      "poster": "assets/reference-videos-r13/visita-modulo-exposicao-poster.jpg",
+      "poster_sha256": "13c0cb7649a22057b5bfdc9dc2ef19dce2e51161d1b895a7edd4cd5168078c67",
+      "poster_time_seconds": 1.0,
+      "variantNote": "Visita com protecções ainda aplicadas na casa de banho; correspondência com a planta seleccionada por confirmar.",
+      "frames": [
+        {
+          "category": "Fachada e entrada",
+          "label_pt": "Fachada e entrada",
+          "time_seconds": 0,
+          "timecode": "00:00"
+        },
+        {
+          "category": "Espaço principal",
+          "label_pt": "Espaço principal",
+          "time_seconds": 4,
+          "timecode": "00:04"
+        },
+        {
+          "category": "Divisões interiores",
+          "label_pt": "Divisões interiores",
+          "time_seconds": 12,
+          "timecode": "00:12"
+        },
+        {
+          "category": "Casa de banho",
+          "label_pt": "Casa de banho",
+          "time_seconds": 26,
+          "timecode": "00:26"
+        },
+        {
+          "category": "Exterior e exposição",
+          "label_pt": "Exterior e exposição",
+          "time_seconds": 37,
+          "timecode": "00:37"
+        }
+      ]
+    }
+  ]
+}

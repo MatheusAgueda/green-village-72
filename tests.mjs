@@ -1,3 +1,4 @@
+import {REFERENCE_VIDEOS} from './dist/reference-videos.js';
 import {processPose,PROCESS_STEPS} from './dist/expansion-process.js';
 import {technicalSheetMarkup} from './dist/technical-sheet.js';
 import {CATALOGUE_OPTIONS,TECHNICAL_FACTS} from './dist/technical-data.js';
@@ -78,6 +79,11 @@ check('four original reference videos preserve their hashes and valid chapter bo
  const videos=JSON.parse(readFileSync('dist/assets/reference-videos/source-inventory.json','utf8')).videos;assert.equal(videos.length,4);
  for(const video of videos){assert.equal(createHash('sha256').update(readFileSync('dist/'+video.asset)).digest('hex'),video.sha256);assert.equal(video.frames.length,4);for(const frame of video.frames){assert.ok(frame.time_seconds>=0&&frame.time_seconds<video.duration_seconds);assert.equal(createHash('sha256').update(readFileSync('dist/'+frame.asset)).digest('hex'),frame.sha256);}}
 });
+check('R13 supplied videos preserve original bytes and expose individual media metadata',()=>{
+ const newer=JSON.parse(readFileSync('dist/assets/reference-videos-r13/source-inventory.json','utf8')).videos;
+ assert.equal(newer.length,3);assert.equal(REFERENCE_VIDEOS.videos.length,7);assert.equal(new Set(REFERENCE_VIDEOS.videos.map(v=>v.id)).size,7);
+ for(const video of newer){const entry=REFERENCE_VIDEOS.videos.find(v=>v.id===video.id);assert.deepEqual(entry,video);const bytes=readFileSync('dist/'+video.asset);assert.equal(bytes.length,video.bytes);assert.equal(createHash('sha256').update(bytes).digest('hex'),video.sha256);assert.ok(video.native_pixels.every(n=>Number.isInteger(n)&&n>0));assert.equal(typeof video.has_audio,'boolean');assert.equal(createHash('sha256').update(readFileSync('dist/'+video.poster)).digest('hex'),video.poster_sha256);assert.ok(video.frames.every(f=>f.time_seconds>=0&&f.time_seconds<video.duration_seconds));}
+});
 check('metre UVs preserve physical scale across different mesh fragments',()=>{
  const a=physicalUV(new THREE.BoxGeometry(1,2,.1),[0,1,0]),b=physicalUV(new THREE.BoxGeometry(2,2,.1),[1.5,1,0]);const span=g=>{const u=[];for(let i=0;i<g.attributes.position.count;i++)if(g.attributes.normal.getZ(i)>.9)u.push(g.attributes.uv.getX(i));return Math.max(...u)-Math.min(...u);};close(span(a),1);close(span(b),2);a.dispose();b.dispose();
 });
@@ -111,7 +117,16 @@ check('plan area labels retain readable contrast with extreme custom floors',()=
 });
 check('all original plans, catalogue references and application dependencies are present',()=>{
  for(const x of DATA.layouts)assert.ok(existsSync('dist/'+x.image));for(const x of [...DATA.kitchens,...DATA.bathrooms])assert.ok(existsSync('dist/assets/catalogue/'+x.asset));for(const f of ['opcionais-2026.pdf','plantas-40-pes.xlsx'])assert.ok(statSync('dist/assets/'+f).size>1000);
- for(const m of readFileSync('dist/index.html','utf8').matchAll(/(?:src|href)="([^"#]+)"/g)){const u=m[1];if(u==='./'||/^https?:|data:/.test(u)||u==='mailto:info@greenvillagemobilehomes.com'||(core&&/v2(?:-poster)?\.(?:jpg|mp4)$/.test(u)))continue;assert.ok(existsSync('dist/'+u),u);}
+ for(const m of readFileSync('dist/index.html','utf8').matchAll(/(?:src|href)="([^"#]+)"/g)){const u=m[1];if(u==='./'||/^https?:|data:/.test(u)||u==='mailto:info@greenvillagemobilehomes.com'||(core&&/v2(?:-poster)?\.(?:jpg|mp4)$/.test(u)))continue;assert.ok(existsSync('dist/'+u.split('?')[0]),u);}
+});
+check('returning browsers receive the current application module graph',()=>{
+ const html=readFileSync('dist/index.html','utf8'),map=JSON.parse(html.match(/<script type="importmap">([\s\S]*?)<\/script>/)[1]);
+ for(const name of readdirSync('dist').filter(n=>n.endsWith('.js'))){
+  const hash=createHash('sha256').update(readFileSync('dist/'+name)).digest('hex').slice(0,16);
+  assert.equal(map.imports['./'+name],'./'+name+'?v='+hash,'Run npm run prepare:site after changing '+name);
+ }
+ assert.equal(html.match(/<script type="module" src="([^"]+)"/)[1],map.imports['./app.js']);
+ assert.equal(map.imports.three,'./vendor/three.module.js');
 });
 check('R5 all 32 reference selections affect the actual model and retain source provenance',()=>{
  const signatures={kitchen:new Set(),bathroom:new Set()};for(const [id,ref]of Object.entries(INTERIOR_REFERENCES)){
@@ -221,8 +236,8 @@ check('R9 technical sheet preserves catalogue units, option prices and source sc
  const bathroom=CATALOGUE_OPTIONS.find(o=>o.id==='bathroom-dry-wet');assert.equal(bathroom.specifications[0].unit,'m');assert.equal(bathroom.cataloguePrice.value,null);
  const system=CATALOGUE_OPTIONS.find(o=>o.id==='front-glass-premium').specifications.find(s=>s.label==='Designação do sistema');assert.equal(system.value,'broken bridge 55');assert.equal(system.unit,null);
  for(const option of CATALOGUE_OPTIONS){assert.equal(option.applicability.gv72Compatibility,'not-confirmed');assert.ok(option.source.page>=3&&option.source.page<=17);}
- for(const layout of Object.keys(source)){const config={...DEFAULT_CONFIG,layout},html=technicalSheetMarkup(config);assert.ok(html.includes(getPlan(config).label));assert.ok(!/undefined|NaN/.test(html));assert.equal((html.match(/data-option=/g)||[]).length,22);assert.equal((html.match(/data-measure=/g)||[]).length,25);assert.equal((html.match(/data-open-reference-video=/g)||[]).length,4);assert.ok(!html.includes('Fonte / m'));}
- const current=sourceLedger(DEFAULT_CONFIG);assert.equal(current.units.areas,'m²');assert.equal(current.catalogueOptions.length,22);assert.equal(current.sourceLayout.id,DEFAULT_CONFIG.layout);assert.equal(current.videos.videos.length,4);assert.equal(TECHNICAL_FACTS.length,45);
+ for(const layout of Object.keys(source)){const config={...DEFAULT_CONFIG,layout},html=technicalSheetMarkup(config);assert.ok(html.includes(getPlan(config).label));assert.ok(!/undefined|NaN/.test(html));assert.equal((html.match(/data-option=/g)||[]).length,22);assert.equal((html.match(/data-measure=/g)||[]).length,25);assert.equal((html.match(/data-open-reference-video=/g)||[]).length,7);assert.ok(!html.includes('Fonte / m'));}
+ const current=sourceLedger(DEFAULT_CONFIG);assert.equal(current.units.areas,'m²');assert.equal(current.catalogueOptions.length,22);assert.equal(current.sourceLayout.id,DEFAULT_CONFIG.layout);assert.equal(current.videos.videos.length,7);assert.equal(TECHNICAL_FACTS.length,45);
 });
 check('R9 expansion film is native Full HD, source-bound and declares its limited animation scope',()=>{
  const film=JSON.parse(readFileSync('dist/assets/expansion-r9/manifest.json','utf8'));assert.equal(film.status,'PASS');assert.deepEqual(film.dimensions,[1920,1080]);assert.equal(film.frameCount,350);assert.equal(film.durationSeconds,14);assert.equal(film.fps,25);assert.equal(film.displayOverrides.roofOpacity,.09);

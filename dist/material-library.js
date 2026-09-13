@@ -3,6 +3,7 @@ import {MATERIALS} from './material-data.js';
 import {PHOTO_PLANKS} from './photo-plank-data.js';
 import {PHOTO_WALLS} from './photo-wall-data.js';
 import {installPhotoPlanks,installPanelProfile} from './photo-planks.js';
+import {installSourceFloorPhase} from './source-floor-phase.js';
 const planks=new Map(PHOTO_PLANKS.map(entry=>[entry.id,entry])),walls=new Map(PHOTO_WALLS.map(entry=>[entry.id,entry]));
 export const materialById=id=>MATERIALS.find(m=>m.id===id);
 export const materialAsset=p=>'assets/catalogue-v2/'+p;
@@ -43,6 +44,7 @@ export function createMaterialLibrary(onLoad=()=>{},limit=18){
    const tx=load(entry,mode);
    if(tx){material.map=tx;material.color.set('#ffffff');cache.get(entry.id+':'+mode).references++;material.userData.lease=entry.id+':'+mode;const photo=photoTreatmentById(id);if(mode==='prepared'&&photo?.boardDimensionsM)installPhotoPlanks(material,tx,photo);if(mode==='prepared'&&photo?.profileRecommended)installPanelProfile(material,photo.panelProfile);}
   }
+  if(mode==='source'&&surface==='interior_floor'&&material.map)installSourceFloorPhase(material,material.map);
   return material;
  }
  function createPhoto(descriptor,surface,{unlit=false}={}){
