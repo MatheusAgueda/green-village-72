@@ -3,6 +3,12 @@ export function createVideoLibrary(videos,{isActive,onError}) {
   const entries=new Map(videos.map(video=>[video,{source:video.getAttribute('src'),url:null}]));
   const cache=new Map(),internalStarts=new Map();
   let serial=0,controller=null;
+  // The entire portfolio is silent, including native controls and future clips.
+  function silence(video) {
+    if(!video.defaultMuted)video.defaultMuted=true;
+    if(!video.muted)video.muted=true;
+    if(video.volume!==0)video.volume=0;
+  }
   function status(video,message) {
     let node=video.parentElement.querySelector('.video-load-status');
     if(!node){node=document.createElement('p');node.className='video-load-status';node.setAttribute('role','status');node.setAttribute('aria-live','polite');video.after(node);}
@@ -42,6 +48,7 @@ export function createVideoLibrary(videos,{isActive,onError}) {
   }
   async function play(video,time=0) {
     const entry=entries.get(video);if(!entry||!isActive())return;
+    silence(video);
     cancel();const request=serial,abort=new AbortController();controller=abort;
     const current=()=>request===serial&&isActive()&&!abort.signal.aborted;
     for(const other of videos)other.pause();
@@ -75,8 +82,12 @@ export function createVideoLibrary(videos,{isActive,onError}) {
     }
   }
   for(const video of videos){
+    silence(video);
+    video.addEventListener('volumechange',()=>silence(video));
+    video.addEventListener('loadedmetadata',()=>silence(video));
     status(video,'');
     video.addEventListener('play',()=>{
+      silence(video);
       for(const other of videos)if(other!==video)other.pause();
       if(internalStarts.has(video))return;
       if(!isActive()){video.pause();return;}

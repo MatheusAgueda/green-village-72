@@ -1,3 +1,6 @@
+## R14 — all videos always silent
+User explicitly requires ALL videos without sound. Remove audio streams from every public MP4 with audio, preserve video bitstreams and original input attachments, apply silent playback to all players and downloads, identify copies accurately, bypass older cached media and verify all delivered MP4s have zero audio tracks.
+
 # Green Village 72 — portefólio e configurador
 
 ## R13 — colour rendering defect and three supplied videos

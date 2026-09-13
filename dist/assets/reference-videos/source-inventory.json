@@ -10,8 +10,8 @@
     {
       "id": "v1-spacious",
       "filename": "40FT EXPANDABLE CONTAINER HOUSE — 3 Bedroom Modular Home - Mobile Residence - Emergency Housing Solution Modern Design • Spacious Living • Thermal Insulation • Fast Installation Designed for modern family living, emergency accommoda.mp4",
-      "sha256": "24ab128ec1648232fccc74f5954e1b5ba8313e484a39eed30dc9327854aa00f7",
-      "duration_seconds": 118.233333,
+      "sha256": "e73bae0c2dc99d9cc5754d64defcda155b71123c244f065a7a87f095634b49a6",
+      "duration_seconds": 118.22999999999999,
       "label_pt": "40FT — Spacious Living",
       "frames": [
         {
@@ -51,12 +51,18 @@
       "poster": "assets/reference-videos/v1-spacious-000s-exterior-stone-effect.jpg",
       "title": "Exterior em pedra",
       "description": "Fachada envidraçada, piso cinza e cozinha em L.",
-      "variantNote": "40FT no nome do ficheiro; correspondência com as plantas por confirmar."
+      "variantNote": "40FT no nome do ficheiro; correspondência com as plantas por confirmar.",
+      "source_sha256": "24ab128ec1648232fccc74f5954e1b5ba8313e484a39eed30dc9327854aa00f7",
+      "source_bytes": 14919007,
+      "source_has_audio": true,
+      "bytes": 14390435,
+      "has_audio": false,
+      "audio_removed": true
     },
     {
       "id": "v2-74m2",
       "filename": "40FT EXPANDABLE CONTAINER HOUSE — 74㎡ Modern Modular Living • Fast Installation • Luxury Interior • Export Standard Designed for modern residential living, tourism projects, emergency accommodation, and commercial housing solution.mp4",
-      "sha256": "1c68b155875dc30534750f817785ad24f6e469e813013ba4fe2632b92ef0c0c1",
+      "sha256": "42c70084f2c1975df41352d3669a4a74023f6e869c36090e99f2dc1740c28d41",
       "duration_seconds": 57.0,
       "label_pt": "40FT — 74 m²",
       "frames": [
@@ -97,13 +103,19 @@
       "poster": "assets/reference-videos/v2-74m2-000s-grey-front.jpg",
       "title": "Exterior cinza",
       "description": "Réguas greige, paredes claras e cozinha branca com tampo escuro.",
-      "variantNote": "Identificado como 74 m² no ficheiro. Referência de outra variante."
+      "variantNote": "Identificado como 74 m² no ficheiro. Referência de outra variante.",
+      "source_sha256": "1c68b155875dc30534750f817785ad24f6e469e813013ba4fe2632b92ef0c0c1",
+      "source_bytes": 6007251,
+      "source_has_audio": true,
+      "bytes": 5751626,
+      "has_audio": false,
+      "audio_removed": true
     },
     {
       "id": "v3-comfortable",
       "filename": "40FT EXPANDABLE CONTAINER HOUSE — 3 Bedroom Modular Home - Mobile Residence - Emergency Housing Solution Modern Design • Comfortable Living • Thermal Insulation • Fast Installation Designed for modern family living, temporary accomm.mp4",
-      "sha256": "6a5266ec7bd584785dee744490b2694994abc60ef2bad7a88c791e2c4367163b",
-      "duration_seconds": 100.198027,
+      "sha256": "b45b1b2d15874c091432e0e11511bc491add7b2a3d89f54a8849763641566439",
+      "duration_seconds": 100.17,
       "label_pt": "40FT — Comfortable Living",
       "frames": [
         {
@@ -143,13 +155,19 @@
       "poster": "assets/reference-videos/v3-comfortable-000s-cream-horizontal-cladding.jpg",
       "title": "Exterior creme",
       "description": "Porta lateral, juntas entre módulos e detalhes de banho.",
-      "variantNote": "Contém superfícies protegidas e equipamentos embalados; acabamentos finais por confirmar."
+      "variantNote": "Contém superfícies protegidas e equipamentos embalados; acabamentos finais por confirmar.",
+      "source_sha256": "6a5266ec7bd584785dee744490b2694994abc60ef2bad7a88c791e2c4367163b",
+      "source_bytes": 11770834,
+      "source_has_audio": true,
+      "bytes": 11327570,
+      "has_audio": false,
+      "audio_removed": true
     },
     {
       "id": "v4-37m2",
       "filename": "20ft Foldable Modular Mobile House - 37㎡ Spacious Living - Professional Export from China If you are looking for a modern housing solution that combines large space, easy transportation, and fast installation, this 40ft foldable modular h.mp4",
-      "sha256": "106762e67dbb6359804b3b23822ed23d3778824a2fc6a861810e45aa7fadb0e1",
-      "duration_seconds": 56.566667,
+      "sha256": "188b63604cd47b74c10d5afcefe513a28ab1519fb010d8371e04c81262cd9c77",
+      "duration_seconds": 56.57,
       "label_pt": "20ft — 37 m²",
       "frames": [
         {
@@ -189,7 +207,15 @@
       "poster": "assets/reference-videos/v4-37m2-004s-brown-cladding-window.jpg",
       "title": "Unidade compacta",
       "description": "Piso castanho, painéis claros e duche com revestimento de veios.",
-      "variantNote": "Identificado como 20ft / 37 m²; o nome também menciona 40ft. Variante distinta."
+      "variantNote": "Identificado como 20ft / 37 m²; o nome também menciona 40ft. Variante distinta.",
+      "source_sha256": "106762e67dbb6359804b3b23822ed23d3778824a2fc6a861810e45aa7fadb0e1",
+      "source_bytes": 6590943,
+      "source_has_audio": true,
+      "bytes": 6343621,
+      "has_audio": false,
+      "audio_removed": true
     }
-  ]
+  ],
+  "publication_revision": "R14-silent",
+  "publication_treatment": "All published videos have no audio streams. Encoded video packets and timestamps are unchanged."
 }

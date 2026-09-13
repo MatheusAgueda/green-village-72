@@ -1,3 +1,11 @@
+## R14 — every video silent, 13 September 2026
+
+User requirement: ALL videos always without audio, including downloads. All16 distributed MP4s inspected:10 already silent;6 remuxed with audio streams removed and encoded video packets, DTS/PTS, durations, extradata and video metadata unchanged. Original user attachments untouched; previous published files recoverable from R13. Public inventories now distinguish source hashes/bytes/audio from published silent hashes/bytes; download labels no longer claim byte-identical originals. Two container durations shorten only by the removed audio tail (no video frames lost).
+
+All9 main players enforce defaultMuted, muted and volume0 at initialisation, metadata, play and volumechange. Current and historical media/download URLs carry silent=r14 to avoid cached audio copies; historic players have muted attribute and physically silent files. No geometry/material/expansion changes. Run prepare:site after module edits as before.
+
+Verification:44 regression groups pass, including independent MP4 box parsing across every distributed video to reject any soun handler and validate hashes. Media proof audit/r14/silent-media.json; detailed packet evidence /private/tmp/gv72-r14-media. Browser verification passed:1440px all9 players (metadata/playback/forced-unmute recovery),2 chapter cases,navigation,16 download links and actual download;375px all9 policy resets,no overflow. Final runs had zero page/console/HTTP errors. Initial mobile socket transient did not recur. Browser summary alongside that inventory. Same owner-private Site; final publication receipt ../session_20260913_green_village_72_r14.json.
+
 ## R13 — source colours and supplied videos, 13 September 2026
 
 Fixed aligned floor-sample bands using deterministic per-board UV phase in source mode; source RGB, bytes, metre scale and grain orientation retained. Board dimensions/layout are illustrative. No exterior/interior face reassignment: folded panels expose their outer faces inside the core. R12 kinematic files unchanged. Static GLB retains regular texture repetition and now explicitly states this in UI and exported metadata.

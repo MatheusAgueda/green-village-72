@@ -75,14 +75,26 @@ check('37 wall derivatives retain native dimensions and original identities',()=
 check('R3 collapsed layers remain collapsed and optional roofs never hide structure',()=>{
  const h=makeHouse({...DEFAULT_CONFIG,view:'finishes',exploded:0,roof:true,porch:true});close(h.groups.roof.position.y,0);h.setView('finishes');close(h.groups.roof.position.y,0);h.setExploded(1);h.setExploded(0);for(const a of h.sideAssemblies)close(a.pivot.position.x,a.framePivot.position.x);h.setView('structure');assert.ok(h.groups.cover.children.some(o=>o.visible&&o.material===h.materials.steel));assert.equal(h.groups.cover.children.filter(o=>o.material===h.materials.roof&&o.visible).length,0);assert.equal(h.groups.porch.children.find(o=>o.name==='Cobertura do alpendre').visible,false);h.setView('exterior');assert.ok(h.groups.cover.children.every(o=>o.visible));h.dispose();
 });
-check('four original reference videos preserve their hashes and valid chapter bounds',()=>{
+check('four source reference videos match their published hashes and valid chapter bounds',()=>{
  const videos=JSON.parse(readFileSync('dist/assets/reference-videos/source-inventory.json','utf8')).videos;assert.equal(videos.length,4);
  for(const video of videos){assert.equal(createHash('sha256').update(readFileSync('dist/'+video.asset)).digest('hex'),video.sha256);assert.equal(video.frames.length,4);for(const frame of video.frames){assert.ok(frame.time_seconds>=0&&frame.time_seconds<video.duration_seconds);assert.equal(createHash('sha256').update(readFileSync('dist/'+frame.asset)).digest('hex'),frame.sha256);}}
 });
-check('R13 supplied videos preserve original bytes and expose individual media metadata',()=>{
+check('supplied videos expose verified published bytes and individual media metadata',()=>{
  const newer=JSON.parse(readFileSync('dist/assets/reference-videos-r13/source-inventory.json','utf8')).videos;
  assert.equal(newer.length,3);assert.equal(REFERENCE_VIDEOS.videos.length,7);assert.equal(new Set(REFERENCE_VIDEOS.videos.map(v=>v.id)).size,7);
  for(const video of newer){const entry=REFERENCE_VIDEOS.videos.find(v=>v.id===video.id);assert.deepEqual(entry,video);const bytes=readFileSync('dist/'+video.asset);assert.equal(bytes.length,video.bytes);assert.equal(createHash('sha256').update(bytes).digest('hex'),video.sha256);assert.ok(video.native_pixels.every(n=>Number.isInteger(n)&&n>0));assert.equal(typeof video.has_audio,'boolean');assert.equal(createHash('sha256').update(readFileSync('dist/'+video.poster)).digest('hex'),video.poster_sha256);assert.ok(video.frames.every(f=>f.time_seconds>=0&&f.time_seconds<video.duration_seconds));}
+});
+check('ALL distributed MP4 files contain video and zero audio tracks',()=>{
+ const inventory=JSON.parse(readFileSync('audit/r14/silent-media.json','utf8'));
+ const publicFiles=[];const walk=dir=>{for(const item of readdirSync(dir,{withFileTypes:true})){const file=path.join(dir,item.name);if(item.isDirectory())walk(file);else if(file.endsWith('.mp4'))publicFiles.push(file);}};walk('dist');
+ assert.deepEqual(publicFiles.sort(),inventory.assets.map(v=>v.path).sort());
+ for(const file of publicFiles){
+  const bytes=readFileSync(file),handlers=[];
+  const scan=(start,end)=>{let pos=start;while(pos<end){assert.ok(pos+8<=end,file);let size=bytes.readUInt32BE(pos),header=8;const type=bytes.toString('ascii',pos+4,pos+8);if(size===1){assert.ok(pos+16<=end,file);size=Number(bytes.readBigUInt64BE(pos+8));header=16;}else if(size===0)size=end-pos;assert.ok(size>=header&&pos+size<=end,file);if(['moov','trak','mdia'].includes(type))scan(pos+header,pos+size);else if(type==='hdlr'){assert.ok(size>=header+12,file);handlers.push(bytes.toString('ascii',pos+header+8,pos+header+12));}pos+=size;}};
+  scan(0,bytes.length);assert.ok(handlers.includes('vide'),file);assert.ok(!handlers.includes('soun'),file+' contains audio');
+  const record=inventory.assets.find(v=>v.path===file);assert.equal(createHash('sha256').update(bytes).digest('hex'),record.publishedSha256,file);assert.equal(record.outputAudioStreams,0,file);
+ }
+ for(const v of REFERENCE_VIDEOS.videos)assert.equal(v.has_audio,false,v.id);
 });
 check('metre UVs preserve physical scale across different mesh fragments',()=>{
  const a=physicalUV(new THREE.BoxGeometry(1,2,.1),[0,1,0]),b=physicalUV(new THREE.BoxGeometry(2,2,.1),[1.5,1,0]);const span=g=>{const u=[];for(let i=0;i<g.attributes.position.count;i++)if(g.attributes.normal.getZ(i)>.9)u.push(g.attributes.uv.getX(i));return Math.max(...u)-Math.min(...u);};close(span(a),1);close(span(b),2);a.dispose();b.dispose();

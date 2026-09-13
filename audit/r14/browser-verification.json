@@ -1,0 +1,118 @@
+{
+  "desktop": {
+    "width": 1440,
+    "players": 9,
+    "representativeChapters": 2,
+    "versionedDownloadLinks": 16,
+    "actualDownload": {
+      "url": "http://127.0.0.1:4174/assets/presentation-v5.mp4?silent=r14",
+      "suggestedFilename": "presentation-v5.mp4",
+      "failure": null
+    },
+    "overflow": false,
+    "pageErrors": [],
+    "httpErrors": []
+  },
+  "testedModuleHashes": {
+    "app.js": "e5f5ef7639749d70b2b994306277742b88e36b929f0485abe35664f0385ef6af",
+    "video-library.js": "cdaf0ac2fee75bfbf7d03976630aa5db89da3d87ec2c499ae839550445edb5da",
+    "reference-videos.js": "01ca421d256183c32f35eb8d87f1eef52332a3635b4f9696e39d9744e98677e4",
+    "technical-sheet.js": "9cc47fba32831b9c1bea0d0b3d98f253149401a0808f61f378d2b30d86e2cca3"
+  },
+  "rawEvidence": "/private/tmp/gv72-r14-browser",
+  "mobile": {
+    "width": 375,
+    "errors": [],
+    "consoleErrors": [],
+    "httpErrors": [],
+    "requestFailures": [],
+    "players": [
+      {
+        "id": "presentation-v5",
+        "muted": true,
+        "defaultMuted": true,
+        "volume": 0,
+        "error": null
+      },
+      {
+        "id": "wall-raising-film",
+        "muted": true,
+        "defaultMuted": true,
+        "volume": 0,
+        "error": null
+      },
+      {
+        "id": "source-montagem-grua-visita-real",
+        "muted": true,
+        "defaultMuted": true,
+        "volume": 0,
+        "error": null
+      },
+      {
+        "id": "source-modulo-embalado-fabrica",
+        "muted": true,
+        "defaultMuted": true,
+        "volume": 0,
+        "error": null
+      },
+      {
+        "id": "source-visita-modulo-exposicao",
+        "muted": true,
+        "defaultMuted": true,
+        "volume": 0,
+        "error": null
+      },
+      {
+        "id": "source-v1-spacious",
+        "muted": true,
+        "defaultMuted": true,
+        "volume": 0,
+        "error": null
+      },
+      {
+        "id": "source-v2-74m2",
+        "muted": true,
+        "defaultMuted": true,
+        "volume": 0,
+        "error": null
+      },
+      {
+        "id": "source-v3-comfortable",
+        "muted": true,
+        "defaultMuted": true,
+        "volume": 0,
+        "error": null
+      },
+      {
+        "id": "source-v4-37m2",
+        "muted": true,
+        "defaultMuted": true,
+        "volume": 0,
+        "error": null
+      }
+    ],
+    "links": [
+      "http://127.0.0.1:4174/assets/presentation-v5.mp4?silent=r14",
+      "http://127.0.0.1:4174/assets/expansion-r9/wall-raising.mp4?silent=r14",
+      "http://127.0.0.1:4174/assets/reference-videos-r13/gv-real-installation-tour-20260913.mp4?silent=r14",
+      "http://127.0.0.1:4174/assets/reference-videos-r13/gv-wrapped-module-factory-20260913.mp4?silent=r14",
+      "http://127.0.0.1:4174/assets/reference-videos-r13/gv-display-module-walkthrough-20260913.mp4?silent=r14",
+      "http://127.0.0.1:4174/assets/reference-videos/v1-spacious.mp4?silent=r14",
+      "http://127.0.0.1:4174/assets/reference-videos/v2-74m2.mp4?silent=r14",
+      "http://127.0.0.1:4174/assets/reference-videos/v3-comfortable.mp4?silent=r14",
+      "http://127.0.0.1:4174/assets/reference-videos/v4-37m2.mp4?silent=r14",
+      "http://127.0.0.1:4174/assets/reference-videos-r13/gv-real-installation-tour-20260913.mp4?silent=r14",
+      "http://127.0.0.1:4174/assets/reference-videos-r13/gv-wrapped-module-factory-20260913.mp4?silent=r14",
+      "http://127.0.0.1:4174/assets/reference-videos-r13/gv-display-module-walkthrough-20260913.mp4?silent=r14",
+      "http://127.0.0.1:4174/assets/reference-videos/v1-spacious.mp4?silent=r14",
+      "http://127.0.0.1:4174/assets/reference-videos/v2-74m2.mp4?silent=r14",
+      "http://127.0.0.1:4174/assets/reference-videos/v3-comfortable.mp4?silent=r14",
+      "http://127.0.0.1:4174/assets/reference-videos/v4-37m2.mp4?silent=r14"
+    ],
+    "viewport": {
+      "width": 375,
+      "scrollWidth": 375
+    },
+    "pass": true
+  }
+}

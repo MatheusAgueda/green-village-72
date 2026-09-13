@@ -1,8 +1,8 @@
 {
   "revision": "R13",
   "addedDate": "2026-09-13",
-  "method": "FFmpeg 7.1 metadata, full-file decode and visually inspected original-source JPEG contact sheets and poster candidates. No original file changes. No video transcoding.",
-  "originalsUnchanged": true,
+  "method": "Silent publication copies; video stream copied without re-encoding. Source hashes retain original provenance.",
+  "originalsUnchanged": false,
   "videos": [
     {
       "id": "montagem-grua-visita-real",
@@ -56,20 +56,24 @@
           "time_seconds": 73,
           "timecode": "01:13"
         }
-      ]
+      ],
+      "source_sha256": "84df11d69dca071d8e343c89fbf26ab5096b59fd838f7536dae6be8230dad255",
+      "source_bytes": 14088773,
+      "source_has_audio": false,
+      "audio_removed": false
     },
     {
       "id": "modulo-embalado-fabrica",
       "filename": "WhatsApp Video 2026-09-13 at 00.50.52.mp4",
       "asset": "assets/reference-videos-r13/gv-wrapped-module-factory-20260913.mp4",
-      "sha256": "bd7a997333840628a3d205f63088e1156dcad92c44c8c6831375490fe7aa0f80",
-      "bytes": 7994217,
-      "duration_seconds": 30.633333333333333,
+      "sha256": "9d3940836aa141acb5e3d3822d61d5b6565a82fbe1452240cc7bb9a003c1b78c",
+      "bytes": 7767384,
+      "duration_seconds": 30.63,
       "native_pixels": [
         528,
         944
       ],
-      "has_audio": true,
+      "has_audio": false,
       "codec": "H.264 / AVC (Baseline)",
       "addedDate": "2026-09-13",
       "title": "Módulo embalado em fábrica",
@@ -104,20 +108,24 @@
           "time_seconds": 29,
           "timecode": "00:29"
         }
-      ]
+      ],
+      "source_sha256": "bd7a997333840628a3d205f63088e1156dcad92c44c8c6831375490fe7aa0f80",
+      "source_bytes": 7994217,
+      "source_has_audio": true,
+      "audio_removed": true
     },
     {
       "id": "visita-modulo-exposicao",
       "filename": "WhatsApp Video 2026-09-13 at 00.59.07.mp4",
       "asset": "assets/reference-videos-r13/gv-display-module-walkthrough-20260913.mp4",
-      "sha256": "dc971ecb6a3dcbdf38670ed3acdc57ef9112a0e2977e82617329d1861781170e",
-      "bytes": 19443963,
-      "duration_seconds": 51.47666666666667,
+      "sha256": "610d9d294d057d86e5eead4a0fdcfa1454ef10ac826a20e5d9fb1d0aa84e42fd",
+      "bytes": 19028084,
+      "duration_seconds": 51.46,
       "native_pixels": [
         720,
         1280
       ],
-      "has_audio": true,
+      "has_audio": false,
       "codec": "H.264 / AVC (Baseline)",
       "addedDate": "2026-09-13",
       "title": "Visita a um módulo em exposição",
@@ -158,7 +166,14 @@
           "time_seconds": 37,
           "timecode": "00:37"
         }
-      ]
+      ],
+      "source_sha256": "dc971ecb6a3dcbdf38670ed3acdc57ef9112a0e2977e82617329d1861781170e",
+      "source_bytes": 19443963,
+      "source_has_audio": true,
+      "audio_removed": true
     }
-  ]
+  ],
+  "publication_revision": "R14-silent",
+  "publication_treatment": "All published videos have no audio streams. Encoded video packets and timestamps are unchanged.",
+  "originalInputAttachmentsUnchanged": true
 }
