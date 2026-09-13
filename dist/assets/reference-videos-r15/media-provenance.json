@@ -1,0 +1,249 @@
+{
+  "revision": "R15",
+  "assets": [
+    {
+      "sourceId": "mrVo6rKW270",
+      "sourceUrl": "https://www.youtube.com/watch?v=mrVo6rKW270",
+      "sourceTitle": "CASAS CONTAINER CHEGANDO EM BRASIL, PORTUGAL E ESPANHA DIRETAMENTE DA CHINA  🇨🇳X 🇵🇹",
+      "sourceChannel": "Green Village Mobile Home",
+      "sourceDurationSeconds": 1747,
+      "sourceUploadDate": "20260518",
+      "requestedStartSeconds": 945,
+      "actualStartSeconds": 945,
+      "actualStartBasis": "The requested seek is the start of the presentation timeline. First decoded master frame has PTS=0; pre-seek keyframes are hidden by the MP4 edit list. Source precision is within one frame.",
+      "sourceStartPrecisionSeconds": 0.01678838243935197,
+      "clipDurationSeconds": 802.032,
+      "videoPresentationDurationSeconds": 802.0313942751616,
+      "sourceEndSeconds": 1747.0313942751616,
+      "width": 1280,
+      "height": 720,
+      "fps": 59.565,
+      "fpsRational": "11913/200",
+      "videoTimebase": "1/11913",
+      "audioStreams": 0,
+      "hasAudio": false,
+      "codec": "H.264",
+      "pixelFormat": "yuv420p",
+      "colour": "BT.709, limited range",
+      "aspectRatio": "16:9",
+      "bytes": 75828374,
+      "sha256": "bfcd274a4aeb940010cbecf9ee7456939f52bd84672f3292e5b3b391fdf23766",
+      "fileName": "mrVo6rKW270-silent-720p.mp4",
+      "faststart": true,
+      "compression": {
+        "method": "H.264 web transcode",
+        "encoder": "libx264",
+        "preset": "fast",
+        "crf": 25,
+        "maxrateKbps": 750,
+        "bufsizeKbits": 1500,
+        "originalFpsPreserved": true,
+        "bitIdenticalToSource": false,
+        "cropped": false,
+        "resized": false,
+        "additionalTruncation": false
+      },
+      "validation": {
+        "videoFrameCount": 47773,
+        "sourceVisibleFrameCount": 47773,
+        "allVisiblePresentationTimestampsAndDurationsIdentical": true,
+        "sourceVideoTimebase": "1/11913",
+        "duplicateFrames": 0,
+        "droppedFrames": 0,
+        "fullDecodeExitCode": 0,
+        "fullDecodeErrors": "",
+        "independentMp4TrackHandlers": [
+          "vide"
+        ],
+        "hasAudio": false
+      },
+      "sourceDownload": {
+        "availability": "public",
+        "formatId": "298",
+        "videoOnly": true,
+        "usedAuthentication": false,
+        "usedCookies": false,
+        "circumventedAccessRestrictions": false,
+        "masterBytes": 343485305
+      },
+      "titlePt": "Movimentação e retirada da casa do contentor de transporte",
+      "descriptionPt": "Retirada de um módulo embalado do contentor de transporte e movimentação com grua no terreno.",
+      "observationsPt": [
+        "Filmagem real publicada no canal Green Village Mobile Home.",
+        "As imagens mostram o contentor de transporte, o módulo protegido, os camiões-grua e a movimentação no terreno.",
+        "A duração do vídeo não representa um tempo garantido de descarga ou instalação."
+      ],
+      "chapters": [
+        {
+          "timeSeconds": 0,
+          "sourceTimeSeconds": 945,
+          "labelPt": "Retirada do contentor"
+        },
+        {
+          "timeSeconds": 60,
+          "sourceTimeSeconds": 1005,
+          "labelPt": "Movimentação no terreno"
+        },
+        {
+          "timeSeconds": 420,
+          "sourceTimeSeconds": 1365,
+          "labelPt": "Módulo suspenso"
+        },
+        {
+          "timeSeconds": 720,
+          "sourceTimeSeconds": 1665,
+          "labelPt": "Posicionamento no terreno"
+        }
+      ],
+      "posters": [
+        {
+          "clipTimeSeconds": 20,
+          "sourceTimeSeconds": 965,
+          "width": 1280,
+          "height": 720,
+          "bytes": 191168,
+          "sha256": "a68bfb7e6161d0c8eef0837403326b64708231d7cebd50035a514c1c5a112759",
+          "source": "Original decoded frame from downloaded video-only source; no crop, resize or retouching.",
+          "fileName": "mrVo6rKW270-poster.jpg"
+        }
+      ],
+      "sourceUrlWithStart": "https://www.youtube.com/watch?v=mrVo6rKW270&t=945s",
+      "classification": "actual_footage",
+      "isRender": false,
+      "screenRecordingUiObserved": false,
+      "safeToIntegrate": true
+    },
+    {
+      "sourceId": "UGaynQUNfms",
+      "sourceUrl": "https://www.youtube.com/watch?v=UGaynQUNfms",
+      "sourceTitle": "Casa Container Entrega no Brasil, Portugal e Espanha Casa Móvel/Casa Modular | Green Village 🇵🇹",
+      "sourceChannel": "Green Village Mobile Home",
+      "sourceDurationSeconds": 1287,
+      "sourceUploadDate": "20260527",
+      "requestedStartSeconds": 492,
+      "actualStartSeconds": 492,
+      "actualStartBasis": "The requested seek is the start of the presentation timeline. First decoded master frame has PTS=0; pre-seek keyframes are hidden by the MP4 edit list. Source precision is within one frame.",
+      "sourceStartPrecisionSeconds": 0.03333333333333333,
+      "clipDurationSeconds": 795.034,
+      "videoPresentationDurationSeconds": 795.0333333333333,
+      "sourceEndSeconds": 1287.0333333333333,
+      "width": 1280,
+      "height": 720,
+      "fps": 30.0,
+      "fpsRational": "30",
+      "videoTimebase": "1/15360",
+      "audioStreams": 0,
+      "hasAudio": false,
+      "codec": "H.264",
+      "pixelFormat": "yuv420p",
+      "colour": "BT.709, limited range",
+      "aspectRatio": "16:9",
+      "bytes": 72287237,
+      "sha256": "02d0cdfa8a20dc9c5d62e5d97ecc1e7ad63981848fb089c7df422520b27f9f87",
+      "fileName": "UGaynQUNfms-silent-720p.mp4",
+      "faststart": true,
+      "compression": {
+        "method": "H.264 web transcode",
+        "encoder": "libx264",
+        "preset": "fast",
+        "crf": 25,
+        "maxrateKbps": 750,
+        "bufsizeKbits": 1500,
+        "originalFpsPreserved": true,
+        "bitIdenticalToSource": false,
+        "cropped": false,
+        "resized": false,
+        "additionalTruncation": false
+      },
+      "validation": {
+        "videoFrameCount": 23851,
+        "sourceVisibleFrameCount": 23851,
+        "allVisiblePresentationTimestampsAndDurationsIdentical": true,
+        "sourceVideoTimebase": "1/15360",
+        "duplicateFrames": 0,
+        "droppedFrames": 0,
+        "fullDecodeExitCode": 0,
+        "fullDecodeErrors": "",
+        "independentMp4TrackHandlers": [
+          "vide"
+        ],
+        "hasAudio": false
+      },
+      "sourceDownload": {
+        "availability": "public",
+        "formatId": "136",
+        "videoOnly": true,
+        "usedAuthentication": false,
+        "usedCookies": false,
+        "circumventedAccessRestrictions": false,
+        "masterBytes": 81438547
+      },
+      "titlePt": "Entrega e montagem do modelo de 72 m²",
+      "descriptionPt": "Descarga por grua, abertura e posicionamento de elementos do módulo, seguida de uma visita ao interior.",
+      "observationsPt": [
+        "Filmagem real publicada no canal Green Village Mobile Home.",
+        "As imagens mostram etapas de descarga e montagem, com cortes entre momentos, além de uma passagem pelo interior.",
+        "A indicação de 72 m² foi fornecida pelo utilizador; não é uma medição obtida das imagens.",
+        "A duração do vídeo não representa um tempo garantido de montagem."
+      ],
+      "chapters": [
+        {
+          "timeSeconds": 0,
+          "sourceTimeSeconds": 492,
+          "labelPt": "Descarga por grua"
+        },
+        {
+          "timeSeconds": 60,
+          "sourceTimeSeconds": 552,
+          "labelPt": "Módulo no terreno"
+        },
+        {
+          "timeSeconds": 120,
+          "sourceTimeSeconds": 612,
+          "labelPt": "Abertura da estrutura"
+        },
+        {
+          "timeSeconds": 300,
+          "sourceTimeSeconds": 792,
+          "labelPt": "Posicionamento de painéis"
+        },
+        {
+          "timeSeconds": 360,
+          "sourceTimeSeconds": 852,
+          "labelPt": "Visita ao interior"
+        },
+        {
+          "timeSeconds": 540,
+          "sourceTimeSeconds": 1032,
+          "labelPt": "Divisões e acabamentos"
+        }
+      ],
+      "posters": [
+        {
+          "clipTimeSeconds": 120,
+          "sourceTimeSeconds": 612,
+          "width": 1280,
+          "height": 720,
+          "bytes": 93710,
+          "sha256": "3b8eb98c0704076b35edb09dc15449e6fb61429a15564dc32886c51a6f3816f9",
+          "source": "Original decoded frame from downloaded video-only source; no crop, resize or retouching.",
+          "fileName": "UGaynQUNfms-poster.jpg"
+        }
+      ],
+      "sourceUrlWithStart": "https://www.youtube.com/watch?v=UGaynQUNfms&t=492s",
+      "classification": "actual_footage",
+      "isRender": false,
+      "screenRecordingUiObserved": false,
+      "safeToIntegrate": true
+    }
+  ],
+  "verificationSummary": {
+    "allSilent": true,
+    "audioTracksAcrossBoth": 0,
+    "allFullDecodeChecksPassed": true,
+    "allVisibleFrameTimestampsAndDurationsPreserved": true,
+    "allFilesBelow80MB": true,
+    "videoEncoding": "Both compressed for web; not bit-identical to source.",
+    "originalCheckoutTouched": false
+  }
+}

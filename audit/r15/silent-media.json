@@ -1,0 +1,62 @@
+{
+  "revision": "R15",
+  "assets": [
+    {
+      "path": "dist/assets/reference-videos-r15/mrVo6rKW270-silent-720p.mp4",
+      "publishedSha256": "bfcd274a4aeb940010cbecf9ee7456939f52bd84672f3292e5b3b391fdf23766",
+      "outputAudioStreams": 0,
+      "sourceId": "mrVo6rKW270",
+      "requestedStartSeconds": 945,
+      "actualStartSeconds": 945,
+      "durationSeconds": 802.032,
+      "bytes": 75828374,
+      "validation": {
+        "videoFrameCount": 47773,
+        "sourceVisibleFrameCount": 47773,
+        "allVisiblePresentationTimestampsAndDurationsIdentical": true,
+        "sourceVideoTimebase": "1/11913",
+        "duplicateFrames": 0,
+        "droppedFrames": 0,
+        "fullDecodeExitCode": 0,
+        "fullDecodeErrors": "",
+        "independentMp4TrackHandlers": [
+          "vide"
+        ],
+        "hasAudio": false
+      }
+    },
+    {
+      "path": "dist/assets/reference-videos-r15/UGaynQUNfms-silent-720p.mp4",
+      "publishedSha256": "02d0cdfa8a20dc9c5d62e5d97ecc1e7ad63981848fb089c7df422520b27f9f87",
+      "outputAudioStreams": 0,
+      "sourceId": "UGaynQUNfms",
+      "requestedStartSeconds": 492,
+      "actualStartSeconds": 492,
+      "durationSeconds": 795.034,
+      "bytes": 72287237,
+      "validation": {
+        "videoFrameCount": 23851,
+        "sourceVisibleFrameCount": 23851,
+        "allVisiblePresentationTimestampsAndDurationsIdentical": true,
+        "sourceVideoTimebase": "1/15360",
+        "duplicateFrames": 0,
+        "droppedFrames": 0,
+        "fullDecodeExitCode": 0,
+        "fullDecodeErrors": "",
+        "independentMp4TrackHandlers": [
+          "vide"
+        ],
+        "hasAudio": false
+      }
+    }
+  ],
+  "verificationSummary": {
+    "allSilent": true,
+    "audioTracksAcrossBoth": 0,
+    "allFullDecodeChecksPassed": true,
+    "allVisibleFrameTimestampsAndDurationsPreserved": true,
+    "allFilesBelow80MB": true,
+    "videoEncoding": "Both compressed for web; not bit-identical to source.",
+    "originalCheckoutTouched": false
+  }
+}

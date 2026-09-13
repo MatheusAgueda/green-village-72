@@ -1,0 +1,51 @@
+{
+  "pass": true,
+  "fixture": "Same deliberately200/no-Range, throttled3.8MB MP4 as failing progressive test; current complete-blob library.",
+  "library_sha256": "f9b7a2e7cd44a4313eb00a20a22a7ab95f1d429078425ccf5e088ac795685ceb",
+  "chapter25": {
+    "elapsed": 6187.300000000745,
+    "time": 25.000334,
+    "paused": false,
+    "ready": 4,
+    "errors": [],
+    "events": [
+      {
+        "event": "loadedmetadata",
+        "t": 0,
+        "ready": 4
+      },
+      {
+        "event": "seeking",
+        "t": 25,
+        "ready": 1
+      },
+      {
+        "event": "seeked",
+        "t": 25,
+        "ready": 4
+      },
+      {
+        "event": "playing",
+        "t": 25.000297,
+        "ready": 4
+      }
+    ],
+    "muted": true,
+    "volume": 0
+  },
+  "native_seek25": {
+    "elapsed": 8001.9000000003725,
+    "time": 30,
+    "paused": true,
+    "ready": 4,
+    "errors": [
+      "The play() request was interrupted by a call to pause(). https://goo.gl/LdLk22"
+    ],
+    "muted": true,
+    "volume": 0
+  },
+  "native_promise_note": "The one rejected initial native play() promise is expected: the established full-blob handler pauses that first request, loads the blob, and then resumes playback. No library error notification. Native seek25 then reaches the30-second end.",
+  "server": "Fixture listener closed; no site preview or checkout changes.",
+  "raw": "probe.json",
+  "before": "progressive-failure.json"
+}

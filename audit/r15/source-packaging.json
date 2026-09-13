@@ -1,0 +1,23 @@
+{
+  "reason": "Source repository rejected the initial oversized MP4 Git objects; final media bytes and browser-tested source unchanged.",
+  "generatedOutputsIgnoredByGit": true,
+  "sourceManifest": "media-sources/r15/manifest.json",
+  "maxChunkBytes": 8388608,
+  "files": [
+    {
+      "output": "dist/assets/reference-videos-r15/mrVo6rKW270-silent-720p.mp4",
+      "bytes": 75828374,
+      "sha256": "bfcd274a4aeb940010cbecf9ee7456939f52bd84672f3292e5b3b391fdf23766",
+      "chunks": 10,
+      "isolatedReassemblyIdentical": true
+    },
+    {
+      "output": "dist/assets/reference-videos-r15/UGaynQUNfms-silent-720p.mp4",
+      "bytes": 72287237,
+      "sha256": "02d0cdfa8a20dc9c5d62e5d97ecc1e7ad63981848fb089c7df422520b27f9f87",
+      "chunks": 9,
+      "isolatedReassemblyIdentical": true
+    }
+  ],
+  "prepareCommand": "npm run prepare:site"
+}

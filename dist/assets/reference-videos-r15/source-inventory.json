@@ -1,0 +1,170 @@
+{
+  "revision": "R15",
+  "videos": [
+    {
+      "id": "retirada-contentor-transporte",
+      "filename": "mrVo6rKW270-silent-720p.mp4",
+      "asset": "assets/reference-videos-r15/mrVo6rKW270-silent-720p.mp4",
+      "sha256": "bfcd274a4aeb940010cbecf9ee7456939f52bd84672f3292e5b3b391fdf23766",
+      "bytes": 75828374,
+      "duration_seconds": 802.032,
+      "native_pixels": [
+        1280,
+        720
+      ],
+      "has_audio": false,
+      "codec": "H.264",
+      "fps": 59.565,
+      "addedDate": "2026-09-13",
+      "title": "Movimentação e retirada da casa do contentor de transporte",
+      "label_pt": "Movimentação e retirada da casa do contentor de transporte",
+      "description": "Retirada de um módulo embalado do contentor de transporte e movimentação com grua no terreno.",
+      "poster": "assets/reference-videos-r15/mrVo6rKW270-poster.jpg",
+      "poster_sha256": "a68bfb7e6161d0c8eef0837403326b64708231d7cebd50035a514c1c5a112759",
+      "poster_time_seconds": 20,
+      "variantNote": "Excerto desde 15:45 até ao final do vídeo de origem. Cópia de visualização comprimida em 720p e sem áudio.",
+      "collection": "delivery",
+      "sourceUrl": "https://www.youtube.com/watch?v=mrVo6rKW270&t=945s",
+      "sourceStartLabel": "15:45",
+      "sourceStartSeconds": 945,
+      "sourceTitle": "CASAS CONTAINER CHEGANDO EM BRASIL, PORTUGAL E ESPANHA DIRETAMENTE DA CHINA  🇨🇳X 🇵🇹",
+      "sourceChannel": "Green Village Mobile Home",
+      "sourceDurationSeconds": 1747,
+      "sourceStartPrecisionSeconds": 0.01678838243935197,
+      "compression": {
+        "method": "H.264 web transcode",
+        "encoder": "libx264",
+        "preset": "fast",
+        "crf": 25,
+        "maxrateKbps": 750,
+        "bufsizeKbits": 1500,
+        "originalFpsPreserved": true,
+        "bitIdenticalToSource": false,
+        "cropped": false,
+        "resized": false,
+        "additionalTruncation": false
+      },
+      "provenanceAsset": "assets/reference-videos-r15/media-provenance.json",
+      "frames": [
+        {
+          "category": "Retirada do contentor",
+          "label_pt": "Retirada do contentor",
+          "time_seconds": 0,
+          "timecode": "00:00",
+          "source_time_seconds": 945
+        },
+        {
+          "category": "Movimentação no terreno",
+          "label_pt": "Movimentação no terreno",
+          "time_seconds": 60,
+          "timecode": "01:00",
+          "source_time_seconds": 1005
+        },
+        {
+          "category": "Módulo suspenso",
+          "label_pt": "Módulo suspenso",
+          "time_seconds": 420,
+          "timecode": "07:00",
+          "source_time_seconds": 1365
+        },
+        {
+          "category": "Posicionamento no terreno",
+          "label_pt": "Posicionamento no terreno",
+          "time_seconds": 720,
+          "timecode": "12:00",
+          "source_time_seconds": 1665
+        }
+      ]
+    },
+    {
+      "id": "entrega-montagem-72m2",
+      "filename": "UGaynQUNfms-silent-720p.mp4",
+      "asset": "assets/reference-videos-r15/UGaynQUNfms-silent-720p.mp4",
+      "sha256": "02d0cdfa8a20dc9c5d62e5d97ecc1e7ad63981848fb089c7df422520b27f9f87",
+      "bytes": 72287237,
+      "duration_seconds": 795.034,
+      "native_pixels": [
+        1280,
+        720
+      ],
+      "has_audio": false,
+      "codec": "H.264",
+      "fps": 30.0,
+      "addedDate": "2026-09-13",
+      "title": "Entrega e montagem do modelo de 72 m²",
+      "label_pt": "Entrega e montagem do modelo de 72 m²",
+      "description": "Descarga por grua, abertura e posicionamento de elementos do módulo, seguida de uma visita ao interior.",
+      "poster": "assets/reference-videos-r15/UGaynQUNfms-poster.jpg",
+      "poster_sha256": "3b8eb98c0704076b35edb09dc15449e6fb61429a15564dc32886c51a6f3816f9",
+      "poster_time_seconds": 120,
+      "variantNote": "Excerto desde 08:12 até ao final do vídeo de origem. Cópia de visualização comprimida em 720p e sem áudio.",
+      "collection": "delivery",
+      "sourceUrl": "https://www.youtube.com/watch?v=UGaynQUNfms&t=492s",
+      "sourceStartLabel": "08:12",
+      "sourceStartSeconds": 492,
+      "sourceTitle": "Casa Container Entrega no Brasil, Portugal e Espanha Casa Móvel/Casa Modular | Green Village 🇵🇹",
+      "sourceChannel": "Green Village Mobile Home",
+      "sourceDurationSeconds": 1287,
+      "sourceStartPrecisionSeconds": 0.03333333333333333,
+      "compression": {
+        "method": "H.264 web transcode",
+        "encoder": "libx264",
+        "preset": "fast",
+        "crf": 25,
+        "maxrateKbps": 750,
+        "bufsizeKbits": 1500,
+        "originalFpsPreserved": true,
+        "bitIdenticalToSource": false,
+        "cropped": false,
+        "resized": false,
+        "additionalTruncation": false
+      },
+      "provenanceAsset": "assets/reference-videos-r15/media-provenance.json",
+      "frames": [
+        {
+          "category": "Descarga por grua",
+          "label_pt": "Descarga por grua",
+          "time_seconds": 0,
+          "timecode": "00:00",
+          "source_time_seconds": 492
+        },
+        {
+          "category": "Módulo no terreno",
+          "label_pt": "Módulo no terreno",
+          "time_seconds": 60,
+          "timecode": "01:00",
+          "source_time_seconds": 552
+        },
+        {
+          "category": "Abertura da estrutura",
+          "label_pt": "Abertura da estrutura",
+          "time_seconds": 120,
+          "timecode": "02:00",
+          "source_time_seconds": 612
+        },
+        {
+          "category": "Posicionamento de painéis",
+          "label_pt": "Posicionamento de painéis",
+          "time_seconds": 300,
+          "timecode": "05:00",
+          "source_time_seconds": 792
+        },
+        {
+          "category": "Visita ao interior",
+          "label_pt": "Visita ao interior",
+          "time_seconds": 360,
+          "timecode": "06:00",
+          "source_time_seconds": 852
+        },
+        {
+          "category": "Divisões e acabamentos",
+          "label_pt": "Divisões e acabamentos",
+          "time_seconds": 540,
+          "timecode": "09:00",
+          "source_time_seconds": 1032
+        }
+      ],
+      "modelLabelBasis": "72 m²: identificação fornecida pela Green Village."
+    }
+  ]
+}

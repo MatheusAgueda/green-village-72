@@ -1,3 +1,6 @@
+## R15 — user-supplied transport and installation references
+Add the two supplied YouTube references with the user's labels. Preserve supplied start points (945s and492s), reference provenance and the always-silent portfolio policy. Do not infer factory hinge geometry or alter the3D from these links. Retain previous media and exact current materials/kinematics.
+
 ## R14 — all videos always silent
 User explicitly requires ALL videos without sound. Remove audio streams from every public MP4 with audio, preserve video bitstreams and original input attachments, apply silent playback to all players and downloads, identify copies accurately, bypass older cached media and verify all delivered MP4s have zero audio tracks.
 

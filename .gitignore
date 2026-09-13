@@ -2,3 +2,6 @@
 .env.*
 node_modules/
 .DS_Store
+# Generated from the hash-verified source chunks by prepare:site.
+/dist/assets/reference-videos-r15/mrVo6rKW270-silent-720p.mp4
+/dist/assets/reference-videos-r15/UGaynQUNfms-silent-720p.mp4

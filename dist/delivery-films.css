@@ -1,0 +1,2 @@
+/* Landscape delivery references. */
+#delivery-video-grid .source-video-card{display:block}#delivery-video-grid video{width:100%;height:auto;min-height:0;max-height:none;aspect-ratio:16/9}#delivery-video-grid h3{font-size:clamp(1.125rem,2vw,1.5rem)}#delivery-video-grid p,#delivery-video-grid a{font-size:.875rem}#delivery-video-grid .video-chapters button{font-size:.875rem;min-height:44px}

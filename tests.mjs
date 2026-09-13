@@ -81,11 +81,22 @@ check('four source reference videos match their published hashes and valid chapt
 });
 check('supplied videos expose verified published bytes and individual media metadata',()=>{
  const newer=JSON.parse(readFileSync('dist/assets/reference-videos-r13/source-inventory.json','utf8')).videos;
- assert.equal(newer.length,3);assert.equal(REFERENCE_VIDEOS.videos.length,7);assert.equal(new Set(REFERENCE_VIDEOS.videos.map(v=>v.id)).size,7);
+ assert.equal(newer.length,3);assert.equal(REFERENCE_VIDEOS.videos.length,9);assert.equal(new Set(REFERENCE_VIDEOS.videos.map(v=>v.id)).size,9);
  for(const video of newer){const entry=REFERENCE_VIDEOS.videos.find(v=>v.id===video.id);assert.deepEqual(entry,video);const bytes=readFileSync('dist/'+video.asset);assert.equal(bytes.length,video.bytes);assert.equal(createHash('sha256').update(bytes).digest('hex'),video.sha256);assert.ok(video.native_pixels.every(n=>Number.isInteger(n)&&n>0));assert.equal(typeof video.has_audio,'boolean');assert.equal(createHash('sha256').update(readFileSync('dist/'+video.poster)).digest('hex'),video.poster_sha256);assert.ok(video.frames.every(f=>f.time_seconds>=0&&f.time_seconds<video.duration_seconds));}
 });
+check('delivery references preserve the two supplied YouTube moments and silent published media',()=>{
+ const expected=[['mrVo6rKW270',945,'15:45'],['UGaynQUNfms',492,'08:12']];
+ const videos=REFERENCE_VIDEOS.videos.filter(v=>v.collection==='delivery');assert.equal(videos.length,2);
+ for(const [id,start,label] of expected){
+  const v=videos.find(v=>new URL(v.sourceUrl).searchParams.get('v')===id);assert.ok(v,id);
+  assert.equal(new URL(v.sourceUrl).searchParams.get('t'),start+'s');assert.equal(v.sourceStartSeconds,start);assert.equal(v.sourceStartLabel,label);
+  const bytes=readFileSync('dist/'+v.asset);assert.equal(bytes.length,v.bytes);assert.equal(createHash('sha256').update(bytes).digest('hex'),v.sha256);assert.equal(v.has_audio,false);
+  assert.equal(createHash('sha256').update(readFileSync('dist/'+v.poster)).digest('hex'),v.poster_sha256);
+  assert.deepEqual(v.native_pixels,[1280,720]);assert.ok(v.duration_seconds>0);assert.ok(v.frames.length>0);assert.ok(v.frames.every(f=>f.time_seconds>=0&&f.time_seconds<v.duration_seconds));
+ }
+});
 check('ALL distributed MP4 files contain video and zero audio tracks',()=>{
- const inventory=JSON.parse(readFileSync('audit/r14/silent-media.json','utf8'));
+ const inventory={assets:['r14','r15'].flatMap(revision=>JSON.parse(readFileSync('audit/'+revision+'/silent-media.json','utf8')).assets)};
  const publicFiles=[];const walk=dir=>{for(const item of readdirSync(dir,{withFileTypes:true})){const file=path.join(dir,item.name);if(item.isDirectory())walk(file);else if(file.endsWith('.mp4'))publicFiles.push(file);}};walk('dist');
  assert.deepEqual(publicFiles.sort(),inventory.assets.map(v=>v.path).sort());
  for(const file of publicFiles){
@@ -248,8 +259,8 @@ check('R9 technical sheet preserves catalogue units, option prices and source sc
  const bathroom=CATALOGUE_OPTIONS.find(o=>o.id==='bathroom-dry-wet');assert.equal(bathroom.specifications[0].unit,'m');assert.equal(bathroom.cataloguePrice.value,null);
  const system=CATALOGUE_OPTIONS.find(o=>o.id==='front-glass-premium').specifications.find(s=>s.label==='Designação do sistema');assert.equal(system.value,'broken bridge 55');assert.equal(system.unit,null);
  for(const option of CATALOGUE_OPTIONS){assert.equal(option.applicability.gv72Compatibility,'not-confirmed');assert.ok(option.source.page>=3&&option.source.page<=17);}
- for(const layout of Object.keys(source)){const config={...DEFAULT_CONFIG,layout},html=technicalSheetMarkup(config);assert.ok(html.includes(getPlan(config).label));assert.ok(!/undefined|NaN/.test(html));assert.equal((html.match(/data-option=/g)||[]).length,22);assert.equal((html.match(/data-measure=/g)||[]).length,25);assert.equal((html.match(/data-open-reference-video=/g)||[]).length,7);assert.ok(!html.includes('Fonte / m'));}
- const current=sourceLedger(DEFAULT_CONFIG);assert.equal(current.units.areas,'m²');assert.equal(current.catalogueOptions.length,22);assert.equal(current.sourceLayout.id,DEFAULT_CONFIG.layout);assert.equal(current.videos.videos.length,7);assert.equal(TECHNICAL_FACTS.length,45);
+ for(const layout of Object.keys(source)){const config={...DEFAULT_CONFIG,layout},html=technicalSheetMarkup(config);assert.ok(html.includes(getPlan(config).label));assert.ok(!/undefined|NaN/.test(html));assert.equal((html.match(/data-option=/g)||[]).length,22);assert.equal((html.match(/data-measure=/g)||[]).length,25);assert.equal((html.match(/data-open-reference-video=/g)||[]).length,9);assert.ok(!html.includes('Fonte / m'));}
+ const current=sourceLedger(DEFAULT_CONFIG);assert.equal(current.units.areas,'m²');assert.equal(current.catalogueOptions.length,22);assert.equal(current.sourceLayout.id,DEFAULT_CONFIG.layout);assert.equal(current.videos.videos.length,9);assert.equal(TECHNICAL_FACTS.length,45);
 });
 check('R9 expansion film is native Full HD, source-bound and declares its limited animation scope',()=>{
  const film=JSON.parse(readFileSync('dist/assets/expansion-r9/manifest.json','utf8'));assert.equal(film.status,'PASS');assert.deepEqual(film.dimensions,[1920,1080]);assert.equal(film.frameCount,350);assert.equal(film.durationSeconds,14);assert.equal(film.fps,25);assert.equal(film.displayOverrides.roofOpacity,.09);

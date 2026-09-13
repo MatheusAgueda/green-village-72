@@ -53,7 +53,7 @@ export function createVideoLibrary(videos,{isActive,onError}) {
     const current=()=>request===serial&&isActive()&&!abort.signal.aborted;
     for(const other of videos)other.pause();
     let timedOut=false;
-    const timer=setTimeout(()=>{timedOut=true;abort.abort();if(request===serial)video.pause();},45000);
+    const timer=setTimeout(()=>{timedOut=true;abort.abort();if(request===serial)video.pause();},video.dataset.loadTimeoutMs==='120000'?120000:45000);
     try {
       if(!entry.url){
         status(video,'A preparar o vídeo para navegar entre detalhes…');

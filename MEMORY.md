@@ -1,3 +1,15 @@
+## R15 — transport and delivery films, 13 September 2026
+
+Source packaging: the first publication push was rejected for oversized Git objects. Final sources use19 hash-verified chunks of at most8MiB outside dist; prepare:site reconstructs the two ignored MP4 outputs before versioning modules. Isolated reconstruction exactly matches the browser-tested files; no recompression or runtime changes. Proof audit/r15/source-packaging.json. Run npm run prepare:site in a fresh checkout before tests/publication.
+
+Added the two public YouTube references supplied by the user: mrVo6rKW270 from 945s (15:45) and UGaynQUNfms from 492s (08:12), each through the end of its source. Both are from Green Village Mobile Home. Two native silent720p H.264 copies (75.83MB/72.29MB;802.032s/795.034s), selected source posters, ten inspected chapters, source links with original start points, and download links appear prominently in Films. Technical sheet and configuration source ledger now contain nine source videos; main Films has eleven players. All18 distributed MP4s are physically silent. Prior sources/assets and all3D/material/kinematic modules unchanged.
+
+Web copies are lossy-compressed, not bit-identical to YouTube. Visible frame counts, presentation timestamps and durations were independently compared to the downloaded video-only masters and preserved; both full decodes passed. Detailed source provenance is assets/reference-videos-r15/media-provenance.json. Original master files stay in /private/tmp/gv72-r15-media and are not public assets.
+
+Use complete blobs for reliable seeking on hosts without HTTP Range. A prospective progressive path failed a deliberately200/no-Range fixture and was discarded; final shared player retains the established2-entry LRU and silent policy. New long clips allow120s bounded load; other clips remain45s. Regression proof: audit/r15/player-regression.json. Native players show preparation status while loading.
+
+Verification:45 regression groups pass, including all18MP4s parsed for absence of soun handlers, hashes and two supplied source start points. Actual new-video browser verification is recorded in audit/r15/browser-verification.json. Same owner-private Site, root-only source/publication. Final publication receipt outside checkout: ../session_20260913_green_village_72_r15.json. Run prepare:site after future root module edits.
+
 ## R14 — every video silent, 13 September 2026
 
 User requirement: ALL videos always without audio, including downloads. All16 distributed MP4s inspected:10 already silent;6 remuxed with audio streams removed and encoded video packets, DTS/PTS, durations, extradata and video metadata unchanged. Original user attachments untouched; previous published files recoverable from R13. Public inventories now distinguish source hashes/bytes/audio from published silent hashes/bytes; download labels no longer claim byte-identical originals. Two container durations shorten only by the removed audio tail (no video frames lost).

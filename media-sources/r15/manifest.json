@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "files": [
+    {
+      "output": "dist/assets/reference-videos-r15/mrVo6rKW270-silent-720p.mp4",
+      "bytes": 75828374,
+      "sha256": "bfcd274a4aeb940010cbecf9ee7456939f52bd84672f3292e5b3b391fdf23766",
+      "chunks": [
+        {
+          "path": "mrVo6rKW270/part-001.bin",
+          "bytes": 8388608,
+          "sha256": "755b386a480d374b689f1ecac2681b8955f5f79567d75b0bce46a59a8e1f39b9"
+        },
+        {
+          "path": "mrVo6rKW270/part-002.bin",
+          "bytes": 8388608,
+          "sha256": "9207f30c7b6d1dba511e14a1eb8ebde4bf21af290d1a642c504070c1354ed717"
+        },
+        {
+          "path": "mrVo6rKW270/part-003.bin",
+          "bytes": 8388608,
+          "sha256": "5306088788cd8ec77c61a4e7f0f1a1b8bd1b216a2e3fadc991f47111403b5210"
+        },
+        {
+          "path": "mrVo6rKW270/part-004.bin",
+          "bytes": 8388608,
+          "sha256": "4612add2d1191a62b33b137d98d468de01ab3941a0e3b6e06661f7e13127abaf"
+        },
+        {
+          "path": "mrVo6rKW270/part-005.bin",
+          "bytes": 8388608,
+          "sha256": "f08128621485aa6a2b612e906a1a67900fb844811deefd8c97c4a448a35d3e23"
+        },
+        {
+          "path": "mrVo6rKW270/part-006.bin",
+          "bytes": 8388608,
+          "sha256": "004b3c4183e17bd0f97d0290b23c8d4035cdd001e22f870910de3f025c4ad42c"
+        },
+        {
+          "path": "mrVo6rKW270/part-007.bin",
+          "bytes": 8388608,
+          "sha256": "123c7e48be5270583399b06ede399d3f8c34c4e513c9180a0afa2dd6e1916e2d"
+        },
+        {
+          "path": "mrVo6rKW270/part-008.bin",
+          "bytes": 8388608,
+          "sha256": "8af6811a16bab6eb40b09add9040f751f7c8f839946e0437250a9c5734423cef"
+        },
+        {
+          "path": "mrVo6rKW270/part-009.bin",
+          "bytes": 8388608,
+          "sha256": "4ce23548fc1dcd397bb26088ac81e332f0779c6bc5c98fb6edf95ed55c797553"
+        },
+        {
+          "path": "mrVo6rKW270/part-010.bin",
+          "bytes": 330902,
+          "sha256": "cc72a28854985ff518864cf9489c2a3d3efc22ecd1dee6f261ffc0283ba5352c"
+        }
+      ]
+    },
+    {
+      "output": "dist/assets/reference-videos-r15/UGaynQUNfms-silent-720p.mp4",
+      "bytes": 72287237,
+      "sha256": "02d0cdfa8a20dc9c5d62e5d97ecc1e7ad63981848fb089c7df422520b27f9f87",
+      "chunks": [
+        {
+          "path": "UGaynQUNfms/part-001.bin",
+          "bytes": 8388608,
+          "sha256": "19f03a48a73fdf9c3ddcf0ae47d53cc7468ce111d64f8c8a3e5a856b32ce7a4e"
+        },
+        {
+          "path": "UGaynQUNfms/part-002.bin",
+          "bytes": 8388608,
+          "sha256": "7078ff8e867bb60f89ec1712a214df3c29fe9943b9d8b6b825c931fa19e0549b"
+        },
+        {
+          "path": "UGaynQUNfms/part-003.bin",
+          "bytes": 8388608,
+          "sha256": "09c0fa84f7596ba7840a5a34e346f892ec2d497d92efba5eca2f9c1932323168"
+        },
+        {
+          "path": "UGaynQUNfms/part-004.bin",
+          "bytes": 8388608,
+          "sha256": "5c380f6108d2d4312e273748031e8d2d125247d122d93845552363619fac3786"
+        },
+        {
+          "path": "UGaynQUNfms/part-005.bin",
+          "bytes": 8388608,
+          "sha256": "148c166670fe68b5791a3ed63cbe254472f76c4ad758f688bfacccfb01b7af49"
+        },
+        {
+          "path": "UGaynQUNfms/part-006.bin",
+          "bytes": 8388608,
+          "sha256": "fca5d25abfaf3aaa708af5b87ae1323d7bdf03aaa0324a5a8449074f420764fa"
+        },
+        {
+          "path": "UGaynQUNfms/part-007.bin",
+          "bytes": 8388608,
+          "sha256": "1ad682ce3ec9e7e13b4c934c9d22ee2f7a795d85b873a2d3faecbe0fed9bf5eb"
+        },
+        {
+          "path": "UGaynQUNfms/part-008.bin",
+          "bytes": 8388608,
+          "sha256": "9d84f424a2fae0a842c6742ee16c911af41bf9aa8877282aaf8f250d149f8a3e"
+        },
+        {
+          "path": "UGaynQUNfms/part-009.bin",
+          "bytes": 5178373,
+          "sha256": "a4fd72aa1e87e06d0ddeae11ff94a63c3fce50f672e9d046a3aa54517dd28c31"
+        }
+      ]
+    }
+  ]
+}
