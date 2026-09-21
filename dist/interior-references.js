@@ -698,7 +698,7 @@ export const INTERIOR_REFERENCES = {
   },
   "kitchen-12": {
     "id": "kitchen-12",
-    "name": "Madeira de veio vertical",
+    "name": "Efeito madeira de veio vertical",
     "layout": "l",
     "frontHex": "#664f2d",
     "counterHex": "#ccc4ad",
@@ -831,7 +831,7 @@ export const INTERIOR_REFERENCES = {
   },
   "kitchen-14": {
     "id": "kitchen-14",
-    "name": "Modelo embalado",
+    "name": "Cozinha standard em L",
     "layout": "l",
     "frontHex": "#c6c7c2",
     "counterHex": "#e0e1da",
@@ -976,7 +976,7 @@ export const INTERIOR_REFERENCES = {
   },
   "bathroom-02": {
     "id": "bathroom-02",
-    "name": "Cabine curva · mármore",
+    "name": "Cabine curva · padrão mármore",
     "frontHex": "#393a34",
     "wallHex": "#b5b5b5",
     "frameHex": "#e2e5df",
@@ -1076,7 +1076,7 @@ export const INTERIOR_REFERENCES = {
   },
   "bathroom-04": {
     "id": "bathroom-04",
-    "name": "Pedra e divisória branca",
+    "name": "Padrão pedra e divisória branca",
     "frontHex": "#656563",
     "wallHex": "#aca089",
     "frameHex": "#e2e5df",
@@ -1150,7 +1150,7 @@ export const INTERIOR_REFERENCES = {
   },
   "bathroom-06": {
     "id": "bathroom-06",
-    "name": "Pedra ondulada e taupe",
+    "name": "Padrão pedra ondulada e taupe",
     "frontHex": "#4e4335",
     "wallHex": "#b5b2a6",
     "frameHex": "#232a28",
@@ -1212,7 +1212,7 @@ export const INTERIOR_REFERENCES = {
   },
   "bathroom-07": {
     "id": "bathroom-07",
-    "name": "Mármore e vidro fosco",
+    "name": "Padrão mármore e vidro fosco",
     "frontHex": "#424033",
     "wallHex": "#d1d1c7",
     "frameHex": "#232a28",
@@ -1262,7 +1262,7 @@ export const INTERIOR_REFERENCES = {
   },
   "bathroom-08": {
     "id": "bathroom-08",
-    "name": "Mármore e vidro transparente",
+    "name": "Padrão mármore e vidro transparente",
     "frontHex": "#45403d",
     "wallHex": "#9f9fa1",
     "frameHex": "#b1bcba",
@@ -1362,7 +1362,7 @@ export const INTERIOR_REFERENCES = {
   },
   "bathroom-10": {
     "id": "bathroom-10",
-    "name": "Mármore contrastado",
+    "name": "Padrão mármore contrastado",
     "frontHex": "#74736d",
     "wallHex": "#aaa6a1",
     "frameHex": "#232a28",
@@ -1412,7 +1412,7 @@ export const INTERIOR_REFERENCES = {
   },
   "bathroom-11": {
     "id": "bathroom-11",
-    "name": "Madeira e mármore",
+    "name": "Efeito madeira e padrão mármore",
     "frontHex": "#403023",
     "wallHex": "#bdc5ce",
     "frameHex": "#232a28",
@@ -1462,7 +1462,7 @@ export const INTERIOR_REFERENCES = {
   },
   "bathroom-12": {
     "id": "bathroom-12",
-    "name": "Mármore cinza escuro",
+    "name": "Padrão mármore cinza escuro",
     "frontHex": "#403c39",
     "wallHex": "#6b6864",
     "frameHex": "#232a28",
@@ -1562,7 +1562,7 @@ export const INTERIOR_REFERENCES = {
   },
   "bathroom-14": {
     "id": "bathroom-14",
-    "name": "Mármore e quadrícula",
+    "name": "Padrão mármore e quadrícula",
     "frontHex": "#c6c7c2",
     "wallHex": "#c7c8c5",
     "frameHex": "#e2e5df",
@@ -1674,7 +1674,7 @@ export const INTERIOR_REFERENCES = {
   },
   "bathroom-16": {
     "id": "bathroom-16",
-    "name": "Mármore carvão",
+    "name": "Padrão mármore carvão",
     "frontHex": "#736f6a",
     "wallHex": "#727272",
     "frameHex": "#232a28",
@@ -1724,7 +1724,7 @@ export const INTERIOR_REFERENCES = {
   },
   "bathroom-17": {
     "id": "bathroom-17",
-    "name": "Mármore e perfis claros",
+    "name": "Casa de banho standard",
     "frontHex": "#2a2723",
     "wallHex": "#757575",
     "frameHex": "#e2e5df",

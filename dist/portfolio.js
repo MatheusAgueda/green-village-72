@@ -1,3 +1,6 @@
+import {embedPortfolioFonts} from './pdf-fonts.js';
+import {appendClientDossier} from './project-pdf.js';
+import {validateClientProject} from './project-options.js';
 import {DATA} from './data.js';
 import {SWATCHES,summaryRows,validateConfiguration,kitchenFitNote} from './configuration.js';
 import {INTERIOR_REFERENCES} from './interior-references.js';
@@ -32,9 +35,10 @@ export function summaryMarkup(s,{image,plan,warning}={}){
 }
 
 // Four fixed-purpose spreads with measured wrapping and explicit page boundaries.
-export async function createPortfolioPDF(s,{image,planImage}={}){
+export async function createPortfolioPDF(s,{image,planImage,project}={}){
  const {PDFDocument,StandardFonts,rgb}=window.PDFLib,doc=await PDFDocument.create();
- const regular=await doc.embedFont(StandardFonts.Helvetica),bold=await doc.embedFont(StandardFonts.HelveticaBold);
+ const client=project?validateClientProject(project):null;
+ const {regular,bold}=await embedPortfolioFonts(doc,{unicode:Boolean(client)});
  const W=595.28,H=841.89,M=36,green=rgb(.086,.247,.18),ink=rgb(.12,.23,.16),muted=rgb(.31,.41,.33),pale=rgb(.94,.96,.92),white=rgb(1,1,1);
  const ref=configurationReference(s),date=new Intl.DateTimeFormat('pt-PT').format(new Date());
  const supportedCharacters=new Set(regular.getCharacterSet());
@@ -47,7 +51,7 @@ export async function createPortfolioPDF(s,{image,planImage}={}){
  async function photo(page,src,x,y,w,h,{background=pale}={}){page.drawRectangle({x,y,width:w,height:h,color:background});const im=await embed(src);if(!im)return;const scale=Math.min(w/im.width,h/im.height);page.drawImage(im,{x:x+(w-im.width*scale)/2,y:y+(h-im.height*scale)/2,width:im.width*scale,height:im.height*scale});}
  function base(title,number){const page=doc.addPage([W,H]);page.drawRectangle({x:0,y:H-94,width:W,height:94,color:green});page.drawImage(logo,{x:M,y:H-64,width:205,height:205*logo.height/logo.width});text(page,'EXPANDÍVEL 72',W-M-124,H-41,{size:12,font:bold,color:white});text(page,'PORTFÓLIO / 2026',W-M-124,H-62,{size:9,color:rgb(.77,.86,.75)});text(page,title,M,H-134,{size:26,font:bold});page.drawLine({start:{x:M,y:37},end:{x:W-M,y:37},thickness:.6,color:rgb(.77,.82,.76)});page.drawText(`${ref}  ·  ${date}`,{x:M,y:22,size:8,font:regular,color:muted});page.drawText(`${number} / 4`,{x:W-M-22,y:22,size:8,font:regular,color:muted});return page;}
  const cover=base('A sua configuração.',1),layout=DATA.layouts.find(p=>p.id===s.layout);
- text(cover,'O espaço, os materiais e os detalhes que escolheu.',M,673,{size:12,color:muted});
+ text(cover,client?((client.clientName||'Cliente por identificar').length>58?(client.clientName||'').slice(0,55)+'…':(client.clientName||'Cliente por identificar'))+' · '+client.projectDate.split('-').reverse().join('/'):'O espaço, os materiais e os detalhes que escolheu.',M,673,{size:12,color:muted,width:W-2*M});
  if(image){await photo(cover,image,M,330,W-2*M,315);text(cover,'Vista guardada no estúdio · modelo 3D de apresentação',M,314,{size:9,color:muted});}
  else {cover.drawRectangle({x:M,y:440,width:W-2*M,height:180,color:pale});text(cover,'Configuração sem imagem 3D',M+24,535,{size:20,font:bold});text(cover,'As escolhas, as referências e a planta seguem nas próximas páginas.',M+24,503,{size:11,width:450,color:muted});}
  const facts=[['MODELO','72 m² comerciais'],['PLANTA',layout.label],['DIMENSÕES','11,80 × 6,22 m']];facts.forEach(([k,v],i)=>{const x=M+i*178;text(cover,k,x,274,{size:9,color:muted});text(cover,v,x,251,{size:17,font:bold});});
@@ -76,5 +80,7 @@ export async function createPortfolioPDF(s,{image,planImage}={}){
  y-=4;text(detail,'Condições a confirmar com a Green Village',M,y,{size:11,font:bold});
  text(detail,'Valores sob consulta. Este resumo não substitui a proposta comercial nem um projecto de execução. Medidas não cotadas são estimadas. Instalações e mecanismo exacto de expansão aguardam documentação.',M,y-20,{size:9,width:W-2*M,color:muted});
  doc.setTitle('Green Village · Expandível 72 · '+layout.label+' · '+ref);doc.setAuthor('Green Village Mobile Homes');doc.setSubject('Apresentação '+PRESENTATION_REVISION+' · geometria '+REVISION);doc.setKeywords(['Green Village','Expandível 72',layout.label,ref]);
+ if(client)await appendClientDossier(doc,{state:s,project:client,font:regular,bold});
+ for(const [index,page]of doc.getPages().entries()){page.drawRectangle({x:M-2,y:10,width:W-2*M+4,height:24,color:white});page.drawText(ref+' · '+(client?client.projectDate.split('-').reverse().join('/'):date),{x:M,y:22,size:8,font:regular,color:muted});page.drawText((index+1)+' / '+doc.getPageCount(),{x:W-M-38,y:22,size:8,font:regular,color:muted});}
  return doc.save();
 }

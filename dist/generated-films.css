@@ -1,0 +1,105 @@
+/* Generated scenes stay separate from the supplied reference footage. */
+.generated-film-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.generated-film-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: var(--white);
+}
+
+.generated-film-card video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  background: #172820;
+}
+
+.generated-film-copy {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 22px;
+}
+
+.generated-film-copy .eyebrow {
+  color: var(--sub);
+  font-size: 11px;
+  letter-spacing: 1.2px;
+}
+
+.generated-film-copy h4 {
+  margin: 8px 0 12px;
+  color: var(--ink);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.generated-film-copy p {
+  margin: 0 0 16px;
+  color: var(--sub);
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.generated-film-copy .generated-film-source {
+  margin-top: auto;
+  font-size: 12px;
+}
+
+.generated-film-copy a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 44px;
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
+  color: var(--ink);
+  font-size: 13px;
+  line-height: 1.4;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.generated-film-copy a span:last-child {
+  flex-shrink: 0;
+  font-size: 12px;
+}
+
+.generated-film-copy a:focus-visible,
+.generated-film-card video:focus-visible {
+  outline: 3px solid var(--green);
+  outline-offset: 3px;
+}
+
+@media (max-width: 900px) {
+  .generated-film-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .generated-film-card video {
+    aspect-ratio: 16 / 9;
+  }
+
+  .generated-film-card-portrait video {
+    height: min(65svh, 540px);
+    aspect-ratio: auto;
+  }
+
+  .generated-film-copy {
+    padding: 20px;
+  }
+}
