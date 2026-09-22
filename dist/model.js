@@ -125,7 +125,16 @@ export function makeHouse(options={},library=null){
   if(f.type.includes('kitchen')||f.type==='island')details.buildKitchen(g,f);
 
  }
- // No installation drawing was supplied. These layers intentionally contain no routes or proposed points.
+ // These are presentation-only circuit illustrations: they keep the requested
+ // water/electricity reading without pretending to be construction drawings.
+ for(const point of plan.servicePoints){
+  const route=[[0,.055,0],[point.x,.055,0],[point.x,.055,point.z],[point.x,point.y,point.z]];
+  pipe(groups.plumbing,route,.018,point.hot?M.red:M.blue,`${point.id} · circuito hidráulico ilustrativo`);
+ }
+ for(const room of plan.rooms){
+  const x=(room.clear.x0+room.clear.x1)/2,z=(room.clear.z0+room.clear.z1)/2;
+  pipe(groups.electrical,[[0,.07,0],[x,.07,0],[x,.07,z],[x,1.65,z]],.012,M.electric,`${room.id} · circuito eléctrico ilustrativo`);
+ }
  // Pitched canopy: dimensions below are explicitly estimates, while shape follows the supplied photograph.
  const coverHalf=X+DIM.canopyOverhang,eaves=H+DIM.canopyEavesAboveWall,rise=DIM.canopyRise,over=DIM.canopyOverhang,slant=Math.hypot(coverHalf,rise),pitch=Math.atan2(rise,coverHalf);
  for(const dir of [-1,1]){const m=box(groups.cover,slant,.06,DIM.length+2*over,dir*coverHalf/2,eaves+rise/2,0,M.roof,'Telhado adicional · medidas estimadas',.005);m.rotation.z=-dir*pitch;for(const z of [-Z,-2,2,Z])beam(groups.cover,[dir*coverHalf,eaves,z],[0,eaves+rise,z],.045,.05,M.steel,'Asna ilustrativa');}
