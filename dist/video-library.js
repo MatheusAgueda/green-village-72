@@ -3,7 +3,7 @@ export function createVideoLibrary(videos,{isActive,onError}) {
   const entries=new Map(videos.map(video=>[video,{source:video.getAttribute('src'),url:null}]));
   const cache=new Map(),internalStarts=new Map();
   let serial=0,controller=null;
-  // The entire portfolio is silent, including native controls and future clips.
+  // Local files stay silent; YouTube uses its separate audio-enabled player.
   function silence(video) {
     if(!video.defaultMuted)video.defaultMuted=true;
     if(!video.muted)video.muted=true;
@@ -47,10 +47,10 @@ export function createVideoLibrary(videos,{isActive,onError}) {
     });
   }
   async function play(video,time=0) {
-    const entry=entries.get(video);if(!entry||!isActive())return;
+    const entry=entries.get(video);if(!entry||!isActive(video))return;
     silence(video);
     cancel();const request=serial,abort=new AbortController();controller=abort;
-    const current=()=>request===serial&&isActive()&&!abort.signal.aborted;
+    const current=()=>request===serial&&isActive(video)&&!abort.signal.aborted;
     for(const other of videos)other.pause();
     let timedOut=false;
     const timer=setTimeout(()=>{timedOut=true;abort.abort();if(request===serial)video.pause();},45000);
@@ -90,7 +90,7 @@ export function createVideoLibrary(videos,{isActive,onError}) {
       silence(video);
       for(const other of videos)if(other!==video)other.pause();
       if(internalStarts.has(video))return;
-      if(!isActive()){video.pause();return;}
+      if(!isActive(video)){video.pause();return;}
       if(entries.get(video).url){cache.delete(video);cache.set(video,entries.get(video));cancel();return;}
       const time=video.currentTime;video.pause();void play(video,time);
     });

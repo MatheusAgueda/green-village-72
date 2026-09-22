@@ -14,10 +14,16 @@ export function planSVG(configuration,{compact=false,materialColours={}}={}){
  for(const wall of p.perimeter){const {axis,c,a,b,holes}=wall;const segments=[a,b,...holes.flatMap(h=>[h.u-h.width/2,h.u+h.width/2])].sort((a,b)=>a-b);
   for(let i=0;i<segments.length-1;i++){const lo=segments[i],hi=segments[i+1];if(holes.some(h=>(lo+hi)/2>h.u-h.width/2&&(lo+hi)/2<h.u+h.width/2))continue;const inward=c>0?-DIM.panel:DIM.panel;
    content+=rect(axis==='x'?{x0:lo,x1:hi,z0:Math.min(c,c+inward),z1:Math.max(c,c+inward)}:{x0:Math.min(c,c+inward),x1:Math.max(c,c+inward),z0:lo,z1:hi},'#29493e','#29493e');}
-  for(const h of holes){if(h.kind==='window'){if(axis==='x')content+=ln(X(h.u-h.width/2),Z(c+(c>0?-.04:.04)),X(h.u+h.width/2),Z(c+(c>0?-.04:.04)),'stroke="#4c8992" stroke-width="2.5"');else content+=ln(X(c+(c>0?-.04:.04)),Z(h.u-h.width/2),X(c+(c>0?-.04:.04)),Z(h.u+h.width/2),'stroke="#4c8992" stroke-width="2.5"');}}
+  for(const h of holes){if(h.kind==='window'||h.optionId){const stroke=h.optionId==='steel-door'?'#303b35':'#4c8992',style=`data-opening-id="${escape(h.id)}" stroke="${stroke}" stroke-width="2.5"`;
+   if(axis==='x')content+=ln(X(h.u-h.width/2),Z(c+(c>0?-.04:.04)),X(h.u+h.width/2),Z(c+(c>0?-.04:.04)),style);else content+=ln(X(c+(c>0?-.04:.04)),Z(h.u-h.width/2),X(c+(c>0?-.04:.04)),Z(h.u+h.width/2),style);
+  }}
  }
  for(const w of p.walls){const cuts=w.door?[[w.a,w.door.u-w.door.width/2],[w.door.u+w.door.width/2,w.b]]:[[w.a,w.b]];for(const [a,b]of cuts)content+=rect(w.axis==='z'?{x0:w.c-w.thickness/2,x1:w.c+w.thickness/2,z0:a,z1:b}:{x0:a,x1:b,z0:w.c-w.thickness/2,z1:w.c+w.thickness/2},'#50685b','#50685b');
-  if(w.door){const closed=doorPose(w.door),open=doorPose(w.door,1),r=open.radius*scale;content+=`<g data-door-id="${w.door.id}" data-hinge-end="${w.door.hingeEnd}" data-open-angle="${open.angle}">`;content+=ln(X(open.start.x),Z(open.start.z),X(open.tip.x),Z(open.tip.z),'data-door-leaf="true" stroke="#687e70" stroke-width="1.2"');content+=`<path d="M ${X(closed.tip.x)},${Z(closed.tip.z)} A ${r},${r} 0 0 ${open.angle<0?1:0} ${X(open.tip.x)},${Z(open.tip.z)}" fill="none" stroke="#809487" stroke-width=".8"/><circle cx="${X(open.hinge.x)}" cy="${Z(open.hinge.z)}" r="1.3" fill="#50685b"/></g>`;}
+  if(w.door){const closed=doorPose(w.door),open=doorPose(w.door,1),r=open.radius*scale;content+=`<g data-door-id="${w.door.id}" data-hinge-end="${w.door.hingeEnd}" data-open-angle="${open.angle}" data-motion="${open.sliding?'sliding':'hinged'}">`;content+=ln(X(open.start.x),Z(open.start.z),X(open.tip.x),Z(open.tip.z),'data-door-leaf="true" stroke="#687e70" stroke-width="1.2"');
+   if(open.sliding){content+=ln(X(closed.start.x),Z(closed.start.z),X(closed.tip.x),Z(closed.tip.z),'stroke="#809487" stroke-width=".8" stroke-dasharray="3 2"');content+=ln(X(closed.hinge.x),Z(closed.hinge.z),X(open.hinge.x),Z(open.hinge.z),'data-slide-travel="true" stroke="#809487" stroke-width=".8"');}
+   else content+=`<path d="M ${X(closed.tip.x)},${Z(closed.tip.z)} A ${r},${r} 0 0 ${open.angle<0?1:0} ${X(open.tip.x)},${Z(open.tip.z)}" fill="none" stroke="#809487" stroke-width=".8"/><circle cx="${X(open.hinge.x)}" cy="${Z(open.hinge.z)}" r="1.3" fill="#50685b"/>`;
+   content+='</g>';
+  }
 
  }
  for(const f of p.furnishings){if(f.type==='bed'){content+=rect(f,'#f8f7ef','#9ea99c',4);content+=rect({x0:f.x0+.05,x1:f.x1-.05,z0:f.z0+.05,z1:f.z0+.39},'#fff','#c7cbbf',3);content+=rect({x0:f.x0+.025,x1:f.x1-.025,z0:f.z0+.75,z1:f.z1-.04},'#c4cfba','#b8c5ae');}

@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "gv72-banho-veo",
+  "title_pt": "Casa de banho · Visualização gerada",
+  "media_type": "ai-generated-visualization",
+  "generated": true,
+  "generated_date": "2026-09-21",
+  "prepared_at_utc": "2026-09-21T00:20:27.660901+00:00",
+  "generator": {
+    "provider": "Google",
+    "interface": "Flow",
+    "model_family": "Veo",
+    "exact_model_variant": "Veo 3.1 Quality",
+    "model_evidence": "Flow UI selection observed by the browser operator",
+    "export_variant": "Flow 1080p enhanced export",
+    "native_generation_resolution": null
+  },
+  "source_attribution": {
+    "reference_asset": "assets/catalogue/reference/bathroom-08.jpg",
+    "reference_sha256": "21274ada3a08a8cfd5c6c1b43019ab92001960e3903069b2b469a7d4d209ec3b",
+    "reference_origin_pt": "Fotografia do catálogo Green Village, página18.",
+    "input_preparation_pt": "Referência recortada para9:16 na interface Flow.",
+    "generated_download_filename": "GV72_—_Banho_9x16_—_20260921011446.mp4",
+    "generated_download_sha256": "49553005ba9d0025b6656c1e2d0ca51af4b965279428517fe7ecc098f1437d6f"
+  },
+  "asset": "assets/generated-videos/gv72-banho-veo.mp4",
+  "poster": "assets/generated-videos/gv72-banho-veo.jpg",
+  "sha256": "a156e68887c3feee2f9de29f84b5e0d58a4def3d49da4e2c6fd8a8f83f86e528",
+  "poster_sha256": "dc879b5bdd0d232f89e7cbee931bbff872f4c00a88c22f2d11b2f165a2160976",
+  "bytes": 2520844,
+  "poster_bytes": 151882,
+  "width": 1080,
+  "height": 1920,
+  "aspect_ratio": "9:16",
+  "duration_seconds": 5.5,
+  "frame_count": 132,
+  "frame_rate": "24/1",
+  "codec": "h264",
+  "pixel_format": "yuv420p",
+  "has_audio": false,
+  "audio_removed": true,
+  "video_reencoded": true,
+  "processing": {
+    "source_duration_seconds": 8,
+    "excerpt_start_seconds": 0,
+    "excerpt_end_seconds": 5.5,
+    "original_full_clip_rejected": true,
+    "reason_pt": "Excluir o final, onde surge uma sombra com aparência humana.",
+    "copy_trim_trial_duration_seconds": 5.583333,
+    "encoder": "libx264",
+    "crf": 18,
+    "preset": "medium",
+    "pixel_format": "yuv420p",
+    "faststart": true
+  },
+  "poster_time_seconds": 0.5,
+  "validation": {
+    "complete_decode_passed": true,
+    "audio_stream_count": 0,
+    "duration_exact": true,
+    "last_frame_visually_checked": true,
+    "delivery_copy_sha256_matches": true
+  },
+  "editorial_review": {
+    "status": "accepted-illustrative-excerpt-only",
+    "limitations_pt": [
+      "Excerto de5,5s de uma geração de8s; o original integral não foi aprovado.",
+      "Exportação1080p melhorada noFlow; não afirmar1080p nativo ou4K.",
+      "Reflexos e partes do espelho são regenerados; não constituem confirmação de geometria ou equipamentos."
+    ],
+    "visible_result_pt": "Sem barras, ícones de leitor ou pessoas observadas no excerto revisto; último fotograma antes da sombra verificado."
+  },
+  "disclosure_pt": "Visualização gerada por IA a partir de uma fotografia de referência da Green Village."
+}

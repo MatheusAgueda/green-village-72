@@ -1,4 +1,5 @@
 import { DATA } from './data.js';
+import {applyOpeningOptions,projectPorchDepth,selectedOption,optionTargetLabel} from './project-options.js';
 // Coordinates: metres; +X right, +Y up, +Z entrance. Origin: floor centre.
 export const REVISION='GV72-R9-2026-09-11';
 // Illustrative axes and clearance for the documented wall-raising phase only.
@@ -31,6 +32,40 @@ export const SOURCE_DIVERGENCES=[
  'As bandas estruturais cotadas não coincidem com os traços de divisórias no desenho raster. Os limites de divisões mantêm o traçado observado como estimativa, não cota exacta.',
  'As fotografias mostram unidades com vãos, portas laterais e acabamentos distintos. Não provam que todos estes elementos coexistem numa única variante.'
 ];
+export function sourceDivergences(configuration){
+ const divergences=[...SOURCE_DIVERGENCES];
+ if(selectedOption(configuration,'terrace'))divergences[1]='A opção Terraço e cobertura de 3 m está seleccionada e o respectivo PVP consta dos adicionais. A profundidade documentada de 3 m é aplicada ao modelo. A fotografia de guarda branca não comprova os materiais, a geometria ou a compatibilidade desta opção; esses pormenores continuam por confirmar.';
+ return divergences;
+}
+// Keep source dimensions separate from the geometry selected in the configurator.
+export function configuredOpenings(plan){
+ return plan.perimeter.flatMap(face=>face.holes.map(h=>{
+  const option=DATA.options.find(item=>item.id===h.optionId);
+  const sourceDimensions=h.optionId==='window-930'?{width:.93,height:.93}:h.optionId==='window-panoramic'?{width:.6,height:1.9}:!option&&h.kind==='window'&&h.id!=='bath-window'?{width:.92}:{};
+  const sourceNote=option
+   ? (Object.keys(sourceDimensions).length?'Largura e altura documentadas no catálogo. Peitoril e implantação estimados.':'Dimensões do artigo não publicadas; vão de apresentação estimado.')+' Catálogo p. '+option.page+'.'
+   : h.id==='entry'?'Entrada de duas folhas desenhada na planta; dimensões estimadas.':h.kind==='window'&&h.id!=='bath-window'?'Largura de 0,920 m cotada na planta; altura e peitoril estimados.':'Dimensões estimadas; vão sem cotas na planta.';
+  const label=h.kind==='door'&&h.id.startsWith('side-')?optionTargetLabel(h.id).replace(/^Janela lateral/,'Porta lateral'):optionTargetLabel(h.id);
+  return {id:h.id,label,kind:h.kind,optionId:h.optionId||null,optionLabel:option?.label||null,
+   modelled:{width:h.width,height:h.height,sill:h.sill},provided:sourceDimensions,
+   drawnLeaves:h.kind==='door'?(['steel-door','side-glass-door'].includes(h.optionId)?1:2):null,
+   sourceNote,status:'presentation-geometry'};
+ })).concat(plan.doors.map(door=>({id:door.id,label:optionTargetLabel(door.id),kind:'door',optionId:door.optionId||null,
+  optionLabel:door.optionId?DATA.options.find(item=>item.id===door.optionId)?.label||null:null,
+  modelled:{width:door.width,height:door.height,sill:0},provided:{},drawnLeaves:1,
+  sourceNote:door.optionId?'Material ou mecanismo seleccionado no catálogo; dimensões do vão estimadas.':'Porta interior da planta; largura e altura estimadas.',status:'presentation-geometry'})));
+}
+export function configuredMeasures(plan){
+ const holes=plan.perimeter.flatMap(face=>face.holes),windows=holes.filter(h=>h.kind==='window'&&h.id!=='bath-window');
+ const fields={windowWidth:[windows,'width'],windowHeight:[windows,'height'],windowSillVisual:[windows,'sill'],entryWidthVisual:[holes.filter(h=>h.id==='entry'),'width'],entryHeightVisual:[holes.filter(h=>h.id==='entry'),'height'],bathWindowWidthVisual:[holes.filter(h=>h.id==='bath-window'),'width']};
+ const aliases={porchDepthVisual:'porchDepth',canopyRiseVisual:'canopyRise',canopyOverhangVisual:'canopyOverhang'};
+ return MEASURES.map(m=>{
+  if(plan.terraceOptionSelected&&['porchDepthVisual','catalogueTerraceDepth'].includes(m.id))return {...m,value:3,source:'Catálogo p. 13 · opção Terraço e cobertura seleccionada',status:'confirmed',provided:3,modelled:plan.dimensions.porchDepth,modelledValues:[plan.dimensions.porchDepth],numericMatch:plan.dimensions.porchDepth===3,note:'Profundidade documentada de 3 m aplicada ao modelo. Os restantes pormenores e a compatibilidade com a casa continuam por confirmar.'};
+  const selection=fields[m.id],values=selection?[...new Set(selection[0].map(h=>h[selection[1]]))].sort((a,b)=>a-b):[plan.dimensions[aliases[m.id]||m.id]].filter(Number.isFinite);
+  return {...m,provided:m.status==='confirmed'?m.value:null,modelled:values.length===1?values[0]:null,modelledValues:values,
+   numericMatch:m.status==='confirmed'&&values.length?values.every(value=>value===m.value):null};
+ });
+}
 export const LAYOUTS=DATA.layouts.map(p=>({...p,sourceStatus:'estimated',sourceNote:'Tipologia confirmada; limites interiores aproximados a partir do traçado da planta.'}));
 export function rectArea(r){return Math.max(0,r.x1-r.x0)*Math.max(0,r.z1-r.z0);}
 export function intersects(a,b,margin=0){return Math.min(a.x1,b.x1)-Math.max(a.x0,b.x0)>margin+EPSILON&&Math.min(a.z1,b.z1)-Math.max(a.z0,b.z0)>margin+EPSILON;}
@@ -40,9 +75,36 @@ export function doorPose(door,progress=0){
  const direction=door.hingeEnd==='end'?-1:1,hingeU=door.u-direction*door.width/2;
  const side=door.axis==='z'?door.hinge:-1,angle=(door.axis==='z'?side*direction:direction)*Math.PI/2*Math.min(1,Math.max(0,progress));
  const hinge={x:door.axis==='z'?door.c+side*DOOR_DETAIL.normalOffset:hingeU,z:door.axis==='z'?hingeU:door.c-DOOR_DETAIL.normalOffset};
+ // Sliding travel is a presentation proposal along the longer adjacent wall span.
+ if(door.optionVariant==='sliding'){
+  // The short bathroom wall needs a face-mounted proposal on the common-room side.
+  if(door.axis==='x')hinge.z=door.c+DOOR_DETAIL.normalOffset;
+  const slide=(door.slideDirection??-direction)*door.width*Math.min(1,Math.max(0,progress));
+  if(door.axis==='z')hinge.z+=slide;else hinge.x+=slide;
+  const point=distance=>({x:hinge.x+(door.axis==='z'?0:direction*distance),z:hinge.z+(door.axis==='z'?direction*distance:0)});
+  return {direction,hingeU,hinge,angle:0,sliding:true,slide,leafWidth:door.width-2*DOOR_DETAIL.endGap,start:point(DOOR_DETAIL.endGap),tip:point(door.width-DOOR_DETAIL.endGap),radius:door.width-DOOR_DETAIL.endGap};
+ }
  const point=distance=>{const x=door.axis==='z'?0:direction*distance,z=door.axis==='z'?direction*distance:0;return{x:hinge.x+x*Math.cos(angle)+z*Math.sin(angle),z:hinge.z-x*Math.sin(angle)+z*Math.cos(angle)};};
  return {direction,hingeU,hinge,angle,leafWidth:door.width-2*DOOR_DETAIL.endGap,start:point(DOOR_DETAIL.endGap),tip:point(door.width-DOOR_DETAIL.endGap),radius:door.width-DOOR_DETAIL.endGap};
 }
+// Test the complete translation corridor, not only its final point. No renderer is needed.
+// A conflict prevents assigning this optional door; it does not silently reduce its opening.
+export function slidingDoorConflicts({walls,doors}){
+ const conflicts=[];
+ for(const door of doors){
+  if(door.optionVariant!=='sliding')continue;
+  const closed=doorPose(door,0),open=doorPose(door,1),points=[closed.start,closed.tip,open.start,open.tip],half=DOOR_DETAIL.thickness/2;
+  const swept={x0:Math.min(...points.map(p=>p.x))-(door.axis==='z'?half:0),x1:Math.max(...points.map(p=>p.x))+(door.axis==='z'?half:0),z0:Math.min(...points.map(p=>p.z))-(door.axis==='x'?half:0),z1:Math.max(...points.map(p=>p.z))+(door.axis==='x'?half:0)};
+  const blocker=walls.find(w=>(w.door?[[w.a,w.door.u-w.door.width/2],[w.door.u+w.door.width/2,w.b]]:[[w.a,w.b]]).some(([a,b])=>{
+   if(b<=a)return false;
+   const solid=w.axis==='z'?{x0:w.c-w.thickness/2,x1:w.c+w.thickness/2,z0:a,z1:b}:{x0:a,x1:b,z0:w.c-w.thickness/2,z1:w.c+w.thickness/2};
+   return intersects(swept,solid);
+  }));
+  if(blocker)conflicts.push({targetId:door.id,wallId:blocker.id,reason:(door.id==='bath-door'?'A porta de correr da casa de banho':'Esta porta de correr')+' não dispõe de espaço livre para recolher a folha nesta distribuição. Mantenha o artigo sem local de aplicação até confirmar outra solução.'});
+ }
+ return conflicts;
+}
+
 export function getPlan(config){
  const template=LAYOUTS.find(x=>x.id===config.layout);if(!template)throw new Error('Planta desconhecida');
  const W=DIM.width,L=DIM.length,t=DIM.partition,edge=DIM.panel;
@@ -70,6 +132,13 @@ export function getPlan(config){
   const zs=adjacent.map(r=>(r.outline.z0+r.outline.z1)/2);
   if(!adjacent.length){if(config.layout==='t3-b'&&side===-1)zs.push(-3.7,.05,3.7);else zs.push(-2.85,2.85);}else if(adjacent.length===1){if(config.layout==='t4-b'&&side===-1)zs.push(.05,3.7);else zs.push(Math.max(adjacent[0].outline.z1+1.2,3.7));}
   perimeter.push({axis:'z',c:side*W/2,a:-L/2,b:L/2,holes:zs.map((z,i)=>({id:`side-${side}-${i}`,u:z,width:DIM.windowWidth,height:DIM.windowHeight,sill:DIM.windowSill,kind:'window',source:'window count/room relation follows source; centre position estimated'}))});
+ }
+ // Apply replacements before cabinet/window constraints and keep both door consumers in sync.
+ applyOpeningOptions(perimeter,doors,config);
+ for(const face of perimeter)for(const h of face.holes)if(h.optionId)h.source='Selected catalogue option; undocumented opening dimensions and placement remain illustrative.';
+ for(const door of doors){const wall=walls.find(w=>w.id===door.wall);
+  if(door.optionVariant==='sliding'){const before=door.u-door.width/2-wall.a,after=wall.b-door.u-door.width/2;door.slideDirection=after>before?1:-1;door.motionStatus='proposed';}
+  Object.assign(wall.door,door);
  }
  const furnishings=[],servicePoints=[];
  const item=(id,type,r,extra={})=>{const f={id,type,...r,...extra,status:'estimated'};furnishings.push(f);return f;};
@@ -110,7 +179,7 @@ export function getPlan(config){
  const internalEnvelope=rectArea(inner),estimatedNet=internalEnvelope-wallArea;
  const enclosed=rooms.reduce((s,r)=>s+r.area,0);
  const areas={commercial:72,exterior:W*L,internalEnvelope,partitions:wallArea,estimatedNet,common:Math.max(0,estimatedNet-enclosed),roomTotal:enclosed,status:'estimated',note:'Áreas calculadas com paredes de 100 mm e divisórias de 80 mm assumidas; não são um mapa de áreas certificado.'};
- return {id:template.id,label:template.label,description:template.description,sourceImage:template.image,bedrooms:template.bedrooms,rooms,walls,doors,perimeter,furnishings,kitchenUpperModules,servicePoints,areas,dimensions:DIM,sourceStatus:'estimated',compact};
+ return {id:template.id,label:template.label,description:template.description,sourceImage:template.image,bedrooms:template.bedrooms,rooms,walls,doors,perimeter,furnishings,kitchenUpperModules,servicePoints,areas,dimensions:{...DIM,porchDepth:projectPorchDepth(config)},terraceOptionSelected:Boolean(selectedOption(config,'terrace')),sourceStatus:'estimated',compact};
 }
 export function compatibility(state){
  const reasons=[];if(!LAYOUTS.some(l=>l.id===state.layout))return ['Planta desconhecida.'];

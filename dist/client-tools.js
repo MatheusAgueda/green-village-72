@@ -1,3 +1,5 @@
+import {currentCataloguePrice} from './commercial-prices.js';
+import {STANDARD_PACKAGE,adaptationEstimate} from './standard-package.js';
 import {DEPLOYMENT_ASSUMPTIONS} from './deployment-rig.js';
 import {CATALOGUE_OPTIONS,TECHNICAL_FACTS,SOURCE_LAYOUTS} from './technical-data.js';
 import {REFERENCE_VIDEOS} from './reference-videos.js';
@@ -5,15 +7,16 @@ import {PROCESS_REVISION,PROCESS_STEPS} from './expansion-process.js';
 import * as THREE from './vendor/three.module.js';
 import {validateConfiguration,DEFAULT_CONFIG,summaryRows} from './configuration.js';
 import {configurationReference,CONTACT_EMAIL} from './portfolio.js';
-import {REVISION,MEASURES,SOURCES,SOURCE_DIVERGENCES,WALL_RAISE,getPlan} from './specification.js';
+import {REVISION,MEASURES,SOURCES,SOURCE_DIVERGENCES,WALL_RAISE,getPlan,configuredMeasures,configuredOpenings,sourceDivergences} from './specification.js';
 import {makeHouse} from './model.js';
 
 export function createHistory(initial,limit=40){
  let entries=[validateConfiguration(initial)],index=0;
  return {
   push(value){const next=validateConfiguration(value);if(JSON.stringify(next)===JSON.stringify(entries[index]))return;entries=entries.slice(0,index+1);entries.push(next);if(entries.length>limit)entries.shift();index=entries.length-1;},
-  undo(){if(index===0)return null;return {...entries[--index]};},
-  redo(){if(index===entries.length-1)return null;return {...entries[++index]};},
+  reset(value){const next=validateConfiguration(value);entries=[next];index=0;},
+  undo(){if(index===0)return null;return validateConfiguration(entries[--index]);},
+  redo(){if(index===entries.length-1)return null;return validateConfiguration(entries[++index]);},
   get canUndo(){return index>0;},get canRedo(){return index<entries.length-1;}
  };
 }
@@ -25,7 +28,7 @@ export function shareConfiguration(configuration,href){
 }
 export function readSharedConfiguration(hash){
  if(!hash.startsWith('#config='))return null;
- const encoded=hash.slice(8);if(encoded.length>6000||!/^[A-Za-z0-9_-]+$/.test(encoded))throw new Error('Ligação de configuração inválida.');
+ const encoded=hash.slice(8);if(encoded.length>16000||!/^[A-Za-z0-9_-]+$/.test(encoded))throw new Error('Ligação de configuração inválida.');
  try{const binary=atob(encoded.replaceAll('-','+').replaceAll('_','/'));return validateConfiguration(JSON.parse(new TextDecoder('utf-8',{fatal:true}).decode(Uint8Array.from(binary,c=>c.charCodeAt(0)))));}catch{throw new Error('A ligação contém opções inválidas ou sem referência no catálogo.');}
 }
 export function migrateStoredConfiguration(raw){
@@ -78,5 +81,5 @@ export async function exportModelGLB(configuration,library,onProgress=()=>{}){
 }
 
 export function sourceLedger(configuration){
- const plan=getPlan(configuration),aliases={entryWidthVisual:'entryWidth',entryHeightVisual:'entryHeight',bathWindowWidthVisual:'bathWindowWidth',windowSillVisual:'windowSill',porchDepthVisual:'porchDepth',canopyRiseVisual:'canopyRise',canopyOverhangVisual:'canopyOverhang'};return {revision:REVISION,configuration:validateConfiguration(configuration),units:{dimensions:'m unless specified per record',areas:'m²',catalogue:'per specification'},dimensions:MEASURES.map(m=>({...m,provided:m.status==='confirmed'?m.value:null,modelled:plan.dimensions[aliases[m.id]||m.id]??null,numericMatch:m.status==='confirmed'&&Object.hasOwn(plan.dimensions,m.id)?m.value===plan.dimensions[m.id]:null})),areas:plan.areas,catalogueOptions:CATALOGUE_OPTIONS,technicalFacts:TECHNICAL_FACTS,sourceLayout:SOURCE_LAYOUTS.find(l=>l.id===configuration.layout),videos:REFERENCE_VIDEOS,openings:plan.perimeter,sourceDivergences:SOURCE_DIVERGENCES,expansion:{scope:'full-illustrative-deployment',assumptions:DEPLOYMENT_ASSUMPTIONS,endPanels:'continuous inside-to-outside unfolding, front then rear',presentation:{revision:PROCESS_REVISION,source:'assets/expansao.png and client clarification',sourceConfirmedByUser:'2026-09-12',steps:PROCESS_STEPS,continuousMotion:'all stages',discreteTransitions:[],transportEnvelope:'not documented'}},sourceConflicts:SOURCES.map(({id,limits})=>({id,limits}))};
+ const plan=getPlan(configuration);return {revision:REVISION,configuration:validateConfiguration(configuration),units:{dimensions:'m unless specified per record',areas:'m²',catalogue:'per specification'},dimensions:configuredMeasures(plan),areas:plan.areas,catalogueOptions:CATALOGUE_OPTIONS,commercialPrices:CATALOGUE_OPTIONS.map(option=>({documentaryId:option.id,...currentCataloguePrice(option.id)})),standardPackage:STANDARD_PACKAGE,personalisationQuotes:adaptationEstimate(configuration).lines,technicalFacts:TECHNICAL_FACTS,sourceLayout:SOURCE_LAYOUTS.find(l=>l.id===configuration.layout),videos:REFERENCE_VIDEOS,openings:plan.perimeter,configuredOpenings:configuredOpenings(plan),sourceDivergences:sourceDivergences(configuration),expansion:{scope:'full-illustrative-deployment',assumptions:DEPLOYMENT_ASSUMPTIONS,endPanels:'continuous inside-to-outside unfolding, front then rear',presentation:{revision:PROCESS_REVISION,source:'assets/expansao.png and client clarification',sourceConfirmedByUser:'2026-09-12',steps:PROCESS_STEPS,continuousMotion:'all stages',discreteTransitions:[],transportEnvelope:'not documented'}},sourceConflicts:SOURCES.map(({id,limits})=>({id,limits}))};
 }

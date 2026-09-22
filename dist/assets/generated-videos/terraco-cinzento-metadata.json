@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "id": "gv72-terraco-cinzento",
+  "media_type": "ai-generated-visualization",
+  "generated": true,
+  "generated_date": "2026-09-21",
+  "generator": {
+    "provider": "Google",
+    "interface": "Flow",
+    "model_family": "Veo",
+    "exact_model_variant": "Veo 3.1 Quality"
+  },
+  "source_attribution": {
+    "reference_origin_pt": "Fotografia fornecida pela Green Village, colecção Terraço."
+  },
+  "asset": "assets/generated-videos/gv72-terraco-cinzento.mp4",
+  "poster": "assets/generated-videos/gv72-terraco-cinzento.jpg",
+  "sha256": "f81ff172d54a409ab3fa8ff55ada4259ee78e1db1717039586d7a91f862d319c",
+  "bytes": 3448640,
+  "width": 1280,
+  "height": 720,
+  "duration_seconds": 8,
+  "has_audio": false,
+  "validation": {
+    "complete_decode_passed": true,
+    "audio_stream_count": 0
+  },
+  "disclosure_pt": "Visualização ilustrativa gerada por IA. Movimento de câmara, reflexos e pormenores podem diferir da fotografia; não comprova especificações nem compatibilidade com a configuração."
+}

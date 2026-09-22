@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "id": "gv72-cozinha-veo",
+  "title_pt": "Cozinha em L · Visualização gerada",
+  "media_type": "ai-generated-visualization",
+  "generated": true,
+  "generated_date": "2026-09-21",
+  "prepared_at_utc": "2026-09-21T00:22:17.750149+00:00",
+  "generator": {
+    "provider": "Google",
+    "interface": "Flow",
+    "model_family": "Veo",
+    "exact_model_variant": "Veo 3.1 Quality",
+    "model_evidence": "Flow UI selection observed by the browser operator",
+    "export_variant": "Original 720p export"
+  },
+  "source_attribution": {
+    "reference_asset": "assets/catalogue/reference/kitchen-02.jpg",
+    "reference_sha256": "445e7672ae63865f69004e488b6baa60ce222f7ecc007656493b2c9879abfadd",
+    "reference_origin_pt": "Fotografia do catálogo Green Village, página 16.",
+    "generated_download_filename": "GV72_—_Cozinha_em_L_20260921004249.mp4",
+    "generated_download_sha256": "526fedfbd7a3dc600d897389776a44e42b89d6b540640d3853123f932384f138"
+  },
+  "asset": "assets/generated-videos/gv72-cozinha-veo.mp4",
+  "poster": "assets/generated-videos/gv72-cozinha-veo.jpg",
+  "sha256": "23da3dbc7b6cdf188189870e5d4e8deabb9f709d0d8a637cd3003f1a8aa5654c",
+  "poster_sha256": "1a77608df8bb2087a176663bcd94953fbc597b50fc1831ac16e8b05bd26ccd60",
+  "bytes": 1533279,
+  "poster_bytes": 82268,
+  "width": 1280,
+  "height": 720,
+  "aspect_ratio": "16:9",
+  "duration_seconds": 8,
+  "frame_count": 192,
+  "frame_rate": "24/1",
+  "codec": "h264",
+  "pixel_format": "yuv420p",
+  "has_audio": false,
+  "audio_removed": true,
+  "video_reencoded": false,
+  "processing": "Video stream copied without re-encoding; audio removed; MP4 faststart enabled.",
+  "poster_time_seconds": 0.5,
+  "validation": {
+    "complete_decode_passed": true,
+    "audio_stream_count": 0,
+    "decoded_video_hash_unchanged": true,
+    "decoded_video_sha256": "82e9c9ea847b567929bc7a9e165fcd1d355cd4fd58f9661fec1279d2872877e5",
+    "delivery_copy_sha256_matches": true
+  },
+  "editorial_review": {
+    "status": "accepted-as-illustrative-generated-visualization",
+    "selected_generation": "V1",
+    "rejected_alternative": "V2 altered window details and displayed a visible introductory dissolve.",
+    "limitations_pt": [
+      "O reflexo humano ténue existente na fotografia torna-se mais visível no vídeo. Não foi removido.",
+      "A câmara avança, recua e muda de ângulo; não é uma captura técnica nem uma demonstração dimensional exacta.",
+      "Pequenos detalhes revelados pelo movimento são regenerados.",
+      "Resolução nativa 1280 × 720; não é a exportação 1080p da V2."
+    ],
+    "review_basis_pt": "A primeira versão preserva melhor a referência e foi escolhida editorialmente. Ausência de pessoas era um objectivo do prompt, não um requisito expresso do utilizador."
+  },
+  "disclosure_pt": "Visualização gerada por IA a partir de uma fotografia de referência da Green Village."
+}

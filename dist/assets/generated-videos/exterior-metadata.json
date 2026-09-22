@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "id": "gv72-exterior-veo",
+  "title_pt": "Exterior · Visualização gerada",
+  "media_type": "ai-generated-visualization",
+  "generated": true,
+  "generated_date": "2026-09-21",
+  "prepared_at_utc": "2026-09-20T23:50:30.916806+00:00",
+  "generator": {
+    "provider": "Google",
+    "interface": "Flow",
+    "model_family": "Veo",
+    "exact_model_variant": "Veo 3.1 Quality",
+    "variant_note_pt": "Rótulo observado na selecção de geração do Google Flow.",
+    "model_evidence": "Flow UI generation settings observed by the browser operator",
+    "generation_credits_shown": 100
+  },
+  "source_attribution": {
+    "reference_asset": "assets/exterior-creme.jpg",
+    "reference_sha256": "c255898956a7de88170e6b7008881f96d23097e0ef3775e534614c7ac23ed310",
+    "reference_origin_pt": "Fotografia de referência fornecida pela Green Village.",
+    "input_preparation_pt": "Referência recortada para 16:9 na interface de geração.",
+    "generated_download_filename": "GV72_—_Exterior_16x9_—_20260921004313.mp4",
+    "generated_download_sha256": "c3dcf1e87eb10998f52715a1990166a31a73b8b001c10fbe6c51c9f8fc254f58"
+  },
+  "asset": "assets/generated-videos/gv72-exterior-veo.mp4",
+  "poster": "assets/generated-videos/gv72-exterior-veo.jpg",
+  "sha256": "5db20f5b937c4b9537ad1b7360a426d1f2dec5675a2e1e914adbf3dc96df7b91",
+  "poster_sha256": "41db94532a3ac1ea8b24ed877a6b4e211c446fff9d8b609a9fdc53341def80b0",
+  "bytes": 2253751,
+  "poster_bytes": 148645,
+  "width": 1280,
+  "height": 720,
+  "aspect_ratio": "16:9",
+  "duration_seconds": 8.0,
+  "frame_rate": "24/1",
+  "codec": "h264",
+  "pixel_format": "yuv420p",
+  "has_audio": false,
+  "audio_removed": true,
+  "video_reencoded": false,
+  "processing": "Video stream copied; audio removed; MP4 faststart enabled.",
+  "poster_time_seconds": 0.5,
+  "validation": {
+    "complete_decode_passed": true,
+    "audio_stream_count": 0,
+    "decoded_video_hash_unchanged": true,
+    "decoded_video_sha256": "40cb7b339ece25c6b09180a1794c02f95a3f7b2dedcc18359eac50609a915c33"
+  },
+  "editorial_review": {
+    "status": "accepted-as-illustrative-generated-visualization",
+    "reviewed_samples": "8 contact-sheet frames and full-resolution stills at 0, 3.5 and 7.75 seconds",
+    "limitations_pt": [
+      "A câmara faz uma órbita perceptível em vez do zoom fixo de 1% solicitado.",
+      "Reflexos e interior revelados são gerados e não estão confirmados pela fotografia.",
+      "Não é uma filmagem real nem uma demonstração dimensional exacta.",
+      "Resolução nativa 1280 × 720; não é 4K nativo."
+    ],
+    "visible_result_pt": "Sem barras negras, interfaces ou pessoas observadas nos fotogramas revistos; composição de fachada, portas e janelas visualmente plausível."
+  },
+  "disclosure_pt": "Visualização gerada por IA a partir de uma fotografia de referência da Green Village."
+}

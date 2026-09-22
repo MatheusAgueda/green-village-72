@@ -35,6 +35,9 @@ export function createLayerController(house){
  function restore(){for(const e of entries){e.object.material=e.material;e.object.visible=e.visible;}for(const [o,visible]of parents)o.visible=visible;}
  function apply(value){restore();settings=value;if(!value)return;
   for(const [o]of parents)o.visible=true;
+  // Master visibility switches take precedence over per-layer overrides.
+  if(house.root.userData.state.wallsVisible===false){house.groups.shell.visible=false;for(const a of house.sideAssemblies)a.pivot.visible=false;for(const a of house.endAssemblies)a.g.visible=false;}
+  if(house.root.userData.state.furnitureVisible===false)house.groups.furniture.visible=false;
   for(const e of entries){const {object,material,layer}=e,item=value[layer]||{visible:true,opacity:1};
    const enabled=(layer!=='cover'||house.root.userData.state.roof)&&(layer!=='porch'||house.root.userData.state.porch);
    object.visible=e.visible&&enabled&&item.visible!==false&&(!value.isolate||value.isolate===layer);
