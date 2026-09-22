@@ -1,0 +1,18 @@
+export const GENERATED_FILMS=Object.freeze([
+ {id:'exterior-veo',title:'Exterior creme',category:'Exterior',duration:8,width:1280,height:720,description:'Uma aproximação à fachada creme e à caixilharia escura.',source:'Fotografia do exterior fornecida pela Green Village.'},
+ {id:'cozinha-veo',title:'Cozinha em L',category:'Interior',duration:8,width:1280,height:720,description:'Uma cozinha de referência com móveis claros e bancada escura.',source:'Cozinha 02 · catálogo, página 16. Referência distinta do standard confirmado.'},
+ {id:'banho-veo',title:'Casa de banho',category:'Interior',duration:5.5,width:1080,height:1920,description:'Um enquadramento vertical do resguardo e do revestimento com padrão de mármore.',source:'Banho 08 · catálogo, página 18. Referência distinta do standard confirmado.'},
+ {id:'terraco-preto',title:'Terraço preto',category:'Terraços',duration:8,width:1920,height:1080,description:'Estrutura e guardas escuras numa referência de terraço coberto.',source:'Fotografia fornecida · colecção Terraço.',note:'Variante e compatibilidade com a configuração a confirmar.'},
+ {id:'terraco-cinzento',title:'Terraço cinzento',category:'Terraços',duration:8,width:1280,height:720,description:'Uma aproximação frontal ao terraço e à entrada central.',source:'Fotografia fornecida · colecção Terraço.',note:'Variante e compatibilidade com a configuração a confirmar.'},
+ {id:'terraco-branco',title:'Terraço branco',category:'Terraços',duration:8,width:1280,height:720,description:'Vista lateral de uma referência com fachada amarela e guarda branca.',source:'Fotografia fornecida · colecção Terraço.',note:'Variante e compatibilidade com a configuração a confirmar.'}
+].map(item=>Object.freeze({...item,asset:`assets/generated-videos/gv72-${item.id}.mp4`,poster:`assets/generated-videos/gv72-${item.id}.jpg`})));
+
+export function generatedGalleryMarkup(){
+ const categories=['Exterior','Interior','Terraços'];
+ let counter=0;
+ return categories.map(cat=>{
+  const items=GENERATED_FILMS.filter(f=>f.category===cat);
+  if(!items.length)return '';
+  return `<div class="generated-film-section"><h3 class="generated-film-section-title">${cat}</h3><div class="generated-film-section-grid">${items.map(item=>{counter++;return `<article class="generated-film-card ${item.height>item.width?'generated-film-card-portrait':''}"><video data-generated-video controls muted playsinline preload="none" aria-label="${item.title}" aria-describedby="generated-gallery-note" poster="${item.poster}" src="${item.asset}" width="${item.width}" height="${item.height}"></video><div class="generated-film-copy"><span class="eyebrow">${String(counter).padStart(2,'0')} / ${item.category.toUpperCase()}</span><h2>${item.title}</h2><p>${item.description}</p><p class="generated-film-meta">Vídeo de apresentação · Sem áudio</p><a href="${item.asset}" download aria-label="Descarregar ${item.title} em MP4"><span>Descarregar vídeo</span><span aria-hidden="true">↓ MP4</span></a></div></article>`;}).join('')}</div></div>`;
+ }).join('');
+}
