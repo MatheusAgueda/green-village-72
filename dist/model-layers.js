@@ -35,6 +35,7 @@ export function createLayerController(house){
  function restore(){for(const e of entries){e.object.material=e.material;e.object.visible=e.visible;}for(const [o,visible]of parents)o.visible=visible;}
  function apply(value){restore();settings=value;if(!value)return;
   for(const [o]of parents)o.visible=true;
+  for(const group of [house.groups.plumbing,house.groups.electrical])if(group&&parents.has(group))group.visible=parents.get(group);
   // Master visibility switches take precedence over per-layer overrides.
   if(house.root.userData.state.wallsVisible===false){house.groups.shell.visible=false;for(const a of house.sideAssemblies)a.pivot.visible=false;for(const a of house.endAssemblies)a.g.visible=false;}
   if(house.root.userData.state.furnitureVisible===false)house.groups.furniture.visible=false;

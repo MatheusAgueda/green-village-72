@@ -114,7 +114,8 @@ const STRINGS={
 };
 
 const ptOriginals=new WeakMap();
-let language=localStorage.getItem('gv72-language')||'pt';
+let language='pt';
+try{const saved=localStorage.getItem('gv72-language');if(['pt','en','es'].includes(saved))language=saved;}catch{}
 
 function collectTextNodes(root){
   const walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT);
@@ -146,7 +147,7 @@ const DESCRIPTIONS={en:'Explore and customize the Green Village 72 expandable ho
 
 function applyLanguage(next){
   language=next;
-  localStorage.setItem('gv72-language',next);
+  try{localStorage.setItem('gv72-language',next);}catch{}
   document.documentElement.lang=next==='en'?'en':next==='es'?'es-ES':'pt-PT';
   document.querySelectorAll('[data-language]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.language===next)));
   document.title=TITLES[next]||TITLES.pt;

@@ -1,5 +1,6 @@
 import {STANDARD_PACKAGE,standardDescription,adaptationEstimate} from './standard-package.js';
 import {INTERIOR_REFERENCES} from './interior-references.js';
+import {attachmentBytes} from './client-records.js';
 import {
   catalogueEstimate,
   emptyClientProject,
@@ -149,6 +150,36 @@ export async function appendClientDossier(doc, {state, project, font, bold, imag
   field('Adaptações pedidas', client.adaptations, 'Não foram registadas adaptações adicionais.');
   field('Observações do projecto', client.notes, 'Não foram registadas observações adicionais.');
 
+  if(client.requests.length){
+    heading('Pedidos específicos — sob cotação');
+    paragraph('Pedidos ainda não representados no 3D. Quantidades, medidas, viabilidade e preços sujeitos a validação. Não incluídos no subtotal.',{size:9,color:muted});
+    for(const request of client.requests){
+      field(request.quantity+' × '+(request.title||'Pedido por descrever'), 'Local: '+(request.location||'Por definir')+'\n'+request.notes);
+    }
+  }
+  for(const attachment of client.attachments){
+    nextPage(attachment.kind==='plan'?'Planta fornecida pelo cliente':'Fotografia fornecida pelo cliente');
+    field('Ficheiro original',attachment.name);
+    field('Observações',attachment.notes,'Sem observações.');
+    paragraph('Referência enviada pelo cliente, pendente de validação técnica. Não altera automaticamente a planta ou o modelo 3D.',{size:9,color:muted});
+    if(attachment.mime==='application/pdf'){
+      const source=await window.PDFLib.PDFDocument.load(attachmentBytes(attachment.dataUrl).bytes);
+      // A valid blank page can lack a Contents stream; create one before embedding.
+      for(const sourcePage of source.getPages())sourcePage.drawText(' ',{x:0,y:0,size:1});
+      const pages=await doc.embedPdf(await source.save(),source.getPageIndices());
+      for(const [index,embedded] of pages.entries()){
+        nextPage('Planta do cliente · página '+(index+1)+' de '+pages.length);
+        paragraph(attachment.name,{size:9,color:muted});
+        const height=y-BOTTOM,scale=Math.min(CONTENT/embedded.width,height/embedded.height);
+        page.drawPage(embedded,{x:M+(CONTENT-embedded.width*scale)/2,y:y-embedded.height*scale,width:embedded.width*scale,height:embedded.height*scale});
+        y=BOTTOM;
+      }
+    }else{
+      ensure(220);const picture=await loadImage(attachment.dataUrl),height=Math.min(420,y-BOTTOM);
+      drawImageContained(picture,M,y,CONTENT,height);y-=height+14;
+    }
+  }
+
   nextPage('Cozinha e banho standard');
   paragraph('Referências do modelo standard confirmadas pela Green Village em 21/09/2026. As escolhas personalizadas e os seus acréscimos constam separadamente nesta ficha.', {size: 10, color: muted});
   for (const kind of ['kitchen', 'bathroom']) {
@@ -162,7 +193,7 @@ export async function appendClientDossier(doc, {state, project, font, bold, imag
     field('Referência escolhida no projecto', choice.id.slice(-2) + ' · ' + choice.name);
   }
   nextPage('Mapa dos adicionais');
-  paragraph('PVP actualizado em ' + estimate.edition + '. IVA de ' + estimate.vatRate + '% incluído nos preços publicados.', {size: 10, color: muted});
+  paragraph('PVP do catálogo actualizado em ' + estimate.edition + '. IVA de ' + estimate.vatRate + '% incluído nos artigos do catálogo. Novos pedidos identificados separadamente.' + (estimate.vatIncluded?'':' Ar condicionado: instalação incluída no monosplit de 500 €; enquadramento do IVA por confirmar.'), {size: 10, color: muted});
   paragraph('O PDF do catálogo original conserva os preços da edição de julho. Subtotal aritmético dos artigos seleccionados com PVP actual. Quantidades, âmbito de facturação e compatibilidade específica com a casa ficam sujeitos a confirmação; este subtotal não é o preço total da casa.', {size: 9, color: muted});
   const columns = {item: M + 7, quantity: M + 275, unit: M + 394, total: W - M - 7};
   function tableHeader() {
@@ -186,14 +217,14 @@ export async function appendClientDossier(doc, {state, project, font, bold, imag
     for (const [text, right] of [[priceText, columns.unit], [totalText, columns.total]]) {
       page.drawText(printable(text), {x: right - regular.widthOfTextAtSize(printable(text), 9), y, size: 9, font: regular, color: ink});
     }
-    page.drawText('Ficha original: catálogo, p. ' + line.item.page, {x: columns.item, y: y - labels.length * 13.5 - 1, size: 8, font: regular, color: muted});
+    page.drawText(line.item.page?'Ficha original: catálogo, p. ' + line.item.page:line.item.commercialSource, {x: columns.item, y: y - labels.length * 13.5 - 1, size: 8, font: regular, color: muted});
     y -= height;
     page.drawLine({start: {x: M, y: y + 9}, end: {x: W - M, y: y + 9}, thickness: .4, color: pale});
   }
   if (!estimate.lines.length) paragraph('Nenhum adicional seleccionado.', {color: muted});
   y -= 8;
   heading('Subtotal dos adicionais com preço: ' + money(estimate.knownSubtotalCents));
-  paragraph('IVA já incluído; não foi acrescentado novamente. Os artigos sem preço não entram neste subtotal e não são gratuitos.', {size: 9, color: muted});
+  paragraph((estimate.vatIncluded?'IVA já incluído; não foi acrescentado novamente.':'Não foi acrescentado IVA aos preços indicados; IVA do ar condicionado por confirmar.')+' Os artigos sem preço não entram neste subtotal e não são gratuitos.', {size: 9, color: muted});
   const adaptations = adaptationEstimate(state);
   if (adaptations.lines.length) {
     heading('Personalizações — acréscimos por definir');
@@ -202,11 +233,11 @@ export async function appendClientDossier(doc, {state, project, font, bold, imag
   }
   field('Casa base e equipamentos incluídos', 'Preço base por confirmar. As composições standard acima registadas não constituem uma confirmação de preço.');
   field('Transporte', 'Valor e âmbito por confirmar para o local de instalação.');
-  field('Instalação e trabalhos no local', 'Valor e âmbito por confirmar.');
+  field('Instalação e trabalhos no local', 'Valor e âmbito por confirmar, excepto a instalação do monosplit de 12 000 BTU, incluída nos 500 € por sistema quando seleccionado.');
   if (estimate.pending.length) field('Adicionais com preço por confirmar', estimate.pending.map(line => line.item.label + ' · quantidade ' + line.quantity).join('\n'));
   if (estimate.unitPending.length) field('Âmbito de facturação por confirmar', estimate.unitPending.map(line => line.item.label).join('\n'));
   if (estimate.unassigned.length) field('Locais de aplicação ainda por atribuir', estimate.unassigned.map(line => line.item.label + ': ' + (line.quantity - line.targets.length) + ' de ' + line.quantity + ' por atribuir.').join('\n'));
-  field('Total final do projecto', 'Por confirmar na proposta comercial. O subtotal acima não inclui o preço base, o transporte, a instalação nem os valores ainda por indicar.');
+  field('Total final do projecto', 'Por confirmar na proposta comercial. O subtotal acima não inclui o preço base, o transporte, a instalação da casa nem os valores ainda por indicar. A instalação do monosplit está incluída no respectivo preço.');
 
   if (estimate.lines.length) nextPage('Artigos seleccionados');
   for (const [index, line] of estimate.lines.entries()) {
@@ -217,8 +248,8 @@ export async function appendClientDossier(doc, {state, project, font, bold, imag
       ...(variant ? ['Variante: ' + variant] : []),
       'PVP actual: ' + money(line.unitCents),
       'Parcial: ' + money(line.totalCents),
-      'IVA: ' + estimate.vatRate + '% incluído quando existe preço.',
-      'PVP ' + estimate.edition + ' · ficha p. ' + item.page];
+      item.vatIncluded===null?'IVA: enquadramento por confirmar.':'IVA: ' + estimate.vatRate + '% incluído quando existe preço.',
+      item.page?'PVP ' + estimate.edition + ' · ficha p. ' + item.page:item.commercialSource];
     const metaLines = metadata.flatMap(value => wrap(value, CONTENT - 194, 9.5));
     const pictureHeight = 112, blockHeight = Math.max(pictureHeight, metaLines.length * 13.5);
     const titleHeight = wrap(title, CONTENT, 13, strong).length * 18.46 + 8;
@@ -233,9 +264,11 @@ export async function appendClientDossier(doc, {state, project, font, bold, imag
     }
     metaLines.forEach((text, i) => page.drawText(text, {x: M + 194, y: top - i * 13.5, size: 9.5, font: regular, color: ink}));
     y = top - blockHeight - 13;
-    paragraph(item.photo ? (item.photoCaption || 'Imagem de referência do catálogo · p. ' + (item.photoPage || item.page)) + '. A fotografia não é uma imagem da instalação escolhida.' : 'Consultar o catálogo, p. ' + item.page + ', para a referência original.', {size: 8.5, color: muted});
-    if (item.facts?.length) paragraph('Indicações do catálogo: ' + item.facts.join('; ') + '.', {size: 9});
+    paragraph(item.photo ? (item.photoCaption || 'Imagem de referência do catálogo · p. ' + (item.photoPage || item.page)) + '. A fotografia não é uma imagem da instalação escolhida.' : 'Pedido personalizado Green Village. Fotografia específica por fornecer.', {size: 8.5, color: muted});
+    if (item.facts?.length) paragraph('Características: ' + item.facts.join('; ') + '.', {size: 9});
     paragraph('Âmbito: ' + item.scope + '.', {size: 9});
+    if(client.optionNotes[item.id])field('Local pretendido e observações',client.optionNotes[item.id]);
+    if(item.id==='glass-front'&&line.quantity>1)paragraph('O modelo 3D representa uma frente. As restantes '+(line.quantity-1)+' unidades são pedidos adicionais, com aplicação sujeita a validação.',{size:9,color:muted});
     if (line.locations.length) paragraph('Locais seleccionados: ' + line.locations.join('; ') + '.', {size: 9});
     if (item.model === 'opening' && line.id !== 'glass-front' && line.targets.length < line.quantity) {
       paragraph('Ainda por atribuir a um local: ' + (line.quantity - line.targets.length) + ' de ' + line.quantity + '.', {size: 9, color: muted});

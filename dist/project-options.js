@@ -1,7 +1,8 @@
 import {DATA} from './data.js';
+import {validateClientRecords} from './client-records.js';
 
 export const CATALOGUE_EDITION = DATA.edition.split('-').reverse().join('/');
-export const OPTION_GROUPS = {doors:'Portas',windows:'Janelas',walls:'Paredes e isolamento',roof:'Telhado',exterior:'Terraço',kitchen:'Cozinha',bathroom:'Casa de banho'};
+export const OPTION_GROUPS = {doors:'Portas e envidraçados',windows:'Janelas',walls:'Paredes e isolamento',roof:'Telhado',exterior:'Terraço',kitchen:'Cozinha',bathroom:'Casa de banho',climate:'Ar condicionado'};
 const referencePhotos={
  'exterior-3d':{photo:'assets/catalogue/swatches/exterior-3d-textures-tijolo-cinza.jpg',photoCaption:'Amostra do painel 3D · catálogo p. 7',photoPage:7},
  'kitchen-upper':{photo:'assets/catalogue/reference/kitchen-08.jpg',photoCaption:'Ambiente do catálogo p. 16 com armários superiores. Não identifica o conjunto abrangido pelo PVP actual.',photoPage:16},
@@ -14,10 +15,15 @@ export const OPTIONAL_ITEMS = DATA.options.map(item => ({
   ...referencePhotos[item.id],
   priceCents: item.priceEurVatIncluded == null ? null : Math.round(item.priceEurVatIncluded*100),
   scope: ['rockwool','eps'].includes(item.id) ? 'Paredes e tecto · unidade 40FT' : item.id==='gable-roof' ? 'Sistema para casa completa · 40FT' : item.id==='terrace' ? 'Terraço e cobertura · profundidade de 3 m' : 'Âmbito de facturação a confirmar',
-  maxQuantity: (['doors','windows'].includes(item.section)&&item.id!=='glass-front') ? 12 : 1,
+  maxQuantity: ['doors','windows'].includes(item.section) ? 12 : 1,
   variants: item.id==='interior-door' ? [['wood','Madeira'],['aluminium','Alumínio'],['sliding','De correr']] : [],
   model: item.section==='windows' || item.section==='doors' ? 'opening' : ['gable-roof','terrace','kitchen-upper','bathroom-separated','exterior-3d'].includes(item.id) ? 'geometry' : 'specification'
-}));
+})).concat([
+  {id:'side-glass-partial',label:'Vidro parcial na lateral',section:'doors',facts:['Indique o lado, as medidas e a divisão nas observações.','Dimensões e instalação sujeitas a validação técnica.'],scope:'Envidraçamento lateral parcial sob cotação',priceCents:null},
+  {id:'kitchen-island',label:'Ilha adicional na cozinha',section:'kitchen',facts:['Pedido registado mesmo quando a planta 3D não comporta uma ilha.','Dimensões, circulação, acabamento e equipamentos a definir.'],scope:'Ilha de cozinha sob cotação personalizada',priceCents:null},
+  {id:'ac-monosplit-12000',label:'Ar condicionado 12 000 BTU · Monosplit 1×1',section:'climate',facts:['1 unidade exterior + 1 unidade interior.','Climatização de uma divisão.','Solução económica e simples de instalar.','500 € por sistema, com instalação incluída.'],scope:'Um sistema de 12 000 BTU com instalação incluída',priceCents:50000,vatIncluded:null},
+  {id:'ac-multisplit-3x1',label:'Ar condicionado · Multisplit 3×1',section:'climate',facts:['1 unidade exterior + 3 unidades interiores.','Até 3 divisões com uma unidade exterior, poupando espaço na fachada.','Preço conforme potência total, marca, unidades interiores e comprimento da tubagem.'],scope:'Dimensionamento técnico e cotação personalizada',priceCents:null},
+].map(item=>({maxQuantity:12,variants:[],model:'specification',photo:null,page:null,commercialSource:'Oferta Green Village · 26/09/2026',...item})));
 export const itemById = id => OPTIONAL_ITEMS.find(item=>item.id===id);
 export const money = cents => cents==null?'Sob consulta':new Intl.NumberFormat('pt-PT',{style:'currency',currency:'EUR'}).format(cents/100);
 export function validateOptionSelections(value=[]){
@@ -33,6 +39,7 @@ export function validateOptionSelections(value=[]){
     if(typeof variant!=='string'||(item.variants.length?!item.variants.some(v=>v[0]===variant):variant!==''))throw new Error('Variante inválida: '+item.label+'.');
     const targets=raw.targets??[];
     if(!Array.isArray(targets)||targets.length>raw.quantity||new Set(targets).size!==targets.length)throw new Error('A quantidade deve abranger todos os locais seleccionados.');
+    if(item.model==='specification'&&targets.length)throw new Error('Registe o local pretendido nas observações deste adicional.');
     for(const target of targets){
       if(typeof target!=='string'||! /^(entry|front-window--?1|rear-window--?1|bath-window|side--?1-\d|bedroom-\d-door|bath-door)$/.test(target))throw new Error('Local de aplicação inválido.');
       const interior=/^(bedroom-|bath-door)/.test(target),window=target!=='entry'&&!interior;
@@ -85,9 +92,9 @@ export function catalogueEstimate(state){
   const lines=validateOptionSelections(state.optionSelections).map(s=>{
     const item=itemById(s.id);
     const locations=s.targets.map(target=>{const label=optionTargetLabel(target);return s.id==='side-glass-door'?label.replace(/^Janela lateral /,'Porta lateral '):label;});
-    return {...s,item,unitCents:item.priceCents,totalCents:item.priceCents==null?null:item.priceCents*s.quantity,locations,unitConfirmed:['rockwool','eps','gable-roof','terrace'].includes(s.id)};
+    return {...s,item,unitCents:item.priceCents,totalCents:item.priceCents==null?null:item.priceCents*s.quantity,locations,unitConfirmed:['rockwool','eps','gable-roof','terrace','ac-monosplit-12000'].includes(s.id)};
   });
-  return {currency:'EUR',vatIncluded:true,vatRate:23,edition:CATALOGUE_EDITION,lines,
+  return {currency:'EUR',vatIncluded:lines.every(line=>line.item.vatIncluded!==null),vatRate:23,edition:CATALOGUE_EDITION,lines,
     knownSubtotalCents:lines.reduce((sum,line)=>sum+(line.totalCents??0),0),
     pending:lines.filter(line=>line.totalCents==null),
     unassigned:lines.filter(line=>line.item.model==='opening'&&line.id!=='glass-front'&&line.targets.length<line.quantity),
@@ -95,6 +102,7 @@ export function catalogueEstimate(state){
     basePriceCents:null,complete:false};
 }
 export function availableOptionTargets(item,plan){
+  if(item.model==='specification')return [];
   if(item.id==='glass-front')return [];
   if(item.id==='interior-door')return plan.doors.map(d=>({id:d.id,label:optionTargetLabel(d.id)}));
   if(item.section==='windows')return plan.perimeter.flatMap(f=>f.holes).filter(h=>h.id!=='entry'&&(item.id!=='window-mosquito'||h.kind==='window')).map(h=>({id:h.id,label:optionTargetLabel(h.id)}));
@@ -129,5 +137,5 @@ export function validateClientProject(value){
     if(typeof v!=='string'||v.length>limit||/[\u0000-\u0008\u000b\u000c\u000e-\u001f]/.test(v))throw new Error('Campo do projecto inválido: '+key+'.');result[key]=v.trim();
   }
   if(!/^\d{4}-\d{2}-\d{2}$/.test(result.projectDate)||!Number.isFinite(Date.parse(result.projectDate+'T12:00:00Z'))||new Date(result.projectDate+'T12:00:00Z').toISOString().slice(0,10)!==result.projectDate)throw new Error('Data do projecto inválida.');
-  return result;
+  return {...result,...validateClientRecords(value)};
 }
