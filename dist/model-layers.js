@@ -1,7 +1,7 @@
 export const LAYERS=[
  ['supports','Apoios da maquete','Forma representativa; fundação do terreno não documentada.'],
  ['structure','Chassis e perfis','Forma das fotografias; secções e ligações estimadas.'],
- ['floor','Pavimento e suporte','SPC do catálogo; espessura total estimada.'],
+ ['floor','Pavimento e suporte','Vinílico incluído ou SPC opcional; espessura total estimada.'],
  ['exterior','Paredes exteriores','Vãos da planta; alturas e espessuras estimadas.'],
  ['interior','Divisórias e portas interiores','Relações da planta; dimensões não cotadas estimadas.'],
  ['insulation','Isolamento representativo','Composição da variante por confirmar.'],

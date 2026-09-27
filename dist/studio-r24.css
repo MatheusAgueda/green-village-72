@@ -1,0 +1,25 @@
+/* Room presentations and reachable model controls. */
+.canvas-tools button{width:44px;height:44px;min-width:44px;min-height:44px}
+.scene-toolbar{gap:12px}
+.scene-toolbar>span{flex:1}
+.scene-toolbar button{min-height:44px}
+#openings-toggle{font-size:12px;white-space:normal;line-height:1.25}
+#openings-toggle[aria-pressed=true]{background:#e6eee7;border-color:#41725a}
+@media(max-width:900px){
+ .scene-toolbar>span{display:none}
+ .scene-toolbar{justify-content:space-between}
+ #viewport{height:clamp(330px,44dvh,430px)}
+ .canvas-tools{right:8px;gap:6px}
+}
+@media(max-width:560px){
+ #viewport{height:360px;min-height:360px}
+ #viewport .canvas-tools{left:8px;right:8px;top:auto;bottom:8px;display:flex;flex-direction:row;gap:2px;max-height:48px;overflow-x:auto;justify-content:flex-start}
+ #viewport[data-detail]:not([data-detail=""]) .canvas-tools{top:auto}
+ #viewport .canvas-tools button{flex:0 0 44px;font-size:22px}
+ #viewport .scene-bottom{display:none}
+ #viewport .reference-peek{bottom:62px!important}
+ #viewport[data-detail]:not([data-detail=""])>canvas{top:36px!important;height:calc(100% - 90px)!important}
+ #viewport[data-detail]:not([data-detail=""]) .reference-peek .detail-exit{min-height:44px;padding:10px 12px}
+ #viewport:not([data-detail]),#viewport[data-detail=""]{padding-bottom:54px}
+ .scene-toolbar button{font-size:12px;padding:8px 11px}
+}

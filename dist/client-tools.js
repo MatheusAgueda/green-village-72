@@ -33,7 +33,7 @@ export function readSharedConfiguration(hash){
 }
 export function migrateStoredConfiguration(raw){
  const parsed=JSON.parse(raw),data=parsed.configuration||parsed,changes=[];
- for(const [id,colour] of [['exteriorId','exterior'],['floorId','floor']])if(data[id]===null){data[id]=DEFAULT_CONFIG[id];data[colour]=DEFAULT_CONFIG[colour];changes.push(colour);}
+ for(const [id,colour] of [['exteriorId','exterior'],['floorId','floor']])if(data[id]===null&&!(id==='floorId'&&data.floorType==='vinyl')){data[id]=DEFAULT_CONFIG[id];data[colour]=DEFAULT_CONFIG[colour];changes.push(colour);}
  if(data.interior!==DEFAULT_CONFIG.interior){data.interior=DEFAULT_CONFIG.interior;data.interiorName=DEFAULT_CONFIG.interiorName;changes.push('interior');}
  return {configuration:validateConfiguration(data),changes};
 }

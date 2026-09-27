@@ -26,6 +26,13 @@ export const OPTIONAL_ITEMS = DATA.options.map(item => ({
 ].map(item=>({maxQuantity:12,variants:[],model:'specification',photo:null,page:null,commercialSource:'Oferta Green Village · 26/09/2026',...item})));
 export const itemById = id => OPTIONAL_ITEMS.find(item=>item.id===id);
 export const money = cents => cents==null?'Sob consulta':new Intl.NumberFormat('pt-PT',{style:'currency',currency:'EUR'}).format(cents/100);
+export const SPC_FLOOR_UPGRADE=Object.freeze({
+  id:'floor-spc-upgrade',label:'Pavimento SPC',section:'Pavimento',priceCents:120000,
+  scope:'Substituição do pavimento vinílico incluído por pavimento SPC na casa',
+  commercialSource:'Adicional Green Village · 1 200 €',vatIncluded:null,
+  facts:['Pavimento vinílico incluído no preço base.','SPC: adicional único de 1 200 € por casa; referência escolhida no configurador.'],
+  model:'specification',maxQuantity:1,variants:[],photo:null,page:null
+});
 export function validateOptionSelections(value=[]){
   if(!Array.isArray(value)||value.length>OPTIONAL_ITEMS.length)throw new Error('Lista de adicionais inválida.');
   const ids=new Set(),slots=new Set();
@@ -94,7 +101,15 @@ export function catalogueEstimate(state){
     const locations=s.targets.map(target=>{const label=optionTargetLabel(target);return s.id==='side-glass-door'?label.replace(/^Janela lateral /,'Porta lateral '):label;});
     return {...s,item,unitCents:item.priceCents,totalCents:item.priceCents==null?null:item.priceCents*s.quantity,locations,unitConfirmed:['rockwool','eps','gable-roof','terrace','ac-monosplit-12000'].includes(s.id)};
   });
+  // This line is derived from the floor choice, never stored among optionSelections.
+  // Repeated validation, import, undo and sample changes therefore cannot duplicate it.
+  if(state.floorType==='spc'||DATA.swatches['floor-spc'].some(sample=>sample.id===state.floorId)){
+    const sample=DATA.swatches['floor-spc'].find(item=>item.id===state.floorId);
+    const item={...SPC_FLOOR_UPGRADE,...(sample?{photo:`assets/catalogue-r3/crops/${sample.id}.png`,photoCaption:`Amostra SPC ${sample.label} · recorte do catálogo sem inscrições`,facts:[...SPC_FLOOR_UPGRADE.facts,`Referência escolhida: ${sample.label}`]}:{})};
+    lines.push({id:item.id,item,quantity:1,variant:'',targets:[],locations:[],unitCents:item.priceCents,totalCents:item.priceCents,unitConfirmed:true,derived:true});
+  }
   return {currency:'EUR',vatIncluded:lines.every(line=>line.item.vatIncluded!==null),vatRate:23,edition:CATALOGUE_EDITION,lines,
+    vatPending:lines.filter(line=>line.item.vatIncluded===null),
     knownSubtotalCents:lines.reduce((sum,line)=>sum+(line.totalCents??0),0),
     pending:lines.filter(line=>line.totalCents==null),
     unassigned:lines.filter(line=>line.item.model==='opening'&&line.id!=='glass-front'&&line.targets.length<line.quantity),

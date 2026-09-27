@@ -1,4 +1,5 @@
 import * as THREE from './vendor/three.module.js';
+import {createOpeningMotion} from './opening-motion.js';
 import { createInteriorDetail } from './interior-detail.js';
 import { classifyLayer } from './model-layers.js';
 import { installPanelJoints } from './panel-joints.js';
@@ -50,33 +51,16 @@ export function makeHouse(options={},library=null){
  for(const x of [-X+.2,-C+.15,C-.15,X-.2])for(const z of [-Z+.35,0,Z-.35]){const g=new THREE.Group();groups.supports.add(g);box(g,.29,.035,.29,x,-.347,z,M.steel,'Base de apoio');cylinder(g,.038,.17,x,-.245,z,M.metal,'Apoio ilustrativo');if(Math.abs(x)>C)deploymentSupports.push({g,x});}
  // Three independent visible floor layers, inside the same 6.22 × 11.80 m envelope.
  function floorSlab(g,a,b,bottom,depth,material,name){const inset=.004; a+=inset; b-=inset; const shape=new THREE.Shape();shape.moveTo(a,-Z+inset);shape.lineTo(b,-Z+inset);shape.lineTo(b,Z-inset);shape.lineTo(a,Z-inset);shape.closePath();const geo=new THREE.ExtrudeGeometry(shape,{depth,bevelEnabled:false,curveSegments:12});geo.rotateX(-Math.PI/2);physicalUV(geo);const m=mesh(g,geo,material,name);m.position.y=bottom;}
- for(const [a,b] of floorZones){const w=wingAt(a,b);floorSlab(w?w.floor:groups.floor,a,b,-.012,.012,M.floor,'Pavimento SPC');floorSlab(w?w.layers:groups.floorLayers,a,b,-.046,.032,M.board,'Placa de suporte');floorSlab(w?w.layers:groups.floorLayers,a,b,-.121,.07,M.insulation,'Isolamento de piso · ilustrativo');}
+ for(const [a,b] of floorZones){const w=wingAt(a,b);floorSlab(w?w.floor:groups.floor,a,b,-.012,.012,M.floor,state.floorType==='spc'?'Pavimento SPC':'Pavimento vinílico · referência por confirmar');floorSlab(w?w.layers:groups.floorLayers,a,b,-.046,.032,M.board,'Placa de suporte');floorSlab(w?w.layers:groups.floorLayers,a,b,-.121,.07,M.insulation,'Isolamento de piso · ilustrativo');}
  // Panels have separate external skin, insulating body and internal paint. Each side has metre UVs.
  function panelSection(g,axis,c,a,b,lo,hi,sign,name,material=M.exterior){if(b-a<1e-7||hi-lo<1e-7)return;
   const centre=(a+b)/2,cy=(lo+hi)/2;const at=(offset)=>axis==='z'?[c+offset,cy,centre]:[centre,cy,c+offset];
   const add=(depth,offset,m,n)=>{const [x,y,z]=at(offset);return box(g,axis==='z'?depth:b-a,hi-lo,axis==='z'?b-a:depth,x,y,z,m,n);};
   add(DIM.panel-.012,-sign*DIM.panel/2,M.insulation,name+' · núcleo');add(.005,-sign*.0025,material,name+' · exterior');add(.005,-sign*(DIM.panel-.0025),M.panelInterior,name+' · interior');
  }
- function window(g,axis,c,h,sign){const {u,width,height,sill}=h,at=(v,y,offset=0)=>axis==='z'?[c+offset,y,v]:[v,y,c+offset];const rect=(w,hei,depth,v,y,mat,name,off=0)=>{const [x,yy,z]=at(v,y,off);return box(g,axis==='z'?depth:w,hei,axis==='z'?w:depth,x,yy,z,mat,name,.003);};
-  const isDoor=h.kind==='door',f=isDoor?.055:.044,th=.052;for(const e of [-1,1])rect(f,height,th,u+e*(width/2-f/2),sill+height/2,M.aluminium,h.id+' · aro',-sign*.035);
-  for(const y of [sill+f/2,sill+height-f/2])rect(width,f,th,u,y,M.aluminium,h.id+' · aro',-sign*.035);
-  const singleLeaf=h.optionId==='side-glass-door',opaque=h.optionId==='steel-door';
-  if(opaque){const leaf=rect(width-f*2,height-f*2,.035,u,sill+height/2,M.doorSteel,h.id+' · folha opaca em aço · vão proposto',-sign*.041);leaf.userData.layer='openings';}
-  else if(singleLeaf)rect(width-f*2,height-f*2,.004,u,sill+height/2,glass,h.id+' · vidro de uma folha',-sign*.041);
-  else {
-   rect(.026,height-.06,.044,u,sill+height/2,M.aluminium,h.id+' · montante',-sign*.035);
-   const apertureHalf=width/2-f,mullionHalf=.026/2;
-   for(const e of [-1,1])rect(apertureHalf-mullionHalf,height-f*2,.004,u+e*(apertureHalf+mullionHalf)/2,sill+height/2,glass,h.id+' · vidro',-sign*.041);
-  }
-  if(h.mosquito){
-   // Coarse visual mesh only: pitch and wire thickness are not catalogue specifications.
-   const w=width-f*2,hei=height-f*2,nx=Math.max(1,Math.ceil(w/.025)),ny=Math.max(1,Math.ceil(hei/.025));
-   for(let i=0;i<=nx;i++)rect(.0012,hei,.0012,u-w/2+w*i/nx,sill+height/2,M.screen,h.id+' · mosquiteiro representativo',sign*.004).userData.layer='openings';
-   for(let i=0;i<=ny;i++)rect(w,.0012,.0012,u,sill+f+hei*i/ny,M.screen,h.id+' · mosquiteiro representativo',sign*.004).userData.layer='openings';
-  }
-  rect(width+.02,.022,DIM.panel+.025,u,sill-.011,M.metal,h.id+' · soleira',-sign*DIM.panel/2);
-  if(isDoor){rect(.018,.18,.018,singleLeaf||opaque?u+width/2-f-.10:u+.08,.99,M.metal,'Puxador',sign*.012);}else rect(.014,.11,.012,u+.055,sill+height*.45,M.metal,'Fecho da janela',-sign*.071);
- }
+ const openings=createOpeningMotion({box,materials:M,glass,panelDepth:DIM.panel});
+ function window(g,axis,c,h,sign){return openings.build({g,axis,c,h,sign});}
+
  function wallPanel(g,axis,c,a,b,holes,sign,name){const cuts=[a,b,...holes.flatMap(h=>[Math.max(a,h.u-h.width/2),Math.min(b,h.u+h.width/2)])].sort((a,b)=>a-b);for(let i=0;i<cuts.length-1;i++){const lo=cuts[i],hi=cuts[i+1];if(hi<=a||lo>=b||hi-lo<1e-6)continue;const hole=holes.find(h=>(lo+hi)/2>h.u-h.width/2&&(lo+hi)/2<h.u+h.width/2);for(const [y0,y1]of hole?[[.09,hole.sill],[hole.sill+hole.height,H-.12]]:[[.09,H-.12]])panelSection(g,axis,c,lo,hi,Math.max(.09,y0),Math.min(H-.12,y1),sign,name);}
   for(const h of holes)if(h.u-h.width/2>=a-1e-6&&h.u+h.width/2<=b+1e-6)window(g,axis,c,h,sign);
   const bottom=axis==='z'?[c-sign*.05,.046,(a+b)/2]:[(a+b)/2,.046,c-sign*.05];box(g,axis==='z'?.098:b-a,.085,axis==='z'?b-a:.098,...bottom,M.aluminium,name+' · remate inferior');
@@ -169,7 +153,7 @@ export function makeHouse(options={},library=null){
  for(const a of endAssemblies){a.pivot=hinge(a.g,new THREE.Vector3(a.dir*C,0,a.front*Z),'Articulação de topo '+a.front+' '+a.dir);}
  const cutPlane=new THREE.Plane(new THREE.Vector3(0,-1,0),state.cut||1.1);
  const moving=[...sideAssemblies.map(a=>a.pivot),...endAssemblies.map(a=>a.g)];
- function setView(view){state.view=view;const cut=['interior','plan','plumbing','electrical'].includes(view),structure=view==='structure',finish=view==='finishes',expand=view==='expansion';
+ function setView(view){openings.setEnabled(!['structure','finishes','expansion'].includes(view));restoreDetailVisibility();root.userData.detail=null;state.view=view;const cut=['interior','plan','plumbing','electrical'].includes(view),structure=view==='structure',finish=view==='finishes',expand=view==='expansion';
   groups.shell.visible=!structure&&(expand||state.wallsVisible);groups.interior.visible=!structure&&!expand;groups.furniture.visible=state.furnitureVisible&&!structure&&!expand;
   groups.floor.visible=!structure;groups.floorLayers.visible=!structure||finish;groups.roof.visible=!cut&&!structure&&(expand||state.roofVisible);groups.structure.visible=true;groups.supports.visible=true;
   groups.plumbing.visible=view==='plumbing';groups.electrical.visible=view==='electrical';
@@ -179,16 +163,38 @@ export function makeHouse(options={},library=null){
   groups.cover.visible=state.roof&&!cut&&!expand;groups.porch.visible=state.porch&&!expand;canopyGroup.visible=!cut&&!structure;for(const o of groups.cover.children)o.visible=!structure||o.material!==M.roof;for(const o of groups.porch.children)if(o.isMesh)o.visible=!structure||o.material!==M.wood;
   setExploded(finish?state.exploded??1:0);updateExpansion(expand?state.expansion:1);setDoors(state.doorsOpen);
  }
- function setDetail(kind=null){
-  const active=state.view==='interior'&&kind&&detailBounds(kind);root.userData.detail=active?kind:null;
-  for(const g of groups.furniture.children)g.visible=!active||(kind==='kitchen'?g.name.includes('kitchen'):['shower','toilet','basin'].includes(g.name));
-  bathSkin.visible=!(active&&kind==='kitchen');
-  for(const wall of bathSkin.children)wall.visible=!(active&&kind==='bathroom'&&wall.name==='Revestimento UV da casa de banho'&&wall.position.x*(state.bathroom==='mirrored'?-1:1)>0);
-  const crop=active?active.clone().expandByScalar(.34):null;
-  const planes=crop?[new THREE.Plane(new THREE.Vector3(1,0,0),-crop.min.x),new THREE.Plane(new THREE.Vector3(-1,0,0),crop.max.x),new THREE.Plane(new THREE.Vector3(0,0,1),-crop.min.z),new THREE.Plane(new THREE.Vector3(0,0,-1),crop.max.z)]:[];
-  if(state.view==='interior')for(const m of allMaterials){m.clippingPlanes=active&&details.detailMaterials.has(m)?[]:active&&(m===M.bath||(kind==='kitchen'&&[M.panelInterior,M.aluminium,M.glass,M.metal].includes(m)))?planes:[active&&kind==='bathroom'?new THREE.Plane(new THREE.Vector3(0,-1,0),.07):cutPlane,...planes];m.needsUpdate=true;}
+ // Room presentations use the same fixtures and finishes, without sliced chassis parts.
+ const detailPresentation=new THREE.Group();detailPresentation.name='Apresentação da divisão';detailPresentation.visible=false;root.add(detailPresentation);
+ const detailFloors=new Map(),detailVisibility=new Map();
+ const detailEdge=plain('Aresta de apresentação','#e4e2dd',.8);
+ function roomRegion(kind){
+  if(kind==='bathroom')return new THREE.Box3(new THREE.Vector3(bc.x0,0,bc.z0),new THREE.Vector3(bc.x1,H-.13,bc.z1));
+  const list=plan.furnishings.filter(f=>f.type.includes('kitchen')||f.type==='island');if(!list.length)return null;
+  return new THREE.Box3(new THREE.Vector3(Math.max(-X,Math.min(...list.map(f=>f.x0))-.14),0,Math.max(-Z,Math.min(...list.map(f=>f.z0))-.16)),new THREE.Vector3(Math.min(X,Math.max(...list.map(f=>f.x1))+.4),H-.13,Math.min(Z,Math.max(...list.map(f=>f.z1))+.35)));
  }
- function detailBounds(kind){const list=plan.furnishings.filter(f=>kind==='kitchen'?f.type.includes('kitchen')||f.type==='island':['shower','toilet','basin'].includes(f.type));if(!list.length)return null;const bounds=new THREE.Box3(new THREE.Vector3(Math.min(...list.map(f=>f.x0))-.07,0,Math.min(...list.map(f=>f.z0))-.04),new THREE.Vector3(Math.max(...list.map(f=>f.x1))+.08,kind==='kitchen'?(details.kitchen.upper?2.23:1.22):2.12,Math.max(...list.map(f=>f.z1))+.04));root.updateMatrixWorld(true);for(const m of details.motions)if(m.scope===kind)bounds.union(new THREE.Box3().setFromObject(m.g));return bounds;}
+ for(const kind of ['bathroom','kitchen']){const bounds=roomRegion(kind);if(!bounds)continue;const g=new THREE.Group();g.name=kind+' · pavimento de apresentação';detailPresentation.add(g);detailFloors.set(kind,g);const size=bounds.getSize(new THREE.Vector3()),c=bounds.getCenter(new THREE.Vector3());box(g,size.x,.046,size.z,c.x,-.028,c.z,detailEdge,'Aresta de corte');box(g,size.x,.005,size.z,c.x,-.0025,c.z,M.floor,'Pavimento da divisão');}
+ const detailWindow=new THREE.Group();detailWindow.name='Janela da casa de banho';detailPresentation.add(detailWindow);
+ for(const hole of rearHoles)window(detailWindow,'x',bc.z0-.065,hole,-1);
+ function restoreDetailVisibility(){for(const [object,visible]of detailVisibility)object.visible=visible;detailVisibility.clear();detailPresentation.visible=false;}
+ function detailVisible(object,visible){if(!detailVisibility.has(object))detailVisibility.set(object,object.visible);object.visible=visible;}
+ function setDetail(kind=null){
+  restoreDetailVisibility();
+  const active=state.view==='interior'&&kind&&roomRegion(kind);root.userData.detail=active?kind:null;
+  if(active){
+   for(const key of ['structure','supports','floor','floorLayers','roof','cover','porch','plumbing','electrical'])detailVisible(groups[key],false);
+   for(const g of groups.furniture.children)detailVisible(g,kind==='kitchen'?(g.name.includes('kitchen')||g.name==='island'):['shower','toilet','basin'].includes(g.name));
+   detailVisible(bathSkin,kind==='bathroom');
+   if(kind==='bathroom'){
+    detailVisible(groups.shell,false);for(const a of sideAssemblies)detailVisible(a.pivot,false);for(const a of endAssemblies)detailVisible(a.g,false);
+    for(const child of groups.interior.children)if(child!==bathSkin)detailVisible(child,false);
+    for(const wall of bathSkin.children)if(wall.name==='Revestimento UV da casa de banho'&&wall.position.x*(state.bathroom==='mirrored'?-1:1)>0)detailVisible(wall,false);
+   }
+   detailPresentation.visible=true;for(const [key,g]of detailFloors)g.visible=key===kind;detailWindow.visible=kind==='bathroom';
+  }
+  const planes=active?[new THREE.Plane(new THREE.Vector3(1,0,0),-active.min.x),new THREE.Plane(new THREE.Vector3(-1,0,0),active.max.x),new THREE.Plane(new THREE.Vector3(0,0,1),-active.min.z),new THREE.Plane(new THREE.Vector3(0,0,-1),active.max.z)]:[];
+  if(state.view==='interior')for(const m of allMaterials){m.clippingPlanes=active?(details.detailMaterials.has(m)||m===M.bath||m===M.floor||m===detailEdge||(kind==='bathroom'&&[M.aluminium,M.glass,M.metal].includes(m))?[]:planes):[cutPlane];m.needsUpdate=true;}
+ }
+ function detailBounds(kind){const bounds=roomRegion(kind);if(!bounds)return null;bounds.min.y=-.051;bounds.expandByScalar(.045);root.updateMatrixWorld(true);for(const m of details.motions)if(m.scope===kind)bounds.union(new THREE.Box3().setFromObject(m.g));return bounds;}
 
  function setCut(height){state.cut=height;cutPlane.constant=height;}
  function setDoors(open){state.doorsOpen=open;for(const d of doors){const pose=doorPose(d,open?1:0);d.pivot.position.set(pose.hinge.x,0,pose.hinge.z);d.pivot.rotation.y=pose.angle;}}
@@ -211,7 +217,7 @@ export function makeHouse(options={},library=null){
   return {...e,referenceOnly:false,scope:'longitudinal-wall-raising',axisStatus:'estimated'};
  }
  function updateProcess(value){
-  updateExpansion(1);
+  openings.setEnabled(false);updateExpansion(1);
   const pose=applyDeployment({floorAssemblies,roofAssemblies,sideAssemblies,endAssemblies},value);
   for(const a of deploymentSupports)a.g.position.x=-Math.sign(a.x)*(Math.abs(a.x)-.87)*(1-pose.floor);
   groups.interior.visible=false;groups.furniture.visible=false;groups.cover.visible=false;groups.porch.visible=false;
@@ -225,6 +231,6 @@ export function makeHouse(options={},library=null){
  batch(groups.structure);batch(groups.supports);batch(groups.floorLayers);batch(groups.interior);batch(groups.plumbing);batch(groups.electrical);for(const g of roofPanels)batch(g);for(const a of sideAssemblies)batch(a.local);for(const a of endAssemblies)batch(a.g);function batchTree(g){for(const child of [...g.children])if(child.isGroup)batchTree(child);batch(g);}for(const g of groups.furniture.children)batchTree(g);
  setView(state.view);captureBases();
  root.userData={revision:'R9',state,plan,groups,bedroomCount:plan.bedrooms,colliders,envelope:{width:DIM.width,length:DIM.length,core:DIM.core,wing:DIM.wing},animationLimits:'Source frames 2–3: longitudinal walls raise outwards with rigid windows. Axes and 8 mm roof clearance are illustrative. End panels are omitted; transport, locking and full deployment are not documented.'};
- return {root,groups,plan,details,setDetail,detailBounds,materials:M,sideAssemblies,endAssemblies,floorAssemblies,roofAssemblies,doors,colliders,updateExpansion,updateProcess,setView,setCut,setExploded,setDoors,library:lib,dispose};
+ return {root,groups,plan,details,openings,setDetail,detailBounds,materials:M,sideAssemblies,endAssemblies,floorAssemblies,roofAssemblies,doors,colliders,updateExpansion,updateProcess,setView,setCut,setExploded,setDoors,library:lib,dispose};
  }catch(error){dispose();throw error;}
 }

@@ -1,3 +1,4 @@
+import {createPDFI18n,rawPDF} from './pdf-i18n.js';
 import {STANDARD_PACKAGE,standardDescription,adaptationEstimate} from './standard-package.js';
 import {INTERIOR_REFERENCES} from './interior-references.js';
 import {attachmentBytes} from './client-records.js';
@@ -6,12 +7,12 @@ import {
   emptyClientProject,
   validateClientProject,
   OPTION_GROUPS,
-  money,
 } from './project-options.js';
 
 /** Append a paginated client dossier; the caller numbers the complete document. */
-export async function appendClientDossier(doc, {state, project, font, bold, image} = {}) {
+export async function appendClientDossier(doc, {state, project, font, bold, image, lang='pt'} = {}) {
   const {rgb, StandardFonts} = window.PDFLib;
+  const locale=createPDFI18n(lang),t=locale.t,money=locale.money;
   const regular = font || await doc.embedFont(StandardFonts.Helvetica);
   const strong = bold || await doc.embedFont(StandardFonts.HelveticaBold);
   const client = validateClientProject(project || emptyClientProject());
@@ -24,7 +25,7 @@ export async function appendClientDossier(doc, {state, project, font, bold, imag
   let page, y, section = 'Projecto do cliente';
 
   function printable(value, face = regular) {
-    const text = String(value ?? '').normalize('NFC').replace(/\r\n?/g, '\n').replace(/\t/g, ' ');
+    const text = String(t(value)).normalize('NFC').replace(/\r\n?/g, '\n').replace(/\t/g, ' ');
     for (const character of text) {
       if (character !== '\n' && !fonts.get(face).has(character.codePointAt(0))) {
         throw new Error('O tipo de letra do PDF não suporta um carácter do projecto (' + character + '). Use um tipo de letra compatível para conservar o texto integral.');
@@ -66,7 +67,7 @@ export async function appendClientDossier(doc, {state, project, font, bold, imag
     page = doc.addPage([W, H]);
     page.drawRectangle({x: 0, y: H - 78, width: W, height: 78, color: green});
     page.drawText('GREEN VILLAGE', {x: M, y: H - 34, size: 17, font: strong, color: white});
-    page.drawText('EXPANDÍVEL 72  /  DOSSIÊ DO CLIENTE', {x: M, y: H - 56, size: 9, font: regular, color: white});
+    page.drawText(t('EXPANDÍVEL 72  /  DOSSIÊ DO CLIENTE'), {x: M, y: H - 56, size: 9, font: regular, color: white});
     page.drawLine({start: {x: M, y: 39}, end: {x: W - M, y: 39}, thickness: .6, color: rgb(.77, .82, .76)});
     y = H - 110;
     for (const line of wrap(title, CONTENT, 20, strong)) {
@@ -131,11 +132,11 @@ export async function appendClientDossier(doc, {state, project, font, bold, imag
 
   nextPage('Projecto do cliente');
   paragraph('Dados e preferências registados para a preparação da proposta.', {color: muted});
-  field('Cliente', client.clientName, 'Cliente por identificar.');
-  field('Nome do projecto', client.projectName, 'Projecto por designar.');
-  field('Data do projecto', client.projectDate.split('-').reverse().join('/'));
-  field('Local de instalação', client.location);
-  field('Contacto do cliente', client.contact);
+  field('Cliente', rawPDF(client.clientName), 'Cliente por identificar.');
+  field('Nome do projecto', rawPDF(client.projectName), 'Projecto por designar.');
+  field('Data do projecto', locale.date(client.projectDate));
+  field('Local de instalação', rawPDF(client.location));
+  field('Contacto do cliente', rawPDF(client.contact));
   if (image) {
     const picture = await loadImage(image);
     ensure(187);
@@ -144,23 +145,23 @@ export async function appendClientDossier(doc, {state, project, font, bold, imag
     paragraph('Vista guardada da configuração · modelo 3D de apresentação.', {size: 9, color: muted});
   }
 
-  field('Composição de cozinha acordada com o cliente', client.kitchenStandard, 'Sem indicações adicionais à referência standard.');
-  field('Composição de banho acordada com o cliente', client.bathroomStandard, 'Sem indicações adicionais à referência standard.');
+  field('Composição de cozinha acordada com o cliente', rawPDF(client.kitchenStandard), 'Sem indicações adicionais à referência standard.');
+  field('Composição de banho acordada com o cliente', rawPDF(client.bathroomStandard), 'Sem indicações adicionais à referência standard.');
   heading('Adaptações e observações');
-  field('Adaptações pedidas', client.adaptations, 'Não foram registadas adaptações adicionais.');
-  field('Observações do projecto', client.notes, 'Não foram registadas observações adicionais.');
+  field('Adaptações pedidas', rawPDF(client.adaptations), 'Não foram registadas adaptações adicionais.');
+  field('Observações do projecto', rawPDF(client.notes), 'Não foram registadas observações adicionais.');
 
   if(client.requests.length){
     heading('Pedidos específicos — sob cotação');
     paragraph('Pedidos ainda não representados no 3D. Quantidades, medidas, viabilidade e preços sujeitos a validação. Não incluídos no subtotal.',{size:9,color:muted});
     for(const request of client.requests){
-      field(request.quantity+' × '+(request.title||'Pedido por descrever'), 'Local: '+(request.location||'Por definir')+'\n'+request.notes);
+      field(rawPDF(request.quantity+' × '+(request.title||t('Pedido por descrever'))), rawPDF(t('Local')+': '+(request.location||t('Por definir'))+'\n'+request.notes));
     }
   }
   for(const attachment of client.attachments){
     nextPage(attachment.kind==='plan'?'Planta fornecida pelo cliente':'Fotografia fornecida pelo cliente');
-    field('Ficheiro original',attachment.name);
-    field('Observações',attachment.notes,'Sem observações.');
+    field('Ficheiro original',rawPDF(attachment.name));
+    field('Observações',rawPDF(attachment.notes),'Sem observações.');
     paragraph('Referência enviada pelo cliente, pendente de validação técnica. Não altera automaticamente a planta ou o modelo 3D.',{size:9,color:muted});
     if(attachment.mime==='application/pdf'){
       const source=await window.PDFLib.PDFDocument.load(attachmentBytes(attachment.dataUrl).bytes);
@@ -169,7 +170,7 @@ export async function appendClientDossier(doc, {state, project, font, bold, imag
       const pages=await doc.embedPdf(await source.save(),source.getPageIndices());
       for(const [index,embedded] of pages.entries()){
         nextPage('Planta do cliente · página '+(index+1)+' de '+pages.length);
-        paragraph(attachment.name,{size:9,color:muted});
+        paragraph(rawPDF(attachment.name),{size:9,color:muted});
         const height=y-BOTTOM,scale=Math.min(CONTENT/embedded.width,height/embedded.height);
         page.drawPage(embedded,{x:M+(CONTENT-embedded.width*scale)/2,y:y-embedded.height*scale,width:embedded.width*scale,height:embedded.height*scale});
         y=BOTTOM;
@@ -193,22 +194,22 @@ export async function appendClientDossier(doc, {state, project, font, bold, imag
     field('Referência escolhida no projecto', choice.id.slice(-2) + ' · ' + choice.name);
   }
   nextPage('Mapa dos adicionais');
-  paragraph('PVP do catálogo actualizado em ' + estimate.edition + '. IVA de ' + estimate.vatRate + '% incluído nos artigos do catálogo. Novos pedidos identificados separadamente.' + (estimate.vatIncluded?'':' Ar condicionado: instalação incluída no monosplit de 500 €; enquadramento do IVA por confirmar.'), {size: 10, color: muted});
+  paragraph('PVP do catálogo actualizado em ' + locale.date(estimate.edition) + '. IVA de ' + estimate.vatRate + '% incluído nos artigos do catálogo. Novos pedidos identificados separadamente.' + (estimate.vatIncluded?'':' IVA dos artigos assinalados por confirmar.'), {size: 10, color: muted});
   paragraph('O PDF do catálogo original conserva os preços da edição de julho. Subtotal aritmético dos artigos seleccionados com PVP actual. Quantidades, âmbito de facturação e compatibilidade específica com a casa ficam sujeitos a confirmação; este subtotal não é o preço total da casa.', {size: 9, color: muted});
   const columns = {item: M + 7, quantity: M + 275, unit: M + 394, total: W - M - 7};
   function tableHeader() {
     ensure(30);
     page.drawRectangle({x: M, y: y - 20, width: CONTENT, height: 26, color: pale});
-    page.drawText('Artigo', {x: columns.item, y: y - 10, size: 9, font: strong, color: ink});
-    page.drawText('Qtd.', {x: columns.quantity, y: y - 10, size: 9, font: strong, color: ink});
+    page.drawText(t('Artigo'), {x: columns.item, y: y - 10, size: 9, font: strong, color: ink});
+    page.drawText(t('Qtd.'), {x: columns.quantity, y: y - 10, size: 9, font: strong, color: ink});
     for (const [label, right] of [['PVP actual', columns.unit], ['Parcial', columns.total]]) {
-      page.drawText(label, {x: right - strong.widthOfTextAtSize(label, 9), y: y - 10, size: 9, font: strong, color: ink});
+      page.drawText(t(label), {x: right - strong.widthOfTextAtSize(t(label), 9), y: y - 10, size: 9, font: strong, color: ink});
     }
     y -= 32;
   }
   tableHeader();
   for (const [index, line] of estimate.lines.entries()) {
-    const label = (index + 1) + '. ' + line.item.label;
+    const label = (index + 1) + '. ' + t(line.item.label);
     const labels = wrap(label, 251, 9.5, regular), height = labels.length * 13.5 + 22;
     if (y - height < BOTTOM) { nextPage('Mapa dos adicionais'); tableHeader(); }
     for (const [row, text] of labels.entries()) page.drawText(text, {x: columns.item, y: y - row * 13.5, size: 9.5, font: regular, color: ink});
@@ -217,14 +218,14 @@ export async function appendClientDossier(doc, {state, project, font, bold, imag
     for (const [text, right] of [[priceText, columns.unit], [totalText, columns.total]]) {
       page.drawText(printable(text), {x: right - regular.widthOfTextAtSize(printable(text), 9), y, size: 9, font: regular, color: ink});
     }
-    page.drawText(line.item.page?'Ficha original: catálogo, p. ' + line.item.page:line.item.commercialSource, {x: columns.item, y: y - labels.length * 13.5 - 1, size: 8, font: regular, color: muted});
+    page.drawText(t(line.item.page?'Ficha original: catálogo, p. ' + line.item.page:line.item.commercialSource), {x: columns.item, y: y - labels.length * 13.5 - 1, size: 8, font: regular, color: muted});
     y -= height;
     page.drawLine({start: {x: M, y: y + 9}, end: {x: W - M, y: y + 9}, thickness: .4, color: pale});
   }
   if (!estimate.lines.length) paragraph('Nenhum adicional seleccionado.', {color: muted});
   y -= 8;
   heading('Subtotal dos adicionais com preço: ' + money(estimate.knownSubtotalCents));
-  paragraph((estimate.vatIncluded?'IVA já incluído; não foi acrescentado novamente.':'Não foi acrescentado IVA aos preços indicados; IVA do ar condicionado por confirmar.')+' Os artigos sem preço não entram neste subtotal e não são gratuitos.', {size: 9, color: muted});
+  paragraph((estimate.vatIncluded?'IVA já incluído; não foi acrescentado novamente.':'Não foi acrescentado IVA aos preços indicados; IVA dos artigos assinalados por confirmar.')+' Os artigos sem preço não entram neste subtotal e não são gratuitos.', {size: 9, color: muted});
   const adaptations = adaptationEstimate(state);
   if (adaptations.lines.length) {
     heading('Personalizações — acréscimos por definir');
@@ -234,14 +235,14 @@ export async function appendClientDossier(doc, {state, project, font, bold, imag
   field('Casa base e equipamentos incluídos', 'Preço base por confirmar. As composições standard acima registadas não constituem uma confirmação de preço.');
   field('Transporte', 'Valor e âmbito por confirmar para o local de instalação.');
   field('Instalação e trabalhos no local', 'Valor e âmbito por confirmar, excepto a instalação do monosplit de 12 000 BTU, incluída nos 500 € por sistema quando seleccionado.');
-  if (estimate.pending.length) field('Adicionais com preço por confirmar', estimate.pending.map(line => line.item.label + ' · quantidade ' + line.quantity).join('\n'));
-  if (estimate.unitPending.length) field('Âmbito de facturação por confirmar', estimate.unitPending.map(line => line.item.label).join('\n'));
-  if (estimate.unassigned.length) field('Locais de aplicação ainda por atribuir', estimate.unassigned.map(line => line.item.label + ': ' + (line.quantity - line.targets.length) + ' de ' + line.quantity + ' por atribuir.').join('\n'));
+  if (estimate.pending.length) field('Adicionais com preço por confirmar', estimate.pending.map(line => t(line.item.label) + ' · quantidade ' + line.quantity).join('\n'));
+  if (estimate.unitPending.length) field('Âmbito de facturação por confirmar', estimate.unitPending.map(line => t(line.item.label)).join('\n'));
+  if (estimate.unassigned.length) field('Locais de aplicação ainda por atribuir', estimate.unassigned.map(line => t(line.item.label) + ': ' + t((line.quantity - line.targets.length) + ' de ' + line.quantity + ' por atribuir.')).join('\n'));
   field('Total final do projecto', 'Por confirmar na proposta comercial. O subtotal acima não inclui o preço base, o transporte, a instalação da casa nem os valores ainda por indicar. A instalação do monosplit está incluída no respectivo preço.');
 
   if (estimate.lines.length) nextPage('Artigos seleccionados');
   for (const [index, line] of estimate.lines.entries()) {
-    const item = line.item, title = (index + 1) + '. ' + item.label;
+    const item = line.item, title = (index + 1) + '. ' + t(item.label);
     const variant = item.variants.find(entry => entry[0] === line.variant)?.[1];
     const metadata = [OPTION_GROUPS[item.section] || item.section,
       'Quantidade seleccionada: ' + line.quantity,
@@ -249,7 +250,7 @@ export async function appendClientDossier(doc, {state, project, font, bold, imag
       'PVP actual: ' + money(line.unitCents),
       'Parcial: ' + money(line.totalCents),
       item.vatIncluded===null?'IVA: enquadramento por confirmar.':'IVA: ' + estimate.vatRate + '% incluído quando existe preço.',
-      item.page?'PVP ' + estimate.edition + ' · ficha p. ' + item.page:item.commercialSource];
+      item.page?'PVP ' + locale.date(estimate.edition) + ' · ficha p. ' + item.page:item.commercialSource];
     const metaLines = metadata.flatMap(value => wrap(value, CONTENT - 194, 9.5));
     const pictureHeight = 112, blockHeight = Math.max(pictureHeight, metaLines.length * 13.5);
     const titleHeight = wrap(title, CONTENT, 13, strong).length * 18.46 + 8;
@@ -264,14 +265,14 @@ export async function appendClientDossier(doc, {state, project, font, bold, imag
     }
     metaLines.forEach((text, i) => page.drawText(text, {x: M + 194, y: top - i * 13.5, size: 9.5, font: regular, color: ink}));
     y = top - blockHeight - 13;
-    paragraph(item.photo ? (item.photoCaption || 'Imagem de referência do catálogo · p. ' + (item.photoPage || item.page)) + '. A fotografia não é uma imagem da instalação escolhida.' : 'Pedido personalizado Green Village. Fotografia específica por fornecer.', {size: 8.5, color: muted});
-    if (item.facts?.length) paragraph('Características: ' + item.facts.join('; ') + '.', {size: 9});
-    paragraph('Âmbito: ' + item.scope + '.', {size: 9});
-    if(client.optionNotes[item.id])field('Local pretendido e observações',client.optionNotes[item.id]);
+    paragraph(item.photo ? (t(item.photoCaption) || 'Imagem de referência do catálogo · p. ' + (item.photoPage || item.page)) + '. A fotografia não é uma imagem da instalação escolhida.' : 'Pedido personalizado Green Village. Fotografia específica por fornecer.', {size: 8.5, color: muted});
+    if (item.facts?.length) paragraph('Características: ' + item.facts.map(t).join('; ') + '.', {size: 9});
+    paragraph('Âmbito: ' + t(item.scope) + '.', {size: 9});
+    if(client.optionNotes[item.id])field('Local pretendido e observações',rawPDF(client.optionNotes[item.id]));
     if(item.id==='glass-front'&&line.quantity>1)paragraph('O modelo 3D representa uma frente. As restantes '+(line.quantity-1)+' unidades são pedidos adicionais, com aplicação sujeita a validação.',{size:9,color:muted});
-    if (line.locations.length) paragraph('Locais seleccionados: ' + line.locations.join('; ') + '.', {size: 9});
+    if (line.locations.length) paragraph('Locais seleccionados: ' + line.locations.map(t).join('; ') + '.', {size: 9});
     if (item.model === 'opening' && line.id !== 'glass-front' && line.targets.length < line.quantity) {
-      paragraph('Ainda por atribuir a um local: ' + (line.quantity - line.targets.length) + ' de ' + line.quantity + '.', {size: 9, color: muted});
+      paragraph('Ainda por atribuir a um local: ' + t((line.quantity - line.targets.length) + ' de ' + line.quantity + '.'), {size: 9, color: muted});
     }
     if (!line.unitConfirmed) paragraph('A aplicação do preço à quantidade seleccionada depende da confirmação do âmbito de facturação.', {size: 8.5, color: muted});
     y -= 12;
@@ -280,6 +281,7 @@ export async function appendClientDossier(doc, {state, project, font, bold, imag
   nextPage('Validação do projecto');
   paragraph('Este registo reúne as escolhas, os acordos indicados e os pontos ainda por confirmar. A composição final, as adaptações técnicas e o preço total deverão constar da proposta comercial da Green Village.', {size: 10.5});
   paragraph('As fotografias são referências do catálogo. As plantas e o modelo de apresentação conservam as cotas e limitações descritas nas páginas anteriores; não substituem um projecto de execução.', {size: 9, color: muted});
+  paragraph('Originais do catálogo e anexos do cliente conservados na língua de origem.', {size: 9, color: muted});
   heading('Conferência com o cliente');
   for (const label of ['Composição standard da cozinha e da casa de banho', 'Planta, materiais, variantes e locais de aplicação', 'Quantidades e âmbito de facturação dos adicionais', 'Transporte, instalação e total da proposta']) {
     ensure(34);
@@ -296,10 +298,10 @@ export async function appendClientDossier(doc, {state, project, font, bold, imag
   ensure(111);
   const width = (CONTENT - 28) / 2;
   for (const [label, x] of [['Cliente', M], ['Green Village', M + width + 28]]) {
-    page.drawText(label, {x, y, size: 11, font: strong, color: ink});
+    page.drawText(t(label), {x, y, size: 11, font: strong, color: ink});
     page.drawLine({start: {x, y: y - 45}, end: {x: x + width, y: y - 45}, thickness: .7, color: muted});
-    page.drawText('Assinatura', {x, y: y - 60, size: 9, font: regular, color: muted});
-    page.drawText('Data: ____ / ____ / ________', {x, y: y - 83, size: 9, font: regular, color: muted});
+    page.drawText(t('Assinatura'), {x, y: y - 60, size: 9, font: regular, color: muted});
+    page.drawText(t('Data')+': ____ / ____ / ________', {x, y: y - 83, size: 9, font: regular, color: muted});
   }
   y -= 111;
   return doc.getPageCount() - firstPage;

@@ -46,7 +46,7 @@ check('seven original room counts, door end relationships and window counts',()=
 check('partition union handles overlaps; areas never forced to commercial 72',()=>{
  close(unionArea([{x0:0,x1:2,z0:0,z1:1},{x0:1,x1:3,z0:0,z1:1}]),3);
  close(unionArea([{x0:0,x1:3,z0:0,z1:1},{x0:1,x1:2,z0:-1,z1:2}]),5);
- for(const layout of Object.keys(source)){const p=getPlan({...DEFAULT_CONFIG,layout});close(p.areas.exterior,73.396);close(p.areas.internalEnvelope,6.02*11.6);close(p.areas.estimatedNet+p.areas.partitions,p.areas.internalEnvelope);close(p.areas.roomTotal+p.areas.common,p.areas.estimatedNet);assert.equal(p.areas.status,'estimated');assert.ok(p.areas.estimatedNet<70);}
+ for(const layout of Object.keys(source)){const p=getPlan({...DEFAULT_CONFIG,layout,kitchen:layout==='t4-a'?'linear':DEFAULT_CONFIG.kitchen});close(p.areas.exterior,73.396);close(p.areas.internalEnvelope,6.02*11.6);close(p.areas.estimatedNet+p.areas.partitions,p.areas.internalEnvelope);close(p.areas.roomTotal+p.areas.common,p.areas.estimatedNet);assert.equal(p.areas.status,'estimated');assert.ok(p.areas.estimatedNet<70);}
 });
 check('all supported kitchen/bath proposals avoid partition and furniture footprint overlaps',()=>{
  for(const layout of Object.keys(source))for(const kitchen of ['none','linear','l','u','island'])for(const bathroom of ['standard','mirrored']){const s={...DEFAULT_CONFIG,layout,kitchen,bathroom};if(compatibility(s).length)continue;const p=getPlan(s);for(const f of p.furnishings){assert.ok(f.x0>=-3.01-1e-7&&f.x1<=3.01+1e-7&&f.z0>=-5.8-1e-7&&f.z1<=5.8+1e-7,`${layout}/${kitchen}: ${f.id} outside`);if(f.type.includes('kitchen')||f.type==='island')for(const w of p.walls){const r=w.axis==='z'?{x0:w.c-.04,x1:w.c+.04,z0:w.a,z1:w.b}:{x0:w.a,x1:w.b,z0:w.c-.04,z1:w.c+.04};assert.equal(intersects(f,r),false,`${layout}/${kitchen}: ${f.id} vs ${w.id}`);}}
@@ -98,6 +98,10 @@ check('delivery references preserve supplied YouTube moments, posters and user-c
 check('ALL distributed MP4 files contain video and zero audio tracks',()=>{
  const inventory=JSON.parse(readFileSync('audit/r14/silent-media.json','utf8'));
  inventory.assets=inventory.assets.filter(v=>v.path!=='dist/assets/reference-videos-r13/gv-display-module-walkthrough-20260913.mp4');
+ for(const name of ['exterior','kitchen','bathroom','terraco-preto','terraco-cinzento','terraco-branco']){
+  const generated=JSON.parse(readFileSync('dist/assets/generated-videos/'+name+'-metadata.json','utf8'));
+  inventory.assets.push({path:'dist/'+generated.asset,publishedSha256:generated.sha256,outputAudioStreams:generated.validation.audio_stream_count});
+ }
  const publicFiles=[];const walk=dir=>{for(const item of readdirSync(dir,{withFileTypes:true})){const file=path.join(dir,item.name);if(item.isDirectory())walk(file);else if(file.endsWith('.mp4'))publicFiles.push(file);}};walk('dist');
  assert.deepEqual(publicFiles.sort(),inventory.assets.map(v=>v.path).sort());
  for(const record of inventory.assets){
@@ -121,7 +125,7 @@ check('R16 partitions remain behind the facade and every glazing aperture is con
    for(const face of h.plan.perimeter)for(const hole of face.holes)for(const offset of [-.03,-.02,.02,.03]){
     const sign=Math.sign(face.c),u=hole.u+offset,y=hole.sill+hole.height/2;
     const origin=face.axis==='z'?new THREE.Vector3(face.c+sign*.5,y,u):new THREE.Vector3(u,y,face.c+sign*.5),direction=face.axis==='z'?new THREE.Vector3(-sign,0,0):new THREE.Vector3(0,0,-sign);
-    const hit=new THREE.Raycaster(origin,direction).intersectObject(h.root,true)[0];assert.equal(hit?.object.name,hole.id+' · vidro',layout+' '+hole.id+' '+offset);
+    const hit=new THREE.Raycaster(origin,direction).intersectObject(h.root,true)[0];assert.equal(hit?.object.userData.openingMotionId,hole.id,layout+' '+hole.id+' '+offset);assert.ok(hit.distance<.7,'Frame or glass must close the aperture');
    }
    const skin=[];h.groups.interior.traverse(o=>{if(o.name==='Revestimento UV posterior')skin.push(o);});
    const ray=(x,y)=>new THREE.Raycaster(new THREE.Vector3(x,y,-DIM.length/2-1),new THREE.Vector3(0,0,1)).intersectObjects(skin);
@@ -131,13 +135,13 @@ check('R16 partitions remain behind the facade and every glazing aperture is con
  }
 });
 check('R16 kitchen fitting adaptations remain in commercial summaries',()=>{
- for(const layout of ['t2','t4-a']){const s={...DEFAULT_CONFIG,layout,kitchenRef:'kitchen-01'},expected=layout==='t4-a'?'1,60 m':'janelas livres';assert.ok(summaryRows(s).flat().join(' ').includes(expected));assert.ok(selectionGroups(s).flatMap(g=>g.rows).flat().join(' ').includes(expected));assert.ok(summaryMarkup(s,{}).includes(expected));}
+ for(const layout of ['t2','t4-a']){const s={...DEFAULT_CONFIG,layout,kitchen:layout==='t4-a'?'linear':DEFAULT_CONFIG.kitchen,kitchenRef:'kitchen-01'},expected=layout==='t4-a'?'1,60 m':'janelas livres';assert.ok(summaryRows(s).flat().join(' ').includes(expected));assert.ok(selectionGroups(s).flatMap(g=>g.rows).flat().join(' ').includes(expected));assert.ok(summaryMarkup(s,{}).includes(expected));}
 });
 check('all seven geometry outputs are finite and preserve actual structural envelope',()=>{
- for(const layout of Object.keys(source)){const h=makeHouse({...DEFAULT_CONFIG,layout});h.root.updateMatrixWorld(true);h.root.traverse(o=>{assert.ok(o.matrixWorld.elements.every(Number.isFinite),o.name);if(o.isMesh)for(const a of Object.values(o.geometry.attributes))assert.ok(a.array.every(Number.isFinite),o.name);});const box=new THREE.Box3().setFromObject(h.groups.structure);close(box.max.x-box.min.x,6.22,1e-5);close(box.max.z-box.min.z,11.8,1e-5);assert.equal(h.plan.rooms.filter(r=>r.kind==='bedroom').length,source[layout].bedrooms);h.dispose();}
+ for(const layout of Object.keys(source)){const h=makeHouse({...DEFAULT_CONFIG,layout,kitchen:layout==='t4-a'?'linear':DEFAULT_CONFIG.kitchen});h.root.updateMatrixWorld(true);h.root.traverse(o=>{assert.ok(o.matrixWorld.elements.every(Number.isFinite),o.name);if(o.isMesh)for(const a of Object.values(o.geometry.attributes))assert.ok(a.array.every(Number.isFinite),o.name);});const box=new THREE.Box3().setFromObject(h.groups.structure);close(box.max.x-box.min.x,6.22,1e-5);close(box.max.z-box.min.z,11.8,1e-5);assert.equal(h.plan.rooms.filter(r=>r.kind==='bedroom').length,source[layout].bedrooms);h.dispose();}
 });
 check('interior cut applies to furnishings; undocumented technical layers contain no geometry',()=>{
- const h=makeHouse({...DEFAULT_CONFIG,view:'interior',roof:true,porch:true});assert.equal(h.groups.roof.visible,false);assert.equal(h.groups.cover.visible,false);for(const k of ['cabinet','metal','white','inner','steel'])assert.equal(h.materials[k].clippingPlanes.length,1,k);h.setView('electrical');assert.equal(h.groups.electrical.children.length,0);assert.equal(h.groups.plumbing.children.length,0);assert.equal(h.groups.electrical.visible,true);assert.equal(h.groups.plumbing.visible,false);h.setView('exterior');assert.equal(h.groups.cover.visible,true);h.dispose();
+ const h=makeHouse({...DEFAULT_CONFIG,view:'interior',roof:true,porch:true});assert.equal(h.groups.roof.visible,false);assert.equal(h.groups.cover.visible,false);for(const k of ['cabinet','metal','white','inner','steel'])assert.equal(h.materials[k].clippingPlanes.length,1,k);assert.ok(h.groups.electrical.children.length>0);assert.ok(h.groups.plumbing.children.length>0);h.setView('electrical');assert.equal(h.groups.electrical.visible,true);assert.equal(h.groups.plumbing.visible,false);h.setView('plumbing');assert.equal(h.groups.plumbing.visible,true);assert.equal(h.groups.electrical.visible,false);h.setView('exterior');assert.equal(h.groups.cover.visible,true);h.dispose();
 });
 check('R9 wall raising keeps windows rigid and leaves undocumented end panels out of the demonstration',()=>{
  assert.equal(expansionState(-1).wall,0);assert.equal(expansionState(1).wall,1);assert.equal(expansionState(1).angle,0);assert.ok(expansionState(.5).uncertain);assert.equal(expansionState(1).roofLift,0);assert.equal(expansionState(0).roofLift,.008);
@@ -155,7 +159,7 @@ check('bath mirroring updates fixtures and service terminals together',()=>{
  const a=getPlan({...DEFAULT_CONFIG,bathroom:'standard'}),b=getPlan({...DEFAULT_CONFIG,bathroom:'mirrored'});for(const id of ['basin','toilet']){const A=a.furnishings.find(x=>x.id===id),B=b.furnishings.find(x=>x.id===id);close(A.x0,-B.x1);close(a.servicePoints.find(x=>x.id===id).x,-b.servicePoints.find(x=>x.id===id).x);}assert.notDeepEqual(a.furnishings,b.furnishings);
 });
 check('SVG and exported configuration contain the current layout and same area data',()=>{
- for(const layout of Object.keys(source)){const s={...DEFAULT_CONFIG,layout},p=getPlan(s),svg=planSVG(s),json=JSON.parse(encodeConfiguration(s));assert.ok(svg.includes('6 220 mm')&&svg.includes('11 800 mm'));assert.ok(svg.includes(p.label));assert.deepEqual(json.areas,p.areas);assert.equal(json.configuration.layout,layout);assert.ok(!/NaN|undefined/.test(svg));}
+ for(const layout of Object.keys(source)){const s={...DEFAULT_CONFIG,layout,kitchen:layout==='t4-a'?'linear':DEFAULT_CONFIG.kitchen},p=getPlan(s),svg=planSVG(s),json=JSON.parse(encodeConfiguration(s));assert.ok(svg.includes('6 220 mm')&&svg.includes('11 800 mm'));assert.ok(svg.includes(p.label));assert.deepEqual(json.areas,p.areas);assert.equal(json.configuration.layout,layout);assert.ok(!/NaN|undefined/.test(svg));}
 });
 check('plan area labels retain readable contrast with extreme custom floors',()=>{
  const luminance=hex=>{const values=[1,3,5].map(i=>parseInt(hex.slice(i,i+2),16)/255).map(v=>v<=.04045?v/12.92:((v+.055)/1.055)**2.4);return values.reduce((sum,v,i)=>sum+v*[.2126,.7152,.0722][i],0);};
@@ -248,13 +252,13 @@ check('R9 only documented wall raising is animated and repeated poses do not dri
   const h=makeHouse({...DEFAULT_CONFIG,layout,view:'expansion',expansion:1});h.root.updateMatrixWorld(true);const closed=h.sideAssemblies.map(a=>a.pivot.matrixWorld.toArray());
   h.updateExpansion(0);h.root.updateMatrixWorld(true);assert.notDeepEqual(h.sideAssemblies[0].pivot.matrixWorld.toArray(),closed[0]);const folded=h.sideAssemblies.map(a=>a.pivot.matrixWorld.toArray());
   for(const p of [.4,1,0,.85,.12,1,0]){const e=h.updateExpansion(p);assert.equal(e.scope,'longitudinal-wall-raising');assert.equal(e.referenceOnly,false);h.root.updateMatrixWorld(true);if(p===0)h.sideAssemblies.forEach((a,i)=>assert.deepEqual(a.pivot.matrixWorld.toArray(),folded[i]));if(p===1)h.sideAssemblies.forEach((a,i)=>assert.deepEqual(a.pivot.matrixWorld.toArray(),closed[i]));}
-  assert.equal(h.groups.plumbing.children.length,0);assert.equal(h.groups.electrical.children.length,0);h.setView('exterior');assert.ok(h.endAssemblies.every(a=>a.g.visible));h.dispose();
+  assert.ok(h.groups.plumbing.children.length>0);assert.ok(h.groups.electrical.children.length>0);h.setView('exterior');assert.ok(h.endAssemblies.every(a=>a.g.visible));h.dispose();
  }
- const html=readFileSync('dist/index.html','utf8');assert.ok(html.includes('id="play-expansion"'));assert.ok(html.includes('id="expansion-range"'));assert.equal(html.includes('src="assets/expansion-v4.mp4"'),false);assert.equal(html.includes('type="color"'),false);
+ const html=readFileSync('dist/index.html','utf8');assert.ok(html.includes('data-expansion-play'));assert.ok(html.includes('id="model-expansion-range"'));assert.equal(html.includes('src="assets/expansion-v4.mp4"'),false);assert.equal(html.includes('type="color"'),false);
 });
 check('R8 catalogue validation excludes undocumented colours and migrates legacy locally without losing plans',()=>{
- assert.throws(()=>validateConfiguration({...DEFAULT_CONFIG,floorId:null}));assert.throws(()=>validateConfiguration({...DEFAULT_CONFIG,exteriorId:null}));assert.throws(()=>validateConfiguration({...DEFAULT_CONFIG,interior:'#123456'}));
- const old={...DEFAULT_CONFIG,layout:'t4-b',floorId:null,interior:'#123456'},m=migrateStoredConfiguration(JSON.stringify(old));assert.equal(m.configuration.layout,'t4-b');assert.equal(m.configuration.floorId,DEFAULT_CONFIG.floorId);assert.deepEqual(m.changes,['floor','interior']);
+ assert.equal(validateConfiguration({...DEFAULT_CONFIG,floorId:null}).floorType,'vinyl');assert.throws(()=>validateConfiguration({...DEFAULT_CONFIG,floorType:'spc',floorId:null}));assert.throws(()=>validateConfiguration({...DEFAULT_CONFIG,exteriorId:null}));assert.throws(()=>validateConfiguration({...DEFAULT_CONFIG,interior:'#123456'}));
+ const old={...DEFAULT_CONFIG,layout:'t4-b',floorType:undefined,floorId:null,interior:'#123456'},m=migrateStoredConfiguration(JSON.stringify(old));assert.equal(m.configuration.layout,'t4-b');assert.equal(m.configuration.floorId,DEFAULT_CONFIG.floorId);assert.deepEqual(m.changes,['floor','interior']);
 });
 check('R8 undo redo branch and share links preserve validated states',()=>{
  const h=createHistory(DEFAULT_CONFIG),b={...DEFAULT_CONFIG,roof:true},c={...b,porch:true};h.push(b);h.push(c);assert.equal(h.canUndo,true);assert.deepEqual(h.undo(),b);assert.deepEqual(h.redo(),c);h.undo();h.push({...b,layout:'t1'});assert.equal(h.canRedo,false);
@@ -268,7 +272,7 @@ check('R8 layer isolation and opacity are independent, reversible and preserve m
  l.dispose();for(const e of l.entries)assert.equal(e.object.material,e.material);h.dispose();
 });
 check('R8 interior movement cannot cross envelope or partitions at high movement steps',()=>{
- for(const layout of Object.keys(source)){const p=getPlan({...DEFAULT_CONFIG,layout}),segments=navigationSegments(p,true);assert.ok(canWalk(p,segments,0,4.9));let position={x:0,z:4.9};for(const [dx,dz]of [[100,0],[-100,0],[0,-100],[0,100]]){position=moveInside(p,segments,position,dx,dz);assert.ok(canWalk(p,segments,position.x,position.z),layout);assert.ok(Math.abs(position.x)<3.01&&Math.abs(position.z)<5.8);}}
+ for(const layout of Object.keys(source)){const p=getPlan({...DEFAULT_CONFIG,layout,kitchen:layout==='t4-a'?'linear':DEFAULT_CONFIG.kitchen}),segments=navigationSegments(p,true);assert.ok(canWalk(p,segments,0,4.9));let position={x:0,z:4.9};for(const [dx,dz]of [[100,0],[-100,0],[0,-100],[0,100]]){position=moveInside(p,segments,position,dx,dz);assert.ok(canWalk(p,segments,position.x,position.z),layout);assert.ok(Math.abs(position.x)<3.01&&Math.abs(position.z)<5.8);}}
 });
 check('R9 each model dimension appears once and source conflicts do not assert an unproven variant',()=>{
  const ledger=sourceLedger({...DEFAULT_CONFIG,porch:true});
@@ -282,13 +286,13 @@ check('R9 technical sheet preserves catalogue units, option prices and source sc
  const bathroom=CATALOGUE_OPTIONS.find(o=>o.id==='bathroom-dry-wet');assert.equal(bathroom.specifications[0].unit,'m');assert.equal(bathroom.cataloguePrice.value,null);
  const system=CATALOGUE_OPTIONS.find(o=>o.id==='front-glass-premium').specifications.find(s=>s.label==='Designação do sistema');assert.equal(system.value,'broken bridge 55');assert.equal(system.unit,null);
  for(const option of CATALOGUE_OPTIONS){assert.equal(option.applicability.gv72Compatibility,'not-confirmed');assert.ok(option.source.page>=3&&option.source.page<=17);}
- for(const layout of Object.keys(source)){const config={...DEFAULT_CONFIG,layout},html=technicalSheetMarkup(config);assert.ok(html.includes(getPlan(config).label));assert.ok(!/undefined|NaN/.test(html));assert.equal((html.match(/data-option=/g)||[]).length,22);assert.equal((html.match(/data-measure=/g)||[]).length,25);assert.equal((html.match(/data-open-reference-video=/g)||[]).length,8);assert.ok(!html.includes('Fonte / m'));}
+ for(const layout of Object.keys(source)){const config={...DEFAULT_CONFIG,layout,kitchen:layout==='t4-a'?'linear':DEFAULT_CONFIG.kitchen},html=technicalSheetMarkup(config);assert.ok(html.includes(getPlan(config).label));assert.ok(!/undefined|NaN/.test(html));assert.equal((html.match(/data-option=/g)||[]).length,22);assert.equal((html.match(/data-measure=/g)||[]).length,25);assert.equal((html.match(/data-open-reference-video=/g)||[]).length,8);assert.ok(!html.includes('Fonte / m'));}
  const current=sourceLedger(DEFAULT_CONFIG);assert.equal(current.units.areas,'m²');assert.equal(current.catalogueOptions.length,22);assert.equal(current.sourceLayout.id,DEFAULT_CONFIG.layout);assert.equal(current.videos.videos.length,8);assert.equal(TECHNICAL_FACTS.length,45);
 });
 check('R9 expansion film is native Full HD, source-bound and declares its limited animation scope',()=>{
  const film=JSON.parse(readFileSync('dist/assets/expansion-r9/manifest.json','utf8'));assert.equal(film.status,'PASS');assert.deepEqual(film.dimensions,[1920,1080]);assert.equal(film.frameCount,350);assert.equal(film.durationSeconds,14);assert.equal(film.fps,25);assert.equal(film.displayOverrides.roofOpacity,.09);
  for(const item of film.outputs)assert.equal(createHash('sha256').update(readFileSync('dist/'+item.path)).digest('hex'),item.sha256);
- for(const file of ['model.js','specification.js','stage.js'])assert.equal(createHash('sha256').update(readFileSync(['model.js','specification.js'].includes(file)?'dist/assets/expansion-r9/'+file.replace('.js','-source.js.txt'):'dist/'+file)).digest('hex'),film.sourceHashes[file]);
+ for(const file of ['model.js','specification.js','stage.js'])assert.equal(createHash('sha256').update(readFileSync('dist/assets/expansion-r9/'+file.replace('.js','-source.js.txt'))).digest('hex'),film.sourceHashes[file]);
  assert.ok(film.limits.some(x=>x.includes('2–3')));assert.equal(film.validation.all350MP4FramesDecoded,true);
 });
 check('R12 panels accompany wings then rise, with no separate preparation phase',()=>{

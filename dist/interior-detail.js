@@ -15,16 +15,44 @@ export function createInteriorDetail({state,plan,lib,M,plain,box,mesh,cylinder,p
  // This display colour is illustrative, not a manufacturer finish code.
  K.handle=kitchen.id==='kitchen-14'?material('Puxadores escuros · aparência da fotografia 14','#292b29',.46,{metalness:.2}):K.tap;
  if(kitchen.id==='kitchen-14')K.handle.userData.reference={sourceAsset:kitchen.sourceAsset,sourcePage:kitchen.sourcePage,status:'visual-approximation',manufacturerColourCode:null};
- const B={front:finish(bath,'front',bath.frontHex),wall:finish(bath,'wall',bath.wallHex,[1.2,1.8]),counter:finish(bath,'counter','#eff0e9'),frame:material('Perfil do resguardo',bath.frameHex,.26,{metalness:.45}),tap:material('Torneira de banho',bath.tap==='black'?'#252724':'#bcc5c4',.16,{metalness:.84}),mirror:material('Espelho · reflexo de estúdio','#e3e8e5',.025,{metalness:1}),frost:material('Faixa de privacidade','#c4d6d1',.33,{transparent:true,opacity:.67,depthWrite:false}),tray:material('Base de duche','#e6e9e4',.27)};
- const ceramic=material('Porcelana sanitária','#f4f4ef',.17),chrome=material('Ferragens escovadas','#b9c2bf',.2,{metalness:.85}),interior=material('Interior dos armários','#d9d8cd',.68),glass=new THREE.MeshPhysicalMaterial({color:'#d9e9e5',transparent:true,opacity:.21,transmission:.35,roughness:.06,thickness:.006,ior:1.5,depthWrite:false});allMaterials.add(glass);detailMaterials.add(glass);
+ const B={front:finish(bath,'front',bath.frontHex),wall:finish(bath,'wall',bath.wallHex,[1.2,1.8]),counter:finish(bath,'counter','#eff0e9'),frame:material('Perfil do resguardo',bath.frameHex,.26,{metalness:.45}),tap:material('Torneira de banho',bath.tap==='black'?'#252724':'#bcc5c4',.16,{metalness:.84}),mirror:material('Espelho · reflexo de estúdio','#ffffff',.018,{metalness:1,envMapIntensity:1.8}),frost:material('Faixa de privacidade','#c4d6d1',.33,{transparent:true,opacity:.67,depthWrite:false}),tray:material('Base de duche','#e6e9e4',.27)};
+ const ceramic=material('Porcelana sanitária','#f4f4ef',.145,{envMapIntensity:1.15}),chrome=material('Ferragens escovadas','#c2c8c6',.18,{metalness:.94}),interior=material('Interior dos armários','#d9d8cd',.68),glass=new THREE.MeshPhysicalMaterial({color:'#eaf1ef',transparent:true,opacity:.3,transmission:.72,roughness:.045,thickness:.006,ior:1.5,envMapIntensity:1.1,depthWrite:false});allMaterials.add(glass);detailMaterials.add(glass);
  const group=(parent,name,x=0,y=0,z=0)=>{const g=new THREE.Group();g.name=name;g.position.set(x,y,z);parent.add(g);return g;};
- function tube(g,points,r,mat,name){const curve=new THREE.CatmullRomCurve3(points.map(p=>new THREE.Vector3(...p)));return mesh(g,new THREE.TubeGeometry(curve,36,r,10,false),mat,name);}
+ function tube(g,points,r,mat,name){const curve=new THREE.CatmullRomCurve3(points.map(p=>new THREE.Vector3(...p)));return mesh(g,new THREE.TubeGeometry(curve,48,r,14,false),mat,name);}
  function handle(g,x,y,z,vertical=false,mat=chrome){const len=.13;pipe(g,vertical?[[x,y-len/2,z],[x,y+len/2,z]]:[[x-len/2,y,z],[x+len/2,y,z]],.007,mat,'Puxador');for(const v of [-1,1])pipe(g,[[x+(vertical?0:v*len/2),y+(vertical?v*len/2:0),z-.022],[x+(vertical?0:v*len/2),y+(vertical?v*len/2:0),z]],.005,mat,'Fixação do puxador');}
  function animate(g,kind,amount,label,axis='y'){g.userData.interaction=label;const scope=g.parent.name.includes('kitchen')?'kitchen':'bathroom',key=[scope,g.parent.name,label,...g.position.toArray().map(v=>v.toFixed(5))].join('|');motions.push({g,kind,amount,axis,base:g.position.clone(),opened:false,label,scope,key});return g;}
  function roundedLoop(w,d,r){const pts=[];for(const [cx,cz,start]of [[w/2-r,d/2-r,0],[-w/2+r,d/2-r,90],[-w/2+r,-d/2+r,180],[w/2-r,-d/2+r,270]])for(let j=0;j<9;j++){const a=(start+j*90/8)*Math.PI/180;pts.push([cx+r*Math.cos(a),cz+r*Math.sin(a)]);}return pts;}
- // Hollow basin: continuous rim, inward sloping bowl and recessed drain; no solid sphere.
- function bowl(g,x,y,z,w,d,depth,mat,oval=false){const loop=(w,d,r)=>oval?Array.from({length:48},(_,i)=>[Math.cos(i*Math.PI/24)*w/2,Math.sin(i*Math.PI/24)*d/2]):roundedLoop(w,d,r);const outer=loop(w,d,.055),inner=loop(w-.03,d-.03,.05),base=loop(w*.58,d*.52,.045),rings=[outer.map(p=>[p[0]+x,y,p[1]+z]),inner.map(p=>[p[0]+x,y-.008,p[1]+z]),base.map(p=>[p[0]+x,y-depth,p[1]+z])],vertices=[];for(let k=0;k<2;k++)for(let i=0;i<outer.length;i++){const j=(i+1)%outer.length,a=rings[k][i],b=rings[k][j],c=rings[k+1][j],d=rings[k+1][i];vertices.push(...a,...c,...b,...a,...d,...c);}for(let i=0;i<base.length;i++){vertices.push(x,y-depth,z,...rings[2][(i+1)%base.length],...rings[2][i]);}const geo=new THREE.BufferGeometry();geo.setAttribute('position',new THREE.Float32BufferAttribute(vertices,3));geo.computeVertexNormals();geo.setAttribute('uv',new THREE.Float32BufferAttribute(vertices.flatMap((v,i)=>i%3===0?[v,vertices[i+2]]:[]),2));const m=mesh(g,geo,mat,'Cuba côncava');m.material.side=THREE.DoubleSide;cylinder(g,.023,.004,x,y-depth+.004,z,chrome,'Ralo metálico',24);for(let i=0;i<5;i++){const a=i*Math.PI*2/5;cylinder(g,.0025,.004,x+Math.cos(a)*.012,y-depth+.007,z+Math.sin(a)*.012,K.edge,'Orifício do ralo',6);}return m;}
- function slab(g,w,d,y,mat,hole){if(!hole)return box(g,w,.036,d,0,y,0,mat,'Bancada com arestas suavizadas',.006);const shape=new THREE.Shape();shape.moveTo(-w/2,-d/2);shape.lineTo(w/2,-d/2);shape.lineTo(w/2,d/2);shape.lineTo(-w/2,d/2);shape.closePath();const cut=new THREE.Path();for(const [i,[u,v]]of roundedLoop(hole.w,hole.d,.045).entries())i?cut.lineTo(u+hole.x,-v-hole.z):cut.moveTo(u+hole.x,-v-hole.z);cut.closePath();shape.holes.push(cut);const geo=new THREE.ExtrudeGeometry(shape,{depth:.036,bevelEnabled:false,curveSegments:12});geo.rotateX(-Math.PI/2);const p=geo.attributes.position,uv=geo.attributes.uv;for(let i=0;i<p.count;i++)uv.setXY(i,p.getX(i),p.getZ(i));const m=mesh(g,geo,mat,'Bancada com recorte real para a cuba');m.position.y=y-.018;return m;}
+ // The indexed surface shares normals across triangles: ceramic bowls stay smooth
+ // under grazing light while keeping an actual opening and recessed drain.
+ function bowl(g,x,y,z,w,d,depth,mat,oval=false){
+  const loop=(width,depth,radius)=>oval
+   ?Array.from({length:64},(_,i)=>[Math.cos(i*Math.PI/32)*width/2,Math.sin(i*Math.PI/32)*depth/2])
+   :roundedLoop(width,depth,Math.min(radius,width/4,depth/4));
+  const profile=[[w,d,0,.055],[w-.018,d-.018,-.003,.053],[w-.035,d-.035,-.018,.05],[w*.73,d*.68,-depth*.77,.048],[w*.58,d*.52,-depth,.045]];
+  const rings=profile.map(([rw,rd,ry,rr])=>loop(rw,rd,rr).map(([u,v])=>[u+x,y+ry,v+z]));
+  const count=rings[0].length,vertices=rings.flat(2),indices=[];
+  for(let k=0;k<rings.length-1;k++)for(let i=0;i<count;i++){
+   const a=k*count+i,b=k*count+(i+1)%count,c=(k+1)*count+(i+1)%count,e=(k+1)*count+i;
+   indices.push(a,c,b,a,e,c);
+  }
+  const centre=vertices.length/3;vertices.push(x,y-depth,z);
+  for(let i=0;i<count;i++)indices.push(centre,(rings.length-1)*count+(i+1)%count,(rings.length-1)*count+i);
+  const geo=new THREE.BufferGeometry();geo.setAttribute('position',new THREE.Float32BufferAttribute(vertices,3));geo.setIndex(indices);geo.computeVertexNormals();
+  geo.setAttribute('uv',new THREE.Float32BufferAttribute(vertices.flatMap((v,i)=>i%3===0?[v,vertices[i+2]]:[]),2));
+  const m=mesh(g,geo,mat,'Cuba côncava');m.material.side=THREE.DoubleSide;
+  cylinder(g,.023,.004,x,y-depth+.004,z,chrome,'Ralo metálico',32);
+  for(let i=0;i<5;i++){const a=i*Math.PI*2/5;cylinder(g,.0025,.004,x+Math.cos(a)*.012,y-depth+.007,z+Math.sin(a)*.012,K.edge,'Orifício do ralo',8);}
+  return m;
+ }
+ function slab(g,w,d,y,mat,hole){
+  if(!hole)return box(g,w,.036,d,0,y,0,mat,'Bancada com arestas suavizadas',.006);
+  const bevel=.0025,shape=new THREE.Shape();
+  for(const [i,[u,v]]of roundedLoop(w-bevel*2,d-bevel*2,.006).entries())i?shape.lineTo(u,v):shape.moveTo(u,v);shape.closePath();
+  const cut=new THREE.Path();for(const [i,[u,v]]of roundedLoop(hole.w+bevel*2,hole.d+bevel*2,.045).entries())i?cut.lineTo(u+hole.x,-v-hole.z):cut.moveTo(u+hole.x,-v-hole.z);cut.closePath();shape.holes.push(cut);
+  const geo=new THREE.ExtrudeGeometry(shape,{depth:.036-bevel*2,bevelEnabled:true,bevelSize:bevel,bevelThickness:bevel,bevelSegments:3,curveSegments:12});geo.rotateX(-Math.PI/2);
+  const p=geo.attributes.position,uv=geo.attributes.uv;for(let i=0;i<p.count;i++)uv.setXY(i,p.getX(i),p.getZ(i));
+  const m=mesh(g,geo,mat,'Bancada com recorte real para a cuba');m.position.y=y-.018+bevel;return m;
+ }
  function tap(g,x,y,z,mat,high=true){const h=high?.31:.19;const p=group(g,'Torneira',x,y,z);cylinder(p,.026,.045,0,.022,0,mat,'Base da misturadora',24);tube(p,[[0,.03,0],[0,h*.7,0],[0,h,.045],[0,h,.11],[0,h*.85,.16]],.011,mat,'Bica curva');pipe(p,[[.023,.055,0],[.05,.09,.015],[.05,.15,.015]],.006,mat,'Manípulo');cylinder(p,.014,.013,0,h*.85,.16,mat,'Arejador',16);}
  function door(g,x,y,z,w,h,mat,style,handles,label,{hingeSide=-1,movable=true,handleMaterial=K.handle}={}){
   const direction=hingeSide===1?-1:1,pivot=group(g,movable?label:'Painel fixo de canto',x+hingeSide*w/2,y-h/2,z);
@@ -55,9 +83,29 @@ export function createInteriorDetail({state,plan,lib,M,plain,box,mesh,cylinder,p
   tap(g,0,bath.vessel?cabinetTop+.015:.832,-d/2+.04,B.tap,false);
   const mirror=group(g,'Espelho e arrumação',0,1.45,-d/2+.005),mw=w*.93,mh=.65;box(mirror,mw,mh,.035,0,0,0,B.frame,'Aro do espelho',.003);box(mirror,mw-.025,mh-.025,.006,0,0,.022,B.mirror,'Superfície espelhada');
   if(bath.mirror==='shelves'){const sw=mw*.25;box(mirror,sw,mh,.14,mw/2-sw/2,0,.065,interior,'Fundo das prateleiras');for(const yy of [-mh/2,-mh/6,mh/6,mh/2])box(mirror,sw,.015,.15,mw/2-sw/2,yy,.07,ceramic,'Prateleira aberta');box(mirror,.012,mh,.15,mw/2-sw,0,.07,ceramic,'Separador de prateleiras');}else if(bath.mirror==='cabinet'){box(mirror,.12,mh,.14,mw/2-.06,0,.075,B.front,'Armário junto ao espelho');handle(mirror,mw/2-.05,0,.165,true,B.tap);}
-  pipe(g,[[-w/2-.015,.59,-.02],[-w/2-.015,.59,.18]],.01,B.tap,'Toalheiro lateral');const towel=material('Toalha de mão','#c5c4b8',.97);box(g,.022,.19,.15,-w/2-.018,.49,.075,towel,'Toalha dobrada',.009);return g;
+  return g;
  }
- function buildToilet(parent,f){const g=group(parent,'Sanita · '+bath.name,(f.x0+f.x1)/2,0,(f.z0+f.z1)/2),w=f.x1-f.x0,d=f.z1-f.z0;g.userData.referenceId=bath.id;const pedestal=mesh(g,new THREE.LatheGeometry([[.12,.025],[.14,.05],[.14,.13],[.115,.26],[.155,.34],[.19,.39]].map(([x,y])=>new THREE.Vector2(x,y)),40),ceramic,'Pedestal sanitário curvo');pedestal.scale.z=1.25;pedestal.position.z=.035;bowl(g,0,.425,.07,w*.95,d*.68,.14,ceramic,true);const points=Array.from({length:64},(_,i)=>[Math.cos(i*Math.PI/32)*w*.48,Math.sin(i*Math.PI/32)*d*.35]).map(([x,z])=>new THREE.Vector3(x,.442,z+.07));points.push(points[0]);mesh(g,new THREE.TubeGeometry(new THREE.CatmullRomCurve3(points),72,.012,10,false),ceramic,'Assento sanitário');box(g,w*.91,.39,.16,0,.5,-d/2+.083,ceramic,'Autoclismo',.025);for(const x of [-.011,.012])cylinder(g,.019,.005,x,.699,-d/2+.084,chrome,'Descarga dupla',24);return g;}
+ function buildToilet(parent,f){
+  const g=group(parent,'Sanita · '+bath.name,(f.x0+f.x1)/2,0,(f.z0+f.z1)/2),w=f.x1-f.x0,d=f.z1-f.z0;g.userData.referenceId=bath.id;
+  // A continuous curved body supports the bowl; the profile is presentation
+  // geometry inside the existing footprint, not a new product specification.
+  const profile=[[.11,.015],[.126,.024],[.139,.045],[.143,.082],[.137,.13],[.126,.19],[.124,.24],[.138,.285],[.165,.32],[.187,.355],[.199,.391],[.2,.424]];
+  const curve=new THREE.SplineCurve(profile.map(([x,y])=>new THREE.Vector2(x,y)));
+  const pedestal=mesh(g,new THREE.LatheGeometry(curve.getPoints(48),64),ceramic,'Pedestal sanitário curvo');pedestal.scale.set(w*.95/.4,1,d*.68/.4);pedestal.position.z=.07;
+  bowl(g,0,.425,.07,w*.95,d*.68,.14,ceramic,true);
+  const points=Array.from({length:64},(_,i)=>new THREE.Vector3(Math.cos(i*Math.PI/32)*(w/2-.018),.442,Math.sin(i*Math.PI/32)*d*.35+.07));
+  const seat=mesh(g,new THREE.TubeGeometry(new THREE.CatmullRomCurve3(points,true),96,.014,16,true),ceramic,'Assento sanitário');seat.scale.y=.62;seat.position.y=.442*(1-.62);
+  if(bath.id==='bathroom-17'){
+   // The confirmed standard photograph shows the sanitary lid closed.
+   const outline=new THREE.Shape();outline.absellipse(0,0,w/2-.004,d*.35,0,Math.PI*2,false,0);
+   const lid= new THREE.ExtrudeGeometry(outline,{depth:.012,bevelEnabled:true,bevelThickness:.003,bevelSize:.003,bevelSegments:3,curveSegments:48});lid.rotateX(-Math.PI/2);
+   mesh(g,lid,ceramic,'Tampa fechada · referência standard').position.set(0,.453,.07);
+  }
+  box(g,w*.91,.39,.16,0,.5,-d/2+.083,ceramic,'Autoclismo',.025);
+  box(g,w*.92,.02,.165,0,.698,-d/2+.083,ceramic,'Tampa do autoclismo',.008);
+  for(const x of [-.011,.012])cylinder(g,.019,.005,x,.711,-d/2+.084,chrome,'Descarga dupla',32);
+  return g;
+ }
  function buildShower(parent,f){const w=f.x1-f.x0,d=f.z1-f.z0,g=group(parent,'Duche · '+bath.name,(f.x0+f.x1)/2,0,(f.z0+f.z1)/2);g.userData.referenceId=bath.id;g.scale.x=state.bathroom==='mirrored'?-1:1;const h=1.96,y0=.07;
   if(bath.shower==='curved'){const cw=Math.min(.94,w),r=cw/2,cd=d;const s=group(g,'Cabine curva',-(w-cw)/2,0,0);const outline=new THREE.Shape();outline.moveTo(-r,cd/2);outline.lineTo(r,cd/2);for(let i=0;i<=48;i++){const a=Math.PI/2-i*Math.PI/48;outline.lineTo(Math.sin(a)*r,-Math.cos(a)*cd/2);}outline.closePath();const baseGeo=new THREE.ExtrudeGeometry(outline,{depth:.06,bevelEnabled:false});baseGeo.rotateX(-Math.PI/2);mesh(s,baseGeo,B.tray,'Base curva de cabine').position.y=.01;const curved=(material,height,y)=>{const geo=new THREE.CylinderGeometry(r,r,height,48,1,true,-Math.PI/2,Math.PI);geo.scale(1,1,cd/cw);const m=mesh(s,geo,material,'Porta curva da cabine');m.position.set(0,y,0);return m;};curved(glass,1.82,1.04);for(const yy of [.14,1.96]){const pts=[];for(let i=0;i<=48;i++){const a=-Math.PI/2+Math.PI*i/48;pts.push([Math.sin(a)*r,yy,Math.cos(a)*cd/2]);}tube(s,pts,.018,B.frame,'Calha curva');}for(let j=0;j<12;j++)curved(B.frost,.018,.55+j*.053);for(const x of [-r,r]){box(s,.022,1.84,.022,x,1.04,0,B.frame,'Montante da cabine');box(s,.006,1.82,cd/2,x,1.04,-cd/4,glass,'Painel lateral de cabine');}handle(s,.03,1.05,cd/2+.012,true,B.tap);
   }else{

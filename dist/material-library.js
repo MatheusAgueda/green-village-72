@@ -10,6 +10,20 @@ export const materialAsset=p=>'assets/catalogue-v2/'+p;
 export const photoPlankById=id=>planks.get(id);
 export const photoTreatmentById=id=>planks.get(id)||walls.get(id);
 export const referenceCropAsset=id=>materialAsset(materialById(id).referenceCropAsset);
+// The 65×93 px wall crop occupies a small area of the bathroom-17 source photo,
+// not an entire 1.2×1.8 m slab. Its visible shower/window provide an approximate
+// 5 mm per photographed pixel scale. This is not a manufacturer measurement.
+export const SOURCE_PHOTO_SCALES=Object.freeze({
+ 'bathroom-17/wall':Object.freeze({
+  asset:'assets/interior-r5/bathroom-17-wallFinish.png',
+  repeatM:Object.freeze([.325,.465]),
+  sourceDimensionsPx:Object.freeze([65,93]),
+  sourceAsset:'assets/catalogue/reference/bathroom-17.jpg',
+  sourceRectPx:Object.freeze([245,302,310,395]),
+  status:'visualisation-estimate-not-manufacturer-data',
+  basis:'Approximate 5 mm/pixel from the back-wall crop relative to the photographed shower height; source pixel aspect preserved.'
+ })
+});
 export function createMaterialLibrary(onLoad=()=>{},limit=18){
  const cache=new Map(),failures=new Set();let pending=0,disposed=false;
  function fetchTexture(record){
@@ -44,14 +58,17 @@ export function createMaterialLibrary(onLoad=()=>{},limit=18){
    const tx=load(entry,mode);
    if(tx){material.map=tx;material.color.set('#ffffff');cache.get(entry.id+':'+mode).references++;material.userData.lease=entry.id+':'+mode;const photo=photoTreatmentById(id);if(mode==='prepared'&&photo?.boardDimensionsM)installPhotoPlanks(material,tx,photo);if(mode==='prepared'&&photo?.profileRecommended)installPanelProfile(material,photo.panelProfile);}
   }
-  if(mode==='source'&&surface==='interior_floor'&&material.map)installSourceFloorPhase(material,material.map);
+  if(mode==='source'&&surface==='interior_floor'&&material.map)installSourceFloorPhase(material,material.map,photoPlankById(id));
+  if(!id&&surface==='interior_floor')material.name='Pavimento vinílico · referência por confirmar';
   return material;
  }
  function createPhoto(descriptor,surface,{unlit=false}={}){
   const {id,url,colour='#ddddda',repeat=[.6,.6],roughness=.48,metalness=0}=descriptor;
+  const scale=SOURCE_PHOTO_SCALES[id]?.asset===url?SOURCE_PHOTO_SCALES[id]:null,physicalRepeat=scale?.repeatM||repeat;
   const material=new THREE.MeshStandardMaterial({color:colour,roughness,metalness});material.name=id;material.userData={surface,sourceStatus:'reference-photo',referenceAsset:url};
+  if(scale)material.userData.sourcePhysicalRepeat=scale;
   if(typeof document!=='undefined'){
-   if(!cache.has(id)){const texture=new THREE.Texture();texture.colorSpace=THREE.SRGBColorSpace;texture.wrapS=texture.wrapT=THREE.MirroredRepeatWrapping;texture.repeat.set(1/repeat[0],1/repeat[1]);texture.anisotropy=8;const record={id,texture,url,fallback:colour,used:performance.now(),references:0,disposed:false,loading:false};cache.set(id,record);fetchTexture(record);}
+   if(!cache.has(id)){const texture=new THREE.Texture();texture.colorSpace=THREE.SRGBColorSpace;texture.wrapS=texture.wrapT=scale?THREE.RepeatWrapping:THREE.MirroredRepeatWrapping;texture.repeat.set(1/physicalRepeat[0],1/physicalRepeat[1]);texture.anisotropy=8;const record={id,texture,url,fallback:colour,used:performance.now(),references:0,disposed:false,loading:false};cache.set(id,record);fetchTexture(record);}
    const record=cache.get(id);record.references++;record.used=performance.now();material.map=record.texture;material.color.set('#ffffff');material.userData.lease=id;
   }
   if(unlit){material.toneMapped=false;material.onBeforeCompile=shader=>{shader.fragmentShader=shader.fragmentShader.replace('#include <opaque_fragment>','outgoingLight = diffuseColor.rgb;\n#include <opaque_fragment>');};material.customProgramCacheKey=()=> 'gv-photo-unlit';}

@@ -1,3 +1,4 @@
+import {createPDFI18n,rawPDF} from './pdf-i18n.js';
 import {embedPortfolioFonts} from './pdf-fonts.js';
 import {appendClientDossier} from './project-pdf.js';
 import {validateClientProject} from './project-options.js';
@@ -19,7 +20,7 @@ export function configurationReference(configuration){
 export function selectionMaterials(s){
  const material=(id,title,colour)=>{const x=SWATCHES.find(x=>x.id===id);return {title,name:x?.label||'Cor livre '+colour,image:x?referenceCropAsset(id):null,colour,source:x?'Catálogo 2026 · p. '+x.page:'Cor de visualização'};};
  const k=INTERIOR_REFERENCES[s.kitchenRef],b=INTERIOR_REFERENCES[s.bathroomRef];
- return [material(s.exteriorId,'Fachada',s.exterior),material(s.floorId,'Pavimento SPC (+1 200 €)',s.floor),{title:'Paredes interiores',name:s.interiorName,colour:s.interior,source:'Cor de visualização · '+s.interior},...(s.kitchen==='none'?[]:[{title:'Cozinha · '+s.kitchenRef.slice(-2),name:k.name,image:k.sourceAsset,source:'Catálogo 2026 · p. '+k.sourcePage}]),{title:'Casa de banho · '+s.bathroomRef.slice(-2),name:b.name,image:b.sourceAsset,source:'Catálogo 2026 · p. '+b.sourcePage},...(s.bathroomUV?[material(s.bathroomUV,'Revestimento UV do banho',null)]:[])];
+ return [material(s.exteriorId,'Fachada',s.exterior),s.floorId?material(s.floorId,'Pavimento SPC (+1 200 €)',s.floor):{title:'Pavimento vinílico (incluído)',name:'Referência por confirmar',colour:s.floor,source:'Visualização neutra sem amostra'},{title:'Paredes interiores',name:s.interiorName,colour:s.interior,source:'Cor de visualização · '+s.interior},...(s.kitchen==='none'?[]:[{title:'Cozinha · '+s.kitchenRef.slice(-2),name:k.name,image:k.sourceAsset,source:'Catálogo 2026 · p. '+k.sourcePage}]),{title:'Casa de banho · '+s.bathroomRef.slice(-2),name:b.name,image:b.sourceAsset,source:'Catálogo 2026 · p. '+b.sourcePage},...(s.bathroomUV?[material(s.bathroomUV,'Revestimento UV do banho',null)]:[])];
 }
 export function selectionGroups(s){
  const rows=summaryRows(s),k=INTERIOR_REFERENCES[s.kitchenRef],b=INTERIOR_REFERENCES[s.bathroomRef];
@@ -35,14 +36,15 @@ export function summaryMarkup(s,{image,plan,warning}={}){
 }
 
 // Four fixed-purpose spreads with measured wrapping and explicit page boundaries.
-export async function createPortfolioPDF(s,{image,planImage,project}={}){
+export async function createPortfolioPDF(s,{image,planImage,project,lang='pt'}={}){
  const {PDFDocument,StandardFonts,rgb}=window.PDFLib,doc=await PDFDocument.create();
+ const locale=createPDFI18n(lang),t=locale.t;
  const client=project?validateClientProject(project):null;
  const {regular,bold}=await embedPortfolioFonts(doc,{unicode:Boolean(client)});
  const W=595.28,H=841.89,M=36,green=rgb(.086,.247,.18),ink=rgb(.12,.23,.16),muted=rgb(.31,.41,.33),pale=rgb(.94,.96,.92),white=rgb(1,1,1);
- const ref=configurationReference(s),date=new Intl.DateTimeFormat('pt-PT').format(new Date());
+ const ref=configurationReference(s),date=locale.date(new Date());
  const supportedCharacters=new Set(regular.getCharacterSet());
- const pdfText=value=>[...String(value).normalize('NFC').replace(/\p{Cc}/gu,' ')].map(c=>supportedCharacters.has(c.codePointAt(0))?c:'?').join('');
+ const pdfText=value=>[...String(t(value)).normalize('NFC').replace(/\p{Cc}/gu,' ')].map(c=>supportedCharacters.has(c.codePointAt(0))?c:'?').join('');
  function wrap(value,width,size=10,font=regular){const lines=[''];for(const word of pdfText(value).split(/\s+/)){let rest=word;while(rest){const last=lines.length-1,joined=lines[last]+(lines[last]?' ':'')+rest;if(font.widthOfTextAtSize(joined,size)<=width){lines[last]=joined;break;}if(lines[last]){lines.push('');continue;}let end=1;while(end<rest.length&&font.widthOfTextAtSize(rest.slice(0,end+1),size)<=width)end++;lines[last]=rest.slice(0,end);rest=rest.slice(end);if(rest)lines.push('');}}return lines;}
  function text(page,value,x,y,{size=10,font=regular,color=ink,width}={}){const lines=width?wrap(value,width,size,font):[pdfText(value)];for(const line of lines){if(y<40)throw new Error('O conteúdo do PDF excedeu a área da página.');page.drawText(line,{x,y,size,font,color});y-=size*1.42;}return y;}
  const fetched=new Map();
@@ -51,10 +53,10 @@ export async function createPortfolioPDF(s,{image,planImage,project}={}){
  async function photo(page,src,x,y,w,h,{background=pale}={}){page.drawRectangle({x,y,width:w,height:h,color:background});const im=await embed(src);if(!im)return;const scale=Math.min(w/im.width,h/im.height);page.drawImage(im,{x:x+(w-im.width*scale)/2,y:y+(h-im.height*scale)/2,width:im.width*scale,height:im.height*scale});}
  function base(title,number){const page=doc.addPage([W,H]);page.drawRectangle({x:0,y:H-94,width:W,height:94,color:green});page.drawImage(logo,{x:M,y:H-64,width:205,height:205*logo.height/logo.width});text(page,'EXPANDÍVEL 72',W-M-124,H-41,{size:12,font:bold,color:white});text(page,'PORTFÓLIO / 2026',W-M-124,H-62,{size:9,color:rgb(.77,.86,.75)});text(page,title,M,H-134,{size:26,font:bold});page.drawLine({start:{x:M,y:37},end:{x:W-M,y:37},thickness:.6,color:rgb(.77,.82,.76)});page.drawText(`${ref}  ·  ${date}`,{x:M,y:22,size:8,font:regular,color:muted});page.drawText(`${number} / 4`,{x:W-M-22,y:22,size:8,font:regular,color:muted});return page;}
  const cover=base('A sua configuração.',1),layout=DATA.layouts.find(p=>p.id===s.layout);
- text(cover,client?((client.clientName||'Cliente por identificar').length>58?(client.clientName||'').slice(0,55)+'…':(client.clientName||'Cliente por identificar'))+' · '+client.projectDate.split('-').reverse().join('/'):'O espaço, os materiais e os detalhes que escolheu.',M,673,{size:12,color:muted,width:W-2*M});
+ text(cover,client?rawPDF(((client.clientName||t('Cliente por identificar')).length>58?(client.clientName||'').slice(0,55)+'…':(client.clientName||t('Cliente por identificar')))+' · '+locale.date(client.projectDate)):'O espaço, os materiais e os detalhes que escolheu.',M,673,{size:12,color:muted,width:W-2*M});
  if(image){await photo(cover,image,M,330,W-2*M,315);text(cover,'Vista guardada no estúdio · modelo 3D de apresentação',M,314,{size:9,color:muted});}
  else {cover.drawRectangle({x:M,y:440,width:W-2*M,height:180,color:pale});text(cover,'Configuração sem imagem 3D',M+24,535,{size:20,font:bold});text(cover,'As escolhas, as referências e a planta seguem nas próximas páginas.',M+24,503,{size:11,width:450,color:muted});}
- const facts=[['MODELO','72 m² comerciais'],['PLANTA',layout.label],['DIMENSÕES','11,80 × 6,22 m']];facts.forEach(([k,v],i)=>{const x=M+i*178;text(cover,k,x,274,{size:9,color:muted});text(cover,v,x,251,{size:17,font:bold});});
+ const facts=[['MODELO','72 m² comerciais'],['PLANTA',layout.label],['DIMENSÕES','11,80 × 6,22 m']];facts.forEach(([k,v],i)=>{const x=M+i*178,size=Math.max(11,Math.min(17,164/bold.widthOfTextAtSize(pdfText(v),1)));text(cover,k,x,274,{size:9,color:muted});text(cover,v,x,251,{size,font:bold,width:164});});
  text(cover,`${layout.bedrooms} ${layout.bedrooms===1?'quarto':'quartos'} · 1 casa de banho · ${s.roof?'telhado triangular':'cobertura plana'}${s.porch?' · alpendre seleccionado':''}`,M,214,{size:11,width:W-2*M});
  text(cover,'Uma base para a sua proposta.',M,165,{size:17,font:bold});
  text(cover,'Este documento reúne as suas preferências. A Green Village deverá confirmar a compatibilidade, o âmbito do fornecimento, o transporte, a instalação e o preço final.',M,141,{size:11,width:W-2*M,color:muted});
@@ -79,8 +81,8 @@ export async function createPortfolioPDF(s,{image,planImage,project}={}){
  for(const group of selectionGroups(s)){y=text(detail,group.title,M,y,{size:13,font:bold})-7;for(const [label,value]of group.rows){const vlines=wrap(value,329,9),llines=wrap(label,176,9),rh=Math.max(vlines.length,llines.length)*12.78+8;text(detail,label,M,y,{size:9,color:muted,width:176});text(detail,value,M+190,y,{size:9,width:329});y-=rh;}y-=9;}
  y-=4;text(detail,'Condições a confirmar com a Green Village',M,y,{size:11,font:bold});
  text(detail,'Valores sob consulta. Este resumo não substitui a proposta comercial nem um projecto de execução. Medidas não cotadas são estimadas. Instalações e mecanismo exacto de expansão aguardam documentação.',M,y-20,{size:9,width:W-2*M,color:muted});
- doc.setTitle('Green Village · Expandível 72 · '+layout.label+' · '+ref);doc.setAuthor('Green Village Mobile Homes');doc.setSubject('Apresentação '+PRESENTATION_REVISION+' · geometria '+REVISION);doc.setKeywords(['Green Village','Expandível 72',layout.label,ref]);
- if(client)await appendClientDossier(doc,{state:s,project:client,font:regular,bold});
- for(const [index,page]of doc.getPages().entries()){page.drawRectangle({x:M-2,y:10,width:W-2*M+4,height:24,color:white});page.drawText(ref+' · '+(client?client.projectDate.split('-').reverse().join('/'):date),{x:M,y:22,size:8,font:regular,color:muted});page.drawText((index+1)+' / '+doc.getPageCount(),{x:W-M-38,y:22,size:8,font:regular,color:muted});}
+ doc.setTitle(t('Green Village · Expandível 72 · '+layout.label+' · '+ref));doc.setAuthor('Green Village Mobile Homes');doc.setSubject(t('Apresentação')+' '+PRESENTATION_REVISION+' · '+t('geometria')+' '+REVISION);doc.setKeywords(['Green Village','Expandível 72',layout.label,ref]);
+ if(client)await appendClientDossier(doc,{state:s,project:client,font:regular,bold,lang});
+ for(const [index,page]of doc.getPages().entries()){page.drawRectangle({x:M-2,y:10,width:W-2*M+4,height:24,color:white});page.drawText(ref+' · '+(client?locale.date(client.projectDate):date),{x:M,y:22,size:8,font:regular,color:muted});page.drawText((index+1)+' / '+doc.getPageCount(),{x:W-M-38,y:22,size:8,font:regular,color:muted});}
  return doc.save();
 }

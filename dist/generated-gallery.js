@@ -1,14 +1,14 @@
 export const GENERATED_FILMS=Object.freeze([
  {id:'exterior-veo',title:'Exterior creme',category:'Exterior',duration:8,width:1280,height:720,description:'Uma aproximação à fachada creme e à caixilharia escura.',source:'Fotografia do exterior fornecida pela Green Village.'},
- {id:'cozinha-veo',title:'Cozinha em L',category:'Interior',duration:8,width:1280,height:720,description:'Uma cozinha de referência com móveis claros e bancada escura.',source:'Cozinha 02 · catálogo, página 16. Referência distinta do standard confirmado.'},
- {id:'banho-veo',title:'Casa de banho',category:'Interior',duration:5.5,width:1080,height:1920,description:'Um enquadramento vertical do resguardo e do revestimento com padrão de mármore.',source:'Banho 08 · catálogo, página 18. Referência distinta do standard confirmado.'},
+ {id:'cozinha-veo',title:'Cozinha em L',category:'Cozinha',duration:8,width:1280,height:720,description:'Uma cozinha de referência com móveis claros e bancada escura.',source:'Cozinha 02 · catálogo, página 16. Referência distinta do standard confirmado.'},
+ {id:'banho-veo',title:'Casa de banho',category:'Casa de banho',duration:5.5,width:1080,height:1920,description:'Um enquadramento vertical do resguardo e do revestimento com padrão de mármore.',source:'Banho 08 · catálogo, página 18. Referência distinta do standard confirmado.'},
  {id:'terraco-preto',title:'Terraço preto',category:'Terraços',duration:8,width:1920,height:1080,description:'Estrutura e guardas escuras numa referência de terraço coberto.',source:'Fotografia fornecida · colecção Terraço.',note:'Variante e compatibilidade com a configuração a confirmar.'},
  {id:'terraco-cinzento',title:'Terraço cinzento',category:'Terraços',duration:8,width:1280,height:720,description:'Uma aproximação frontal ao terraço e à entrada central.',source:'Fotografia fornecida · colecção Terraço.',note:'Variante e compatibilidade com a configuração a confirmar.'},
  {id:'terraco-branco',title:'Terraço branco',category:'Terraços',duration:8,width:1280,height:720,description:'Vista lateral de uma referência com fachada amarela e guarda branca.',source:'Fotografia fornecida · colecção Terraço.',note:'Variante e compatibilidade com a configuração a confirmar.'}
 ].map(item=>Object.freeze({...item,asset:`assets/generated-videos/gv72-${item.id}.mp4`,poster:`assets/generated-videos/gv72-${item.id}.jpg`})));
 
 export function generatedGalleryMarkup(){
- const categories=['Exterior','Interior','Terraços'];
+ const categories=['Exterior','Cozinha','Casa de banho','Terraços'];
  let counter=0;
  return categories.map(cat=>{
   const items=GENERATED_FILMS.filter(f=>f.category===cat);

@@ -7,6 +7,12 @@
     "prepare:site": "node scripts/version-modules.mjs",
     "test": "node tests.mjs",
     "test:expansion": "node scripts/expansion-audit.mjs",
-    "test:deployment": "node scripts/deployment-audit.mjs"
+    "test:deployment": "node scripts/deployment-audit.mjs",
+    "test:project": "node scripts/project-options-regression.mjs && node scripts/project-model-regression.mjs",
+    "test:standard": "node scripts/standard-package-regression.mjs",
+    "test:presentation": "node scripts/presentation-regression.mjs",
+    "test:client": "node scripts/client-project-regression.mjs",
+    "test:client:browser": "node scripts/client-project-browser.mjs",
+    "test:r24": "node scripts/r24-detail-regression.mjs && node scripts/r24-fixtures-regression.mjs && node scripts/r24-floor-regression.mjs && node scripts/r24-material-regression.mjs && node scripts/r24-opening-regression.mjs && node scripts/r24-i18n-regression.mjs"
   }
 }
