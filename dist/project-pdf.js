@@ -233,8 +233,10 @@ export async function appendClientDossier(doc, {state, project, font, bold, imag
     for (const line of adaptations.lines) field(line.label + ' · Sob orçamento', line.detail);
   }
   field('Casa base e equipamentos incluídos', 'Preço base por confirmar. As composições standard acima registadas não constituem uma confirmação de preço.');
-  field('Transporte', 'Valor e âmbito por confirmar para o local de instalação.');
+  field('Transporte', 'Incluído no preço da casa para Portugal Continental. Outros destinos: valor a confirmar na proposta.');
   field('Instalação e trabalhos no local', 'Valor e âmbito por confirmar, excepto a instalação do monosplit de 12 000 BTU, incluída nos 500 € por sistema quando seleccionado.');
+  field('Prazo de entrega', '90 dias úteis após a confirmação do pedido.');
+  field('Garantia', '2 anos na estrutura e 1 ano nos equipamentos.');
   if (estimate.pending.length) field('Adicionais com preço por confirmar', estimate.pending.map(line => t(line.item.label) + ' · quantidade ' + line.quantity).join('\n'));
   if (estimate.unitPending.length) field('Âmbito de facturação por confirmar', estimate.unitPending.map(line => t(line.item.label)).join('\n'));
   if (estimate.unassigned.length) field('Locais de aplicação ainda por atribuir', estimate.unassigned.map(line => t(line.item.label) + ': ' + t((line.quantity - line.targets.length) + ' de ' + line.quantity + ' por atribuir.')).join('\n'));

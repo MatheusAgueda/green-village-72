@@ -34,7 +34,7 @@ const source={
 };
 check('independent workbook dimensions: 11800 / 6220 / 2010+2200+2010 / windows 920',()=>{
  close(DIM.width,6220/1000);close(DIM.length,11800/1000);close(DIM.core,2200/1000);close(DIM.wing,2010/1000);close(DIM.windowWidth,920/1000);close(DIM.core+2*DIM.wing,DIM.width);close(DIM.width*DIM.length,73.396);
- assert.equal(MEASURES.find(x=>x.id==='closedWidth').status,'missing');assert.equal(MEASURES.find(x=>x.id==='height').status,'estimated');
+ assert.equal(MEASURES.find(x=>x.id==='closedWidth').status,'confirmed');assert.equal(MEASURES.find(x=>x.id==='closedWidth').value,2.2);assert.equal(MEASURES.find(x=>x.id==='height').status,'estimated');
 });
 check('seven original room counts, door end relationships and window counts',()=>{
  assert.deepEqual(DATA.layouts.map(x=>x.id),Object.keys(source));
@@ -286,7 +286,7 @@ check('R9 technical sheet preserves catalogue units, option prices and source sc
  const bathroom=CATALOGUE_OPTIONS.find(o=>o.id==='bathroom-dry-wet');assert.equal(bathroom.specifications[0].unit,'m');assert.equal(bathroom.cataloguePrice.value,null);
  const system=CATALOGUE_OPTIONS.find(o=>o.id==='front-glass-premium').specifications.find(s=>s.label==='Designação do sistema');assert.equal(system.value,'broken bridge 55');assert.equal(system.unit,null);
  for(const option of CATALOGUE_OPTIONS){assert.equal(option.applicability.gv72Compatibility,'not-confirmed');assert.ok(option.source.page>=3&&option.source.page<=17);}
- for(const layout of Object.keys(source)){const config={...DEFAULT_CONFIG,layout,kitchen:layout==='t4-a'?'linear':DEFAULT_CONFIG.kitchen},html=technicalSheetMarkup(config);assert.ok(html.includes(getPlan(config).label));assert.ok(!/undefined|NaN/.test(html));assert.equal((html.match(/data-option=/g)||[]).length,22);assert.equal((html.match(/data-measure=/g)||[]).length,25);assert.equal((html.match(/data-open-reference-video=/g)||[]).length,8);assert.ok(!html.includes('Fonte / m'));}
+ for(const layout of Object.keys(source)){const config={...DEFAULT_CONFIG,layout,kitchen:layout==='t4-a'?'linear':DEFAULT_CONFIG.kitchen},html=technicalSheetMarkup(config);assert.ok(html.includes(getPlan(config).label));assert.ok(!/undefined|NaN/.test(html));assert.equal((html.match(/data-option=/g)||[]).length,22);assert.equal((html.match(/data-measure=/g)||[]).length,27);assert.equal((html.match(/data-open-reference-video=/g)||[]).length,8);assert.ok(!html.includes('Fonte / m'));}
  const current=sourceLedger(DEFAULT_CONFIG);assert.equal(current.units.areas,'m²');assert.equal(current.catalogueOptions.length,22);assert.equal(current.sourceLayout.id,DEFAULT_CONFIG.layout);assert.equal(current.videos.videos.length,8);assert.equal(TECHNICAL_FACTS.length,45);
 });
 check('R9 expansion film is native Full HD, source-bound and declares its limited animation scope',()=>{
