@@ -86,7 +86,7 @@ export function createInteriorDetail({state,plan,lib,M,plain,box,mesh,cylinder,p
   return g;
  }
  function buildToilet(parent,f){
-  const g=group(parent,'Sanita · '+bath.name,(f.x0+f.x1)/2,0,(f.z0+f.z1)/2),w=f.x1-f.x0,d=f.z1-f.z0;g.userData.referenceId=bath.id;
+  const g=group(parent,'Sanita · '+bath.name,(f.x0+f.x1)/2,0,(f.z0+f.z1)/2),w=f.z1-f.z0,d=f.x1-f.x0;g.rotation.y=f.rotationY;g.userData.referenceId=bath.id;
   // A continuous curved body supports the bowl; the profile is presentation
   // geometry inside the existing footprint, not a new product specification.
   const profile=[[.11,.015],[.126,.024],[.139,.045],[.143,.082],[.137,.13],[.126,.19],[.124,.24],[.138,.285],[.165,.32],[.187,.355],[.199,.391],[.2,.424]];

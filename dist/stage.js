@@ -3,7 +3,7 @@ import { RoomEnvironment } from './vendor/RoomEnvironment.js';
 export function createStage({canvas=null,width=1280,height=720,pixelRatio=1}={}){
  const renderer=new THREE.WebGLRenderer({canvas:canvas||undefined,antialias:true,alpha:false,preserveDrawingBuffer:true});renderer.setSize(width,height,false);renderer.setPixelRatio(Math.min(pixelRatio,1.75));renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.NeutralToneMapping;renderer.toneMappingExposure=1;renderer.localClippingEnabled=true;renderer.shadowMap.enabled=true;renderer.shadowMap.type=THREE.PCFSoftShadowMap;
  const scene=new THREE.Scene();scene.background=new THREE.Color('#e8ebe5');
- let lightMode='neutral',detail=null;
+ let lightMode='neutral',detail=null,currentView='exterior';
  let camera=new THREE.PerspectiveCamera(36,width/height,.05,200);camera.position.set(15.5,11.5,18.5);camera.lookAt(0,.7,0);
  const generator=new THREE.PMREMGenerator(renderer),room=new RoomEnvironment(),environment=generator.fromScene(room,.04);scene.environment=environment.texture;scene.environmentIntensity=.35;room.dispose();generator.dispose();
  const hemi=new THREE.HemisphereLight('#ffffff','#d9ddd5',.9);scene.add(hemi);
@@ -24,7 +24,7 @@ export function createStage({canvas=null,width=1280,height=720,pixelRatio=1}={})
   hemi.intensity=.7;hemi.groundColor.set('#e2dfd9');scene.environmentIntensity=.55;
   const radius=span*.8;Object.assign(key.shadow.camera,{left:-radius,right:radius,top:radius,bottom:-radius,near:.1,far:22});key.shadow.normalBias=.0015;key.shadow.bias=-.00006;key.shadow.radius=3;key.shadow.camera.updateProjectionMatrix();
  }
- function setDetail(bounds){detail=bounds?.clone()||null;lighting(lightMode);if(!detail)ground.position.y=-.365;}
+ function setDetail(bounds){detail=bounds?.clone()||null;lighting(lightMode);if(!detail)ground.position.y=currentView==='finishes'?-.96:-.365;}
 
  // Fit all eight corners in camera space instead of fitting an oversized sphere.
  function fitBox(box,direction=new THREE.Vector3(1,.74,1.3),padding=1.17){
@@ -42,5 +42,5 @@ export function createStage({canvas=null,width=1280,height=720,pixelRatio=1}={})
   const dir=name==='front'?new THREE.Vector3(0,0,1):name==='back'?new THREE.Vector3(0,0,-1):name==='right'?new THREE.Vector3(1,0,0):name==='left'?new THREE.Vector3(-1,0,0):new THREE.Vector3(1,.78,1.25);
   return fitBox(b,dir,1.17);
  }
- return {renderer,scene,get camera(){return camera;},perspective,lighting,resize,preset,fitBox,setDetail,setView(view){setDetail(null);ground.position.y=view==='finishes'?-.96:-.365;},render:()=>renderer.render(scene,camera),dispose(){environment.dispose();ground.geometry.dispose();ground.material.dispose();renderer.dispose();}};
+ return {renderer,scene,get camera(){return camera;},perspective,lighting,resize,preset,fitBox,setDetail,setView(view){currentView=view;setDetail(null);},render:()=>renderer.render(scene,camera),dispose(){environment.dispose();ground.geometry.dispose();ground.material.dispose();renderer.dispose();}};
 }

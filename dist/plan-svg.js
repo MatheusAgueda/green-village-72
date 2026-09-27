@@ -28,7 +28,12 @@ export function planSVG(configuration,{compact=false,materialColours={}}={}){
  }
  for(const f of p.furnishings){if(f.type==='bed'){content+=rect(f,'#f8f7ef','#9ea99c',4);content+=rect({x0:f.x0+.05,x1:f.x1-.05,z0:f.z0+.05,z1:f.z0+.39},'#fff','#c7cbbf',3);content+=rect({x0:f.x0+.025,x1:f.x1-.025,z0:f.z0+.75,z1:f.z1-.04},'#c4cfba','#b8c5ae');}
  else if(f.type==='shower'){content+=rect(f,'#e2edf0','#80a6a9',2);content+=ln(X(f.x0),Z(f.z0),X(f.x1),Z(f.z1),'stroke="#bfd0d0"');content+=ln(X(f.x1),Z(f.z0),X(f.x0),Z(f.z1),'stroke="#bfd0d0"');}
- else if(f.type==='toilet'||f.type==='basin'){content+=rect(f,'#fbfcfc','#91a9a2',8);}
+ else if(f.type==='toilet'){
+  const w=(f.z1-f.z0)*scale,d=(f.x1-f.x0)*scale;
+  // SVG Y follows world Z, so a positive 3D yaw becomes a negative SVG angle.
+  content+=`<g data-fixture-id="toilet" data-facing="${f.rotationY>0?'right':'left'}" transform="translate(${X((f.x0+f.x1)/2)} ${Z((f.z0+f.z1)/2)}) rotate(${-f.rotationY*180/Math.PI})" fill="#fbfcfc" stroke="#91a9a2" stroke-width=".65"><ellipse cx="0" cy="${.07*scale}" rx="${w*.46}" ry="${d*.35}"/><ellipse cx="0" cy="${.09*scale}" rx="${w*.3}" ry="${d*.24}" fill="none"/><rect x="${-w*.46}" y="${-d/2}" width="${w*.92}" height="${.165*scale}" rx="1.5"/></g>`;
+ }
+ else if(f.type==='basin'){content+=rect(f,'#fbfcfc','#91a9a2',8);}
  else if(f.type.includes('kitchen')||f.type==='island'){content+=rect(f,'#f2f1eb','#8b9d8e',1);}
  else content+=rect(f,f.type==='sofa'?'#c1cbbb':'#ba9e7f','#9baf9a',4);
  }

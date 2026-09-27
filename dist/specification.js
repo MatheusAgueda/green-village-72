@@ -145,10 +145,12 @@ export function getPlan(config){
  for(const r of rooms.filter(r=>r.kind==='bedroom')){const c=r.clear,cx=(c.x0+c.x1)/2,w=walls.find(w=>w.id===r.id+'-side'),mid=(c.z0+c.z1)/2,cz=r.outline.z1<L/2-EPSILON?Math.min(mid,w.door.u-w.door.width/2-.96-.12):mid;item(r.id+'-bed','bed',{x0:cx-.68,x1:cx+.68,z0:cz-.96,z1:cz+.96},{height:.53});}
  const bc=bath.clear,bw=bc.x1-bc.x0;
  item('shower','shower',{x0:bc.x0+.035,x1:bc.x1-.035,z0:bc.z0+.025,z1:bc.z0+.85},{height:1.95});
- const toiletX=mirrored?bc.x1-.29:bc.x0+.29,basinX=mirrored?bc.x1-.23:bc.x0+.23;
- item('toilet','toilet',{x0:toiletX-.22,x1:toiletX+.22,z0:bc.z0+1.03,z1:bc.z0+1.69},{height:.78});
+ // The standard reference places the cistern against the vanity side wall.
+ // Fixture dimensions and the 35 mm wall gap remain presentation estimates.
+ const toiletFacing=mirrored?-1:1,toiletX=mirrored?bc.x1-.365:bc.x0+.365,toiletZ=bc.z0+1.36,basinX=mirrored?bc.x1-.23:bc.x0+.23;
+ item('toilet','toilet',{x0:toiletX-.33,x1:toiletX+.33,z0:toiletZ-.22,z1:toiletZ+.22},{height:.78,rotationY:toiletFacing*Math.PI/2});
  item('basin','basin',{x0:basinX-.21,x1:basinX+.21,z0:bc.z1-.84,z1:bc.z1-.12},{height:.85});
- servicePoints.push({id:'shower',x:(bc.x0+bc.x1)/2,z:bc.z0+.1,y:1.05,hot:true},{id:'toilet',x:toiletX,z:bc.z0+1.15,y:.45,hot:false},{id:'basin',x:basinX,z:bc.z1-.33,y:.83,hot:true});
+ servicePoints.push({id:'shower',x:(bc.x0+bc.x1)/2,z:bc.z0+.1,y:1.05,hot:true},{id:'toilet',x:toiletX-toiletFacing*.247,z:toiletZ,y:.45,hot:false},{id:'basin',x:basinX,z:bc.z1-.33,y:.83,hot:true});
  const leftRooms=rooms.filter(r=>r.kind==='bedroom'&&r.outline.x0<0),lastLeft=leftRooms.length?Math.max(...leftRooms.map(r=>r.outline.z1)):-L/2;
  const compact=config.layout==='t4-a';
  const kitchenZ=compact?b.z1+.40:Math.max(lastLeft+.24,-3.9,config.kitchen==='u'?b.z1+.24:-Infinity),kitchenX=compact?b.x0+t/2+.02:-W/2+edge+.025;

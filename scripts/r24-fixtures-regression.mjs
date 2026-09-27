@@ -22,8 +22,9 @@ try{
  const hit=new THREE.Raycaster(from,down).intersectObject(basin,false)[0];
  assert.ok(hit,'The basin has an interior bottom');
  assert.ok(hit.point.y<.72&&hit.point.y>.69,'The basin remains genuinely hollow below the counter');
- const toilet=standard.groups.furniture.getObjectByName('toilet'),bounds=standard.plan.furnishings.find(f=>f.id==='toilet');
- const lidHit=new THREE.Raycaster(new THREE.Vector3((bounds.x0+bounds.x1)/2,1,(bounds.z0+bounds.z1)/2+.07),new THREE.Vector3(0,-1,0)).intersectObject(toilet,true)[0];
+ const toilet=standard.groups.furniture.getObjectByName('toilet');
+ const body=toilet.children.find(o=>o.name.startsWith('Sanita · '));
+ const lidHit=new THREE.Raycaster(new THREE.Vector3(0,1,.07).applyMatrix4(body.matrixWorld),new THREE.Vector3(0,-1,0)).intersectObject(toilet,true)[0];
  assert.ok(lidHit&&lidHit.point.y>.46&&lidHit.point.y<.48,'The standard toilet lid is closed as shown in its source photograph');
  assert.equal(standard.details.kitchen.sinkVisible,false,'Do not invent the standard kitchen sink under the packaging');
  assert.equal(standard.details.kitchen.tapVisible,false,'Do not invent the hidden standard tap');

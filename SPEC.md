@@ -1,3 +1,11 @@
+## R25 — Bathroom placement and reproduced runtime defects
+
+The confirmed bathroom-17 photograph places the toilet cistern against the vanity side wall, with the bowl facing the aisle. Correct standard and mirrored layouts in the shared plan, rendered mesh, plan export and illustrative water connection. Keep the existing estimated 0.44m width / 0.66m depth, rather than distorting the fixture. Verify all seven layouts for wall, shower, vanity and door intersections. Do not alter manufacturer-source drawings or claim unprovided measurements.
+
+Audit room navigation, fitting/opening interactions, camera and exports. Fix additional defects only where a reproducible case demonstrates the failure. Publish the tested correction through an isolated worktree based on the current public main; preserve existing customer records and local dirty history.
+
+Acceptance: toilet tank faces the mounting wall and bowl the room in 14 plan cases; SVG shares its orientation; mirror stays exact; fixtures and door paths remain disjoint; reproduced runtime regressions pass; local/public UI visually reviewed with CUA.
+
 ## R16 — complete project audit extension
 Audit all seven plans, configuration persistence/history/import/export, interior navigation, material fitting, detail views, video controls, source integrity, accessibility and responsive behaviour. Fix reproduced defects and retain evidence of both pre-fix causes and post-fix results. Preserve source opening positions, dimension truth labels, the user-confirmed expansion sequence and existing private audience. Kitchen adaptations must be visible to the buyer and appear in saved summaries.
 
