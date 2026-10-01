@@ -1,4 +1,5 @@
 import { DATA } from './data.js';
+import {INTERIOR_REFERENCES} from './interior-references.js';
 import {applyOpeningOptions,projectPorchDepth,selectedOption,optionTargetLabel} from './project-options.js';
 // Coordinates: metres; +X right, +Y up, +Z entrance. Origin: floor centre.
 export const REVISION='GV72-R9-2026-09-11';
@@ -150,7 +151,10 @@ export function getPlan(config){
  const toiletFacing=mirrored?-1:1,toiletX=mirrored?bc.x1-.365:bc.x0+.365,toiletZ=bc.z0+1.36,basinX=mirrored?bc.x1-.23:bc.x0+.23;
  item('toilet','toilet',{x0:toiletX-.33,x1:toiletX+.33,z0:toiletZ-.22,z1:toiletZ+.22},{height:.78,rotationY:toiletFacing*Math.PI/2});
  item('basin','basin',{x0:basinX-.21,x1:basinX+.21,z0:bc.z1-.84,z1:bc.z1-.12},{height:.85});
- servicePoints.push({id:'shower',x:(bc.x0+bc.x1)/2,z:bc.z0+.1,y:1.05,hot:true},{id:'toilet',x:toiletX-toiletFacing*.247,z:toiletZ,y:.45,hot:false},{id:'basin',x:basinX,z:bc.z1-.33,y:.83,hot:true});
+ const vessel=INTERIOR_REFERENCES[config.bathroomRef]?.vessel;
+ servicePoints.push({id:'shower',x:(bc.x0+bc.x1)/2+(mirrored?-.2:.2),z:bc.z0+.065,y:1.05,hot:true,drain:[(bc.x0+bc.x1)/2,.064,bc.z0+.025+(.85-.025)*.25]},
+  {id:'toilet',x:toiletX-toiletFacing*.247,z:toiletZ,y:.45,hot:false,drain:[toiletX+toiletFacing*.07,.18,toiletZ]},
+  {id:'basin',x:basinX+toiletFacing*(-.21+.04),z:bc.z1-.48,y:vessel?.735:.832,hot:true,drain:[basinX+toiletFacing*(vessel?.02:.005),vessel?.75:.706,bc.z1-.48]});
  const leftRooms=rooms.filter(r=>r.kind==='bedroom'&&r.outline.x0<0),lastLeft=leftRooms.length?Math.max(...leftRooms.map(r=>r.outline.z1)):-L/2;
  const compact=config.layout==='t4-a';
  const kitchenZ=compact?b.z1+.40:Math.max(lastLeft+.24,-3.9,config.kitchen==='u'?b.z1+.24:-Infinity),kitchenX=compact?b.x0+t/2+.02:-W/2+edge+.025;
@@ -159,8 +163,8 @@ export function getPlan(config){
   item('kitchen-main','kitchen',{x0:kitchenX,x1:kitchenX+depth,z0:kitchenZ,z1:kitchenZ+length},{height:.91});
   if(['l','u'].includes(config.kitchen))item('kitchen-return','kitchen-return',{x0:kitchenX+depth,x1:kitchenX+(config.kitchen==='u'?2.5:1.7),z0:kitchenZ,z1:kitchenZ+depth},{height:.91});
   if(config.kitchen==='u')item('kitchen-opposite','kitchen',{x0:kitchenX+1.9,x1:kitchenX+2.5,z0:kitchenZ+depth,z1:kitchenZ+length},{height:.91});
-  if(config.kitchen==='island')item('kitchen-island','island',{x0:kitchenX+depth+1,x1:kitchenX+depth+1+.7,z0:Math.max(kitchenZ+.28,b.z1+.94),z1:Math.max(kitchenZ+.28,b.z1+.94)+1.3},{height:.91});
-  servicePoints.push({id:'kitchen-sink',x:kitchenX+.3,z:kitchenZ+.3,y:.91,hot:true});
+  if((selectedOption(config,'kitchen-island')||config.kitchen==='island')&&!['t3-a','t4-a','t4-b'].includes(config.layout)&&config.kitchen!=='u')item('kitchen-island','island',{x0:kitchenX+depth+1,x1:kitchenX+depth+1+.7,z0:Math.max(kitchenZ+(['l','u'].includes(config.kitchen)?1.25:.28),b.z1+.94),z1:Math.max(kitchenZ+(['l','u'].includes(config.kitchen)?1.25:.28),b.z1+.94)+1.3},{height:.91});
+  servicePoints.push({id:'kitchen-sink',x:kitchenX+.065,z:kitchenZ+.3,y:.888,hot:true,drain:[kitchenX+.31,.736,kitchenZ+.3]});
  }
  if(!compact){item('sofa','sofa',{x0:-2.65,x1:-.82,z0:3.78,z1:4.6},{height:.8});item('table','table',{x0:-2.29,x1:-1.15,z0:4.91,z1:5.48},{height:.4});}
  // Cabinet modules use the same openings as the shell; no upper cupboard covers a window.

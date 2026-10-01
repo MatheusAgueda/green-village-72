@@ -12,6 +12,7 @@ const [THREE, {makeHouse}, {DEFAULT_CONFIG}] = await Promise.all([
   load('vendor/three.module.js'), load('model.js'), load('configuration.js'),
 ]);
 const app = fs.readFileSync(path.join(root, 'dist/app.js'), 'utf8');
+const {createLandscape}=await load('landscape.js');
 const stageSource = fs.readFileSync(path.join(root, 'dist/stage.js'), 'utf8')
   .replace(/^import .*;\n/gm, '')
   .replace('export function', 'function');
@@ -40,6 +41,7 @@ await check('Exploded floor layers remain above the stage ground after camera se
     dispose() {}
   }
   const ctx = {
+    createLandscape,
     THREE: {...THREE, WebGLRenderer: Renderer, PMREMGenerator: PMREM},
     RoomEnvironment: class { dispose() {} },
     exporting: false, walker: null, roomFocus: null, cameraPreset: 'perspective',

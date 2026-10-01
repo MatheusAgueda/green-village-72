@@ -7,6 +7,7 @@ import {SWATCHES,summaryRows,validateConfiguration,kitchenFitNote} from './confi
 import {INTERIOR_REFERENCES} from './interior-references.js';
 import {referenceCropAsset} from './material-library.js';
 import {getPlan,REVISION} from './specification.js';
+import {WORKTOPS} from './worktop-data.js';
 
 export const PRESENTATION_REVISION='GV72-R8-2026-09-10';
 export const BRAND_ASSET='assets/catalogue/reference/logo-white.png';
@@ -22,7 +23,11 @@ export function configurationReference(configuration){
 export function selectionMaterials(s){
  const material=(id,title,colour)=>{const x=SWATCHES.find(x=>x.id===id);return {title,name:x?.label||'Cor livre '+colour,image:x?referenceCropAsset(id):null,colour,source:x?'Catálogo 2026 · p. '+x.page:'Cor de visualização'};};
  const k=INTERIOR_REFERENCES[s.kitchenRef],b=INTERIOR_REFERENCES[s.bathroomRef];
- return [material(s.exteriorId,'Fachada',s.exterior),s.floorId?material(s.floorId,'Pavimento SPC (+1 200 €)',s.floor):{title:'Pavimento vinílico (incluído)',name:'Referência por confirmar',colour:s.floor,source:'Visualização neutra sem amostra'},{title:'Paredes interiores',name:s.interiorName,colour:s.interior,source:'Cor de visualização · '+s.interior},...(s.kitchen==='none'?[]:[{title:'Cozinha · '+s.kitchenRef.slice(-2),name:k.name,image:k.sourceAsset,source:'Catálogo 2026 · p. '+k.sourcePage}]),{title:'Casa de banho · '+s.bathroomRef.slice(-2),name:b.name,image:b.sourceAsset,source:'Catálogo 2026 · p. '+b.sourcePage},...(s.bathroomUV?[material(s.bathroomUV,'Revestimento UV do banho',null)]:[])];
+ const worktop=WORKTOPS.find(w=>w.id===s.kitchenWorktop),custom=[];
+ if(s.kitchenCabinetColour)custom.push({title:'Cor dos armários da cozinha',name:s.kitchenCabinetColour,colour:s.kitchenCabinetColour,source:'Pedido do cliente · sob orçamento'});
+ if(s.bathroomCabinetColour)custom.push({title:'Cor do móvel do banho',name:s.bathroomCabinetColour,colour:s.bathroomCabinetColour,source:'Pedido do cliente · sob orçamento'});
+ if(worktop)custom.push({title:'Bancada personalizada',name:worktop.label,image:worktop.asset,source:'Catálogo do fornecedor · sob orçamento'});
+ return [material(s.exteriorId,'Fachada',s.exterior),s.floorId?material(s.floorId,'Pavimento SPC (+1 200 €)',s.floor):{title:'Pavimento vinílico (incluído)',name:'Referência por confirmar',colour:s.floor,source:'Visualização neutra sem amostra'},{title:'Paredes interiores',name:s.interiorName,colour:s.interior,source:'Cor de visualização · '+s.interior},...(s.kitchen==='none'?[]:[{title:'Cozinha · '+s.kitchenRef.slice(-2),name:k.name,image:k.sourceAsset,source:'Catálogo 2026 · p. '+k.sourcePage}]),{title:'Casa de banho · '+s.bathroomRef.slice(-2),name:b.name,image:b.sourceAsset,source:'Catálogo 2026 · p. '+b.sourcePage},...(s.bathroomUV?[material(s.bathroomUV,'Revestimento UV do banho',null)]:[]),...custom];
 }
 export function selectionGroups(s){
  const rows=summaryRows(s),k=INTERIOR_REFERENCES[s.kitchenRef],b=INTERIOR_REFERENCES[s.bathroomRef];
@@ -50,7 +55,7 @@ export async function createPortfolioPDF(s,{image,planImage,project,lang='pt'}={
  function wrap(value,width,size=10,font=regular){const lines=[''];for(const word of pdfText(value).split(/\s+/)){let rest=word;while(rest){const last=lines.length-1,joined=lines[last]+(lines[last]?' ':'')+rest;if(font.widthOfTextAtSize(joined,size)<=width){lines[last]=joined;break;}if(lines[last]){lines.push('');continue;}let end=1;while(end<rest.length&&font.widthOfTextAtSize(rest.slice(0,end+1),size)<=width)end++;lines[last]=rest.slice(0,end);rest=rest.slice(end);if(rest)lines.push('');}}return lines;}
  function text(page,value,x,y,{size=10,font=regular,color=ink,width}={}){const lines=width?wrap(value,width,size,font):[pdfText(value)];for(const line of lines){if(y<40)throw new Error('O conteúdo do PDF excedeu a área da página.');page.drawText(line,{x,y,size,font,color});y-=size*1.42;}return y;}
  const fetched=new Map();
- async function embed(src){if(!src)return null;if(fetched.has(src))return fetched.get(src);const result=(async()=>{const response=await fetch(src);if(!response.ok)throw new Error('Não foi possível carregar uma imagem do resumo.');const bytes=new Uint8Array(await response.arrayBuffer());return bytes[0]===137?doc.embedPng(bytes):doc.embedJpg(bytes);})();fetched.set(src,result);return result;}
+ async function embed(src){if(!src)return null;if(fetched.has(src))return fetched.get(src);const result=(async()=>{const response=await fetch(src);if(!response.ok)throw new Error('Não foi possível carregar uma imagem do resumo.');const bytes=new Uint8Array(await response.arrayBuffer());if(bytes[0]===137)return doc.embedPng(bytes);if(bytes[0]===255)return doc.embedJpg(bytes);const bitmap=await createImageBitmap(new Blob([bytes])),canvas=document.createElement('canvas');canvas.width=bitmap.width;canvas.height=bitmap.height;canvas.getContext('2d').drawImage(bitmap,0,0);bitmap.close();return doc.embedPng(canvas.toDataURL('image/png'));})();fetched.set(src,result);return result;}
  const logo=await embed(BRAND_ASSET);
  async function photo(page,src,x,y,w,h,{background=pale}={}){page.drawRectangle({x,y,width:w,height:h,color:background});const im=await embed(src);if(!im)return;const scale=Math.min(w/im.width,h/im.height);page.drawImage(im,{x:x+(w-im.width*scale)/2,y:y+(h-im.height*scale)/2,width:im.width*scale,height:im.height*scale});}
  function base(title,number){const page=doc.addPage([W,H]);page.drawRectangle({x:0,y:H-94,width:W,height:94,color:green});page.drawImage(logo,{x:M,y:H-64,width:205,height:205*logo.height/logo.width});text(page,'EXPANDÍVEL 72',W-M-124,H-41,{size:12,font:bold,color:white});text(page,'PORTFÓLIO / 2026',W-M-124,H-62,{size:9,color:rgb(.77,.86,.75)});text(page,title,M,H-134,{size:26,font:bold});page.drawLine({start:{x:M,y:37},end:{x:W-M,y:37},thickness:.6,color:rgb(.77,.82,.76)});page.drawText(`${ref}  ·  ${date}`,{x:M,y:22,size:8,font:regular,color:muted});page.drawText(`${number} / 4`,{x:W-M-22,y:22,size:8,font:regular,color:muted});return page;}
@@ -63,9 +68,11 @@ export async function createPortfolioPDF(s,{image,planImage,project,lang='pt'}={
  text(cover,'Uma base para a sua proposta.',M,165,{size:17,font:bold});
  text(cover,'Este documento reúne as suas preferências. A Green Village deverá confirmar a compatibilidade, o âmbito do fornecimento, o transporte, a instalação e o preço final.',M,141,{size:11,width:W-2*M,color:muted});
  text(cover,CONTACT_EMAIL,M, 72,{size:11,font:bold});
+ const allCards=selectionMaterials(s),cw=(W-2*M-28)/3;
+ for(let start=0;start<allCards.length;start+=6){
  const materials=base('Os seus acabamentos.',2);
- text(materials,'Amostras e fotografias de referência do catálogo original.',M,673,{size:11,color:muted});
- const cards=selectionMaterials(s),cw=(W-2*M-28)/3,rows=[];
+ text(materials,'Referências do catálogo e cores solicitadas para a proposta.',M,673,{size:11,color:muted});
+ const cards=allCards.slice(start,start+6),rows=[];
  for(let i=0;i<cards.length;i+=3){const entries=cards.slice(i,i+3);const textHeight=Math.max(...entries.map(m=>20+wrap(m.title,cw,9).length*9*1.42+6+wrap(m.name,cw,12,bold).length*12*1.42+6+wrap(m.source,cw,9).length*9*1.42+20));rows.push({entries,textHeight});}
  const photoHeight=Math.min(128,(496-rows.reduce((n,row)=>n+row.textHeight,0))/rows.length);if(photoHeight<70)throw new Error('Os nomes dos materiais excedem o espaço do resumo.');let top=638;
  for(const row of rows){for(let col=0;col<row.entries.length;col++){const m=row.entries[col],x=M+col*(cw+14);
@@ -74,6 +81,7 @@ export async function createPortfolioPDF(s,{image,planImage,project,lang='pt'}={
   let y=text(materials,m.title,x,top-photoHeight-20,{size:9,color:muted,width:cw});y=text(materials,m.name,x,y-6,{size:12,font:bold,width:cw});text(materials,m.source,x,y-6,{size:9,color:muted,width:cw});
  }top-=photoHeight+row.textHeight;}
  text(materials,'As amostras digitais reproduzem as referências seleccionadas. A luz e o ecrã alteram a percepção da cor; escala dos padrões e rugosidade não foram medidas pelo fabricante. Paredes interiores: cor de visualização, sem equivalência RAL/NCS documentada.',M,115,{size:9,width:W-2*M,color:muted});
+ }
  const plan=base('O espaço que escolheu.',3);
  text(plan,layout.label+' · '+layout.bedrooms+(layout.bedrooms===1?' quarto':' quartos')+' · 1 casa de banho',M,673,{size:12,font:bold});
  await photo(plan,planImage,M,150,W-2*M,499,{background:white});

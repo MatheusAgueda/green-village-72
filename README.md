@@ -6,6 +6,8 @@ Portefólio e configurador interactivo em português, inglês e espanhol.
 
 ## Executar
 
+Revisão R27: circuitos de água e electricidade ligados aos equipamentos, correcção da atribuição de janelas por fachada, ilha e armários superiores independentes, cores de móveis, 78 bancadas com fotografias da referência fornecida e envolvente exterior. As escolhas constam da ficha do cliente; artigos sem preço confirmado continuam sob orçamento. [Âmbito, fontes e verificações](docs/audit/r27-report.md).
+
 ```sh
 node scripts/serve.mjs 4194
 ```

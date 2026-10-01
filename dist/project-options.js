@@ -20,7 +20,7 @@ export const OPTIONAL_ITEMS = DATA.options.map(item => ({
   model: item.section==='windows' || item.section==='doors' ? 'opening' : ['gable-roof','terrace','kitchen-upper','bathroom-separated','exterior-3d'].includes(item.id) ? 'geometry' : 'specification'
 })).concat([
   {id:'side-glass-partial',label:'Vidro parcial na lateral',section:'doors',facts:['Indique o lado, as medidas e a divisão nas observações.','Dimensões e instalação sujeitas a validação técnica.'],scope:'Envidraçamento lateral parcial sob cotação',priceCents:null},
-  {id:'kitchen-island',label:'Ilha adicional na cozinha',section:'kitchen',facts:['Pedido registado mesmo quando a planta 3D não comporta uma ilha.','Dimensões, circulação, acabamento e equipamentos a definir.'],scope:'Ilha de cozinha sob cotação personalizada',priceCents:null},
+  {id:'kitchen-island',model:'geometry',label:'Ilha adicional na cozinha',section:'kitchen',facts:['Pedido registado mesmo quando a planta 3D não comporta uma ilha.','Dimensões, circulação, acabamento e equipamentos a definir.'],scope:'Ilha de cozinha sob cotação personalizada',priceCents:null},
   {id:'ac-monosplit-12000',label:'Ar condicionado 12 000 BTU · Monosplit 1×1',section:'climate',facts:['1 unidade exterior + 1 unidade interior.','Climatização de uma divisão.','Solução económica e simples de instalar.','500 € por sistema, com instalação incluída.'],scope:'Um sistema de 12 000 BTU com instalação incluída',priceCents:50000,vatIncluded:null},
   {id:'ac-multisplit-3x1',label:'Ar condicionado · Multisplit 3×1',section:'climate',facts:['1 unidade exterior + 3 unidades interiores.','Até 3 divisões com uma unidade exterior, poupando espaço na fachada.','Preço conforme potência total, marca, unidades interiores e comprimento da tubagem.'],scope:'Dimensionamento técnico e cotação personalizada',priceCents:null},
 ].map(item=>({maxQuantity:12,variants:[],model:'specification',photo:null,page:null,commercialSource:'Oferta Green Village · 26/09/2026',...item})));
@@ -80,6 +80,7 @@ export function setOptionSelection(state,id,patch){
     selections.push(next);
   }
   const change={optionSelections:validateOptionSelections(selections)};
+  if(id==='kitchen-island'&&patch===null&&state.kitchen==='island')change.kitchen='linear';
   if(id==='gable-roof')change.roof=patch!==null;
   if(id==='terrace')change.porch=patch!==null;
   if(id==='exterior-3d'){const is3d=/^exterior-3d-(textures|gm)-/.test(state.exteriorId);if(patch!==null&&!is3d)change.exteriorId=DATA.swatches['exterior-3d-textures'][0].id;else if(patch===null&&is3d)change.exteriorId=DATA.swatches['exterior-standard'].find(x=>/Branco Glacial/i.test(x.label)).id;}

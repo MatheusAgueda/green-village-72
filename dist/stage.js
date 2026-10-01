@@ -1,5 +1,6 @@
 import * as THREE from './vendor/three.module.js';
 import { RoomEnvironment } from './vendor/RoomEnvironment.js';
+import {createLandscape} from './landscape.js';
 export function createStage({canvas=null,width=1280,height=720,pixelRatio=1}={}){
  const renderer=new THREE.WebGLRenderer({canvas:canvas||undefined,antialias:true,alpha:false,preserveDrawingBuffer:true});renderer.setSize(width,height,false);renderer.setPixelRatio(Math.min(pixelRatio,1.75));renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.NeutralToneMapping;renderer.toneMappingExposure=1;renderer.localClippingEnabled=true;renderer.shadowMap.enabled=true;renderer.shadowMap.type=THREE.PCFSoftShadowMap;
  const scene=new THREE.Scene();scene.background=new THREE.Color('#e8ebe5');
@@ -10,10 +11,12 @@ export function createStage({canvas=null,width=1280,height=720,pixelRatio=1}={})
  const key=new THREE.DirectionalLight('#ffffff',2.1);key.position.set(-8,17,10);key.castShadow=true;key.shadow.mapSize.set(2048,2048);Object.assign(key.shadow.camera,{left:-13,right:13,top:14,bottom:-14,near:.5,far:50});key.shadow.bias=-.00012;key.shadow.normalBias=.015;scene.add(key,key.target);
  const fill=new THREE.DirectionalLight('#ffffff',.35);fill.position.set(12,7,-10);scene.add(fill,fill.target);
  const groundMat=new THREE.MeshStandardMaterial({color:'#e2e6dc',roughness:.98,metalness:0});const ground=new THREE.Mesh(new THREE.PlaneGeometry(180,180),groundMat);ground.rotation.x=-Math.PI/2;ground.position.y=-.365;ground.receiveShadow=true;scene.add(ground);
+ const landscape=createLandscape(scene,ground);
  function resize(w,h,ratio=null){if(!Number.isFinite(w)||!Number.isFinite(h)||w<1||h<1)return;renderer.setSize(w,h,false);if(ratio)renderer.setPixelRatio(Math.min(ratio,1.75));if(camera.isOrthographicCamera){const height=camera.top-camera.bottom;camera.left=-height*w/h/2;camera.right=height*w/h/2;}camera.aspect=w/h;camera.updateProjectionMatrix();}
  function lighting(mode){
   lightMode=mode;const exterior=mode==='exterior';key.color.set(exterior?'#fff5e6':'#ffffff');key.intensity=exterior?2.3:2.1;key.position.set(exterior?-11:-8,exterior?12:17,exterior?5:10);key.target.position.set(0,0,0);fill.position.set(12,7,-10);fill.target.position.set(0,0,0);fill.intensity=.35;hemi.intensity=.9;hemi.color.set('#ffffff');hemi.groundColor.set(exterior?'#cbd5c4':'#d9ddd5');scene.background.set(exterior?'#e5eadf':'#e8ebe5');groundMat.color.set(exterior?'#d4dfc6':'#e2e6dc');scene.environmentIntensity=.35;renderer.toneMappingExposure=1;
   Object.assign(key.shadow.camera,{left:-13,right:13,top:14,bottom:-14,near:.5,far:50});key.shadow.normalBias=.015;key.shadow.bias=-.00012;key.shadow.radius=1;key.shadow.camera.updateProjectionMatrix();
+  landscape.setVisible(currentView==='exterior'&&!detail);
   if(detail)detailLighting(detail);
  }
  function detailLighting(bounds){
@@ -39,8 +42,8 @@ export function createStage({canvas=null,width=1280,height=720,pixelRatio=1}={})
   if(['top','front','back','left','right'].includes(name)){camera=new THREE.OrthographicCamera(-1,1,1,-1,.05,200);camera.aspect=aspect;camera.fov=36;camera.up.set(0,name==='top'?0:1,name==='top'?-1:0);const dir=name==='top'?new THREE.Vector3(0,1,0):name==='front'?new THREE.Vector3(0,0,1):name==='back'?new THREE.Vector3(0,0,-1):new THREE.Vector3(name==='left'?-1:1,0,0);return fitBox(b,dir,1.15);}
   perspective();camera.zoom=1;camera.up.set(0,1,0);
   if(name==='inside')return fitBox(b,new THREE.Vector3(.7,1.2,1.15),1.15);
-  const dir=name==='front'?new THREE.Vector3(0,0,1):name==='back'?new THREE.Vector3(0,0,-1):name==='right'?new THREE.Vector3(1,0,0):name==='left'?new THREE.Vector3(-1,0,0):new THREE.Vector3(1,.78,1.25);
+  const dir=name==='front'?new THREE.Vector3(0,0,1):name==='back'?new THREE.Vector3(0,0,-1):name==='right'?new THREE.Vector3(1,0,0):name==='left'?new THREE.Vector3(-1,0,0):new THREE.Vector3(1,.30,1.25);
   return fitBox(b,dir,1.17);
  }
- return {renderer,scene,get camera(){return camera;},perspective,lighting,resize,preset,fitBox,setDetail,setView(view){currentView=view;setDetail(null);},render:()=>renderer.render(scene,camera),dispose(){environment.dispose();ground.geometry.dispose();ground.material.dispose();renderer.dispose();}};
+ return {renderer,scene,get camera(){return camera;},perspective,lighting,resize,preset,fitBox,setDetail,setView(view){currentView=view;setDetail(null);},render:()=>renderer.render(scene,camera),dispose(){landscape.dispose();environment.dispose();ground.geometry.dispose();ground.material.dispose();renderer.dispose();}};
 }

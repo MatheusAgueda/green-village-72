@@ -1,5 +1,6 @@
 import * as THREE from './vendor/three.module.js';
 import {createOpeningMotion} from './opening-motion.js';
+import {renderServiceNetwork} from './service-network.js';
 import { createInteriorDetail } from './interior-detail.js';
 import { classifyLayer } from './model-layers.js';
 import { installPanelJoints } from './panel-joints.js';
@@ -111,14 +112,7 @@ export function makeHouse(options={},library=null){
  }
  // These are presentation-only circuit illustrations: they keep the requested
  // water/electricity reading without pretending to be construction drawings.
- for(const point of plan.servicePoints){
-  const route=[[0,.055,0],[point.x,.055,0],[point.x,.055,point.z],[point.x,point.y,point.z]];
-  pipe(groups.plumbing,route,.018,point.hot?M.red:M.blue,`${point.id} · circuito hidráulico ilustrativo`);
- }
- for(const room of plan.rooms){
-  const x=(room.clear.x0+room.clear.x1)/2,z=(room.clear.z0+room.clear.z1)/2;
-  pipe(groups.electrical,[[0,.07,0],[x,.07,0],[x,.07,z],[x,1.65,z]],.012,M.electric,`${room.id} · circuito eléctrico ilustrativo`);
- }
+ const services=renderServiceNetwork({plan,groups,mesh,box,pipe,plain});
  // Pitched canopy: dimensions below are explicitly estimates, while shape follows the supplied photograph.
  const coverHalf=X+DIM.canopyOverhang,eaves=H+DIM.canopyEavesAboveWall,rise=DIM.canopyRise,over=DIM.canopyOverhang,slant=Math.hypot(coverHalf,rise),pitch=Math.atan2(rise,coverHalf);
  for(const dir of [-1,1]){const m=box(groups.cover,slant,.06,DIM.length+2*over,dir*coverHalf/2,eaves+rise/2,0,M.roof,'Telhado adicional · medidas estimadas',.005);m.rotation.z=-dir*pitch;for(const z of [-Z,-2,2,Z])beam(groups.cover,[dir*coverHalf,eaves,z],[0,eaves+rise,z],.045,.05,M.steel,'Asna ilustrativa');}
@@ -158,7 +152,10 @@ export function makeHouse(options={},library=null){
   groups.floor.visible=!structure;groups.floorLayers.visible=!structure||finish;groups.roof.visible=!cut&&!structure&&(expand||state.roofVisible);groups.structure.visible=true;groups.supports.visible=true;
   groups.plumbing.visible=view==='plumbing';groups.electrical.visible=view==='electrical';
   for(const a of sideAssemblies)a.pivot.visible=!structure&&(expand||state.wallsVisible);for(const a of endAssemblies)a.g.visible=!structure&&(expand||state.wallsVisible);
-  for(const m of allMaterials){m.clippingPlanes=cut?[cutPlane]:[];m.clipShadows=true;m.needsUpdate=true;}
+  for(const m of allMaterials){const serviceView=['plumbing','electrical'].includes(view),exempt=services.materials.has(m)||(view!=='plan'&&details.detailMaterials.has(m));m.clippingPlanes=cut&&!exempt?[cutPlane]:[];m.clipShadows=true;
+   m.userData.serviceAppearance??={opacity:m.opacity,transparent:m.transparent,depthWrite:m.depthWrite};Object.assign(m,m.userData.serviceAppearance);
+   if(serviceView&&details.detailMaterials.has(m)){m.opacity*=.32;m.transparent=true;m.depthWrite=false;}
+   m.needsUpdate=true;}
   if(view==='plumbing'||view==='electrical'){groups.floor.visible=false;groups.floorLayers.visible=false;}
   groups.cover.visible=state.roof&&!cut&&!expand;groups.porch.visible=state.porch&&!expand;canopyGroup.visible=!cut&&!structure;for(const o of groups.cover.children)o.visible=!structure||o.material!==M.roof;for(const o of groups.porch.children)if(o.isMesh)o.visible=!structure||o.material!==M.wood;
   setExploded(finish?state.exploded??1:0);updateExpansion(expand?state.expansion:1);setDoors(state.doorsOpen);
@@ -192,7 +189,7 @@ export function makeHouse(options={},library=null){
    detailPresentation.visible=true;for(const [key,g]of detailFloors)g.visible=key===kind;detailWindow.visible=kind==='bathroom';
   }
   const planes=active?[new THREE.Plane(new THREE.Vector3(1,0,0),-active.min.x),new THREE.Plane(new THREE.Vector3(-1,0,0),active.max.x),new THREE.Plane(new THREE.Vector3(0,0,1),-active.min.z),new THREE.Plane(new THREE.Vector3(0,0,-1),active.max.z)]:[];
-  if(state.view==='interior')for(const m of allMaterials){m.clippingPlanes=active?(details.detailMaterials.has(m)||m===M.bath||m===M.floor||m===detailEdge||(kind==='bathroom'&&[M.aluminium,M.glass,M.metal].includes(m))?[]:planes):[cutPlane];m.needsUpdate=true;}
+  if(state.view==='interior')for(const m of allMaterials){m.clippingPlanes=active?(details.detailMaterials.has(m)||m===M.bath||m===M.floor||m===detailEdge||(kind==='bathroom'&&[M.aluminium,M.glass,M.metal].includes(m))?[]:planes):(details.detailMaterials.has(m)||services.materials.has(m)?[]:[cutPlane]);m.needsUpdate=true;}
  }
  function detailBounds(kind){const bounds=roomRegion(kind);if(!bounds)return null;bounds.min.y=-.051;bounds.expandByScalar(.045);root.updateMatrixWorld(true);for(const m of details.motions)if(m.scope===kind)bounds.union(new THREE.Box3().setFromObject(m.g));return bounds;}
 
@@ -231,6 +228,6 @@ export function makeHouse(options={},library=null){
  batch(groups.structure);batch(groups.supports);batch(groups.floorLayers);batch(groups.interior);batch(groups.plumbing);batch(groups.electrical);for(const g of roofPanels)batch(g);for(const a of sideAssemblies)batch(a.local);for(const a of endAssemblies)batch(a.g);function batchTree(g){for(const child of [...g.children])if(child.isGroup)batchTree(child);batch(g);}for(const g of groups.furniture.children)batchTree(g);
  setView(state.view);captureBases();
  root.userData={revision:'R9',state,plan,groups,bedroomCount:plan.bedrooms,colliders,envelope:{width:DIM.width,length:DIM.length,core:DIM.core,wing:DIM.wing},animationLimits:'Source frames 2–3: longitudinal walls raise outwards with rigid windows. Axes and 8 mm roof clearance are illustrative. End panels are omitted; transport, locking and full deployment are not documented.'};
- return {root,groups,plan,details,openings,setDetail,detailBounds,materials:M,sideAssemblies,endAssemblies,floorAssemblies,roofAssemblies,doors,colliders,updateExpansion,updateProcess,setView,setCut,setExploded,setDoors,library:lib,dispose};
+ return {root,groups,plan,details,services,openings,setDetail,detailBounds,materials:M,sideAssemblies,endAssemblies,floorAssemblies,roofAssemblies,doors,colliders,updateExpansion,updateProcess,setView,setCut,setExploded,setDoors,library:lib,dispose};
  }catch(error){dispose();throw error;}
 }

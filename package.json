@@ -14,6 +14,7 @@
     "test:client": "node scripts/client-project-regression.mjs",
     "test:client:browser": "node scripts/client-project-browser.mjs",
     "test:r25": "node scripts/r25-bathroom-regression.mjs && node scripts/r25-runtime-regression.mjs",
+    "test:r26": "node scripts/r26-regression.mjs",
     "test:r24": "node scripts/r24-detail-regression.mjs && node scripts/r24-fixtures-regression.mjs && node scripts/r24-floor-regression.mjs && node scripts/r24-material-regression.mjs && node scripts/r24-opening-regression.mjs && node scripts/r24-i18n-regression.mjs"
   }
 }

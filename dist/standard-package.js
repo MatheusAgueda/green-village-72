@@ -1,5 +1,6 @@
 import {DATA} from './data.js';
 import {INTERIOR_REFERENCES} from './interior-references.js';
+import {customFinishLines} from './custom-finishes.js';
 
 // These two source photographs were confirmed as standard by Green Village.
 export const STANDARD_PACKAGE = Object.freeze({
@@ -52,6 +53,7 @@ export function adaptationEstimate(state) {
       'Distribuição espelhada: lavatório e sanita no lado oposto.', 'Configuração seleccionada');
   }
   if (state.bathroomUV) add('bathroom-wall', 'bathroom', 'Alterar o revestimento do banho', DATA.swatches['bathroom-uv'].find(item => item.id === state.bathroomUV)?.label || state.bathroomUV, 'Configuração seleccionada');
+  for(const line of customFinishLines(state)){if(line.id==='kitchenWorktop')lines.delete('kitchen-worktop');lines.set(line.id,line);}
   return {lines: [...lines.values()], complete: lines.size === 0};
 }
 
@@ -67,9 +69,11 @@ export function standardPatch(kind, state) {
     [kind + 'Ref']: standard.ref,
     [kind]: standard.layout,
     adaptationRequests: validateAdaptationRequests(state.adaptationRequests).filter(id => ADAPTATION_REQUESTS.find(item => item.id === id).kind !== kind),
-    optionSelections: (state.optionSelections || []).filter(item => item.id !== (kind === 'kitchen' ? 'kitchen-upper' : 'bathroom-separated')),
+    optionSelections: (state.optionSelections || []).filter(item => !(kind === 'kitchen' ? ['kitchen-upper','kitchen-island'] : ['bathroom-separated']).includes(item.id)),
   };
   if (kind === 'bathroom') patch.bathroomUV = null;
+  patch[kind+'CabinetColour']=null;
+  if(kind==='kitchen')patch.kitchenWorktop=null;
   return patch;
 }
 

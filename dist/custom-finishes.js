@@ -1,0 +1,23 @@
+import {WORKTOPS,WORKTOP_SOURCE} from './worktop-data.js';
+import {selectedOption,itemById,money} from './project-options.js';
+export const CUSTOM_FINISH_FIELDS=['kitchenCabinetColour','bathroomCabinetColour','kitchenWorktop'];
+export function validateCustomFinish(key,value){
+ if(value===null)return null;
+ if(key==='kitchenWorktop'){if(WORKTOPS.some(w=>w.id===value))return value;}
+ else if(typeof value==='string'&&/^#[a-f0-9]{6}$/i.test(value))return value.toLowerCase();
+ throw new Error('Acabamento personalizado inválido.');
+}
+export function customFinishLines(state){
+ const lines=[];
+ for(const [kind,key,label]of [['kitchen','kitchenCabinetColour','Cor dos armários da cozinha'],['bathroom','bathroomCabinetColour','Cor do móvel do banho']])if(state[key])lines.push({id:key,kind,label,detail:state[key]+' · cor pedida pelo cliente; correspondência e preço por confirmar.',source:'Pedido do cliente',priceCents:null});
+ const worktop=WORKTOPS.find(w=>w.id===state.kitchenWorktop);
+ if(worktop)lines.push({id:'kitchenWorktop',kind:'kitchen',label:'Bancada personalizada',detail:worktop.label+' · '+worktop.id+' · fornecimento e preço por confirmar.',source:worktop.evidenceURL,priceCents:null});
+ return lines;
+}
+export function customFinishMarkup(kind,state,page=0){
+ const key=kind+'CabinetColour',selected=state[key],colour=selected||'#e4e4dc',worktop=WORKTOPS.find(w=>w.id===state.kitchenWorktop);
+ const palette=['#f1eee5','#c9bda6','#828477','#3e5147','#343d45','#a5815d','#323331','#a7adb0'];
+ const start=Math.max(0,Math.min(12,page))*6;
+ const samples=`<details class="worktop-browser"><summary>Explorar amostras de bancada</summary><div class="worktop-grid">${WORKTOPS.slice(start,start+6).map(w=>`<button data-worktop-choice="${w.id}" aria-pressed="${w.id===state.kitchenWorktop}"><img src="${w.asset}" alt="${w.label}" loading="lazy"><span>${w.label}</span></button>`).join('')}</div><div class="worktop-pages"><button class="outline" data-worktop-page="${page-1}" ${page===0?'disabled':''}>Anterior</button><span>${page+1} / 13</span><button class="outline" data-worktop-page="${page+1}" ${page===12?'disabled':''}>Seguinte</button></div></details>`;
+ return `<section class="custom-finishes field"><h3>${kind==='kitchen'?'Armários e bancada':'Móvel do lavatório'}</h3><p>Personalizações opcionais, sob orçamento.</p>${kind==='kitchen'?`<div class="kitchen-extras">${['kitchen-upper','kitchen-island'].map(id=>{const item=itemById(id),on=Boolean(selectedOption(state,id));return `<label class="toggle-option"><span><strong>${item.label}</strong><small>${id==='kitchen-upper'?money(item.priceCents)+' · com IVA':'Sob orçamento'}</small></span><input type="checkbox" data-kitchen-extra="${id}" ${on?'checked':''}></label>`;}).join('')}</div>${selectedOption(state,'kitchen-island')&&(['t3-a','t4-a','t4-b'].includes(state.layout)||['u','none'].includes(state.kitchen))?'<p class="project-attention">A ilha mantém-se no pedido. Esta planta precisa de adaptação para a representar com passagem livre.</p>':''}<p class="field-description">O preço dos armários superiores refere-se ao adicional; o conjunto de módulos abrangido será confirmado na proposta.</p>`:''}<label class="colour-request"><span>${kind==='kitchen'?'Cor dos armários da cozinha':'Cor do móvel do banho'}</span><input type="color" data-custom-colour="${key}" value="${colour}" aria-label="${kind==='kitchen'?'Cor dos armários da cozinha':'Cor do móvel do banho'}"></label><div class="colour-proposals" role="group" aria-label="Propostas de cor">${palette.map(hex=>`<button data-finish-colour="${hex}" data-finish-field="${key}" aria-label="${hex}" aria-pressed="${selected===hex}" style="background:${hex}"></button>`).join('')}</div><p class="field-description">Cor de preferência para a proposta. Acabamento final e correspondência com uma amostra física por confirmar.</p>${selected?`<button class="text-link" data-reset-finish="${key}">Usar acabamento da referência</button>`:''}${kind==='kitchen'?`<label class="project-field"><span>Bancada personalizada</span><select id="kitchen-worktop"><option value="">Acabamento da referência</option>${WORKTOPS.map(w=>`<option value="${w.id}" ${w.id===state.kitchenWorktop?'selected':''}>${w.label}</option>`).join('')}</select></label>${worktop?`<button class="worktop-preview" data-lightbox="${worktop.asset}" data-label="${worktop.label}"><img src="${worktop.asset}" alt="${worktop.label}"><span>${worktop.label} ↗</span></button>`:''}${samples}<p class="field-description">78 amostras originais do fornecedor. A selecção altera a bancada no 3D; preço e disponibilidade sujeitos a confirmação.</p><a class="text-link" href="${WORKTOP_SOURCE}" target="_blank" rel="noopener">Catálogo de bancadas ↗</a>`:''}</section>`;
+}

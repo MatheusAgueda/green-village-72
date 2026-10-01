@@ -388,6 +388,35 @@ CUSTOMER_STRINGS.push(
  ["2 anos na estrutura", "2 years on the structure", "2 años en la estructura"],
  ["1 ano nos equipamentos", "1 year on equipment", "1 año en los equipos"]
 );
+CUSTOMER_STRINGS.push(
+ ['Armários e bancada','Cabinets and worktop','Armarios y encimera'],
+ ['Explorar amostras de bancada','Browse worktop samples','Explorar muestras de encimeras'],['Anterior','Previous','Anterior'],['Seguinte','Next','Siguiente'],
+ ['Pedido do cliente · sob orçamento','Customer request · quotation required','Solicitud del cliente · bajo presupuesto'],
+ ['Catálogo do fornecedor · sob orçamento','Supplier catalogue · quotation required','Catálogo del proveedor · bajo presupuesto'],
+ ['Referências do catálogo e cores solicitadas para a proposta.','Catalogue references and colours requested for the proposal.','Referencias del catálogo y colores solicitados para la propuesta.'],
+ ['Móvel do lavatório','Vanity unit','Mueble de lavabo'],
+ ['Personalizações opcionais, sob orçamento.','Optional customisations, subject to quotation.','Personalizaciones opcionales, bajo presupuesto.'],
+ ['Ilha adicional na cozinha','Additional kitchen island','Isla adicional de cocina'],
+ ['Cor dos armários da cozinha','Kitchen cabinet colour','Color de los armarios de cocina'],
+ ['Cor do móvel do banho','Bathroom cabinet colour','Color del mueble de baño'],
+ ['Propostas de cor','Colour ideas','Propuestas de color'],
+ ['Bancada personalizada','Custom worktop','Encimera personalizada'],
+ ['Acabamento da referência','Reference finish','Acabado de referencia'],
+ ['Usar acabamento da referência','Use reference finish','Usar acabado de referencia'],
+ ['Catálogo de bancadas ↗','Worktop catalogue ↗','Catálogo de encimeras ↗'],
+ ['Escolher o local ↗','Choose location ↗','Elegir ubicación ↗'],
+ ['Para alterar o 3D, escolha um vão da planta.','To update the 3D model, choose an opening on the plan.','Para actualizar el modelo 3D, elija un hueco del plano.'],
+ ['Escolha o vão onde pretende aplicar este artigo.','Choose the opening where you want to apply this item.','Elija el hueco donde desea aplicar este artículo.'],
+ ['Cor de preferência para a proposta. Acabamento final e correspondência com uma amostra física por confirmar.','Preferred colour for your proposal. Final finish and physical sample match to be confirmed.','Color preferido para la propuesta. Acabado final y correspondencia con una muestra física por confirmar.'],
+ ['O preço dos armários superiores refere-se ao adicional; o conjunto de módulos abrangido será confirmado na proposta.','The upper-cabinet price refers to the optional extra; the modules covered will be confirmed in the proposal.','El precio de los armarios superiores corresponde al extra; los módulos incluidos se confirmarán en la propuesta.'],
+ ['A ilha mantém-se no pedido. Esta planta precisa de adaptação para a representar com passagem livre.','The island remains in your request. This layout needs adaptation to show it with clear circulation.','La isla se mantiene en la solicitud. Esta distribución necesita adaptación para representarla con paso libre.'],
+ ['78 amostras originais do fornecedor. A selecção altera a bancada no 3D; preço e disponibilidade sujeitos a confirmação.','78 original supplier samples. Selection updates the 3D worktop; price and availability require confirmation.','78 muestras originales del proveedor. La selección actualiza la encimera 3D; precio y disponibilidad sujetos a confirmación.'],
+ ['Água fria','Cold water','Agua fría'],['Água quente','Hot water','Agua caliente'],['Esgotos','Drainage','Desagües'],
+ ['Quadro','Distribution board','Cuadro'],['condutas','conduits','conductos'],['caixas','junction boxes','cajas'],['tomadas','sockets','enchufes'],['iluminação','lighting','iluminación'],
+ ['cor pedida pelo cliente; correspondência e preço por confirmar.','customer-requested colour; matching and price to be confirmed.','color solicitado por el cliente; correspondencia y precio por confirmar.'],
+ ['fornecimento e preço por confirmar.','supply and price to be confirmed.','suministro y precio por confirmar.']
+);
+for(let i=1;i<=78;i++){const n=String(i).padStart(2,'0');CUSTOMER_STRINGS.push(['Bancada '+n,'Worktop '+n,'Encimera '+n]);}
 for(const [pt,en,es] of CUSTOMER_STRINGS){STRINGS.en[pt]=en;STRINGS.es[pt]=es;}
 const SENTENCE_KEYS=Object.fromEntries(['en','es'].map(lang=>[lang,Object.keys(STRINGS[lang]).filter(message=>message.endsWith('.')).sort((a,b)=>b.length-a.length)]));
 const UPPER_STRINGS=Object.fromEntries(['en','es'].map(lang=>[lang,Object.fromEntries(Object.entries(STRINGS[lang]).map(([pt,value])=>[pt.toLocaleUpperCase('pt-PT'),value.toLocaleUpperCase(lang==='es'?'es-ES':'en-GB')]))]));

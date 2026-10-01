@@ -1,12 +1,13 @@
 import * as THREE from './vendor/three.module.js';
 import {INTERIOR_REFERENCES} from './interior-references.js';
 import {selectedOption} from './project-options.js';
+import {WORKTOPS} from './worktop-data.js';
 
 /** Reference-specific equipment. Room footprints come exclusively from getPlan(). */
 export function createInteriorDetail({state,plan,lib,M,plain,box,mesh,cylinder,pipe,allMaterials}){
  // Optional equipment changes the proposal without mutating the source photograph inventory.
  const kitchen={...INTERIOR_REFERENCES[state.kitchenRef]},bath={...INTERIOR_REFERENCES[state.bathroomRef]},motions=[],detailMaterials=new Set();
- if(selectedOption(state,'kitchen-upper'))kitchen.upper=true;
+ kitchen.upper=Boolean(selectedOption(state,'kitchen-upper'));
  if(selectedOption(state,'bathroom-separated')){bath.shower='rectangular';bath.glass='clear';}
  const material=(name,colour,roughness=.48,more={})=>{const m=plain(name,colour,roughness,more);detailMaterials.add(m);return m;};
  const finish=(ref,key,fallback,repeat=[.8,.6])=>{const sample=ref.surfaces?.[key];if(sample?.asset){const m=lib.createPhoto({id:ref.id+'/'+key,url:sample.asset,colour:sample.colour||fallback,repeat,roughness:key==='counter'?.23:.48},key,{unlit:state.lighting==='catalogue'});allMaterials.add(m);detailMaterials.add(m);return m;}const m=lib.create(null,sample?.colour||fallback,key,{unlit:state.lighting==='catalogue'});m.name=ref.id+' · '+key;allMaterials.add(m);detailMaterials.add(m);return m;};
@@ -17,6 +18,10 @@ export function createInteriorDetail({state,plan,lib,M,plain,box,mesh,cylinder,p
  if(kitchen.id==='kitchen-14')K.handle.userData.reference={sourceAsset:kitchen.sourceAsset,sourcePage:kitchen.sourcePage,status:'visual-approximation',manufacturerColourCode:null};
  const B={front:finish(bath,'front',bath.frontHex),wall:finish(bath,'wall',bath.wallHex,[1.2,1.8]),counter:finish(bath,'counter','#eff0e9'),frame:material('Perfil do resguardo',bath.frameHex,.26,{metalness:.45}),tap:material('Torneira de banho',bath.tap==='black'?'#252724':'#bcc5c4',.16,{metalness:.84}),mirror:material('Espelho · reflexo de estúdio','#ffffff',.018,{metalness:1,envMapIntensity:1.8}),frost:material('Faixa de privacidade','#c4d6d1',.33,{transparent:true,opacity:.67,depthWrite:false}),tray:material('Base de duche','#e6e9e4',.27)};
  const ceramic=material('Porcelana sanitária','#f4f4ef',.145,{envMapIntensity:1.15}),chrome=material('Ferragens escovadas','#c2c8c6',.18,{metalness:.94}),interior=material('Interior dos armários','#d9d8cd',.68),glass=new THREE.MeshPhysicalMaterial({color:'#eaf1ef',transparent:true,opacity:.3,transmission:.72,roughness:.045,thickness:.006,ior:1.5,envMapIntensity:1.1,depthWrite:false});allMaterials.add(glass);detailMaterials.add(glass);
+ if(state.kitchenCabinetColour)K.front=K.upper=material('Cor pedida · armários da cozinha',state.kitchenCabinetColour,.48);
+ if(state.bathroomCabinetColour)B.front=material('Cor pedida · móvel do banho',state.bathroomCabinetColour,.48);
+ const worktop=WORKTOPS.find(w=>w.id===state.kitchenWorktop);
+ if(worktop){K.counter=lib.createPhoto({id:'worktop/'+worktop.id,url:worktop.asset,colour:'#ffffff',repeat:[1.4,.9],roughness:.23},'counter',{unlit:state.lighting==='catalogue'});K.counter.name=worktop.label;allMaterials.add(K.counter);detailMaterials.add(K.counter);}
  const group=(parent,name,x=0,y=0,z=0)=>{const g=new THREE.Group();g.name=name;g.position.set(x,y,z);parent.add(g);return g;};
  function tube(g,points,r,mat,name){const curve=new THREE.CatmullRomCurve3(points.map(p=>new THREE.Vector3(...p)));return mesh(g,new THREE.TubeGeometry(curve,48,r,14,false),mat,name);}
  function handle(g,x,y,z,vertical=false,mat=chrome){const len=.13;pipe(g,vertical?[[x,y-len/2,z],[x,y+len/2,z]]:[[x-len/2,y,z],[x+len/2,y,z]],.007,mat,'Puxador');for(const v of [-1,1])pipe(g,[[x+(vertical?0:v*len/2),y+(vertical?v*len/2:0),z-.022],[x+(vertical?0:v*len/2),y+(vertical?v*len/2:0),z]],.005,mat,'Fixação do puxador');}

@@ -34,7 +34,7 @@ const source={
 };
 check('independent workbook dimensions: 11800 / 6220 / 2010+2200+2010 / windows 920',()=>{
  close(DIM.width,6220/1000);close(DIM.length,11800/1000);close(DIM.core,2200/1000);close(DIM.wing,2010/1000);close(DIM.windowWidth,920/1000);close(DIM.core+2*DIM.wing,DIM.width);close(DIM.width*DIM.length,73.396);
- assert.equal(MEASURES.find(x=>x.id==='closedWidth').status,'confirmed');assert.equal(MEASURES.find(x=>x.id==='closedWidth').value,2.2);assert.equal(MEASURES.find(x=>x.id==='height').status,'estimated');
+ assert.equal(MEASURES.find(x=>x.id==='closedWidth').status,'confirmed');close(MEASURES.find(x=>x.id==='closedWidth').value,2.2);assert.equal(MEASURES.find(x=>x.id==='height').status,'estimated');close(MEASURES.find(x=>x.id==='externalHeight').value,2.48);close(MEASURES.find(x=>x.id==='clearHeight').value,2.24);
 });
 check('seven original room counts, door end relationships and window counts',()=>{
  assert.deepEqual(DATA.layouts.map(x=>x.id),Object.keys(source));
@@ -135,7 +135,7 @@ check('R16 partitions remain behind the facade and every glazing aperture is con
  }
 });
 check('R16 kitchen fitting adaptations remain in commercial summaries',()=>{
- for(const layout of ['t2','t4-a']){const s={...DEFAULT_CONFIG,layout,kitchen:layout==='t4-a'?'linear':DEFAULT_CONFIG.kitchen,kitchenRef:'kitchen-01'},expected=layout==='t4-a'?'1,60 m':'janelas livres';assert.ok(summaryRows(s).flat().join(' ').includes(expected));assert.ok(selectionGroups(s).flatMap(g=>g.rows).flat().join(' ').includes(expected));assert.ok(summaryMarkup(s,{}).includes(expected));}
+ for(const layout of ['t2','t4-a']){const s={...DEFAULT_CONFIG,layout,kitchen:layout==='t4-a'?'linear':DEFAULT_CONFIG.kitchen,kitchenRef:'kitchen-01',optionSelections:[{id:'kitchen-upper',quantity:1,targets:[],variant:''}]},expected=layout==='t4-a'?'1,60 m':'janelas livres';assert.ok(summaryRows(s).flat().join(' ').includes(expected));assert.ok(selectionGroups(s).flatMap(g=>g.rows).flat().join(' ').includes(expected));assert.ok(summaryMarkup(s,{}).includes(expected));}
 });
 check('all seven geometry outputs are finite and preserve actual structural envelope',()=>{
  for(const layout of Object.keys(source)){const h=makeHouse({...DEFAULT_CONFIG,layout,kitchen:layout==='t4-a'?'linear':DEFAULT_CONFIG.kitchen});h.root.updateMatrixWorld(true);h.root.traverse(o=>{assert.ok(o.matrixWorld.elements.every(Number.isFinite),o.name);if(o.isMesh)for(const a of Object.values(o.geometry.attributes))assert.ok(a.array.every(Number.isFinite),o.name);});const box=new THREE.Box3().setFromObject(h.groups.structure);close(box.max.x-box.min.x,6.22,1e-5);close(box.max.z-box.min.z,11.8,1e-5);assert.equal(h.plan.rooms.filter(r=>r.kind==='bedroom').length,source[layout].bedrooms);h.dispose();}
