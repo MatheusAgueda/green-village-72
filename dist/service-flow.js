@@ -64,59 +64,6 @@ function compileFlowLines(paths){
  return {paths:prepared,lines:[...byLine.values()]};
 }
 
-// Screen-facing vector symbols make motion legible at the house overview scale.
-// Their centres follow the same physical paths; depth testing keeps walls opaque.
-function createFlowSymbols(routes,layers){
- const drop=new THREE.Shape();drop.moveTo(0,.5);drop.bezierCurveTo(-.10,.25,-.34,-.02,-.34,-.19);drop.bezierCurveTo(-.34,-.58,.34,-.58,.34,-.19);drop.bezierCurveTo(.34,-.02,.10,.25,0,.5);
- const bolt=new THREE.Shape();bolt.moveTo(.06,.53);bolt.lineTo(-.36,-.08);bolt.lineTo(-.08,-.08);bolt.lineTo(-.20,-.53);bolt.lineTo(.37,.15);bolt.lineTo(.07,.15);bolt.closePath();
- const geometries={water:new THREE.ShapeGeometry(drop,10),electrical:new THREE.ShapeGeometry(bolt)},records={},resources=[],viewport=new THREE.Vector2();
- const style={cold:{fill:'#57dfff',edge:'#075475',pixels:14,spacing:1.25},hot:{fill:'#ffb476',edge:'#844019',pixels:14,spacing:1.25},drain:{fill:'#8ceac6',edge:'#24624e',pixels:14,spacing:1.50},electrical:{fill:'#fff12e',edge:'#715000',pixels:19,spacing:2.1}};
- const vertexShader=`
-  uniform vec2 viewportSize;
-  uniform float symbolSize;
-  void main(){
-   vec4 centre=modelViewMatrix*instanceMatrix*vec4(0.0,0.0,0.0,1.0);
-   gl_Position=projectionMatrix*centre;
-   gl_Position.xy+=position.xy*symbolSize*2.0/viewportSize*gl_Position.w;
-  }`;
- const fragmentShader=`uniform vec3 symbolColour;void main(){gl_FragColor=vec4(symbolColour,1.0);
-  #include <colorspace_fragment>
- }`;
- for(const [kind,paths]of Object.entries(routes)){
-  if(!paths.length)continue;
-  const s=style[kind],capacity=paths.reduce((sum,path)=>sum+Math.ceil(path.length/s.spacing)+1,0),meshes=[];
-  for(const outline of [true,false]){
-   const material=new THREE.ShaderMaterial({uniforms:{viewportSize:{value:new THREE.Vector2(1,1)},symbolSize:{value:s.pixels*(outline?1.22:1)},symbolColour:{value:new THREE.Color(outline?s.edge:s.fill)}},vertexShader,fragmentShader,transparent:true,depthTest:true,depthWrite:false,toneMapped:false});
-   material.name=kind+' · moving symbol '+(outline?'outline':'fill');material.userData.serviceCircuit=true;
-   const mesh=new THREE.InstancedMesh(geometries[kind==='electrical'?'electrical':'water'],material,capacity);
-   mesh.name=kind+' · moving '+(kind==='electrical'?'lightning':'water drops')+(outline?' outline':'');mesh.userData.serviceFlow=true;mesh.frustumCulled=false;mesh.renderOrder=outline?5:6;mesh.instanceMatrix.setUsage(THREE.DynamicDrawUsage);
-   mesh.onBeforeRender=renderer=>{renderer.getDrawingBufferSize(viewport);material.uniforms.viewportSize.value.copy(viewport);material.uniforms.symbolSize.value=s.pixels*(outline?1.22:1)*renderer.getPixelRatio();};
-   layers[kind==='electrical'?'electrical':'plumbing'].add(mesh);meshes.push(mesh);resources.push(mesh,material);
-  }
-  records[kind]={meshes,phase:0,count:0,samples:[],style:s};
- }
- const matrix=new THREE.Matrix4(),sample={position:[0,0,0],tangent:[0,1,0]},seen=new Set();
- function draw(kinds,delta=0){
-  for(const kind of kinds){
-   const record=records[kind];if(!record)continue;
-   const {style:s,meshes}=record;record.phase=modulo(record.phase+delta*KINDS[kind].velocity,s.spacing);seen.clear();let count=0;record.samples=[];
-   for(const path of routes[kind]){
-    const first=modulo((kind==='drain'?path.length:0)+record.phase,s.spacing);
-    for(let distance=first;distance<path.length-EPSILON;distance+=s.spacing){
-     sampleFlowPath(path,distance,sample);const key=sample.position.map(value=>Math.round(value*100000)).join(',');if(seen.has(key))continue;seen.add(key);
-     matrix.makeTranslation(...sample.position);for(const mesh of meshes)mesh.setMatrixAt(count,matrix);count++;
-     if(record.samples.length<4)record.samples.push([...sample.position]);
-    }
-   }
-   record.count=count;for(const mesh of meshes){mesh.count=count;mesh.instanceMatrix.needsUpdate=true;}
-  }
- }
- function snapshot(){return Object.fromEntries(Object.entries(records).map(([kind,record])=>[kind,{shape:kind==='electrical'?'lightning':'drop',count:record.count,pixels:record.style.pixels,positions:record.samples.map(p=>p.map(value=>Number(value.toFixed(5))))}]));}
- function dispose(){for(const resource of resources)resource.dispose();for(const geometry of Object.values(geometries))geometry.dispose();}
- draw(Object.keys(records));
- return {draw,snapshot,dispose};
-}
-
 export function createServiceFlow({network,groups,exteriorZ}){
  const routes=compileFlowRoutes(network,exteriorZ),geometry=new THREE.CapsuleGeometry(1,1,3,8),ownedMaterials=[],meshes={},layers={},flowLines={};
  const parentGroups={plumbing:groups.plumbing,electrical:groups.electrical};
@@ -134,7 +81,6 @@ export function createServiceFlow({network,groups,exteriorZ}){
   const mesh=new THREE.InstancedMesh(geometry,material,capacity);mesh.name=kind+' · moving flow';mesh.userData.serviceFlow=true;mesh.frustumCulled=false;mesh.renderOrder=3;mesh.instanceMatrix.setUsage(THREE.DynamicDrawUsage);
   layers[kind==='electrical'?'electrical':'plumbing'].add(mesh);meshes[kind]=mesh;
  }
- const symbols=createFlowSymbols(routes,layers);
  const state={view:null,playing:true,speed:1},phases={cold:0,hot:0,drain:0,electrical:0},counts={cold:0,hot:0,drain:0,electrical:0},samples={},seen=new Set();
  const sample={position:[0,0,0],tangent:[0,1,0]},position=new THREE.Vector3(),scale=new THREE.Vector3(),matrix=new THREE.Matrix4();
  let elapsed=0,disposed=false;
@@ -191,11 +137,11 @@ export function createServiceFlow({network,groups,exteriorZ}){
  function update(dt,next={}){
   if(disposed)return false;setState(next);
   const active=state.playing&&['plumbing','electrical'].includes(state.view),delta=Number.isFinite(dt)?Math.max(0,Math.min(.25,dt)):0;
-  if(active&&delta>0){const kinds=state.view==='electrical'?['electrical']:['cold','hot','drain'];elapsed+=delta*state.speed;for(const kind of kinds){const style=KINDS[kind];phases[kind]=modulo(phases[kind]+delta*state.speed*style.velocity,style.spacing);}draw(kinds);symbols.draw(kinds,delta*state.speed);}
+  if(active&&delta>0){const kinds=state.view==='electrical'?['electrical']:['cold','hot','drain'];elapsed+=delta*state.speed;for(const kind of kinds){const style=KINDS[kind];phases[kind]=modulo(phases[kind]+delta*state.speed*style.velocity,style.spacing);}draw(kinds);}
   return active;
  }
- function snapshot(){return {phase:Number(elapsed.toFixed(6)),playing:state.playing,speed:state.speed,view:state.view,disposed,counts:{...counts},symbols:symbols.snapshot(),samples:Object.fromEntries(Object.entries(samples).map(([kind,points])=>[kind,points.map(p=>[...p])]))};}
- function dispose(){if(disposed)return;disposed=true;for(const layer of Object.values(layers))layer.removeFromParent();symbols.dispose();geometry.dispose();for(const material of ownedMaterials)material.dispose();for(const mesh of Object.values(meshes))mesh.dispose();}
+ function snapshot(){return {phase:Number(elapsed.toFixed(6)),playing:state.playing,speed:state.speed,view:state.view,disposed,counts:{...counts},samples:Object.fromEntries(Object.entries(samples).map(([kind,points])=>[kind,points.map(p=>[...p])]))};}
+ function dispose(){if(disposed)return;disposed=true;for(const layer of Object.values(layers))layer.removeFromParent();geometry.dispose();for(const material of ownedMaterials)material.dispose();for(const mesh of Object.values(meshes))mesh.dispose();}
  draw();
  return {update,setState,snapshot,dispose};
 }
