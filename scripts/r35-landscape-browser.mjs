@@ -5,11 +5,17 @@ import {homedir} from 'node:os';
 const {chromium}=await import(process.env.PLAYWRIGHT_MODULE||'playwright').catch(error=>{if(process.env.PLAYWRIGHT_MODULE)throw error;return import(path.join(homedir(),'.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright/index.mjs'));});
 const out=process.env.AUDIT_OUTPUT||'audit/r35/browser',url=process.env.AUDIT_URL||'http://127.0.0.1:4196/?v=r35';await fs.mkdir(out,{recursive:true});
 const browser=await chromium.launch({headless:true,...(process.env.CHROME_PATH?{executablePath:process.env.CHROME_PATH}:process.platform==='darwin'?{executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'}:{})});
-const page=await browser.newPage({viewport:{width:1440,height:1050},acceptDownloads:true}),errors=[],consoleErrors=[],httpErrors=[],checks=[];
+const page=await browser.newPage({viewport:{width:1440,height:1050},acceptDownloads:true}),errors=[],consoleErrors=[],httpErrors=[],cancelledMediaRequests=[],checks=[];
 page.setDefaultTimeout(25000);page.on('pageerror',e=>errors.push(e.message));
 page.on('console',message=>{if(message.type()==='error')consoleErrors.push(message.text());});
 page.on('response',response=>{if(response.status()>=400)httpErrors.push({url:response.url(),status:response.status()});});
-page.on('requestfailed',request=>httpErrors.push({url:request.url(),error:request.failure()?.errorText}));
+page.on('requestfailed',request=>{
+ const failure={url:request.url(),error:request.failure()?.errorText};
+ // Browsers may cancel a media preload once enough metadata has arrived.
+ // Preserve that observation without classifying it as a failed scene asset.
+ if(request.resourceType()==='media'&&failure.error==='net::ERR_ABORTED')cancelledMediaRequests.push(failure);
+ else httpErrors.push(failure);
+});
 const check=async(name,fn)=>{await fn();checks.push(name);console.log('PASS '+name);};
 const choice=key=>page.locator('[data-presentation="'+key+'"]');
 const state=()=>page.evaluate(()=>JSON.stringify(window.__GV.state()));
@@ -52,5 +58,5 @@ try{
   const fallback=await browser.newPage({viewport:{width:1280,height:900},acceptDownloads:true});
   try{await fallback.route('**/assets/scene-r35/*.hdr',r=>r.abort());await fallback.goto(url);await fallback.waitForFunction(()=>window.__GV);const report=await fallback.evaluate(()=>window.__GV.ready());assert.ok(report.failures.length>0);await fallback.waitForFunction(()=>document.querySelector('.presentation-status').textContent.includes('incompleto'));await fallback.locator('[data-presentation="environment"]').selectOption('studio');const studio=await fallback.evaluate(()=>window.__GV.ready());assert.deepEqual(studio.failures,[]);const image=await fallback.evaluate(()=>window.__GV.snapshotData());assert.ok(image.startsWith('data:image/png;base64,'));}finally{await fallback.close();}
  });
- assert.deepEqual(errors,[]);assert.deepEqual(consoleErrors,[]);assert.deepEqual(httpErrors,[]);await fs.writeFile(out+'/result.json',JSON.stringify({url,checks,errors,consoleErrors,httpErrors},null,2));
-}catch(error){await page.screenshot({path:out+'/failure.png'});await fs.writeFile(out+'/failure.txt',error.stack);await fs.writeFile(out+'/result.json',JSON.stringify({url,checks,errors,consoleErrors,httpErrors,failure:error.message},null,2));throw error;}finally{await browser.close();}
+ assert.deepEqual(errors,[]);assert.deepEqual(consoleErrors,[]);assert.deepEqual(httpErrors,[]);await fs.writeFile(out+'/result.json',JSON.stringify({url,checks,errors,consoleErrors,httpErrors,cancelledMediaRequests},null,2));
+}catch(error){await page.screenshot({path:out+'/failure.png'});await fs.writeFile(out+'/failure.txt',error.stack);await fs.writeFile(out+'/result.json',JSON.stringify({url,checks,errors,consoleErrors,httpErrors,cancelledMediaRequests,failure:error.message},null,2));throw error;}finally{await browser.close();}
