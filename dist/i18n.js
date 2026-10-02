@@ -1,3 +1,4 @@
+import {COMMERCIAL_TRANSLATIONS} from './commercial-terms.js';
 const STRINGS={
   en:{'Vídeo de apresentação · Sem áudio':'Presentation video · No audio','Personalizar':'Customize','O modelo':'The model','Galeria de vídeos':'Video gallery','Vistas 4K':'4K views','Plantas':'Floor plans','Filmes':'Films','Ficha técnica':'Technical sheet','O meu resumo':'My summary','Idioma':'Language','COLECÇÃO EXPANSÍVEL / 40 PÉS':'EXPANDABLE COLLECTION / 40 FT','Explore o espaço. Escolha os materiais. Dê-lhe a sua identidade.':'Explore the space. Choose the materials. Make it yours.','O espaço. Os materiais. A sua escolha.':'The space. The materials. Your choice.','Exterior':'Exterior','Interior':'Interior','Estrutura':'Structure','Camadas':'Layers','Água':'Water','Electricidade':'Electricity','Entrar na casa':'Enter the house','Aérea':'Aerial','Planta 3D':'3D plan','Cozinha':'Kitchen','Casa de banho':'Bathroom','Ajustar vista':'Adjust view','Personalize a sua casa.':'Customize your home.','Acabamentos':'Finishes','Planta':'Floor plan','Banho':'Bath','Cobertura':'Roof','Adicionais':'Extras','Cliente':'Client','Piso':'Floor','O modelo, em grande formato':'The model, in large format','Entre. Veja cada detalhe.':'Step inside. See every detail.','UMA CASA. SETE POSSIBILIDADES.':'ONE HOME. SEVEN POSSIBILITIES.','Encontre o seu espaço.':'Find your space.','GALERIA DE VÍDEOS':'VIDEO GALLERY','A casa ganha movimento.':'The home comes to life.','Exterior, interiores e terraços.':'Exterior, interiors and terraces.','Seis filmes organizados por ambiente.':'Six films organised by area.','Preparar o meu resumo':'Prepare my summary','Personalizar a minha casa':'Customize my home','Consultar fotografias e fontes':'View photos and sources','O que sustenta o modelo.':'What supports the model.','Medidas confirmadas, hipóteses identificadas':'Confirmed measurements, identified assumptions','e evidências da revisão.':'and revision evidence.','Descarregar vídeo':'Download video','Sem áudio':'No audio','Vídeo de apresentação':'Presentation video','Ver a expansão':'View the expansion','Escolher os acabamentos':'Choose finishes','Explore a cozinha':'Explore the kitchen','Experimentar telhado e alpendre':'Try roof and terrace','Rever configuração':'Review configuration',
   'CONHEÇA A CASA':'DISCOVER THE HOUSE','Veja a expansão e os filmes de apresentação.':'See the expansion and presentation films.','O modelo ↗':'The model ↗','Galeria de vídeos ↗':'Video gallery ↗','Catálogo de opcionais ↓ PDF':'Extras catalogue ↓ PDF',
@@ -359,7 +360,6 @@ CUSTOMER_STRINGS.push(
 );
 CUSTOMER_STRINGS.push(
  ["Qual é o prazo de entrega e a garantia?", "What are the delivery time and warranty?", "¿Cuál es el plazo de entrega y la garantía?"],
- ["Fabrico por encomenda, com entrega em 90 dias úteis após a confirmação do pedido. Garantia de 2 anos na estrutura e de 1 ano nos equipamentos. Transporte incluído no preço para Portugal Continental; outros destinos sob consulta.", "Built to order, with delivery 90 working days after the order is confirmed. 2-year warranty on the structure and 1-year warranty on equipment. Transport to mainland Portugal is included in the price; other destinations on request.", "Fabricación bajo pedido, con entrega en 90 días hábiles tras la confirmación del pedido. Garantía de 2 años en la estructura y de 1 año en los equipos. Transporte incluido en el precio para Portugal continental; otros destinos bajo consulta."],
  ["Como é construída a casa?", "How is the home built?", "¿Cómo se construye la casa?"],
  ["Estrutura em aço galvanizado com pintura a pó, paredes em painel sandwich EPS de aço colorido, cobertura em painel sandwich de 50 mm e piso sobre placa de fibrocimento ignífuga no módulo central e contraplacado de bambu nas alas. Instalação eléctrica a 220 V / 50 Hz com protecção diferencial de 32 A. A ficha técnica indica o que ainda falta documentar.", "Galvanised steel frame with powder coating, colour-steel EPS sandwich panel walls, a 50 mm sandwich panel roof and flooring laid on fire-resistant fibre-cement board in the central module and bamboo plywood in the wings. 220 V / 50 Hz electrical installation with 32 A residual-current protection. The technical sheet lists what is still to be documented.", "Estructura de acero galvanizado con pintura en polvo, paredes de panel sándwich EPS de acero prelacado, cubierta de panel sándwich de 50 mm y suelo sobre placa de fibrocemento ignífuga en el módulo central y contrachapado de bambú en las alas. Instalación eléctrica a 220 V / 50 Hz con protección diferencial de 32 A. La ficha técnica indica lo que aún falta documentar."],
  ["Área na ficha do fabricante", "Area on the manufacturer's sheet", "Superficie en la ficha del fabricante"],
@@ -382,12 +382,8 @@ CUSTOMER_STRINGS.push(
  ["contentor 40HQ", "40HQ container", "contenedor 40HQ"],
  ["Maquete 3D com altura ilustrativa", "The 3D model uses an illustrative height", "Maqueta 3D con altura ilustrativa"],
  ["Prazo de entrega", "Delivery time", "Plazo de entrega"],
- ["90 dias úteis", "90 working days", "90 días hábiles"],
- ["Após a confirmação do pedido", "After the order is confirmed", "Tras la confirmación del pedido"],
  ["transporte incluído para Portugal Continental", "transport to mainland Portugal included", "transporte incluido a Portugal continental"],
  ["Garantia", "Warranty", "Garantía"],
- ["2 anos na estrutura", "2 years on the structure", "2 años en la estructura"],
- ["1 ano nos equipamentos", "1 year on equipment", "1 año en los equipos"]
 );
 CUSTOMER_STRINGS.push(
  ['Armários e bancada','Cabinets and worktop','Armarios y encimera'],
@@ -444,6 +440,13 @@ CUSTOMER_STRINGS.push(
  ['Reproduzir fluxo','Play flow','Reproducir flujo'],
  ['Velocidade','Speed','Velocidad'],
  ['0,5×','0.5×','0,5×']
+);
+CUSTOMER_STRINGS.push(...COMMERCIAL_TRANSLATIONS,
+ ['Condições Green Village','Green Village terms','Condiciones Green Village'],
+ ['Classes, ensaios e certificados do modelo','Classes, tests and model certificates','Clases, ensayos y certificados del modelo'],
+ ['Documentação técnica do modelo','Model technical documentation','Documentación técnica del modelo'],
+ ['Classes, ensaios e certificados não fornecidos.','Classes, tests and certificates have not been supplied.','No se han facilitado clases, ensayos ni certificados.'],
+ ['Transporte para Portugal Continental incluído','Transport to mainland Portugal included','Transporte a Portugal continental incluido']
 );
 for(const [pt,en,es] of CUSTOMER_STRINGS){STRINGS.en[pt]=en;STRINGS.es[pt]=es;}
 const SENTENCE_KEYS=Object.fromEntries(['en','es'].map(lang=>[lang,Object.keys(STRINGS[lang]).filter(message=>message.endsWith('.')).sort((a,b)=>b.length-a.length)]));

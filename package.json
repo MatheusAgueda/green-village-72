@@ -18,6 +18,7 @@
     "test:r28": "node scripts/r28-geometry-regression.mjs",
     "test:r29": "node scripts/r29-flow-regression.mjs",
     "test:r30": "node scripts/r29-flow-regression.mjs && node scripts/r30-network-regression.mjs",
+    "test:r33": "node scripts/r33-terms-regression.mjs",
     "test:r24": "node scripts/r24-detail-regression.mjs && node scripts/r24-fixtures-regression.mjs && node scripts/r24-floor-regression.mjs && node scripts/r24-material-regression.mjs && node scripts/r24-opening-regression.mjs && node scripts/r24-i18n-regression.mjs"
   }
 }

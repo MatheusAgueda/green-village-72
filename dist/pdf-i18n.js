@@ -1,3 +1,4 @@
+import {COMMERCIAL_TRANSLATIONS} from './commercial-terms.js';
 import {translateText} from './i18n.js';
 
 const RAW=Symbol('unaltered-client-text');
@@ -6,6 +7,7 @@ export const rawPDF=value=>{const text=String(value??'');return text?{[RAW]:true
 // Application-authored PDF copy only. Originals, client fields and attachments
 // never enter this dictionary or the UI translator.
 const COPY=[
+ ...COMMERCIAL_TRANSLATIONS,
  ['Adicional Green Village · 1 200 €','Green Village upgrade · €1,200','Suplemento Green Village · 1.200 €'],
  ['Quartos','Bedrooms','Dormitorios'],['Referência de cozinha','Kitchen reference','Referencia de cocina'],['Da fotografia seleccionada','From the selected photograph','De la fotografía seleccionada'],['Visualização neutra sem amostra','Neutral preview without a sample','Visualización neutra sin muestra'],['Branco natural','Natural white','Blanco natural'],['aparência de referência, cor por confirmar','reference appearance, colour to be confirmed','apariencia de referencia, color pendiente de confirmar'],['Transporte','Transport','Transporte'],['quantidade','quantity','cantidad'],['IVA','VAT','IVA'],['PVP','Retail price','PVP'],
  ['11,80 × 6,22 m','11.80 × 6.22 m','11,80 × 6,22 m'],['Apresentação','Presentation','Presentación'],['geometria','geometry','geometría'],
@@ -61,7 +63,7 @@ const COPY=[
  ['Cada alteração requer um orçamento próprio. Estes valores estão fora do subtotal acima; não são alterações gratuitas.','Each change requires its own quotation. These amounts are outside the subtotal above; the changes are not free.','Cada modificación requiere su propio presupuesto. Estos importes quedan fuera del subtotal anterior; no son modificaciones gratuitas.'],
  ['Casa base e equipamentos incluídos','Base home and included equipment','Vivienda base y equipamiento incluido'],
  ['Preço base por confirmar. As composições standard acima registadas não constituem uma confirmação de preço.','Base price to be confirmed. The standard specifications recorded above do not confirm a price.','Precio base pendiente de confirmar. Las composiciones estándar indicadas no constituyen una confirmación de precio.'],
- ['Incluído no preço da casa para Portugal Continental. Outros destinos: valor a confirmar na proposta.','Included in the home price for mainland Portugal. Other destinations: price to be confirmed in the proposal.','Incluido en el precio de la casa para Portugal continental. Otros destinos: importe a confirmar en la propuesta.'],['Prazo de entrega','Delivery time','Plazo de entrega'],['90 dias úteis após a confirmação do pedido.','90 working days after the order is confirmed.','90 días hábiles tras la confirmación del pedido.'],['2 anos na estrutura e 1 ano nos equipamentos.','2 years on the structure and 1 year on equipment.','2 años en la estructura y 1 año en los equipos.'],['Garantia','Warranty','Garantía'],
+ ['Incluído no preço da casa para Portugal Continental. Outros destinos: valor a confirmar na proposta.','Included in the home price for mainland Portugal. Other destinations: price to be confirmed in the proposal.','Incluido en el precio de la casa para Portugal continental. Otros destinos: importe a confirmar en la propuesta.'],['Prazo de entrega','Delivery time','Plazo de entrega'],['Garantia','Warranty','Garantía'],
  ['Instalação e trabalhos no local','Installation and on-site work','Instalación y trabajos en el emplazamiento'],
  ['Valor e âmbito por confirmar, excepto a instalação do monosplit de 12 000 BTU, incluída nos 500 € por sistema quando seleccionado.','Price and scope to be confirmed, except installation of the 12,000 BTU single-split system, included in the €500 per system when selected.','Importe y alcance pendientes de confirmar, excepto la instalación del monosplit de 12 000 BTU, incluida en los 500 € por sistema cuando se seleccione.'],
  ['Adicionais com preço por confirmar','Options with prices to be confirmed','Adicionales con precio pendiente de confirmar'],['Âmbito de facturação por confirmar','Billing scope to be confirmed','Alcance de facturación pendiente de confirmar'],['Locais de aplicação ainda por atribuir','Installation locations not yet assigned','Ubicaciones de instalación pendientes de asignar'],['Total final do projecto','Final project total','Total final del proyecto'],

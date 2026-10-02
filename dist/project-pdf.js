@@ -1,3 +1,4 @@
+import {COMMERCIAL_COPY} from './commercial-terms.js';
 import {createPDFI18n,rawPDF} from './pdf-i18n.js';
 import {STANDARD_PACKAGE,standardDescription,adaptationEstimate} from './standard-package.js';
 import {INTERIOR_REFERENCES} from './interior-references.js';
@@ -235,8 +236,9 @@ export async function appendClientDossier(doc, {state, project, font, bold, imag
   field('Casa base e equipamentos incluídos', 'Preço base por confirmar. As composições standard acima registadas não constituem uma confirmação de preço.');
   field('Transporte', 'Incluído no preço da casa para Portugal Continental. Outros destinos: valor a confirmar na proposta.');
   field('Instalação e trabalhos no local', 'Valor e âmbito por confirmar, excepto a instalação do monosplit de 12 000 BTU, incluída nos 500 € por sistema quando seleccionado.');
-  field('Prazo de entrega', '90 dias úteis após a confirmação do pedido.');
-  field('Garantia', '2 anos na estrutura e 1 ano nos equipamentos.');
+  field('Prazo de entrega', COMMERCIAL_COPY.pt.delivery);
+  field(COMMERCIAL_COPY.pt.assemblyLabel, COMMERCIAL_COPY.pt.assembly);
+  field('Garantia', COMMERCIAL_COPY.pt.warranty);
   if (estimate.pending.length) field('Adicionais com preço por confirmar', estimate.pending.map(line => t(line.item.label) + ' · quantidade ' + line.quantity).join('\n'));
   if (estimate.unitPending.length) field('Âmbito de facturação por confirmar', estimate.unitPending.map(line => t(line.item.label)).join('\n'));
   if (estimate.unassigned.length) field('Locais de aplicação ainda por atribuir', estimate.unassigned.map(line => t(line.item.label) + ': ' + t((line.quantity - line.targets.length) + ' de ' + line.quantity + ' por atribuir.')).join('\n'));
