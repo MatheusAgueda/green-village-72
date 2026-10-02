@@ -435,6 +435,16 @@ CUSTOMER_STRINGS.push(
  ['IVA por confirmar','VAT to be confirmed','IVA por confirmar'],
  ['O 3D representa uma frente. As unidades adicionais ficam como pedido na ficha; indique os restantes locais e medidas. Para juntar uma lateral completa, seleccione Lateral completa em vidro · 6 módulos.','The 3D shows one front. Additional assemblies remain in the customer request; specify other locations and dimensions. To add a complete side, select Fully glazed long side · 6 modules.','El 3D representa un frente. Los conjuntos adicionales quedan en la solicitud; indique los demás lugares y medidas. Para añadir un lateral completo, seleccione Lateral completamente acristalado · 6 módulos.']
 );
+CUSTOMER_STRINGS.push(
+ ['Animação do circuito','Circuit animation','Animación del circuito'],
+ ['Água em circulação','Water in motion','Agua en circulación'],
+ ['Percurso da energia','Energy flow','Recorrido de la energía'],
+ ['Fluxo ilustrativo','Illustrative flow','Flujo ilustrativo'],
+ ['Pausar fluxo','Pause flow','Pausar flujo'],
+ ['Reproduzir fluxo','Play flow','Reproducir flujo'],
+ ['Velocidade','Speed','Velocidad'],
+ ['0,5×','0.5×','0,5×']
+);
 for(const [pt,en,es] of CUSTOMER_STRINGS){STRINGS.en[pt]=en;STRINGS.es[pt]=es;}
 const SENTENCE_KEYS=Object.fromEntries(['en','es'].map(lang=>[lang,Object.keys(STRINGS[lang]).filter(message=>message.endsWith('.')).sort((a,b)=>b.length-a.length)]));
 const UPPER_STRINGS=Object.fromEntries(['en','es'].map(lang=>[lang,Object.fromEntries(Object.entries(STRINGS[lang]).map(([pt,value])=>[pt.toLocaleUpperCase('pt-PT'),value.toLocaleUpperCase(lang==='es'?'es-ES':'en-GB')]))]));

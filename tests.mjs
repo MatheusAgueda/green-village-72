@@ -268,7 +268,7 @@ check('R8 undo redo branch and share links preserve validated states',()=>{
 check('R8 layer isolation and opacity are independent, reversible and preserve materials',()=>{
  const h=makeHouse({...DEFAULT_CONFIG,roof:true,porch:true}),l=createLayerController(h),settings=Object.fromEntries(LAYERS.map(([id])=>[id,{visible:true,opacity:1}]));
  for(const [id]of LAYERS){l.apply({...settings,isolate:id});assert.ok(l.entries.filter(e=>e.object.visible).every(e=>e.layer===id));assert.ok(l.entries.some(e=>e.layer===id),id+' classified');}
- l.apply({...settings,exterior:{visible:true,opacity:.35}});for(const e of l.entries){if(e.layer==='exterior'){close(e.object.material.opacity,.35);assert.notEqual(e.object.material,e.material);assert.equal(e.object.material.color.getHex(),e.material.color.getHex());}else assert.equal(e.object.material,e.material);}
+ l.apply({...settings,exterior:{visible:true,opacity:.35}});for(const e of l.entries){if(e.layer==='exterior'){close(e.object.material.opacity,e.material.opacity*.35);assert.notEqual(e.object.material,e.material);assert.equal(e.object.material.color.getHex(),e.material.color.getHex());}else assert.equal(e.object.material,e.material);}
  l.dispose();for(const e of l.entries)assert.equal(e.object.material,e.material);h.dispose();
 });
 check('R8 interior movement cannot cross envelope or partitions at high movement steps',()=>{

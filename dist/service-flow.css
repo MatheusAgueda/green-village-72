@@ -1,0 +1,17 @@
+.service-flow-controls{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:16px 24px;border-top:1px solid #d4dfd9;background:#f8fbf8;color:#173f35}
+.service-flow-controls[hidden]{display:none}
+.service-flow-heading{display:flex;align-items:center;gap:12px;min-width:0}
+.service-flow-heading strong{display:block;font-size:15px;line-height:1.4}
+.service-flow-heading small{display:block;font-size:12px;color:#566b60;margin-top:2px}
+.service-flow-indicator{width:9px;height:9px;flex:none;background:#408768;border-radius:50%;box-shadow:0 0 0 5px #40876815}
+.service-flow-controls[data-playing="false"] .service-flow-indicator{background:#7b8b83;box-shadow:none}
+.service-flow-actions{display:flex;align-items:center;gap:18px;flex-shrink:0}
+.service-flow-actions button{min-height:44px;min-width:124px;padding:9px 14px;background:white;border:1px solid #bdcec4;border-radius:6px;font:inherit;font-size:13px;color:#173f35;cursor:pointer}
+.service-flow-actions button:hover{background:#eaf2ec}
+.service-flow-actions label{display:flex;align-items:center;gap:8px;font-size:12px;margin:0}
+.service-flow-actions select{width:70px;min-height:44px;margin:0;padding:8px;border:1px solid #bdcec4;border-radius:6px;background:#fff;color:#173f35;font:inherit}
+.service-flow-actions :is(button,select):focus-visible{outline:3px solid #408768;outline-offset:3px}
+@media(max-width:700px){.service-flow-controls{gap:14px;padding:14px 16px}.service-flow-actions{gap:8px}.service-flow-actions label{flex-direction:column;gap:2px;font-size:10px}.service-flow-actions select{min-height:36px}.service-flow-actions button{min-width:110px}.service-flow-heading{gap:9px}.service-flow-heading strong{font-size:13px}.service-flow-heading small{font-size:11px}}
+@media(max-width:390px){.service-flow-controls{flex-wrap:wrap}.service-flow-actions{width:100%;justify-content:space-between}.service-flow-actions label{flex-direction:row;font-size:12px}.service-flow-actions select{min-height:44px}}
+@media(max-width:560px){#viewport .legend{bottom:62px;left:12px;right:12px;padding:8px 10px;font-size:10px;pointer-events:none}#viewport .legend span{margin-right:0;white-space:normal}.service-legend{gap:6px 14px;font-size:10px}.service-legend i{width:12px;margin-right:4px}}
+@media print{.service-flow-controls{display:none!important}}

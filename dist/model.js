@@ -17,7 +17,7 @@ export function makeHouse(options={},library=null){
  const state={...DEFAULT,...options},plan=getPlan(state),lib=library||createMaterialLibrary(),ownLibrary=!library,root=new THREE.Group();root.name='GV72 · modelo de apresentação R8';
  const groups={};for(const name of ['structure','floor','floorLayers','shell','roof','interior','furniture','plumbing','electrical','cover','porch','supports']){const g=new THREE.Group();g.name=name;groups[name]=g;root.add(g);}
  const allMaterials=new Set(),allGeometry=new Set(),walls=[],roofPanels=[],sideAssemblies=[],endAssemblies=[],floorAssemblies=[],roofAssemblies=[],doors=[],colliders=[];
- let disposed=false;function dispose(){if(disposed)return;disposed=true;for(const g of allGeometry)g.dispose();for(const m of allMaterials)if(m.userData.lease)lib.release(m);else m.dispose();allGeometry.clear();allMaterials.clear();if(ownLibrary)lib.dispose();}
+ let disposed=false,services=null;function dispose(){if(disposed)return;disposed=true;services?.flow.dispose();for(const g of allGeometry)g.dispose();for(const m of allMaterials)if(m.userData.lease)lib.release(m);else m.dispose();allGeometry.clear();allMaterials.clear();if(ownLibrary)lib.dispose();}
  try{
  const acquire=(...args)=>{const m=lib.create(...args);allMaterials.add(m);return m;};
  const plain=(name,color,roughness=.65,more={})=>{const m=new THREE.MeshStandardMaterial({color,roughness,metalness:0,...more});m.name=name;allMaterials.add(m);return m;};
@@ -112,7 +112,7 @@ export function makeHouse(options={},library=null){
  }
  // These are presentation-only circuit illustrations: they keep the requested
  // water/electricity reading without pretending to be construction drawings.
- const services=renderServiceNetwork({plan,groups,mesh,box,pipe,plain});
+ services=renderServiceNetwork({plan,groups,mesh,box,pipe,plain});
  // Pitched canopy: dimensions below are explicitly estimates, while shape follows the supplied photograph.
  const coverHalf=X+DIM.canopyOverhang,eaves=H+DIM.canopyEavesAboveWall,rise=DIM.canopyRise,over=DIM.canopyOverhang,slant=Math.hypot(coverHalf,rise),pitch=Math.atan2(rise,coverHalf);
  for(const dir of [-1,1]){const m=box(groups.cover,slant,.06,DIM.length+2*over,dir*coverHalf/2,eaves+rise/2,0,M.roof,'Telhado adicional · medidas estimadas',.005);m.rotation.z=-dir*pitch;for(const z of [-Z,-2,2,Z])beam(groups.cover,[dir*coverHalf,eaves,z],[0,eaves+rise,z],.045,.05,M.steel,'Asna ilustrativa');}
@@ -156,7 +156,7 @@ export function makeHouse(options={},library=null){
  function setView(view){openings.setEnabled(!['structure','finishes','expansion'].includes(view));restoreDetailVisibility();root.userData.detail=null;state.view=view;const cut=['interior','plan','plumbing','electrical'].includes(view),structure=view==='structure',finish=view==='finishes',expand=view==='expansion';
   groups.shell.visible=!structure&&(expand||state.wallsVisible);groups.interior.visible=!structure&&!expand;groups.furniture.visible=state.furnitureVisible&&!structure&&!expand;
   groups.floor.visible=!structure;groups.floorLayers.visible=!structure||finish;groups.roof.visible=!cut&&!structure&&(expand||state.roofVisible);groups.structure.visible=true;groups.supports.visible=true;
-  groups.plumbing.visible=view==='plumbing';groups.electrical.visible=view==='electrical';
+  groups.plumbing.visible=view==='plumbing';groups.electrical.visible=view==='electrical';services.flow.setState({view});
   for(const a of sideAssemblies)a.pivot.visible=!structure&&(expand||state.wallsVisible);for(const a of endAssemblies)a.g.visible=!structure&&(expand||state.wallsVisible);
   for(const m of allMaterials){const serviceView=['plumbing','electrical'].includes(view),exempt=services.materials.has(m)||(view!=='plan'&&details.detailMaterials.has(m));m.clippingPlanes=cut&&!exempt?[cutPlane]:[];m.clipShadows=true;
    m.userData.serviceAppearance??={opacity:m.opacity,transparent:m.transparent,depthWrite:m.depthWrite};Object.assign(m,m.userData.serviceAppearance);
