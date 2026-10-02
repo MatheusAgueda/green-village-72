@@ -2,6 +2,7 @@ import {DATA} from './data.js';
 import {validateClientRecords} from './client-records.js';
 
 export const CATALOGUE_EDITION = DATA.edition.split('-').reverse().join('/');
+export const PRICE_UPDATE_DATE = '02/10/2026';
 export const OPTION_GROUPS = {doors:'Portas e envidraçados',windows:'Janelas',walls:'Paredes e isolamento',roof:'Telhado',exterior:'Terraço',kitchen:'Cozinha',bathroom:'Casa de banho',climate:'Ar condicionado'};
 const referencePhotos={
  'exterior-3d':{photo:'assets/catalogue/swatches/exterior-3d-textures-tijolo-cinza.jpg',photoCaption:'Amostra do painel 3D · catálogo p. 7',photoPage:7},
@@ -18,7 +19,8 @@ export const OPTIONAL_ITEMS = DATA.options.map(item => ({
   maxQuantity: ['doors','windows'].includes(item.section) ? 12 : 1,
   variants: item.id==='interior-door' ? [['wood','Madeira'],['aluminium','Alumínio'],['sliding','De correr']] : [],
   model: item.section==='windows' || item.section==='doors' ? 'opening' : ['gable-roof','terrace','kitchen-upper','bathroom-separated','exterior-3d'].includes(item.id) ? 'geometry' : 'specification'
-})).concat([
+})).map(item=>item.id==='glass-front'?{...item,label:'Frente em vidro · 3 módulos',priceCents:260000,vatIncluded:null,commercialSource:'Actualização Green Village · 02/10/2026',scope:'Uma frente completa de entrada · cerca de 6,2 m · 3 módulos',facts:['3 módulos na frente da entrada.','2 600 € pelo conjunto completo; não por módulo.','Configuração das folhas e instalação sujeitas a validação técnica.']}:item).concat([
+  {id:'glass-side-full',label:'Lateral completa em vidro · 6 módulos',section:'doors',model:'geometry',maxQuantity:1,variants:[['left','Lateral esquerda'],['right','Lateral direita']],variantLabel:'Lateral envidraçada',facts:['6 módulos numa lateral comprida de 11,8 m.','5 190 € pelo conjunto completo; não por módulo.','Pode combinar com a frente de entrada em vidro.','Painéis fixos ilustrados; ferragens e aberturas a definir no projecto.'],scope:'Uma lateral completa · 40FT · 11,8 m · 6 módulos',priceCents:519000,vatIncluded:null,commercialSource:'Actualização Green Village · 02/10/2026'},
   {id:'side-glass-partial',label:'Vidro parcial na lateral',section:'doors',facts:['Indique o lado, as medidas e a divisão nas observações.','Dimensões e instalação sujeitas a validação técnica.'],scope:'Envidraçamento lateral parcial sob cotação',priceCents:null},
   {id:'kitchen-island',model:'geometry',label:'Ilha adicional na cozinha',section:'kitchen',facts:['Pedido registado mesmo quando a planta 3D não comporta uma ilha.','Dimensões, circulação, acabamento e equipamentos a definir.'],scope:'Ilha de cozinha sob cotação personalizada',priceCents:null},
   {id:'ac-monosplit-12000',label:'Ar condicionado 12 000 BTU · Monosplit 1×1',section:'climate',facts:['1 unidade exterior + 1 unidade interior.','Climatização de uma divisão.','Solução económica e simples de instalar.','500 € por sistema, com instalação incluída.'],scope:'Um sistema de 12 000 BTU com instalação incluída',priceCents:50000,vatIncluded:null},
@@ -46,7 +48,7 @@ export function validateOptionSelections(value=[]){
     if(typeof variant!=='string'||(item.variants.length?!item.variants.some(v=>v[0]===variant):variant!==''))throw new Error('Variante inválida: '+item.label+'.');
     const targets=raw.targets??[];
     if(!Array.isArray(targets)||targets.length>raw.quantity||new Set(targets).size!==targets.length)throw new Error('A quantidade deve abranger todos os locais seleccionados.');
-    if(item.model==='specification'&&targets.length)throw new Error('Registe o local pretendido nas observações deste adicional.');
+    if((item.model==='specification'||item.id==='glass-side-full')&&targets.length)throw new Error('Registe o local pretendido nas observações deste adicional.');
     for(const target of targets){
       if(typeof target!=='string'||! /^(entry|front-window--?1|rear-window--?1|bath-window|side--?1-\d|bedroom-\d-door|bath-door)$/.test(target))throw new Error('Local de aplicação inválido.');
       const interior=/^(bedroom-|bath-door)/.test(target),window=target!=='entry'&&!interior;
@@ -58,6 +60,8 @@ export function validateOptionSelections(value=[]){
     return {id:item.id,quantity:raw.quantity,variant,targets:[...targets].sort()};
   }).sort((a,b)=>a.id.localeCompare(b.id));
   if(ids.has('rockwool')&&ids.has('eps'))throw new Error('Escolha um isolamento de parede e tecto para esta proposta.');
+  const glassSide=result.find(s=>s.id==='glass-side-full');
+  if(glassSide&&result.some(s=>s.targets.some(t=>t.startsWith(glassSide.variant==='left'?'side--1-':'side-1-'))))throw new Error('A lateral completa em vidro substitui os vãos dessa lateral.');
   if(ids.has('glass-front')&&result.some(s=>s.id!=='glass-front'&&s.id!=='window-mosquito'&&s.targets.some(t=>t==='entry'||t.startsWith('front-window'))))throw new Error('A frente envidraçada substitui as escolhas dos vãos da frente.');
   const convertedDoors=new Set(result.find(s=>s.id==='side-glass-door')?.targets||[]);
   if(result.find(s=>s.id==='window-mosquito')?.targets.some(target=>convertedDoors.has(target)))throw new Error('O mosquiteiro para janela não pode ser aplicado ao vão convertido em porta. Escolha uma janela ou deixe o local por atribuir.');
@@ -71,6 +75,13 @@ export function setOptionSelection(state,id,patch){
     if(id==='rockwool'||id==='eps')selections=selections.filter(s=>!['rockwool','eps'].includes(s.id));
     const next={id,quantity:1,variant:item.variants[0]?.[0]||'',targets:[],...selectedOption(state,id),...patch};
     next.quantity=Math.max(next.quantity,next.targets.length);
+    if(id==='glass-side-full'){
+      const prefix=next.variant==='left'?'side--1-':'side-1-';
+      for(const other of selections){const before=other.targets.length;other.targets=other.targets.filter(t=>!t.startsWith(prefix));if(other.id!=='window-mosquito')other.quantity-=before-other.targets.length;}
+    }else if(next.targets.some(t=>t.startsWith('side-'))){
+      const full=selections.find(s=>s.id==='glass-side-full');
+      if(full&&next.targets.some(t=>t.startsWith(full.variant==='left'?'side--1-':'side-1-')))selections=selections.filter(s=>s.id!=='glass-side-full');
+    }
     // A screen remains in the order when its former window is replaced by a door.
     if(id==='side-glass-door')for(const other of selections)if(other.id==='window-mosquito')other.targets=other.targets.filter(target=>!next.targets.includes(target));
     for(const other of selections)if(id!=='window-mosquito'&&other.id!=='window-mosquito'){const before=other.targets.length;other.targets=other.targets.filter(t=>!next.targets.includes(t));other.quantity-=before-other.targets.length;}
@@ -87,6 +98,7 @@ export function setOptionSelection(state,id,patch){
   return change;
 }
 export function optionTargetLabel(id){
+  if(id.startsWith('glazing-side-'))return 'Módulo de vidro lateral '+(id.includes('--1')?'esquerdo':'direito')+' · '+(Number(id.split('-').at(-1))+1);
   if(id==='entry')return 'Porta de entrada';
   if(id==='bath-window')return 'Janela da casa de banho';
   if(id==='bath-door')return 'Porta da casa de banho';
@@ -100,7 +112,7 @@ export function catalogueEstimate(state){
   const lines=validateOptionSelections(state.optionSelections).map(s=>{
     const item=itemById(s.id);
     const locations=s.targets.map(target=>{const label=optionTargetLabel(target);return s.id==='side-glass-door'?label.replace(/^Janela lateral /,'Porta lateral '):label;});
-    return {...s,item,unitCents:item.priceCents,totalCents:item.priceCents==null?null:item.priceCents*s.quantity,locations,unitConfirmed:['rockwool','eps','gable-roof','terrace','ac-monosplit-12000'].includes(s.id)};
+    return {...s,item,unitCents:item.priceCents,totalCents:item.priceCents==null?null:item.priceCents*s.quantity,locations,unitConfirmed:['rockwool','eps','gable-roof','terrace','ac-monosplit-12000','glass-front','glass-side-full'].includes(s.id)};
   });
   // This line is derived from the floor choice, never stored among optionSelections.
   // Repeated validation, import, undo and sample changes therefore cannot duplicate it.
@@ -119,9 +131,9 @@ export function catalogueEstimate(state){
 }
 export function availableOptionTargets(item,plan){
   if(item.model==='specification')return [];
-  if(item.id==='glass-front')return [];
+  if(item.id==='glass-front'||item.id==='glass-side-full')return [];
   if(item.id==='interior-door')return plan.doors.map(d=>({id:d.id,label:optionTargetLabel(d.id)}));
-  if(item.section==='windows')return plan.perimeter.flatMap(f=>f.holes).filter(h=>h.id!=='entry'&&(item.id!=='window-mosquito'||h.kind==='window')).map(h=>({id:h.id,label:optionTargetLabel(h.id)}));
+  if(item.section==='windows')return plan.perimeter.flatMap(f=>f.holes).filter(h=>h.id!=='entry'&&!h.facadeGlazing&&(item.id!=='window-mosquito'||h.kind==='window')).map(h=>({id:h.id,label:optionTargetLabel(h.id)}));
   if(item.section==='doors')return plan.perimeter.flatMap(f=>f.holes).filter(h=>item.id==='side-glass-door'?h.id.startsWith('side-'):h.id==='entry').map(h=>({id:h.id,label:optionTargetLabel(h.id)}));
   return [];
 }
@@ -129,6 +141,16 @@ export function availableOptionTargets(item,plan){
 // Unspecified dimensions stay at the illustrative opening dimensions; they are not source facts.
 export function applyOpeningOptions(perimeter,doors,state){
   const selections=state.optionSelections||[];
+  const sideGlazing=selectedOption(state,'glass-side-full');
+  for(const face of perimeter){
+    if(sideGlazing&&face.axis==='z'&&Math.sign(face.c)===(sideGlazing.variant==='left'?-1:1)){
+      const start=face.a+.12,pitch=(face.b-face.a-.24)/6;
+      face.holes=Array.from({length:6},(_,i)=>({id:`glazing-side-${Math.sign(face.c)}-${i}`,u:start+pitch*(i+.5),width:pitch-.02,height:2.36,sill:.06,kind:'window',optionId:'glass-side-full',facadeGlazing:true,proposed:true}));
+    }
+    if(selectedOption(state,'glass-front')&&face.axis==='x'&&face.c>0){
+      for(const h of face.holes){const centre=h.id==='entry';h.u=centre?0:Math.sign(h.u)*2.045;h.width=centre?1.94:1.87;h.height=centre?2.42:2.36;h.sill=centre?0:.06;h.optionId='glass-front';h.facadeGlazing=true;h.proposed=true;}
+    }
+  }
   for(const face of perimeter)for(const h of face.holes){
     const choice=selections.find(s=>s.id!=='window-mosquito'&&s.targets.includes(h.id));
     if(choice){h.optionId=choice.id;h.optionVariant=choice.variant;h.proposed=true;
@@ -136,7 +158,6 @@ export function applyOpeningOptions(perimeter,doors,state){
       if(choice.id==='window-panoramic'){h.width=.6;h.height=1.9;h.sill=.15;}
       if(choice.id==='side-glass-door'){h.kind='door';h.sill=0;h.height=2.15;}
     }
-    if(selectedOption(state,'glass-front')&&face.axis==='x'&&face.c>0){h.optionId='glass-front';h.height=2.15;h.sill=0;h.proposed=true;if(h.kind==='window')h.width=1.70;}
     h.mosquito=Boolean(selectedOption(state,'window-mosquito')?.targets.includes(h.id));
   }
   for(const door of doors){const choice=selectedOption(state,'interior-door');if(choice?.targets.includes(door.id)){door.optionId=choice.id;door.optionVariant=choice.variant;}}

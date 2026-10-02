@@ -14,10 +14,10 @@ export function buildServiceNetwork(plan) {
    water.push({id:point.id+'-'+kind,fixture:point.id,kind,start:[...start],end,points:compact([start,[start[0],start[1],end[2]],[riserX,start[1],end[2]],[riserX,end[1],end[2]],end])});
   }
  }
- const wall=plan.perimeter.find(f=>f.axis==='z'&&f.c<0),half=plan.dimensions.length/2;
+ const wall=plan.perimeter.find(f=>f.axis==='z'&&!f.holes.some(h=>h.facadeGlazing)),half=plan.dimensions.length/2;
  let panelZ=half-.4;
  for(let z=half-.4;z>-half+.4;z-=.1)if(!wall.holes.some(h=>h.sill<1.70&&h.sill+h.height>1.30&&Math.abs(h.u-z)<h.width/2+.21)){panelZ=z;break;}
- const panel=[wall.c+.15,1.50,panelZ],trunkY=.12;
+ const panel=[wall.c-Math.sign(wall.c)*.15,1.50,panelZ],trunkY=.12;
  const zones=[...plan.rooms,{id:'living',kind:'living',clear:{x0:-3,x1:3,z0:2.8,z1:5.5}}];
  for(const room of zones){
   const c=room.clear,z=(c.z0+c.z1)/2,x=c.x0+.08,cx=(c.x0+c.x1)/2;
@@ -51,7 +51,7 @@ export function renderServiceNetwork({plan,groups,mesh,box,pipe,plain}){
  }
  const p=network.panel;
  box(groups.electrical,.10,.39,.30,...p,m.box,'Quadro eléctrico · localização proposta',.008);
- for(let i=0;i<5;i++)box(groups.electrical,.02,.075,.031,p[0]+.062,p[1],p[2]-.1+i*.05,m.dark,'Disjuntor ilustrativo');
+ for(let i=0;i<5;i++)box(groups.electrical,.02,.075,.031,p[0]-Math.sign(p[0])*.062,p[1],p[2]-.1+i*.05,m.dark,'Disjuntor ilustrativo');
  for(const c of network.electrical){route(groups.electrical,c,.019,m.conduit);
   box(groups.electrical,.083,.037,.083,...c.junction,m.box,'Caixa de derivação');
   if(c.kind==='light')sphere(groups.electrical,c.end,.071,m.light,'Ponto de iluminação');

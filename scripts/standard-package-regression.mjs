@@ -61,7 +61,7 @@ await test('current 580 EUR upper charge never prices another adaptation',()=>{
   assert.ok(adaptationEstimate(chosen).lines.every(line=>line.priceCents===null));assert.equal(CATALOGUE_EDITION,'20/09/2026');
 });
 await test('22 current PVP mappings preserve July documentary prices',()=>{
-  for(const item of CATALOGUE_OPTIONS)assert.equal(currentCataloguePrice(item.id).edition,'2026-09-20');
+  for(const item of CATALOGUE_OPTIONS)assert.equal(currentCataloguePrice(item.id).edition,item.id==='front-glass-premium'?'2026-10-02':'2026-09-20');
   assert.equal(currentCataloguePrice('kitchen-upper').value,580);
   assert.equal(CATALOGUE_OPTIONS.find(item=>item.id==='kitchen-upper').cataloguePrice.value,700);
   const ledger=sourceLedger(DEFAULT_CONFIG);assert.equal(ledger.commercialPrices.length,22);assert.equal(ledger.standardPackage.kitchen.ref,'kitchen-14');

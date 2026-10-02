@@ -22,21 +22,21 @@ import {selectionMaterials,selectionGroups,configurationReference,summaryMarkup}
 const core=process.argv.includes('--core');let count=0;
 function check(label,fn){fn();count++;console.log('PASS '+label);}
 const close=(a,b,e=1e-6)=>assert.ok(Math.abs(a-b)<=e,`${a} != ${b}`);
-// Independent transcription from the seven original workbook images, reviewed by the source auditor.
+// Workbook room/door relationships; side count superseded by owner confirmation, 2026-10-02.
 const source={
- 't0':{bedrooms:0,doors:[],side:[2,2]},
- 't1':{bedrooms:1,doors:['end'],side:[2,2]},
- 't2':{bedrooms:2,doors:['end','start'],side:[2,2]},
- 't3-a':{bedrooms:3,doors:['end','end','start'],side:[2,2]},
+ 't0':{bedrooms:0,doors:[],side:[3,3]},
+ 't1':{bedrooms:1,doors:['end'],side:[3,3]},
+ 't2':{bedrooms:2,doors:['end','start'],side:[3,3]},
+ 't3-a':{bedrooms:3,doors:['end','end','start'],side:[3,3]},
  't3-b':{bedrooms:3,doors:['end','end','start'],side:[3,3]},
- 't4-a':{bedrooms:4,doors:['end','end','start','start'],side:[2,2]},
+ 't4-a':{bedrooms:4,doors:['end','end','start','start'],side:[3,3]},
  't4-b':{bedrooms:4,doors:['end','end','end','start'],side:[3,3]},
 };
 check('independent workbook dimensions: 11800 / 6220 / 2010+2200+2010 / windows 920',()=>{
  close(DIM.width,6220/1000);close(DIM.length,11800/1000);close(DIM.core,2200/1000);close(DIM.wing,2010/1000);close(DIM.windowWidth,920/1000);close(DIM.core+2*DIM.wing,DIM.width);close(DIM.width*DIM.length,73.396);
  assert.equal(MEASURES.find(x=>x.id==='closedWidth').status,'confirmed');close(MEASURES.find(x=>x.id==='closedWidth').value,2.2);assert.equal(MEASURES.find(x=>x.id==='height').status,'estimated');close(MEASURES.find(x=>x.id==='externalHeight').value,2.48);close(MEASURES.find(x=>x.id==='clearHeight').value,2.24);
 });
-check('seven original room counts, door end relationships and window counts',()=>{
+check('seven original room counts and door relationships; three side windows confirmed by owner',()=>{
  assert.deepEqual(DATA.layouts.map(x=>x.id),Object.keys(source));
  for(const [id,ref]of Object.entries(source)){const p=getPlan({...DEFAULT_CONFIG,layout:id});assert.equal(p.bedrooms,ref.bedrooms);const rooms=p.rooms.filter(x=>x.kind==='bedroom');assert.equal(rooms.length,ref.bedrooms);rooms.forEach((r,i)=>{const d=p.walls.find(w=>w.id===r.id+'-side').door;assert.equal(d.u<(r.outline.z0+r.outline.z1)/2?'start':'end',ref.doors[i],`${id} room ${i}`);});
  const side=p.perimeter.filter(w=>w.axis==='z');assert.deepEqual(side.map(w=>w.holes.length),ref.side,id);const rear=p.perimeter.find(w=>w.axis==='x'&&w.c<0);assert.equal(rear.holes.filter(w=>w.width===.92).length,id.endsWith('-b')?0:2,id);

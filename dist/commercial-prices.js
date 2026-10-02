@@ -1,4 +1,5 @@
 import {DATA} from './data.js';
+import {itemById} from './project-options.js';
 
 // July PDF prices remain documentary evidence. DATA contains the later PVP revision.
 const currentIds = {
@@ -11,6 +12,8 @@ const currentIds = {
 };
 export function currentCataloguePrice(documentaryId) {
   const id = currentIds[documentaryId] || documentaryId;
+  const updated=itemById(id);
+  if(['glass-front','glass-side-full'].includes(id))return {id,value:updated.priceCents/100,currency:'EUR',vatIncluded:null,vatRatePercent:null,edition:'2026-10-02',source:updated.commercialSource,revisionCommit:null};
   const item = DATA.options.find(item => item.id === id);
   if (!item) throw new Error('Artigo sem correspondência na tabela actual: ' + documentaryId);
   return {id, value: item.priceEurVatIncluded, currency: 'EUR', vatIncluded: true,

@@ -129,6 +129,12 @@ export function makeHouse(options={},library=null){
  }
  for(const x of [-X+.08,-1.04,1.04,X-.08])box(groups.porch,.06,eaves,.06,x,eaves/2,porchFront-.06,porchFrame,'Pilar de alpendre',.006);
  for(const dir of [-1,1]){box(groups.porch,2.02,.045,.05,dir*2.04,.9,porchFront-.05,porchFrame,'Corrimão',.006);for(let x=1.12;x<X-.06;x+=.19)box(groups.porch,.018,.8,.018,dir*x,.46,porchFront-.05,porchFrame,'Balaústre');}
+ for(const dir of [-1,1]){
+  const x=dir*(X-.08),side=dir<0?'esquerda':'direita';
+  box(groups.porch,.05,.045,porchDepth-.12,x,.9,Z+porchDepth/2,porchFrame,'Guarda lateral '+side+' · corrimão',.006);
+  box(groups.porch,.06,.94,.06,x,.47,Z+.06,porchFrame,'Guarda lateral '+side+' · montante',.006);
+  for(let z=Z+.15;z<porchFront-.15;z+=.19)box(groups.porch,.018,.8,.018,x,.46,z,porchFrame,'Guarda lateral '+side+' · balaústre');
+ }
 
  for(const w of wings.values()){
   // Illustrative rigid return of the inboard floor carrier. It closes the

@@ -1,6 +1,6 @@
 import { DATA } from './data.js';
 import {INTERIOR_REFERENCES} from './interior-references.js';
-import {applyOpeningOptions,projectPorchDepth,selectedOption,optionTargetLabel} from './project-options.js';
+import {applyOpeningOptions,projectPorchDepth,selectedOption,optionTargetLabel,itemById} from './project-options.js';
 // Coordinates: metres; +X right, +Y up, +Z entrance. Origin: floor centre.
 export const REVISION='GV72-R9-2026-09-11';
 // Illustrative axes and clearance for the documented wall-raising phase only.
@@ -41,10 +41,10 @@ export function sourceDivergences(configuration){
 // Keep source dimensions separate from the geometry selected in the configurator.
 export function configuredOpenings(plan){
  return plan.perimeter.flatMap(face=>face.holes.map(h=>{
-  const option=DATA.options.find(item=>item.id===h.optionId);
+  const option=itemById(h.optionId);
   const sourceDimensions=h.optionId==='window-930'?{width:.93,height:.93}:h.optionId==='window-panoramic'?{width:.6,height:1.9}:!option&&h.kind==='window'&&h.id!=='bath-window'?{width:.92}:{};
   const sourceNote=option
-   ? (Object.keys(sourceDimensions).length?'Largura e altura documentadas no catálogo. Peitoril e implantação estimados.':'Dimensões do artigo não publicadas; vão de apresentação estimado.')+' Catálogo p. '+option.page+'.'
+   ? h.facadeGlazing?'Contagem e preço do conjunto confirmados pela Green Village em 02/10/2026; dimensões individuais e ferragens ilustrativas.':(Object.keys(sourceDimensions).length?'Largura e altura documentadas no catálogo. Peitoril e implantação estimados.':'Dimensões do artigo não publicadas; vão de apresentação estimado.')+' Catálogo p. '+option.page+'.'
    : h.id==='entry'?'Entrada de duas folhas desenhada na planta; dimensões estimadas.':h.kind==='window'&&h.id!=='bath-window'?'Largura de 0,920 m cotada na planta; altura e peitoril estimados.':'Dimensões estimadas; vão sem cotas na planta.';
   const label=h.kind==='door'&&h.id.startsWith('side-')?optionTargetLabel(h.id).replace(/^Janela lateral/,'Porta lateral'):optionTargetLabel(h.id);
   return {id:h.id,label,kind:h.kind,optionId:h.optionId||null,optionLabel:option?.label||null,
@@ -132,7 +132,9 @@ export function getPlan(config){
   const adjacent=rooms.filter(r=>r.kind==='bedroom'&&(side===-1?r.outline.x0<-.1:r.outline.x1>.1));
   const zs=adjacent.map(r=>(r.outline.z0+r.outline.z1)/2);
   if(!adjacent.length){if(config.layout==='t3-b'&&side===-1)zs.push(-3.7,.05,3.7);else zs.push(-2.85,2.85);}else if(adjacent.length===1){if(config.layout==='t4-b'&&side===-1)zs.push(.05,3.7);else zs.push(Math.max(adjacent[0].outline.z1+1.2,3.7));}
-  perimeter.push({axis:'z',c:side*W/2,a:-L/2,b:L/2,holes:zs.map((z,i)=>({id:`side-${side}-${i}`,u:z,width:DIM.windowWidth,height:DIM.windowHeight,sill:DIM.windowSill,kind:'window',source:'window count/room relation follows source; centre position estimated'}))});
+  // Preserve existing opening IDs; the owner confirmed three per long side on 2026-10-02.
+  if(zs.length<3)zs.push(adjacent.length?1.4:0);
+  perimeter.push({axis:'z',c:side*W/2,a:-L/2,b:L/2,holes:zs.map((z,i)=>({id:`side-${side}-${i}`,u:z,width:DIM.windowWidth,height:DIM.windowHeight,sill:DIM.windowSill,kind:'window',source:'three windows per long side confirmed by Green Village on 2026-10-02; centre positions estimated'}))});
  }
  // Apply replacements before cabinet/window constraints and keep both door consumers in sync.
  applyOpeningOptions(perimeter,doors,config);

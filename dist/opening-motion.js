@@ -7,6 +7,7 @@ const PHOTO_ROOT='assets/catalogue/products/';
  * profile sections, handing and travel are presentation estimates only. */
 export function openingMechanism(h){
  const option=h.optionId;
+ if(h.facadeGlazing&&h.kind==='window')return {type:'fixed',leaves:1,status:'illustrative-fixed-glazing',note:'Painel fixo ilustrado; ferragens e aberturas a definir no projecto.'};
  if(h.kind==='door')return {type:'swing',leaves:['steel-door','side-glass-door'].includes(option)?1:2,opaque:option==='steel-door',sourceAsset:option?PHOTO_ROOT+option+'.jpg':null,status:option?'photographic-mechanism-reference':'illustrative-mechanism',note:'Abertura para o exterior; mão, ferragens e ângulo representados são estimados.'};
  if(option==='window-projecting')return {type:'projecting',leaves:1,sourceAsset:PHOTO_ROOT+option+'.jpg',status:'photographic-mechanism-reference'};
  if(option==='window-panoramic')return {type:'panoramic',leaves:1,sourceAsset:PHOTO_ROOT+option+'.jpg',status:'photographic-mechanism-reference',note:'Painéis fixos superior/inferior e folha central projectante; proporções estimadas.'};
@@ -31,7 +32,7 @@ export function createOpeningMotion({box,materials,glass=materials.glass,panelDe
   const meshes=[],leaves=[];
   const record={id:h.id,kind:h.kind,group,profile,leaves,meshes,value:0,target:0,mode:profile.type==='tilt-turn'?'turn':'default'};
   group.userData.opening={id:h.id,mechanism:profile.type,status:profile.status,sourceAsset:profile.sourceAsset||null,dimensionsStatus:'opening-dimensions-follow-plan-hardware-estimated'};
-  function rect(parent,w,height,thickness,u,y,normal,material,name,interactive=true){
+  function rect(parent,w,height,thickness,u,y,normal,material,name,interactive=profile.type!=='fixed'){
    const p=point(u,y,normal),m=box(parent,axis==='z'?thickness:w,height,axis==='z'?w:thickness,p.x,p.y,p.z,material,h.id+' · '+name,.003);
    m.userData.layer='openings';if(interactive)m.userData.openingMotionId=h.id;meshes.push(m);return m;
   }
@@ -68,7 +69,8 @@ export function createOpeningMotion({box,materials,glass=materials.glass,panelDe
    const result={pivot,content,center,modes,moving,width,height,closedBounds:new THREE.Box3(),direction};
    leaves.push(result);return result;
   }
-  if(profile.type==='sliding'){
+  if(profile.type==='fixed')leaf({moving:false});
+  else if(profile.type==='sliding'){
    const width=innerW/2+.007;
    leaf({u:-(innerW-width)/2,width,track:sign*.012,mechanism:'sliding'});
    leaf({u:(innerW-width)/2,width,track:-sign*.012,moving:false});
@@ -90,7 +92,7 @@ export function createOpeningMotion({box,materials,glass=materials.glass,panelDe
    for(let i=0;i<=nx;i++)rect(group,.0012,innerH,.0012,-innerW/2+innerW*i/nx,h.height/2,offset,materials.screen,'mosquiteiro representativo');
    for(let i=0;i<=ny;i++)rect(group,innerW,.0012,.0012,0,f+innerH*i/ny,offset,materials.screen,'mosquiteiro representativo');
   }
-  records.push(record);if(!byId.has(h.id))byId.set(h.id,[]);byId.get(h.id).push(record);apply(record,0);group.updateMatrixWorld(true);
+  if(profile.type!=='fixed'){records.push(record);if(!byId.has(h.id))byId.set(h.id,[]);byId.get(h.id).push(record);}apply(record,0);group.updateMatrixWorld(true);
   for(const item of leaves)item.closedBounds.setFromObject(item.pivot);
   return record;
  }

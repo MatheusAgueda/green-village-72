@@ -6,6 +6,8 @@ Portefólio e configurador interactivo em português, inglês e espanhol.
 
 ## Executar
 
+Revisão R28: três janelas por lateral nas sete plantas, guardas nos dois lados do deck e opção de frente + lateral em vidro. Frente de 3 módulos: 2 600 €; lateral de 6 módulos: 5 190 €; conjunto: 7 790 €. Selecção esquerda/direita, desenho e ficha PDF sincronizados. [Verificação e limites](docs/audit/r28-report.md).
+
 Revisão R27: circuitos de água e electricidade ligados aos equipamentos, correcção da atribuição de janelas por fachada, ilha e armários superiores independentes, cores de móveis, 78 bancadas com fotografias da referência fornecida e envolvente exterior. As escolhas constam da ficha do cliente; artigos sem preço confirmado continuam sob orçamento. [Âmbito, fontes e verificações](docs/audit/r27-report.md).
 
 ```sh

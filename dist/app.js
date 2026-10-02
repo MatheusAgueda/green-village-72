@@ -221,6 +221,8 @@ function previewOption(id,target=null){
  if(['kitchen','bathroom'].includes(item.section)){focusRoom(item.section);return;}
  if(item.id==='interior-door'){if(setView('interior'))setCamera('top');return;}
  const selection=selectedOption(S,id),location=target||selection?.targets[0];
+ if(id==='glass-side-full'){if(setView('exterior'))setCamera(selection?.variant==='right'?'right':'left');return;}
+ if(id==='glass-front'){if(setView('exterior'))setCamera('front');return;}
  if(item.model==='opening'&&id!=='glass-front'&&!location){focusOptionTarget(id);return;}
  const face=house?.plan.perimeter.find(f=>f.holes.some(h=>h.id===location));
  if(setView('exterior'))setCamera(face?(face.axis==='x'?(face.c<0?'back':'front'):(face.c<0?'left':'right')):'perspective');
@@ -252,7 +254,7 @@ document.addEventListener('change',e=>{const x=e.target;
  if(x.dataset.adaptation){const requests=(S.adaptationRequests||[]).filter(id=>id!==x.dataset.adaptation);if(x.checked)requests.push(x.dataset.adaptation);if(!configure({adaptationRequests:requests}))renderPanel();return;}
  if(x.id==='option-category'){optionCategory=x.value;renderPanel();return;}
  if(x.dataset.optionQuantity){updateOption(x.dataset.optionQuantity,{quantity:Number(x.value)});return;}
- if(x.dataset.optionVariant){updateOption(x.dataset.optionVariant,{variant:x.value});return;}
+ if(x.dataset.optionVariant){if(updateOption(x.dataset.optionVariant,{variant:x.value})&&x.dataset.optionVariant==='glass-side-full')previewOption(x.dataset.optionVariant);return;}
  if(x.dataset.optionTarget){const item=selectedOption(S,x.dataset.optionTarget);const targets=x.checked?[...item.targets,x.value]:item.targets.filter(t=>t!==x.value);if(updateOption(item.id,{targets})&&x.checked)previewOption(item.id,x.value);return;}
  if(x.id==='mobile-scene-view'){if(x.value==='walk'){startWalk();return;}if(['exterior','aerial','top','kitchen','bathroom'].includes(x.value))exploreRoom(x.value);else{page('studio');setView(x.value);}syncMobileView();}if(x.id==='floor-type'){configure(flooringSelectionPatch(S,x.value));return;}if(x.id==='family-select'){family=x.value;renderPanel();}if(x.dataset.colour){const k=x.dataset.colour;configure(k==='interior'?{interior:x.value,interiorName:'Cor livre '+x.value}:{[k]:x.value,[k==='floor'?'floorId':'exteriorId']:null});}if(x.id==='roof-toggle'||x.id==='porch-toggle'){if(configure({[x.id==='roof-toggle'?'roof':'porch']:x.checked}))configurationView('exterior');}if(x.id==='lighting')configure({lighting:x.value});if(x.id==='camera-preset'){const requested=x.value;if(requested==='detail'){focusRoom(panel==='bathroom'?'bathroom':'kitchen');return;}if((requested==='top'||requested==='inside')&&!configurationView('interior'))return;setCamera(requested);}if(x.id==='walls-toggle'||x.id==='furniture-toggle'){const next={...V,[x.id==='walls-toggle'?'wallsVisible':'furnitureVisible']:x.checked};try{rebuild(S,next);V=next;}catch(error){notify(error.message);syncVisualControls();}}if(x.id==='doors-toggle'){V.doorsOpen=x.checked;house?.setDoors(x.checked);requestRender();}});
 

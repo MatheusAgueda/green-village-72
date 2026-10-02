@@ -218,7 +218,7 @@ export async function appendClientDossier(doc, {state, project, font, bold, imag
     for (const [text, right] of [[priceText, columns.unit], [totalText, columns.total]]) {
       page.drawText(printable(text), {x: right - regular.widthOfTextAtSize(printable(text), 9), y, size: 9, font: regular, color: ink});
     }
-    page.drawText(t(line.item.page?'Ficha original: catálogo, p. ' + line.item.page:line.item.commercialSource), {x: columns.item, y: y - labels.length * 13.5 - 1, size: 8, font: regular, color: muted});
+    page.drawText(t(line.item.commercialSource||(line.item.page?'Ficha original: catálogo, p. ' + line.item.page:'Oferta Green Village')), {x: columns.item, y: y - labels.length * 13.5 - 1, size: 8, font: regular, color: muted});
     y -= height;
     page.drawLine({start: {x: M, y: y + 9}, end: {x: W - M, y: y + 9}, thickness: .4, color: pale});
   }
@@ -252,7 +252,7 @@ export async function appendClientDossier(doc, {state, project, font, bold, imag
       'PVP actual: ' + money(line.unitCents),
       'Parcial: ' + money(line.totalCents),
       item.vatIncluded===null?'IVA: enquadramento por confirmar.':'IVA: ' + estimate.vatRate + '% incluído quando existe preço.',
-      item.page?'PVP ' + locale.date(estimate.edition) + ' · ficha p. ' + item.page:item.commercialSource];
+      item.commercialSource|| (item.page?'PVP ' + locale.date(estimate.edition) + ' · ficha p. ' + item.page:'Oferta Green Village')];
     const metaLines = metadata.flatMap(value => wrap(value, CONTENT - 194, 9.5));
     const pictureHeight = 112, blockHeight = Math.max(pictureHeight, metaLines.length * 13.5);
     const titleHeight = wrap(title, CONTENT, 13, strong).length * 18.46 + 8;
@@ -268,7 +268,7 @@ export async function appendClientDossier(doc, {state, project, font, bold, imag
     metaLines.forEach((text, i) => page.drawText(text, {x: M + 194, y: top - i * 13.5, size: 9.5, font: regular, color: ink}));
     y = top - blockHeight - 13;
     paragraph(item.photo ? (t(item.photoCaption) || 'Imagem de referência do catálogo · p. ' + (item.photoPage || item.page)) + '. A fotografia não é uma imagem da instalação escolhida.' : 'Pedido personalizado Green Village. Fotografia específica por fornecer.', {size: 8.5, color: muted});
-    if (item.facts?.length) paragraph('Características: ' + item.facts.map(t).join('; ') + '.', {size: 9});
+    if (item.facts?.length) paragraph('Características: ' + item.facts.map(f=>t(f).replace(/[.;]+$/,'')).join('; ') + '.', {size: 9});
     paragraph('Âmbito: ' + t(item.scope) + '.', {size: 9});
     if(client.optionNotes[item.id])field('Local pretendido e observações',rawPDF(client.optionNotes[item.id]));
     if(item.id==='glass-front'&&line.quantity>1)paragraph('O modelo 3D representa uma frente. As restantes '+(line.quantity-1)+' unidades são pedidos adicionais, com aplicação sujeita a validação.',{size:9,color:muted});
