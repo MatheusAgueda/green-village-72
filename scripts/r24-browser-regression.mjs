@@ -25,8 +25,8 @@ try{
   await page.locator('#openings-toggle').click();await page.waitForFunction(()=>window.__GV.openings().every(r=>r.value===0));
  });
  await check('Large optional window opens from a direct click on its 3D sash',async()=>{
-  await tab('options');await page.locator('[data-toggle-option="window-large"]').click();
-  await page.locator('#option-target-window-large-front-window-1').check();
+  await tab('options');await page.locator('[data-window-editor="window-large"]').click();
+  await page.locator('#window-location-front-window-1').check();await page.locator('#window-apply').click();
   await page.evaluate(()=>{window.__GV.setView('exterior');window.__GV.setCamera('perspective');});await ready();
   const point=await page.evaluate(async()=>{
    const THREE=await import('./vendor/three.module.js'),diag=window.__GV.diagnostics().render,face=window.__GV.plan().perimeter.find(f=>f.axis==='x'&&f.c>0),h=face.holes.find(h=>h.id==='front-window-1');

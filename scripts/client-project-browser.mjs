@@ -14,21 +14,22 @@ page.on('response',r=>{if(r.status()>=400)report.httpErrors.push({url:r.url(),st
 const check=(name,fn)=>Promise.resolve().then(fn).then(()=>{report.checks.push({name,pass:true});console.log('PASS '+name);});
 const ready=async()=>{await page.waitForFunction(()=>window.__GV&&document.querySelector('#loading').hidden);await page.evaluate(()=>window.__GV.ready());};
 const tab=async name=>{await page.locator('button.nav[data-page="studio"]').click();await page.locator('#tab-'+name).click();};
-const select=async id=>{await page.locator('[data-toggle-option="'+id+'"]').click();};
+const select=async id=>{const editor=page.locator('[data-window-editor="'+id+'"]');if(await editor.count()){await editor.click();await page.locator('#window-request').click();}else await page.locator('[data-toggle-option="'+id+'"]').click();};
 const field=async(key,value)=>page.locator('[data-project-field="'+key+'"]').fill(value);
 async function download(selector){const event=page.waitForEvent('download',{timeout:60000});await page.locator(selector).click();const file=await event;const destination=path.join(out,file.suggestedFilename());await file.saveAs(destination);report.downloads.push(destination);return destination;}
 try{
  await page.goto(process.env.AUDIT_URL||'http://127.0.0.1:4191/');await ready();
- await check('All 26 options and all eight window photographs load',async()=>{
-  await tab('options');assert.equal(await page.locator('[data-option-card]').count(),26);
+ await check('All catalogue options and all eight window photographs load',async()=>{
+  await tab('options');assert.equal(await page.locator('[data-option-card]').count(),await page.evaluate(async()=>(await import('./project-options.js')).OPTIONAL_ITEMS.length));
   await page.locator('#option-category').selectOption('windows');assert.equal(await page.locator('[data-option-card]').count(),8);
-  for(const image of await page.locator('.option-photo img').all()){await image.scrollIntoViewIfNeeded();await image.evaluate(img=>img.decode());assert.ok(await image.evaluate(img=>img.naturalWidth>0));}
+  for(const image of await page.locator('.window-photo img,.option-card:not(.window-card) .option-photo img').all()){await image.scrollIntoViewIfNeeded();await image.evaluate(img=>img.decode());assert.ok(await image.evaluate(img=>img.naturalWidth>0));}
   await page.locator('#option-category').selectOption('all');
  });
  await check('Repeated glass, kitchen window and quotation options retain notes',async()=>{
   await select('glass-front');await page.locator('[data-option-quantity="glass-front"]').fill('2');await page.locator('[data-option-quantity="glass-front"]').press('Tab');
   await page.locator('[data-option-note="glass-front"]').fill('Duas frentes pretendidas; confirmar medidas');
   for(const id of ['window-930','side-glass-partial','kitchen-island','ac-monosplit-12000','ac-multisplit-3x1'])await select(id);
+  await page.locator('[data-option-card="window-930"] .window-card-details>summary').click();
   await page.locator('[data-option-note="window-930"]').fill('Janela nova na cozinha, acima da bancada');
   await page.locator('[data-option-note="side-glass-partial"]').fill('Lateral esquerda, vidro parcial de 2 m');
   const state=await page.evaluate(()=>window.__GV.state());assert.equal(state.optionSelections.find(i=>i.id==='glass-front').quantity,2);
@@ -92,7 +93,7 @@ try{
   const extraction=spawnSync('pdftotext',['-layout',file,path.join(out,'dossier-text.txt')],{encoding:'utf8'});
   assert.equal(extraction.status,0);assert.equal(extraction.stderr,'');
   const text=await fs.readFile(path.join(out,'dossier-text.txt'),'utf8');
-  for(const term of ['PLANTA CLIENTE PISO UM','PLANTA CLIENTE PISO DOIS','Fotografia da janela pretendida na cozinha','Duas janelas extra em paredes a validar','Janela nova na cozinha, acima da bancada','Lateral esquerda, vidro parcial de 2 m','3330,00 €'])assert.ok(text.includes(term),'PDF missing '+term);
+  for(const term of ['PLANTA CLIENTE PISO UM','PLANTA CLIENTE PISO DOIS','Fotografia da janela pretendida na cozinha','Duas janelas extra em paredes a validar','Janela nova na cozinha, acima da bancada','Lateral esquerda, vidro parcial de 2 m','5830,00 €'])assert.ok(text.includes(term),'PDF missing '+term);
   assert.equal(text.includes('p. null'),false);
  });
  await check('Share omits private data and preserves recovery before a different shared configuration',async()=>{

@@ -45,9 +45,9 @@ try{
   const json=await page.evaluate(()=>window.__GV.exportJSON());assert.ok(json.includes('#a5815d'));assert.ok(json.includes(saved.kitchenWorktop));
  });
  await check('Window assignment exits detail and focuses the rear facade',async()=>{
-  await tab('options');await page.locator('[data-toggle-option="window-panoramic"]').click();
-  assert.match(await page.locator('[data-option-card="window-panoramic"] .option-target-prompt').innerText(),/escolha um vão/);
-  await page.locator('#option-target-window-panoramic-rear-window-1').check();await ready();
+  await tab('options');await page.locator('[data-window-editor="window-panoramic"]').click();
+  assert.equal(await page.locator('#window-apply').isDisabled(),true);
+  await page.locator('#window-location-rear-window-1').check();await page.locator('#window-apply').click();await ready();
   assert.equal(await page.locator('#viewport').getAttribute('data-camera'),'back');assert.equal(await page.evaluate(()=>window.__GV.detail().focus),null);
   const window=await page.evaluate(()=>window.__GV.plan().perimeter.flatMap(f=>f.holes).find(h=>h.id==='rear-window-1'));
   assert.equal(window.height,1.9);await page.locator('#openings-toggle').click();await page.waitForFunction(()=>window.__GV.openings().find(r=>r.id==='rear-window-1').value===1);
