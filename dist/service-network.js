@@ -60,6 +60,8 @@ export function renderServiceNetwork({plan,groups,mesh,box,pipe,plain}){
  // Transparent pipe casings reveal the stream while retaining the physical route.
  for(const kind of ['cold','hot','drain'])Object.assign(m[kind],{transparent:true,opacity:kind==='drain'?.46:.48,depthWrite:false});
  const fluid={cold:mat('Água fria · coluna ilustrativa','#148cbd',{emissive:'#148cbd',emissiveIntensity:.4}),hot:mat('Água quente · coluna ilustrativa','#d85227',{emissive:'#d85227',emissiveIntensity:.3}),drain:mat('Esgotos · coluna ilustrativa','#24866f',{emissive:'#24866f',emissiveIntensity:.3})};
+ // Moving symbols sit inside each conduit, while opaque building parts still occlude them.
+ for(const material of [...Object.values(fluid),m.conduit])material.depthWrite=false;
  const sphere=(g,p,r,material,name)=>{const o=mesh(g,new THREE.SphereGeometry(r,12,8),material,name);o.position.set(...p);return o;};
  const joints=new Set();
  function route(g,c,r,material){
