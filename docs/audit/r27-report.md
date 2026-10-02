@@ -54,3 +54,5 @@ The customer PDF with custom finishes was rendered and inspected. Its 11 pages p
 ## Publication
 
 Release is based on public main 046b981 in a clean checkout, preserving its factual corrections. Publication and public-browser verification are recorded separately in the release receipt. No private client records, supplier cost documents, credentials or local source inspection output are included in the site.
+
+Published application commit: c61768f38e47a8bf8069b13cf0444aa1de145067. GitHub Pages run 36943599867 completed successfully. All 95 changed public site files matched their expected SHA-256 values. The nine browser flows also passed on the public URL with no JavaScript page errors. The first public opening-animation wait timed out; the replay explicitly brought the 3D viewport into view and passed. The harness now captures opening and render diagnostics on exit. No site source was changed between those two public runs.

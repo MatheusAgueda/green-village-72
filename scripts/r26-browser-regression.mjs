@@ -60,7 +60,7 @@ try{
   await page.evaluate(()=>window.__GV.configure({optionSelections:[{id:'window-tilt-turn',quantity:1,variant:'',targets:['rear-window-1']}]}));
   await page.evaluate(()=>window.__GV.setView('exterior'));
   if(await page.evaluate(()=>window.__GV.openings().some(r=>r.target>0)))await page.locator('#openings-toggle').click();
-  await page.locator('#openings-toggle').click();await page.waitForFunction(()=>window.__GV.openings().every(r=>r.value===1));
+  await page.locator('#openings-toggle').click();await page.locator('#viewport').scrollIntoViewIfNeeded();await page.waitForFunction(()=>window.__GV.openings().every(r=>r.value===1));
   await page.evaluate(()=>window.__GV.configure({optionSelections:[{id:'window-panoramic',quantity:1,variant:'',targets:['rear-window-1']}]}));
   await page.waitForFunction(()=>window.__GV.openings().find(r=>r.id==='rear-window-1').value===1);
  });
@@ -80,4 +80,4 @@ try{
   await page.locator('#config-content').screenshot({path:out+'/mobile-options.png'});
  });
  assert.deepEqual(errors,[]);await fs.writeFile(out+'/result.json',JSON.stringify({checks,errors},null,2));
-}finally{await fs.writeFile(out+'/progress.json',JSON.stringify({checks,errors},null,2));await browser.close();}
+}finally{const diagnostics=await page.evaluate(()=>({openings:window.__GV?.openings(),render:window.__GV?.diagnostics(),visual:window.__GV?.visual()})).catch(()=>null);await fs.writeFile(out+'/progress.json',JSON.stringify({checks,errors,diagnostics},null,2));await browser.close();}
