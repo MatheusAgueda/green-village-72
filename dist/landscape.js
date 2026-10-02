@@ -1,34 +1,99 @@
 import * as THREE from './vendor/three.module.js';
 
-/** Presentation surroundings only; never part of the house specification or price. */
-export function createLandscape(scene,ground){
- const root=new THREE.Group();root.name='Jardim de apresentação';root.userData.presentationOnly=true;scene.add(root);
- const geometries=new Set(),materials=new Set();
- const material=(colour,roughness=1)=>{const m=new THREE.MeshStandardMaterial({color:colour,roughness});materials.add(m);return m;};
- const mesh=(geo,mat)=>{geometries.add(geo);const m=new THREE.Mesh(geo,mat);root.add(m);m.receiveShadow=true;return m;};
- let seed=724026;const random=()=>{seed=(Math.imul(seed,1664525)+1013904223)>>>0;return seed/4294967296;};
- const n=512,bytes=new Uint8Array(n*n*4);
- for(let y=0;y<n;y++)for(let x=0;x<n;x++){
-  const i=(y*n+x)*4,grain=random()*20;
-  bytes[i]=58+grain;bytes[i+1]=82+grain;bytes[i+2]=40+grain*.6;bytes[i+3]=255;
+const ASSETS='assets/scene-r35/';
+
+/** A landscaped presentation, deliberately outside the product specification. */
+export function createLandscape(scene,ground,{onChange=()=>{},loadAssets=typeof document!=='undefined'}={}){
+ const root=new THREE.Group();root.name='Jardim · inspiração Grande Porto';root.userData.presentationOnly=true;scene.add(root);
+ const geometries=new Set(),materials=new Set(),textures=new Set(),failures=[];
+ const gm=ground.material,original={map:gm.map,normalMap:gm.normalMap,roughnessMap:gm.roughnessMap,color:gm.color.clone(),normalScale:gm.normalScale.clone(),envMapIntensity:gm.envMapIntensity,fog:scene.fog};
+ let disposed=false,visible=true,pending=null,loaded=false;
+ let seed=724035;const random=()=>{seed=(Math.imul(seed,1664525)+1013904223)>>>0;return seed/4294967296;};
+ const mat=(color,props={})=>{const m=new THREE.MeshStandardMaterial({color,roughness:1,...props});materials.add(m);return m;};
+ const add=(geo,material,name,x,y,z)=>{geometries.add(geo);const m=new THREE.Mesh(geo,material);m.name=name;m.position.set(x,y,z);m.receiveShadow=true;m.castShadow=true;root.add(m);return m;};
+ const grass=mat('#b8cfa0'),stone=mat('#bbb9af'),paving=mat('#c5c3b8'),earth=mat('#4e4435'),metal=mat('#343c35',{roughness:.65,metalness:.5});
+ // World-scale UVs prevent long walls from stretching one photograph over their length.
+ function boxGeometry(w,h,d){const g=new THREE.BoxGeometry(w,h,d),uv=g.attributes.uv,pos=g.attributes.position,n=g.attributes.normal;for(let i=0;i<uv.count;i++){const a=Math.abs(n.getX(i)),b=Math.abs(n.getY(i));uv.setXY(i,(a>.5?pos.getZ(i):pos.getX(i))/2,(b>.5?pos.getZ(i):pos.getY(i))/2);}return g;}
+ for(const x of [-15.5,15.5])add(boxGeometry(.44,.68,34),stone,'Muro baixo de pedra · cenário',x,-.025,-1.8);
+ add(boxGeometry(31,.68,.44),stone,'Muro posterior · cenário',0,-.025,-18.6);
+ for(const x of [-15.5,15.5])add(boxGeometry(.52,.08,34.1),paving,'Remate em pedra',x,.355,-1.8);
+ add(boxGeometry(31.4,.08,.52),paving,'Remate posterior',0,.355,-18.6);
+ // Entrance path starts beyond the deepest selectable terrace, without replacing it.
+ const shape=new THREE.Shape();shape.moveTo(-.9,-.34);shape.lineTo(.9,-.34);shape.lineTo(.9,.34);shape.lineTo(-.9,.34);shape.closePath();
+ const slabGeometry=new THREE.ExtrudeGeometry(shape,{depth:.045,bevelEnabled:true,bevelSegments:2,steps:1,bevelSize:.018,bevelThickness:.012});slabGeometry.rotateX(-Math.PI/2);
+ const accessSlabs=[];
+ for(let z=6.6;z<17;z+=.88){const slab=add(slabGeometry,paving,'Laje de acesso',random()*.025-.012,-.33,z);slab.rotation.y=(random()-.5)*.016;accessSlabs.push(slab);}
+ const entranceSteps=new THREE.Group();entranceSteps.name='Acesso paisagístico ilustrativo';root.add(entranceSteps);
+ for(const [y,z,w,h,d] of [[-.30,.86,1.86,.13,.48],[-.19,.48,1.8,.35,.42],[-.08,.10,1.74,.57,.36]]){
+  const step=add(boxGeometry(w,h,d),paving,'Degrau de jardim',0,y,z);entranceSteps.add(step);
  }
- const grass=new THREE.DataTexture(bytes,n,n,THREE.RGBAFormat);grass.colorSpace=THREE.SRGBColorSpace;grass.wrapS=grass.wrapT=THREE.RepeatWrapping;grass.repeat.set(45,45);grass.generateMipmaps=true;grass.minFilter=THREE.LinearMipmapLinearFilter;grass.magFilter=THREE.LinearFilter;grass.needsUpdate=true;
- const skyMat=new THREE.ShaderMaterial({side:THREE.BackSide,depthWrite:false,toneMapped:false,vertexShader:'varying vec3 vDirection; void main(){vDirection=position; gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.);}',fragmentShader:`varying vec3 vDirection;
- float hash(vec2 p){return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453);}
- float noise(vec2 p){vec2 i=floor(p),f=fract(p);f=f*f*(3.-2.*f);return mix(mix(hash(i),hash(i+vec2(1,0)),f.x),mix(hash(i+vec2(0,1)),hash(i+vec2(1,1)),f.x),f.y);}
- void main(){vec3 d=normalize(vDirection);float h=max(d.y,0.);vec3 c=mix(vec3(.86,.91,.92),vec3(.29,.58,.80),pow(h,.42));vec2 uv=d.xz/(.18+h)*2.;float f=noise(uv)+.5*noise(uv*2.)+.25*noise(uv*4.);float cloud=smoothstep(1.03,1.42,f)*smoothstep(.07,.32,h)*.62;c=mix(c,vec3(.97,.97,.94),cloud);gl_FragColor=vec4(c,1.);}`});materials.add(skyMat);
- const sky=mesh(new THREE.SphereGeometry(130,32,16),skyMat);sky.name='Céu';sky.receiveShadow=false;sky.renderOrder=-10;
- const stone=material('#bcb8a7'),soil=material('#74684e'),bark=material('#716047'),leaves=[material('#526848'),material('#697c51'),material('#3f5943')];
- const paver=new THREE.BoxGeometry(1.2,.032,.62);for(let z=6.55;z<15;z+=.82){const m=mesh(paver,stone);m.position.set(0,-.343,z);}
- const border=new THREE.BoxGeometry(.12,.07,14);for(const x of [-8.3,8.3]){const m=mesh(border,stone);m.position.set(x,-.335,0);}
- const trunk=new THREE.CylinderGeometry(.075,.11,2.5,8),crown=new THREE.IcosahedronGeometry(1,2),bed=new THREE.CylinderGeometry(.95,.95,.06,24);
- for(const [x,z,s]of [[-13,-15,1.3],[13,-14,1.5],[-18,-22,1.7],[18,-26,1.8]]){
-  const earth=mesh(bed,soil);earth.position.set(x,-.325,z);earth.scale.setScalar(s);
-  const t=mesh(trunk,bark);t.position.set(x,1.25*s-.35,z);t.scale.setScalar(s);t.castShadow=true;
-  for(let j=0;j<18;j++){const c=mesh(crown,leaves[j%3]),a=random()*Math.PI*2,r=random()*.9*s;c.position.set(x+Math.cos(a)*r,2.5*s+random()*.65,z+Math.sin(a)*r);c.scale.set((.38+random()*.4)*s,(.4+random()*.5)*s,(.35+random()*.4)*s);c.rotation.set(random(),random(),random());c.castShadow=true;}
+ function setEntrance(front=5.9){entranceSteps.position.z=front+.12;for(const slab of accessSlabs)slab.visible=slab.position.z>front+1.1;}
+ setEntrance();
+ // Small beds and low luminaires frame the house without covering windows or doors.
+ for(const x of [-10,10]){
+  add(boxGeometry(2.3,.05,16),earth,'Canteiro',x,-.335,-.4);
+  for(const dx of [-1.17,1.17])add(boxGeometry(.055,.09,16.1),metal,'Bordadura do canteiro',x+dx,-.31,-.4);
+  for(const z of [-7.9,7.1])add(boxGeometry(2.35,.09,.055),metal,'Bordadura do canteiro',x,-.31,z);
  }
- const shrub=new THREE.IcosahedronGeometry(.38,1);for(const x of [-7.8,7.8])for(let z=-4.5;z<5;z+=1.15){const m=mesh(shrub,leaves[Math.floor(random()*3)]);m.position.set(x,-.10,z);m.scale.set(1.2,.9,1.2);m.castShadow=true;}
- function setVisible(visible){root.visible=visible;scene.fog=visible?new THREE.Fog('#dbe8eb',30,95):null;ground.material.map=visible?grass:null;ground.material.color.set(visible?'#ffffff':'#e2e6dc');ground.material.needsUpdate=true;}
- setVisible(true);
- return {root,setVisible,dispose(){root.removeFromParent();grass.dispose();for(const g of geometries)g.dispose();for(const m of materials)m.dispose();}};
+ const post=new THREE.BoxGeometry(.075,.58,.075),cap=new THREE.BoxGeometry(.10,.035,.10),lamp=mat('#fff1cf',{emissive:'#fff1cf',emissiveIntensity:.22});
+ for(const z of [10.2,13.8,16.4])for(const x of [-1.5,1.5]){add(post,metal,'Balizador de jardim',x,-.07,z);add(cap,lamp,'Difusor de balizador',x,.2,z);}
+
+ // Tapered, curved blades have real silhouettes. Instancing keeps them inexpensive.
+ function bladeGeometry(width=.034,bend=.3){
+  const vertices=[],indices=[],segments=4;
+  for(let i=0;i<=segments;i++){const t=i/segments,w=width*(1-t)*(.8+.2*Math.sin(t*Math.PI));vertices.push(-w/2,t,bend*t*t,w/2,t,bend*t*t);if(i<segments){const j=i*2;indices.push(j,j+1,j+2,j+1,j+3,j+2);}}
+  const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(vertices,3));g.setIndex(indices);g.computeVertexNormals();geometries.add(g);return g;
+ }
+ const grassBlade=bladeGeometry(.012,.22),leafMat=mat('#ffffff',{side:THREE.DoubleSide,roughness:.95});
+ const transforms=[],colours=[],dummy=new THREE.Object3D(),colour=new THREE.Color();
+ for(let i=0;i<68000;i++){
+  const x=(random()-.5)*43,z=(random()-.5)*43;
+  if((Math.abs(x)<4.25&&z>-6.9&&z<9.2)||(Math.abs(x)<1.15&&z>8.7)||(Math.abs(Math.abs(x)-10)<1.3&&z>-8.5&&z<7.8))continue;
+  dummy.position.set(x,-.36,z);dummy.rotation.set((random()-.5)*.12,random()*Math.PI*2,0);const h=.025+random()*.025;dummy.scale.set(.75+random()*.6,h,h);dummy.updateMatrix();transforms.push(dummy.matrix.clone());colour.setHSL(.23+random()*.035,.30+random()*.12,.15+random()*.08);colours.push(colour.clone());
+ }
+ function instanced(geometry,material,matrices,colors,name){const m=new THREE.InstancedMesh(geometry,material,matrices.length);for(let i=0;i<matrices.length;i++){m.setMatrixAt(i,matrices[i]);m.setColorAt(i,colors[i]);}m.name=name;m.instanceMatrix.needsUpdate=true;m.receiveShadow=true;m.castShadow=false;m.computeBoundingSphere();root.add(m);return m;}
+ instanced(grassBlade,leafMat,transforms,colours,'Relva · lâminas de detalhe');
+ const reeds=[],reedColours=[],flowerHeads=[],flowerColours=[];
+ for(const side of [-1,1])for(let z=-7.1;z<=6.4;z+=1.25){
+  const cx=side*(9.7+random()*.5),cz=z+(random()-.5)*.3;
+  for(let j=0;j<82;j++){
+   const a=random()*Math.PI*2,r=random()*.30;dummy.position.set(cx+Math.cos(a)*r,-.34,cz+Math.sin(a)*r);dummy.rotation.set(0,a,0);dummy.scale.set(.65+random()*.65,.38+random()*.45,.7+random()*.7);dummy.updateMatrix();reeds.push(dummy.matrix.clone());colour.setHSL(.19+random()*.065,.2+random()*.25,.19+random()*.14);reedColours.push(colour.clone());
+  }
+  for(let j=0;j<16;j++){
+   const a=random()*Math.PI*2,r=random()*.36;dummy.position.set(cx+Math.cos(a)*r,.06+random()*.25,cz+Math.sin(a)*r);dummy.rotation.set(random()*.2,a,(random()-.5)*.25);dummy.scale.set(.028,.10+random()*.09,.028);dummy.updateMatrix();flowerHeads.push(dummy.matrix.clone());colour.setHSL(.72+random()*.035,.17,.35+random()*.18);flowerColours.push(colour.clone());
+  }
+ }
+ instanced(bladeGeometry(.04,.5),leafMat,reeds,reedColours,'Gramíneas ornamentais');
+ const flowerGeo=new THREE.SphereGeometry(1,5,4);geometries.add(flowerGeo);instanced(flowerGeo,leafMat,flowerHeads,flowerColours,'Espigas floridas');
+
+ function applyGround(){
+  if(disposed)return;
+  root.visible=visible;scene.fog=original.fog;
+  gm.map=visible?grass.map:original.map;gm.normalMap=visible?grass.normalMap:original.normalMap;gm.roughnessMap=visible?grass.roughnessMap:original.roughnessMap;
+  gm.color.copy(visible?grass.color:original.color);gm.normalScale.copy(visible?new THREE.Vector2(.20,.20):original.normalScale);gm.envMapIntensity=visible?.35:original.envMapIntensity;gm.needsUpdate=true;
+ }
+ function load(){
+  if(pending||!loadAssets||disposed)return pending||Promise.resolve();
+  const jobs=[
+   [grass,'map','Grass004_1K-JPG_Color.jpg',true,128.57],
+   [grass,'normalMap','Grass004_1K-JPG_NormalGL.jpg',false,128.57],
+   [grass,'roughnessMap','Grass004_1K-JPG_Roughness.jpg',false,128.57],
+   [stone,'map','granite_wall_diff_1k.jpg',true,1],
+   [stone,'normalMap','granite_wall_nor_gl_1k.jpg',false,1],
+   [stone,'roughnessMap','granite_wall_rough_1k.jpg',false,1],
+   [paving,'map','granite_tile_diff_1k.jpg',true,1],
+   [paving,'normalMap','granite_tile_nor_gl_1k.jpg',false,1]
+  ];
+  pending=Promise.all(jobs.map(async([material,key,file,srgb,repeat])=>{
+   try{const texture=await new THREE.TextureLoader().loadAsync(ASSETS+file);if(disposed){texture.dispose();return;}textures.add(texture);texture.colorSpace=srgb?THREE.SRGBColorSpace:THREE.NoColorSpace;texture.wrapS=texture.wrapT=THREE.RepeatWrapping;texture.repeat.set(repeat,repeat);texture.anisotropy=8;material[key]=texture;if(key==='map'&&material!==grass)material.color.set('#ffffff');material.needsUpdate=true;applyGround();onChange();}
+   catch{if(!disposed)failures.push({url:ASSETS+file,error:'Recurso do jardim indisponível'});}
+  })).then(()=>{loaded=true;if(!disposed)onChange();});return pending;
+ }
+ function setVisible(value){visible=Boolean(value);applyGround();if(visible)load();}
+ function status(){return{visible:root.visible,ready:!loadAssets||loaded,failures:[...failures],instances:transforms.length+reeds.length+flowerHeads.length};}
+ applyGround();
+ return{root,setVisible,setEntrance,status,async ready(){if(visible)await load();return{failures:visible?[...failures]:[]};},dispose(){
+  if(disposed)return;disposed=true;root.removeFromParent();scene.fog=original.fog;gm.map=original.map;gm.normalMap=original.normalMap;gm.roughnessMap=original.roughnessMap;gm.color.copy(original.color);gm.normalScale.copy(original.normalScale);gm.envMapIntensity=original.envMapIntensity;gm.needsUpdate=true;
+  for(const texture of textures)texture.dispose();for(const geometry of geometries)geometry.dispose();for(const material of materials)material.dispose();
+ }};
 }

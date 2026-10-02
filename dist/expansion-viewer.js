@@ -38,7 +38,7 @@ export function createExpansionViewer(root,{getConfiguration,onOpenHouse,onError
  function initialise(){
   if(stage||disposed)return;
   try{
-   const size=viewport.getBoundingClientRect();stage=createStage({width:Math.max(1,size.width),height:Math.max(1,size.height),pixelRatio:devicePixelRatio});
+   const size=viewport.getBoundingClientRect();stage=createStage({width:Math.max(1,size.width),height:Math.max(1,size.height),pixelRatio:devicePixelRatio,environment:'studio'});
    viewport.appendChild(stage.renderer.domElement);stage.renderer.domElement.setAttribute('aria-hidden','true');
    stage.renderer.domElement.addEventListener('webglcontextlost',event=>{event.preventDefault();lost=true;fail('A visualização da expansão foi interrompida. As escolhas da sua casa estão preservadas.');});
    stage.renderer.domElement.addEventListener('webglcontextrestored',()=>{lost=false;retry();});

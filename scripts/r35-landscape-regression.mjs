@@ -1,0 +1,15 @@
+import assert from 'node:assert/strict';
+import * as THREE from '../dist/vendor/three.module.js';
+import {createLandscape} from '../dist/landscape.js';
+const scene=new THREE.Scene(),oldFog=new THREE.Fog('#dddddd',20,60);scene.fog=oldFog;
+const oldMap=new THREE.Texture(),material=new THREE.MeshStandardMaterial({color:'#123456',map:oldMap}),ground=new THREE.Mesh(new THREE.PlaneGeometry(180,180),material);
+const garden=createLandscape(scene,ground,{loadAssets:false});
+assert.equal(typeof garden.ready,'function','Scene asset readiness must be exposed');
+assert.equal(garden.root.userData.presentationOnly,true);
+let instances=0,opaqueSpheres=0;garden.root.traverse(o=>{if(o.isInstancedMesh)instances++;if(o.geometry?.type==='IcosahedronGeometry')opaqueSpheres++;});
+assert.ok(instances>=2,'Fine planting must be instanced');assert.equal(opaqueSpheres,0,'No opaque sphere trees');
+garden.setVisible(false);assert.equal(garden.root.visible,false);assert.equal(material.map,oldMap);
+garden.setVisible(true);assert.equal(garden.root.visible,true);
+assert.deepEqual((await garden.ready()).failures,[]);
+garden.dispose();garden.dispose();assert.equal(garden.root.parent,null);assert.equal(scene.fog,oldFog);assert.equal(material.map,oldMap);assert.equal(material.color.getHexString(),'123456');
+console.log('PASS scene planting, visibility, source state and idempotent disposal');
