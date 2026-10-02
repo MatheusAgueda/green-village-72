@@ -51,38 +51,77 @@ export function compileFlowRoutes(network,exteriorZ){
  return routes;
 }
 
+function compileFlowLines(paths){
+ const byLine=new Map(),up=new THREE.Vector3(0,1,0);
+ const prepared=paths.map(path=>({path,segments:path.segments.map(segment=>{
+  const sign=segment.tangent.find(value=>Math.abs(value)>EPSILON)<0?-1:1,direction=segment.tangent.map(value=>value*sign);
+  const offset=segment.a.reduce((sum,value,index)=>sum+value*direction[index],0),origin=segment.a.map((value,index)=>value-offset*direction[index]);
+  const key=[...direction,...origin].map(value=>Math.round(value/EPSILON)).join(',');
+  let line=byLine.get(key);
+  if(!line){line={direction,origin,rotation:new THREE.Quaternion().setFromUnitVectors(up,new THREE.Vector3(...direction)),spans:[],pool:[]};byLine.set(key,line);}
+  return {line,offset,sign};
+ })}));
+ return {paths:prepared,lines:[...byLine.values()]};
+}
+
 export function createServiceFlow({network,groups,exteriorZ}){
- const routes=compileFlowRoutes(network,exteriorZ),geometry=new THREE.CapsuleGeometry(1,1,3,8),ownedMaterials=[],meshes={},layers={};
+ const routes=compileFlowRoutes(network,exteriorZ),geometry=new THREE.CapsuleGeometry(1,1,3,8),ownedMaterials=[],meshes={},layers={},flowLines={};
  const parentGroups={plumbing:groups.plumbing,electrical:groups.electrical};
  for(const [kind,parent]of Object.entries(parentGroups)){
   const group=new THREE.Group();group.name=kind+' · animated service flow';group.userData.serviceFlow=true;group.visible=false;parent.add(group);layers[kind]=group;
  }
  for(const [kind,style]of Object.entries(KINDS)){
-  const capacity=routes[kind].reduce((n,path)=>n+Math.ceil(path.length/style.spacing)+1,0);
+  // A packet can straddle either endpoint; each bend adds at most one fragment
+  // because packet length is below spacing. Merging shared lines only lowers this bound.
+  const capacity=routes[kind].reduce((n,path)=>n+Math.ceil((path.length+style.length)/style.spacing)+path.segments.length,0);
   if(!capacity)continue;
+  flowLines[kind]=compileFlowLines(routes[kind]);
   const material=new THREE.MeshBasicMaterial({color:style.colour,transparent:true,opacity:.97,depthTest:true,depthWrite:false,toneMapped:false});
   material.name=kind+' · flow highlight';material.userData.serviceCircuit=true;ownedMaterials.push(material);
   const mesh=new THREE.InstancedMesh(geometry,material,capacity);mesh.name=kind+' · moving flow';mesh.userData.serviceFlow=true;mesh.frustumCulled=false;mesh.renderOrder=3;mesh.instanceMatrix.setUsage(THREE.DynamicDrawUsage);
   layers[kind==='electrical'?'electrical':'plumbing'].add(mesh);meshes[kind]=mesh;
  }
  const state={view:null,playing:true,speed:1},phases={cold:0,hot:0,drain:0,electrical:0},counts={cold:0,hot:0,drain:0,electrical:0},samples={},seen=new Set();
- const sample={position:[0,0,0],tangent:[0,1,0]},position=new THREE.Vector3(),direction=new THREE.Vector3(),scale=new THREE.Vector3(),rotation=new THREE.Quaternion(),matrix=new THREE.Matrix4(),up=new THREE.Vector3(0,1,0);
+ const sample={position:[0,0,0],tangent:[0,1,0]},position=new THREE.Vector3(),scale=new THREE.Vector3(),matrix=new THREE.Matrix4();
  let elapsed=0,disposed=false;
  function draw(kinds=Object.keys(KINDS)){
   for(const kind of kinds){
    const style=KINDS[kind];
    const mesh=meshes[kind];if(!mesh)continue;seen.clear();let count=0;const preview=[];
-   for(const path of routes[kind]){
+   const layout=flowLines[kind],halfLength=style.length/2;
+   for(const line of layout.lines)line.spans.length=0;
+   for(const {path,segments}of layout.paths){
     // Drain paths are reversed. Length offset aligns packets on their shared outlet trunk.
     const first=modulo(path.phaseOffset+phases[kind],style.spacing);
-    for(let d=first;d<path.length-EPSILON;d+=style.spacing){
-     sampleFlowPath(path,d,sample);
-     const key=sample.position.map(v=>Math.round(v*100000)).join(',');if(seen.has(key))continue;seen.add(key);
-     position.set(...sample.position);direction.set(...sample.tangent);rotation.setFromUnitVectors(up,direction);
-     const available=Math.min(sample.segmentDistance,sample.segmentLength-sample.segmentDistance);
-     // Shorten at bends/endpoints, keeping every luminous capsule within its straight pipe segment.
-     const length=Math.max(.008,Math.min(style.length,2*available));scale.set(style.radius,length/3,style.radius);matrix.compose(position,rotation,scale);mesh.setMatrixAt(count++,matrix);
-     if(preview.length<4)preview.push(sample.position.map(v=>Number(v.toFixed(5))));
+    for(let d=first-style.spacing;d<path.length+halfLength-EPSILON;d+=style.spacing){
+     const start=Math.max(0,d-halfLength),end=Math.min(path.length,d+halfLength);if(end-start<=EPSILON)continue;
+     // Keep snapshot samples at packet centres, independent of the rendered fragments.
+     if(d>=0&&d<path.length-EPSILON&&preview.length<4){
+      sampleFlowPath(path,d,sample);const key=sample.position.map(v=>Math.round(v*100000)).join(',');
+      if(!seen.has(key)){seen.add(key);preview.push(sample.position.map(v=>Number(v.toFixed(5))));}
+     }
+     sampleFlowPath(path,start,sample);
+     // Intersect the complete packet interval with every adjoining segment. A bend
+     // redistributes its length instead of shrinking it; only route ends clip it.
+     for(let index=sample.segmentIndex;index<path.segments.length;index++){
+      const segment=path.segments[index];if(segment.start>=end-EPSILON)break;
+      const from=Math.max(start,segment.start),to=Math.min(end,segment.end);if(to-from<=EPSILON)continue;
+      const {line,offset,sign}=segments[index],a=offset+sign*(from-segment.start),b=offset+sign*(to-segment.start);
+      const slot=line.spans.length,span=line.pool[slot]||(line.pool[slot]={start:0,end:0});span.start=Math.min(a,b);span.end=Math.max(a,b);line.spans.push(span);
+     }
+    }
+   }
+   for(const line of layout.lines){
+    if(!line.spans.length)continue;
+    line.spans.sort((a,b)=>a.start-b.start||a.end-b.end);
+    let start=line.spans[0].start,end=line.spans[0].end;
+    for(let i=1;i<=line.spans.length;i++){
+     const next=line.spans[i];
+     if(next&&next.start<=end+EPSILON){end=Math.max(end,next.end);continue;}
+     const centre=(start+end)/2;
+     position.set(...line.origin);for(let axis=0;axis<3;axis++)position.setComponent(axis,position.getComponent(axis)+line.direction[axis]*centre);
+     scale.set(style.radius,(end-start)/3,style.radius);matrix.compose(position,line.rotation,scale);mesh.setMatrixAt(count++,matrix);
+     if(next){start=next.start;end=next.end;}
     }
    }
    mesh.count=count;mesh.instanceMatrix.needsUpdate=true;counts[kind]=count;samples[kind]=preview;

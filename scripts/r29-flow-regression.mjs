@@ -11,6 +11,23 @@ function check(name,run){run();checks++;console.log('PASS '+name);}
 const close=(actual,expected)=>assert.ok(Math.abs(actual-expected)<1e-6,actual+' != '+expected);
 const pointClose=(actual,expected)=>actual.forEach((v,i)=>close(v,expected[i]));
 const makeGroups=()=>({plumbing:new THREE.Group(),electrical:new THREE.Group()});
+const flowMesh=(groups,kind)=>{
+ let mesh;for(const group of Object.values(groups))group.traverse(object=>{if(object.isInstancedMesh&&object.name===kind+' · moving flow')mesh=object;});
+ assert.ok(mesh,'Missing '+kind+' flow mesh');return mesh;
+};
+function fragments(mesh){
+ const matrix=new THREE.Matrix4(),result=[];
+ for(let i=0;i<mesh.count;i++){
+  mesh.getMatrixAt(i,matrix);assert.ok(matrix.elements.every(Number.isFinite));
+  const start=new THREE.Vector3(0,-1.5,0).applyMatrix4(matrix),end=new THREE.Vector3(0,1.5,0).applyMatrix4(matrix);
+  result.push({start,end,length:start.distanceTo(end)});
+ }
+ return result;
+}
+function onSegment(point,segment){
+ const from=new THREE.Vector3(...segment.a),tangent=new THREE.Vector3(...segment.tangent),relative=point.clone().sub(from),along=relative.dot(tangent);
+ return along>=-1e-6&&along<=segment.length+1e-6&&relative.addScaledVector(tangent,-along).length()<1e-6;
+}
 
 check('Transparent casings merge overlapping trunks without bridging gaps',()=>{
  const routes=[[[0,0,0],[0,0,3]],[[0,0,1],[0,0,4]],[[0,0,7],[0,0,6]],[[0,0,2],[1,0,2]]],before=JSON.stringify(routes);
@@ -35,6 +52,37 @@ check('Arc-length sampling stays uniform across an L bend and skips zero segment
  const reverse=compileFlowPath(source,{reverse:true});pointClose(sampleFlowPath(reverse,0).position,[2,3,0]);pointClose(sampleFlowPath(reverse,5).position,[0,0,0]);
 });
 
+check('Packets conserve illuminated length through L bends and endpoint transitions',()=>{
+ for(const [kind,spacing,length]of [['cold',.45,.16],['hot',.45,.16],['drain',.52,.20],['electrical',.60,.28]]){
+  const groups=makeGroups(),points=[[0,0,0],[spacing,0,0],[spacing,spacing,0]],path=compileFlowPath(points),route={id:'bend',kind,points};
+  const network={water:kind==='electrical'?[]:[route],electrical:kind==='electrical'?[route]:[]},flow=createServiceFlow({network,groups}),mesh=flowMesh(groups,kind);
+  const corner=new THREE.Vector3(spacing,0,0),initial=fragments(mesh),atCorner=initial.filter(fragment=>Math.min(fragment.start.distanceTo(corner),fragment.end.distanceTo(corner))<1e-6);
+  assert.equal(atCorner.length,2,'A '+kind+' packet at the bend must occupy both adjoining segments');
+  close(atCorner.reduce((sum,fragment)=>sum+fragment.length,0),length);
+  for(let i=0;i<145;i++){
+   const visible=fragments(mesh);close(visible.reduce((sum,fragment)=>sum+fragment.length,0),length*2);
+   for(const fragment of visible)assert.ok(path.segments.some(segment=>onSegment(fragment.start,segment)&&onSegment(fragment.end,segment)),'Fragment leaves its straight pipe segment');
+   flow.update(.01,{view:kind==='electrical'?'electrical':'plumbing'});
+  }
+  flow.dispose();
+ }
+});
+
+check('Short and diagonal segments retain finite aligned fragments within fixed capacity',()=>{
+ const points=[[0,0,0],[.03,0,0],[.03,.02,0],[.03,.02,.04],[.08,.07,.09],[.08,.12,.09]],groups=makeGroups(),network={water:['cold','drain'].map(kind=>({id:kind,kind,points})),electrical:[{id:'wire',points}]},routes=compileFlowRoutes(network),flow=createServiceFlow({network,groups}),capacities={};
+ for(const kind of ['cold','drain','electrical'])capacities[kind]=flowMesh(groups,kind).instanceMatrix.count;
+ for(let i=0;i<100;i++){
+  for(const view of ['plumbing','electrical'])flow.update(.017,{view,speed:3});
+  for(const kind of ['cold','drain','electrical']){
+   const mesh=flowMesh(groups,kind);assert.equal(mesh.instanceMatrix.count,capacities[kind]);assert.ok(mesh.count<=capacities[kind]);
+   for(const fragment of fragments(mesh)){
+    assert.ok(fragment.length>0);assert.ok(routes[kind][0].segments.some(segment=>onSegment(fragment.start,segment)&&onSegment(fragment.end,segment)),'Misaligned or out-of-bounds '+kind+' fragment');
+   }
+  }
+ }
+ flow.dispose();
+});
+
 check('Degenerate paths stay finite; malformed coordinates are rejected',()=>{
  for(const points of [[],[[1,2,3]],[[1,2,3],[1,2,3]]]){const path=compileFlowPath(points);assert.equal(path.length,0);assert.ok(sampleFlowPath(path,NaN).position.every(Number.isFinite));}
  assert.throws(()=>compileFlowPath([[0,Infinity,0]]),TypeError);
@@ -52,6 +100,18 @@ check('Shared trunks deduplicate packets; independent branches remain visible',(
   const single=createServiceFlow({network:{water:[common],electrical:[]},groups:makeGroups()}),duplicate=createServiceFlow({network:{water:[common,common],electrical:[]},groups:makeGroups()}),branched=createServiceFlow({network:{water:[common,branch],electrical:[]},groups:makeGroups()});
   for(let i=0;i<10;i++){for(const flow of [single,duplicate,branched])flow.update(.07,{view:'plumbing'});assert.equal(single.snapshot().counts[kind],duplicate.snapshot().counts[kind]);assert.ok(branched.snapshot().counts[kind]>single.snapshot().counts[kind]);}
   for(const flow of [single,duplicate,branched])flow.dispose();
+ }
+});
+
+check('Partial packet fragments on shared trunks merge at branch junctions',()=>{
+ for(const kind of ['cold','drain']){
+  const groups=makeGroups(),network={water:[{id:'main',kind,points:[[0,0,0],[0,0,.9]]},{id:'branch',kind,points:[[0,0,0],[0,0,.45],[.45,0,.45]]}],electrical:[]},flow=createServiceFlow({network,groups}),mesh=flowMesh(groups,kind);
+  for(let step=0;step<100;step++){
+   const trunk=fragments(mesh).filter(fragment=>Math.abs(fragment.start.x)<1e-6&&Math.abs(fragment.end.x)<1e-6).map(fragment=>[Math.min(fragment.start.z,fragment.end.z),Math.max(fragment.start.z,fragment.end.z)]).sort((a,b)=>a[0]-b[0]);
+   for(let i=1;i<trunk.length;i++)assert.ok(trunk[i][0]>=trunk[i-1][1]-1e-6,'Shared trunk receives overlapping illuminated fragments');
+   flow.update(.013,{view:'plumbing'});
+  }
+  flow.dispose();
  }
 });
 

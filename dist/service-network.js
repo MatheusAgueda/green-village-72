@@ -80,12 +80,16 @@ export function renderServiceNetwork({plan,groups,mesh,box,pipe,plain}){
  for(const [kind,p]of Object.entries(network.origins)){
   sphere(groups.plumbing,p,kind==='drain'?.061:.05,m[kind],kind+' · ligação exterior proposta');
  }
- const p=network.panel;
+ const p=network.panel,junctionBoxes=new Set();
  box(groups.electrical,.10,.39,.30,...p,m.box,'Quadro eléctrico · localização proposta',.008);
  for(let i=0;i<5;i++)box(groups.electrical,.02,.075,.031,p[0]-Math.sign(p[0])*.062,p[1],p[2]-.1+i*.05,m.dark,'Disjuntor ilustrativo');
  for(const segment of serviceSegments(network.electrical.map(c=>c.points)))pipe(groups.electrical,segment,.019,m.conduit,'Conduta eléctrica · percurso ilustrativo');
  for(const c of network.electrical){route(groups.electrical,c,.019,m.conduit);
-  box(groups.electrical,.083,.037,.083,...c.junction,m.box,'Caixa de derivação');
+  const junctionKey=c.junction.map(value=>value.toFixed(6)).join(',');
+  if(!junctionBoxes.has(junctionKey)){
+   junctionBoxes.add(junctionKey);
+   box(groups.electrical,.083,.037,.083,...c.junction,m.box,'Caixa de derivação');
+  }
   if(c.kind==='light')sphere(groups.electrical,c.end,.071,m.light,'Ponto de iluminação');
   else {box(groups.electrical,.027,.095,.095,...c.end,m.box,c.kind==='socket'?'Tomada':'Interruptor',.004);
    if(c.kind==='socket')for(const dz of [-.016,.016])sphere(groups.electrical,[c.end[0]+.016,c.end[1],c.end[2]+dz],.008,m.dark,'Contacto da tomada');
