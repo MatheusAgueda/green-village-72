@@ -79,7 +79,15 @@ try{
  });
  await test('Missing HDR prevents incomplete ZIP and restores technical view and export controls',async()=>{
   const fallback=await browser.newPage({viewport:{width:1280,height:900}});let downloads=0;fallback.on('download',()=>downloads++);
-  try{await fallback.route('**/assets/scene-r35/*.hdr',r=>r.abort());await fallback.goto(url);await fallback.waitForFunction(()=>window.__GV);await fallback.evaluate(()=>window.__GV.ready());await fallback.evaluate(()=>window.__GV.focusRoom('bathroom'));const before=await fallback.evaluate(()=>window.__GV.detail().focus);await fallback.evaluate(()=>window.__GV.exportImageSet());assert.equal(downloads,0);assert.equal(await fallback.evaluate(()=>window.__GV.detail().focus),before);assert.equal(await fallback.locator('#export-progress').evaluate(d=>d.open),false);assert.ok(await fallback.locator('#toast').innerText());}finally{await fallback.close();}
+  try{
+   await fallback.route('**/assets/scene-r35/*.hdr',r=>r.abort());await fallback.goto(url);await fallback.waitForFunction(()=>window.__GV);
+   // Exercise the HDR-dependent garden explicitly; the default village uses its own backgrounds.
+   await fallback.locator('[data-presentation="environment"]').selectOption('garden');
+   const failed=await fallback.evaluate(()=>window.__GV.ready());assert.ok(failed.failures.length>0,'The garden HDR failure must be present before testing export recovery');
+   assert.equal(await fallback.evaluate(()=>window.__GV.presentation().selected.environment),'garden');
+   await fallback.evaluate(()=>window.__GV.focusRoom('bathroom'));const before=await fallback.evaluate(()=>window.__GV.detail().focus);
+   await fallback.evaluate(()=>window.__GV.exportImageSet());assert.equal(downloads,0);assert.equal(await fallback.evaluate(()=>window.__GV.detail().focus),before);assert.equal(await fallback.locator('#export-progress').evaluate(d=>d.open),false);assert.ok(await fallback.locator('#toast').innerText());
+  }finally{await fallback.close();}
  });
  assert.deepEqual(errors,[]);await fs.writeFile(out+'/result.json',JSON.stringify({url,checks,errors},null,2));
 }catch(error){await page.screenshot({path:out+'/failure.png'});await fs.writeFile(out+'/result.json',JSON.stringify({url,checks,errors,failure:error.stack},null,2));throw error;}finally{await browser.close();}

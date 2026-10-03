@@ -47,24 +47,45 @@ export function quoteLink(configuration){
 // A temporary native drawing buffer preserves the scene's environment and colour pipeline.
 // The interactive buffer is restored synchronously before the browser paints again.
 export async function renderCurrent4K({stage,ready,isCurrent,onProgress=()=>{}}){
+ return renderHighResolution({stage,ready,isCurrent,onProgress,width:3840,height:2160});
+}
+
+export async function renderHighResolution({stage,ready,isCurrent,onProgress=()=>{},width=3840,height=2160}){
+ if(!((width===3840&&height===2160)||(width===7680&&height===4320)))throw new Error('Escolha uma resolução nativa de 3 840 × 2 160 (4K) ou 7 680 × 4 320 (8K).');
+ const label=width===7680?'8K':'4K',dimensions=width===7680?'7 680 × 4 320':'3 840 × 2 160';
  onProgress(10,'A carregar os materiais…');const status=await ready();
  if(status?.failures?.length)throw new Error('Falta uma textura. Use Tentar texturas antes de exportar.');
  if(!isCurrent())throw new Error('A vista ou a configuração mudou. Tente novamente.');
  const r=stage.renderer,gl=r.getContext();if(gl.isContextLost())throw new Error('A ligação gráfica foi interrompida.');
- if(gl.getParameter(gl.MAX_RENDERBUFFER_SIZE)<3840||r.capabilities.maxTextureSize<3840)throw new Error('Este dispositivo não suporta o tamanho 4K. A galeria 4K continua disponível.');
- const size=r.getSize(new THREE.Vector2()),ratio=r.getPixelRatio(),camera=stage.camera.clone(),aspect=3840/2160;
+ const bufferLimit=gl.getParameter(gl.MAX_RENDERBUFFER_SIZE),viewportLimit=gl.getParameter(gl.MAX_VIEWPORT_DIMS);
+ if(bufferLimit<width||bufferLimit<height||r.capabilities.maxTextureSize<Math.max(width,height)||!viewportLimit||viewportLimit[0]<width||viewportLimit[1]<height)throw new Error(`Este dispositivo não suporta uma imagem ${label} nativa. ${label==='8K'?'Escolha a exportação 4K.':'A galeria 4K continua disponível.'}`);
+ const size=r.getSize(new THREE.Vector2()),ratio=r.getPixelRatio(),camera=stage.camera.clone(),aspect=width/height;
+ const viewport=r.getViewport(new THREE.Vector4()),scissor=r.getScissor(new THREE.Vector4()),scissorTest=r.getScissorTest();
+ const target=r.getRenderTarget(),cubeFace=r.getActiveCubeFace(),mipmapLevel=r.getActiveMipmapLevel();
  if(camera.isPerspectiveCamera){if(aspect<camera.aspect)camera.fov=THREE.MathUtils.radToDeg(2*Math.atan(Math.tan(THREE.MathUtils.degToRad(camera.fov)/2)*camera.aspect/aspect));camera.aspect=aspect;}
  else {const cx=(camera.left+camera.right)/2,cy=(camera.top+camera.bottom)/2;let w=camera.right-camera.left,h=camera.top-camera.bottom;if(w/h>aspect)h=w/aspect;else w=h*aspect;camera.left=cx-w/2;camera.right=cx+w/2;camera.top=cy+h/2;camera.bottom=cy-h/2;}
- camera.updateProjectionMatrix();camera.updateMatrixWorld(true);onProgress(45,'A renderizar 3 840 × 2 160…');
- let encoded;
- try{r.setPixelRatio(1);r.setSize(3840,2160,false);r.render(stage.scene,camera);
-  if(gl.isContextLost()||r.domElement.width!==3840||r.domElement.height!==2160)throw new Error('A memória gráfica não permitiu concluir a imagem 4K.');
+ camera.updateProjectionMatrix();camera.updateMatrixWorld(true);onProgress(45,`A renderizar ${dimensions}…`);
+ let encoded,failure;
+ try{r.setRenderTarget(null);r.setPixelRatio(1);r.setSize(width,height,false);r.setScissorTest(false);
+  if(gl.isContextLost()||gl.drawingBufferWidth!==width||gl.drawingBufferHeight!==height||r.domElement.width!==width||r.domElement.height!==height)throw new Error(`A memória gráfica não permitiu criar a imagem ${label} nativa. ${label==='8K'?'Experimente a exportação 4K.':'Tente novamente após fechar outras aplicações.'}`);
+  stage.prepareFrame?.(camera);r.render(stage.scene,camera);
+  if(gl.isContextLost())throw new Error(`A memória gráfica não permitiu concluir a imagem ${label}.`);
   encoded=new Promise((resolve,reject)=>r.domElement.toBlob(blob=>blob?resolve(blob):reject(new Error('Não foi possível codificar a imagem.')),'image/png'));
- }finally{r.setPixelRatio(ratio);r.setSize(size.x,size.y,false);if(!gl.isContextLost())stage.render();}
- onProgress(85,'A preparar o ficheiro…');const blob=await encoded;
+ }catch(error){failure=/^A memória gráfica/.test(error?.message)?error:new Error(`Não foi possível preparar a imagem ${label}. ${label==='8K'?'Experimente a exportação 4K.':'Tente novamente após voltar a abrir a apresentação.'}`,{cause:error});}
+ finally{
+  try{r.setPixelRatio(ratio);r.setSize(size.x,size.y,false);r.setRenderTarget(target,cubeFace,mipmapLevel);r.setViewport(viewport);r.setScissor(scissor);r.setScissorTest(scissorTest);if(!gl.isContextLost())stage.render();}
+  catch(error){failure??=new Error('Não foi possível repor a vista após a exportação. Volte a abrir a apresentação.',{cause:error});}
+ }
+ if(failure){encoded?.catch(()=>{});throw failure;}
+ onProgress(85,'A preparar o ficheiro…');
+ let blob;try{blob=await encoded;}catch(error){throw new Error(`Não foi possível codificar a imagem ${label}. Tente novamente.`,{cause:error});}
  if(!isCurrent())throw new Error('A configuração mudou durante a exportação. Tente novamente.');
- const header=new DataView(await blob.slice(16,24).arrayBuffer());if(header.getUint32(0)!==3840||header.getUint32(4)!==2160)throw new Error('A resolução produzida não corresponde a 4K.');
- onProgress(100,'Imagem 4K pronta.');return blob;
+ const bytes=new Uint8Array(await blob.slice(0,33).arrayBuffer()),signature=[137,80,78,71,13,10,26,10];
+ if(blob.type!=='image/png'||bytes.length<33||signature.some((value,index)=>bytes[index]!==value))throw new Error('O navegador não produziu uma imagem PNG válida.');
+ const header=new DataView(bytes.buffer,bytes.byteOffset,bytes.byteLength);
+ if(header.getUint32(8)!==13||header.getUint32(12)!==0x49484452||header.getUint32(16)!==width||header.getUint32(20)!==height)throw new Error(`A resolução produzida não corresponde a ${label} nativo. A imagem não foi guardada.`);
+ if(!isCurrent())throw new Error('A configuração mudou durante a exportação. Tente novamente.');
+ onProgress(100,`Imagem ${label} pronta.`);return blob;
 }
 
 export async function exportModelGLB(configuration,library,onProgress=()=>{}){

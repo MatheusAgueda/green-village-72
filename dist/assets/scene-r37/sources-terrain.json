@@ -1,0 +1,40 @@
+{
+  "provider": "Poly Haven",
+  "asset": "cobblestone_01",
+  "author": "Rob Tuytel",
+  "assetUrl": "https://polyhaven.com/a/cobblestone_01",
+  "metadataUrl": "https://api.polyhaven.com/info/cobblestone_01",
+  "fileMetadataUrl": "https://api.polyhaven.com/files/cobblestone_01",
+  "license": "CC0-1.0",
+  "licenseUrl": "https://polyhaven.com/license",
+  "retrieved": "2026-10-03",
+  "purpose": "Illustrative village presentation ground, not a survey of a Porto property or a product finish option.",
+  "processing": "Original provider JPEG files, unchanged; provider MD5 and file sizes verified after download.",
+  "totalBytes": 5461976,
+  "files": [
+    {
+      "file": "cobblestone_01_diff_2k.jpg",
+      "map": "Diffuse",
+      "resolution": [2048, 2048],
+      "bytes": 1922533,
+      "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/cobblestone_01/cobblestone_01_diff_2k.jpg",
+      "sha256": "c224786e89cae7e2835a8dfafa6473c47d4d6deac0cca1db358002b8b6c4877e"
+    },
+    {
+      "file": "cobblestone_01_nor_gl_2k.jpg",
+      "map": "Normal OpenGL",
+      "resolution": [2048, 2048],
+      "bytes": 1807924,
+      "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/cobblestone_01/cobblestone_01_nor_gl_2k.jpg",
+      "sha256": "665f11261d411359e05c5f6df5cf23a525215796d13a1bcda3ce8c97076ae76b"
+    },
+    {
+      "file": "cobblestone_01_rough_2k.jpg",
+      "map": "Roughness",
+      "resolution": [2048, 2048],
+      "bytes": 1731519,
+      "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/cobblestone_01/cobblestone_01_rough_2k.jpg",
+      "sha256": "6c4617c644879d64b8d73921a384faf3bfcdbc11f1688bef0ac8ea6b3df62268"
+    }
+  ]
+}

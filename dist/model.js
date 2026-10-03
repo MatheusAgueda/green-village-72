@@ -28,7 +28,7 @@ export function makeHouse(options={},library=null){
  if(openingOptions.some(h=>h.mosquito))M.screen=plain('Mosquiteiro · malha representativa','#3d443e',.8);
  if(selectedOption(state,'terrace'))M.terraceFrame=plain('Estrutura de terraço preta · aparência ilustrativa','#171b19',.46);
  M.panelInterior=installPanelJoints(plain('Painéis interiores · juntas estimadas',state.interior,.84));
- const glass=new THREE.MeshPhysicalMaterial({color:'#dce9e7',roughness:.06,metalness:0,transmission:.25,transparent:true,opacity:.34,ior:1.5,thickness:.006,envMapIntensity:.55,depthWrite:false});glass.name='Vidro · aparência ilustrativa';allMaterials.add(glass);M.glass=glass;
+ const glass=new THREE.MeshPhysicalMaterial({color:'#f3f7f5',roughness:.045,metalness:0,transmission:.96,transparent:false,opacity:1,ior:1.5,thickness:.006,envMapIntensity:1,depthWrite:true});glass.name='Vidro · aparência ilustrativa';allMaterials.add(glass);M.glass=glass;
  function mesh(g,geometry,material,name=''){allGeometry.add(geometry);const m=new THREE.Mesh(geometry,material);m.name=name;m.userData.layer=classifyLayer(g,material,name,M);m.castShadow=material!==glass;m.receiveShadow=true;g.add(m);return m;}
  function box(g,w,h,d,x,y,z,material,name='',bevel=0){if(w<=0||h<=0||d<=0)throw new Error('Dimensão não positiva em '+name);const geo=bevel?new RoundedBoxGeometry(w,h,d,2,Math.min(bevel,w/4,h/4,d/4)):new THREE.BoxGeometry(w,h,d);physicalUV(geo,[x,y,z]);const m=mesh(g,geo,material,name);m.position.set(x,y,z);return m;}
  function cylinder(g,r,h,x,y,z,material,name='',segments=14){const m=mesh(g,new THREE.CylinderGeometry(r,r,h,segments),material,name);m.position.set(x,y,z);return m;}

@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "revision": "R37",
+  "verifiedOn": "2026-10-03",
+  "scope": "Internal source, resolution and byte-budget ledger for the illustrative Porto-region village environment.",
+  "verification": {
+    "dimensions": "Decoded original image dimensions using Pillow; PNG source files were also visually inspected.",
+    "digests": "SHA-256 of the exact local files.",
+    "assetPaths": "Relative to the Green Village 72 project root."
+  },
+  "generatedSource": {
+    "tool": "OpenAI built-in image generation (image_gen__imagegen)",
+    "type": "Illustrative still images",
+    "geographicStatus": "Imagined village setting inspired by the Porto region; not a geolocated photograph, measured site survey or confirmed customer property.",
+    "people": "People are static figures baked into background images; these files contain no animated pedestrians.",
+    "rights": "Generated assets; not labelled as CC0.",
+    "resolutionLimit": "The four directional source images are 1254 × 1254 pixels each. The first panorama is 1774 × 887 pixels. These source images are not 6K or 8K photography. A native 8K model export does not increase their original photographic detail."
+  },
+  "generatedImages": [
+    {
+      "path": "dist/assets/scene-r37/village-north.png",
+      "role": "Directional background, north",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 3102989,
+      "sha256": "332446346ae88632cc0859ecd6c89834efb25d6f7f02af10e352ddbc0517bec4"
+    },
+    {
+      "path": "dist/assets/scene-r37/village-east.png",
+      "role": "Directional background, east",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 2972174,
+      "sha256": "2b8f9a5d2e5d6e5bbaf7a1041bb3e45263d173da6131767cc22ff7725aae0c18"
+    },
+    {
+      "path": "dist/assets/scene-r37/village-south.png",
+      "role": "Directional background, south",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 3398591,
+      "sha256": "49fb236cef003149a3d844fd067ede622456c07751c481c85a6a4b3f92b79f94"
+    },
+    {
+      "path": "dist/assets/scene-r37/village-west.png",
+      "role": "Directional background, west",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 3002615,
+      "sha256": "e01d61ca98779b1020c708fbff683c2b16c711a5a2ba9bf43bb0e954b4d5d302"
+    },
+    {
+      "path": "dist/assets/scene-r37/porto-village-panorama.png",
+      "role": "First illustrative panorama, retained source asset",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2772211,
+      "sha256": "07e60e599073b6ab6ee344780365453bea1d2e8341dfbca148883a78f408b9fb"
+    }
+  ],
+  "terrainSource": {
+    "ledger": "dist/assets/scene-r37/sources-terrain.json",
+    "provider": "Poly Haven",
+    "asset": "cobblestone_01",
+    "author": "Rob Tuytel",
+    "assetUrl": "https://polyhaven.com/a/cobblestone_01",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://polyhaven.com/license",
+    "purpose": "Illustrative village paving; not a priced home finish or measured customer-site surface."
+  },
+  "terrainImages": [
+    {
+      "path": "dist/assets/scene-r37/cobblestone_01_diff_2k.jpg",
+      "map": "Diffuse",
+      "width": 2048,
+      "height": 2048,
+      "bytes": 1922533,
+      "sha256": "c224786e89cae7e2835a8dfafa6473c47d4d6deac0cca1db358002b8b6c4877e"
+    },
+    {
+      "path": "dist/assets/scene-r37/cobblestone_01_nor_gl_2k.jpg",
+      "map": "Normal OpenGL",
+      "width": 2048,
+      "height": 2048,
+      "bytes": 1807924,
+      "sha256": "665f11261d411359e05c5f6df5cf23a525215796d13a1bcda3ce8c97076ae76b"
+    },
+    {
+      "path": "dist/assets/scene-r37/cobblestone_01_rough_2k.jpg",
+      "map": "Roughness",
+      "width": 2048,
+      "height": 2048,
+      "bytes": 1731519,
+      "sha256": "6c4617c644879d64b8d73921a384faf3bfcdbc11f1688bef0ac8ea6b3df62268"
+    }
+  ],
+  "byteBudget": {
+    "directionalBackgrounds": 12476369,
+    "terrainImages": 5461976,
+    "directionalBackgroundsAndTerrain": 17938345,
+    "firstPanorama": 2772211,
+    "allImageFilesInSceneR37": 20710556,
+    "units": "Bytes of the original compressed files. Excludes JSON metadata, HTTP headers and decoded GPU memory."
+  },
+  "runtimeNote": "This ledger inventories source files. It does not assert that every listed file is requested in every camera view."
+}

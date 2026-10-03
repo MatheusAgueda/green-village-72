@@ -13,6 +13,8 @@ const [THREE, {makeHouse}, {DEFAULT_CONFIG}] = await Promise.all([
 ]);
 const app = fs.readFileSync(path.join(root, 'dist/app.js'), 'utf8');
 const {createLandscape}=await load('landscape.js');
+const {createVillage}=await load('village.js');
+const {createVillageBackdrop,disposeBackdrop,fitVillageBackdrop,VILLAGE_FACES}=await load('village-backdrop.js');
 const stageSource = fs.readFileSync(path.join(root, 'dist/stage.js'), 'utf8')
   .replace(/^import .*;\n/gm, '')
   .replace('export function', 'function');
@@ -41,7 +43,7 @@ await check('Exploded floor layers remain above the stage ground after camera se
     dispose() {}
   }
   const ctx = {
-    createLandscape,
+    createLandscape, createVillage, createVillageBackdrop, disposeBackdrop, fitVillageBackdrop, VILLAGE_FACES,
     THREE: {...THREE, WebGLRenderer: Renderer, PMREMGenerator: PMREM},
     RoomEnvironment: class { dispose() {} },
     exporting: false, walker: null, roomFocus: null, cameraPreset: 'perspective',

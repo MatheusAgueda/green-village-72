@@ -5,10 +5,11 @@ import vm from 'node:vm';
 import {fileURLToPath, pathToFileURL} from 'node:url';
 
 // Exercise the actual stage state machine with real Three objects. Only WebGL,
-// the asynchronous HDR transport, and landscape asset loading are controlled.
+// the asynchronous HDR transport, and surroundings asset loading are controlled.
 const root = path.resolve(process.argv[2] || fileURLToPath(new URL('..', import.meta.url)));
 const THREE = await import(pathToFileURL(path.join(root, 'dist/vendor/three.module.js')).href);
 const {GroundedSkybox} = await import(pathToFileURL(path.join(root, 'dist/vendor/GroundedSkybox.js')).href);
+const {createVillageBackdrop, disposeBackdrop, fitVillageBackdrop, VILLAGE_FACES} = await import(pathToFileURL(path.join(root, 'dist/village-backdrop.js')).href);
 const source = fs.readFileSync(path.join(root, 'dist/stage.js'), 'utf8')
   .replace(/^import .*;\n/gm, '')
   .replace('export function', 'function');
@@ -31,16 +32,17 @@ function hdrTexture() {
   return {texture, disposals: () => disposals};
 }
 
-function fixture({browser = true, landscapePending = false, pmremFailure = false} = {}) {
+function fixture({browser = true, landscapePending = false, pmremFailure = false, maxTextureSize = 8192} = {}) {
   const requests = [], landscapeLoad = deferred();
-  const events = {renderer: 0, studio: 0, hdr: 0, landscape: 0, callbacks: 0, renders: 0, pmrem: 0};
+  const events = {renderer: 0, studio: 0, hdr: 0, landscape: 0, village: 0, callbacks: 0, renders: 0, pmrem: 0};
   const studioTexture = new THREE.Texture(), environmentTexture = new THREE.Texture();
   const landscapeState = {visible: false, ready: !landscapePending, pending: landscapePending ? 1 : 0, failures: []};
   if (!landscapePending) landscapeLoad.resolve();
   class Renderer {
-    constructor() {this.shadowMap = {};}
+    constructor() {this.shadowMap = {}; this.ratio = 1; this.capabilities = {maxTextureSize};}
     setSize() {}
-    setPixelRatio() {}
+    setPixelRatio(value) {this.ratio = value;}
+    getPixelRatio() {return this.ratio;}
     render() {events.renders++;}
     dispose() {events.renderer++;}
   }
@@ -60,12 +62,21 @@ function fixture({browser = true, landscapePending = false, pmremFailure = false
     RoomEnvironment: class {dispose() {}},
     HDRLoader,
     GroundedSkybox,
+    createVillageBackdrop, disposeBackdrop, fitVillageBackdrop, VILLAGE_FACES,
     createLandscape(scene, ground, options) {
       return {
         setVisible(value) {landscapeState.visible = value;},
         status: () => ({...landscapeState}),
         ready: () => landscapeLoad.promise,
         dispose() {events.landscape++;},
+      };
+    },
+    createVillage() {
+      return {
+        setVisible() {}, setEntrance() {},
+        status: () => ({ready: true, failures: []}),
+        ready: async () => ({failures: []}),
+        dispose() {events.village++;},
       };
     },
     ...(browser ? {document: {}} : {}),
@@ -247,6 +258,30 @@ await check('Repeated disposal releases a loaded HDR and each owned target exact
   assert.equal(f.events.renderer, 1); assert.equal(f.events.landscape, 1); assert.equal(f.events.renders, 1);
   assert.equal(geometryDisposals, 1); assert.equal(materialDisposals, 1); assert.equal(backdrop.parent, null);
   return {HDRTexture: 1, HDRTarget: 1, studioTarget: 1, renderer: 1, landscape: 1, backdropGeometry: 1, backdropMaterial: 1};
+});
+
+await check('R37 display density improves desktop and mobile clarity within the pixel budget', () => {
+  const cases = [
+    {width: 1280, height: 720, device: 1, expected: 1.5},
+    {width: 1440, height: 900, device: 2, expected: 2},
+    {width: 390, height: 844, device: 1, expected: 1.25},
+    {width: 2560, height: 1440, device: 2, expected: Math.sqrt(6000000 / (2560 * 1440))},
+  ];
+  for (const {width, height, device, expected} of cases) {
+    const f = fixture({browser: false}), stage = f.stage({width, height, pixelRatio: device});
+    try {
+      assert.equal(stage.renderer.getPixelRatio(), expected);
+      assert.ok(width * height * expected ** 2 <= 6000000 + 1e-6);
+      assert.equal(stage.presentationStatus().definition.shadowMap, 4096);
+      stage.resize(390, 844, 1);
+      assert.equal(stage.renderer.getPixelRatio(), 1.25, 'Resize reapplies the correct display density');
+    } finally {stage.dispose();}
+    assert.equal(f.events.village, 1, 'The added surroundings dependency is disposed with the stage');
+  }
+  const limited = fixture({browser: false, maxTextureSize: 2048}), stage = limited.stage();
+  try {assert.equal(stage.presentationStatus().definition.shadowMap, 2048, 'Shadow size respects device support');}
+  finally {stage.dispose();}
+  return {cases: cases.length, desktopRatio: 1.5, mobileRatio: 1.25, pixelBudget: 6000000, shadowSize: 4096, limitedShadowSize: 2048};
 });
 
 console.log(JSON.stringify({root, passed: results.filter(result => result.pass).length, total: results.length, results}, null, 2));

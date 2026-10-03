@@ -54,7 +54,17 @@ export function createMaterialLibrary(onLoad=()=>{},limit=18){
  function create(id,fallback,surface,{mode='source',unlit=false}={}){
   const entry=materialById(id),material=new THREE.MeshStandardMaterial({color:entry?.previewHexApprox||fallback,roughness:entry?.render.roughnessApprox??.65,metalness:entry?.render.metalnessApprox??0});
   material.name=id||surface;material.toneMapped=!unlit;if(unlit){material.onBeforeCompile=shader=>{shader.fragmentShader=shader.fragmentShader.replace('#include <opaque_fragment>','outgoingLight = diffuseColor.rgb;\n#include <opaque_fragment>');};material.customProgramCacheKey=()=> 'gv-source-unlit';}material.userData={surface,materialId:id,sourceStatus:entry?'catalogue-photo':'visualisation-palette',textureMode:mode,unlit};
-  if(entry&&(mode==='source'||entry.render.mode==='original-crop-texture')){
+  // Uniform finish photographs contain lighting, not a repeatable printed pattern.
+  // Keep their recorded sampled colour on the building and the intact photograph
+  // in the source/comparison view. This does not change the selected finish.
+  const uniformExterior=surface==='exterior_wall'&&entry?.render.mode==='sampled-colour';
+  if(uniformExterior)material.userData.surfaceRepresentation={
+   mode:'uniform-sampled-colour',colour:entry.previewHexApprox,
+   referenceAsset:referenceCropAsset(entry.id),originalAsset:materialAsset(entry.originalAsset),
+   status:'photograph-sampled-approximation-not-measured-product-colour',
+   note:'Photographic lighting is not repeated across the building. Original reference image retained.'
+  };
+  if(entry&&!uniformExterior&&(mode==='source'||entry.render.mode==='original-crop-texture')){
    const tx=load(entry,mode);
    if(tx){material.map=tx;material.color.set('#ffffff');cache.get(entry.id+':'+mode).references++;material.userData.lease=entry.id+':'+mode;const photo=photoTreatmentById(id);if(mode==='prepared'&&photo?.boardDimensionsM)installPhotoPlanks(material,tx,photo);if(mode==='prepared'&&photo?.profileRecommended)installPanelProfile(material,photo.panelProfile);}
   }
