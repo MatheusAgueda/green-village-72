@@ -540,6 +540,7 @@ function translateKnown(key,lang,depth){
 }
 
 const ptOriginals=new WeakMap();
+const elementTextSources=new WeakMap();
 const attributeOriginals=new WeakMap();
 const ATTRIBUTES=['aria-label','title','alt','placeholder','label'];
 const PRIVATE_TEXT='script,style,code,input,textarea,[contenteditable]:not([contenteditable="false"]),[translate="no"],[data-i18n="off"],.client-preserve-lines,.client-summary > h3,.client-summary dl dd,.client-request > strong,.client-request > p:not(:last-child)';
@@ -554,10 +555,10 @@ function collectTextNodes(root){
   return nodes;
 }
 
-function originalRecord(store,key,current){
+function originalRecord(store,key,current,knownSource=null){
  const previous=store.get(key);
  if(previous&&(current===previous.last||current===previous.source))return previous;
- const record={source:current,last:current};store.set(key,record);return record;
+ const record={source:knownSource??current,last:current};store.set(key,record);return record;
 }
 
 function translateFileLabel(source){
@@ -570,9 +571,17 @@ export function translateDOM(root=document){
   for(const node of collectTextNodes(root)){
     const parent=node.parentElement;
     if(!parent||parent.closest(PRIVATE_TEXT))continue;
-    const record=originalRecord(ptOriginals,node,node.nodeValue);
+    // textContent replaces the Text node when a view restores a translated caption.
+    // Retain only sources already rendered in this element, without guessing globally.
+    let sources=elementTextSources.get(parent);
+    if(!sources){sources=new Map();elementTextSources.set(parent,sources);}
+    const record=originalRecord(ptOriginals,node,node.nodeValue,sources.get(node.nodeValue));
     const fileLabel=parent.matches('.client-attachment > strong,.client-attachment .project-field > span');
     record.last=language==='pt'?record.source:fileLabel?translateFileLabel(record.source):translateText(record.source,language);
+    for(const value of [record.source,record.last]){
+      if(!sources.has(value))sources.set(value,record.source);
+      else if(sources.get(value)!==record.source)sources.set(value,null);
+    }
     if(node.nodeValue!==record.last)node.nodeValue=record.last;
   }
   const elements=root.nodeType===1?[root,...root.querySelectorAll('*')]:root.querySelectorAll?[...root.querySelectorAll('*')]:[];

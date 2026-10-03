@@ -76,6 +76,7 @@ await check('Viewport resize during export is applied when export ends', async (
   const ctx = {
     stage: {camera: {aspect: 1.6}, resize(w, h) {this.camera.aspect = w / h; sizes.push([w, h]);}},
     exporting: false, currentPage: 'studio', roomFocus: null, house: null, walker: null,
+    presentationMode: null, pauseVisit() {}, cameraFlight: {cancel() {}},
     controls: {enabled: true, enableDamping: true, update() {}},
     viewport: {getBoundingClientRect: () => ({...rect})}, matchMedia: () => ({matches: false}),
     requestRender() {}, stopAnimation() {}, syncHistory() {},
