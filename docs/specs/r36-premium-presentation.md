@@ -10,12 +10,12 @@ Use local browser rendering and existing assets; no paid provider calls or specu
 
 ## Acceptance criteria
 
-- [ ] AC1: WHEN presentation mode opens THE SYSTEM SHALL expand the existing interactive canvas and provide accessible exit, view, light, playback and image controls without creating another renderer or changing the priced configuration.
-- [ ] AC2: WHEN a guided visit plays THE SYSTEM SHALL move through exterior, garden, overview and available interior views, pause on manual interaction or hidden documents, honour reduced motion and restore the prior visual state and focus on exit.
-- [ ] AC3: WHEN the client downloads the image set THE SYSTEM SHALL produce one ZIP containing three native 3840 × 2160 PNG views and a configuration manifest, await resources and restore the original view and controls on success or failure.
-- [ ] AC4: WHEN the image set is created THE SYSTEM SHALL include only validated public configuration data and exclude private client names, contacts, attachments and notes.
-- [ ] AC5: WHEN the portfolio is viewed on desktop or mobile THE SYSTEM SHALL use a compact commercial hierarchy, preserve model and customization access and show new presentation controls in PT, EN and ES without horizontal overflow.
-- [ ] AC6: WHEN the updated site is validated THE SYSTEM SHALL retain working windows, original catalogue prices, client PDF/export boundaries and neutral technical diagrams, with the published assets matching the reviewed release.
+- [x] AC1: WHEN presentation mode opens THE SYSTEM SHALL expand the existing interactive canvas and provide accessible exit, view, light, playback and image controls without creating another renderer or changing the priced configuration.
+- [x] AC2: WHEN a guided visit plays THE SYSTEM SHALL move through exterior, garden, overview and available interior views, pause on manual interaction or hidden documents, honour reduced motion and restore the prior visual state and focus on exit.
+- [x] AC3: WHEN the client downloads the image set THE SYSTEM SHALL produce one ZIP containing three native 3840 × 2160 PNG views and a configuration manifest, await resources and restore the original view and controls on success or failure.
+- [x] AC4: WHEN the image set is created THE SYSTEM SHALL include only validated public configuration data and exclude private client names, contacts, attachments and notes.
+- [x] AC5: WHEN the portfolio is viewed on desktop or mobile THE SYSTEM SHALL use a compact commercial hierarchy, preserve model and customization access and show new presentation controls in PT, EN and ES without horizontal overflow.
+- [x] AC6: WHEN the updated site is validated THE SYSTEM SHALL retain working windows, original catalogue prices, client PDF/export boundaries and neutral technical diagrams, with the published assets matching the reviewed release.
 
 ## Test map
 
