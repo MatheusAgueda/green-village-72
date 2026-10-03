@@ -15,7 +15,7 @@ Original panoramic village backdrop with distant pedestrians, shops, cafe and Po
 - [x] AC3: WHEN the module is displayed THE SYSTEM SHALL use bounded high-density rendering and sharper contact shadows without breaking responsive interaction or neutral technical views.
 - [x] AC4: WHEN8K export is selected THE SYSTEM SHALL render and verify7680×4320nativepixels or report an explicit device limitation, never silently upscale, and restore the interactive renderer.
 - [x] AC5: WHEN a customer changes languages or opens the presentation THE SYSTEM SHALL show correct PT/EN/ES setting and image controls, keep prices, openings and private data boundaries unchanged.
-- [ ] AC6: WHEN released THE SYSTEM SHALL pass browser/visual and core/options regression and serve reviewed asset hashes publicly.
+- [x] AC6: WHEN released THE SYSTEM SHALL pass browser/visual and core/options regression and serve reviewed asset hashes publicly.
 
 ## Test map
 

@@ -1,0 +1,13 @@
+{
+  "checks": [
+    "The window action is visible with the article, above the sidebar footer",
+    "Cancel does not charge; applying a location changes the model and the price together",
+    "An assigned window can be opened and closed from its own control",
+    "Assignment survives reload, undo and redo without a duplicate charge",
+    "Every window type applies to the chosen location and has a working opening control",
+    "Unassigned requests remain explicit and can be assigned later without losing quantity",
+    "Short desktop, tablet and phone: apply button is unobstructed and the model becomes visible",
+    "English and Spanish window editor controls and locations are translated"
+  ],
+  "errors": []
+}

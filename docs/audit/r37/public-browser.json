@@ -1,0 +1,14 @@
+{
+  "url": "https://matheusagueda.github.io/green-village-72/?v=r37",
+  "checks": [
+    "Default village and original model load with all local resources and high-density rendering",
+    "Village garden and studio remain independent of priced configuration",
+    "Water electricity and interior details retain clear neutral backgrounds",
+    "Actual native8K house download restores renderer and configuration",
+    "All openings still operate after the physical-glass change and 8K export",
+    "Immersive village and eight-k controls translate and fit desktop tablet and phone",
+    "Unavailable porto-village-panorama.png blocks incomplete export and studio remains usable",
+    "Unavailable village-north.png blocks incomplete export and studio remains usable"
+  ],
+  "errors": []
+}

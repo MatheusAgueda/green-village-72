@@ -41,3 +41,9 @@ No catalogue prices, commercial terms, client data boundaries or product layout 
 ## Publication
 
 Release prepared from clean public main `f134b4cd4227db428463b929aeb4d64ba8d0b6c5`. Only the reviewed R37 module/assets/test/documentation delta is copied; unrelated dirty source files and unused R35 trial assets are excluded. Public verification is recorded separately after deployment.
+
+Application commit `b2f213a100910b1240e154f617b479033c0f83d5` was published on 2026-10-03. Pages run `37085317588` completed successfully. Public entry: https://matheusagueda.github.io/green-village-72/?v=r37 .
+
+Public verification confirmed HTTP200 for the root and all65checked application resources, including54unique import-map targets, with exact SHA256 matches. All8R37 browser scenarios passed on the public URL, without page or shader errors. The public site produced a real7680×4320PNG of53,663,589bytes and restored the canvas. Evidence: `audit/r37/publication.json`, `audit/r37/public-browser/result.json`, `audit/r37/public-browser/8k.json`.
+
+The independent public window suite passed8/8scenarios with zero page errors. Fresh public desktop/phone captures confirmed the new village (not the earlier meadow), complete street figures and both8Kbuttons. Evidence: `audit/r37/public-windows/result.json`, `audit/r37/public-visual/`. Small public verification receipts are copied beside this report in `r37/`.
