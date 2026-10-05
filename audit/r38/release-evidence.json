@@ -16,6 +16,6 @@
   "exportPixels": [7680,4320],
   "photoBackgroundPixels": [8192,4096],
   "villageBackgroundPixels": [1774,887],
-  "publicVerification": "pending",
+  "publicVerification": {"status":"passed","appCommit":"fa6d98cd9790e9fdd9cc1fef608f5fe68d80f1b5","http":200,"matchingResources":65,"moduleTargets":58,"browserGroups":8},
   "limitations": ["Porto-inspired village is illustrative", "Photographic square depicts Palermo", "Product remains a configurable 3D model", "Source uncertainties remain documented"]
 }

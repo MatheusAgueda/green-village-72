@@ -3,7 +3,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import {homedir} from 'node:os';
 const {chromium}=await import(path.join(homedir(),'.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright/index.mjs'));
-const out='audit/r38/scene',url=process.env.AUDIT_URL||'http://127.0.0.1:4196/?v=r38';
+const out=process.env.AUDIT_OUTPUT||'audit/r38/scene',url=process.env.AUDIT_URL||'http://127.0.0.1:4196/?v=r38';
 await fs.mkdir(out,{recursive:true});
 const browser=await chromium.launch({headless:true,executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'});
 const page=await browser.newPage({viewport:{width:1440,height:1000},acceptDownloads:true});

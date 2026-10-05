@@ -17,7 +17,7 @@ Visual corrections must preserve the configurable product, geometry, sources and
 - [x] AC3: WHEN external scenes are viewed THE SYSTEM SHALL avoid duplicated photographic seams, cut-off scenery and camera-dependent foreground overlap; the configured house remains interactive and sharply rendered.
 - [x] AC4: WHEN commercial information is audited THE SYSTEM SHALL retain the verified current values and clearly separate standard inclusions, paid options and unresolved facts, with no invented manufacturer claims.
 - [x] AC5: WHEN customers operate windows, doors, expansion, utility views, save/undo/share or export THE SYSTEM SHALL preserve their intended configuration and recover gracefully from failures.
-- [ ] AC6: WHEN released THE SYSTEM SHALL pass the documented regression/browser/PDF/visual checks and serve the reviewed assets publicly from clean current main.
+- [x] AC6: WHEN released THE SYSTEM SHALL pass the documented regression/browser/PDF/visual checks and serve the reviewed assets publicly from clean current main.
 
 ## Test map
 

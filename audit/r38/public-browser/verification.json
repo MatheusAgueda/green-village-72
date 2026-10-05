@@ -1,0 +1,14 @@
+{
+  "url": "https://matheusagueda.github.io/green-village-72/?v=r38-public",
+  "checks": [
+    "Continuous village loads and all four orbit quadrants render",
+    "Licensed 8K photograph with HDR lighting is separately labelled Palermo",
+    "Native 8K export preserves camera, display buffer and configuration",
+    "All openings and clear utility circuits survive background changes",
+    "All four surroundings and light preferences leave the quotation unchanged",
+    "Returning from an elevation preserves the panoramic camera far plane",
+    "Five languages and immersive layout fit mobile tablet and desktop",
+    "Missing photograph blocks incomplete export and studio remains usable"
+  ],
+  "errors": []
+}

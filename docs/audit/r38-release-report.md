@@ -26,7 +26,7 @@ Revisão executada em 05/10/2026 sobre uma cópia limpa do `main` público. O pr
 | Cenário | Testes de projecção, recursos, descarte, vistas técnicas, mudanças de cenário, cinco idiomas e falhas de carregamento no navegador |
 | Exportação | PNG nativo 7 680 × 4 320 descarregado; buffer interactivo e configuração restaurados; 9 grupos da API de exportação |
 
-Os resultados iniciais que detectaram defeitos foram conservados, juntamente com os testes posteriores às correcções. A publicação terá um recibo próprio de HTTP e comparação de hashes dos módulos e recursos servidos.
+Os resultados iniciais que detectaram defeitos foram conservados, juntamente com os testes posteriores às correcções. A publicação do código `fa6d98c` foi concluída no GitHub Pages: HTTP 200 e 65 recursos com hashes iguais, incluindo 58 destinos de módulos. A ronda real no endereço público passou os oito grupos de cenário, controlos, idiomas, exportação e recuperação. Recibos: `audit/r38/publication.json` e `audit/r38/public-browser/verification.json`.
 
 ## Informação comercial preservada
 
