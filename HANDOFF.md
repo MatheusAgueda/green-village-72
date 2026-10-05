@@ -1,3 +1,13 @@
+## R38 — current integration, 5 October 2026
+
+Release workspace: `/Users/claraazevedo/Documents/green-village-72-r38`, clean clone of public main96babd3. French and Italian added; EN/ES residual authored text corrected. Five accessible language controls,1287 messages per target language, dynamic UI, SVG/PDF/ZIP and error feedback; customer-authored text remains private and unchanged. Full details: `docs/audit/r38-release-report.md` and `docs/audit/r38-information-audit.md`.
+
+Stage uses one continuous panorama. Village is still illustrative (1774×887 source), not a surveyed Porto site. Optional Palermo CC0 photograph8192×4096 with2K HDR has a separate label. Camera far plane400 persists through perspective switching; failure reporting identifies the actual file. Mobile immersive chapter buttons use3×2 grid and readable note. House remains a configurable model; no100percent-photographic claim.
+
+Current source ledger exports27options+SPC. Missing VAT for newer requests remains null; no fabricated23percent assertion. Commercial values and original kitchen14/bath17 preserved. Fresh checks:47general,7007expansion+7007deployment poses,142UIscenarios,8language groups,29private-client cases,8scene/browser groups and actualnative8KPNG. Source/price/PDF receipts are under audit/r38. Public HTTP/hash verification is pending until the publication step; do not describe this integration as public before that receipt exists.
+
+The sections below are historical records, not current verification.
+
 ## R16 — project audit and corrections, 13 September 2026
 
 Latest policy: YouTube audio is AVAILABLE (overrides R15 forced silence). User volume/mute preferences persist; source-time controls retain start945/492s. Local MP4s and downloads remain silent. Removed active video `visita-modulo-exposicao` and its public MP4/poster. Eight reference records now: two YouTube + six local; 15 distributed MP4s preserve verified R14 bytes.

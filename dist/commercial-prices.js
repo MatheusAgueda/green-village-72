@@ -15,6 +15,7 @@ export function currentCataloguePrice(documentaryId) {
   const updated=itemById(id);
   if(['glass-front','glass-side-full'].includes(id))return {id,value:updated.priceCents/100,currency:'EUR',vatIncluded:null,vatRatePercent:null,edition:'2026-10-02',source:updated.commercialSource,revisionCommit:null};
   const item = DATA.options.find(item => item.id === id);
+  if(!item&&updated)return {id,value:updated.priceCents==null?null:updated.priceCents/100,currency:'EUR',vatIncluded:updated.vatIncluded??null,vatRatePercent:null,edition:'2026-09-26',source:updated.commercialSource,revisionCommit:null};
   if (!item) throw new Error('Artigo sem correspondência na tabela actual: ' + documentaryId);
   return {id, value: item.priceEurVatIncluded, currency: 'EUR', vatIncluded: true,
     vatRatePercent: 23, edition: DATA.edition, source: 'Tabela PVP Green Village',

@@ -1,0 +1,52 @@
+/* Photographic backdrops need stable text contrast independently of the photograph. */
+#viewport:is([data-environment="village"],[data-environment="square"]) .scene-label {
+  padding: 10px 13px;
+  border-radius: 5px;
+  background: #f7faf2eb;
+  color: #173f35;
+  box-shadow: 0 1px 8px #14291912;
+  backdrop-filter: blur(8px);
+  max-width: calc(100% - 88px);
+}
+#viewport:is([data-environment="village"],[data-environment="square"]) .scene-bottom {
+  left: 18px;
+  right: 18px;
+  bottom: 15px;
+  padding: 8px 10px;
+  border-radius: 4px;
+  background: #f7faf2eb;
+  color: #254530;
+}
+@media (max-width: 560px) {
+  .presentation-mode .presentation-mode-views {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 5px;
+    overflow: visible;
+  }
+  .presentation-mode .presentation-mode-views > button {
+    min-width: 0;
+    width: 100%;
+    padding: 8px 4px;
+    font-size: 10.5px;
+    line-height: 1.3;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+  .presentation-mode .presentation-mode-note {
+    font-size: 11px !important;
+    line-height: 1.45 !important;
+    padding: 5px 8px;
+  }
+  #viewport:is([data-environment="village"],[data-environment="square"]) .scene-label {
+    padding: 6px 9px;
+    max-width: calc(100% - 66px);
+  }
+  #viewport:is([data-environment="village"],[data-environment="square"]) .scene-bottom {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 0;
+    padding: 8px 12px;
+  }
+}

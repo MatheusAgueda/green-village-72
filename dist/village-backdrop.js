@@ -1,56 +1,28 @@
-import * as THREE from './vendor/three.module.js';
+import {GroundedSkybox} from './vendor/GroundedSkybox.js';
 
-export const VILLAGE_FACES = ['north', 'east', 'south', 'west'].map(name => `assets/scene-r37/village-${name}.png`);
-
-// Scenic photographic elevations, separate from the configurable product.
-// Each elevation occupies a narrow arc to preserve pedestrian/building proportions.
-// These are illustrative surrounds, not a surveyed spherical photograph of a site.
-export function createVillageBackdrop(textures) {
-  const group = new THREE.Group();
-  const radius = 32, arc = Math.PI / 4, crop = .425;
-  const height = radius * arc * (1 - crop);
-  for (let index = 0; index < 8; index++) {
-    const geometry = new THREE.CylinderGeometry(radius, radius, height, 24, 1, true, index * arc - arc / 2, arc);
-    const uv = geometry.attributes.uv;
-    for (let i = 0; i < uv.count; i++) uv.setY(i, crop + uv.getY(i) * (1 - crop));
-    const material = new THREE.MeshBasicMaterial({map: textures[index % textures.length], side: THREE.BackSide, depthWrite: true});
-    // Match neighbouring edge colours without softening the house or whole photo.
-    material.onBeforeCompile = shader => {
-      shader.uniforms.gvPrevious = {value: textures[(index + textures.length - 1) % textures.length]};
-      shader.uniforms.gvNext = {value: textures[(index + 1) % textures.length]};
-      shader.fragmentShader = shader.fragmentShader.replace('#include <map_pars_fragment>', '#include <map_pars_fragment>\nuniform sampler2D gvPrevious;\nuniform sampler2D gvNext;');
-      shader.fragmentShader = shader.fragmentShader.replace('#include <map_fragment>', `
-        vec4 villageColour = texture2D(map, vMapUv);
-        if (vMapUv.x < .045) {
-          vec4 neighbour = texture2D(gvPrevious, vec2(1. - vMapUv.x, vMapUv.y));
-          villageColour = mix(neighbour, villageColour, .5 + .5 * smoothstep(0., .045, vMapUv.x));
-        } else if (vMapUv.x > .955) {
-          vec4 neighbour = texture2D(gvNext, vec2(1. - vMapUv.x, vMapUv.y));
-          villageColour = mix(neighbour, villageColour, .5 + .5 * smoothstep(0., .045, 1. - vMapUv.x));
-        }
-        diffuseColor *= villageColour;
-      `);
-    };
-    material.customProgramCacheKey = () => 'gv-village-elevation-edges-r37';
-    const mesh = new THREE.Mesh(geometry, material);
-    mesh.position.y = height / 2 - .365;
-    mesh.renderOrder = -1000;
-    mesh.frustumCulled = false;
-    mesh.userData.presentationOnly = true;
-    group.add(mesh);
-  }
-  group.userData.presentationOnly = true;
-  return group;
+// One continuous panorama replaces eight repeated, unrelated photographic walls.
+// The original four elevations remain documentary assets, never render tiles.
+export const VILLAGE_FACES = [];
+export const BACKDROP_RADIUS = 120;
+export const BACKDROP_HEIGHT = 8;
+export function createVillageBackdrop(texture) {
+  if (!texture?.isTexture) throw new TypeError('A continuous panorama texture is required');
+  const backdrop = new GroundedSkybox(texture, BACKDROP_HEIGHT, BACKDROP_RADIUS, 128);
+  backdrop.position.y = BACKDROP_HEIGHT - .365;
+  backdrop.renderOrder = -1000;
+  backdrop.frustumCulled = false;
+  backdrop.userData.presentationOnly = true;
+  backdrop.userData.continuousPanorama = true;
+  backdrop.userData.projectionHeightM = BACKDROP_HEIGHT;
+  return backdrop;
 }
-
 export function fitVillageBackdrop(backdrop, camera) {
-  // The scenic shell always remains beyond the camera, even after a long zoom/pan.
+  // Enlarging the distant sphere must never raise its projected ground plane.
   const distance = Math.hypot(camera.position.x, camera.position.z);
-  const scale = Math.max(1, (distance + 8) / 32);
+  const scale = Math.max(1, (distance + 30) / BACKDROP_RADIUS);
   backdrop.scale.setScalar(scale);
-  backdrop.position.y = .365 * (scale - 1);
+  backdrop.position.y = BACKDROP_HEIGHT * scale - .365;
 }
-
 export function disposeBackdrop(backdrop) {
   if (!backdrop) return;
   backdrop.removeFromParent();

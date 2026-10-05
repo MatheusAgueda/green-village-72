@@ -3,7 +3,7 @@ import {mkdirSync,readFileSync,writeFileSync} from 'node:fs';
 import vm from 'node:vm';
 import {DEFAULT_CONFIG,validateConfiguration,encodeConfiguration,decodeConfiguration,summaryRows} from '../dist/configuration.js';
 import {STANDARD_PACKAGE,ADAPTATION_REQUESTS,adaptationEstimate,standardPatch,layoutSelectionPatch} from '../dist/standard-package.js';
-import {catalogueEstimate,emptyClientProject,CATALOGUE_EDITION} from '../dist/project-options.js';
+import {catalogueEstimate,emptyClientProject,CATALOGUE_EDITION,OPTIONAL_ITEMS} from '../dist/project-options.js';
 import {createHistory,migrateStoredConfiguration,shareConfiguration,readSharedConfiguration,sourceLedger} from '../dist/client-tools.js';
 import {currentCataloguePrice} from '../dist/commercial-prices.js';
 import {CATALOGUE_OPTIONS} from '../dist/technical-data.js';
@@ -64,7 +64,7 @@ await test('22 current PVP mappings preserve July documentary prices',()=>{
   for(const item of CATALOGUE_OPTIONS)assert.equal(currentCataloguePrice(item.id).edition,item.id==='front-glass-premium'?'2026-10-02':'2026-09-20');
   assert.equal(currentCataloguePrice('kitchen-upper').value,580);
   assert.equal(CATALOGUE_OPTIONS.find(item=>item.id==='kitchen-upper').cataloguePrice.value,700);
-  const ledger=sourceLedger(DEFAULT_CONFIG);assert.equal(ledger.commercialPrices.length,22);assert.equal(ledger.standardPackage.kitchen.ref,'kitchen-14');
+  const ledger=sourceLedger(DEFAULT_CONFIG);assert.equal(ledger.commercialPrices.length,OPTIONAL_ITEMS.length+1);assert.equal(ledger.standardPackage.kitchen.ref,'kitchen-14');
 });
 await test('UI and summary distinguish standard, choice and unpaid quote',()=>{
   assert.match(standardSpecificationMarkup('kitchen',DEFAULT_CONFIG),/580,00/);

@@ -1,0 +1,21 @@
+{
+  "revision": "r38",
+  "date": "2026-10-05",
+  "baseCommit": "96babd3a4c07453eaff935c154278e8079355488",
+  "languages": ["pt", "en", "es", "fr", "it"],
+  "targetLanguageMessages": 1287,
+  "generalRegressionGroups": 47,
+  "expansionPoses": 7007,
+  "deploymentPoses": 7007,
+  "fourLanguageBrowserScenarios": 142,
+  "browserErrors": 0,
+  "clientPrivacyChecks": 29,
+  "sceneBrowserGroups": 8,
+  "stageGroups": 10,
+  "informationChecks": 8,
+  "exportPixels": [7680,4320],
+  "photoBackgroundPixels": [8192,4096],
+  "villageBackgroundPixels": [1774,887],
+  "publicVerification": "pending",
+  "limitations": ["Porto-inspired village is illustrative", "Photographic square depicts Palermo", "Product remains a configurable 3D model", "Source uncertainties remain documented"]
+}

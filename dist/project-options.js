@@ -25,7 +25,7 @@ export const OPTIONAL_ITEMS = DATA.options.map(item => ({
   {id:'kitchen-island',model:'geometry',label:'Ilha adicional na cozinha',section:'kitchen',facts:['Pedido registado mesmo quando a planta 3D não comporta uma ilha.','Dimensões, circulação, acabamento e equipamentos a definir.'],scope:'Ilha de cozinha sob cotação personalizada',priceCents:null},
   {id:'ac-monosplit-12000',label:'Ar condicionado 12 000 BTU · Monosplit 1×1',section:'climate',facts:['1 unidade exterior + 1 unidade interior.','Climatização de uma divisão.','Solução económica e simples de instalar.','500 € por sistema, com instalação incluída.'],scope:'Um sistema de 12 000 BTU com instalação incluída',priceCents:50000,vatIncluded:null},
   {id:'ac-multisplit-3x1',label:'Ar condicionado · Multisplit 3×1',section:'climate',facts:['1 unidade exterior + 3 unidades interiores.','Até 3 divisões com uma unidade exterior, poupando espaço na fachada.','Preço conforme potência total, marca, unidades interiores e comprimento da tubagem.'],scope:'Dimensionamento técnico e cotação personalizada',priceCents:null},
-].map(item=>({maxQuantity:12,variants:[],model:'specification',photo:null,page:null,commercialSource:'Oferta Green Village · 26/09/2026',...item})));
+].map(item=>({maxQuantity:12,variants:[],model:'specification',photo:null,page:null,vatIncluded:null,commercialSource:'Oferta Green Village · 26/09/2026',...item})));
 export const itemById = id => OPTIONAL_ITEMS.find(item=>item.id===id);
 export const money = cents => cents==null?'Sob consulta':new Intl.NumberFormat('pt-PT',{style:'currency',currency:'EUR'}).format(cents/100);
 export const SPC_FLOOR_UPGRADE=Object.freeze({

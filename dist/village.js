@@ -8,6 +8,12 @@ export function createVillage(scene,{onChange=()=>{},loadAssets=typeof document!
  let disposed=false,pending=null,loaded=false;
  const material=(colour,roughness=.9)=>{const m=new THREE.MeshStandardMaterial({color:colour,roughness});materials.add(m);return m;};
  const paving=material('#d4c8b5'),granite=material('#b6b2a7'),timber=material('#82715a',.8),iron=material('#303b38',.65),soil=material('#403c30'),leaf=material('#6b7852');iron.metalness=.55;leaf.side=THREE.DoubleSide;
+ // Fade the physically lit foreground into the continuous photographic ground.
+ paving.transparent=true;paving.depthWrite=false;
+ paving.onBeforeCompile=shader=>{
+  shader.vertexShader=shader.vertexShader.replace('#include <common>','#include <common>\nvarying vec2 gvPlazaPosition;').replace('#include <begin_vertex>','#include <begin_vertex>\ngvPlazaPosition=(modelMatrix*vec4(transformed,1.)).xz;');
+  shader.fragmentShader=shader.fragmentShader.replace('#include <common>','#include <common>\nvarying vec2 gvPlazaPosition;').replace('#include <opaque_fragment>','diffuseColor.a *= 1.-smoothstep(14.,24.,length(gvPlazaPosition));\n#include <opaque_fragment>');
+ };paving.customProgramCacheKey=()=> 'gv-r38-continuous-plaza';
  const slab=new THREE.PlaneGeometry(150,150);geometries.add(slab);
  const plaza=new THREE.Mesh(slab,paving);plaza.rotation.x=-Math.PI/2;plaza.position.y=-.364;plaza.receiveShadow=true;root.add(plaza);
  plaza.renderOrder=-999;

@@ -7,7 +7,7 @@ const context=await browser.newContext({viewport:{width:1440,height:1100}}),page
 const errors=[];page.on('pageerror',error=>errors.push(error.message));
 try{
  await page.goto(process.env.GV72_BASE_URL||'http://127.0.0.1:4194',{waitUntil:'networkidle'});
- await page.getByRole('button',{name:'EN',exact:true}).click();
+ await page.locator('[data-language="en"]').click();
  const results=[];
  for(const panel of ['materials','layout','kitchen','bathroom','roof','options','project']){
   await page.locator(`[data-config="${panel}"]`).click();

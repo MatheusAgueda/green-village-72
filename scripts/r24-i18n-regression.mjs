@@ -33,9 +33,9 @@ check('gallery has four exclusive categories and six unique media',()=>{
  const visible=markup.replace(/<[^>]+>/g,' ');
  assert.doesNotMatch(visible,/\b(?:IA|Veo|Flow|Gemini)\b/i);
 });
-check('shared language links accept only PT/EN/ES and otherwise retain the saved language',()=>{
- for(const lang of ['pt','en','es'])assert.equal(resolveLanguage('?room=bathroom&lang='+lang,'pt'),lang);
- for(const search of ['','?room=kitchen','?lang=fr','?lang=','?lang=javascript%3Aalert(1)'])assert.equal(resolveLanguage(search,'es'),'es');
+check('shared language links accept PT/EN/ES/FR/IT and otherwise retain the saved language',()=>{
+ for(const lang of ['pt','en','es','fr','it'])assert.equal(resolveLanguage('?room=bathroom&lang='+lang,'pt'),lang);
+ for(const search of ['','?room=kitchen','?lang=de','?lang=','?lang=javascript%3Aalert(1)'])assert.equal(resolveLanguage(search,'es'),'es');
  assert.equal(resolveLanguage('?lang=EN','en'),'en');
  assert.equal(resolveLanguage('?lang=invalid','invalid'),'pt');
 });

@@ -1,4 +1,12 @@
 import {COMMERCIAL_TRANSLATIONS} from './commercial-terms.js';
+import {FR_IT_HEAD, FR_IT_DYNAMIC} from './i18n-fr-it.js';
+import {FR_IT_TAIL} from './i18n-fr-it-tail.js';
+import {FR_IT_PRESENTATION, EN_ES_PRESENTATION} from './i18n-fr-it-presentation.js';
+import {FR_IT_TECHNICAL, EN_ES_TECHNICAL} from './i18n-fr-it-technical.js';
+
+export const SUPPORTED_LANGUAGES=Object.freeze(['pt','en','es','fr','it']);
+export const LOCALES=Object.freeze({pt:'pt-PT',en:'en-GB',es:'es-ES',fr:'fr-FR',it:'it-IT'});
+const TRANSLATED_LANGUAGES=SUPPORTED_LANGUAGES.filter(lang=>lang!=='pt');
 const STRINGS={
   en:{'Vídeo de apresentação · Sem áudio':'Presentation video · No audio','Personalizar':'Customize','O modelo':'The model','Galeria de vídeos':'Video gallery','Vistas 4K':'4K views','Plantas':'Floor plans','Filmes':'Films','Ficha técnica':'Technical sheet','O meu resumo':'My summary','Idioma':'Language','COLECÇÃO EXPANSÍVEL / 40 PÉS':'EXPANDABLE COLLECTION / 40 FT','Explore o espaço. Escolha os materiais. Dê-lhe a sua identidade.':'Explore the space. Choose the materials. Make it yours.','O espaço. Os materiais. A sua escolha.':'The space. The materials. Your choice.','Exterior':'Exterior','Interior':'Interior','Estrutura':'Structure','Camadas':'Layers','Água':'Water','Electricidade':'Electricity','Entrar na casa':'Enter the house','Aérea':'Aerial','Planta 3D':'3D plan','Cozinha':'Kitchen','Casa de banho':'Bathroom','Ajustar vista':'Adjust view','Personalize a sua casa.':'Customize your home.','Acabamentos':'Finishes','Planta':'Floor plan','Banho':'Bath','Cobertura':'Roof','Adicionais':'Extras','Cliente':'Client','Piso':'Floor','O modelo, em grande formato':'The model, in large format','Entre. Veja cada detalhe.':'Step inside. See every detail.','UMA CASA. SETE POSSIBILIDADES.':'ONE HOME. SEVEN POSSIBILITIES.','Encontre o seu espaço.':'Find your space.','GALERIA DE VÍDEOS':'VIDEO GALLERY','A casa ganha movimento.':'The home comes to life.','Exterior, interiores e terraços.':'Exterior, interiors and terraces.','Seis filmes organizados por ambiente.':'Six films organised by area.','Preparar o meu resumo':'Prepare my summary','Personalizar a minha casa':'Customize my home','Consultar fotografias e fontes':'View photos and sources','O que sustenta o modelo.':'What supports the model.','Medidas confirmadas, hipóteses identificadas':'Confirmed measurements, identified assumptions','e evidências da revisão.':'and revision evidence.','Descarregar vídeo':'Download video','Sem áudio':'No audio','Vídeo de apresentação':'Presentation video','Ver a expansão':'View the expansion','Escolher os acabamentos':'Choose finishes','Explore a cozinha':'Explore the kitchen','Experimentar telhado e alpendre':'Try roof and terrace','Rever configuração':'Review configuration',
   'CONHEÇA A CASA':'DISCOVER THE HOUSE','Veja a expansão e os filmes de apresentação.':'See the expansion and presentation films.','O modelo ↗':'The model ↗','Galeria de vídeos ↗':'Video gallery ↗','Catálogo de opcionais ↓ PDF':'Extras catalogue ↓ PDF',
@@ -468,11 +476,290 @@ CUSTOMER_STRINGS.push(...COMMERCIAL_TRANSLATIONS,
  ['Classes, ensaios e certificados não fornecidos.','Classes, tests and certificates have not been supplied.','No se han facilitado clases, ensayos ni certificados.'],
  ['Transporte para Portugal Continental incluído','Transport to mainland Portugal included','Transporte a Portugal continental incluido']
 );
-for(const [pt,en,es] of CUSTOMER_STRINGS){STRINGS.en[pt]=en;STRINGS.es[pt]=es;}
-const SENTENCE_KEYS=Object.fromEntries(['en','es'].map(lang=>[lang,Object.keys(STRINGS[lang]).filter(message=>message.endsWith('.')).sort((a,b)=>b.length-a.length)]));
-const UPPER_STRINGS=Object.fromEntries(['en','es'].map(lang=>[lang,Object.fromEntries(Object.entries(STRINGS[lang]).map(([pt,value])=>[pt.toLocaleUpperCase('pt-PT'),value.toLocaleUpperCase(lang==='es'?'es-ES':'en-GB')]))]));
+CUSTOMER_STRINGS.push(
+ ['72 m² segundo a ficha do fabricante. Áreas interiores calculadas com espessuras assumidas; área útil certificada não documentada. Cozinha proposta no espaço livre, não cotada no XLSX. Alpendre e cobertura adicional excluídos destas áreas.',
+  '72 m² according to the manufacturer’s specification sheet. Interior areas calculated using assumed thicknesses; certified usable area is not documented. Kitchen proposed in the available space, not dimensioned in the XLSX. Porch and additional roof excluded from these areas.',
+  '72 m² según la ficha del fabricante. Superficies interiores calculadas con espesores supuestos; superficie útil certificada no documentada. Cocina propuesta en el espacio libre, sin cotas en el XLSX. Porche y cubierta adicional excluidos de estas superficies.',
+  '72 m² selon la fiche du fabricant. Surfaces intérieures calculées avec des épaisseurs supposées ; surface utile certifiée non documentée. Cuisine proposée dans l’espace libre, non cotée dans le XLSX. Auvent et toiture supplémentaire exclus de ces surfaces.',
+  '72 m² secondo la scheda del produttore. Superfici interne calcolate con spessori ipotizzati; superficie utile certificata non documentata. Cucina proposta nello spazio libero, non quotata nel file XLSX. Portico e copertura aggiuntiva esclusi da queste superfici.'],
+ ['O MODEL, EM GRANDE FORMATO','THE MODEL, IN LARGE FORMAT','EL MODELO, EN GRAN FORMATO']
+);
+CUSTOMER_STRINGS.push(
+ ['Cotas exteriores confirmadas · divisões e detalhes estimados identificados nas fontes.','External dimensions confirmed · estimated rooms and details identified in the sources.','Cotas exteriores confirmadas · estancias y detalles estimados identificados en las fuentes.','Cotes extérieures confirmées · pièces et détails estimés identifiés dans les sources.','Quote esterne confermate · stanze e dettagli stimati identificati nelle fonti.'],
+ ['Estúdio de personalização','Customisation studio','Estudio de personalización','Studio de personnalisation','Studio di personalizzazione'],
+ ['Personalização','Customisation','Personalización','Personnalisation','Personalizzazione'],
+ ['Categorias de personalização','Customisation categories','Categorías de personalización','Catégories de personnalisation','Categorie di personalizzazione'],
+ ['11 800 × 6 220 mm · uma casa de banho em todas as opções.','11,800 × 6,220 mm · one bathroom in every option.','11.800 × 6.220 mm · un baño en todas las opciones.','11 800 × 6 220 mm · une salle de bains dans toutes les options.','11 800 × 6 220 mm · un bagno in tutte le opzioni.'],
+ ['Descarregar planta SVG ↓','Download SVG floor plan ↓','Descargar plano SVG ↓','Télécharger le plan SVG ↓','Scarica la planimetria SVG ↓'],
+ ['O T4 A só admite a proposta de cozinha linear: a faixa central não comporta uma ilha ou bancada em L.','T4 A only accommodates the proposed linear kitchen: the central strip cannot fit an island or an L-shaped worktop.','El T4 A solo admite la propuesta de cocina lineal: la franja central no permite una isla ni una encimera en L.','Le T4 A permet uniquement la proposition de cuisine linéaire : la bande centrale ne peut accueillir ni îlot ni plan de travail en L.','Il T4 A consente solo la proposta di cucina lineare: la fascia centrale non può ospitare un’isola o un piano di lavoro a L.'],
+ ['As plantas não identificam a cozinha. As cozinhas do estúdio são propostas de implantação. As medidas exteriores correspondem a um rectângulo de 73,396 m². A ficha do fabricante indica 72 m² e 11,54 × 6,06 m interiores; a área útil certificada não foi fornecida.','The plans do not identify the kitchen. The studio kitchens are proposed layouts. The external dimensions correspond to a 73.396 m² rectangle. The manufacturer’s sheet states 72 m² and internal dimensions of 11.54 × 6.06 m; no certified usable area has been supplied.','Los planos no identifican la cocina. Las cocinas del estudio son propuestas de distribución. Las medidas exteriores corresponden a un rectángulo de 73,396 m². La ficha del fabricante indica 72 m² y 11,54 × 6,06 m interiores; no se ha facilitado la superficie útil certificada.','Les plans n’identifient pas la cuisine. Les cuisines du studio sont des propositions d’implantation. Les dimensions extérieures correspondent à un rectangle de 73,396 m². La fiche du fabricant indique 72 m² et 11,54 × 6,06 m à l’intérieur ; la surface utile certifiée n’a pas été fournie.','Le planimetrie non identificano la cucina. Le cucine dello studio sono proposte di disposizione. Le misure esterne corrispondono a un rettangolo di 73,396 m². La scheda del produttore indica 72 m² e 11,54 × 6,06 m interni; la superficie utile certificata non è stata fornita.'],
+ ['Descarregar plantas originais','Download original plans','Descargar planos originales','Télécharger les plans originaux','Scarica le planimetrie originali'],
+ ['Plantas de distribuição','Layout plans','Planos de distribución','Plans d’agencement','Planimetrie di distribuzione'],
+ ['Divisões, portas e equipamentos partilhados com a planta.','Rooms, doors and equipment shared with the floor plan.','Estancias, puertas y equipamiento compartidos con el plano.','Pièces, portes et équipements communs au plan.','Stanze, porte e dotazioni condivise con la planimetria.'],
+ ['Abrir ou fechar o mobiliário','Open or close the furniture','Abrir o cerrar el mobiliario','Ouvrir ou fermer le mobilier','Apri o chiudi gli arredi'],
+ ['Abrir ou fechar mobiliário','Open or close furniture','Abrir o cerrar mobiliario','Ouvrir ou fermer le mobilier','Apri o chiudi gli arredi'],
+ ['Secções e fixações representativas, sem desenho de fabrico.','Representative sections and fixings, without manufacturing drawings.','Secciones y fijaciones representativas, sin planos de fabricación.','Sections et fixations représentatives, sans plan de fabrication.','Sezioni e fissaggi rappresentativi, senza disegno di fabbricazione.'],
+ ['cobertura plana','flat roof','cubierta plana','toiture plate','copertura piana'],
+ ['com telhado','with roof','con tejado','avec toiture','con tetto'],
+ ['alpendre','porch','porche','auvent','portico'],
+ ['sessão actual','current session','sesión actual','session actuelle','sessione attuale'],
+ ['guardado no dispositivo','saved on this device','guardado en el dispositivo','enregistré sur cet appareil','salvato sul dispositivo'],
+ ['personalizações sob orçamento','customisations subject to quotation','personalizaciones bajo presupuesto','personnalisations sur devis','personalizzazioni su preventivo'],
+ ['Actualização Green Village','Green Village update','Actualización Green Village','Mise à jour Green Village','Aggiornamento Green Village']
+);
+CUSTOMER_STRINGS.push(...[
+ [
+  "Ficheiro de projecto demasiado grande (máximo 30 MB).",
+  "Project file too large (maximum 30 MB).",
+  "Archivo de proyecto demasiado grande (máximo 30 MB).",
+  "Fichier de projet trop volumineux (30 Mo maximum).",
+  "File di progetto troppo grande (massimo 30 MB)."
+ ],
+ [
+  "A ficha mudou durante a importação. Tente novamente.",
+  "The record changed during import. Please try again.",
+  "La ficha cambió durante la importación. Inténtelo de nuevo.",
+  "La fiche a changé pendant l’importation. Réessayez.",
+  "La scheda è cambiata durante l’importazione. Riprova."
+ ],
+ [
+  "O mosquiteiro da janela substituída por uma porta ficou por atribuir; a quantidade e o custo foram preservados.",
+  "The insect screen for the window replaced by a door is awaiting a new location; its quantity and cost were preserved.",
+  "La mosquitera de la ventana sustituida por una puerta quedó sin asignar; se conservaron la cantidad y el coste.",
+  "La moustiquaire de la fenêtre remplacée par une porte attend une nouvelle attribution ; la quantité et le coût ont été conservés.",
+  "La zanzariera della finestra sostituita da una porta è rimasta da assegnare; quantità e costo sono stati conservati."
+ ],
+ [
+  "A quantidade não pode ser inferior aos vãos seleccionados. Desmarque primeiro os locais que pretende retirar.",
+  "The quantity cannot be lower than the selected openings. First deselect the locations you want to remove.",
+  "La cantidad no puede ser inferior a los huecos seleccionados. Desmarque primero las ubicaciones que desea retirar.",
+  "La quantité ne peut être inférieure au nombre d’ouvertures sélectionnées. Désélectionnez d’abord les emplacements à retirer.",
+  "La quantità non può essere inferiore alle aperture selezionate. Deseleziona prima le posizioni che desideri rimuovere."
+ ],
+ [
+  "A nova planta não permite uma porta de correr no local anterior. O artigo continua na ficha, com local por definir.",
+  "The new plan cannot accommodate a sliding door at the previous location. The item remains in the record, with its location to be defined.",
+  "El nuevo plano no permite una puerta corredera en la ubicación anterior. El artículo permanece en la ficha, con ubicación por definir.",
+  "Le nouveau plan ne permet pas de porte coulissante à l’emplacement précédent. L’article reste dans la fiche, avec un emplacement à définir.",
+  "La nuova planimetria non consente una porta scorrevole nella posizione precedente. L’articolo resta nella scheda, con posizione da definire."
+ ],
+ [
+  "Não foi possível construir o modelo.",
+  "The model could not be built.",
+  "No se ha podido construir el modelo.",
+  "Le modèle n’a pas pu être construit.",
+  "Non è stato possibile costruire il modello."
+ ],
+ [
+  "A pré-visualização 3D está indisponível. Pode continuar a escolher e guardar as referências.",
+  "The 3D preview is unavailable. You can continue choosing and saving references.",
+  "La vista previa 3D no está disponible. Puede seguir eligiendo y guardando referencias.",
+  "L’aperçu 3D est indisponible. Vous pouvez continuer à choisir et à enregistrer les références.",
+  "L’anteprima 3D non è disponibile. Puoi continuare a scegliere e salvare i riferimenti."
+ ],
+ [
+  "Seleccione uma implantação de cozinha para a visualizar.",
+  "Select a kitchen layout to preview it.",
+  "Seleccione una distribución de cocina para visualizarla.",
+  "Sélectionnez une implantation de cuisine pour la visualiser.",
+  "Seleziona una disposizione della cucina per visualizzarla."
+ ],
+ [
+  "Acabamentos aplicados. A implantação foi mantida para respeitar a passagem nesta planta.",
+  "Finishes applied. The layout was retained to preserve circulation in this plan.",
+  "Acabados aplicados. Se ha mantenido la distribución para respetar el paso en este plano.",
+  "Finitions appliquées. L’implantation a été conservée pour respecter le passage dans ce plan.",
+  "Finiture applicate. La disposizione è stata mantenuta per rispettare il passaggio in questa planimetria."
+ ],
+ [
+  "Recorte indisponível",
+  "Crop unavailable",
+  "Recorte no disponible",
+  "Extrait indisponible",
+  "Ritaglio non disponibile"
+ ],
+ [
+  "A ligação gráfica foi interrompida. Tente novamente após recuperar o 3D.",
+  "The graphics connection was interrupted. Try again after the 3D view recovers.",
+  "La conexión gráfica se interrumpió. Inténtelo de nuevo tras recuperar el 3D.",
+  "La connexion graphique a été interrompue. Réessayez après le rétablissement de la 3D.",
+  "La connessione grafica è stata interrotta. Riprova dopo il ripristino del 3D."
+ ],
+ [
+  "Uma textura não carregou. Use Tentar texturas antes de guardar a imagem.",
+  "A texture did not load. Use Retry textures before saving the image.",
+  "No se ha cargado una textura. Use Reintentar texturas antes de guardar la imagen.",
+  "Une texture n’a pas été chargée. Utilisez Réessayer les textures avant d’enregistrer l’image.",
+  "Una texture non è stata caricata. Usa Riprova le texture prima di salvare l’immagine."
+ ],
+ [
+  "A configuração mudou durante a captura. Tente novamente.",
+  "The configuration changed during capture. Please try again.",
+  "La configuración cambió durante la captura. Inténtelo de nuevo.",
+  "La configuration a changé pendant la capture. Réessayez.",
+  "La configurazione è cambiata durante la cattura. Riprova."
+ ],
+ [
+  "Ficha do cliente criada: planta, acabamentos, fotografias, adicionais e custos.",
+  "Client record created: floor plan, finishes, photographs, extras and costs.",
+  "Ficha del cliente creada: plano, acabados, fotografías, extras y costes.",
+  "Fiche client créée : plan, finitions, photographies, options et coûts.",
+  "Scheda cliente creata: planimetria, finiture, fotografie, optional e costi."
+ ],
+ [
+  "Galeria indisponível",
+  "Gallery unavailable",
+  "Galería no disponible",
+  "Galerie indisponible",
+  "Galleria non disponibile"
+ ],
+ [
+  "Configuração da imagem aplicada. Pode continuar a personalizar.",
+  "Image configuration applied. You can continue customising.",
+  "Configuración de la imagen aplicada. Puede seguir personalizando.",
+  "Configuration de l’image appliquée. Vous pouvez poursuivre la personnalisation.",
+  "Configurazione dell’immagine applicata. Puoi continuare a personalizzare."
+ ],
+ [
+  "T4 A seleccionada com cozinha linear. A alteração ao standard fica sob orçamento na ficha.",
+  "T4 A selected with a linear kitchen. The change from standard remains subject to quotation in the record.",
+  "T4 A seleccionada con cocina lineal. El cambio respecto al estándar queda bajo presupuesto en la ficha.",
+  "T4 A sélectionné avec une cuisine linéaire. La modification du standard reste sur devis dans la fiche.",
+  "T4 A selezionata con cucina lineare. La modifica rispetto allo standard resta su preventivo nella scheda."
+ ],
+ [
+  "Pode guardar até 12 anexos.",
+  "You can save up to 12 attachments.",
+  "Puede guardar hasta 12 archivos adjuntos.",
+  "Vous pouvez enregistrer jusqu’à 12 pièces jointes.",
+  "Puoi salvare fino a 12 allegati."
+ ],
+ [
+  "A ficha mudou durante o carregamento. Tente novamente.",
+  "The record changed during upload. Please try again.",
+  "La ficha cambió durante la carga. Inténtelo de nuevo.",
+  "La fiche a changé pendant le chargement. Réessayez.",
+  "La scheda è cambiata durante il caricamento. Riprova."
+ ],
+ [
+  "Anexos guardados. Pode acrescentar uma observação a cada ficheiro.",
+  "Attachments saved. You can add a note to each file.",
+  "Archivos adjuntos guardados. Puede añadir una observación a cada archivo.",
+  "Pièces jointes enregistrées. Vous pouvez ajouter une observation à chaque fichier.",
+  "Allegati salvati. Puoi aggiungere un’osservazione a ogni file."
+ ],
+ [
+  "Ainda não existe uma ficha anterior à partilha.",
+  "There is no record from before sharing yet.",
+  "Todavía no existe una ficha anterior a la compartición.",
+  "Il n’existe pas encore de fiche antérieure au partage.",
+  "Non esiste ancora una scheda precedente alla condivisione."
+ ],
+ [
+  "Ficha anterior à partilha recuperada.",
+  "Record from before sharing restored.",
+  "Ficha anterior a la compartición recuperada.",
+  "Fiche antérieure au partage restaurée.",
+  "Scheda precedente alla condivisione recuperata."
+ ],
+ [
+  "A tentar carregar as texturas…",
+  "Retrying texture loading…",
+  "Reintentando cargar las texturas…",
+  "Nouvelle tentative de chargement des textures…",
+  "Nuovo tentativo di caricamento delle texture…"
+ ],
+ [
+  "Projecto, escolhas e anexos recuperados do ficheiro.",
+  "Project, choices and attachments restored from the file.",
+  "Proyecto, opciones y archivos adjuntos recuperados del archivo.",
+  "Projet, choix et pièces jointes restaurés depuis le fichier.",
+  "Progetto, scelte e allegati recuperati dal file."
+ ],
+ [
+  "Seleccione um componente no 3D. Pode também consultar cada camada na ficha técnica.",
+  "Select a component in the 3D view. You can also consult each layer in the technical sheet.",
+  "Seleccione un componente en el 3D. También puede consultar cada capa en la ficha técnica.",
+  "Sélectionnez un composant dans la 3D. Vous pouvez aussi consulter chaque couche dans la fiche technique.",
+  "Seleziona un componente nel 3D. Puoi consultare ogni strato anche nella scheda tecnica."
+ ],
+ [
+  "3D indisponível. A galeria contém imagens 4K para descarregar.",
+  "3D unavailable. The gallery contains 4K images to download.",
+  "3D no disponible. La galería contiene imágenes 4K para descargar.",
+  "3D indisponible. La galerie contient des images 4K à télécharger.",
+  "3D non disponibile. La galleria contiene immagini 4K da scaricare."
+ ],
+ [
+  "Imagem nativa 3 840 × 2 160 guardada.",
+  "Native 3,840 × 2,160 image saved.",
+  "Imagen nativa de 3.840 × 2.160 guardada.",
+  "Image native 3 840 × 2 160 enregistrée.",
+  "Immagine nativa 3 840 × 2 160 salvata."
+ ],
+ [
+  "Imagem nativa 7 680 × 4 320 guardada.",
+  "Native 7,680 × 4,320 image saved.",
+  "Imagen nativa de 7.680 × 4.320 guardada.",
+  "Image native 7 680 × 4 320 enregistrée.",
+  "Immagine nativa 7 680 × 4 320 salvata."
+ ],
+ [
+  "Opção A guardada. Feche a comparação e prepare a opção B.",
+  "Option A saved. Close the comparison and prepare option B.",
+  "Opción A guardada. Cierre la comparación y prepare la opción B.",
+  "Option A enregistrée. Fermez la comparaison et préparez l’option B.",
+  "Opzione A salvata. Chiudi il confronto e prepara l’opzione B."
+ ],
+ [
+  "Modelo GLB guardado: casa completa, materiais e componentes.",
+  "GLB model saved: complete house, materials and components.",
+  "Modelo GLB guardado: casa completa, materiales y componentes.",
+  "Modèle GLB enregistré : maison complète, matériaux et composants.",
+  "Modello GLB salvato: casa completa, materiali e componenti."
+ ],
+ [
+  "3D indisponível. Reabra a apresentação para guardar as imagens.",
+  "3D unavailable. Reopen the presentation to save the images.",
+  "3D no disponible. Vuelva a abrir la presentación para guardar las imágenes.",
+  "3D indisponible. Rouvrez la présentation pour enregistrer les images.",
+  "3D non disponibile. Riapri la presentazione per salvare le immagini."
+ ],
+ [
+  "Três imagens 4K e a configuração guardadas em ZIP.",
+  "Three 4K images and your configuration saved in a ZIP.",
+  "Tres imágenes 4K y su configuración guardadas en un ZIP.",
+  "Trois images 4K et votre configuration enregistrées dans un ZIP.",
+  "Tre immagini 4K e la tua configurazione salvate in un file ZIP."
+ ]
+]);
+CUSTOMER_STRINGS.push(
+ ['Espaço comum','Shared space','Espacio común','Espace commun','Spazio comune'],
+ ['Entrada / fachada principal','Entrance / main facade','Entrada / fachada principal','Entrée / façade principale','Ingresso / facciata principale'],
+ ['Cotas exteriores confirmadas · áreas aproximadas · cores suavizadas','Confirmed external dimensions · approximate areas · softened colours','Cotas exteriores confirmadas · superficies aproximadas · colores suavizados','Cotes extérieures confirmées · surfaces approximatives · couleurs adoucies','Quote esterne confermate · superfici approssimative · colori attenuati']
+);
+STRINGS.en={...EN_ES_TECHNICAL.en,...EN_ES_PRESENTATION.en,...STRINGS.en};
+STRINGS.es={...EN_ES_TECHNICAL.es,...EN_ES_PRESENTATION.es,...STRINGS.es};
+STRINGS.fr={...FR_IT_TECHNICAL.fr,...FR_IT_PRESENTATION.fr,...FR_IT_HEAD.fr,...FR_IT_TAIL.fr};
+STRINGS.it={...FR_IT_TECHNICAL.it,...FR_IT_PRESENTATION.it,...FR_IT_HEAD.it,...FR_IT_TAIL.it};
+for(const [pt,en,es,fr,it] of CUSTOMER_STRINGS){
+ STRINGS.en[pt]=en;STRINGS.es[pt]=es;
+ if(fr)STRINGS.fr[pt]=fr;if(it)STRINGS.it[pt]=it;
+}
+/** Coverage report for authored application copy, without private customer data. */
+export function translationCoverage(){
+ const keys=[...new Set(TRANSLATED_LANGUAGES.flatMap(lang=>Object.keys(STRINGS[lang])))];
+ return Object.fromEntries(TRANSLATED_LANGUAGES.map(lang=>[lang,{total:keys.length,translated:keys.filter(key=>Object.hasOwn(STRINGS[lang],key)).length,missing:keys.filter(key=>!Object.hasOwn(STRINGS[lang],key))}]));
+}
+const SENTENCE_KEYS=Object.fromEntries(TRANSLATED_LANGUAGES.map(lang=>[lang,Object.keys(STRINGS[lang]).filter(message=>message.endsWith('.')).sort((a,b)=>b.length-a.length)]));
+const UPPER_STRINGS=Object.fromEntries(TRANSLATED_LANGUAGES.map(lang=>[lang,Object.fromEntries(Object.entries(STRINGS[lang]).map(([pt,value])=>[pt.toLocaleUpperCase('pt-PT'),value.toLocaleUpperCase(LOCALES[lang])]))]));
 
 const DYNAMIC_STRINGS=[
+ [/^Antes das divisórias: ≈ ([\d.,]+) m²$/,(_,area)=>[`Before partitions: ≈ ${area.replace(',','.')} m²`,`Antes de los tabiques: ≈ ${area} m²`]],
+ [/^PVP de ([\d/]+) · (IVA incluído|IVA por confirmar)\.(?: No PDF de julho: (.+) \(valor anterior\)\.)?$/,(_,date,tax,price)=>[
+  `Price as of ${date} · ${tax==='IVA incluído'?'VAT included':'VAT to be confirmed'}.${price?` In the July PDF: ${price} (previous price).`:''}`,
+  `PVP del ${date} · ${tax==='IVA incluído'?'IVA incluido':'IVA por confirmar'}.${price?` En el PDF de julio: ${price} (precio anterior).`:''}`
+ ]],
  [/^Amostra (\d+)$/,(_,n)=>[`Sample ${n}`,`Muestra ${n}`]],
  [/^Todos os (\d+) artigos$/,(_,n)=>[`All ${n} items`,`Todos los ${n} artículos`]],
  [/^Os meus adicionais \((\d+)\)$/,(_,n)=>[`My extras (${n})`,`Mis extras (${n})`]],
@@ -498,33 +785,61 @@ const DYNAMIC_STRINGS=[
  [/^(\d+) AMBIENTES$/,(_,n)=>[`${n} SETTINGS`,`${n} AMBIENTES`]],
  [/^SPC: adicional único de 1 200 € por casa; referência escolhida no configurador\.$/,()=>['SPC: a single €1,200 upgrade per home; reference selected in the configurator.','SPC: suplemento único de 1 200 € por casa; referencia seleccionada en el configurador.']],
  [/^([0-9]+) VÍDEOS DE REFERÊNCIA$/,(_,n)=>[`${n} REFERENCE VIDEOS`,`${n} VÍDEOS DE REFERENCIA`]],
- [/^A carregar (\d+) materiais?…$/,(_,n)=>[`Loading ${n} ${n==='1'?'material':'materials'}…`,`Cargando ${n} ${n==='1'?'material':'materiales'}…`]]
+ [/^A carregar (\d+) materia(?:l|is)…$/,(_,n)=>[`Loading ${n} ${n==='1'?'material':'materials'}…`,`Cargando ${n} ${n==='1'?'material':'materiales'}…`]]
 ];
+
+const AFFIX_LABELS={
+  en:['Enlarge photograph of ','Enlarge ','Download ',' as MP4','Opacity: ','Selected reference: ','Assign a location for '],
+  es:['Ampliar fotografía de ','Ampliar ','Descargar ',' en MP4','Opacidad: ','Referencia seleccionada: ','Falta definir la ubicación de '],
+  fr:['Agrandir la photographie de ','Agrandir ','Télécharger ',' en MP4','Opacité : ','Référence sélectionnée : ','Définir un emplacement pour '],
+  it:['Ingrandisci la fotografia di ','Ingrandisci ','Scarica ',' in MP4','Opacità: ','Riferimento selezionato: ','Assegna una posizione a ']
+};
 
 /** Translate trusted application copy only. Never pass free-form client data. */
 export function translateText(value,lang='pt'){
  const source=String(value??'');
- if(lang==='pt'||!STRINGS[lang]||!source.trim())return source;
+ if(lang==='pt'||!TRANSLATED_LANGUAGES.includes(lang)||!source.trim())return source;
  const key=source.trim(),translated=translateKnown(key,lang,0);
  return source.slice(0,source.indexOf(key))+translated+source.slice(source.indexOf(key)+key.length);
+}
+
+function localizeEuroToken(value,lang){
+ if(typeof value!=='string')return value;
+ const match=value.match(/^([+-]?\d[\d\s\u00a0\u202f]*)(?:,(\d{1,2}))?\s*€$/);
+ if(!match)return value;
+ const amount=Number(match[1].replace(/\s/g,'')+(match[2]?'.'+match[2]:''));
+ if(!Number.isFinite(amount))return value;
+ return new Intl.NumberFormat(LOCALES[lang],{style:'currency',currency:'EUR',minimumFractionDigits:match[2]?.length||0,maximumFractionDigits:match[2]?.length||0}).format(amount);
 }
 
 function translateKnown(key,lang,depth){
  const map=STRINGS[lang];
  if(Object.hasOwn(map,key))return map[key];
- if(depth>4)return key;
- for(const [pattern,render] of DYNAMIC_STRINGS){const match=key.match(pattern);if(match)return render(...match)[lang==='en'?0:1];}
+ const currency=localizeEuroToken(key,lang);if(currency!==key)return currency;
+ const area=key.match(/^≈ ([0-9]+(?:,([0-9]+))?) m²$/);
+ if(area)return '≈ '+formatDecimal(Number(area[1].replace(',','.')),lang,{minimumFractionDigits:area[2]?.length||0,maximumFractionDigits:area[2]?.length||0})+' m²';
+ if(depth>12)return key;
+ const dynamic=lang==='fr'||lang==='it'?FR_IT_DYNAMIC:DYNAMIC_STRINGS;
+ for(const [pattern,render] of dynamic){const match=key.match(pattern);if(match)return render(...match.map(value=>localizeEuroToken(value,lang)))[lang==='en'||lang==='fr'?0:1];}
+ const prefix=AFFIX_LABELS[lang];
  const affixes=[
-  [/^Ampliar fotografia de (.+)$/,lang==='en'?'Enlarge photograph of ':'Ampliar fotografía de '],
-  [/^Ampliar (.+)$/,lang==='en'?'Enlarge ':'Ampliar '],
-  [/^Descarregar (.+) em MP4$/,lang==='en'?'Download ':'Descargar ',lang==='en'?' as MP4':' en MP4'],
-  [/^Opacidade: (.+)$/,lang==='en'?'Opacity: ':'Opacidad: '],
-  [/^Referência escolhida: (.+)$/,lang==='en'?'Selected reference: ':'Referencia seleccionada: '],
-  [/^Falta definir a aplicação de (.+)\.$/,lang==='en'?'Assign a location for ':'Falta definir la ubicación de ','.']
+  [/^Ampliar fotografia de (.+)$/,prefix[0]],
+  [/^Ampliar (.+)$/,prefix[1]],
+  [/^Descarregar (.+) em MP4$/,prefix[2],prefix[3]],
+  [/^Opacidade: (.+)$/,prefix[4]],
+  [/^Referência escolhida: (.+)$/,prefix[5]],
+  [/^Falta definir a aplicação de (.+)\.$/,prefix[6],'.'],
+  [/^Planta limpa (.+)$/,{en:'Clean floor plan ',es:'Plano limpio ',fr:'Plan épuré ',it:'Planimetria pulita '}[lang]],
+  [/^Planta derivada (.+)$/,{en:'Derived floor plan ',es:'Plano derivado ',fr:'Plan dérivé ',it:'Planimetria derivata '}[lang]],
+  [/^Adicionais: (.+)$/,{en:'Extras: ',es:'Extras: ',fr:'Options : ',it:'Optional: '}[lang]],
+  [/^Tipo: (.+)$/,{en:'Type: ',es:'Tipo: ',fr:'Type : ',it:'Tipo: '}[lang]],
+  [/^Designação no catálogo: (.+)$/,{en:'Catalogue designation: ',es:'Denominación en el catálogo: ',fr:'Désignation dans le catalogue : ',it:'Denominazione nel catalogo: '}[lang]],
+  [/^Fonte da planta: (.+)$/,{en:'Floor plan source: ',es:'Fuente del plano: ',fr:'Source du plan : ',it:'Fonte della planimetria: '}[lang]],
+  [/^Não foi possível criar o PDF: (.+)$/,{en:'The PDF could not be created: ',es:'No se ha podido crear el PDF: ',fr:'Le PDF n’a pas pu être créé : ',it:'Non è stato possibile creare il PDF: '}[lang]]
  ];
  for(const [pattern,before,after=''] of affixes){const match=key.match(pattern);if(match)return before+translateKnown(match[1],lang,depth+1)+after;}
  const reference=key.match(/^(Cozinha de referência|Ambiente de banho) (\d+): (.+)$/);
- if(reference)return `${lang==='en'?(reference[1]==='Cozinha de referência'?'Kitchen reference':'Bathroom setting'):(reference[1]==='Cozinha de referência'?'Cocina de referencia':'Ambiente de baño')} ${reference[2]}: ${translateKnown(reference[3],lang,depth+1)}`;
+ if(reference){const labels={en:['Kitchen reference','Bathroom setting'],es:['Cocina de referencia','Ambiente de baño'],fr:['Cuisine de référence','Ambiance de salle de bains'],it:['Cucina di riferimento','Ambiente bagno']}[lang];return `${labels[reference[1]==='Cozinha de referência'?0:1]} ${reference[2]}: ${translateKnown(reference[3],lang,depth+1)}`;}
  const numbered=key.match(/^(\d+\s*[/·×]\s*)(.+)$/);
  if(numbered)return numbered[1]+translateKnown(numbered[2],lang,depth+1);
  const marker=key.match(/^(.*?)(\s*[↗↓↑✓])$/);
@@ -534,7 +849,11 @@ function translateKnown(key,lang,depth){
  for(const original of SENTENCE_KEYS[lang]){
   if(key.startsWith(original+' '))return map[original]+' '+translateKnown(key.slice(original.length+1),lang,depth+1);
  }
- const fragments=key.split(/(\s+[·—]\s+|(?<=\.)\s+(?=[A-ZÁÀÉÍÓÚÂÊÔÃÕ]))/u);
+ const pending=key.match(/^(.+?)(\s+\+\s+)(personalizações sob orçamento)$/);
+ if(pending)return translateKnown(pending[1],lang,depth+1)+pending[2]+translateKnown(pending[3],lang,depth+1);
+ const compound=key.match(/^(.*?)(\s+[·—]\s+)([\s\S]+)$/);
+ if(compound)return translateKnown(compound[1],lang,depth+1)+compound[2]+translateKnown(compound[3],lang,depth+1);
+ const fragments=key.split(/((?<=\.)\s+(?=[A-ZÁÀÉÍÓÚÂÊÔÃÕ]))/u);
  if(fragments.length>1)return fragments.map((part,index)=>index%2?part:translateKnown(part,lang,depth+1)).join('');
  return key;
 }
@@ -545,7 +864,7 @@ const attributeOriginals=new WeakMap();
 const ATTRIBUTES=['aria-label','title','alt','placeholder','label'];
 const PRIVATE_TEXT='script,style,code,input,textarea,[contenteditable]:not([contenteditable="false"]),[translate="no"],[data-i18n="off"],.client-preserve-lines,.client-summary > h3,.client-summary dl dd,.client-request > strong,.client-request > p:not(:last-child)';
 let language='pt';
-try{const saved=typeof window!=='undefined'?window.localStorage.getItem('gv72-language'):null;if(['pt','en','es'].includes(saved))language=saved;}catch{}
+try{const saved=typeof window!=='undefined'?window.localStorage.getItem('gv72-language'):null;if(SUPPORTED_LANGUAGES.includes(saved))language=saved;}catch{}
 
 function collectTextNodes(root){
   if(root.nodeType===3)return [root];
@@ -594,20 +913,20 @@ export function translateDOM(root=document){
       if(attribute==='alt'&&element.matches('.client-attachment img'))continue;
       const record=originalRecord(records,attribute,element.getAttribute(attribute));
       const attachmentRemove=element.hasAttribute('data-remove-attachment')&&attribute==='aria-label';
-      record.last=language==='pt'?record.source:attachmentRemove?record.source.replace(/^Retirar /,language==='en'?'Remove ':'Retirar '):translateText(record.source,language);
+      record.last=language==='pt'?record.source:attachmentRemove?record.source.replace(/^Retirar /,{en:'Remove ',es:'Retirar ',fr:'Retirer ',it:'Rimuovi '}[language]):translateText(record.source,language);
       if(element.getAttribute(attribute)!==record.last)element.setAttribute(attribute,record.last);
     }
   }
 }
 
-const TITLES={en:'Expandable 72 — Green Village',es:'Expandible 72 — Green Village',pt:'Expandível 72 — Green Village'};
-const DESCRIPTIONS={en:'Explore and customize the Green Village 72 expandable home. 3D model, seven floor plans, catalogue finishes and presentation films.',es:'Explore y personalice la casa expandible Green Village 72. Modelo 3D, siete planos, acabados del catálogo y películas de presentación.',pt:'Explore e personalize a casa expansível Green Village 72. Modelo 3D, sete plantas, acabamentos do catálogo e filmes de apresentação.'};
+const TITLES={fr:'Extensible 72 — Green Village',it:'Espandibile 72 — Green Village',en:'Expandable 72 — Green Village',es:'Expandible 72 — Green Village',pt:'Expandível 72 — Green Village'};
+const DESCRIPTIONS={fr:'Explorez et personnalisez la maison extensible Green Village 72. Modèle 3D, sept plans, finitions du catalogue et films de présentation.',it:'Esplora e personalizza la casa espandibile Green Village 72. Modello 3D, sette planimetrie, finiture del catalogo e filmati di presentazione.',en:'Explore and customize the Green Village 72 expandable home. 3D model, seven floor plans, catalogue finishes and presentation films.',es:'Explore y personalice la casa expandible Green Village 72. Modelo 3D, siete planos, acabados del catálogo y películas de presentación.',pt:'Explore e personalize a casa expansível Green Village 72. Modelo 3D, sete plantas, acabamentos do catálogo e filmes de apresentação.'};
 
 export function setLanguage(next){
-  if(!['pt','en','es'].includes(next))throw new Error('Unsupported language.');
+  if(!SUPPORTED_LANGUAGES.includes(next))throw new Error('Unsupported language.');
   language=next;
   try{localStorage.setItem('gv72-language',next);}catch{}
-  document.documentElement.lang=next==='en'?'en':next==='es'?'es-ES':'pt-PT';
+  document.documentElement.lang=next==='en'?'en':LOCALES[next];
   document.querySelectorAll('[data-language]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.language===next)));
   document.title=TITLES[next]||TITLES.pt;
   const meta=document.querySelector('meta[name="description"]');
@@ -619,9 +938,11 @@ export function setLanguage(next){
 const listeners=[];
 export function onLangChange(cb){listeners.push(cb);}
 export function getLang(){return language;}
+export function formatCurrency(value,lang=language){return new Intl.NumberFormat(LOCALES[lang]||LOCALES.pt,{style:'currency',currency:'EUR',maximumFractionDigits:Number.isInteger(value)?0:2}).format(value);}
+export function formatDecimal(value,lang=language,options={}){return new Intl.NumberFormat(LOCALES[lang]||LOCALES.pt,options).format(value);}
 export function resolveLanguage(search,stored='pt'){
  const requested=new URLSearchParams(search).get('lang');
- return ['pt','en','es'].includes(requested)?requested:['pt','en','es'].includes(stored)?stored:'pt';
+ return SUPPORTED_LANGUAGES.includes(requested)?requested:SUPPORTED_LANGUAGES.includes(stored)?stored:'pt';
 }
 export function initI18n(){
   document.addEventListener('click',event=>{

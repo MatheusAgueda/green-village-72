@@ -42,9 +42,31 @@ export const COMMERCIAL_COPY=Object.freeze({
   source:'Green Village · confirmación comercial del 02/10/2026',
   faq:'Plazo de entrega de 90 a 180 días hábiles, más 30 días en el terreno del cliente para el montaje y los acabados. Garantía de 10 años en la estructura, 5 años en el sistema expansible y 2 años en los acabados. Transporte incluido en el precio para Portugal continental; otros destinos bajo consulta.',
  }),
+ fr:Object.freeze({
+  delivery:'90 à 180 jours ouvrés',
+  assemblyLabel:'Montage et finitions sur le terrain',
+  assembly:'Prévoir 30 jours supplémentaires sur le terrain du client pour le montage et les finitions.',
+  structure:'10 ans sur la structure',
+  expansion:"5 ans sur le système d’expansion",
+  finishes:'2 ans sur les finitions',
+  warranty:'10 ans sur la structure · 5 ans sur le système d’expansion · 2 ans sur les finitions',
+  source:'Green Village · confirmation commerciale du 02/10/2026',
+  faq:'Délai de livraison de 90 à 180 jours ouvrés, auquel s’ajoutent 30 jours sur le terrain du client pour le montage et les finitions. Garantie de 10 ans sur la structure, 5 ans sur le système d’expansion et 2 ans sur les finitions. Transport inclus dans le prix pour le Portugal continental ; autres destinations sur demande.',
+ }),
+ it:Object.freeze({
+  delivery:'Da 90 a 180 giorni lavorativi',
+  assemblyLabel:'Montaggio e finiture sul terreno',
+  assembly:'Si aggiungono 30 giorni sul terreno del cliente per il montaggio e le finiture.',
+  structure:'10 anni sulla struttura',
+  expansion:'5 anni sul sistema di espansione',
+  finishes:'2 anni sulle finiture',
+  warranty:'10 anni sulla struttura · 5 anni sul sistema di espansione · 2 anni sulle finiture',
+  source:'Green Village · conferma commerciale del 02/10/2026',
+  faq:'Tempi di consegna da 90 a 180 giorni lavorativi, più 30 giorni sul terreno del cliente per il montaggio e le finiture. Garanzia di 10 anni sulla struttura, 5 anni sul sistema di espansione e 2 anni sulle finiture. Trasporto incluso nel prezzo per il Portogallo continentale; altre destinazioni su richiesta.',
+ }),
 });
 
-export const COMMERCIAL_TRANSLATIONS=Object.keys(COMMERCIAL_COPY.pt).map(key=>['pt','en','es'].map(lang=>COMMERCIAL_COPY[lang][key]));
+export const COMMERCIAL_TRANSLATIONS=Object.keys(COMMERCIAL_COPY.pt).map(key=>['pt','en','es','fr','it'].map(lang=>COMMERCIAL_COPY[lang][key]));
 export const COMMERCIAL_FACTS=[
  {id:'commercial-delivery',label:'Prazo de entrega',value:COMMERCIAL_COPY.pt.delivery,note:COMMERCIAL_COPY.pt.assembly},
  {id:'commercial-warranty',label:'Garantia',value:COMMERCIAL_COPY.pt.warranty,note:COMMERCIAL_COPY.pt.source},

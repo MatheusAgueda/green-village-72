@@ -1,5 +1,6 @@
 import {COMMERCIAL_TERMS} from './commercial-terms.js';
 import {currentCataloguePrice} from './commercial-prices.js';
+import {OPTIONAL_ITEMS,SPC_FLOOR_UPGRADE} from './project-options.js';
 import {STANDARD_PACKAGE,adaptationEstimate} from './standard-package.js';
 import {DEPLOYMENT_ASSUMPTIONS} from './deployment-rig.js';
 import {CATALOGUE_OPTIONS,TECHNICAL_FACTS,SOURCE_LAYOUTS} from './technical-data.js';
@@ -103,5 +104,9 @@ export async function exportModelGLB(configuration,library,onProgress=()=>{}){
 }
 
 export function sourceLedger(configuration){
- const plan=getPlan(configuration);return {revision:REVISION,configuration:validateConfiguration(configuration),units:{dimensions:'m unless specified per record',areas:'m²',catalogue:'per specification'},dimensions:configuredMeasures(plan),areas:plan.areas,catalogueOptions:CATALOGUE_OPTIONS,commercialPrices:CATALOGUE_OPTIONS.map(option=>({documentaryId:option.id,...currentCataloguePrice(option.id)})),standardPackage:STANDARD_PACKAGE,personalisationQuotes:adaptationEstimate(configuration).lines,commercialTerms:COMMERCIAL_TERMS,technicalFacts:TECHNICAL_FACTS,sourceLayout:SOURCE_LAYOUTS.find(l=>l.id===configuration.layout),videos:REFERENCE_VIDEOS,openings:plan.perimeter,configuredOpenings:configuredOpenings(plan),sourceDivergences:sourceDivergences(configuration),expansion:{scope:'full-illustrative-deployment',assumptions:DEPLOYMENT_ASSUMPTIONS,endPanels:'continuous inside-to-outside unfolding, front then rear',presentation:{revision:PROCESS_REVISION,source:'assets/expansao.png and client clarification',sourceConfirmedByUser:'2026-09-12',steps:PROCESS_STEPS,continuousMotion:'all stages',discreteTransitions:[],transportEnvelope:'not documented'}},sourceConflicts:SOURCES.map(({id,limits})=>({id,limits}))};
+ const plan=getPlan(configuration);
+ // Preserve the documentary catalogue alongside the complete, current offer.
+ const commercialPrices=OPTIONAL_ITEMS.map(option=>({documentaryId:option.id,...currentCataloguePrice(option.id)}));
+ commercialPrices.push({id:SPC_FLOOR_UPGRADE.id,documentaryId:SPC_FLOOR_UPGRADE.id,label:SPC_FLOOR_UPGRADE.label,value:SPC_FLOOR_UPGRADE.priceCents/100,currency:'EUR',priceCents:SPC_FLOOR_UPGRADE.priceCents,vatIncluded:SPC_FLOOR_UPGRADE.vatIncluded,vatRatePercent:null,source:SPC_FLOOR_UPGRADE.commercialSource,scope:SPC_FLOOR_UPGRADE.scope});
+ return {revision:REVISION,configuration:validateConfiguration(configuration),units:{dimensions:'m unless specified per record',areas:'m²',catalogue:'per specification'},dimensions:configuredMeasures(plan),areas:plan.areas,catalogueOptions:CATALOGUE_OPTIONS,commercialPrices,standardPackage:STANDARD_PACKAGE,personalisationQuotes:adaptationEstimate(configuration).lines,commercialTerms:COMMERCIAL_TERMS,technicalFacts:TECHNICAL_FACTS,sourceLayout:SOURCE_LAYOUTS.find(l=>l.id===configuration.layout),videos:REFERENCE_VIDEOS,openings:plan.perimeter,configuredOpenings:configuredOpenings(plan),sourceDivergences:sourceDivergences(configuration),expansion:{scope:'full-illustrative-deployment',assumptions:DEPLOYMENT_ASSUMPTIONS,endPanels:'continuous inside-to-outside unfolding, front then rear',presentation:{revision:PROCESS_REVISION,source:'assets/expansao.png and client clarification',sourceConfirmedByUser:'2026-09-12',steps:PROCESS_STEPS,continuousMotion:'all stages',discreteTransitions:[],transportEnvelope:'not documented'}},sourceConflicts:SOURCES.map(({id,limits})=>({id,limits}))};
 }

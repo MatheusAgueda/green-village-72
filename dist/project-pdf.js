@@ -253,7 +253,7 @@ export async function appendClientDossier(doc, {state, project, font, bold, imag
       ...(variant ? ['Variante: ' + variant] : []),
       'PVP actual: ' + money(line.unitCents),
       'Parcial: ' + money(line.totalCents),
-      item.vatIncluded===null?'IVA: enquadramento por confirmar.':'IVA: ' + estimate.vatRate + '% incluído quando existe preço.',
+      item.vatIncluded==null?'IVA: enquadramento por confirmar.':'IVA: ' + estimate.vatRate + '% incluído quando existe preço.',
       item.commercialSource|| (item.page?'PVP ' + locale.date(estimate.edition) + ' · ficha p. ' + item.page:'Oferta Green Village')];
     const metaLines = metadata.flatMap(value => wrap(value, CONTENT - 194, 9.5));
     const pictureHeight = 112, blockHeight = Math.max(pictureHeight, metaLines.length * 13.5);
