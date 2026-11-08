@@ -25,7 +25,7 @@ await check('Every authored PDF phrase and commercial term has all five translat
  for(const language of languages)for(const [key,original] of Object.entries(COMMERCIAL_COPY.pt))assert.equal(createPDFI18n(language).t(original),COMMERCIAL_COPY[language][key]);
  assert.deepEqual(COMMERCIAL_TERMS.delivery,{minWorkingDays:90,maxWorkingDays:180});
  assert.equal(COMMERCIAL_TERMS.onSiteDays,30);
- assert.deepEqual(COMMERCIAL_TERMS.warranty,{structureYears:10,expansionSystemYears:5,finishesYears:2});
+ assert.deepEqual(COMMERCIAL_TERMS.warranty,{structureYears:10,expansionSystemYears:5,finishesYears:3});
  assert.match(COMMERCIAL_COPY.fr.faq,/90 à 180 jours ouvrés/);
  assert.match(COMMERCIAL_COPY.it.faq,/90 a 180 giorni lavorativi/);
  assert.doesNotMatch(COMMERCIAL_COPY.fr.faq,/30 jours ouvrés/);
