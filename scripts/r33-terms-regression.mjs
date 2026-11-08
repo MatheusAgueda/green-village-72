@@ -10,7 +10,7 @@ import {createPDFI18n} from '../dist/pdf-i18n.js';
 
 const checks=[];
 const check=(name,run)=>{run();checks.push(name);console.log('PASS '+name);};
-const retired=/\b90\s+(?:dias úteis|working days|días hábiles)|\b2\s+(?:anos na estrutura|years on the structure|años en la estructura)|\b1\s+(?:ano nos equipamentos|year on equipment|año en los equipos)|[12]-year warranty/i;
+const retired=/\b90\s+(?:dias úteis|working days|días hábiles)|\b2\s+(?:anos na estrutura|years on the structure|años en la estructura)|\b1\s+(?:ano nos equipamentos|year on equipment|año en los equipos)|\b2\s+(?:anos nos acabamentos|years on finishes|años en los acabados|ans sur les finitions|anni sulle finiture)|[12]-year warranty/i;
 const unapproved=/30\s+(?:dias úteis|working days|días hábiles)|após a confirmação do pedido|after the order is confirmed|tras la confirmación del pedido/i;
 const includesTerms=(text,lang)=>{
  for(const key of ['delivery','structure','expansion','finishes'])assert.ok(text.includes(COMMERCIAL_COPY[lang][key]),`${lang}: missing ${key}`);
@@ -21,8 +21,8 @@ const includesTerms=(text,lang)=>{
 check('Owner terms preserve two distinct delivery periods and all three warranty scopes',()=>{
  assert.deepEqual(COMMERCIAL_TERMS.delivery,{minWorkingDays:90,maxWorkingDays:180});
  assert.equal(COMMERCIAL_TERMS.onSiteDays,30);
- assert.deepEqual(COMMERCIAL_TERMS.warranty,{structureYears:10,expansionSystemYears:5,finishesYears:2});
- assert.equal(COMMERCIAL_TERMS.revision,'2026-10-02');
+ assert.deepEqual(COMMERCIAL_TERMS.warranty,{structureYears:10,expansionSystemYears:5,finishesYears:3});
+ assert.equal(COMMERCIAL_TERMS.revision,'2026-11-08');
  assert.ok(Object.isFrozen(COMMERCIAL_TERMS));
  assert.ok(Object.isFrozen(COMMERCIAL_TERMS.delivery));
  assert.ok(Object.isFrozen(COMMERCIAL_TERMS.warranty));
